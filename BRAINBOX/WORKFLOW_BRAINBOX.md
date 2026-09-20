@@ -1,5 +1,3 @@
----
-
 # AI-Assisted Full-Stack Development Workflow
 
 **Document Status:** Foundational Workflow Document
