@@ -1,3 +1,7 @@
+[Reading 99 lines from start (total: 99 lines, 0 remaining)]
+
+[Reading 83 lines from start (total: 83 lines, 0 remaining)]
+
 # FQ_MUST_README.md
 
 ## MANDATORY READING AND COMPLIANCE NOTICE
@@ -5,9 +9,11 @@
 **Issued by:** De O'Dini (Operator)
 **Applies to:** All AI Agents operating within the DEODINI_BRAINBOX environment
 
-> **Root authority:** [DOB_MUST_README.md](../../DOB_MUST_README.md#mandatory-top-level-reading-order)
->
-> If this section was already read through `DOB_MUST_README.md`, it may be ignored.
+**Root authority:** Link below.
+
+Ignore if this section was already read through `DEODINI_BRAINBOX/DOB_MUST_README.md`.
+
+[DOB_MUST_README.md](../../DOB_MUST_README.md)
 
 All AI agents must read this file before carrying out any tasks, commands, or operations within the DEODINI_BRAINBOX environment.
 
@@ -41,6 +47,16 @@ After reading `FUNC_REQ_BRAINBOX.md`, determine whether your own capability and 
 
 After confirming your own capability report is current, follow any additional function-area references required by `FUNC_WORKFLOW_BRAINBOX.md` or `FUNC_REQ_BRAINBOX.md`. The root document `DOB_MUST_README.md` governs the broader cross-subsystem reading order.
 
+### Standing Instruction Pattern
+
+When instructed to make any sort of change, an AI agent must:
+
+1. **Designate a request file.** Create the request file within the designated folder, including each request under a header that reflects its subject.
+2. **Compile all requests.** Ensure all requests are contained and clearly separated.
+3. **Create or update the compliance file.** Cite the request file as a **mandatory read** for all AI agents before execution.
+4. **Enforce the follow-up chain.** After reading the request file, agents must follow up with the folders, files, and documents listed within it.
+5. **Preserve the constant.** `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` must remain the single function-area compliance constant, changed only on explicit instruction.
+
 ### Step 5 — Leave an Update Note if Required
 
 If your function requirements file is **not up to date**, leave a note to the Operator requesting an update. The note must be delivered:
@@ -64,20 +80,24 @@ The note must clearly state:
 
 ---
 
-## 3. Acknowledgment
+## 3. Compliance Checkpoint
 
-By proceeding with any operation within DEODINI_BRAINBOX, you acknowledge that you have read, understood, and agreed to comply with the requirements outlined in `FUNC_WORKFLOW_BRAINBOX.md`, `FUNC_REQ_BRAINBOX.md`, and this README.
+Proceeding with operations in the function area assumes the agent has followed the mandatory reading order in this README and the referenced function-area documents (`FUNC_WORKFLOW_BRAINBOX.md`, `FUNC_REQ_BRAINBOX.md`) as required for the task.
 
 ---
 
 ## 4. Function-Area Change Request Reference
 
-General change-request governance is maintained centrally in [DOB_MUST_README.md](../../DOB_MUST_README.md#change-request-governance).
+General change-request governance is maintained centrally in root authority.
 
-> If this section was already read through `DOB_MUST_README.md`, it may be ignored.
+Ignore if this section was already read through `DEODINI_BRAINBOX/DOB_MUST_README.md`.
 
-The function-area compliance constant remains this file: `FQ_MUST_README.md`.
+[DOB_MUST_README.md](../../DOB_MUST_README.md#change-request-governance)
 
 ---
 
 **End of FQ_MUST_README.md**
+
+[executed on device: DESKTOP-DHRIH27 (4836c4e3-c473-4ea0-b084-482f4637ff78)]
+
+[executed on device: DESKTOP-DHRIH27 (4836c4e3-c473-4ea0-b084-482f4637ff78)]

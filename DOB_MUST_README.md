@@ -1,3 +1,9 @@
+[Reading 168 lines from start (total: 168 lines, 0 remaining)]
+
+[Reading 172 lines from start (total: 172 lines, 0 remaining)]
+
+[Reading 166 lines from start (total: 166 lines, 0 remaining)]
+
 # DOB_MUST_README.md
 
 ## DEODINI_BRAINBOX — Root Mandatory Entry Point
@@ -107,11 +113,15 @@ The following pattern applies to any AI agent instructed to create, modify, or e
 
 ### Constant Rule
 
-The only constant compliance file for the function-area change-request process is:
+The following README authorities are constant within their stated scope and may be changed only when an AI agent is specifically and explicitly instructed to change them:
 
-**`AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md`**
+1. **Root / hive-wide authority:** `DOB_MUST_README.md`
+2. **AI subsystem authority:** `AI_BRAINBOX/AI_MUST_README.md`
+3. **Function-area compliance checkpoint:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md`
+4. **Project-workflow subsystem authority:** `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md`
+5. **Skills subsystem authority:** `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md`
 
-This file may only be changed if an AI agent is specifically and explicitly instructed to change it. Absent such instruction, it must remain intact and unmodified.
+Absent explicit instruction, each remains intact and unmodified within its scope.
 
 ### Variable Elements
 
@@ -123,15 +133,7 @@ The following may vary per request:
 - The names of agent-specific output files.
 - The naming of each request header.
 
-### Standing Instruction Pattern
-
-When instructed to make any sort of change, an AI agent must:
-
-1. **Designate a request file.** Create the request file within the designated folder, including each request under a header that reflects its subject.
-2. **Compile all requests.** Ensure all requests are contained and clearly separated.
-3. **Create or update the compliance file.** Cite the request file as a **mandatory read** for all AI agents before execution.
-4. **Enforce the follow-up chain.** After reading the request file, agents must follow up with the folders, files, and documents listed within it.
-5. **Preserve the constant.** `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` must remain the single function-area compliance constant, changed only on explicit instruction.
+Standing Instruction Pattern for function-area change requests is maintained in `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` (between Step 4 and Step 5 of the mandatory reading order).
 
 ### Canonical Example
 
@@ -144,7 +146,27 @@ When instructed to make any sort of change, an AI agent must:
 
 - Numbers, folder names, and file names in the canonical example are illustrative and may vary per request.
 - Request header naming may vary per subject.
-- `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` is the only function-area compliance constant and may be changed **only** if explicitly instructed.
+- `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` remains the function-area compliance checkpoint and may be changed **only** if explicitly instructed.
+
+---
+
+## Revision Notes
+
+When an AI agent performs approved fixes or structural changes within DEODINI_BRAINBOX, it must leave a short revision note that includes:
+- what changed (brief)
+- agent name
+- timestamp
+- the line: **Signed & Authorized by: DE O'DINI (OPERATOR)**
+
+Root revision history for hive-wide / cross-file governance changes is recorded in this document.
+
+### 2026-09-20
+
+Updated Sections 2.2, 6 (step 1), 3 (Principle 8), 2.7, 13, and 11 of `FUNC_WORKFLOW_BRAINBOX.md` to (a) clarify that free/spec projects based on real Upwork briefs are unpaid trial builds, never misrepresented as paid engagements, (b) add a standing disclosure rule for portfolio entries, and (c) clarify email-trigger content boundaries and Brainbox scope, per operator instruction.
+
+**Agent:** De O'Dini (Operator)  
+**Timestamp:** 2026-09-20  
+**Signed & Authorized by: DE O'DINI (OPERATOR)**
 
 ---
 
@@ -153,6 +175,8 @@ When instructed to make any sort of change, an AI agent must:
 When a subsystem README references rules maintained here, the return-link details are hosted here in this root document. Each entry identifies the originating subsystem README by full relative path and anchor.
 
 - [FQ_MUST_README.md](AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md#mandatory-reading-and-compliance-notice)
+  - Return here only if you arrived from this subsystem README.
+- [AI_MUST_README.md](AI_BRAINBOX/AI_MUST_README.md#ai_brainbox-entry-point)
   - Return here only if you arrived from this subsystem README.
 - [PROJ_MUST_README.md](AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md#project-workflow-subsystem)
   - Return here only if you arrived from this subsystem README.
@@ -164,3 +188,9 @@ Each subsystem README keeps its root-authority link and its note that the refere
 ---
 
 **End of DOB_MUST_README.md**
+
+[executed on device: DESKTOP-DHRIH27 (4836c4e3-c473-4ea0-b084-482f4637ff78)]
+
+[executed on device: DESKTOP-DHRIH27 (4836c4e3-c473-4ea0-b084-482f4637ff78)]
+
+[executed on device: DESKTOP-DHRIH27 (4836c4e3-c473-4ea0-b084-482f4637ff78)]

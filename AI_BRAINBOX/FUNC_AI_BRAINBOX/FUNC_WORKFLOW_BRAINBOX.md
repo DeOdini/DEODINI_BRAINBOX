@@ -1,7 +1,11 @@
+[Reading 283 lines from start (total: 283 lines, 0 remaining)]
+
+[Reading 285 lines from start (total: 285 lines, 0 remaining)]
+
 # AI-Assisted Full-Stack Development Workflow
 
-**Document Status:** Foundational Workflow Document
-**Owner:** De O'Dini (Obi Okpochini)
+**Document Owner:** De O'Dini (OPERATOR)
+**Document Status:** Foundational Workflow
 **Domain:** Full-Stack Website Development — AI-Orchestrated Portfolio Pipeline
 **Storage Location:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md`
 **Related Files:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md`, `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md`
@@ -54,26 +58,13 @@ Some agents must wait for others before beginning, because their work depends on
 
 **Sequencing rule:** Claude must wait for Qwen to finish. When Qwen completes, it must push to the local desktop device (via VS Code) and/or the GitHub repository — whichever is accessible at the time — before notifying Claude. Claude then retrieves the work from the repo and/or local device, and builds the backend, using the connectors Qwen left in place. When Claude finishes, it follows the same push-and-notify protocol.
 
-### 2.5 Human-in-the-Loop
+### 2.5 Human-in-the-Loop / Version Control / Knowledge Base
 
-Throughout this process, I remain the human-in-the-loop. I:
+Governance-level rules for human oversight, version control, and the AI knowledge base are maintained in the AI subsystem authority.
 
-- Confirm and authorize actions before they execute.
-- Re-evaluate the workflow and progress of each build.
-- Commit and push via VS Code to GitHub.
+Ignore if this section was already read through `AI_BRAINBOX/AI_MUST_README.md`.
 
-### 2.6 Version Control Rule
-
-**No AI agent may push directly to the main project repository in GitHub.** All agent work must go to a branch. This protects the main repository and enforces review discipline.
-
-### 2.7 Documentation and the Brainbox
-
-Because this pipeline is fresh, documentation of progress is essential. The **Brainbox** serves as the shared knowledge base where:
-
-- Each AI agent records what worked, what failed, and how it improved.
-- Any agent can look up previously proven patterns rather than guessing or re-evaluating from scratch.
-- Errors, corrections, and successful procedures are preserved for reuse.
-- The Brainbox is strictly for my own personal use in building my professional skills; portfolio projects built using it are separately published (see Section 13) with proper disclosure.
+[AI_MUST_README.md](../AI_MUST_README.md)
 
 ### 2.8 Why Email Matters
 
@@ -89,12 +80,11 @@ Email is the backup communication and trigger channel for the workflow:
 
 ### 2.9 Career Objective
 
-This workflow is not just about producing websites. It is about producing **verifiable evidence of competent engineering practice**:
+Milestones and the broader career objective are maintained in the AI subsystem authority.
 
-- Demonstrating that I understand the logic of coding — not just vibecoding.
-- Finding bugs, debugging, stress-testing, and verifying builds.
-- Presenting a trustworthy, documented track record to clients.
-- Reaching clear, documented milestones as personal achievements.
+Ignore if this section was already read through `AI_BRAINBOX/AI_MUST_README.md`.
+
+[AI_MUST_README.md](../AI_MUST_README.md)
 
 ---
 
@@ -172,28 +162,7 @@ Roles may shift per contract, but the **orchestration pattern** (ChatGPT plans �
 
 ---
 
-## 8. Human-in-the-Loop
-
-I remain the human-in-the-loop until full automation is proven. My responsibilities:
-
-- Authorize agent actions.
-- Review and approve branch merges.
-- Commit and push via VS Code.
-- Re-evaluate workflow performance.
-- Confirm verification before milestone closure.
-
----
-
-## 9. Version Control Protocol
-
-- All agent output goes to **branches only**.
-- **No direct pushes to `main`.**
-- Merges to `main` require human approval.
-- Every branch must be documented with a clear purpose, agent author, and status.
-
----
-
-## 10. Email Trigger Protocol
+## 8. Email Trigger Protocol
 
 | Field       | Purpose                                              |
 | ----------- | ------------------------------------------------------ |
@@ -214,23 +183,7 @@ Tags are drafts and will be refined after testing.
 
 ---
 
-## 11. Brainbox Knowledge Base
-
-The Brainbox is the canonical record of the workflow, strictly for my own personal use. It stores:
-
-- Working patterns for each task type
-- Common errors and their fixes
-- Verification results
-- Milestone records
-- Per-agent capability reports (`CHATGPT_FUNC_BRAINBOX.md`, `CLAUDE_FUNC_BRAINBOX.md`, etc.)
-
-**Standing rule:** Having already read `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` and this document, all AI agents must next read `AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md` before proceeding to other Brainbox folders/files.
-
-**Repo visibility note:** Intended to be a private GitHub repo. Will remain public/open for now only if and until all participating AI agents can be confirmed to authenticate against a private repo.
-
----
-
-## 12. Verification and Validation Loop
+## 9. Verification and Validation Loop
 
 Each new capability or workflow step is proven through this cycle:
 
@@ -246,25 +199,15 @@ No step is considered production-ready until it has passed this loop.
 
 ---
 
-## 13. Milestones and Career Objective
+## 10. Standing Rule
 
-Each completed workflow cycle produces:
+Having already read `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` and this document, all AI agents must next read `AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md` before proceeding to other `DEODINI_BRAINBOX` folders/files.
 
-- A working website (portfolio asset)
-- Documented build process (Brainbox record)
-- Verified multi-agent collaboration trace
-- Human-approved milestone achievement
-- Clear disclosure of engagement type (unpaid spec/trial vs. paid) and AI workflow used, published alongside the portfolio entry
-
-**Ultimate outcome:** A demonstrable, trustworthy record showing that I understand the logic of coding — not just vibecoding — and can be trusted with real client work.
+**Repo visibility note:** Intended to be a private GitHub repo. Will remain public/open for now only if and until all participating AI agents can be confirmed to authenticate against a private repo.
 
 ---
 
-## 14. Constants and Variables
-
-**Constant:**
-
-- `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` remains the single compliance checkpoint and may only be changed when explicitly instructed.
+## 11. Variables
 
 **Variables (per task):**
 
@@ -277,9 +220,11 @@ Each completed workflow cycle produces:
 
 ---
 
-**Revision note:** Sections 2.2, 6 (step 1), 3 (Principle 8), 2.7, 13, and 11 updated 2026-09-20 to (a) clarify that free/spec projects based on real Upwork briefs are unpaid trial builds, never misrepresented as paid engagements, (b) add a standing disclosure rule for portfolio entries, and (c) clarify email-trigger content boundaries and Brainbox scope, per operator instruction.
-
-**Signed & Authorized by:** DE O'DINI (OPERATOR)
+**Revision note:** Root revision history is maintained in `DOB_MUST_README.md`.
 
 ---
 **End of FUNC_WORKFLOW_BRAINBOX.md**
+
+[executed on device: DESKTOP-DHRIH27 (4836c4e3-c473-4ea0-b084-482f4637ff78)]
+
+[executed on device: DESKTOP-DHRIH27 (4836c4e3-c473-4ea0-b084-482f4637ff78)]
