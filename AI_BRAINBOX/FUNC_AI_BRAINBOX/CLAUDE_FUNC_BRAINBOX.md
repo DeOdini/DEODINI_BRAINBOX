@@ -25,7 +25,7 @@
 (a) Connected. (b) OAuth-linked Figma account. (c) Read design files, generate diagrams/components, Code Connect. (d) Read freely; writes to files on request. (e) "Get design context for node X."
 
 ### Remote Desktop Commander (RDC)
-(a) Connected — see Section 4. (b) Linked to your registered devices. (c) Remote file read/write, process control, terminal. (d) Actively used this session to read/write BRAINBOX files. (e) Reading this very file (demonstrated).
+(a) Connected — see Section 4. (b) Linked to your registered devices. (c) Remote file read/write, process control, terminal. (d) Actively used this session to read/write DEODINI_BRAINBOX files. (e) Reading this very file (demonstrated).
 
 ### Sentry
 (a) Connected. (b) OAuth-linked org. (c) Search issues/events, Seer root-cause analysis, update status. (d) Read freely; status changes need confirmation. (e) "List open issues in project X."
@@ -78,7 +78,7 @@ Given your website/coding engineering focus:
 - **GitHub connector** — not connected as an MCP server in this session; would allow direct repo read/write instead of manual copy-paste.
 - **Vercel/Netlify** — deployment platforms, not connected.
 - **Linear/Jira** — issue tracking, not connected.
-- **Notion** — could parallel or complement BRAINBOX, not connected.
+- **Notion** — could parallel or complement DEODINI_BRAINBOX, not connected.
 
 (a) None linked currently. (b) Would need OAuth setup via Claude's connector settings. (c) Purpose is workflow-specific (deploys, issue tracking, docs). (d) Not usable until connected. (e) N/A until connected.
 
@@ -92,7 +92,7 @@ Given your website/coding engineering focus:
 
 (b) Access level: **Full** on DESKTOP-DHRIH27 — file read/write, process list/kill, terminal (start_process, not yet used), config read/write, shutdown. No lower tier currently in effect.
 
-(c) Usable for: reading/writing files within allowedDirectories, running commands, managing processes, editing this BRAINBOX.
+(c) Usable for: reading/writing files within allowedDirectories, running commands, managing processes, editing this DEODINI_BRAINBOX.
 
 (d) Test examples: reading FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md (done), writing this file (this action), listing directory/processes (available on request).
 
@@ -114,7 +114,7 @@ None of these send, delete, or launch anything automatically — every such acti
 ## Confirmation
 
 - **Agent name:** Claude (Sonnet 4.6)
-- **File path written:** C:\Users\USER\DEODINI_BRAINBOX\BRAINBOX\CLAUDE_FUNC_BRAINBOX.md
+- **File path written:** C:/Users/USER/DEODINI_BRAINBOX/AI_BRAINBOX/FUNC_AI_BRAINBOX/CLAUDE_FUNC_BRAINBOX.md
 - **Status:** Created
 - **Timestamp:** 2026-09-20
 - **Signed & Authorized by:** DE O'DINI (OPERATOR), per direct chat instruction dated 2026-09-20.

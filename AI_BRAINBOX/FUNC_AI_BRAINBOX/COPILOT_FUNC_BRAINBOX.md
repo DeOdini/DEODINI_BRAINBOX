@@ -2,7 +2,7 @@
 
 **Timestamp:** 2026-09-20 11:40 UTC
 **Agent:** GitHub Copilot
-**File written:** `BRAINBOX/COPILOT_FUNC_BRAINBOX.md`
+**File written:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/COPILOT_FUNC_BRAINBOX.md`
 **Status:** Created
 
 ---
@@ -227,6 +227,6 @@ The most important limitation is that no active email connector was verified, an
 ## Confirmation
 
 - **Agent name:** GitHub Copilot
-- **File path written:** `BRAINBOX/COPILOT_FUNC_BRAINBOX.md`
+- **File path written:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/COPILOT_FUNC_BRAINBOX.md`
 - **Status:** Created
 - **Timestamp:** 2026-09-20 11:40 UTC

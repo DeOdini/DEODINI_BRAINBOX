@@ -66,7 +66,7 @@ Ignore if this section was already read through `AI_BRAINBOX/AI_MUST_README.md`.
 
 [AI_MUST_README.md](../AI_MUST_README.md)
 
-### 2.8 Why Email Matters
+### 2.6 Why Email Matters
 
 Email is the backup communication and trigger channel for the workflow:
 
@@ -78,7 +78,7 @@ Email is the backup communication and trigger channel for the workflow:
 - The next stage is to **test, verify, validate, adjust, and retry** until the email-trigger system is confirmed to work reliably across all agents.
 - All records and reports of this testing will be saved in the Brainbox, so every agent knows common errors, what finally worked, and how to improve.
 
-### 2.9 Career Objective
+### 2.7 Career Objective
 
 Milestones and the broader career objective are maintained in the AI subsystem authority.
 

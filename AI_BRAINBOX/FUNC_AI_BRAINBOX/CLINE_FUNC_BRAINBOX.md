@@ -4,7 +4,7 @@
 
 **Timestamp:** 2025-09-20T00:00:00Z  
 **Agent Name:** Cline  
-**File Path:** BRAINBOX/CLINE_FUNC_BRAINBOX.md  
+**File Path:** AI_BRAINBOX/FUNC_AI_BRAINBOX/CLINE_FUNC_BRAINBOX.md  
 **Status:** Created for diagnostic purposes
 
 ---
@@ -79,7 +79,7 @@ After this diagnostic report, I will immediately proceed to create the actual ca
 ## Confirmation of This Diagnostic Report
 
 - **Agent Name:** Cline
-- **File Path Written:** BRAINBOX/CLINE_FUNC_BRAINBOX.md  
+- **File Path Written:** AI_BRAINBOX/FUNC_AI_BRAINBOX/CLINE_FUNC_BRAINBOX.md  
 - **Status:** Created (Diagnostic Report)
 - **Timestamp:** 2025-09-20T00:00:00Z
 
@@ -90,7 +90,7 @@ After this diagnostic report, I will immediately proceed to create the actual ca
 ## ACTUAL CAPABILITY REPORT (Following Diagnostic)
 **Timestamp:** 2025-09-20T00:05:00Z  
 **Agent Name:** Cline  
-**File Path:** BRAINBOX/CLINE_FUNC_BRAINBOX.md  
+**File Path:** AI_BRAINBOX/FUNC_AI_BRAINBOX/CLINE_FUNC_BRAINBOX.md  
 **Status:** Updated with Actual Capability Report
 
 ---
@@ -521,7 +521,7 @@ After this diagnostic report, I will immediately proceed to create the actual ca
 ## Confirmation
 
 - **Agent Name:** Cline
-- **File Path Written:** BRAINBOX/CLINE_FUNC_BRAINBOX.md
+- **File Path Written:** AI_BRAINBOX/FUNC_AI_BRAINBOX/CLINE_FUNC_BRAINBOX.md
 - **Status:** Updated
 - **Timestamp:** 2025-09-20T00:05:00Z
 
