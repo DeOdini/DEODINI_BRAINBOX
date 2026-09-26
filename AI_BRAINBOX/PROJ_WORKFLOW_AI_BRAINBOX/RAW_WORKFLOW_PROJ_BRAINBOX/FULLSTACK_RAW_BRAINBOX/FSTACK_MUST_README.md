@@ -8,7 +8,7 @@
 
 | Document | State | Tooling assumption | Best used as | Proven status |
 | --- | --- | --- | --- | --- |
-| **001DOC_BYB5DOC_FLOW_RAW_BRAINBOX** | Fully raw, unrefined | Stack assumed (React/FastAPI/Supabase/Docker), but no agent-to-task assignment | Discovery tool / client-question generator / neutral reference | Not proven |
+| **001DOC_BYB5DOC_FLOW_STACK_BRAINBOX** | Fully raw, unrefined | Stack assumed (React/FastAPI/Supabase/Docker), but no agent-to-task assignment | Discovery tool / client-question generator / neutral reference | Not proven |
 | **002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX** | Refined, ready-to-execute | Stack and specific AI agent roles pre-assigned (ChatGPT decomposition, Grok→Qwen handoff, etc.) | Fast-start execution template for matching projects | Not proven |
 
 ---
@@ -23,7 +23,7 @@ The preset workflow takes the raw workflow and clones the function-workflow of e
 
 ---
 
-## Why 001DOC_BYB5DOC_FLOW_RAW_BRAINBOX Exists — and What It Actually Is
+## Why 001DOC_BYB5DOC_FLOW_STACK_BRAINBOX Exists — and What It Actually Is
 
 The raw workflow remains in its unrefined, raw state. No agent or tool function-workflow is assumed — it simply presents the workflow itself, undecorated. This is exactly what makes it flexible: whatever agents and tools actually suit a given project can be infused into this base without fighting an existing assignment.
 
@@ -36,10 +36,10 @@ The raw workflow remains in its unrefined, raw state. No agent or tool function-
 
 ## How to Treat Each Document Going Forward
 
-1. **Default to 001DOC_BYB5DOC_FLOW_RAW_BRAINBOX** when starting client discovery, drafting proposal questions, or scoping a new project whose requirements aren't yet known to match any existing preset.
+1. **Default to 001DOC_BYB5DOC_FLOW_STACK_BRAINBOX** when starting client discovery, drafting proposal questions, or scoping a new project whose requirements aren't yet known to match any existing preset.
 2. **Reach for 002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX** when a project's shape is already recognized as matching its assumed stack and agent roles — it saves redundant setup on projects that resemble prior, validated work.
 3. **Neither is authoritative until proven.** Both remain RAW. Validated outcomes should be promoted to `PROVEN_PATTERN_PROJ_BRAINBOX.md`; failures or partial fits should be recorded in `FAILED_PATTERN_PROJ_BRAINBOX.md` with project tags and failure reasons, per standing DOB rules — nothing is discarded, only reclassified.
-4. **If 002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX is formally retained**, it should be clearly labeled as a *derived instance* of 001DOC_BYB5DOC_FLOW_RAW_BRAINBOX, not a second canonical base — e.g., a header note stating: *"This is an instantiated variant of 001DOC_BYB5DOC_FLOW_RAW_BRAINBOX, pre-configured for [stated stack/agent assumptions]. Validate applicability before reuse on a differently-shaped project."* This prevents a future reader or agent from mistaking the preset for the neutral source.
+4. **If 002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX is formally retained**, it should be clearly labeled as a *derived instance* of 001DOC_BYB5DOC_FLOW_STACK_BRAINBOX, not a second canonical base — e.g., a header note stating: *"This is an instantiated variant of 001DOC_BYB5DOC_FLOW_STACK_BRAINBOX, pre-configured for [stated stack/agent assumptions]. Validate applicability before reuse on a differently-shaped project."* This prevents a future reader or agent from mistaking the preset for the neutral source.
 
 ---
 
@@ -80,8 +80,8 @@ Regardless of which workflow document is used, the following must exist before t
 - A well-structured **project tree**.
 - A well-structured **sitemap**.
 
-These four items are treated as constant prerequisites — they apply whether the project follows 001DOC_BYB5DOC_FLOW_RAW_BRAINBOX or 002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX, and whether the build order chosen is frontend-first, backend-first, or parallel.
+These four items are treated as constant prerequisites — they apply whether the project follows 001DOC_BYB5DOC_FLOW_STACK_BRAINBOX or 002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX, and whether the build order chosen is frontend-first, backend-first, or parallel.
 
 ---
 
-**Terminology rule:** In this README, references to "Doc 7" and "Doc 8" have been replaced by their canonical filenames: 001DOC_BYB5DOC_FLOW_RAW_BRAINBOX and 002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.
+**Terminology rule:** In this README, references to "Doc 7" and "Doc 8" have been replaced by their canonical filenames: 001DOC_BYB5DOC_FLOW_STACK_BRAINBOX and 002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.
