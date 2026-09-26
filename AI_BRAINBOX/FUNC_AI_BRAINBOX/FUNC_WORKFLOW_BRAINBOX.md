@@ -76,7 +76,7 @@ Email is the backup communication and trigger channel for the workflow:
 - Email alerts carry only call-to-duty messages (task/file-path pointers and brief status) — no secrets, keys, or source code. All code, secrets, and project work live via VS Code → local device → GitHub repo. On receiving an alert, the next AI agent goes to the stated file path to check and verify the work (other agents may also review and give feedback; the operator concludes) before proceeding.
 - This has **not yet been tested**. The current stage was limited to skills and capacity checks only.
 - The next stage is to **test, verify, validate, adjust, and retry** until the email-trigger system is confirmed to work reliably across all agents.
-- All records and reports of this testing will be saved in the Brainbox, so every agent knows common errors, what finally worked, and how to improve.
+- All records and reports of this testing will be saved in `DEODINI_BRAINBOX`, so every agent knows common errors, what finally worked, and how to improve.
 
 ### 2.7 Career Objective
 
@@ -95,7 +95,7 @@ Ignore if this section was already read through `AI_BRAINBOX/AI_MUST_README.md`.
 3. **Automation is introduced only after a step is proven manually.**
 4. **Human approval is required at every critical checkpoint until automation is trusted.**
 5. **No direct pushes to the main GitHub repository — branches only.**
-6. **All working patterns, errors, and fixes are stored in the Brainbox.**
+6. **All working patterns, errors, and fixes are stored in `DEODINI_BRAINBOX`.**
 7. **AI agent hierarchy is task-dependent**, based on each agent's strengths for the specific work.
 8. **Every portfolio entry discloses its true engagement type** (unpaid spec/trial vs. paid client work) and the AI agents/workflow used to build it.
 
@@ -109,7 +109,7 @@ Ignore if this section was already read through `AI_BRAINBOX/AI_MUST_README.md`.
 | **Email**                   | Backup communication and trigger channel                   |
 | **GitHub (branches)**       | Version control and review layer                           |
 | **VS Code (local desktop)** | Working environment and local repository                   |
-| **Brainbox**                | Shared knowledge base and documentation archive             |
+| **DEODINI_BRAINBOX**        | Shared knowledge base and documentation archive             |
 | **AI Agents**               | Distributed task executors (research, design, build, test) |
 
 ---
@@ -128,7 +128,7 @@ Agent hierarchy is **not fixed**. It is determined per task, according to each a
 | **Cline**    | Repository-integrated coding tasks                         |
 | **Copilot**  | In-editor assistance and code review                       |
 
-Roles may shift per contract, but the **orchestration pattern** (ChatGPT plans → agents execute → Brainbox documents → human verifies) remains constant.
+Roles may shift per contract, but the **orchestration pattern** (ChatGPT plans → agents execute → `DEODINI_BRAINBOX` documents → human verifies) remains constant.
 
 ---
 
@@ -141,7 +141,7 @@ Roles may shift per contract, but the **orchestration pattern** (ChatGPT plans �
 5. **Push and Notify** — Upon completion, each agent pushes to a branch and/or local device, then notifies the next agent in the chain.
 6. **Human Review** — I confirm the milestone, review the branch, and commit/push via VS Code.
 7. **Verification** — Other AI agents verify the completed work.
-8. **Documentation** — Results, errors, and fixes are logged in the Brainbox.
+8. **Documentation** — Results, errors, and fixes are logged in `DEODINI_BRAINBOX`.
 9. **Milestone Closure** — The milestone is marked complete and becomes a portfolio artifact, labeled per Core Principle 8.
 
 ---
@@ -193,7 +193,7 @@ Each new capability or workflow step is proven through this cycle:
 4. **Validate** — confirm repeatability across agents.
 5. **Adjust** — fix failures or ambiguities.
 6. **Retry** — repeat until reliable.
-7. **Record** — save the final working pattern in the Brainbox.
+7. **Record** — save the final working pattern in `DEODINI_BRAINBOX`.
 
 No step is considered production-ready until it has passed this loop.
 

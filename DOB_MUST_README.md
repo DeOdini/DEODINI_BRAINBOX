@@ -43,6 +43,9 @@ DEODINI_BRAINBOX/
 │   │   ├── FAILED_SKILLS_BRAINBOX.md
 │   │   └── SKILLS_MUST_README.md
 │   └── AI_MUST_README.md
+├── MILESTONES/
+│   ├── MILESTONE_CHECKPOINT_BRAINBOX.md
+│   └── MILESTONES_MUST_README.md
 ├── PORTFOLIO_BRAINBOX/
 │   └── 001_PORT_BRAINBOX.md
 └── DOB_MUST_README.md
@@ -72,6 +75,9 @@ DEODINI_BRAINBOX/
 │       ├── PROVEN_SKILLS_BRAINBOX.md
 │       ├── REUSABLE_SKILLS_BRAINBOX.md
 │       └── FAILED_SKILLS_BRAINBOX.md
+├── MILESTONES/
+│   ├── MILESTONES_MUST_README.md
+│   └── MILESTONE_CHECKPOINT_BRAINBOX.md
 └── PORTFOLIO_BRAINBOX/
     └── 001_PORT_BRAINBOX.md
 ```
@@ -89,7 +95,8 @@ Agents must follow this order:
 6. **Other FUNC_AI_BRAINBOX contents** — review the remaining files in **AI_BRAINBOX/FUNC_AI_BRAINBOX/** as relevant, especially the other agent-specific capability files, so documented capabilities can be understood and reused across agents.
 7. **AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md** — follow the project-workflow subsystem instructions.
 8. **AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md** — follow the skills subsystem instructions.
-9. **The applicable agent-specific function file** within **AI_BRAINBOX/FUNC_AI_BRAINBOX/**, if it was not already covered in Step 6.
+9. **MILESTONES/MILESTONES_MUST_README.md** — review the consolidated, jointly-maintained milestone record.
+10. **The applicable agent-specific function file** within **AI_BRAINBOX/FUNC_AI_BRAINBOX/**, if it was not already covered in Step 6.
 
 
 
@@ -120,6 +127,7 @@ The following README authorities are constant within their stated scope and may 
 3. **Function-area compliance checkpoint:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md`
 4. **Project-workflow subsystem authority:** `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md`
 5. **Skills subsystem authority:** `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md`
+6. **Milestone subsystem authority:** `MILESTONES/MILESTONES_MUST_README.md`
 
 Absent explicit instruction, each remains intact and unmodified within its scope.
 
