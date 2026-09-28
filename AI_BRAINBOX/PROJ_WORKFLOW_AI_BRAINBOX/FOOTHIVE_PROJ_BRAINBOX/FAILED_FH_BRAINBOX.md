@@ -30,6 +30,26 @@ The agent first reported that actual product-image files were not available, onl
 
 The original local name `foothive-TIMBERLAND-images.md` differed in capitalization from the other catalog filenames and from the intended lowercase style. This was a cosmetic naming inconsistency, not evidence of missing data. It was corrected during this task to `foothive-timberland-images.md`; no catalog contents were changed.
 
+### 5. What Not to Do — use product imagery with uncleared third-party branding or watermarks
+
+The asset review found product-image candidates with visible third-party marks, branded tags or packaging, shop branding, or a watermark. Allowing these into the FootHive candidate asset set without explicit Operator clearance is a process failure, regardless of who supplied or located the files. Future agents must not source, select, or use product images showing third-party brands, logos, branded packaging, or watermarks unless the Operator has explicitly cleared them.
+
+**Excluded from the FootHive website build:** the following paths are relative to `FOOTHIVE_PROJ_BRAINBOX/`:
+
+- `FOOTHIVE TIMBERLAND IMAGES/image02.png` — visible Timberland marks, tags, or packaging.
+- `FOOTHIVE TIMBERLAND IMAGES/image04.png` — visible Timberland tree mark.
+- `FOOTHIVE TIMBERLAND IMAGES/image05.png` — visible Timberland tree mark.
+- `FOOTHIVE TIMBERLAND IMAGES/image08.png` — visible Timberland tree mark/logo.
+- `FOOTHIVE TIMBERLAND IMAGES/image13.png` — visible Timberland tree mark.
+- `FOOTHIVE TIMBERLAND IMAGES/image15.png` — visible Timberland tree logo.
+- `FOOTHIVE TIMBERLAND IMAGES/image16.png` — visible Timberland tree logo.
+- `FOOTHIVE TIMBERLAND IMAGES/image19.png` — visible Timberland tree mark/tag and “Premium Quality” badge.
+- `FOOTHIVE SNEAKER IMAGES/navy-tan-stripe.png` — visible Adidas three-stripe mark.
+- `FOOTHIVE BOOTS IMAGES/winged-cross-studded-western-boot.png` — third-party shop branding/signage in the background.
+- `FOOTHIVE BOOTS IMAGES/sunflower-embroidered-western-boot.png` — visible `1/2` watermark/overlay.
+
+Do not use any of these images in mockups, the product grid, or the website unless the Operator explicitly clears them later. Keep the original image files and existing catalog contents intact; this record documents their exclusion without modifying either.
+
 # **WEBSITE BUILDING EXECUTION**
 
 ## Phase state
