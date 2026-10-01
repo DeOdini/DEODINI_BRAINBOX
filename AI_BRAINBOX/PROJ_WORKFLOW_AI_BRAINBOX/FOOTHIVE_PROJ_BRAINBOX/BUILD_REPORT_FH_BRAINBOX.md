@@ -2256,9 +2256,10 @@ T17 records the ticket closure sequence: inspect task/base/status; implement and
 - **Repository:** `C:\Users\USER\FOOTHIVE`
 - **Branch:** `t18/release-metadata-verification`
 - **Base:** T17 pushed commit `f37a91f3a12d06efac0e2fe2c571537d0334e6b9`
-- **Commit:** `031b915f9e5eed7a1d5f0c37adaae167c6a2016d` — `T18: add social share metadata and local release checks`
+- **Initial implementation commit:** `031b915f9e5eed7a1d5f0c37adaae167c6a2016d` — `T18: add social share metadata and local release checks`
 - **Changed files:** `index.html`, `assets/social/foothive-share-card.png`, and `HANDOFF.md`.
-- **Remote verification:** GitHub reported T17 at `f37a91f3a12d06efac0e2fe2c571537d0334e6b9` and T18 at `031b915f9e5eed7a1d5f0c37adaae167c6a2016d`. Current FootHive branch tracks the matching T18 remote tip and the working tree is clean.
+- **Operator evidence handoff commit:** `f31256f` — `T18: record Operator GA4 realtime evidence`.
+- **Remote verification:** GitHub reported T17 at `f37a91f3a12d06efac0e2fe2c571537d0334e6b9` and the final T18 tip at `f31256f`. Current FootHive branch tracks the matching T18 remote tip and the working tree is clean.
 
 ### T18 implementation and local verification
 
@@ -2266,10 +2267,18 @@ Created an original 1200×630 social card from the FootHive monogram, name, tagl
 
 The first Playwright MCP navigation to `http://localhost:4173/` returned `ERR_CONNECTION_REFUSED` because the preview server was not running. Started Python's built-in static HTTP server from the FootHive root on port 4173 and left it running. Playwright MCP then loaded the candidate. All tested local routes returned HTTP 200: `/`, stylesheet, both scripts, favicon, social card, both logos, and all seven product images. The social card loaded as 1200×630. The page retained seven cards and all local images loaded after lazy loading was triggered; no broken in-page anchors were found.
 
-Playwright MCP responsive checks at 320×780, 390×844, 768×1024, and 1440×900 found no horizontal overflow and a 1/1/2/3 product grid. It read the expected title, English language, description, canonical, OG/Twitter image URLs and alt text, and OG dimensions. A first local page load logged DNS failure for the Google tag; a subsequent network inspection returned HTTP 200 for `https://www.googletagmanager.com/gtag/js?id=G-8WM4JZKBNR`. This verifies script retrieval only; no form was submitted and no GA4 event receipt or analytics processing was asserted. `git diff --check` passed before each ticket commit. The site has no `package.json` or configured build step; verification was through the static HTTP preview and Playwright MCP.
+Playwright MCP responsive checks at 320×780, 390×844, 768×1024, and 1440×900 found no horizontal overflow and a 1/1/2/3 product grid. It read the expected title, English language, description, canonical, OG/Twitter image URLs and alt text, and OG dimensions. A first local page load logged DNS failure for the Google tag; a subsequent network inspection returned HTTP 200 for `https://www.googletagmanager.com/gtag/js?id=G-8WM4JZKBNR`. At that point the analytics collection event had not yet been checked. A later read of the Playwright network log found a POST to `google-analytics.com/g/collect` with `tid=G-8WM4JZKBNR` and `en=page_view`, answered with HTTP 204. This verifies browser transmission and an endpoint response, but not by itself that the event appeared in the GA4 property. No form was submitted and no form values were sent to GA4. `git diff --check` passed before each FootHive ticket commit. The site has no `package.json` or configured build step; verification was through the static HTTP preview and Playwright MCP.
 
 ### Deployment and open release gates
 
 No Netlify deployment or production URL check was performed. Based on the last recorded production observation, Netlify remains on the older T09 state; T18 did not independently recheck it. The T18 feature branch contains the stacked T13–T17 candidate but remains unmerged and undeployed. T19 integrated QA is still required. Final Shopify/Instagram URLs and the policy decisions listed in the audit remain open Operator inputs; this T18 pass does not claim final publication readiness. The share card's absolute public URL can only be confirmed against a public deployment after the approved final merge/deployment.
 
 **Brainbox report repository note:** This T18 entry is in the separate Brainbox report file. Other Brainbox files already had unrelated local modifications, so they were not included in either FootHive task commit.
+
+### Operator-supplied GA4 Realtime screenshot assessment — 1 October 2026
+
+The Operator supplied two screenshots of the **FOOTHIVE** property’s GA4 Realtime overview. The first visibly reports **3 views** for the FootHive page title and **3 `page_view` events**. Its event list also shows `scroll` 2, `session_start` 2, `user_engagement` 2, and `first_visit` 1. The second screenshot shows **4 active users in the last 30 minutes**, **0 in the last 5 minutes**, **3 direct users**, and **4 users in All Users**. The screenshots are Operator-provided evidence that page-view/activity data is appearing in the FootHive Realtime overview.
+
+This dashboard evidence is consistent with the separately observed Playwright `page_view` POST and HTTP 204 response. The screenshot totals do not identify whether any particular event came from the Codex QA browser; no individual event/session attribution was established. The screenshot images were provided inline in the conversation and were not copied into the repository.
+
+The Operator wants future work to identify a proper supported way to gather detailed GA4 Realtime Overview data and Google Forms response verification automatically. This is recorded as future investigation only; no API, access credential, reporting automation, or Google Forms integration was added in T18. The website remains within its current trial scope, and the Operator’s existing manual form-response confirmation remains the recorded form evidence.
