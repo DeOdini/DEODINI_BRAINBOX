@@ -2583,3 +2583,1697 @@ GROK AI AGENT
 Say **start T01** when you want build work to begin.
 
 
+
+
+
+
+
+
+
+
+
+PHASE FOOTHIVE BUILDING IMPLEMENTATION
+
+
+
+DE ODINI - OPERATOR
+
+READ ONLY, OBSERVATORY MODE, NO EXECUTION
+
+I WANT YOU TO GO THROUGH THE ENTIRE FOOTHIVE PROJ BRAINBOX FILE PATH AND CHECK FOR ALL THE RECENT ACTIVITIES AND REPORT BACK TO ME
+
+
+
+
+
+
+
+CHATGPT AI AGENT
+
+## Foothive Project Brainbox — Observational Audit
+
+I inspected the entire current path:
+
+`C:\Users\USER\DEODINI_BRAINBOX\AI_BRAINBOX\PROJ_WORKFLOW_AI_BRAINBOX\FOOTHIVE_PROJ_BRAINBOX\`
+
+**No files were created, edited, renamed, moved, deleted, or otherwise modified during this audit.** I remained in observation/read-only mode.
+
+### 1. Current folder structure
+
+The folder currently contains **45 files** across the root and asset subfolders:
+
+```text
+FOOTHIVE_PROJ_BRAINBOX/
+├── FH_MUST_README.md
+├── CONVO_FH_BRAINBOX.md
+├── PASSED_FH_BRAINBOX.md
+├── FAILED_FH_BRAINBOX.md
+├── BUILD_REPORT_FH_BRAINBOX.md
+│
+├── DIRECTION A & B IMAGES/
+│   ├── FZxXm (DIRECTION A).jpg
+│   └── 37n4T (DIRECTION B).jpg
+│
+├── FOOTHIVE LOGO + DARK MODE/
+│   ├── foothive-logo.svg
+│   └── foothive-logo-dark.svg
+│
+├── FOOTHIVE BOOTS IMAGES/
+│   ├── foothive-boot-images.md
+│   └── 9 PNG product images
+│
+├── FOOTHIVE CLASSIC SHOES IMAGES/
+│   ├── foothive-classic-images.md
+│   └── 9 PNG product images
+│
+├── FOOTHIVE SNEAKER IMAGES/
+│   ├── foothive-sneaker-images.md
+│   └── 4 PNG product images
+│
+└── FOOTHIVE TIMBERLAND IMAGES/
+    ├── foothive-timberland-images.md
+    └── 10 PNG product images
+```
+
+So the **45-file current inventory** reported by the README/failed-review is consistent with the recursive filesystem listing.
+
+---
+
+# 2. The main documentation state
+
+### `CONVO_FH_BRAINBOX.md`
+
+This is currently:
+
+* **2,585 lines**
+* ~104 KB
+* Last modified: **2026-09-27 22:50:55 UTC**
+* Contains the chronological trial conversation.
+* It runs from the decision to use a fresh FootHive project through:
+
+  * client role-play
+  * Upwork proposal
+  * PRD
+  * architecture
+  * security
+  * frontend/integration
+  * pre-ticket constants
+  * T01–T12
+  * design-direction planning
+  * product asset intake
+  * Direction A generation
+  * Direction B generation
+  * client selection of Direction B
+  * final pre-build handoff point.
+
+The conversation **does not document an executed website build**.
+
+The final recorded state is essentially:
+
+> Direction B selected → visual baseline locked → next action is T01.
+
+That distinction is important.
+
+---
+
+# 3. `FH_MUST_README.md`
+
+This is the current governing project README.
+
+It was last modified **2026-09-28 12:50:20 UTC** and is 81 lines.
+
+It explicitly states:
+
+* this is a **workflow trial**;
+* it is based on a real public Upwork brief;
+* the Operator role-played the client;
+* it is **not evidence of a paid client engagement**;
+* it is **not evidence of a completed website**;
+* PRD, architecture, security, frontend/integration, pre-ticket constants and T01–T12 have been confirmed;
+* **Direction B — Streetwear-adjacent** was selected;
+* implementation has **not started**.
+
+It also establishes the intended v1 architecture:
+
+* static HTML/CSS/JavaScript;
+* single page;
+* Netlify;
+* Shopify outbound commerce;
+* Google Form/Sheet for notification capture;
+* GA4;
+* no backend;
+* no database;
+* no authentication;
+* no cart;
+* no additional pages.
+
+### Important recent audit findings recorded there
+
+The README currently identifies **five open areas**:
+
+1. **Third-party branding in candidate product imagery**
+
+   * Timberland marks/packaging;
+   * Adidas stripes;
+   * third-party shop signage;
+   * watermark/overlay.
+
+2. **Broken relative paths in the four product catalogs**
+
+   * Catalogs reference directories such as `boot-images/`, `classic-images/`, etc.
+   * The actual PNG files currently sit beside the Markdown catalogs rather than inside those referenced child directories.
+
+3. **Direction B mockup contains elements outside the locked v1 scope**
+
+   * cart icon;
+   * prices;
+   * extra shop/category links;
+   * social icons;
+   * returns claims;
+   * other claims that are not established by the approved specification.
+
+4. **Historical asset-count discrepancy**
+
+   * earlier conversation: 42;
+   * current filesystem: 45.
+
+5. **Placeholder destinations remain**
+
+   * Pinterest URL was approved temporarily;
+   * final Shopify URL and Instagram handle were still outstanding.
+
+The README explicitly says these should be resolved before the relevant build work.
+
+---
+
+# 4. `PASSED_FH_BRAINBOX.md`
+
+This is a **134-line** evidence/decision record.
+
+It was last modified **2026-09-28 12:50:32 UTC**.
+
+The pass record covers the workflow **through design-direction approval only**.
+
+The documented passes include:
+
+### PRD
+
+Client confirmed PRD v0.1 as the working product contract.
+
+### Architecture
+
+Client approved:
+
+* static single-page Netlify architecture;
+* folder structure;
+* Shopify outbound-only model;
+* Google Form/Sheet notification flow;
+* temporary preview URLs;
+* no backend/auth/database.
+
+### Security
+
+Client approved:
+
+* no accounts;
+* Google Sheet notification storage;
+* genuine trust material only;
+* no private business data in static files;
+* Netlify/repository access for change control;
+* accepted low-volume form-spam risk without CAPTCHA.
+
+### Frontend/integration
+
+Client approved:
+
+* palette;
+* components;
+* section order;
+* 6–12 mixed products;
+* Shopify;
+* Google Form/Sheet;
+* GA4;
+* subtle motion;
+* no heavy libraries;
+* no Meta Pixel;
+* no cart in v1.
+
+### Pre-ticket constants
+
+Client approved:
+
+`header → hero → products → story → trust → notify → footer`
+
+along with:
+
+* user flows;
+* project tree;
+* sitemap;
+* T01–T12.
+
+### Design direction
+
+The client selected:
+
+**Direction B — Streetwear-adjacent energy**
+
+and specifically approved:
+
+* product corner tags;
+* correcting “Foote” to “FootHive”;
+* Direction B as the visual baseline.
+
+The pass file explicitly says these passes **do not mean the website was built, tested, deployed, or proven**.
+
+---
+
+# 5. `FAILED_FH_BRAINBOX.md`
+
+This is **92 lines**, last modified **2026-09-28 14:49:30 UTC**.
+
+It distinguishes between:
+
+* historical process failures;
+* current audit flags;
+* actual website-build failures.
+
+That distinction is important because **the website itself has not failed — it has not yet been built.**
+
+### Historical process issue
+
+The biggest workflow issue documented was:
+
+**Discovery and PRD intake became blurred.**
+
+The initial broad questionnaire gathered information that later became PRD material, producing a “pre-PRD → PRD” feeling.
+
+The agreed correction was:
+
+> light discovery → one workflow-specific PRD intake → developer synthesis → later confirmation only for genuine gaps/change requests.
+
+### Image-generation failure
+
+The design-direction generation experienced repeated output problems:
+
+* only one image returned when two were requested;
+* runaway/broken textual output while generation was happening;
+* operator had to interrupt;
+* retrying did not completely eliminate the problem.
+
+This remains recorded as an **unresolved tool reliability limitation**.
+
+### Asset-access transition
+
+Initially the agent reported that it had catalog information but not the actual product images.
+
+After the Operator supplied the catalog/image material, access became available.
+
+The file correctly preserves this as a timeline/state transition rather than pretending the images were available from the beginning.
+
+### Asset filename issue
+
+The Timberland catalog had inconsistent capitalization.
+
+It is now:
+
+`foothive-timberland-images.md`
+
+rather than the earlier casing.
+
+### Third-party imagery
+
+The failed/review record identifies specific files that should **not be used in the website without explicit Operator clearance**, including:
+
+* 8 Timberland-marked files;
+* `navy-tan-stripe.png` with Adidas stripes;
+* `winged-cross-studded-western-boot.png` with third-party signage;
+* `sunflower-embroidered-western-boot.png` with a `1/2` overlay.
+
+The original images themselves remain in the folder.
+
+### Other outstanding issues
+
+It also records:
+
+* broken catalog relative paths;
+* Direction B scope/content mismatch;
+* 42-vs-45 inventory discrepancy;
+* placeholder URLs.
+
+---
+
+# 6. `BUILD_REPORT_FH_BRAINBOX.md`
+
+This is currently:
+
+**0 bytes / 0 lines.**
+
+It has never been populated.
+
+That is consistent with the current project state: **there is no documented website build yet.**
+
+---
+
+# 7. Product asset libraries
+
+The four catalog files are all present.
+
+### Boots
+
+9 images.
+
+The catalog describes them as a clean/brand-neutral set, but the later visual audit contradicts that description for some images.
+
+This is an important internal inconsistency.
+
+### Classic shoes
+
+9 images.
+
+Catalog contains 9 product entries.
+
+### Sneakers
+
+4 images.
+
+Catalog contains 4 entries.
+
+Again, the catalog calls them brand-neutral, while the later audit specifically identifies:
+
+`navy-tan-stripe.png`
+
+as visibly carrying an Adidas three-stripe mark.
+
+### Timberland-style set
+
+10 images.
+
+The catalog has been normalized to:
+
+`foothive-timberland-images.md`
+
+but its description says the set has no third-party branding, while the later audit identifies visible Timberland branding in multiple files.
+
+So there is a clear **catalog-description vs visual-audit conflict** that must remain visible to future agents.
+
+---
+
+# 8. Logo and design-direction assets
+
+Two logo variants are present:
+
+* `foothive-logo.svg`
+* `foothive-logo-dark.svg`
+
+Two design-direction images are present:
+
+* `FZxXm (DIRECTION A).jpg`
+* `37n4T (DIRECTION B).jpg`
+
+The conversation maps them as:
+
+* **A:** Editorial / minimal premium
+* **B:** Streetwear-adjacent
+
+The client selected **B**.
+
+---
+
+# 9. Current workflow position
+
+The project is currently at:
+
+```text
+PRD                         ✅
+Architecture                ✅
+Security                    ✅
+Frontend / Integration      ✅
+Wireframe / flows / tree    ✅
+Sitemap                     ✅
+T01–T12 ticket definition  ✅
+Design Direction A          ✅
+Design Direction B          ✅
+Client direction selection  ✅
+Visual baseline locked      ✅
+
+T01 implementation          ⏳ NOT STARTED
+T02 implementation          ⏳ NOT STARTED
+T03–T12 implementation      ⏳ NOT STARTED
+Browser/device QA           ⏳ NOT STARTED
+Deployment                  ⏳ NOT STARTED
+Handoff verification        ⏳ NOT STARTED
+Build report                ⏳ EMPTY
+```
+
+So the **latest meaningful project milestone is design approval, not website implementation.**
+
+---
+
+# 10. Most important current conditions
+
+There are four things I would consider the major state markers from this observation:
+
+### A. The workflow trial has produced a substantial documented pre-build record.
+
+The 2,585-line conversation is the historical source.
+
+### B. The requirements/specification phase is considered confirmed.
+
+The PRD → architecture → security → frontend → constants → tickets chain has recorded client approval.
+
+### C. The visual baseline is locked.
+
+**Direction B — Streetwear-adjacent** is selected, with the two explicit tweaks:
+
+* retain product corner tags;
+* change “Foote” → “FootHive.”
+
+### D. Implementation has deliberately not begun.
+
+This is reinforced independently by:
+
+* `FH_MUST_README.md`;
+* `PASSED_FH_BRAINBOX.md`;
+* `FAILED_FH_BRAINBOX.md`;
+* empty `BUILD_REPORT_FH_BRAINBOX.md`;
+* the end of `CONVO_FH_BRAINBOX.md`.
+
+---
+
+## One notable chronology point
+
+The filesystem timestamps show that the project documentation was actively updated on **September 28, 2026**, particularly:
+
+* `FH_MUST_README.md` — 12:50 UTC
+* `PASSED_FH_BRAINBOX.md` — 12:50 UTC
+* `FAILED_FH_BRAINBOX.md` — 14:49 UTC
+
+while the conversation file itself was last modified September 27.
+
+That means the README/pass/failure records are **later audit/classification layers over the historical conversation**, rather than part of the original conversation itself.
+
+I found **no evidence in the inspected folder that a website build, source-code implementation, deployment, or build verification has subsequently occurred.**
+
+**Observation complete. No execution or modification performed.**
+
+
+
+
+
+
+
+GROK AI AGENT
+
+**Read-only observation report — `FOOTHIVE_PROJ_BRAINBOX`**
+
+**Path:**  
+`C:\Users\USER\DEODINI_BRAINBOX\AI_BRAINBOX\PROJ_WORKFLOW_AI_BRAINBOX\FOOTHIVE_PROJ_BRAINBOX\`  
+**Device:** DESKTOP-DHRIH27 · **Mode:** observation only · no changes made
+
+---
+
+### 1. Current tree (what exists now)
+
+```text
+FOOTHIVE_PROJ_BRAINBOX/
+├── FH_MUST_README.md
+├── CONVO_FH_BRAINBOX.md          (~2,585 lines — full trial transcript)
+├── PASSED_FH_BRAINBOX.md         (~134 lines)
+├── FAILED_FH_BRAINBOX.md         (~92 lines)
+├── BUILD_REPORT_FH_BRAINBOX.md   (empty — 0 bytes)
+│
+├── DIRECTION A & B IMAGES/
+│   ├── FZxXm (DIRECTION A).jpg
+│   └── 37n4T (DIRECTION B).jpg
+│
+├── FOOTHIVE LOGO + DARK MODE/
+│   ├── foothive-logo.svg
+│   └── foothive-logo-dark.svg
+│
+├── FOOTHIVE BOOTS IMAGES/        (9 images + catalog .md)
+├── FOOTHIVE CLASSIC SHOES IMAGES/(9 images + catalog .md)
+├── FOOTHIVE SNEAKER IMAGES/      (4 images + catalog .md)
+└── FOOTHIVE TIMBERLAND IMAGES/   (10 images + catalog .md)
+```
+
+---
+
+### 2. Recent activity (since folder creation)
+
+| Activity | Evidence |
+|----------|----------|
+| Full conversation replaced | `CONVO_FH_BRAINBOX.md` is now ~2,585 lines (not the short Grok draft). Tags use `DE O'DINI - OPERATOR` / `GROK AI AGENT` / `CLIENT`. |
+| Mandatory README written | `FH_MUST_README.md` — purpose, reading order, status, open flags. **Agent noted: Codex. Last reviewed: 2026-09-28.** |
+| Pass log filled | `PASSED_FH_BRAINBOX.md` — PRD lock, Architecture/Security/Frontend/Tickets approvals, Direction B choice, process correction on discovery vs PRD. |
+| Fail log filled | `FAILED_FH_BRAINBOX.md` — discovery/PRD blur, image-generation glitches, third-party marks on product images, catalog path mismatches, Direction B scope extras, placeholders. |
+| Build report still empty | `BUILD_REPORT_FH_BRAINBOX.md` = 0 bytes (correct: T01 not started). |
+| Assets organized into folders | Logo + dark, boots, classics, sneakers, timberland, direction A/B images. |
+| Timberland catalog rename | Filename casing normalized to `foothive-timberland-images.md` (noted in README). |
+
+---
+
+### 3. Project status (from the files)
+
+| Item | Status |
+|------|--------|
+| PRD → Architecture → Security → Frontend → T01–T12 | Confirmed in transcript |
+| Visual direction | **Direction B** locked (Streetwear-adjacent) |
+| Website build (T01+) | **Not started** |
+| BUILD report | Reserved / empty |
+
+---
+
+### 4. Open flags recorded in the audit (2026-09-28)
+
+1. **Third-party marks** on several Timberland-set images, Adidas stripes on one sneaker, shop background / watermark on some boot shots — conflict with “brand-neutral” catalog text; listed for exclude/replace/clearance before live use.  
+2. **Catalog relative paths** still point at subfolders that do not exist (images sit beside the `.md` files).  
+3. **Direction B mockup** includes cart icon, prices, extra nav/social, returns claims — beyond locked v1 scope; only corner tags + “FootHive” copyright were explicitly approved as tweaks.  
+4. **File count** older note 42 vs current recursive ~45.  
+5. **Pinterest URL** still the only approved placeholder for Shop / Instagram — not production destinations.
+
+---
+
+### 5. Summary
+
+Someone (README/pass/fail credit **Codex**, date **2026-09-28**) has fully populated the project documentation layer: long raw convo, formal README, pass/fail classification, asset folders, and direction images. **No website code exists yet.** The folder is ready for Operator review of open flags, then T01 when you authorize it.
+
+**Observation complete — no files modified.**
+
+
+
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+NOW BEFORE WE BEGIN, WITH THE TIMING DISCUSSED WITHIN THE CONVO, I WANT YOU TO EXTRACT IT AND DECIDE, BY THE TIME OF THE PROPOSAL APPROVALOR THE CONVO RECORDED WITHIN ITS FOLDER, WHAT DAY SHOULD WE BE IN, IN TERMS OF PROGRESS, AND ALSO IF OUR CURRENT STANCE OF THE WEBSITE MATCHES WHAT IS ON THE PLANNED DELIVERY SAID TIME.
+
+
+
+
+
+
+
+
+CHATGPT AI AGENT
+
+I extracted the timing references from the Foothive conversation and compared them against the **actual state recorded in the Foothive Brainbox**.
+
+## 1. The delivery timing actually stated in the proposal
+
+The proposal gave this schedule:
+
+| Phase                                       |      Planned duration |
+| ------------------------------------------- | --------------------: |
+| Discovery + structure + 2 design directions |  **1–2 working days** |
+| Client selection / feedback                 |     **1 working day** |
+| Core build — all sections, responsive       |  **3–5 working days** |
+| Revision + polish + cross-browser check     |  **1–2 working days** |
+| **Total**                                   | **6–10 working days** |
+
+The client subsequently said **6–10 days sounded reasonable**, while also asking about a possible compressed **5–6 day** rush option.
+
+The later PRD records the agreed baseline as **~6–10 working days**, with **~5–6 days** only as a possible rush compression, not the normal commitment.
+
+### Important timing qualification
+
+I do **not** find a clearly recorded, timestamped message saying something equivalent to *“I formally accept the proposal and work starts today.”*
+
+So I would **not invent a proposal-approval date**.
+
+The safest source-based anchor is the conversation/asset record beginning on **September 27, 2026**, and the current audit shows the project documentation continuing on **September 28, 2026**.
+
+---
+
+# 2. If September 27 is treated as Day 0 / approval point
+
+September 27, 2026 was a **Sunday**.
+
+Therefore the first working day would be:
+
+**Monday, September 28 = Working Day 1**
+
+The normal 6–10-working-day delivery window would then roughly be:
+
+* **Day 1:** Monday, Sept. 28
+* **Day 2:** Tuesday, Sept. 29
+* **Day 3:** Wednesday, Sept. 30
+* **Day 4:** Thursday, Oct. 1
+* **Day 5:** Friday, Oct. 2
+* **Day 6:** Monday, Oct. 5
+* **Day 7:** Tuesday, Oct. 6
+* **Day 8:** Wednesday, Oct. 7
+* **Day 9:** Thursday, Oct. 8
+* **Day 10:** Friday, Oct. 9
+
+So the planned normal delivery window would be approximately:
+
+**October 5–9, 2026**, depending on how the 6–10-day estimate was interpreted and when client feedback was actually supplied.
+
+---
+
+# 3. What should we be doing on September 28?
+
+This is the interesting part.
+
+If September 28 is **Working Day 1**, the proposal says we should be in the **Discovery + Structure + Design Direction** phase.
+
+But the actual Foothive workflow has already progressed substantially beyond that.
+
+The Brainbox records show that we have already completed:
+
+* Client discovery / requirements intake
+* PRD
+* Architecture
+* Security/access specification
+* Frontend & integration specification
+* Wireframe
+* User flows
+* Project tree
+* Sitemap
+* T01–T12 ticket definition
+* Direction A
+* Direction B
+* Client selection of **Direction B**
+* Visual baseline lock
+
+So, **in terms of the workflow itself, we are substantially ahead of what the proposal's Day 1 would require.**
+
+---
+
+# 4. But there is a major problem: the website itself
+
+This is where the timing comparison becomes important.
+
+The proposal does **not** describe the project as merely a documentation exercise.
+
+It promises a working website consisting of:
+
+* HTML/CSS/JS
+* responsive implementation
+* product showcase
+* hero
+* CTAs
+* story
+* trust section
+* notification form
+* footer
+* SEO foundation
+* responsive/mobile work
+* integrations
+* performance work
+* cross-browser checking
+* revision/polish
+* handoff
+* Netlify-ready delivery
+
+And the proposal explicitly describes:
+
+> **Core build: 3–5 days**
+
+But the current Foothive audit says:
+
+**T01 implementation: NOT STARTED**
+
+and:
+
+**T02–T12 implementation: NOT STARTED**
+
+There is also:
+
+* no website source-code implementation found,
+* no build execution,
+* no browser/device QA,
+* no deployment,
+* no handoff verification,
+* `BUILD_REPORT_FH_BRAINBOX.md` is still empty.
+
+---
+
+# 5. Therefore: does the current stance match the planned delivery time?
+
+**No — not if we judge progress against the proposal's actual delivery commitment.**
+
+There are two different progress tracks:
+
+### Workflow/documentation progress
+
+**Ahead of schedule.**
+
+We have moved through the planning and approval machinery very quickly.
+
+```text
+Discovery             ✅
+PRD                   ✅
+Architecture          ✅
+Security              ✅
+Frontend/integration  ✅
+Structure/constants   ✅
+Tickets               ✅
+Design directions     ✅
+Direction selected    ✅
+Visual baseline       ✅
+```
+
+### Actual website-delivery progress
+
+**Behind the proposal's intended execution trajectory.**
+
+```text
+Production website    ❌ Not started
+T01 implementation    ❌
+T02 implementation    ❌
+T03–T12               ❌
+QA                    ❌
+Deployment             ❌
+Handoff                ❌
+```
+
+That distinction is crucial.
+
+---
+
+# 6. What day of the planned project are we *effectively* at?
+
+If we use the proposal literally, I would characterize the current position as approximately:
+
+### **End of the pre-build/design-lock phase — around Working Day 2–3 equivalent**
+
+Not because three calendar days have necessarily elapsed, but because the **planned work represented by the first 2–3 working days has effectively been completed**:
+
+**Day 1–2**
+
+> Discovery + structure + two design directions
+
+**Day 3**
+
+> Client selection / feedback
+
+And we have actually gone further by formalizing the architecture, security, frontend specification and tickets before implementation.
+
+So the project is **planning-wise around the point where core implementation should be beginning**.
+
+---
+
+# 7. What should the project stance be now?
+
+If we are trying to honor the original **6–10 working-day delivery promise**, the logical position now is:
+
+> **The planning/approval gate is complete. Implementation should begin.**
+
+Specifically, the conversation already establishes:
+
+**T01 → T02 → T03 → T04 → T05 → T06 → T07 → T08 → T09 → T10 → T11 → T12**
+
+with T01/T02 as the initial structural shell and the approved Direction B controlling the visual implementation.
+
+So the project should **not** still be collecting requirements.
+
+It should **not** still be deciding architecture.
+
+It should **not** still be deciding the design direction.
+
+Those gates have already been crossed.
+
+---
+
+## Bottom line
+
+| Question                                                     | Finding                               |
+| ------------------------------------------------------------ | ------------------------------------- |
+| Planned normal delivery                                      | **6–10 working days**                 |
+| Rush option                                                  | **~5–6 days**, optional               |
+| Earliest reasonable working-day anchor                       | **Sept. 28, 2026**                    |
+| Current date in that model                                   | **Working Day 1**                     |
+| Planning/workflow progress                                   | **Already beyond Day 1**              |
+| Design approval                                              | **Complete**                          |
+| Tickets                                                      | **Complete**                          |
+| Website implementation                                       | **Not started**                       |
+| QA                                                           | **Not started**                       |
+| Deployment                                                   | **Not started**                       |
+| Does actual website state match planned delivery trajectory? | **No**                                |
+| Where should we effectively be?                              | **At the transition into core build** |
+| What should happen next under the agreed plan?               | **Begin T01 implementation**          |
+
+**The key finding is that the Brainbox is ahead in documentation but the deliverable itself has not entered the core-build portion of the promised 6–10-working-day schedule.**
+
+And one important caveat: because the conversation does **not explicitly timestamp a formal proposal acceptance**, I would record the September 28 “Day 1” calculation as a **timing model**, not as a verified contractual project-start date.
+
+
+
+
+
+
+
+
+
+
+GROK AI AGENT
+
+**Timeline extraction and day-position verdict**
+
+### What the convo actually said about time
+
+| Source | Statement |
+|--------|-----------|
+| **Proposal (developer)** | Timeline estimate in the **6–10 day** range for a hand-coded landing page (process: discovery → structure → two directions → ticketed build → verify). |
+| **Client (PRD lock)** | “6–10 days sounds reasonable.” Asked about a **~5–6 day rush** option “if realistic without hurting quality” — **no hard deadline**, “not desperate.” |
+| **Client (assets)** | Would send logo / images / contact / shop URL “within the next day or two” so work could move into architecture and design directions. |
+| **Client (later)** | No hard go-live date; sooner preferred; rush fee only if compressing to ~5–6 days. |
+| **Folder formalization** | `FH_MUST_README.md` last reviewed **2026-09-28**; build “has not started”; next action = T01. |
+
+There is **no calendar start date** written as “Day 1 = [date]” and **no fixed delivery date**. Time is only expressed as duration (6–10 normal / 5–6 rush optional).
+
+---
+
+### What day of progress we should be on
+
+Map the **planned sequence** onto a 6–10 day delivery (not wall-clock hours of chat):
+
+| Planned phase | Typical day band (6–10 day plan) | Trial status |
+|---------------|----------------------------------|--------------|
+| Discovery + proposal + PRD | **Day 1** | Done |
+| Architecture + security + frontend + tickets + design directions + client pick | **Day 1–2** (planning) | Done — Direction **B** locked |
+| T01–T12 build + checkpoints | **Day 2–8** (or 2–5 if rush) | **Not started** |
+| QA / polish / handoff | **Day 8–10** (or 5–6 if rush) | Not started |
+
+**Verdict on “what day we should be in”:**  
+We are at the **end of Day 2 planning / start of Day 3 build** relative to the proposal’s 6–10 day plan.
+
+That is: **all pre-build work that the proposal said comes before coding is complete**; the clock for “coding days” has not really started until T01 begins.
+
+---
+
+### Does current website stance match planned delivery timing?
+
+| Question | Answer |
+|----------|--------|
+| Sequence match? | **Yes.** Proposal order was: discovery → structure → **two directions → client chooses → then ticketed build**. Current stance = Direction B approved, **no code yet** → matches that plan. |
+| Calendar late vs 6–10 days? | **No**, for a trial with no hard go-live. Chat/docs land **2026-09-27 → 2026-09-28**. Build days have not been consumed. |
+| Behind a 5–6 day *rush*? | **Only if** you treat the whole trial as a real paid rush starting on proposal day. Then you would already want T01 underway. The client did **not** lock rush or a launch date. |
+| Website completeness vs “delivery day”? | **Matches plan, not a finished site.** Planned delivery = finished page after 6–10 (or 5–6) days of *build + QA*. Today = **spec + visual baseline only**, which is correct for “after design lock, before T01.” |
+
+---
+
+### Bottom line
+
+1. **Progress day:** treat this as **Day 2 complete / Day 3 = first build day (T01)** on the 6–10 day plan.  
+2. **Stance vs plan:** **Aligned** with the proposal: directions chosen first, then code. The site is not “late” relative to a 6–10 day *delivery* because implementation has not started and there is no hard go-live.  
+3. **If you start T01 now (28 Sep):** a normal finish sits roughly **early–mid October** (about 6–10 calendar days of focused build work from first code day), unless you explicitly choose the 5–6 day rush pace.
+
+Open items that still sit *outside* the day count but affect final delivery: real Shopify URL, Instagram handle, and Operator decisions on the open asset/scope flags in `FAILED_FH_BRAINBOX.md` / `FH_MUST_README.md`.
+
+
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+I WANT YOU TO EXTRACT THE T01 → T02  SO WE CAN PROCEED WITH THE BUILD. THE PLAN IS TO USE CODEX AND COPILOT, ALONGSIDE WITH CLINE AND CONTINUE WITHIN VSCODE TO CARRY OUT THE CODING, WHILE YOU CHATGPT AND GROK PROVIDES THE INSTRUCTION IN DETAILS FOR EACH TICKETS, THEN CLAUDE EVALUATES ALL BUILDS. 
+
+CHATGPT & GROK
+ELABORATE DETAILING OF EACH TICKET TASK 
+
+CODEX, COPILOT, CLINE & CONTINUE 
+VSCODE EXECUTION OF EACH TICKET TASKING
+
+CLAUDE
+EXECUTION CODE AND WEBSITE EVALUATOR
+
+OPERATOR
+AUTHORITY, I CAN DECIDE TO SWITCH AI AGENT MID WAY, FOR ANY UNFORESEEN OCCURANCES.
+
+
+
+
+
+
+
+
+
+
+
+
+GROK AI AGENT
+
+**T01 → T02 extracted for build**
+
+Roles acknowledged:
+
+| Role | Agents |
+|------|--------|
+| **Instruction (detail each ticket)** | ChatGPT & Grok |
+| **VS Code execution** | Codex, Copilot, Cline, Continue |
+| **Build / site evaluation** | Claude |
+| **Authority** | Operator (may switch agents mid-run) |
+
+Below is **Grok’s detailed instruction pack** for **T01** and **T02** only. Executors should follow this as the ticket contract. Claude evaluates after each ticket.
+
+**Locked baseline:** Direction **B** · palette `#1A1A1A` / `#D2691E` / `#8A8A8A` · static HTML/CSS/JS · Netlify · no cart · no backend · placeholders OK for Shop/Instagram until real URLs arrive.
+
+**Pre-build reminder (do not expand scope):** Open flags in `FAILED_FH_BRAINBOX.md` / `FH_MUST_README.md` (third-party image marks, catalog paths, Direction B extras beyond corner tags + FootHive spelling). T01–T02 are **structure only** — no product grid styling, no cart UI, no extra pages.
+
+---
+
+# T01 — Project shell & design tokens
+
+### Goal
+Create the empty project skeleton and global CSS tokens so every later ticket has a stable home. **No section visuals beyond a minimal blank shell.**
+
+### Deliverables (create these files)
+
+```text
+foothive-landing/                    (or repo root you choose — record path in BUILD_REPORT)
+├── index.html
+├── css/
+│   └── styles.css                   (tokens + base reset only in T01)
+├── js/
+│   └── main.js                      (empty or comment-only stub OK)
+├── assets/
+│   ├── logo/
+│   │   ├── foothive-logo.svg        (copy from FOOTHIVE LOGO + DARK MODE)
+│   │   └── foothive-logo-dark.svg   (optional for later)
+│   └── products/                    (empty folder for T04 images)
+└── HANDOFF.md                       (stub: “how to swap logo / products / links”)
+```
+
+### `index.html` requirements (T01)
+
+- Valid HTML5: `<!DOCTYPE html>`, `lang="en"`, viewport meta, charset UTF-8  
+- Title: `FootHive | Everyday footwear, built to last`  
+- Meta description (one line from PRD tone)  
+- Link `css/styles.css`  
+- Optional defer `js/main.js`  
+- Body structure **placeholders only** (empty or comment-marked regions):
+
+```html
+<header>…</header>
+<main>
+  <!-- hero -->
+  <!-- products -->
+  <!-- story -->
+  <!-- trust -->
+  <!-- notify -->
+</main>
+<footer>…</footer>
+```
+
+- Do **not** fill real copy, product cards, form UI, or Direction B chrome yet  
+- Logo: `<img>` or inline SVG pointing at `assets/logo/foothive-logo.svg` only if trivial; otherwise leave header empty until T02/T03  
+
+### `css/styles.css` requirements (T01)
+
+Define **tokens only** + light reset:
+
+```css
+:root {
+  --color-ink: #1A1A1A;
+  --color-accent: #D2691E;
+  --color-muted: #8A8A8A;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #FAFAF8; /* or near-white */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --radius: 0.25rem;
+  --max-width: 72rem;
+}
+```
+
+- Minimal reset: `box-sizing: border-box`, body margin 0, img `max-width: 100%`  
+- No full header/hero/product styles yet  
+
+### `js/main.js` (T01)
+
+- Empty file or single comment: `/* FootHive — interactions added in later tickets */`  
+- No form handlers yet  
+
+### `HANDOFF.md` (T01 stub)
+
+- Project name, stack (static HTML/CSS/JS), Netlify note  
+- Paths for logo and products folder  
+- Note: Shop URL and Instagram are placeholders until Operator provides finals  
+
+### Acceptance (Claude evaluates)
+
+- [ ] Tree matches architecture intent  
+- [ ] Tokens present and match locked palette  
+- [ ] `index.html` validates structure regions  
+- [ ] No cart, no prices, no extra routes  
+- [ ] Opens in browser without console errors  
+
+### Out of scope for T01
+
+Product grid, Direction B visual polish, notify form logic, GA4, real Shopify URL wiring beyond placeholder `href`.
+
+---
+
+# T02 — Global layout & responsive shell
+
+### Goal
+Turn the T01 skeleton into a **responsive page shell**: sticky/simple header, max-width main, footer band, mobile-first layout. Still **no** full product grid or story content (those are T03+).
+
+### Deliverables
+
+Update only:
+
+- `index.html` — real header / footer markup  
+- `css/styles.css` — layout, header, footer, container, basic responsive rules  
+
+### Header (Direction B–aligned, scope-safe)
+
+Include:
+
+- Logo (FootHive mark + wordmark treatment using existing SVG)  
+- Nav links (text only): `Products` · `Story` · `Notify` · `Shop`  
+  - In-page anchors: `#products` `#story` `#notify`  
+  - `Shop` → placeholder `https://pin.it/37MYm0GnG` (or `#` + comment if Operator prefers) until real Shopify URL  
+- **Do not implement a working cart.** If Direction B mockup showed a cart icon:  
+  - **Operator default for v1:** omit cart icon (architecture = no cart), **or** show non-interactive icon only if Operator explicitly insists — do not link to a cart page  
+
+### Main layout
+
+- `.container` max-width `var(--max-width)`, horizontal padding, centered  
+- Section wrappers with `id`s matching nav anchors  
+- Vertical rhythm using space tokens  
+- Mobile-first: single column; at ~768px+ allow header nav inline  
+
+### Footer (Direction B–aligned, scope-safe)
+
+- Dark band using `--color-ink` background, light text  
+- Logo small + tagline “BUILT TO LAST”  
+- Columns (text links only): Shop · Info · Stay connected  
+- Copyright: **`© 2026 FootHive. All rights reserved.`** (not “Foote”, not forced “2024”)  
+- Social: placeholder links only (same Pinterest URL or `#` until Instagram handle arrives)  
+- **No** inventing policy page routes as real multipage site — footer links may be `#` or external placeholders only  
+
+### CSS requirements (T02)
+
+- Header layout (flex/grid), logo size, nav spacing  
+- Footer dark theme  
+- Focus styles for links/buttons (accessibility)  
+- Prefer no heavy libraries  
+
+### Acceptance (Claude evaluates)
+
+- [ ] Mobile and desktop shell readable  
+- [ ] Nav anchors present  
+- [ ] Footer copyright says **FootHive**  
+- [ ] No cart checkout flow  
+- [ ] Tokens still used (no hard-coded random colors)  
+- [ ] Still no product cards content (empty `#products` region OK)  
+
+### Out of scope for T02
+
+Product cards + corner tags (T04), hero copy/CTAs polish (T03), notify form + Google Form action (T06/T07), GA4 (later ticket), image optimization batch.
+
+---
+
+## Agent handoff order (recommended)
+
+1. **Grok / ChatGPT** — this instruction (done for T01–T02).  
+2. **Operator** — confirms repo path + whether cart icon is omitted (recommended) or static-only.  
+3. **Codex / Copilot / Cline / Continue** — execute T01 in VS Code → stop → Claude evaluates → then T02 → Claude evaluates.  
+4. **Claude** — checklist above; record pass/fail in `BUILD_REPORT_FH_BRAINBOX.md` when Operator requests.  
+5. **Operator** — may reassign any agent mid-ticket.
+
+---
+
+## Suggested first message to VS Code agents (copy/paste)
+
+> Execute **T01 only** per Grok ticket instruction: create `foothive-landing/` tree, `index.html` region skeleton, `css/styles.css` tokens + reset, empty `js/main.js`, logo copy into `assets/logo/`, `HANDOFF.md` stub. Do not implement product grid, hero CTAs, form, or cart. When done, stop for Claude evaluation.
+
+---
+
+When T01 is accepted, send the same style of handoff for **T02 only**.
+
+Say if you want this written into `BUILD_REPORT_FH_BRAINBOX.md` or a `T01_T02_INSTRUCTIONS_FH_BRAINBOX.md` file under `FOOTHIVE_PROJ_BRAINBOX/` via RDC.
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+FOOTHIVE, THIS IS THE NAME OF A WEBSITE WE ARE ABOUT TO BUILD, IT IS A LANDING PAGE OF A FOOTWEAR WHO WANT TO SCALE MORE USING A LANDING PAGE TO DRAW MORE TRAFFIC TO THEIR LOCAL ONLINE OR PHYSICAL STORE.&#x20;
+
+I, DE O'DINI - OPERATOR HAVE BEEN BUILDING MY SKILLS IN BUILDING A WEBSITE AND HAVE IMPLEMENTED A STORAGE ZONE DEODINI BRAINBOX FOR ALL MY AI AGENT TO CURATE THEIR CAPACITY AND WORKLOAD OVER TIME, AND NOW A NEW WORKFLOW AS BEEN SAVED WITHIN MY STORAGE ZONE DEODINI BRAINBOX FOR TESTING, AND THIS FOOTHIVE IS A PERFECT START FOR THIS.
+
+SO BEFORE WE DIVE INTO ANYTHING, I WANT YOU TO READ THROUGH DEODINI BRAINBOX WITHOUT CARRYING OUT ANY EXECUTION OR REQUIREMENTS STATED WITHIN THE DOCUMENT, THIS IS FOR OBSERVATION PURPOSE AND FOR YOU TO BE UP TO DATE WITH ALL THERE IS WITHIN.&#x20;
+
+1ST, LOCATE THE FOLDER DEODINI\_BRAINBOX, AND FOLLOW THE READ DIRECTORY, WITHOUT EXECUTING ANY OF ITS COMMAND OR INSTRUCTIONS, SIMPLY READ ONLY, THIS SHOULD LAND YOU STRAIGHT TO EACH AI AGENT FILES, ONCE YOU ARE DONE WITH THAT READ DIRECTORY, REPORT BACK TO ME AND I WILL CONFIRM THE NEXT READ FOR YOU.
+
+
+
+
+
+
+
+
+
+CODEX VSCODE
+
+I’ve completed a read-only pass through the Brainbox entry path and the AI agent function files. I did not execute any commands or instructions found in the documents, and made no changes.
+
+The agent records reviewed were ChatGPT, Claude, Grok, Qwen, DeepSeek, Copilot, and Cline. Qwen’s and DeepSeek’s files are placeholders saying their reports have not yet been submitted.
+
+I’m ready for your confirmation on the next read.
+
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+HAVE YPU FULLY COMPREHEND THATA ENTIRE PHASE OF THE DOCUMENT AND WHY IT IS FUNCTIONAL AND NEEDED FOR YOUR UNDERSTANDING TO FOLLOW UP ON THE NEXT PHASE?
+
+
+
+
+
+
+
+CODEX VSCODE
+
+Yes, I understand the purpose of that phase: it documents the agents’ roles, capabilities, available connections, and limitations so the workflow can assign work realistically and maintain human oversight. It also records how agents are expected to coordinate, verify work, and preserve lessons for later builds.
+
+That context will help me understand the next phase. I’ve only read the entry path and function-area records so far; I haven’t read the project workflow or Foothive materials yet.
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+THE NEXT FILE PATH TO READ IS THIS FILES, IT IS THE CURRENT RAW WORKFLOW WE ARE TESTING, SO YOU NEED TO BE ACQUINTED WITH THIS FOR THE NEXT PHASE OF READ.
+
+AI\_BRAINBOX/PROJ\_WORKFLOW\_AI\_BRAINBOX/RAW\_WORKFLOW\_PROJ\_BRAINBOX/FULLSTACK\_RAW\_BRAINBOX
+
+
+
+
+
+
+
+
+CODEX VSCODE
+
+I’ve read the folder guide and both workflow documents, without carrying out their instructions or changing any files.
+
+I understand the distinction: the **raw workflow** supplies a discovery and planning framework, while the **preset workflow** adds assumed agent roles and a specific stack. Both are marked unproven. The workflow aims to define the product, architecture, security, interface and integrations before issuing bounded tickets; the preset also sets pre-ticket deliverables and requires an explicit build-order decision.
+
+I’m familiar with this phase and ready for your direction on the next read.
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+NOW YOU ARE TO READ THE MAIN FOOTHIVE DIRECTORY FILE TO FULLY GRASP WHAT IS TO BE BUILT AND THE CURRENT PROGRESS AND STAGE IT IS IN NOW. ONCE YOU ARE DONE READING DO CONFIRM TO ME WITH A REPORT
+
+AI\_BRAINBOX/PROJ\_WORKFLOW\_AI\_BRAINBOX/FOOTHIVE\_PROJ\_BRAINBOX
+
+
+
+
+
+CODEX VSCODE
+
+## Foothive read report
+
+I read the Foothive folder guide, conversation record, and pass/fail records. The build report is empty. I did not execute project instructions or change files.
+
+**What’s being built:** a responsive, single-page FootHive footwear landing page to direct visitors to the Shopify store and collect email interest. The confirmed v1 plan is hand-coded HTML, CSS, and JavaScript, hosted on Netlify, with Google Form/Sheet for signups and GA4 for analytics. It has no in-page cart, backend, database, authentication, or additional pages.
+
+**Where the workflow stands:** the PRD, architecture, security, frontend/integration specification, wireframes, user flows, project tree, sitemap, and tickets T01–T12 are recorded as confirmed. The client selected **Direction B — Streetwear-adjacent** as the visual baseline, with product corner tags and the corrected FootHive footer name. The conversation ends with T01 proposed as the next step, awaiting authorization. **No website implementation, QA, deployment, or handoff has begun.**
+
+**Recorded process lessons:** the first requirements round blurred discovery and PRD intake, creating a risk of duplicate questioning. The correction is to capture desired outcomes once in the PRD, then derive later documents and seek client confirmation rather than re-interviewing. Image generation also had output problems; usable direction images came from operator-supplied images after the initial attempts.
+
+**Open build flags:** the folder guide and failure log call for review before implementation: several product images show third-party branding or a watermark; catalog image links point to folders that do not match the current file layout; Direction B includes elements and claims that may exceed the approved scope; the current asset count differs from the transcript’s earlier count; and Pinterest remains a preview placeholder for the final Shopify and Instagram links. These are recorded as pre-build flags, not failures of an unbuilt site.
+
+Records reviewed: [FH_MUST_README.md](/C:/Users/USER/DEODINI_BRAINBOX/AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FH_MUST_README.md), [CONVO_FH_BRAINBOX.md](/C:/Users/USER/DEODINI_BRAINBOX/AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/CONVO_FH_BRAINBOX.md), [PASSED_FH_BRAINBOX.md](/C:/Users/USER/DEODINI_BRAINBOX/AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/PASSED_FH_BRAINBOX.md), and [FAILED_FH_BRAINBOX.md](/C:/Users/USER/DEODINI_BRAINBOX/AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FAILED_FH_BRAINBOX.md).
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+SOME FIXES AS ALREADY BEEN MADE BY CODEX IN ANOTHER CHAT SESSION... THE ONE THING YOU HAVE TO DO NOW IS CONFIRM THT DOES IMAGES FLAGGED WILL NOT BE USED.&#x20;
+
+I WANT TO PASS ON THIS TASK TO ANOTHER CODEX SESSION, SO WRITE A VIVID INSTRUCTION OF WHICH FOLDER/FILE DOES FLAGGED IMAGES ARE NESTED IN AND REFERENCES, THEN STATE THE IMAGES FOR FLAGGING AND THE EXACT FILE/FOLDER THIS RECORD OF IMAGES NOT TO USED WHEN BUILDING THE WEBSITE SHOULD BE NESTED, THEN I WILL PASS THAT INSTRUCTION TO ANOTHER SESSION TO HANDLE WHILE I GIVE YOU ANOTHER TASK.
+
+
+
+
+
+
+
+
+CODEX VSCODE
+
+Confirmed: **the flagged images are excluded from the FootHive website build**. They should not be selected for the mockup, product grid, or final site. Keep the original image files intact; record their exclusion so the build session can reliably avoid them.
+
+### Instruction for the next Codex session
+
+In `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/`, create a root-level record named:
+
+`FOOTHIVE_ASSET_EXCLUSIONS_BRAINBOX.md`
+
+Place it alongside `FH_MUST_README.md`, `CONVO_FH_BRAINBOX.md`, `PASSED_FH_BRAINBOX.md`, and `FAILED_FH_BRAINBOX.md`. This is the project-wide exclusion record, so it belongs at the Foothive project root rather than inside one product category folder.
+
+List these exact project-relative image paths as **excluded from all FootHive website use**:
+
+- `FOOTHIVE TIMBERLAND IMAGES/image02.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image04.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image05.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image08.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image13.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image15.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image16.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image19.png`
+- `FOOTHIVE SNEAKER IMAGES/navy-tan-stripe.png`
+- `FOOTHIVE BOOTS IMAGES/winged-cross-studded-western-boot.png`
+- `FOOTHIVE BOOTS IMAGES/sunflower-embroidered-western-boot.png`
+
+Record the reason for each group: visible Timberland marks, tags, or packaging; the Adidas three-stripe mark; third-party shop branding in the background; or the visible `1/2` overlay/watermark. State that the images must not be used unless the Operator later explicitly clears them. Preserve the source files and existing catalog contents. Do not revert other fixes already made in another session.
+
+When finished, report the new record’s path and confirm that all listed images are documented as excluded.
+
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+I JUST READ THROUGH YOUR INSTRUCTION AND FOUND A FLAG, IT SHOULD BE RECORDED WITHIN FAILED, SINCE IT IS STILL PART IF THE WHAT NOT TO DO FAILS, USING BRANDED ITEMS IF COPYRIGHTS ARE ON THEM, THIS LETS AI AGENT NOT TO SOURCE FOR SUCH ITEM IN THE FUTURE. SO RESTRUCTURE THE INSTRUCTION ONCE AGAIN, KEEPING ALL OTHER ASPECT THE SAME, JUST NOT A NEW FILE, USE FAILED FILE INSTEAD, AND WHEN WRITING STATE IT AS WHAT NOT TO DO.
+
+
+
+
+
+
+
+
+CODEX VSCODE
+
+### Instruction for the next Codex session
+
+Update the existing failure record at:
+
+`AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FAILED_FH_BRAINBOX.md`
+
+Do **not** create a new file. Add this as a **“What Not to Do” process failure**: do not source, select, or use product images showing third-party brands, logos, branded packaging, or watermarks for FootHive assets unless the Operator has explicitly cleared them. This records the issue as a lesson for future AI agents, so they avoid sourcing similar imagery on later projects.
+
+Record these exact project-relative image paths as excluded from the FootHive website build:
+
+- `FOOTHIVE TIMBERLAND IMAGES/image02.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image04.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image05.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image08.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image13.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image15.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image16.png`
+- `FOOTHIVE TIMBERLAND IMAGES/image19.png`
+- `FOOTHIVE SNEAKER IMAGES/navy-tan-stripe.png`
+- `FOOTHIVE BOOTS IMAGES/winged-cross-studded-western-boot.png`
+- `FOOTHIVE BOOTS IMAGES/sunflower-embroidered-western-boot.png`
+
+Include the relevant reasons: visible Timberland marks, tags, or packaging; the Adidas three-stripe mark; third-party shop branding in the background; and the visible `1/2` watermark. State that these images must not be used in mockups, the product grid, or the website unless the Operator explicitly clears them later.
+
+Keep the original image files and existing catalog contents intact. Do not revert other fixes already made in another session. When finished, report the updated failure-record path and confirm that every listed image is documented as excluded.
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+NOW I WANT YOU TO CONFIRM TO ME IF YOU HAVE ACCESS TO MY DE ODINI GIT HUB ACCOUNT AND ACCESS TO CREATE A NEW REPO? IF SO REPORT TO ME SO I CAN INSTRUCT YOU ON WHICH REPO TO OPEN... IF YOU CAN ALSO OPEN A NEW REPO FROM VSCODE, WE CAN TRY THAT. OR DO I ONLY GET TO CREATE A NEW REPO MANUALLY?
+
+
+
+
+
+
+
+CODEX VSCODE
+
+I confirmed that the GitHub connector is authenticated as **DeOdini**. So I can access that account’s repositories through the connector.
+
+I **can’t create a new repository directly with the available GitHub tools**: they support repository access and operations like creating branches and pull requests, but there’s no repository-creation tool. The `gh` CLI also isn’t available in this workspace.
+
+You can create the repository manually on GitHub. VS Code may also offer **Publish to GitHub** if its GitHub extension is signed into DeOdini; I can’t confirm that VS Code setup from here. Once the repo exists, tell me which one to open.
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+I WANT YOU TO CONFIRM THAT FOOTHIVE IS NOW THE CURRENT DIRECTORY FILE OF THIS WORKSPACE.
+
+
+
+
+CODEX VSCODE
+
+No. The workspace’s current directory is `C:\Users\USER\DEODINI_BRAINBOX`. Foothive is a subfolder at `AI_BRAINBOX\PROJ_WORKFLOW_AI_BRAINBOX\FOOTHIVE_PROJ_BRAINBOX`; it is not the workspace root.
+
+
+
+
+
+DE ODINI - OPERATOR
+
+CHECK FOR THE CURRENT RUNNING MAIN PROFILE IN VSCODE WORKSPACE
+
+
+
+
+CODEX VSCODE
+
+I can’t confirm the active VS Code profile or workspace from this session. The desktop inventory returned no apps, and Windows exposed 12 VS Code processes but no window titles; querying their launch arguments was denied.
+
+The **Codex workspace** I can confirm is still `C:\Users\USER\DEODINI_BRAINBOX`. I can’t verify whether VS Code is open to that folder, a Foothive folder, or which profile it’s using.
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+Yes. The desktop foreground-window check shows **“Welcome - FOOTHIVE - Visual Studio Code”**, owned by the `Code` process. FOOTHIVE is the active VS Code window, not just the terminal’s working directory.
+
+CONFIRM THIS BY USING RDC to query Windows for the foreground window’s title and owning process. It SHOULD return **“Welcome - FOOTHIVE - Visual Studio Code”** for the `Code` process, which confirmS VS Code was the active window.
+
+
+
+
+
+
+
+
+CODEX VSCODE
+
+Confirmed via RDC on `DESKTOP-DHRIH27`: the foreground window title is **“Welcome - FOOTHIVE - Visual Studio Code”**, and its owning process is **`Code`** (PID `20488`). VS Code is the active foreground window for the FOOTHIVE workspace.
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+DOES YOUR TERMINAL STILL SHOWS YOU DEODINI BRAINBOX?
+
+
+
+
+
+CODEX VSCODE
+
+Yes. My terminal workspace is still `C:\Users\USER\DEODINI_BRAINBOX`. The RDC check confirmed FOOTHIVE is the active VS Code window, but that does not change my terminal’s working directory.
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+THEN SWITCH TO THE CURRENT WORKSPACE
+
+
+
+
+
+
+CODEX VSCODE
+
+Switched my task working directory to:
+
+`C:\Users\USER\DEODINI_BRAINBOX\AI_BRAINBOX\PROJ_WORKFLOW_AI_BRAINBOX\FOOTHIVE_PROJ_BRAINBOX`
+
+I confirmed it exists and contains the Foothive project files. I’ll use this folder for the next task.
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+THAT IS NOT THE FILE PATH, NOTE THIS YOUR ERROR, IT WAS STATED WITHIN THE DEODINI WHY THE NAMING OF EACH FOLDER AND FILES ARE IN SUCH ORDER SO AS NOT TO MAKE USE OF A DIFFERENT FOLDER OR FILE THAT AS SIMILAR NAMES. THAT FILE PATH YOU BROUGH UP AS PROJ BRAINBOX, THAT SHOULD IMMEDIATELY SEND A NOTICE THAT THIS IS FOR BRAINBOX, NOT THE NEW REPO CREATED FROM GIT HUB. CITE THAT WHEN WE ARE MAKING A GENERAL REPORT FOR THE PROJECT.
+
+HERE IS THE FILE PATH, SWITCH TO IT `C:\Users\USER\FOOTHIVE`
+
+
+
+
+
+
+
+CODEX VSCODE
+
+Switched to the correct workspace: `C:\Users\USER\FOOTHIVE`. I verified the path exists; it contains a `.git` directory.
+
+I’ve noted my mistake for the general project report: I used the similarly named `FOOTHIVE_PROJ_BRAINBOX` records folder instead of the new GitHub repository workspace, despite the Brainbox naming structure distinguishing those purposes.
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+(FEED CODEX VSCODE, CHATGPT TIME EXTRACTION RESPONSE TO MY QUESTION)
+I WANT YOU TO READ THROUGH THIS AND CONFIRM YOU UNDERSTAND
+
+
+
+
+
+
+CODEX VSCODE
+
+I understand. The proposal estimated **6–10 working days** total, with **5–6 days** as an optional rush timeline. There’s no clearly timestamped formal acceptance/start date, so using **September 28, 2026, as Working Day 1** is only a planning model, not a verified project start date.
+
+The planning and approval work is complete: requirements, specifications, tickets, both design directions, and the client’s selection of Direction B are recorded. But the contracted website work is still unstarted: no T01 implementation, site code, QA, deployment, or handoff is recorded, and the build report is empty.
+
+So documentation is ahead, while delivery has not entered its core build phase. Under the agreed sequence, the project is at the transition to T01. I understand the timing concern and the caveat around its start-date assumption.
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+I WANT YOU TO CONFIRM TO ME THE CURRENT STATE OF FOOTHIVE
+
+
+
+
+
+
+CODEX VSCODE
+
+## Current FootHive state
+
+The **FOOTHIVE repository workspace** is `C:\Users\USER\FOOTHIVE`. I checked its files and Git status: it has **no commits yet**, no website source files, and only an untracked `.continue/` folder. So T01 implementation has not started in this repository.
+
+The Brainbox records show that planning is complete: the PRD, architecture, security and frontend specifications, pre-ticket deliverables, and T01–T12 tickets were approved. Direction B was selected as the visual baseline. But no build, QA, deployment, or handoff is recorded.
+
+In short: **planning and design approval are complete; the website itself has not been built.** The September 28 “Working Day 1” date from the timing note remains an assumed model, since there is no verified proposal-acceptance date.
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+I WANT YOU TO DELETE THE CONTINUE FOLDER THAT IS UNTRACKED. THEN WE CAN PROCEED TO BUILDING
+
+
+
+
+
+
+CODEX VSCODE
+
+Confirmed: the untracked `.continue` folder has been deleted from `C:\Users\USER\FOOTHIVE` and verified absent. No website files have been created yet.
+
+
+
+
+
+DE ODINI - OPERATOR
+
+(FEED CODEX VSCODE GROK T01-T02 EXTRACTION RESPONSE)
+OBSERVATION MODE, READ ONLY TO UNDERSTAND, NO EXECUTION
+
+
+
+
+
+
+CODEX VSCODE
+
+Understood. This handoff covers **T01, then T02**, and requires a stop for Claude’s evaluation after each ticket.
+
+- **T01** creates only the project skeleton, HTML section placeholders, palette/design tokens, stub JS, logo assets, and handoff stub. No finished visuals or feature UI.
+- **T02** adds the responsive header/footer shell and anchor navigation. It explicitly omits a working cart, real extra-page routes, product cards, and feature implementations.
+- Direction B and the locked palette guide the shell; the flagged images remain excluded.
+- The repository path must be confirmed before execution, and any build report update is separate and only if requested.
+
+I only read the handoff. I did not execute it or change files. I also noted it lists Continue as an execution agent, while the `.continue` folder was deleted at your request; I won’t assume Continue is available.
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+NOW I WANT YOU TO CREATE A BRANCH FOR FOOTHIVE, NAME THAT BRANCH WITH T01 Project shell & design tokens, WITH A FORWARD SLASH SO GITHUB CAN ACCESS IT. ONCE THAT BRANCH IS CREATED, SWITCH FROM MAIN TO THE BRANCH. REPORT BACK TO ME ONCE DONE.
+
+
+
+
+
+
+
+CODEX VSCODE
+
+Created and switched to **`t01/project-shell-design-tokens`**. Git confirms it is the active branch. It is local and has no commits yet; I have not pushed it to GitHub.
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+NOW CROSS CHECK EVERYTHING WITHIN THE T01 — Project shell & design tokens AND CONFIRM TOME IF THERE IS ANYTHING THAT IS REQUIRED FOR ME TO PROVIDE BEFORE BUILD? SUCH AS NETLIFY OR LINKS? FOR THE SHOPIFY, USE THE PINTEREST LINK, SAME WITH THE INSTAGRAM, INSTEAD OF SCAFFOLDERS.&#x20;
+
+CONFIRM TO ME, BEFORE I GIVE YOU THE GO AHEAD TO BUILD.
+
+
+
+
+
+
+CODEX VSCODE
+
+**T01 cross-check: nothing else is needed from you before the build.**
+
+- No Netlify account, credentials, domain, or deployment setup is needed for T01. Netlify deployment comes later.
+- T01 uses the supplied FootHive logo, already available in the Brainbox assets. It doesn’t require product images.
+- The current branch is `t01/project-shell-design-tokens`; I’ll build in the FOOTHIVE repository root at `C:\Users\USER\FOOTHIVE`.
+- The Pinterest link is already approved for both preview destinations: `https://pin.it/37MYm0GnG`. T01 doesn’t add those links yet; T02 can use that URL for both Shop and Instagram, without inventing an Instagram URL.
+- The flagged images will stay out of the build. T01 does not use them.
+
+I have not created any website files. When you give the go-ahead, I’m ready to start T01.
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+PROCEED WITH T01
+
+
+
+
+
+
+
+
+CODEX VSCODE
+
+**T01 is implemented** in `C:\Users\USER\FOOTHIVE` on branch `t01/project-shell-design-tokens`.
+
+Created the HTML placeholder shell, CSS tokens and minimal reset, comment-only JS stub, handoff file, logo copies, and empty products folder. I kept T01 structure-only: no product imagery, page visuals, cart, form, or extra routes. Both preview destinations are recorded as `https://pin.it/37MYm0GnG`.
+
+I recorded the repository root and T01 status in [BUILD_REPORT_FH_BRAINBOX.md](/C:/Users/USER/DEODINI_BRAINBOX/AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md). File and Git status were inspected; browser QA was not run. **T01 is pending Claude’s evaluation.** I have not started T02.
+
+
+
+
+
+
+
+
+DE ODINI - OPERATOR
+
+NOW STAGE THE BRANCH, CIMMIT IT, BUT DO NOT PUSH YET
+
+
+
+
+
+
+
+
+CODEX VSCODE
+
+Staged and committed the six T01 files on `t01/project-shell-design-tokens`.
+
+Commit: `522c876` — `T01: add project shell and design tokens`
+
+The working tree is clean. **Nothing was pushed.** The empty `assets/products/` folder remains local; Git does not track empty folders.
+
+
+
