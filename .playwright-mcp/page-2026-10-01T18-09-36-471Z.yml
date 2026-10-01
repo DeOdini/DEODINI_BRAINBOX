@@ -1,0 +1,221 @@
+- generic [ref=f12e1]:
+  - link "Skip to content" [ref=f12e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=f12e3]: Opens in a new tab.
+  - banner [ref=f12e4]:
+    - generic [ref=f12e5]:
+      - link "FootHive home" [ref=f12e6] [cursor=pointer]:
+        - /url: "#top"
+        - img "FootHive" [ref=f12e7]
+      - navigation "Main navigation" [ref=f12e8]:
+        - link "Products" [ref=f12e9] [cursor=pointer]:
+          - /url: "#products"
+        - link "Story" [ref=f12e10] [cursor=pointer]:
+          - /url: "#story"
+        - link "Notify" [ref=f12e11] [cursor=pointer]:
+          - /url: "#notify"
+        - link "Pinterest" [ref=f12e12] [cursor=pointer]:
+          - /url: https://pin.it/37MYm0GnG
+  - main [ref=f12e13]:
+    - region [ref=f12e14]:
+      - generic [ref=f12e15]:
+        - paragraph [ref=f12e16]: Made for the everyday
+        - heading [level=1] [ref=f12e18]:
+          - text: Everyday footwear,
+          - emphasis [ref=f12e19]: built to last.
+        - paragraph [ref=f12e20]: Durable. Dependable. Designed for wherever life takes you.
+        - generic [ref=f12e21]:
+          - link "Browse on Pinterest" [ref=f12e22] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - text: Browse on Pinterest
+            - generic [aria-hidden] [ref=f12e23]: ↗
+          - link "Get Notified" [ref=f12e24] [cursor=pointer]:
+            - /url: "#notify"
+            - text: Get Notified
+            - generic [aria-hidden] [ref=f12e25]: ↓
+        - paragraph [ref=f12e26]: Illustrative $75 shipping offer · workflow trial only
+      - generic [aria-hidden] [ref=f12e27]:
+        - generic [ref=f12e30]:
+          - generic [ref=f12e31]: FOOTHIVE
+          - generic [ref=f12e34]: EST. FOR EVERY DAY
+        - generic [ref=f12e35]: WALK YOUR WAY
+        - generic [ref=f12e36]: 01 / EVERYDAY
+    - region [ref=f12e37]:
+      - generic [ref=f12e38]:
+        - paragraph [ref=f12e39]: The lineup
+        - heading "Footwear, in every form." [level=2] [ref=f12e40]
+        - paragraph [ref=f12e41]: Boots, classic silhouettes and runners.
+      - generic [ref=f12e42]:
+        - article [ref=f12e43]:
+          - link "View Olive Canvas Buckle Boot reference on Pinterest" [ref=f12e44] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Pair of olive canvas boots with brown panels and buckle straps" [ref=f12e45]
+            - generic [ref=f12e46]: OLIVE
+          - generic [ref=f12e47]:
+            - paragraph [ref=f12e48]: Boots
+            - heading "Olive Canvas Buckle Boot" [level=3] [ref=f12e49]
+            - link "View on Pinterest" [ref=f12e50] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: View on Pinterest
+              - generic [aria-hidden] [ref=f12e51]: →
+        - article [ref=f12e52]:
+          - link "View Ivory Western Boot reference on Pinterest" [ref=f12e53] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Brown and ivory western boot with embroidered shaft detail" [ref=f12e54]
+            - generic [ref=f12e55]: IVORY
+          - generic [ref=f12e56]:
+            - paragraph [ref=f12e57]: Boots
+            - heading "Ivory Western Boot" [level=3] [ref=f12e58]
+            - link "View on Pinterest" [ref=f12e59] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: View on Pinterest
+              - generic [aria-hidden] [ref=f12e60]: →
+        - article [ref=f12e61]:
+          - link "View Crimson Triple-Buckle Boot reference on Pinterest" [ref=f12e62] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Pair of deep red boots with multiple buckle straps" [ref=f12e63]
+            - generic [ref=f12e64]: CRIMSON
+          - generic [ref=f12e65]:
+            - paragraph [ref=f12e66]: Boots
+            - heading "Crimson Triple-Buckle Boot" [level=3] [ref=f12e67]
+            - link "View on Pinterest" [ref=f12e68] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: View on Pinterest
+              - generic [aria-hidden] [ref=f12e69]: →
+        - article [ref=f12e70]:
+          - link "View Olive Suede Wingtip reference on Pinterest" [ref=f12e71] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Olive and brown wingtip brogue shoes" [ref=f12e72]
+            - generic [ref=f12e73]: OLIVE
+          - generic [ref=f12e74]:
+            - paragraph [ref=f12e75]: Classic
+            - heading "Olive Suede Wingtip" [level=3] [ref=f12e76]
+            - link "View on Pinterest" [ref=f12e77] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: View on Pinterest
+              - generic [aria-hidden] [ref=f12e78]: →
+        - article [ref=f12e79]:
+          - link "View Burnished Cognac Oxford reference on Pinterest" [ref=f12e80] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Burnished cognac oxford shoe with brogue detailing" [ref=f12e81]
+            - generic [ref=f12e82]: COGNAC
+          - generic [ref=f12e83]:
+            - paragraph [ref=f12e84]: Classic
+            - heading "Burnished Cognac Oxford" [level=3] [ref=f12e85]
+            - link "View on Pinterest" [ref=f12e86] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: View on Pinterest
+              - generic [aria-hidden] [ref=f12e87]: →
+        - article [ref=f12e88]:
+          - link "View Frost Knit Runner reference on Pinterest" [ref=f12e89] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "White knit runner with sculpted sole and red accents" [ref=f12e90]
+            - generic [ref=f12e91]: FROST
+          - generic [ref=f12e92]:
+            - paragraph [ref=f12e93]: Runners
+            - heading "Frost Knit Runner" [level=3] [ref=f12e94]
+            - link "View on Pinterest" [ref=f12e95] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: View on Pinterest
+              - generic [aria-hidden] [ref=f12e96]: →
+        - article [ref=f12e97]:
+          - link "View Talon Trail Runner reference on Pinterest" [ref=f12e98] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Trail runner with teal panels and a patterned toe" [ref=f12e99]
+            - generic [ref=f12e100]: TEAL
+          - generic [ref=f12e101]:
+            - paragraph [ref=f12e102]: Runners
+            - heading "Talon Trail Runner" [level=3] [ref=f12e103]
+            - link "View on Pinterest" [ref=f12e104] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: View on Pinterest
+              - generic [aria-hidden] [ref=f12e105]: →
+    - region [ref=f12e106]:
+      - generic [aria-hidden] [ref=f12e107]: FH / 01
+      - generic [ref=f12e108]:
+        - paragraph [ref=f12e109]: Our story
+        - heading [level=2] [ref=f12e110]:
+          - text: Built different.
+          - emphasis [ref=f12e111]: Made to last.
+        - generic [ref=f12e112]:
+          - paragraph [ref=f12e113]: FootHive is for the pairs that keep pace with real life. We look for character, comfort, and a point of view in every silhouette.
+          - paragraph [ref=f12e114]: From first step to last call, our lineup is made to be worn often and remembered for how it feels.
+        - link "See footwear on Pinterest" [ref=f12e115] [cursor=pointer]:
+          - /url: https://pin.it/37MYm0GnG
+          - text: See footwear on Pinterest
+          - generic [aria-hidden] [ref=f12e116]: ↗
+    - region [ref=f12e117]:
+      - generic [ref=f12e118]:
+        - paragraph [ref=f12e119]: The FootHive standard
+        - heading [level=2] [ref=f12e120]:
+          - text: Good pairs.
+          - emphasis [ref=f12e121]: Clear reasons.
+      - list [ref=f12e122]:
+        - listitem [ref=f12e123]:
+          - generic [aria-hidden] [ref=f12e124]: "01"
+          - 'heading "Example: free shipping over $75" [level=3] [ref=f12e125]'
+          - paragraph [ref=f12e126]: Sample copy for this workflow trial. No orders are placed or fulfilled here.
+        - listitem [ref=f12e127]:
+          - generic [aria-hidden] [ref=f12e128]: "02"
+          - heading "Made for the everyday" [level=3] [ref=f12e129]
+          - paragraph [ref=f12e130]: Footwear with a dependable point of view for daily wear.
+        - listitem [ref=f12e131]:
+          - generic [aria-hidden] [ref=f12e132]: "03"
+          - heading "Pinterest footwear reference" [level=3] [ref=f12e133]
+          - paragraph [ref=f12e134]: Pinterest is the footwear reference for this workflow trial; FootHive has no live store.
+          - link "View on Pinterest" [ref=f12e135] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - text: View on Pinterest
+            - generic [aria-hidden] [ref=f12e136]: ↗
+    - region [ref=f12e137]:
+      - generic [ref=f12e138]:
+        - paragraph [ref=f12e139]: Stay in the loop
+        - heading "Get drop alerts." [level=2] [ref=f12e140]
+        - paragraph [ref=f12e141]: Be first when new pairs arrive. One email, only when there is something worth stepping into.
+      - form "Get drop alerts." [ref=f12e142]:
+        - generic [ref=f12e143]: Email address
+        - generic [ref=f12e144]:
+          - textbox "Email address" [ref=f12e145]:
+            - /placeholder: you@example.com
+          - button "Notify me" [ref=f12e146] [cursor=pointer]:
+            - text: Notify me
+            - generic [aria-hidden] [ref=f12e147]: ↗
+        - paragraph [ref=f12e148]: Workflow trial form only. Do not submit a personal email address.
+        - status [ref=f12e149]
+        - iframe [aria-hidden] [ref=f12e150]
+  - contentinfo [ref=f12e151]:
+    - generic [ref=f12e152]:
+      - generic [ref=f12e153]:
+        - link "FootHive home" [ref=f12e154] [cursor=pointer]:
+          - /url: "#top"
+          - img "FootHive" [ref=f12e155]
+        - paragraph [ref=f12e156]: BUILT TO LAST
+      - navigation "Pinterest reference links" [ref=f12e157]:
+        - heading "Pinterest references" [level=2] [ref=f12e158]
+        - link "Browse Pinterest" [ref=f12e159] [cursor=pointer]:
+          - /url: https://pin.it/37MYm0GnG
+        - link "Featured footwear" [ref=f12e160] [cursor=pointer]:
+          - /url: "#products"
+      - navigation "Information links" [ref=f12e161]:
+        - heading "Info" [level=2] [ref=f12e162]
+        - link "Our story" [ref=f12e163] [cursor=pointer]:
+          - /url: "#story"
+        - button "Privacy notice" [ref=f12e164] [cursor=pointer]
+        - button "Shipping & returns · trial info" [ref=f12e165] [cursor=pointer]
+      - generic [ref=f12e166]:
+        - heading "Stay connected" [level=2] [ref=f12e167]
+        - link "deodinihq@yahoo.com" [ref=f12e168] [cursor=pointer]:
+          - /url: mailto:deodinihq@yahoo.com
+        - link "Pinterest footwear references" [ref=f12e169] [cursor=pointer]:
+          - /url: https://pin.it/37MYm0GnG
+      - paragraph [ref=f12e170]: A DEODINI workflow trial build · not a live footwear store.
+      - paragraph [ref=f12e171]: © 2026 FootHive. All rights reserved.
+  - dialog [ref=f12e185]:
+    - generic [ref=f12e186]:
+      - paragraph [ref=f12e187]: Store information
+      - heading "A footwear workflow trial" [level=2] [ref=f12e188]
+      - paragraph [ref=f12e189]: This page demonstrates a footwear landing page as part of the DEODINI Brainbox workflow trial. FootHive is not an operating shop, and this page does not accept orders or fulfill products.
+      - heading "Shipping and returns" [level=3] [ref=f12e190]
+      - paragraph [ref=f12e191]: The "free shipping over $75" line is illustrative sample copy only. No shipping offer, return policy, or commercial terms are active for this trial.
+      - paragraph [ref=f12e192]: Shop links lead to a Pinterest reference destination supplied for the trial; no FootHive Shopify store is connected.
+      - button "Close information" [active] [ref=f12e193] [cursor=pointer]

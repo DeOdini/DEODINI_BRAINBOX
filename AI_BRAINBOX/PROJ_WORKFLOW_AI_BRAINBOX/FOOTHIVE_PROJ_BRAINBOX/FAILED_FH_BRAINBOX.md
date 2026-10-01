@@ -90,3 +90,120 @@ Before the website phase starts, have the Operator resolve asset use and the moc
 
 **Revision note — 2026-09-28:** Full transcript reread plus local folder, catalog, logo, and image review. This file separates historical trial failures from audit findings made now. No website code or product images were changed.  
 **Agent:** Codex  
+
+
+---
+
+# **WEBSITE BUILD EXECUTION — Instruction failures**
+
+### 6. Grok ticket-role misassignment (T08 vs T09) — 2026-09-30
+
+**Agent:** Grok  
+**Source of truth ignored:** `CONVO_FH_BRAINBOX.md` Step 7 — Feature Ticket List (lines ~1893–2018), client-confirmed T01–T12.
+
+**What happened:** When asked to extract T05→T08, Grok invented ticket scopes from memory/sequence logic instead of reading the locked ticket list. Specifically:
+
+| Ticket | Official (CONVO locked) | Grok incorrectly issued |
+|--------|-------------------------|-------------------------|
+| **T08** | **GA4 hook** — analytics loader with placeholder Measurement ID | SEO, semantics & accessibility pass |
+| **T09** | **SEO, semantics, accessibility pass** | (treated as later / not issued as T08) |
+
+T05–T07 names (Story, Trust, Notify form) happened to align with the official list, but T08 was **swapped** with T09’s scope. That is a process fail: instructions must be extracted from evidence files, not reconstructed.
+
+**Impact:** Risk that Codex/Copilot implement SEO work under the T08 label and skip or mis-order GA4; evaluation checklists would not match the locked contract.
+
+**Correction:**
+1. Always open `CONVO_FH_BRAINBOX.md` Step 7 (or BUILD_REPORT / explicit ticket file) before writing ticket instructions.
+2. Official sequence remains: T01 → T02 → T03 → T04 → T05 → T06 → T07 → **T08 GA4** → **T09 SEO/a11y** → T10 Motion → T11 QA → T12 Handoff/deploy.
+3. Operator may require Grok to re-issue T05–T08 (and T09+) strictly from the CONVO wording.
+
+**Disposition:** Recorded as fail. Do not treat Grok’s 2026-09-29 T08 “SEO pass” instruction as authoritative.
+
+**Operator process note:** When instructing Grok, specify exact folder/file paths (e.g. `FOOTHIVE_PROJ_BRAINBOX/CONVO_FH_BRAINBOX.md` Step 7 ticket list) so extraction is bound to evidence.
+
+---
+
+**Revision note — 2026-09-30:** Fail #6 added by Grok after Operator flag; cross-checked against live CONVO Feature Ticket List.  
+**Agent:** Grok  
+
+---
+
+## 7. T08/T09 misassignment — expanded failure analysis and recovery record — 2026-09-30
+
+**Initial failure agent:** Grok  
+**Subsequent execution agents:** Copilot → Codex  
+**Independent evaluator:** ChatGPT  
+**Operator:** DE O'DINI
+
+### Relationship to Fail #6
+
+This entry does not replace Grok's Fail #6 above. Fail #6 is retained as Grok's original self-record of the instruction failure. This entry adds the downstream implementation evidence, independent diagnosis, Operator interpretation, and approved recovery design.
+
+### Failure chain
+
+1. The locked ticket list in `CONVO_FH_BRAINBOX.md` defines **T08 = GA4 hook** and **T09 = SEO, semantics, accessibility**.
+2. Grok issued T09's SEO/accessibility scope under the T08 identity instead of extracting the locked ticket verbatim.
+3. Copilot began work under that misassigned T08 scope. Copilot later exhausted its available chat tokens during the T08 execution.
+4. Codex took over from Copilot and continued the active branch/work rather than originating the ticket-role error.
+5. The resulting commit `f9c1033` contains useful SEO/semantics/accessibility work, but it does not implement the locked T08 GA4 requirements.
+
+### Independent ChatGPT diagnosis
+
+ChatGPT compared the implementation against the authoritative ticket definitions and found:
+
+| Locked T08 requirement | `f9c1033` result |
+|---|---|
+| GA4 loader | Absent |
+| Placeholder Measurement ID | Absent |
+| Loads once | Not implemented |
+| Page-view capability | Not implemented |
+| Single GA config location | Not implemented |
+| No form PII sent to GA | Not established through a GA implementation |
+| SEO/a11y refinements | Implemented, but these belong to T09 |
+
+Accordingly, ChatGPT classified the ticket identity as **T08 TICKET FAIL — T09 SCOPE IMPLEMENTED UNDER WRONG TICKET**, while explicitly distinguishing that from the quality/usefulness of the SEO implementation itself.
+
+### Why this is retained as a failure record
+
+The Operator determined that this is not a catastrophic build failure. It is a learning event consistent with the DEODINI practice of recording what failed, diagnosing it early, debugging it, and preserving the evidence. The workflow is intended to make later production defects easier to trace: a symptom can be mapped back through the ticket sequence to the stage responsible for the relevant behavior instead of requiring an undirected review of the entire website.
+
+The mistake is therefore retained because it demonstrates why authoritative ticket extraction, explicit handoffs, and ticket-level documentation matter.
+
+### Secondary process findings
+
+- Copilot did not leave a dedicated T06 HANDOFF entry; implementation evidence exists elsewhere, but handoff consistency was weaker than intended.
+- T07's real Google Form persistence remains an Operator end-to-end QA item. This is a verification gap, not the T08/T09 failure and does not block current progress by Operator decision.
+- The current T08/T09 correction must preserve the uncommitted `HANDOFF.md` section before branch switching.
+
+### Recovery decision — Option B
+
+Two corrections were considered:
+
+- **A:** keep SEO/a11y as T08 and redefine GA4 as T09.
+- **B:** restore the locked identities by treating the existing SEO/a11y work as T09 and implementing GA4 separately as T08.
+
+The Operator and ChatGPT selected **Option B** because it preserves the authoritative ticket sequence as a diagnostic contract.
+
+### Codex feasibility / execution report
+
+Codex confirmed that `f9c1033` is directly based on T07 commit `aff08ed`, so the SEO work can be preserved under `t09/seo-semantics-accessibility`. A clean `t08/ga4-hook` can be created from T07 without inheriting the SEO commit.
+
+Codex's safe sequence is:
+1. Preserve the uncommitted HANDOFF change and correct its T08 SEO label to T09.
+2. Rename the current SEO branch locally and remotely to `t09/seo-semantics-accessibility`.
+3. Retain `f9c1033` and its history.
+4. Create `t08/ga4-hook` from T07 (`aff08ed`).
+5. Implement the actual GA4 ticket.
+6. Merge/integrate deliberately in authoritative ticket order later.
+
+**Important:** At the time Codex supplied this procedure, Codex had made no branch or file changes. This failure record documents the planned correction, not its completion.
+
+### Prevention rule
+
+Before issuing or implementing any numbered ticket, read the authoritative ticket definition from the evidence file rather than reconstructing the scope from memory, prior agent wording, or sequence assumptions. A handoff may describe current work, but it does not silently override the locked ticket contract unless the Operator explicitly changes that contract.
+
+**Disposition:** Failure acknowledged early; useful implementation retained; corrective plan approved; original failure history preserved rather than erased.
+
+**Revision note — 2026-09-30 04:44 -05:00:** Added expanded T08/T09 failure chain, ChatGPT evaluation, Operator interpretation, and Codex Option B recovery design while retaining Grok's original Fail #6 unchanged.  
+**Agent:** ChatGPT  
+**Signed & Authorized by: DE O'DINI (OPERATOR)**
