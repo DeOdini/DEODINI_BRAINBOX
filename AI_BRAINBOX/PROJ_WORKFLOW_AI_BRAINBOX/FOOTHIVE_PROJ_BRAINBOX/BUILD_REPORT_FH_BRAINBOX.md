@@ -2283,37 +2283,56 @@ This dashboard evidence is consistent with the separately observed Playwright `p
 
 The Operator wants future work to identify a proper supported way to gather detailed GA4 Realtime Overview data and Google Forms response verification automatically. This is recorded as future investigation only; no API, access credential, reporting automation, or Google Forms integration was added in T18. The website remains within its current trial scope, and the Operatorâ€™s existing manual form-response confirmation remains the recorded form evidence.
 
-# T19 — Final integrated QA and publication candidate (1 October 2026)
+# T19 ï¿½ Final integrated QA and publication candidate (1 October 2026)
 
 **Branch:** `t19/final-integrated-qa`, created from T18 `f31256f` in `C:\Users\USER\FOOTHIVE`.
 **QA state:** Local integrated browser QA passed with one previously Operator-deferred favicon exception. No production deployment occurred during T19.
 
 ### Integrated verification
 
-- Playwright MCP checked Chromium at 320×780, 390×844, 768×1024, and 1440×900. No horizontal overflow; product grid columns were 1/1/2/3.
+- Playwright MCP checked Chromium at 320ï¿½780, 390ï¿½844, 768ï¿½1024, and 1440ï¿½900. No horizontal overflow; product grid columns were 1/1/2/3.
 - The complete page exposed header navigation, hero, seven products, story, trust section, trial disclosure, notify form, privacy and store-information dialogs, and footer. Product prices were absent; product images loaded and had alt text; internal anchors resolved.
 - Keyboard QA confirmed the first Tab reveals/focuses the skip link; Escape closes privacy and store-information dialogs and returns focus to the trigger. Invalid email input showed the inline error and caused no Google Forms submission. No valid form submission or personal email was used.
 - All 20 outbound links pointed only to the approved Pinterest URL, included `noopener noreferrer`, and announced new-tab behavior. The script audit initially misclassified same-origin absolute URLs as external; after correcting the audit to exclude the current origin, all 20 real external links passed and no other host was present. This was a QA harness correction, not a website defect.
-- Title, canonical, description, Open Graph/Twitter metadata, and the 1200×630 share image were checked. Root, CSS, JS, both logos, share image, and seven product images returned HTTP 200. The explicit `assets/logo/favicon.svg` is linked and available. Chromium also requested `/favicon.ico` and received 404. The Operator previously directed that this minor favicon item be deferred; it is recorded as an accepted exception, not silently reported as a clean network log.
+- Title, canonical, description, Open Graph/Twitter metadata, and the 1200ï¿½630 share image were checked. Root, CSS, JS, both logos, share image, and seven product images returned HTTP 200. The explicit `assets/logo/favicon.svg` is linked and available. Chromium also requested `/favicon.ico` and received 404. The Operator previously directed that this minor favicon item be deferred; it is recorded as an accepted exception, not silently reported as a clean network log.
 - GA4's `gtag.js` first showed a DNS failure, then loaded successfully with HTTP 200 on a clean reload. `google-analytics.com/g/collect` returned HTTP 204 for `page_view`. The form interaction emitted `form_start` with form-structure metadata, not an email value; it also returned 204. This confirms request-level collection during this local browser pass, not dashboard attribution for this visit. No claim was made that Google Forms was submitted or verified during T19.
 - This static HTML/CSS/JS repository has no package manifest or build command. There is no separate production build step. `git diff --check` passed, and the source worktree was clean before adding ticket documentation.
 - Tools: Playwright MCP Chromium snapshot, viewport resizing, keyboard interaction, network-request and console inspection; PowerShell/Git source checks; existing local HTTP preview at `http://127.0.0.1:4173/`. No Netlify deployment, formal WCAG/axe audit, screen-reader test, or non-Chromium browser test was performed.
 
-### T19 disposition and release boundary
+### T19 - Final integrated QA and publication candidate (1 October 2026)
 
-The integrated local candidate passes with the explicitly deferred `/favicon.ico` 404 documented above. T19 did not verify the public production revision or alter Netlify. The public release remains pending T20. T19 branch/documentation commit and push state will be recorded after those Git operations; do not infer commit, push, merge, or deployment from this QA entry.
+FootHive branch: t19/final-integrated-qa, based on T18 f31256f.
+Local integrated browser QA passed with the previously Operator-deferred implicit /favicon.ico 404 documented as a known exception. The explicit SVG favicon reference was present. No production deployment was performed during T19.
 
-# T20 — Final production deployment and post-deployment verification
+- Playwright MCP checked Chromium at 320x780, 390x844, 768x1024, and 1440x900. No horizontal overflow; product-grid columns were 1/1/2/3.
+- The page exposed navigation, hero, seven products, story, trust section, trial disclosure, notify form, privacy and store-information dialogs, and footer. Prices were omitted; product images loaded and had alt text; internal anchors resolved.
+- Keyboard QA confirmed first-Tab skip-link focus; Escape closed both dialogs and restored focus. Invalid email showed inline validation and made no Google Forms submission. No valid form submission or personal email was used in T19.
+- All 20 actual external links used the approved Pinterest URL, noopener noreferrer, and new-tab descriptions. A first audit incorrectly counted same-origin absolute URLs as external; the corrected origin-aware audit passed all 20 actual external links. This was a QA-script correction, not a product defect.
+- Title, canonical, description, Open Graph/Twitter data, and the 1200x630 share image were checked. Root, CSS, JS, both logos, share image, and seven product images returned HTTP 200.
+- A gtag.js DNS failure on the first request was followed by a clean reload that returned HTTP 200. GA4 page_view collection returned HTTP 204. form_start carried form-structure metadata only, no email field value, and returned HTTP 204.
+- The static HTML/CSS/JS site has no package manifest or production build command. git diff --check passed. No formal WCAG/axe audit, screen-reader test, or non-Chromium browser test was run.
 
-**Status:** Not started. T20 must follow T19 documentation/branch push. The Operator authorized the final production deployment in this task request. Preserve the one remaining Netlify publication for the release candidate, merge the approved accumulated ticket stack to `main`, and verify the actual deployed revision and public URL after Netlify finishes. Record both the release source commit and actual deployment/merge revision, public URL, deployment result, and post-deploy observations here. Do not claim T20 complete before checking the production page.
+T19 Git closeout: FootHive HANDOFF.md was the only staged file. Commit c71291fbb3f3ca4e29a980752b0d8d4355c92a5e (T19: record integrated release QA) was pushed to origin/t19/final-integrated-qa and confirmed by ls-remote. T19 is pushed, unmerged, and undeployed.
 
-**T19 Git closeout:** FootHive HANDOFF.md was staged as the sole path and committed on `t19/final-integrated-qa` as `c71291fbb3f3ca4e29a980752b0d8d4355c92a5e` (`T19: record integrated release QA`). Push to `origin/t19/final-integrated-qa` succeeded; `git ls-remote` confirmed the same commit SHA. T19 is pushed but unmerged and undeployed. The FootHive worktree was clean after push.
 # T20 - Final production deployment (1 October 2026)
 
-FootHive branch: t20/final-production-deployment, based on T19 c71291f.
-FootHive commit: c79e861f52fd90a77f468aad2bf657e2eb936a71 (T20: record final deployment process), pushed to origin.
-Release PR: #9, t20/final-production-deployment -> main. GitHub reports the PR mergeable. It carries the accumulated release candidate, 21 commits ahead of the recorded main tip before merge; the T20 branch adds the release documentation. Merge SHA shown in PR metadata before merge: 7dd2a1ac7f3a5ac1d33ed6ec20f08d3bcf51a80c (verify after merge).
+FootHive branch: t20/final-production-deployment.
+Initial release-record commit c79e861f52fd90a77f468aad2bf657e2eb936a71 was pushed. GitHub PR #9 was merged into main as 1916fc59a38bf84125e966e0f2008b4e78749653, which contains the T20 release head.
 
-The public URL was inspected before deployment with Playwright MCP. It showed the older page state: Shop navigation, the previous "$75 shipping" message, old footer labels and no visible T13 trial disclosure. Local T19 has the updated trial-facing copy and controls. A Git fetch first failed with a permission error for .git/FETCH_HEAD; an authorized retry succeeded, confirming origin/main 5b8bf0a3a79c155ef11c6371b0e30f9567cec50e is an ancestor and the release candidate is 21 commits ahead.
+Netlify Deploys API reports deployment 6abeab441468890009114676 as state ready, branch main, public=true, deploy_time=5 seconds, published_at=2026-10-01T18:49:47.720Z. Its commit_ref exactly equals the GitHub main merge commit 1916fc59a38bf84125e966e0f2008b4e78749653. Public URL: https://foothive.netlify.app/. No second production deploy was triggered.
 
-State at report update: PR #9 is open and mergeable. No merge or Netlify deployment is yet claimed. After merge, verify the public production URL, the deployed page content and responsive interactions, request the deployment revision from available Netlify evidence, and record its outcome. The Operator approved one disposable live Google Forms test response for T20; submit one only after the public release is available, then report exactly what the site and Google Forms confirm.
+### Production verification
+
+Playwright MCP checked the actual public URL after deployment. The page contains the T13 workflow-trial disclosures, privacy and shipping/returns dialog buttons, Pinterest labels, updated social metadata, and seven product cards. All nine page images loaded with alt text; no product prices or broken in-page anchors were found. The favicon SVG returned HTTP 200; the local preview's implicit /favicon.ico 404 did not recur on production.
+
+At 320x780, 390x844, 768x1024, and 1440x900 there was no horizontal overflow, product-grid columns were 1/1/2/3, and all four nav links remained visible. Both dialogs opened; Escape closed each and returned focus. All 20 external links use the approved Pinterest reference, target=_blank, rel=noopener noreferrer, and a new-tab description. Title, description, canonical, Open Graph/Twitter values, and share-image path match the release. A fresh production tab returned zero console errors and zero warnings.
+
+GA4 gtag.js returned HTTP 200; production page_view collection returned HTTP 204 for Measurement ID G-8WM4JZKBNR.
+
+### Public notification form test
+
+With the Operator's explicit approval, one disposable address t20-test@example.com was submitted once through the public form. The configured Google Forms formResponse request returned HTTP 200 and its hidden response page loaded. The site correctly displayed that it cannot verify whether Google stored the response. The browser cannot inspect Google's cross-origin response sheet; this report does not claim persisted-row confirmation pending the Operator's manual check. No personal address was used and no email value was sent to GA4.
+
+### T20 report Git state and limits
+
+The final T20 FootHive handoff verification was committed as 3115a4061f155092241136b2dd9d85d8e387e428 and pushed on t20/final-production-deployment after merge; main remains at the deployed commit and no second production deployment was triggered. The matching Brainbox report is committed and pushed on the Brainbox T20 report branch. This is Playwright MCP Chromium QA, not a formal accessibility audit or cross-browser certification.
