@@ -2247,4 +2247,29 @@ T17 records the ticket closure sequence: inspect task/base/status; implement and
 
 **Verification:** `git diff --check` passed after removing trailing Markdown whitespace. No website source/runtime code changed, so no site build or browser test was needed for T17. No Netlify deployment was performed. The public deployment remains the previously recorded T09 state pending the controlled release.
 
-**Documentation location/status:** The FootHive `HANDOFF.md` protocol is committed in the pushed T17 branch. This Brainbox Build Report is maintained in the separate `DEODINI_BRAINBOX` repository; its task entries are committed on corresponding documentation branches.
+**Documentation location/status:** The FootHive `HANDOFF.md` protocol is committed in the pushed T17 branch. The Brainbox Build Report was committed as `db95e02` on `t17/build-handoff-integrity` in the separate `DEODINI_BRAINBOX` repository; GitHub push completed.
+
+## T18 — Release Metadata, Production-State & Verification Cleanup — 1 October 2026
+
+**Status:** Implemented, locally verified, committed, and pushed to the FootHive feature branch. Not merged or deployed.
+
+- **Repository:** `C:\Users\USER\FOOTHIVE`
+- **Branch:** `t18/release-metadata-verification`
+- **Base:** T17 pushed commit `f37a91f3a12d06efac0e2fe2c571537d0334e6b9`
+- **Commit:** `031b915f9e5eed7a1d5f0c37adaae167c6a2016d` — `T18: add social share metadata and local release checks`
+- **Changed files:** `index.html`, `assets/social/foothive-share-card.png`, and `HANDOFF.md`.
+- **Remote verification:** GitHub reported T17 at `f37a91f3a12d06efac0e2fe2c571537d0334e6b9` and T18 at `031b915f9e5eed7a1d5f0c37adaae167c6a2016d`. Current FootHive branch tracks the matching T18 remote tip and the working tree is clean.
+
+### T18 implementation and local verification
+
+Created an original 1200×630 social card from the FootHive monogram, name, tagline, and approved brand colors. Added `og:image`, `og:image:alt`, `og:image:width`, `og:image:height`, `twitter:image`, and `twitter:image:alt`, pointing to the future public asset path `https://foothive.netlify.app/assets/social/foothive-share-card.png`. No selected/flagged product image or third-party branding was used.
+
+The first Playwright MCP navigation to `http://localhost:4173/` returned `ERR_CONNECTION_REFUSED` because the preview server was not running. Started Python's built-in static HTTP server from the FootHive root on port 4173 and left it running. Playwright MCP then loaded the candidate. All tested local routes returned HTTP 200: `/`, stylesheet, both scripts, favicon, social card, both logos, and all seven product images. The social card loaded as 1200×630. The page retained seven cards and all local images loaded after lazy loading was triggered; no broken in-page anchors were found.
+
+Playwright MCP responsive checks at 320×780, 390×844, 768×1024, and 1440×900 found no horizontal overflow and a 1/1/2/3 product grid. It read the expected title, English language, description, canonical, OG/Twitter image URLs and alt text, and OG dimensions. A first local page load logged DNS failure for the Google tag; a subsequent network inspection returned HTTP 200 for `https://www.googletagmanager.com/gtag/js?id=G-8WM4JZKBNR`. This verifies script retrieval only; no form was submitted and no GA4 event receipt or analytics processing was asserted. `git diff --check` passed before each ticket commit. The site has no `package.json` or configured build step; verification was through the static HTTP preview and Playwright MCP.
+
+### Deployment and open release gates
+
+No Netlify deployment or production URL check was performed. Based on the last recorded production observation, Netlify remains on the older T09 state; T18 did not independently recheck it. The T18 feature branch contains the stacked T13–T17 candidate but remains unmerged and undeployed. T19 integrated QA is still required. Final Shopify/Instagram URLs and the policy decisions listed in the audit remain open Operator inputs; this T18 pass does not claim final publication readiness. The share card's absolute public URL can only be confirmed against a public deployment after the approved final merge/deployment.
+
+**Brainbox report repository note:** This T18 entry is in the separate Brainbox report file. Other Brainbox files already had unrelated local modifications, so they were not included in either FootHive task commit.
