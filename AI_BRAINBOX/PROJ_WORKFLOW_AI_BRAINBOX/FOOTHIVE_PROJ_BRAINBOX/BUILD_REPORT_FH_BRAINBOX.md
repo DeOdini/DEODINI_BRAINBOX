@@ -2401,3 +2401,21 @@ The Operator reported an oversized Pinterest header control on mobile. Added a p
 Playwright CLI 0.1.22 drove Microsoft Edge/Chromium against a temporary Python static server at `http://127.0.0.1:4174/`. At 390×844, button height was 33.5 CSS px and header height 139.1 px; no horizontal overflow. The pre-fix 0.55rem padding was temporarily restored in-page to capture a controlled baseline of 38.3125 px; the “before simulated” screenshot is explicitly labeled as simulated rather than an earlier commit capture. At 320×780 all four nav links and the full Pinterest label remained visible with no overflow. At 768×1024 and 1440×900 the original 38.3125 px button height, 8.8 px vertical padding, and 96 px header remained; no overflow. Playwright opened the privacy dialog and confirmed its corrected GA4 wording, then closed it with Escape. The console had zero errors and zero warnings.
 
 The temporary server was stopped and port 4174 was confirmed closed. No form was submitted and no Netlify deployment was triggered. Evidence screenshots and Playwright session artifacts are stored in `EVIDENCE/T23-mobile-header/`.
+
+## T24 — Brainbox Repository Synchronization — 3 October 2026
+
+**Branch:** `t24/brainbox-repository-synchronization`, based on the pushed T23 record branch.
+
+### Pre-sync verification
+
+- Current branch: `t24/brainbox-repository-synchronization`, clean working tree, HEAD `29eaf97b7f333fdc6aecbb536c047c5f2a629ef4`.
+- Local `main`: `f7a630bcf6d558efc80070f41494205fcca284fd`.
+- Fetched `origin/main`: `c5f269212919ebdc246144e2d5ce3fe1fc6161d5`.
+- `main` was two commits behind, and its tip was an ancestor of `origin/main`; this allowed a fast-forward without overwriting local commits.
+- T21, T22, and T23 branches were each present on GitHub at the same commit as their local ticket tips. No ticket work was uncommitted or unpushed.
+
+### Sync operation and result
+
+Fetched `origin`, switched to local `main`, and advanced it with `git merge --ff-only origin/main`. Local `main` now equals `origin/main` at `c5f269212919ebdc246144e2d5ce3fe1fc6161d5`. Returned to the T24 branch; both branches have clean working trees. The T21–T24 corrective tickets remain on their pushed feature branches and were not merged into `main` as part of synchronization.
+
+No reset, force-push, deletion, overwrite, or discard operation was used. FootHive's repository is separate; its T21–T23 branches and main were independently preserved. T24 completes local/remote main synchronization while retaining the ticket branches for review.
