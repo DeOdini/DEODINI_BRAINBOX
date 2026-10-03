@@ -1,5 +1,13 @@
 # FootHive Project Trial — Mandatory Readme
 
+> **Current-state notice — 2026-10-03:** The status text below originated as a pre-build snapshot dated 2026-09-28. It is historical and is superseded by this notice and the dated corrective-cycle records. FootHive is implemented through T20, merged to the website repository's `main`, and published at `https://foothive.netlify.app/`. The project remains a static workflow trial: Pinterest is the approved temporary reference destination; there is no connected Shopify store or final Instagram destination. The T20 public form test returned HTTP 200, and the Operator subsequently confirmed that `t20-test@example.com` appears in Google Forms. The website's message that it cannot inspect Google's cross-origin response sheet remains an accurate description of the page's capability. The Operator reports clean manual testing in Firefox and Safari; this is not Codex automation or certification. One mobile header sizing concern for the Pinterest link is assigned to T23 for focused verification and correction. See `OPERATOR_ADDENDUM_FH_BRAINBOX.md`, `BUILD_REPORT_FH_BRAINBOX.md`, and the current website `HANDOFF.md`.
+
+**Current required reading order:** this README → `CONVO_FH_BRAINBOX.md` (historical source) → `PASSED_FH_BRAINBOX.md` → `FAILED_FH_BRAINBOX.md` plus its current disposition addendum → `OPERATOR_ADDENDUM_FH_BRAINBOX.md` → `BUILD_REPORT_FH_BRAINBOX.md` → website repository `HANDOFF.md` and source. The audit attachment is a historical assessment; the Operator addendum is the newer execution authority for its three expressly amended findings.
+
+---
+
+## Historical pre-build snapshot — 2026-09-28
+
 **Issued by:** De O'Dini (Operator)  
 **Applies to:** All agents working in `FOOTHIVE_PROJ_BRAINBOX/`  
 **Status:** Trial documentation; website build has not started  

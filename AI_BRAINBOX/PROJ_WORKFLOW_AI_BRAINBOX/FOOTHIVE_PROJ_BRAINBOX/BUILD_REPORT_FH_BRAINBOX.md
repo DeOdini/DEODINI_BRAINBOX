@@ -1708,7 +1708,8 @@ I would **not authorize final commercial publication yet** until these specific 
 1. Integrate the reviewed **T09-fix → T10 → T11 → T12 stack into `main`**.
 2. Replace all Pinterest Shop placeholders with actual Shopify destinations.
 3. Replace the fake-placeholder Instagram destination with the real Instagram profile.
-4. Provide a functional Privacy Policy appropriate to the actual email + analytics collection.5. Confirm/document how **“unsubscribe anytime”** is fulfilled.
+4. Provide a functional Privacy Policy appropriate to the actual email and analytics collection.
+5. Confirm/document how **“unsubscribe anytime”** is fulfilled.
 6. Resolve or intentionally finalize the Returns destination/policy.
 7. Obtain/document final T05 Story copy approval, or explicitly declare the existing copy approved.
 8. Reconfirm the $75 shipping offer against the live store policy.
@@ -2283,18 +2284,18 @@ This dashboard evidence is consistent with the separately observed Playwright `p
 
 The Operator wants future work to identify a proper supported way to gather detailed GA4 Realtime Overview data and Google Forms response verification automatically. This is recorded as future investigation only; no API, access credential, reporting automation, or Google Forms integration was added in T18. The website remains within its current trial scope, and the Operator’s existing manual form-response confirmation remains the recorded form evidence.
 
-# T19 � Final integrated QA and publication candidate (1 October 2026)
+# T19 — Final integrated QA and publication candidate (1 October 2026)
 
 **Branch:** `t19/final-integrated-qa`, created from T18 `f31256f` in `C:\Users\USER\FOOTHIVE`.
 **QA state:** Local integrated browser QA passed with one previously Operator-deferred favicon exception. No production deployment occurred during T19.
 
 ### Integrated verification
 
-- Playwright MCP checked Chromium at 320�780, 390�844, 768�1024, and 1440�900. No horizontal overflow; product grid columns were 1/1/2/3.
+- Playwright MCP checked Chromium at 320×780, 390×844, 768×1024, and 1440×900. No horizontal overflow; product grid columns were 1/1/2/3.
 - The complete page exposed header navigation, hero, seven products, story, trust section, trial disclosure, notify form, privacy and store-information dialogs, and footer. Product prices were absent; product images loaded and had alt text; internal anchors resolved.
 - Keyboard QA confirmed the first Tab reveals/focuses the skip link; Escape closes privacy and store-information dialogs and returns focus to the trigger. Invalid email input showed the inline error and caused no Google Forms submission. No valid form submission or personal email was used.
 - All 20 outbound links pointed only to the approved Pinterest URL, included `noopener noreferrer`, and announced new-tab behavior. The script audit initially misclassified same-origin absolute URLs as external; after correcting the audit to exclude the current origin, all 20 real external links passed and no other host was present. This was a QA harness correction, not a website defect.
-- Title, canonical, description, Open Graph/Twitter metadata, and the 1200�630 share image were checked. Root, CSS, JS, both logos, share image, and seven product images returned HTTP 200. The explicit `assets/logo/favicon.svg` is linked and available. Chromium also requested `/favicon.ico` and received 404. The Operator previously directed that this minor favicon item be deferred; it is recorded as an accepted exception, not silently reported as a clean network log.
+- Title, canonical, description, Open Graph/Twitter metadata, and the 1200×630 share image were checked. Root, CSS, JS, both logos, share image, and seven product images returned HTTP 200. The explicit `assets/logo/favicon.svg` is linked and available. Chromium also requested `/favicon.ico` and received 404. The Operator previously directed that this minor favicon item be deferred; it is recorded as an accepted exception, not silently reported as a clean network log.
 - GA4's `gtag.js` first showed a DNS failure, then loaded successfully with HTTP 200 on a clean reload. `google-analytics.com/g/collect` returned HTTP 204 for `page_view`. The form interaction emitted `form_start` with form-structure metadata, not an email value; it also returned 204. This confirms request-level collection during this local browser pass, not dashboard attribution for this visit. No claim was made that Google Forms was submitted or verified during T19.
 - This static HTML/CSS/JS repository has no package manifest or build command. There is no separate production build step. `git diff --check` passed, and the source worktree was clean before adding ticket documentation.
 - Tools: Playwright MCP Chromium snapshot, viewport resizing, keyboard interaction, network-request and console inspection; PowerShell/Git source checks; existing local HTTP preview at `http://127.0.0.1:4173/`. No Netlify deployment, formal WCAG/axe audit, screen-reader test, or non-Chromium browser test was performed.
@@ -2358,3 +2359,16 @@ The Operator requested verification that all FootHive branch work was committed,
 - The only remaining working-tree modification was three appended Google static-asset DNS failure lines in `.playwright-mcp/console-2026-10-01T18-51-20-395Z.log`. They were committed as `19776d5` on the Brainbox T20 records branch, pushed, and merged into Brainbox main as `f7a630b`; that main commit was also pushed. Authorship was `DeOdini <deodinihq@gmail.com>`.
 - Brainbox's own T17-T20 records branches were retained; the feature-branch deletion above applies to the FootHive repository.
 - Terminal operations now use the Brainbox directory. An initial request to open a new VS Code window was rejected. The Operator subsequently instructed Codex to stop the testing server: the verified Python HTTP server (PID 21408, port 4173) was terminated with Windows taskkill after PowerShell Stop-Process returned an internal error. A listener check confirmed port 4173 was no longer listening. The command to open Brainbox in the existing VS Code window (`code.cmd --reuse-window C:\Users\USER\DEODINI_BRAINBOX`) was then approved and completed successfully.
+
+## T21 — Brainbox / Handoff Documentation Reconciliation — 3 October 2026
+
+**Branch:** `t21/brainbox-handoff-reconciliation` (Brainbox corrective-cycle branch).
+**Scope:** Reconcile mandatory current-state guidance and distinguish prior dated findings from later Operator clarifications; retain the original audit and source history.
+
+- Added `OPERATOR_ADDENDUM_FH_BRAINBOX.md` to preserve the three Operator amendments: Firefox/Safari manual verification, the already confirmed T20 response row, and formal T24 synchronization scope.
+- Added a prominent 2026-10-03 current-state notice and corrected reading order to `FH_MUST_README.md`; its 2026-09-28 pre-build text remains labeled as a historical snapshot.
+- Added current dispositions to `FAILED_FH_BRAINBOX.md` without deleting prior failure records. The note clarifies T05 approval, later T07 success evidence, Pinterest trial destinations, Operator-confirmed T20 persistence, and the T23 mobile header follow-up.
+- Corrected the joined list items 4 and 5 in the older Build Report audit excerpt. Replaced all six actual U+FFFD corruption characters in that report with context-appropriate punctuation/symbols; the file remains valid UTF-8. Other dated findings were not rewritten.
+- The Operator-supplied Deep Audit remains the historical assessment. The Operator Addendum is the newer authority only on its three explicit amendments. T22, T23, and T24 work remains queued in the prescribed order.
+
+**Verification:** confirmed Brainbox was clean on `codex/brainbox-workflow-evidence-update` at `a81ff175`, with `origin/main` at `c5f2692` and local `main` at `f7a630b` (two commits behind, ancestor of remote main). Created this T21 branch from the pushed working branch, preserving its existing approval and evidence updates. After edits, inspected the staged diff and checked for remaining replacement characters and the joined-list defect before closeout.
