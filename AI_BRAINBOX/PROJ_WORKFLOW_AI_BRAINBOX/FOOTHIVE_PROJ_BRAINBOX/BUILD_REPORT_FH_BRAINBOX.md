@@ -2419,3 +2419,8 @@ The temporary server was stopped and port 4174 was confirmed closed. No form was
 Fetched `origin`, switched to local `main`, and advanced it with `git merge --ff-only origin/main`. Local `main` now equals `origin/main` at `c5f269212919ebdc246144e2d5ce3fe1fc6161d5`. Returned to the T24 branch; both branches have clean working trees. The T21–T24 corrective tickets remain on their pushed feature branches and were not merged into `main` as part of synchronization.
 
 No reset, force-push, deletion, overwrite, or discard operation was used. FootHive's repository is separate; its T21–T23 branches and main were independently preserved. T24 completes local/remote main synchronization while retaining the ticket branches for review.
+
+### Cross-repository final review
+
+- A final reread found 16 U+FFFD punctuation characters in the historical FootHive `HANDOFF.md`. They were repaired contextually without changing recorded facts and documented in the T23 handoff. Follow-up commit `284f0ef` was pushed to `t23/final-evidence-operator-reconciliation`; no runtime code changed.
+- A range-wide `git diff --check origin/main...HEAD` also reports the two trailing spaces on workflow headings at `001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md` lines 163 and 382. The Operator previously stated that this spacing is intentional for GitHub rendering. It was retained as directed and is not a T21–T24 correction.
