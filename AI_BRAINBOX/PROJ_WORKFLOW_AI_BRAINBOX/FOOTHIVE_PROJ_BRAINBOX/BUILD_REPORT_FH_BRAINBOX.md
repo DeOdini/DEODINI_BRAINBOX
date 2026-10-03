@@ -2394,13 +2394,13 @@ The Operator requested verification that all FootHive branch work was committed,
 
 ### Mobile Pinterest header adjustment
 
-The Operator reported an oversized Pinterest header control on mobile. Added a phone-only rule in FootHive `css/styles.css`, below the existing 48rem breakpoint: the control's vertical padding changes from 0.55rem to 0.4rem. The full visible and accessible “Pinterest” name remains. Tablet and desktop styling is unchanged.
+The Operator reported an oversized Pinterest header control on mobile. The first height-only adjustment reduced the control but still let it wrap at 320px. The focused follow-up tightened only phone-width nav column gap to 0.5rem and set the control padding to 0.4rem 0.5rem, below the existing 48rem breakpoint. The full visible and accessible “Pinterest” name now fits on the same row as the other three links at 320px. Tablet and desktop styling is unchanged.
 
 ### Local browser verification
 
-Playwright CLI 0.1.22 drove Microsoft Edge/Chromium against a temporary Python static server at `http://127.0.0.1:4174/`. At 390×844, button height was 33.5 CSS px and header height 139.1 px; no horizontal overflow. The pre-fix 0.55rem padding was temporarily restored in-page to capture a controlled baseline of 38.3125 px; the “before simulated” screenshot is explicitly labeled as simulated rather than an earlier commit capture. At 320×780 all four nav links and the full Pinterest label remained visible with no overflow. At 768×1024 and 1440×900 the original 38.3125 px button height, 8.8 px vertical padding, and 96 px header remained; no overflow. Playwright opened the privacy dialog and confirmed its corrected GA4 wording, then closed it with Escape. The console had zero errors and zero warnings.
+Playwright CLI 0.1.22 drove Microsoft Edge/Chromium against a temporary Python static server at `http://127.0.0.1:4174/`. At 390×844, button height was 33.5 CSS px (6.4 px vertical, 8 px horizontal padding) and header height 139.1 px; no horizontal overflow. At 320×780, the final view keeps all four links on one row and has no overflow; header height is 133 px. A controlled same-session baseline restored the previous 0.55rem 0.9rem button padding and 1.5rem nav gap: the button measured 38.3125 px and the 320px header measured 172.5 px, with Pinterest wrapping to a second row. The “before simulated” screenshot is labeled as simulated, not an earlier commit capture. At 768×1024 and 1440×900 the original 38.3125 px button height, 8.8 px vertical padding, and 96 px header remained; no overflow. Playwright opened the privacy dialog and confirmed its corrected GA4 wording, then closed it with Escape. The browser console had zero errors and zero warnings.
 
-The temporary server was stopped and port 4174 was confirmed closed. No form was submitted and no Netlify deployment was triggered. Evidence screenshots and Playwright session artifacts are stored in `EVIDENCE/T23-mobile-header/`.
+The temporary server was stopped and port 4174 was confirmed closed. No form was submitted and no Netlify deployment was triggered. Final screenshots include 320px and 390px simulated baselines, corrected 320px and 390px mobile views, and tablet/desktop views; Playwright session artifacts are stored in `EVIDENCE/T23-mobile-header/`.
 
 ## T24 — Brainbox Repository Synchronization — 3 October 2026
 
@@ -2423,4 +2423,5 @@ No reset, force-push, deletion, overwrite, or discard operation was used. FootHi
 ### Cross-repository final review
 
 - A final reread found 16 U+FFFD punctuation characters in the historical FootHive `HANDOFF.md`. They were repaired contextually without changing recorded facts and documented in the T23 handoff. Follow-up commit `284f0ef` was pushed to `t23/final-evidence-operator-reconciliation`; no runtime code changed.
+- The T23 mobile follow-up then tightened only phone-width nav spacing and horizontal button padding after the first 320px view still wrapped. Final Playwright evidence shows all four links on one row and header height 133px versus a same-session simulated prior-style 172.5px; tablet and desktop remain unchanged. Commit `5a7d9ec` is the verified current `origin/t23/final-evidence-operator-reconciliation` tip.
 - A range-wide `git diff --check origin/main...HEAD` also reports the two trailing spaces on workflow headings at `001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md` lines 163 and 382. The Operator previously stated that this spacing is intentional for GitHub rendering. It was retained as directed and is not a T21–T24 correction.
