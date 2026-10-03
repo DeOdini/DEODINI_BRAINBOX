@@ -2381,3 +2381,23 @@ The Operator requested verification that all FootHive branch work was committed,
 - Updated `HANDOFF.md` so its current GA4 description and historical T13 privacy explanation match the corrected notice. The earlier report that a `form_start` event was observed remains intact as historical evidence.
 - GA4 configuration, Measurement ID, and event code are unchanged. No form values were added to Analytics and no new integrations were introduced.
 - Local source verification confirmed the previous page-view-only sentence is gone and the new privacy sentence appears in the dialog. Browser verification is assigned to T23's integrated local verification pass; no Netlify deploy was performed.
+
+## T23 — Final Verification Evidence & Operator-Evidence Reconciliation — 3 October 2026
+
+**Branch:** `t23/final-evidence-operator-reconciliation` in Brainbox and FootHive.
+
+### Operator evidence reconciliation
+
+- The Operator confirmed the already-submitted T20 address `t20-test@example.com` appears in Google Forms and supplied screenshot evidence. T20's HTTP 200 formResponse and the page's cross-origin storage limitation remain accurately distinguished. The row is Operator-confirmed; no new test response was submitted.
+- The screenshot was not copied into the repository because the response list also exposes other people's email addresses. The Operator-supplied verification is recorded without reproducing those addresses.
+- The Operator reports successful manual Firefox and Safari checks. This remains Operator-performed manual verification, not Codex automation, formal cross-browser certification, WCAG certification, or screen-reader testing.
+
+### Mobile Pinterest header adjustment
+
+The Operator reported an oversized Pinterest header control on mobile. Added a phone-only rule in FootHive `css/styles.css`, below the existing 48rem breakpoint: the control's vertical padding changes from 0.55rem to 0.4rem. The full visible and accessible “Pinterest” name remains. Tablet and desktop styling is unchanged.
+
+### Local browser verification
+
+Playwright CLI 0.1.22 drove Microsoft Edge/Chromium against a temporary Python static server at `http://127.0.0.1:4174/`. At 390×844, button height was 33.5 CSS px and header height 139.1 px; no horizontal overflow. The pre-fix 0.55rem padding was temporarily restored in-page to capture a controlled baseline of 38.3125 px; the “before simulated” screenshot is explicitly labeled as simulated rather than an earlier commit capture. At 320×780 all four nav links and the full Pinterest label remained visible with no overflow. At 768×1024 and 1440×900 the original 38.3125 px button height, 8.8 px vertical padding, and 96 px header remained; no overflow. Playwright opened the privacy dialog and confirmed its corrected GA4 wording, then closed it with Escape. The console had zero errors and zero warnings.
+
+The temporary server was stopped and port 4174 was confirmed closed. No form was submitted and no Netlify deployment was triggered. Evidence screenshots and Playwright session artifacts are stored in `EVIDENCE/T23-mobile-header/`.
