@@ -207,3 +207,15 @@ Before issuing or implementing any numbered ticket, read the authoritative ticke
 **Revision note — 2026-09-30 04:44 -05:00:** Added expanded T08/T09 failure chain, ChatGPT evaluation, Operator interpretation, and Codex Option B recovery design while retaining Grok's original Fail #6 unchanged.  
 **Agent:** ChatGPT  
 **Signed & Authorized by: DE O'DINI (OPERATOR)**
+
+## Current dispositions — 2026-10-03
+
+These dispositions update present status while preserving the failure history above:
+
+- **T05 copy approval:** the Operator's later approval is recorded in the current project history; the old “pending” statements are historical and no longer open.
+- **T07 notification form:** successful Operator end-to-end submissions are documented in the later build records, including the exact field mapping. The older “persistence remains an Operator QA item” wording is historical and superseded by later confirmation.
+- **Pinterest / Shopify / Instagram:** Pinterest remains the explicitly approved temporary destination for this static workflow trial. No live Shopify store or final Instagram destination is connected; the old instruction to replace the preview links before a production-commerce launch does not authorize inventing either destination.
+- **T20 Google Forms row:** the Operator has confirmed `t20-test@example.com` appears in the response list and supplied screenshot evidence. No additional synthetic response is needed. See `OPERATOR_ADDENDUM_FH_BRAINBOX.md` and the T23 closeout entry.
+- **Mobile header:** the Operator's mobile observation that the Pinterest control appears too large is assigned to T23 for focused verification and minimal responsive correction.
+
+This is a current disposition note, not a rewrite of the dated failures above.
