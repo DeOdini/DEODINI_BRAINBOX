@@ -2372,3 +2372,12 @@ The Operator requested verification that all FootHive branch work was committed,
 - The Operator-supplied Deep Audit remains the historical assessment. The Operator Addendum is the newer authority only on its three explicit amendments. T22, T23, and T24 work remains queued in the prescribed order.
 
 **Verification:** confirmed Brainbox was clean on `codex/brainbox-workflow-evidence-update` at `a81ff175`, with `origin/main` at `c5f2692` and local `main` at `f7a630b` (two commits behind, ancestor of remote main). Created this T21 branch from the pushed working branch, preserving its existing approval and evidence updates. After edits, inspected the staged diff and checked for remaining replacement characters and the joined-list defect before closeout.
+
+## T22 — Analytics and Privacy Accuracy — 3 October 2026
+
+**Branch:** `t22/analytics-privacy-accuracy` in both Brainbox records and FootHive source repositories.
+
+- Updated the FootHive privacy dialog in `index.html`: GA4 records page views and may record standard or enhanced interaction events such as form-start metadata; FootHive does not intentionally send the notification-form email address or other form-field values to Analytics.
+- Updated `HANDOFF.md` so its current GA4 description and historical T13 privacy explanation match the corrected notice. The earlier report that a `form_start` event was observed remains intact as historical evidence.
+- GA4 configuration, Measurement ID, and event code are unchanged. No form values were added to Analytics and no new integrations were introduced.
+- Local source verification confirmed the previous page-view-only sentence is gone and the new privacy sentence appears in the dialog. Browser verification is assigned to T23's integrated local verification pass; no Netlify deploy was performed.
