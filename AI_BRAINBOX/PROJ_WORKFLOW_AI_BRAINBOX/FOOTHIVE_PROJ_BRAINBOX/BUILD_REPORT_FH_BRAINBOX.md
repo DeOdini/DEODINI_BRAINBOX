@@ -2336,3 +2336,25 @@ With the Operator's explicit approval, one disposable address t20-test@example.c
 ### T20 report Git state and limits
 
 The final T20 FootHive handoff verification was committed as 3115a4061f155092241136b2dd9d85d8e387e428 and pushed on t20/final-production-deployment after merge; main remains at the deployed commit and no second production deployment was triggered. The matching Brainbox report is committed and pushed on the Brainbox T20 report branch. This is Playwright MCP Chromium QA, not a formal accessibility audit or cross-browser certification.
+
+## Repository closeout and FootHive branch cleanup - 2 October 2026
+
+The Operator requested verification that all FootHive branch work was committed, pushed, and merged before deleting the feature branches, then a return to the separate DEODINI_BRAINBOX repository to publish remaining build records. The earlier ticket sections describe their state at the time; this entry records the subsequent Git closeout.
+
+### FootHive verification and deletion
+
+- Repository: `C:\Users\USER\FOOTHIVE`, remote `https://github.com/DeOdini/FOOTHIVE.git`.
+- After fetching GitHub refs, the working tree was clean. Each of the 16 local feature-branch tips exactly matched its remote tip, and `git merge-base --is-ancestor` confirmed each tip was contained in `main`.
+- All 16 branches were deleted from GitHub in one atomic push with an explicit expected-tip lease for each branch. The corresponding local branches were then removed with `git branch -d`.
+- Deleted branches: `t06/trust-section`, `t07/get-notified-form`, `t08/ga4-hook`, `t09/fix-header-height-qa-records`, `t09/seo-semantics-accessibility`, `t10/motion-polish`, `t11/cross-browser-responsive-qa`, `t12/handoff-deploy-readiness`, `t13/trial-disclosure-policy-placeholders`, `t14/form-hardening-t07-record`, `t15/external-links-trial-semantics`, `t16/accessibility-interaction-remediation`, `t17/build-handoff-integrity`, `t18/release-metadata-verification`, `t19/final-integrated-qa`, and `t20/final-production-deployment`.
+- A final fetch, local branch inventory, status check, and GitHub `ls-remote --heads` confirmed that only `main` remains, at `de648c8c591f7c50b148269dd56156731917543e`. The working tree was clean and local/GitHub main matched. Branch deletion preserved all commits through main.
+- The previously renamed `t08/seo-semantics-accessibility` branch was already absent. It was not merged during this cleanup.
+- No website source changes, new site tests, or Netlify deployment were performed during this Git cleanup.
+
+### Brainbox records and workspace
+
+- Records repository: `C:\Users\USER\DEODINI_BRAINBOX`, remote `https://github.com/DeOdini/DEODINI_BRAINBOX.git`. This is separate from the FootHive website repository.
+- The build reports and other FootHive records were already committed and pushed through Brainbox main `b4618d4cbe35a93360303f7b15df72178c72fad3` before this cleanup.
+- The only remaining working-tree modification was three appended Google static-asset DNS failure lines in `.playwright-mcp/console-2026-10-01T18-51-20-395Z.log`. They were committed as `19776d5` on the Brainbox T20 records branch, pushed, and merged into Brainbox main as `f7a630b`; that main commit was also pushed. Authorship was `DeOdini <deodinihq@gmail.com>`.
+- Brainbox's own T17-T20 records branches were retained; the feature-branch deletion above applies to the FootHive repository.
+- Terminal operations now use the Brainbox directory. An initial request to open a new VS Code window was rejected. The Operator subsequently instructed Codex to stop the testing server: the verified Python HTTP server (PID 21408, port 4173) was terminated with Windows taskkill after PowerShell Stop-Process returned an internal error. A listener check confirmed port 4173 was no longer listening. The command to open Brainbox in the existing VS Code window (`code.cmd --reuse-window C:\Users\USER\DEODINI_BRAINBOX`) was then approved and completed successfully.
