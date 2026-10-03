@@ -7,6 +7,10 @@
 
 ---
 
+
+
+
+
 ## 1. GENERAL EXPLANATION — WHY THIS WORKFLOW IS ESSENTIAL  
 *(Speaks primarily to the AI Agent and the Developer)*
 
@@ -85,6 +89,10 @@ Any change to stack must be treated as an architecture decision, not as a casual
 
 ---
 
+
+
+
+
 ## 2. CLIENT CLARIFICATION LAYER  
 ### Product Requirements Document (PRD)  
 *(Speaks first to the Client; delivered and structured by the Developer; consumed by the AI Agent)*
@@ -146,7 +154,13 @@ Structured PRD direction:
 
 The second version gives the AI agent a product to implement. The first version forces the AI agent to invent a product.
 
----## 3. STRUCTURING LAYER  
+---
+
+
+
+
+
+## 3. STRUCTURING LAYER  
 ### Technical Architecture Document  
 *(Client provides the desired outcome; Developer converts it into structure; AI Agent must follow that structure)*
 
@@ -198,6 +212,10 @@ How frontend, backend, and supporting services run in isolated containers so the
 When architecture is locked, ticket generation becomes safer. The AI agent is no longer asked, “What structure should this feature use?” It is asked, “Implement this feature inside the structure already chosen.” That is a much more reliable form of AI execution.
 
 ---
+
+
+
+
 
 ## 4. TRUST AND PROTECTION LAYER  
 ### Security and Access Control Specification  
@@ -267,6 +285,10 @@ If the backend and Supabase policies both deny that action, the system remains p
 Security is therefore not a visual task. It is a product trust task.
 
 ---
+
+
+
+
 
 ## 5. INTERFACE AND CONNECTION LAYER  
 ### Frontend and Integration Specification  
@@ -351,7 +373,13 @@ Rather than allowing the AI to invent a booking request, the integration spec sh
 
 With that contract in place, frontend, backend, validation, and error handling can all be generated against one stable definition.
 
----## 6. EXECUTION LAYER — THE MOST CRITICAL STAGE  
+---
+
+
+
+
+
+## 6. EXECUTION LAYER — THE MOST CRITICAL STAGE  
 ### Feature Ticket List  
 *(This is the stage that turns planning into controlled production)*
 
@@ -462,6 +490,10 @@ This ticket shows why acceptance criteria and dependencies matter. Without them,
 
 ---
 
+
+
+
+
 ## 7. FULL ROLE MAP — HOW THE WHOLE WORKFLOW APPLIES TO EACH PARTY
 
 ### Client
@@ -489,7 +521,13 @@ This ticket shows why acceptance criteria and dependencies matter. Without them,
 - Returns implementation that can be tested against acceptance criteria.
 - Supports later proof by making failures and successes attributable to specific tickets and rules.
 
----## 8. END-TO-END EXECUTION SEQUENCE FOR DEODINI BRAINBOX
+---
+
+
+
+
+
+## 8. END-TO-END EXECUTION SEQUENCE FOR DEODINI BRAINBOX
 
 1. Collect raw client requirements.  
 2. Developer issues structured clarification questions.  
@@ -505,6 +543,10 @@ This ticket shows why acceptance criteria and dependencies matter. Without them,
 12. Only after repeated success should this raw workflow be treated as proven.
 
 ---
+
+
+
+
 
 ## 9. OPERATING RULE FOR FUTURE READERS
 

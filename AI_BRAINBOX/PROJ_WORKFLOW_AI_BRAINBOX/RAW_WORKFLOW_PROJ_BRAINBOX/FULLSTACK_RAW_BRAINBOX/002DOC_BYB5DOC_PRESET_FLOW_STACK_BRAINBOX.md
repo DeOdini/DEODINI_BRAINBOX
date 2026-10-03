@@ -28,6 +28,11 @@ Nothing is discarded; it is only reclassified (DOB Master Rules).
 
 ---
 
+
+
+
+
+
 ## Part 1: General Explanation — Why This Workflow Is Essential
 
 **Speaks to:** AI Agent and Developer
@@ -95,6 +100,11 @@ Why this matters: without a declared stack, agents invent different frameworks, 
 
 ---
 
+
+
+
+
+
 ## Part 2: Product Requirements Document (PRD)
 
 **Derived From:** Client
@@ -153,6 +163,11 @@ Why essential: without this, each prompt can reinvent structure. With it, ticket
 
 ---
 
+
+
+
+
+
 ## Part 4: Security and Access Control Specification
 
 **Speaks to:** Client, Developer, AI Agent, Users
@@ -187,6 +202,11 @@ Why essential: AI-generated systems often authenticate successfully while author
 
 ---
 
+
+
+
+
+
 ## Part 5: Frontend and Integration Specification
 
 **Speaks to:** Developer and AI Agent
@@ -210,6 +230,11 @@ API endpoints, request/response shapes, auth headers, error handling, loading/em
 **Example:** `GET /api/listings` returns JSON array `{ id, title, price, imageUrl }`; on failure show error banner with retry; while loading show skeleton cards.
 
 ---
+
+
+
+
+
 
 ## Part 6: Feature Ticket List
 
@@ -250,6 +275,11 @@ Dependencies: auth complete; profiles schema; ownership rules documented.
 
 ---
 
+
+
+
+
+
 ## Part 7: Application to DEODINI_BRAINBOX Workflow
 
 **Speaks to:** AI Agent and Operator
@@ -267,6 +297,11 @@ Per-project blueprints are the **input**.
 Brainbox is the **cumulative memory**: agents search proven methods, review raw/failed context, adapt, and write results back. RAW stays non-binding until tested against DOB/FQ governance.
 
 ---
+
+
+
+
+
 
 ## Part 8: Proposed Execution Sequence *(superseded by Part 13 below)*
 
@@ -286,6 +321,11 @@ Brainbox is the **cumulative memory**: agents search proven methods, review raw/
 
 ---
 
+
+
+
+
+
 ## Part 9: Testing and Modification Notes (Parts 1–10)
 
 - Entry is **RAW**; not end-to-end proven
@@ -295,6 +335,11 @@ Brainbox is the **cumulative memory**: agents search proven methods, review raw/
 - Failure/partial → `FAILED_PATTERN_PROJ_BRAINBOX.md` with tags and reasons
 
 ---
+
+
+
+
+
 
 ## Part 10: Cross-References (Parts 1–10)
 
@@ -316,6 +361,11 @@ Brainbox is the **cumulative memory**: agents search proven methods, review raw/
 **Status:** RAW — Unverified. Pending testing, evaluation, and promotion to PROVEN status.
 
 ---
+
+
+
+
+
 
 ## Part 11: Build Order Approaches
 
@@ -391,6 +441,11 @@ The choice between approaches is not arbitrary. The following factors should gui
 **Decision rule:** The developer selects the approach during the blueprint phase, before ticketing. The chosen approach is recorded in the Technical Architecture Document and reflected in the Feature Ticket List dependencies.
 
 ---
+
+
+
+
+
 
 ## Part 12: Pre-Ticket Constants
 
@@ -495,6 +550,11 @@ If any of these items is missing, the developer must pause ticketing and complet
 
 ---
 
+
+
+
+
+
 ## Part 13: Updated Execution Sequence *(supersedes Part 8)*
 
 1. **Intake** — Task or client website requirement received.
@@ -512,6 +572,11 @@ If any of these items is missing, the developer must pause ticketing and complet
 
 ---
 
+
+
+
+
+
 ## Part 14: Testing and Modification Notes (Parts 11–15)
 
 - This addition is **RAW**. It has not been tested end-to-end.
@@ -524,6 +589,11 @@ If any of these items is missing, the developer must pause ticketing and complet
 - Failed or partially working variants should be recorded in `FAILED_PATTERN_PROJ_BRAINBOX.md` with project tags and failure reasons.
 
 ---
+
+
+
+
+
 
 ## Part 15: Cross-References (Parts 11–15)
 
@@ -540,3 +610,6 @@ If any of these items is missing, the developer must pause ticketing and complet
 ---
 
 **One structural note on the merge, flagged for your review specifically:** Part 8 (original execution sequence) and Part 13 (updated execution sequence) now both exist in this merged file, and they overlap in purpose. I marked Part 8 as "superseded" rather than deleting it, since removing content wasn't something you asked for — but you may want me to either delete Part 8 outright, or keep both for historical traceability. Let me know which, along with whether this merged version looks right to write to disk.
+
+
+Operator approval record — 2026-10-03: De O'Dini approved retaining Part 8 for historical continuity and Part 13 as the governing execution sequence, and approved the merged version being written to disk.
