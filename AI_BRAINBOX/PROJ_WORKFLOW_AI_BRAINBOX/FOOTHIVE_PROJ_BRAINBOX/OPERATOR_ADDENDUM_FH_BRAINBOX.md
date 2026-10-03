@@ -1,7 +1,7 @@
 # Operator Addendum — Deep Audit Corrective Cycle
 
-**Recorded:** 2026-10-03  
-**Operator:** De O'Dini  
+**Recorded:** 2026-10-03
+**Operator:** De O'Dini
 **Applies to:** The Operator-provided DEODINI Brainbox / FootHive Deep Audit and corrective tickets T21–T24.
 
 This record preserves the Operator's clarifications as a later evidence update. It does not replace or rewrite the original audit, which remains the historical primary findings document.
