@@ -3336,3 +3336,47 @@ These are a reproducible checkpoint for the primary P16 commit. This completion 
 ### Gate closeout
 
 All requested P16 corrections and archive integration are committed and remotely verified. The P16 final reconciliation found no new Phase 01 blocker. The historical archive whitespace caveat is explicitly preserved: the parent README, Specification, and new archive README passed targeted whitespace checks; full staged archive checks reported inherited Markdown hard-break whitespace and were not misreported as clean. The original two external polish source files and their empty folder were safely retired after confirming destination presence and exact source-directory contents.
+
+
+---
+
+# Operator-directed P16 closeout retouch after P02–P15 integration
+
+**Date:** 2026-10-07
+**Operator instruction:** “MERGE V003-P02, ALL THE WAT TO V003-P015, BEFORE YOU PROCEED WITH THE RETOUCH”
+
+## P02–P15 integration result
+
+Merged sequentially into GitHub `main` through PRs #2–#14:
+
+- P02 #2: `37873abed0881c6b755ac652a904b2292d06da8e`
+- P03 #3: `bd1e8059a383eecdbcba8fcccc0dd18f96e9ab9e`
+- P04 #4: `85c70087b3ba822bbd8a3057102a503591276b8f`
+- P05 #5: `68b011f4f22f9a77cef1df996f2d0e53d3a2fdf1`
+- P06 #6: `12ed7babe1766319abd5528e635ef1fd2efefd6e`
+- P07 #7: `63afe569b1082438f3bb0a4d4ab0d33f999b6aa0`
+- P08 #8: `7be9b511499d316625f46960d8ff7e59e4ec854a`
+- P09 #9: `295a2687101e1d8f373e6eb9392a935158e04fb6`
+- P10 #10: `8d13b2bf017c5000fa443b20b75bebf4e6745d58`
+- P11 #11: `859e4de108a1b253bcfe6bff58409bfdfc5edd5f`
+- P12 #12: `d6dc5ee0613c5167d9f3fbc3d7eb6918349e1c22`
+- P13 #13: `657297c229e4953517ea9b8acc0dc6c6e8b5bbbd`
+- P14 #14: `9242ba1aa99b7d181567670e5954badcb4e7422b`
+
+P01 is included as the ancestor of P02. No separate P15 remote branch or unique P15 commit existed; the local P15 branch pointed to P14. P16 remains separate and unmerged.
+
+## Closeout amendment / Operator-directed exception
+
+The independent verification found that the P16 full archive-inclusive `git diff --check` returns exit code 2 solely for inherited trailing spaces in transferred historical records. The Operator directed Codex to proceed with the retouch after the P02–P15 merge sequence. Applying the verifier's recommended closeout approach, this amendment explicitly treats those inherited Markdown hard-break spaces as exempt from the P16 whitespace pass condition. Historical text and formatting remain preserved.
+
+The following checks remain required and must pass:
+
+- targeted `git diff --check` for the changed V003 parent README and Specification;
+- targeted `git diff --check` for the newly authored Phase 01 archive README;
+- substantive P16 reconciliation, source-transfer, authority-boundary, and no-migration checks.
+
+The full archive-inclusive whitespace check remains recorded as **FAILED / WAIVED FOR INHERITED HISTORICAL WHITESPACE ONLY**; it is not relabeled as a pass. The waiver does not cover newly authored content, new whitespace defects, or any other P16 success-gate condition.
+
+This is the narrow closeout amendment requested after the P02–P15 integration. It preserves source history and makes the exception explicit under P14's flag-reporting discipline.
+
+**P16 retouch commit and push:** pending.

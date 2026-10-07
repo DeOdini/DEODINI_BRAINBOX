@@ -1627,3 +1627,13 @@ P16 is complete on branch `v003/p16-final-corrective-polish-integration-freeze`.
 - The full staged whitespace check reports inherited Markdown hard-break spaces in the historical archive records. The authority files and new archive README passed their targeted checks; the original historical text was preserved.
 - No merge or Phase 02 filesystem migration was performed. Phase 01 is frozen, and only individually scoped Phase 02 migration-ticket drafting is authorized.
 
+
+
+## DEODINI - OPERATOR
+
+MERGE V003-P02, ALL THE WAT TO V003-P015, BEFORE YOU PROCEED WITH THE RETOUCH
+
+## CODEX - execution record
+
+Before the P16 closeout retouch, P02 through P14 were merged sequentially to GitHub `main` through PRs #2–#14. P15 has no distinct remote branch or commit; its local branch pointed to the P14 commit. Therefore the P15-verified baseline is present on `main` through P14. P16 remains unmerged while its closeout retouch is documented.
+
