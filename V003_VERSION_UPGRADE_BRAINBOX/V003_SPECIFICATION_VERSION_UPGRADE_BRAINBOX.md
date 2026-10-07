@@ -228,15 +228,18 @@ Other locations:
 2. store only domain-specific application knowledge;
 3. do not silently fork the canonical explanation.
 
-Recommended metadata:
+Recommended reusable-record metadata:
 
-CANONICAL_SOURCE  
-REFERENCED_BY  
-REFERENCES  
-STATUS  
-LAST_VERIFIED  
-APPLIES_TO  
-OWNER / AUTHORITY where appropriate
+- `CANONICAL_SOURCE`
+- `REFERENCED_BY`
+- `REFERENCES`
+- `STATUS`
+- `LAST_VERIFIED`
+- `APPLIES_TO`
+- `SOURCE_TYPE`
+- `VERIFIER`
+
+Select the appropriate subset and template for the record type. These fields are a shared metadata vocabulary, not a requirement to add every field mechanically to every small file. A record's type and purpose determine which fields are useful; governance authority remains represented through the applicable parent/record authority fields where that record type calls for them.
 
 ### Example: Python
 
@@ -1081,20 +1084,23 @@ GUARDRAIL
 
 ### Guardrail prompts
 
-Guardrail knowledge should cover, where applicable:
+Guardrail knowledge should operationalize the following domains, as applicable to the task:
 
-- read-only restrictions;
-- no unauthorized changes;
-- no unauthorized deployments;
-- evidence requirements;
-- scope limits;
-- destructive operations;
-- secrets/PII;
-- branch discipline;
-- verification requirements;
-- historical preservation.
+- `READ_ONLY` — observe and report without modifying files, services, or external state.
+- `NO_UNAUTHORIZED_MODIFICATION` — make changes only within the user's authorized scope.
+- `NO_UNAUTHORIZED_DEPLOYMENT` — do not publish, release, or deploy without authority.
+- `SCOPE_ENFORCEMENT` — keep work within the approved ticket and flag out-of-scope findings.
+- `FLAG_BEFORE_FIX` — report material defects or ambiguities and obtain direction where required before correcting them.
+- `DESTRUCTIVE_OPERATION_GATE` — identify and gate deletion, overwrite, reset, migration, or other destructive actions.
+- `SECRETS_PII_CONTROL` — protect credentials and personal or sensitive information from exposure.
+- `BRANCH_REPOSITORY_DISCIPLINE` — use the intended repository and branch; preserve unrelated work and follow staging/commit/push boundaries.
+- `EVIDENCE_REQUIREMENT` — retain or cite evidence needed to support implementation and status claims.
+- `VERIFICATION_REQUIREMENT` — verify the result with suitable checks and distinguish local, remote, deployed, and operator verification.
+- `HISTORICAL_PRESERVATION` — preserve prior records and clearly label later corrections or superseding evidence.
+- `ORIGINAL_CONVERSATION_CROSSCHECK` — check the source conversation when interpreting approvals, decisions, or disputed wording.
+- `STOP_ON_AMBIGUITY` — pause dependent work when authority, target, scope, or intended outcome cannot be determined safely.
 
-Governance remains authoritative. Guardrail prompts operationalize those rules for AI behavior.
+Governance is the authoritative source of policy and decision rights. Guardrail prompts under Skills translate applicable Governance rules into task-time instructions; they do not create competing authority or override Governance. Each guardrail record should reference its canonical Governance source and identify the tasks or agents to which it applies.
 
 ---
 
