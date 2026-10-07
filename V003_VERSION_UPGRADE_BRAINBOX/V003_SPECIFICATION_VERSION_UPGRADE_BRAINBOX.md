@@ -314,13 +314,13 @@ DEODINI_BRAINBOX/
 │   │   │   ├── DEEPSEEK_CORE_FUNC_BRAINBOX.md
 │   │   │   ├── GROK_CORE_FUNC_BRAINBOX.md
 │   │   │   └── QWEN_CORE_FUNC_BRAINBOX.md
-│   │   └── AGENT_FUNCTIONS_FUNC_AI_BRAINBOX/
-│   │       ├── README_AGENT_FUNCTIONS_FUNC_AI_BRAINBOX.md
-│   │       ├── RESEARCH_FUNC_AI_BRAINBOX/
-│   │       ├── BROWSER_FUNC_AI_BRAINBOX/
-│   │       ├── FILE_FUNC_AI_BRAINBOX/
-│   │       ├── CODE_FUNC_AI_BRAINBOX/
-│   │       └── MEDIA_FUNC_AI_BRAINBOX/
+│   │   └── AI_AGENTS_EXE_FUNC_BRAINBOX/
+│   │       ├── README_AI_AGENTS_EXE_FUNC_BRAINBOX.md
+│   │       ├── RESEARCH_EXE_FUNC_BRAINBOX/
+│   │       ├── BROWSER_EXE_FUNC_BRAINBOX/
+│   │       ├── FILE_EXE_FUNC_BRAINBOX/
+│   │       ├── CODE_EXE_FUNC_BRAINBOX/
+│   │       └── MEDIA_EXE_FUNC_BRAINBOX/
 │   ├── DEVOPS_AI_BRAINBOX/
 │   │   ├── README_DEVOPS_AI_BRAINBOX.md
 │   │   ├── SANDBOX_DEVOPS_BRAINBOX/
@@ -652,13 +652,13 @@ These source records are migration evidence, not ready-made CORE records. Preser
 
 The current FUNC area also contains workflow/request/compliance documents. Their exact V003 destinations must be determined during migration mapping rather than silently forced into the new dual index.
 
-### AGENT_FUNCTIONS_FUNC_AI_BRAINBOX
+### AI_AGENTS_EXE_FUNC_BRAINBOX
 
 Question answered:
 
 > Which AI agents can perform this function?
 
-Approved initial function categories:
+The initial EXE categories evaluated in P06 are:
 
 - RESEARCH
 - BROWSER
@@ -666,13 +666,27 @@ Approved initial function categories:
 - CODE
 - MEDIA
 
-Additional function categories are permitted only when justified by actual current capability records and approved through the architecture/ticket process.
+These names identify candidate slots; the matrix below determines their proposed admission state. A category is admitted only when at least one agent has source-backed evidence of successful execution for that function. An unverified or merely exposed capability remains reserved or pending and must not be presented as executable.
 
-The presence of a connector, plugin, skill, or potential capability does not by itself authorize a permanent function category.
+Additional categories require the same evidence and approval through the architecture/ticket process. A connector, plugin, skill, or potential capability alone does not justify a permanent EXE category.
+### P06 proposed capability matrix — reviewed 2026-10-07
+
+This matrix is a source-backed proposal, not a claim that every agent or connector is currently ready. `ADMITTED` means at least one executor has evidence of successful execution for that function. Exposure or configuration alone is not sufficient. Statuses are scoped to the source and verification date; session-dependent connection and authentication must be rechecked before use.
+
+| CAPABILITY / ADMISSION | AGENT | EXPOSURE / CONNECTION / AUTHENTICATION | EXECUTION VERIFIED | LIMITATIONS | DEODINI AUTHORITY | SOURCE RECORD / LAST VERIFIED |
+|---|---|---|---|---|---|---|
+| **RESEARCH — ADMITTED** | Codex | Exposed: YES, web lookup. Connected: YES for public web requests. Authenticated: N/A for public sources. | YES — official GitHub Status history was retrieved and cited in this conversation. | Public-source access only; check source date and prefer authoritative sources. | Read-only research was within the assigned task; external writes are not implied. | `CODEX_FUNC_BRAINBOX.md` plus this session’s source lookup; 2026-10-07. |
+| **BROWSER — ADMITTED** | Codex; Copilot configuration recorded separately | Exposed: Codex Playwright/CUA tools reported; Copilot Playwright server configured. Connected: Codex Playwright CLI reached the local preview; Copilot runtime connection was not established by its report. Authenticated: N/A for the local preview. | Codex: YES — T23 Playwright CLI responsive and interaction checks. Copilot: NOT VERIFIED end-to-end in its capability report. | Evidence covers the local FootHive preview/viewports; it is not formal WCAG, screen-reader, or cross-browser certification. Copilot configuration alone does not prove execution. | Browser tests require task scope; clicking external destinations or submitting data needs explicit authorization. | `CODEX_FUNC_BRAINBOX.md`, `COPILOT_FUNC_BRAINBOX.md`, `BUILD_REPORT_FH_BRAINBOX.md` T23; 2026-10-03. |
+| **FILE — ADMITTED** | Codex | Exposed: YES, shell/workspace file tools. Connected: YES, current authorized Brainbox workspace. Authenticated: N/A for local workspace access. | YES — files were inspected and edited within this repository and committed/pushed in the recorded P03–P05 work. | Limited to granted workspace/filesystem permissions; RDC/other machines require separate live verification. | User task and filesystem permissions govern each write; tool access is not blanket permission. | `CODEX_FUNC_BRAINBOX.md` and P03–P05 Git/file records; 2026-10-07. |
+| **CODE — ADMITTED** | Codex | Exposed: YES, source editing and shell/Git. Connected: YES, FootHive repository/workspace in recorded T23 work. Authenticated: N/A for local code editing. | YES — T23 phone-width header spacing CSS was changed and verified with Playwright. | Evidence supports that specific frontend change; it does not prove backend implementation or formal accessibility conformance. | The T23 implementation was ticket-authorized; future source changes still require task authorization. | `CODEX_FUNC_BRAINBOX.md` and `BUILD_REPORT_FH_BRAINBOX.md` T23; 2026-10-03. |
+| **MEDIA — RESERVED / EXECUTION EVIDENCE PENDING** | ChatGPT; Cline (historical profile) | Exposed: image-generation capability is described in the ChatGPT/Cline records. Connected: NOT VERIFIED for a specific media endpoint. Authenticated: NOT VERIFIED where a provider account would be required. | NO verified output artifact is recorded in these source records; do not admit as an active executable category until a safe generation/processing result is captured. | Cline profile is dated 2025-09-20; ChatGPT profile is dated 2026-09-19. Tool availability is not proof of usable generation or successful output. | A media capability grants no authority to publish or externally distribute generated assets. | `CHATGPT_FUNC_BRAINBOX.md` (2026-09-19), `CLINE_FUNC_BRAINBOX.md` (2025-09-20); output execution NOT VERIFIED. |
+
+DeepSeek and Qwen are not assigned to EXE categories from their empty source records. Their P05 role notes describe intended research/creation use, but do not establish exposure, connection, authentication, or successful execution for an EXE function.
+
 
 ### FUNC AI rule
 
-FUNC AI represents **executable capability**.
+FUNC AI represents **core and executable capability**.
 
 SKILLS AI represents **knowledge**.
 
