@@ -1509,8 +1509,34 @@ Canonical sequence:
 6. A merge is not a deployment.
 7. A deployment is not Operator verification.
 8. Scope expansion requires a new/updated authorization.
-9. Unexpected findings are reported as flags before modification unless the active ticket already authorizes the required response.
+9. Unexpected findings are reported as flags before modification. For Phase 02 Codex migration tickets, any preflight flag triggers the stop/report/wait gate below even if the ticket describes a possible response.
 10. Destructive operations require explicit authority and verification of backups/history where applicable.
+
+### Phase 02 Codex migration preflight
+
+This preflight prepares Phase 02 and does not itself perform or authorize migration.
+
+Every future Codex migration ticket must carry the canonical authority paths below and be processed individually:
+
+```text
+C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md
+C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md
+```
+
+Before making any migration change, Codex must:
+
+1. Read the complete active ticket and confirm its authorized scope.
+2. Read the relevant section of the V003 Specification.
+3. Cross-check the relevant section of the Origin Conversation.
+4. Inspect the actual current filesystem and content, including Git state and references where relevant.
+5. Check for ambiguity, contradiction, unsupported rename, scope mismatch, historical-evidence risk, or a missing dependency.
+6. If any flag exists, stop before implementation, report the specific flag and evidence, and wait for Operator direction. Do not implement the flagged or dependent change.
+7. If the preflight is clean, execute only the change authorized by that individual ticket.
+8. Verify the actual result and report what was verified, including any limits.
+
+### Phase 02 batch rule
+
+A batch groups tickets for planning and does not override ticket individuality or grant blanket authorization. Codex must complete the preflight for each ticket and execute one ticket at a time. A flag in one ticket stops that ticket and any dependent work; it does not silently transfer authorization to another ticket.
 
 ---
 
