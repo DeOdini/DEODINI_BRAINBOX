@@ -153,7 +153,9 @@ Governance defines Brainbox-wide rules and authority, including:
 
 ### README
 
-A README defines the local domain:
+Every governed parent folder with a defined child structure must expose that structure through its README and local tree.
+
+A README defines its local domain:
 
 - purpose;
 - mental model;
@@ -167,29 +169,39 @@ A README defines the local domain:
 
 Governance must not replace local README responsibility.
 
-### Root README
+### Root README and local-tree authority
 
-README_BRAINBOX.md becomes the canonical full-tree navigation authority once V003 is implemented.
+`README_BRAINBOX.md` is the canonical complete-tree authority.
 
-Every substantial parent README must contain an exact local/subtree map matching the corresponding branch of the root authoritative tree.
+Each governed parent README must show a local tree that matches the corresponding branch of the root authoritative tree. No governed parent README or local tree may omit, collapse, or obscure already-defined architectural children.
 
 A parent README must also explain the mental model of its children.
 
 **Tree tells where. Mental model tells what the branches mean.**
 
-### Required README navigation metadata
+### Required README concepts
 
-Substantial parent READMEs should expose:
+Every governed parent README with a defined child structure must expose:
 
-PARENT  
-CURRENT DOMAIN  
-GOVERNED BY  
-AUTHORITATIVE TREE  
-LOCAL TREE  
-RELATED DOMAINS  
-CANONICAL SOURCES  
-STATUS  
-LAST VERIFIED
+- `PARENT`
+- `CURRENT DOMAIN`
+- `PURPOSE`
+- `MENTAL MODEL`
+- `GOVERNED BY`
+- `AUTHORITATIVE TREE`
+- `LOCAL TREE`
+- `RELATED DOMAINS`
+- `CANONICAL SOURCES`
+- `REFERENCES`
+- `POPULATION STATE`
+- `LAST VERIFIED`
+
+Where appropriate, the README should also expose:
+
+- `VERIFIER`
+- `ENTRY NAVIGATION`
+- `EXIT NAVIGATION`
+- `APPLIES TO`
 
 ---
 
@@ -271,7 +283,7 @@ Security/privacy knowledge owns the applicable privacy/security rules.
 
 ## 8. AUTHORITATIVE V003 TARGET TREE
 
-The following tree contains the folders/files that have been explicitly agreed or are directly required by the agreed substantial-parent README rule.
+The following tree contains the folders/files that have been explicitly agreed or are directly required by the rule that every governed parent with defined children exposes its local tree in its README.
 
 No additional FUNC capability category is promoted into the authoritative tree merely because a connector or tool exists. Additional FUNC categories require evidence from the existing capability records and later Operator approval.
 
@@ -1390,9 +1402,9 @@ Governed Brainbox folders/documentation files end in _BRAINBOX except genuine te
 
 ### 25.2 Documentation authority
 
-Root README is the canonical full-tree navigation authority once implemented.
+README_BRAINBOX.md is the canonical complete-tree authority.
 
-Substantial parent READMEs own local purpose, mental model and exact local tree.
+Every governed parent folder with a defined child structure must expose that structure through its README/local tree. Each local tree must match the corresponding root-tree branch and may not omit, collapse, or obscure defined architectural children. Its README owns local purpose, mental model, and navigation context.
 
 Governance owns system-wide rules.
 
