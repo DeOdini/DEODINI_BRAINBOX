@@ -303,6 +303,9 @@ DEODINI_BRAINBOX/
 │       ├── TREE_SNAPSHOT_V003_BRAINBOX.md
 │       ├── MIGRATION_MAP_V003_BRAINBOX.md
 │       └── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md
+├── MILESTONES_BRAINBOX/ [PLANNED]
+│   ├── README_MILESTONES_BRAINBOX.md
+│   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
 ├── AI_BRAINBOX/
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
@@ -1526,9 +1529,35 @@ The V003 migration map is therefore a product of ticketed integration, not a gue
 
 ## 28. FUTURE BRAINBOX ROUTER / AGENTIC MILESTONE
 
-This section is **FUTURE / PLANNED**.
+This section is **FUTURE / PLANNED**. The milestone architecture below is approved as future intent; it does not claim that the listed folders, files, capabilities, or infrastructure are currently implemented.
 
-It is not part of the current V003 implementation authority except as a design direction the present architecture should not obstruct.
+The root milestone record is:
+
+`MILESTONES_BRAINBOX/` **[PLANNED]**
+```
+MILESTONES_BRAINBOX/
+├── README_MILESTONES_BRAINBOX.md
+└── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
+```
+
+The README provides navigation and explains the milestone status. The Router/Agentic milestone record captures the long-term capabilities and enabling infrastructure, including:
+
+- Brainbox Router and specialist sub-agents;
+- eventual cross-DEODINI routing;
+- persistent memory;
+- databases, including PostgreSQL;
+- retrieval and vector infrastructure;
+- self-hosting;
+- governed self-update and research;
+- authorization;
+- device and package delivery;
+- fragment assembly;
+- audit and recovery;
+- future infrastructure requirements needed to support these capabilities.
+
+Both records are **[PLANNED]**. The README must state that milestone ordering, implementation details, and naming may evolve as future versions develop. Do not treat this milestone plan as an implementation sequence, deployment authorization, or evidence that any capability is already available.
+
+The milestone architecture is approved as a design direction the present architecture should not obstruct.
 
 The long-term intention is for DEODINI BRAINBOX to become an agentic knowledge system with specialist bots/agents around major domains.
 
@@ -1606,21 +1635,15 @@ Authority remains mandatory.
 
 ---
 
-## 29. ITEMS DELIBERATELY NOT PROMOTED INTO CURRENT AUTHORITY
+## 29. STATUS OF PREVIOUSLY DEFERRED STRUCTURE
 
-The earlier Deep Research-generated review package introduced additional structure.
+The earlier Deep Research-generated review package introduced additional structure. Those additions are **not automatically authoritative** merely because they appeared in that package. Their status must be checked against subsequent Operator-approved tickets.
 
-Those additions are **not automatically authoritative** merely because they appeared in that package.
+### Root MILESTONES_BRAINBOX — updated by V003-P11
 
-In particular:
+The earlier statement that a root-level MILESTONES_BRAINBOX folder was not included in the authoritative tree is superseded by V003-P11.
 
-### Root MILESTONES_BRAINBOX
-
-The future agentic/router direction is agreed as a milestone concept.
-
-A root-level MILESTONES_BRAINBOX folder was not independently established as required V003 filesystem authority during the underlying architecture discussion.
-
-It is therefore not included in this authoritative tree unless the Operator later approves it.
+The root milestone structure is now approved as **[PLANNED]** V003 architecture and appears in the authoritative tree in §8. Its intended contents and non-implementation status are defined in §28. This approval formalizes future intent only; it does not claim the folder, files, capabilities, or infrastructure have been implemented.
 
 ### Extra FUNC categories
 
