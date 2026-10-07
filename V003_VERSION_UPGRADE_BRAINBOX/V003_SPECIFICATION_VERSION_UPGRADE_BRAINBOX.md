@@ -1242,6 +1242,14 @@ TREE_SNAPSHOT_V003_BRAINBOX.md
 MIGRATION_MAP_V003_BRAINBOX.md  
 ARCHITECTURE_DECISIONS_V003_BRAINBOX.md
 
+### V003 authority relationship
+
+`V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md` is the canonical definition of **what V003 is**: its current target architecture, naming, requirements, and migration constraints.
+
+`ARCHITECTURE_DECISIONS_V003_BRAINBOX.md` records **why V003 became that way** through concise decision summaries, rationale, superseded alternatives, status, and references. It must not reproduce the Specification's full architecture tree or copy its requirements as a second authority.
+
+The Origin Conversation remains the chronological historical evidence and ambiguity source. Current target decisions are read from the Specification; the decision record links back to both authority records without replacing either.
+
 ### Git vs Brainbox history
 
 Git history answers:
