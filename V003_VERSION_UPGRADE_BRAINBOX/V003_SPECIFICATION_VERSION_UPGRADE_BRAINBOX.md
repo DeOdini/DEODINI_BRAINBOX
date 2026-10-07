@@ -258,7 +258,7 @@ Testing workflows, command knowledge, FUNC AI capability records, and implementa
 
 GA4_TECHNOLOGY_BRAINBOX owns reusable GA4 technology knowledge.
 
-ANALYTICS_ORCHESTRATION_BRAINBOX explains how analytics collection/integration participates in a full-stack system.
+ANALYTICS_ORCH_BRAINBOX explains how analytics collection/integration participates in a full-stack system.
 
 DATA_VISUALIZATION_DESIGN_BRAINBOX explains how analytics is presented to users/admins.
 
@@ -342,14 +342,15 @@ DEODINI_BRAINBOX/
 │   │   │   │   │   ├── API_FIRST_ARCH_BRAINBOX/
 │   │   │   │   │   └── ARCH_DECISIONS_BRAINBOX/
 │   │   │   │   ├── ORCHESTRATION_FULLSTACK_BRAINBOX/
-│   │   │   │   │   ├── FRONTEND_BACKEND_ORCHESTRATION_BRAINBOX/
-│   │   │   │   │   ├── API_ORCHESTRATION_BRAINBOX/
-│   │   │   │   │   ├── AUTH_ORCHESTRATION_BRAINBOX/
-│   │   │   │   │   ├── DATA_ORCHESTRATION_BRAINBOX/
-│   │   │   │   │   ├── ANALYTICS_ORCHESTRATION_BRAINBOX/
-│   │   │   │   │   ├── TEST_ORCHESTRATION_BRAINBOX/
-│   │   │   │   │   ├── RELEASE_ORCHESTRATION_BRAINBOX/
-│   │   │   │   │   └── AI_AGENT_ORCHESTRATION_BRAINBOX/
+│   │   │   │   │   ├── FRONTEND_BACKEND_ORCH_BRAINBOX/
+│   │   │   │   │   ├── API_ORCH_BRAINBOX/
+│   │   │   │   │   ├── AUTH_ORCH_BRAINBOX/
+│   │   │   │   │   ├── DATA_ORCH_BRAINBOX/
+│   │   │   │   │   ├── ANALYTICS_ORCH_BRAINBOX/
+│   │   │   │   │   ├── TEST_ORCH_BRAINBOX/
+│   │   │   │   │   ├── RELEASE_ORCH_BRAINBOX/
+│   │   │   │   │   ├── AI_AGENT_ORCH_BRAINBOX/
+│   │   │   │   │   └── SERVICE_COORDINATION_ORCH_BRAINBOX/
 │   │   │   │   ├── FRONTEND_SANDBOX_BRAINBOX/
 │   │   │   │   │   ├── README_FRONTEND_SANDBOX_BRAINBOX.md
 │   │   │   │   │   ├── WORKFLOWS_FRONTEND_BRAINBOX/
@@ -790,6 +791,24 @@ Each Fullstack application record must identify the corresponding canonical Skil
 
 The proposed tree defines target paths only. It does not create or migrate live folders, pattern records, or application evidence.
 
+### Fullstack orchestration vs workflows and sequences
+
+`ORCHESTRATION_FULLSTACK_BRAINBOX/` describes how application components, services, data, tests, releases, and AI agents coordinate: their relationships, interfaces, dependencies, triggers, handoffs, and cross-component flow. It does not own step-by-step procedures merely because those procedures contain ordered steps.
+
+`WORKFLOWS_FULLSTACK_BRAINBOX/` owns procedures that define actors, ordered actions, prerequisites, evidence, failure handling, verification, and completion gates. Testing procedures belong under the appropriate workflow/testing procedure area. Production deployment and release procedures belong under the applicable Production deployment/release workflow.
+
+Use the following disposition when mapping examples or existing material:
+
+| Concept | V003 responsibility |
+|---|---|
+| SERVICE_COORDINATION | Fullstack orchestration; cross-service/component coordination belongs in `SERVICE_COORDINATION_ORCH_BRAINBOX/`. |
+| BUILD_SEQUENCE | Workflow; an ordered build procedure belongs under `WORKFLOWS_FULLSTACK_BRAINBOX/`. |
+| TEST_SEQUENCE | Workflow/testing procedure; place according to its actual testing procedure context, not as an orchestration child. |
+| DEPLOYMENT_SEQUENCE | Production deployment/release workflow; map under the applicable Production deployment/release structure. |
+| AGENT_HANDOFF | Inspect actual content. Coordination rules for which agents exchange work and how they connect belong under `AI_AGENT_ORCH_BRAINBOX/`; a step-by-step handoff procedure belongs under workflows. If one source contains both, map the distinct responsibilities separately and cross-reference them without duplicating canonical content. |
+
+These dispositions clarify responsibility; they do not authorize restoring every example from earlier drafts or migrating content by filename alone. Inspect the actual source and map only supported content through the migration process. Ordered events in an orchestration model may describe system coordination, while a sequence that instructs people or agents through work remains a workflow.
+
 ---
 
 ## 12. FRONTEND MODEL
@@ -834,7 +853,7 @@ It does not create Java/C/C++/Python frontend-pattern folders merely because tho
 
 Analytics has both system-flow and presentation concerns.
 
-### ANALYTICS_ORCHESTRATION_BRAINBOX
+### ANALYTICS_ORCH_BRAINBOX
 
 Owns full-stack analytics cooperation, including:
 
