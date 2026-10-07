@@ -329,12 +329,18 @@ DEODINI_BRAINBOX/
 │   │   │   │   ├── README_FULLSTACK_SANDBOX_BRAINBOX.md
 │   │   │   │   ├── WORKFLOWS_FULLSTACK_BRAINBOX/
 │   │   │   │   ├── ARCHITECTURE_FULLSTACK_BRAINBOX/
-│   │   │   │   │   ├── STATIC_SITE_ARCHITECTURE_BRAINBOX/
-│   │   │   │   │   ├── SPA_ARCHITECTURE_BRAINBOX/
-│   │   │   │   │   ├── SSR_ARCHITECTURE_BRAINBOX/
-│   │   │   │   │   ├── CLIENT_SERVER_ARCHITECTURE_BRAINBOX/
-│   │   │   │   │   ├── SERVERLESS_ARCHITECTURE_BRAINBOX/
-│   │   │   │   │   └── ARCHITECTURE_DECISIONS_BRAINBOX/
+│   │   │   │   │   ├── STATIC_SITE_ARCH_BRAINBOX/
+│   │   │   │   │   ├── SPA_ARCH_BRAINBOX/
+│   │   │   │   │   ├── SSR_ARCH_BRAINBOX/
+│   │   │   │   │   ├── JAMSTACK_ARCH_BRAINBOX/
+│   │   │   │   │   ├── MONOLITH_ARCH_BRAINBOX/
+│   │   │   │   │   ├── MODULAR_MONOLITH_ARCH_BRAINBOX/
+│   │   │   │   │   ├── CLIENT_SERVER_ARCH_BRAINBOX/
+│   │   │   │   │   ├── MICROSERVICES_ARCH_BRAINBOX/
+│   │   │   │   │   ├── SERVERLESS_ARCH_BRAINBOX/
+│   │   │   │   │   ├── EVENT_DRIVEN_ARCH_BRAINBOX/
+│   │   │   │   │   ├── API_FIRST_ARCH_BRAINBOX/
+│   │   │   │   │   └── ARCH_DECISIONS_BRAINBOX/
 │   │   │   │   ├── ORCHESTRATION_FULLSTACK_BRAINBOX/
 │   │   │   │   │   ├── FRONTEND_BACKEND_ORCHESTRATION_BRAINBOX/
 │   │   │   │   │   ├── API_ORCHESTRATION_BRAINBOX/
@@ -754,6 +760,35 @@ Architecture and orchestration must not be collapsed.
 Architecture describes system structure.
 
 Orchestration describes cooperation among frontend, backend, APIs, authentication, data, analytics, testing, release, and AI agents.
+
+### Fullstack architecture applications and canonical patterns
+
+`ARCHITECTURE_FULLSTACK_BRAINBOX/` contains application knowledge: how DEODINI evaluates, selects, combines, adapts, implements, and validates an architecture in a Fullstack build. Its child application branches are:
+
+- `STATIC_SITE_ARCH_BRAINBOX/`
+- `SPA_ARCH_BRAINBOX/`
+- `SSR_ARCH_BRAINBOX/`
+- `JAMSTACK_ARCH_BRAINBOX/`
+- `MONOLITH_ARCH_BRAINBOX/`
+- `MODULAR_MONOLITH_ARCH_BRAINBOX/`
+- `CLIENT_SERVER_ARCH_BRAINBOX/`
+- `MICROSERVICES_ARCH_BRAINBOX/`
+- `SERVERLESS_ARCH_BRAINBOX/`
+- `EVENT_DRIVEN_ARCH_BRAINBOX/`
+- `API_FIRST_ARCH_BRAINBOX/`
+- `ARCH_DECISIONS_BRAINBOX/`
+
+These are architecture choices available for application analysis, not claims that every branch is populated or that the choices are mutually exclusive. A Fullstack application record explains project-specific requirements, constraints, evaluation, selected combination, implementation, and validation. Architecture selection and rationale belong in `ARCH_DECISIONS_BRAINBOX/`.
+
+Generic reusable pattern knowledge belongs under:
+
+`AI_BRAINBOX/SKILLS_AI_BRAINBOX/PATTERNS_SKILLS_BRAINBOX/ARCHITECTURE_PATTERNS_SKILLS_BRAINBOX/`
+
+Skills patterns explain what an architecture pattern generally is, its principles, tradeoffs, and reusable evaluation guidance. They do not own project-specific Fullstack decisions or implementation records.
+
+Each Fullstack application record must identify the corresponding canonical Skills pattern record as its source. Where a canonical pattern record lists concrete applications, it should reference the relevant Fullstack application branch rather than duplicating its project-specific content. This creates a traceable two-way relationship while preserving one canonical source for generic knowledge.
+
+The proposed tree defines target paths only. It does not create or migrate live folders, pattern records, or application evidence.
 
 ---
 
