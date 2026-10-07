@@ -397,13 +397,15 @@ DEODINI_BRAINBOX/
 │   │   │   │       └── TESTING_BACKEND_BRAINBOX/
 │   │   │   ├── CASE_STUDIES_SANDBOX_BRAINBOX/
 │   │   │   │   └── FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/
-│   │   │   │       ├── README_FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX.md
-│   │   │   │       ├── BUILD_REPORT_FOOTHIVE_BRAINBOX.md
-│   │   │   │       ├── PASSED_FOOTHIVE_BRAINBOX.md
-│   │   │   │       ├── FAILED_FOOTHIVE_BRAINBOX.md
-│   │   │   │       ├── AUDITS_FOOTHIVE_BRAINBOX/
-│   │   │   │       ├── EVIDENCE_FOOTHIVE_BRAINBOX/
-│   │   │   │       └── RETROSPECTIVE_FOOTHIVE_BRAINBOX.md
+│   │   │   │       ├── README_FH_WORKFLOW_TRIAL_BRAINBOX.md
+│   │   │   │       ├── BUILD_REPORT_FH_BRAINBOX.md
+│   │   │   │       ├── PASSED_FH_BRAINBOX.md
+│   │   │   │       ├── FAILED_FH_BRAINBOX.md
+│   │   │   │       ├── CONVO_FH_BRAINBOX.md
+│   │   │   │       ├── OPERATOR_ADDENDUM_FH_BRAINBOX.md
+│   │   │   │       ├── AUDITS_FH_BRAINBOX/
+│   │   │   │       ├── EVIDENCE_FH_BRAINBOX/
+│   │   │   │       └── RETROSPECTIVE_FH_BRAINBOX.md
 │   │   │   ├── PASSED_SANDBOX_BRAINBOX/
 │   │   │   └── FAILED_SANDBOX_BRAINBOX/
 │   │   └── PROD_DEVOPS_BRAINBOX/
@@ -1117,9 +1119,21 @@ BUILD
 → REVALIDATE  
 → REPEAT
 
+### Approved experimental lifecycle
+
+The lifecycle is recorded as follows:
+
+- **ITERATION 01 — existing experimental dataset:** the current FootHive workflow-trial records and evidence.
+- **ITERATION 02 — [PLANNED]:** not yet executed; no evidence is asserted.
+- **ITERATION 03 — [PLANNED]:** not yet executed; no evidence is asserted.
+- **WORKFLOW MASTERY ASSESSMENT — [PLANNED]:** assessment to be made from sufficient evidence across iterations; it is not complete.
+
+These are workflow-experiment states, not claims that separate iteration folders or datasets already exist. The physical layout of future iteration folders remains subject to the post-approval migration design.
 ### Workflow iteration vs website version
 
 These are separate dimensions.
+
+A **workflow iteration** is one experimental application of the DEODINI workflow, assessed through its records and evidence. A **FootHive website version** identifies a state of the website artifact (such as its code, design, or release). Record these as separate values; do not infer a workflow iteration from a website version or assume a one-to-one mapping.
 
 A later FootHive website version does not automatically mean the workflow itself improved.
 
@@ -1163,6 +1177,9 @@ That layout should be finalized through the post-approval migration/ticket proce
 
 Use one canonical evidence record to prevent drift.
 
+### Canonical workflow-trial evidence set
+
+The canonical FootHive workflow-trial record is the complete evidence set listed in the Sandbox tree in §8. It includes the README, build report, passed and failed records, conversation, Operator addendum, audits directory, evidence directory, and retrospective. Because `FOOTHIVE` is already present in the parent path, the child records retain the concise `FH` infix. Production and Portfolio may summarize or reference this record; they must not create competing canonical copies.
 ### Sandbox
 
 Sandbox answers:
