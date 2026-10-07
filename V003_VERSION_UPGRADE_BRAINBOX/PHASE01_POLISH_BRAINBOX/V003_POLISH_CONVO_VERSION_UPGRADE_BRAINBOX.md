@@ -1616,3 +1616,14 @@ The P16 archive README is now created with the required local tree, authority bo
 
 I corrected the remote diagnosis: the earlier lookup ran outside the repository, so its “no origin” message was not valid. From the Brainbox repository, `origin` is configured correctly; the branch currently has no matching remote ref. The tracked README/Specification checks are clean. The transferred historical conversation/report contain pre-existing Markdown hard-break whitespace, so I’m retaining that text intact and documenting that `git diff --cached --check` reports those inherited archive lines.
 
+## CODEX - final response
+
+P16 is complete on branch `v003/p16-final-corrective-polish-integration-freeze`.
+
+- Corrected the P09 UI/UX hierarchy, P06 MEDIA attribution, and P13 disposition; reconciled the duplicate P03 commentary in the P04/P05 archive sections while preserving the genuine P03 occurrence.
+- Integrated the Phase 01 polish conversation/report archive and its README; updated the V003 parent README and Specification with the archive boundary and Phase 01 freeze status.
+- Safely removed the two transferred source records and the now-empty `C:\Users\USER\PHASE01_POLISH` folder after verifying the destination copies.
+- Created commit `994380c74918734594916ae1bfc6f01c80725d65` and pushed it to GitHub. Remote `ls-remote` confirmed that exact SHA on `v003/p16-final-corrective-polish-integration-freeze`; the local worktree is clean.
+- The full staged whitespace check reports inherited Markdown hard-break spaces in the historical archive records. The authority files and new archive README passed their targeted checks; the original historical text was preserved.
+- No merge or Phase 02 filesystem migration was performed. Phase 01 is frozen, and only individually scoped Phase 02 migration-ticket drafting is authorized.
+

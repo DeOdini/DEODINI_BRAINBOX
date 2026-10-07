@@ -3310,3 +3310,29 @@ The first `git ls-remote` attempt was issued before changing the shell's working
 ### Git whitespace check detail
 
 The changed V003 parent README and Specification pass `git diff --check`. The two transferred historical archive files contain pre-existing trailing spaces used for Markdown hard line breaks. Because they are newly tracked in this commit, Git's staged whitespace check reports those inherited lines, along with historical copied material; I preserved the archive text and formatting rather than rewriting historical records. The newly authored archive README was normalized and has no trailing whitespace. This check result is disclosed rather than represented as an unqualified pass.
+
+
+## P16 publication verification — completion addendum
+
+**Primary P16 commit:** `994380c74918734594916ae1bfc6f01c80725d65` (`V003-P16 finalize Phase 01 corrective reconciliation and polish archive`).
+
+**Push:** succeeded to `origin`, URL `https://github.com/DeOdini/DEODINI_BRAINBOX.git`, branch `v003/p16-final-corrective-polish-integration-freeze`.
+
+**Independent remote check:** `git ls-remote origin refs/heads/v003/p16-final-corrective-polish-integration-freeze` returned `994380c74918734594916ae1bfc6f01c80725d65`, matching local HEAD. The branch tracks the remote and the local worktree is clean. The committed paths are precisely the two V003 authority files and the three Phase 01 archive files listed in the commit output. No other path was staged.
+
+**Merge:** not performed. **Phase 02 migration:** not performed. Phase 01 is frozen; migration-ticket drafting only is authorized.
+
+### Integrity checkpoint at primary P16 commit, before this publication addendum
+
+At the primary commit’s post-push verification point, the archive files were:
+
+| Record | Bytes | Lines | SHA-256 |
+|---|---:|---:|---|
+| Conversation | 82,126 | 1,619 | `03E31C0172E91B6C3A3FAF57508D2C6113CC88158F6870D752ADC0569695D571` |
+| Build report | 170,276 | 3,313 | `63180E4B084F6CF2298D3F4A57674D0611FA0F59A86E06641C24B9E1305ED5FA` |
+
+These are a reproducible checkpoint for the primary P16 commit. This completion addendum itself, and the separate archive documentation commit that records it, necessarily change the current mutable report/conversation files; no self-referential final hash is claimed.
+
+### Gate closeout
+
+All requested P16 corrections and archive integration are committed and remotely verified. The P16 final reconciliation found no new Phase 01 blocker. The historical archive whitespace caveat is explicitly preserved: the parent README, Specification, and new archive README passed targeted whitespace checks; full staged archive checks reported inherited Markdown hard-break whitespace and were not misreported as clean. The original two external polish source files and their empty folder were safely retired after confirming destination presence and exact source-directory contents.
