@@ -1647,41 +1647,36 @@ Authority remains mandatory.
 
 ---
 
-## 29. STATUS OF PREVIOUSLY DEFERRED STRUCTURE
+## 29. DEFERRED / SUPERSEDED DECISION REGISTER
 
-The earlier Deep Research-generated review package introduced additional structure. Those additions are **not automatically authoritative** merely because they appeared in that package. Their status must be checked against subsequent Operator-approved tickets.
+This register preserves material proposals and decisions that evolved during the V003 discussion. It prevents historical reasoning from being lost and prevents early brainstorms from being mistaken for approved architecture.
 
-### Root MILESTONES_BRAINBOX — updated by V003-P11
+The disposition applies to the proposal or concept, not automatically to physical source files. A **MOVED**, **RENAMED**, or **SUPERSEDED** item does not authorize moving, renaming, deleting, or rewriting live content; physical migration requires current-state inspection and its own authorized ticket. The Origin Conversation remains the historical record. References below identify its file and a section, topic heading, or ticket heading so a reader can verify the surrounding exchange.
 
-The earlier statement that a root-level MILESTONES_BRAINBOX folder was not included in the authoritative tree is superseded by V003-P11.
+Use these dispositions:
 
-The root milestone structure is now approved as **[PLANNED]** V003 architecture and appears in the authoritative tree in §8. Its intended contents and non-implementation status are defined in §28. This approval formalizes future intent only; it does not claim the folder, files, capabilities, or infrastructure have been implemented.
+- **ADOPTED** — approved as current target architecture.
+- **RENAMED** — the concept remains, with an approved name change.
+- **MOVED** — responsibility or canonical placement changed.
+- **SUPERSEDED** — a later decision replaced the earlier proposal.
+- **DEFERRED** — intentionally left for later design or ticketed work.
+- **REFERENCE_ONLY** — retained as a historical pointer, not a current authority.
+- **NOT_ADOPTED** — proposed, but not accepted into the current target.
 
-### Extra FUNC categories
+| Earlier proposal or decision | Disposition | Current V003 treatment | Origin Conversation reference |
+|---|---|---|---|
+| `AGENTS_FUNC_AI_BRAINBOX` as a broad FUNC registry branch | **SUPERSEDED** | Agent identity/core capability records and executable capability records are separated under `AI_AGENTS_CORE_FUNC_BRAINBOX/` and `AI_AGENTS_EXE_FUNC_BRAINBOX/`. Do not migrate the early branch as one undifferentiated registry. | `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — “Proposed integrated main tree” / early FUNC proposal; V003-P05 “FUNC CORE Registry Refactor”; V003-P06 “FUNC EXE Registry Refactor”. |
+| `TOOLS_SKILLS_BRAINBOX` as a generic Tools warehouse | **RENAMED** | The concept was refined to `TECHNOLOGIES_SKILLS_BRAINBOX/` for reusable canonical knowledge about named technologies. Commands, executable capabilities, and implementation patterns remain in their own domains. | `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — “How do we experiment with, test, validate and promote the implementation?” and “Now let's settle `TECHNOLOGIES_SKILLS_BRAINBOX`”. |
+| `RAW_WORKFLOW` as the parent beside FUNC AI | **SUPERSEDED** | Execution learning is separated into `SANDBOX_DEVOPS_BRAINBOX/` and `PROD_DEVOPS_BRAINBOX/` under DEVOPS AI. Existing RAW records require content-aware, ticketed migration. | `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — Operator’s RAW WORKFLOW placement concern; “I agree with replacing `RAW_WORKFLOW` with the Sandbox/Production distinction”. |
+| `PROVEN` as a stable success destination/state | **SUPERSEDED** | `PROD_DEVOPS_BRAINBOX/` replaces the concept. A Sandbox pass does not guarantee production success; production keeps its own passed, failed, incident, and regression evidence. Existing records are not silently moved. | `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — “Don't call the Sandbox success state `PROVEN`”; V003 §10, “DEVOPS AI”. |
+| Earlier Fullstack child names using the `ARCHITECTURE` infix | **RENAMED** | The Fullstack parent remains `ARCHITECTURE_FULLSTACK_BRAINBOX/`; architecture-pattern child infixes use `ARCH`, as formalized by V003-P07. | `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — V003-P07 “Fullstack Architecture Reconciliation”. |
+| Earlier Fullstack child names using the `ORCHESTRATION` infix and treating sequences as orchestration | **RENAMED / SUPERSEDED** | Child infixes use `ORCH`. Orchestration owns coordination; build/test/deployment procedures remain workflows, with content-dependent agent handoffs classified by responsibility, as formalized by V003-P08. | `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — V003-P08 “Fullstack Orchestration Reconciliation”. |
+| Early FootHive placement inside RAW WORKFLOW, followed by a broad move to Portfolio | **MOVED / REFINED** | The FootHive project and portfolio summaries belong under Portfolio. The canonical workflow-trial evidence belongs under Sandbox Fullstack. These are distinct responsibilities; do not move or duplicate the whole project/evidence set as one block. | `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — “Portfolio is the correct destination for FootHive”; V003-P04 “FootHive Evidence Reconciliation”; V003 §§21–22. |
+| Early root `MILESTONES_BRAINBOX` proposal | **ADOPTED — [PLANNED] by V003-P11** | P11 supersedes the earlier deferred/not-yet-authorized status. The root milestone README and Router/Agentic record are approved future architecture, not implemented files or capabilities. | `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — Deep Research refinement review; V003-P11 “Milestones Formalization”; V003 §§8, 28. |
+| Additional speculative FUNC categories (for example design, database, deployment, email, analytics, payments, and repository) | **NOT_ADOPTED** | Do not add categories by brainstorming alone. Additional executable categories require evidence from actual capability records and the applicable Operator approval. | `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — Deep Research refinement review; V003-P05 and V003-P06. |
+| Physical directory naming/layout for FootHive Iterations 01–03 | **DEFERRED** | The experimental lifecycle is approved, but its exact migration layout remains for the approved migration design. Do not fabricate iteration folders or evidence. | `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — V003-P04 “FootHive Evidence Reconciliation”; V003 §§21–22. |
 
-The earlier generated package proposed function folders beyond:
-
-RESEARCH  
-BROWSER  
-FILE  
-CODE  
-MEDIA
-
-Examples included design, database, deployment, email, calendar, automation, analytics, payments, project management, remote desktop, document and repository.
-
-Some may ultimately be justified by the current agent records.
-
-They are **not automatically admitted**.
-
-The agreed rule is to derive additional categories from actual capability records and approve them rather than inventing the taxonomy first.
-
-### FootHive iteration directories
-
-Iteration 01 / 02 / 03 are approved as an experimental lifecycle.
-
-Their exact filesystem folder names/layout remain to be finalized during the approved migration design.
-
-This prevents a Deep Research-generated implementation detail from being mistaken for an earlier Operator-approved decision.
+This register summarizes dispositions; it does not replace the Origin Conversation, the canonical Specification sections, or a future migration map. Update a disposition only when a later Operator-approved decision changes it, and preserve the prior state as historical context.
 
 ---
 
