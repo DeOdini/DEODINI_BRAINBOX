@@ -356,22 +356,25 @@ DEODINI_BRAINBOX/
 │   │   │   │   │   ├── WORKFLOWS_FRONTEND_BRAINBOX/
 │   │   │   │   │   ├── UI_UX_DESIGN_FRONTEND_BRAINBOX/
 │   │   │   │   │   │   ├── DESIGN_SYSTEMS_BRAINBOX/
-│   │   │   │   │   │   ├── VISUAL_REFERENCES_BRAINBOX/
-│   │   │   │   │   │   ├── LAYOUT_PATTERNS_BRAINBOX/
-│   │   │   │   │   │   ├── COMPONENT_PATTERNS_BRAINBOX/
-│   │   │   │   │   │   ├── NAVIGATION_DESIGN_BRAINBOX/
-│   │   │   │   │   │   ├── TYPOGRAPHY_DESIGN_BRAINBOX/
-│   │   │   │   │   │   ├── COLOR_SYSTEMS_BRAINBOX/
-│   │   │   │   │   │   ├── SPACING_DESIGN_BRAINBOX/
+│   │   │   │   │   │   ├── DESIGN_FOUNDATIONS_BRAINBOX/
+│   │   │   │   │   │   │   ├── TYPOGRAPHY_DESIGN_BRAINBOX/
+│   │   │   │   │   │   │   ├── COLOR_SYSTEMS_BRAINBOX/
+│   │   │   │   │   │   │   ├── SPACING_DESIGN_BRAINBOX/
+│   │   │   │   │   │   │   └── DESIGN_TOKENS_BRAINBOX/
+│   │   │   │   │   │   ├── UI_UX_PATTERNS_BRAINBOX/
+│   │   │   │   │   │   │   ├── LAYOUT_PATTERNS_BRAINBOX/
+│   │   │   │   │   │   │   ├── COMPONENT_PATTERNS_BRAINBOX/
+│   │   │   │   │   │   │   └── NAVIGATION_DESIGN_BRAINBOX/
+│   │   │   │   │   ├── EXPERIENCE_DESIGN_BRAINBOX/
 │   │   │   │   │   │   ├── RESPONSIVE_DESIGN_BRAINBOX/
 │   │   │   │   │   │   ├── MOTION_INTERACTION_BRAINBOX/
-│   │   │   │   │   │   ├── ACCESSIBILITY_DESIGN_BRAINBOX/
-│   │   │   │   │   │   ├── DESIGN_TOKENS_BRAINBOX/
-│   │   │   │   │   │   └── DATA_VISUALIZATION_DESIGN_BRAINBOX/
-│   │   │   │   │   │       ├── DASHBOARD_DESIGN_BRAINBOX/
-│   │   │   │   │   │       ├── CHART_DESIGN_BRAINBOX/
-│   │   │   │   │   │       ├── KPI_DESIGN_BRAINBOX/
-│   │   │   │   │   │       └── REPORTING_INTERFACE_DESIGN_BRAINBOX/
+│   │   │   │   │   │   └── ACCESSIBILITY_DESIGN_BRAINBOX/
+│   │   │   │   │   ├── DATA_VISUALIZATION_DESIGN_BRAINBOX/
+│   │   │   │   │   │   ├── DASHBOARD_DESIGN_BRAINBOX/
+│   │   │   │   │   │   ├── CHART_DESIGN_BRAINBOX/
+│   │   │   │   │   │   ├── KPI_DESIGN_BRAINBOX/
+│   │   │   │   │   │   └── REPORTING_INTERFACE_DESIGN_BRAINBOX/
+│   │   │   │   │   └── VISUAL_REFERENCES_BRAINBOX/
 │   │   │   │   │   ├── CODE_PATTERNS_FRONTEND_BRAINBOX/
 │   │   │   │   │   │   ├── HTML_CODE_PATTERNS_BRAINBOX/
 │   │   │   │   │   │   ├── CSS_CODE_PATTERNS_BRAINBOX/
@@ -818,20 +821,12 @@ Frontend owns presentation and user interaction.
 Its V003 knowledge domains include:
 
 - workflows;
-- UI/UX design;
 - design systems;
+- design foundations: typography, color systems, spacing, and design tokens;
+- UI/UX patterns: layouts, component patterns, and navigation design;
+- experience design: responsive design, motion/interaction, and accessibility;
+- data visualization: dashboards, charts, KPIs, and reporting interfaces;
 - visual references;
-- layouts;
-- component patterns;
-- navigation;
-- typography;
-- color;
-- spacing;
-- responsive design;
-- motion/interaction;
-- accessibility;
-- design tokens;
-- data visualization;
 - frontend code patterns;
 - components;
 - testing;
