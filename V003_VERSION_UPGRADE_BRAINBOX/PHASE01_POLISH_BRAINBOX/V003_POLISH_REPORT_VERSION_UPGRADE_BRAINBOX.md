@@ -3393,3 +3393,31 @@ This is the narrow closeout amendment requested after the P02–P15 integration.
 **P16 merged into main:** No. This follows the existing instruction to leave P16 unmerged; only P02–P15 were requested for integration before the retouch. The P16 branch is clean and one commit ahead of its remote-tracking state only until the push; after verification it tracks the pushed SHA with no local divergence.
 
 **Phase 02 migration:** Not performed. **Merge authorization after P16 retouch:** not inferred from this closeout. The P16 corrections and waiver are pushed for review; main currently contains P01–P14/P15 baseline, not the P16 changes.
+
+
+---
+
+# P16 Merge and V003 Branch Cleanup
+
+**Date:** 2026-10-07
+
+## Merge to main
+
+Merged `v003/p16-final-corrective-polish-integration-freeze` through GitHub PR #15. Merge commit: `9392f24603bb96c82fffc60aa8577ebc504bf9e3`. This integrated the P16 corrections, Phase 01 polish archive, and the explicitly documented inherited-whitespace waiver.
+
+## Branch verification and cleanup
+
+Before deletion, fetched the remote and verified every V003 branch commit—P01 through P14 and P16—was an ancestor of remote `main`. P15 had no remote branch or unique commit; the local `v003/p15-phase01-final-reconciliation-freeze` pointer was the same P14 commit, which was already in main.
+
+After verification, deleted the merged V003 branches from GitHub and removed all local V003 branches, including the P15 local alias. The remote now contains only `main`; local branch inventory also contains only `main`.
+
+## Final workspace state
+
+- Checked out branch: `main`
+- Main HEAD at cleanup verification: `9392f24603bb96c82fffc60aa8577ebc504bf9e3`
+- Worktree after branch cleanup: clean
+- P16 merged: yes, PR #15
+- Remaining local/remote task branches: none
+- Phase 02 filesystem migration: not performed
+
+The requested closeout is now recorded in this Phase 01 polish archive. The documentation commit and push are recorded in the follow-up below.
