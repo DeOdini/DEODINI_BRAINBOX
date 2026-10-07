@@ -1637,3 +1637,7 @@ MERGE V003-P02, ALL THE WAT TO V003-P015, BEFORE YOU PROCEED WITH THE RETOUCH
 
 Before the P16 closeout retouch, P02 through P14 were merged sequentially to GitHub `main` through PRs #2–#14. P15 has no distinct remote branch or commit; its local branch pointed to the P14 commit. Therefore the P15-verified baseline is present on `main` through P14. P16 remains unmerged while its closeout retouch is documented.
 
+## CODEX - closeout completion
+
+P02 through P14 are merged into `main` through PRs #2–#14. P01 is included as P02's ancestor. P15 has no distinct remote branch or commit; the P15 local branch was at the P14 commit. Remote `main` is `9242ba1aa99b7d181567670e5954badcb4e7422b`. The P16 closeout amendment is committed and pushed on `v003/p16-final-corrective-polish-integration-freeze` at `5e6bf6a35fd00c26a6bebb22c2c89eef22655d0e`. Independent `ls-remote` verification matched that SHA. P14 is an ancestor of main; P16 is not merged. The worktree is clean.
+

@@ -3380,3 +3380,16 @@ The full archive-inclusive whitespace check remains recorded as **FAILED / WAIVE
 This is the narrow closeout amendment requested after the P02–P15 integration. It preserves source history and makes the exception explicit under P14's flag-reporting discipline.
 
 **P16 retouch commit and push:** pending.
+
+
+## Final status after Operator-directed retouch
+
+**P02–P14:** merged sequentially into `main` through PRs #2–#14. P01 was included as the ancestor of P02. P15 had no separate remote branch or unique commit; its local branch pointed to P14, so the P15-verified baseline is represented by the P14 merge.
+
+**Remote main:** `9242ba1aa99b7d181567670e5954badcb4e7422b` (P14 merge PR #14). The P14 branch commit is an ancestor of main.
+
+**P16 retouch:** commit `5e6bf6a35fd00c26a6bebb22c2c89eef22655d0e`, message `Waive inherited archive whitespace in P16 closeout`, pushed to `v003/p16-final-corrective-polish-integration-freeze`. Independent `git ls-remote` returned the same SHA. The latest retouch commit passes `git diff --check`; targeted checks for the authored V003 README, Specification, and archive README passed earlier. The full archive-inclusive check remains recorded as failed and waived only for inherited historical Markdown hard-break whitespace.
+
+**P16 merged into main:** No. This follows the existing instruction to leave P16 unmerged; only P02–P15 were requested for integration before the retouch. The P16 branch is clean and one commit ahead of its remote-tracking state only until the push; after verification it tracks the pushed SHA with no local divergence.
+
+**Phase 02 migration:** Not performed. **Merge authorization after P16 retouch:** not inferred from this closeout. The P16 corrections and waiver are pushed for review; main currently contains P01–P14/P15 baseline, not the P16 changes.
