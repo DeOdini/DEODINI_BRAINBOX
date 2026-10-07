@@ -304,16 +304,16 @@ DEODINI_BRAINBOX/
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
 │   │   ├── README_FUNC_AI_BRAINBOX.md
-│   │   ├── AI_AGENTS_FUNC_AI_BRAINBOX/
-│   │   │   ├── README_AI_AGENTS_FUNC_AI_BRAINBOX.md
-│   │   │   ├── CHATGPT_FUNC_BRAINBOX.md
-│   │   │   ├── CLAUDE_FUNC_BRAINBOX.md
-│   │   │   ├── CLINE_FUNC_BRAINBOX.md
-│   │   │   ├── CODEX_FUNC_BRAINBOX.md
-│   │   │   ├── COPILOT_FUNC_BRAINBOX.md
-│   │   │   ├── DEEPSEEK_FUNC_BRAINBOX.md
-│   │   │   ├── GROK_FUNC_BRAINBOX.md
-│   │   │   └── QWEN_FUNC_BRAINBOX.md
+│   │   ├── AI_AGENTS_CORE_FUNC_BRAINBOX/
+│   │   │   ├── README_AI_AGENTS_CORE_FUNC_BRAINBOX.md
+│   │   │   ├── CHATGPT_CORE_FUNC_BRAINBOX.md
+│   │   │   ├── CLAUDE_CORE_FUNC_BRAINBOX.md
+│   │   │   ├── CLINE_CORE_FUNC_BRAINBOX.md
+│   │   │   ├── CODEX_CORE_FUNC_BRAINBOX.md
+│   │   │   ├── COPILOT_CORE_FUNC_BRAINBOX.md
+│   │   │   ├── DEEPSEEK_CORE_FUNC_BRAINBOX.md
+│   │   │   ├── GROK_CORE_FUNC_BRAINBOX.md
+│   │   │   └── QWEN_CORE_FUNC_BRAINBOX.md
 │   │   └── AGENT_FUNCTIONS_FUNC_AI_BRAINBOX/
 │   │       ├── README_AGENT_FUNCTIONS_FUNC_AI_BRAINBOX.md
 │   │       ├── RESEARCH_FUNC_AI_BRAINBOX/
@@ -606,11 +606,11 @@ DEODINI_BRAINBOX/
 
 FUNC AI uses a **dual index**.
 
-### AI_AGENTS_FUNC_AI_BRAINBOX
+### AI_AGENTS_CORE_FUNC_BRAINBOX
 
 Question answered:
 
-> What can this particular AI agent do?
+> What capabilities, tools, skills, plugins, connectors, MCPs, APIs, and interfaces are exposed to this agent, and what are their connection states and limitations?
 
 The current live FUNC AI was inspected read-only during this compilation. Existing agent capability records were found for:
 
@@ -623,7 +623,32 @@ The current live FUNC AI was inspected read-only during this compilation. Existi
 - Grok
 - Qwen
 
-These existing records are to be preserved/mapped during ticketed integration rather than rewritten from memory.
+#### CORE record fields and status distinctions
+
+Each agent record describes capabilities and integrations exposed to that agent. Repeat status fields per capability/integration where needed rather than asserting one record-wide state. CORE does not imply successful execution. Record each status separately; do not use one status as proof of another. Use `YES`, `NO`, `UNKNOWN`, or `NOT APPLICABLE`, with scope and evidence where relevant.
+
+- **EXPOSED:** capability, tool, skill, plugin, connector, MCP, API, or interface is visible/available to the agent.
+- **CONNECTED:** the relevant service or interface is linked and reachable in the applicable session/environment.
+- **AUTHENTICATED:** the required account or credential was verified for the relevant service.
+- **EXECUTABLE:** the specific operation has been successfully exercised; name what was actually demonstrated.
+- **AUTHORIZED:** the Operator has permitted the relevant action and scope. Technical capability, connection, or authentication does not itself grant authority.
+- **LIMITATIONS:** known access, environment, reliability, scope, and safety boundaries.
+- **CANONICAL EXE REFERENCES:** links to the corresponding approved executor/function record(s); use `NOT YET ASSIGNED` if none is established.
+- **LAST VERIFIED:** date/time, source, scope, and result of the most recent verification. Use `NOT VERIFIED` rather than inferring a date or status.
+
+A tool or capability may be exposed while disconnected, unauthenticated, untested, or unauthorized. Records must state those states independently and must not imply that an available tool will successfully execute every operation.
+
+#### DeepSeek and Qwen record treatment
+
+The existing DeepSeek and Qwen source files contain only pending-report notices. Those empty files must not be migrated as CORE records. Their target records should instead be populated with the Operator-established role and limitations below, while connector/authentication/execution statuses remain `UNKNOWN` or `NOT VERIFIED` unless separately evidenced:
+
+- **DeepSeek:** research, analysis/verification, and creation support; useful for quick client-preview generation; package/downloadable-oriented delivery; limited direct local DEODINI filesystem integration.
+- **Qwen:** research and creation support, including front-end/UI/UX and component work; useful for quick client-preview generation; package/downloadable-oriented delivery; limited direct local DEODINI filesystem integration.
+- For both agents, technically possible GitHub access does not authorize a push. GitHub writes require task-specific Operator authorization.
+- Tool availability or agent role does not confer production or migration authority.
+- Their `CANONICAL EXE REFERENCES` must point only to categories established by the approved FUNC EXE registry; otherwise record `NOT YET ASSIGNED`.
+
+These source records are migration evidence, not ready-made CORE records. Preserve evidence-backed content during ticketed integration; do not rewrite it from memory, and do not carry status-only DeepSeek/Qwen placeholders into the CORE registry.
 
 The current FUNC area also contains workflow/request/compliance documents. Their exact V003 destinations must be determined during migration mapping rather than silently forced into the new dual index.
 
@@ -1577,7 +1602,7 @@ FUNC_WORKFLOW_BRAINBOX.md
 
 These existing records are important migration evidence.
 
-The agent records are explicitly represented in the target AI_AGENTS_FUNC_AI_BRAINBOX branch.
+Evidence-backed agent profiles map to the target `AI_AGENTS_CORE_FUNC_BRAINBOX` branch. DeepSeek and Qwen have pending-report-only source files; their empty files are not meaningful CORE records and must not be copied as placeholders. Their target records follow the substantive role/limitations baseline in §9, with unverified connection and execution states clearly marked.
 
 The workflow/request/compliance documents require content-aware migration mapping because V003 separates capability, workflow and governance responsibilities more sharply than the current layout.
 
