@@ -414,3 +414,120 @@ M01 establishes the baseline only. It does not implement any M02–M21 migration
 - **Operator branch rule:** each V003-Mxx ticket receives its own branch; local ticket commits are permitted, while push/PR/merge remain at the batch boundary.
 - **Root README recovery:** reconstructed from the original RDC write payload and separately checked against Specification §8 (340 hierarchy lines, zero differences), local links (7 checked, zero broken), and trailing whitespace (zero).
 - **Integrity flag:** M02-BR-01 records that the reconstructed file (32,319 bytes; SHA-256 `45b6d4bdd6a9c6e5f324809099383965625ae0978b0fe26c9f70de609a391bb7`) differs from the historical M02 final-verification record (32,375 bytes; SHA-256 `79051a665d69b5578c06baf9ad72ff4203ad6062b38bb031763b2cd5620ecc69`). Preserve both records; reconcile at Batch A closure if the exact historical snapshot is found.
+
+## 12. V003-M03 Governance canonicalization event — 2026-10-08
+
+**Ticket:** V003-M03 — Governance Canonicalization Migration.
+**Authorization:** AUTHORIZED under the Operator-approved V003-M01–M21 set.
+**Dependencies:** M01 independently verified PASS; M02 independently verified PASS; preferred M02 dependency satisfied.
+**P14 preflight:** PASS. The M03 ticket, frozen Specification §§5, 25–27, relevant Origin Conversation naming/authority passages, source contents, current tree, reference status, and Git state were inspected before changes.
+**Branch / HEAD:** `v003/m01-current-state-inventory-migration-map` at `27e73f828bb367298442c2e621c18d1cc1ceb4f4`. The M03 suggested branch was treated as a planning hint under the active Batch A cadence; no branch switch was made.
+**Pre-state:** zero staged files; M01/M02 support changes already present in the working tree; root README and migration map were untracked from M02. The active branch had no upstream set. Local `main` and `origin/main` were at the same HEAD as the active branch.
+**Target pre-state:** `GOVERNANCE_BRAINBOX/` did not exist.
+
+### M03 source inventory and dispositions
+
+The seven legacy governance-bearing sources below were read at their current paths. Each current SHA-256 exactly matches the M01 manifest baseline. They remain in place and unmodified; M03 created canonical rule records, not source replacements.
+
+| Current source | M01 baseline / M03 current size and SHA-256 | Governance disposition | Remaining local/source role | Source removal |
+|---|---|---|---|---|
+| `DOB_MUST_README.md` | 9,788 bytes; `76e2b6aa72e4dcf3b56475f182dca2c117ae7a32a9e116c3b3c8bf6262811252` | Root/global policy mapped to Naming, Documentation, Reference, Versioning, Evidence, Security, Ticketing, and Promotion as applicable. | Original root-entry wording and historical policy source remain intact. | No M03 removal; M19 reference reconciliation, then M20 source-by-source eligibility/integrity gate. |
+| `AI_BRAINBOX/AI_MUST_README.md` | 2,811 bytes; `df7ac175b778d52ebe7779a17e6eee44b8a4c92b450bf85d563624b922f37fa6` | Human-in-loop, branch/merge authority, and engagement-disclosure rules mapped to Ticketing/Promotion. | AI entry navigation, knowledge-base description, and agent/milestone detail remain local legacy content. | No M03 removal; AI migration and M19 references before M20 review. |
+| `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` | 4,387 bytes; `edfff2651ab1005a8d166c06df9553bd8a4f82ba4508d648dbbd8b680365fab9` | General authorization/change-request principles referenced by Ticketing. | Function-area reading order and request-submission procedure remain local pending M07. | No M03 removal; M07/M19 disposition before M20 review. |
+| `AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md` | 4,943 bytes; `e2d9ec14ca1d96703fca5be75316a92efa261b245307923be9f78cb986bd8e90` | Secret-safe reporting and limitation disclosure referenced where system-wide. | Agent capability-report request and output requirements remain local pending M07. | No M03 removal; M07/M19 disposition before M20 review. |
+| `AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md` | 11,857 bytes; `7a73a3b43226ddd5eb9c6119274b95f2bd623d5fdb30a30573d65447ae5602bd` | Human approval, verification, evidence, no-secret email content, and engagement truth mapped where global. | Agent sequencing, email workflow, and project operating procedures remain local/ticketed content. | No M03 removal; M07 and applicable workflow tickets/M19 before M20 review. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md` | 1,319 bytes; `f85c3a95c15b8546a58677a2976fda19389f71c3c7b58852fb3376cfff51cc65` | Evidence and tested-claim principles referenced in Evidence/Promotion. | Project-workflow navigation and RAW/PROVEN/FAILED source disposition remain pending M09. | No M03 removal; M09/M19 disposition before M20 review. |
+| `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md` | 847 bytes; `1850965879a9494dd3004e605125c2d3e2bde42e678fe8d11d5e8fc9872dbef6` | Tested-claim principle referenced in Evidence. | Skills navigation/source inventory remains pending M08. | No M03 removal; M08/M19 disposition before M20 review. |
+
+The V003 Specification and Origin Conversation are retained canonical architecture/historical authorities, not legacy-source retirement candidates. The M01 manifest remains the integrity reference for the seven current sources.
+
+### Implemented target and scoped reference updates
+
+Created and populated the exact approved tree:
+
+```text
+GOVERNANCE_BRAINBOX/
+├── README_GOV_BRAINBOX.md
+├── NAMING_GOV_BRAINBOX.md
+├── DOCUMENTATION_GOV_BRAINBOX.md
+├── REFERENCE_GOV_BRAINBOX.md
+├── VERSIONING_GOV_BRAINBOX.md
+├── EVIDENCE_GOV_BRAINBOX.md
+├── SECURITY_GOV_BRAINBOX.md
+├── TICKETING_GOV_BRAINBOX.md
+└── PROMOTION_GOV_BRAINBOX.md
+```
+
+Each rule record identifies its canonical Specification section and inspected legacy provenance. Governance establishes one current owner for system-wide rules; the root README owns complete-tree navigation; local/workflow-specific source content remains pending its own migration. The Phase 02 flag rule is explicitly scoped to Phase 02 and cites the later Operator declaration and active ticket/README records; the frozen Specification was not rewritten. No secret value was copied.
+
+Updated `README_BRAINBOX.md` to mark Governance populated, list its physical local tree, add canonical navigation, and distinguish current Governance authority from retained legacy sources. Updated the V003 parent README and Phase 02 README to show M03's local implementation/verification-pending state. No legacy source file or directory was edited, moved, renamed, or deleted.
+
+### Flag register
+
+**M03-REF-01 — BATCH-DEFERRED / NON-BLOCKING**
+
+- **Exact locations:** `AI_BRAINBOX/AI_MUST_README.md:9` says “Root authority”; `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md:12` says “Root authority”; `DOB_MUST_README.md:14,113` still describes DOB as the master entry/root rule authority.
+- **Defect/evidence:** These retained sources still contain pre-M03 authority wording. Their hashes match the M01 baseline; M03 did not rewrite them under the source-preservation rule.
+- **Migration impact:** The new Governance README and root navigation identify Governance as the current canonical source; the old source text remains available and can still be encountered before M19 reference reconciliation.
+- **Next-ticket impact:** This does not materially affect M04 Version History migration or the accuracy of the M03 Governance target.
+- **Classification/reason:** BATCH-DEFERRED / NON-BLOCKING; the issue is a known legacy-reference transition assigned to M19, and the authoritative new Governance set is present. M20 must not retire any source until its own checks pass.
+- **Correction/timing/owner:** M19 reconciles active README references; M20 reviews source removal individually. Codex executes those tickets, ChatGPT independently verifies, and Operator authority remains required for source removal/closure.
+
+**Carried forward:** M01-GIT-01 (72 dangling local Git objects; preserve, do not prune/GC) and M01-FH-01 (32 FootHive catalog references assigned to M15) remain unrelated and do not block M03. M02-WS-01 remains resolved/non-blocking. No new blocking flag was found.
+
+### Post-state and verification
+
+- Governance target directory and all nine approved files: created locally.
+- Root README population status and physical tree: updated to match the actual new Governance directory.
+- Seven legacy source hashes: unchanged from the M01 baseline.
+- Legacy source removal/move/rename: none.
+- Independent ChatGPT verification: pending.
+- Scope expansion: none.
+- Git lifecycle: **PENDING — BATCH A BOUNDARY**. No M03 staging, commit, push, PR, merge, or deployment was performed.
+
+
+### M03 Governance artifact integrity manifest
+
+SHA-256 and file size recorded after the M03 write/read-back check:
+
+| Governance file | Bytes | Physical lines | SHA-256 |
+|---|---:|---:|---|
+| `README_GOV_BRAINBOX.md` | 5,594 | 72 | `76b1012bd11595969977b0841a9eca07774535831a2f17cb1a1d8a96c4f3a0ad` |
+| `NAMING_GOV_BRAINBOX.md` | 1,906 | 26 | `e359639924c8609ed86f8a88ac6614c2eeca36656dfe480c4328ce5397e6072d` |
+| `DOCUMENTATION_GOV_BRAINBOX.md` | 3,009 | 41 | `e966b27e6b6d2b38717cd118c41fca838dad0f5d0f32dc3456c9d5ed6053ce03` |
+| `REFERENCE_GOV_BRAINBOX.md` | 2,430 | 36 | `e87458a19c7cc8cd7c71f8e230ed4665423dec4691e84438b43f239f4520a75d` |
+| `VERSIONING_GOV_BRAINBOX.md` | 2,122 | 35 | `74c476bad81682c7a9505bbecc78c0f517c2595c2f458576d4ceeae5d5cfe4c2` |
+| `EVIDENCE_GOV_BRAINBOX.md` | 2,160 | 32 | `8550fd1ad53c82e4fced70656e6a07dfd8d0780246a9404429471391efaE3fcb` |
+| `SECURITY_GOV_BRAINBOX.md` | 1,729 | 26 | `5e82791b5d4c8b6fb91699552427d6ce3ac1dbb5b424d44502d8bc22959b79a5` |
+| `TICKETING_GOV_BRAINBOX.md` | 3,725 | 42 | `15905f46b1eebe2c5c2e8d2a725a93d255cdf8fea4488fed8b9c60f61a95de2d` |
+| `PROMOTION_GOV_BRAINBOX.md` | 2,095 | 27 | `4eedd6ddc48d65780e9deed1401141384deaa9e4388c3b7a511d885f3fcb5c3a` |
+
+The M03 event section and this manifest are append-only ledger records; no self-hash is claimed for the living migration map.
+
+
+---
+
+## 13. ChatGPT independent verification — V003-M03 — 2026-10-08
+
+**Result:** PASS.
+**Blocking M03 flags:** NONE.
+**Batch-deferred flag:** `M03-REF-01` — retained for M19 reference reconciliation / M20 source-retirement review.
+**Next dependency-eligible ticket:** V003-M04, subject to its own P14 preflight.
+**Git lifecycle:** `PENDING — BATCH A BOUNDARY`.
+
+Independent checks confirmed:
+
+- exact nine-file Governance target present;
+- 9/9 live Governance sizes, physical line counts, and SHA-256 values match the corrected M03 manifest, with hexadecimal case normalized;
+- the Naming and Versioning transcription-correction records are present and corrected map values equal the live files;
+- all seven legacy governance-bearing sources still match their M01 baseline hashes;
+- no tracked legacy source is deleted or renamed;
+- 51 Governance/root local Markdown paths checked, 0 broken;
+- nine Governance files, root README, and M03 Codex record sections have 0 trailing-whitespace lines;
+- targeted Governance credential/secret-value scan found 0 matches;
+- `M03-REF-01` evidence exists in the preserved legacy sources, but does not materially affect M04 because canonical Versioning/Evidence Governance is now present;
+- active branch/HEAD remain `v003/m01-current-state-inventory-migration-map` / `27e73f828bb367298442c2e621c18d1cc1ceb4f4`;
+- staged files: 0;
+- no commit, push, PR, merge, deployment, source move, source rename, or source deletion occurred for M03.
+
+M03 is independently verified for same-batch dependency progression.
