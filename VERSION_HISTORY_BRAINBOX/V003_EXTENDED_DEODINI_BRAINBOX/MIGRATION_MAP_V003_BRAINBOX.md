@@ -1,10 +1,10 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — Batch A and BATCHA-DOC-01 published through PR #21; base `main` verified at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`; Batch B M05 FUNC CORE migration independently verified PASS on `v003/m05-func-core-registry-migration`; all eight original FUNC sources retain their M01 baselines; M05 remains unstaged/uncommitted/unpushed; M06 branch creation waits for the required M05 local ticket commit and clean handoff; prior deferred flags retain M15/M19/M20/M21 ownership
+**Status:** Living M01–M21 migration ledger — Batch A and BATCHA-DOC-01 published through PR #21; base `main` verified at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`; Batch B M05 FUNC CORE implementation is committed/pushed on `v003/m05-func-core-registry-migration`; independent ChatGPT verification remains pending; all eight original FUNC sources retain their M01 baselines; M06 is active on its dedicated branch; prior deferred flags retain M15/M19/M20/M21 ownership
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
-**Current active branch:** v003/m05-func-core-registry-migration
+**Current active branch:** v003/m06-func-exe-registry-migration
 **M01 baseline branch:** v003/m01-current-state-inventory-migration-map
 **Baseline commit:** 27e73f828bb367298442c2e621c18d1cc1ceb4f4
 
@@ -834,7 +834,7 @@ Six substantive source reports are summarized with provenance and dated claims; 
 
 The current Codex record uses only this session's observed evidence: GitHub MCP requests acted as DeOdini; GitHub PR #21 was created and merged; RDC on DESKTOP-DHRIH27 responded; and the Git push succeeded. Other listed services remain unverified. The record distinguishes the configured local commit identity from the GitHub API actor and does not infer standing authorization.
 
-The M06 executable registry is not yet populated, so every CORE record states CANONICAL EXE REFERENCES: NOT YET ASSIGNED — M06. FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, and FUNC_WORKFLOW_BRAINBOX.md remain untouched for their later content-specific migration and source-retirement gates.
+M06 populated the EXE registry with four admitted categories and reserved MEDIA. The eight CORE records now link to their applicable admitted/candidate record or explain why no category is assigned. FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, and FUNC_WORKFLOW_BRAINBOX.md remain untouched for later content-specific migration and source-retirement gates.
 
 ### M05 verification and state
 
@@ -843,5 +843,63 @@ The M06 executable registry is not yet populated, so every CORE record states CA
 - DeepSeek and Qwen placeholders were not promoted as empty CORE records.
 - New records attribute historical reports, and unverified runtime states remain explicit.
 - No product tests were applicable or run; verification is documentation, path, content, and integrity read-back.
-- M05 implementation and Codex read-back verification are complete locally on v003/m05-func-core-registry-migration. Independent ChatGPT verification is pending. M05 changes are not staged, committed, pushed, or merged; Batch B Git closure remains at the authorized boundary.
-- Independent ChatGPT verification is pending.
+- M05 implementation was committed as 585f9600ca4940aab750488b2f46f7cb72a94d69 by DeOdini and pushed to origin/v003/m05-func-core-registry-migration. Local and remote refs matched; the worktree was clean. No PR or merge is recorded. Independent ChatGPT verification remains pending; this corrects the pre-publication snapshot recorded earlier.
+- Independent ChatGPT verification remains pending; M06 does not claim an M05 independent PASS.
+
+
+## 21. V003-M06 — FUNC EXE Registry Migration — 2026-10-08
+
+### Authority, dependency, and P14 preflight
+
+- Authorized ticket: V003-M06 — FUNC EXE Registry Migration.
+- Canonical authorities: `V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` and `V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`, especially §9 and its frozen P06 capability matrix.
+- Dependency base: M05 commit `585f9600ca4940aab750488b2f46f7cb72a94d69`, pushed on `v003/m05-func-core-registry-migration`. M06 was created on the dedicated branch `v003/m06-func-exe-registry-migration` from that state.
+- M06 matrix admission: RESEARCH, BROWSER, FILE, and CODE are admitted only for the evidence named below; MEDIA remains RESERVED / EXECUTION EVIDENCE PENDING. No other category was added.
+- Source reports remain evidence with their recorded date and scope. Exposure, a configured connector, and a skill listing are not treated as proof of execution or authorization.
+
+### M06-PREFLIGHT-01 — M05 current-status reconciliation
+
+**Exact objects:** `README_BRAINBOX.md` current migration status; `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md` current phase status; `PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md` migration status; this map's header and §20; and the M05 report's Sections 4–6.
+**Issue:** after M05 publication, repository status text was inconsistent: some current-state records still described M05 as uncommitted/unpushed, while the M05 report and other status text disagreed on whether independent ChatGPT verification had passed.
+**Evidence:** M05 commit `585f9600ca4940aab750488b2f46f7cb72a94d69` is the M06 base; the M05 report's final verification state is PENDING.
+**Migration impact:** inaccurate lifecycle/verification status could confuse M06 dependency tracking. It did not change the frozen P06 matrix or the evidence that controls M06 category admission.
+**Next-ticket impact:** M06 categories do not rely on a claim that M05 independently passed. M05 independent verification remains pending.
+**Classification:** BATCH-DEFERRED / NON-BLOCKING for the directly Operator-authorized M06 execution.
+**Reason/disposition:** the Operator explicitly directed M06 after M05 was published. Current status records and the M05 report were reconciled while preserving M05 verification as pending; no PASS was inferred.
+**Correction timing/owner:** reconciled by Codex within the M06 branch; independent M05 review remains separate.
+
+### Evidence-backed migration-source dispositions
+
+| Source path / role | M06 use and disposition | Source state / removal eligibility |
+|---|---|---|
+| `V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md` §9, frozen P06 matrix | Canonical admission authority: four categories admitted for bounded evidence; MEDIA reserved | Retained canonical authority; no source removal |
+| `AI_BRAINBOX/FUNC_AI_BRAINBOX/CODEX_FUNC_BRAINBOX.md` | Historical Codex capability source; consulted as provenance, not used to claim current runtime state | Retained unchanged; no M06 retirement |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md`, T23 | Supports the dated BROWSER and CODE evidence for the local preview/header change | Retained unchanged; no M06 retirement |
+| Eight `AI_AGENTS_CORE_FUNC_BRAINBOX/*_CORE_FUNC_BRAINBOX.md` records | M05 destination records; updated only in their canonical EXE-reference fields | Retained; references now point to applicable admitted/reserved category or explicit non-assignment |
+| Other legacy `*_FUNC_BRAINBOX.md` agent reports | Reviewed only for evidence boundaries; tool lists/configuration do not independently admit executors | All retained unchanged; later ticket owns migration/retirement |
+| M05 report and live status/navigation records | Reconciled publication state and documented the outstanding independent-review status | Support records retained; no architectural change |
+
+### Target category dispositions
+
+| Target path | State | Evidence / limits |
+|---|---|---|
+| `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md` | Created; canonical M06 index | Tree, admission register, authority boundary, and links to matrix/evidence |
+| `RESEARCH_EXE_FUNC_BRAINBOX/README_RESEARCH_EXE_FUNC_BRAINBOX.md` | ADMITTED — Codex only | Public-source lookup and official GitHub Status history, 2026-10-07; proves scoped public research only |
+| `BROWSER_EXE_FUNC_BRAINBOX/README_BROWSER_EXE_FUNC_BRAINBOX.md` | ADMITTED — Codex only | T23 local FootHive preview responsive/interaction checks, 2026-10-03; Copilot Playwright configuration remains unverified |
+| `FILE_EXE_FUNC_BRAINBOX/README_FILE_EXE_FUNC_BRAINBOX.md` | ADMITTED — Codex only | Scoped repository file operations in recorded P03–P05/M05; subject to the active workspace permissions |
+| `CODE_EXE_FUNC_BRAINBOX/README_CODE_EXE_FUNC_BRAINBOX.md` | ADMITTED — Codex only | T23 scoped phone-width CSS change, verified in the local preview; no broad backend/production claim |
+| `MEDIA_EXE_FUNC_BRAINBOX/README_MEDIA_EXE_FUNC_BRAINBOX.md` | RESERVED / EXECUTION EVIDENCE PENDING | No verified media output artifact; no agent admitted |
+
+### CORE references, preservation, and verification
+
+- Codex CORE links to RESEARCH, BROWSER, FILE, and CODE.
+- Copilot CORE links to the BROWSER candidate and says configuration did not verify execution; Copilot is not admitted.
+- Cline CORE links to the reserved MEDIA record and says no output was verified; Cline is not admitted.
+- ChatGPT, Claude, DeepSeek, Grok, and Qwen CORE records link to the index and explicitly state that the frozen matrix assigns no category.
+- All eight original `*_FUNC_BRAINBOX.md` source reports remain at their paths. M06 did not rename, move, rewrite, or delete them; no media artifact or additional category was fabricated.
+- Read-back link check covered 20 relevant root/FUNC/CORE/EXE/V003 navigation records: 120 local Markdown links checked, 0 broken.
+- `git diff --check` returned exit 0; only configured LF-to-CRLF conversion notices appeared.
+- This was a documentation/capability-index migration; no product or browser tests were run.
+
+**M06 implementation:** Codex read-back PASS. **Independent ChatGPT verification:** PENDING.
+**M06 Git state at this ledger snapshot:** local changes not yet staged/committed/pushed; publication will be appended after the Git operation. No PR or merge has been requested.

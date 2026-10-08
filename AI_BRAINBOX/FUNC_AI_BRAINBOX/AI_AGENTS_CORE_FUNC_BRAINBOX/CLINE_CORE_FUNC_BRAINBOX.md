@@ -43,7 +43,7 @@ Execution, external writes, messages, deployments, repository pushes, merges, an
 
 ## CANONICAL EXE REFERENCES
 
-NOT YET ASSIGNED — V003-M06 owns evidence-backed executable indexing.
+[EXE index](../AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md); [reserved MEDIA record](../AI_AGENTS_EXE_FUNC_BRAINBOX/MEDIA_EXE_FUNC_BRAINBOX/README_MEDIA_EXE_FUNC_BRAINBOX.md). Cline is not an admitted executor; its historical media profile has no verified output artifact.
 
 ## LAST VERIFIED
 

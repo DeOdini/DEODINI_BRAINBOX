@@ -1597,3 +1597,86 @@ Created the FUNC parent README, CORE registry README, and all eight CORE records
 Codex read-back checks pass: eight records with all required fields, zero broken local links, all eight original sources match their M01 SHA-256 baselines, and git diff --check passes. DeepSeek and Qwen were built only from the approved Specification §9 role/limitation baseline; their runtime states remain UNKNOWN / NOT VERIFIED. No product tests were applicable or run.
 
 M05 remains local and unstaged/uncommitted for the Batch B Git boundary. There is no M05 push, PR, or merge. Independent ChatGPT verification is pending.
+
+
+---
+
+# V003-M06 — Operator/Codex Execution Conversation — 2026-10-08
+
+## Exchange 1 — M06 authorization and execution
+
+### De O'Dini — Operator (verbatim)
+
+````text
+NOW PROCEED TO M06, ONCE YOU ARE DONE WITH M06, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB.
+
+**# V003-M06 — FUNC EXE Registry Migration**
+
+**Status:** AUTHORIZED FOR EXECUTION
+**Suggested branch:** `v003/m06-func-exe-registry-migration`
+**Dependencies:** M05.
+
+**Canonical authorities**
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+## Target
+
+Create/populate:
+- `AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md`
+- `RESEARCH_EXE_FUNC_BRAINBOX/`
+- `BROWSER_EXE_FUNC_BRAINBOX/`
+- `FILE_EXE_FUNC_BRAINBOX/`
+- `CODE_EXE_FUNC_BRAINBOX/`
+- `MEDIA_EXE_FUNC_BRAINBOX/`
+
+## Rules
+
+- RESEARCH/BROWSER/FILE/CODE may be admitted only to the extent supported by evidence.
+- MEDIA remains RESERVED / EXECUTION EVIDENCE PENDING unless new ticket-scoped evidence independently verifies successful execution.
+- Tool/plugin/connector presence alone cannot create an executable category.
+- Do not invent additional EXE categories.
+- CORE records may reference EXE categories; EXE records should identify evidence and executor limitations.
+- Do not remove legacy agent source files here.
+
+## Success gate
+
+- Admission states match the frozen P06 matrix or newer separately authorized evidence.
+- MEDIA is not falsely presented as proven.
+- No speculative EXE category is created.
+- CORE↔EXE references are valid.
+````
+
+### Codex — commentary (verbatim)
+
+```text
+I’ll build M06 on its own branch, using the pushed M05 branch as its dependency base so the CORE registry remains available. I’m checking the repository state and the frozen Phase 01 EXE capability matrix before creating or changing files.
+```
+
+### Codex — commentary (verbatim)
+
+```text
+The frozen P06 matrix admits four categories: RESEARCH, BROWSER, FILE, and CODE. MEDIA is explicitly reserved; the matrix does not admit any other category. I’m checking the cited local records so the EXE entries preserve the evidence date and executor limits instead of turning old tool availability into a current capability claim.
+```
+
+### Codex — commentary (verbatim)
+
+```text
+The M06 evidence is clear in the frozen matrix. I also found M05 status text that became stale after your commit/push request: one index says independent verification passed while the M05 report says it is pending, and several records still describe M05 as uncommitted. I’m reconciling those status records in the M06 branch and will preserve the historical sequence in the report and conversation log.
+```
+
+### Codex — commentary (verbatim)
+
+```text
+M06 is now on its dedicated branch and the five category folders are populated. The four admitted records are tied to the frozen P06 evidence; MEDIA is marked reserved, and the eight CORE records now link to the index or explicitly show no admitted assignment. I’m finishing the status reconciliation and adding the ticket’s report/conversation entries before final checks and Git publication.
+```
+
+### Codex — commentary after context restoration (verbatim)
+
+```text
+The M06 records are in place. I’m finishing the M05 history/status note, then I’ll verify the generated links, evidence boundaries, and Git diff before publishing the M06 branch.
+```
+
+### Codex — report and implementation status (verbatim)
+
+M06’s index lists only the four frozen-matrix admissions, while MEDIA remains reserved without an output artifact. I reconciled the M05 publication fields without changing its pending independent-review status, created the M06 report and Migration Map §21 record, and checked the eight CORE assignments. The 20-file local-link check found 120 links and no broken paths. I’m completing the final Git whitespace/state checks, then I’ll stage, commit, and push the dedicated M06 branch as you directed.

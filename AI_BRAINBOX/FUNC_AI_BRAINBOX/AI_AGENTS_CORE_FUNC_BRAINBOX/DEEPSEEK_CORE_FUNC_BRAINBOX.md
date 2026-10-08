@@ -43,7 +43,7 @@ A technically available GitHub integration does not authorize a push. DeepSeek h
 
 ## CANONICAL EXE REFERENCES
 
-NOT YET ASSIGNED — V003-M06 will determine categories from present evidence. No executable category is assigned from the role baseline alone.
+[EXE index](../AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md). No category is assigned: the approved role baseline and pending notice do not establish execution evidence.
 
 ## LAST VERIFIED
 

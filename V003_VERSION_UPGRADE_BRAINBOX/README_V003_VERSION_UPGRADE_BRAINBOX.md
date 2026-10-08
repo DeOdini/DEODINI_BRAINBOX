@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02 — Batch A closed and BATCHA-DOC-01 resolved through PR #21 (`3201a1e80c5bfb2f4f2053599608ff8fce15f9db`). Batch B M05 FUNC CORE migration is independently verified PASS on `v003/m05-func-core-registry-migration`; M05 remains unstaged/uncommitted. M06 may branch only after M05 receives its ticket-specific local commit and the M05 worktree is clean.
-**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED / M01-M04 VERIFIED AND MERGED / BATCH A CORRECTION PR #21 MERGED / BASE MAIN `3201a1e80c5bfb2f4f2053599608ff8fce15f9db` / M05 INDEPENDENTLY VERIFIED PASS / M05 LOCAL COMMIT + CLEAN HANDOFF REQUIRED BEFORE M06 / BATCH B PUSH-PR-MERGE DEFERRED TO BATCH B BOUNDARY
+**Current phase:** V003 Phase 02 — Batch A is closed. BATCHA-DOC-01 merged through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`. M05 was committed/pushed as `585f960` on its own branch; independent ChatGPT verification remains pending. M06 is active on `v003/m06-func-exe-registry-migration`.
+**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED / M01-M04 VERIFIED AND MERGED / BATCH A CORRECTION PR #21 MERGED / M05 COMMITTED AND PUSHED AT `585f960` / M05 INDEPENDENT CHATGPT VERIFICATION PENDING / M06 ACTIVE ON DEDICATED BRANCH / MERGE AUTHORITY RETAINED
 
 ## Purpose
 
@@ -72,7 +72,7 @@ Phase 01 is frozen after the successful V003-P16 final reconciliation.
 
 The Operator explicitly approved V003-M01 through V003-M21 for execution as a set on 2026-10-08. Execute one ticket at a time in dependency order, with a separate P14 preflight and report for each ticket. A dependent ticket in the same batch may proceed after independent verification PASS when no unresolved flag materially blocks it.
 
-The Operator has clarified that every V003-Mxx ticket has its own branch and ticket-specific local commit for auditability. M01–M04 each have a dedicated pushed branch and are merged to `main`; BATCHA-DOC-01 is merged through PR #21. M05 is implemented and independently verified PASS on its dedicated branch. Before M06 branch creation, M05 must receive its ticket-specific local commit and the M05 worktree must be clean; Batch B remote push/PR/merge remains deferred to the Batch B boundary.
+The Operator has clarified that every V003-Mxx ticket has its own branch and ticket-specific local commit for auditability. M01–M04 are merged to `main`; BATCHA-DOC-01 is merged through PR #21. M05 has its own pushed branch and commit `585f960`; its independent ChatGPT verification remains pending. M06 now has its own active branch. Batch PR/merge closure remains governed by the applicable Operator direction.
 
 ## V003-P01 Provenance Record
 
@@ -131,7 +131,7 @@ These values describe the current local file at the time of the verification abo
 - **PHASE 01 EXECUTION / VERIFICATION HISTORY:** `PHASE01_POLISH_BRAINBOX/`
 - **PHASE 02 MIGRATION PLANNING / REPORTING:** `PHASE02_MIGRATION_BRAINBOX/`
 - **PHASE 01 STATUS:** CLOSED / FROZEN
-- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; Batch A M01-M04 verified and merged through PRs #16-#19; BATCHA-DOC-01 resolved by PR #21 at 3201a1e80c5bfb2f4f2053599608ff8fce15f9db; local main, origin/main, and GitHub main synchronized at that SHA before M05; M05 active on its dedicated branch; deferred flag owners remain M15, M19/M20, and M21.
+- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; Batch A M01-M04 verified and merged through PRs #16-#19; BATCHA-DOC-01 merged by PR #21 at 3201a1e80c5bfb2f4f2053599608ff8fce15f9db; M05 committed/pushed at 585f960 with independent verification pending; M06 active on its dedicated branch; deferred flag owners remain M15, M19/M20, and M21.
 
 ## V003-P01 Scope
 

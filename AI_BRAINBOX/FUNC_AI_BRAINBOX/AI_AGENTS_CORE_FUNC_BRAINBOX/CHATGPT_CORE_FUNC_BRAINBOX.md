@@ -44,7 +44,7 @@ Use any connected capability only under the Operator's task-specific direction a
 
 ## CANONICAL EXE REFERENCES
 
-NOT YET ASSIGNED — V003-M06 will build the evidence-backed executable-capability index. No EXE category path is inferred here.
+[EXE index](../AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md). No category is assigned in the frozen M06 matrix; current ChatGPT execution remains UNKNOWN / NOT VERIFIED.
 
 ## LAST VERIFIED
 

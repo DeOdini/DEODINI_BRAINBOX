@@ -43,7 +43,7 @@ The source's own boundary says irreversible actions require explicit user approv
 
 ## CANONICAL EXE REFERENCES
 
-NOT YET ASSIGNED — V003-M06 owns executable capability categorization and indexing.
+[EXE index](../AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md). No category is assigned in the frozen M06 matrix; the historical Playwright skill entry does not establish successful execution.
 
 ## LAST VERIFIED
 

@@ -43,7 +43,7 @@ All repository writes, external messages, deployment, and account changes remain
 
 ## CANONICAL EXE REFERENCES
 
-NOT YET ASSIGNED — V003-M06 will index executable capabilities only after evidence-based review.
+[EXE index](../AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md); [BROWSER candidate record](../AI_AGENTS_EXE_FUNC_BRAINBOX/BROWSER_EXE_FUNC_BRAINBOX/README_BROWSER_EXE_FUNC_BRAINBOX.md). Playwright configuration is recorded, but M06 source evidence does not verify Copilot end-to-end execution or admit it as an executor.
 
 ## LAST VERIFIED
 
