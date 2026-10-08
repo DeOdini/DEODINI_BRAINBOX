@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02, Batch A — M01, M02, and M03 independently verified PASS and committed locally on dedicated branches; M02-BR-01 and M03-REF-01 remain non-blocking; M04 is next dependency-eligible under its P14 preflight; Batch A push/PR/merge pending.
-**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED / M01-M03 VERIFIED + DEDICATED LOCAL COMMITS / M02-BR-01 AND M03-REF-01 NON-BLOCKING / M04 DEPENDENCY-ELIGIBLE / BATCH A PUSH-PR-MERGE PENDING
+**Current phase:** V003 Phase 02, Batch A — M01, M02, and M03 independently verified PASS and committed locally on dedicated branches; M02-BR-01 and M03-REF-01 remain non-blocking; M04 has not started and branch creation is temporarily held on M04-BR-01 until the unstaged M03/reconciliation archive correction is resolved and the prior-ticket worktree is clean; Batch A push/PR/merge pending.
+**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED / M01-M03 VERIFIED + DEDICATED LOCAL COMMITS / M02-BR-01 AND M03-REF-01 NON-BLOCKING / M04 NOT STARTED — BRANCH START HELD ON M04-BR-01 PRIOR-TICKET WORKTREE CLEANUP / BATCH A PUSH-PR-MERGE PENDING
 
 ## Purpose
 
@@ -131,7 +131,7 @@ These values describe the current local file at the time of the verification abo
 - **PHASE 01 EXECUTION / VERIFICATION HISTORY:** `PHASE01_POLISH_BRAINBOX/`
 - **PHASE 02 MIGRATION PLANNING / REPORTING:** `PHASE02_MIGRATION_BRAINBOX/`
 - **PHASE 01 STATUS:** CLOSED / FROZEN
-- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; M01, M02, and M03 independently verified PASS and committed locally on dedicated branches; M02-BR-01 and M03-REF-01 remain non-blocking/carry-forward; M04 is next dependency-eligible under P14; Batch A push/PR/merge pending
+- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; M01, M02, and M03 independently verified PASS and committed locally on dedicated branches; M02-BR-01 and M03-REF-01 remain non-blocking/carry-forward; M04 has not started and branch creation is held on M04-BR-01 until the prior M03/reconciliation worktree is clean; Batch A push/PR/merge pending
 
 ## V003-P01 Scope
 

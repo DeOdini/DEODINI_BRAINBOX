@@ -1015,14 +1015,105 @@ Git lifecycle remains `PENDING — BATCH A BOUNDARY`.
 - M04: **DEPENDENCY-ELIGIBLE**, subject to its own P14 preflight.
 
 
-## Operator ticket-branch rule and Batch A local commit reconciliation — 2026-10-08
+## Archive correction notice — Batch A ticket branch split
 
-The Operator clarified: “ALWAYS CREATE A NEW BRANCH FOR EACH TICKET, M01, M02, M03 ETC REGARDLESS IF THEY ARE WITHIN THE SAME BRANCH.” The Operator further explained that ticket branches preserve data attribution and fault isolation, while batching governs workflow progression and verification cadence. The Operator then directed Codex to move M02 and M03 changes onto their own branches and authorized local staging and commits for M01–M03.
+A narrative branch reconciliation summary previously occupied this position. It was not verbatim dialogue and has been removed from the conversation archive. The recovered Operator–Codex exchange follows below. Branch, commit, and execution outcomes remain documented in `V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md`.
 
-Codex completed the local split in dependency order:
 
-- M01: `v003/m01-current-state-inventory-migration-map` — `bc6d1309a71f4a309469788074c381c8665e5490`.
-- M02: `v003/m02-root-readme-authority-navigation` — `3971f48c4c75641e46a23a86b0792e44e2d794e3`, parent M01 commit.
-- M03: `v003/m03-governance-canonicalization` — implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7`, parent M02 commit.
+---
 
-Each ticket's paths were staged on its dedicated branch. The branches preserve dependency ancestry while keeping separate ticket commits. Push, PR, and merge were not performed; Batch A remote Git closure remains pending. M04 has not started and remains eligible under its own P14 preflight.
+## Transcript correction — Batch A ticket-specific branch separation (2026-10-08)
+
+**Archive correction:** The narrative execution summary that previously occupied the section immediately above was removed because this file records dialogue. Branch, commit, and execution outcomes remain in the Migration Report. This section preserves the exact exchange text recoverable from the active session context.
+
+**Completeness limitation:** The active context does not contain every original assistant turn in full. In particular, one assistant progress update was truncated in the retained context, and the final assistant completion response for the branch-split operation is not available verbatim here. Those gaps are marked below; no missing text has been reconstructed. Therefore, this is a verbatim recovery of available turns, not a claim that the original exchange is complete. The execution outcome remains recorded in `V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md`.
+
+### Exchange 1 — Existing branch state
+
+**Operator — verbatim**
+
+~~~~text
+I NOTICED THAT THE BRANCH IS STILL SHOWING WE ARE IN V003-M01, AND BOTH V003-M02 AND M03, WERE NOT SHOWN AS A BRANCH.
+
+TWO QUESTIONS
+
+ONE: ARE M02 AND M03 MODIFIED DIRECTLY TO THE MAIN BRANCH?
+
+TWO: OR DO THEY HAVE THEIR OWN BRANCH BUT NOT SHOWN?
+~~~~
+
+**Codex — verbatim**
+
+~~~~text
+Yes—based on the repository state I inspected, both M02 and M03 changes are currently on the existing `v003/m01-current-state-inventory-migration-map` branch. They were not committed directly to `main`, and there are no separate M02 or M03 branches yet. The changes are uncommitted in the worktree; I’ll keep them intact while separating the ticket changes if you authorize the branch split.
+~~~~
+
+### Exchange 2 — Operator’s ticket-branch rule and alternatives
+
+**Operator — verbatim**
+
+~~~~text
+WELL TO CLARIFY, ALWAYS CREATE A NEW BRANCH FOR EACH TICKET, M01, M02, M03 ETC REGARDLESS IF THEY ARE WITHIN THE SAME BRANCH. THE CORE REASON FOR TICKETING IS NOT JUST FOR EASY FLOW, IT IS ALSO FOR EASY DATA RECORDING AND MORE IMPORTANTLY FOR DEBUGGING, SAY SOMETHING GOES WRONG, WE CAN EASILY IDENTIFY EXACTLY WHERE THE FAULT IS FROM THROUGH THE TICKET THAT WAS ISSUED. THE BATCHING IS FOR EASY WORKFLOW PROCESS AND VERIFICATIONS, IT WILL BE DIFFICULT TO PROCEED WITH WORKFLOW IF EACH TICKET EXECUTED AS A LITTLE FLAG FIX AND THAT FIX IS INSTANTLY CARRIED OUT, THAT WILL CONSTANTLY PAUSE THE WORKFLOW, HENCE THE BATCHING.
+
+TO FIX THIS CURRENT SITUATION, SINCE ALL CHANGES ARE STILL UNSTAGED, WE WILL COMMENCE WITH M04 TO CONCLUDE THE CURRENT BATCH... BUT WHEN STAGING, COMMITTING AND PUSHING, YOU WILL SOLVE IT EITHER OF THESE TWO WAYS... I HAVE SEEN YOU SOLVE A SIMILAR ISSUE WITH ONE OF THE TECHNIQUE I WILL MENTION
+
+ONE:
+STAGE ONLY M01 MODIFICATIONS FIRST, THEN CREATE ANOTHER BRANCH WITH M02 BRANCH NAME AND THEN STAGE ONLY M02 ETC UP UNTIL M04 BRANCH IS CREATED AND STAGED... THEN YOU COMMIT ALL STAGED BRANCHES AND PUSHED THEM.
+
+TWO:
+YOU CREATE M02 BRANCH AND THEN MOVE ALL MODIFICATIONS MEANT FOR M02 ACCORDINGLY, THEN THE SAME FOR M03 AND M04, CREATE THEIR BRANCHES AND MOVE THEIR MODIFICATIONS MEANT FOR THEIR BRANCHES... AFTERWARDS YOU STAGE ALL M01, M02, M03 AND M04, COMMIT AND PUSH.
+~~~~
+
+**Codex — verbatim progress messages recoverable from session context**
+
+~~~~text
+Understood. I’ll separate M02 and M03 before starting M04. I’ll preserve the verified results, make the M01/M02/M03 boundaries explicit, and keep push/PR/merge for the Batch A boundary.
+~~~~
+
+~~~~text
+I’ll build ticket-specific commits locally in dependency order, with no push. Before I touch the index, I’m reviewing the combined diff and taking a fresh backup so each branch receives only its ticket’s changes.
+~~~~
+
+**Transcript gap:** A further assistant progress update about preserving the newer M03 verification and correcting the branch-hint rule is present only in truncated form in the retained context; its complete original wording is unavailable and is not reproduced as verbatim.
+
+### Exchange 3 — Operator selects the branch-splitting method
+
+**Operator — verbatim**
+
+~~~~text
+I HAVE DECIDED TO PROCEED WITH MOVING EACH MODIFICATIONS OF M02 AND M03 ACCORDINGLY FIRST BEFORE ATTEMPTING M04... SO WE DONT GET ENTANGLED.
+
+SO YOU ARE TO CREATE M02 BRANCH, MOVE ALL MODIFICATIONS OF M02 INTO ITS OWN BRANCH...
+
+ONCE DONE WITH MOVING M02, PROCEED IMMEDIATELY TO M03, CREATE M03 AND MOVE ALL ITS MODIFICATION INTO ITS OWN BRANCH. ONCE DONE WE CAN THEN PROCEED TO M04.
+~~~~
+
+**Codex — verbatim progress message recoverable from session context**
+
+~~~~text
+I found the original M02 root README content in the session’s RDC file-write history, so I can recover its ticket-specific version instead of approximating it from the later M03 edits. I’m now checking the recorded M01/M02/M03 section boundaries and separating the shared support-document changes before staging anything.
+~~~~
+
+### Exchange 4 — Operator authorizes local staging and commits
+
+**Operator — verbatim**
+
+~~~~text
+YES YOU CAN STAGE AND COMMIT M01-M03 SO EACH CAN HAVE THEIR OWN CHANGES?
+~~~~
+
+**Codex — verbatim progress messages recoverable from session context**
+
+~~~~text
+The first M01 snapshot carried the older pre-authorization Phase 02 README, which would have made the M01 commit roll that status backward. I caught it during the commit review. I’m correcting that M01 README to the verified M01 state and amending the local commit before creating M02; nothing has been pushed.
+~~~~
+
+~~~~text
+M01 now has its own local branch and verified commit. I’ve also created the M02 branch and confirmed its reconstructed README still matches all 340 approved hierarchy lines and all seven local links. Its SHA-256 differs from the historical M02 verification record, so I logged that as a non-blocking integrity flag rather than masking it. Next I’m separating and committing M03 on its own branch; no pushes will be made.
+~~~~
+
+~~~~text
+M03 is now committed on `v003/m03-governance-canonicalization`. I’ve verified the nine Governance document hashes against the migration map, checked 51 local links with none broken, and confirmed no trailing whitespace in the Governance/root README files. I’m adding the final branch-split record with all three ticket commit IDs and the remaining batch-boundary status.
+~~~~
+
+**Final-response gap:** The exact final assistant response after the branch-split documentation/commit work is not available in the retained session context. Its execution outcome and commit ledger are recorded in the Migration Report; that report is not presented as dialogue.

@@ -1,7 +1,7 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — M01, M02, and M03 independently verified PASS; M03-REF-01 batch-deferred/non-blocking and assigned to M19/M20; M04 dependency-eligible under its own P14 preflight; legacy sources retained; Batch A Git lifecycle pending  
+**Status:** Living M01–M21 migration ledger — M01, M02, and M03 independently verified PASS on dedicated local branches/commits; M02-BR-01 and M03-REF-01 remain batch-deferred/non-blocking; M04 has not started and branch creation is held on M04-BR-01 until the current M03/reconciliation worktree is clean; legacy sources retained; Batch A push/PR/merge pending
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
 **Active branch:** v003/m01-current-state-inventory-migration-map  
@@ -544,3 +544,37 @@ The Operator requires a dedicated branch for every V003-Mxx ticket; batch member
 | M03 | `v003/m03-governance-canonicalization` | implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` |
 
 All branches are local and form dependency ancestry M01 → M02 → M03. No push, PR, or merge occurred. M02-BR-01 remains batch-deferred/non-blocking; M03-REF-01 remains carried to M19/M20. M04 is not started and is dependency-eligible under its own P14 preflight.
+
+
+---
+
+## 14. ChatGPT verification — Batch A M01–M03 ticket-branch reconciliation — 2026-10-08
+
+**Result:** branch/commit reconstruction PASS; clean-worktree claim NOT CURRENTLY TRUE.
+
+Verified local chain:
+
+- M01 `v003/m01-current-state-inventory-migration-map` → `bc6d1309a71f4a309469788074c381c8665e5490`;
+- M02 `v003/m02-root-readme-authority-navigation` → `3971f48c4c75641e46a23a86b0792e44e2d794e3`, parent M01;
+- M03 `v003/m03-governance-canonicalization` → implementation `2bd21bb0a7e09ba014809df27868c9b4e7546cb7`, parent M02;
+- M03 reconciliation HEAD `469b43dcd1db14a05a09ddcb452442a1f87a542f`, parent M03 implementation.
+
+Remote M01/M02/M03 refs are absent; local/origin/remote main remain `27e73f828bb367298442c2e621c18d1cc1ceb4f4`; none of the four ticket/reconciliation commits is merged into main.
+
+`M02-BR-01` is independently confirmed: reconstructed committed M02 README hash differs from the historical independently verified hash, while 340/340 hierarchy lines match with zero differences and 7/7 local links resolve. Classification remains BATCH-DEFERRED / NON-BLOCKING for Batch A closure review.
+
+M03 Governance committed/live hashes match; 51 Governance/root local links checked, 0 broken.
+
+### M04-BR-01 — BLOCKING FOR M04 BRANCH START
+
+Before this verification record was written, current M03 worktree contained one unstaged change:
+
+`V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md`
+
+Pre-verification diff: +99 / -7 lines after reconciliation commit `469b43dc...`.
+
+The change is a branch-reconciliation conversation-archive correction, not M04 work.
+
+It must be committed/dispositioned on the appropriate prior/reconciliation history or reverted before M04 branch creation. Otherwise it would ride into M04 and violate ticket-specific attribution.
+
+**M04 remains NOT STARTED and must wait only for this local branch-isolation cleanup plus its own P14 preflight.**
