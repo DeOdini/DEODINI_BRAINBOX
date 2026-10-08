@@ -1189,3 +1189,823 @@ No Phase 01 archive content was modified by this recording action.
 
 ---
 
+# ChatGPT Independent Verification — V003-M02 Preflight Stop
+
+**Date:** 2026-10-08  
+**Ticket:** V003-M02 — Root README / V003 Authority Navigation Migration  
+**Preflight result:** **STOP — M01 DEPENDENCY NOT YET CLOSED**  
+**M02 execution:** NOT STARTED
+
+## Codex claim reviewed
+
+Codex reported that M02 stopped because M01 was not yet verified complete, and stated that both independent ChatGPT verification and Git lifecycle remained pending.
+
+## Independent findings
+
+### Confirmed
+
+- M02 is still authorized.
+- M02 dependency is M01.
+- Current branch remains:
+  - `v003/m01-current-state-inventory-migration-map`
+- Current HEAD remains:
+  - `27e73f828bb367298442c2e621c18d1cc1ceb4f4`
+- local `main`, `origin/main`, and live remote `main` remain at that same SHA.
+- M01 changes remain uncommitted.
+- The worktree contains:
+  - modified Phase 02 README;
+  - modified Phase 02 migration conversation;
+  - modified Phase 02 migration report;
+  - untracked M01 migration map.
+- no local M02 branch exists.
+- no remote M02 branch exists.
+- `README_BRAINBOX.md` is absent.
+- no M02 filesystem change was made.
+- no M02 migration-map update was made.
+
+### Corrected
+
+Codex's statement that **independent ChatGPT verification remains pending** is outdated.
+
+The later authoritative Phase 02 records already establish:
+
+- M01 implementation/content verification: **PASS**;
+- M01-DOC-01: **RESOLVED BY DOCUMENTATION CORRECTION / RETRACTION**;
+- M01-GIT-01: **CARRY FORWARD**;
+- M01-FH-01: **CARRY FORWARD TO M15**;
+- independent ChatGPT verification: **PASS**;
+- Git lifecycle: **PENDING**.
+
+The earlier M01 execution-report wording that says verification is pending is historical pre-verification state and is superseded by the later verification/resolution records.
+
+## Actual P14 blocker
+
+**M02 must remain stopped because M01's Git lifecycle/closure is incomplete.**
+
+M01 has not yet been:
+
+- committed;
+- pushed;
+- merged/closed into the dependency baseline.
+
+Starting M02 now would mix ticket work on top of an uncommitted M01 worktree and would violate the one-ticket-at-a-time/dependency discipline.
+
+## Final verdict
+
+**Codex's decision to stop M02:** PASS / CORRECT.
+
+**Codex's statement that ChatGPT verification is still pending:** CORRECTED / STALE.
+
+**Current blocker:** M01 Git lifecycle and closure only.
+
+**M02 branch:** NOT CREATED.
+
+**README_BRAINBOX.md:** NOT CREATED.
+
+**M02 execution:** NOT STARTED.
+
+No commit, push, merge, or M02 implementation was performed by ChatGPT during this verification.
+
+
+---
+
+# Phase 02 Batch Workflow Clarification — Superseding M02 Git-Lifecycle Block
+
+**Date:** 2026-10-08  
+**Authority:** DEODINI — OPERATOR clarification  
+**Result:** **PHASE 02 WORKFLOW RULE CORRECTED / M02 GIT-LIFECYCLE BLOCK SUPERSEDED**  
+**M02 execution in this recording action:** NOT STARTED
+
+## 1. Operator-defined migration cadence
+
+The Operator clarified that Phase 02 is executed **batch by batch**.
+
+Within each batch:
+
+- tickets remain individually scoped;
+- Codex executes one ticket at a time;
+- each ticket receives its own P14 preflight;
+- each ticket receives its own Codex execution report;
+- ChatGPT independently verifies each completed ticket before a dependent same-batch ticket proceeds.
+
+Git lifecycle is different:
+
+- staging is batch-scoped;
+- commit is batch-scoped;
+- push is batch-scoped;
+- PR/merge is batch-scoped;
+- Git closure is batch-scoped.
+
+Therefore pending commit/push/merge for an earlier ticket **does not by itself block the next ticket within the same batch**.
+
+## 2. Authority cross-check
+
+The frozen V003 Specification requires ticket individuality, P14 preflight, dependency checks and independent verification.
+
+The final Origin Conversation states that Phase 02 continues with migration tickets executed in approved batches and one ticket at a time within the batch.
+
+Neither canonical authority requires every ticket to be committed/pushed/merged before the next ticket in that same batch.
+
+The incompatible rule was introduced in the Phase 02 ticket/support wording and has now been corrected.
+
+**Frozen Specification modified:** NO.  
+**Origin Conversation rewritten:** NO.
+
+## 3. Correct dependency gate
+
+For **same-batch dependency progression**:
+
+**required gate = prior ticket independently verified PASS + no unresolved flag materially blocking the dependent ticket**
+
+The following are **not** same-batch dependency gates by themselves:
+
+- staging pending;
+- commit pending;
+- push pending;
+- remote branch pending;
+- PR pending;
+- merge pending;
+- Git closure pending.
+
+For **cross-batch progression**:
+
+the preceding batch's authorized Git lifecycle/closure must be completed before the next batch begins.
+
+## 4. Batch Git lifecycle / branch rule
+
+Ticket-level `Suggested branch` values are planning hints.
+
+They do not require an intra-batch branch switch while the current batch contains uncommitted verified changes.
+
+The active batch may continue on its current authorized working branch unless the Operator separately directs a branch rename or split.
+
+Each ticket must still retain separately attributable:
+
+- changed paths;
+- source/target dispositions;
+- execution report;
+- verification result;
+- flags;
+- migration-map updates.
+
+At the batch boundary, the verified batch changes are staged/committed/pushed/PR'd/merged under the authorized Git workflow.
+
+## 5. M01 status under corrected rule
+
+M01:
+
+- implementation: PASS;
+- independent ChatGPT verification: PASS;
+- M01-DOC-01: RESOLVED BY DOCUMENTATION CORRECTION / RETRACTION;
+- M01-GIT-01: CARRY FORWARD;
+- M01-FH-01: CARRY FORWARD TO M15;
+- Git lifecycle: **PENDING — BATCH A BOUNDARY**.
+
+The pending Batch A Git lifecycle is **non-blocking for M02**.
+
+## 6. M02 status correction
+
+The previous M02 preflight stop was correct under the then-written Phase 02 rule, but that Git-lifecycle dependency rule is now superseded by the Operator's explicit batch workflow clarification.
+
+The prior statement:
+
+> M02 is stopped until M01 Git lifecycle/closure is complete.
+
+is no longer the active rule.
+
+The current authoritative status is:
+
+**M02 — AUTHORIZED / DEPENDENCY-ELIGIBLE FOR ITS OWN P14 PREFLIGHT.**
+
+M02 may proceed because M01 has passed independent verification and its carry-forward flags do not materially block M02.
+
+M02 must still stop if its own P14 preflight discovers:
+
+- ambiguity;
+- contradiction;
+- unsupported rename;
+- scope mismatch;
+- historical-evidence risk;
+- missing dependency other than the now-satisfied M01 verification dependency;
+- secret risk;
+- destructive-operation risk;
+- another materially blocking flag.
+
+## 7. Records corrected
+
+The following Phase 02 records were updated:
+
+- `V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md`
+  - same-batch dependency gate clarified;
+  - batch-boundary Git lifecycle added;
+  - suggested-branch semantics clarified;
+  - per-ticket Git report may state `PENDING — BATCH BOUNDARY`;
+  - prior merge/close-before-next-ticket wording removed.
+
+- `README_PHASE02_MIGRATION_BRAINBOX.md`
+  - batch Git lifecycle rule added;
+  - M01 Git lifecycle marked non-blocking for M02;
+  - M02 marked next dependency-eligible ticket.
+
+- `MIGRATION_MAP_V003_BRAINBOX.md`
+  - M01 Git state clarified as `PENDING — BATCH A BOUNDARY`;
+  - M02 progression recorded as allowed after its own P14 preflight.
+
+## 8. Current execution state
+
+- Active batch: **Batch A — Baseline and Authority**
+- M01: **INDEPENDENTLY VERIFIED PASS**
+- M01 Git lifecycle: **PENDING — BATCH A BOUNDARY**
+- M02: **AUTHORIZED / NEXT DEPENDENCY-ELIGIBLE**
+- M02 implementation: **NOT STARTED**
+- Batch A commit/push/merge: **NOT YET PERFORMED**
+
+No M02 implementation, staging, commit, push or merge was performed while recording this clarification.
+
+## V003-M02 — Root README / V003 Authority Navigation Migration
+
+**Execution date:** 2026-10-08
+**Executor:** Codex
+**Ticket status:** CODEX IMPLEMENTATION COMPLETE LOCALLY; independent ChatGPT verification pending
+**Batch:** A — Baseline and Authority
+**Git lifecycle:** PENDING — BATCH A BOUNDARY
+
+### 1. P14 preflight
+
+**Result: PASS.**
+
+- Read the authorized M02 ticket and confirmed its M01 dependency had passed independent verification.
+- Cross-checked the frozen V003 Specification, including §8's authoritative target tree and population states, and the relevant Origin Conversation navigation/authority rules.
+- Inspected the live root, `DOB_MUST_README.md`, V003 authority-container README, Phase 01 archive, Phase 02 process records, migration map, and Git state.
+- Confirmed M02 is limited to root-tree/navigation authority and accurate V003 support/archive navigation. Governance policy migration remains M03.
+- No ambiguity, contradiction, unsupported rename, scope mismatch, historical-evidence risk, or dependency issue materially blocking implementation was found.
+
+### 2. Pre-state
+
+- Branch: `v003/m01-current-state-inventory-migration-map` (retained; suggested M02 branch name is a planning hint during the active batch).
+- HEAD: `27e73f828bb367298442c2e621c18d1cc1ceb4f4`; no branch switch, staging, or commit was performed for M02.
+- Root `README_BRAINBOX.md` was absent at the M01 baseline.
+- `DOB_MUST_README.md` was the legacy root authority and remains the migration source until M20.
+- M01 was independently verified PASS. Carry-forward flags are M01-GIT-01 (72 dangling objects; preserve and do not prune/gc) and M01-FH-01 (32 catalog image references for M15); neither materially blocks M02.
+- Batch A Git lifecycle was pending and, per the Operator's clarification, was not a gate between verified tickets in this batch.
+
+### 3. Implementation and exact paths
+
+Created:
+
+- `README_BRAINBOX.md` — root canonical complete-tree/navigation authority, sourced from frozen Specification §8. The complete 340-line hierarchy is preserved; inline status annotations describe actual population without changing the target hierarchy.
+- `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` — updated the M01 living ledger with M02 source-to-target dispositions and a current-state execution event. M01 pre-ticket inventory remains labeled as historical baseline.
+
+Updated supporting records:
+
+- `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md` — current M02 implementation/verification status and support/archive navigation.
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md` — current Batch A progression and M03 dependency gate.
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md` — Operator cadence clarification read and Codex M02 execution record.
+- This report — M02 execution evidence and current verification boundary.
+
+Preserved unchanged:
+
+- `DOB_MUST_README.md` — not renamed, moved, deleted, or rewritten; policy text was not copied wholesale into the root README.
+- Frozen V003 Specification and Origin Conversation — remain canonical target and historical decision authorities.
+- Phase 01 archive and Phase 02 process records — remain support/audit records, separately identified from the operational target tree.
+- Version History physical nesting — remains `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/`.
+
+### 4. Post-state and verification
+
+- `README_BRAINBOX.md` exists: **32,407 bytes; 490 lines; SHA-256 `50b8d1809a6c6a1faf0c41a5889893a5635d6929c0fc7823e4dca3dbc7d53f5f`**.
+- Current migration map: **55,276 bytes; 405 lines; SHA-256 `75629cad1392bacf93828f13b78403063eda89cf763ca8bf0e61387ab3ede0c9`** (recorded in this report rather than self-referenced).
+- A normalized, line-by-line comparison of its target hierarchy against frozen Specification §8 found **340 lines on each side, matching hierarchy, zero differences**. Population annotations are the only intended tree-line additions.
+- `DOB_MUST_README.md` remains present and unchanged: **9,788 bytes; 204 lines; SHA-256 `76e2b6aa72e4dcf3b56475f182dca2c117ae7a32a9e116c3b3c8bf6262811252`**, identical to the M01 manifest baseline.
+- V003 parent README now reports M02 implementation locally and independent verification pending; it keeps the canonical authorities, Phase 01 archive, and Phase 02 process records in distinct roles.
+- The root README lists planned/unmigrated target branches as planned and separately records the current physical root and support overlay.
+- No source file or folder was renamed, moved, or deleted.
+- Verification performed: read-back of edited artifacts, hierarchy comparison, source SHA-256 comparison, and Git state review. No test suite or automated application test was requested or run.
+- `git diff --check` reports trailing whitespace on earlier Phase 02/M01 log lines already present in the uncommitted support-record edits; it reports no whitespace errors in the newly appended M02 conversation or report sections. Those earlier log lines were left intact to avoid unrelated formatting changes.
+
+### 5. Flags and scope discipline
+
+- **New M02 material flags:** none identified.
+- **Carry forward:** M01-GIT-01 and M01-FH-01 remain open as described above; M02 does not resolve them.
+- **Independent verification:** PENDING. This Codex report is not ChatGPT's independent verification and does not close the ticket.
+- **Scope result:** PASS. Work stayed within root navigation, V003 support/archive boundary, and required map/status reporting. No Governance policy migration or unrelated source migration was introduced.
+
+### 6. Git and dependency status
+
+- Current branch remains `v003/m01-current-state-inventory-migration-map`.
+- No M02 stage, commit, push, PR, merge, or branch switch was performed.
+- Git lifecycle: **PENDING — BATCH A BOUNDARY**, as directed by the corrected Batch A cadence.
+- M03 is not yet eligible to proceed; it must wait for ChatGPT independent verification PASS on M02 and then pass its own P14 preflight.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M02 Implementation
+
+**Date:** 2026-10-08  
+**Ticket:** V003-M02 — Root README / V003 Authority Navigation Migration  
+**Result:** **SUBSTANTIVE PASS / FINAL PASS HELD ON M02-WS-01**  
+**Git lifecycle:** `PENDING — BATCH A BOUNDARY` — non-blocking by itself  
+**M03 progression:** WAIT FOR M02-WS-01 CORRECTION AND REVERIFICATION
+
+## 1. Branch and Git state
+
+Verified live state:
+
+- branch: `v003/m01-current-state-inventory-migration-map`;
+- HEAD: `27e73f828bb367298442c2e621c18d1cc1ceb4f4`;
+- live remote `main`: same baseline SHA;
+- staged changes: **NONE**;
+- commit beyond baseline: **NONE**;
+- M02 push/PR/merge: **NOT PERFORMED**;
+- Batch A Git lifecycle: **PENDING — BATCH A BOUNDARY**.
+
+The existing branch is valid under the Operator's clarified batch workflow. The M02 suggested branch is a planning hint and does not require a branch switch while Batch A contains uncommitted verified work.
+
+## 2. Exact current worktree
+
+Tracked modifications currently visible:
+
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md`;
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md`;
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md`;
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md`;
+- `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md`.
+
+Untracked Batch A artifacts:
+
+- `README_BRAINBOX.md`;
+- `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md`.
+
+The Phase 02 ticket-master modification predates M02 and records the Operator's batch-workflow clarification; it is not evidence of M02 scope expansion.
+
+No tracked file is currently shown as deleted or renamed.
+
+## 3. Root README hierarchy verification
+
+Physical root README:
+
+- bytes: **32,407**;
+- lines: **490**;
+- SHA-256: `50b8d1809a6c6a1faf0c41a5889893a5635d6929c0fc7823e4dca3dbc7d53f5f`.
+
+The authoritative tree inside the README spans exactly **340 lines**.
+
+Frozen Specification §8 authoritative tree also spans exactly **340 lines**.
+
+Independent comparison:
+
+- README tree lines: **340**;
+- Specification tree lines: **340**;
+- normalized hierarchy differences after removing only inline population annotations: **0**.
+
+**Codex 340-line hierarchy claim: CONFIRMED.**
+
+## 4. Root authority / population-state verification
+
+The README correctly establishes itself as the root complete-tree/navigation authority while preserving the frozen Specification as architecture authority and Origin Conversation as historical/ambiguity evidence.
+
+Current population claims were checked against the physical root:
+
+- `GOVERNANCE_BRAINBOX/`: absent and labeled planned;
+- `MILESTONES_BRAINBOX/`: absent and labeled planned;
+- `VERSION_HISTORY_BRAINBOX/`: exists and correctly labeled partially populated;
+- `AI_BRAINBOX/`: exists as legacy source tree while V003 target migration remains pending;
+- `PORTFOLIO_BRAINBOX/`: exists as legacy source while target migration remains pending;
+- `V003_VERSION_UPGRADE_BRAINBOX/`: exists and is correctly represented as authority/support.
+
+All seven local Markdown links in `README_BRAINBOX.md` resolve to existing files.
+
+**Authority/population claim: PASS.**
+
+## 5. DOB legacy-source integrity
+
+M01 manifest baseline for `DOB_MUST_README.md`:
+
+- bytes: 9,788;
+- recorded SHA-256: `76e2b6aa72e4dcf3b56475f182dca2c117ae7a32a9e116c3b3c8bf6262811252`.
+
+Current physical SHA-256:
+
+`76e2b6aa72e4dcf3b56475f182dca2c117ae7a32a9e116c3b3c8bf6262811252`
+
+Git status shows no modification to the file.
+
+**Codex claim that DOB remains intact and unchanged: CONFIRMED.**
+
+## 6. No move/rename/delete claim
+
+Current Git status contains no deleted or renamed tracked source path.
+
+M02 created the new root README and updated migration/support records only.
+
+**No source move/rename/delete claim: CONFIRMED.**
+
+## 7. Migration-map and support-record reconciliation
+
+The living migration map contains an M02 execution event and updates ROOT-AUTH, V003-AUTHORITY, PHASE01-ARCHIVE and PHASE02-PROCESS dispositions.
+
+The V003 parent README and Phase 02 README reflect M01 verified / M02 implementation-pending-verification state.
+
+M02 execution/report records are present in the Phase 02 conversation and migration report.
+
+**Reconciliation claim: CONFIRMED.**
+
+## 8. Whitespace verification
+
+Running ordinary `git diff --check` still reports trailing whitespace in earlier Phase 02/M01 material.
+
+Direct inspection of the newly appended M02 conversation and report sections found:
+
+- M02 conversation section trailing-whitespace lines: **0**;
+- M02 report section trailing-whitespace lines: **0**.
+
+Therefore Codex's specific statement about the new conversation/report sections is correct.
+
+However, `README_BRAINBOX.md` and the migration map are untracked, so ordinary `git diff --check` does not inspect them.
+
+Direct inspection found:
+
+- new `README_BRAINBOX.md`: **16 trailing-whitespace lines**;
+- M02 migration-map section: **4 trailing-whitespace lines**.
+
+### FLAG M02-WS-01
+
+Remove these newly authored trailing spaces without changing substantive content.
+
+This is a new-content issue; no historical-whitespace waiver applies.
+
+## 9. Final verdict
+
+| Claim / gate | Result |
+|---|---|
+| Batch A branch retained | PASS |
+| HEAD remains `27e73f8...` | PASS |
+| Nothing staged/committed | PASS |
+| Batch Git lifecycle pending | PASS / EXPECTED |
+| Root README created | PASS |
+| 340-line hierarchy matches Specification | PASS — zero hierarchy differences |
+| DOB unchanged / baseline hash matches | PASS |
+| No move/rename/delete | PASS |
+| Migration map updated | PASS |
+| V003/Phase 02 status records reconciled | PASS |
+| New M02 conversation/report whitespace clean | PASS |
+| All newly authored M02 artifacts whitespace clean | **FAIL — M02-WS-01** |
+
+### Overall
+
+**M02 substantive migration accuracy:** PASS.
+
+**M02 final independent verification:** **HELD ON M02-WS-01**.
+
+This hold is unrelated to the deferred Batch A Git lifecycle.
+
+M03 should remain waiting until Codex removes the 20 newly authored trailing-whitespace instances and ChatGPT reverifies M02.
+
+## M02-WS-01 — Codex whitespace correction — 2026-10-08
+
+**Independent finding received:** ChatGPT confirmed M02 substantive migration accuracy PASS and held final PASS on 20 newly authored trailing-whitespace instances: 16 in the untracked root README and 4 in the M02 migration-map section. The independent review and hold are preserved above as historical verification evidence.
+
+**Correction performed:** Removed only the trailing spaces from the 16 README metadata lines and the 4 M02 map-event metadata lines. No wording, authority, target-tree hierarchy, population status, link, or migration disposition was changed. Existing M01 whitespace in earlier map sections and earlier Phase 02/M01 log entries was left intact.
+
+**Post-correction verification:**
+
+- Root README direct scan: **0 trailing-whitespace lines**; 32,375 bytes; 490 lines; SHA-256 `79051a665d69b5578c06baf9ad72ff4203ad6062b38bb031763b2cd5620ecc69`.
+- M02 migration-map section direct scan: **0 trailing-whitespace lines**. The map is 55,806 bytes / 406 lines; SHA-256 `dc9dad564d0b04361374c0fe3535d91ce506987b42ee7c2275911fa327cd6f8c` (recorded here, not self-referenced).
+- Post-correction target hierarchy comparison: frozen Specification §8 **340 lines**; README target block **340 lines**; normalized hierarchy match, **0 differences**.
+- Local Markdown links in the root README: **7 checked; 0 broken**.
+- `DOB_MUST_README.md` remains unchanged at the M01 baseline SHA-256 `76e2b6aa72e4dcf3b56475f182dca2c117ae7a32a9e116c3b3c8bf6262811252`.
+- Git state remains branch `v003/m01-current-state-inventory-migration-map`, HEAD `27e73f828bb367298442c2e621c18d1cc1ceb4f4`, with **0 staged files**. No commit, push, PR, or merge was performed.
+
+**M02-WS-01 Codex correction:** COMPLETE.
+**Final independent ChatGPT re-verification:** PENDING.
+**M03:** Remains waiting until final M02 independent PASS.
+**Batch A Git lifecycle:** PENDING — BATCH A BOUNDARY.
+
+
+---
+
+# Operator Declaration Report — Phase 02 Blocking vs Batch-Deferred Flags
+
+**Date:** 2026-10-08  
+**Authority:** DEODINI — OPERATOR  
+**Applies to:** V003 Phase 02 migration execution  
+**Result:** **ACTIVE EXECUTION RULE — SUPERSEDES BLANKET “ANY FLAG = STOP” HANDLING FOR PHASE 02**
+
+## 1. Operator declaration
+
+The Operator directed that migration progress must not repeatedly stop for minor corrections that do not affect the next ticket.
+
+Immediate correction is required only when the flag materially blocks the current migration result or the immediately dependent next ticket.
+
+All other valid flags are retained, described precisely, accumulated for the active batch, and corrected/dispositioned at the batch-fix/batch-close point.
+
+## 2. Flag classification standard
+
+### BLOCKING
+
+A flag is BLOCKING when it materially affects:
+
+- ticket correctness;
+- authorization/scope;
+- canonical source/destination;
+- required dependency;
+- historical-evidence integrity;
+- security/secrets;
+- destructive-operation safety;
+- or the safe/correct execution of the next dependent ticket.
+
+**Effect:** stop the affected work/dependent progression and obtain correction or Operator disposition.
+
+### BATCH-DEFERRED / NON-BLOCKING
+
+A flag is BATCH-DEFERRED / NON-BLOCKING when it is a real defect, cleanup item, formatting issue, reporting hygiene issue, or other residual that does not materially affect the active ticket's migration accuracy or the next dependent ticket.
+
+**Effect:** record it; continue same-batch progression; accumulate it for batch correction/review.
+
+If a later authorized ticket explicitly owns the issue, the batch review may disposition it forward to that ticket instead of correcting it prematurely.
+
+## 3. Mandatory flag-report detail
+
+Every future flag must include:
+
+| Required field | Requirement |
+|---|---|
+| Flag ID | Unique identifier |
+| Exact location | File/path/line/object |
+| Exact defect | Specific description, not a generic label |
+| Evidence | Command/output/hash/diff/read-back or other proof |
+| Migration impact | What the defect changes or risks |
+| Next-ticket impact | Whether the immediate dependent ticket relies on the fix |
+| Classification | BLOCKING or BATCH-DEFERRED / NON-BLOCKING |
+| Classification reason | Why progress must stop or may continue |
+| Proposed correction | Exact expected remediation |
+| Timing / owner | Immediate, batch boundary, or named later ticket |
+
+ChatGPT must provide this detail before recommending a fix.
+
+## 4. Relationship to existing authority
+
+The frozen V003 Specification contains older blanket language stating that any flag stops implementation.
+
+The Operator's later explicit declaration recorded here is the controlling Phase 02 execution clarification for flag handling.
+
+This declaration changes **execution cadence and flag classification only**.
+
+It does not alter the frozen V003 target hierarchy, architecture, domain ownership, migration destinations, or historical evidence rules.
+
+The active Phase 02 README and ticket master have been updated accordingly.
+
+## 5. M02-WS-01 correction and retrospective classification
+
+Original issue:
+
+- 16 trailing-whitespace lines in the newly authored root README;
+- 4 trailing-whitespace lines in the M02 migration-map section.
+
+This was originally used by ChatGPT to hold M02 final PASS.
+
+Under the Operator's declared rule, that was too strict.
+
+M03 did not depend on those formatting spaces, so the correct classification is:
+
+**M02-WS-01 — BATCH-DEFERRED / NON-BLOCKING**
+
+Codex had already received a cleanup order.
+
+ChatGPT post-cleanup verification now confirms:
+
+- root README trailing-whitespace lines: **0**;
+- M02 map-section trailing-whitespace lines: **0**;
+- root README authoritative hierarchy: **340 lines**;
+- frozen Specification §8 hierarchy: **340 lines**;
+- normalized hierarchy differences: **0**;
+- DOB_MUST_README.md current SHA-256:
+  `76e2b6aa72e4dcf3b56475f182dca2c117ae7a32a9e116c3b3c8bf6262811252`;
+- M01 DOB baseline SHA-256: exact same value.
+
+**M02-WS-01:** RESOLVED.  
+**M02 independent verification:** PASS.  
+**M03:** DEPENDENCY-ELIGIBLE under its own P14 preflight.
+
+## 6. Batch A flag register after this declaration
+
+| Flag | Current classification | Blocks M03? | Batch handling |
+|---|---|---:|---|
+| M01-GIT-01 | NON-BLOCKING carry-forward safety condition | NO | Preserve dangling objects; no prune/GC; review/disposition before any destructive Git cleanup |
+| M01-FH-01 | NON-BLOCKING / downstream-owned | NO | Explicitly carry to M15; do not repair early outside M15 scope |
+| M02-WS-01 | RESOLVED / retrospectively NON-BLOCKING | NO | Cleanup already completed and independently reverified |
+
+## 7. Current Batch A progression
+
+- M01: independently verified PASS.
+- M02: independently verified PASS.
+- M03: next dependency-eligible ticket, subject to its own P14 preflight.
+- Batch A staging/commit/push/PR/merge: pending at batch boundary.
+- Non-blocking flags do not stop same-batch progression.
+- Blocking flags still stop affected/dependent work immediately.
+
+## 8. Files updated for this declaration
+
+- `PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md`
+- `PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md`
+- `PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md`
+- `PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md`
+- `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md`
+- `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md`
+
+No staging, commit, push, PR, merge, deployment, source move, source rename, or source deletion was performed by ChatGPT while recording this declaration.
+
+
+---
+
+# ChatGPT Final Independent Re-Verification — V003-M02 / M02-WS-01
+
+**Date:** 2026-10-08  
+**Ticket:** V003-M02 — Root README / V003 Authority Navigation Migration  
+**Correction:** M02-WS-01  
+**Final result:** **PASS**  
+**Flag state:** **RESOLVED — BATCH-DEFERRED / NON-BLOCKING**  
+**Next ticket:** **V003-M03 DEPENDENCY-ELIGIBLE UNDER ITS OWN P14 PREFLIGHT**  
+**Batch A Git lifecycle:** **PENDING — BATCH A BOUNDARY**
+
+## 1. Claims independently confirmed
+
+| Codex claim | Independent result |
+|---|---|
+| Removed 16 root-README trailing-space instances | PASS |
+| Removed 4 M02 migration-map trailing-space instances | PASS |
+| Root README wording otherwise unchanged | PASS — cryptographically reconstructed |
+| Root hierarchy unchanged | PASS |
+| 0 trailing whitespace in root README | PASS |
+| 0 trailing whitespace in M02 map section | PASS |
+| New Codex correction conversation entry whitespace-clean | PASS |
+| New Codex correction report entry whitespace-clean | PASS |
+| 340-line README hierarchy matches frozen Specification | PASS — 0 differences |
+| 7 local README links resolve | PASS — 0 broken |
+| DOB_MUST_README.md unchanged | PASS — exact M01 SHA-256 match |
+| Branch/HEAD unchanged | PASS |
+| Nothing staged | PASS |
+| Nothing committed/pushed/merged | PASS |
+| Batch A Git lifecycle deferred | PASS / EXPECTED |
+
+## 2. Root README exact-change verification
+
+Pre-cleanup state previously independently recorded:
+
+- size: **32,407 bytes**;
+- lines: **490**;
+- SHA-256:
+  `50b8d1809a6c6a1faf0c41a5889893a5635d6929c0fc7823e4dca3dbc7d53f5f`;
+- 16 trailing-whitespace lines, each using two terminal spaces.
+
+Current state:
+
+- size: **32,375 bytes**;
+- lines: **490**;
+- SHA-256:
+  `79051a665d69b5578c06baf9ad72ff4203ad6062b38bb031763b2cd5620ecc69`;
+- trailing-whitespace lines: **0**.
+
+Size reduction:
+
+**32 bytes = 16 × 2 terminal spaces.**
+
+For stronger proof, ChatGPT reconstructed the pre-cleanup file from the current README by restoring two spaces to the 16 known metadata lines.
+
+Reconstructed result:
+
+- size: **32,407 bytes**;
+- SHA-256:
+  `50b8d1809a6c6a1faf0c41a5889893a5635d6929c0fc7823e4dca3dbc7d53f5f`.
+
+This exactly equals the independently recorded pre-cleanup SHA-256.
+
+**Conclusion:** the root README cleanup altered only the 32 intended trailing-space bytes. No wording or other content changed.
+
+## 3. M02 migration-map cleanup
+
+The four lines previously identified with terminal whitespace were:
+
+- Ticket;
+- Authorization;
+- P14 preflight;
+- Branch/HEAD.
+
+Current direct read-back shows the same textual wording with no terminal whitespace.
+
+Current direct M02-section whitespace scan:
+
+**0 trailing-whitespace lines.**
+
+The overall living migration-map file has since received authorized Operator-declaration/status updates. Its current whole-file digest therefore differs from Codex's immediate post-cleanup snapshot and is not used as evidence that no later authorized edits occurred.
+
+This does not invalidate the targeted cleanup verification.
+
+## 4. Hierarchy verification
+
+Fresh comparison:
+
+- Specification §8 tree: **340 lines**;
+- README authoritative target tree: **340 lines**;
+- comparison after removing only population-state annotations: **0 differences**.
+
+**Hierarchy preservation: PASS.**
+
+## 5. Link verification
+
+Current root README Markdown links:
+
+- checked: **7**;
+- broken: **0**.
+
+**Link integrity: PASS.**
+
+## 6. DOB source integrity
+
+M01 baseline SHA-256:
+
+`76e2b6aa72e4dcf3b56475f182dca2c117ae7a32a9e116c3b3c8bf6262811252`
+
+Current SHA-256:
+
+`76e2b6aa72e4dcf3b56475f182dca2c117ae7a32a9e116c3b3c8bf6262811252`
+
+Git status reports no DOB modification.
+
+**DOB integrity: PASS.**
+
+## 7. Codex correction-record whitespace
+
+Direct scan of the new Codex correction entry in:
+
+`V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md`
+
+result:
+
+**0 trailing-whitespace lines.**
+
+Direct scan of the new Codex correction entry in:
+
+`V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md`
+
+result:
+
+**0 trailing-whitespace lines.**
+
+**Correction-record hygiene: PASS.**
+
+## 8. Git state
+
+Current branch:
+
+`v003/m01-current-state-inventory-migration-map`
+
+Current HEAD:
+
+`27e73f828bb367298442c2e621c18d1cc1ceb4f4`
+
+Staged files:
+
+**0**
+
+No M02 commit, push, PR, or merge has occurred.
+
+This is correct under the Operator's batch Git workflow.
+
+## 9. Final disposition
+
+**M02-WS-01:** RESOLVED.
+
+Under the later Operator flag-handling declaration, M02-WS-01 is retrospectively classified:
+
+**BATCH-DEFERRED / NON-BLOCKING**
+
+because its correction was not materially required for M03's migration correctness.
+
+**V003-M02 final independent verification:** PASS.
+
+The Codex correction report's wording that independent re-verification was pending and M03 was waiting is preserved as historical pre-verification state. It is superseded by this final verification.
+
+**V003-M03:** dependency-eligible under its own P14 preflight.
+
+**Batch A Git lifecycle:** remains pending at the Batch A boundary.
+
+No staging, commit, push, PR, merge, deployment, source move, source rename, or source deletion was performed by ChatGPT during this verification.
+
+
+
+
+## M02 branch-split artifact reconciliation — 2026-10-08
+
+### M02-BR-01 — root README byte-snapshot discrepancy
+
+- **Path:** `README_BRAINBOX.md`.
+- **Defect:** the M02 artifact reconstructed from the original RDC write payload does not byte-match the snapshot measured in ChatGPT's final M02 independent verification.
+- **Current branch-split artifact:** 32,319 bytes; 490 lines; SHA-256 `45b6d4bdd6a9c6e5f324809099383965625ae0978b0fe26c9f70de609a391bb7`; zero trailing-whitespace lines.
+- **Historical independent verification:** after whitespace cleanup, 32,375 bytes; 490 lines; SHA-256 `79051a665d69b5578c06baf9ad72ff4203ad6062b38bb031763b2cd5620ecc69`. That historical result is preserved unchanged above.
+- **Additional verification of the reconstructed artifact:** Specification §8 hierarchy: 340 lines on each side, zero differences; local links: 7 checked, 0 broken.
+- **Migration impact:** the recovered M02 artifact preserves the approved tree and navigation checks, but exact byte-for-byte reproduction of the previously verified artifact is not demonstrated.
+- **Next-ticket impact:** M03 does not rely on the 56-byte difference; the target hierarchy and links are intact. M03 remains dependency-eligible.
+- **Classification:** BATCH-DEFERRED / NON-BLOCKING. The discrepancy is real, but structural and link checks pass and no source/history was altered.
+- **Proposed correction and timing:** keep both digest records and search for the exact historical artifact at Batch A reconciliation. Do not rewrite the historical verification claim. **Owner:** Codex; Operator review if a matching artifact is recovered.
+- **Git state:** documented on the dedicated M02 branch; local commit only, with push/PR/merge deferred to Batch A closure.

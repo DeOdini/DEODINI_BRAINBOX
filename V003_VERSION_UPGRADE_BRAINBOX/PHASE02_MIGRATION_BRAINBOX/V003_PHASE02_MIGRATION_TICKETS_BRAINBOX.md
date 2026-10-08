@@ -71,12 +71,11 @@ Before making any migration change under an individually authorized ticket, the 
    - canonical/reference conflict;
    - secret-bearing content risk;
    - destructive-operation risk.
-6. If any flag exists:
-   - STOP before implementation;
-   - report the specific flag and evidence;
-   - wait for Operator direction;
-   - do not implement the flagged change or dependent work.
-7. If preflight is clean, execute only the individually authorized ticket.
+6. If a flag is found, classify it before deciding whether work stops:
+   - **BLOCKING FLAG** — the issue materially affects the correctness, authority, safety, integrity, destructive-risk boundary, canonical destination, required dependency, or the next dependent ticket. STOP the affected change/dependent work, report the flag in detail, and wait for Operator direction or correction.
+   - **BATCH-DEFERRED / NON-BLOCKING FLAG** — the issue is real but does not materially affect the current ticket's migration correctness or the next dependent ticket. Record it in detail, carry it in the active batch flag register, and continue ticket progression. Accumulate these flags for batch-level correction before batch Git closure unless the Operator directs an earlier fix.
+   - A flag must never be left vague. State the exact path/line or object, exact defect, evidence, migration impact, next-ticket impact, classification, reason for that classification, and proposed correction timing.
+7. If no blocking flag exists, execute only the individually authorized ticket. A non-blocking flag does not make the preflight dirty for dependency progression.
 8. Verify the actual result and produce the required per-ticket execution report defined below.
 
 No ticket may inherit authorization from a sibling ticket.
@@ -101,12 +100,12 @@ For every executed V003-Mxx ticket, Codex must record at least:
 4. **Source → target disposition:** what each affected source became and why.
 5. **Post-state:** resulting tree/content/authority state.
 6. **Verification performed:** read-back, hashes/size/line counts where appropriate, link/reference checks, tests, `git diff --check`, Git status, and any domain-specific checks.
-7. **Unresolved flags:** explicit list, or `NONE`.
+7. **Unresolved flags:** explicit list, or `NONE`. For every flag, include its ID, exact file/path/line or object, exact defect, evidence, substantive migration impact, impact on the next dependent ticket, classification (`BLOCKING` or `BATCH-DEFERRED / NON-BLOCKING`), reason for classification, proposed correction, and correction timing. Non-blocking flags remain accumulated for the active batch and do not stop same-batch progression.
 8. **Scope discipline:** whether the ticket was completed without scope expansion; any proposed extra work remains a flag until separately authorized.
-9. **Git lifecycle:** commit SHA, push result, remote-head confirmation, PR/merge status, and deployment status when applicable.
+9. **Git lifecycle:** report the current ticket's Git state accurately. For an intra-batch ticket before batch close, use a truthful state such as `PENDING — BATCH BOUNDARY`; do not treat missing per-ticket commit/push/merge as a ticket failure. At batch close, record the batch commit SHA(s), push result, remote-head confirmation, PR/merge status, and deployment status when applicable.
 10. **Verification limits:** anything not independently demonstrated by Codex.
 
-After Codex reports completion, ChatGPT independently verifies the claim before the ticket is treated as verified/closed. Operator merge/closure authority remains separate.
+After Codex reports completion, ChatGPT independently verifies the claim before the ticket is treated as **ticket-verified for dependency progression**. Within the same batch, that verification—not per-ticket Git commit/push/merge—is the dependency gate unless the ticket or a blocking flag explicitly requires otherwise. Git lifecycle/closure is performed at the batch boundary. Operator merge/closure authority remains separate.
 
 ---
 
@@ -125,12 +124,12 @@ All V003-Mxx tickets are governed by the following frozen rules:
 - No real secrets may enter committed Brainbox documentation.
 - Technical-convention files such as `.env.example` and `.gitignore` are valid naming exceptions.
 - Phase 02 migration does not authorize deployment.
-- No direct merge or push to `main` is inferred. Use the current approved branch/PR discipline and Operator merge authority.
+- No direct merge or push to `main` is inferred. Use the current approved branch/PR discipline and Operator merge authority. Phase 02 Git lifecycle is **batch-scoped**: accumulate individually verified ticket changes within the active batch, then stage/commit/push/PR/merge the batch under the authorized batch-close process. Pending Git lifecycle for an earlier ticket in the same batch is not by itself a stop condition for the next independently dependency-eligible ticket.
 - Each executed ticket must be documented in the Phase 02 migration conversation/report records; Codex execution evidence and ChatGPT independent verification must remain distinguishable.
 - Historical ticket identities must not be recycled. Existing FootHive T21–T24 and V003-Pxx identities remain historical; Phase 02 uses unique V003-Mxx identities.
 - Historical/evidence files that are copied or relocated should use source/destination integrity verification (for example SHA-256 plus size/line count where practical) before any source retirement.
 - A Git repository backup/history recovery method must be verified before destructive migration work where applicable; untracked working-tree material must be inventoried separately because Git history alone does not preserve it.
-- P14 stop/report/wait remains mandatory.
+- P14 stop/report/wait remains mandatory **for BLOCKING flags**. Non-blocking flags are recorded, accumulated, and deferred to the active batch correction point unless the next ticket materially depends on their correction or the Operator directs immediate remediation.
 - Where P12 requires a README for a governed parent but the frozen §8 tree does not explicitly state the exact README filename, do not invent competing naming. Resolve it from an existing approved naming rule; if more than one plausible filename exists, STOP and ask the Operator.
 
 ---
@@ -239,7 +238,15 @@ The following items were recovered from Phase 01 and are mapped to the issued ti
 - V003-M20 — Verified Legacy Source Retirement & Deprecated-Path Cleanup
 - V003-M21 — Final V003 Migration Verification, Snapshot & Map Closure
 
-Batch membership remains planning only. The Operator has explicitly authorized V003-M01 through V003-M21 as a set; execute them one ticket at a time, in dependency order, with a separate P14 preflight and verification cycle for each ticket.
+Batch membership remains planning only for scope grouping; the Operator has explicitly authorized V003-M01 through V003-M21 as a set. Execute tickets one at a time, in dependency order, with a separate P14 preflight and ChatGPT independent-verification cycle for each ticket. **Within the same batch, a prior ticket's pending staging/commit/push/PR/merge/Git-closure state does not block the next dependency-eligible ticket once the prior ticket has passed independent verification and has no unresolved flag that materially blocks the dependent work. Git staging/commit/push/PR/merge is performed at the batch boundary. A later batch must not begin until the preceding batch's Git lifecycle/closure is completed as authorized.**
+
+### Batch Git lifecycle / branch handling
+
+- Ticket-level `Suggested branch` values are planning hints, not mandatory intra-batch branch-switch gates.
+- Do not switch branches merely to satisfy a later ticket's suggested branch while the active batch contains uncommitted verified changes.
+- The active batch may continue on its current authorized working branch until batch close unless the Operator explicitly directs a branch rename/split.
+- Each ticket's changed paths and verification evidence must remain separately attributable in the Phase 02 conversation/report and migration map even when several tickets share one batch working branch.
+- At the end of the batch, stage/commit/push/PR/merge the verified batch changes under the authorized batch-close workflow; only then begin the next batch.
 
 ---
 
@@ -1382,7 +1389,7 @@ Their architectural placeholders/references may be migrated where explicitly app
 
 **Filesystem migration started by this document:** NO.
 
-**Authorized execution sequence begins with:** **V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap.** Codex may execute M01 under this approval after passing its P14 preflight. Complete, report, independently verify, and merge/close only under Operator authority before proceeding to the next dependency-eligible ticket.
+**Authorized execution sequence begins with:** **V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap.** Codex may execute M01 under this approval after passing its P14 preflight. Complete, report, and independently verify each ticket before proceeding to the next dependency-eligible ticket **within the same batch**. Do not require per-ticket commit/push/merge as an intra-batch gate. At the end of the batch, perform the authorized batch Git lifecycle/closure before beginning the next batch.
 
 ---
 
@@ -1396,7 +1403,14 @@ Therefore:
 
 - a later newly discovered source is not automatically omitted merely because it is not named here;
 - it becomes a preflight flag and must be added to the migration map;
-- an ambiguous destination stops the affected ticket;
+- an ambiguous destination that materially affects the active ticket or dependent work is a **BLOCKING FLAG** and stops that affected work;
+- a discovered issue that does not materially affect the active ticket or next dependent work is a **BATCH-DEFERRED / NON-BLOCKING FLAG** and is accumulated for batch correction;
 - no executor may use this issued ticket set as authority to guess a destination.
 
-This is intentional and is part of the Phase 02 safety model.
+### Operator flag-handling declaration — 2026-10-08
+
+The Operator explicitly clarified that migration progress must not repeatedly stop for minor fixes that are not dependencies of the next ticket. This later Operator execution declaration supersedes the earlier blanket wording that treated every flag as an automatic stop **for Phase 02 execution handling only**. The frozen target architecture is unchanged.
+
+At each batch boundary, all accumulated non-blocking flags must be reviewed and corrected or explicitly dispositioned before the batch Git lifecycle/closure is treated as complete.
+
+This is intentional and is part of the Phase 02 safety and progress model.

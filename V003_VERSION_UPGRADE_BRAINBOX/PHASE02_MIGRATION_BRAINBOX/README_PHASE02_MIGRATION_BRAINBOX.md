@@ -1,24 +1,24 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE — AUTHORIZED] — V003-M01 independently verified PASS; M01-GIT-01 and M01-FH-01 remain documented carry-forward items; M02 is dependency-eligible under its own P14 preflight.
-**PARENT:** V003_VERSION_UPGRADE_BRAINBOX/
-**CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket execution, conversation, and verification reporting.
-**PURPOSE:** Keep Phase 02 migration planning and execution evidence separate from the closed Phase 01 polish archive.
-**MENTAL MODEL:** Phase 01 froze the target; Phase 02 compares the live Brainbox against that target and migrates only through the individually scoped, Operator-authorized V003-Mxx tickets.
-**GOVERNED BY:** The frozen V003 Specification, Origin Conversation, issued migration tickets, P14 preflight, and Operator authority.
+**Status:** [ACTIVE — AUTHORIZED] — Phase 02 set approved by the Operator on 2026-10-08; M01 and M02 independently verified PASS; M02-WS-01 resolved; M03 is dependency-eligible under its own P14 preflight; Batch A Git lifecycle pending.
+**PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
+**CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
+**PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
+**MENTAL MODEL:** Phase 01 froze the target; Phase 02 compares the live Brainbox against that target and migrates through individually scoped V003-Mxx tickets covered by the Operator's explicit M01–M21 set authorization, with each ticket subject to dependencies and P14 preflight.
+**GOVERNED BY:** The frozen V003 Specification, Origin Conversation, P14 migration preflight, the V003 parent README, and the Operator's explicit approval of V003-M01–M21 recorded in the Phase 02 report/conversation.
 **LAST VERIFIED:** 2026-10-08
 
 ## Authority boundary
 
 The canonical V003 authorities remain:
 
-- ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md — frozen migration-target authority.
-- ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md — historical decision evidence and ambiguity resolver.
-- ../PHASE01_POLISH_BRAINBOX/ — closed Phase 01 execution and verification archive.
+- `../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md` — frozen migration-target authority.
+- `../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` — historical decision evidence and ambiguity resolver.
+- `../PHASE01_POLISH_BRAINBOX/` — closed Phase 01 execution and verification archive.
 
-This folder contains Phase 02 migration planning and execution/audit records. It does not independently redefine the V003 target.
+This Phase 02 folder contains migration planning and migration execution/audit records. It does not independently redefine the V003 target.
 
-The Operator explicitly authorized execution of the remodeled V003-M01–M21 ticket set on 2026-10-08. Execute each ticket only within its stated scope, dependencies, and P14 preflight. The set authorization does not permit scope expansion, deployment, or source retirement without the required ticket authority.
+The issued migration tickets are individually scoped records. The Operator explicitly approved execution of the remodeled V003-M01–M21 set on 2026-10-08; that approval supersedes any earlier wording in this README that required separate authorization for each ticket. No repeated per-ticket approval is required for the approved set. Execute tickets one at a time in dependency order, with ticket-specific P14 preflight. **Stop/report/wait applies to BLOCKING flags; BATCH-DEFERRED / NON-BLOCKING flags are recorded in detail, accumulated for the active batch, and do not stop same-batch progression unless the next ticket materially depends on their correction.** This set approval does not authorize scope expansion, merging, or deployment.
 
 ## Local tree
 
@@ -32,40 +32,55 @@ PHASE02_MIGRATION_BRAINBOX/
 
 ## Record roles
 
-- README_PHASE02_MIGRATION_BRAINBOX.md — local Phase 02 authority boundary, navigation, status, and record roles.
-- V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md — Operator, ChatGPT, and Codex migration-planning and execution conversation record.
-- V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md — cross-checks, execution reports, independent verifications, flags, and closeout evidence.
-- V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md — individually scoped V003-M01 through V003-M21 migration tickets.
+- `README_PHASE02_MIGRATION_BRAINBOX.md` — local Phase 02 authority boundary, navigation, status, and record roles.
+- `V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md` — Operator/ChatGPT/Codex migration-planning and migration-execution conversation record from Phase 02 onward.
+- `V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md` — Phase 02 cross-checks, execution reports, independent verifications, flags, and closeout evidence.
+- `V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md` — Operator-approved/authorized V003-M01 through V003-M21 migration tickets.
 
 ## Phase 02 operating rules
 
-1. Phase 01 is closed and frozen.
-2. Execute one migration ticket at a time, in dependency order.
-3. Each ticket requires its own P14 preflight and execution report.
-4. Inspect current live content before mapping; filenames alone do not establish a destination.
-5. Preserve canonical/reference boundaries, historical evidence, and ticket identity.
-6. Source removal requires the authority, destination, history, and recovery evidence required by the applicable ticket.
-7. Codex execution evidence and ChatGPT independent verification remain distinguishable in the Phase 02 records.
-8. Operator merge and closure authority remains separate from ticket execution and verification.
+1. Phase 01 is closed/frozen.
+2. Phase 02 ticket drafting is complete and the remodeled V003-M01–M21 set is explicitly Operator-approved for execution as of 2026-10-08.
+3. This authorization comes from the Operator's explicit approval, not from ticket existence or batch membership.
+4. Execute one migration ticket at a time within its batch. A ticket must pass its own P14 preflight and Codex execution/reporting, and its **substantive migration result must pass ChatGPT independent verification with no BLOCKING flag** before a dependent ticket proceeds. Non-blocking flags may remain open for batch correction. **Staging, commit, push, PR, merge, and Git closure are batch-boundary actions, not per-ticket intra-batch gates.**
+5. Every ticket must carry the two canonical authority paths and perform the P14 preflight.
+6. Any ambiguity, contradiction, unsupported rename, historical-evidence risk, scope mismatch, secret risk, destructive-operation risk, missing dependency, or other issue must be classified by impact. If it materially affects the active ticket or next dependent ticket, it is **BLOCKING** and stops affected work. If it does not, it is **BATCH-DEFERRED / NON-BLOCKING**, must be documented precisely, and is accumulated for correction before batch Git closure.
+7. Current live content must be inspected before mapping; filename alone is not sufficient evidence of destination.
+8. Source removal requires explicit authorization, verified destination/history, and integrity/recovery evidence where applicable.
+9. Migration must preserve historical evidence, canonical/reference boundaries, and historical ticket identity.
+10. **Operating model:** Operator approves/resolves flags and retains merge authority; Codex executes authorized migration tickets; ChatGPT independently verifies Codex completion claims.
+11. Codex must produce the per-ticket execution report contract defined in `V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md`, including pre-state, exact paths/actions, post-state, verification, unresolved flags, scope-discipline result, Git lifecycle, and verification limits.
+12. Codex execution evidence and ChatGPT independent verification are recorded separately for every ticket. A ticket whose substantive migration result passes independent verification and has no **BLOCKING** flag is eligible to satisfy same-batch dependencies. Non-blocking flags remain open in the batch flag register without stopping progression. Git closure occurs at the batch boundary, not after every ticket.
 
 ## Migration ticket state
 
-**Issued and authorized set:** V003-M01 through V003-M21, as explicitly approved by the Operator on 2026-10-08.
+**Issued/remodeled set:** V003-M01 through V003-M21.
 
-**V003-M01:** IMPLEMENTED LOCALLY / INDEPENDENT CHATGPT VERIFICATION PASS. M01-DOC-01 was resolved by correcting/retracting unsupported Operator-attribution wording. M01-GIT-01 and M01-FH-01 remain documented carry-forward items.
+**Operator approval:** APPROVED — 2026-10-08.
 
-**Next dependency-eligible ticket:** V003-M02 — Root README / V003 Authority Navigation Migration, subject to its own P14 preflight.
+**Execution authorization:** AUTHORIZED — V003-M01 through V003-M21, executed one ticket at a time under dependencies, P14 preflight, Codex reporting, ChatGPT independent verification, and Operator merge/closure authority.
 
-**M01 Git lifecycle:** Pending. No M01 staging, commit, push, PR, or merge had occurred at the time of the M01 verification record.
+**Current Batch A progression:** M01 and M02 are independently verified PASS. M01-GIT-01 and M01-FH-01 remain documented carry-forward items. M02-WS-01 is resolved and non-blocking. M03 is next dependency-eligible subject to its own P14 preflight.
 
-**Filesystem migration:** Not started beyond creation of the M01 migration ledger/support record. No source was moved, renamed, or deleted by M01.
+**M01 inventory and migration map:** PASS; local ticket commit `bc6d1309a71f4a309469788074c381c8665e5490` created on its dedicated branch. M01-GIT-01 and M01-FH-01 remain carry-forward items; push/PR/merge remain pending at Batch A closure.
+
+**M02 root-authority migration:** PASS; root README created and V003 navigation reconciled; `DOB_MUST_README.md` remains unchanged; no source moved, renamed, or deleted. M02 local ticket commit is being prepared on its dedicated branch; push/PR/merge remain at the Batch A boundary.
+
+
+**Batch A Git lifecycle:** M01 local commit exists; M02 and M03 local ticket commits remain pending; push/PR/merge remain deferred to the Batch A boundary.
+
+**Legacy source migration:** No legacy source was moved, renamed, or deleted by M01 or M02. Governance canonicalization remains pending M03.
 
 ## Placement correction record
 
-The Phase 02 ticket file and initial Phase 02 cross-check were first written under PHASE01_POLISH_BRAINBOX/ during ticket drafting.
+The Phase 02 ticket file and initial Phase 02 cross-check were first written under `PHASE01_POLISH_BRAINBOX/` during ticket drafting.
 
-The Operator corrected that archive boundary on 2026-10-08. The Phase 02 material was moved into this dedicated parent folder, and the Phase 01 README/report were restored to Phase 01-only scope.
+The Operator corrected that archive boundary on 2026-10-08.
 
-The Operator referred to the new parent as PHASE02_MIGRATION_BRAINBOX.md. Because the requested parent contains child files and governed folders use the _BRAINBOX/ folder convention, it is implemented as the directory PHASE02_MIGRATION_BRAINBOX/.
+The Phase 02 material was moved into this dedicated parent folder, and the Phase 01 README/report were restored to Phase 01-only scope.
 
-No migration execution was performed as part of that placement correction.
+The Operator referred to the new parent as `PHASE02_MIGRATION_BRAINBOX.md`. Because the requested parent must contain child files and governed folders use the `_BRAINBOX/` folder convention, it is implemented as the directory:
+
+`PHASE02_MIGRATION_BRAINBOX/`
+
+No migration execution was performed as part of this placement correction.
