@@ -1,13 +1,13 @@
 # README_V003_VERSION_UPGRADE_BRAINBOX
 
-**Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen
+**Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 01 — CLOSED / FROZEN; Phase 02 migration-ticket drafting eligible
-**Migration status:** NOT STARTED
+**Current phase:** V003 Phase 02 — remodeled migration tickets Operator-approved/authorized; execution not started
+**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED FOR EXECUTION / FILESYSTEM MIGRATION NOT STARTED
 
 ## Purpose
 
-This folder contains the canonical V003 Origin Conversation and Specification, plus the supporting Phase 01 polishing and independent-verification archive. The supporting archive records execution and audit history; it is not a competing architecture authority.
+This folder contains the canonical V003 Origin Conversation and Specification, the closed Phase 01 polishing/verification archive, and the active Phase 02 migration planning/reporting container. Supporting Phase 01 and Phase 02 records document execution, audit, migration scoping, and verification history; they are not competing architecture authorities.
 
 ## Local Tree
 
@@ -16,10 +16,15 @@ V003_VERSION_UPGRADE_BRAINBOX/
 ├── README_V003_VERSION_UPGRADE_BRAINBOX.md
 ├── V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md
 ├── V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md
-└── PHASE01_POLISH_BRAINBOX/
-    ├── README_PHASE01_POLISH_BRAINBOX.md
-    ├── V003_POLISH_CONVO_VERSION_UPGRADE_BRAINBOX.md
-    └── V003_POLISH_REPORT_VERSION_UPGRADE_BRAINBOX.md
+├── PHASE01_POLISH_BRAINBOX/
+│   ├── README_PHASE01_POLISH_BRAINBOX.md
+│   ├── V003_POLISH_CONVO_VERSION_UPGRADE_BRAINBOX.md
+│   └── V003_POLISH_REPORT_VERSION_UPGRADE_BRAINBOX.md
+└── PHASE02_MIGRATION_BRAINBOX/
+    ├── README_PHASE02_MIGRATION_BRAINBOX.md
+    ├── V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md
+    ├── V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md
+    └── V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md
 ```
 
 ## Authority Model
@@ -42,7 +47,13 @@ It records the architecture, rules, names, references, placeholders, governance,
 
 Role: **P01–P16 execution and independent-verification evidence**.
 
-The polish conversation preserves the execution/verification exchange. The polish report records claims, audit findings, corrections, and their resolution status. These records support audit and historical review but do not silently override the Specification or Origin Conversation.
+The polish conversation preserves the Phase 01 execution/verification exchange. The polish report records claims, audit findings, corrections, and their resolution status. These records support audit and historical review but do not silently override the Specification or Origin Conversation.
+
+### PHASE02_MIGRATION_BRAINBOX
+
+Role: **V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification evidence**.
+
+The migration ticket file contains V003-M01 through V003-M21 planning scopes. The migration conversation/report record Phase 02 decisions, execution, flags, and verification. Ticket presence does not authorize execution; every migration ticket remains individually authorized and subject to P14 preflight.
 
 ### Conflict / ambiguity rule
 
@@ -57,9 +68,11 @@ If a ticket, implementation instruction, filesystem state, or Specification stat
 
 ## Phase Boundary
 
-Phase 01 is frozen after the successful V003-P16 final reconciliation. The freeze authorizes drafting individually scoped V003-Mxx migration tickets only.
+Phase 01 is frozen after the successful V003-P16 final reconciliation.
 
-Phase 02 filesystem migration is not authorized by the existence of this folder, the frozen Specification, or the polish archive. P14 preflight safeguards remain mandatory.
+Phase 02 migration tickets V003-M01 through V003-M21 have now been issued as planning scopes. Their existence does not authorize execution.
+
+Phase 02 filesystem migration has not started. Each V003-Mxx ticket requires separate Operator authorization and P14 preflight safeguards before implementation.
 
 ## V003-P01 Provenance Record
 
@@ -111,13 +124,14 @@ These values describe the current local file at the time of the verification abo
 ## Navigation
 
 - **PARENT:** `DEODINI_BRAINBOX/`
-- **CURRENT DOMAIN:** V003 Version Upgrade Authority and Phase 01 Audit Archive
+- **CURRENT DOMAIN:** V003 Version Upgrade Authority, Phase 01 Audit Archive, and Phase 02 Migration Planning/Reporting
 - **GOVERNED BY:** Current DEODINI authority rules and Operator-approved V003 tickets
 - **CANONICAL MIGRATION TARGET:** `V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
 - **HISTORICAL / AMBIGUITY SOURCE:** `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
-- **EXECUTION / VERIFICATION HISTORY:** `PHASE01_POLISH_BRAINBOX/`
-- **PHASE 01 STATUS:** CLOSED / FROZEN — V003-Mxx ticket drafting authorized; migration execution not authorized
-- **PHASE 02 STATUS:** NOT STARTED
+- **PHASE 01 EXECUTION / VERIFICATION HISTORY:** `PHASE01_POLISH_BRAINBOX/`
+- **PHASE 02 MIGRATION PLANNING / REPORTING:** `PHASE02_MIGRATION_BRAINBOX/`
+- **PHASE 01 STATUS:** CLOSED / FROZEN
+- **PHASE 02 STATUS:** V003-M01 through V003-M21 re-cross-checked/remodeled and explicitly Operator-approved for execution on 2026-10-08; migration execution not started
 
 ## V003-P01 Scope
 
