@@ -197,3 +197,235 @@ The GitHub display combines the path in one row because the tracked tree current
 The child exists because V003-P03 created the concise Architecture Decisions record there. The frozen Specification §8 also defines that child path and its planned Version History contents. The parent-level `README_VERSION_HISTORY_BRAINBOX.md` and other not-yet-migrated Version History records are absent at this stage, which is why GitHub's compact directory display is misleading here.
 
 The approved V003-M04 ticket includes creating/reconciling the Version History authority and README and depends on M01 and M03. To preserve the authorized ticket order, Codex did not create the README ahead of those dependencies. M01 remains NOT STARTED; M04 remains NOT STARTED. The earlier verification correctly found the Architecture Decisions file on GitHub, but did not address this directory-display/parent-README concern; this record supersedes that narrow interpretation.
+
+
+---
+
+# V003-M01 Execution — Operator Authorization and Codex Progress
+
+## DEODINI — OPERATOR (EXECUTION REQUEST)
+
+NOW PROCEED TO
+
+**# V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap**
+
+**Status:** AUTHORIZED FOR EXECUTION  
+**Suggested branch:** `v003/m01-current-state-inventory-migration-map`  
+**Dependencies:** Phase 01 frozen; current `main` clean/synchronized before execution.
+
+**Canonical authorities**
+
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+## Scope
+
+Perform the first Phase 02 **read-only** current-state inventory and integrity/recovery baseline, then create/bootstrap:
+
+`VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md`
+
+The map is a living migration ledger, not a guessed one-time mapping. M01 must establish enough baseline evidence that later rename/move/delete tickets can prove what existed before migration and can recover safely from an error.
+
+## Required inventory and baseline
+
+Record at least:
+
+- current root paths;
+- every current governed README/authority file;
+- current FUNC files;
+- current project/raw/proven/failed sources;
+- current FootHive files/folders/assets/evidence;
+- current Skills sources;
+- current Portfolio sources;
+- current Milestones sources;
+- current Version History sources;
+- the V003 authority container plus Phase 01 and Phase 02 support records;
+- empty legacy folders/files;
+- current Git branch, HEAD, upstream, status, ahead/behind state, relevant refs, and whether untracked working-tree material exists;
+- current references to legacy paths where materially relevant;
+- integrity baselines (for example SHA-256 plus size/line count where practical) for historical/canonical sources likely to be copied, moved, or retired;
+- a verified repository-history/recovery method appropriate to the migration before destructive tickets begin. If a Git bundle or similar Git-only backup is used, explicitly record that it does not preserve unrelated untracked working-tree files/configuration and inventory those separately.
+
+For each migration source, record:
+
+- current path;
+- content role;
+- authority role;
+- target candidate;
+- canonical/reference/historical/deprecated/empty state;
+- split/merge/rename requirement;
+- evidence/historical sensitivity;
+- integrity/baseline reference where needed;
+- source-removal eligibility;
+- dependent M-ticket;
+- unresolved flag if destination is not yet authoritative.
+
+## Success gate
+
+- Migration map exists and is source-backed.
+- Git/current-state baseline and relevant integrity data are recorded.
+- Recoverability/backup evidence is documented sufficiently for later destructive tickets; no claim is made that Git history alone preserves untracked state.
+- No filesystem migration occurs beyond creating/updating the M01 migration ledger/support record.
+- No source is renamed/moved/deleted.
+- Unknown destinations are recorded as flags/TBD, not guessed.
+- Map is structured so later Mxx tickets can append verified dispositions.
+
+## CODEX — PROGRESS UPDATES (EXACT)
+
+“M01’s inventory and migration-map draft are already in place on its branch. I’m finishing the required execution records, reconciling the Phase 02 status, then I’ll verify the resulting diff and report the Git state and any flags.”
+
+“The preflight remains clean: the M01 branch is at the same baseline as local and remote `main`, with no upstream set. The migration map is the only current untracked file. The baseline records 122 tracked files, an empty physical `BRAINBOX/` folder, and 72 dangling Git objects; I’m preserving those objects and documenting the FootHive catalog-path mismatch for its later ticket.”
+
+
+
+## CODEX — M01 EXECUTION RESULT
+
+M01 inventory and migration-map implementation is complete locally. The source-backed ledger is at `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md`. The Phase 02 README, conversation, and report record the execution. No existing source was moved, renamed, deleted, or rewritten, and source migration has not started.
+
+The two carried-forward flags are M01-GIT-01 (72 local dangling Git objects; preserve pending review) and M01-FH-01 (32 broken relative image references in four FootHive catalogs; resolve under M15). The Operator-approved Version History parent README placeholder remains assigned to M04.
+
+The branch is `v003/m01-current-state-inventory-migration-map`, still based on `27e73f828bb367298442c2e621c18d1cc1ceb4f4`. No commit, push, or merge was performed. Independent ChatGPT verification and Git lifecycle completion remain pending.
+
+
+
+**CODEX — FINAL INVENTORY CROSS-CHECK:** The manifest contains 122 unique source paths, matching all 122 tracked paths at the baseline, with zero missing or extra entries. This count includes the `PROJECT-RAW-AUTH` family.
+
+
+
+---
+
+# Operator Resolution — M01-DOC-01 / Version History Parent README
+
+## DEODINI — OPERATOR (EXACT MESSAGE)
+
+> YES I APPROVED OF THE README... IS THAT THE ONLY ISSUE? IF SO, RECORD YOUR REPORT ACCORDINGLY.
+
+## CHATGPT — RESOLUTION
+
+Yes. M01-DOC-01 was the **only defect found in ChatGPT's independent verification of the M01 implementation claim**.
+
+The Operator's explicit approval now resolves the previously unsupported attribution concerning the Version History parent README / truthful placeholder treatment.
+
+The living migration map has been updated so the approval is attributed to this explicit Operator confirmation rather than to the earlier compact-folder discussion.
+
+### M01 verification state after resolution
+
+- 122 tracked-path manifest coverage: PASS.
+- 122 unique entries / zero missing / zero extra / zero duplicate: PASS.
+- physical working-tree integrity baseline: PASS.
+- non-destructive M01 scope: PASS.
+- branch/base/no-commit/no-push/no-merge claims: PASS.
+- M01-GIT-01: CONFIRMED carry-forward condition.
+- M01-FH-01: CONFIRMED carry-forward condition for M15.
+- M01-DOC-01: **RESOLVED BY EXPLICIT OPERATOR APPROVAL**.
+- independent ChatGPT verification: **PASS**.
+- source migration: NOT STARTED.
+- Git lifecycle: PENDING.
+
+M01-GIT-01 and M01-FH-01 are not M01 implementation failures; they are correctly documented migration conditions for later handling.
+
+M01 is independently verified at the implementation/content level. Final Git lifecycle completion remains separate and pending.
+
+
+---
+
+# Correction — README Approval Misinterpretation Reverted
+
+## DEODINI — OPERATOR
+
+The Operator challenged the prior interpretation of:
+
+> YES I APPROVED OF THE README...
+
+and clarified that the approval should not be treated as explicit approval of the future Version History README/placeholder assigned to M04.
+
+The Operator also asked why the report said a README had been created.
+
+## CHATGPT — CORRECTED RECORD
+
+The report's earlier statement that a README was created refers to:
+
+`V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md`
+
+That file was created earlier because the Operator explicitly instructed ChatGPT to create the dedicated Phase 02 migration parent and create this README beneath it.
+
+It is **not** the same file as:
+
+`VERSION_HISTORY_BRAINBOX/README_VERSION_HISTORY_BRAINBOX.md`
+
+The Version History parent README does **not** currently exist. It remains an authorized M04 target.
+
+ChatGPT had incorrectly interpreted the later statement “YES I APPROVED OF THE README” as approval of the M04 Version History README/placeholder treatment. That interpretation is retracted.
+
+### Corrected authority state
+
+- `README_PHASE02_MIGRATION_BRAINBOX.md`:
+  - EXISTS;
+  - correctly created under the Operator's earlier explicit Phase 02 archive-structure instruction;
+  - remains valid.
+
+- `VERSION_HISTORY_BRAINBOX/README_VERSION_HISTORY_BRAINBOX.md`:
+  - ABSENT;
+  - remains assigned to V003-M04 for creation/reconciliation;
+  - placeholder-specific Operator approval is **not established** and must not be inferred.
+
+### M01-DOC-01 resolution
+
+The original M01-DOC-01 defect concerned unsupported attribution of placeholder approval to the Operator.
+
+That attribution has now been removed from the living migration map.
+
+Therefore M01-DOC-01 is resolved by **documentation correction/retraction**, not by Operator approval of the M04 README.
+
+### M01 verification state
+
+- substantive M01 verification: PASS;
+- M01-DOC-01: RESOLVED BY DOCUMENTATION CORRECTION / RETRACTION;
+- M01-GIT-01: carry forward;
+- M01-FH-01: carry forward to M15;
+- Git lifecycle: pending;
+- source migration: not started.
+
+No README file was deleted as part of this correction.
+
+
+---
+
+# Current Phase 02 Reporting Location Confirmation
+
+## DEODINI — OPERATOR
+
+The Operator asked which folders currently receive reports of the active conversation, then instructed:
+
+> NOW RECORD YOUR CURRENT REPORTS ACCORDINGLY.
+
+## CHATGPT — RECORDING BOUNDARY CONFIRMATION
+
+The active Phase 02 conversation and verification/reporting records are maintained under:
+
+`C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\PHASE02_MIGRATION_BRAINBOX\`
+
+Primary active records:
+
+- `V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md` — active Phase 02 Operator/ChatGPT/Codex conversation, approvals, corrections, decisions, and execution dialogue.
+- `V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md` — Phase 02 execution reports, independent verification, flags, corrections, and closure/status findings.
+- `README_PHASE02_MIGRATION_BRAINBOX.md` — Phase 02 authority boundary, navigation, and current state.
+- `V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md` — authorized V003-M01 through V003-M21 ticket authority.
+
+The closed Phase 01 archive:
+
+`C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\PHASE01_POLISH_BRAINBOX\`
+
+is not used for new Phase 02 conversation/report material.
+
+The separate living migration ledger:
+
+`C:\Users\USER\DEODINI_BRAINBOX\VERSION_HISTORY_BRAINBOX\V003_EXTENDED_DEODINI_BRAINBOX\MIGRATION_MAP_V003_BRAINBOX.md`
+
+is updated only when a migration-map fact, source disposition, migration flag, integrity fact, or ticket-specific migration correction belongs in that ledger. It is not the primary conversation/report archive.
+
+This record confirms the current reporting boundary after the earlier Phase 01/Phase 02 archive correction.
+
+
+---
+
