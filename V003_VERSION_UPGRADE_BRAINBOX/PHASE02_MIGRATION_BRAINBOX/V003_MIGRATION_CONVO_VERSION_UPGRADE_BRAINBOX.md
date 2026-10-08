@@ -1330,3 +1330,36 @@ Before Batch B/M05:
 4. verify final Batch A branch/remote/main state.
 
 No Git lifecycle action was performed by ChatGPT during this verification.
+
+
+---
+
+## Conversation record — Batch A cross-check and Git closure — 2026-10-08
+
+### De O'Dini — Operator
+
+```text
+PROCEED WITH CROSSCHECKING
+
+**## Batch A — Baseline and Authority**
+\- V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap
+\- V003-M02 — Root README / V003 Authority Navigation Migration
+\- V003-M03 — Governance Canonicalization Migration
+\- V003-M04 — Version History & Historical Snapshot Migration
+
+&#x20;FOR ALL THE WORK DONE AND ALSO EACH FOLDERS/FILES THAT HAS ITS RECORDS...&#x20;
+
+ONCE DONE, COMMIT AND PUSH ALL BRANCHES M01-M04 ACCORDINGLY, AND THEN PROCEED TO MERGE ALL BRANCHES M01-M04 ACCORDINGLY, RUN A CHECK AND THEN RECORD YOUR REPORTS.
+
+STAGE, COMMIT AND PUSH ONCE AGAIN TO THEN MERGE.
+```
+
+### Codex — Operator-facing progress messages
+
+1. “I’m checking the M01–M04 branch graph, each branch’s committed and uncommitted files, and the linked migration records before changing GitHub. I’ll preserve ticket boundaries, then follow the authorized stage/commit/push and merge sequence, with a verification pass after the merges.”
+2. “The branch graph is a clean dependency chain, but only `main` exists on the remote so far. M01–M03 are committed locally; M04 is still uncommitted on its own branch. I’m checking the ticket records and outstanding flags now, then I’ll publish the ticket branches in dependency order.”
+3. “The content cross-check found two record issues and I’m correcting them on their owning branches: the Governance README still said its independent review was pending, and the M04 working-copy hashes changed when the temporary Git stash restored the Markdown under Windows `core.autocrlf=true`. Snapshot path lists still match Git exactly; I’m keeping the original hashes as historical measurements and adding current hashes so the audit trail stays intact.”
+4. “M04 is now committed on its dedicated branch, and the M01 push completed. I’m publishing M02–M04 next, then I’ll verify each remote head before opening and merging the branches in order.”
+5. “M01–M03 have been merged in order, and M04 is next. I’m completing the M04 merge, then I’ll run the final branch and repository checks and add the confirmed outcomes to the migration records.”
+6. “M04 is merged as PR #19. I’m now checking GitHub’s merged states and fetching `origin/main` to verify that each ticket head is contained in the final remote main history before I finalize the records.”
+7. “The remote check confirms PRs #16–#19 are all merged in dependency order, and all four pushed ticket heads are ancestors of `origin/main`. I found a few ‘merge pending’ status lines in the top-level support records, so I’m reconciling those and recording the merge SHAs before the final documentation commit and closeout merge.”

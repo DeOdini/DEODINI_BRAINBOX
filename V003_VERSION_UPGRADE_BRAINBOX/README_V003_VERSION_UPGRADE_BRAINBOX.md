@@ -72,7 +72,7 @@ Phase 01 is frozen after the successful V003-P16 final reconciliation.
 
 The Operator explicitly approved V003-M01 through V003-M21 for execution as a set on 2026-10-08. Execute one ticket at a time in dependency order, with a separate P14 preflight and report for each ticket. A dependent ticket in the same batch may proceed after independent verification PASS when no unresolved flag materially blocks it.
 
-The Operator has clarified that every V003-Mxx ticket has its own branch and ticket-specific local commit for auditability. M01–M04 have dedicated commits, and all four refs have been pushed to `origin`; their PR/merge lifecycle remains at the Batch A boundary.
+The Operator has clarified that every V003-Mxx ticket has its own branch and ticket-specific local commit for auditability. M01–M04 each have a dedicated pushed branch; PRs #16–#19 are merged to `main` in dependency order. Batch A ancestry checks pass, and M05 remains unstarted.
 
 ## V003-P01 Provenance Record
 
@@ -131,7 +131,7 @@ These values describe the current local file at the time of the verification abo
 - **PHASE 01 EXECUTION / VERIFICATION HISTORY:** `PHASE01_POLISH_BRAINBOX/`
 - **PHASE 02 MIGRATION PLANNING / REPORTING:** `PHASE02_MIGRATION_BRAINBOX/`
 - **PHASE 01 STATUS:** CLOSED / FROZEN
-- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; M01–M04 independently verified PASS; M01–M03 have dedicated local commits; M04 remains unstaged/uncommitted on its dedicated branch; M02-BR-01, M03-REF-01, and M04-HIST-01 remain non-blocking/carry-forward; Batch A flag review and Git closure must complete before Batch B/M05
+- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; Batch A M01–M04 independently verified PASS and merged to `main` through PRs #16–#19; the final checked `origin/main` is `e0e05e2afec7795b916595c8c6ca3f09a8b227d0`; the M01-GIT-01/M04-HIST-01 evidence deferrals remain assigned to M21, M01-FH-01 to M15, M02-BR-01 to M19, and M03-REF-01 to M19/M20; M05 not started
 
 ## V003-P01 Scope
 

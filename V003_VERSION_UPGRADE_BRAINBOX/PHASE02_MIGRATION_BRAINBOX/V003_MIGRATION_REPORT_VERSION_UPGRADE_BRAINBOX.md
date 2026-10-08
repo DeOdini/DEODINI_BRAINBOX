@@ -2,7 +2,7 @@
 
 **Started:** 2026-10-08
 **Operator:** DEODINI - OPERATOR
-**Current state:** Phase 02 ticket set remodeled, Operator-approved and authorized for execution on 2026-10-08; filesystem migration not started
+**Current state:** Batch A M01–M04 independently verified, pushed on dedicated branches, and merged to `main` through PRs #16–#19; Batch A Git closure complete; M05 not started
 **Canonical target:** `../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
 **Historical ambiguity source:** `../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
 **Issued tickets:** `V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md`
@@ -2866,3 +2866,35 @@ Local git branch -vv confirms each ticket branch tracks its corresponding origin
 A current root-tree read-back again found 340 target hierarchy lines in both README_BRAINBOX.md and frozen Specification §8. The only textual difference in that tree block is the root README population annotation [PLANNED] on MILESTONES_BRAINBOX/; this is the documented status overlay, not a path or hierarchy change.
 
 **Pre-merge Git state:** all four branch pushes verified; main unchanged; PR creation and sequential merges remain the next authorized operations. No automated product tests were run; this closeout check concerns Git refs, documentation, tree/snapshot integrity, and local links.
+
+
+---
+
+## Codex — Batch A post-merge cross-check and GitHub closure — 2026-10-08
+
+### Ticket pull requests merged in dependency order
+
+| Ticket | PR | Branch head merged | GitHub merge commit |
+|---|---:|---|---|
+| V003-M01 | [#16](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/16) | `bc6d1309a71f4a309469788074c381c8665e5490` | `60803b1acc185a3174c26c9772f1908f9c4aaf6a` |
+| V003-M02 | [#17](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/17) | `3971f48c4c75641e46a23a86b0792e44e2d794e3` | `d91ae041be193814c8e5ac8bec3fe2912a8439ba` |
+| V003-M03 | [#18](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/18) | `f0113e74bc2cc50a9e91fc340b5406b19494f026` | `19c707cd6d2d443ff56081d0e73c7d6c5f705918` |
+| V003-M04 | [#19](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/19) | `f05a87a188bbcdca7038a2f8518d00175371153d` | `e0e05e2afec7795b916595c8c6ca3f09a8b227d0` |
+
+GitHub PR metadata was re-read after each merge. All four report `state=closed`, `merged=true`, with the merge SHAs above. The PRs were merged sequentially M01 → M02 → M03 → M04. The ticket branch refs remain on GitHub; none was deleted.
+
+### Post-merge repository check
+
+- `git fetch origin` completed successfully.
+- At the ticket-merge verification point, `origin/main` was `e0e05e2afec7795b916595c8c6ca3f09a8b227d0`, and its recent history displayed the M01, M02, M03, and M04 merge commits in order.
+- `git merge-base --is-ancestor <ticket branch> origin/main` returned exit code 0 for each of the four ticket branches.
+- GitHub branch search confirmed all four ticket refs still exist.
+- The active local worktree was clean on `v003/m04-version-history-migration` at `f05a87a188bbcdca7038a2f8518d00175371153d`, tracking its matching remote ref.
+- The local `main` branch was still at the original baseline `27e73f828bb367298442c2e621c18d1cc1ceb4f4` and showed 13 commits behind `origin/main` during this check. It was not switched or advanced during the ticket merges; the verified GitHub target is `origin/main`.
+- No branch was deleted. M05 has not started.
+
+### Cross-check disposition recap
+
+The migration-map section 17 dispositions remain active: M01-GIT-01 and M04-HIST-01 are preserved for M21; M01-FH-01 is assigned to M15; M02-BR-01 to M19; M03-REF-01 to M19/M20; M01-DOC-01, M02-WS-01, and M04-BR-01 are resolved. V001/V002 snapshots remain exact Git-backed inventories (10/10 and 111/111); conceptual retrospective evidence gaps remain explicit and are not fabricated.
+
+**Batch A result:** M01–M04 are independently verified PASS, pushed on separate ticket branches, and merged to `main` in order. The branch/head, PR state, and ancestry checks passed. Product/browser automated tests were not requested or run; these checks validate repository state and migration records.

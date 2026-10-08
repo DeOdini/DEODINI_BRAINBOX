@@ -1,7 +1,7 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — M01–M04 independently verified PASS; each has a dedicated branch and ticket commit; all four ticket refs are pushed and verified against `origin`; M04-BR-01 resolved; M02-BR-01 is dispositioned to M19, M03-REF-01 to M19/M20, M04-HIST-01 and M01-GIT-01 to M21, and M01-FH-01 to M15; M01-DOC-01 and M02-WS-01 resolved; Batch A PR/merge and final verification remain pending before Batch B/M05; legacy sources retained
+**Status:** Living M01–M21 migration ledger — Batch A M01–M04 independently verified PASS, each on its own pushed branch and ticket commit; PRs #16–#19 merged to `main` in dependency order; GitHub merge and local ancestry checks pass; M01-GIT-01 and M04-HIST-01 remain assigned to M21, M01-FH-01 to M15, M02-BR-01 to M19, M03-REF-01 to M19/M20; M01-DOC-01, M02-WS-01, and M04-BR-01 resolved; M05 not started
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
 **Current active branch:** v003/m04-version-history-migration
@@ -747,3 +747,21 @@ M03 contains the status-only Governance README correction committed as f0113e7. 
 Current root-target tree comparison again counted 340 lines on each side and found identical paths/parent-child levels; the single remaining text delta is the README-only [PLANNED] annotation on MILESTONES_BRAINBOX/, which the README defines as a population note.
 
 Batch A flags are dispositioned to the named authorized later tickets in section 17. Batch A still requires PR/merge and final remote-main verification. Do not begin M05 until those are complete.
+
+
+## 19. Batch A remote merge and final ticket-branch verification — 2026-10-08
+
+M01–M04 were merged to `main` one at a time in dependency order. GitHub PR metadata was re-read after the merges and reports all four PRs closed and merged.
+
+| Ticket | PR | Merged branch head | Merge commit | Status |
+|---|---:|---|---|---|
+| M01 | [#16](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/16) | `bc6d1309a71f4a309469788074c381c8665e5490` | `60803b1acc185a3174c26c9772f1908f9c4aaf6a` | MERGED |
+| M02 | [#17](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/17) | `3971f48c4c75641e46a23a86b0792e44e2d794e3` | `d91ae041be193814c8e5ac8bec3fe2912a8439ba` | MERGED |
+| M03 | [#18](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/18) | `f0113e74bc2cc50a9e91fc340b5406b19494f026` | `19c707cd6d2d443ff56081d0e73c7d6c5f705918` | MERGED |
+| M04 | [#19](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/19) | `f05a87a188bbcdca7038a2f8518d00175371153d` | `e0e05e2afec7795b916595c8c6ca3f09a8b227d0` | MERGED |
+
+After `git fetch origin`, `origin/main` resolved to `e0e05e2afec7795b916595c8c6ca3f09a8b227d0`. The main log showed merge commits for M01, M02, M03, and M04 in that order. Git ancestry checks returned success (exit 0) for each pushed ticket branch against `origin/main`; GitHub branch search confirmed all four refs remain available. No ticket branch was deleted.
+
+The active local worktree was clean on `v003/m04-version-history-migration` at `f05a87a188bbcdca7038a2f8518d00175371153d`, tracking the matching remote branch. The separate local `main` ref remained at its pre-batch baseline `27e73f828bb367298442c2e621c18d1cc1ceb4f4` (13 commits behind `origin/main`) at the time of this verification; no local branch switch or fast-forward was performed.
+
+Batch A is closed. M05 was not started. Accumulated flags retain their explicit dispositions in section 17; no historical rationale or source content was fabricated. This verification concerns migration artifacts, GitHub PR/ref state, ancestry, and documentation integrity; no product tests were requested or run.

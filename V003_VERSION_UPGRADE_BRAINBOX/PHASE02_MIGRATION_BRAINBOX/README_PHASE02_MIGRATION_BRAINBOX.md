@@ -61,16 +61,18 @@ PHASE02_MIGRATION_BRAINBOX/
 
 **Execution authorization:** AUTHORIZED — V003-M01 through V003-M21, executed one ticket at a time under dependencies, P14 preflight, Codex reporting, ChatGPT independent verification, and Operator merge/closure authority.
 
-**Current Batch A progression:** M01–M04 are independently verified PASS. `M04-BR-01` is resolved; M04 descends from corrected M03 tip `f0113e7`. V001/V002 snapshots match Git exactly (10/10 and 111/111). M01-GIT-01 and M04-HIST-01 remain explicit evidence/recovery deferrals assigned to M21; M01-FH-01 is assigned to M15; M02-BR-01 to M19; M03-REF-01 to M19/M20; M01-DOC-01 and M02-WS-01 are resolved. M01–M04 branch commits and remote refs are verified; Batch A PR/merge and final main verification remain pending. Batch B/M05 must not begin before Batch A closure.
+**Current Batch A progression:** M01–M04 are independently verified PASS and merged to `main` in order through PRs #16–#19. V001/V002 snapshots match Git exactly (10/10 and 111/111), and all four ticket branch heads are ancestors of `origin/main` (`e0e05e2afec7795b916595c8c6ca3f09a8b227d0`) in the final fetch check. M01-GIT-01 and M04-HIST-01 remain explicit evidence/recovery deferrals assigned to M21; M01-FH-01 is assigned to M15; M02-BR-01 to M19; M03-REF-01 to M19/M20; M01-DOC-01, M02-WS-01, and M04-BR-01 are resolved. Batch A Git closure is complete; M05 has not started.
 
 **M01 inventory and migration map:** PASS; dedicated commit `bc6d1309a71f4a309469788074c381c8665e5490` is pushed and matches its origin branch. M01-GIT-01 is preserved for M21 integrity/recovery review; M01-FH-01 is assigned to M15.
 
 **M02 root-authority migration:** PASS; dedicated commit `3971f48c4c75641e46a23a86b0792e44e2d794e3` is pushed and matches its origin branch. `M02-BR-01` preserves both README byte/hash records; the 340-line hierarchy, link, and whitespace checks pass. Recheck under M19.
 
-**M03 Governance canonicalization:** INDEPENDENT CHATGPT VERIFICATION PASS; implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` plus status-reconciliation commit `f0113e74bc2cc50a9e91fc340b5406b19494f026` are pushed on its dedicated branch. All nine approved Governance records are present; the stale README verification label now reflects the recorded pass. `M03-REF-01` remains assigned to M19/M20.
+**M03 Governance canonicalization:** INDEPENDENT CHATGPT VERIFICATION PASS; implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` plus status-reconciliation commit `f0113e74bc2cc50a9e91fc340b5406b19494f026` are pushed on its dedicated branch and merged through PR #18 (`19c707cd6d2d443ff56081d0e73c7d6c5f705918`). All nine approved Governance records are present; the stale README verification label reflects the recorded pass. `M03-REF-01` remains assigned to M19/M20.
+
+**M04 Version History migration:** PASS; implementation commit `4747286c1b3c134001c6f6d08cb7dcba32685461` and cross-check/report commit `f05a87a188bbcdca7038a2f8518d00175371153d` were pushed on its dedicated branch and merged through PR #19 (`e0e05e2afec7795b916595c8c6ca3f09a8b227d0`). V001/V002 path inventories match Git exactly (10/10 and 111/111); conceptual retrospective gaps remain explicitly deferred to M21.
 
 
-**Batch A Git lifecycle:** M01–M04 each have a separate dedicated branch and ticket-specific commits; all four branch refs are pushed and independently cross-checked against `origin`. Batch A non-blocking flags have explicit later-ticket dispositions. PR creation/merge and final `main` verification remain pending; Batch B/M05 remains ineligible until closure.
+**Batch A Git lifecycle:** COMPLETE. PRs #16, #17, #18, and #19 merged M01–M04 to `main` in dependency order. GitHub reports each PR merged, the post-merge fetch updated `origin/main` to `e0e05e2afec7795b916595c8c6ca3f09a8b227d0`, and `git merge-base --is-ancestor` passed for all four ticket branches. The four ticket branches remain available; none was deleted. Batch A flags have explicit later-ticket dispositions. M05 has not started.
 
 **Legacy source migration:** M03 Governance records are organized in the canonical domain; legacy governance sources remain unchanged and are retained for M19/M20 reference reconciliation and source-retirement gates.
 
