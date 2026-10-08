@@ -178,3 +178,22 @@ On 2026-10-08, Codex checked `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRA
 The Operator's explicit approval covers the complete remodeled V003-M01–M21 set and supersedes the earlier README sentence requiring separate authorization for every ticket. The Phase 02 README has been clarified accordingly. Tickets remain individually scoped and must pass dependency checks and their own P14 preflight. A flag still requires stop/report/wait and Operator direction; the approval does not authorize scope expansion, merge, or deployment.
 
 **V003-M01 status:** NOT STARTED. This clarification and documentation update do not perform migration work.
+
+
+---
+
+# Operator Clarification — GitHub Collapsed Version History Path
+
+## DEODINI — OPERATOR (EXACT MESSAGE)
+
+> THE RED HIGHLIGHT SHOWS THAT THE FOLDER `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX` AS BOTH `VERSION_HISTORY_BRAINBOX` AND `V003_EXTENDED_DEODINI_BRAINBOX` AS A SINGLE PARENT FOLDER, RATHER THAN `VERSION_HISTORY_BRAINBOX` STANDING AS A SINGLE PARENT FOLDER WHILE `V003_EXTENDED_DEODINI_BRAINBOX` IS A CHILD (ALTHOUGH I DO NOT SEE ANY FILE OR FOLDER RELATING TO WHY `V003_EXTENDED_DEODINI_BRAINBOX` EXIST)
+
+The Operator supplied a GitHub screenshot illustrating the collapsed path presentation.
+
+## CODEX — RECHECK AND CORRECTED FINDING
+
+The GitHub display combines the path in one row because the tracked tree currently has only this Version History descendant: `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md`. The Git repository path still has two directory levels; the display does not make them one physical parent.
+
+The child exists because V003-P03 created the concise Architecture Decisions record there. The frozen Specification §8 also defines that child path and its planned Version History contents. The parent-level `README_VERSION_HISTORY_BRAINBOX.md` and other not-yet-migrated Version History records are absent at this stage, which is why GitHub's compact directory display is misleading here.
+
+The approved V003-M04 ticket includes creating/reconciling the Version History authority and README and depends on M01 and M03. To preserve the authorized ticket order, Codex did not create the README ahead of those dependencies. M01 remains NOT STARTED; M04 remains NOT STARTED. The earlier verification correctly found the Architecture Decisions file on GitHub, but did not address this directory-display/parent-README concern; this record supersedes that narrow interpretation.

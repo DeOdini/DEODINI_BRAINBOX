@@ -610,3 +610,37 @@ The earlier “approval pending” and “not authorized” language in this rep
 - First dependency-eligible ticket: **V003-M01**.
 - V003-M01 execution: **NOT STARTED**.
 - No migration actions were performed as part of this verification or documentation update.
+
+
+---
+
+# Operator Clarification — GitHub Version History Directory Display
+
+**Date:** 2026-10-08  
+**Evidence:** Operator-supplied GitHub screenshot in this conversation  
+**Result:** DIRECTORY PATH IS NESTED; GITHUB COLLAPSES THE SINGLE DESCENDANT PATH IN ITS DISPLAY  
+**Migration status:** M01 NOT STARTED; M04 NOT STARTED
+
+## Corrected finding
+
+The highlighted repository row displays `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX` as a compact path. The tracked tree is still nested:
+
+```text
+VERSION_HISTORY_BRAINBOX/
+└── V003_EXTENDED_DEODINI_BRAINBOX/
+    └── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md
+```
+
+The child directory exists because V003-P03 placed the Architecture Decisions record there. That record explains why selected V003 decisions were made and points to the canonical Specification and Origin Conversation; the frozen Specification §8 also lists this Version History child and its target records.
+
+The parent currently has no tracked `README_VERSION_HISTORY_BRAINBOX.md` or V001/V002 records. With only one tracked descendant path, GitHub renders the parent and child together in its repository browser. This visual compacting does not rename or merge the Git directories.
+
+## Planned correction and ticket boundary
+
+The approved V003-M04 scope includes the Version History authority/README. Its dependencies are M01 and M03. The README should expose the Version History parent and local child tree, which will also give the GitHub browser a parent-level tracked file to display.
+
+No README or migration record was created ahead of M04. M01 remains the first dependency-eligible ticket and has not started. M04 remains not started. The earlier report entry verified that the Architecture Decisions file was already on GitHub; it did not identify the compact-directory display concern. This section corrects that interpretation without changing the frozen target or ticket order.
+
+## Current GitHub state
+
+The authorization clarification and this directory-display finding are recorded in the Phase 02 conversation/report. The explicit Operator approval of V003-M01–M21 remains in effect. Tickets execute one at a time under dependencies and P14 preflight; a preflight flag still requires stop/report/wait and Operator direction.
