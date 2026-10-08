@@ -1,10 +1,10 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — Batch A M01–M04 independently verified PASS, each on its own pushed branch and ticket commit; PRs #16–#19 merged to `main` in dependency order; GitHub merge and local ancestry checks pass; M01-GIT-01 and M04-HIST-01 remain assigned to M21, M01-FH-01 to M15, M02-BR-01 to M19, M03-REF-01 to M19/M20; M01-DOC-01, M02-WS-01, and M04-BR-01 resolved; M05 not started
+**Status:** Living M01–M21 migration ledger — Batch A M01–M04 independently verified PASS, each on its own pushed branch and ticket commit; PRs #16–#19 merged the ticket branches to `main` in dependency order and documentation closeout PR #20 is also merged; final local/remote/GitHub `main` verified at `f8a2862edc4672012c996ec1edafcaa11344c08d`; all four ticket branch refs remain available and current branch heads are ancestors of final `main`; M01-GIT-01 and M04-HIST-01 remain assigned to M21, M01-FH-01 to M15, M02-BR-01 to M19, M03-REF-01 to M19/M20; M01-DOC-01, M02-WS-01, and M04-BR-01 resolved; `BATCHA-DOC-01` corrected locally pending publication; M05 not started
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
-**Current active branch:** v003/m04-version-history-migration
+**Current active branch:** main
 **M01 baseline branch:** v003/m01-current-state-inventory-migration-map
 **Baseline commit:** 27e73f828bb367298442c2e621c18d1cc1ceb4f4
 
@@ -765,3 +765,37 @@ After `git fetch origin`, `origin/main` resolved to `e0e05e2afec7795b916595c8c6c
 The active local worktree was clean on `v003/m04-version-history-migration` at `f05a87a188bbcdca7038a2f8518d00175371153d`, tracking the matching remote branch. The separate local `main` ref remained at its pre-batch baseline `27e73f828bb367298442c2e621c18d1cc1ceb4f4` (13 commits behind `origin/main`) at the time of this verification; no local branch switch or fast-forward was performed.
 
 Batch A is closed. M05 was not started. Accumulated flags retain their explicit dispositions in section 17; no historical rationale or source content was fabricated. This verification concerns migration artifacts, GitHub PR/ref state, ancestry, and documentation integrity; no product tests were requested or run.
+
+
+---
+
+## 19. BATCHA-DOC-01 — post-PR-20 current-state correction — 2026-10-08
+
+**Independent Git/GitHub result:** Batch A technical/Git closure PASS.
+
+Verified:
+
+- PR #16 / M01 merged at `60803b1acc185a3174c26c9772f1908f9c4aaf6a`;
+- PR #17 / M02 merged at `d91ae041be193814c8e5ac8bec3fe2912a8439ba`;
+- PR #18 / M03 merged at `19c707cd6d2d443ff56081d0e73c7d6c5f705918`;
+- PR #19 / M04 merged at `e0e05e2afec7795b916595c8c6ca3f09a8b227d0`;
+- PR #20 / Batch A documentation closeout merged at `f8a2862edc4672012c996ec1edafcaa11344c08d`;
+- local `main`, `origin/main`, and GitHub `main` were all exactly `f8a2862edc4672012c996ec1edafcaa11344c08d` before this correction;
+- worktree was clean before correction;
+- all four remote ticket branch refs remain available;
+- all four current ticket branch heads are ancestors of final `origin/main`;
+- no local or remote M05 branch exists.
+
+### BATCHA-DOC-01
+
+Post-merge read-back found stale current-state text in active authority/navigation records: pre-merge wording remained in top status fields, some lower fields still called PR #19 merge SHA `e0e05e2...` the final checked `origin/main`, the root README still marked M04 ChatGPT verification pending, and this living map still listed M04 as the active branch.
+
+Those fields are corrected locally to the verified post-PR-20 state.
+
+**Classification:** BLOCKING FOR M05 BRANCH CREATION ONLY.
+
+**Reason:** the underlying Batch A Git closure is complete, but this prior-batch documentation correction must not be carried into the M05 ticket branch.
+
+**Publication state:** LOCAL / UNSTAGED / UNCOMMITTED. No push, PR, or merge performed by ChatGPT.
+
+**Required before M05:** publish this correction under Operator authority, synchronize/verify `main`, and restore a clean base worktree.

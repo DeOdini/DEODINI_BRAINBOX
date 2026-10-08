@@ -2,7 +2,7 @@
 
 **Started:** 2026-10-08
 **Operator:** DEODINI - OPERATOR
-**Current state:** Batch A M01–M04 independently verified, pushed on dedicated branches, and merged to `main` through PRs #16–#19; Batch A Git closure complete; M05 not started
+**Current state:** Batch A M01–M04 independently verified and merged to `main` through PRs #16–#19; documentation closeout PR #20 also merged; local `main`, `origin/main`, and GitHub `main` independently verified at `f8a2862edc4672012c996ec1edafcaa11344c08d`; Batch A technical/Git closure complete; `BATCHA-DOC-01` stale-status correction recorded locally pending publication; M05 not started
 **Canonical target:** `../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
 **Historical ambiguity source:** `../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
 **Issued tickets:** `V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md`
@@ -2898,3 +2898,188 @@ GitHub PR metadata was re-read after each merge. All four report `state=closed`,
 The migration-map section 17 dispositions remain active: M01-GIT-01 and M04-HIST-01 are preserved for M21; M01-FH-01 is assigned to M15; M02-BR-01 to M19; M03-REF-01 to M19/M20; M01-DOC-01, M02-WS-01, and M04-BR-01 are resolved. V001/V002 snapshots remain exact Git-backed inventories (10/10 and 111/111); conceptual retrospective evidence gaps remain explicit and are not fabricated.
 
 **Batch A result:** M01–M04 are independently verified PASS, pushed on separate ticket branches, and merged to `main` in order. The branch/head, PR state, and ancestry checks passed. Product/browser automated tests were not requested or run; these checks validate repository state and migration records.
+
+
+---
+
+# ChatGPT Verification Report — Batch A GitHub Closeout / BATCHA-DOC-01
+
+**Date:** 2026-10-08
+**Scope:** Independent confirmation of Codex Batch A closeout claims and stale-status correction
+**Technical Batch A closure:** **PASS / COMPLETE**
+**Documentation consistency:** **CORRECTED LOCALLY — PUBLICATION PENDING**
+**Flag:** `BATCHA-DOC-01`
+**M05:** NOT STARTED / HOLD BRANCH CREATION UNTIL THIS CORRECTION IS PUBLISHED
+
+## 1. GitHub PR verification
+
+GitHub independently confirms:
+
+| Scope | PR | Head | Merge commit | State |
+|---|---:|---|---|---|
+| M01 | #16 | `bc6d1309a71f4a309469788074c381c8665e5490` | `60803b1acc185a3174c26c9772f1908f9c4aaf6a` | MERGED |
+| M02 | #17 | `3971f48c4c75641e46a23a86b0792e44e2d794e3` | `d91ae041be193814c8e5ac8bec3fe2912a8439ba` | MERGED |
+| M03 | #18 | `f0113e74bc2cc50a9e91fc340b5406b19494f026` | `19c707cd6d2d443ff56081d0e73c7d6c5f705918` | MERGED |
+| M04 | #19 | `f05a87a188bbcdca7038a2f8518d00175371153d` | `e0e05e2afec7795b916595c8c6ca3f09a8b227d0` | MERGED |
+| Batch A documentation closeout | #20 | `0aee3593d873d19979949f0e4be7029ff2ac161d` | `f8a2862edc4672012c996ec1edafcaa11344c08d` | MERGED |
+
+PR #20 changed only:
+
+- Phase 02 README;
+- Phase 02 conversation archive;
+- Phase 02 migration report;
+- V003 parent README;
+- Version History README;
+- living Migration Map.
+
+No product source/code was part of PR #20.
+
+## 2. Final main verification
+
+Before this correction was written, live local Git and GitHub independently showed:
+
+- current branch: `main`;
+- local HEAD: `f8a2862edc4672012c996ec1edafcaa11344c08d`;
+- local `main`: same;
+- `origin/main`: same;
+- GitHub `main`: same;
+- worktree: CLEAN;
+- staged files: 0.
+
+**Final-main claim:** PASS.
+
+## 3. Branch retention and ancestry
+
+Current ticket branches:
+
+| Ticket | Current branch head | Remote ref exists | Ancestor of final `origin/main` |
+|---|---|---|---|
+| M01 | `bc6d1309a71f4a309469788074c381c8665e5490` | YES | YES |
+| M02 | `3971f48c4c75641e46a23a86b0792e44e2d794e3` | YES | YES |
+| M03 | `f0113e74bc2cc50a9e91fc340b5406b19494f026` | YES | YES |
+| M04 | `0aee3593d873d19979949f0e4be7029ff2ac161d` | YES | YES |
+
+No ticket branch was deleted.
+
+**Branch-retention claim:** PASS.
+**Ancestry claim:** PASS.
+
+## 4. M05 state
+
+Verified:
+
+- no local M05 branch;
+- no remote M05 branch;
+- no M05 implementation branch/ref found.
+
+**M05 has not started:** PASS.
+
+## 5. Deferred flags
+
+Verified current dispositions:
+
+| Flag | Disposition |
+|---|---|
+| `M01-GIT-01` | M21 |
+| `M01-FH-01` | M15 |
+| `M02-BR-01` | M19 |
+| `M03-REF-01` | M19/M20 |
+| `M04-HIST-01` | M21 |
+
+Resolved flags:
+
+- `M01-DOC-01`;
+- `M02-WS-01`;
+- `M04-BR-01`.
+
+**Flag-disposition claim:** PASS.
+
+## 6. Test-evidence boundary
+
+The merged records state no product/browser automated tests were requested or run.
+
+GitHub workflow lookup for merge commits:
+
+- `60803b1...`: 0 runs;
+- `d91ae04...`: 0 runs;
+- `19c707c...`: 0 runs;
+- `e0e05e2...`: 0 runs;
+- `f8a2862...`: 0 runs.
+
+This does not prove no local test command was ever executed; it confirms no product test evidence is recorded in the migration closeout and no GitHub workflow run exists for those merge commits.
+
+## 7. BATCHA-DOC-01
+
+### Exact stale/current-state defects found
+
+- Phase 02 README top status described PR/merge/final remote verification as pending.
+- V003 parent README top current-phase line described remote closure as pending.
+- V003 parent README migration-status line described Batch A merge/final-main verification as pending.
+- Root README verifier line described ChatGPT M04 verification as pending.
+- Phase 02 README lower lines described `e0e05e2...` as the final checked `origin/main`.
+- V003 parent navigation status described `e0e05e2...` as final checked `origin/main`.
+- Migration Map header listed the M04 branch as current active branch instead of `main`.
+
+These statements conflict with current verified Git/GitHub state after PR #20.
+
+### Classification
+
+**BATCHA-DOC-01 = BLOCKING FOR M05 BRANCH CREATION ONLY.**
+
+The underlying Batch A Git closure is valid. The block exists solely to prevent these prior-batch documentation corrections from riding into the M05 ticket branch.
+
+### Local correction
+
+Corrected current-state records now identify:
+
+- PRs #16–#19 as ticket merges;
+- PR #20 as documentation closeout merge;
+- final main = `f8a2862edc4672012c996ec1edafcaa11344c08d`;
+- current active branch = `main`;
+- M04 ChatGPT independent verification = PASS;
+- ticket branches retained;
+- deferred flag owners unchanged;
+- M05 not started.
+
+## 8. Publication / Git lifecycle for this correction
+
+The repository was clean before ChatGPT began this correction.
+
+The correction is now local and intentionally unstaged.
+
+ChatGPT performed:
+
+- no staging;
+- no commit;
+- no push;
+- no PR;
+- no merge;
+- no branch deletion;
+- no product/source migration.
+
+### Required next gate
+
+Before M05 branch creation:
+
+1. review this documentation-only correction;
+2. commit/push/merge it under Operator authority;
+3. synchronize local `main` with remote `main`;
+4. confirm a clean worktree;
+5. then run M05 P14 preflight on its dedicated branch.
+
+## 9. Final verdict
+
+**Codex Batch A technical/Git closeout claims:** PASS.
+
+**Batch A M01–M04:** COMPLETE.
+
+**Documentation closeout consistency:** corrected locally under `BATCHA-DOC-01`; Git publication pending.
+
+**M05:** NOT STARTED; branch creation waits only for publication of this correction and restoration of a clean base.
+
+
+## 10. Post-write validation of BATCHA-DOC-01 record
+
+A stale-current-state search across the active root/V003/Phase 02/Version History authority records now returns no remaining false claim that Batch A merge/remote verification is pending, no false current-final-main reference to `e0e05e2...`, and no stale current-active-branch reference to M04.
+
+The initial `git diff --check` found six trailing-space instances in the newly appended report section. I removed them before publication so the correction passes the repository whitespace check. Git also reported only line-ending conversion notices.

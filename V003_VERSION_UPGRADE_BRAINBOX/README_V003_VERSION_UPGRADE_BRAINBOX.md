@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02, Batch A remote closure — M01–M04 independently verified PASS; each has a ticket-specific branch and commit, all four refs pushed to `origin`; M04-BR-01 resolved; M01-GIT-01/M04-HIST-01 dispositioned to M21, M01-FH-01 to M15, M02-BR-01 to M19, M03-REF-01 to M19/M20; M01-DOC-01/M02-WS-01 resolved; PR/merge and final remote verification pending before Batch B/M05.
-**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED / M01-M04 VERIFIED / M01-M04 DEDICATED BRANCHES COMMITTED AND PUSHED / BATCH A PR-MERGE + FINAL MAIN VERIFICATION PENDING / BATCH B-M05 NOT YET ELIGIBLE
+**Current phase:** V003 Phase 02 — Batch A technical/Git closure COMPLETE. M01–M04 independently verified PASS and merged through PRs #16–#19; Batch A documentation closeout PR #20 is merged; local `main`, `origin/main`, and GitHub `main` were independently verified at `f8a2862edc4672012c996ec1edafcaa11344c08d`; all four ticket branches remain available. Deferred flags remain assigned to M15, M19/M20, and M21 as recorded. `BATCHA-DOC-01` corrects stale top-level status wording locally; M05 has not started and must wait for this correction to be published and the base worktree to be clean.
+**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED / M01-M04 VERIFIED AND MERGED / BATCH A CLOSEOUT PR #20 MERGED / MAIN VERIFIED AT `f8a2862edc4672012c996ec1edafcaa11344c08d` / BATCHA-DOC-01 LOCAL STATUS CORRECTION PENDING PUBLICATION / M05 NOT STARTED
 
 ## Purpose
 
@@ -131,7 +131,7 @@ These values describe the current local file at the time of the verification abo
 - **PHASE 01 EXECUTION / VERIFICATION HISTORY:** `PHASE01_POLISH_BRAINBOX/`
 - **PHASE 02 MIGRATION PLANNING / REPORTING:** `PHASE02_MIGRATION_BRAINBOX/`
 - **PHASE 01 STATUS:** CLOSED / FROZEN
-- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; Batch A M01–M04 independently verified PASS and merged to `main` through PRs #16–#19; the final checked `origin/main` is `e0e05e2afec7795b916595c8c6ca3f09a8b227d0`; the M01-GIT-01/M04-HIST-01 evidence deferrals remain assigned to M21, M01-FH-01 to M15, M02-BR-01 to M19, and M03-REF-01 to M19/M20; M05 not started
+- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; Batch A M01–M04 independently verified PASS and merged to `main` through PRs #16–#19; documentation closeout PR #20 is also merged; final independent verification places local `main`, `origin/main`, and GitHub `main` at `f8a2862edc4672012c996ec1edafcaa11344c08d`; all four ticket branch refs remain available; M01-GIT-01/M04-HIST-01 remain assigned to M21, M01-FH-01 to M15, M02-BR-01 to M19, and M03-REF-01 to M19/M20; `BATCHA-DOC-01` is corrected locally pending publication; M05 not started
 
 ## V003-P01 Scope
 

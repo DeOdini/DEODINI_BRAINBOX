@@ -1363,3 +1363,116 @@ STAGE, COMMIT AND PUSH ONCE AGAIN TO THEN MERGE.
 5. “M01–M03 have been merged in order, and M04 is next. I’m completing the M04 merge, then I’ll run the final branch and repository checks and add the confirmed outcomes to the migration records.”
 6. “M04 is merged as PR #19. I’m now checking GitHub’s merged states and fetching `origin/main` to verify that each ticket head is contained in the final remote main history before I finalize the records.”
 7. “The remote check confirms PRs #16–#19 are all merged in dependency order, and all four pushed ticket heads are ancestors of `origin/main`. I found a few ‘merge pending’ status lines in the top-level support records, so I’m reconciling those and recording the merge SHAs before the final documentation commit and closeout merge.”
+
+
+---
+
+# Operator-Requested Record — Batch A GitHub Closeout Verification and BATCHA-DOC-01 Correction
+
+## CHATGPT independent verification result
+
+The Operator requested independent confirmation of Codex's Batch A closeout claims and correction of stale status lines.
+
+GitHub and live local Git were checked separately.
+
+### GitHub merge verification
+
+Confirmed merged PRs:
+
+- M01 — PR #16 — merge commit `60803b1acc185a3174c26c9772f1908f9c4aaf6a`;
+- M02 — PR #17 — merge commit `d91ae041be193814c8e5ac8bec3fe2912a8439ba`;
+- M03 — PR #18 — merge commit `19c707cd6d2d443ff56081d0e73c7d6c5f705918`;
+- M04 — PR #19 — merge commit `e0e05e2afec7795b916595c8c6ca3f09a8b227d0`;
+- Batch A documentation closeout — PR #20 — merge commit `f8a2862edc4672012c996ec1edafcaa11344c08d`.
+
+PR #20 changed only six documentation/status files; no product source/code was included.
+
+GitHub branch lookup confirmed all four ticket branches remain available.
+
+No M05 remote branch exists.
+
+No GitHub Actions workflow runs were associated with the five checked merge commits.
+
+### Local repository verification before correction
+
+Before ChatGPT edited anything in this correction action:
+
+- current branch: `main`;
+- local HEAD: `f8a2862edc4672012c996ec1edafcaa11344c08d`;
+- local `main`: same SHA;
+- `origin/main`: same SHA;
+- live GitHub `main`: same SHA;
+- worktree: CLEAN;
+- staged files: 0.
+
+Local branches:
+
+- M01 head `bc6d1309a71f4a309469788074c381c8665e5490`;
+- M02 head `3971f48c4c75641e46a23a86b0792e44e2d794e3`;
+- M03 head `f0113e74bc2cc50a9e91fc340b5406b19494f026`;
+- M04 head `0aee3593d873d19979949f0e4be7029ff2ac161d`.
+
+Each current ticket branch head independently passed `git merge-base --is-ancestor <head> origin/main`.
+
+No local or remote M05 branch exists.
+
+### Flag-disposition verification
+
+The merged records correctly assign:
+
+- `M01-GIT-01` → M21;
+- `M01-FH-01` → M15;
+- `M02-BR-01` → M19;
+- `M03-REF-01` → M19/M20;
+- `M04-HIST-01` → M21.
+
+Resolved flags remain:
+
+- `M01-DOC-01`;
+- `M02-WS-01`;
+- `M04-BR-01`.
+
+### Product-test statement
+
+Merged records state that no product/browser automated tests were requested or run. GitHub shows no workflow runs attached to the five checked merge commits. This verification therefore confirms repository/GitHub migration state and documentation integrity, not product runtime behavior.
+
+## BATCHA-DOC-01 — stale current-state documentation
+
+Independent read-back found stale current-state wording after PR #20:
+
+1. Phase 02 README top status still said PR/merge/final remote verification were pending.
+2. V003 parent README top `Current phase` still said PR/merge/final remote verification were pending.
+3. V003 parent README top `Migration status` still said Batch A PR/merge/final-main verification were pending.
+4. Root `README_BRAINBOX.md` still said M04 ChatGPT independent verification was pending.
+5. Phase 02 README lower current-state lines still described `e0e05e2...` as the final checked `origin/main`.
+6. V003 parent navigation status still described `e0e05e2...` as the final checked `origin/main`.
+7. Living Migration Map header still named the M04 ticket branch as the current active branch even though the live branch is now `main`.
+
+### Classification
+
+**BATCHA-DOC-01 = BLOCKING FOR M05 BRANCH CREATION ONLY.**
+
+Reason:
+
+The Git/GitHub Batch A closure itself is complete, but the next ticket must branch from a clean, internally consistent current authority state. Carrying these local status corrections into M05 would violate ticket attribution.
+
+### Correction performed locally
+
+The stale lines were corrected to state:
+
+- Batch A M01–M04 verified and merged;
+- PR #20 merged;
+- final verified local/origin/GitHub `main` = `f8a2862edc4672012c996ec1edafcaa11344c08d`;
+- all four ticket branch refs remain;
+- current active branch = `main`;
+- M04 independent ChatGPT verification = PASS;
+- deferred flags retain their later-ticket ownership;
+- M05 has not started.
+
+### Publication state
+
+The correction is **LOCAL ONLY**.
+
+No staging, commit, push, PR, or merge was performed by ChatGPT.
+
+M05 branch creation should wait until this documentation-only correction is committed/published under Operator authority and the base `main` worktree is clean again.
