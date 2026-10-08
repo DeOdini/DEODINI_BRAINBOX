@@ -2849,3 +2849,20 @@ System Git configuration reports `core.autocrlf=true`. A temporary M04 stash/pop
 **Cross-check verdict:** M01–M04 implementation records and substantive artifacts pass; no blocking migration flag remains. These dispositions do not authorize M05. Batch A remains open only for its requested remote push/merge and final Git verification.
 
 **Automated product tests:** none requested or run. This check covers Git structure, file presence, snapshot paths, links, and Markdown integrity only.
+
+## Batch A branch push verification — pre-merge — 2026-10-08
+
+After the cross-check and M04 commit, all four ticket branches were pushed with upstream tracking. The git ls-remote --heads origin check and GitHub branch search returned all four refs at the exact local heads below. GitHub repository metadata confirmed push permission and merge-commit support. Remote main remains unchanged at 27e73f828bb367298442c2e621c18d1cc1ceb4f4.
+
+| Ticket branch | Verified remote head | Ticket-specific commit / content |
+|---|---|---|
+| v003/m01-current-state-inventory-migration-map | bc6d1309a71f4a309469788074c381c8665e5490 | M01 migration-map bootstrap |
+| v003/m02-root-readme-authority-navigation | 3971f48c4c75641e46a23a86b0792e44e2d794e3 | M02 root authority navigation |
+| v003/m03-governance-canonicalization | f0113e74bc2cc50a9e91fc340b5406b19494f026 | M03 implementation/reconciliation plus current verification-label correction |
+| v003/m04-version-history-migration | 4747286c1b3c134001c6f6d08cb7dcba32685461 | M04 Version History records and the pre-merge cross-check/disposition record |
+
+Local git branch -vv confirms each ticket branch tracks its corresponding origin/v003/... ref. No PR or merge has been performed yet. M01–M04 remain distinct branches; their existing linear ancestry satisfies the ticket dependencies.
+
+A current root-tree read-back again found 340 target hierarchy lines in both README_BRAINBOX.md and frozen Specification §8. The only textual difference in that tree block is the root README population annotation [PLANNED] on MILESTONES_BRAINBOX/; this is the documented status overlay, not a path or hierarchy change.
+
+**Pre-merge Git state:** all four branch pushes verified; main unchanged; PR creation and sequential merges remain the next authorized operations. No automated product tests were run; this closeout check concerns Git refs, documentation, tree/snapshot integrity, and local links.

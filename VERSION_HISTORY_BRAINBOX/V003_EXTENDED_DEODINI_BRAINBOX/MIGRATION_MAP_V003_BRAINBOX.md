@@ -1,7 +1,7 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — M01–M04 independently verified PASS; M01–M03 have dedicated local commits and M04 is verified but unstaged/uncommitted on its dedicated branch; M04-BR-01 resolved; M02-BR-01, M03-REF-01, and M04-HIST-01 remain batch-deferred/non-blocking; Batch A flag review and Git closure remain pending before Batch B/M05; legacy sources retained
+**Status:** Living M01–M21 migration ledger — M01–M04 independently verified PASS; each has a dedicated branch and ticket commit; all four ticket refs are pushed and verified against `origin`; M04-BR-01 resolved; M02-BR-01 is dispositioned to M19, M03-REF-01 to M19/M20, M04-HIST-01 and M01-GIT-01 to M21, and M01-FH-01 to M15; M01-DOC-01 and M02-WS-01 resolved; Batch A PR/merge and final verification remain pending before Batch B/M05; legacy sources retained
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
 **Current active branch:** v003/m04-version-history-migration
@@ -730,3 +730,20 @@ Git reports system `core.autocrlf=true`. After the verified temporary M04 stash/
 | M04-HIST-01 | Keep both conceptual retrospectives explicitly partial/blocked; no rationale is inferred from Git subjects. | M21 must preserve this intentional evidence deferral; any ticket that needs the missing rationale must obtain source evidence and pass its own preflight. |
 
 **Cross-check result:** M01–M04 substantive artifacts and recorded verifications pass; no blocking migration flag remains. These dispositions do not start M05. Batch A still requires its authorized branch pushes/merges and final Git verification before Batch B becomes eligible.
+
+## 18. Batch A remote push verification — 2026-10-08
+
+origin now contains M01–M04 at their local ticket branch heads. Read-only GitHub branch search returned all four names, and git ls-remote --heads origin returned the exact refs below. main remains unchanged; PRs/merges are still pending at this record point.
+
+| Branch | origin head |
+|---|---|
+| v003/m01-current-state-inventory-migration-map | bc6d1309a71f4a309469788074c381c8665e5490 |
+| v003/m02-root-readme-authority-navigation | 3971f48c4c75641e46a23a86b0792e44e2d794e3 |
+| v003/m03-governance-canonicalization | f0113e74bc2cc50a9e91fc340b5406b19494f026 |
+| v003/m04-version-history-migration | 4747286c1b3c134001c6f6d08cb7dcba32685461 |
+
+M03 contains the status-only Governance README correction committed as f0113e7. M04 is committed/pushed as 4747286. Local branch tracking is established for each matching remote branch.
+
+Current root-target tree comparison again counted 340 lines on each side and found identical paths/parent-child levels; the single remaining text delta is the README-only [PLANNED] annotation on MILESTONES_BRAINBOX/, which the README defines as a population note.
+
+Batch A flags are dispositioned to the named authorized later tickets in section 17. Batch A still requires PR/merge and final remote-main verification. Do not begin M05 until those are complete.

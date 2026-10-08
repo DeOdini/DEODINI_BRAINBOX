@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02, Batch A closure boundary — M01–M04 independently verified PASS; M01–M03 committed locally on dedicated branches; M04 verified on dedicated `v003/m04-version-history-migration` branch but unstaged/uncommitted; M04-BR-01 resolved; M02-BR-01, M03-REF-01, and M04-HIST-01 remain non-blocking/carry-forward; Batch A flag review and Git closure remain pending before Batch B/M05.
-**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED / M01-M04 VERIFIED / M04 UNSTAGED-UNCOMMITTED ON DEDICATED BRANCH / BATCH A NON-BLOCKING FLAG REVIEW + M04 LOCAL COMMIT + PUSH-PR-MERGE-CLOSURE PENDING / BATCH B-M05 NOT YET ELIGIBLE
+**Current phase:** V003 Phase 02, Batch A remote closure — M01–M04 independently verified PASS; each has a ticket-specific branch and commit, all four refs pushed to `origin`; M04-BR-01 resolved; M01-GIT-01/M04-HIST-01 dispositioned to M21, M01-FH-01 to M15, M02-BR-01 to M19, M03-REF-01 to M19/M20; M01-DOC-01/M02-WS-01 resolved; PR/merge and final remote verification pending before Batch B/M05.
+**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED / M01-M04 VERIFIED / M01-M04 DEDICATED BRANCHES COMMITTED AND PUSHED / BATCH A PR-MERGE + FINAL MAIN VERIFICATION PENDING / BATCH B-M05 NOT YET ELIGIBLE
 
 ## Purpose
 
@@ -72,7 +72,7 @@ Phase 01 is frozen after the successful V003-P16 final reconciliation.
 
 The Operator explicitly approved V003-M01 through V003-M21 for execution as a set on 2026-10-08. Execute one ticket at a time in dependency order, with a separate P14 preflight and report for each ticket. A dependent ticket in the same batch may proceed after independent verification PASS when no unresolved flag materially blocks it.
 
-The Operator has clarified that every V003-Mxx ticket has its own branch and ticket-specific local commit for auditability. M01, M02, and M03 local commits exist on their dedicated branches. Batch A push/PR/merge remains deferred to the batch boundary.
+The Operator has clarified that every V003-Mxx ticket has its own branch and ticket-specific local commit for auditability. M01–M04 have dedicated commits, and all four refs have been pushed to `origin`; their PR/merge lifecycle remains at the Batch A boundary.
 
 ## V003-P01 Provenance Record
 
