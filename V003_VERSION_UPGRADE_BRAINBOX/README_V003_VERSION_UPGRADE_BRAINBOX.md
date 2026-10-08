@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02 — remodeled migration tickets Operator-approved/authorized; execution not started
-**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED FOR EXECUTION / FILESYSTEM MIGRATION NOT STARTED
+**Current phase:** V003 Phase 02, Batch A — M01 and M02 independently verified PASS; M01 local ticket commit `bc6d1309a71f4a309469788074c381c8665e5490` exists; M03 next dependency-eligible under its own P14 preflight; Batch A push/PR/merge pending.
+**Migration status:** V003-M01 THROUGH V003-M21 AUTHORIZED / M01 VERIFIED AND COMMITTED LOCALLY / M02 VERIFIED / M03 DEPENDENCY-ELIGIBLE / BATCH A REMOTE GIT LIFECYCLE PENDING
 
 ## Purpose
 
@@ -70,9 +70,9 @@ If a ticket, implementation instruction, filesystem state, or Specification stat
 
 Phase 01 is frozen after the successful V003-P16 final reconciliation.
 
-Phase 02 migration tickets V003-M01 through V003-M21 have now been issued as planning scopes. Their existence does not authorize execution.
+The Operator explicitly approved V003-M01 through V003-M21 for execution as a set on 2026-10-08. Execute one ticket at a time in dependency order, with a separate P14 preflight and report for each ticket. A dependent ticket in the same batch may proceed after independent verification PASS when no unresolved flag materially blocks it.
 
-Phase 02 filesystem migration has not started. Each V003-Mxx ticket requires separate Operator authorization and P14 preflight safeguards before implementation.
+The Operator has clarified that each ticket has its own branch and local commit for auditability; Batch A push/PR/merge remains deferred to the batch boundary. M01 local commit `bc6d1309a71f4a309469788074c381c8665e5490` exists; M02 is represented on its dedicated branch; M03 remains dependency-eligible under its P14 preflight.
 
 ## V003-P01 Provenance Record
 
@@ -131,7 +131,7 @@ These values describe the current local file at the time of the verification abo
 - **PHASE 01 EXECUTION / VERIFICATION HISTORY:** `PHASE01_POLISH_BRAINBOX/`
 - **PHASE 02 MIGRATION PLANNING / REPORTING:** `PHASE02_MIGRATION_BRAINBOX/`
 - **PHASE 01 STATUS:** CLOSED / FROZEN
-- **PHASE 02 STATUS:** V003-M01 through V003-M21 re-cross-checked/remodeled and explicitly Operator-approved for execution on 2026-10-08; migration execution not started
+- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; M01 and M02 independently verified PASS; M01 committed locally on its dedicated branch; M03 next dependency-eligible under its own P14 preflight; legacy source files remain in place; Batch A push/PR/merge pending
 
 ## V003-P01 Scope
 

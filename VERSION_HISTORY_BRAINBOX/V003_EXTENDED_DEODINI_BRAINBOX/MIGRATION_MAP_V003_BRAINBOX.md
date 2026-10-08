@@ -371,3 +371,46 @@ M01 establishes the baseline only. It does not implement any M02–M21 migration
 **Map self-integrity:** reported in the M01 execution report; the ledger does not self-reference its own digest.  
 
 
+## 11. V003-M02 execution event — 2026-10-08
+
+**Ticket:** V003-M02 — Root README / V003 Authority Navigation Migration.
+**Authorization:** AUTHORIZED FOR EXECUTION under the Operator-approved M01–M21 set; M01 passed independent verification and its carry-forward flags were confirmed non-blocking for M02.
+**P14 preflight:** PASS. Read the M02 ticket and its required scope; cross-checked the frozen Specification and Origin Conversation; inspected the current root, DOB source, V003 authority container, Phase 01 archive, Phase 02 process records, and current Git state. No ambiguity or scope/dependency flag materially blocking M02 was found.
+**Branch/HEAD:** `v003/m01-current-state-inventory-migration-map` at `27e73f828bb367298442c2e621c18d1cc1ceb4f4`; the M02 suggested branch remained a planning hint under the active Batch A workflow.
+**M01 dependency:** independently verified PASS. `M01-GIT-01` (72 dangling Git objects; preserve; no prune/gc) and `M01-FH-01` (32 broken catalog references for M15) remain carried forward and do not materially block M02.
+
+### Actions and exact dispositions
+
+- Created root `README_BRAINBOX.md` as canonical complete-tree/navigation authority using the frozen Specification §8 tree and its population vocabulary. Added accurate inline state annotations without asserting that planned branches are populated.
+- Preserved `DOB_MUST_README.md` in place and unchanged. Its M01 manifest baseline is 9,788 bytes / 204 lines / SHA-256 `76e2b6aa72e4dcf3b56475f182dca2c117ae7a32a9e116c3b3c8bf6262811252`; the current digest matches.
+- The new root README distinguishes the operational target tree from the V003 support/archive overlay. It identifies the Phase 01 polish archive as closed audit/history support and the Phase 02 README, ticket set, conversation, and report as active migration-process evidence, not target-domain branches.
+- Updated `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md` so current M02 status and the Phase 01/02 support boundary remain accurate.
+- Updated the living map's ROOT-AUTH, V003-AUTHORITY, PHASE01-ARCHIVE, and PHASE02-PROCESS dispositions. Preserved the M01 pre-ticket inventory as historical baseline and added this M02 current-state event.
+- Updated the Phase 02 README to record M02 implementation complete locally / independent verification pending, M03 waiting for M02 verification, and Batch A Git lifecycle pending.
+
+### Post-state and verification
+
+- `README_BRAINBOX.md`: present; 32,375 bytes; 490 lines; SHA-256 `79051a665d69b5578c06baf9ad72ff4203ad6062b38bb031763b2cd5620ecc69`.
+- `DOB_MUST_README.md`: still present; digest matches the M01 baseline exactly.
+- Root target tree and separate V003 support overlay are recorded in `README_BRAINBOX.md`; Version History remains physically nested as `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/`.
+- No source file or directory was renamed, moved, or deleted. The legacy DOB instructions were not copied wholesale into Governance or rewritten.
+- Codex implementation verification: document/path/status review, hierarchy comparison, source SHA-256 comparison, direct trailing-whitespace scans, and Git working-tree inspection. No automated tests were requested or run. ChatGPT substantive M02 verification: PASS. Post-correction ChatGPT re-verification also PASS: target hierarchy remains unchanged, DOB baseline integrity remains exact, and corrected whitespace scopes are zero.
+- The baseline manifest retains pre-M01 hashes for previously tracked sources; the event above records the new root README digest and unchanged DOB source digest.
+
+### Flags and Git lifecycle
+
+- **M02-WS-01 — RESOLVED / RETROSPECTIVE CLASSIFICATION: BATCH-DEFERRED / NON-BLOCKING.** ChatGPT found 16 trailing-whitespace lines in the newly authored root README and 4 in the M02 map section. Codex removed only those trailing spaces. ChatGPT independently reverified 0 remaining in both scopes, zero target-hierarchy differences, and unchanged DOB baseline integrity. Under the Operator's later flag-handling declaration, this formatting flag should not have stopped M03 because M03 did not materially depend on its correction.
+- No other M02 scope, ambiguity, historical-evidence, or dependency flag was found that materially blocks completion.
+- `M01-GIT-01` and `M01-FH-01` remain open carry-forward items assigned as recorded above.
+- Git lifecycle: `PENDING — BATCH A BOUNDARY`. No M02 staging, commit, push, PR, merge, or branch switch was performed.
+- Codex correction is complete and ChatGPT re-verification PASS. M03 is dependency-eligible under its own P14 preflight. Batch A Git lifecycle remains pending at the batch boundary.
+
+
+
+
+### M02 branch-split reconciliation — 2026-10-08
+
+- **Dedicated branch:** `v003/m02-root-readme-authority-navigation`, based on the M01 ticket branch.
+- **Operator branch rule:** each V003-Mxx ticket receives its own branch; local ticket commits are permitted, while push/PR/merge remain at the batch boundary.
+- **Root README recovery:** reconstructed from the original RDC write payload and separately checked against Specification §8 (340 hierarchy lines, zero differences), local links (7 checked, zero broken), and trailing whitespace (zero).
+- **Integrity flag:** M02-BR-01 records that the reconstructed file (32,319 bytes; SHA-256 `45b6d4bdd6a9c6e5f324809099383965625ae0978b0fe26c9f70de609a391bb7`) differs from the historical M02 final-verification record (32,375 bytes; SHA-256 `79051a665d69b5578c06baf9ad72ff4203ad6062b38bb031763b2cd5620ecc69`). Preserve both records; reconcile at Batch A closure if the exact historical snapshot is found.
