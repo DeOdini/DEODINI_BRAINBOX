@@ -1,10 +1,11 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — M01, M02, and M03 independently verified PASS on dedicated local branches/commits; M02-BR-01 and M03-REF-01 remain batch-deferred/non-blocking; M04-BR-01 resolved by M03 local reconciliation commit `895a926`; M04 eligible under its own P14 preflight; legacy sources retained; Batch A push/PR/merge pending
+**Status:** Living M01–M21 migration ledger — M01–M04 independently verified PASS; M01–M03 have dedicated local commits and M04 is verified but unstaged/uncommitted on its dedicated branch; M04-BR-01 resolved; M02-BR-01, M03-REF-01, and M04-HIST-01 remain batch-deferred/non-blocking; Batch A flag review and Git closure remain pending before Batch B/M05; legacy sources retained
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
-**Active branch:** v003/m01-current-state-inventory-migration-map  
+**Current active branch:** v003/m04-version-history-migration
+**M01 baseline branch:** v003/m01-current-state-inventory-migration-map
 **Baseline commit:** 27e73f828bb367298442c2e621c18d1cc1ceb4f4
 
 ## Purpose and operating rule
@@ -157,7 +158,7 @@ The manifest at the end of this file lists all 122 tracked files with source fam
 | V003-AUTHORITY | V003 parent README, Origin Conversation, Specification. | Retain authority container; M02 records its root navigation and support/archive boundary; global reconciliation M19/M21. | Specification says what V003 is; Origin Conversation preserves chronology/ambiguity. M02 updates only the V003 container README's current status/navigation; it does not rewrite or relocate either canonical authority. | Canonical/historical authority; pre-M02 hashes, sizes, and line counts are in the manifest. | Retain; no source retirement proposed. | None; preserve authority boundary. |
 | PHASE01-ARCHIVE | Phase 01 README, polish conversation, polish report. | Retain as closed/frozen support archive under M02/M19/M21. | M02 lists this archive in the V003 support overlay, outside the operational target tree; keep execution/verification history separate from target-domain content. | Historical archive; pre-M02 hashes recorded. | Retain unless a later explicit scope authorizes otherwise. | None. |
 | PHASE02-PROCESS | Phase 02 README, conversation, report, ticket set. | Retain as process/audit support; M01 updates the ledger and execution records; M02 records their support boundary; M19/M21 reconcile navigation. | These are process records, not operational domain knowledge or competing architecture authority. | Active authorization and execution history; manifest hashes remain the pre-M01 baseline values. | Retain. | Phase 02 README, conversation, and report are updated by ticket to show M02 implementation and independent-verification state; the Phase 02 support branch remains outside the operational target tree. |
-| VERSION-HISTORY | One file currently exists: V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md. | Retain and verify it in M04; add parent README and evidence-backed V001/V002 artifacts only under M04. | This record explains why V003 evolved; it does not duplicate the Specification. The path is physically two nested directories. | Historical decision record; hash recorded. | Retain; no removal proposed. | Parent README absent now; M04 owns creation/reconciliation. Placeholder-specific Operator approval is not established by the current record. |
+| VERSION-HISTORY | M01 baseline contained `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md`; the M01 map was added during M01. | M04 creates the parent README, evidence-backed V001/V002 tracked-path snapshots, and transparent retrospective records; M04 retains Architecture Decisions and updates this living map. M21 owns the final V003 tree snapshot. | Architecture Decisions explains why selected V003 decisions were made; the Specification remains what V003 is. V001/V002 snapshots are Git evidence, not competing live architectures. | Historical content; existing V003 decision file hash was baselined at M01. | Retain; no removal proposed. | V001/V002 conceptual rationale is not established by the Origin Conversation; M04-HIST-01 records both retrospectives as partial/blocked rather than inventing rationale. |
 
 ## 5. Current FootHive inventory and evidence boundary
 
@@ -578,3 +579,154 @@ The change is a branch-reconciliation conversation-archive correction, not M04 w
 It must be committed/dispositioned on the appropriate prior/reconciliation history or reverted before M04 branch creation. Otherwise it would ride into M04 and violate ticket-specific attribution.
 
 **Resolution — 2026-10-08:** The M03 conversation-archive correction and associated verification/reconciliation records were explicitly staged and committed on `v003/m03-governance-canonicalization` as `895a926` (`V003-M03 reconcile branch archive and verification records`). This preserves the dialogue archive correction in M03 history and keeps it out of M04. The subsequent `git status --short --branch` showed only the branch header, confirming a clean worktree. `M04-BR-01` is **RESOLVED**; M04 branch creation is permitted after its own P14 preflight. No push, PR, or merge was performed.
+
+---
+
+## 15. V003-M04 — Version History & Historical Snapshot Migration — 2026-10-08
+
+**Branch:** v003/m04-version-history-migration
+**Starting HEAD:** 8353338a29f0f364c3c2d048be55174a77327ab3 (clean M03 ticket branch tip)
+**Status:** Implemented locally; ChatGPT independent verification pending.
+**Git lifecycle:** M04 changes remain unstaged and uncommitted. No push, PR, merge, or deployment.
+
+### P14 preflight and observed pre-state
+
+- Read the complete authorized M04 ticket, frozen Specification §24, relevant Origin Conversation version-history discussion, Governance Versioning/Evidence rules, and the current M01 migration-map profile/manifest.
+- M01 and M03 dependencies are satisfied; M02 root navigation is present and its migration is independently verified.
+- M04 began only after M04-BR-01 was resolved on M03 by local commit 8353338a29f0f364c3c2d048be55174a77327ab3; post-commit M03 status was clean.
+- Before M04 changes, VERSION_HISTORY_BRAINBOX/ contained only V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md and the M01 migration map. The parent README and V001/V002 artifacts were absent.
+- The existing V003 Architecture Decisions file was read and its integrity rechecked: 2,887 bytes, 36 lines, SHA-256 716b9a4eb660d7b692d4490613ca371030ef45d0e942812c55f96dcdd7bffe38. It was retained without edits.
+
+### Evidence-selected snapshot boundaries
+
+| Generation | Commit | Tree object | Date | Tracked paths | Boundary evidence |
+|---|---|---|---|---:|---|
+| V001 | e726bfe11ba484d077278eaca4efd241098caad3 | 6fa938eb03722803d7dc5c4e3c245dddae0a1b2b | 2026-09-20 15:14:28 -05:00 | 10 | Last commit before direct-child adf0ddf51c16c5775cf7c6310bcc11dbcef290f0, which adds the observed AI/Portfolio/root-authority expansion. |
+| V002 | f03b74b6b569ff7292ecc42967c20a64e556c6db | bcdd2e00c1a2b9d7d798a7882e64fd61f17a214d | 2026-10-03 10:13:18 -05:00 | 111 | Exact parent of first V003-P01 commit d7cd975952607715722fda3beba135bf5e510374. |
+
+Both path lists were generated from git ls-tree -r --name-only and compared back against the selected commits: V001 10/10 exact; V002 111/111 exact. Git tag listing was empty. These are evidence-selected repository cut points, not formal release/tag claims. Empty directories are not included in Git tracked-path snapshots.
+
+### M04 artifacts and disposition
+
+- Created README_VERSION_HISTORY_BRAINBOX.md with local/authoritative tree, domain authority boundary, population states, canonical links, and the explicit M21 V003 snapshot deferral.
+- Created V001_BRAINBOX/TREE_SNAPSHOT_V001_BRAINBOX.md and V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md from the exact Git path listings and commit/tree metadata above.
+- Created V001_BRAINBOX/RETROSPECTIVE_V001_BRAINBOX.md and V002_DEODINI_BRAINBOX/RETROSPECTIVE_V002_BRAINBOX.md. They record only verified Git chronology and explicitly mark conceptual rationale BLOCKED where no source establishes it.
+- Updated root README_BRAINBOX.md population state, local Version History tree, and navigation links to reflect actual M04 artifacts.
+- Updated this living ledger; no historical source was moved, renamed, or deleted. The final V003 tree snapshot was not created and remains assigned to M21.
+
+### M04-HIST-01 — conceptual retrospective evidence gap
+
+- **Exact paths:** VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/RETROSPECTIVE_V001_BRAINBOX.md and VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/RETROSPECTIVE_V002_BRAINBOX.md; source reviewed: V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md, Version History discussion around lines 1953–1979.
+- **Defect/evidence:** The Origin Conversation explains the purpose of the Version History domain and supplies target-tree examples, but does not document the specific conceptual rationale for V001 or the V001→V002 decisions. Git records the technical changes and commit subjects, not the Operator's reasons. No Git tags/releases were found.
+- **Migration impact:** The snapshots and factual technical chronology are verifiable; a complete conceptual retrospective cannot be claimed without additional evidence.
+- **Next-ticket impact:** No M05 dependency on V001/V002 rationale was found in M04 scope. Any later ticket or report that relies on these documents as conceptual rationale must treat the blocked portions as unavailable and perform its own preflight.
+- **Classification/reason:** **BATCH-DEFERRED / NON-BLOCKING** for M04's Version History structure and Git-backed snapshot success gate, which expressly permits artifacts to be evidence-backed or explicitly blocked. **BLOCKING** only to claiming either conceptual retrospective complete or using unsupported rationale as authority.
+- **Correction/owner/timing:** Operator may provide or authorize a provenance-bearing historical source. Codex can then add only supported content; ChatGPT independently verifies. Otherwise keep both retrospective status flags visible and disposition this flag at Batch A closure or assign it to a later authorized ticket.
+
+### Verification state
+
+Codex implementation read-back and Git/path checks are complete; independent ChatGPT verification is pending. No automated test suite was requested or run. The M04 branch remains local and uncommitted.
+
+### M04-created artifact integrity manifest
+
+Measured after file read-back on 2026-10-08. Line counts are PowerShell text-line counts; hashes are SHA-256. The pre-existing V003 Architecture Decisions record remains unchanged.
+
+| File | Bytes | Lines | SHA-256 |
+|---|---:|---:|---|
+| README_BRAINBOX.md | 38,295 | 536 | D374F1207C4110BE49E6DE113AD9E32F0AE7F83A21E7E069831C2A354ACCE1FB |
+| VERSION_HISTORY_BRAINBOX/README_VERSION_HISTORY_BRAINBOX.md | 5,153 | 77 | DB2790C074EEBC12D74AC18100A3B29970FB4EC0F9785DECF79581C77A07934E |
+| VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/TREE_SNAPSHOT_V001_BRAINBOX.md | 1,641 | 34 | 91AE0CCEFBEA3CEAE1F7D53BC8A444FE08879E649857960EACD9352FE997569F |
+| VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/RETROSPECTIVE_V001_BRAINBOX.md | 2,506 | 24 | 88A4A9AD1D0A7E292D6BA24AB94DF2C139D94CADFBF4414A6366783C6347FD73 |
+| VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md | 12,580 | 135 | 66A1E2125730BBCDC6AE9B2819555B3792EDBB57DBFAF84D6ED877EFFF35EC8B |
+| VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/RETROSPECTIVE_V002_BRAINBOX.md | 2,649 | 24 | 4D2909B02EF234F4F3736FA11A10055C20EFA7B5A945518945CBFE0E5FA9853E |
+| VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md | 2,887 | 36 | 716B9A4EB660D7B692D4490613CA371030EF45D0E942812C55F96DCDD7BFFE38 |
+
+The migration map's own digest is intentionally omitted because this living ledger is updated by each authorized ticket.
+
+
+---
+
+## 16. ChatGPT independent verification — V003-M04 — 2026-10-08
+
+**Result:** PASS.
+**Blocking M04 flags:** NONE.
+**Batch-deferred flag:** `M04-HIST-01` — blocks complete conceptual-rationale claims only.
+**Batch state:** Batch A closure boundary.
+**M05:** NOT YET ELIGIBLE until authorized Batch A flag review and Git lifecycle/closure are complete.
+
+Independent checks confirmed:
+
+- `M04-BR-01` is resolved and M04 was branched from clean M03 tip `8353338a29f0f364c3c2d048be55174a77327ab3`;
+- M04 has 0 staged files and 0 commits after its branch start;
+- V001 snapshot metadata are correct and the path list equals the selected Git tree exactly, 10/10;
+- V002 snapshot metadata are correct, V002 is the exact parent of first V003-P01, and the path list equals the selected Git tree exactly, 111/111;
+- no Git tags exist;
+- V001/V002 retrospectives preserve technical evidence and explicitly block unsupported conceptual rationale;
+- `M04-HIST-01` is correctly BATCH-DEFERRED / NON-BLOCKING for M04;
+- V003 Architecture Decisions remains unchanged at SHA-256 `716b9a4eb660d7b692d4490613ca371030ef45d0e942812c55f96dcdd7bffe38`;
+- final V003 tree snapshot remains absent for M21;
+- the M04 artifact integrity manifest matches the live files;
+- 25 local Markdown links checked, 0 broken;
+- five new Version History files have 0 trailing-whitespace lines;
+- `git diff --check` exits clean;
+- no historical source is moved, renamed, or deleted;
+- local/origin/remote main remain `27e73f828bb367298442c2e621c18d1cc1ceb4f4`;
+- remote M04 branch is absent and no push/PR/merge occurred.
+
+Prior-state correction: the earlier ChatGPT M04 branch-start hold is superseded/resolved; M03 advanced to `8353338`; M04 is now independently verified PASS.
+
+Batch A must now be reviewed and closed before Batch B/M05 begins.
+
+
+---
+
+## 17. Codex cross-check — Batch A M01–M04 — 2026-10-08
+
+**Purpose:** Cross-check the ticket branches, migration artifacts, linked records, and accumulated flags before Batch A remote Git closure.
+
+### Branch and Git baseline before the first Batch A push
+
+- `main` remains at `27e73f828bb367298442c2e621c18d1cc1ceb4f4`.
+- M01: `v003/m01-current-state-inventory-migration-map` at `bc6d1309a71f4a309469788074c381c8665e5490`.
+- M02: `v003/m02-root-readme-authority-navigation` at `3971f48c4c75641e46a23a86b0792e44e2d794e3`, descending from M01.
+- M03: `v003/m03-governance-canonicalization` at `f0113e7`, descending from M02. The original M03 implementation and reconciliation commits remain in its history.
+- M04: `v003/m04-version-history-migration` was fast-forwarded to the corrected M03 tip `f0113e7`; M04 artifacts remain unstaged/uncommitted at this cross-check point.
+- Ancestor checks pass for M01 → M02 → M03 → M04. Only `main` exists on `origin`; ticket refs are local and no ticket changes are on remote `main`.
+
+### Artifact and authority cross-check
+
+- **M01:** the living map records all 122 baseline tracked files individually, root/governed authority records, FUNC and project/raw/proven/failed sources, FootHive assets/evidence, Skills, Portfolio, Milestones, Version History, Phase 01/02 support records, empty legacy sources, and the integrity/recovery boundaries. M01 source migration remains none.
+- **M02:** `README_BRAINBOX.md` exists as complete-tree/navigation authority; `DOB_MUST_README.md` remains preserved. The historical 340-line Specification hierarchy comparison is recorded as 0 differences.
+- **M03:** the nine approved Governance files are present and their local tree matches the listed structure. A stale README verification label was corrected on M03 in commit `f0113e7`; the existing ChatGPT independent verification record is PASS. The current README file is 5,663 bytes / 72 logical lines, SHA-256 `15204235F472B018BD52316C0882DBA5D66980AEAE864AEEB461EDAA3EAC8A9F`. The prior M03 manifest remains the original write/read-back measurement; this is its post-verification status-only successor.
+- **M04:** Version History README, V001/V002 snapshots and partial retrospectives are present. The existing V003 Architecture Decisions file is unchanged; V003 tree snapshot remains assigned to M21. No source was moved, renamed, deleted, or rewritten.
+- Snapshot verification was repeated against Git: V001 paths 10/10 exact (tree `6fa938eb03722803d7dc5c4e3c245dddae0a1b2b`); V002 paths 111/111 exact (tree `bcdd2e00c1a2b9d7d798a7882e64fd61f17a214d`). The V001 expansion commit is a direct child of its recorded boundary; V002 is the exact parent of the first V003-P01 commit.
+- Local Markdown-link scan covered 16 root/Governance/Version-History records: 0 broken links. `git diff --check` is clean after removing the one newly introduced trailing-space instance in this M04 map update.
+
+### Working-copy integrity refresh after temporary stash round-trip
+
+Git reports system `core.autocrlf=true`. After the verified temporary M04 stash/pop used to update the M03 README on its owning branch, the Markdown working copies were restored with CRLF endings. The earlier M04 manifest is preserved as the pre-stash measurement; the following are current working-copy bytes, logical lines, and SHA-256 values for the cross-check. The content read-back, expected path structure, and snapshot comparisons pass.
+
+| Current working-copy file | Bytes | Logical lines | SHA-256 |
+|---|---:|---:|---|
+| README_BRAINBOX.md | 38,831 | 536 | 4BC2F725919C303923601B76CD56B12FD19B612CEF7A6C171F77571B0FD15FE6 |
+| VERSION_HISTORY_BRAINBOX/README_VERSION_HISTORY_BRAINBOX.md | 5,261 | 77 | DB286B7EF6732CC89FF5D46B627E7755EA21FEA60CD48011A5B87CCB0E21E074 |
+| VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/TREE_SNAPSHOT_V001_BRAINBOX.md | 1,664 | 34 | DC75F21F258645A606C45E54492F5D3CF6024CB6F198E1FA05BCAD970620764F |
+| VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/RETROSPECTIVE_V001_BRAINBOX.md | 2,530 | 24 | 785A5DB9C8A16F6358769E8AEB538312C05844764EEE984B6CF6FE281AEFCEC6 |
+| VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md | 12,603 | 135 | E504871A5021880938F81B433A98F5EB8106923D67C607C1EEA8CA67D102FE5A |
+| VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/RETROSPECTIVE_V002_BRAINBOX.md | 2,673 | 24 | 706619255AF2764A7E162F85B4CA8B338235C823DE8B219400989E84BDBD185B |
+| VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md | 2,887 | 36 | 716B9A4EB660D7B692D4490613CA371030EF45D0E942812C55F96DCDD7BFFE38 |
+
+### Batch A flag review and disposition
+
+| Flag | Cross-check disposition | Later authorized owner / condition |
+|---|---|---|
+| M01-GIT-01 | Keep the 72 local dangling objects preserved; no prune, reflog expiry, or garbage collection. No current task requires cleanup. | M21 integrity/recovery closeout must confirm the deferral and preserve the objects unless a separate authorization says otherwise. |
+| M01-FH-01 | Preserve the 32 broken catalog references and existing excluded-image records; no M01–M04 asset/link edits. | M15 FootHive evidence migration. |
+| M01-DOC-01 | Resolved by the documented correction/retraction; no active defect. | Closed. |
+| M02-WS-01 | Resolved and rechecked; 0 trailing-whitespace lines in the scoped M02 artifacts. | Closed. |
+| M02-BR-01 | Preserve both README byte/hash records. The 340-line hierarchy, local-link, and whitespace checks pass; the exact historical byte artifact was not recovered. | M19 README/reference/population-state reconciliation must recheck and retain the discrepancy if the source remains unavailable. |
+| M03-REF-01 | Preserve unmodified legacy authority wording until its migration ticket. | M19 reference reconciliation and M20 source-retirement gate. |
+| M04-BR-01 | Resolved before M04 branch creation; M04 now descends from corrected M03. | Closed. |
+| M04-HIST-01 | Keep both conceptual retrospectives explicitly partial/blocked; no rationale is inferred from Git subjects. | M21 must preserve this intentional evidence deferral; any ticket that needs the missing rationale must obtain source evidence and pass its own preflight. |
+
+**Cross-check result:** M01–M04 substantive artifacts and recorded verifications pass; no blocking migration flag remains. These dispositions do not start M05. Batch A still requires its authorized branch pushes/merges and final Git verification before Batch B becomes eligible.

@@ -1,6 +1,6 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE — AUTHORIZED] — M01, M02, and M03 independently verified PASS and committed locally on dedicated branches; M02-BR-01 and M03-REF-01 remain documented BATCH-DEFERRED / NON-BLOCKING flags; M04-BR-01 is resolved by M03 local commit `895a926`; the M03 worktree is clean and M04 may proceed under its own P14 preflight; Batch A push/PR/merge pending.
+**Status:** [ACTIVE — AUTHORIZED] — M01–M04 independently verified PASS; M01–M03 have dedicated local commits and M04 is implemented on its dedicated `v003/m04-version-history-migration` branch but remains unstaged/uncommitted; M04-BR-01 is resolved; M02-BR-01, M03-REF-01, and M04-HIST-01 remain BATCH-DEFERRED / NON-BLOCKING; Batch A flag review, M04 local commit, and authorized Batch A push/PR/merge/closure are pending before Batch B/M05.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
@@ -61,7 +61,7 @@ PHASE02_MIGRATION_BRAINBOX/
 
 **Execution authorization:** AUTHORIZED — V003-M01 through V003-M21, executed one ticket at a time under dependencies, P14 preflight, Codex reporting, ChatGPT independent verification, and Operator merge/closure authority.
 
-**Current Batch A progression:** M01, M02, and M03 are independently verified PASS and have dedicated local branches/commits. M02-WS-01 is resolved; M02-BR-01 is batch-deferred/non-blocking; M03-REF-01 remains non-blocking and is carried to M19/M20. `M04-BR-01` is resolved: the M03 conversation-archive correction and accompanying reconciliation records were committed locally as `895a926` on the dedicated M03 branch, and the worktree is clean. M04 is eligible to proceed under its own P14 preflight.
+**Current Batch A progression:** M01, M02, M03, and M04 are independently verified PASS. `M04-BR-01` is RESOLVED; the M04 branch was created from clean M03 tip `8353338`. V001/V002 snapshots match their selected Git trees exactly (10/10 and 111/111). `M04-HIST-01` remains **BATCH-DEFERRED / NON-BLOCKING** because the available evidence supports technical snapshots/chronology but not the Operator's conceptual rationale for V001/V002. **Batch A is now at its closure boundary:** review/disposition accumulated non-blocking flags, stage/commit M04 on its dedicated branch under Operator authority, then perform the authorized Batch A push/PR/merge/closure. Batch B/M05 must not begin before that boundary is completed.
 
 **M01 inventory and migration map:** PASS; local ticket commit `bc6d1309a71f4a309469788074c381c8665e5490` created on its dedicated branch. M01-GIT-01 and M01-FH-01 remain carry-forward items; push/PR/merge remain pending at Batch A closure.
 
@@ -70,7 +70,7 @@ PHASE02_MIGRATION_BRAINBOX/
 **M03 Governance canonicalization:** INDEPENDENT CHATGPT VERIFICATION PASS; local implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` exists on its dedicated branch. All nine approved Governance records are present; corrected Map integrity values match live files; seven legacy source hashes match M01 baselines; links, whitespace, and targeted secret scan pass. `M03-REF-01` remains non-blocking and is assigned to M19/M20.
 
 
-**Batch A Git lifecycle:** M01, M02, and M03 each have a separate local ticket commit. Push/PR/merge remain deferred to the Batch A boundary.
+**Batch A Git lifecycle:** M01, M02, and M03 each have a separate local ticket commit. M04 is independently verified PASS but remains unstaged/uncommitted on its dedicated branch. Before Batch B begins, accumulated Batch A non-blocking flags must be reviewed/dispositioned, M04 must receive its ticket-specific local commit under Operator authority, and the authorized Batch A push/PR/merge/closure must be completed.
 
 **Legacy source migration:** M03 Governance records are organized in the canonical domain; legacy governance sources remain unchanged and are retained for M19/M20 reference reconciliation and source-retirement gates.
 

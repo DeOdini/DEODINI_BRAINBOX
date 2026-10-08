@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M03 implementation; ChatGPT independent verification is recorded separately in the Phase 02 report.
+**VERIFIER:** Codex — M04 Version History implementation; ChatGPT independent verification is pending and will be recorded separately in the Phase 02 report.
 **LAST VERIFIED:** 2026-10-08
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
@@ -388,14 +388,14 @@ DEODINI_BRAINBOX/
 | `README_BRAINBOX.md` | [ACTIVE] | This M02 root navigation authority. |
 | `V003_VERSION_UPGRADE_BRAINBOX/` | [POPULATED] | Contains canonical Origin/Specification and separate Phase 01 and Phase 02 support archives. |
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
-| `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial] | Current V003 Architecture Decisions record and M01 migration map, updated through M03, exist. Parent README, V001/V002 records, and the V003 snapshot are not yet present; see M04/M21. |
+| `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial; M04] | Parent README and Git-backed V001/V002 tree snapshots are present. Their conceptual retrospectives explicitly report missing rationale evidence; V003 Architecture Decisions and the living migration map are retained. Final V003 snapshot remains assigned to M21. |
 | `MILESTONES_BRAINBOX/` | [PLANNED] | Not yet populated; M18. The legacy `MILESTONES/` remains a separate source pending M17. |
 | `AI_BRAINBOX/` | [PLANNED V003 target] | Existing `AI_BRAINBOX/` contains the legacy source structure; approved target migration remains pending M05–M13. |
 | `PORTFOLIO_BRAINBOX/` | [PLANNED V003 target] | Existing legacy Portfolio source is only a zero-byte placeholder; target structure is pending M16. |
 
 ## Current local root tree
 
-This is the physical root layout observed after M03. It includes legacy sources and the empty local directory, which are not extra branches in the approved V003 target tree.
+This is the physical root layout observed during M04. It includes legacy sources and the empty local directory, which are not extra branches in the approved V003 target tree.
 
 ```text
 DEODINI_BRAINBOX/
@@ -449,12 +449,20 @@ V003_VERSION_UPGRADE_BRAINBOX/
 
 ```text
 VERSION_HISTORY_BRAINBOX/
+├── README_VERSION_HISTORY_BRAINBOX.md
+├── V001_BRAINBOX/
+│   ├── TREE_SNAPSHOT_V001_BRAINBOX.md [Git tree e726bfe; 10 tracked paths]
+│   └── RETROSPECTIVE_V001_BRAINBOX.md [conceptual rationale blocked]
+├── V002_DEODINI_BRAINBOX/
+│   ├── TREE_SNAPSHOT_V002_BRAINBOX.md [Git tree f03b74b; 111 tracked paths]
+│   └── RETROSPECTIVE_V002_BRAINBOX.md [conceptual rationale blocked]
 └── V003_EXTENDED_DEODINI_BRAINBOX/
-    ├── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md
-    └── MIGRATION_MAP_V003_BRAINBOX.md [living migration map, updated through M03; local Batch A work]
+    ├── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md [retained; unchanged]
+    ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map, updated through M04]
+    └── TREE_SNAPSHOT_V003_BRAINBOX.md [deferred to M21]
 ```
 
-The parent `README_VERSION_HISTORY_BRAINBOX.md`, V001/V002 records, and the V003 tree snapshot are not currently present. Their disposition remains with the authorized Version History tickets. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; the compact GitHub display does not change that path.
+The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The final V003 tree snapshot remains assigned to M21. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
 
 ## Navigation index
 
@@ -468,6 +476,9 @@ The parent `README_VERSION_HISTORY_BRAINBOX.md`, V001/V002 records, and the V003
 | `V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` | Historical decisions and ambiguity context. |
 | `V003_VERSION_UPGRADE_BRAINBOX/PHASE01_POLISH_BRAINBOX/README_PHASE01_POLISH_BRAINBOX.md` | Closed Phase 01 audit/archive navigation. |
 | `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md` | Active Phase 02 rules, current batch state, and ticket navigation. |
+| `VERSION_HISTORY_BRAINBOX/README_VERSION_HISTORY_BRAINBOX.md` | Version History domain navigation, authority boundaries, and current population state. |
+| `VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/TREE_SNAPSHOT_V001_BRAINBOX.md` | Git-backed V001 tracked-path snapshot. |
+| `VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md` | Git-backed V002 tracked-path snapshot. |
 | `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` | Living source-backed migration ledger; updated by each authorized migration ticket. |
 
 ## Source-to-target responsibility
