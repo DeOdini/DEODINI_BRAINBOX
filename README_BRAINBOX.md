@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M04 Version History implementation; ChatGPT independent verification is pending and will be recorded separately in the Phase 02 report.
+**VERIFIER:** Codex — M04 Version History implementation; ChatGPT — M04 independent verification PASS and Batch A Git/GitHub closeout independently rechecked in the Phase 02 report. `BATCHA-DOC-01` corrects this previously stale verifier line locally pending Git publication.
 **LAST VERIFIED:** 2026-10-08
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.

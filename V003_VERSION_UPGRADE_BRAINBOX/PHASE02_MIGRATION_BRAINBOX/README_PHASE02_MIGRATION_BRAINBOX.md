@@ -1,6 +1,6 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE — AUTHORIZED] — M01–M04 independently verified PASS; each ticket has its own dedicated branch and commit; all four branch refs are pushed to `origin` at the recorded heads; M03 README verification status is reconciled in `f0113e7`; M04 is committed as `4747286`; Batch A non-blocking flags are dispositioned to M15, M19/M20, and M21; PR/merge and final remote verification remain pending before Batch B/M05.
+**Status:** [ACTIVE — AUTHORIZED] — Batch A M01–M04 independently verified PASS and merged to GitHub `main` in dependency order through PRs #16–#19; documentation closeout PR #20 is also merged; local `main`, `origin/main`, and GitHub `main` were independently verified at `f8a2862edc4672012c996ec1edafcaa11344c08d`; all four ticket branches remain available; Batch A deferred flags retain their recorded later-ticket dispositions; M05 has not started. `BATCHA-DOC-01` corrects stale pre-merge header wording locally and awaits Git publication before M05 branch creation.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
@@ -61,7 +61,7 @@ PHASE02_MIGRATION_BRAINBOX/
 
 **Execution authorization:** AUTHORIZED — V003-M01 through V003-M21, executed one ticket at a time under dependencies, P14 preflight, Codex reporting, ChatGPT independent verification, and Operator merge/closure authority.
 
-**Current Batch A progression:** M01–M04 are independently verified PASS and merged to `main` in order through PRs #16–#19. V001/V002 snapshots match Git exactly (10/10 and 111/111), and all four ticket branch heads are ancestors of `origin/main` (`e0e05e2afec7795b916595c8c6ca3f09a8b227d0`) in the final fetch check. M01-GIT-01 and M04-HIST-01 remain explicit evidence/recovery deferrals assigned to M21; M01-FH-01 is assigned to M15; M02-BR-01 to M19; M03-REF-01 to M19/M20; M01-DOC-01, M02-WS-01, and M04-BR-01 are resolved. Batch A Git closure is complete; M05 has not started.
+**Current Batch A progression:** M01–M04 are independently verified PASS and merged to `main` in order through PRs #16–#19; documentation closeout PR #20 is also merged. V001/V002 snapshots match Git exactly (10/10 and 111/111). All four current ticket branch heads are ancestors of final verified `origin/main` at `f8a2862edc4672012c996ec1edafcaa11344c08d`, and all four remote branch refs remain available. M01-GIT-01 and M04-HIST-01 remain explicit evidence/recovery deferrals assigned to M21; M01-FH-01 is assigned to M15; M02-BR-01 to M19; M03-REF-01 to M19/M20; M01-DOC-01, M02-WS-01, and M04-BR-01 are resolved. Batch A Git closure is complete; M05 has not started. `BATCHA-DOC-01` is corrected locally and awaits Git publication before M05 branch creation.
 
 **M01 inventory and migration map:** PASS; dedicated commit `bc6d1309a71f4a309469788074c381c8665e5490` is pushed and matches its origin branch. M01-GIT-01 is preserved for M21 integrity/recovery review; M01-FH-01 is assigned to M15.
 
@@ -72,7 +72,7 @@ PHASE02_MIGRATION_BRAINBOX/
 **M04 Version History migration:** PASS; implementation commit `4747286c1b3c134001c6f6d08cb7dcba32685461` and cross-check/report commit `f05a87a188bbcdca7038a2f8518d00175371153d` were pushed on its dedicated branch and merged through PR #19 (`e0e05e2afec7795b916595c8c6ca3f09a8b227d0`). V001/V002 path inventories match Git exactly (10/10 and 111/111); conceptual retrospective gaps remain explicitly deferred to M21.
 
 
-**Batch A Git lifecycle:** COMPLETE. PRs #16, #17, #18, and #19 merged M01–M04 to `main` in dependency order. GitHub reports each PR merged, the post-merge fetch updated `origin/main` to `e0e05e2afec7795b916595c8c6ca3f09a8b227d0`, and `git merge-base --is-ancestor` passed for all four ticket branches. The four ticket branches remain available; none was deleted. Batch A flags have explicit later-ticket dispositions. M05 has not started.
+**Batch A Git lifecycle:** COMPLETE. PRs #16, #17, #18, and #19 merged M01–M04 to `main` in dependency order; documentation closeout PR #20 then merged at `f8a2862edc4672012c996ec1edafcaa11344c08d`. Final independent verification confirmed local `main`, `origin/main`, and GitHub `main` at that same SHA, and `git merge-base --is-ancestor` passed for all four current ticket branch heads. The four ticket branches remain available; none was deleted. Batch A flags have explicit later-ticket dispositions. M05 has not started. The only current pre-M05 hold is publication of the local `BATCHA-DOC-01` stale-status correction and restoration of a clean base worktree.
 
 **Legacy source migration:** M03 Governance records are organized in the canonical domain; legacy governance sources remain unchanged and are retained for M19/M20 reference reconciliation and source-retirement gates.
 
