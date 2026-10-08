@@ -1,7 +1,7 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — Batch A and BATCHA-DOC-01 published through PR #21; base `main` verified at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`; Batch B M05 FUNC CORE implementation is committed/pushed on `v003/m05-func-core-registry-migration`; independent ChatGPT verification remains pending; all eight original FUNC sources retain their M01 baselines; M06 is active on its dedicated branch; prior deferred flags retain M15/M19/M20/M21 ownership
+**Status:** Living M01–M21 migration ledger — Batch A and BATCHA-DOC-01 published through PR #21; base `main` verified at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`; M05 commit `585f9600ca4940aab750488b2f46f7cb72a94d69` pushed and independent verification pending; M06 implementation commit `9635e5dd8e20b86ab879b55fc0da9fa63af34991` pushed on its dedicated branch and independent verification pending; no M06 PR/merge; prior deferred flags retain M15/M19/M20/M21 ownership.
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
 **Current active branch:** v003/m06-func-exe-registry-migration
@@ -902,4 +902,4 @@ M06 populated the EXE registry with four admitted categories and reserved MEDIA.
 - This was a documentation/capability-index migration; no product or browser tests were run.
 
 **M06 implementation:** Codex read-back PASS. **Independent ChatGPT verification:** PENDING.
-**M06 Git state at this ledger snapshot:** local changes not yet staged/committed/pushed; publication will be appended after the Git operation. No PR or merge has been requested.
+**M06 implementation publication:** commit `9635e5dd8e20b86ab879b55fc0da9fa63af34991` was pushed to `origin/v003/m06-func-exe-registry-migration`. Local and remote refs matched, the branch tracks `origin`, and the worktree was clean after the implementation push. Git Credential Manager paused that push for authentication; the Operator completed sign-in and the existing push then succeeded. No PR or merge was requested or performed. The status, report, migration-map, and conversation closeout updates are included in this same branch’s publication.

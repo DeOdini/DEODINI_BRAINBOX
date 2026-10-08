@@ -3185,7 +3185,7 @@ This publication does not change the verification state: independent ChatGPT ver
 
 **Ticket:** V003-M06 — FUNC EXE Registry Migration
 **Authorization:** AUTHORIZED FOR EXECUTION by De O'Dini — Operator
-**Implementation status:** COMPLETE LOCALLY
+**Implementation status:** COMMITTED AND PUSHED; Codex read-back verification PASS
 **Codex read-back verification:** PASS
 **Independent ChatGPT verification:** PENDING
 **Branch:** `v003/m06-func-exe-registry-migration`
@@ -3257,6 +3257,15 @@ Updated navigation and live status records in the FUNC parent README, CORE regis
 - `M06-PREFLIGHT-01` is documented above and in Migration Map §21. M05 independent verification remains pending; M06 does not claim that review passed.
 - No source removal, rename, merge of source content, deployment, or external service write occurred.
 
-**Codex M06 result:** IMPLEMENTED LOCALLY / READ-BACK VERIFIED PASS.
+**Codex M06 result:** IMPLEMENTED / COMMITTED / PUSHED; READ-BACK VERIFIED PASS.
 **Independent ChatGPT verification:** PENDING.
-**M06 Git lifecycle at this report snapshot:** not yet staged, committed, or pushed; publication result will be recorded in Section 6.
+
+## 6. Git publication and closeout
+
+- Implementation commit: `9635e5dd8e20b86ab879b55fc0da9fa63af34991` — `V003-M06 migrate FUNC EXE registry`.
+- Author recorded in Git: `DeOdini <deodinihq@gmail.com>`.
+- Published branch: `v003/m06-func-exe-registry-migration`, tracking `origin/v003/m06-func-exe-registry-migration`.
+- The remote branch tip was checked with `git ls-remote`; it matched local HEAD at the implementation commit. The worktree was clean after that push.
+- Git Credential Manager paused the push for sign-in. The Operator completed the GitHub sign-in; the already-running push then completed successfully. No authentication dialog was automated by Codex.
+- No pull request or merge was opened or performed.
+- The report, migration map, conversation record, and live navigation/status records are included in the documentation closeout on this same ticket branch. Independent ChatGPT verification remains PENDING; publication does not imply independent review.

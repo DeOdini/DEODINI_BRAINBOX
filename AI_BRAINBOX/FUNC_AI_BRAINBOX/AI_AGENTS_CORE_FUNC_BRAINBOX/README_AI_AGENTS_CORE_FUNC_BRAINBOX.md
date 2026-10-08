@@ -9,7 +9,7 @@
 **REFERENCES:** The parent FUNC README and linked source records.
 **POPULATION STATE:** Eight CORE records remain; M06 added their evidence-scoped EXE links. Four categories are admitted for Codex; Copilot's Browser configuration is explicitly unverified; MEDIA is reserved. Historical agent claims remain time-bounded.
 **LAST VERIFIED:** 2026-10-08
-**VERIFIER:** Codex — M05 source/hash cross-check and M06 CORE-to-EXE reference reconciliation.
+**VERIFIER:** Codex — M05 source/hash cross-check and M06 CORE-to-EXE reference reconciliation; M06 commit `9635e5d` pushed.
 **APPLIES TO:** ChatGPT, Claude, Cline, Codex, Copilot, DeepSeek, Grok, and Qwen.
 
 ## Local tree
@@ -50,4 +50,4 @@ Use YES, NO, UNKNOWN / NOT VERIFIED, or NOT APPLICABLE for the status value, the
 - [Governance ticketing rules](../../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md)
 - [Phase 02 ticket set, including M06](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
 
-**STATUS:** [ACTIVE — M05 COMMITTED AND PUSHED; INDEPENDENT CHATGPT VERIFICATION PENDING; M06 EXE INDEX POPULATED]
+**STATUS:** [M05 COMMITTED/PUSHED; M05 INDEPENDENT VERIFICATION PENDING; M06 COMMIT 9635e5d PUSHED; M06 INDEPENDENT VERIFICATION PENDING; NO M06 PR/MERGE]

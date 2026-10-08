@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M06 EXE registry implementation and read-back. M05 was committed/pushed at `585f960`; independent ChatGPT verification remains pending. Batch A closeout and BATCHA-DOC-01 publication remain verified through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`.
+**VERIFIER:** Codex — M06 EXE registry implementation and read-back. M06 implementation commit `9635e5d` was pushed to its dedicated branch; no PR/merge. Independent ChatGPT verification of M06 remains pending. M05 independent verification also remains pending.
 **LAST VERIFIED:** 2026-10-08
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.

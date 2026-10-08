@@ -1680,3 +1680,36 @@ The M06 records are in place. I’m finishing the M05 history/status note, then 
 ### Codex — report and implementation status (verbatim)
 
 M06’s index lists only the four frozen-matrix admissions, while MEDIA remains reserved without an output artifact. I reconciled the M05 publication fields without changing its pending independent-review status, created the M06 report and Migration Map §21 record, and checked the eight CORE assignments. The 20-file local-link check found 120 links and no broken paths. I’m completing the final Git whitespace/state checks, then I’ll stage, commit, and push the dedicated M06 branch as you directed.
+
+
+### Git publication — Operator authentication and verification
+
+#### Codex — authentication request (verbatim)
+
+```text
+The M06 Git push is waiting in Git Credential Manager. Please complete the GitHub sign-in prompt on the Windows desktop, then reply that it is done. The computer-use skill requires you to handle authentication yourself; I’ll keep the push open and verify it afterward.
+```
+
+#### De O'Dini — Operator reply (verbatim)
+
+```text
+I completed sign-in
+```
+
+#### Codex — publication update (verbatim)
+
+```text
+GitHub accepted the M06 push. The remote branch tip matches local commit `9635e5dd8e20b86ab879b55fc0da9fa63af34991`; the branch tracks `origin` and the worktree is clean. I’m recording the publication result in the report and live status files, then I’ll push that documentation update and recheck it. No PR or merge was opened.
+```
+
+#### Codex — closeout commentary (verbatim)
+
+```text
+M06’s implementation commit is on its dedicated branch. I’m finishing the ticket’s report, migration-ledger, and live-status records with the verified push result, then I’ll publish that closeout update and confirm the branch is synchronized.
+```
+
+#### Codex — final outcome (verbatim)
+
+```text
+M06 implementation commit `9635e5dd8e20b86ab879b55fc0da9fa63af34991` and the ticket’s report, migration-map, conversation, and live-status closeout are pushed to `origin/v003/m06-func-exe-registry-migration`. Local and remote branch tips match; the worktree is clean. No PR or merge was opened. Independent ChatGPT verification remains pending.
+```

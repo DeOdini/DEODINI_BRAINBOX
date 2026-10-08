@@ -9,7 +9,7 @@
 **REFERENCES:** See the local tree and links below.
 **POPULATION STATE:** M05 created eight CORE records and retained all eight original reports. M06 populated the EXE index: RESEARCH, BROWSER, FILE, and CODE are admitted for evidence-scoped Codex operations; MEDIA is reserved. FQ_MUST_README, FUNC_REQ, and FUNC_WORKFLOW remain for later content-specific migration.
 **LAST VERIFIED:** 2026-10-08
-**VERIFIER:** Codex — M05 source inventory, file integrity, and local read-back.
+**VERIFIER:** Codex — M05 source inventory plus M06 EXE evidence/index and CORE-reference read-back.
 **APPLIES TO:** AI agent capability disclosure and FUNC registry navigation.
 **ENTRY NAVIGATION:** Begin with the CORE registry README for current field definitions and agent records.
 **EXIT NAVIGATION:** Return to AI_BRAINBOX/README_AI_BRAINBOX.md or the root README_BRAINBOX.md when leaving the FUNC domain.
@@ -67,4 +67,4 @@ AI_BRAINBOX/FUNC_AI_BRAINBOX/
 - [Governance evidence rules](../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
 - [Governance ticketing rules](../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md)
 
-**STATUS:** [ACTIVE — M06 EXE INDEX POPULATED; FOUR CATEGORIES ADMITTED; MEDIA RESERVED]
+**STATUS:** [M06 IMPLEMENTATION COMMITTED/PUSHED AT 9635e5d; FOUR CATEGORIES ADMITTED; MEDIA RESERVED; INDEPENDENT VERIFICATION PENDING]
