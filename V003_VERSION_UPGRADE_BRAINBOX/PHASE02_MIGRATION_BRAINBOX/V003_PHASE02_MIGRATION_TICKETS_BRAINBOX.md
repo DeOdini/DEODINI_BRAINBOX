@@ -240,14 +240,14 @@ The following items were recovered from Phase 01 and are mapped to the issued ti
 
 Batch membership remains planning only for scope grouping; the Operator has explicitly authorized V003-M01 through V003-M21 as a set. Execute tickets one at a time, in dependency order, with a separate P14 preflight and ChatGPT independent-verification cycle for each ticket. **Within the same batch, a prior ticket's pending staging/commit/push/PR/merge/Git-closure state does not block the next dependency-eligible ticket once the prior ticket has passed independent verification and has no unresolved flag that materially blocks the dependent work. Git staging/commit/push/PR/merge is performed at the batch boundary. A later batch must not begin until the preceding batch's Git lifecycle/closure is completed as authorized.**
 
-### Batch Git lifecycle / branch handling
+### Ticket-specific branch and batch Git discipline — Operator clarification, 2026-10-08
 
-- Ticket-level `Suggested branch` values are planning hints, not mandatory intra-batch branch-switch gates.
-- Do not switch branches merely to satisfy a later ticket's suggested branch while the active batch contains uncommitted verified changes.
-- The active batch may continue on its current authorized working branch until batch close unless the Operator explicitly directs a branch rename/split.
-- Each ticket's changed paths and verification evidence must remain separately attributable in the Phase 02 conversation/report and migration map even when several tickets share one batch working branch.
-- At the end of the batch, stage/commit/push/PR/merge the verified batch changes under the authorized batch-close workflow; only then begin the next batch.
-
+- Every V003-Mxx ticket must execute on its own dedicated branch; do not share a working branch across ticket identities.
+- Use the ticket's Suggested branch name as the branch name where available. These names identify the ticket branch rather than serving as optional hints.
+- For dependent tickets, create the next ticket branch from the prior verified ticket branch so dependency work is preserved in branch ancestry while each ticket retains its own branch and commit.
+- Stage and commit only the current ticket's changes on that ticket branch. Keep sibling-ticket modifications out of the commit.
+- Batch membership controls execution and independent-verification cadence. It does not merge ticket branch identities or require a shared branch.
+- Push, PR, and merge remain batch-boundary actions under Operator authority; local ticket commits do not authorize remote publication or merge.
 ---
 
 # V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap

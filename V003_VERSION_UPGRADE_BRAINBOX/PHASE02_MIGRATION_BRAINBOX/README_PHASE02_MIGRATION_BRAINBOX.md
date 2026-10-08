@@ -1,6 +1,6 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE — AUTHORIZED] — Phase 02 set approved by the Operator on 2026-10-08; M01 and M02 independently verified PASS; M02-WS-01 resolved; M03 is dependency-eligible under its own P14 preflight; Batch A Git lifecycle pending.
+**Status:** [ACTIVE — AUTHORIZED] — M01, M02, and M03 independently verified PASS and committed locally on dedicated branches; M02-BR-01 and M03-REF-01 remain documented BATCH-DEFERRED / NON-BLOCKING flags; M04-BR-01 is resolved by M03 local commit `895a926`; the M03 worktree is clean and M04 may proceed under its own P14 preflight; Batch A push/PR/merge pending.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
@@ -51,6 +51,7 @@ PHASE02_MIGRATION_BRAINBOX/
 10. **Operating model:** Operator approves/resolves flags and retains merge authority; Codex executes authorized migration tickets; ChatGPT independently verifies Codex completion claims.
 11. Codex must produce the per-ticket execution report contract defined in `V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md`, including pre-state, exact paths/actions, post-state, verification, unresolved flags, scope-discipline result, Git lifecycle, and verification limits.
 12. Codex execution evidence and ChatGPT independent verification are recorded separately for every ticket. A ticket whose substantive migration result passes independent verification and has no **BLOCKING** flag is eligible to satisfy same-batch dependencies. Non-blocking flags remain open in the batch flag register without stopping progression. Git closure occurs at the batch boundary, not after every ticket.
+9. Every V003-Mxx ticket has a dedicated branch and ticket-specific local commit. The batch controls execution/verification cadence and remote push/PR/merge timing; it does not combine ticket branch identity.
 
 ## Migration ticket state
 
@@ -60,16 +61,18 @@ PHASE02_MIGRATION_BRAINBOX/
 
 **Execution authorization:** AUTHORIZED — V003-M01 through V003-M21, executed one ticket at a time under dependencies, P14 preflight, Codex reporting, ChatGPT independent verification, and Operator merge/closure authority.
 
-**Current Batch A progression:** M01 and M02 are independently verified PASS. M01-GIT-01 and M01-FH-01 remain documented carry-forward items. M02-WS-01 is resolved and non-blocking. M03 is next dependency-eligible subject to its own P14 preflight.
+**Current Batch A progression:** M01, M02, and M03 are independently verified PASS and have dedicated local branches/commits. M02-WS-01 is resolved; M02-BR-01 is batch-deferred/non-blocking; M03-REF-01 remains non-blocking and is carried to M19/M20. `M04-BR-01` is resolved: the M03 conversation-archive correction and accompanying reconciliation records were committed locally as `895a926` on the dedicated M03 branch, and the worktree is clean. M04 is eligible to proceed under its own P14 preflight.
 
 **M01 inventory and migration map:** PASS; local ticket commit `bc6d1309a71f4a309469788074c381c8665e5490` created on its dedicated branch. M01-GIT-01 and M01-FH-01 remain carry-forward items; push/PR/merge remain pending at Batch A closure.
 
-**M02 root-authority migration:** PASS; root README created and V003 navigation reconciled; `DOB_MUST_README.md` remains unchanged; no source moved, renamed, or deleted. M02 local ticket commit is being prepared on its dedicated branch; push/PR/merge remain at the Batch A boundary.
+**M02 root-authority migration:** PASS; dedicated-branch local commit `3971f48c4c75641e46a23a86b0792e44e2d794e3` exists. `M02-BR-01` records the root README byte-snapshot discrepancy; its reconstructed artifact separately passes the hierarchy/link checks. Push/PR/merge remain pending at Batch A closure.
+
+**M03 Governance canonicalization:** INDEPENDENT CHATGPT VERIFICATION PASS; local implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` exists on its dedicated branch. All nine approved Governance records are present; corrected Map integrity values match live files; seven legacy source hashes match M01 baselines; links, whitespace, and targeted secret scan pass. `M03-REF-01` remains non-blocking and is assigned to M19/M20.
 
 
-**Batch A Git lifecycle:** M01 local commit exists; M02 and M03 local ticket commits remain pending; push/PR/merge remain deferred to the Batch A boundary.
+**Batch A Git lifecycle:** M01, M02, and M03 each have a separate local ticket commit. Push/PR/merge remain deferred to the Batch A boundary.
 
-**Legacy source migration:** No legacy source was moved, renamed, or deleted by M01 or M02. Governance canonicalization remains pending M03.
+**Legacy source migration:** M03 Governance records are organized in the canonical domain; legacy governance sources remain unchanged and are retained for M19/M20 reference reconciliation and source-retirement gates.
 
 ## Placement correction record
 
