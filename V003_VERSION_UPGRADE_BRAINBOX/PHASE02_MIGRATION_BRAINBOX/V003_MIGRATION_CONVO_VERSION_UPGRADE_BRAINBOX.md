@@ -154,3 +154,27 @@ The first dependency-eligible ticket is:
 `V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap`
 
 At the moment this approval was recorded, Phase 02 filesystem migration had **not started**. No V003-Mxx implementation was performed as part of documenting the approval.
+
+
+---
+
+# Operator Approval Clarification and Version History GitHub Verification
+
+## DEODINI — OPERATOR (EXACT MESSAGE)
+
+> CORRECT THE FILE IN GITHUB VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX IT WAS ONLY CORRECTED LOCALLY. ONCE THAT IS DONE, RECORD YUR REPORTS ACCORDINGLY, BEFORE V003-M01 BEGINS
+>
+> AS FOR YOUR ONE WORDING CONFLICT FINDINGS, I AM GIVING AN EXPLICIT APPROVAL THAT SUPERSEDES THE README, YOU CAN ALSO RECORD IT PLAINLY.
+
+## CODEX — VERIFICATION AND RECORD
+
+On 2026-10-08, Codex checked `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md` against GitHub `main`.
+
+- The file contains the V003-P03 authority correction: it explains that the Specification defines what V003 is and that Architecture Decisions records why, without duplicating the full specification/tree.
+- The correction is already present in GitHub `main`, introduced by commit `09dcd00`.
+- The local file hash and the GitHub `origin/main` file object are identical: `9727ee3113a065d64ad0dbae5e85ab023c4ecc00`.
+- At verification, local `main` and `origin/main` both pointed to `71dcba4414b0efff9e0094f3932c85055816e012`; the working tree was clean. No additional edit to the Architecture Decisions file was needed.
+
+The Operator's explicit approval covers the complete remodeled V003-M01–M21 set and supersedes the earlier README sentence requiring separate authorization for every ticket. The Phase 02 README has been clarified accordingly. Tickets remain individually scoped and must pass dependency checks and their own P14 preflight. A flag still requires stop/report/wait and Operator direction; the approval does not authorize scope expansion, merge, or deployment.
+
+**V003-M01 status:** NOT STARTED. This clarification and documentation update do not perform migration work.

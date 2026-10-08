@@ -4,8 +4,8 @@
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
-**MENTAL MODEL:** Phase 01 froze the target; Phase 02 compares the live Brainbox against that target and migrates only through individually authorized V003-Mxx tickets.
-**GOVERNED BY:** The frozen V003 Specification, Origin Conversation, P14 migration preflight, the V003 parent README, and individual Operator authorization.
+**MENTAL MODEL:** Phase 01 froze the target; Phase 02 compares the live Brainbox against that target and migrates through individually scoped V003-Mxx tickets covered by the Operator's explicit M01–M21 set authorization, with each ticket subject to dependencies and P14 preflight.
+**GOVERNED BY:** The frozen V003 Specification, Origin Conversation, P14 migration preflight, the V003 parent README, and the Operator's explicit approval of V003-M01–M21 recorded in the Phase 02 report/conversation.
 **LAST VERIFIED:** 2026-10-08
 
 ## Authority boundary
@@ -18,7 +18,7 @@ The canonical V003 authorities remain:
 
 This Phase 02 folder contains migration planning and migration execution/audit records. It does not independently redefine the V003 target.
 
-The issued migration tickets are planning/scoping records. Each V003-Mxx ticket requires separate Operator authorization and the P14 stop/report/wait preflight before execution.
+The issued migration tickets are individually scoped records. The Operator explicitly approved execution of the remodeled V003-M01–M21 set on 2026-10-08; that approval supersedes any earlier wording in this README that required separate authorization for each ticket. No repeated per-ticket approval is required for the approved set. Execute tickets one at a time in dependency order, with ticket-specific P14 preflight and stop/report/wait on any flag. This set approval does not authorize scope expansion, merging, or deployment.
 
 ## Local tree
 
