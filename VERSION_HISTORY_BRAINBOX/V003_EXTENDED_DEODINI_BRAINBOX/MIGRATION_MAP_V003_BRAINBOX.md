@@ -531,3 +531,16 @@ Independent checks confirmed:
 - no commit, push, PR, merge, deployment, source move, source rename, or source deletion occurred for M03.
 
 M03 is independently verified for same-batch dependency progression.
+
+
+## Batch A ticket-branch split and local commit ledger — 2026-10-08
+
+The Operator requires a dedicated branch for every V003-Mxx ticket; batch membership governs execution/verification cadence, not branch identity. Local ticket commits are authorized; push/PR/merge remain at the Batch A boundary.
+
+| Ticket | Branch | Local commit |
+|---|---|---|
+| M01 | `v003/m01-current-state-inventory-migration-map` | `bc6d1309a71f4a309469788074c381c8665e5490` |
+| M02 | `v003/m02-root-readme-authority-navigation` | `3971f48c4c75641e46a23a86b0792e44e2d794e3` |
+| M03 | `v003/m03-governance-canonicalization` | implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` |
+
+All branches are local and form dependency ancestry M01 → M02 → M03. No push, PR, or merge occurred. M02-BR-01 remains batch-deferred/non-blocking; M03-REF-01 remains carried to M19/M20. M04 is not started and is dependency-eligible under its own P14 preflight.

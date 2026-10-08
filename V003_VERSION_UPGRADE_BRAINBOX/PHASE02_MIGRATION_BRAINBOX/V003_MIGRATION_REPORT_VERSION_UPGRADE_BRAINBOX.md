@@ -2267,3 +2267,29 @@ There is no blocking M03 flag.
 `M03-REF-01` remains recorded and deferred to M19/M20 under the Operator's batch flag rule.
 
 **V003-M04 is dependency-eligible under its own P14 preflight.**
+
+
+## Operator ticket-branch rule and Batch A local commit reconciliation — 2026-10-08
+
+### Operator direction
+
+The Operator clarified that every ticket must have its own branch so work can be attributed and debugged by ticket. Batch membership governs execution and verification cadence; it does not combine branch identity. The Operator authorized staging and local commits for M01–M03, while the preceding instruction placed M02 and M03 modifications on separate branches before M04.
+
+### Local branch and commit ledger
+
+| Ticket | Dedicated branch | Local commit | Parent |
+|---|---|---|---|
+| M01 | `v003/m01-current-state-inventory-migration-map` | `bc6d1309a71f4a309469788074c381c8665e5490` | original synchronized HEAD `27e73f828bb367298442c2e621c18d1cc1ceb4f4` |
+| M02 | `v003/m02-root-readme-authority-navigation` | `3971f48c4c75641e46a23a86b0792e44e2d794e3` | M01 commit |
+| M03 | `v003/m03-governance-canonicalization` | implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` | M02 commit |
+
+M01 staged/committed four ticket-specific files. M02 staged/committed seven ticket-specific files, including the root README, M02 status records, and living migration ledger. M03 staged/committed sixteen files: nine Governance records plus M03-scoped README, ticket-policy, conversation/report, and migration-map updates. The M03 branch is the current branch; the local worktree and index were clean after the M03 implementation commit.
+
+### Remote Git state and remaining flags
+
+- **Push / PR / merge:** NOT PERFORMED. Batch A remote Git closure remains pending at the batch boundary.
+- **M02-BR-01:** the M02 branch-split README has a different byte snapshot from the historical independent-verification artifact. The recovered artifact separately passes the 340-line hierarchy comparison (zero differences), seven local-link checks (zero broken), and zero trailing-whitespace check. Preserve the historical digest and reconstructed digest; revisit at Batch A reconciliation if the exact original artifact is recovered.
+- **M03-REF-01:** remains BATCH-DEFERRED / NON-BLOCKING for M19/M20.
+- **M04:** not started; next dependency-eligible ticket, subject to its own P14 preflight.
+
+The ticket-specific branch rule is now reflected in the active Phase 02 README and ticket-set branch/Git policy. No source file was moved, renamed, or deleted as part of this branch separation.

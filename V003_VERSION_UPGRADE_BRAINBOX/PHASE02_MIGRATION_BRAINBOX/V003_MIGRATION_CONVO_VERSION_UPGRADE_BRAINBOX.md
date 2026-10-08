@@ -1013,3 +1013,16 @@ Git lifecycle remains `PENDING — BATCH A BOUNDARY`.
 - M03-REF-01: **BATCH-DEFERRED / NON-BLOCKING**, carried to M19/M20.
 - No new blocking M03 flag found.
 - M04: **DEPENDENCY-ELIGIBLE**, subject to its own P14 preflight.
+
+
+## Operator ticket-branch rule and Batch A local commit reconciliation — 2026-10-08
+
+The Operator clarified: “ALWAYS CREATE A NEW BRANCH FOR EACH TICKET, M01, M02, M03 ETC REGARDLESS IF THEY ARE WITHIN THE SAME BRANCH.” The Operator further explained that ticket branches preserve data attribution and fault isolation, while batching governs workflow progression and verification cadence. The Operator then directed Codex to move M02 and M03 changes onto their own branches and authorized local staging and commits for M01–M03.
+
+Codex completed the local split in dependency order:
+
+- M01: `v003/m01-current-state-inventory-migration-map` — `bc6d1309a71f4a309469788074c381c8665e5490`.
+- M02: `v003/m02-root-readme-authority-navigation` — `3971f48c4c75641e46a23a86b0792e44e2d794e3`, parent M01 commit.
+- M03: `v003/m03-governance-canonicalization` — implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7`, parent M02 commit.
+
+Each ticket's paths were staged on its dedicated branch. The branches preserve dependency ancestry while keeping separate ticket commits. Push, PR, and merge were not performed; Batch A remote Git closure remains pending. M04 has not started and remains eligible under its own P14 preflight.
