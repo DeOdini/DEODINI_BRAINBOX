@@ -1,6 +1,6 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE — AUTHORIZED] — M01, M02, and M03 independently verified PASS and committed locally on dedicated branches; M02-BR-01 and M03-REF-01 remain documented BATCH-DEFERRED / NON-BLOCKING flags; M04 has not started and its branch start is HELD ON M04-BR-01 until the unstaged M03/reconciliation archive correction is committed/dispositioned and the prior-ticket worktree is clean; Batch A push/PR/merge pending.
+**Status:** [ACTIVE — AUTHORIZED] — M01, M02, and M03 independently verified PASS and committed locally on dedicated branches; M02-BR-01 and M03-REF-01 remain documented BATCH-DEFERRED / NON-BLOCKING flags; M04-BR-01 is resolved by M03 local commit `895a926`; the M03 worktree is clean and M04 may proceed under its own P14 preflight; Batch A push/PR/merge pending.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
@@ -61,7 +61,7 @@ PHASE02_MIGRATION_BRAINBOX/
 
 **Execution authorization:** AUTHORIZED — V003-M01 through V003-M21, executed one ticket at a time under dependencies, P14 preflight, Codex reporting, ChatGPT independent verification, and Operator merge/closure authority.
 
-**Current Batch A progression:** M01, M02, and M03 are independently verified PASS and have dedicated local branches/commits. M02-WS-01 is resolved; M02-BR-01 is batch-deferred/non-blocking; M03-REF-01 remains non-blocking and is carried to M19/M20. **M04 is NOT STARTED and must not create its branch yet: M04-BR-01 is BLOCKING only for branch start because an unstaged M03/reconciliation conversation-archive correction remains on the current M03 worktree. Resolve that prior-ticket change and re-establish a clean worktree, then M04 may proceed under its own P14 preflight.**
+**Current Batch A progression:** M01, M02, and M03 are independently verified PASS and have dedicated local branches/commits. M02-WS-01 is resolved; M02-BR-01 is batch-deferred/non-blocking; M03-REF-01 remains non-blocking and is carried to M19/M20. `M04-BR-01` is resolved: the M03 conversation-archive correction and accompanying reconciliation records were committed locally as `895a926` on the dedicated M03 branch, and the worktree is clean. M04 is eligible to proceed under its own P14 preflight.
 
 **M01 inventory and migration map:** PASS; local ticket commit `bc6d1309a71f4a309469788074c381c8665e5490` created on its dedicated branch. M01-GIT-01 and M01-FH-01 remain carry-forward items; push/PR/merge remain pending at Batch A closure.
 

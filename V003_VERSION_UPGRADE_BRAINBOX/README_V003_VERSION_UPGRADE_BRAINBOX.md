@@ -131,7 +131,7 @@ These values describe the current local file at the time of the verification abo
 - **PHASE 01 EXECUTION / VERIFICATION HISTORY:** `PHASE01_POLISH_BRAINBOX/`
 - **PHASE 02 MIGRATION PLANNING / REPORTING:** `PHASE02_MIGRATION_BRAINBOX/`
 - **PHASE 01 STATUS:** CLOSED / FROZEN
-- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; M01, M02, and M03 independently verified PASS and committed locally on dedicated branches; M02-BR-01 and M03-REF-01 remain non-blocking/carry-forward; M04 has not started and branch creation is held on M04-BR-01 until the prior M03/reconciliation worktree is clean; Batch A push/PR/merge pending
+- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; M01, M02, and M03 independently verified PASS and committed locally on dedicated branches; M02-BR-01 and M03-REF-01 remain non-blocking/carry-forward; M04-BR-01 is resolved by local M03 reconciliation commit `895a926`, the M03 worktree is clean, and M04 is eligible under its own P14 preflight; Batch A push/PR/merge pending
 
 ## V003-P01 Scope
 

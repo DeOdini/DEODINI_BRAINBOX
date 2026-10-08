@@ -1,7 +1,7 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — M01, M02, and M03 independently verified PASS on dedicated local branches/commits; M02-BR-01 and M03-REF-01 remain batch-deferred/non-blocking; M04 has not started and branch creation is held on M04-BR-01 until the current M03/reconciliation worktree is clean; legacy sources retained; Batch A push/PR/merge pending
+**Status:** Living M01–M21 migration ledger — M01, M02, and M03 independently verified PASS on dedicated local branches/commits; M02-BR-01 and M03-REF-01 remain batch-deferred/non-blocking; M04-BR-01 resolved by M03 local reconciliation commit `895a926`; M04 eligible under its own P14 preflight; legacy sources retained; Batch A push/PR/merge pending
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
 **Active branch:** v003/m01-current-state-inventory-migration-map  
@@ -577,4 +577,4 @@ The change is a branch-reconciliation conversation-archive correction, not M04 w
 
 It must be committed/dispositioned on the appropriate prior/reconciliation history or reverted before M04 branch creation. Otherwise it would ride into M04 and violate ticket-specific attribution.
 
-**M04 remains NOT STARTED and must wait only for this local branch-isolation cleanup plus its own P14 preflight.**
+**Resolution — 2026-10-08:** The M03 conversation-archive correction and associated verification/reconciliation records were explicitly staged and committed on `v003/m03-governance-canonicalization` as `895a926` (`V003-M03 reconcile branch archive and verification records`). This preserves the dialogue archive correction in M03 history and keeps it out of M04. The subsequent `git status --short --branch` showed only the branch header, confirming a clean worktree. `M04-BR-01` is **RESOLVED**; M04 branch creation is permitted after its own P14 preflight. No push, PR, or merge was performed.

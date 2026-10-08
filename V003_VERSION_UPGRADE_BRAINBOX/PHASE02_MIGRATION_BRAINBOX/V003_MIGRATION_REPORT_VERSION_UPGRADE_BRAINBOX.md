@@ -2509,4 +2509,17 @@ This flag does **not** require any push/merge to resolve.
 
 **Codex branch/commit reconstruction is substantively verified.**
 
-The only current blocking issue is `M04-BR-01`: resolve the unstaged M03/reconciliation conversation-archive correction before creating or implementing M04.
+The only blocking issue at the time of that verification was `M04-BR-01`. Its later resolution is recorded below.
+
+## 11. M04-BR-01 Resolution — 2026-10-08
+
+The M03 conversation-archive correction and associated M03 reconciliation/verification records were preserved on their dedicated branch before M04 began.
+
+- Branch: `v003/m03-governance-canonicalization`
+- Local commit: `895a926` — `V003-M03 reconcile branch archive and verification records`
+- Commit content: five M03 support/archive files; 355 insertions and 13 deletions.
+- Pre-commit `git diff --cached --check`: clean.
+- Post-commit `git status --short --branch`: only the M03 branch header; worktree clean.
+- Push, PR, and merge: not performed.
+
+**M04-BR-01: RESOLVED.** The prior-ticket archive correction is committed to M03 and will not ride into M04. M04 may proceed on its own ticket branch after P14 preflight.
