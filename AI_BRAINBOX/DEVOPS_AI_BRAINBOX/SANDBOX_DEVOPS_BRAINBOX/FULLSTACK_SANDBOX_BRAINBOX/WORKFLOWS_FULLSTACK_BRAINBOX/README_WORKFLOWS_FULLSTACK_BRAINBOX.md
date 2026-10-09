@@ -71,3 +71,10 @@ The preset's n8n-primary/email-backup dispatch is untested source content. M10 d
 - [M10 ticket](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
 - [Living migration map](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 - [Parent navigation](../README_FULLSTACK_SANDBOX_BRAINBOX.md)
+
+
+---
+
+## Independent verification status — 2026-10-09
+
+V003-M10 independently verifies **PASS**. Both workflow copies are byte-identical to the retained RAW sources and remain explicitly unproven. BUILD_SEQUENCE and TEST_SEQUENCE remain workflow-side; no deployment procedure is claimed.
