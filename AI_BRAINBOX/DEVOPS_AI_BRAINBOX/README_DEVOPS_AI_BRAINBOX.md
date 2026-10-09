@@ -6,7 +6,8 @@
 **PURPOSE:** Define where execution-learning and production-operation records belong and navigate to their canonical domains.
 **MENTAL MODEL:** DEVOPS answers “How is work executed?” Sandbox is for experimentation and learning; Production records actual release and operation outcomes.
 **GOVERNED BY:** `GOVERNANCE_BRAINBOX/`, especially Evidence, Reference, Promotion, and Ticketing.
-**CANONICAL SOURCE:** Frozen V003 Specification §§8 and 10; V003 Origin Conversation; V003-M09 migration record.
+**CANONICAL SOURCE:** Frozen V003 Specification §§8 and 10; V003 Origin Conversation; V003-M09, M15, and M16 migration records.
+**POPULATION STATE:** Sandbox FootHive trial evidence is present under M15; the T20 FootHive Production summary is present under M16. Other Production operational branches remain empty unless stated in their local READMEs.
 **APPLIES TO:** DEODINI operators and agents creating or using execution, validation, release, and operations records.
 **LAST VERIFIED:** 2026-10-09
 
@@ -46,7 +47,10 @@ DEVOPS_AI_BRAINBOX/
     │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
     │       ├── .env.example [PLACEHOLDER ONLY]
     │       └── .gitignore [TEMPLATE]
-    ├── CASE_STUDIES_PROD_BRAINBOX/ [PLANNED — M16]
+    ├── CASE_STUDIES_PROD_BRAINBOX/ [PRESENT — M16]
+    │   └── FOOTHIVE_PROD_SUMMARY_BRAINBOX/
+    │       ├── README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
+    │       └── PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
     ├── PASSED_PROD_BRAINBOX/ [PRESENT — no records]
     ├── FAILED_PROD_BRAINBOX/ [PRESENT — no records]
     ├── INCIDENTS_PROD_BRAINBOX/ [PRESENT — no records]
@@ -94,13 +98,21 @@ DEVOPS_AI_BRAINBOX/
     |   +-- TEMPLATES_ENVIRONMENT_BRAINBOX/
     |       +-- .env.example
     |       +-- .gitignore
+    +-- CASE_STUDIES_PROD_BRAINBOX/
+    |   +-- FOOTHIVE_PROD_SUMMARY_BRAINBOX/
+    |       +-- README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
+    |       +-- PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
     +-- PASSED_PROD_BRAINBOX/.gitkeep
     +-- FAILED_PROD_BRAINBOX/.gitkeep
     +-- INCIDENTS_PROD_BRAINBOX/.gitkeep
     +-- REGRESSIONS_PROD_BRAINBOX/.gitkeep
 ~~~
 
-The FootHive Sandbox case study is present under the approved case-studies branch. The Production case-study/evidence areas remain empty/planned for M16; M15 did not create Production content or deploy anything.
+The FootHive Sandbox case study is present under M15. The M16 Production case-study branch now contains a summary of the recorded T20 release; Production PASSED, FAILED, INCIDENTS, and REGRESSIONS areas still have no records. M16 did not trigger a deployment.
+## M16 Production case-study update
+
+The M16 child summary documents the actual T20 Netlify deployment and recorded post-deployment checks from the canonical Sandbox Build Report. It does not copy the Sandbox evidence set, add a deployment procedure, claim current live status, or create other Production outcomes. The separate FootHive Portfolio child is indexed in the root `README_BRAINBOX.md`; the parent Portfolio README is assigned to M19.
+
 ## Domain boundary
 
 - **SANDBOX:** experiment, test, fail, refine, and validate. A Sandbox result remains accurately labeled and does not imply Production success.
@@ -113,7 +125,7 @@ The FootHive Sandbox case study is present under the approved case-studies branc
 
 The former project-workflow sources remain unchanged in their original location. M09 classified the two Fullstack workflow documents as proposed/raw and unproven without copying them. M10 then copied 001 and 002 into the Fullstack Workflows target without changing their content; the legacy originals remain pending M20. M10 also created empty architecture/orchestration placeholders and one reference-only, unverified AI-agent handoff classification. No workflow was promoted.
 
-The empty top-level legacy PROVEN and FAILED files contain no records. No Production operation, incident, or regression record was migrated from the M09 source set. The separate FootHive project/evidence source remains assigned to the later M15/M16 work and is not a Production record by implication.
+The empty top-level legacy PROVEN and FAILED files contain no records. No Production operation, incident, or regression record was migrated from the M09 source set. The separate FootHive project/evidence source was migrated under M15 to the Sandbox case study; M16 has separately summarized the T20 Production release. Sandbox evidence is not a Production record by implication.
 
 ## Related domains
 

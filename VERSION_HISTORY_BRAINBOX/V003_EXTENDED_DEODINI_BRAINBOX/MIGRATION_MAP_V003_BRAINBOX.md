@@ -1928,3 +1928,89 @@ M15-REF-01: six Build Report source-era evidence links and five historical conve
 Five authored FootHive case-study/navigation Markdown records: 33 local links / 0 broken, 0 trailing-space lines. Iteration 01 logical root only; Iterations 02/03/mastery planned; no physical iteration folders, no mastery/Production promotion. Earlier conversation transcript assembly error is marked, and the corrected Operator M15 prompt is preserved later. Closeout commit `08d89ad...` passes `git show --check`; historical source whitespace remains preserved.
 
 **Independent V003-M15: PASS. M16 P14 may follow after this M15 verification closeout is committed with a clean handoff.**
+
+
+---
+
+## 46. V003-M16 — FootHive Production Summary & Portfolio Migration
+
+**Ticket status:** AUTHORIZED FOR EXECUTION.
+**P14 preflight:** PASS; no blocking flag.
+**Implementation disposition:** Target Production and Portfolio records are populated on `v003/m16-foothive-production-portfolio`. The ticket branch is based on the verified M15 branch tip.
+**Canonical evidence authority:** M15 Sandbox case study. Production and Portfolio records link to it rather than copying its evidence set.
+
+### Source-to-target dispositions
+
+| Current source | Role / authority | M16 disposition | Removal / follow-up |
+|---|---|---|---|
+| `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md` | Canonical chronological build, release, and verification record, including T20 | Reference only from Production Lessons, Portfolio Handoff, Project Summary, and Case-Study Reference | Retain in Sandbox; no duplicate copy |
+| Sandbox `PASSED_FH_BRAINBOX.md` and `FAILED_FH_BRAINBOX.md` | Canonical workflow result and failure/flag history | Reference only from Portfolio Case-Study Reference | Retain in Sandbox |
+| Sandbox `CONVO_FH_BRAINBOX.md`, `OPERATOR_ADDENDUM_FH_BRAINBOX.md`, and `RETROSPECTIVE_FH_BRAINBOX.md` | Historical conversation, later Operator evidence/clarifications, and source-backed workflow lessons | Reference only; the Addendum is the authority for the Operator-confirmed form row and manual browser checks | Retain in Sandbox |
+| Sandbox `AUDITS_FH_BRAINBOX/` and `EVIDENCE_FH_BRAINBOX/` | Canonical audit and test evidence | No evidence copied to Production or Portfolio; reference through the canonical Sandbox README/Reference Index | Retain in Sandbox |
+| `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` | Legacy placeholder | Confirmed zero bytes; no content inferred or migrated | Remains unchanged for M20 review |
+| Separate FootHive website repository and T20 deployment | Website source and release provenance | Referenced by repository URL, release commit, deployment ID, timestamp, and public URL as stated in the Sandbox Build Report | No website repository or deployment changed by M16 |
+
+### Target records created or reconciled
+
+- `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md`
+- `.../PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md`
+- `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md`
+- `.../HANDOFF_FOOTHIVE_BRAINBOX.md`
+- `.../PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md`
+- `.../CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md`
+- Updated `README_PROD_DEVOPS_BRAINBOX.md` and `README_BRAINBOX.md` to report the actual M16 population state and local trees.
+
+### Production evidence and disclosure
+
+The T20 source record identifies Netlify deployment `6abeab441468890009114676`, state ready/public, published 2026-10-01, from FootHive `main` commit `1916fc59a38bf84125e966e0f2008b4e78749653`; the recorded public URL is `https://foothive.netlify.app/`. The records report no second production deployment. Later repository cleanup advanced GitHub `main` without a website source change or new deployment. M16 does not assert a current live recheck.
+
+The M16 Portfolio records preserve the disclosure that FootHive was a DEODINI workflow trial based on a public Upwork brief, with the Operator role-playing the client. No paid engagement, client acceptance, checkout, backend, database, or in-site product editor is claimed. Pinterest remained the approved trial destination. The Operator Addendum's form-response screenshot confirmation is referenced; no duplicate response or screenshot was created.
+
+### Flags and boundaries
+
+#### M16-README-01 — BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact object:** `PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md`, which is in the frozen target tree but remains absent on the M16 branch.
+- **Defect/evidence:** M16 authorizes the FootHive child and its four target records, not the parent Portfolio README. The parent README and global population/reference reconciliation are assigned to M19. The root README and FootHive child README now expose the actual partial population and M19 boundary.
+- **Migration impact:** FootHive Portfolio records are navigable from the root current-local tree and their own child README. Parent-level Portfolio navigation remains incomplete until M19.
+- **Next-ticket impact:** No M16 target record depends on the absent parent README; M19 owns the parent-level README and reconciliation. No evidence or source-file handling is blocked.
+- **Classification reason:** BATCH-DEFERRED / NON-BLOCKING under the Operator's flag rule; creating the parent file here would expand the ticket beyond its enumerated Target B, while the current tree is accurately exposed and M19 is the assigned owner.
+- **Correction timing/owner:** M19 — README / Canonical Reference / Population-State Reconciliation. Do not create or rewrite the parent Portfolio README as an unscoped M16 change.
+
+M15-ASSET-01 and M15-REF-01 remain BATCH-DEFERRED / NON-BLOCKING as recorded in §44; neither is required for M16 because no source-only asset or historical link is promoted or rewritten. The empty legacy Portfolio placeholder and all canonical Sandbox source/evidence remain intact. No file was moved, renamed, deleted, or copied from the historical evidence set.
+
+
+### M15 verification and M16 implementation Git state — 2026-10-09
+
+- ChatGPT's nine M15 verification-state edits were reviewed, staged, committed as 2baffb5e554ec62a2ee8f422f66c428efe654beb, and pushed to the dedicated M15 branch. A fetch confirmed local and origin tips equal and the worktree clean.
+- M16 branch: v003/m16-foothive-production-portfolio, created from the verified M15 tip above.
+- M16 implementation commit: b615856aab6013c43917095615342175a36e6ab3. The origin branch was checked with ls-remote and matched the commit after push.
+- The M16 report/conversation and this Migration Map Git closeout are included in the subsequent documentation closeout on the same branch.
+- Neither ticket branch was merged and no PR was created. Batch D remains open; M16 independent ChatGPT verification is pending.
+
+
+---
+
+## 47. ChatGPT Independent Verification — V003-M16 — 2026-10-09
+
+**Result:** PASS.
+**Blocking M16 flags:** NONE.
+**M16-README-01:** BATCH-DEFERRED / NON-BLOCKING — M19.
+**M17 handoff:** dependency-ready after M16 verification publication and clean worktree.
+
+Independent local/GitHub verification:
+
+- M15 verification publication `2baffb5e554ec62a2ee8f422f66c428efe654beb`.
+- M16 implementation `b615856aab6013c43917095615342175a36e6ab3`.
+- M16 documentation closeout and pre-verification branch tip `7d7f26f22468e9b64c8565dfaf53a44eda64c1a6`.
+- Local/upstream/GitHub branch tips matched, ahead/behind 0/0, worktree clean, no M16 PR/merge, M17 branch absent. Main unchanged at `d8296578e53ea75509c3c3fee15f21c99dbfeab7`.
+- Two Production summary records and four Portfolio records exist, with root/DEVOPS/Migration Map navigation consistent with their intended scope.
+- Canonical Sandbox FootHive records remain unchanged and are referenced, not copied into Production/Portfolio.
+- T20 Netlify ID `6abeab441468890009114676`, merge commit `1916fc59a38bf84125e966e0f2008b4e78749653`, publication time `2026-10-01T18:49:47.720Z`, and historic deployment URL are confirmed in the source Build Report. Operator Addendum supports the separate Operator-confirmed T20 form persistence and manual browser statements.
+- Portfolio truthfully discloses a workflow trial based on a public Upwork brief; no unsupported paid-client/acceptance claim.
+- Legacy `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` remains zero bytes and is unchanged.
+- Parent `PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md` is physically absent; M19 owns correction under M16-README-01; no M16 or M17 dependency blocker.
+- All 10 implementation-commit Markdown records: 67 local links / 0 broken; eight authored M16 Production/Portfolio/DEVOPS records: 0 trailing-space lines. Complete M16 range passes `git diff --check`, and only Markdown files changed.
+- No new production deployment, site check, form submission, application code, Sandbox archive rewrite or source retirement was evidenced by M16 changes. The Codex report states none of those runtime actions were performed.
+
+**V003-M16 independent verification: PASS. M17 follows after publication of this verification closeout on M16 and clean dedicated-branch handoff.**
