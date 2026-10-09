@@ -3031,3 +3031,246 @@ M09 and M10 are merged and independently confirmed as ancestors of updated main 
 <pre>
 M11, M12, M13, and M14 are now merged as PRs #30–#33; M09 and M10 were #28–#29. Each merge was followed by a fresh main fetch and an ancestry check. I’m doing the final all-branch check now, then I’ll publish a Batch C closeout record that lists every merge SHA and the remaining deferred flags.
 </pre>
+---
+
+## V003-M15 — FootHive Canonical Sandbox Evidence & Iteration Migration — 2026-10-09
+
+## De O'Dini — Operator (verbatim)
+
+<pre>
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE BY CHATGPT, ONCE DONE, NOW PROCEED TO M15, ONCE YOU ARE DONE WITH M15, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+**# V003-M15 — FootHive Canonical Sandbox Evidence & Iteration Migration**
+
+**\*\*Status:\*\*** AUTHORIZED FOR EXECUTION
+**\*\*Suggested branch:\*\*** `v003/m15-foothive-sandbox-evidence-iteration`
+**\*\*Dependencies:\*\*** `M09, M10, M11, M12; production/portfolio references later depend on this ticket.`
+
+**\*\*Canonical authorities\*\***
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+## Scope
+
+Codex transcript assembly error: the M01 inventory text that follows was mistakenly inserted here and was not part of the Operator's M15 prompt.
+
+`VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md`
+
+The map is a living migration ledger, not a guessed one-time mapping. M01 must establish enough baseline evidence that later rename/move/delete tickets can prove what existed before migration and can recover safely from an error.
+
+## Required inventory and baseline
+
+Record at least:
+
+- current root paths;
+- every current governed README/authority file;
+- current FUNC files;
+- current project/raw/proven/failed sources;
+- current FootHive files/folders/assets/evidence;
+- current Skills sources;
+- current Portfolio sources;
+- current Milestones sources;
+- current Version History sources;
+- the V003 authority container plus Phase 01 and Phase 02 support records;
+- empty legacy folders/files;
+- current Git branch, HEAD, upstream, status, ahead/behind state, relevant refs, and whether untracked working-tree material exists;
+- current references to legacy paths where materially relevant;
+- integrity baselines (for example SHA-256 plus size/line count where practical) for historical/canonical sources likely to be copied, moved, or retired;
+- a verified repository-history/recovery method appropriate to the migration before destructive tickets begin. If a Git bundle or similar Git-only backup is used, explicitly record that it does not preserve unrelated untracked working-tree files/configuration and inventory those separately.
+
+For each migration source, record:
+
+- current path;
+- content role;
+- authority role;
+- target candidate;
+- canonical/reference/historical/deprecated/empty state;
+- split/merge/rename requirement;
+- evidence/historical sensitivity;
+- integrity/baseline reference where needed;
+- source-removal eligibility;
+- dependent M-ticket;
+- unresolved flag if destination is not yet authoritative.
+
+## Success gate
+
+- Migration map exists and is source-backed.
+- Git/current-state baseline and relevant integrity data are recorded.
+- Recoverability/backup evidence is documented sufficiently for later destructive tickets; no claim is made that Git history alone preserves untracked state.
+- No filesystem migration occurs beyond creating/updating the M01 migration ledger/support record.
+- No source is renamed/moved/deleted.
+- Unknown destinations are recorded as flags/TBD, not guessed.
+- Map is structured so later Mxx tickets can append verified dispositions.
+</pre>
+
+## Codex — progress updates retained verbatim
+
+### M15 progress 1
+
+<pre>
+The M15 preflight supports proceeding with the canonical records and evidence. The case-study root and its required filenames are explicit, so I’ll keep Iteration 01 as a logical dataset at that root and create no iteration subfolders. I found nine source assets byte-identical in the external FootHive repository; the remaining unused product/catalog assets have no approved Brainbox destination, so I’ll retain them unchanged and flag that asset transfer rather than place them in Evidence. The actual deep-audit attachment is available and has no credential-pattern matches.
+</pre>
+
+### M15 progress 2
+
+<pre>
+The M15 branch now exists from the verified `main` tip, and the case-study destination was absent before the change. I’m copying the five historical records, 37 existing evidence files, two design-direction artifacts, and the located original audit as byte-preserving transfers. The integrity manifest will record each source/destination path and SHA-256 result; the old source tree will remain untouched.
+</pre>
+
+### M15 progress 3
+
+<pre>
+I’ve completed the requested cross-check: there is no pending ChatGPT verification change on `main` to publish first. I’m continuing M15 on its own ticket branch, preserving the existing FootHive source tree and documenting the two scoped follow-up flags.
+</pre>
+
+### M15 progress 4
+
+<pre>
+The fresh repository check confirms the M15 branch is based on the current synchronized `main`, with only the new case-study destination untracked; the legacy FootHive source remains intact. I also found that the old Batch C closeout text still says M15 had not started, which was accurate at that earlier date. I’ll append the M15 execution as a dated update instead of rewriting that historical record.
+</pre>
+
+### M15 progress 5
+
+<pre>
+The source inventory is 83 files: five historical records, one stale pre-build README, 37 existing test/evidence files, two design-direction images, and 38 source-asset/catalog files. I verified nine source assets already match files in the separate FootHive website repository; the other 29 have no approved Brainbox destination, so they will stay in the legacy source and be tracked as a batch-deferred asset flag.
+</pre>
+
+### M15 progress 6
+
+<pre>
+The transferred records are intact, and the new navigation links resolve. I found eleven stale references inside the byte-preserved historical copies: six old evidence links in the build report and five absolute source links in the conversation. I’m keeping those verbatim and recording them for M19. The nine website assets are confirmed by hash; the remaining 29 source assets stay in place under the non-blocking asset flag.
+</pre>
+
+### Git closeout progress 1
+
+<pre>
+The M15 copy and integrity checks are complete. I’m moving into the first Git closeout now: stage only the M15 implementation and its scoped authority/map updates, inspect the staged diff, then commit and push this ticket branch. I’ll record the execution report in a separate follow-up commit after verifying the first push.
+</pre>
+
+### Git closeout progress 2
+
+<pre>
+The first staging attempt hit Windows’ path-length limit on one nested Playwright log, so Git did not finish adding the M15 tree. I’m checking for any partial index changes and will retry with Git’s long-path handling enabled; this preserves the evidence filenames and structure.
+</pre>
+
+### Git closeout progress 3
+
+<pre>
+Git’s long-path retry successfully staged the full M15 set. The staged whitespace check flags trailing spaces already present in the copied historical Build Report, PASSED/FAILED records, and conversation; changing those would break the required byte-for-byte evidence copy. I’m checking the newly authored navigation/status files separately and confirming the staged counts before commit.
+</pre>
+
+### Git closeout progress 4
+
+<pre>
+The staged set is 57 paths: 51 new case-study/evidence files and six existing authority/map updates, with no deletions. The authored documentation passes `git diff --cached --check`; whitespace warnings are confined to verbatim historical copies. Commit `6c25f12` is created on the M15 branch. I’m pushing that implementation commit now.
+</pre>
+
+### Git closeout progress 5
+
+<pre>
+The push succeeded and GitHub created the remote branch at the M15 implementation commit. I’m fetching that branch back now to verify the remote tip equals local `6c25f12`, before writing the report and conversation closeout.
+</pre>
+
+
+---
+
+## Operator prompt correction — V003-M15 — verbatim task text
+
+<pre>
+NOW PROCEED TO
+
+**# V003-M15 — FootHive Canonical Sandbox Evidence & Iteration Migration**
+
+**Status:** AUTHORIZED FOR EXECUTION
+**Suggested branch:** `v003/m15-foothive-sandbox-evidence-iteration`
+**Dependencies:** `M09, M10, M11, M12; production/portfolio references later depend on this ticket.`
+
+**Canonical authorities**
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+## Current source
+
+`AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/`
+
+including:
+
+- Build Report;
+- PASSED;
+- FAILED;
+- Conversation;
+- Operator Addendum;
+- current EVIDENCE;
+- FH mandatory README;
+- design direction images;
+- product image/source-asset folders;
+- logo assets.
+
+## Canonical target
+
+`AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/`
+
+Required canonical evidence set:
+
+- `README_FH_WORKFLOW_TRIAL_BRAINBOX.md`
+- `BUILD_REPORT_FH_BRAINBOX.md`
+- `PASSED_FH_BRAINBOX.md`
+- `FAILED_FH_BRAINBOX.md`
+- `CONVO_FH_BRAINBOX.md`
+- `OPERATOR_ADDENDUM_FH_BRAINBOX.md`
+- `AUDITS_FH_BRAINBOX/`
+- `EVIDENCE_FH_BRAINBOX/`
+- `RETROSPECTIVE_FH_BRAINBOX.md`
+
+## Critical rules
+
+- Current records = Iteration 01 existing experimental dataset.
+- Migration does not close the experiment.
+- Iteration 02 = [PLANNED].
+- Iteration 03 = [PLANNED].
+- Workflow Mastery Assessment = [PLANNED].
+- Website version and workflow iteration remain separate dimensions.
+- Do not fabricate Iteration 02/03 evidence.
+- Do not claim mastery.
+- The exact physical iteration subfolder layout must be decided from Phase 02 migration evidence/Operator direction; if the frozen authority does not uniquely determine the layout, stop and report before creating iteration directories. The earlier Deep Research package's fixed iteration-folder tree is historical proposal material, not current filesystem authority.
+- Before copying/relocating Build Report, PASSED, FAILED, conversation, Operator Addendum, evidence, or other historical trial records, capture source integrity data and verify destination equality after transfer before any later source retirement.
+- Inspect OPERATOR_ADDENDUM_FH_BRAINBOX.md and related provenance for the original deep-audit source. If the actual audit can be located, preserve/copy it with provenance and integrity verification. If it cannot be located, do not reconstruct the audit from summary prose; record the missing-source state and create only whatever reference/readme treatment is separately supported by the frozen authority and P12 naming rules.
+- Current source asset/image folders do not automatically belong inside EVIDENCE_FH_BRAINBOX/. Inspect and classify:
+  - test/audit evidence;
+  - project source assets;
+  - design reference;
+  - portfolio reference;
+  - external project-repository asset.
+- If no approved target exists for a source-asset class, stop and flag rather than forcing it into evidence.
+- A new retrospective may summarize existing evidence only with explicit provenance; do not invent outcomes.
+
+## Success gate
+
+- One canonical Sandbox evidence set exists.
+- All current FootHive source children have an explicit disposition in the migration map.
+- Historical trial records transferred under this ticket have source/destination integrity evidence where practical.
+- Deep-audit provenance has been resolved to an actual source or explicitly recorded as unavailable without fabrication.
+- No evidence is lost.
+- No asset is misclassified solely by filename.
+- Planned future iterations remain unexecuted.
+- Original source remains until M20.
+
+</pre>
+
+---
+
+# ChatGPT Independent Verification Closure — V003-M15 — 2026-10-09
+
+**Result: M15 PASS. No blocking M15 flags.**
+
+Independent live GitHub/local Git and physical file checks confirm M15 branch `v003/m15-foothive-sandbox-evidence-iteration`, implementation `6c25f120fcce1d90f583921b3db0f7252e5f30fc`, and documentation closeout `08d89ad06b64ac9c7abf6092375ae6c65d00ac21`. Local/upstream/GitHub branch tips matched before this verification write; worktree was clean, ahead/behind 0/0, branch unmerged, no PR, no M16 branch.
+
+Every one of 45 independent copy-integrity manifest rows was recalculated directly from both physical files: 0 mismatches, 45 unique source/destination paths, total 3,623,461 source bytes. Manifest SHA-256 is `6bb20277f377295e0439e2b9a9ab7cf9aee484f3031b57317ad9afc1278f309d`. The destination has 50 files and no zero-byte files. Deep Audit source was located externally and preserved exactly: 37,224 bytes / 749 lines / SHA-256 `de429ebbd2c6ae561b71954834df6f240c57b5fef91fdb6897ab2cef470bf746`.
+
+All 83 legacy FootHive files remain unchanged. Of those, 44 original-source items were copied; one original pre-build README remains historical; nine original asset files SHA-match files in the separate website repository; and 29 product/catalog assets have no approved destination and remain source-only. The separate original Deep Audit is the 45th transferred file.
+
+M15-ASSET-01 = BATCH-DEFERRED / NON-BLOCKING (29 source-only files; 25 product images and four catalogs; 32 historical catalog references preserved). M15-REF-01 = BATCH-DEFERRED / NON-BLOCKING (six historical Build Report links and five original-source conversation links confirmed; M19 owns reference reconciliation).
+
+Five authored case-study/navigation Markdown files have 33 valid local links / 0 broken and 0 trailing-whitespace lines. Iteration 01 remains the current evidence dataset; Iterations 02/03 and mastery remain PLANNED; website version history is distinct; no physical iteration subfolders. The earlier M15 conversation transcript assembly error is visibly annotated and the corrected Operator prompt is present later. The documentation closeout commit passes `git show --check`; historical copied-record whitespace remains unchanged for source equality.
+
+**M16 is substantively dependency-ready after this independent closeout is committed and the M15 worktree returns clean.** Do not move unresolved assets or rewrite archived links as a hidden part of M16. No PR/merge, application tests, deployment, or source retirement was performed by ChatGPT.

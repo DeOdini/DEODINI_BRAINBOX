@@ -1832,3 +1832,99 @@ All listed flags are BATCH-DEFERRED / NON-BLOCKING or intentionally preserved; n
 **Next ticket:** M15 was not started. It is next only after this Batch C closeout is integrated and its own P14 preflight passes.
 
 **Detailed closeout:** `V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md`; exact Operator/Codex turn transcript: `V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md`.
+
+
+---
+
+## 44. V003-M15 - FootHive Canonical Sandbox Evidence & Iteration Migration
+
+**Execution date:** 2026-10-09
+**Ticket branch:** v003/m15-foothive-sandbox-evidence-iteration
+**Base:** main at d8296578e53ea75509c3c3fee15f21c99dbfeab7; origin/main matched before branch creation.
+**Preflight:** P14 PASS. The approved target was absent; M09-M14 dependencies were present on merged main; no tracked or untracked work outside the new M15 destination was present.
+**State:** Implementation created locally; source tree retained; independent verification and batch closure remain separate.
+
+### Source-to-target disposition
+
+| Current source object | Role and authority | M15 target/disposition | Integrity and status | Removal/dependency |
+|---|---|---|---|---|
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md | Historical project build record; authority for its dated project-build statements | Copied byte-for-byte to AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md | One row in the copy manifest; source/destination byte and SHA-256 match | Retain source until M20; later Portfolio may reference in M16 |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/PASSED_FH_BRAINBOX.md | Historical accepted decisions and pass-record authority | Copied byte-for-byte to the canonical case-study root | One row in the copy manifest; exact match | Retain until M20; M16 may reference |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FAILED_FH_BRAINBOX.md | Historical failures, exclusions, and review-flag record | Copied byte-for-byte to the canonical case-study root | One row in the copy manifest; all 11 image exclusions preserved | Retain until M20; asset/catalog disposition remains open |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/CONVO_FH_BRAINBOX.md | Chronological historical conversation | Copied byte-for-byte to the canonical case-study root | One row in the copy manifest; exact match, no normalization | Retain until M20; old relative references are tracked under M15-REF-01 |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/OPERATOR_ADDENDUM_FH_BRAINBOX.md | Later Operator clarification to the original audit | Copied byte-for-byte to the canonical case-study root | One row in the copy manifest; exact match; T20 persistence remains Operator-confirmed | Retain until M20; M16 may reference |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FH_MUST_README.md | Historical pre-build navigation/status snapshot | Not copied as canonical navigation. Replaced at the target by README_FH_WORKFLOW_TRIAL_BRAINBOX.md; original remains untouched | Its own current-state notice and embedded pre-build material are retained as source history | Retain until M20 after destination and reference checks |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/ (37 files) | Existing project test/audit evidence | Copied under EVIDENCE_FH_BRAINBOX into HEADER_REVIEW_FH_BRAINBOX, PLAYWRIGHT_FH_BRAINBOX, T11_RESPONSIVE_QA_FH_BRAINBOX, and T23_MOBILE_HEADER_FH_BRAINBOX/PLAYWRIGHT_CLI_FH_BRAINBOX | Every file has source/destination size and SHA-256 in the manifest; all equal | Retain source until M20; these remain prior evidence, not M15 tests |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/DIRECTION A & B IMAGES/ (2 files) | Historical workflow design-direction artifacts | Copied to EVIDENCE_FH_BRAINBOX/DESIGN_DIRECTIONS_FH_BRAINBOX/ | Both manifest rows compare equal; retained as historical choices, not new requirements | Retain source until M20 |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/ (10 files: 9 images and one catalog) | Product source assets and a catalog, not test evidence | Three product images SHA-256 match files in C:/Users/USER/FOOTHIVE/assets/products; remaining six images and one catalog stay in source | No product asset/catalog copied into EVIDENCE | No removal before M20 disposition; catalog references remain unchanged |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/ (10 files: 9 images and one catalog) | Product source assets and a catalog | Two product images match existing website-repository assets; remaining seven images and one catalog stay in source | No product asset/catalog copied into EVIDENCE | No removal before M20 disposition |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE LOGO + DARK MODE/ (2 files) | Logo source assets | Both logo files match the existing C:/Users/USER/FOOTHIVE/assets/logo files; no duplicate created in this case study | Exact hash matches; source unchanged | Retain until M20; existing website repository remains their project asset location |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/ (5 files: 4 images and one catalog) | Product source assets and a catalog | Two product images match existing website-repository assets; remaining two images and one catalog stay in source | The excluded Adidas-marked image remains excluded under FAILED_FH_BRAINBOX.md; no catalog/link change | No removal before M20 disposition |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/ (11 files: 10 images and one catalog) | Product source assets and a catalog | All eleven files stay in source pending an approved asset destination; none is copied to EVIDENCE | Existing third-party-brand exclusions remain as recorded; source unchanged | No removal before M20 disposition |
+| Operator attachment 808d07cb-df14-43f9-a784-286aac6e23ba/Pasted text.txt | Actual original DEODINI Brainbox / FootHive Deep Audit | Exact-content copy at AUDITS_FH_BRAINBOX/DEEP_AUDIT_ORIGINAL_FH_BRAINBOX.md | 37,224 bytes; 749 lines; SHA-256 DE429EBBD2C6AE561B71954834DF6F240C57B5FEF91FDB6897AB2CEF470BF746; equality verified | External attachment retained; provenance README names the source |
+| Source parent and all source children | Legacy project-source boundary | No source file/folder moved, renamed, overwritten, or deleted | 83 source files remain at the original path at post-copy inventory | M20 retirement only after destination, dependency, integrity, and reference checks |
+
+The source asset folders contain 38 files total: 32 product images, four catalogs, and two logo files. Nine files (seven product images and two logos) hash-match existing files in the separate FootHive website repository. The remaining 29 files (25 product images and four catalogs) have no approved Brainbox target and remain unchanged in the source. The 32 broken catalog-image references recorded by M01-FH-01 were not edited. The 11 exclusions listed in FAILED_FH_BRAINBOX.md remain in place.
+
+The exact 45 transferred records are enumerated in EVIDENCE_FH_BRAINBOX/COPY_INTEGRITY_MANIFEST_FH_BRAINBOX.csv with original relative source path, destination path, bytes, source and destination SHA-256, and ByteEqual. All 45 comparisons passed. The manifest itself is a new M15 integrity record and is not one of the 45 copied files.
+
+### Iteration placement and population state
+
+The frozen Specification identifies the existing trial corpus as Iteration 01 and does not prescribe a physical iteration-subfolder layout. The case-study root therefore represents the logical Iteration 01 dataset. M15 created no ITERATION_01, ITERATION_02, or ITERATION_03 directories. Iterations 02 and 03 and Workflow Mastery Assessment remain [PLANNED]. Website ticket/version history is a separate dimension. No workflow closure or mastery is claimed.
+
+### Flags and dispositions
+
+#### M15-ASSET-01 - BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact object:** the 29 source-only product-image/catalog files in the four product-image source folders; no target is defined for this asset class in the frozen M15 evidence tree.
+- **Defect/evidence:** these comprise 25 product images and four catalogs, after nine files hash-matched to the separate website repository. The four catalogs have the 32 unresolved relative image references recorded by M01-FH-01. Product source files are not test evidence and were not forced into EVIDENCE.
+- **Migration impact:** the 29 files remain unchanged at the legacy source path. The required historical record/evidence set is complete without inventing an asset destination. The nine hash-matched assets already exist in the separate project repository.
+- **Next-ticket impact:** M16 can reference the canonical case study and website repository assets without relying on the 29 unplaced files. M20 source retirement must wait for a source-asset disposition. No current dependent M-ticket requires these files to be copied into the case study.
+- **Classification reason:** BATCH-DEFERRED / NON-BLOCKING under the Operator's Phase 02 flag rule; it affects only source-only asset placement and does not compromise historical evidence transfer, case-study authority, or M16's reference path.
+- **Proposed correction/timing/owner:** retain all 29 at source. A later Operator-authorized ticket must decide the destination/disposition before M20. No filename-driven migration.
+
+#### M15-REF-01 - BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact object:** six relative links in AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md at lines 922, 924, and 942-945; five absolute old-source links in the copied CONVO_FH_BRAINBOX.md at lines 3842 and 4250.
+- **Defect/evidence:** the six BUILD_REPORT links target old EVIDENCE/header-review and EVIDENCE/T11-responsive-qa paths, which are now grouped under EVIDENCE_FH_BRAINBOX. The five CONVO links use /C:/Users/USER/DEODINI_BRAINBOX/AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/ paths. A link scan found 33 links in the five newly authored READMEs with zero broken links; these eleven historical references remain unresolved because copied source bytes were preserved.
+- **Migration impact:** historical text and source hashes remain intact; current case-study navigation is supplied by the newly authored README files.
+- **Next-ticket impact:** M16 can use the canonical README and direct links to the records; no M16 dependency requires rewriting the archived conversation or reports.
+- **Classification reason:** BATCH-DEFERRED / NON-BLOCKING under the Operator's Phase 02 flag rule; this is a reference-resolution issue, not loss or corruption of historical evidence.
+- **Proposed correction/timing/owner:** M19 reference reconciliation may provide current navigation or resolve references under its scope while preserving M15 archive bytes. Do not edit the historical copies in M15.
+
+### M15 target records and boundaries
+
+Created the FootHive case-study README, Audit README, Evidence README, and initial source-backed Retrospective. Created CASE_STUDIES_SANDBOX_BRAINBOX/README_CASE_STUDIES_SANDBOX_BRAINBOX.md and updated Sandbox, DEVOPS, and root population navigation. The README states the Iteration 01 logical-root placement, planned future iterations/mastery, website-version separation, audit provenance, and source-retention boundaries.
+
+No Iteration 02/03 evidence, mastery claim, asset promotion, catalog repair, application test, additional form submission, Production case study, deployment, source move/rename/delete, or legacy-source retirement occurred. Codex implementation checks, execution report, and Git publication are recorded in the Phase 02 report and conversation archive; independent ticket verification remains pending.
+
+### M15 implementation Git state — 2026-10-09
+
+- Dedicated ticket branch: v003/m15-foothive-sandbox-evidence-iteration.
+- Branch base: synchronized main at d8296578e53ea75509c3c3fee15f21c99dbfeab7.
+- Implementation commit: 6c25f120fcce1d90f583921b3db0f7252e5f30fc.
+- Push and fetched origin tip: confirmed equal to local HEAD.
+- Worktree after implementation commit: clean.
+- No PR/merge; M15 remains on its own unmerged branch.
+- The report records the 57-path staging result, original historical whitespace preservation, and the Windows long-path workaround.
+---
+
+## 45. ChatGPT Independent Verification — V003-M15 — 2026-10-09
+
+**Result:** PASS.
+**Blocking flags:** NONE.
+**M16:** dependency-ready after M15 verification publication and clean branch handoff.
+
+Independent GitHub/local Git confirmed implementation `6c25f120fcce1d90f583921b3db0f7252e5f30fc`, closeout `08d89ad06b64ac9c7abf6092375ae6c65d00ac21`, matching pre-verification local/upstream/GitHub M15 tips, clean worktree, 0/0 ahead/behind, no PR/merge, M16 not started, and parent Batch C main `d8296578e53ea75509c3c3fee15f21c99dbfeab7`.
+
+Independent physical integrity recheck: 45 source/destination pairs; 45 unique source paths and destinations; no missing file, byte/size/hash mismatch; 3,623,461 bytes transferred. Manifest SHA-256 `6bb20277f377295e0439e2b9a9ab7cf9aee484f3031b57317ad9afc1278f309d`. Destination 50 files, all nonzero. Original audit 37,224 bytes / 749 lines / hash `de429ebbd2c6ae561b71954834df6f240c57b5fef91fdb6897ab2cef470bf746` independently verified via manifest source/destination and destination read-back.
+
+Original FootHive subtree has 83 unchanged files: 44 copied from legacy source, one retained pre-build README, nine asset SHA matches under `C:\Users\USER\FOOTHIVE\assets`, and 29 unplaced product/catalog files. The original audit, sourced from an external attachment, forms copied item 45. No source rewrite, move or deletion.
+
+M15-ASSET-01: 29 unplaced files, 25 product images + four catalogs, BATCH-DEFERRED/NON-BLOCKING; leave in original source until separately approved disposition before M20. M01-FH-01's 32 historical broken catalog references remain unchanged.
+
+M15-REF-01: six Build Report source-era evidence links and five historical conversation old-source links, BATCH-DEFERRED/NON-BLOCKING; M19 owns canonical reference reconciliation. Do not silently edit byte-preserved copies.
+
+Five authored FootHive case-study/navigation Markdown records: 33 local links / 0 broken, 0 trailing-space lines. Iteration 01 logical root only; Iterations 02/03/mastery planned; no physical iteration folders, no mastery/Production promotion. Earlier conversation transcript assembly error is marked, and the corrected Operator M15 prompt is preserved later. Closeout commit `08d89ad...` passes `git show --check`; historical source whitespace remains preserved.
+
+**Independent V003-M15: PASS. M16 P14 may follow after this M15 verification closeout is committed with a clean handoff.**

@@ -25,7 +25,7 @@ DEVOPS_AI_BRAINBOX/
 │   ├── README_SANDBOX_DEVOPS_BRAINBOX.md [PRESENT]
 │   ├── FULLSTACK_SANDBOX_BRAINBOX/ [PRESENT — M10]
 │   │   └── README_FULLSTACK_SANDBOX_BRAINBOX.md [PRESENT]
-│   ├── CASE_STUDIES_SANDBOX_BRAINBOX/ [PLANNED — M15]
+│   ├── CASE_STUDIES_SANDBOX_BRAINBOX/ [PRESENT - M15]
 │   ├── PASSED_SANDBOX_BRAINBOX/ [PLANNED]
 │   └── FAILED_SANDBOX_BRAINBOX/ [PLANNED]
 └── PROD_DEVOPS_BRAINBOX/
@@ -57,48 +57,50 @@ The nested target structure is defined by the frozen Specification §8. The root
 
 ## Current local tree
 
-```text
+~~~text
 DEVOPS_AI_BRAINBOX/
-├── README_DEVOPS_AI_BRAINBOX.md
-├── SANDBOX_DEVOPS_BRAINBOX/
-│   ├── README_SANDBOX_DEVOPS_BRAINBOX.md
-│   └── FULLSTACK_SANDBOX_BRAINBOX/
-│       └── README_FULLSTACK_SANDBOX_BRAINBOX.md
-└── PROD_DEVOPS_BRAINBOX/
-    ├── README_PROD_DEVOPS_BRAINBOX.md
-    ├── FULLSTACK_PROD_BRAINBOX/
-    │   ├── README_FULLSTACK_PROD_BRAINBOX.md
-    │   ├── WORKFLOWS_PROD_BRAINBOX/
-    │   │   └── .gitkeep
-    │   ├── RELEASE_PROD_BRAINBOX/
-    │   │   └── .gitkeep
-    │   ├── DEPLOYMENT_PROD_BRAINBOX/
-    │   │   └── .gitkeep
-    │   ├── OPERATIONS_PROD_BRAINBOX/
-    │   │   └── .gitkeep
-    │   └── MONITORING_PROD_BRAINBOX/
-    │       └── .gitkeep
-    ├── ENVIRONMENT_PROD_BRAINBOX/
-    │   ├── README_ENVIRONMENT_PROD_BRAINBOX.md
-    │   ├── ENV_VARIABLES_BRAINBOX.md
-    │   ├── ENV_SECURITY_BRAINBOX.md
-    │   ├── ENV_ROTATION_BRAINBOX.md
-    │   ├── ENV_VALIDATION_BRAINBOX.md
-    │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
-    │       ├── .env.example
-    │       └── .gitignore
-    ├── PASSED_PROD_BRAINBOX/
-    │   └── .gitkeep
-    ├── FAILED_PROD_BRAINBOX/
-    │   └── .gitkeep
-    ├── INCIDENTS_PROD_BRAINBOX/
-    │   └── .gitkeep
-    └── REGRESSIONS_PROD_BRAINBOX/
-        └── .gitkeep
-```
++-- README_DEVOPS_AI_BRAINBOX.md
++-- SANDBOX_DEVOPS_BRAINBOX/
+|   +-- README_SANDBOX_DEVOPS_BRAINBOX.md
+|   +-- FULLSTACK_SANDBOX_BRAINBOX/
+|   |   +-- README_FULLSTACK_SANDBOX_BRAINBOX.md
+|   +-- CASE_STUDIES_SANDBOX_BRAINBOX/
+|       +-- README_CASE_STUDIES_SANDBOX_BRAINBOX.md
+|       +-- FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/
+|           +-- README_FH_WORKFLOW_TRIAL_BRAINBOX.md
+|           +-- BUILD_REPORT_FH_BRAINBOX.md
+|           +-- PASSED_FH_BRAINBOX.md
+|           +-- FAILED_FH_BRAINBOX.md
+|           +-- CONVO_FH_BRAINBOX.md
+|           +-- OPERATOR_ADDENDUM_FH_BRAINBOX.md
+|           +-- AUDITS_FH_BRAINBOX/
+|           +-- EVIDENCE_FH_BRAINBOX/
+|           +-- RETROSPECTIVE_FH_BRAINBOX.md
++-- PROD_DEVOPS_BRAINBOX/
+    +-- README_PROD_DEVOPS_BRAINBOX.md
+    +-- FULLSTACK_PROD_BRAINBOX/
+    |   +-- README_FULLSTACK_PROD_BRAINBOX.md
+    |   +-- WORKFLOWS_PROD_BRAINBOX/.gitkeep
+    |   +-- RELEASE_PROD_BRAINBOX/.gitkeep
+    |   +-- DEPLOYMENT_PROD_BRAINBOX/.gitkeep
+    |   +-- OPERATIONS_PROD_BRAINBOX/.gitkeep
+    |   +-- MONITORING_PROD_BRAINBOX/.gitkeep
+    +-- ENVIRONMENT_PROD_BRAINBOX/
+    |   +-- README_ENVIRONMENT_PROD_BRAINBOX.md
+    |   +-- ENV_VARIABLES_BRAINBOX.md
+    |   +-- ENV_SECURITY_BRAINBOX.md
+    |   +-- ENV_ROTATION_BRAINBOX.md
+    |   +-- ENV_VALIDATION_BRAINBOX.md
+    |   +-- TEMPLATES_ENVIRONMENT_BRAINBOX/
+    |       +-- .env.example
+    |       +-- .gitignore
+    +-- PASSED_PROD_BRAINBOX/.gitkeep
+    +-- FAILED_PROD_BRAINBOX/.gitkeep
+    +-- INCIDENTS_PROD_BRAINBOX/.gitkeep
+    +-- REGRESSIONS_PROD_BRAINBOX/.gitkeep
+~~~
 
-M14 established the approved Production Fullstack and Environment structure, safe environment documentation/templates, and empty Production evidence placeholders. Production case studies remain planned for M16; no deployment, production run, or Production outcome was created.
-
+The FootHive Sandbox case study is present under the approved case-studies branch. The Production case-study/evidence areas remain empty/planned for M16; M15 did not create Production content or deploy anything.
 ## Domain boundary
 
 - **SANDBOX:** experiment, test, fail, refine, and validate. A Sandbox result remains accurately labeled and does not imply Production success.
@@ -148,3 +150,8 @@ The empty top-level legacy PROVEN and FAILED files contain no records. No Produc
 ## Independent verification status — 2026-10-09
 
 V003-M09 independently verifies **PASS**. The DEVOPS/Sandbox/Production authority split matches frozen V003, all inspected legacy sources remain unchanged at their M01 baselines, and no evidence state was upgraded.
+
+
+## Current Sandbox case-study state - V003-M15 - 2026-10-09
+
+The FootHive workflow-trial evidence set is present at SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/. It represents the existing logical Iteration 01 dataset. Future workflow iterations and mastery remain planned. The legacy source remains intact; no Production case study or deployment was created by M15.

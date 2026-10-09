@@ -21,23 +21,35 @@ SANDBOX_DEVOPS_BRAINBOX/
 ├── README_SANDBOX_DEVOPS_BRAINBOX.md [PRESENT]
 ├── FULLSTACK_SANDBOX_BRAINBOX/ [PRESENT — M10]
 │   └── README_FULLSTACK_SANDBOX_BRAINBOX.md [PRESENT]
-├── CASE_STUDIES_SANDBOX_BRAINBOX/ [PLANNED — M15]
+├── CASE_STUDIES_SANDBOX_BRAINBOX/ [PRESENT - M15]
 ├── PASSED_SANDBOX_BRAINBOX/ [PLANNED]
 └── FAILED_SANDBOX_BRAINBOX/ [PLANNED]
 ```
 
-The approved Fullstack subtree and its architecture, workflow, and orchestration branches are defined in frozen Specification §8. M10 created the Fullstack target and records its detailed local tree there. FootHive workflow-trial records belong to the approved Sandbox case-study destination in M15; they were not created or moved by M09 or M10.
+The approved Fullstack subtree and its architecture, workflow, and orchestration branches are defined in frozen Specification §8. M10 created the Fullstack target and records its detailed local tree there. M09 and M10 established the Sandbox case-study destination; M15 now populates it with the FootHive trial records.
 
 ## Current local tree
 
-```text
+~~~text
 SANDBOX_DEVOPS_BRAINBOX/
-├── README_SANDBOX_DEVOPS_BRAINBOX.md
-└── FULLSTACK_SANDBOX_BRAINBOX/
-    └── README_FULLSTACK_SANDBOX_BRAINBOX.md
-```
++-- README_SANDBOX_DEVOPS_BRAINBOX.md
++-- FULLSTACK_SANDBOX_BRAINBOX/
+|   +-- README_FULLSTACK_SANDBOX_BRAINBOX.md
++-- CASE_STUDIES_SANDBOX_BRAINBOX/ [PRESENT - M15]
+|   +-- README_CASE_STUDIES_SANDBOX_BRAINBOX.md
+|   +-- FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/ [PRESENT - M15]
+|       +-- README_FH_WORKFLOW_TRIAL_BRAINBOX.md
+|       +-- BUILD_REPORT_FH_BRAINBOX.md
+|       +-- PASSED_FH_BRAINBOX.md
+|       +-- FAILED_FH_BRAINBOX.md
+|       +-- CONVO_FH_BRAINBOX.md
+|       +-- OPERATOR_ADDENDUM_FH_BRAINBOX.md
+|       +-- AUDITS_FH_BRAINBOX/
+|       +-- EVIDENCE_FH_BRAINBOX/
+|       +-- RETROSPECTIVE_FH_BRAINBOX.md
+~~~
 
-The Fullstack README lists its local workflow, architecture, and orchestration subtree with truthful population states. FootHive case-study records remain assigned to M15; M10 did not touch them.
+The Fullstack README lists its own workflow, architecture, and orchestration subtree. The FootHive case-study records and historical evidence are now present under the approved Sandbox case-study destination. M15 did not retire or alter the original project-workflow source.
 
 ## Content classification from M09 (historical closeout state)
 
@@ -97,3 +109,8 @@ Do not use “PROVEN” as a permanent bucket. Describe what was tried, the evid
 ## Independent verification status — 2026-10-09
 
 V003-M09 independently verifies **PASS**. The retained raw Fullstack sources remain explicitly unproven Sandbox candidates for M10; M09 did not promote or copy them.
+
+
+## Current FootHive case-study state - 2026-10-09
+
+V003-M15 has created CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/ and its canonical navigation, historical record, audit, evidence, and retrospective files. The current records represent the existing logical Iteration 01 dataset. Iterations 02 and 03 and the Workflow Mastery Assessment remain planned; no physical iteration folders or mastery claim were created. Source assets without an approved target remain in the legacy FootHive source pending disposition, and no source was removed.

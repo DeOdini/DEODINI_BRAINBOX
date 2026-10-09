@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02 - Batch C M09-M14 independently verified and merged through PRs #28-#33. Batch C closeout is recorded in the active Phase 02 report. M15 is not started and requires its own P14 preflight.
-**Migration status:** V003-M01-M21 AUTHORIZED / M01-M14 INDEPENDENTLY VERIFIED AND MERGED / BATCH C PRS #28-#33 MERGED / M15 NOT STARTED / DEFERRED FLAGS REMAIN ASSIGNED TO M15, M19/M20, M21 / MERGE AUTHORITY RETAINED BY OPERATOR
+**Current phase:** V003 Phase 02 - Batch C M09-M14 independently verified and merged through PRs #28-#33. Batch C closeout is recorded in the active Phase 02 report. M15 P14 preflight passed; implementation is in progress on its dedicated branch.
+**Migration status:** V003-M01-M21 AUTHORIZED / M01-M14 INDEPENDENTLY VERIFIED AND MERGED / BATCH C PRS #28-#33 MERGED / M15 IN PROGRESS / DEFERRED FLAGS REMAIN ASSIGNED TO M15, M19/M20, M21 / MERGE AUTHORITY RETAINED BY OPERATOR
 
 ## Purpose
 
@@ -265,3 +265,9 @@ M05–M08 have independently verified PASS and are merged through PRs #22–#25.
 M09–M14 independently verify PASS and are merged to `main` through PRs #28–#33 in dependency order. Their branch heads, merge commits, physical target-tree checks, and deferred-flag dispositions are recorded in the [Phase 02 Batch C report](PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md) and the [living Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md). Ticket branches remain available.
 
 Batch C has no blocking flags. M15 has not started and requires its own P14 preflight. Deferred items remain assigned to M15, M19/M20, or M21 as recorded in the Phase 02 report.
+
+---
+
+## Current Phase 02 execution — V003-M15 — 2026-10-09
+
+V003-M15 implementation is committed and pushed on v003/m15-foothive-sandbox-evidence-iteration at 6c25f120fcce1d90f583921b3db0f7252e5f30fc. A fresh fetch confirmed local and origin branch tips match. The case-study evidence set is in the canonical Sandbox path; source integrity, planned iteration states, and the two batch-deferred flags are recorded in the Phase 02 report and migration map. The legacy source remains intact. No PR or merge was created. M15 remains unmerged; independent ChatGPT verification PASS (2026-10-09), with verification-closeout publication and Batch D Git closure pending.

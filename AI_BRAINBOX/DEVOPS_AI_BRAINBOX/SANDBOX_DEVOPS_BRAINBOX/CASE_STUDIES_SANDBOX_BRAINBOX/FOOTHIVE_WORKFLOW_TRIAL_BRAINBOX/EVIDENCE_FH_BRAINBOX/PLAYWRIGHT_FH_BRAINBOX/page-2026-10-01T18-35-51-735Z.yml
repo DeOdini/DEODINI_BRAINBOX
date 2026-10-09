@@ -1,0 +1,212 @@
+- generic [active] [ref=f18e1]:
+  - link "Skip to content" [ref=f18e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f18e3]:
+    - generic [ref=f18e4]:
+      - link "FootHive home" [ref=f18e5] [cursor=pointer]:
+        - /url: "#top"
+        - img "FootHive" [ref=f18e6]
+      - navigation "Main navigation" [ref=f18e7]:
+        - link "Products" [ref=f18e8] [cursor=pointer]:
+          - /url: "#products"
+        - link "Story" [ref=f18e9] [cursor=pointer]:
+          - /url: "#story"
+        - link "Notify" [ref=f18e10] [cursor=pointer]:
+          - /url: "#notify"
+        - link "Shop" [ref=f18e11] [cursor=pointer]:
+          - /url: https://pin.it/37MYm0GnG
+  - main [ref=f18e12]:
+    - region [ref=f18e13]:
+      - generic [ref=f18e14]:
+        - paragraph [ref=f18e15]: Made for the everyday
+        - heading [level=1] [ref=f18e17]:
+          - text: Everyday footwear,
+          - emphasis [ref=f18e18]: built to last.
+        - paragraph [ref=f18e19]: Durable. Dependable. Designed for wherever life takes you.
+        - generic [ref=f18e20]:
+          - link "Shop Now" [ref=f18e21] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - text: Shop Now
+            - generic [aria-hidden] [ref=f18e22]: ↗
+          - link "Get Notified" [ref=f18e23] [cursor=pointer]:
+            - /url: "#notify"
+            - text: Get Notified
+            - generic [aria-hidden] [ref=f18e24]: ↓
+        - paragraph [ref=f18e25]: Free shipping on orders over $75
+      - generic [aria-hidden] [ref=f18e26]:
+        - generic [ref=f18e29]:
+          - generic [ref=f18e30]: FOOTHIVE
+          - generic [ref=f18e33]: EST. FOR EVERY DAY
+        - generic [ref=f18e34]: WALK YOUR WAY
+        - generic [ref=f18e35]: 01 / EVERYDAY
+    - region [ref=f18e36]:
+      - generic [ref=f18e37]:
+        - paragraph [ref=f18e38]: The lineup
+        - heading "Footwear, in every form." [level=2] [ref=f18e39]
+        - paragraph [ref=f18e40]: Boots, classic silhouettes and runners.
+      - generic [ref=f18e41]:
+        - article [ref=f18e42]:
+          - link "Shop Olive Canvas Buckle Boot" [ref=f18e43] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Pair of olive canvas boots with brown panels and buckle straps" [ref=f18e44]
+            - generic [ref=f18e45]: OLIVE
+          - generic [ref=f18e46]:
+            - paragraph [ref=f18e47]: Boots
+            - heading "Olive Canvas Buckle Boot" [level=3] [ref=f18e48]
+            - link "Shop" [ref=f18e49] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: Shop
+              - generic [aria-hidden] [ref=f18e50]: →
+        - article [ref=f18e51]:
+          - link "Shop Ivory Western Boot" [ref=f18e52] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Brown and ivory western boot with embroidered shaft detail" [ref=f18e53]
+            - generic [ref=f18e54]: IVORY
+          - generic [ref=f18e55]:
+            - paragraph [ref=f18e56]: Boots
+            - heading "Ivory Western Boot" [level=3] [ref=f18e57]
+            - link "Shop" [ref=f18e58] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: Shop
+              - generic [aria-hidden] [ref=f18e59]: →
+        - article [ref=f18e60]:
+          - link "Shop Crimson Triple-Buckle Boot" [ref=f18e61] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Pair of deep red boots with multiple buckle straps" [ref=f18e62]
+            - generic [ref=f18e63]: CRIMSON
+          - generic [ref=f18e64]:
+            - paragraph [ref=f18e65]: Boots
+            - heading "Crimson Triple-Buckle Boot" [level=3] [ref=f18e66]
+            - link "Shop" [ref=f18e67] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: Shop
+              - generic [aria-hidden] [ref=f18e68]: →
+        - article [ref=f18e69]:
+          - link "Shop Olive Suede Wingtip" [ref=f18e70] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Olive and brown wingtip brogue shoes" [ref=f18e71]
+            - generic [ref=f18e72]: OLIVE
+          - generic [ref=f18e73]:
+            - paragraph [ref=f18e74]: Classic
+            - heading "Olive Suede Wingtip" [level=3] [ref=f18e75]
+            - link "Shop" [ref=f18e76] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: Shop
+              - generic [aria-hidden] [ref=f18e77]: →
+        - article [ref=f18e78]:
+          - link "Shop Burnished Cognac Oxford" [ref=f18e79] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Burnished cognac oxford shoe with brogue detailing" [ref=f18e80]
+            - generic [ref=f18e81]: COGNAC
+          - generic [ref=f18e82]:
+            - paragraph [ref=f18e83]: Classic
+            - heading "Burnished Cognac Oxford" [level=3] [ref=f18e84]
+            - link "Shop" [ref=f18e85] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: Shop
+              - generic [aria-hidden] [ref=f18e86]: →
+        - article [ref=f18e87]:
+          - link "Shop Frost Knit Runner" [ref=f18e88] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "White knit runner with sculpted sole and red accents" [ref=f18e89]
+            - generic [ref=f18e90]: FROST
+          - generic [ref=f18e91]:
+            - paragraph [ref=f18e92]: Runners
+            - heading "Frost Knit Runner" [level=3] [ref=f18e93]
+            - link "Shop" [ref=f18e94] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: Shop
+              - generic [aria-hidden] [ref=f18e95]: →
+        - article [ref=f18e96]:
+          - link "Shop Talon Trail Runner" [ref=f18e97] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - img "Trail runner with teal panels and a patterned toe" [ref=f18e98]
+            - generic [ref=f18e99]: TEAL
+          - generic [ref=f18e100]:
+            - paragraph [ref=f18e101]: Runners
+            - heading "Talon Trail Runner" [level=3] [ref=f18e102]
+            - link "Shop" [ref=f18e103] [cursor=pointer]:
+              - /url: https://pin.it/37MYm0GnG
+              - text: Shop
+              - generic [aria-hidden] [ref=f18e104]: →
+    - region [ref=f18e105]:
+      - generic [aria-hidden] [ref=f18e106]: FH / 01
+      - generic [ref=f18e107]:
+        - paragraph [ref=f18e108]: Our story
+        - heading [level=2] [ref=f18e109]:
+          - text: Built different.
+          - emphasis [ref=f18e110]: Made to last.
+        - generic [ref=f18e111]:
+          - paragraph [ref=f18e112]: FootHive is for the pairs that keep pace with real life. We look for character, comfort, and a point of view in every silhouette.
+          - paragraph [ref=f18e113]: From first step to last call, our lineup is made to be worn often and remembered for how it feels.
+        - link "Shop the collection" [ref=f18e114] [cursor=pointer]:
+          - /url: https://pin.it/37MYm0GnG
+          - text: Shop the collection
+          - generic [aria-hidden] [ref=f18e115]: ↗
+    - region [ref=f18e116]:
+      - generic [ref=f18e117]:
+        - paragraph [ref=f18e118]: The FootHive standard
+        - heading [level=2] [ref=f18e119]:
+          - text: Good pairs.
+          - emphasis [ref=f18e120]: Clear reasons.
+      - list [ref=f18e121]:
+        - listitem [ref=f18e122]:
+          - generic [aria-hidden] [ref=f18e123]: "01"
+          - heading "Free shipping over $75" [level=3] [ref=f18e124]
+          - paragraph [ref=f18e125]: An approved FootHive offer for qualifying orders.
+        - listitem [ref=f18e126]:
+          - generic [aria-hidden] [ref=f18e127]: "02"
+          - heading "Made for the everyday" [level=3] [ref=f18e128]
+          - paragraph [ref=f18e129]: Footwear with a dependable point of view for daily wear.
+        - listitem [ref=f18e130]:
+          - generic [aria-hidden] [ref=f18e131]: "03"
+          - heading "Shop on our store" [level=3] [ref=f18e132]
+          - paragraph [ref=f18e133]: Follow the collection to the FootHive shopping destination.
+          - link "Visit the store" [ref=f18e134] [cursor=pointer]:
+            - /url: https://pin.it/37MYm0GnG
+            - text: Visit the store
+            - generic [aria-hidden] [ref=f18e135]: ↗
+    - region [ref=f18e136]:
+      - generic [ref=f18e137]:
+        - paragraph [ref=f18e138]: Stay in the loop
+        - heading "Get drop alerts." [level=2] [ref=f18e139]
+        - paragraph [ref=f18e140]: Be first when new pairs arrive. One email, only when there is something worth stepping into.
+      - form "Get drop alerts." [ref=f18e141]:
+        - generic [ref=f18e142]: Email address
+        - generic [ref=f18e143]:
+          - textbox "Email address" [ref=f18e144]:
+            - /placeholder: you@example.com
+          - button "Notify me" [ref=f18e145] [cursor=pointer]:
+            - text: Notify me
+            - generic [aria-hidden] [ref=f18e146]: ↗
+        - paragraph [ref=f18e147]: Get drop alerts - no spam, unsubscribe anytime.
+        - status [ref=f18e148]
+        - iframe [aria-hidden] [ref=f18e149]
+  - contentinfo [ref=f18e150]:
+    - generic [ref=f18e151]:
+      - generic [ref=f18e152]:
+        - link "FootHive home" [ref=f18e153] [cursor=pointer]:
+          - /url: "#top"
+          - img "FootHive" [ref=f18e154]
+        - paragraph [ref=f18e155]: BUILT TO LAST
+      - navigation "Shop links" [ref=f18e156]:
+        - heading "Shop" [level=2] [ref=f18e157]
+        - link "Shop all" [ref=f18e158] [cursor=pointer]:
+          - /url: https://pin.it/37MYm0GnG
+        - link "Featured footwear" [ref=f18e159] [cursor=pointer]:
+          - /url: "#products"
+      - navigation "Information links" [ref=f18e160]:
+        - heading "Info" [level=2] [ref=f18e161]
+        - link "Our story" [ref=f18e162] [cursor=pointer]:
+          - /url: "#story"
+        - link "Privacy policy · coming soon" [ref=f18e163] [cursor=pointer]:
+          - /url: "#"
+        - link "Returns · coming soon" [ref=f18e164] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=f18e165]:
+        - heading "Stay connected" [level=2] [ref=f18e166]
+        - link "deodinihq@yahoo.com" [ref=f18e167] [cursor=pointer]:
+          - /url: mailto:deodinihq@yahoo.com
+        - link "Instagram" [ref=f18e168] [cursor=pointer]:
+          - /url: https://pin.it/37MYm0GnG
+      - paragraph [ref=f18e169]: © 2026 FootHive. All rights reserved.
