@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M12 Backend self-check and M14 structural/security checks. ChatGPT — M05–M13 independent PASS; M14 verification pending. See the active Phase 02 report for per-ticket Git state.
+**VERIFIER:** Codex — M12 Backend self-check and M14 structural/security checks. ChatGPT — M05–M14 independent PASS. See the active Phase 02 report for per-ticket Git state.
 **LAST VERIFIED:** 2026-10-09
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
@@ -640,7 +640,7 @@ The M13 ChatGPT verification-state closeout was cross-checked and pushed on its 
 
 M14 implementation commit `6865c18d38dfa8f8f2cd9294ea6e1064a78fc2ed` is pushed. Production and Environment navigation, safe placeholder-only templates, generic environment guidance, the root `.gitignore`, and empty Production evidence/operations folders are present. The actual deployment-procedure destination remains empty because M10 found no source procedure. No secret, application variable contract, Production outcome, deployment, or FootHive Production case study was added.
 
-Codex verification: 58 local links / 0 broken; no non-placeholder secret-like assignment; `.env`, `.env.local`, `.env.production` ignored; `.env.example` trackable; nine `.gitkeep` markers zero-byte. Independent ChatGPT verification of M14 is pending. The M14 map, report, and verbatim conversation are in a separate documentation closeout commit. No PR/merge was created; Batch C Git closure remains at the batch boundary.
+Codex verification: 58 local links / 0 broken; no non-placeholder secret-like assignment; `.env`, `.env.local`, `.env.production` ignored; `.env.example` trackable; nine `.gitkeep` markers zero-byte. Independent ChatGPT verification of M14: PASS (2026-10-09). The M14 map, report, and verbatim conversation are in the ticket closeout records. No PR/merge was created; Batch C Git closure remains at the batch boundary.
 
 M14 documentation closeout commit `2f01afbf4eb734a42a0b49d0b89044e4194ab7f9` is pushed and verified against the fetched upstream branch; local/upstream tips match, the worktree is clean, and the branch remains unmerged.
 
