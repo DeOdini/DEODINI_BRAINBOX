@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex - M12 Backend self-check, M14 structural/security checks, and M16 Production/Portfolio migration checks. ChatGPT - M05-M15 independent PASS; M16 independent verification pending. M15 deferred asset/reference flags remain recorded. Batch C M09-M14 merged to main through PRs #28-#33; see the active Phase 02 report for merge and flag dispositions.
+**VERIFIER:** Codex - M12 Backend self-check, M14 structural/security checks, and M16 Production/Portfolio migration checks. ChatGPT - M05-M16 independent PASS; M16 evidence and status independently checked with M16-README-01 deferred to M19. M15 deferred asset/reference flags remain recorded. Batch C M09-M14 merged to main through PRs #28-#33; see the active Phase 02 report for merge and flag dispositions.
 **LAST VERIFIED:** 2026-10-09
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.

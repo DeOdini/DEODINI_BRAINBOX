@@ -1987,3 +1987,30 @@ M15-ASSET-01 and M15-REF-01 remain BATCH-DEFERRED / NON-BLOCKING as recorded in 
 - M16 implementation commit: b615856aab6013c43917095615342175a36e6ab3. The origin branch was checked with ls-remote and matched the commit after push.
 - The M16 report/conversation and this Migration Map Git closeout are included in the subsequent documentation closeout on the same branch.
 - Neither ticket branch was merged and no PR was created. Batch D remains open; M16 independent ChatGPT verification is pending.
+
+
+---
+
+## 47. ChatGPT Independent Verification — V003-M16 — 2026-10-09
+
+**Result:** PASS.
+**Blocking M16 flags:** NONE.
+**M16-README-01:** BATCH-DEFERRED / NON-BLOCKING — M19.
+**M17 handoff:** dependency-ready after M16 verification publication and clean worktree.
+
+Independent local/GitHub verification:
+
+- M15 verification publication `2baffb5e554ec62a2ee8f422f66c428efe654beb`.
+- M16 implementation `b615856aab6013c43917095615342175a36e6ab3`.
+- M16 documentation closeout and pre-verification branch tip `7d7f26f22468e9b64c8565dfaf53a44eda64c1a6`.
+- Local/upstream/GitHub branch tips matched, ahead/behind 0/0, worktree clean, no M16 PR/merge, M17 branch absent. Main unchanged at `d8296578e53ea75509c3c3fee15f21c99dbfeab7`.
+- Two Production summary records and four Portfolio records exist, with root/DEVOPS/Migration Map navigation consistent with their intended scope.
+- Canonical Sandbox FootHive records remain unchanged and are referenced, not copied into Production/Portfolio.
+- T20 Netlify ID `6abeab441468890009114676`, merge commit `1916fc59a38bf84125e966e0f2008b4e78749653`, publication time `2026-10-01T18:49:47.720Z`, and historic deployment URL are confirmed in the source Build Report. Operator Addendum supports the separate Operator-confirmed T20 form persistence and manual browser statements.
+- Portfolio truthfully discloses a workflow trial based on a public Upwork brief; no unsupported paid-client/acceptance claim.
+- Legacy `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` remains zero bytes and is unchanged.
+- Parent `PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md` is physically absent; M19 owns correction under M16-README-01; no M16 or M17 dependency blocker.
+- All 10 implementation-commit Markdown records: 67 local links / 0 broken; eight authored M16 Production/Portfolio/DEVOPS records: 0 trailing-space lines. Complete M16 range passes `git diff --check`, and only Markdown files changed.
+- No new production deployment, site check, form submission, application code, Sandbox archive rewrite or source retirement was evidenced by M16 changes. The Codex report states none of those runtime actions were performed.
+
+**V003-M16 independent verification: PASS. M17 follows after publication of this verification closeout on M16 and clean dedicated-branch handoff.**

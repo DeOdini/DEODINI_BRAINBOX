@@ -9,7 +9,7 @@
 **CANONICAL SOURCE:** The M15 Sandbox case study and its source-backed records; the T20 section of the Build Report; the Operator Addendum.
 **REFERENCES:** Frozen V003 Specification §8, V003-M16 ticket, Production summary, and living Migration Map.
 **POPULATION STATE:** [POPULATED — M16] with project summary and handoff references. The parent Portfolio README remains for M19; the zero-byte legacy placeholder remains for M20 review.
-**VERIFIER:** Codex — source-backed M16 record and local-link checks; independent ChatGPT verification pending.
+**VERIFIER:** Codex — source-backed M16 record and local-link checks; independent ChatGPT verification PASS (2026-10-09).
 **LAST VERIFIED:** 2026-10-09
 **APPLIES TO:** FootHive's documented workflow-trial project, its T20 release, and handoff references; not a paid-client claim.
 

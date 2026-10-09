@@ -4,7 +4,7 @@
 **PARENT:** FOOTHIVE_PORTFOLIO_BRAINBOX/
 **CANONICAL SOURCE:** The M15 Sandbox case study, T20 release record, and Operator Addendum.
 **LAST VERIFIED:** 2026-10-09
-**VERIFIER:** Codex — source-backed M16 handoff; independent ChatGPT verification pending.
+**VERIFIER:** Codex — source-backed M16 handoff; independent ChatGPT verification PASS (2026-10-09).
 **APPLIES TO:** The static FootHive website trial and its documented T20 release.
 
 ## Delivered project

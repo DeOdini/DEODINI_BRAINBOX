@@ -3364,3 +3364,20 @@ M16 is implemented on `v003/m16-foothive-production-portfolio`; implementation c
 M16 creates the two Production summary records and four Portfolio records, with current tree/navigation and Migration Map updates. The empty legacy Portfolio placeholder and Sandbox evidence remain intact. The missing parent `README_PORTFOLIO_BRAINBOX.md` is documented as `M16-README-01`, BATCH-DEFERRED / NON-BLOCKING, assigned to M19.
 
 No M16 live-site check, application test, form submission, or deployment was performed; the report references the existing T20 production evidence. Independent ChatGPT verification of M16 remains pending.
+
+
+---
+
+# ChatGPT Independent Verification Closure — V003-M16 — 2026-10-09
+
+**V003-M16 independent result: PASS. Blocking flags: NONE.**
+
+Verified M15 independent-verification commit `2baffb5e554ec62a2ee8f422f66c428efe654beb`; M16 implementation `b615856aab6013c43917095615342175a36e6ab3` descending directly from M15; M16 report/status closeout `7d7f26f22468e9b64c8565dfaf53a44eda64c1a6`. Local HEAD/upstream/GitHub tips matched with 0/0 ahead/behind and clean worktree before this verification write; no PR/merge; M17 not started; `main` unchanged at `d8296578e53ea75509c3c3fee15f21c99dbfeab7`.
+
+All six required FootHive Production/Portfolio records were independently read. Production accurately summarizes the historic T20 release and attributes the merge/deploy identifier, public URL, timestamp, source QA observations and Operator Addendum without claiming M16 live-site testing. Portfolio preserves static-site scope and honest Upwork-brief role-play disclosure; no paid client or final commerce system is claimed.
+
+The canonical M15 Sandbox evidence tree and zero-byte legacy Portfolio placeholder remain unchanged. The root and Production trees reflect the partial FootHive Portfolio population. Across ten M16 implementation Markdown files, independent scan found 67 local links and 0 broken; the eight authored Production/Portfolio/DEVOPS files have no trailing-space lines. Full M16-range `git diff --check` passes and only Markdown files changed.
+
+`M16-README-01` is confirmed: `PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md` remains physically absent. This is BATCH-DEFERRED/NON-BLOCKING and assigned to M19; M17 does not depend on it. M15-ASSET-01 / M15-REF-01 remain deferred and source-preserving.
+
+**M17 may proceed after committing this M16 verification closeout and confirming clean M16 handoff.** No application/browser tests, live deployment/form submission, Git publication, or source retirement performed by ChatGPT.

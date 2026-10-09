@@ -4,7 +4,7 @@
 **PARENT:** FOOTHIVE_PORTFOLIO_BRAINBOX/
 **CANONICAL SOURCE:** M15 Sandbox evidence tree, T20 release record, and Operator Addendum.
 **LAST VERIFIED:** 2026-10-09
-**VERIFIER:** Codex — target and link verification; independent ChatGPT verification pending.
+**VERIFIER:** Codex — target and link verification; independent ChatGPT M16 verification PASS (2026-10-09).
 **APPLIES TO:** Navigation between portfolio description, Sandbox evidence, and Production release summary.
 
 This index points to existing records. The source evidence is not copied into Portfolio or Production.
