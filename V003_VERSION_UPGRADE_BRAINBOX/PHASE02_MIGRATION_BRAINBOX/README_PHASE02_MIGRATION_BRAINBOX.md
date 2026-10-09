@@ -377,3 +377,14 @@ This section supersedes the earlier M15-only status as the current ticket state.
 - Root README physical tree, population note, navigation, and Migration Map Section 50 record the new planned documentation. The legacy `MILESTONES/` source remains unchanged under M17-DEST-01.
 - Twelve local links in the two new records resolve; targeted whitespace check passed. The M18 report and conversation are included in this documentation closeout.
 - No PR or merge was created. Batch D Git lifecycle remains at the batch boundary; M19-M21 remain later tickets.
+
+
+---
+
+## Current Batch D independent verification — V003-M18 — 2026-10-09
+
+- M18 planned Router/Agentic documentation: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- Two approved files are present and [PLANNED]. No Router, sub-agent runtime, database, vector store, deployment, device-delivery or other future infrastructure was created.
+- 12 local links / 0 broken; full M18 range whitespace check PASS. Both legacy milestone source hashes match M01 and remain untouched.
+- `M17-DEST-01`: OPEN, blocks physical source relocation/rename/retirement pending Operator approval; does not invalidate separate M18.
+- M15–M18 substantive ticket checks: independently PASS. Batch D flag review and Git/PR/merge boundary closure still required before M19; publish this verification closeout, then verify synchronized final main.
