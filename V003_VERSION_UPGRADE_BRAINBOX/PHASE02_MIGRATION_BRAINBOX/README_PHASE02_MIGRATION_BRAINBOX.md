@@ -248,3 +248,30 @@ This update is the current M11 state and supersedes the earlier M10-only readine
 - M11 Frontend Sandbox Taxonomy Migration: PASS.
 - M11 blocking flags: NONE.
 - M12: next dependency ticket after this M11 verification closeout is committed and the M11 worktree is clean.
+
+
+---
+
+## Current Batch C execution state — V003-M12 — 2026-10-09
+
+This update supersedes the earlier line that described M12 as merely next after M11.
+
+- M10 ChatGPT verification commit `bba4d7006b2397a0c2cdd87e5d1520f9e1ed8099` was cross-checked on its dedicated branch; it remains unmerged to `origin/main`.
+- M11 Frontend Sandbox Taxonomy Migration independently verifies PASS. Its verification closeout `bdca61e4434726d18b9a16c72cf2e3f0087f7e34` was pushed to the dedicated M11 branch before M12 began.
+- M12 is implemented on `v003/m12-backend-sandbox-taxonomy`. Implementation commit `f0129874928747897f923e3d5430b4ecc2436d35` is pushed; local and upstream tips matched after push. M12 has its own branch and remains unmerged.
+- The Backend Sandbox is nested under Fullstack, with Google Forms under Integrations. The five approved Backend code-pattern folders are JavaScript, TypeScript, Python, SQL, and API. All 17 knowledge leaves remain empty; FootHive evidence remains in its source for M15.
+- Codex structural/link/whitespace verification: PASS. No blocking M12 flags. Independent ChatGPT verification of M12: pending.
+- The M12 migration-map entry, execution report, status updates, root-tree navigation reconciliation, and exact Operator–Codex transcript are in a separate documentation closeout commit on the same M12 branch.
+- No M12 PR or merge was created. M13 becomes eligible after independent M12 verification and clean handoff.
+
+
+---
+
+## Current Batch C verification override — 2026-10-09
+
+- M09: PASS.
+- M10: PASS.
+- M11: PASS.
+- M12 Backend Sandbox Taxonomy Migration: PASS.
+- M12 blocking flags: NONE.
+- M13: next dependency ticket after this M12 verification closeout is committed and the M12 worktree is clean.

@@ -16,7 +16,7 @@ This README is local navigation. The root `README_BRAINBOX.md` remains the compl
 
 ## Authoritative target tree
 
-This follows frozen Specification §8. M11 populates Frontend; Backend remains assigned to M12 and is shown as planned without creating it.
+This follows frozen Specification §8. Frontend is present from M11 and the Backend taxonomy is now present from M12. Backend knowledge leaves remain empty until source-backed content is approved.
 
 ```text
 FULLSTACK_SANDBOX_BRAINBOX/
@@ -91,27 +91,29 @@ FULLSTACK_SANDBOX_BRAINBOX/
 |   |-- COMPONENTS_FRONTEND_BRAINBOX/ [.gitkeep; EMPTY]
 |   |-- TESTING_FRONTEND_BRAINBOX/ [.gitkeep; EMPTY]
 |   `-- REFERENCES_FRONTEND_BRAINBOX/ [.gitkeep; EMPTY]
-`-- BACKEND_SANDBOX_BRAINBOX/ [PLANNED — M12]
-    |-- README_BACKEND_SANDBOX_BRAINBOX.md [PLANNED — M12]
-    |-- WORKFLOWS_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |-- ARCHITECTURE_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |-- API_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |-- DATABASE_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |-- AUTH_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |-- STORAGE_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |-- INTEGRATIONS_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |   `-- GOOGLE_FORMS_INTEGRATION_BRAINBOX/ [PLANNED — M12]
-    |-- SERVERLESS_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |-- JOBS_QUEUES_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |-- CACHING_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |-- SECURITY_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |-- CODE_PATTERNS_BACKEND_BRAINBOX/ [PLANNED — M12]
-    |   |-- JAVASCRIPT_CODE_PATTERNS_BRAINBOX/ [PLANNED — M12]
-    |   |-- TYPESCRIPT_CODE_PATTERNS_BRAINBOX/ [PLANNED — M12]
-    |   |-- PYTHON_CODE_PATTERNS_BRAINBOX/ [PLANNED — M12]
-    |   |-- SQL_CODE_PATTERNS_BRAINBOX/ [PLANNED — M12]
-    |   `-- API_CODE_PATTERNS_BRAINBOX/ [PLANNED — M12]
-    `-- TESTING_BACKEND_BRAINBOX/ [PLANNED — M12]
+`-- BACKEND_SANDBOX_BRAINBOX/ [PRESENT — M12]
+    |-- README_BACKEND_SANDBOX_BRAINBOX.md [PRESENT]
+    |-- WORKFLOWS_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
+    |-- ARCHITECTURE_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
+    |-- API_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
+    |-- DATABASE_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
+    |-- AUTH_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
+    |-- STORAGE_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
+    |-- INTEGRATIONS_BACKEND_BRAINBOX/
+    |   |-- README_INTEGRATIONS_BACKEND_BRAINBOX.md [P12 local navigation]
+    |   `-- GOOGLE_FORMS_INTEGRATION_BRAINBOX/ [.gitkeep; EMPTY; FootHive evidence remains at source]
+    |-- SERVERLESS_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
+    |-- JOBS_QUEUES_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
+    |-- CACHING_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
+    |-- SECURITY_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
+    |-- CODE_PATTERNS_BACKEND_BRAINBOX/
+    |   |-- README_CODE_PATTERNS_BACKEND_BRAINBOX.md [P12 local navigation]
+    |   |-- JAVASCRIPT_CODE_PATTERNS_BRAINBOX/ [.gitkeep; EMPTY]
+    |   |-- TYPESCRIPT_CODE_PATTERNS_BRAINBOX/ [.gitkeep; EMPTY]
+    |   |-- PYTHON_CODE_PATTERNS_BRAINBOX/ [.gitkeep; EMPTY]
+    |   |-- SQL_CODE_PATTERNS_BRAINBOX/ [.gitkeep; EMPTY]
+    |   `-- API_CODE_PATTERNS_BRAINBOX/ [.gitkeep; EMPTY]
+    `-- TESTING_BACKEND_BRAINBOX/ [.gitkeep; EMPTY]
 ```
 
 ## Current local tree
@@ -188,10 +190,31 @@ FULLSTACK_SANDBOX_BRAINBOX/
     |   `-- REACT_CODE_PATTERNS_BRAINBOX/.gitkeep
     |-- COMPONENTS_FRONTEND_BRAINBOX/.gitkeep
     |-- TESTING_FRONTEND_BRAINBOX/.gitkeep
-    `-- REFERENCES_FRONTEND_BRAINBOX/.gitkeep
+    |-- REFERENCES_FRONTEND_BRAINBOX/.gitkeep
+    `-- BACKEND_SANDBOX_BRAINBOX/
+        |-- README_BACKEND_SANDBOX_BRAINBOX.md
+        |-- WORKFLOWS_BACKEND_BRAINBOX/.gitkeep
+        |-- ARCHITECTURE_BACKEND_BRAINBOX/.gitkeep
+        |-- API_BACKEND_BRAINBOX/.gitkeep
+        |-- DATABASE_BACKEND_BRAINBOX/.gitkeep
+        |-- AUTH_BACKEND_BRAINBOX/.gitkeep
+        |-- STORAGE_BACKEND_BRAINBOX/.gitkeep
+        |-- INTEGRATIONS_BACKEND_BRAINBOX/
+        |   |-- README_INTEGRATIONS_BACKEND_BRAINBOX.md
+        |   `-- GOOGLE_FORMS_INTEGRATION_BRAINBOX/.gitkeep
+        |-- SERVERLESS_BACKEND_BRAINBOX/.gitkeep
+        |-- JOBS_QUEUES_BACKEND_BRAINBOX/.gitkeep
+        |-- CACHING_BACKEND_BRAINBOX/.gitkeep
+        |-- SECURITY_BACKEND_BRAINBOX/.gitkeep
+        |-- CODE_PATTERNS_BACKEND_BRAINBOX/
+        |   |-- README_CODE_PATTERNS_BACKEND_BRAINBOX.md
+        |   |-- JAVASCRIPT_CODE_PATTERNS_BRAINBOX/.gitkeep
+        |   |-- TYPESCRIPT_CODE_PATTERNS_BRAINBOX/.gitkeep
+        |   |-- PYTHON_CODE_PATTERNS_BRAINBOX/.gitkeep
+        |   |-- SQL_CODE_PATTERNS_BRAINBOX/.gitkeep
+        |   `-- API_CODE_PATTERNS_BRAINBOX/.gitkeep
+        `-- TESTING_BACKEND_BRAINBOX/.gitkeep
 ```
-
-Backend is not present locally; its approved target remains assigned to M12.
 
 ## Local navigation
 
@@ -199,7 +222,7 @@ Backend is not present locally; its approved target remains assigned to M12.
 - [Architecture application branches](ARCHITECTURE_FULLSTACK_BRAINBOX/README_ARCHITECTURE_FULLSTACK_BRAINBOX.md)
 - [Orchestration branches and handoff classification](ORCHESTRATION_FULLSTACK_BRAINBOX/README_ORCHESTRATION_FULLSTACK_BRAINBOX.md)
 - [Frontend Sandbox and UI/UX taxonomy](FRONTEND_SANDBOX_BRAINBOX/README_FRONTEND_SANDBOX_BRAINBOX.md)
-- Backend Sandbox: planned for M12; its frozen target remains in the authoritative tree above.
+- [Backend Sandbox and backend knowledge ownership](BACKEND_SANDBOX_BRAINBOX/README_BACKEND_SANDBOX_BRAINBOX.md)
 - [Sandbox DEVOPS parent](../README_SANDBOX_DEVOPS_BRAINBOX.md)
 
 ## Domain boundaries
@@ -215,7 +238,7 @@ Backend is not present locally; its approved target remains assigned to M12.
 - [Sandbox DEVOPS](../README_SANDBOX_DEVOPS_BRAINBOX.md) owns experimentation and learning.
 - [Production DEVOPS](../../PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md) owns actual release and operation evidence.
 - [Skills architecture patterns](../../../../AI_BRAINBOX/SKILLS_AI_BRAINBOX/PATTERNS_SKILLS_BRAINBOX/ARCHITECTURE_PATTERNS_SKILLS_BRAINBOX/) is the canonical destination for general architecture-pattern knowledge; it currently contains only an empty placeholder.
-- Frontend-specific design/application taxonomy is populated under [Frontend Sandbox](FRONTEND_SANDBOX_BRAINBOX/README_FRONTEND_SANDBOX_BRAINBOX.md) by M11. Its six approved design domains remain nested under `UI_UX_DESIGN_FRONTEND_BRAINBOX/`; code patterns, components, testing, and references remain Frontend siblings. Backend taxonomy remains assigned to M12 and is not created by M11.
+- Frontend-specific design/application taxonomy is populated under [Frontend Sandbox](FRONTEND_SANDBOX_BRAINBOX/README_FRONTEND_SANDBOX_BRAINBOX.md) by M11. Its six approved design domains remain nested under `UI_UX_DESIGN_FRONTEND_BRAINBOX/`; code patterns, components, testing, and references remain Frontend siblings. Backend taxonomy is present under [Backend Sandbox](BACKEND_SANDBOX_BRAINBOX/README_BACKEND_SANDBOX_BRAINBOX.md) from M12; its knowledge leaves remain empty.
 
 ## Canonical sources and references
 
@@ -264,3 +287,10 @@ V003-M10 independently verifies **PASS**. The frozen Fullstack Workflow / Archit
 ## Independent verification status — 2026-10-09
 
 V003-M11 Frontend taxonomy independently verifies **PASS**. Frontend is present beneath Fullstack with the frozen UI/UX hierarchy; Backend is still planned for M12 and is not physically present.
+
+
+---
+
+## Independent verification status — 2026-10-09
+
+V003-M12 Backend taxonomy independently verifies **PASS**. Backend is present beneath Fullstack with truthful empty population states; Frontend remains M11-owned and Analytics responsibility remains for M13.

@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M05/M06 read-back, M07 section classification/verification archive, and M08 Skills taxonomy implementation. ChatGPT — M05/M06 independent PASS and M07 independent PASS; M08 independent verification is pending. M07 verification archive `8aeebe0` and M08 implementation `01b4e71` are pushed on dedicated branches; no PR/merge for M07 or M08.
+**VERIFIER:** Codex — M12 Backend structure, navigation, links, and whitespace self-check. ChatGPT — M05–M12 independent PASS. See the active Phase 02 report for per-ticket Git state.
 **LAST VERIFIED:** 2026-10-09
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
@@ -70,7 +70,7 @@ DEODINI_BRAINBOX/
 ├── MILESTONES_BRAINBOX/ [PLANNED]
 │   ├── README_MILESTONES_BRAINBOX.md
 │   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
-├── AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05 FUNC CORE and M06 EXE index migrated; legacy sources retained; M07–M13 pending]
+├── AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05–M12 migrated; legacy sources retained; M13 and later tickets pending]
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
 │   │   ├── README_FUNC_AI_BRAINBOX.md
@@ -163,12 +163,14 @@ DEODINI_BRAINBOX/
 │   │   │   │       ├── AUTH_BACKEND_BRAINBOX/
 │   │   │   │       ├── STORAGE_BACKEND_BRAINBOX/
 │   │   │   │       ├── INTEGRATIONS_BACKEND_BRAINBOX/
+│   │   │   │       │   ├── README_INTEGRATIONS_BACKEND_BRAINBOX.md [P12 local navigation]
 │   │   │   │       │   └── GOOGLE_FORMS_INTEGRATION_BRAINBOX/
 │   │   │   │       ├── SERVERLESS_BACKEND_BRAINBOX/
 │   │   │   │       ├── JOBS_QUEUES_BACKEND_BRAINBOX/
 │   │   │   │       ├── CACHING_BACKEND_BRAINBOX/
 │   │   │   │       ├── SECURITY_BACKEND_BRAINBOX/
 │   │   │   │       ├── CODE_PATTERNS_BACKEND_BRAINBOX/
+│   │   │   │       │   ├── README_CODE_PATTERNS_BACKEND_BRAINBOX.md [P12 local navigation]
 │   │   │   │       │   ├── JAVASCRIPT_CODE_PATTERNS_BRAINBOX/
 │   │   │   │       │   ├── TYPESCRIPT_CODE_PATTERNS_BRAINBOX/
 │   │   │   │       │   ├── PYTHON_CODE_PATTERNS_BRAINBOX/
@@ -392,7 +394,7 @@ DEODINI_BRAINBOX/
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
 | `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial; M04] | Parent README and Git-backed V001/V002 tree snapshots are present. Their conceptual retrospectives explicitly report missing rationale evidence; V003 Architecture Decisions and the living migration map are retained. Final V003 snapshot remains assigned to M21. |
 | `MILESTONES_BRAINBOX/` | [PLANNED] | Not yet populated; M18. The legacy `MILESTONES/` remains a separate source pending M17. |
-| `AI_BRAINBOX/` | [PARTIALLY POPULATED — M05/M06] | M05 populated the FUNC parent and eight-agent CORE registry. M06 created evidence-backed RESEARCH, BROWSER, FILE, and CODE records and a reserved MEDIA record; original sources remain. `README_AI_BRAINBOX.md` and remaining AI targets are pending M07–M13. |
+| `AI_BRAINBOX/` | [PARTIALLY POPULATED — M05–M12] | FUNC CORE/EXE, ancillary classification, Skills taxonomy, DEVOPS/Sandbox, Fullstack workflows/architecture/orchestration, Frontend, and Backend targets have been migrated through M12. Legacy sources remain; M13 and later tickets are pending. |
 | `PORTFOLIO_BRAINBOX/` | [PLANNED V003 target] | Existing legacy Portfolio source is only a zero-byte placeholder; target structure is pending M16. |
 
 ## Current local root tree
@@ -413,7 +415,7 @@ DEODINI_BRAINBOX/
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── DOB_MUST_README.md [retained legacy source; unchanged through M03]
-├── AI_BRAINBOX/ [M05 CORE, M06 EXE, M07 classification, and M08 Skills taxonomy migrated; legacy sources retained; M09–M13 pending]
+├── AI_BRAINBOX/ [M05–M12 migrated; legacy sources retained; M13 and later tickets pending]
 ├── BRAINBOX/ [EMPTY physical directory; not tracked by Git; review under M20]
 ├── MILESTONES/ [legacy source records; review under M17]
 ├── PORTFOLIO_BRAINBOX/ [legacy zero-byte placeholder; review under M16]
@@ -460,7 +462,7 @@ VERSION_HISTORY_BRAINBOX/
 │   └── RETROSPECTIVE_V002_BRAINBOX.md [conceptual rationale blocked]
 └── V003_EXTENDED_DEODINI_BRAINBOX/
     ├── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md [retained; unchanged]
-    ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map, updated through M08]
+    ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map, updated through M12]
     └── TREE_SNAPSHOT_V003_BRAINBOX.md [deferred to M21]
 ```
 
@@ -600,3 +602,17 @@ V003-M10 Fullstack Workflow / Architecture / Orchestration Migration independent
 ## Current Phase 02 verification override — 2026-10-09
 
 V003-M11 Frontend Sandbox Taxonomy Migration independently verifies **PASS**. The frozen Frontend hierarchy is preserved, only the five approved frontend code-pattern branches exist, and Backend remains M12-owned. M12 may proceed after the M11 verification-closeout commit and clean handoff.
+
+
+---
+
+## Current Phase 02 status — V003-M12 — 2026-10-09
+
+V003-M12 Backend Sandbox Taxonomy Migration is implemented and pushed to its dedicated branch. The approved Backend hierarchy is nested beneath Fullstack, Google Forms is under Integrations, and all 17 knowledge leaves remain empty. The M12 migration-map disposition, execution report, exact Operator–Codex conversation, and current navigation/status updates are recorded on the same branch in a separate documentation closeout. Codex structural verification and independent ChatGPT M12 verification pass; no blocking M12 flags remain. M12 has not been merged. See `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md` for the active ticket and batch state.
+
+
+---
+
+## Current Phase 02 verification override — 2026-10-09
+
+V003-M12 Backend Sandbox Taxonomy Migration independently verifies **PASS**. The frozen Backend hierarchy is present, Google Forms remains under Backend Integrations, and all Backend knowledge leaves remain empty placeholders. M13 may proceed after the M12 verification-closeout commit and clean handoff.
