@@ -572,3 +572,10 @@ M08 Skills AI Taxonomy & Legacy Skills Reconciliation independently verifies **P
 ## Current Phase 02 status — Batch B closure — 2026-10-09
 
 Batch B tickets M05–M08 independently verify PASS and are merged to main through PRs #22–#25 in dependency order. All four dedicated branches remain available. M06-LINK-01, M07-WF-01, and M07-AUTH-01 remain documented as batch-deferred/non-blocking with their later-ticket owners. No blocking Batch B flag remains. The post-merge report closeout is being published before M09 begins its own P14 preflight.
+
+
+---
+
+## Current Phase 02 status — Batch B closed — 2026-10-09
+
+Batch B M05–M08 and its report/status closeout are merged through PRs #22–#26. Local main and origin/main were verified synchronized at c83bac0f3b0456fa1c5d70c96651a94280ddbc30. All four ticket branches remain available. The three documented batch-deferred flags retain their later-ticket owners; no blocking flag remains. M09 is eligible for its own P14 preflight and has not been started.

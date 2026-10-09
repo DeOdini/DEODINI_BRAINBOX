@@ -233,3 +233,8 @@ V003-M08 independently verifies **PASS**. The physical Skills taxonomy matches f
 ## Batch B Git closure — 2026-10-09
 
 V003-M08 independently verifies PASS and is merged to main through PR #25. The M08 branch remains available. Batch B M05–M08 is merged in order; the detailed Git and flag disposition is recorded in the Phase 02 migration report.
+
+
+## Batch B report closeout — 2026-10-09
+
+The M08 migration and Batch B report/status closeout are merged through PRs #25 and #26. Batch B M05–M08 is closed; detailed verification and flag disposition are recorded in the Phase 02 migration report.

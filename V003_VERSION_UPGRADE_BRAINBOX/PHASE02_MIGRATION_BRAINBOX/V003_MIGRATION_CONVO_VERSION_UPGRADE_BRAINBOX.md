@@ -2064,3 +2064,10 @@ M08’s crosscheck closeout is committed and pushed as &#96;141b98d&#96;; the re
 <pre>
 The final crosscheck passed: GitHub confirms PRs #22–#25 are merged, and all four pushed ticket branch tips are ancestors of &#96;origin/main&#96; at &#96;2713a84&#96;. The only new changes are the post-merge report, migration-map/status updates, and conversation record; I’m committing those on M08 now for the separate report-closeout merge.
 </pre>
+
+
+**Codex — commentary after PR #26 and before final status reconciliation (verbatim):**
+
+<pre>
+PR #26 has now merged, publishing the post-merge report and migration-map records. I found that the current-status READMEs still describe that report closeout as pending, so I’m adding a brief status reconciliation on the retained M08 branch before the final local &#96;main&#96; sync.
+</pre>
