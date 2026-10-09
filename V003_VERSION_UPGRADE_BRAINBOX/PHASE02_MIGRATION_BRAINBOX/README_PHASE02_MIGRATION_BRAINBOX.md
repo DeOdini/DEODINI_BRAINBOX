@@ -1,6 +1,6 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE — AUTHORIZED] — Batch A and BATCHA-DOC-01 closed through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`. M05 CORE and M06 EXE independently verified PASS. M06 verification-closeout commit `16aab11` is pushed. M07 implementation `b4e3534` is pushed on `v003/m07-func-ancillary-content-classification`; report/conversation closeout is included in this follow-up commit. No M07 PR/merge; Batch B Git closure remains deferred to the batch boundary.
+**Status:** [ACTIVE — AUTHORIZED] — Batch A and BATCHA-DOC-01 closed through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`. M05/M06 independently verified PASS. M07 independently verified PASS; its seven-file verification archive/cleanup commit `8aeebe0` is pushed on `v003/m07-func-ancillary-content-classification`. M08 implementation commit `01b4e71` is pushed on `v003/m08-skills-ai-taxonomy-migration`; ChatGPT independent verification pending. No M07/M08 PR/merge; Batch B Git closure remains at the batch boundary.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
@@ -116,3 +116,17 @@ This is the current execution state and supersedes older pre-verification status
 - M07-WF-01 / M07-AUTH-01: BATCH-DEFERRED / NON-BLOCKING.
 - M08: dependency-ready after this M07 verification closeout is committed and the M07 worktree is clean.
 - Batch B push/PR/merge remains a batch-boundary action.
+
+
+---
+
+## Current Batch B execution update — 2026-10-09
+
+This is the current execution state and supersedes earlier M07/M08 readiness wording above.
+
+- **M07:** independent ChatGPT verification PASS; the seven-file verification archive/cleanup commit &#96;8aeebe0990f4d1e1d9f68ece524ca07fe20fca68&#96; is pushed to its dedicated branch.
+- **M08:** implementation commit &#96;01b4e714a075974f49ccc2f48d66449f7af5d434&#96; is pushed to &#96;origin/v003/m08-skills-ai-taxonomy-migration&#96;.
+- **M08 Codex checks:** approved taxonomy present; retained source hashes unchanged; 64 Markdown links / 0 broken; new authored trailing whitespace 0; implementation diff check PASS.
+- **M08 ChatGPT independent verification:** PENDING.
+- **M07/M08 PR or merge:** none.
+- **Batch B Git closure:** deferred to the batch boundary.

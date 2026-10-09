@@ -3749,3 +3749,90 @@ M08 is the next Batch B ticket after this independent-verification closeout is c
 ## Post-verification formatting note
 
 The verification append originally used two trailing spaces for Markdown hard breaks. Those were replaced with explicit <br> tags, preserving the line breaks while allowing the new M07 records to pass git diff --check.
+
+
+---
+
+# V003-M08 Execution Report — Skills AI Taxonomy & Legacy Skills Reconciliation
+
+**Execution date:** 2026-10-09<br>
+**Ticket:** V003-M08 — Skills AI Taxonomy & Legacy Skills Reconciliation<br>
+**Authorization:** AUTHORIZED<br>
+**Branch:** &#96;v003/m08-skills-ai-taxonomy-migration&#96;<br>
+**Implementation commit:** &#96;01b4e714a075974f49ccc2f48d66449f7af5d434&#96;<br>
+**Implementation push:** PASS — published to &#96;origin/v003/m08-skills-ai-taxonomy-migration&#96;<br>
+**ChatGPT independent verification:** PENDING<br>
+**PR / merge:** None; neither was requested or performed.
+
+## M07 closeout and branch preparation
+
+The seven modified M07 verification/status files were confirmed as the ChatGPT independent-verification archive update. They were cleaned and committed on the dedicated M07 branch before M08 work:
+
+- branch: &#96;v003/m07-func-ancillary-content-classification&#96;;
+- commit: &#96;8aeebe0990f4d1e1d9f68ece524ca07fe20fca68&#96;;
+- changed files: seven documentation, navigation, and migration-ledger records;
+- commit summary: 302 insertions / 3 deletions;
+- push: PASS; remote advanced from &#96;c6f26c2&#96; to &#96;8aeebe0&#96;;
+- remote branch tip verified against the local branch tip.
+
+No product/application source changed in this M07 cleanup. M08 was executed on its own branch from the M07 cleanup commit.
+
+## Preflight and source integrity
+
+The authorized M08 ticket, frozen V003 Specification taxonomy (§8 and relevant Skills/command/technology/prompt sections), Origin Conversation dispositions, Governance rules, and relevant M05/M06/M07 CORE/EXE/classification records were reviewed before implementation.
+
+The retained legacy source set was inspected and left unchanged:
+
+| Source | M01 baseline | M08 result |
+|---|---|---|
+| &#96;AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md&#96; | 847 bytes; 24 lines; SHA-256 &#96;1850965879a9494dd3004e605125c2d3e2bde42e678fe8d11d5e8fc9872dbef6&#96; | unchanged |
+| &#96;AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/RAW_SKILLS_BRAINBOX.md&#96; | 0 bytes; 0 lines; SHA-256 &#96;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&#96; | unchanged and empty |
+| &#96;AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/PROVEN_SKILLS_BRAINBOX.md&#96; | 0 bytes; 0 lines; SHA-256 &#96;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&#96; | unchanged and empty |
+| &#96;AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/REUSABLE_SKILLS_BRAINBOX.md&#96; | 0 bytes; 0 lines; SHA-256 &#96;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&#96; | unchanged and empty |
+| &#96;AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/FAILED_SKILLS_BRAINBOX.md&#96; | 0 bytes; 0 lines; SHA-256 &#96;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&#96; | unchanged and empty |
+
+No empty legacy file was promoted into populated knowledge. None was moved, renamed, rewritten, or deleted. The legacy Skills folder remains for the M19 reference reconciliation and M20 retirement-eligibility review.
+
+## M08 implementation
+
+The frozen §8 Skills hierarchy was materialized with 147 directories including the Skills root. Since Git does not track empty directories, 120 empty leaf directories contain &#96;.gitkeep&#96; markers. Each relevant README identifies these as Git-retention markers only; they are not knowledge, evidence, or capability claims.
+
+The implementation commit contains 135 changed files:
+
+- 120 empty-directory markers;
+- 11 Skills navigation READMEs (the root Skills README plus ten approved category READMEs);
+- two evidence-backed reusable reference/prompt records;
+- root navigation and the V003 migration map updates.
+
+The new canonical reusable records are:
+
+- &#96;COMMANDS_SKILLS_BRAINBOX/PACKAGE_COMMANDS_BRAINBOX/NPM_NPX_POWERSHELL_COMMAND_REFERENCE_BRAINBOX.md&#96; — one shared explanation anchored to frozen Specification §16. It records command knowledge and does not claim the commands were executed or tested.
+- &#96;PROMPTS_SKILLS_BRAINBOX/GUARDRAIL_PROMPTS_BRAINBOX/GUARDRAIL_PREFLIGHT_PROMPT_BRAINBOX.md&#96; — a reusable preflight prompt that cites and operationalizes Governance without becoming a competing policy source.
+
+The category records distinguish Python language, command-line, and Backend-pattern responsibilities. Technology slots follow the Origin Conversation's candidate dispositions and are marked as references/planned/empty where appropriate; no generic GA4, Figma, Playwright, or other technology profile was fabricated. Supabase/Render were not added, Google Forms was not duplicated, and n8n/email automation remains UNPROVEN / NOT VERIFIED. The root README and M01 migration map now expose the Skills target and M08 disposition.
+
+## Verification performed
+
+- approved taxonomy directories: 147 including root;
+- Git-only empty leaf markers: 120;
+- new/updated M08 Markdown documents: 13;
+- source files checked against M01 baseline: 5 / 5 unchanged;
+- local Markdown links checked: 64;
+- broken local Markdown links: 0;
+- newly authored trailing whitespace: 0;
+- implementation staged-diff &#96;git diff --check&#96;: PASS / exit 0;
+- local M08 branch was clean after the implementation commit and before this closeout write;
+- &#96;git ls-remote --heads origin&#96; matched both ticket tips to local refs:
+  - M07: &#96;8aeebe0990f4d1e1d9f68ece524ca07fe20fca68&#96;;
+  - M08: &#96;01b4e714a075974f49ccc2f48d66449f7af5d434&#96;.
+
+This ticket is documentation/taxonomy migration. No application test suite, package command, deployment, or production action was run.
+
+## Scope and disposition
+
+**M08 implementation result:** COMPLETE; Codex structural/content checks PASS.<br>
+**Legacy source handling:** RETAINED unchanged; retirement remains out of scope.<br>
+**Unsupported claims:** None made about populated skill knowledge, successful tool execution, authentication, or operational capability.<br>
+**ChatGPT independent verification:** PENDING.<br>
+**Git state:** M07 and M08 implementation commits are pushed on their individual branches. M08 report/conversation/status closeout is being published in a separate follow-up commit.<br>
+**Batch Git closure:** NOT PERFORMED; push/PR/merge closure remains at the authorized batch boundary.

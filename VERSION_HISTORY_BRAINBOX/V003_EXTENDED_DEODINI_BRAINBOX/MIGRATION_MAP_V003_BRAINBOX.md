@@ -1074,14 +1074,14 @@ Older “M07 independent verification pending” statements are historical pre-v
 
 ## 25. V003-M08 — Skills AI Taxonomy & Legacy Skills Reconciliation
 
-**Ticket status:** AUTHORIZED; taxonomy/content implementation recorded locally on the dedicated M08 branch.
+**Ticket status:** AUTHORIZED; M08 implementation commit `01b4e714a075974f49ccc2f48d66449f7af5d434` is pushed to `origin/v003/m08-skills-ai-taxonomy-migration`; Codex checks pass, with ChatGPT independent verification pending.
 **Branch:** v003/m08-skills-ai-taxonomy-migration.
 **Dependencies:** M01 and M03 satisfied; M05/M06/M07 references checked.
 **Frozen authorities:** V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md and V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md, especially Specification §§8 and 15–20.
 
 ### P14 preflight and scope
 
-The M08 ticket was read from the active Phase 02 ticket set. The frozen target tree and Skills/command/language/format/technology/prompt/pattern boundaries were inspected. Governance naming, reference, documentation, evidence, security, and ticketing authorities were checked. Current Git state was clean on the dedicated M08 branch before implementation. M07 independently verifies PASS; M07-WF-01 and M07-AUTH-01 remain BATCH-DEFERRED / NON-BLOCKING.
+The M08 ticket was read from the active Phase 02 ticket set. The frozen target tree and Skills/command/language/format/technology/prompt/pattern boundaries were inspected. Governance naming, reference, documentation, evidence, security, and ticketing authorities were checked. The M07 independent-verification archive/cleanup commit `8aeebe0990f4d1e1d9f68ece524ca07fe20fca68` was pushed before M08 implementation; the dedicated M08 branch descends from that clean M07 tip. M07 independently verifies PASS; M07-WF-01 and M07-AUTH-01 remain BATCH-DEFERRED / NON-BLOCKING.
 
 M08 creates the approved Skills taxonomy, its required category navigation, one canonical package-command explanation, and one Governance-linked guardrail preflight prompt. It does not add an architecture branch. It does not migrate or rewrite retained legacy files, create generic technology profiles without source evidence, or migrate unproven n8n/email automation.
 
@@ -1120,5 +1120,5 @@ M07-WF-01 remains BATCH-DEFERRED / NON-BLOCKING. M08 did not create an n8n/email
 
 No new technology or prompt category was created. No real secret, identifier, or customer data was copied. M08 is documentation/taxonomy work; it did not run package commands, deploy services, test application code, or claim a new executable capability.
 
-**Implementation commit:** pending. **Push:** pending. **PR/merge:** not requested or performed.
-**ChatGPT independent M08 verification:** pending.
+**Implementation commit:** `01b4e714a075974f49ccc2f48d66449f7af5d434`, pushed to origin. **PR/merge:** not requested or performed.
+**ChatGPT independent M08 verification:** pending. The execution report, conversation record, and status closeout are being added in a follow-up commit on the same M08 branch.
