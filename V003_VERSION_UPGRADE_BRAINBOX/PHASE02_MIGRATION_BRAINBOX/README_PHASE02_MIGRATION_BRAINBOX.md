@@ -1,6 +1,6 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE — AUTHORIZED] — Batch A and BATCHA-DOC-01 closed through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`. M05/M06 independently verified PASS. M07 independently verified PASS; its seven-file verification archive/cleanup commit `8aeebe0` is pushed on `v003/m07-func-ancillary-content-classification`. M08 implementation commit `01b4e71` is pushed on `v003/m08-skills-ai-taxonomy-migration`; ChatGPT independent verification pending. No M07/M08 PR/merge; Batch B Git closure remains at the batch boundary.
+**Status:** [ACTIVE - AUTHORIZED] - Batch C M09-M14 independently verified and merged through PRs #28-#33; Batch C records are current below; M15 not started and requires its own P14 preflight.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
@@ -312,3 +312,14 @@ This is the current M14 state; earlier entries above are retained as chronologic
 - M14 documentation closeout commit `2f01afbf4eb734a42a0b49d0b89044e4194ab7f9` is pushed. Fetch confirmed local/upstream equality, 0/0 ahead/behind, and a clean worktree. No PR/merge.
 
 - Final report/transcript verification commit `89af2d34a3caabaabe7882706098b8a0b3472e54` is pushed and fetched; local/upstream tips match, ahead/behind is 0/0, and the worktree is clean. M14 remains unmerged.
+
+
+---
+
+## Current Batch C status — 2026-10-09
+
+V003-M09 through V003-M14 independently verify PASS and have been merged to `main` in order through PRs #28–#33. Their merge commits and post-merge ancestry checks are recorded in [the Batch C report](V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md) and [living Migration Map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md). All six ticket branches remain available.
+
+No blocking Batch C flags remain. `M09-REF-02` / `M09-REF-03`, `M10-WS-01`, and the verbatim portions of `M10-DOC-WS-01` / `M14-DOC-WS-01` remain non-blocking or explicitly preserved under the owners/dispositions in the report. The M10 archive-only whitespace separator was corrected in this closeout. `M01-GIT-01` remains assigned to M21 and `M01-FH-01` remains assigned to M15/M16.
+
+**M15:** not started. It may proceed after Batch C documentation closure and its own ticket-specific P14 preflight; no M15 changes are included here.
