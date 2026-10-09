@@ -6,9 +6,10 @@
 **PURPOSE:** Navigate evidence-backed descriptions of component/service/data/test/release/agent relationships, without absorbing ordered procedures.
 **MENTAL MODEL:** ORCHESTRATION = relationships and flow between parts; WORKFLOWS = step-by-step actions performed by people or agents.
 **GOVERNED BY:** Governance Evidence, Reference, Promotion, and Ticketing; Fullstack Sandbox authority.
-**CANONICAL SOURCE:** Frozen V003 Specification §§8 and 11; V003-P08; V003-M10.
+**CANONICAL SOURCE:** Frozen V003 Specification §§8, 11, and 13; V003-P08; V003-M10; V003-M13.
 **APPLIES TO:** Fullstack system coordination and handoff relationships.
-**LAST VERIFIED:** 2026-10-09
+**LAST VERIFIED:** 2026-10-09 — Codex M13 navigation read-back.
+**VERIFIER:** M10 independent verification: PASS. M13 navigation read-back: Codex PASS; independent M13 verification pending.
 
 ## Authoritative and local tree
 
@@ -19,7 +20,9 @@ ORCHESTRATION_FULLSTACK_BRAINBOX/
 |-- API_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
 |-- AUTH_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
 |-- DATA_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- ANALYTICS_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
+|-- ANALYTICS_ORCH_BRAINBOX/
+|   |-- README_ANALYTICS_ORCH_BRAINBOX.md [PRESENT — M13 NAVIGATION]
+|   `-- .gitkeep [EMPTY — NO OPERATIONAL FLOW]
 |-- TEST_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
 |-- RELEASE_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
 |-- AI_AGENT_ORCH_BRAINBOX/
@@ -43,10 +46,15 @@ The actual mentions were inspected in the preset workflow and its comparison gui
 
 ## No invented orchestration
 
-No concrete service-coordination, API/auth/data/analytics flow, test orchestration, or release orchestration was populated. The matching branches remain empty placeholders. The raw n8n/email distribution concept is not configured or asserted to work.
+No concrete service-coordination, API/auth/data/analytics flow, test orchestration, or release orchestration was populated. M13 adds the analytics ownership boundary and navigation only; the Analytics Orchestration placeholder remains empty and no operational analytics flow is claimed. The raw n8n/email distribution concept is not configured or asserted to work.
 
 ## References
 
+- [Analytics Orchestration ownership and population state](ANALYTICS_ORCH_BRAINBOX/README_ANALYTICS_ORCH_BRAINBOX.md)
+- [Backend Integrations](../BACKEND_SANDBOX_BRAINBOX/INTEGRATIONS_BACKEND_BRAINBOX/README_INTEGRATIONS_BACKEND_BRAINBOX.md)
+- [Frontend Data Visualization](../FRONTEND_SANDBOX_BRAINBOX/UI_UX_DESIGN_FRONTEND_BRAINBOX/DATA_VISUALIZATION_DESIGN_BRAINBOX/README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md)
+- [GA4 Technology](../../../../SKILLS_AI_BRAINBOX/TECHNOLOGIES_SKILLS_BRAINBOX/ANALYTICS_TECHNOLOGIES_BRAINBOX/README_ANALYTICS_TECHNOLOGIES_BRAINBOX.md)
+- [Governance Security](../../../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
 - [Fullstack Sandbox](../README_FULLSTACK_SANDBOX_BRAINBOX.md)
 - [Workflows](../WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md)
 - [Architecture applications](../ARCHITECTURE_FULLSTACK_BRAINBOX/README_ARCHITECTURE_FULLSTACK_BRAINBOX.md)
@@ -55,7 +63,7 @@ No concrete service-coordination, API/auth/data/analytics flow, test orchestrati
 - [Production DEVOPS](../../../../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md)
 - [Frozen V003 Specification](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §11
 - [V003 Origin Conversation](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
-- [M10 ticket](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
+- [M10 and M13 tickets](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
 - [Living migration map](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 
 
