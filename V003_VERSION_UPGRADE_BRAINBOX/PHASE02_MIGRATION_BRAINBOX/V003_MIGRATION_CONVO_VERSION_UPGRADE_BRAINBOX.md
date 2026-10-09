@@ -2894,3 +2894,16 @@ Operator: “I completed sign-in”
 ## Codex — transcript-preservation flag update
 
 “`git diff --check` identifies two trailing-space Markdown hard breaks at conversation archive lines 2818–2819. They are present in the original Operator ticket text. I’m preserving them for the word-for-word archive and recording M14-DOC-WS-01 as BATCH-DEFERRED / NON-BLOCKING; this does not affect M14 implementation correctness.”
+
+## Operator — GitHub sign-in response for documentation closeout
+
+Prompt: “Complete GitHub sign-in for M14 closeout commit `2f01afb` on the desktop, then choose ‘I completed sign-in’.”
+Operator: “I completed sign-in”
+
+## Codex — publication and verification messages (verbatim)
+
+“The documentation closeout commit `2f01afb` is ready, but its push is waiting in a new Git Credential Manager process. Please complete the GitHub sign-in prompt on the desktop and confirm; I won’t handle the authentication UI.”
+
+“Sign-in is complete, and the documentation push returned exit code 0 (`6865c18` → `2f01afb`). I’m fetching the branch now to confirm GitHub’s tip and clean status, then I’ll update the report with the exact closeout publication result.”
+
+“Fetch confirmed local HEAD and `origin/v003/m14-production-devops-environment` both equal `2f01afbf4eb734a42a0b49d0b89044e4194ab7f9`. Ahead/behind is 0/0 and the worktree is clean. The closeout commit contains the migration-map entry, report, verbatim conversation, and status corrections. M14 remains unmerged; independent ChatGPT verification is pending.”

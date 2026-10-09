@@ -1735,3 +1735,7 @@ Parent: `81c1068f96a8f8f5d14914f1220fcabaebf239b5`.
 Push: PASS after Operator completed GitHub sign-in. Local HEAD and `origin/v003/m14-production-devops-environment` were confirmed at the implementation commit. Three verifier-status lines, this map entry, and the report/conversation closeout are being published in a separate documentation commit.
 
 **Batch-deferred documentation flag — M14-DOC-WS-01:** The verbatim Operator ticket in the Phase 02 conversation archive retains two trailing-space Markdown hard breaks at lines 2818–2819. These are present in the original message and are preserved for transcript fidelity. Formatting-only; no effect on M14 structure, authority, evidence, dependencies, or correctness. Classified BATCH-DEFERRED / NON-BLOCKING under the Operator's Phase 02 rule. Disposition: retain verbatim; no content correction is authorized or needed. Scoped whitespace checks exclude this exact archival source span, and the original warning remains documented.
+
+### Documentation publication verification — 2026-10-09
+
+The separate M14 documentation closeout commit `2f01afbf4eb734a42a0b49d0b89044e4194ab7f9` (`V003-M14 publish migration closeout`) was pushed after Operator sign-in. A fetch confirmed local HEAD and `origin/v003/m14-production-devops-environment` both equal that commit. Ahead/behind = 0/0; worktree clean. This supersedes the preceding in-progress publication wording. No PR or merge was created.

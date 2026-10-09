@@ -6271,3 +6271,7 @@ No Production outcomes were fabricated, no deployment was performed, no secrets 
 **Classification:** BATCH-DEFERRED / NON-BLOCKING.
 **Reason/disposition:** The Operator requires word-for-word conversation recording. Preserve the original spacing rather than alter evidence. Record the warning and exclude only this exact archive content from the scoped whitespace check.
 **Correction timing/owner:** No text correction; retain as documented archival formatting through Batch C closure.
+
+## 8. Documentation publication verification
+
+The separate M14 documentation closeout commit `2f01afbf4eb734a42a0b49d0b89044e4194ab7f9` (`V003-M14 publish migration closeout`) was pushed after Operator sign-in. `git fetch origin v003/m14-production-devops-environment` confirmed local HEAD and `origin/v003/m14-production-devops-environment` both at `2f01afbf4eb734a42a0b49d0b89044e4194ab7f9`. Ahead/behind count is 0/0, and the worktree is clean. M14 remains unmerged; no PR was created.

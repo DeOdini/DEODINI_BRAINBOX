@@ -308,3 +308,5 @@ This is the current M14 state; earlier entries above are retained as chronologic
 - M14 has no PR/merge. Batch C Git closure remains pending independent verification and batch-boundary review.
 
 - **M14-DOC-WS-01:** Two trailing-space Markdown hard breaks at conversation archive lines 2818–2819 are preserved from the verbatim Operator ticket. Classified BATCH-DEFERRED / NON-BLOCKING; transcript fidelity is retained, and the scoped whitespace check excludes only that exact archival text.
+
+- M14 documentation closeout commit `2f01afbf4eb734a42a0b49d0b89044e4194ab7f9` is pushed. Fetch confirmed local/upstream equality, 0/0 ahead/behind, and a clean worktree. No PR/merge.
