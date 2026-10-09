@@ -3551,3 +3551,201 @@ The source describes n8n as learning-stage and says the email trigger system has
 ### M07 result
 
 Every substantive section in the three mixed legacy sources now has a documented canonical owner, future candidate, or historical/deprecated disposition. The three source records remain intact. No blocking flag remains; M07-WF-01 and M07-AUTH-01 are documented as batch-deferred/non-blocking under the active Phase 02 flag rule.
+
+---
+
+# ChatGPT Independent Verification — V003-M07 FUNC Ancillary Classification
+
+**Date:** 2026-10-09<br>
+**Ticket:** V003-M07 — FUNC Ancillary Compliance / Requirements / Workflow Classification<br>
+**Independent result:** **PASS**<br>
+**Blocking M07 flags:** NONE<br>
+**Batch-deferred flags:** `M07-WF-01`, `M07-AUTH-01`<br>
+**Next ticket:** M08 after M07 verification-closeout commit + clean handoff
+
+## 1. Git / publication verification
+
+Verified:
+
+- M06 verification-closeout parent: `16aab11293f656ae21f1ca215195186992b60cd2`;
+- M07 implementation commit: `b4e3534364fc26801ade5b1127baed857829ca6f`;
+- M07 report/conversation closeout: `c6f26c21c02ab4eaf42339537113d2588c49f883`;
+- branch: `v003/m07-func-ancillary-content-classification`;
+- local HEAD before this independent-verification write: `c6f26c21c02ab4eaf42339537113d2588c49f883`;
+- upstream/local/remote tips matched;
+- worktree was clean before ChatGPT verification write;
+- no M07 PR exists;
+- M07 is not merged into `origin/main`;
+- `main` / `origin/main` remain `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`.
+
+**Git/publication claims:** PASS.
+
+## 2. Source integrity
+
+The three legacy sources remain at their original paths and independently match the M01 baseline:
+
+| Source | Bytes | Logical lines | SHA-256 | Result |
+|---|---:|---:|---|---|
+| `FQ_MUST_README.md` | 4,387 | 103 | `edfff2651ab1005a8d166c06df9553bd8a4f82ba4508d648dbbd8b680365fab9` | EXACT M01 MATCH |
+| `FUNC_REQ_BRAINBOX.md` | 4,943 | 111 | `e2d9ec14ca1d96703fca5be75316a92efa261b245307923be9f78cb986bd8e90` | EXACT M01 MATCH |
+| `FUNC_WORKFLOW_BRAINBOX.md` | 11,857 | 230 | `7a73a3b43226ddd5eb9c6119274b95f2bd623d5fdb30a30573d65447ae5602bd` | EXACT M01 MATCH |
+
+Current Git status reports none of these source files modified.
+
+No source was moved, renamed, rewritten, or deleted.
+
+**Source-integrity claim:** PASS.
+
+## 3. Section-by-section classification completeness
+
+The Migration Map §23 was compared against the actual source headings.
+
+### FQ_MUST_README.md
+
+All substantive areas are classified:
+
+- mandatory compliance notice;
+- reading order / Steps 1–4;
+- standing instruction pattern;
+- Step 5 update note;
+- enforcement;
+- compliance checkpoint;
+- function-area change-request reference.
+
+Destinations correctly separate current Governance, local FUNC navigation, CORE references, future workflow/Skills candidates, and historical/superseded content.
+
+### FUNC_REQ_BRAINBOX.md
+
+Both substantive requests are classified:
+
+- initial capability/connector/skill/RDC/email report;
+- mandatory file submission/report compilation, including file/output/reporting requirements.
+
+The ledger correctly points active capability schema to M05 CORE and current system-wide rules to Governance instead of creating a competing schema.
+
+### FUNC_WORKFLOW_BRAINBOX.md
+
+Every substantive section is classified:
+
+- §1 Document Purpose;
+- §2.1–§2.7;
+- §3 Core Principles;
+- §4 System Components;
+- §5 AI Agent Roles and Hierarchy;
+- §6 End-to-End Workflow;
+- §7 Automation Layer;
+- §8 Email Trigger Protocol;
+- §9 Verification and Validation Loop;
+- §10 Standing Rule;
+- §11 Variables;
+- revision/provenance tail.
+
+M07 does not prematurely construct M08/M09/M10 destination trees.
+
+**Every-substantive-section success gate:** PASS.
+
+## 4. Canonical-boundary verification
+
+Independent read-back confirms:
+
+- current system-wide rules point to Governance;
+- local navigation remains local to FUNC;
+- M05 CORE owns current capability-report schema;
+- reusable generic technology material is only a candidate for M08;
+- actual DEVOPS / Fullstack workflow and orchestration material remains for M09/M10 under their own preflights;
+- M19 owns later reference reconciliation;
+- M20 retains source-retirement authority.
+
+No new active record duplicates the retained legacy Governance text.
+
+**No competing Governance copy:** PASS.
+
+## 5. Unproven automation evidence
+
+The retained workflow itself describes:
+
+- n8n as learning-stage;
+- the email-trigger system as not yet tested.
+
+M07 preserves those concepts as:
+
+**UNPROVEN / NOT VERIFIED.**
+
+It does not infer live connector/authentication state, successful trigger execution, or standing routing authority.
+
+No automation was run and no email was sent by M07 according to the execution record.
+
+**Unproven-automation success gate:** PASS.
+
+## 6. Deferred flags
+
+### M07-WF-01 — BATCH-DEFERRED / NON-BLOCKING
+
+The workflow source mixes reusable n8n/email technology material with system-specific workflow/orchestration procedure.
+
+Correct ownership remains split across:
+
+- M08 — reusable technology knowledge where supported;
+- M09 — applicable DEVOPS procedure;
+- M10 — applicable Fullstack workflow/orchestration;
+- M19/M20 — references/retirement.
+
+M07 correctly records the classification without guessing or moving content.
+
+**M08 impact:** NON-BLOCKING.<br>
+**M09/M10 impact:** carry-forward classification evidence.
+
+### M07-AUTH-01 — BATCH-DEFERRED / NON-BLOCKING
+
+Legacy generalized push/notify wording cannot grant standing authority.
+
+M07 correctly marks it deprecated/superseded by current Governance and does not execute or reproduce it as active policy.
+
+**M08 impact:** NON-BLOCKING.<br>
+**M10/M19/M20:** later ownership as recorded.
+
+## 7. Link / whitespace / scope verification
+
+Independent scan across the five M07 implementation/status documents:
+
+- Markdown files checked: **5**;
+- local Markdown links checked: **19**;
+- broken: **0**.
+
+Independent M07 commit-range check:
+
+`git diff --check 16aab112...c6f26c21` → **PASS / exit 0**.
+
+Changed paths in the M07 range are documentation/navigation/report/map records only. No application/product source changed.
+
+Therefore no product/application test was required to verify an implementation change. The execution record states no application test suite was run.
+
+**Link integrity:** PASS.<br>
+**Whitespace hygiene:** PASS.<br>
+**Documentation-only scope:** PASS.
+
+## 8. Final verdict
+
+| Gate | Result |
+|---|---|
+| Dedicated M07 branch/commits | PASS |
+| M06 clean dependency handoff | PASS |
+| Three sources unchanged | PASS |
+| M01 hashes retained | PASS |
+| Every substantive section classified | PASS |
+| No competing Governance copy | PASS |
+| n8n/email remain unproven | PASS |
+| M07-WF-01 classification | PASS — NON-BLOCKING |
+| M07-AUTH-01 classification | PASS — NON-BLOCKING |
+| 19 links / 0 broken | PASS |
+| `git diff --check` | PASS |
+| No M07 PR/merge | PASS |
+
+**V003-M07 independent ChatGPT verification: PASS.**
+
+M08 is the next Batch B ticket after this independent-verification closeout is committed on M07 and the M07 worktree is clean. Batch B push/PR/merge remains a batch-boundary action.
+
+
+## Post-verification formatting note
+
+The verification append originally used two trailing spaces for Markdown hard breaks. Those were replaced with explicit <br> tags, preserving the line breaks while allowing the new M07 records to pass git diff --check.

@@ -1037,3 +1037,35 @@ All three legacy sources remain unchanged at their original paths. M07 does not 
 
 **M07 classification result:** all substantive sections have a documented canonical owner or explicit future candidate/disposition. No competing Governance text was created. No source was moved, renamed, rewritten, or deleted. No blocking flag remains.
 **Git lifecycle:** implementation commit `b4e3534364fc26801ade5b1127baed857829ca6f` is pushed to `origin/v003/m07-func-ancillary-content-classification`; this report and conversation closeout are included in a separate follow-up commit on the same branch.
+
+---
+
+## 24. ChatGPT independent verification — V003-M07 — 2026-10-09
+
+**Result:** PASS.<br>
+**Blocking M07 flags:** NONE.<br>
+**Batch-deferred flags:** `M07-WF-01`, `M07-AUTH-01`.<br>
+**Next ticket:** M08 after M07 verification-closeout commit + clean handoff.
+
+Independent checks confirmed:
+
+- M06 verification-closeout parent `16aab11293f656ae21f1ca215195186992b60cd2`;
+- M07 implementation `b4e3534364fc26801ade5b1127baed857829ca6f`;
+- M07 report/conversation closeout `c6f26c21c02ab4eaf42339537113d2588c49f883`;
+- local/upstream/remote M07 tips matched before this verification write;
+- no M07 PR/merge;
+- FQ_MUST_README.md = 4,387 bytes / 103 lines / SHA-256 `edfff2651ab1005a8d166c06df9553bd8a4f82ba4508d648dbbd8b680365fab9`;
+- FUNC_REQ_BRAINBOX.md = 4,943 / 111 / `e2d9ec14ca1d96703fca5be75316a92efa261b245307923be9f78cb986bd8e90`;
+- FUNC_WORKFLOW_BRAINBOX.md = 11,857 / 230 / `7a73a3b43226ddd5eb9c6119274b95f2bd623d5fdb30a30573d65447ae5602bd`;
+- all three equal the M01 baseline and are unchanged in Git;
+- the §23 ledger covers every substantive section in all three sources;
+- Governance remains canonical for current system-wide rules;
+- M05 CORE remains canonical for active capability schema;
+- M08/M09/M10 are only future candidate destinations where their ticket scopes apply;
+- n8n and email-trigger automation remain UNPROVEN / NOT VERIFIED;
+- `M07-WF-01` and `M07-AUTH-01` are correctly NON-BLOCKING;
+- independent five-file M07 navigation scan: 19 links / 0 broken;
+- M07 commit range passes `git diff --check`;
+- M07 changed documentation/status/report/map records only; no product source changed.
+
+Older “M07 independent verification pending” statements are historical pre-verification states and are superseded by this section.

@@ -85,3 +85,10 @@ No policy text was copied into FUNC. All three sources remain unchanged. The det
 ## Independent verification status — 2026-10-09
 
 M05 CORE and M06 EXE independently verify **PASS**. RESEARCH/BROWSER/FILE/CODE are admitted only for the evidence-scoped Codex operations in frozen §9; MEDIA remains reserved. M07 may proceed after the M06 verification-closeout commit and clean handoff.
+
+
+---
+
+## Independent verification status — M07 (2026-10-09)
+
+M07 ancillary-source classification independently verifies **PASS**. All three retained sources remain byte-for-byte at the M01 baseline; no duplicate Governance policy was created; n8n/email automation remains UNPROVEN / NOT VERIFIED. M07-WF-01 and M07-AUTH-01 are non-blocking carry-forwards.

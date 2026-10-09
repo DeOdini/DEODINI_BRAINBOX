@@ -548,3 +548,10 @@ This note supersedes any earlier current-state line in this file that says M05 o
 - M06 publication closeout/pre-verification branch tip: `a6fe5769faaa36c60def8c2d255654657d7d2ecb`.
 - M06 PR/merge: none.
 - M07: dependency-ready after the M06 verification-closeout records are committed and the M06 worktree is clean.
+
+
+---
+
+## Current Phase 02 verification override — 2026-10-09
+
+M07 FUNC ancillary classification independently verifies **PASS**. The three legacy sources remain unchanged, n8n/email remain UNPROVEN / NOT VERIFIED, and `M07-WF-01` plus `M07-AUTH-01` are non-blocking. M08 may proceed after the M07 verification-closeout commit and clean branch handoff.

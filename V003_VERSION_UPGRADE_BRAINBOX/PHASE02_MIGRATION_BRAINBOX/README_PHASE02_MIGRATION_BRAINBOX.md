@@ -103,3 +103,16 @@ This is the current execution state and supersedes older pre-verification status
 - M06 PR/merge: none.
 - M06-LINK-01: **BATCH-DEFERRED / NON-BLOCKING** — Codex count 120/0 vs independent current count 113/0; zero broken links confirmed.
 - M07: dependency-ready after this verification closeout is committed on M06 and the M06 worktree is clean.
+
+
+---
+
+## Current Batch B verification override — 2026-10-09
+
+- M05 FUNC CORE: **PASS**.
+- M06 FUNC EXE: **PASS**.
+- M07 FUNC ancillary classification: **PASS**.
+- M07 blocking flags: NONE.
+- M07-WF-01 / M07-AUTH-01: BATCH-DEFERRED / NON-BLOCKING.
+- M08: dependency-ready after this M07 verification closeout is committed and the M07 worktree is clean.
+- Batch B push/PR/merge remains a batch-boundary action.
