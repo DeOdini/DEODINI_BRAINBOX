@@ -2156,6 +2156,7 @@ Both records mark all described capabilities [PLANNED]. Root `README_BRAINBOX.md
 ### Verification and publication
 
 - P14 preflight passed for the specifically authorized two-record scope.
-- File tree, planned-state wording, root population/local tree/navigation, and local Markdown references are being checked before implementation publication.
-- M18 implementation Git commit/push and post-push report/conversation closeout: pending.
+- Pre-publication checks passed: exactly the two approved target records exist; all 12 local links within them resolve; root population, physical local tree, and navigation reflect the new records; targeted `git diff --check` found no whitespace errors.
+- Implementation commit `55b09b6ce8873ea4301cc5ff1551d72a8a61614b` (`V003-M18 create planned Router milestone records`) was pushed; fetch confirmed local and origin M18 tips equal, ahead/behind 0/0, with a clean worktree.
+- The M18 execution report, Operator-Codex conversation, and current-status notes are included in the separate documentation closeout on this branch.
 - No PR or merge is part of M18; Batch D Git lifecycle remains at its batch boundary.
