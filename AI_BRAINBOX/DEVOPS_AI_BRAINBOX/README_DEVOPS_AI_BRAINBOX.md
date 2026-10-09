@@ -23,7 +23,8 @@ DEVOPS_AI_BRAINBOX/
 ├── README_DEVOPS_AI_BRAINBOX.md [PRESENT]
 ├── SANDBOX_DEVOPS_BRAINBOX/
 │   ├── README_SANDBOX_DEVOPS_BRAINBOX.md [PRESENT]
-│   ├── FULLSTACK_SANDBOX_BRAINBOX/ [PLANNED — M10 onward]
+│   ├── FULLSTACK_SANDBOX_BRAINBOX/ [PRESENT — M10]
+│   │   └── README_FULLSTACK_SANDBOX_BRAINBOX.md [PRESENT]
 │   ├── CASE_STUDIES_SANDBOX_BRAINBOX/ [PLANNED — M15]
 │   ├── PASSED_SANDBOX_BRAINBOX/ [PLANNED]
 │   └── FAILED_SANDBOX_BRAINBOX/ [PLANNED]
@@ -46,12 +47,14 @@ The nested target structure is defined by the frozen Specification §8. The root
 DEVOPS_AI_BRAINBOX/
 ├── README_DEVOPS_AI_BRAINBOX.md
 ├── SANDBOX_DEVOPS_BRAINBOX/
-│   └── README_SANDBOX_DEVOPS_BRAINBOX.md
+│   ├── README_SANDBOX_DEVOPS_BRAINBOX.md
+│   └── FULLSTACK_SANDBOX_BRAINBOX/
+│       └── README_FULLSTACK_SANDBOX_BRAINBOX.md
 └── PROD_DEVOPS_BRAINBOX/
     └── README_PROD_DEVOPS_BRAINBOX.md
 ```
 
-No other DEVOPS child folders or knowledge records were created by M09.
+The Fullstack README owns its detailed local subtree. M09 created only the original DEVOPS authority READMEs; M10 created the Fullstack Sandbox target.
 
 ## Domain boundary
 
@@ -63,7 +66,7 @@ No other DEVOPS child folders or knowledge records were created by M09.
 
 ## M09 source disposition
 
-The former project-workflow sources remain unchanged in their original location. The two Fullstack workflow documents explicitly identify themselves as proposed/raw and unproven. Their content is classified as Sandbox Fullstack workflow material for the later M10 migration; M09 does not copy or move it.
+The former project-workflow sources remain unchanged in their original location. M09 classified the two Fullstack workflow documents as proposed/raw and unproven without copying them. M10 then copied 001 and 002 into the Fullstack Workflows target without changing their content; the legacy originals remain pending M20. M10 also created empty architecture/orchestration placeholders and one reference-only, unverified AI-agent handoff classification. No workflow was promoted.
 
 The empty top-level legacy PROVEN and FAILED files contain no records. No Production operation, incident, or regression record was migrated from the M09 source set. The separate FootHive project/evidence source remains assigned to the later M15/M16 work and is not a Production record by implication.
 

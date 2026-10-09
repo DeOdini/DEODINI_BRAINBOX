@@ -19,24 +19,27 @@ This README governs the Sandbox domain's purpose and navigation. It does not cer
 ```text
 SANDBOX_DEVOPS_BRAINBOX/
 ├── README_SANDBOX_DEVOPS_BRAINBOX.md [PRESENT]
-├── FULLSTACK_SANDBOX_BRAINBOX/ [PLANNED — M10 onward]
+├── FULLSTACK_SANDBOX_BRAINBOX/ [PRESENT — M10]
+│   └── README_FULLSTACK_SANDBOX_BRAINBOX.md [PRESENT]
 ├── CASE_STUDIES_SANDBOX_BRAINBOX/ [PLANNED — M15]
 ├── PASSED_SANDBOX_BRAINBOX/ [PLANNED]
 └── FAILED_SANDBOX_BRAINBOX/ [PLANNED]
 ```
 
-The approved Fullstack subtree and its architecture, workflow, and orchestration branches are defined in frozen Specification §8. M10 owns their content-aware migration. FootHive workflow-trial records belong to the approved Sandbox case-study destination in M15; they are not created or moved by M09.
+The approved Fullstack subtree and its architecture, workflow, and orchestration branches are defined in frozen Specification §8. M10 created the Fullstack target and records its detailed local tree there. FootHive workflow-trial records belong to the approved Sandbox case-study destination in M15; they were not created or moved by M09 or M10.
 
 ## Current local tree
 
 ```text
 SANDBOX_DEVOPS_BRAINBOX/
-└── README_SANDBOX_DEVOPS_BRAINBOX.md
+├── README_SANDBOX_DEVOPS_BRAINBOX.md
+└── FULLSTACK_SANDBOX_BRAINBOX/
+    └── README_FULLSTACK_SANDBOX_BRAINBOX.md
 ```
 
-The planned child folders above are not represented as populated. This ticket creates only the Sandbox authority README and its parent path.
+The Fullstack README lists its local workflow, architecture, and orchestration subtree with truthful population states. FootHive case-study records remain assigned to M15; M10 did not touch them.
 
-## Content classification from M09
+## Content classification from M09 (historical closeout state)
 
 The following current sources contain meaningful proposed/raw workflow material. Their own status language remains unproven, and their files remain at the original paths pending M10:
 
@@ -49,6 +52,10 @@ These are Sandbox Fullstack workflow candidates, not canonical procedures yet. M
 
 The legacy `PROVEN_PATTERN_PROJ_BRAINBOX.md` and `FAILED_PATTERN_PROJ_BRAINBOX.md` are both 0-byte, 0-line placeholders. They contain no outcomes to copy into Sandbox Passed/Failed records. Their existence does not establish a successful or failed experiment.
 
+## M10 current disposition
+
+M10 copied the two unproven Fullstack workflow documents into `FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/` without changing their content. Their legacy originals remain unchanged pending M20; `FSTACK_MUST_README.md` remains as the legacy comparison guide. The architecture and orchestration branches are present with empty placeholders, except the AI-agent branch's reference-only, unverified handoff classification. No architecture choice, service-coordination behavior, production deployment sequence, or Production evidence was invented.
+
 ## Status and promotion
 
 Do not use “PROVEN” as a permanent bucket. Describe what was tried, the evidence, the result, limits, and date in the proper record. Promotion to Production is evidence-based and subject to Governance and Operator gates. Production must collect its own outcomes because a Sandbox pass can still fail after release.
@@ -56,7 +63,7 @@ Do not use “PROVEN” as a permanent bucket. Describe what was tried, the evid
 ## Related domains
 
 - [DEVOPS parent](../README_DEVOPS_AI_BRAINBOX.md)
-- Fullstack Sandbox workflow/architecture/orchestration migration: M10.
+- [Fullstack Sandbox workflow/architecture/orchestration](FULLSTACK_SANDBOX_BRAINBOX/README_FULLSTACK_SANDBOX_BRAINBOX.md), migrated in M10.
 - FootHive trial and evidence: M15; later Production and Portfolio summaries: M16.
 - Reusable technology/pattern knowledge belongs to Skills, with references rather than duplicate project-specific records.
 
