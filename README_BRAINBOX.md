@@ -12,8 +12,8 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M05 CORE and M06 EXE implementation/read-back; ChatGPT — M05 and M06 independent verification PASS. M05 is published at `585f960`; M06 implementation is `9635e5d` with publication-closeout commit `a6fe576`; no M06 PR/merge.
-**LAST VERIFIED:** 2026-10-08
+**VERIFIER:** Codex — M05/M06 read-back and M07 section classification; ChatGPT — M05 and M06 independent verification PASS. M06 verification-closeout `16aab11` is pushed; M07 implementation `b4e3534` is pushed on `v003/m07-func-ancillary-content-classification`; report/conversation closeout included in the follow-up commit; no PR/merge.
+**LAST VERIFIED:** 2026-10-09
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
 **APPLIES TO:** Operators and AI agents navigating or modifying DEODINI_BRAINBOX.
@@ -548,3 +548,10 @@ This note supersedes any earlier current-state line in this file that says M05 o
 - M06 publication closeout/pre-verification branch tip: `a6fe5769faaa36c60def8c2d255654657d7d2ecb`.
 - M06 PR/merge: none.
 - M07: dependency-ready after the M06 verification-closeout records are committed and the M06 worktree is clean.
+
+
+---
+
+## Current Phase 02 verification override — 2026-10-09
+
+M07 FUNC ancillary classification independently verifies **PASS**. The three legacy sources remain unchanged, n8n/email remain UNPROVEN / NOT VERIFIED, and `M07-WF-01` plus `M07-AUTH-01` are non-blocking. M08 may proceed after the M07 verification-closeout commit and clean branch handoff.

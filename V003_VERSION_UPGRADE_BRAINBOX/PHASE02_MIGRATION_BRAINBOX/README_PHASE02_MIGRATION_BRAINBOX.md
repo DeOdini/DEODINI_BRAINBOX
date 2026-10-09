@@ -1,12 +1,12 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE — AUTHORIZED] — Batch A and BATCHA-DOC-01 are published/closed through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`. M05 FUNC CORE implementation is committed and pushed at 585f960; independent ChatGPT verification remains pending. M06 implementation commit `9635e5d` is pushed on v003/m06-func-exe-registry-migration; M06 independent ChatGPT verification remains pending. No M06 PR/merge; Batch B remote Git closure remains deferred to the batch boundary.
+**Status:** [ACTIVE — AUTHORIZED] — Batch A and BATCHA-DOC-01 closed through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`. M05 CORE and M06 EXE independently verified PASS. M06 verification-closeout commit `16aab11` is pushed. M07 implementation `b4e3534` is pushed on `v003/m07-func-ancillary-content-classification`; report/conversation closeout is included in this follow-up commit. No M07 PR/merge; Batch B Git closure remains deferred to the batch boundary.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
 **MENTAL MODEL:** Phase 01 froze the target; Phase 02 compares the live Brainbox against that target and migrates through individually scoped V003-Mxx tickets covered by the Operator's explicit M01–M21 set authorization, with each ticket subject to dependencies and P14 preflight.
 **GOVERNED BY:** The frozen V003 Specification, Origin Conversation, P14 migration preflight, the V003 parent README, and the Operator's explicit approval of V003-M01–M21 recorded in the Phase 02 report/conversation.
-**LAST VERIFIED:** 2026-10-08
+**LAST VERIFIED:** 2026-10-09
 
 ## Authority boundary
 
@@ -103,3 +103,16 @@ This is the current execution state and supersedes older pre-verification status
 - M06 PR/merge: none.
 - M06-LINK-01: **BATCH-DEFERRED / NON-BLOCKING** — Codex count 120/0 vs independent current count 113/0; zero broken links confirmed.
 - M07: dependency-ready after this verification closeout is committed on M06 and the M06 worktree is clean.
+
+
+---
+
+## Current Batch B verification override — 2026-10-09
+
+- M05 FUNC CORE: **PASS**.
+- M06 FUNC EXE: **PASS**.
+- M07 FUNC ancillary classification: **PASS**.
+- M07 blocking flags: NONE.
+- M07-WF-01 / M07-AUTH-01: BATCH-DEFERRED / NON-BLOCKING.
+- M08: dependency-ready after this M07 verification closeout is committed and the M07 worktree is clean.
+- Batch B push/PR/merge remains a batch-boundary action.

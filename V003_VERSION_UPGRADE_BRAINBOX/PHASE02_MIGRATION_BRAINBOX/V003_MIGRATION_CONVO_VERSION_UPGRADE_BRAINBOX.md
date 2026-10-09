@@ -1743,3 +1743,122 @@ M06 Git history independently confirmed:
 M07 dependencies M03/M05/M06 are independently verified PASS.
 
 **M07 is dependency-ready after this verification closeout receives an M06 commit and the M06 worktree is clean.**
+
+
+## V003-M07 — Operator / Codex Conversation Record
+
+**Date:** 2026-10-09
+
+This section records the Operator's M07 instruction and Codex's progress messages verbatim. Tool calls and raw command output are execution evidence and are summarized in the report and Migration Map §23.
+
+### De O'Dini — Operator (verbatim)
+
+```text
+NOW PROCEED TO M07, ONCE YOU ARE DONE WITH M06, PROCEED TO STAGE, COMMIT AND OPUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+**# V003-M07 — FUNC Ancillary Compliance / Requirements / Workflow Classification**
+
+**Status:** AUTHORIZED FOR EXECUTION
+**Suggested branch:** `v003/m07-func-ancillary-content-classification`
+**Dependencies:** M03, M05, M06; may depend on M09/M10 for workflow destinations.
+
+**Canonical authorities**
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+## Current mixed sources
+
+- `FQ_MUST_README.md`
+- `FUNC_REQ_BRAINBOX.md`
+- `FUNC_WORKFLOW_BRAINBOX.md`
+
+## Purpose
+
+These records contain mixed responsibilities: compliance, capability-report requirements, reading/navigation rules, change-request patterns, workflow/process material, agent roles, automation concepts, evidence requirements, and governance.
+
+They must not be forced wholesale into CORE or EXE.
+
+## Required classification
+
+For each substantive section classify as one or more of:
+
+- canonical Governance;
+- local FUNC README/navigation;
+- CORE record schema/reference;
+- DEVOPS workflow/procedure;
+- Skills/command/technology knowledge;
+- historical evidence/reference-only;
+- deprecated/superseded.
+
+If a section legitimately spans responsibilities, split the canonical responsibilities and cross-reference without duplicating text.
+
+## Success gate
+
+- Every substantive legacy section has a documented destination/disposition.
+- No mixed source is deleted.
+- No competing Governance copy remains in newly migrated active records.
+- n8n/email or other unproven automation concepts remain clearly unproven if preserved.
+- M01 map records classification and source-retirement dependency.
+```
+
+### Codex — commentary (verbatim)
+
+```text
+M07 classification is recorded locally on its own branch. I’m checking the pending validation results, then I’ll publish the implementation commit first and the execution report/conversation record in a second commit, as requested.
+```
+
+### Codex — commentary (verbatim)
+
+```text
+The first documentation check found five trailing-space lines in the new M07 ledger section; the cross-link check passed. I’m removing only those whitespace characters, then I’ll rerun the clean-diff check before staging.
+```
+
+### Codex — commentary (verbatim)
+
+```text
+The review exposed a formatting issue at three table-to-heading boundaries and a potentially fragile section anchor; both are corrected. The M07 ledger now passes `git diff --check`, and I’m staging only the five implementation/status files—no conversation or execution report yet.
+```
+
+### Codex — commentary (verbatim)
+
+```text
+The implementation commit is created as `b4e3534` on `v003/m07-func-ancillary-content-classification`, with the existing DeOdini author identity. I’m pushing that implementation now; afterward I’ll add the execution record separately and push the documentation commit.
+```
+
+### Codex — implementation push verification (verbatim)
+
+```text
+GitHub accepted the M07 implementation push. Local `HEAD` and `origin/v003/m07-func-ancillary-content-classification` both resolve to `b4e3534364fc26801ade5b1127baed857829ca6f`. The branch tracks `origin`; no PR or merge was opened. I’m recording the execution report and conversation closeout in a separate commit.
+```
+
+---
+
+# ChatGPT Independent Verification Closure — V003-M07
+
+M07 was independently checked against the authorized ticket, the three retained legacy sources, the M01 integrity baseline, the section-by-section ledger, and current local/GitHub Git state.
+
+**Result: V003-M07 PASS.**
+
+Confirmed:
+
+- implementation `b4e3534364fc26801ade5b1127baed857829ca6f`;
+- closeout `c6f26c21c02ab4eaf42339537113d2588c49f883`;
+- M07 descends from M06 verification-closeout `16aab11293f656ae21f1ca215195186992b60cd2`;
+- local/upstream/remote M07 tips matched before this ChatGPT write;
+- worktree was clean before verification write;
+- no M07 PR/merge;
+- all three legacy sources exactly match M01 hashes and remain unchanged;
+- every substantive section has a documented disposition;
+- no duplicate active Governance copy was created;
+- n8n/email automation remains UNPROVEN / NOT VERIFIED;
+- independent 5-file scan = 19 local Markdown links / 0 broken;
+- M07 commit range passes `git diff --check`.
+
+Flags:
+
+- `M07-WF-01` — BATCH-DEFERRED / NON-BLOCKING;
+- `M07-AUTH-01` — BATCH-DEFERRED / NON-BLOCKING.
+
+No blocking M07 flag exists.
+
+**M08 may proceed after these independent-verification records are committed on M07 and the M07 worktree is clean.**
