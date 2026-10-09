@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M04 Version History implementation; ChatGPT — M04 independent verification PASS and Batch A Git/GitHub closeout independently rechecked in the Phase 02 report. `BATCHA-DOC-01` corrects this previously stale verifier line locally pending Git publication.
+**VERIFIER:** Codex — M05 FUNC CORE implementation; ChatGPT — M05 independent verification PASS recorded in the Phase 02 report. Batch A closeout and BATCHA-DOC-01 publication remain verified through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`.
 **LAST VERIFIED:** 2026-10-08
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
@@ -70,7 +70,7 @@ DEODINI_BRAINBOX/
 ├── MILESTONES_BRAINBOX/ [PLANNED]
 │   ├── README_MILESTONES_BRAINBOX.md
 │   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
-├── AI_BRAINBOX/ [PLANNED V003 target — legacy source tree retained pending M05–M13]
+├── AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05 FUNC CORE migrated; legacy sources retained; M06–M13 pending]
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
 │   │   ├── README_FUNC_AI_BRAINBOX.md
@@ -390,7 +390,7 @@ DEODINI_BRAINBOX/
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
 | `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial; M04] | Parent README and Git-backed V001/V002 tree snapshots are present. Their conceptual retrospectives explicitly report missing rationale evidence; V003 Architecture Decisions and the living migration map are retained. Final V003 snapshot remains assigned to M21. |
 | `MILESTONES_BRAINBOX/` | [PLANNED] | Not yet populated; M18. The legacy `MILESTONES/` remains a separate source pending M17. |
-| `AI_BRAINBOX/` | [PLANNED V003 target] | Existing `AI_BRAINBOX/` contains the legacy source structure; approved target migration remains pending M05–M13. |
+| `AI_BRAINBOX/` | [PARTIALLY POPULATED — M05] | M05 populated the FUNC parent index and eight-agent CORE registry while retaining all original FUNC sources. `README_AI_BRAINBOX.md` and remaining AI target domains are still pending M06–M13. |
 | `PORTFOLIO_BRAINBOX/` | [PLANNED V003 target] | Existing legacy Portfolio source is only a zero-byte placeholder; target structure is pending M16. |
 
 ## Current local root tree
@@ -411,7 +411,7 @@ DEODINI_BRAINBOX/
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── DOB_MUST_README.md [retained legacy source; unchanged through M03]
-├── AI_BRAINBOX/ [legacy source tree; target migration pending]
+├── AI_BRAINBOX/ [legacy source tree retained + M05 FUNC CORE target populated; remaining target migration pending]
 ├── BRAINBOX/ [EMPTY physical directory; not tracked by Git; review under M20]
 ├── MILESTONES/ [legacy source records; review under M17]
 ├── PORTFOLIO_BRAINBOX/ [legacy zero-byte placeholder; review under M16]

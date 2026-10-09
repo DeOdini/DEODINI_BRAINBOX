@@ -3083,3 +3083,88 @@ Before M05 branch creation:
 A stale-current-state search across the active root/V003/Phase 02/Version History authority records now returns no remaining false claim that Batch A merge/remote verification is pending, no false current-final-main reference to `e0e05e2...`, and no stale current-active-branch reference to M04.
 
 The initial `git diff --check` found six trailing-space instances in the newly appended report section. I removed them before publication so the correction passes the repository whitespace check. Git also reported only line-ending conversion notices.
+
+---
+
+# V003-M05 — Codex Execution Report — 2026-10-08
+
+**Ticket:** V003-M05 — FUNC CORE Registry Migration
+**Authorization:** AUTHORIZED FOR EXECUTION by De O'Dini — Operator
+**Implementation status:** COMPLETE LOCALLY
+**Codex read-back verification:** PASS
+**Independent ChatGPT verification:** PENDING
+**Branch:** v003/m05-func-core-registry-migration
+**Starting base:** main at 3201a1e80c5bfb2f4f2053599608ff8fce15f9db, after BATCHA-DOC-01 was published and merged by PR #21
+**Current M05 Git lifecycle:** Unstaged/uncommitted; no M05 push, PR, or merge. Batch B Git closure remains at its authorized boundary.
+
+## 1. Preflight and Batch A correction
+
+The M05 P14 preflight checked the frozen Origin Conversation, frozen Specification §9, M05 ticket, M01 source inventory, M03 Governance evidence/ticketing rules, and current Git state.
+
+The pre-existing BATCHA-DOC-01 status correction was kept separate from M05. It was published on its own branch, committed, pushed, and merged before M05:
+
+- Correction branch: v003/batcha-doc-01-post-merge-status-correction
+- Correction commit: 7c0a419d8f6e74f5dfd0f5600a1a2187003131f7
+- PR: #21
+- Merge commit: 3201a1e80c5bfb2f4f2053599608ff8fce15f9db
+
+Local main was fast-forwarded to the merge, verified equal to origin/main and live GitHub main, and clean before M05 branch creation. This cleared the recorded M05 branch-creation hold.
+
+## 2. M05 implementation
+
+Created:
+
+- AI_BRAINBOX/FUNC_AI_BRAINBOX/README_FUNC_AI_BRAINBOX.md
+- AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md
+- AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CHATGPT_CORE_FUNC_BRAINBOX.md
+- AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CLAUDE_CORE_FUNC_BRAINBOX.md
+- AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CLINE_CORE_FUNC_BRAINBOX.md
+- AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md
+- AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/COPILOT_CORE_FUNC_BRAINBOX.md
+- AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/DEEPSEEK_CORE_FUNC_BRAINBOX.md
+- AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/GROK_CORE_FUNC_BRAINBOX.md
+- AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/QWEN_CORE_FUNC_BRAINBOX.md
+
+Updated the live root, V003, Phase 02, and Migration Map status records to show PR #21 as merged, the BATCHA-DOC-01 hold resolved, and M05 active on its dedicated branch. The full source-by-source disposition and M01 integrity comparison are in Migration Map §20.
+
+## 3. Source handling and capability boundaries
+
+All eight original *_FUNC_BRAINBOX.md files remain at their original paths and match the M01 byte, line-count, and SHA-256 baselines. M05 did not rewrite, move, rename, or delete source files.
+
+The six substantive reports are attributed with their report dates. Historical connector statements are not presented as current runtime state. The Cline initial file-write diagnostic and later capability report remain distinguished. Copilot's configured Playwright MCP and Grok's documented Playwright workflow are not promoted to proof of current Playwright execution.
+
+DeepSeek and Qwen source files remain their three-line pending notices. Their CORE records use only the Operator-approved Phase 01 role and limitation baseline in frozen Specification §9. Current exposed tools, connection, authentication, and execution remain UNKNOWN / NOT VERIFIED. Their limited direct local DEODINI filesystem integration, package-oriented preview delivery, no inferred GitHub push authority, and no production/migration authority are preserved.
+
+All eight records separately include EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, AUTHORIZED, LIMITATIONS, CANONICAL EXE REFERENCES, and LAST VERIFIED. Current runtime status is session-scoped; the record does not infer one status from another. Because the executable index is assigned to M06, all eight use NOT YET ASSIGNED for canonical EXE references.
+
+## 4. Verification
+
+Codex read the new records back from disk and confirmed:
+
+- Exactly eight agent CORE records are present, in addition to the CORE README.
+- Every CORE record contains all eight required status/limitation sections.
+- Local Markdown-link check across the parent README and all nine CORE documents: 0 broken local links.
+- M01 baseline comparison: all eight source sizes, line counts, and SHA-256 values match.
+- Git diff --check: PASS after removing the extra blank line at the end of the M01 Migration Map update.
+- Current M05 branch is based on synchronized main at 3201a1e80c5bfb2f4f2053599608ff8fce15f9db.
+- No product code changed; no product/browser test was applicable or run.
+
+This is Codex implementation read-back, not independent ChatGPT verification.
+
+## 5. Changed-file boundary and Git state
+
+M05 adds the ten target files listed in Section 2 and updates the live status/navigation records, Migration Map, and Phase 02 conversation/report. The eight original capability reports and M03 Governance files remain untouched.
+
+M05 changes are not staged or committed and have not been pushed. No M05 PR or merge exists. This preserves the Phase 02 rule to execute tickets individually within the batch and perform Git closure at the Batch B boundary. BATCHA-DOC-01 is separately published and merged; its dedicated branch remains available.
+
+## 6. Flags and handoff
+
+No blocking M05 implementation flag remains.
+
+The following uncertainty is intentional and documented: live exposure, connection, authentication, and execution states for agents other than Codex were not verified in their own runtimes. M05 records them as UNKNOWN / NOT VERIFIED rather than promoting dated reports to present fact.
+
+M06 remains responsible for the evidence-backed executable capability index and assignment of canonical EXE references. M05 makes no claim that M06 categories already exist.
+
+**Codex M05 result:** IMPLEMENTED LOCALLY / READ-BACK VERIFIED PASS.
+**Independent ChatGPT result:** PENDING.
+**Operator merge/closure authority:** RETAINED.

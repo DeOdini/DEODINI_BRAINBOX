@@ -1476,3 +1476,124 @@ The correction is **LOCAL ONLY**.
 No staging, commit, push, PR, or merge was performed by ChatGPT.
 
 M05 branch creation should wait until this documentation-only correction is committed/published under Operator authority and the base `main` worktree is clean again.
+
+
+---
+
+# V003-M05 — Operator/Codex Conversation Record
+
+**Date:** 2026-10-08
+**Purpose:** Preserve the M05 authorization, Batch A correction hold, Operator direction, and M05 execution exchange verbatim. Execution evidence and outcomes are in the Phase 02 migration report and Migration Map §20.
+
+## Exchange 1 — M05 authorization and preflight
+
+### De O'Dini — Operator (verbatim)
+
+NOW PROCEED WITH
+
+**# V003-M05 — FUNC CORE Registry Migration**
+
+**Status:** AUTHORIZED FOR EXECUTION
+**Suggested branch:** `v003/m05-func-core-registry-migration`
+**Dependencies:** M01, M03.
+
+**Canonical authorities**
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+## Target
+
+Under `AI_BRAINBOX/FUNC_AI_BRAINBOX/` create/populate:
+
+- `README_FUNC_AI_BRAINBOX.md`
+- `AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md`
+- ChatGPT / Claude / Cline / Codex / Copilot / DeepSeek / Grok / Qwen CORE records.
+
+## Current source
+
+Inspect every `*_FUNC_BRAINBOX.md` file.
+
+## Rules
+
+- Preserve evidence-backed capability details.
+- Separate EXPOSED / CONNECTED / AUTHENTICATED / EXECUTABLE / AUTHORIZED / LIMITATIONS / CANONICAL EXE REFERENCES / LAST VERIFIED.
+- Do not infer one status from another.
+- DeepSeek/Qwen current source files are placeholder-only and must not be copied as empty CORE records.
+- For DeepSeek/Qwen, use only the Operator-approved Phase 01 role/limitation baseline; unverified connector/auth/execution states remain UNKNOWN/NOT VERIFIED.
+- GitHub access never implies write authorization.
+- Do not remove current source files in this ticket.
+
+## Success gate
+
+- Eight CORE records exist with evidence-backed or explicitly unknown states.
+- No placeholder-only source has been falsely promoted.
+- Current sources remain for later retirement verification.
+- M01 map records each source disposition.
+
+### Codex — first response (verbatim)
+
+I’ll run M05’s preflight against the frozen V003 authorities and the current FUNC source files first. Then I’ll create the dedicated M05 branch, migrate only evidence-backed CORE records, verify the source files remain intact, and record the dispositions and results.
+
+### Codex — preflight flag (verbatim)
+
+Preflight hit a recorded Batch A flag: the workspace has six unstaged BATCHA-DOC-01 documentation changes, and the Phase 02 records explicitly say they must be published before creating M05 so prior-batch corrections don’t get mixed into the ticket branch. I’m checking the M05 authority and all eight FUNC sources now; I won’t stage or fold those existing edits into M05 without your authorization.
+
+### Codex — continued read-only preflight (verbatim)
+
+I’m finishing the read-only M05 preflight against the remaining source and governance records. The six existing Batch A edits remain untouched; I’ll identify whether they can be kept out of M05 cleanly or whether their recorded hold needs your direction before I create its branch.
+
+### Codex — source review update (verbatim)
+
+The source review confirms eight tracked FUNC reports. DeepSeek and Qwen are only three-line pending notices, so their CORE records must be built from the approved Phase 01 role/limitation baseline and mark connector, authentication, and execution state as unverified. I also captured SHA-256 baselines for all eight originals; none have been changed. I’m holding branch creation for your direction on the recorded Batch A hold.
+
+### Codex — Operator question (verbatim)
+
+M05 is authorized, but the migration map says BATCHA-DOC-01 blocks branch creation until six existing Batch A documentation edits are published. They are unstaged in the root README, three Phase 02 files, V003 README, and migration map. Should I honor the hold and publish that correction first, or treat your M05 instruction as an override and isolate those edits from M05?
+
+### De O'Dini — Operator reply to the question (verbatim)
+
+publish the Batch A correction first
+
+### Codex — preflight report (verbatim)
+
+M05 preflight is complete, but I have **not created the branch or edited files**.
+
+I confirmed that `main` and `origin/main` are synchronized at `f8a2862`, and all eight existing `*_FUNC_BRAINBOX.md` files are tracked. DeepSeek and Qwen are pending notices only; their CORE records must use the approved Phase 01 role and limitation baseline, with unverified states marked unknown. I recorded SHA-256 baselines for all eight source files.
+
+The blocker is `BATCHA-DOC-01` in the migration map: it says six unstaged Batch A documentation corrections must be published before creating the M05 branch. I left those edits untouched.
+
+### De O'Dini — Operator follow-up (verbatim)
+
+publish the Batch A correction first
+
+ONCE DONE
+
+PROCEED WITH M05
+
+## Exchange 2 — correction publication and M05 execution
+
+### Codex — publication plan (verbatim)
+
+I’ll publish only the six existing Batch A correction files on a dedicated branch, then verify the correction is on `main` and the worktree is clean before starting M05 on its own branch. I’ll keep the correction separate from M05’s files and preserve the source FUNC reports.
+
+### Codex — correction commit and push update (verbatim)
+
+The Batch A correction is now committed on `v003/batcha-doc-01-post-merge-status-correction` as `7c0a419` and pushed. It contains exactly the six correction files, and the staged whitespace check passed. I’m opening and checking its review record now; after it is merged and `main` is synchronized, I’ll begin M05 separately.
+
+### Codex — correction merge update (verbatim)
+
+PR #21 has merged successfully at `3201a1e`. The review diff contained only the six intended documentation/status files. I’m fast-forwarding local `main` to that verified merge commit and checking that the base worktree is clean before creating the M05 branch.
+
+### Codex — Batch A synchronization update (verbatim)
+
+Batch A’s correction has now merged as PR #21, and local `main` is clean and synchronized at `3201a1e`. I’ve created `v003/m05-func-core-registry-migration`; I’m now building the eight CORE records from their source reports, retaining historical context and marking current connector states unknown wherever they weren’t verified in this session.
+
+### Codex — M05 source and implementation report
+
+M05 implementation is complete locally on branch v003/m05-func-core-registry-migration. The Batch A correction was published separately and merged through PR #21 at 3201a1e80c5bfb2f4f2053599608ff8fce15f9db before M05 branch creation.
+
+Created the FUNC parent README, CORE registry README, and all eight CORE records. The per-source dispositions and M01 hash comparison are recorded in [Migration Map §20](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md); the execution details are in [the M05 build report](V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md).
+
+Codex read-back checks pass: eight records with all required fields, zero broken local links, all eight original sources match their M01 SHA-256 baselines, and git diff --check passes. DeepSeek and Qwen were built only from the approved Specification §9 role/limitation baseline; their runtime states remain UNKNOWN / NOT VERIFIED. No product tests were applicable or run.
+
+M05 remains local and unstaged/uncommitted for the Batch B Git boundary. There is no M05 push, PR, or merge. Independent ChatGPT verification is pending.

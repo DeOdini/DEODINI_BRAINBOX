@@ -1,10 +1,10 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — Batch A M01–M04 independently verified PASS, each on its own pushed branch and ticket commit; PRs #16–#19 merged the ticket branches to `main` in dependency order and documentation closeout PR #20 is also merged; final local/remote/GitHub `main` verified at `f8a2862edc4672012c996ec1edafcaa11344c08d`; all four ticket branch refs remain available and current branch heads are ancestors of final `main`; M01-GIT-01 and M04-HIST-01 remain assigned to M21, M01-FH-01 to M15, M02-BR-01 to M19, M03-REF-01 to M19/M20; M01-DOC-01, M02-WS-01, and M04-BR-01 resolved; `BATCHA-DOC-01` corrected locally pending publication; M05 not started
+**Status:** Living M01–M21 migration ledger — Batch A and BATCHA-DOC-01 published through PR #21; base `main` verified at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`; Batch B M05 FUNC CORE migration independently verified PASS on `v003/m05-func-core-registry-migration`; all eight original FUNC sources retain their M01 baselines; M05 remains unstaged/uncommitted/unpushed; M06 branch creation waits for the required M05 local ticket commit and clean handoff; prior deferred flags retain M15/M19/M20/M21 ownership
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
-**Current active branch:** main
+**Current active branch:** v003/m05-func-core-registry-migration
 **M01 baseline branch:** v003/m01-current-state-inventory-migration-map
 **Baseline commit:** 27e73f828bb367298442c2e621c18d1cc1ceb4f4
 
@@ -145,7 +145,7 @@ The manifest at the end of this file lists all 122 tracked files with source fam
 |---|---|---|---|---|---|---|
 | ROOT-AUTH | At the M01 baseline, DOB_MUST_README.md was the live legacy root authority; it included root navigation and system-wide rules. | Root README_BRAINBOX.md created in M02; Governance content to Governance (M03); global reconciliation M19. | M02 created root navigation/tree authority from the frozen Specification; DOB_MUST_README.md is retained unchanged. Do not copy its policy wholesale; M03 owns Governance classification. | Authority-bearing; pre-M02 source integrity is in the manifest; post-M02 unchanged-source check is recorded in Section 11. | No removal in M02; only M20 after destination/reference/integrity verification. | None; root navigation destination now exists. |
 | AI-ENTRY | AI_MUST_README is the live AI-subsystem entry/navigation authority. | AI_BRAINBOX/README_AI_BRAINBOX.md (M02/M19); governance-specific rules to M03 where supported. | Separate local navigation from global policy; no blind copy. | Authority-bearing; baseline in manifest. | Only M20 after destination/reference verification. | Future target not yet populated. |
-| FUNC-AGENT | Flat ChatGPT, Claude, Cline, Codex, Copilot, DeepSeek, Grok, and Qwen capability reports. | FUNC CORE M05 and evidence-backed EXE index M06. | Content-map each agent report; DeepSeek/Qwen files are pending-report notices only and must not migrate as empty CORE records. | Capability/provenance claims; hashes recorded. | No source retirement until M20 and verified target. | Agent statuses are time/environment dependent; M05 re-verifies. |
+| FUNC-AGENT | Eight original agent capability reports; six are substantive dated reports and DeepSeek/Qwen are pending-report notices only. | CORE registry populated by M05 at AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/; executable-capability index remains M06. | Six source reports mapped with historical claims time-bounded; DeepSeek/Qwen role records use only approved Specification §9 baseline and explicitly unknown runtime states. All eight originals retained unchanged. | Capability/provenance-sensitive; current M05 source sizes, line counts, and SHA-256 values match the M01 baseline manifest. | No source retirement in M05; M20 only after verified destination, references, and integrity checks. | Live runtime for agents other than Codex is not independently verified; exposure, connection, authentication, execution, and authorization remain separate. |
 | FUNC-ANCILLARY | FQ_MUST_README, FUNC_REQ, FUNC_WORKFLOW are compliance, request, and operational workflow records. | M07; system rules may be referenced by M03. | Mixed content must be classified, split only if ticketed, and referenced to one canonical owner. | Authority/process-sensitive; hashes recorded. | Only M20 after canonical ownership and references verify. | Exact target is decided from content in M07. |
 | PROJECT-LEGACY | PROJ_MUST_README plus empty PROVEN_PATTERN and FAILED_PATTERN source records. | DEVOPS RAW/FAILED/PROVEN reconciliation M09. | Preserve actual emptiness; do not fabricate successful or failed workflow evidence. | Empty files have SHA-256 e3b0c442…; source paths recorded. | Potential M20 retirement only after M09/M19 evidence. | Destination/empty-file disposition remains ticketed. |
 | FULLSTACK-RAW | RAW_PROJ_MUST_README, 001 raw workflow, 002 preset workflow, FSTACK_MUST_README. 001 and 002 are explicitly not proven. | Fullstack workflows/architecture/orchestration M10; Skills references may be considered in M08 only if supported. | Separate workflow procedure from architecture, orchestration, test procedure, deployment, and agent handoff based on actual content. Do not merge 001/002 merely because they are variants. | Historical/raw process evidence; hashes recorded. | Only M20 after M10 disposition and link checks. | Legacy links/status statements remain to be reconciled by M10/M19. |
@@ -799,3 +799,49 @@ Those fields are corrected locally to the verified post-PR-20 state.
 **Publication state:** LOCAL / UNSTAGED / UNCOMMITTED. No push, PR, or merge performed by ChatGPT.
 
 **Required before M05:** publish this correction under Operator authority, synchronize/verify `main`, and restore a clean base worktree.
+
+---
+
+## 20. V003-M05 — FUNC CORE Registry Migration — 2026-10-08
+
+### Authority, dependency, and branch preflight
+
+- Ticket: V003-M05 — FUNC CORE Registry Migration; status AUTHORIZED FOR EXECUTION.
+- Frozen authorities: V003 Origin Conversation and V003 Specification, including §9 FUNC direction and the approved DeepSeek/Qwen role and limitation baseline.
+- Dependencies M01 and M03 are merged and available on main.
+- The Batch A documentation hold BATCHA-DOC-01 was resolved before M05: correction branch v003/batcha-doc-01-post-merge-status-correction, commit 7c0a419d8f6e74f5dfd0f5600a1a2187003131f7, PR #21 merged at 3201a1e80c5bfb2f4f2053599608ff8fce15f9db. Local main was fast-forwarded and verified clean/synchronized at that commit.
+- M05 branch: v003/m05-func-core-registry-migration, created from the verified main commit above.
+- M05 has its own branch. No source files were renamed, moved, deleted, or rewritten.
+
+### Current source inventory and per-file disposition
+
+| Current source path / content role | M01 baseline size, lines, SHA-256; current check | M05 target and disposition | Source retirement / dependency |
+|---|---|---|---|
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/CHATGPT_FUNC_BRAINBOX.md — dated ChatGPT connector, skill, RDC, and email capability report | 18,960 bytes; 201 lines; b51ec60e262cd96618074dbd86f893a02c35143cc0fea9e385c85235eaabd0d0; current match | AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CHATGPT_CORE_FUNC_BRAINBOX.md; map the dated connector and skill claims as historical and mark current runtime UNKNOWN / NOT VERIFIED | Retain source; no M05 retirement. M20 only after destination, references, and integrity checks. |
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/CLAUDE_FUNC_BRAINBOX.md — dated Claude capability and connector report | 7,897 bytes; 123 lines; 5d3ddc0591dc3bd4073ef02b25e5c392421ac6b0d7feb884cdfcdf52151341a5; current match | AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CLAUDE_CORE_FUNC_BRAINBOX.md; retain reported connector claims with the source date; current runtime UNKNOWN / NOT VERIFIED | Retain source; no M05 retirement. M20 only after destination, references, and integrity checks. |
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/CLINE_FUNC_BRAINBOX.md — diagnostic history followed by the actual dated Cline capability report | 18,777 bytes; 530 lines; 3379ae99682c054e4ae07da1cb97d489af66956a2c92c5531c64f008848747c3; current match | AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CLINE_CORE_FUNC_BRAINBOX.md; distinguish initial write failure from later capability report; current runtime UNKNOWN / NOT VERIFIED | Retain both historical portions unchanged; no M05 retirement. M20 only after destination, references, and integrity checks. |
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/CODEX_FUNC_BRAINBOX.md — dated Codex exposure report and stated verification limits | 6,636 bytes; 86 lines; 359b35d7a8f7a6eba12554cf8c73c2c044f578d122832f0b1454f74ec2592648; current match | AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md; retain the 2026-10-03 report as history and add scoped 2026-10-08 live evidence without generalizing to other tools | Retain source; no M05 retirement. M20 only after destination, references, and integrity checks. |
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/COPILOT_FUNC_BRAINBOX.md — dated Copilot, workspace MCP, RDC, and Playwright configuration report | 12,920 bytes; 232 lines; 12e736bc20fc12654363ec00ca44b27e87851fe96c7dfd95c98c36418347d390; current match | AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/COPILOT_CORE_FUNC_BRAINBOX.md; preserve the distinction between configured Playwright and verified live execution; current runtime UNKNOWN / NOT VERIFIED | Retain source; no M05 retirement. M20 only after destination, references, and integrity checks. |
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/DEEPSEEK_FUNC_BRAINBOX.md — three-line notice that DeepSeek report is pending | 143 bytes; 3 lines; bcd67420a91cebabef5aabdebbe8ff8ba1679627798397d12f13a2f2a1d1cb57; current match | AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/DEEPSEEK_CORE_FUNC_BRAINBOX.md; do not copy the notice as an empty record. Use only the approved role/limitation baseline in Specification §9; tool, connection, authentication, and execution states UNKNOWN / NOT VERIFIED | Retain pending notice unchanged; no M05 retirement. M20 only after destination, references, and integrity checks. |
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/GROK_FUNC_BRAINBOX.md — dated Grok connectors, skills, RDC, and email report | 9,056 bytes; 199 lines; 0d74fc8323e5da70e7cc58775527c0b56ac127eeca8414192becf9bfc222f69f; current match | AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/GROK_CORE_FUNC_BRAINBOX.md; preserve dated claims and distinguish the documented Playwright skill from the report's statement that no direct Playwright MCP was active; current runtime UNKNOWN / NOT VERIFIED | Retain source; no M05 retirement. M20 only after destination, references, and integrity checks. |
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/QWEN_FUNC_BRAINBOX.md — three-line notice that Qwen report is pending | 135 bytes; 3 lines; 43a14aeF28a28631cbd9179a65dd927f175f244362a204d58fa044271f4e9de7; current match | AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/QWEN_CORE_FUNC_BRAINBOX.md; do not copy the notice as an empty record. Use only the approved role/limitation baseline in Specification §9; tool, connection, authentication, and execution states UNKNOWN / NOT VERIFIED | Retain pending notice unchanged; no M05 retirement. M20 only after destination, references, and integrity checks. |
+
+### Migrated target and evidence boundaries
+
+M05 created the FUNC parent README, the CORE registry README, and eight per-agent CORE records. Each record separates EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, AUTHORIZED, LIMITATIONS, CANONICAL EXE REFERENCES, and LAST VERIFIED.
+
+Six substantive source reports are summarized with provenance and dated claims; the full original reports remain in place. DeepSeek and Qwen records contain the approved role and limitation baseline only. No connector, authentication, or execution claim was derived from their pending notices.
+
+The current Codex record uses only this session's observed evidence: GitHub MCP requests acted as DeOdini; GitHub PR #21 was created and merged; RDC on DESKTOP-DHRIH27 responded; and the Git push succeeded. Other listed services remain unverified. The record distinguishes the configured local commit identity from the GitHub API actor and does not infer standing authorization.
+
+The M06 executable registry is not yet populated, so every CORE record states CANONICAL EXE REFERENCES: NOT YET ASSIGNED — M06. FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, and FUNC_WORKFLOW_BRAINBOX.md remain untouched for their later content-specific migration and source-retirement gates.
+
+### M05 verification and state
+
+- Target structure contains the FUNC parent README, CORE README, and all eight named CORE records.
+- All eight existing source reports remain at their original paths and match the M01 byte, line-count, and SHA-256 baseline.
+- DeepSeek and Qwen placeholders were not promoted as empty CORE records.
+- New records attribute historical reports, and unverified runtime states remain explicit.
+- No product tests were applicable or run; verification is documentation, path, content, and integrity read-back.
+- M05 implementation and Codex read-back verification are complete locally on v003/m05-func-core-registry-migration. Independent ChatGPT verification is pending. M05 changes are not staged, committed, pushed, or merged; Batch B Git closure remains at the authorized boundary.
+- Independent ChatGPT verification is pending.
