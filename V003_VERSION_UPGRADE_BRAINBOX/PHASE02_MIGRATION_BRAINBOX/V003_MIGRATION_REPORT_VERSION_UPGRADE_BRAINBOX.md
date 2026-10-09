@@ -6647,3 +6647,63 @@ The M10 and M14 verbatim hard breaks can still appear in a full historical-range
 - No application tests, production deployment, environment access, or source retirement were part of Batch C.
 - Conversation archive: `V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md`.
 - Living migration ledger: `../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md`.
+---
+
+## V003-M15 — FootHive Canonical Sandbox Evidence & Iteration Migration — 2026-10-09
+
+### Authorization and execution boundary
+
+- Ticket status: authorized for execution.
+- Pre-ticket ChatGPT verification-state cross-check: the synchronized main tip was d8296578e53ea75509c3c3fee15f21c99dbfeab7 and had no pending verification modifications to publish.
+- M15 branch: v003/m15-foothive-sandbox-evidence-iteration, created from that verified main tip.
+- P14 preflight: PASS. Target did not exist before work. No source was renamed, moved, or deleted.
+- This ticket establishes the canonical FootHive Sandbox case-study evidence set. It does not close the workflow experiment or claim workflow mastery.
+
+### Source inventory and destination
+
+- Legacy source: AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/.
+- Source inventory: 83 files, 38,197,967 bytes, and 13 direct children.
+- Current records, evidence, references, design directions, and asset/catalog classes were inspected before transfer.
+- Canonical destination: AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/.
+- The case-studies parent README and target case-study tree were created; the target contains 50 files with no zero-byte files.
+
+### Historical transfer and integrity
+
+- Five trial records were copied byte-identically: Build Report, PASSED, FAILED, conversation, and Operator Addendum.
+- Thirty-seven existing test/evidence files, two design-direction images, and the located original Deep Audit were copied without rewriting.
+- Original Deep Audit source: C:\Users\USER\.codex\attachments\808d07cb-df14-43f9-a784-286aac6e23ba\Pasted text.txt; 37,224 bytes, 749 lines; SHA-256 DE429EBBD2C6AE561B71954834DF6F240C57B5FEF91FDB6897AB2CEF470BF746.
+- The audit copy is AUDITS_FH_BRAINBOX/DEEP_AUDIT_ORIGINAL_FH_BRAINBOX.md. Its content matches the located original; it was not reconstructed from summary prose.
+- The copy-integrity manifest records 45 source/destination pairs, sizes, SHA-256 values, and byte-equality results. Physical recheck: 45 rows, 0 mismatches, 3,623,461 bytes. Manifest SHA-256: 6BB20277F377295E0439E2B9A9AB7CF9AEE484F3031B57317AD9AFC1278F309D.
+
+### Iteration and source-asset disposition
+
+- Existing evidence is represented as logical Iteration 01 at the canonical case-study root. No physical ITERATION_01/02/03 directories were created because the frozen authority does not determine that layout.
+- Iteration 02, Iteration 03, and Workflow Mastery Assessment remain [PLANNED]. Website ticket/version and workflow iteration remain separate dimensions.
+- Nine product/logo files were verified by SHA-256 as already present in the separate FootHive website repository; they were not duplicated into Brainbox.
+- Twenty-nine source-only product-image/catalog files have no approved target in the M15 evidence tree. They remain unchanged in the legacy source under M15-ASSET-01, BATCH-DEFERRED / NON-BLOCKING. This is a destination-scope flag, not a loss or transfer.
+- Four source catalog files retain 32 existing broken relative image references; the catalogs were not rewritten.
+- Eleven images already flagged in the FAILED record remain excluded from website use. No source asset was modified.
+
+### Reference and document checks
+
+- New authored navigation/readme links checked: 33; broken links: 0.
+- M15-REF-01 records eleven stale references in byte-preserved historical copies for M19: six relative evidence links in the copied Build Report (lines 922, 924, 942–945), and five absolute old-source links in the copied conversation (four record paths at line 3842 and the old Build Report path at line 4250). They remain unchanged to preserve historical bytes.
+- The newly authored documents passed their scoped staged diff check.
+- A full staged git diff --check reports trailing whitespace and one blank line at EOF inside copied historical FootHive records. Those bytes were present in the source copies and were retained intentionally; normalizing them would violate byte-for-byte transfer fidelity. No new authored-document whitespace finding remains.
+
+### Git closeout
+
+- Implementation commit: 6c25f120fcce1d90f583921b3db0f7252e5f30fc — V003-M15 migrate FootHive Sandbox evidence.
+- Commit author was explicitly set for this commit to DeOdini <deodinihq@gmail.com> using a per-command Git identity override, matching recent Brainbox commits. The repository Git configuration was not changed.
+- Staging initially encountered a Windows path-length error on a nested Playwright log. Retrying with per-command core.longpaths=true staged all M15 paths without renaming or omitting evidence.
+- Staged set: 57 paths — 51 additions (50 target files plus the case-studies parent README), six existing authority/map updates, zero deletions.
+- Push to origin/v003/m15-foothive-sandbox-evidence-iteration succeeded. A subsequent fetch confirmed local HEAD and origin branch tip both equal 6c25f120fcce1d90f583921b3db0f7252e5f30fc. Worktree was clean after the implementation commit.
+- No PR or merge was created. The M15 branch remains unmerged.
+- No application tests, browser tests, or deployment were run; this migration changed Brainbox records and evidence only.
+
+### Remaining status
+
+- M15 implementation and scoped checks are recorded. Independent ticket verification is not claimed in this Codex execution report.
+- M15-ASSET-01 remains batch-deferred/non-blocking; M15-REF-01 is assigned to M19 while preserving archive bytes.
+- The original FootHive source remains intact until M20 source-retirement review.
+- This report and its companion conversation entry are included in the documentation closeout commit on the same unmerged M15 branch.

@@ -1896,4 +1896,14 @@ The frozen Specification identifies the existing trial corpus as Iteration 01 an
 
 Created the FootHive case-study README, Audit README, Evidence README, and initial source-backed Retrospective. Created CASE_STUDIES_SANDBOX_BRAINBOX/README_CASE_STUDIES_SANDBOX_BRAINBOX.md and updated Sandbox, DEVOPS, and root population navigation. The README states the Iteration 01 logical-root placement, planned future iterations/mastery, website-version separation, audit provenance, and source-retention boundaries.
 
-No Iteration 02/03 evidence, mastery claim, asset promotion, catalog repair, application test, additional form submission, Production case study, deployment, source move/rename/delete, or legacy-source retirement occurred. Independent verification, report closeout, and Git publication are recorded in the Phase 02 report and conversation archive.
+No Iteration 02/03 evidence, mastery claim, asset promotion, catalog repair, application test, additional form submission, Production case study, deployment, source move/rename/delete, or legacy-source retirement occurred. Codex implementation checks, execution report, and Git publication are recorded in the Phase 02 report and conversation archive; independent ticket verification remains pending.
+
+### M15 implementation Git state — 2026-10-09
+
+- Dedicated ticket branch: v003/m15-foothive-sandbox-evidence-iteration.
+- Branch base: synchronized main at d8296578e53ea75509c3c3fee15f21c99dbfeab7.
+- Implementation commit: 6c25f120fcce1d90f583921b3db0f7252e5f30fc.
+- Push and fetched origin tip: confirmed equal to local HEAD.
+- Worktree after implementation commit: clean.
+- No PR/merge; M15 remains on its own unmerged branch.
+- The report records the 57-path staging result, original historical whitespace preservation, and the Windows long-path workaround.
