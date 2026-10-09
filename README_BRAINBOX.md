@@ -396,13 +396,13 @@ DEODINI_BRAINBOX/
 | `V003_VERSION_UPGRADE_BRAINBOX/` | [POPULATED] | Contains canonical Origin/Specification and separate Phase 01 and Phase 02 support archives. |
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
 | `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial; M04] | Parent README and Git-backed V001/V002 tree snapshots are present. Their conceptual retrospectives explicitly report missing rationale evidence; V003 Architecture Decisions and the living migration map are retained. Final V003 snapshot remains assigned to M21. |
-| `MILESTONES_BRAINBOX/` | [PLANNED] | Not yet populated; M18. Legacy `MILESTONES/` source classification independently verified PASS under M17; M17-DEST-01 remains open and blocks source relocation/retirement until Operator approval. |
-| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16] | FUNC CORE/EXE, ancillary classification, Skills taxonomy, DEVOPS/Sandbox, Fullstack workflows/architecture/orchestration, Frontend, Backend, analytics, Production/Environment foundations, and the FootHive Production summary are present. Legacy sources remain; M17-M21 tickets are pending. |
+| `MILESTONES_BRAINBOX/` | [POPULATED — M18] | The two approved records are present and remain [PLANNED]; no Router or enabling infrastructure is implemented. Legacy `MILESTONES/` remains unchanged under M17-DEST-01 pending Operator disposition. |
+| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16] | FUNC CORE/EXE, ancillary classification, Skills taxonomy, DEVOPS/Sandbox, Fullstack workflows/architecture/orchestration, Frontend, Backend, analytics, Production/Environment foundations, and the FootHive Production summary are present. Legacy sources remain; Phase 02 is complete through M18, with M19-M21 pending. |
 | `PORTFOLIO_BRAINBOX/` | [PARTIALLY POPULATED - M16] | The FootHive portfolio child is present. The zero-byte legacy placeholder remains untouched; the parent Portfolio README and global population reconciliation remain assigned to M19, with legacy review under M20. |
 
 ## Current local root tree
 
-Current physical root layout — updated during M16 (2026-10-09). It includes retained legacy sources and the empty local directory, which are not extra branches in the approved V003 target tree.
+Current physical root layout — updated during M18 (2026-10-09). It includes the separate planned milestone records, retained legacy sources, and the empty local directory; retained items are not extra branches in the approved V003 target tree.
 
 ```text
 DEODINI_BRAINBOX/
@@ -419,9 +419,12 @@ DEODINI_BRAINBOX/
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── DOB_MUST_README.md [retained legacy source; unchanged through M03]
-├── AI_BRAINBOX/ [M05-M16 migrated; legacy sources retained; M17-M21 tickets pending]
+├── AI_BRAINBOX/ [M05-M16 migration content; legacy sources retained; Phase 02 complete through M18; M19-M21 pending]
 ├── BRAINBOX/ [EMPTY physical directory; not tracked by Git; review under M20]
-├── MILESTONES/ [legacy source records; review under M17]
+├── MILESTONES/ [legacy source records; retained under M17-DEST-01]
+├── MILESTONES_BRAINBOX/ [two records present; both [PLANNED] — M18]
+│   ├── README_MILESTONES_BRAINBOX.md
+│   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
 ├── PORTFOLIO_BRAINBOX/ [partially populated — M16]
 │   ├── 001_PORT_BRAINBOX.md [zero-byte legacy placeholder; retained for M20 review]
 │   └── FOOTHIVE_PORTFOLIO_BRAINBOX/ [present — M16]
@@ -472,7 +475,7 @@ VERSION_HISTORY_BRAINBOX/
 │   └── RETROSPECTIVE_V002_BRAINBOX.md [conceptual rationale blocked]
 └── V003_EXTENDED_DEODINI_BRAINBOX/
     ├── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md [retained; unchanged]
-    ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map; updated through M15]
+    ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map; updated through M18]
     └── TREE_SNAPSHOT_V003_BRAINBOX.md [deferred to M21]
 ```
 
@@ -495,6 +498,8 @@ The V001/V002 snapshots record evidence-selected Git tree cut points, not formal
 | `VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/TREE_SNAPSHOT_V001_BRAINBOX.md` | Git-backed V001 tracked-path snapshot. |
 | `VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md` | Git-backed V002 tracked-path snapshot. |
 | `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` | Living source-backed migration ledger; updated by each authorized migration ticket. |
+| `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` | Planned milestone navigation and status; both local records remain future intent. |
+| `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` | Planned future Router/Agentic capabilities and infrastructure intent; not implementation authorization. |
 
 ## Source-to-target responsibility
 
@@ -677,3 +682,10 @@ V003-M15 FootHive Canonical Sandbox Evidence & Iteration Migration is implemente
 ## Current Phase 02 status — V003-M17 independent verification — 2026-10-09
 
 M17 legacy milestone inspection/classification independently verifies PASS. The two original `MILESTONES/` files exactly match M01 baselines and their first Git introduction; neither was moved or rewritten. `M17-DEST-01` remains OPEN / BLOCKING for physical source relocation/retirement pending an Operator destination/disposition decision. M18 can create only the separate approved [PLANNED] Router/Agentic milestone records after M17 verification publication and clean branch handoff. Batch D Git closure remains at the batch boundary.
+
+
+---
+
+## Current Phase 02 independent verification — V003-M18 — 2026-10-09
+
+V003-M18's two approved Router/Agentic milestone documents independently verify **PASS**; both remain [PLANNED] and no Router or enabling infrastructure exists by virtue of this ticket. Legacy `MILESTONES/` records remain unchanged; `M17-DEST-01` still blocks their move, canonical copying or retirement until Operator disposition. Batch D M15–M18 substantive verification is complete, but Batch D accumulated-flag review and Git/PR/merge closure are pending. M19 must not start until Batch D closes and synchronized final main is independently verified.

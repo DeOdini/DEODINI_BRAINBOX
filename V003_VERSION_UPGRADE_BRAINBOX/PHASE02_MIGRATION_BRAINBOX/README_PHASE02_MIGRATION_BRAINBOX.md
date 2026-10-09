@@ -365,3 +365,26 @@ This section supersedes the earlier M15-only status as the current ticket state.
 - `M17-DEST-01`: **OPEN / BLOCKING** for moving, renaming, or retiring the original milestone sources; Operator must choose authorized destination/disposition before M20 retirement.
 - M18 is substantively dependency-ready to create the distinct planned Router/Agentic milestones only. Commit and publish this independent verification closeout on M17, confirm clean handoff, then create M18 branch and run its P14.
 - Batch D PR/merge/Git closure remains a batch-boundary requirement before M19.
+
+
+---
+
+## Current Phase 02 execution — V003-M18 — 2026-10-09
+
+- M17 ChatGPT verification was cross-checked, committed as `8185830e7312eafc0ec1d9f384545aec4be84f2e`, pushed, and fetch-verified on its dedicated branch; M17-DEST-01 remains open only for disposition of the separate historical source.
+- M18 branch `v003/m18-planned-router-agentic-milestone` was created from that clean verified tip. Implementation commit `55b09b6ce8873ea4301cc5ff1551d72a8a61614b` was pushed and fetch confirmed local/origin tips equal, ahead/behind 0/0, with a clean worktree.
+- M18 creates exactly `README_MILESTONES_BRAINBOX.md` and `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md`. Both remain [PLANNED]; no Router capability or enabling infrastructure was created.
+- Root README physical tree, population note, navigation, and Migration Map Section 50 record the new planned documentation. The legacy `MILESTONES/` source remains unchanged under M17-DEST-01.
+- Twelve local links in the two new records resolve; targeted whitespace check passed. The M18 report and conversation are included in this documentation closeout.
+- No PR or merge was created. Batch D Git lifecycle remains at the batch boundary; M19-M21 remain later tickets.
+
+
+---
+
+## Current Batch D independent verification — V003-M18 — 2026-10-09
+
+- M18 planned Router/Agentic documentation: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- Two approved files are present and [PLANNED]. No Router, sub-agent runtime, database, vector store, deployment, device-delivery or other future infrastructure was created.
+- 12 local links / 0 broken; full M18 range whitespace check PASS. Both legacy milestone source hashes match M01 and remain untouched.
+- `M17-DEST-01`: OPEN, blocks physical source relocation/rename/retirement pending Operator approval; does not invalidate separate M18.
+- M15–M18 substantive ticket checks: independently PASS. Batch D flag review and Git/PR/merge boundary closure still required before M19; publish this verification closeout, then verify synchronized final main.

@@ -3484,3 +3484,104 @@ Independent full source review supports all section classifications in Migration
 **M17-DEST-01 remains OPEN and BLOCKING for physical migration/rename/retirement of the two legacy source files; the Operator must decide authorized disposition first.** It is **NOT a blocker** for the separate M18 Router/Agentic planned milestone. Do not conflate historical checkpoint with future Router work.
 
 Full M17 range `git diff --check` PASS; no application/deployment action. **M18 may begin after committing/pushing this independent M17 verification closeout and confirming clean branch, with its own P14.**
+
+
+---
+
+# Operator–Codex conversation — V003-M17 verification publication and V003-M18 — 2026-10-09
+
+### Operator request (verbatim)
+
+<pre>
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE OF M17 BY CHATGPT, ONCE DONE, NOW PROCEED TO M18, ONCE YOU ARE DONE WITH M18, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+**# V003-M18 — Planned Router / Agentic Milestones Migration**
+
+**Status:** AUTHORIZED FOR EXECUTION
+**Suggested branch:** `v003/m18-planned-router-agentic-milestone`
+**Dependencies:** M03, M17 classification should be known to avoid naming/content conflation.
+
+**Canonical authorities**
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+## Target
+
+Create:
+
+`MILESTONES_BRAINBOX/ [PLANNED]`
+
+with only the approved records:
+
+- `README_MILESTONES_BRAINBOX.md`
+- `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md`
+
+## Required milestone content
+
+Record future intent including:
+
+- Brainbox Router;
+- specialist sub-agents;
+- eventual cross-DEODINI routing;
+- persistent memory;
+- databases incl. PostgreSQL;
+- vector/retrieval infrastructure;
+- self-hosting;
+- governed self-update/research;
+- authorization;
+- device/package delivery;
+- fragment assembly;
+- audit/recovery;
+- future infrastructure requirements.
+
+## Rules
+
+- Both records remain [PLANNED].
+- Do not create the infrastructure itself.
+- Do not create database/vector/server/device/runtime folders merely because the milestone mentions them.
+- State that ordering, details, and naming may evolve.
+- Do not treat the milestone as an implementation sequence or deployment authorization.
+- Keep legacy MILESTONES historical content separate unless M17 authorizes a specific reference.
+
+## Success gate
+
+- Planned milestone exists without implying capability implementation.
+- No future infrastructure is prematurely added to the active tree.
+- Legacy historical milestones are not overwritten.
+</pre>
+
+### Codex progress messages (verbatim, in order)
+
+1. I’ll first inspect the M17 branch and isolate the ChatGPT verification edits, then review and publish only those changes. From that verified tip I’ll create M18’s dedicated branch, check the frozen milestone wording and M17 boundary, add only the two planned records, update the migration ledger and execution records, and publish the M18 work plus its report.
+
+2. M17’s ChatGPT verification was committed as `8185830` and pushed. Fetch confirms local and GitHub M17 tips match with a clean worktree. I’m creating M18 from that verified tip, then checking the frozen specification’s planned milestone tree and the M17 source-separation flag before adding records.
+
+3. M18’s preflight is clean for its narrow scope. The two approved records now exist, are explicitly `[PLANNED]`, and contain 12 local links with none broken. I also updated the root README’s physical tree and navigation so it reflects the new folder, while keeping the historical `MILESTONES/` source separate and unchanged. I’m committing the implementation and ledger first; the execution report and conversation closeout will follow its push.
+
+4. The M18 implementation commit `55b09b6` has been pushed to its new GitHub branch. I’m doing the post-push fetch and tree check now, then I’ll write the M18 execution report and transcript/status closeout and publish those separately as requested.
+
+### Codex final response (verbatim)
+
+M17’s ChatGPT verification edits were reviewed against the source and M01 baselines, committed as `8185830e7312eafc0ec1d9f384545aec4be84f2e`, and pushed; fetch confirmed the dedicated M17 branch tip and clean worktree.
+
+M18 was implemented on `v003/m18-planned-router-agentic-milestone`. Implementation commit `55b09b6ce8873ea4301cc5ff1551d72a8a61614b` and the report, conversation, and status closeout were pushed to that branch. Fetch confirmed matching local and remote tips with a clean worktree. No PR or merge was created.
+
+M18 passes its success gate: only the two approved records exist, both remain `[PLANNED]`, the root README and Migration Map reflect the actual tree, and no Router capability or enabling infrastructure was built. All 12 local links in the new records resolve.
+
+The legacy `MILESTONES/` files remain unchanged. `M17-DEST-01` remains open and blocks their move, rename, or retirement until you approve a destination or disposition. This does not block M18’s separate planned Router milestone. Batch D Git closure remains for the batch boundary.
+
+No application test or deployment was performed; this was a documentation-only migration.
+
+---
+
+# ChatGPT Independent Verification Closure — V003-M18 — 2026-10-09
+
+**Independent result: V003-M18 PASS — two planned documentation records only.**
+
+Independently confirmed published M17 verification `8185830e7312eafc0ec1d9f384545aec4be84f2e`; M18 implementation `55b09b6ce8873ea4301cc5ff1551d72a8a61614b`; separate M18 report/status closeout and pre-verification tip `6e5889dfe7f3a5d25e36cc4e96ea029cfafe75c6`. Local HEAD/upstream/GitHub tip matched at the final SHA, ahead/behind 0/0, clean worktree before verification write, M18 unmerged with no PR; M19 absent.
+
+The frozen §§8/28 planned milestone target physically contains exactly `README_MILESTONES_BRAINBOX.md` and `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md`, no subdirectories. README size/lines/SHA: 3,858/55/`73effa012e0bc6b02f5f02c8fdaeebda94e53898841fae881e25275824e0409c`; Router record 3,344/50/`6fdb12aa448ca31459f1e38a9ba7992a363b253bbf1a5301e7d9b2b0c6860b0b`. Both remain [PLANNED], list all approved future capability themes and do not assert implemented routing, specialist agents, persistent memory, PostgreSQL, retrieval/vector, self-hosting, device delivery, authorization or other infrastructure. No runtime/infrastructure/app/deployment file was created.
+
+Independent physical Markdown scan: 12 links / 0 broken, 0 authored trailing-whitespace lines; full M18 range `git diff --check` PASS. Root current tree and Migration Map §50 reflect the actual two-document population. Both historical `MILESTONES/` sources match their M01 hashes and have zero M18 diff. `M17-DEST-01` remains OPEN, blocking physical migration/rename/retirement without an Operator disposition decision; it did not block M18's separate future-intent work.
+
+**M18 is independently verified PASS, but Batch D Git/flag closure is still pending. M19 must not start until Batch D closes and final main is verified.** This independent verification write changes only active documentation/status, not the frozen Specification, legacy milestone records, implementation files or Git history.

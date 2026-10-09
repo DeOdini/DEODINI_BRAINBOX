@@ -7272,3 +7272,202 @@ M18 is substantively dependency-ready (M17 classification and M03 Governance alr
 M18 is the final Batch D ticket. After M18 independent verification, perform Batch D deferred-flag review and authorized PR/merge/Git closure before M19. M17-DEST-01 must remain visibly open and constrain M20 source retirement until an Operator decision; no decision is inferred by this verification.
 
 No staging, commit, push, PR, merge, source migration, application test or deployment was performed by ChatGPT.
+
+
+---
+
+# V003-M18 — Planned Router / Agentic Milestones Migration — Codex Execution Report
+
+**Date:** 2026-10-09
+**Result:** PASS — approved planned records created; no future capability or infrastructure implemented.
+**Branch:** `v003/m18-planned-router-agentic-milestone`
+**Base:** M17 ChatGPT verification publication `8185830e7312eafc0ec1d9f384545aec4be84f2e`
+**Implementation commit:** `55b09b6ce8873ea4301cc5ff1551d72a8a61614b` — `V003-M18 create planned Router milestone records`
+**PR/merge:** None; M18 remains unmerged pending Batch D boundary closure.
+
+## 1. M17 ChatGPT verification cross-check and publication
+
+Before beginning M18, reviewed the six uncommitted ChatGPT M17 verification/status edits across the root README, V003 and Phase 02 READMEs, Migration Map, and M17 report/conversation.
+
+- M17 source inspection, classification, and M01 ledger reconciliation were independently verified PASS. The only open flag, M17-DEST-01, blocks physical relocation/rename/retirement of the old milestone files and does not block M18's separate planned records.
+- Recomputed legacy source integrity: `MILESTONES_MUST_README.md` is 2,230 bytes / 56 lines / SHA-256 `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e`; `MILESTONE_CHECKPOINT_BRAINBOX.md` is 26,420 bytes / 462 lines / SHA-256 `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8`. Their current Git blobs match the recorded M01/introduction blobs.
+- The M17 ChatGPT verification changes were committed as `8185830e7312eafc0ec1d9f384545aec4be84f2e` and pushed to the dedicated M17 branch. Fetch confirmed local and origin tips equal, ahead/behind 0/0, with a clean worktree before the M18 branch was created.
+- No legacy `MILESTONES/` file was modified by the M17 verification commit.
+
+## 2. M18 P14 preflight
+
+Read the authorized M18 ticket; frozen Specification §§8 and 28; the V003 Origin Conversation's later Operator-approved P11 milestone decision; Governance README; root README; and M17 Migration Map Sections 48–49.
+
+- The frozen tree names exactly the two M18 files under `MILESTONES_BRAINBOX/`; both records are [PLANNED].
+- Specification §28 lists the planned future capabilities and explicitly says ordering, implementation details, and naming can evolve. It forbids treating the milestone as implemented capability, implementation sequence, or deployment authorization.
+- Earlier Origin Conversation discussion that treated the root milestones branch as an unapproved research refinement was superseded by the later Operator-approved P11 and frozen Specification §28. No unresolved authority conflict blocks this ticket.
+- Before M18, the target directory and both approved files were absent. The historical `MILESTONES/` source was still present and separately classified by M17.
+- M17-DEST-01 has no bearing on creating a separate future-intent record. It remains open and continues to block moving, renaming, copying as a canonical destination, or retiring the historical sources.
+- P14 found no blocking scope, naming, authority, or dependency flag for the two-record M18 work.
+
+## 3. Implemented records and status boundary
+
+Created only the two approved target records:
+
+1. `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` — 3,858 bytes, 55 lines, SHA-256 `73effa012e0bc6b02f5f02c8fdaeebda94e53898841fae881e25275824e0409c`.
+2. `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` — 3,344 bytes, 50 lines, SHA-256 `6fdb12aa448ca31459f1e38a9ba7992a363b253bbf1a5301e7d9b2b0c6860b0b`.
+
+Both records remain [PLANNED]. The Router, specialist sub-agents, cross-DEODINI routing, persistent memory, PostgreSQL/database systems, retrieval/vector infrastructure, self-hosting, governed self-update/research, authorization, device/package delivery, fragment assembly, audit/recovery, and further infrastructure are described only as future intent. M18 created no infrastructure folders, database, service, runtime, capability, deployment, or implementation sequence.
+
+## 4. Root navigation, local tree, and ledger
+
+- Root `README_BRAINBOX.md` now marks the M18 parent as physically populated while explicitly stating both records and all capabilities remain [PLANNED]. Its current physical root tree includes the new directory beside the untouched legacy `MILESTONES/`, lists the two children, and includes navigation links to both records.
+- The living Migration Map now has Section 50 for M18, recording the P14 preflight, source/authority decisions, target paths, [PLANNED] boundary, M17 source preservation, and publication state.
+- The `MILESTONES_BRAINBOX/` directory contains exactly the two approved files and no child infrastructure or unapproved folders.
+- All 12 local Markdown links in the two new files resolve; broken links: 0.
+- Targeted `git diff --check` on the implementation files passed without whitespace errors. Git emitted ordinary LF-to-CRLF configuration warnings; these did not affect the committed content.
+
+## 5. Source preservation and scope
+
+The legacy files remain byte-for-byte at their original paths with the M17/M01 hashes and Git blobs recorded above. They were not moved, renamed, copied into M18, rewritten, or deleted. M17-DEST-01 remains open until the Operator approves a precise disposition. M20 must not retire either legacy file before that decision and reference/integrity closure. M19 still owns global reference and population-state reconciliation.
+
+No application test, browser test, database setup, deployment, or runtime implementation was performed; this was a documentation-only migration ticket.
+
+## 6. Git publication and disposition
+
+- M18 branch was created from the verified M17 ChatGPT closeout at `8185830e7312eafc0ec1d9f384545aec4be84f2e` after M17 local/upstream/GitHub tips matched and the worktree was clean.
+- Implementation commit `55b09b6ce8873ea4301cc5ff1551d72a8a61614b` was pushed to `origin/v003/m18-planned-router-agentic-milestone`.
+- Fresh fetch confirmed local HEAD and the GitHub branch tip equal `55b09b6ce8873ea4301cc5ff1551d72a8a61614b`; ahead/behind 0/0 and clean worktree.
+- M18 report, conversation, and status closeout are published in the separate documentation closeout on the same branch. No PR or merge was created.
+
+**M18 success gate: PASS.** The approved planned milestone exists, clearly remains future intent, and does not overwrite or conflate M17's historical source. M17-DEST-01 remains open for legacy-source physical disposition.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M18 Planned Router / Agentic Milestones Migration
+
+**Date:** 2026-10-09
+**Ticket:** V003-M18 — Planned Router / Agentic Milestones Migration
+**Independent result:** PASS — planned-documentation scope only
+**M18-specific blocking flags:** NONE
+**Carried conditional stop:** M17-DEST-01 — open; blocks physical migration or retirement of the historical milestone files until Operator approval
+**Batch state:** M15–M18 substantive tickets independently verified; Batch D flag review and Git/PR/merge closure NOT YET COMPLETE
+**M19:** NOT ELIGIBLE until Batch D boundary closure has been completed and independently verified
+
+## 1. Git publication and dependency integrity
+
+Independent GitHub/local Git checks confirm:
+
+- M17 ChatGPT independent-verification commit: `8185830e7312eafc0ec1d9f384545aec4be84f2e`; pushed to dedicated M17 branch; exactly six status/verification documentation paths.
+- M18 implementation commit: `55b09b6ce8873ea4301cc5ff1551d72a8a61614b`, directly descended from M17 verified tip.
+- M18 separate report/conversation/status closeout: `6e5889dfe7f3a5d25e36cc4e96ea029cfafe75c6`, directly descended from M18 implementation; five status/archive/map paths.
+- Ticket branch: `v003/m18-planned-router-agentic-milestone`.
+- Local HEAD, upstream tracking tip and GitHub M18 branch tip all equal `6e5889dfe7f3a5d25e36cc4e96ea029cfafe75c6` before this verification write.
+- Ahead/behind: 0/0. Worktree clean, nothing staged before this independent write.
+- M18 branch not merged into `origin/main`; no M18 PR exists.
+- `main` and `origin/main` remain at `d8296578e53ea75509c3c3fee15f21c99dbfeab7`.
+- No M19 local, remote-tracking or GitHub branch exists.
+
+**Git/dependency assertions: PASS.**
+
+## 2. Frozen authority and exact physical target
+
+The authorized M18 ticket and frozen V003 Specification §§8 and 28 specify precisely:
+- `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md`
+- `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md`
+
+Independent physical directory enumeration found **exactly two files and zero child directories**. No additional markers, binaries, folders or infrastructure scaffolds were created.
+
+Independent file sizes, line counts and SHA-256:
+- README: 3,858 bytes / 55 lines / `73effa012e0bc6b02f5f02c8fdaeebda94e53898841fae881e25275824e0409c`.
+- Router/Agentic milestone: 3,344 bytes / 50 lines / `6fdb12aa448ca31459f1e38a9ba7992a363b253bbf1a5301e7d9b2b0c6860b0b`.
+
+These reproduce the Codex execution report's values.
+
+**Exact target and physical population: PASS.**
+
+## 3. Substantive future-intent classification
+
+Independently read both new files in full.
+
+- Both files explicitly classify all described capabilities as **[PLANNED]**.
+- Router, specialist sub-agents and future cross-DEODINI routing are future intent.
+- Persistent memory, PostgreSQL/databases, retrieval/vector infrastructure, self-hosting, governed self-update/research, authorization, device/package delivery, fragment assembly, audit/recovery and future enabling infrastructure are all identified as planned rather than present.
+- No agent runtime, Router service, database, vector store, self-hosted system, deployment machinery or device/package delivery implementation was created by M18.
+- The records state that future ordering, naming and details may change.
+- Neither file asserts that future work is already executable, authenticated, deployed or production-proven.
+- Neither file establishes a new rollout sequence or deployment permission; future implementation requires separate evidence, tickets and Operator authorization.
+
+**Future-intent / no-infrastructure / no-deployment boundary: PASS.**
+
+## 4. Root navigation and Migration Map
+
+Root `README_BRAINBOX.md` now displays:
+- the frozen tree's `MILESTONES_BRAINBOX/` with its two approved record names;
+- current physical `MILESTONES_BRAINBOX/` as populated with two **[PLANNED]** documents;
+- legacy `MILESTONES/` separately in the physical tree as a retained historical source;
+- navigation links to the two new records.
+
+Migration Map §50 independently confirms the specific new targets, frozen P11/§28 authority, source disposition, absence of implemented infrastructure and M17-DEST-01 continuation.
+
+**Current tree, cross-references and map: PASS.**
+
+## 5. Independent link / whitespace / change-scope verification
+
+Independent filesystem Markdown-link scan of both M18 files:
+- relative local links found: **12**;
+- broken targets: **0**;
+- authored trailing-whitespace lines: **0** in each file.
+
+Full M18 Git range `8185830e...6e5889df`:
+- `git diff --check` exit 0;
+- only 8 changed Markdown paths across implementation + closeout;
+- two new M18 target documents, root navigation, living map, and Phase 02/V003 execution records;
+- no application source, runtime settings, deployment configuration, secret or future infrastructure file introduced.
+
+No application test or deployment is required for a two-record planning-document migration. Codex reports that neither was run; repository scope is consistent with that report, without an independent replay of external sessions.
+
+**Mechanical hygiene and authorized scope: PASS.**
+
+## 6. Legacy milestone preservation / M17-DEST-01
+
+The distinct historical files remain unchanged:
+
+- `MILESTONES/MILESTONES_MUST_README.md`: 2,230 bytes / 56 lines / SHA-256 `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e`.
+- `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md`: 26,420 bytes / 462 lines / SHA-256 `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8`.
+
+Both match M01 baselines and M17 independent verification. M18 makes no diff in `MILESTONES/`; no historical record was copied into the Router planning files.
+
+`M17-DEST-01` remains **OPEN / BLOCKING for physically moving, renaming, assigning an unapproved canonical destination, or retiring those sources**. It is **NOT a blocker** to M18's independently completed separate planning records.
+
+Before M20 retirement, the Operator must explicitly approve an archival destination/disposition or retention rule, and subsequent reference/integrity closure must be verified. M19 must keep the legacy path references visible until that decision.
+
+**Historical-source integrity and conditional stop: PASS (decision still outstanding).**
+
+## 7. Final verdict / Batch D gate
+
+| Gate | Result |
+|---|---|
+| M17 ChatGPT closeout published | PASS |
+| Dedicated M18 branch ancestry | PASS |
+| M18 implementation / separate report closeout published | PASS |
+| Local/upstream/GitHub tip agreement and clean pre-verification worktree | PASS |
+| No PR/merge; M19 not started | PASS |
+| Only two approved [PLANNED] records | PASS |
+| Complete future-intent themes | PASS |
+| No Router / database / vector / runtime / delivery infrastructure | PASS |
+| No unauthorized implementation sequence or deployment approval | PASS |
+| Root physical tree and Migration Map §50 | PASS |
+| 12 local links / 0 broken | PASS |
+| Zero new authored whitespace defects / full Git diff check | PASS |
+| Legacy source unchanged / M17-DEST-01 preserved | PASS |
+| M18-specific blocking flags | NONE |
+
+**V003-M18 independent ChatGPT verification: PASS.**
+
+M18 is the final Batch D ticket. Before Batch E / M19:
+1. publish this M18 ChatGPT verification/status closeout on its dedicated branch and confirm a clean worktree;
+2. review, correct where required, or explicitly disposition the accumulated Batch D nonblocking flags, including M15-ASSET-01, M15-REF-01, M16-README-01, and the narrowly blocking legacy-source `M17-DEST-01`;
+3. complete Operator-authorized PR/merge/Git closure for M15–M18, preserving ticket branch provenance;
+4. sync and independently verify local `main`, `origin/main` and GitHub `main` plus all ticket-head ancestry;
+5. only then create the dedicated M19 branch from clean merged main and run M19 P14.
+
+The Operator may explicitly defer the historical-source destination decision to the owning M19/M20 stage while leaving `M17-DEST-01` visibly open; this does not authorize any legacy removal.
+
+No staging, commit, push, PR, merge, application test or deployment was performed by ChatGPT in this verification.
