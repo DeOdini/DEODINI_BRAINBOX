@@ -83,3 +83,10 @@ Do not use “PROVEN” as a permanent bucket. Describe what was tried, the evid
 **Prepared by:** Codex under the Operator-authorized V003-M09 ticket.
 **Population state:** Authority/readme only; legacy candidates remain in place; no workflow result promoted.
 **Independent verification:** To be recorded in the Phase 02 report after review.
+
+
+---
+
+## Independent verification status — 2026-10-09
+
+V003-M09 independently verifies **PASS**. The retained raw Fullstack sources remain explicitly unproven Sandbox candidates for M10; M09 did not promote or copy them.

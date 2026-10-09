@@ -182,3 +182,14 @@ This is the current execution state and supersedes earlier M07/M08 readiness wor
 - Codex self-verification passed. Independent ChatGPT verification remains pending.
 - No M09 PR or merge was requested or performed. M10 has not started.
 - The M09 execution report and exact Operator–Codex conversation record are published in a separate follow-up commit on the same branch.
+
+
+---
+
+## Current Batch C verification override — 2026-10-09
+
+- M09 DEVOPS Legacy RAW / FAILED / PROVEN Reconciliation: PASS.
+- M09 blocking flags: NONE.
+- M09-REF-02 / M09-REF-03: BATCH-DEFERRED / NON-BLOCKING.
+- M01-GIT-01 remains preserved/non-blocking under its existing recovery rule.
+- M10: next dependency ticket after this M09 verification closeout is committed and the M09 worktree is clean.
