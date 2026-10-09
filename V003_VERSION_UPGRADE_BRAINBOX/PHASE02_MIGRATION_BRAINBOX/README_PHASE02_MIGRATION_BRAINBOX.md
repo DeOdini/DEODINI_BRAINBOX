@@ -237,3 +237,14 @@ This update is the current M11 state and supersedes the earlier M10-only readine
 - No blocking M11 flags. M10-WS-01 and M10-DOC-WS-01 remain BATCH-DEFERRED / NON-BLOCKING under their prior dispositions.
 - The M11 migration-map entry, execution report, and exact Operator–Codex transcript are recorded in the separate M11 documentation closeout commit on the same branch.
 - **M12 has not started.**
+
+
+---
+
+## Current Batch C verification override — 2026-10-09
+
+- M09: PASS.
+- M10: PASS.
+- M11 Frontend Sandbox Taxonomy Migration: PASS.
+- M11 blocking flags: NONE.
+- M12: next dependency ticket after this M11 verification closeout is committed and the M11 worktree is clean.
