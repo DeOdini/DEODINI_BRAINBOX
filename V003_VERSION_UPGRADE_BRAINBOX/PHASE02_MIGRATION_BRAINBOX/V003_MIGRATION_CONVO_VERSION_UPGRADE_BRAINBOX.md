@@ -3647,6 +3647,12 @@ I completed sign-in
 17. The status documents now record Batch D as closed while keeping `M17-DEST-01` open and narrowly blocking only legacy milestone relocation or retirement. I’m checking the edited files and final branch push next.
 18. The seven intended documentation files pass the scoped whitespace check (`git diff --check` exit 0). Git’s broader summary scan still reports five pre-existing evidence filenames as too long for this Windows checkout; those files are untouched and are outside this closeout commit. I’m staging only the seven reviewed records now.
 19. The closeout commit is `8d9af0f` on `v003/batch-d-git-closure`, containing only the seven intended records. I’m pushing that branch now, then I’ll fast-forward it into `main` and fetch-check the result.
+20. The closeout branch push is still waiting without returning a result, consistent with Git Credential Manager’s sign-in wait. Please complete any GitHub sign-in prompt on the desktop and tell me when it’s done; I’ll verify the push before merging the closeout branch.
+### Codex authentication prompt (verbatim)
+The push for `v003/batch-d-git-closure` is still waiting in Git Credential Manager. Please finish the GitHub sign-in prompt on the Windows desktop, then choose “I completed sign-in.” If no prompt is visible, choose “No prompt is visible” so I can troubleshoot the wait.
+### De O'Dini — Operator response (verbatim)
+I completed sign-in
+21. The push succeeded: GitHub created `v003/batch-d-git-closure` and the local branch is tracking it. I’m verifying the remote tip now, then I’ll fast-forward the closeout into `main` and check that all ticket branches remain merged.
 
 ## Codex final response (verbatim)
 
