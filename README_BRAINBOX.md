@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M12 Backend structure, navigation, links, and whitespace self-check. ChatGPT — M05–M11 independent PASS; M12 independent verification is pending. See the active Phase 02 report for per-ticket Git state.
+**VERIFIER:** Codex — M12 Backend structure, navigation, links, and whitespace self-check. ChatGPT — M05–M12 independent PASS. See the active Phase 02 report for per-ticket Git state.
 **LAST VERIFIED:** 2026-10-09
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
