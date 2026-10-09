@@ -221,3 +221,10 @@ The retained source remains at AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/. Its README
 - [Phase 02 migration report](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md), M07 classification and M08 closeout.
 
 **GIT DIRECTORY MARKERS:** Any .gitkeep files below are Git-only markers to retain empty approved folders. They are not Brainbox knowledge, evidence, or population claims.
+
+
+---
+
+## Independent verification status — 2026-10-09
+
+V003-M08 independently verifies **PASS**. The physical Skills taxonomy matches frozen §8 exactly, retained legacy Skills sources remain unchanged, empty placeholders remain unpopulated, and canonical/reference boundaries are preserved.

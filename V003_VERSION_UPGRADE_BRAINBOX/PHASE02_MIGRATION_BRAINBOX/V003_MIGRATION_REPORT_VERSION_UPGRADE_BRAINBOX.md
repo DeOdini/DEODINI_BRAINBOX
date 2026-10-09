@@ -3836,3 +3836,350 @@ This ticket is documentation/taxonomy migration. No application test suite, pack
 **ChatGPT independent verification:** PENDING.<br>
 **Git state:** M07 and M08 implementation commits are pushed on their individual branches. M08 report/conversation/status closeout is being published in a separate follow-up commit.<br>
 **Batch Git closure:** NOT PERFORMED; push/PR/merge closure remains at the authorized batch boundary.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M08 Skills AI Taxonomy & Legacy Skills Reconciliation
+
+**Date:** 2026-10-09
+**Ticket:** V003-M08 — Skills AI Taxonomy & Legacy Skills Reconciliation
+**Independent result:** **PASS**
+**Blocking M08 flags:** NONE
+**Batch state:** **BATCH B CLOSURE BOUNDARY**
+**M09 state:** **NOT YET ELIGIBLE — BATCH B GIT CLOSURE REQUIRED**
+
+## 1. M07 cleanup / M08 branch handoff
+
+Independent GitHub and local Git checks confirm:
+
+- M07 verification cleanup commit:
+  `8aeebe0990f4d1e1d9f68ece524ca07fe20fca68`;
+- M07 cleanup parent:
+  `c6f26c21c02ab4eaf42339537113d2588c49f883`;
+- M07 cleanup changed exactly seven verification/status documentation files;
+- M07 cleanup range passes `git diff --check`;
+- remote M07 branch tip is `8aeebe0990f4d1e1d9f68ece524ca07fe20fca68`.
+
+M08 then descends directly from that clean M07 tip:
+
+- M08 implementation:
+  `01b4e714a075974f49ccc2f48d66449f7af5d434`;
+- M08 closeout:
+  `8a833ba1af0239100137b6b903213f844e0c21e2`;
+- branch:
+  `v003/m08-skills-ai-taxonomy-migration`.
+
+Before this independent-verification write:
+
+- local HEAD = `8a833ba1af0239100137b6b903213f844e0c21e2`;
+- upstream = `origin/v003/m08-skills-ai-taxonomy-migration`;
+- local/upstream/GitHub branch tips matched;
+- worktree was clean;
+- no M08 PR exists;
+- M08 is not merged into `origin/main`;
+- M07 and M08 remain separate ticket branches.
+
+**Git handoff/publication claims:** PASS.
+
+## 2. Frozen §8 taxonomy exact-match verification
+
+The physical `AI_BRAINBOX/SKILLS_AI_BRAINBOX/` directory set was independently compared against the frozen V003 Specification §8 Skills subtree.
+
+Results:
+
+- frozen expected directories, including Skills root: **147**;
+- live physical directories: **147**;
+- missing directories: **0**;
+- extra directories: **0**;
+- duplicate expected paths: **0**.
+
+Therefore the M08 directory topology matches the frozen target exactly.
+
+**147-directory taxonomy claim:** PASS.
+
+## 3. Git-only empty-directory markers
+
+Because Git does not track empty directories, M08 uses `.gitkeep` only for approved empty leaves.
+
+Independent checks:
+
+- live `.gitkeep` files: **120**;
+- tracked `.gitkeep` files: **120**;
+- non-zero-byte `.gitkeep` files: **0**.
+
+The Skills root README explicitly states that `.gitkeep` files are Git-retention markers only and are not knowledge, evidence, or population claims.
+
+**120 Git-only marker claim:** PASS.
+
+## 4. Authored Skills records
+
+There are exactly **13 Markdown records** inside the new Skills tree:
+
+- 11 navigation/category READMEs;
+- one canonical npm/npx/PowerShell command-reference record;
+- one Governance-linked guardrail preflight prompt.
+
+No generic technology leaf profile Markdown file was created.
+
+The two intentionally populated reusable records are:
+
+1. `COMMANDS_SKILLS_BRAINBOX/PACKAGE_COMMANDS_BRAINBOX/NPM_NPX_POWERSHELL_COMMAND_REFERENCE_BRAINBOX.md`;
+2. `PROMPTS_SKILLS_BRAINBOX/GUARDRAIL_PROMPTS_BRAINBOX/GUARDRAIL_PREFLIGHT_PROMPT_BRAINBOX.md`.
+
+Both are bounded to source-backed reusable knowledge and explicitly avoid claiming fresh execution.
+
+**Population discipline:** PASS.
+
+## 5. Retained legacy Skills source integrity
+
+Current legacy source values independently match the M01 baseline:
+
+| Source | Bytes | Lines | SHA-256 | Result |
+|---|---:|---:|---|---|
+| `SKILLS_MUST_README.md` | 847 | 24 | `1850965879a9494dd3004e605125c2d3e2bde42e678fe8d11d5e8fc9872dbef6` | MATCH |
+| `RAW_SKILLS_BRAINBOX.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | MATCH |
+| `PROVEN_SKILLS_BRAINBOX.md` | 0 | 0 | same empty-file digest | MATCH |
+| `REUSABLE_SKILLS_BRAINBOX.md` | 0 | 0 | same empty-file digest | MATCH |
+| `FAILED_SKILLS_BRAINBOX.md` | 0 | 0 | same empty-file digest | MATCH |
+
+Git status showed no modification under `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/`.
+
+No empty legacy file was transformed into fake RAW, PROVEN, REUSABLE, or FAILED knowledge.
+
+No legacy Skills source was moved, renamed, rewritten, or deleted.
+
+**Legacy-source preservation:** PASS.
+
+## 6. Command canonicalization
+
+The single shared package-command explanation:
+
+`NPM_NPX_POWERSHELL_COMMAND_REFERENCE_BRAINBOX.md`
+
+correctly records the approved npm / npx / PowerShell / `.cmd`-shim distinction from the frozen Specification.
+
+It explicitly states M08 did not execute or test the commands.
+
+The Commands README directs NPM, NPX, and PowerShell branches to reference this one canonical explanation rather than duplicate it.
+
+**npm/npx/PowerShell single-source rule:** PASS.
+
+## 7. Python responsibility separation
+
+Independent read-back confirms the required responsibility split:
+
+- Python language knowledge →
+  `LANGUAGES_SKILLS_BRAINBOX/PYTHON_LANGUAGE_BRAINBOX/`;
+- Python CLI/command knowledge →
+  `COMMANDS_SKILLS_BRAINBOX/PYTHON_COMMANDS_BRAINBOX/`;
+- Backend Python implementation patterns →
+  frozen Fullstack Backend `PYTHON_CODE_PATTERNS_BRAINBOX/` path.
+
+The records explicitly state that these responsibilities are distinct and M08 fabricated no Python pattern content.
+
+**Python separation rule:** PASS.
+
+## 8. Technology population truth
+
+The Technologies README correctly distinguishes taxonomy admission from actual profile population.
+
+Examples:
+
+- Git / GitHub / Playwright / Netlify / GA4 / MCP: REFERENCE states only;
+- PostgreSQL / Figma: PLANNED;
+- AWS / Azure / GCP / Redis: REVIEW / EMPTY;
+- Docker, Kubernetes family, Terraform, testing frameworks, Vercel/Cloudflare, Framer, LangChain/LlamaIndex/Ollama: EMPTY;
+- no generic technology profile Markdown leaf was fabricated.
+
+Also confirmed:
+
+- Supabase / Render were not added because they are absent from frozen §8 and require separate architecture disposition;
+- Google Forms was not duplicated into Technologies;
+- n8n/email automation received no Skills technology slot and remains UNPROVEN / NOT VERIFIED from M07.
+
+**Technology canonicalization/population-state rule:** PASS.
+
+## 9. Guardrail prompt boundary
+
+`GUARDRAIL_PREFLIGHT_PROMPT_BRAINBOX.md`:
+
+- cites Governance README and Ticketing, Security, Evidence, Documentation, Reference, and Promotion records;
+- operationalizes task-time preflight behavior;
+- explicitly states it does not create decision rights, supersede the active ticket, replace workflow authority, or override the Operator.
+
+Therefore the prompt is a reusable operationalization of Governance, not a competing policy source.
+
+**Guardrail-prompt rule:** PASS.
+
+## 10. Link verification
+
+Independent link scan of the exact Markdown files changed by the M08 implementation commit:
+
+- Markdown files checked: **15**
+  - 13 Skills records;
+  - root `README_BRAINBOX.md`;
+  - living Migration Map.
+- local Markdown links checked: **64**;
+- broken: **0**.
+
+A Skills-tree-only scan of the 13 Skills Markdown records yields 56/0; the recorded 64/0 count is therefore correctly an implementation-scope count including the root README and Migration Map.
+
+**Recorded 64-link claim:** PASS.
+
+## 11. Whitespace / changed-scope verification
+
+Independent checks:
+
+- M07 cleanup range:
+  `c6f26c21...8aeebe09` → `git diff --check` PASS;
+- complete M08 range:
+  `8aeebe09...8a833ba1` → `git diff --check` PASS;
+- M08 implementation commit contains the expected taxonomy files, `.gitkeep` markers, root navigation, and migration-map records;
+- closeout adds reporting/conversation/status records.
+
+No application/product implementation source was changed.
+
+**Whitespace:** PASS.
+**Documentation/taxonomy-only scope:** PASS.
+
+## 12. Application-test boundary
+
+The ticket created directories, documentation, navigation, reference records, prompt content, and Git-retention markers.
+
+No application code, package execution, deployment, or production configuration was changed.
+
+The execution record states no application test suite was run.
+
+For this documentation/taxonomy migration, that is consistent with scope and does not block M08.
+
+## 13. Flags
+
+No new blocking M08 flag was identified.
+
+M07-WF-01 remains a prior Batch B carry-forward only where later M09/M10 workflow ownership is relevant. M08 correctly did not create an n8n/email technology branch.
+
+**M08 blocking flags:** NONE.
+
+## 14. Final verdict
+
+| Gate | Result |
+|---|---|
+| M07 seven-file verification cleanup committed/pushed | PASS |
+| Separate M07/M08 branches retained | PASS |
+| M08 implementation + closeout pushed | PASS |
+| Local/remote M08 tips match | PASS |
+| Worktree clean before ChatGPT write | PASS |
+| No PR/merge | PASS |
+| Frozen taxonomy exact match | PASS — 147/147 |
+| Git-only markers | PASS — 120, all zero-byte |
+| Legacy source integrity | PASS — 5/5 |
+| Empty legacy content not fabricated | PASS |
+| npm/npx/PowerShell single-source rule | PASS |
+| Python responsibility separation | PASS |
+| Technology population truth | PASS |
+| Governance-linked guardrail prompt | PASS |
+| Local links | PASS — 64/64 valid |
+| Full M08 `git diff --check` | PASS |
+| Application tests required | NO — documentation/taxonomy scope |
+
+**V003-M08 independent ChatGPT verification: PASS.**
+
+## 15. Batch B closure consequence
+
+M08 is the final ticket in **Batch B — AI capability / Skills migration**.
+
+Therefore M08 PASS does **not** make M09 immediately executable.
+
+Before Batch C / M09:
+
+1. commit this ChatGPT M08 independent-verification closeout on the M08 branch;
+2. confirm a clean M08 worktree;
+3. review/disposition accumulated Batch B non-blocking flags as required;
+4. complete authorized Batch B push/PR/merge/closure for M05–M08;
+5. synchronize and independently verify final `main` / remote state;
+6. only then create the M09 dedicated branch and run M09 P14.
+
+No staging, commit, push, PR, merge, or deployment was performed by ChatGPT during this verification.
+
+
+---
+
+# Batch B Crosscheck — V003-M05 through V003-M08 — 2026-10-09
+
+**Scope:** Crosscheck the four ticket branches, their committed folders/files, ticket reports, migration-map entries, independent verification records, GitHub publication state, and accumulated flags before Batch B merge closure.
+**Crosscheck result:** **PASS — ready for the authorized ordered PR merges.**
+**Blocking Batch B flags:** **NONE.**
+
+## 1. Branch and commit crosscheck
+
+&#96;main&#96; and &#96;origin/main&#96; are at &#96;3201a1e80c5bfb2f4f2053599608ff8fce15f9db&#96; before Batch B merge.
+
+| Ticket | Branch | Published tip | Branch-side commits beyond current main | Remote/local state |
+|---|---|---|---:|---|
+| M05 | &#96;v003/m05-func-core-registry-migration&#96; | &#96;585f9600ca4940aab750488b2f46f7cb72a94d69&#96; | 1 | local = upstream = GitHub |
+| M06 | &#96;v003/m06-func-exe-registry-migration&#96; | &#96;16aab11293f656ae21f1ca215195186992b60cd2&#96; | 4, including the M05 ancestry | local = upstream = GitHub |
+| M07 | &#96;v003/m07-func-ancillary-content-classification&#96; | &#96;8aeebe0990f4d1e1d9f68ece524ca07fe20fca68&#96; | 7, including M05/M06 ancestry | local = upstream = GitHub |
+| M08 | &#96;v003/m08-skills-ai-taxonomy-migration&#96; | &#96;8a833ba1af0239100137b6b903213f844e0c21e2&#96; before this crosscheck closeout | 9, including M05–M07 ancestry | local = upstream = GitHub |
+
+For every branch, &#96;git rev-list --left-right --count origin/main...origin/<branch>&#96; had zero commits unique to current main and ticket commits only on the branch. The branch sequence is linear: M05 → M06 → M07 → M08. None was merged into main at this snapshot.
+
+GitHub PR search returned no existing PR for any of the four branch names. Each ticket therefore needs its own PR targeting &#96;main&#96;, in the order M05, M06, M07, M08.
+
+## 2. Folder and file crosscheck
+
+### M05 — FUNC CORE
+
+The target folder &#96;AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/&#96; contains the required registry README and exactly eight agent CORE records:
+
+- &#96;CHATGPT_CORE_FUNC_BRAINBOX.md&#96;;
+- &#96;CLAUDE_CORE_FUNC_BRAINBOX.md&#96;;
+- &#96;CLINE_CORE_FUNC_BRAINBOX.md&#96;;
+- &#96;CODEX_CORE_FUNC_BRAINBOX.md&#96;;
+- &#96;COPILOT_CORE_FUNC_BRAINBOX.md&#96;;
+- &#96;DEEPSEEK_CORE_FUNC_BRAINBOX.md&#96;;
+- &#96;GROK_CORE_FUNC_BRAINBOX.md&#96;;
+- &#96;QWEN_CORE_FUNC_BRAINBOX.md&#96;.
+
+The M05 independent verification record confirms the required status distinctions and retained source integrity. DeepSeek/Qwen claims remain constrained to the Operator-approved role/limitation baseline; unknown connection/authentication/execution states are not promoted.
+
+### M06 — FUNC EXE
+
+&#96;AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_EXE_FUNC_BRAINBOX/&#96; contains its parent README and exactly five ticket categories: RESEARCH, BROWSER, FILE, CODE, and MEDIA. The five category READMEs exist. MEDIA remains RESERVED / EXECUTION EVIDENCE PENDING and is not admitted. CORE↔EXE references match the frozen P06 matrix; Copilot's configuration is not presented as verified execution.
+
+### M07 — ancillary classification
+
+The three source files &#96;FQ_MUST_README.md&#96;, &#96;FUNC_REQ_BRAINBOX.md&#96;, and &#96;FUNC_WORKFLOW_BRAINBOX.md&#96; remain unchanged at their original paths and match the recorded M01 hashes. The M07 report and map classify their substantive sections without migrating or rewriting source content. The M07 seven-file ChatGPT verification archive commit is present on the M07 branch and is pushed.
+
+### M08 — Skills taxonomy
+
+The live Skills tree has 147 directories including its root, 120 tracked zero-byte &#96;.gitkeep&#96; markers, and 13 Markdown records. The 13 consist of 11 navigation/category READMEs, one canonical package-command reference, and one Governance-linked guardrail preflight prompt. The five legacy Skills source files match M01 exactly: the legacy README is 847 bytes / 24 lines with the recorded SHA-256; RAW/PROVEN/REUSABLE/FAILED remain zero-byte with the empty-file SHA-256. No empty source became fabricated knowledge. ChatGPT's appended independent M08 check records an exact frozen §8 match (147 expected, 147 physical, zero missing or extra), 64 links / zero broken, and no blocking flag.
+
+## 3. Batch B flag review and disposition
+
+### &#96;M06-LINK-01&#96; — BATCH-DEFERRED / NON-BLOCKING
+
+The M06 execution-time report recorded 120 links / zero broken across its 20-file scan. The independent scan recorded 113 links / zero broken for the same stated file class. Both establish zero broken targets; this is a historical link-count metric discrepancy, not a migration-integrity defect.
+
+**Batch-boundary disposition:** preserve both numbers with their provenance; do not rewrite the historical Codex measurement. No M06 content correction is needed. M19 owns the later repository-wide reference reconciliation and may report its own explicitly scoped link count. This flag does not block Batch B merge closure.
+
+### &#96;M07-WF-01&#96; — BATCH-DEFERRED / NON-BLOCKING
+
+M08 confirms no n8n/email technology category belongs in its frozen Skills target and creates no unproven automation claim. Applicable DEVOPS and Fullstack workflow destinations remain with M09/M10 under their own preflights. M19 owns later reference reconciliation; M20 retains source-retirement eligibility review. No M07 source is moved or retired by this disposition.
+
+### &#96;M07-AUTH-01&#96; — BATCH-DEFERRED / NON-BLOCKING
+
+Legacy generic push/notify wording remains superseded by canonical Governance and was not copied as active authority. M10 must refer to current Governance if an applicable workflow is established; M19 reconciles references; M20 retains source-retirement authority. No standing push authority is created by this flag disposition.
+
+### M08 flags
+
+ChatGPT's M08 independent verification reports **PASS** and no blocking M08 flag. No new batch-deferred M08 flag was introduced.
+
+## 4. Batch boundary decision
+
+M05, M06, M07, and M08 each have a dedicated pushed branch with a verified local/upstream/GitHub tip. All ticket results pass their recorded independent reviews. The three batch-deferred flags above have explicit non-blocking dispositions and authorized later-ticket owners. No source-removal or content-migration correction is required before closure.
+
+**Batch B crosscheck:** PASS.
+**Next authorized action:** create/merge separate PRs to &#96;main&#96; in ticket order M05 → M06 → M07 → M08.
+**Branch deletion:** not requested; retain all ticket branches.
+**Post-merge verification and final report:** pending merge completion.

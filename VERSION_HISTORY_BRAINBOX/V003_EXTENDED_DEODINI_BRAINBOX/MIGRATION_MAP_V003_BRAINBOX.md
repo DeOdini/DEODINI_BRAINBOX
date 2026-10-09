@@ -1122,3 +1122,74 @@ No new technology or prompt category was created. No real secret, identifier, or
 
 **Implementation commit:** `01b4e714a075974f49ccc2f48d66449f7af5d434`, pushed to origin. **PR/merge:** not requested or performed.
 **ChatGPT independent M08 verification:** pending. The execution report, conversation record, and status closeout are being added in a follow-up commit on the same M08 branch.
+
+
+---
+
+## 26. ChatGPT independent verification — V003-M08 — 2026-10-09
+
+**Result:** PASS.
+**Blocking M08 flags:** NONE.
+**Batch state:** BATCH B CLOSURE BOUNDARY.
+**M09:** NOT YET ELIGIBLE — Batch B Git lifecycle/closure required.
+
+Independent checks confirmed:
+
+- M07 cleanup commit `8aeebe0990f4d1e1d9f68ece524ca07fe20fca68` is pushed and contains exactly seven verification/status files;
+- M08 implementation `01b4e714a075974f49ccc2f48d66449f7af5d434`;
+- M08 closeout/current pre-verification tip `8a833ba1af0239100137b6b903213f844e0c21e2`;
+- local/upstream/GitHub M08 branch tips matched before this verification write;
+- no M08 PR/merge;
+- exact frozen §8 directory comparison = 147 expected / 147 physical / 0 missing / 0 extra;
+- 120 tracked `.gitkeep` markers, all zero-byte and documented as Git-only retention;
+- 13 Markdown records inside Skills tree;
+- retained `SKILLS_MUST_README.md` = 847 bytes / 24 lines / SHA-256 `1850965879a9494dd3004e605125c2d3e2bde42e678fe8d11d5e8fc9872dbef6`;
+- RAW/PROVEN/REUSABLE/FAILED legacy Skills files remain 0 bytes and retain empty-file SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`;
+- no retained legacy source changed;
+- one canonical npm/npx/PowerShell explanation;
+- Python language / command / backend-pattern responsibilities remain distinct;
+- technology branches use truthful REFERENCE / PLANNED / EMPTY states and no generic leaf profile was fabricated;
+- Supabase/Render not added; Google Forms not duplicated; n8n/email remains UNPROVEN / NOT VERIFIED;
+- guardrail preflight prompt cites canonical Governance and grants no authority;
+- implementation Markdown scope = 15 files / 64 local links / 0 broken;
+- M07 cleanup and full M08 ranges both pass `git diff --check`;
+- no application/product source changed; no application test suite was required/run.
+
+Older “M08 independent verification pending” statements are historical pre-verification states and are superseded by this section.
+
+M08 closes substantive Batch B ticket work. Before M09, publish this verification closeout on M08 and complete authorized Batch B flag review plus push/PR/merge/closure.
+
+
+---
+
+## 27. Batch B crosscheck and flag disposition — 2026-10-09
+
+**Result:** PASS — M05–M08 are ready for the Operator-authorized ordered PR/merge closure.
+**Current main before closure:** &#96;3201a1e80c5bfb2f4f2053599608ff8fce15f9db&#96;.
+
+| Ticket branch | Published tip | Branch-only commits relative to current main | Publication check |
+|---|---|---:|---|
+| &#96;v003/m05-func-core-registry-migration&#96; | &#96;585f9600ca4940aab750488b2f46f7cb72a94d69&#96; | 1 | local/upstream/GitHub match |
+| &#96;v003/m06-func-exe-registry-migration&#96; | &#96;16aab11293f656ae21f1ca215195186992b60cd2&#96; | 4 including M05 | local/upstream/GitHub match |
+| &#96;v003/m07-func-ancillary-content-classification&#96; | &#96;8aeebe0990f4d1e1d9f68ece524ca07fe20fca68&#96; | 7 including M05/M06 | local/upstream/GitHub match |
+| &#96;v003/m08-skills-ai-taxonomy-migration&#96; | &#96;8a833ba1af0239100137b6b903213f844e0c21e2&#96; before this crosscheck closeout | 9 including M05–M07 | local/upstream/GitHub match |
+
+The branch history is linear M05 → M06 → M07 → M08. Current main is an ancestor of each branch; none is merged yet. GitHub PR search found no existing PR for these four heads. Each requires its own PR to main, in ticket order. The M08 report, map, status, and conversation closeout is being staged/published before those PR merges.
+
+### Physical record crosscheck
+
+- **M05:** exactly eight agent CORE records and their registry README are present under &#96;AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/&#96;; their independent review records PASS and preserve unknown states.
+- **M06:** the EXE index and RESEARCH/BROWSER/FILE/CODE/MEDIA category records are present; MEDIA remains reserved/not admitted, and CORE↔EXE references follow the approved matrix.
+- **M07:** the three classified source files remain at their original paths and match M01 baselines; section dispositions are recorded without source migration. The seven-file independent-verification archive commit is pushed.
+- **M08:** exact §8 structure has 147 directories, 120 tracked zero-byte markers, and 13 Markdown records; five legacy Skills files match M01; 64 links/0 broken; ChatGPT independent verification PASS.
+
+### Batch-deferred flag disposition
+
+- &#96;M06-LINK-01&#96;: preserve Codex's execution-time 120/0 and ChatGPT's independent 113/0 as separately sourced historical metrics. Both have zero broken links; no path-integrity defect was found. M19 owns future repository-wide reference reconciliation and its own scoped count. No M06 correction blocks Batch B closure.
+- &#96;M07-WF-01&#96;: M08 does not add an n8n/email Skills slot or assert automation. Applicable workflow ownership remains M09/M10; M19 handles later reference reconciliation and M20 retirement eligibility.
+- &#96;M07-AUTH-01&#96;: generic legacy push/notify wording remains superseded by Governance. M10 references current authority where applicable; M19/M20 retain reference and retirement responsibilities.
+
+**Blocking flags:** NONE.
+**Batch B:** substantive M05–M08 work PASS; Git closure is authorized and pending ordered PR merges.
+**M09:** wait until Batch B merge/remote-verification closure completes.
+**Branch deletion:** not requested.
