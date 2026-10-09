@@ -1218,3 +1218,17 @@ Batch-deferred flags M06-LINK-01, M07-WF-01, and M07-AUTH-01 remain non-blocking
 
 **M09:** eligible for its own P14 preflight after this report closeout and local main synchronization. M09 was not executed here.
 **Final report closeout:** to be committed/pushed on the M08 branch and merged in its own documentation PR.
+
+
+---
+
+## 29. Batch B documentation closeout — PR #26 — 2026-10-09
+
+**Result:** PASS — Batch B ticket merges and report closeout are complete.
+**PR #26 merge commit:** c83bac0f3b0456fa1c5d70c96651a94280ddbc30.
+**Main synchronization:** local main and origin/main both verified at c83bac0f3b0456fa1c5d70c96651a94280ddbc30 after fast-forward-only pull.
+**PRs #22–#26:** closed / merged.
+**M05–M08 ticket refs:** retained and verified as ancestors of main.
+**Blocking Batch B flags:** NONE.
+
+This final status supersedes the preceding note that the post-merge report closeout was pending. Batch B is closed. M09 is dependency-eligible for its own P14 preflight; no M09 implementation began here.
