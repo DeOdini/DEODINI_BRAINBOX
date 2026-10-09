@@ -1,0 +1,4 @@
+# Repository-wide local environment files. Keep placeholder-only examples trackable.
+.env
+.env.*
+!.env.example

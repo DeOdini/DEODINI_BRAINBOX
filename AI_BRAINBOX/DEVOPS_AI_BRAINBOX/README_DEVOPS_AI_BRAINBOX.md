@@ -30,13 +30,27 @@ DEVOPS_AI_BRAINBOX/
 │   └── FAILED_SANDBOX_BRAINBOX/ [PLANNED]
 └── PROD_DEVOPS_BRAINBOX/
     ├── README_PROD_DEVOPS_BRAINBOX.md [PRESENT]
-    ├── FULLSTACK_PROD_BRAINBOX/ [PLANNED]
-    ├── ENVIRONMENT_PROD_BRAINBOX/ [PLANNED]
+    ├── FULLSTACK_PROD_BRAINBOX/ [PRESENT — M14]
+    │   ├── README_FULLSTACK_PROD_BRAINBOX.md [PRESENT]
+    │   ├── WORKFLOWS_PROD_BRAINBOX/ [EMPTY]
+    │   ├── RELEASE_PROD_BRAINBOX/ [EMPTY]
+    │   ├── DEPLOYMENT_PROD_BRAINBOX/ [EMPTY — no procedure found]
+    │   ├── OPERATIONS_PROD_BRAINBOX/ [EMPTY]
+    │   └── MONITORING_PROD_BRAINBOX/ [EMPTY]
+    ├── ENVIRONMENT_PROD_BRAINBOX/ [PRESENT — M14]
+    │   ├── README_ENVIRONMENT_PROD_BRAINBOX.md [PRESENT]
+    │   ├── ENV_VARIABLES_BRAINBOX.md [PRESENT — no app contract defined]
+    │   ├── ENV_SECURITY_BRAINBOX.md [PRESENT]
+    │   ├── ENV_ROTATION_BRAINBOX.md [PRESENT — procedure only]
+    │   ├── ENV_VALIDATION_BRAINBOX.md [PRESENT — procedure only]
+    │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
+    │       ├── .env.example [PLACEHOLDER ONLY]
+    │       └── .gitignore [TEMPLATE]
     ├── CASE_STUDIES_PROD_BRAINBOX/ [PLANNED — M16]
-    ├── PASSED_PROD_BRAINBOX/ [PLANNED]
-    ├── FAILED_PROD_BRAINBOX/ [PLANNED]
-    ├── INCIDENTS_PROD_BRAINBOX/ [PLANNED]
-    └── REGRESSIONS_PROD_BRAINBOX/ [PLANNED]
+    ├── PASSED_PROD_BRAINBOX/ [PRESENT — no records]
+    ├── FAILED_PROD_BRAINBOX/ [PRESENT — no records]
+    ├── INCIDENTS_PROD_BRAINBOX/ [PRESENT — no records]
+    └── REGRESSIONS_PROD_BRAINBOX/ [PRESENT — no records]
 ```
 
 The nested target structure is defined by the frozen Specification §8. The root README carries the complete repository tree; each child README owns its local navigation.
@@ -51,10 +65,39 @@ DEVOPS_AI_BRAINBOX/
 │   └── FULLSTACK_SANDBOX_BRAINBOX/
 │       └── README_FULLSTACK_SANDBOX_BRAINBOX.md
 └── PROD_DEVOPS_BRAINBOX/
-    └── README_PROD_DEVOPS_BRAINBOX.md
+    ├── README_PROD_DEVOPS_BRAINBOX.md
+    ├── FULLSTACK_PROD_BRAINBOX/
+    │   ├── README_FULLSTACK_PROD_BRAINBOX.md
+    │   ├── WORKFLOWS_PROD_BRAINBOX/
+    │   │   └── .gitkeep
+    │   ├── RELEASE_PROD_BRAINBOX/
+    │   │   └── .gitkeep
+    │   ├── DEPLOYMENT_PROD_BRAINBOX/
+    │   │   └── .gitkeep
+    │   ├── OPERATIONS_PROD_BRAINBOX/
+    │   │   └── .gitkeep
+    │   └── MONITORING_PROD_BRAINBOX/
+    │       └── .gitkeep
+    ├── ENVIRONMENT_PROD_BRAINBOX/
+    │   ├── README_ENVIRONMENT_PROD_BRAINBOX.md
+    │   ├── ENV_VARIABLES_BRAINBOX.md
+    │   ├── ENV_SECURITY_BRAINBOX.md
+    │   ├── ENV_ROTATION_BRAINBOX.md
+    │   ├── ENV_VALIDATION_BRAINBOX.md
+    │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
+    │       ├── .env.example
+    │       └── .gitignore
+    ├── PASSED_PROD_BRAINBOX/
+    │   └── .gitkeep
+    ├── FAILED_PROD_BRAINBOX/
+    │   └── .gitkeep
+    ├── INCIDENTS_PROD_BRAINBOX/
+    │   └── .gitkeep
+    └── REGRESSIONS_PROD_BRAINBOX/
+        └── .gitkeep
 ```
 
-The Fullstack README owns its detailed local subtree. M09 created only the original DEVOPS authority READMEs; M10 created the Fullstack Sandbox target.
+M14 established the approved Production Fullstack and Environment structure, safe environment documentation/templates, and empty Production evidence placeholders. Production case studies remain planned for M16; no deployment, production run, or Production outcome was created.
 
 ## Domain boundary
 
