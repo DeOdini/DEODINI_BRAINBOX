@@ -1514,3 +1514,42 @@ Independent verification confirmed:
 The M11 follow-up closeout contains six files, including the four claimed Phase 02/map records plus two Frontend/Fullstack status updates.
 
 Older “M11 independent verification pending” statements are historical pre-verification states and are superseded by this section.
+
+
+---
+
+## 36. V003-M12 — Backend Sandbox Taxonomy Migration — 2026-10-09
+
+**Authorization:** Operator-authorized V003-M12; ticket-specific P14 preflight passed.
+**Branch:** `v003/m12-backend-sandbox-taxonomy`, created from the published M11 verification tip.
+**Target path:** `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/BACKEND_SANDBOX_BRAINBOX/`.
+**M12 implementation commit:** `f0129874928747897f923e3d5430b4ecc2436d35`, pushed to the dedicated M12 branch. The local branch, upstream and GitHub branch tip matched after push. No PR or merge was created.
+
+### P14 preflight and source dispositions
+
+The authorized M12 ticket; frozen Specification §§8, 14, 17 and 19; Origin Conversation decisions on Google Forms and technology ownership; M08 Skills taxonomy; M09–M11 migration records; the M10 RAW workflow sources/copies; Fullstack local navigation; FootHive source records; and relevant current Git refs were inspected before implementation. M09 and M10 were ancestors of the dedicated M11 branch, and M11's ChatGPT verification closeout was published as `bdca61e4434726d18b9a16c72cf2e3f0087f7e34` before M12 was created. The M10 verification closeout `bba4d7006b2397a0c2cdd87e5d1520f9e1ed8099` remained on its dedicated branch and unmerged to `origin/main`.
+
+| Current source / authority | Observed role and integrity | M12 disposition / target | Removal / dependency |
+| --- | --- | --- | --- |
+| Frozen `V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`, §§8, 14, 17, 19; V003 Origin Conversation | Canonical target hierarchy, Backend/Google Forms placement, and reusable Skills ownership. | Defines Backend Sandbox and five permitted Backend code-pattern leaves; Google Forms belongs under Backend Integrations. | Retained as canonical authority; no edits. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md` | RAW Fullstack workflow; 25,450 bytes / 565 lines; SHA-256 `e9ad5963cf5e59555a0bf5b3c797eade93f2995007117c3684aeb158a6da9105`. M10 target copy was rechecked byte-identical. | Reference only. Backend examples and proposed stack choices were not extracted, selected, or certified. | Source and M10 copy unchanged; M20 source-retirement gate remains. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md` | RAW / UNVERIFIED preset; 26,261 bytes / 615 lines; SHA-256 `0a7270ecc83db51416aaab7d6d5a78231f783dcdf5d01e4a9a7e0499fdbf45ea`. M10 target copy was rechecked byte-identical. | Reference only. No framework/runtime selection or backend example was promoted. | Source and M10 copy unchanged; M20 source-retirement gate remains. |
+| `AI_BRAINBOX/SKILLS_AI_BRAINBOX/LANGUAGES_SKILLS_BRAINBOX/{JAVASCRIPT_LANGUAGE_BRAINBOX,TYPESCRIPT_LANGUAGE_BRAINBOX,PYTHON_LANGUAGE_BRAINBOX,SQL_LANGUAGE_BRAINBOX}/`, Python Commands, Skills API Design, and generic Code Patterns | Relevant current locations contain only zero-byte `.gitkeep` placeholders; no reusable implementation guidance was present. | Referenced from Backend Code Patterns. Backend leaves distinguish application-specific code from canonical language, CLI, API-design, and generic-pattern knowledge. | Unchanged; no knowledge copied or promoted. |
+| `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/ORCHESTRATION_FULLSTACK_BRAINBOX/AI_AGENT_ORCH_BRAINBOX/AI_AGENT_ORCH_HANDOFF_CLASSIFICATION_BRAINBOX.md` | Existing agent handoff classification owned by Fullstack Orchestration. | Reference-only. M12 did not reclassify it as a Backend workflow or integration. | Unchanged. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md` | Project-specific FootHive record documents Google Forms implementation and Operator-confirmed response persistence. It is not a generic Backend integration recipe. | Referenced as source evidence. Empty `GOOGLE_FORMS_INTEGRATION_BRAINBOX/` was created under Backend Integrations; no endpoint, field identifier, response value, or project-specific implementation was copied. | Original source unchanged; FootHive case-study migration and disposition remain assigned to M15. |
+| Existing Backend target before M12 | No physical Backend Sandbox tree existed. | M12 created the approved tree and three P12 navigation READMEs. All 17 knowledge leaves remain empty placeholders. | No prior Backend content was overwritten. |
+
+### M12 target and evidence state
+
+The Backend target contains 13 direct child directories and 19 descendant directories (20 including the Backend root), three navigation READMEs, and 17 zero-byte `.gitkeep` markers. Its 17 knowledge leaves are empty. The 13 approved direct domains are Workflows, Architecture, API, Database, Auth, Storage, Integrations, Serverless, Jobs/Queues, Caching, Security, Code Patterns, and Testing. Google Forms is nested under Integrations. The five and only five Backend code-pattern folders are JavaScript, TypeScript, Python, SQL, and API.
+
+The Backend parent README, Integrations README, Code Patterns README, and Fullstack parent README state the local/current tree, ownership boundaries and empty population state. The root README's M12 Backend tree now also lists the two P12 child navigation READMEs. Python language and CLI knowledge remain separate from Backend-specific Python patterns. GA4 remains outside Backend and is assigned to M13. M10's 001/002 sources remain RAW / UNPROVEN and byte-identical to their M10 copies. No generic Skills content, application code, production evidence, or unverified integration behavior was invented.
+
+**Codex structural verification:** PASS — 13 direct directories; 19 descendants; 17 zero-byte markers; three Backend READMEs; 51 local Markdown links checked across Backend and Fullstack navigation / 0 broken; 0 authored trailing-whitespace lines; `git diff --check` PASS.
+**Application tests:** Not run; this was a documentation and taxonomy migration with no application code changes, and no application-test request was made.
+**Source move / rename / deletion:** NONE.
+**Blocking M12 flags:** NONE. Existing M10-WS-01 and M10-DOC-WS-01 remain BATCH-DEFERRED / NON-BLOCKING as recorded in §33; they do not affect M12.
+**Independent ChatGPT M12 verification:** Pending.
+**M13:** next ticket after M12 independent verification and clean handoff.
+
+**Implementation remote state:** Local HEAD and `origin/v003/m12-backend-sandbox-taxonomy` both equaled `f0129874928747897f923e3d5430b4ecc2436d35` after the implementation push. Report, conversation, migration-map, and status updates are being published as a separate documentation follow-up commit on the M12 branch. No PR or merge was requested or performed.
