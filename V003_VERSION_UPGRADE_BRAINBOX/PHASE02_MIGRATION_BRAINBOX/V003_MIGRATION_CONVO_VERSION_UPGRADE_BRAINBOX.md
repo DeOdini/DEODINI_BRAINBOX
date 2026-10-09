@@ -3585,3 +3585,75 @@ The frozen §§8/28 planned milestone target physically contains exactly `README
 Independent physical Markdown scan: 12 links / 0 broken, 0 authored trailing-whitespace lines; full M18 range `git diff --check` PASS. Root current tree and Migration Map §50 reflect the actual two-document population. Both historical `MILESTONES/` sources match their M01 hashes and have zero M18 diff. `M17-DEST-01` remains OPEN, blocking physical migration/rename/retirement without an Operator disposition decision; it did not block M18's separate future-intent work.
 
 **M18 is independently verified PASS, but Batch D Git/flag closure is still pending. M19 must not start until Batch D closes and final main is verified.** This independent verification write changes only active documentation/status, not the frozen Specification, legacy milestone records, implementation files or Git history.
+
+
+---
+
+# Batch D Cross-Check and Git Closure — Operator / Codex conversation
+
+## De O'Dini — Operator request (verbatim)
+
+```text
+PROCEED WITH CROSSCHECKING
+
+**## Batch D — FootHive, Portfolio, and Milestones**
+\- V003-M15 — FootHive Canonical Sandbox Evidence & Iteration Migration
+\- V003-M16 — FootHive Production Summary & Portfolio Migration
+\- V003-M17 — Legacy Milestones Historical Reconciliation
+\- V003-M18 — Planned Router / Agentic Milestones Migration
+
+FOR ALL THE WORK DONE AND ALSO EACH FOLDERS/FILES THAT HAS ITS RECORDS...
+
+ONCE DONE, COMMIT AND PUSH ALL BRANCHES M15-M18 ACCORDINGLY, AND THEN PROCEED TO MERGE ALL BRANCHES M15-M18 ACCORDINGLY, RUN A CHECK AND THEN RECORD YOUR REPORTS.
+STAGE, COMMIT AND PUSH ONCE AGAIN TO THEN MERGE.
+```
+
+## Codex progress messages (verbatim, in order)
+
+1. I’ll audit the four ticket branches and their reports first: local/remote tips, commits, working-tree state, and whether any branch is already merged. Then I’ll publish any verified outstanding changes and merge M15–M18 in order, checking the result before recording and publishing the Batch D closeout.
+
+2. I’m checking the current M18 verification edits and comparing all four ticket branches with `main`. I’ll preserve and review any uncommitted work before publishing or merging it.
+
+3. The four remote branches are present and cleanly synchronized, and none is merged into `main`. Their ancestry is sequential: M16 contains M15, M17 contains M15–M16, and M18 contains M15–M17. I’m now checking the earlier ticket reports and the open Batch D flags before deciding the merge sequence.
+
+4. The report review confirms M15 and M16 passed their independent checks; the open asset/reference/parent-README items are assigned for later reconciliation and don’t alter the migrated evidence. M17’s destination flag remains a stop on moving or retiring the old milestone files, not on preserving and merging these ticket records. I’m validating the recorded hashes and target contents against the working tree now.
+
+5. The M15 transfer manifest now passes a fresh live check: all 45 source/destination pairs match their recorded SHA-256 and size, including the separately located audit source. M15’s target has 50 nonempty files. M17’s two legacy files still match their recorded baseline hashes; M18’s two planned records are intact. I’m publishing the seven reviewed M18 verification edits before merging the four branches.
+
+6. The M18 verification changes are committed locally as `7c78795` after the staged whitespace check passed. The push is still running; I’m waiting for the remote confirmation before changing branches.
+
+7. The push has not returned output yet; the same Git credential/network delay occurred on earlier Brainbox pushes. The branch and working tree are otherwise stable, so I’m letting the authenticated push finish before starting the merge sequence.
+
+8. The M18 push is waiting at Git Credential Manager; I confirmed the credential process is active. I’m following the computer-use authentication boundary: I can verify the push, but you need to complete the GitHub sign-in yourself.
+
+9. Git Credential Manager is holding the authorized M18 push open. Please complete the GitHub sign-in prompt on the Windows desktop, then choose “I completed sign-in.” If no prompt is visible, choose “No prompt is visible” and I’ll troubleshoot the wait.
+
+### De O'Dini — Operator response (verbatim)
+
+I completed sign-in
+
+10. Thanks. I’ll verify that `7c78795` reached the M18 remote, then merge M15, M16, M17, and M18 in dependency order.
+
+11. All four ticket branches now match their GitHub tips; M18 is at `7c787958`, and local `main` matches `origin/main` at `d8296578`. I’m merging in order now, preserving each ticket branch and its commit history.
+
+12. M15 through M18 have merged locally into `main` in dependency order, each with a separate merge commit. The worktree is clean. I’m publishing those four merges to GitHub, then I’ll verify remote ancestry and the final tree before recording Batch D closeout.
+
+13. GitHub accepted the Batch D merges; `origin/main` moved from `d829657` to `a41ec7a`. I’m doing the remote verification now: each ticket head must be an ancestor of `origin/main`, all ticket branches must remain present, and the working tree must be clean.
+
+14. The post-merge check passes: all four remote ticket tips are ancestors of GitHub `main`, the local/remote `main` tips match, and the ticket branches remain intact. I’m preparing a separate Batch D closeout branch for the detailed report, transcript, and status updates; the still-open M17 disposition will remain explicit and will not trigger any legacy-file move or deletion.
+
+15. The ticket merges are already on `main`. I’m finishing the separate Batch D closeout record now, then I’ll publish that record and verify the final repository state.
+16. The detailed report is now in the Phase 02 report file. I’m adding the verbatim exchange and synchronizing the root, Phase 02, V003, migration-map, and milestone status records with the final merge state and retained flags.
+17. The status documents now record Batch D as closed while keeping `M17-DEST-01` open and narrowly blocking only legacy milestone relocation or retirement. I’m checking the edited files and final branch push next.
+18. The seven intended documentation files pass the scoped whitespace check (`git diff --check` exit 0). Git’s broader summary scan still reports five pre-existing evidence filenames as too long for this Windows checkout; those files are untouched and are outside this closeout commit. I’m staging only the seven reviewed records now.
+19. The closeout commit is `8d9af0f` on `v003/batch-d-git-closure`, containing only the seven intended records. I’m pushing that branch now, then I’ll fast-forward it into `main` and fetch-check the result.
+
+## Codex final response (verbatim)
+
+Batch D cross-check, merge, and report closeout are complete.
+
+- M15–M18 branches were pushed and merged in dependency order, with separate merge commits. All four ticket branches remain intact.
+- The final closeout report and status records are published on `main`. Local `main` and `origin/main` match; all four ticket heads are ancestors of `origin/main`; the working tree is clean.
+- The M15 transfer manifest passes all 45 source/destination size and SHA-256 checks; its case-study tree contains 50 nonempty files. M16 has 2 Production and 4 Portfolio records. M17’s 2 legacy milestone files still match their M01 hashes. M18 has only its 2 `[PLANNED]` records.
+- M15-ASSET-01 remains at source pending disposition before retirement; M15-REF-01 and M16-README-01 are assigned to authorized M19; M17-DEST-01 remains open and blocks moving or retiring the legacy milestone sources until you decide their disposition. No source was moved or deleted.
+- No application tests, form submissions, or deployments were run for this documentation/repository closeout.

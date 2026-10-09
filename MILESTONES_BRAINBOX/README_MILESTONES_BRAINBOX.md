@@ -52,4 +52,13 @@ MILESTONES_BRAINBOX/
 - **Change:** Created the two approved future-intent records only; no Router or enabling infrastructure was built.
 - **Prepared by:** Codex under Operator-authorized V003-M18.
 - **Authorization:** V003-M18, with frozen Specification §28 as the architecture authority.
-- **Independent verification:** PASS (2026-10-09). Batch D Git/flag closure remains pending.
+- **Independent verification:** PASS (2026-10-09). Batch D Git closure completed (2026-10-09); the separate M17-DEST-01 disposition remains open and does not authorize moving or retiring the legacy milestone records.
+
+
+---
+
+## Batch D closeout — 2026-10-09
+
+Batch D tickets M15–M18 were independently cross-checked, pushed, and merged to `main` in dependency order. Their merge commits, target inventories, integrity checks, and flag dispositions are recorded in Migration Map §52 and the Phase 02 Batch D report. The ticket branches remain available.
+
+`M17-DEST-01` remains open. The two legacy files under `MILESTONES/` remain unchanged; this status does not authorize moving, copying, renaming, or retiring them. The separate Router/Agentic records in this folder remain `[PLANNED]`; no infrastructure was created.

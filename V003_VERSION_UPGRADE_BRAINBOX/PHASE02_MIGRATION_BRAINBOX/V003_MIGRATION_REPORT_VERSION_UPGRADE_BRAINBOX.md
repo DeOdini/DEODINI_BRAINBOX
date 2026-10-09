@@ -7471,3 +7471,90 @@ M18 is the final Batch D ticket. Before Batch E / M19:
 The Operator may explicitly defer the historical-source destination decision to the owning M19/M20 stage while leaving `M17-DEST-01` visibly open; this does not authorize any legacy removal.
 
 No staging, commit, push, PR, merge, application test or deployment was performed by ChatGPT in this verification.
+
+
+---
+
+# Batch D Cross-Check and Git Closure — V003-M15–M18
+
+**Date:** 2026-10-09
+**Result:** Ticket cross-check PASS; all four ticket branches were published, cross-checked, and merged to main in dependency order. Batch D closeout records were committed on `v003/batch-d-git-closure`, pushed, fast-forwarded to main, and fetch-verified.
+**Scope:** V003-M15 FootHive Sandbox evidence; M16 FootHive Production / Portfolio; M17 legacy milestone classification; M18 planned Router / Agentic milestone.
+**Repository:** `C:\Users\USER\DEODINI_BRAINBOX` / `DeOdini/DEODINI_BRAINBOX`.
+
+## 1. Branch publication and merge record
+
+Before Batch D, local `main` and `origin/main` matched at `d8296578e53ea75509c3c3fee15f21c99dbfeab7`. Each ticket branch was fetched and verified at matching local/origin tips with 0/0 ahead/behind. M18’s seven reviewed independent-verification updates were committed as `7c78795878ff958e2c3639893e0bc3b369493a81` and pushed before merging.
+
+| Ticket | Dedicated branch head pushed | Published merge commit on main |
+|---|---|---|
+| M15 | `2baffb5e554ec62a2ee8f422f66c428efe654beb` | `edd7ccd77c0c75e6ecffec1fa2389c4dfe8df2a2` |
+| M16 | `36406b6c13b0c6fa8f2024032ae9349f6b25607b` | `5f6c7c8a9cb785c871ec02b684299875fad6e054` |
+| M17 | `8185830e7312eafc0ec1d9f384545aec4be84f2e` | `2acb8b34e605d52fd813193ac22260f38dcc33a0` |
+| M18 | `7c78795878ff958e2c3639893e0bc3b369493a81` | `a41ec7a70e67f45c837eb912ff6b552ce3bfef77` |
+
+Merge order was M15 → M16 → M17 → M18 using separate `--no-ff` Git merges. The four merges were pushed to GitHub `main`; the ticket branches were retained. No pull requests were opened. The final report/status branch was `v003/batch-d-git-closure`; it was pushed and fast-forwarded to main as the final Batch D closeout.
+
+After the ticket merges, local main and origin/main matched at `a41ec7a70e67f45c837eb912ff6b552ce3bfef77`. The final closeout-branch merge and fetch check also left local main and origin/main equal. Each of the four remote ticket heads is an ancestor of origin/main. The worktree is clean. No Batch D ticket branch was deleted.
+
+## 2. M15 — FootHive Canonical Sandbox evidence
+
+**Canonical target:** `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/`.
+
+The target contains 50 files, all nonempty. Its structure includes the case-study README, Build Report, PASSED, FAILED, conversation, Operator Addendum, Retrospective, `AUDITS_FH_BRAINBOX/`, and `EVIDENCE_FH_BRAINBOX/`. Evidence retains the integrity manifest, original Deep Audit and audit README, design-direction images, header-review screenshots, Playwright logs/page snapshots, T11 responsive QA screenshots, and T23 mobile-header evidence.
+
+The 45 manifest entries were independently rechecked against the live source and destination files: all 45 source/destination pairs exist and match the recorded byte counts and SHA-256 values; mismatches: 0. This includes the separately located original Deep Audit. The legacy FootHive source subtree has no M15 diff and remains intact.
+
+The frozen authority is represented as logical Iteration 01 at the case-study root. Iterations 02/03 and Workflow Mastery remain `[PLANNED]`; no iteration directories or mastery claim were added. The 29 source-only product/catalog files remain in the original source; nine other assets have recorded identical counterparts in the separate FootHive website repository. No product asset was forced into test evidence.
+
+## 3. M16 — FootHive Production summary and Portfolio
+
+**Production target:** `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/` — two records: `README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md` and `PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md`.
+
+**Portfolio target:** `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/` — four records: `README_FOOTHIVE_PORTFOLIO_BRAINBOX.md`, `HANDOFF_FOOTHIVE_BRAINBOX.md`, `PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md`, and `CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md`.
+
+The six target records are present. Production summarizes only the recorded historical T20 release. Portfolio preserves the trial/public-brief disclosure and does not claim paid-client acceptance, checkout, backend, database, or product-editor capabilities. The canonical M15 evidence remains in Sandbox and is referenced rather than copied. The empty legacy `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` remains unchanged.
+
+## 4. M17 — Legacy milestone reconciliation
+
+M17 created no replacement or destination for historical files. `MILESTONES/MILESTONES_MUST_README.md` remains 2,230 bytes / 56 lines with SHA-256 `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e`. `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` remains 26,420 bytes / 462 lines with SHA-256 `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8`. Both match the M01 baseline; the M17 range and M18 range contain no legacy `MILESTONES/` changes.
+
+## 5. M18 — Planned Router / Agentic milestone
+
+`MILESTONES_BRAINBOX/` contains only the two approved `[PLANNED]` records: `README_MILESTONES_BRAINBOX.md` and `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md`. No Router, runtime, specialist-agent implementation, database, vector store, deployment, or delivery infrastructure was created.
+
+The Router record is 3,344 bytes / 50 lines, SHA-256 `6fdb12aa448ca31459f1e38a9ba7992a363b253bbf1a5301e7d9b2b0c6860b0b`. The README is now 3,936 bytes / 55 lines, SHA-256 `ea9f4c9a0fefb5d007926b1df3df295bda2c626abd446b88dfa3b0daba66e0c8`, after its verifier/status line was updated. Its earlier pre-verification hash remains recorded in the M18 independent-verification section as historical evidence.
+
+## 6. Batch D flags and their dispositions
+
+| Flag | Batch D disposition | Owner / boundary |
+|---|---|---|
+| `M15-ASSET-01` | 29 source-only product/catalog files retained unchanged; no guessed destination and no evidence misclassification. | `M20` must verify an approved disposition before source retirement; otherwise retain them. |
+| `M15-REF-01` | Eleven stale links in byte-preserved historical Build Report/conversation copies remain unchanged. | Authorized `M19` owns canonical reference reconciliation; preserve source bytes. |
+| `M16-README-01` | Parent `PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md` is absent; current child/root navigation truthfully exposes the partial population. | Authorized `M19` owns parent README/population reconciliation. |
+| `M17-DEST-01` | OPEN. No destination or retention rule was invented; both historical source files stay at their original paths and hashes. | Blocks physical relocation, canonical copying, rename, or retirement pending Operator disposition. `M20` must stop any proposed removal while unresolved. It does not block merging these non-destructive ticket records. |
+
+Batch-boundary review confirms that the first three items are explicitly deferred to their authorized owners, and the M17 stop remains narrowly attached to source movement/retirement. No flag was hidden or silently repaired during merge. M19 is authorized in the ticket register and may begin only after this Batch D closeout is merged and its own P14 preflight passes. M20 remains subject to its stated dependencies and unresolved-source safeguards.
+
+## 7. Mechanical and repository checks
+
+- M15 manifest: 45 rows, all destination SHA/size checks pass, 0 mismatches; case-study tree: 50 files, 0 empty files.
+- M15 authored navigation/retrospective records: targeted `git diff --check` exit 0, 0 findings.
+- M16, M17, and M18 ticket ranges: `git diff --check` exit 0.
+- A broader M15 range whitespace scan reports trailing whitespace inside byte-preserved historical source copies (including the original Build Report and conversation). Those archived files were required to remain byte-identical; they were not edited. This is distinct from the clean targeted check of M15-authored records.
+- An independent relative-link scan across 13 authored M15/M16/M18 target documents found 75 links and 0 broken targets.
+- M16 actual target count: 2 Production records and 4 Portfolio records. M18 actual target count: 2 planned records.
+- Local `main` and `origin/main` matched after ticket merges and after final closeout integration; all four ticket branch tips are ancestors of origin/main; ticket branches remain present; worktree clean.
+- No application test, form submission, deployment, source relocation, deletion, or branch cleanup occurred as part of Batch D closure.
+
+## 8. Records for this batch
+
+- `README_BRAINBOX.md` — live root status and tree.
+- `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md` — V003 support status.
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md` — current Phase 02 batch status and flag handoff.
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md` — verbatim Operator/Codex Batch D exchange.
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md` — this detailed cross-check and closure report.
+- `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` — living migration ledger, Batch D closure section.
+- `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` — current planned-state/verification and Batch D disposition.
+
+**Batch D conclusion:** M15–M18 ticket work is cross-checked, published, and merged. The four ticket branches remain available for traceability. Open flags are preserved with owners and scope limits. M19 is next only after final closeout integration/fetch verification and its own P14.

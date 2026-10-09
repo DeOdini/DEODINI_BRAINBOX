@@ -664,7 +664,7 @@ Final M14 report/transcript verification commit `89af2d34a3caabaabe7882706098b8a
 
 V003-M09–M14 independently verify PASS and are merged to `main` through PRs #28–#33. The DEVOPS, Fullstack Workflow/Architecture/Orchestration, Frontend, Backend, Analytics, and Production/Environment records are in their approved locations; the raw project sources remain retained where their tickets require it. See the [Batch C migration report](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md) and [Migration Map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) for the detailed file/folder check and flag owners.
 
-M15 has not started. No Production deployment or source retirement occurred in Batch C.
+At the Batch C boundary, M15 had not yet started. No Production deployment or source retirement occurred in Batch C; the Batch D status below supersedes that earlier progress point.
 
 
 ## Current Phase 02 execution - V003-M15 - 2026-10-09
@@ -688,4 +688,17 @@ M17 legacy milestone inspection/classification independently verifies PASS. The 
 
 ## Current Phase 02 independent verification — V003-M18 — 2026-10-09
 
-V003-M18's two approved Router/Agentic milestone documents independently verify **PASS**; both remain [PLANNED] and no Router or enabling infrastructure exists by virtue of this ticket. Legacy `MILESTONES/` records remain unchanged; `M17-DEST-01` still blocks their move, canonical copying or retirement until Operator disposition. Batch D M15–M18 substantive verification is complete, but Batch D accumulated-flag review and Git/PR/merge closure are pending. M19 must not start until Batch D closes and synchronized final main is independently verified.
+At the M18 verification checkpoint, its two approved Router/Agentic milestone documents independently verified **PASS**; both remain [PLANNED] and no Router or enabling infrastructure exists by virtue of this ticket. Legacy `MILESTONES/` records remain unchanged; `M17-DEST-01` still blocks their move, canonical copying or retirement until Operator disposition. Batch D flag review and Git closure were still pending at that checkpoint; the Batch D closure record below documents completion. M19 requires its own P14 preflight.
+
+
+---
+
+## Current Phase 02 status — Batch D closed — 2026-10-09
+
+V003-M15–M18 are cross-checked, pushed, and merged to `main`. The merge order and commits, branch heads, file/folder inventory, integrity checks, link/whitespace checks, and deferred flags are recorded in the [Batch D report](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md), [Batch D conversation](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md), and [Migration Map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md#52-batch-d-git-closure).
+
+The FootHive Sandbox case study has 50 files; its 45-row copy manifest passes all recorded source/destination size and SHA-256 checks. Production has two records and the FootHive Portfolio has four. The legacy MILESTONES files remain unchanged; the separate Router/Agentic folder contains only two [PLANNED] records.
+
+M15-ASSET-01 is retained pending disposition before source retirement. M15-REF-01 and M16-README-01 are assigned to authorized M19. M17-DEST-01 remains open and blocks moving, renaming, or retiring the historical milestone files until the Operator approves a destination or retention disposition. No legacy content was moved or deleted.
+
+M19 may start after final Batch D fetch verification and its own P14 preflight. M20 must preserve any source whose destination/disposition remains unresolved.

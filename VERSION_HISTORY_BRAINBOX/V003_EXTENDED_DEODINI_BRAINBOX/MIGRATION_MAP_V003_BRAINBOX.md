@@ -2169,8 +2169,8 @@ Both records mark all described capabilities [PLANNED]. Root `README_BRAINBOX.md
 **Result:** PASS — future [PLANNED] documentation only.
 **Blocking M18 implementation flags:** NONE.
 **M17-DEST-01:** OPEN — blocks legacy `MILESTONES/` source move/rename/retirement pending Operator destination/disposition decision; M18 is independent of those destructive actions.
-**Batch D:** M15–M18 substantive independent verification complete; flag review and authorized Git/PR/merge closure remain OPEN.
-**M19:** NOT STARTED / NOT ELIGIBLE until Batch D closure and clean synchronized main.
+**At this M18 verification checkpoint:** M15–M18 substantive independent verification was complete; Batch D flag review and Git closure were still open. See §52 for the subsequent closure result.
+**M19 at this checkpoint:** NOT STARTED / NOT ELIGIBLE until Batch D closure and clean synchronized main; §52 records that closure, and M19 still requires its own P14.
 
 Independent GitHub/local verification:
 - M17 verification publication `8185830e7312eafc0ec1d9f384545aec4be84f2e`.
@@ -2191,3 +2191,37 @@ Physical frozen target:
 M17-DEST-01 continues to bar assigning an unapproved destination or retiring the historical checkpoint. M19 must reconcile retained references, and M20 must wait for explicit Operator approval and verified integrity/reference closure for those two source files. This finding is NOT a reason to conflate the legacy checkpoint with the future Router milestone.
 
 **V003-M18 independent verification PASS. Batch D closeout gate remains in force before M19.**
+
+
+---
+
+## 52. Batch D Cross-Check and Git Closure — V003-M15–M18 — 2026-10-09
+
+**Result:** PASS — all four ticket branches published, cross-checked, merged to main, and verified. Ticket branches retained.
+**Initial main:** `d8296578e53ea75509c3c3fee15f21c99dbfeab7`.
+**Ticket integration main before closeout-record integration:** `a41ec7a70e67f45c837eb912ff6b552ce3bfef77`.
+
+| Ticket | Branch | Pushed branch head | Main merge commit |
+|---|---|---|---|
+| M15 | `v003/m15-foothive-sandbox-evidence-iteration` | `2baffb5e554ec62a2ee8f422f66c428efe654beb` | `edd7ccd77c0c75e6ecffec1fa2389c4dfe8df2a2` |
+| M16 | `v003/m16-foothive-production-portfolio` | `36406b6c13b0c6fa8f2024032ae9349f6b25607b` | `5f6c7c8a9cb785c871ec02b684299875fad6e054` |
+| M17 | `v003/m17-legacy-milestones-reconciliation` | `8185830e7312eafc0ec1d9f384545aec4be84f2e` | `2acb8b34e605d52fd813193ac22260f38dcc33a0` |
+| M18 | `v003/m18-planned-router-agentic-milestone` | `7c78795878ff958e2c3639893e0bc3b369493a81` | `a41ec7a70e67f45c837eb912ff6b552ce3bfef77` |
+
+### File and folder cross-check
+
+- M15 canonical Sandbox target: `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/`. Exact case-study file count 50; all nonempty. Manifest: 45 source/destination entries, recorded bytes and SHA-256 match for every pair, 0 mismatch. Audit, historical records, screenshots, Playwright artifacts and design references are preserved in their scoped subfolders.
+- M16 Production target `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/`: 2 records. Portfolio target `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/`: 4 records. Canonical Sandbox evidence is referenced, not duplicated.
+- M17 did not create or move a legacy checkpoint destination. The two files under `MILESTONES/` remain unchanged: README 2,230 bytes / 56 lines / SHA-256 `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e`; checkpoint 26,420 bytes / 462 lines / SHA-256 `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8`.
+- M18 `MILESTONES_BRAINBOX/` has exactly the two approved `[PLANNED]` records and no subdirectories or infrastructure. The Router record is 3,344 bytes / 50 lines / SHA-256 `6fdb12aa448ca31459f1e38a9ba7992a363b253bbf1a5301e7d9b2b0c6860b0b`. The README after verification-status update is 3,936 bytes / 55 lines / SHA-256 `ea9f4c9a0fefb5d007926b1df3df295bda2c626abd446b88dfa3b0daba66e0c8`.
+
+### Checks and dispositions
+
+- 75 relative local links across 13 authored M15/M16/M18 target documents; 0 broken.
+- M15 authored navigation/retrospective check: 0 whitespace findings. M16, M17, and M18 complete ticket-range `git diff --check`: exit 0. Historical whitespace reported in byte-preserved M15 archive copies was not changed.
+- `M15-ASSET-01`: 29 source-only product/catalog files remain at source; M20 must verify approved disposition before retirement, otherwise retain.
+- `M15-REF-01`: 11 stale historical references remain byte-preserved; authorized M19 owns canonical reference reconciliation.
+- `M16-README-01`: parent Portfolio README is absent; authorized M19 owns parent README/population reconciliation.
+- `M17-DEST-01`: OPEN and narrowly BLOCKING for legacy source movement, rename, canonical copy, or retirement pending Operator disposition. It does not block these non-destructive Git merges. M20 must not remove the two legacy files while unresolved.
+
+All four remote branch heads are ancestors of `origin/main`; local `main` equals `origin/main`; all ticket branches remain present; worktree clean after final closeout merge/fetch. No application test, form submission, deployment, source move, or source deletion occurred. M19 is authorized and may begin only after this closure with its own P14 preflight.

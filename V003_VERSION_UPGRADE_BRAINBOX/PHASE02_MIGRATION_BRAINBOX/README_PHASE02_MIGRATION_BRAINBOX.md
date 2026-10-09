@@ -387,4 +387,19 @@ This section supersedes the earlier M15-only status as the current ticket state.
 - Two approved files are present and [PLANNED]. No Router, sub-agent runtime, database, vector store, deployment, device-delivery or other future infrastructure was created.
 - 12 local links / 0 broken; full M18 range whitespace check PASS. Both legacy milestone source hashes match M01 and remain untouched.
 - `M17-DEST-01`: OPEN, blocks physical source relocation/rename/retirement pending Operator approval; does not invalidate separate M18.
-- M15–M18 substantive ticket checks: independently PASS. Batch D flag review and Git/PR/merge boundary closure still required before M19; publish this verification closeout, then verify synchronized final main.
+- At the M18 verification checkpoint, M15–M18 substantive ticket checks were independently PASS, while Batch D flag review and Git closure were pending. The Batch D Git closure record below documents completion; M19 still requires its own P14 preflight.
+
+
+---
+
+## Batch D Git closure — V003-M15–M18 — 2026-10-09
+
+- M15, M16, M17, and M18 were cross-checked and merged to main in dependency order. Their dedicated ticket branches remain present and pushed.
+- Merge commits: M15 `edd7ccd77c0c75e6ecffec1fa2389c4dfe8df2a2`; M16 `5f6c7c8a9cb785c871ec02b684299875fad6e054`; M17 `2acb8b34e605d52fd813193ac22260f38dcc33a0`; M18 `a41ec7a70e67f45c837eb912ff6b552ce3bfef77`.
+- M15 transfer manifest recheck: 45 entries, all source/destination byte sizes and SHA-256 values match; 0 mismatches. M15 case-study tree: 50 nonempty files.
+- M16 targets: 2 Production records and 4 Portfolio records. M17: both legacy source hashes still equal M01. M18: exactly two `[PLANNED]` records; no Router or enabling infrastructure.
+- 75 relative local links across 13 authored M15/M16/M18 target documents; 0 broken. M15 authored-record, M16, M17 and M18 scoped whitespace checks pass. Historical whitespace in byte-preserved M15 records remains unchanged.
+- Batch flags: M15-ASSET-01 retained for M20 disposition before source retirement; M15-REF-01 and M16-README-01 assigned to authorized M19; M17-DEST-01 remains open and blocks any legacy milestone move/rename/copy-as-canonical/retirement pending Operator disposition.
+- The closeout report branch was pushed and fast-forwarded into main. Final fetch confirmed local main = origin/main, each remote M15–M18 ticket tip is an ancestor of origin/main, all ticket branches are retained, and the worktree is clean.
+- No application test, form submission, deployment, source move, source deletion, or branch deletion occurred in this closure.
+- M19 is next after this closure and its own P14 preflight; M17-DEST-01 must remain visible and M20 cannot remove those historical files while unresolved.

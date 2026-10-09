@@ -321,4 +321,13 @@ Only the two approved M18 records exist under `MILESTONES_BRAINBOX/`, and both r
 - Exact target: two physically present milestone Markdown records, both **[PLANNED]**; no Router, runtime, database, retrieval/vector system or deployment exists by this ticket.
 - 12 relative local links / 0 broken; M18 full-range `git diff --check`: PASS.
 - Legacy milestone checkpoint files: unchanged; `M17-DEST-01` remains OPEN and blocks moving/renaming/retirement without Operator disposition.
-- M15–M18 substantive verification: PASS. Batch D flag review, PR/merge and final main verification remain outstanding. M19 is not yet eligible.
+- At the M18 verification checkpoint, M15–M18 substantive verification was PASS and Batch D flag review, merge, and final-main verification remained outstanding. The Batch D closeout record below documents completion; M19 still requires its own P14 preflight.
+
+
+---
+
+## Batch D closeout — 2026-10-09
+
+V003-M15 through V003-M18 were cross-checked, pushed, and merged to main in dependency order. Batch D report and conversation are in the Phase 02 report/conversation files; Migration Map §52 records branch tips, merge commits, target dispositions, and open flags. The final closeout branch was fast-forwarded to main and fetch-verified.
+
+M19 is authorized and may begin after Batch D closeout with its own P14 preflight. M15-ASSET-01 and M15-REF-01 remain explicit; M16-README-01 is assigned to M19. M17-DEST-01 remains open and blocks any physical relocation or retirement of the two legacy milestone records pending Operator disposition. No M20 source removal is allowed while that flag remains unresolved.
