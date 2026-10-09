@@ -2760,3 +2760,8 @@ Implementation commit 040a4b5624a62dd40c5e030726772cf5afb21861 was pushed. A fet
 ## Codex — current-turn documentation update
 
 “The implementation push is verified at 040a4b5 on GitHub, matching local HEAD. I’m recording the M13 migration map, execution report, and the Operator–Codex exchange now, then I’ll commit and push those closeout records separately.”
+
+
+## Codex — M13 documentation publication verification
+
+“Documentation closeout commit 8fb5a190cfc9f399d6755860b4c3285df440a384 was pushed. A fetch confirmed local HEAD and the GitHub branch tip match, and the worktree is clean. M13 remains unmerged; independent ChatGPT verification is pending.”
