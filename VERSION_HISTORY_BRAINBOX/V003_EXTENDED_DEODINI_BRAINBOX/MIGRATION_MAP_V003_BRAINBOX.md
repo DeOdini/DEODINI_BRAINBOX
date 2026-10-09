@@ -1069,3 +1069,56 @@ Independent checks confirmed:
 - M07 changed documentation/status/report/map records only; no product source changed.
 
 Older “M07 independent verification pending” statements are historical pre-verification states and are superseded by this section.
+
+---
+
+## 25. V003-M08 — Skills AI Taxonomy & Legacy Skills Reconciliation
+
+**Ticket status:** AUTHORIZED; taxonomy/content implementation recorded locally on the dedicated M08 branch.
+**Branch:** v003/m08-skills-ai-taxonomy-migration.
+**Dependencies:** M01 and M03 satisfied; M05/M06/M07 references checked.
+**Frozen authorities:** V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md and V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md, especially Specification §§8 and 15–20.
+
+### P14 preflight and scope
+
+The M08 ticket was read from the active Phase 02 ticket set. The frozen target tree and Skills/command/language/format/technology/prompt/pattern boundaries were inspected. Governance naming, reference, documentation, evidence, security, and ticketing authorities were checked. Current Git state was clean on the dedicated M08 branch before implementation. M07 independently verifies PASS; M07-WF-01 and M07-AUTH-01 remain BATCH-DEFERRED / NON-BLOCKING.
+
+M08 creates the approved Skills taxonomy, its required category navigation, one canonical package-command explanation, and one Governance-linked guardrail preflight prompt. It does not add an architecture branch. It does not migrate or rewrite retained legacy files, create generic technology profiles without source evidence, or migrate unproven n8n/email automation.
+
+### M01 source integrity and dispositions
+
+| Current source | M01 baseline | M08 pre-change state | M08 disposition |
+|---|---|---|---|
+| AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md | 847 bytes / 24 lines / SHA-256 1850965879a9494dd3004e605125c2d3e2bde42e678fe8d11d5e8fc9872dbef6 | Read-only legacy-navigation record | Retain unchanged as historical/local source; new Skills README becomes V003 target navigation. M19 references; M20 assesses retirement. |
+| AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/RAW_SKILLS_BRAINBOX.md | 0 bytes / 0 lines / SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 | Empty | No content to migrate; retain unchanged; no RAW-to-taxonomy mapping inferred. M20 retirement gate. |
+| AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/PROVEN_SKILLS_BRAINBOX.md | 0 bytes / 0 lines / SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 | Empty | No tested/proven skill evidence to migrate; retain unchanged. No proven claim created. M20 retirement gate. |
+| AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/REUSABLE_SKILLS_BRAINBOX.md | 0 bytes / 0 lines / SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 | Empty | No reusable content to migrate; retain unchanged. No reusable claim created. M20 retirement gate. |
+| AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/FAILED_SKILLS_BRAINBOX.md | 0 bytes / 0 lines / SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 | Empty | No failed-skill record to migrate; retain unchanged. No failure evidence was fabricated. M20 retirement gate. |
+
+M08 read-back hashes are recorded in the execution report. Each legacy source remains at its M01 path. No source was moved, renamed, rewritten, or deleted.
+
+### Destination inventory and population states
+
+| Destination | State / disposition |
+|---|---|
+| AI_BRAINBOX/SKILLS_AI_BRAINBOX/ | §8-approved taxonomy tree created; 120 empty leaf directories use .gitkeep markers solely for Git retention. A marker is not knowledge content. |
+| README_SKILLS_AI_BRAINBOX.md and nine approved category READMEs | Created as local navigation/population-state records. |
+| COMMANDS_SKILLS_BRAINBOX/PACKAGE_COMMANDS_BRAINBOX/NPM_NPX_POWERSHELL_COMMAND_REFERENCE_BRAINBOX.md | Populated from frozen Specification §16; the only shared explanation, explicitly not an execution report. NPM/NPX/PowerShell point to it. |
+| PROMPTS_SKILLS_BRAINBOX/GUARDRAIL_PROMPTS_BRAINBOX/GUARDRAIL_PREFLIGHT_PROMPT_BRAINBOX.md | Populated reusable prompt that operationalizes Governance; it cites canonical Governance and does not replace policy or workflow. |
+| SKILLS_BRAINBOX competency leaves | EMPTY / PLANNED; no empty legacy content promoted. |
+| LANGUAGES_SKILLS_BRAINBOX language leaves | EMPTY / PLANNED; Python language, CLI, and Backend pattern ownership remains distinct. |
+| SYNTAX_FORMATS_SKILLS_BRAINBOX/TOML_FORMAT_BRAINBOX | EMPTY / PLANNED; TOML remains a format. |
+| TECHNOLOGIES_SKILLS_BRAINBOX | ADMIT/REVIEW/KEEP EMPTY states follow the Origin Conversation. Admitted slots are only REFERENCE or PLANNED where supporting material exists, not falsely POPULATED profiles. Supabase/Render are not added; Google Forms is not duplicated. |
+| PATTERNS_SKILLS_BRAINBOX | EMPTY / PLANNED; no patterns inferred from empty legacy sources. |
+| TROUBLESHOOTING_SKILLS_BRAINBOX | REFERENCE to the canonical package-command explanation; no duplicate. |
+| SECURITY_SKILLS_BRAINBOX | REFERENCE to Governance Security; no competing policy. |
+| REFERENCES_SKILLS_BRAINBOX | POPULATED navigation index only. |
+
+M07-WF-01 remains BATCH-DEFERRED / NON-BLOCKING. M08 did not create an n8n/email technology category because neither is in the frozen Skills target tree; the retained M07 source remains UNPROVEN / NOT VERIFIED. This is a disposition, not a claim that future automation was migrated.
+
+### Scope and verification state
+
+No new technology or prompt category was created. No real secret, identifier, or customer data was copied. M08 is documentation/taxonomy work; it did not run package commands, deploy services, test application code, or claim a new executable capability.
+
+**Implementation commit:** pending. **Push:** pending. **PR/merge:** not requested or performed.
+**ChatGPT independent M08 verification:** pending.

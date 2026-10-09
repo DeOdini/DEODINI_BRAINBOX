@@ -32,7 +32,7 @@ M02 migrated root navigation responsibility from `DOB_MUST_README.md`. M03 estab
 - The batch Git lifecycle is completed at the batch boundary. No direct push to `main` or merge authority is inferred.
 - The Phase 02 README and ticket set contain the detailed execution rules and current batch status.
 
-For current system-wide rules, consult `GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md`. `DOB_MUST_README.md` and `AI_BRAINBOX/AI_MUST_README.md` remain retained legacy sources; M19 will reconcile active references and M20 will assess eligible source retirement. AI-specific navigation/content migration remains ticketed separately.
+For current system-wide rules, consult `GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md`. `DOB_MUST_README.md` and `AI_BRAINBOX/AI_MUST_README.md` remain retained legacy sources; M19 will reconcile active references and M20 will assess eligible source retirement. Other AI-specific navigation/content migration remains ticketed separately.
 
 ## Authoritative V003 target tree
 
@@ -252,6 +252,7 @@ DEODINI_BRAINBOX/
 │       │   │   ├── AZURE_CLI_COMMANDS_BRAINBOX/
 │       │   │   └── GCLOUD_CLI_COMMANDS_BRAINBOX/
 │       │   ├── PACKAGE_COMMANDS_BRAINBOX/
+│       │   │   ├── NPM_NPX_POWERSHELL_COMMAND_REFERENCE_BRAINBOX.md
 │       │   │   ├── NPM_COMMANDS_BRAINBOX/
 │       │   │   ├── NPX_COMMANDS_BRAINBOX/
 │       │   │   ├── PNPM_COMMANDS_BRAINBOX/
@@ -356,6 +357,7 @@ DEODINI_BRAINBOX/
 │       │   ├── RAG_PROMPTS_BRAINBOX/
 │       │   ├── EVALUATION_PROMPTS_BRAINBOX/
 │       │   └── GUARDRAIL_PROMPTS_BRAINBOX/
+│       │       └── GUARDRAIL_PREFLIGHT_PROMPT_BRAINBOX.md
 │       ├── PATTERNS_SKILLS_BRAINBOX/
 │       │   ├── README_PATTERNS_SKILLS_BRAINBOX.md
 │       │   ├── CODE_PATTERNS_SKILLS_BRAINBOX/
@@ -411,7 +413,7 @@ DEODINI_BRAINBOX/
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── DOB_MUST_README.md [retained legacy source; unchanged through M03]
-├── AI_BRAINBOX/ [legacy sources retained + M05 CORE and M06 EXE targets populated; remaining target migration pending]
+├── AI_BRAINBOX/ [M05 CORE, M06 EXE, M07 classification, and M08 Skills taxonomy migrated; legacy sources retained; M09–M13 pending]
 ├── BRAINBOX/ [EMPTY physical directory; not tracked by Git; review under M20]
 ├── MILESTONES/ [legacy source records; review under M17]
 ├── PORTFOLIO_BRAINBOX/ [legacy zero-byte placeholder; review under M16]
@@ -458,7 +460,7 @@ VERSION_HISTORY_BRAINBOX/
 │   └── RETROSPECTIVE_V002_BRAINBOX.md [conceptual rationale blocked]
 └── V003_EXTENDED_DEODINI_BRAINBOX/
     ├── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md [retained; unchanged]
-    ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map, updated through M04]
+    ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map, updated through M08]
     └── TREE_SNAPSHOT_V003_BRAINBOX.md [deferred to M21]
 ```
 
@@ -470,6 +472,7 @@ The V001/V002 snapshots record evidence-selected Git tree cut points, not formal
 |---|---|
 | `GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md` | Canonical system-wide Governance rules and source/navigation index. |
 | `DOB_MUST_README.md` | Retained legacy root entry and pre-M03 governance source; unchanged pending M19/M20 reconciliation. |
+| `AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md` | M08 Skills taxonomy, population states, and canonical reference navigation. |
 | `AI_BRAINBOX/AI_MUST_README.md` | Retained legacy AI-subsystem navigation/source; shared policy references await M19 reconciliation, with domain migration ticketed separately. |
 | `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md` | V003 authority-container overview. |
 | `V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md` | Approved target architecture and migration constraints. |
