@@ -2111,3 +2111,51 @@ Section-by-section classification in §48 independently matches both original fi
 Frozen Specification §8/§28 names only future `MILESTONES_BRAINBOX/` with planned README and Router/Agentic milestone record. Version History specifies generation snapshots/retrospectives/map/decisions but no earlier global checkpoint archive slot. Thus **no authorized destination for either legacy file exists**; keep both unchanged. M19 owns reference reconciliation; M20 must not retire these sources without explicit Operator-approved disposition and reference/integrity closure.
 
 **M17 independent verification: PASS with explicitly unresolved M17-DEST-01 stop on physical migration.**
+
+
+---
+
+## 50. V003-M18 — Planned Router / Agentic Milestones Migration — 2026-10-09
+
+**Implementation state:** Two approved future-intent records created; both remain [PLANNED]. No Router or infrastructure was implemented.
+**Branch:** `v003/m18-planned-router-agentic-milestone`, created from M17 ChatGPT verification publication `8185830e7312eafc0ec1d9f384545aec4be84f2e` after a clean M17 handoff.
+**Legacy boundary:** M17-DEST-01 remains OPEN and blocks any move, rename, copy-as-destination, or retirement of the legacy `MILESTONES/` files. M18 leaves them unchanged.
+
+### P14 preflight and authority cross-check
+
+- Read the authorized M18 ticket and the frozen V003 Specification §8 and §28, plus the relevant V003 Origin Conversation/P11 approval and M17 Section 48/49 dispositions.
+- Specification §28 names exactly `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` and `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md`; both are [PLANNED]. It requires future intent only, and says ordering, implementation details, and naming may evolve.
+- Earlier Origin Conversation discussion that treated the root branch as an unapproved research refinement was superseded by the later Operator-approved V003-P11 and frozen Specification §28. No unresolved authority conflict applies to M18.
+- Before M18, the planned parent and both target files were absent. The distinct legacy `MILESTONES/` source remained present under M17-DEST-01.
+- M17 classification is known: the legacy checkpoint has no authorized physical destination. This does not block creating the separate planned Router milestone and does not authorize copying or relabeling legacy material.
+- No ambiguity, dependency, scope, historical-evidence, or destructive-operation flag blocks the two-record M18 implementation. No database, vector store, agent runtime, self-hosted service, device/package system, or other infrastructure path is authorized here.
+
+### Source-to-target disposition
+
+| Source / authority | M18 disposition |
+|---|---|
+| Frozen V003 Specification §8/§28 | Canonical target tree, two record names, future-intent scope, [PLANNED] state, and no-sequence/no-deployment boundary. |
+| V003 Origin Conversation, approved V003-P11 | Provenance for Operator approval of the planned milestone direction and capability themes. |
+| M17 Section 48/49 and legacy `MILESTONES/` files | Historical source remains unchanged and separate. No legacy checkpoint content is copied into M18. M17-DEST-01 continues to gate any physical disposition. |
+
+### Physical target and local root navigation
+
+Created only:
+
+- `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` — navigation, authority boundary, local tree, truthful population/status metadata, and references.
+- `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` — future Router, specialist sub-agents, cross-DEODINI routing, memory, database/PostgreSQL, retrieval/vector, self-hosting, governed research/self-update, authorization, delivery, fragment assembly, audit/recovery, and future infrastructure intent.
+
+Both records mark all described capabilities [PLANNED]. Root `README_BRAINBOX.md` now exposes the actual local child tree, adds both records to navigation, and distinguishes physically present documentation from unimplemented planned capability. No other child path was created under `MILESTONES_BRAINBOX/`.
+
+### M17 source preservation
+
+- `MILESTONES/MILESTONES_MUST_README.md` remains at its original path, 2,230 bytes / 56 lines / SHA-256 `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e`.
+- `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` remains at its original path, 26,420 bytes / 462 lines / SHA-256 `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8`.
+- No legacy source was moved, renamed, copied, rewritten, or deleted. M18 does not close M17-DEST-01.
+
+### Verification and publication
+
+- P14 preflight passed for the specifically authorized two-record scope.
+- File tree, planned-state wording, root population/local tree/navigation, and local Markdown references are being checked before implementation publication.
+- M18 implementation Git commit/push and post-push report/conversation closeout: pending.
+- No PR or merge is part of M18; Batch D Git lifecycle remains at its batch boundary.
