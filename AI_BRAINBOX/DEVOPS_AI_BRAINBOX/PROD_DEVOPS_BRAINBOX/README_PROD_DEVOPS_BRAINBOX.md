@@ -8,8 +8,8 @@
 **GOVERNED BY:** Governance Evidence, Reference, Security, Promotion, and Ticketing rules.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 21–22, 25; V003 Origin Conversation; V003-M09 and V003-M14 migration records.
 **APPLIES TO:** Actual production operations and their evidence, subject to applicable Operator authorization.
-**POPULATION STATE:** M14 structure and navigation present; no production outcomes or deployed procedure are recorded.
-**VERIFIER:** Codex — M14 implementation checks; independent ChatGPT verification: PASS (2026-10-09).
+**POPULATION STATE:** M14 structure plus the M16 FootHive T20 Production summary are present. No separate Production deployment procedure, ongoing operations, or monitoring outcome is claimed.
+**VERIFIER:** Codex — M14 implementation checks and M16 current-tree/link checks; independent ChatGPT M14 verification: PASS (2026-10-09), M16 verification pending.
 **LAST VERIFIED:** 2026-10-09
 
 ## Authority boundary
@@ -40,7 +40,10 @@ The hierarchy below follows frozen V003 Specification §8. M16 owns Production c
     │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
     │       ├── .env.example
     │       └── .gitignore
-    ├── CASE_STUDIES_PROD_BRAINBOX/ [PLANNED — M16]
+    ├── CASE_STUDIES_PROD_BRAINBOX/ [PRESENT — M16]
+    │   └── FOOTHIVE_PROD_SUMMARY_BRAINBOX/
+    │       ├── README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
+    │       └── PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
     ├── PASSED_PROD_BRAINBOX/
     ├── FAILED_PROD_BRAINBOX/
     ├── INCIDENTS_PROD_BRAINBOX/
@@ -48,7 +51,7 @@ The hierarchy below follows frozen V003 Specification §8. M16 owns Production c
 
 ## Current local tree
 
-The five Fullstack operational branches are empty placeholders. Environment files below are safe documentation/templates only. Each evidence area contains only a zero-byte .gitkeep marker and no production records.
+The five Fullstack operational branches remain empty placeholders. Environment files are safe documentation/templates. Production evidence areas contain only zero-byte markers. M16 added the FootHive release-summary case study below; it references, and does not duplicate, the Sandbox evidence.
 
     PROD_DEVOPS_BRAINBOX/
     ├── README_PROD_DEVOPS_BRAINBOX.md
@@ -68,6 +71,10 @@ The five Fullstack operational branches are empty placeholders. Environment file
     │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
     │       ├── .env.example
     │       └── .gitignore
+    ├── CASE_STUDIES_PROD_BRAINBOX/
+    │   └── FOOTHIVE_PROD_SUMMARY_BRAINBOX/
+    │       ├── README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
+    │       └── PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
     ├── PASSED_PROD_BRAINBOX/.gitkeep
     ├── FAILED_PROD_BRAINBOX/.gitkeep
     ├── INCIDENTS_PROD_BRAINBOX/.gitkeep
@@ -78,6 +85,10 @@ The five Fullstack operational branches are empty placeholders. Environment file
 M10 classified DEPLOYMENT_SEQUENCE as belonging to a Production release/deployment workflow, but its source review found no actual deployment procedure. The Production deployment directory is therefore present and empty; no raw Sandbox text was promoted or copied.
 
 M14 created the approved structure and safe environment guidance only. No deployment, production validation, secret rotation, Production pass/fail, incident, regression, or FootHive Production record was created. FootHive Production summary remains assigned to M16.
+
+## M16 case-study update
+
+M16 populated the Production case-study branch with the T20 release summary and lessons. The release evidence is summarized from the canonical Sandbox Build Report and Operator Addendum. No deployment procedure was promoted from Sandbox, no separate Production pass/fail/incident was fabricated, and no new deployment was triggered.
 
 ## Evidence and environment boundaries
 

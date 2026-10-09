@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex - M12 Backend self-check and M14 structural/security checks. ChatGPT - M05-M15 independent PASS; M15 case-study source integrity independently verified, with deferred asset/reference flags assigned as recorded. Batch C M09-M14 merged to main through PRs #28-#33; see the active Phase 02 report for the merge table and deferred-flag dispositions.
+**VERIFIER:** Codex - M12 Backend self-check, M14 structural/security checks, and M16 Production/Portfolio migration checks. ChatGPT - M05-M15 independent PASS; M16 independent verification pending. M15 deferred asset/reference flags remain recorded. Batch C M09-M14 merged to main through PRs #28-#33; see the active Phase 02 report for merge and flag dispositions.
 **LAST VERIFIED:** 2026-10-09
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
@@ -397,12 +397,12 @@ DEODINI_BRAINBOX/
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
 | `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial; M04] | Parent README and Git-backed V001/V002 tree snapshots are present. Their conceptual retrospectives explicitly report missing rationale evidence; V003 Architecture Decisions and the living migration map are retained. Final V003 snapshot remains assigned to M21. |
 | `MILESTONES_BRAINBOX/` | [PLANNED] | Not yet populated; M18. The legacy `MILESTONES/` remains a separate source pending M17. |
-| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M15] | FUNC CORE/EXE, ancillary classification, Skills taxonomy, DEVOPS/Sandbox, Fullstack workflows/architecture/orchestration, Frontend, Backend, analytics responsibility/reference, and Production/Environment foundations have been migrated through M15. Legacy sources remain; M16-M21 tickets are pending. |
-| `PORTFOLIO_BRAINBOX/` | [PLANNED V003 target] | Existing legacy Portfolio source is only a zero-byte placeholder; target structure is pending M16. |
+| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16] | FUNC CORE/EXE, ancillary classification, Skills taxonomy, DEVOPS/Sandbox, Fullstack workflows/architecture/orchestration, Frontend, Backend, analytics, Production/Environment foundations, and the FootHive Production summary are present. Legacy sources remain; M17-M21 tickets are pending. |
+| `PORTFOLIO_BRAINBOX/` | [PARTIALLY POPULATED - M16] | The FootHive portfolio child is present. The zero-byte legacy placeholder remains untouched; the parent Portfolio README and global population reconciliation remain assigned to M19, with legacy review under M20. |
 
 ## Current local root tree
 
-Current physical root layout — reconciled during M15 (2026-10-09). It includes retained legacy sources and the empty local directory, which are not extra branches in the approved V003 target tree.
+Current physical root layout — updated during M16 (2026-10-09). It includes retained legacy sources and the empty local directory, which are not extra branches in the approved V003 target tree.
 
 ```text
 DEODINI_BRAINBOX/
@@ -419,10 +419,16 @@ DEODINI_BRAINBOX/
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── DOB_MUST_README.md [retained legacy source; unchanged through M03]
-├── AI_BRAINBOX/ [M05-M15 migrated; legacy sources retained; M16-M21 tickets pending]
+├── AI_BRAINBOX/ [M05-M16 migrated; legacy sources retained; M17-M21 tickets pending]
 ├── BRAINBOX/ [EMPTY physical directory; not tracked by Git; review under M20]
 ├── MILESTONES/ [legacy source records; review under M17]
-├── PORTFOLIO_BRAINBOX/ [legacy zero-byte placeholder; review under M16]
+├── PORTFOLIO_BRAINBOX/ [partially populated — M16]
+│   ├── 001_PORT_BRAINBOX.md [zero-byte legacy placeholder; retained for M20 review]
+│   └── FOOTHIVE_PORTFOLIO_BRAINBOX/ [present — M16]
+│       ├── README_FOOTHIVE_PORTFOLIO_BRAINBOX.md
+│       ├── HANDOFF_FOOTHIVE_BRAINBOX.md
+│       ├── PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md
+│       └── CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md
 ├── V003_VERSION_UPGRADE_BRAINBOX/ [canonical authority and support container]
 └── VERSION_HISTORY_BRAINBOX/ [partially populated]
 ```
