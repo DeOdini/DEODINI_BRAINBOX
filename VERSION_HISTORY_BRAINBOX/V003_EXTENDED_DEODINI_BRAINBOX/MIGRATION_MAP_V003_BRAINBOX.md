@@ -2083,3 +2083,31 @@ Therefore no canonical physical destination is established for either legacy sou
 - Fetch confirmed local HEAD and origin branch tip equal at bd7f294db67a7870113882e47dd4558555dc92c1.
 - The report, conversation, and current-status documentation are recorded in the separate M17 documentation closeout on this branch.
 - No M17 PR or merge was created. M17-DEST-01 remains open for physical source relocation/retirement.
+
+
+---
+
+## 49. ChatGPT Independent Verification — V003-M17 — 2026-10-09
+
+**Independent inspection/classification result:** PASS.
+**Physical source migration:** NOT AUTHORIZED / NOT PERFORMED.
+**M17-DEST-01:** OPEN — BLOCKING for legacy source relocation, rename, canonical copy-as-destination or retirement; Operator disposition required.
+**M18:** eligible after independent-verification publication and clean branch handoff; separate future planned Router/Agentic milestone only.
+
+Independent GitHub/local Git:
+- M16 verification tip `36406b6c13b0c6fa8f2024032ae9349f6b25607b`;
+- M17 map-classification commit `bd7f294db67a7870113882e47dd4558555dc92c1`;
+- pre-verification M17 branch tip `7d083c60fa3f9d6957877d5e18afa7ba59ee9e64`;
+- local HEAD/upstream/GitHub equal, ahead/behind 0/0, clean worktree; no PR/merge; M18 branch absent; main still `d8296578e53ea75509c3c3fee15f21c99dbfeab7`.
+
+Physical source fidelity independently reproduced against M01:
+- `MILESTONES/MILESTONES_MUST_README.md`: 2,230 bytes, 56 lines, SHA-256 `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e`, Git blob `fb0636ce9d75fab2128e018e8c73af30ac196090`.
+- `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md`: 26,420 bytes, 462 lines, SHA-256 `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8`, Git blob `c796b2a1e278e8a1d35b4bc4ebc2cd58dc52e8b4`.
+- Both current blobs equal their 2026-09-25 introduction commit `9e884c60e2f5c2989e9a8cdf7326c9a3e6565044`; internal checkpoint date 2026-09-24 refers to compilation rather than first Git publication.
+- Entire M17 Git range: zero source-tree changes, no source move/copy/rename/rewrite/delete; `git diff --check` PASS.
+
+Section-by-section classification in §48 independently matches both original files, separating historical governance, milestone chronology, checkpoint-era gaps/authority/agent capability, Git evidence, historical proposals and authorship provenance from current canonical Governance/CORE/EXE and future Router milestone.
+
+Frozen Specification §8/§28 names only future `MILESTONES_BRAINBOX/` with planned README and Router/Agentic milestone record. Version History specifies generation snapshots/retrospectives/map/decisions but no earlier global checkpoint archive slot. Thus **no authorized destination for either legacy file exists**; keep both unchanged. M19 owns reference reconciliation; M20 must not retire these sources without explicit Operator-approved disposition and reference/integrity closure.
+
+**M17 independent verification: PASS with explicitly unresolved M17-DEST-01 stop on physical migration.**

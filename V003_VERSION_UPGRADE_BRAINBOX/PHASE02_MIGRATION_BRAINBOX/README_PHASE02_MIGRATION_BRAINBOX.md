@@ -355,3 +355,13 @@ This section supersedes the earlier M15-only status as the current ticket state.
 - M17 inspected both MILESTONES source records and Git provenance. The MILESTONES_BRAINBOX future Router plan is distinct; no frozen physical archive destination exists for the legacy checkpoint.
 - M17-DEST-01 blocks moving, renaming, or deleting the two legacy sources until Operator destination/disposition approval. M18 may create the separate planned Router record without touching them; M20 source retirement remains blocked.
 - The M17 execution report, exact conversation record, and final status are in the separate documentation closeout on this branch. No PR or merge was created.
+
+---
+
+## Current Phase 02 independent verification — V003-M17 — 2026-10-09
+
+- M17 source inspection/classification/map reconciliation: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- Both legacy milestone source files preserve exact M01 hashes/bytes/lines and their original Git blobs; no physical source migration was performed.
+- `M17-DEST-01`: **OPEN / BLOCKING** for moving, renaming, or retiring the original milestone sources; Operator must choose authorized destination/disposition before M20 retirement.
+- M18 is substantively dependency-ready to create the distinct planned Router/Agentic milestones only. Commit and publish this independent verification closeout on M17, confirm clean handoff, then create M18 branch and run its P14.
+- Batch D PR/merge/Git closure remains a batch-boundary requirement before M19.

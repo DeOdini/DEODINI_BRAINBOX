@@ -3467,3 +3467,20 @@ M17’s source inspection and classification passed. Both legacy files remain un
 The frozen V003 structure has no authoritative destination for the legacy checkpoint. `M17-DEST-01` therefore remains open and blocks any move, rename, or retirement until you decide its disposition. This does not block M18 from creating the separate planned Router/Agentic milestone records. M20 must preserve the legacy sources until the destination and reference/integrity closure are authorized.
 
 The exact source classifications, section-level dispositions, hashes, and Git evidence are recorded in Migration Map Section 48 and the M17 execution report. No application test, deployment, or source migration was performed.
+
+
+---
+
+# ChatGPT Independent Verification Closure — V003-M17 — 2026-10-09
+
+**Independent result: PASS — source inspection/classification/ledger only.**
+
+Local HEAD, upstream and GitHub M17 branch tips matched at `7d083c60fa3f9d6957877d5e18afa7ba59ee9e64`, 0/0 ahead/behind and worktree clean before this verification write. M16 verification closeout `36406b6c13b0c6fa8f2024032ae9349f6b25607b` was published; M17 classification `bd7f294db67a7870113882e47dd4558555dc92c1` changes only Migration Map §48; M17 report/conversation/status closeout `7d083c6...` changes five documentation files. No M17 PR/merge, and M18 not started.
+
+Both physical legacy sources exactly match M01 size, line, SHA-256 and original Git blob baselines: README 2,230 bytes / 56 lines / SHA `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e`; checkpoint 26,420 bytes / 462 lines / SHA `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8`. First tracked at `9e884c60e2f5c2989e9a8cdf7326c9a3e6565044` on 2026-09-25; checkpoint's internal 2026-09-24 date remains historical compilation context. No M17 Git diff inside the legacy `MILESTONES/` tree.
+
+Independent full source review supports all section classifications in Migration Map §48. Frozen §8/§28 authorize only future planned Router/Agentic milestone at `MILESTONES_BRAINBOX/`; Version History has no approved checkpoint archive slot. `MILESTONES_BRAINBOX/` remains absent before M18.
+
+**M17-DEST-01 remains OPEN and BLOCKING for physical migration/rename/retirement of the two legacy source files; the Operator must decide authorized disposition first.** It is **NOT a blocker** for the separate M18 Router/Agentic planned milestone. Do not conflate historical checkpoint with future Router work.
+
+Full M17 range `git diff --check` PASS; no application/deployment action. **M18 may begin after committing/pushing this independent M17 verification closeout and confirming clean branch, with its own P14.**

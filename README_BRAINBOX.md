@@ -396,7 +396,7 @@ DEODINI_BRAINBOX/
 | `V003_VERSION_UPGRADE_BRAINBOX/` | [POPULATED] | Contains canonical Origin/Specification and separate Phase 01 and Phase 02 support archives. |
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
 | `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial; M04] | Parent README and Git-backed V001/V002 tree snapshots are present. Their conceptual retrospectives explicitly report missing rationale evidence; V003 Architecture Decisions and the living migration map are retained. Final V003 snapshot remains assigned to M21. |
-| `MILESTONES_BRAINBOX/` | [PLANNED] | Not yet populated; M18. The legacy `MILESTONES/` remains a separate source pending M17. |
+| `MILESTONES_BRAINBOX/` | [PLANNED] | Not yet populated; M18. Legacy `MILESTONES/` source classification independently verified PASS under M17; M17-DEST-01 remains open and blocks source relocation/retirement until Operator approval. |
 | `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16] | FUNC CORE/EXE, ancillary classification, Skills taxonomy, DEVOPS/Sandbox, Fullstack workflows/architecture/orchestration, Frontend, Backend, analytics, Production/Environment foundations, and the FootHive Production summary are present. Legacy sources remain; M17-M21 tickets are pending. |
 | `PORTFOLIO_BRAINBOX/` | [PARTIALLY POPULATED - M16] | The FootHive portfolio child is present. The zero-byte legacy placeholder remains untouched; the parent Portfolio README and global population reconciliation remain assigned to M19, with legacy review under M20. |
 
@@ -671,3 +671,9 @@ V003-M15 is implemented and pushed on v003/m15-foothive-sandbox-evidence-iterati
 ## Current Phase 02 execution — V003-M15 — 2026-10-09
 
 V003-M15 FootHive Canonical Sandbox Evidence & Iteration Migration is implemented on v003/m15-foothive-sandbox-evidence-iteration and pushed at 6c25f120fcce1d90f583921b3db0f7252e5f30fc. Fetch confirmed the GitHub branch tip matches the local commit. The case-study tree preserves Iteration 01 as a logical dataset; Iterations 02/03 and Workflow Mastery Assessment remain planned. The original source remains intact, and the branch is unmerged. Full integrity, reference, and asset dispositions are in the Phase 02 report and migration map.
+
+---
+
+## Current Phase 02 status — V003-M17 independent verification — 2026-10-09
+
+M17 legacy milestone inspection/classification independently verifies PASS. The two original `MILESTONES/` files exactly match M01 baselines and their first Git introduction; neither was moved or rewritten. `M17-DEST-01` remains OPEN / BLOCKING for physical source relocation/retirement pending an Operator destination/disposition decision. M18 can create only the separate approved [PLANNED] Router/Agentic milestone records after M17 verification publication and clean branch handoff. Batch D Git closure remains at the batch boundary.

@@ -293,3 +293,12 @@ This section supersedes the earlier M15-only status as the current ticket state.
 - Source classification is complete; both legacy MILESTONES files remain unchanged. No authorized destination exists in the frozen V003 tree for the historical checkpoint.
 - M17-DEST-01 blocks physical move/rename/retirement pending Operator decision. M18 future Router records remain distinct; M20 cleanup cannot remove the legacy sources while the destination flag is open.
 - The M17 report and verbatim conversation are included in the documentation closeout on the dedicated branch. No PR or merge.
+
+---
+
+## Current Phase 02 independent verification — V003-M17 — 2026-10-09
+
+- M17 legacy milestone source inspection, Git provenance and Section 48 dispositions: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- Legacy `MILESTONES/` source relocation/rename/retirement: **NOT AUTHORIZED / NOT PERFORMED**.
+- `M17-DEST-01`: **OPEN / BLOCKING** for physical source migration or retirement; Operator destination/disposition approval required before M20 can act.
+- M18 [PLANNED] Router/Agentic milestone: separate scope, dependency-ready only after this M17 verification closeout is committed and the branch clean; M18 requires its own P14.
