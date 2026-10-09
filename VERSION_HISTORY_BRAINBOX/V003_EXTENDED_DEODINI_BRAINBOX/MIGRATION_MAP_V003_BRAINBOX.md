@@ -1,7 +1,7 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — Batch A and BATCHA-DOC-01 published through PR #21; `main` verified at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`; M05 commit `585f9600ca4940aab750488b2f46f7cb72a94d69` independently verified PASS; M06 implementation `9635e5dd8e20b86ab879b55fc0da9fa63af34991`, publication closeout `a6fe5769faaa36c60def8c2d255654657d7d2ecb`, and verification closeout `16aab11293f656ae21f1ca215195186992b60cd2` pushed and independently verified PASS; no M06 PR/merge. M07 is active on its dedicated branch from the clean M06 verification-closeout tip; implementation push pending. Prior deferred flags retain M15/M19/M20/M21 ownership.
+**Status:** Living M01–M21 migration ledger — Batch A and BATCHA-DOC-01 published through PR #21; `main` verified at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`; M05 commit `585f9600ca4940aab750488b2f46f7cb72a94d69` independently verified PASS; M06 implementation `9635e5dd8e20b86ab879b55fc0da9fa63af34991`, publication closeout `a6fe5769faaa36c60def8c2d255654657d7d2ecb`, and verification closeout `16aab11293f656ae21f1ca215195186992b60cd2` pushed and independently verified PASS; no M06 PR/merge. M07 implementation commit `b4e3534364fc26801ade5b1127baed857829ca6f` is pushed to its dedicated branch; execution report/conversation closeout is included in this follow-up commit; independent M07 verification remains pending. Prior deferred flags retain M15/M19/M20/M21 ownership.
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
 **Current active branch:** v003/m07-func-ancillary-content-classification
@@ -1036,4 +1036,4 @@ The workflow describes n8n as learning-stage and the email trigger system as not
 All three legacy sources remain unchanged at their original paths. M07 does not authorize source removal. M19 owns complete post-migration reference reconciliation; M20 is the earliest source-retirement eligibility review, only after canonical destination, references, evidence, and integrity are verified.
 
 **M07 classification result:** all substantive sections have a documented canonical owner or explicit future candidate/disposition. No competing Governance text was created. No source was moved, renamed, rewritten, or deleted. No blocking flag remains.
-**Git lifecycle at this map snapshot:** implementation classification is recorded on the dedicated M07 branch; implementation publication and the separate execution report/closeout will be recorded after their respective Git operations.
+**Git lifecycle:** implementation commit `b4e3534364fc26801ade5b1127baed857829ca6f` is pushed to `origin/v003/m07-func-ancillary-content-classification`; this report and conversation closeout are included in a separate follow-up commit on the same branch.

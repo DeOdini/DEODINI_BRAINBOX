@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M05/M06 read-back and M07 section classification; ChatGPT — M05 and M06 independent verification PASS. M06 verification-closeout `16aab11` is pushed; M07 is active on `v003/m07-func-ancillary-content-classification`, implementation push pending, no PR/merge.
+**VERIFIER:** Codex — M05/M06 read-back and M07 section classification; ChatGPT — M05 and M06 independent verification PASS. M06 verification-closeout `16aab11` is pushed; M07 implementation `b4e3534` is pushed on `v003/m07-func-ancillary-content-classification`; report/conversation closeout included in the follow-up commit; no PR/merge.
 **LAST VERIFIED:** 2026-10-09
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.

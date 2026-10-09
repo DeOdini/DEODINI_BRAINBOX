@@ -3471,3 +3471,83 @@ Because this verification archive/status correction is being written after the c
 4. run M07 P14 preflight.
 
 No M06 merge is required before M07 because remote Git lifecycle remains batch-boundary scoped.
+
+
+## V003-M07 — FUNC Ancillary Compliance / Requirements / Workflow Classification
+
+**Execution date:** 2026-10-09
+**Authorization:** AUTHORIZED FOR EXECUTION
+**Branch:** `v003/m07-func-ancillary-content-classification`
+**Implementation commit:** `b4e3534364fc26801ade5b1127baed857829ca6f` — `V003-M07 classify FUNC ancillary sources`
+**Current result:** implementation pushed; execution-report/conversation closeout is being published separately on the same branch.
+**Independent M07 verification:** PENDING.
+**PR / merge:** none opened or performed.
+
+### M06-to-M07 ticket isolation
+
+Before M07 began, the M06 branch contained uncommitted independent-verification archival changes. To preserve the Operator's one-branch-per-ticket rule, the M06-only records were committed and pushed on M06 as `16aab11293f656ae21f1ca215195186992b60cd2`. M06 was verified clean and synchronized, then M07 was branched from that tip. No M06 implementation was mixed into the M07 branch.
+
+### Preflight and authorities
+
+- Read the authorized M07 ticket, frozen V003 Specification §§9–10, relevant Origin Conversation material, all three current source files, current Governance references, M05 CORE schema, M06 EXE index, and M01 migration ledger.
+- M03 Governance, M05 CORE, and M06 EXE dependencies were recorded as independently verified PASS before M07 execution.
+- The frozen Specification directs that mixed FUNC material be classified by content rather than forced into CORE/EXE. M08 owns reusable Skills/technology knowledge; M09 owns legacy DEVOPS RAW/FAILED/PROVEN migration; M10 owns Fullstack workflows/orchestration. M07 created no speculative destination tree.
+- The Origin Conversation was reviewed as historical decision evidence. Its prior candidate taxonomy was not promoted over the frozen Specification.
+
+### Source integrity and preservation
+
+| Source | M01 baseline | Current check | Result |
+|---|---:|---|---|
+| `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` | 4,387 bytes; 103 lines; SHA-256 `edfff2651ab1005a8d166c06df9553bd8a4f82ba4508d648dbbd8b680365fab9` | 4,387 bytes; same SHA-256 | unchanged |
+| `AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md` | 4,943 bytes; 111 lines; SHA-256 `e2d9ec14ca1d96703fca5be75316a92efa261b245307923be9f78cb986bd8e90` | 4,943 bytes; same SHA-256 | unchanged |
+| `AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md` | 11,857 bytes; 230 lines; SHA-256 `7a73a3b43226ddd5eb9c6119274b95f2bd623d5fdb30a30573d65447ae5602bd` | 11,857 bytes; same SHA-256 | unchanged |
+
+No source was moved, renamed, rewritten, or deleted. No secret value or unverified capability claim was copied into an active canonical record.
+
+### Classification outcome
+
+- `FQ_MUST_README.md`: current system-wide read/authorization/compliance rules belong to Governance; local FUNC README keeps only domain navigation. Legacy universal reading sequence, request-file/compliance-file chain, notification instructions, and change-request pointer remain historical/reference material. The older root-authority label is not treated as current.
+- `FUNC_REQ_BRAINBOX.md`: current agent capability-report fields belong to M05 CORE; naming, evidence, security, and documentation rules belong to Governance. Its legacy flat output-path instructions are superseded for current records; the source is retained.
+- `FUNC_WORKFLOW_BRAINBOX.md`: system-specific workflows and coordination are future M09/M10 candidates; reusable technology knowledge is a possible M08 destination. Promotion/engagement rules point to Governance and Portfolio. Agent role descriptions are references, not verified execution or standing routing authority. The section-by-section disposition is in Migration Map §23.
+- `AI_BRAINBOX/FUNC_AI_BRAINBOX/README_FUNC_AI_BRAINBOX.md` now summarizes those boundaries without duplicating Governance policy and points to the detailed map and Phase 02 report.
+- Root, V003, and Phase 02 README status fields and the M01 living migration ledger were reconciled to the actual M07 branch/publication state.
+
+### Flags and disposition
+
+#### M07-WF-01 — BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact objects:** `FUNC_WORKFLOW_BRAINBOX.md` §§1, 2.1, 2.3–2.4, 2.6, 4, 6–8, and 11.
+- **Issue/evidence:** the source mixes generic n8n/email technology material with system-specific routing and workflow procedures, while M08, M09, and M10 have separate ownership and some target destinations are not yet populated.
+- **Migration/next-ticket impact:** M07 classifies but does not move the material. M08 may classify generic technology; M09/M10 classify only their authorized workflow content. This flag does not block M07 or dependency-eligible same-batch work.
+- **Reason/timing/owner:** the ticket permits destination dependencies on M09/M10; guessing or creating destinations would exceed M07. M08/M09/M10 handle their authorized content; M19 reconciles references; M20 alone assesses source retirement.
+
+#### M07-AUTH-01 — BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact objects:** `FUNC_WORKFLOW_BRAINBOX.md` §2.4 line 59 and §6 line 141 contain generalized agent push/notify directions. §3 line 97 says no direct pushes to main; that aligns with branch discipline but grants no push authority.
+- **Issue/evidence:** the retained legacy wording could be misread as standing permission to push. Current Governance distinguishes technical access from Operator authorization.
+- **Migration/next-ticket impact:** the generalized push/notify wording is classified as deprecated/superseded and was not copied or executed. M10 can reference current Governance; this does not block M07/M08/M09.
+- **Reason/timing/owner:** current Governance is canonical while the wording remains only in retained historical source. M10 references Governance; M19 reconciles references; M20 assesses retirement.
+
+### Unproven automation and test scope
+
+The source describes n8n as learning-stage and says the email trigger system has not been tested. Both remain **UNPROVEN / NOT VERIFIED**. M07 ran no automation and sent no email. This was a documentation-only ticket; no application test suite or deployment was run.
+
+### Validation
+
+- `git diff --check`: PASS for the implementation commit.
+- Local Markdown file links across the five implementation/status documents: 19 checked, 0 broken.
+- All three source hashes and byte sizes match the M01 baseline.
+- The implementation worktree was clean after the initial publication check.
+
+### Git publication
+
+- M07 implementation was committed with the established author `DeOdini <deodinihq@gmail.com>`.
+- Local commit: `b4e3534364fc26801ade5b1127baed857829ca6f`.
+- Push to `origin/v003/m07-func-ancillary-content-classification`: PASS.
+- `git ls-remote` returned the same hash as local `HEAD`; upstream tracking was established and the worktree was clean before this report/conversation append.
+- This report, conversation record, and final status reconciliation are being committed/pushed separately after the implementation push.
+- No PR or merge was opened; independent M07 review remains pending.
+
+### M07 result
+
+Every substantive section in the three mixed legacy sources now has a documented canonical owner, future candidate, or historical/deprecated disposition. The three source records remain intact. No blocking flag remains; M07-WF-01 and M07-AUTH-01 are documented as batch-deferred/non-blocking under the active Phase 02 flag rule.
