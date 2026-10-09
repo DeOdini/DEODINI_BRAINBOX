@@ -1244,7 +1244,7 @@ This final status supersedes the preceding note that the post-merge report close
 **Pre-state:** Local `main` and `origin/main` both at `79df224c5c8529cdf3137ce7324280ca63ddbc6b`; GitHub `ls-remote` confirmed the same remote tip. Main was clean, had no untracked working-tree entries, and was synchronized. No pending ChatGPT modifications existed to clean up or publish. The ticket branch was created from that main commit.
 **Dependency state:** M01 and M03 are merged into main; Batch B M05–M08 and its closeout are merged; no dependency hold remained.
 **Target outcome:** Three authority READMEs established under DEVOPS AI. Legacy source files remain byte-for-byte unchanged. No workflow content was copied, moved, renamed, or deleted.
-**Implementation commit/push:** Pending at this map revision; recorded in the later M09 report closeout.
+**Implementation commit/push:** `24fc108921aa1f32e2e207973652da6a687b5861`; `origin/v003/m09-devops-legacy-reconciliation` was verified at the same SHA. The M09 report/conversation closeout is recorded and published in a separate follow-up commit.
 
 ### M09 source baseline and disposition
 
