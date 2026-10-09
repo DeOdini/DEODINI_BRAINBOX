@@ -7080,3 +7080,97 @@ Codex's M16 report explicitly says it performed no application tests, browser QA
 M17 follows within Batch D after committing this M16 ChatGPT closeout on M16, verifying a clean branch, and creating `v003/m17-legacy-milestones-reconciliation` from the verified M16 tip. M17 requires its own P14 preflight; no M16 PR or merge is required before M17 within Batch D. Batch D flag review and PR/merge closure remain boundary work before Batch E / M19.
 
 No staging, commit, push, PR, merge, production action, test or source-retirement operation was performed by ChatGPT.
+
+
+---
+
+# V003-M17 — Legacy Milestones Historical Reconciliation — Codex Execution Report
+
+**Date:** 2026-10-09
+**Result:** Source inspection/classification and M01 ledger update complete; no source migration performed.
+**Branch:** v003/m17-legacy-milestones-reconciliation
+**Base:** M16 ChatGPT verification closeout 36406b6c13b0c6fa8f2024032ae9349f6b25607b
+**Blocking flag:** M17-DEST-01 for physical move/rename/retirement; non-blocking for separate M18 planned milestone work.
+**PR/merge:** None.
+
+## 1. M16 verification state cross-check and publication
+
+Reviewed the ChatGPT verification modifications on v003/m16-foothive-production-portfolio before M17:
+
+- 12 Markdown files changed: six M16 Production/Portfolio records, root README, Phase 02 README, Phase 02 conversation/report, V003 parent README, and Migration Map.
+- The changes document M16 independent verification PASS, exact 67-local-link/zero-broken result, source/evidence boundaries, and M16-README-01 assignment to M19.
+- Full diff was reviewed; changes stayed within M16 verification and status documentation. No application source, Sandbox evidence, or portfolio content was modified.
+- M16 diff and staged diff checks returned no whitespace errors.
+- Commit 36406b6c13b0c6fa8f2024032ae9349f6b25607b, “V003-M16 record independent verification”, was pushed to origin/v003/m16-foothive-production-portfolio.
+- A fresh fetch confirmed local and origin branch tips equal at 36406b6c13b0c6fa8f2024032ae9349f6b25607b; the worktree was clean. No M16 PR or merge exists.
+- M17 branch was created from that verified M16 tip.
+
+## 2. M17 preflight and inspected authorities
+
+Read both canonical V003 authorities for relevant target distinctions: Specification §§8, 24, 28 and the approved final milestone discussion in the Origin Conversation. Also inspected the M01 Migration Map's MILESTONES-LEGACY inventory, the live Version History tree, and current Governance documentation/evidence/reference/naming authorities.
+
+The V003 target has:
+- MILESTONES_BRAINBOX [PLANNED], containing a navigation README and the future Brainbox Router/Agentic milestone record.
+- Version History organized into V001 and V002 tree-snapshot/retrospective records and V003 tree snapshot, map, and architecture decisions.
+
+The current filesystem contains no MILESTONES_BRAINBOX directory. The Version History tree contains only its generation-specific artifacts and no legacy milestone-checkpoint slot.
+
+## 3. Complete source review and provenance
+
+Read all 56 lines of MILESTONES_MUST_README.md and all 462 lines of MILESTONE_CHECKPOINT_BRAINBOX.md. Captured source size, line count, and SHA-256. Both current Git blobs match their recorded introduction commit 9e884c60e2f5c2989e9a8cdf7326c9a3e6565044 and the M01 integrity manifest.
+
+The README governs a legacy local milestone folder, joint checkpoint ownership, naming/status distinctions, the historical removal of APPENDIX_GROK_MILESTONE.md, and the then-current authority chain.
+
+The checkpoint is a dated point-in-time record. It contains its evidence method; M01–M12 summary/timeline; 2026-09-24 filesystem tree; detailed milestone entries; checkpoint-era highlights, gaps, governance, and agent states; Git history; proposed next steps; and authorship/archive metadata. Its internal date is 2026-09-24; its first Git-tracked commit is 2026-09-25. Both are retained as distinct facts.
+
+## 4. Section classifications
+
+- README §1 and §5: legacy folder purpose and its historical authority chain.
+- README §2: joint global record/authorship rule; related documentation/evidence principles are now canonical in Governance, so no duplicate rule was copied.
+- README §3: mixed current evidence-status principles and legacy path-specific naming; future target naming comes from the frozen Specification.
+- README §4: historical provenance for removing the Grok appendix; do not recreate the removed file.
+- Checkpoint §§0–3: historical evidence method, checkpoint-era repository status, and point-in-time tree.
+- Checkpoint §§1–2 and §§4–5: historical milestones and chronology, not an active plan.
+- Checkpoint §6: checkpoint-era gaps; not today's active issue list without later verification.
+- Checkpoint §§7–8: checkpoint-era governance and agent status; current rules/capabilities have later canonical owners.
+- Checkpoint §9: historical Git evidence.
+- Checkpoint §10: old proposed next steps, not current authorization.
+- Checkpoint §11 and closing metadata: checkpoint compliance/provenance.
+
+The detailed source-to-disposition table is recorded in Section 48 of the living Migration Map.
+
+## 5. M17-DEST-01 — destination ambiguity
+
+The frozen target separates two concepts:
+
+1. MILESTONES_BRAINBOX is a planned future Router/Agentic milestone structure. It is not the legacy global checkpoint.
+2. VERSION_HISTORY contains specific records for each Brainbox generation. It does not define an artifact for this operational milestone checkpoint or authorize folding it into a V002/V003 retrospective, tree snapshot, or Architecture Decisions.
+
+No authoritative physical destination is specified. Treating either target as a destination would conflate future intent, generation history, and the legacy checkpoint.
+
+**Exact objects:** MILESTONES/MILESTONES_MUST_README.md and MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md.
+**Classification:** BLOCKING for their move, rename, or source retirement. NON-BLOCKING for M18 creation of the separate planned milestone records.
+**Impact:** Source classification and ledger reconciliation can complete. M18 may proceed without touching these files. M19 should preserve/reconcile legacy references. M20 must not remove either file until the Operator approves the destination/disposition and reference/integrity closure.
+**Owner/timing:** Operator decision required before any physical move or deletion.
+
+## 6. Source preservation and checks
+
+- Both source files remain at their original MILESTONES/ paths.
+- Their current SHA-256 values match the M01 manifest; their Git blobs match commit 9e884c60e2f5c2989e9a8cdf7326c9a3e6565044.
+- MILESTONES_BRAINBOX remains absent physically and [PLANNED] in the frozen architecture.
+- No source was moved, renamed, copied, rewritten, or deleted.
+- No target folder was created for the unresolved historical records.
+- No application tests or deployments apply to this documentation-only reconciliation.
+- The M01 Migration Map now contains M17's source classifications, evidence, destination finding, and M20 gate.
+
+## 7. Disposition
+
+**M17 inspection and classification: PASS.**
+**M17-DEST-01: OPEN; blocks physical migration/retirement until Operator destination decision.**
+**M18 planned Router milestone work: remains a separate ticket and may proceed without the legacy source.**
+**M17 source files: retained unchanged.**
+
+
+## 8. M17 map publication and closeout state
+
+The M17 source classification and disposition were committed as bd7f294db67a7870113882e47dd4558555dc92c1 (V003-M17 classify legacy milestone records) and pushed to origin/v003/m17-legacy-milestones-reconciliation. A fresh fetch confirmed local HEAD and origin equal at that commit. The M17 report, exact conversation record, and current-status README updates are included in the following documentation closeout on the same branch. No PR or merge was created.

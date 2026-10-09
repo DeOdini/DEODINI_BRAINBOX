@@ -2075,3 +2075,11 @@ Therefore no canonical physical destination is established for either legacy sou
 - **Next-ticket impact:** M18 may create the separate planned Router/Agentic milestone records while preserving this legacy source. M19 must retain and reconcile current path references. M20 source retirement is blocked until the Operator approves a destination/disposition and reference/integrity closure.
 - **Classification:** BLOCKING for moving, renaming, or deleting these source files; it does not block non-destructive M18 work.
 - **Correction/owner/timing:** Operator must decide the authoritative archive destination or explicitly retain the legacy source. Obtain that decision before any move or retirement. No decision is inferred by M17.
+
+
+### M17 Git publication state
+
+- The source classification and decision in Section 48 were committed as bd7f294db67a7870113882e47dd4558555dc92c1 and pushed to origin/v003/m17-legacy-milestones-reconciliation.
+- Fetch confirmed local HEAD and origin branch tip equal at bd7f294db67a7870113882e47dd4558555dc92c1.
+- The report, conversation, and current-status documentation are recorded in the separate M17 documentation closeout on this branch.
+- No M17 PR or merge was created. M17-DEST-01 remains open for physical source relocation/retirement.
