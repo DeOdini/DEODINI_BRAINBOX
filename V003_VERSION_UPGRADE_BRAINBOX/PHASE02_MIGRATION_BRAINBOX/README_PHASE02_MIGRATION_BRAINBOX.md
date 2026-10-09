@@ -1,6 +1,6 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE - AUTHORIZED] - Batch C M09-M14 independently verified and merged through PRs #28-#33; Batch C records are current below; M15 not started and requires its own P14 preflight.
+**Status:** [ACTIVE - AUTHORIZED] - Batch C M09-M14 independently verified and merged through PRs #28-#33; Batch C records are current below; M15 P14 preflight passed and implementation is in progress on its dedicated branch.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.

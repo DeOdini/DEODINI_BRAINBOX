@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02 - Batch C M09-M14 independently verified and merged through PRs #28-#33. Batch C closeout is recorded in the active Phase 02 report. M15 is not started and requires its own P14 preflight.
-**Migration status:** V003-M01-M21 AUTHORIZED / M01-M14 INDEPENDENTLY VERIFIED AND MERGED / BATCH C PRS #28-#33 MERGED / M15 NOT STARTED / DEFERRED FLAGS REMAIN ASSIGNED TO M15, M19/M20, M21 / MERGE AUTHORITY RETAINED BY OPERATOR
+**Current phase:** V003 Phase 02 - Batch C M09-M14 independently verified and merged through PRs #28-#33. Batch C closeout is recorded in the active Phase 02 report. M15 P14 preflight passed; implementation is in progress on its dedicated branch.
+**Migration status:** V003-M01-M21 AUTHORIZED / M01-M14 INDEPENDENTLY VERIFIED AND MERGED / BATCH C PRS #28-#33 MERGED / M15 IN PROGRESS / DEFERRED FLAGS REMAIN ASSIGNED TO M15, M19/M20, M21 / MERGE AUTHORITY RETAINED BY OPERATOR
 
 ## Purpose
 
