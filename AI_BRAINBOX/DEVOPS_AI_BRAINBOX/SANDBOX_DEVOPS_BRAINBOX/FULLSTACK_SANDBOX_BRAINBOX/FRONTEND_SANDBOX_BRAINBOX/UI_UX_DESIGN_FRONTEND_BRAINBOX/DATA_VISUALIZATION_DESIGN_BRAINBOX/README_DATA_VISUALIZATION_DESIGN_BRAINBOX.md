@@ -9,7 +9,7 @@
 **CANONICAL SOURCE:** Frozen V003 Specification §§8 and 13; V003-P09; V003-M11; V003-M13.
 **POPULATION STATE:** Navigation present; four visualization-design branches empty.
 **LAST VERIFIED:** 2026-10-09 — Codex M13 reference read-back.
-**VERIFIER:** M11 independent verification: PASS. M13 reference update: Codex read-back PASS; independent M13 verification pending.
+**VERIFIER:** M11 independent verification: PASS. M13 reference update: Codex read-back PASS; independent ChatGPT M13 verification: PASS (2026-10-09).
 
 ## Local tree
 

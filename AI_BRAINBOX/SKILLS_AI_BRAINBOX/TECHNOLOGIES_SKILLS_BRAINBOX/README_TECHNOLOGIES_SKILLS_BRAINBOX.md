@@ -13,7 +13,7 @@
 **REFERENCES:** See the state register and links below.
 **POPULATION STATE:** Approved slots exist. Profiles are [REFERENCE], [EMPTY], or [PLANNED] as documented; no slot is marked populated solely because it is admitted.
 **LAST VERIFIED:** 2026-10-09 — Codex M13 cross-domain navigation read-back.
-**VERIFIER:** M08 independent verification: PASS. M13 navigation read-back: Codex PASS; independent M13 verification pending.
+**VERIFIER:** M08 independent verification: PASS. M13 navigation read-back: Codex PASS; independent ChatGPT M13 verification: PASS (2026-10-09).
 
 ## Local tree
 
