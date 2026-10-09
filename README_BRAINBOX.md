@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M12 Backend self-check and M14 structural/security checks. ChatGPT — M05–M14 independent PASS. See the active Phase 02 report for per-ticket Git state.
+**VERIFIER:** Codex - M12 Backend self-check and M14 structural/security checks. ChatGPT - M05-M14 independent PASS. Batch C M09-M14 merged to main through PRs #28-#33; see the active Phase 02 report for the merge table and deferred-flag dispositions.
 **LAST VERIFIED:** 2026-10-09
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
@@ -645,3 +645,12 @@ Codex verification: 58 local links / 0 broken; no non-placeholder secret-like as
 M14 documentation closeout commit `2f01afbf4eb734a42a0b49d0b89044e4194ab7f9` is pushed and verified against the fetched upstream branch; local/upstream tips match, the worktree is clean, and the branch remains unmerged.
 
 Final M14 report/transcript verification commit `89af2d34a3caabaabe7882706098b8a0b3472e54` is pushed and fetched. Local and upstream tips match; the worktree is clean and the ticket branch remains unmerged.
+
+
+---
+
+## Current Phase 02 status — Batch C — 2026-10-09
+
+V003-M09–M14 independently verify PASS and are merged to `main` through PRs #28–#33. The DEVOPS, Fullstack Workflow/Architecture/Orchestration, Frontend, Backend, Analytics, and Production/Environment records are in their approved locations; the raw project sources remain retained where their tickets require it. See the [Batch C migration report](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md) and [Migration Map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) for the detailed file/folder check and flag owners.
+
+M15 has not started. No Production deployment or source retirement occurred in Batch C.

@@ -1783,3 +1783,52 @@ Independent verification confirmed:
 Older “M14 independent verification pending” statements are superseded by this section.
 
 Batch C must complete accumulated-flag review and authorized PR/merge/Git closure before Batch D / M15 begins.
+
+
+---
+
+## 43. Batch C cross-check and ticket-branch merge closure — 2026-10-09
+
+**Batch:** C — V003-M09 through V003-M14.
+**Independent ticket results:** M09 PASS; M10 PASS; M11 PASS; M12 PASS; M13 PASS; M14 PASS.
+**Blocking Batch C flags:** NONE.
+**Ticket-merge main tip:** `98616a543ffa790d91e3d21dc5d55b6496e11c0c`.
+**Branch cleanup:** NONE; all ticket branches are retained.
+
+| Ticket | Pushed branch head | PR | GitHub merge commit | Ancestry check after merge |
+|---|---|---:|---|---|
+| M09 | `d61f015b4f1fdedac89f2d7e518082f2777bec12` | #28 | `36aac3d906c714329c9aba52b157520c01c5fb2c` | PASS |
+| M10 | `bba4d7006b2397a0c2cdd87e5d1520f9e1ed8099` | #29 | `f38f8a1e5f7b5e120e73e7346254a1a654b25798` | PASS |
+| M11 | `bdca61e4434726d18b9a16c72cf2e3f0087f7e34` | #30 | `fe875ed9f73a49bdfd35def12525a95d438e9e8c` | PASS |
+| M12 | `26c3da2fcfcddd20be858fd2544153f05584f43e` | #31 | `1e76ca8e50f1e9803decc9e020ed673fec990b63` | PASS |
+| M13 | `81c1068f96a8f8f5d14914f1220fcabaebf239b5` | #32 | `6c34ce9dc6b9b50017de84bce27a9c94d4378e10` | PASS |
+| M14 | `29d872e8c61a0ce85a1e9415cc4c95a8cb152f53` | #33 | `98616a543ffa790d91e3d21dc5d55b6496e11c0c` | PASS |
+
+Each PR's base/head was inspected before merge; expected head SHAs were supplied to the merge action. Each post-merge check fetched `origin/main` and ran `git merge-base --is-ancestor origin/<ticket-branch> origin/main`, which exited 0 for all six. The ticket branches have not been deleted.
+
+### Physical cross-check summary
+
+- **M09:** the DEVOPS, Sandbox, and Production authority READMEs exist; the legacy Project Workflow source tree is unchanged relative to Batch B `main`; empty legacy PROVEN/FAILED files remain empty and were not promoted as evidence.
+- **M10:** Architecture has 12 direct branches and Orchestration has 9; 001 and 002 source/copy SHA-256 values match exactly (`e9ad5963cf5e59555a0bf5b3c797eade93f2995007117c3684aeb158a6da9105` and `0a7270ecc83db51416aaab7d6d5a78231f783dcdf5d01e4a9a7e0499fdbf45ea`). Both remain RAW / UNPROVEN.
+- **M11:** Frontend remains beneath Fullstack; 31 descendant directories, 8 READMEs, 24 zero-byte markers; six UI/UX domains remain grouped under the approved parent; only HTML/CSS/JavaScript/TypeScript/React Frontend code-pattern leaves exist.
+- **M12:** Backend has 13 direct domains, 19 descendant directories, 3 READMEs, and 17 zero-byte markers; Google Forms is beneath Integrations; exactly five approved Backend code-pattern leaves exist.
+- **M13:** Analytics flow, frontend visualization, backend integration, and reusable GA4 technology remain separate; no Backend GA4 subtree exists; empty analytics/GA4 placeholders remain empty.
+- **M14:** Production has 5 operational and 4 evidence placeholders, all zero-byte; `.env`, `.env.local`, and `.env.production` are ignored at root and nested paths, `.env.example` is trackable/comment-only, no real secret or physical environment file was introduced, and the deployment destination remains empty.
+
+### Batch flag reconciliation
+
+| Flag | Current disposition | Owner |
+|---|---|---|
+| `M09-REF-02` | Preserve legacy title/filename mismatch; links use actual filename. | M19 or M20 |
+| `M09-REF-03` | Legacy promotion instructions stay historical; M10 classified the actual content. | M19/M20 |
+| `M10-WS-01` | Keep byte-identical RAW 001 and 120 inherited spaces; no silent normalization. | M20 |
+| `M10-DOC-WS-01` | Retain two verbatim prompt hard breaks; remove the separate one-space archive separator outside the prompt (former line 2308). | Correction completed in this closeout; verbatim spaces retained |
+| `M14-DOC-WS-01` | Preserve two verbatim Operator-ticket hard breaks. | Retain as archival evidence |
+| `M01-GIT-01` | Preserve the 72 dangling local Git objects; no GC/pruning/reflog expiry/history rewrite. | M21 |
+| `M01-FH-01` | Keep FootHive evidence/source handling in its assigned project migration. | M15/M16 |
+
+All listed flags are BATCH-DEFERRED / NON-BLOCKING or intentionally preserved; none blocks Batch C closure. The exact M10/M14 prompt spaces are retained for transcript fidelity. No source migration, deletion, or branch cleanup occurred during closeout.
+
+**Next ticket:** M15 was not started. It is next only after this Batch C closeout is integrated and its own P14 preflight passes.
+
+**Detailed closeout:** `V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md`; exact Operator/Codex turn transcript: `V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md`.

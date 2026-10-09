@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02 — Batch A is closed through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`. M05 and M06 independent verification are PASS. M06 verification-closeout `16aab11` is pushed on its dedicated branch. M07 is active on `v003/m07-func-ancillary-content-classification`; P14 preflight and section classification passed; implementation `b4e3534` is pushed, with report/conversation closeout included in this follow-up commit.
-**Migration status:** V003-M01–M21 AUTHORIZED / M01–M04 VERIFIED AND MERGED / BATCH A CORRECTION PR #21 MERGED / M05 VERIFIED PASS / M06 VERIFIED PASS AND VERIFICATION-CLOSEOUT PUSHED / M07 ACTIVE ON ITS DEDICATED BRANCH / M07 IMPLEMENTATION PUSH PENDING / NO M07 PR OR MERGE / MERGE AUTHORITY RETAINED
+**Current phase:** V003 Phase 02 - Batch C M09-M14 independently verified and merged through PRs #28-#33. Batch C closeout is recorded in the active Phase 02 report. M15 is not started and requires its own P14 preflight.
+**Migration status:** V003-M01-M21 AUTHORIZED / M01-M14 INDEPENDENTLY VERIFIED AND MERGED / BATCH C PRS #28-#33 MERGED / M15 NOT STARTED / DEFERRED FLAGS REMAIN ASSIGNED TO M15, M19/M20, M21 / MERGE AUTHORITY RETAINED BY OPERATOR
 
 ## Purpose
 
@@ -256,3 +256,12 @@ M05–M08 have independently verified PASS and are merged through PRs #22–#25.
 - M13 static documentation checks: 98 local links, 0 broken; trailing whitespace 0; git diff --check PASS. No application tests were required or run.
 - M13 independent ChatGPT verification: PASS (2026-10-09). No M13 PR or merge was created. Batch C Git closure remains at its batch boundary.
 - M13 migration map, execution report, and conversation record are in the accompanying Phase 02 closeout.
+
+
+---
+
+## Current Phase 02 status — Batch C closed — 2026-10-09
+
+M09–M14 independently verify PASS and are merged to `main` through PRs #28–#33 in dependency order. Their branch heads, merge commits, physical target-tree checks, and deferred-flag dispositions are recorded in the [Phase 02 Batch C report](PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md) and the [living Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md). Ticket branches remain available.
+
+Batch C has no blocking flags. M15 has not started and requires its own P14 preflight. Deferred items remain assigned to M15, M19/M20, or M21 as recorded in the Phase 02 report.
