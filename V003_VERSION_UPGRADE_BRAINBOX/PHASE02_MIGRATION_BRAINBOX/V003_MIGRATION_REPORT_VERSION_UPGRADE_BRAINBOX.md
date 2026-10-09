@@ -5492,7 +5492,7 @@ The implementation commit `f0129874928747897f923e3d5430b4ecc2436d35` was pushed 
 - worktree: clean;
 - PR/merge: none.
 
-The migration map, report, Phase 02 status, V003 status, root README, and exact Operator–Codex conversation record are being staged as a separate documentation follow-up commit and pushed to the same M12 branch. Batch C Git closure remains pending its batch boundary. M13 remains the next dependency-eligible ticket after independent M12 verification and clean handoff.
+The migration map, report, Phase 02 status, V003 status, root README, and exact Operator–Codex conversation record were published in documentation closeout commit 85d8acbf6b28c96f791e8664537a7920036549bd and pushed to the same M12 branch. The local and GitHub M12 tips matched after publication. Batch C Git closure remains pending its batch boundary. M13 is next after independent M12 verification and clean handoff.
 
 ## 6. M12 disposition
 

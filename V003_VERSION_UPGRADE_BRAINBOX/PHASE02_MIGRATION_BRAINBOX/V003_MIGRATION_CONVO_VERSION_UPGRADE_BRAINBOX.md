@@ -2607,6 +2607,21 @@ The M12 implementation commit has pushed successfully. I’m confirming the remo
 The remote verification is clean: local HEAD and `origin/v003/m12-backend-sandbox-taxonomy` both point to `f012987`. I’ve appended the source-backed M12 disposition to the living migration map; I’m now recording the implementation evidence and updating the active Phase 02/root navigation status.
 </pre>
 
+## M12 documentation push exchange and publication closeout
+
+<pre>
+The documentation is now recorded in the migration map, execution report, and M12 conversation archive. I also refreshed the Phase 02/V003 status and corrected the root tree to show the two M12 P12 navigation READMEs, with M13 still marked pending. I’m reviewing the complete documentation diff and Git hygiene before making the separate closeout commit.
+
+The documentation-only staged set contains the six intended files, and `git diff --cached --check` passes. I’m committing this closeout separately from the M12 taxonomy implementation, then I’ll push and verify the final branch tip and clean worktree.
+
+The local documentation closeout is committed as `85d8acb`, and its commit passes `git diff --check`. The push process is still open without output, so I’m checking whether Git Credential Manager has opened a sign-in prompt before treating the remote update as complete.
+
+Codex: Git Credential Manager is waiting during the M12 documentation push. Please complete the GitHub sign-in prompt on the Windows desktop, then reply “I completed sign-in” so I can verify the push.
+
+Operator: I COMPLETED SIGN-IN
+
+The M12 documentation push completed after your sign-in. I’m doing the final local/remote SHA and worktree check now; the implementation commit remains separate from the documentation closeout, and the branch is still unmerged.
+</pre>
 ## Codex final response
 
 <pre>
