@@ -70,7 +70,7 @@ DEODINI_BRAINBOX/
 ├── MILESTONES_BRAINBOX/ [PLANNED]
 │   ├── README_MILESTONES_BRAINBOX.md
 │   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
-├── AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05–M13 migrated; legacy sources retained; M14 and later tickets pending]
+├── AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05–M14 migrated; legacy sources retained; M15 and later tickets pending]
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
 │   │   ├── README_FUNC_AI_BRAINBOX.md
@@ -397,15 +397,16 @@ DEODINI_BRAINBOX/
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
 | `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial; M04] | Parent README and Git-backed V001/V002 tree snapshots are present. Their conceptual retrospectives explicitly report missing rationale evidence; V003 Architecture Decisions and the living migration map are retained. Final V003 snapshot remains assigned to M21. |
 | `MILESTONES_BRAINBOX/` | [PLANNED] | Not yet populated; M18. The legacy `MILESTONES/` remains a separate source pending M17. |
-| `AI_BRAINBOX/` | [PARTIALLY POPULATED — M05–M13] | FUNC CORE/EXE, ancillary classification, Skills taxonomy, DEVOPS/Sandbox, Fullstack workflows/architecture/orchestration, Frontend, Backend, and analytics responsibility/reference targets have been migrated through M13. Legacy sources remain; M14 and later tickets are pending. |
+| `AI_BRAINBOX/` | [PARTIALLY POPULATED — M05–M14] | FUNC CORE/EXE, ancillary classification, Skills taxonomy, DEVOPS/Sandbox, Fullstack workflows/architecture/orchestration, Frontend, Backend, analytics responsibility/reference, and Production/Environment foundations have been migrated through M14. Legacy sources remain; M15 and later tickets are pending. |
 | `PORTFOLIO_BRAINBOX/` | [PLANNED V003 target] | Existing legacy Portfolio source is only a zero-byte placeholder; target structure is pending M16. |
 
 ## Current local root tree
 
-Current physical root layout — last reconciled during M13 (2026-10-09). It includes retained legacy sources and the empty local directory, which are not extra branches in the approved V003 target tree.
+Current physical root layout — reconciled during M14 (2026-10-09). It includes retained legacy sources and the empty local directory, which are not extra branches in the approved V003 target tree.
 
 ```text
 DEODINI_BRAINBOX/
+├── .gitignore [repository-wide local environment-file exclusions — M14]
 ├── README_BRAINBOX.md [ACTIVE — created in M02]
 ├── GOVERNANCE_BRAINBOX/ [POPULATED — M03]
 │   ├── README_GOV_BRAINBOX.md
@@ -418,7 +419,7 @@ DEODINI_BRAINBOX/
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── DOB_MUST_README.md [retained legacy source; unchanged through M03]
-├── AI_BRAINBOX/ [M05–M13 migrated; legacy sources retained; M14 and later tickets pending]
+├── AI_BRAINBOX/ [M05–M14 migrated; legacy sources retained; M15 and later tickets pending]
 ├── BRAINBOX/ [EMPTY physical directory; not tracked by Git; review under M20]
 ├── MILESTONES/ [legacy source records; review under M17]
 ├── PORTFOLIO_BRAINBOX/ [legacy zero-byte placeholder; review under M16]

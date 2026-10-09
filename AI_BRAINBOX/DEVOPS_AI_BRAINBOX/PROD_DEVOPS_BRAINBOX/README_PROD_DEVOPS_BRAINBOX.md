@@ -1,84 +1,109 @@
 # README_PROD_DEVOPS_BRAINBOX
 
 **STATUS:** [ACTIVE — CANONICAL NAVIGATION]
-**PARENT:** `DEVOPS_AI_BRAINBOX/`
+**PARENT:** AI_BRAINBOX/DEVOPS_AI_BRAINBOX/
 **CURRENT DOMAIN:** Production DEVOPS
-**PURPOSE:** Organize evidence-backed release, deployment, operation, monitoring, and production learning records.
+**PURPOSE:** Organize evidence-backed release, deployment, operations, monitoring, environment controls, and production learning.
 **MENTAL MODEL:** APPLY → RELEASE → OPERATE → MONITOR → LEARN.
 **GOVERNED BY:** Governance Evidence, Reference, Security, Promotion, and Ticketing rules.
-**CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 21–22, 25; V003 Origin Conversation; V003-M09 migration record.
+**CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 21–22, 25; V003 Origin Conversation; V003-M09 and V003-M14 migration records.
 **APPLIES TO:** Actual production operations and their evidence, subject to applicable Operator authorization.
+**POPULATION STATE:** M14 structure and navigation present; no production outcomes or deployed procedure are recorded.
+**VERIFIER:** Codex — M14 implementation checks; ChatGPT — M14 cross-check recorded in the Phase 02 report.
 **LAST VERIFIED:** 2026-10-09
 
 ## Authority boundary
 
 Production is not a “proven forever” bucket. A workflow that passes in Sandbox can still fail in Production. Production records its own outcomes and operational evidence; it does not inherit Sandbox status.
 
-This README establishes the Production domain only. M09 did not migrate a production deployment, operation, incident, regression, or outcome record from its inspected legacy project-workflow source set. It does not make a claim about evidence owned by the separately scoped FootHive trial or a later Production case-study ticket.
+This README establishes Production navigation. It does not authorize a deployment, environment access, release, secret rotation, or production operation. It does not claim production readiness or client acceptance.
 
 ## Authoritative target tree
 
-```text
-PROD_DEVOPS_BRAINBOX/
-├── README_PROD_DEVOPS_BRAINBOX.md [PRESENT]
-├── FULLSTACK_PROD_BRAINBOX/ [PLANNED]
-├── ENVIRONMENT_PROD_BRAINBOX/ [PLANNED]
-├── CASE_STUDIES_PROD_BRAINBOX/ [PLANNED — M16]
-├── PASSED_PROD_BRAINBOX/ [PLANNED]
-├── FAILED_PROD_BRAINBOX/ [PLANNED]
-├── INCIDENTS_PROD_BRAINBOX/ [PLANNED]
-└── REGRESSIONS_PROD_BRAINBOX/ [PLANNED]
-```
+The hierarchy below follows frozen V003 Specification §8. M16 owns Production case-study content.
 
-The child names and nested structure are controlled by frozen V003 Specification §8. Planned paths do not indicate that files, environments, or operational records exist.
+    PROD_DEVOPS_BRAINBOX/
+    ├── README_PROD_DEVOPS_BRAINBOX.md [PRESENT]
+    ├── FULLSTACK_PROD_BRAINBOX/ [PRESENT — M14]
+    │   ├── README_FULLSTACK_PROD_BRAINBOX.md
+    │   ├── WORKFLOWS_PROD_BRAINBOX/
+    │   ├── RELEASE_PROD_BRAINBOX/
+    │   ├── DEPLOYMENT_PROD_BRAINBOX/
+    │   ├── OPERATIONS_PROD_BRAINBOX/
+    │   └── MONITORING_PROD_BRAINBOX/
+    ├── ENVIRONMENT_PROD_BRAINBOX/ [PRESENT — M14]
+    │   ├── README_ENVIRONMENT_PROD_BRAINBOX.md
+    │   ├── ENV_VARIABLES_BRAINBOX.md
+    │   ├── ENV_SECURITY_BRAINBOX.md
+    │   ├── ENV_ROTATION_BRAINBOX.md
+    │   ├── ENV_VALIDATION_BRAINBOX.md
+    │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
+    │       ├── .env.example
+    │       └── .gitignore
+    ├── CASE_STUDIES_PROD_BRAINBOX/ [PLANNED — M16]
+    ├── PASSED_PROD_BRAINBOX/
+    ├── FAILED_PROD_BRAINBOX/
+    ├── INCIDENTS_PROD_BRAINBOX/
+    └── REGRESSIONS_PROD_BRAINBOX/
 
 ## Current local tree
 
-```text
-PROD_DEVOPS_BRAINBOX/
-└── README_PROD_DEVOPS_BRAINBOX.md
-```
+The five Fullstack operational branches are empty placeholders. Environment files below are safe documentation/templates only. Each evidence area contains only a zero-byte .gitkeep marker and no production records.
 
-No production evidence folder or record was created by M09.
+    PROD_DEVOPS_BRAINBOX/
+    ├── README_PROD_DEVOPS_BRAINBOX.md
+    ├── FULLSTACK_PROD_BRAINBOX/
+    │   ├── README_FULLSTACK_PROD_BRAINBOX.md
+    │   ├── WORKFLOWS_PROD_BRAINBOX/.gitkeep
+    │   ├── RELEASE_PROD_BRAINBOX/.gitkeep
+    │   ├── DEPLOYMENT_PROD_BRAINBOX/.gitkeep
+    │   ├── OPERATIONS_PROD_BRAINBOX/.gitkeep
+    │   └── MONITORING_PROD_BRAINBOX/.gitkeep
+    ├── ENVIRONMENT_PROD_BRAINBOX/
+    │   ├── README_ENVIRONMENT_PROD_BRAINBOX.md
+    │   ├── ENV_VARIABLES_BRAINBOX.md
+    │   ├── ENV_SECURITY_BRAINBOX.md
+    │   ├── ENV_ROTATION_BRAINBOX.md
+    │   ├── ENV_VALIDATION_BRAINBOX.md
+    │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
+    │       ├── .env.example
+    │       └── .gitignore
+    ├── PASSED_PROD_BRAINBOX/.gitkeep
+    ├── FAILED_PROD_BRAINBOX/.gitkeep
+    ├── INCIDENTS_PROD_BRAINBOX/.gitkeep
+    └── REGRESSIONS_PROD_BRAINBOX/.gitkeep
 
-## Evidence and status
+## M14 migration boundary
 
-- Preserve separate Production PASSED, FAILED, INCIDENTS, and REGRESSIONS evidence domains as they are populated by authorized work.
-- Include source, environment/context, date, observed result, verification method, limits, and responsible verifier in operational records as appropriate.
-- A Production failure or incident must remain visible; do not rewrite it as a Sandbox failure or erase it during promotion.
-- Do not copy the empty legacy `PROVEN_PATTERN_PROJ_BRAINBOX.md` or `FAILED_PATTERN_PROJ_BRAINBOX.md` into Production. Both are zero-byte files with no evidence.
-- Do not infer production readiness, client acceptance, or paid engagement from a proposed workflow, a local check, or a project folder's presence.
-- Environment files and secret handling belong under the approved Environment branch when its ticket executes. Never store secret values in these records.
+M10 classified DEPLOYMENT_SEQUENCE as belonging to a Production release/deployment workflow, but its source review found no actual deployment procedure. The Production deployment directory is therefore present and empty; no raw Sandbox text was promoted or copied.
+
+M14 created the approved structure and safe environment guidance only. No deployment, production validation, secret rotation, Production pass/fail, incident, regression, or FootHive Production record was created. FootHive Production summary remains assigned to M16.
+
+## Evidence and environment boundaries
+
+- Record source, environment/context, date, observed result, verification method, limits, and responsible verifier in future operational records as appropriate.
+- Keep Production PASSED, FAILED, INCIDENTS, and REGRESSIONS separate.
+- Environment documentation describes safe handling; it contains no real environment values.
+- Use the canonical Governance rules rather than duplicating system-wide policy here.
 
 ## Related domains
 
 - [DEVOPS parent](../README_DEVOPS_AI_BRAINBOX.md)
-- Sandbox outcomes and promotion: [Sandbox DEVOPS](../SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md) and Governance Promotion.
-- FootHive trial and evidence: M15; Production summary: M16.
-- Governance remains canonical for shared policy; this README provides domain navigation only.
+- [Production Fullstack](FULLSTACK_PROD_BRAINBOX/README_FULLSTACK_PROD_BRAINBOX.md)
+- [Production Environment](ENVIRONMENT_PROD_BRAINBOX/README_ENVIRONMENT_PROD_BRAINBOX.md)
+- [Sandbox DEVOPS](../SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md)
+- FootHive Production summary: M16; no FootHive material was moved by M14.
 
 ## Canonical sources and references
 
+- [Root tree and navigation](../../../README_BRAINBOX.md)
 - [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25
 - [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
-- [Governance entry](../../../GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md)
-- [Evidence rules](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
-- [Security rules](../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
-- [Promotion rules](../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
-- [Reference rules](../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
-- [Ticket rules](../../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md)
+- [Governance Security](../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
+- [Governance Evidence](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
+- [Governance Promotion](../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
+- [M10 Fullstack workflows and deployment classification](../SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md)
 - [Phase 02 ticket set](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
 - [Living migration map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 
-## Record provenance
-
-**Prepared by:** Codex under the Operator-authorized V003-M09 ticket.
-**Population state:** Authority/readme only; no M09 Production records or evidence migrated.
-**Independent verification:** To be recorded in the Phase 02 report after review.
-
-
----
-
-## Independent verification status — 2026-10-09
-
-V003-M09 independently verifies **PASS**. M09 created Production authority/navigation only and migrated no Production outcome, incident, regression, pass, or failure evidence.
+**Prepared by:** Codex under the Operator-authorized V003-M14 ticket.

@@ -1,0 +1,4 @@
+# Reusable safeguard for application repositories with local environment files.
+.env
+.env.*
+!.env.example
