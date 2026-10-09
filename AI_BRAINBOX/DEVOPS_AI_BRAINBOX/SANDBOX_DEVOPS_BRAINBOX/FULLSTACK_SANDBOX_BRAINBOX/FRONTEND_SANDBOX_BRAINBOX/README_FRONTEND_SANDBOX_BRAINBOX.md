@@ -62,7 +62,7 @@ FRONTEND_SANDBOX_BRAINBOX/
 
 ## Current local tree
 
-The current tree is the same as the authoritative tree above. The 31 approved directories exist; eight contain navigation READMEs and 24 leaf directories contain zero-byte `.gitkeep` placeholders. No source content was moved into the placeholders.
+The current tree is the same as the authoritative tree above. Its 31 approved child folders (32 directories including this Frontend root) exist; eight Markdown files are navigation READMEs and 24 leaf directories contain zero-byte `.gitkeep` placeholders. No source content was moved into the placeholders.
 
 ## Source inspection and disposition
 
@@ -94,4 +94,4 @@ Reusable language, technology, accessibility, responsive-design, and general pat
 - [Living migration map](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 
 **PREPARED BY:** Codex under the Operator-authorized V003-M11 ticket.
-**VERIFICATION STATE:** Implementation created; separate verification record pending.
+**CODEX STRUCTURAL CHECK:** PASS — 31 child folders, eight READMEs, 24 empty markers, 63 checked links / 0 broken (2026-10-09). **INDEPENDENT CHATGPT VERIFICATION:** Pending.
