@@ -2043,3 +2043,24 @@ STAGE, COMMIT AND PUSH ONCE AGAIN TO THEN MERGE.
 <pre>
 The audit found a batch-closeout issue before publication: the M08 verification and crosscheck documentation had four Markdown hard-break spaces that failed &#96;git diff --check&#96;. I removed those trailing spaces and reran the check; it now passes. I’m finishing the conversation/status records, then I’ll publish the M08 closeout and start the ordered PR merges.
 </pre>
+
+
+**Codex — commentary before final branch/PR reconciliation (verbatim):**
+
+<pre>
+The ordered merges are through M08. PRs #22–#25 each merged in sequence, with main rechecked between tickets; M08’s merge commit is &#96;2713a84&#96;. I’m doing the full branch/PR/remote reconciliation now, then I’ll append the post-merge result, publish that report as a second M08 commit, and merge that report-closeout PR.
+</pre>
+
+
+**Codex — commentary before opening the ordered PRs (verbatim):**
+
+<pre>
+M08’s crosscheck closeout is committed and pushed as &#96;141b98d&#96;; the remote tip matches, the worktree is clean, and the four ticket branches remain distinct and unpublished to &#96;main&#96;. I’m now opening and verifying one PR at a time in M05 → M06 → M07 → M08 order so each ticket’s merge is independently traceable.
+</pre>
+
+
+**Codex — commentary before post-merge report commit (verbatim):**
+
+<pre>
+The final crosscheck passed: GitHub confirms PRs #22–#25 are merged, and all four pushed ticket branch tips are ancestors of &#96;origin/main&#96; at &#96;2713a84&#96;. The only new changes are the post-merge report, migration-map/status updates, and conversation record; I’m committing those on M08 now for the separate report-closeout merge.
+</pre>
