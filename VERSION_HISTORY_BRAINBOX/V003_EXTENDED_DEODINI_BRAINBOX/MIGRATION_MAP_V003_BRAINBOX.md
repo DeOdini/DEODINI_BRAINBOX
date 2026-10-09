@@ -1,10 +1,10 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger — Batch A and BATCHA-DOC-01 published through PR #21; base `main` verified at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`; M05 commit `585f9600ca4940aab750488b2f46f7cb72a94d69` pushed and independent verification pending; M06 implementation commit `9635e5dd8e20b86ab879b55fc0da9fa63af34991` pushed on its dedicated branch and independent verification pending; no M06 PR/merge; prior deferred flags retain M15/M19/M20/M21 ownership.
+**Status:** Living M01–M21 migration ledger — Batch A and BATCHA-DOC-01 published through PR #21; `main` verified at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`; M05 commit `585f9600ca4940aab750488b2f46f7cb72a94d69` independently verified PASS; M06 implementation `9635e5dd8e20b86ab879b55fc0da9fa63af34991`, publication closeout `a6fe5769faaa36c60def8c2d255654657d7d2ecb`, and verification closeout `16aab11293f656ae21f1ca215195186992b60cd2` pushed and independently verified PASS; no M06 PR/merge. M07 is active on its dedicated branch from the clean M06 verification-closeout tip; implementation push pending. Prior deferred flags retain M15/M19/M20/M21 ownership.
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
-**Current active branch:** v003/m06-func-exe-registry-migration
+**Current active branch:** v003/m07-func-ancillary-content-classification
 **M01 baseline branch:** v003/m01-current-state-inventory-migration-map
 **Baseline commit:** 27e73f828bb367298442c2e621c18d1cc1ceb4f4
 
@@ -941,3 +941,99 @@ Codex's historical report recorded 120 links/0 broken for its 20-file scan. Inde
 **Integrity conclusion:** 0 broken links confirmed.
 
 Older M05/M06 “independent verification pending” lines are historical pre-verification states and are superseded by this section.
+## 23. V003-M07 — FUNC Ancillary Compliance / Requirements / Workflow Classification
+
+**Ticket:** V003-M07 — FUNC Ancillary Compliance / Requirements / Workflow Classification
+**Status:** AUTHORIZED FOR EXECUTION; section-level classification complete; no legacy source moved, renamed, rewritten, or deleted.
+**Branch:** v003/m07-func-ancillary-content-classification
+**M06 dependency base:** 16aab11293f656ae21f1ca215195186992b60cd2
+**Sources:** AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md; FUNC_REQ_BRAINBOX.md; FUNC_WORKFLOW_BRAINBOX.md.
+
+### P14 preflight and authority cross-check
+
+- Read this ticket, V003 Specification §§9–10, the Origin Conversation, current source contents, current Governance records, M05 CORE schema, M06 EXE index, the M01 map, and current Git refs/state.
+- M03 Governance, M05 CORE, and M06 EXE are independently verified PASS in the M06 closeout records. M06 closeout commit 16aab11293f656ae21f1ca215195186992b60cd2 is pushed; local/upstream refs matched and the M06 worktree was clean before this ticket branch was created.
+- Created this dedicated M07 branch from that clean M06 dependency tip. The branch-specific source review found no ambiguity that blocks classification.
+- Frozen Specification §9 establishes CORE/EXE as evidence-backed capability records and explicitly says the current FUNC workflow/request/compliance records must be mapped by content instead of forced into the dual index. §10 assigns workflow execution to DEVOPS, with legacy RAW/FAILED/PROVEN material to later tickets.
+- The Origin Conversation’s “Research basis and architectural conclusions” section (around line 4234) records an earlier candidate dual-index analysis. A literal search found no references there to the three present filenames. The frozen Specification is the current target authority; the earlier candidate taxonomy was not copied into M07.
+- M08 owns reusable Skills/technology knowledge; M09 owns actual legacy RAW/FAILED/PROVEN DEVOPS reconciliation; M10 owns Fullstack workflows and orchestration. Those future tickets are candidates only; M07 creates no unapproved destination tree.
+
+### M01 source integrity recheck
+
+| Current source | M01 size / logical lines | M01 SHA-256 | Current check | Result |
+|---|---:|---|---|---|
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md | 4,387 bytes / 103 lines | edfff2651ab1005a8d166c06df9553bd8a4f82ba4508d648dbbd8b680365fab9 | 4,387 bytes; exact SHA-256 match | Unchanged |
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md | 4,943 bytes / 111 lines | e2d9ec14ca1d96703fca5be75316a92efa261b245307923be9f78cb986bd8e90 | 4,943 bytes; exact SHA-256 match | Unchanged |
+| AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md | 11,857 bytes / 230 lines | 7a73a3b43226ddd5eb9c6119274b95f2bd623d5fdb30a30573d65447ae5602bd | 11,857 bytes; exact SHA-256 match | Unchanged |
+
+The SHA-256 and byte-size checks confirm the M01 source content remains unchanged. No source text or secret value was copied into a new policy record. The following tables are a classification and reference ledger; they do not promote the historical instructions to current authority.
+
+### FQ_MUST_README.md — section dispositions
+
+| Exact source section / lines | Classification | Canonical disposition |
+|---|---|---|
+| Header and mandatory compliance notice, lines 5–18 | Governance; local FUNC navigation; historical/reference-only | Current system-wide authority and read order belong to Governance and root/AI navigation. Retain this file as provenance; do not treat its old “Root authority” label as current. |
+| §1 Mandatory Reading Order, Steps 1–4, lines 22–48 | Local FUNC README/navigation; Governance; historical/reference-only | Keep only local source navigation in FUNC README. Ticketed migrations follow the active P14 preflight and ticket-specific authorities; the old universal sequence does not replace them. |
+| Standing Instruction Pattern, lines 50–58 | Governance/Ticketing and Documentation; deprecated/superseded procedure | System-wide authorization and ticket practice point to Governance. The old request-file → compliance-file → follow-up chain is not recreated or executed by M07. |
+| Step 5 Update Note, lines 60–72 | CORE schema/reference; DEVOPS workflow; Skills technology; historical/reference-only | Agent capability data belongs in M05 CORE records. Chat/email notification mechanics are only future workflow candidates; no email was sent and no external notification was authorized here. |
+| §2 Enforcement and §3 Compliance Checkpoint, lines 75–87 | Governance; local FUNC navigation | Governance owns active system-wide compliance and ticket rules. This retained text is not copied as a second policy. |
+| §4 Function-Area Change Request Reference, lines 89–end | Governance/Ticketing; reference-only; M19/M20 | Its legacy pointer is retained as provenance. Current canonical change/ticket governance is GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md; M19 reconciles references and M20 alone may assess source retirement. |
+
+### FUNC_REQ_BRAINBOX.md — request dispositions
+
+| Exact source section / lines | Classification | Canonical disposition |
+|---|---|---|
+| Request 1, initial capability report, lines 10–56 | CORE record schema/reference; Governance Evidence/Security/Ticketing; historical/reference-only | M05’s eight CORE records and required status fields are the active capability schema. Safe-example and limitation principles refer to Governance; suggested examples are not execution evidence. Do not create a second report schema or claim the examples were run. |
+| Request 2, mandatory file submission/report compilation, lines 58–111 | CORE record schema/reference; Governance Naming/Documentation/Evidence; deprecated/superseded path template | M05’s canonical agent CORE paths replace the old flat per-agent report outputs for current capability records. Preserve the source file and its historical instructions; do not create an unlisted-agent placeholder or rewrite it here. |
+
+### FUNC_WORKFLOW_BRAINBOX.md — section dispositions
+
+| Exact source section / lines | Classification | Canonical disposition |
+|---|---|---|
+| §1 Document Purpose, lines 15–27 | DEVOPS workflow; historical/reference-only | The general AI-assisted development goal is not a current approved executable workflow. Candidate process classification belongs to M09/M10 after their preflights. |
+| §2.1 Automation Layer, lines 31–34 | Skills/technology; DEVOPS workflow; historical/reference-only | Generic n8n/email knowledge may be considered by M08; actual agent routing procedure belongs to M10 if supported. n8n is described as learning-stage; no current execution is proven. |
+| §2.2 Purpose, lines 35–42 | Governance Evidence/Promotion; Portfolio M16; historical/reference-only | Engagement truth and promotion criteria reference Governance and later Portfolio work. Keep unpaid spec/trial versus paid-client truth; do not copy it into CORE/EXE. |
+| §2.3 Task Intake and Assignment, lines 43–49 | DEVOPS workflow/orchestration; CORE reference | Fullstack routing is a candidate for M10; agent capability evidence remains in M05 CORE. The listed role assignment is not a standing agent authority. |
+| §2.4 Dependency and Sequencing, lines 51–59 | DEVOPS workflow/orchestration; historical/reference-only; deprecated authorization wording | Candidate sequencing belongs to M10. The generic instruction for agents to push to a local device/repository before notifying another agent is superseded by current task-specific authorization and Governance. See M07-AUTH-01. |
+| §2.5 Human-in-the-Loop / Version Control / Knowledge Base, lines 61–68 | Governance; local reference/navigation | Current approval, Git, and preservation rules belong to Governance. Retain the source’s links as historical references; do not duplicate policy. |
+| §2.6 Why Email Matters, lines 69–80 | DEVOPS workflow; Skills/technology; Governance Security; historical/reference-only | Email-trigger procedure may be considered by M10 and generic email technology by M08. The source itself says it has not been tested; per-agent inbox connectivity is NOT VERIFIED. |
+| §2.7 Career Objective, lines 81–89 | Milestones M17/M18; Portfolio M16; reference-only | Career and milestone goals are outside FUNC capability indexing; refer to the owning domains and preserve the historical source. |
+| §3 Core Principles, lines 91–102 | Governance Evidence/Ticketing/Promotion; historical/reference-only | Current human approval, branch, evidence, and engagement rules belong to Governance. The legacy principle list is not copied as an independent rule set. |
+| §4 System Components, lines 104–115 | DEVOPS architecture/workflow; Skills/technology; historical/reference-only | n8n/email knowledge may be considered by M08; actual orchestration belongs to M10. This inventory does not prove a connector is live or authenticated. |
+| §5 AI Agent Roles and Hierarchy, lines 117–133 | CORE reference; DEVOPS orchestration; historical/reference-only | M05 is the canonical per-agent capability record. The “typical strength” table is not verified execution or fixed routing authority; M10 may classify coordination patterns. |
+| §6 End-to-End Workflow, lines 135–146 | DEVOPS workflow; Governance/Ticketing/Promotion; deprecated authorization wording | Candidate sequence belongs to M09/M10. The generalized push-and-notify step is not standing authority to push; approval and Git operations follow Governance and the authorized ticket. |
+| §7 Automation Layer, lines 149–163 | Skills/technology; DEVOPS workflow; historical/reference-only | M08 may own reusable n8n/email knowledge; M09/M10 own any supported procedure. The source describes n8n as learning-stage and email as untested, not proven. |
+| §8 Email Trigger Protocol, lines 165–184 | Skills/technology; DEVOPS workflow; historical/reference-only | Draft tags and routing mechanics are not active automation. M08/M10 may assess them; do not send email or assert successful triggers from this source. |
+| §9 Verification and Validation Loop, lines 186–200 | Governance Evidence; DEVOPS procedure; historical/reference-only | “Proven means tested” and evidence integrity are canonical Governance. A concrete workflow implementation may be classified in M10; avoid a competing copy. |
+| §10 Standing Rule, lines 202–208 | Local FUNC README/navigation; Governance; superseded reading sequence | Local navigation belongs in FUNC README. Current root and ticket-specific requirements govern; this legacy sequence does not override the Phase 02 P14 preflight. |
+| §11 Variables, lines 210–219 | DEVOPS workflow configuration; historical/reference-only | Task variables belong to an applicable M09/M10 procedure, not CORE. No configuration or runtime variables were changed by M07. |
+| Revision note and document end, lines 221–230 | Governance Documentation/provenance; reference-only | Preserve source attribution and historical location; current documentation authority is Governance. |
+
+### Flags, source retention, and completion state
+
+#### M07-WF-01 — BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact objects:** FUNC_WORKFLOW_BRAINBOX.md §§1, 2.1, 2.3–2.4, 2.6, 4, 6–8, and 11.
+- **Issue/evidence:** these passages mix reusable n8n/email technology knowledge with system-specific routing and workflow procedures. M08, M09, and M10 own different parts, and the latter workflow destinations are not yet populated.
+- **Migration impact:** no content is moved or treated as an active canonical workflow by M07; the source-specific classification is recorded above.
+- **Next-ticket impact:** M08 may take generic technology knowledge; M09/M10 determine executable DEVOPS/Fullstack procedure destinations from their own inspected evidence. M07 does not block those tickets.
+- **Classification reason:** the ticket explicitly allows workflow destinations to depend on M09/M10; guessing a target or migrating now would violate the destination boundary.
+- **Correction/owner:** no M07 file move; M08/M09/M10 classify their authorized content, with M19 reconciling references and M20 assessing source retirement.
+
+#### M07-AUTH-01 — BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact objects:** FUNC_WORKFLOW_BRAINBOX.md §2.4 line 59 and §6 line 141 generalize agent push/notify; §3 line 97 says no direct pushes to main, which aligns with current branch discipline but does not grant push authority.
+- **Issue/evidence:** the legacy text contains general agent push/notify directions. Current Governance makes technical access distinct from action authorization and assigns ticket-specific Operator authority. The standalone workflow wording cannot grant an agent permission to push.
+- **Migration impact:** M07 classifies that wording as deprecated/superseded authorization language; it is not copied into an active workflow or executed.
+- **Next-ticket impact:** M10 may define workflow ordering under current Governance. This finding does not stop M07 classification or M08/M09.
+- **Classification reason:** current Governance is canonical and the affected instructions remain only in retained historical sources.
+- **Correction/owner:** M07 records the supersession; M10 references current Governance; M19 reconciles remaining references; M20 retains source-removal authority.
+
+#### Automation evidence and source retirement
+
+The workflow describes n8n as learning-stage and the email trigger system as not yet tested (FUNC_WORKFLOW_BRAINBOX.md §§2.1, 2.6, 7–8). These concepts remain explicitly UNPROVEN / NOT VERIFIED; M07 ran no automation and sent no email. This is a scoped evidence state, not a proven capability.
+
+All three legacy sources remain unchanged at their original paths. M07 does not authorize source removal. M19 owns complete post-migration reference reconciliation; M20 is the earliest source-retirement eligibility review, only after canonical destination, references, evidence, and integrity are verified.
+
+**M07 classification result:** all substantive sections have a documented canonical owner or explicit future candidate/disposition. No competing Governance text was created. No source was moved, renamed, rewritten, or deleted. No blocking flag remains.
+**Git lifecycle at this map snapshot:** implementation classification is recorded on the dedicated M07 branch; implementation publication and the separate execution report/closeout will be recorded after their respective Git operations.
