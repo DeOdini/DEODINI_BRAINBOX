@@ -332,5 +332,17 @@ No blocking Batch C flags remain. `M09-REF-02` / `M09-REF-03`, `M10-WS-01`, and 
 - M15 implementation is committed and pushed on its dedicated branch v003/m15-foothive-sandbox-evidence-iteration. Commit 6c25f120fcce1d90f583921b3db0f7252e5f30fc was fetched and confirmed as both local and origin tip.
 - The canonical FootHive Sandbox case-study tree contains the existing trial records/evidence, original Deep Audit with provenance, integrity manifest, and truthful Iteration 01 / planned Iteration 02-03 / planned mastery statuses.
 - The legacy FootHive source remains intact. Twenty-nine source-only product-image/catalog files have no approved target and remain BATCH-DEFERRED / NON-BLOCKING (M15-ASSET-01). Eleven stale historical links remain byte-preserved for M19 reference reconciliation (M15-REF-01).
-- No PR or merge was created. M15 remains unmerged; independent ChatGPT M15 verification PASS (2026-10-09). Verification-closeout publication and later Batch D Git closure remain pending.
+- No PR or merge was created. M15 remains unmerged; independent ChatGPT M15 verification PASS (2026-10-09). The nine-file verification closeout was committed as 2baffb5e554ec62a2ee8f422f66c428efe654beb and pushed to the dedicated M15 branch. Batch D Git closure remains pending.
 - Detailed execution findings, hash evidence, Git staging/path-length handling, and whitespace preservation are in V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md. The Operator request and Codex progress messages are in V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md.
+
+---
+
+## Current Phase 02 execution — V003-M16 — 2026-10-09
+
+This section supersedes the earlier M15-only status as the current ticket state.
+
+- M15 independent-verification closeout commit 2baffb5e554ec62a2ee8f422f66c428efe654beb is pushed on its dedicated branch.
+- M16 FootHive Production Summary & Portfolio Migration is implemented and pushed on v003/m16-foothive-production-portfolio at b615856aab6013c43917095615342175a36e6ab3, based on the verified M15 tip. No PR or merge was created.
+- M16 execution report, exact Operator-Codex conversation record, Migration Map, and Phase 02 status closeout are published on the same M16 branch in the documentation closeout.
+- M16-README-01 (missing parent Portfolio README) is BATCH-DEFERRED / NON-BLOCKING and assigned to M19 parent-level README/population reconciliation. M15-ASSET-01 and M15-REF-01 remain non-blocking with their recorded owners.
+- Implementation documentation/link/whitespace checks passed. No fresh live-site verification, application test, form submission, or deployment was performed. Independent ChatGPT verification of M16 remains pending.

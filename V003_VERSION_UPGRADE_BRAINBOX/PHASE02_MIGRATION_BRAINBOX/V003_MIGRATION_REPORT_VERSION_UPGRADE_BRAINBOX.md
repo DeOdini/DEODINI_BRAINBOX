@@ -6848,3 +6848,85 @@ The Codex execution record says no application/browser test or deployment was ru
 M16 is in the same Batch D and may progress after this M15 independent verification closeout is committed on M15 and the worktree is clean. Create M16 on its own approved branch from the verified M15 branch tip; run M16-specific P14. No M15 PR or merge is required before M16 within the same Batch D.
 
 No staging, commit, push, PR, merge, source retirement, test or deployment was performed by ChatGPT in this verification.
+
+
+---
+
+# V003-M16 Codex Execution Report — 2026-10-09
+
+**Ticket:** V003-M16 — FootHive Production Summary & Portfolio Migration
+**Execution result:** PASS — implementation committed and pushed; independent ChatGPT verification pending.
+**Branch:** v003/m16-foothive-production-portfolio
+**P14 preflight:** PASS; no blocking flag.
+**Merge/PR:** None. The branch remains unmerged.
+
+## 1. M15 ChatGPT verification-state cross-check and publication
+
+Before M16, I reviewed the nine unstaged M15 verification edits made by ChatGPT. They updated the Sandbox case-study README and retrospective, Sandbox case-studies README, root README, Phase 02 README, Phase 02 conversation and report, V003 parent README, and living Migration Map. Their content documented ChatGPT's independent PASS and the two M15 deferred flags. The edits did not alter or replace the copied FootHive source evidence.
+
+The nine reviewed files were staged alone. The staged diff passed git diff --cached --check. Commit 2baffb5e554ec62a2ee8f422f66c428efe654beb (V003-M15 record independent verification) was pushed to origin/v003/m15-foothive-sandbox-evidence-iteration. A subsequent fetch/check confirmed local HEAD and the remote branch both at that commit, with a clean worktree. M15 remains unmerged and has no PR.
+
+M15-ASSET-01 and M15-REF-01 remain BATCH-DEFERRED / NON-BLOCKING. Neither requires source-only assets to be placed in M16 or archived links to be rewritten. The M15 source/evidence remains canonical in Sandbox.
+
+## 2. M16 P14 preflight
+
+- Read the complete authorized M16 ticket and confirmed its two targets: a Production summary and a Portfolio child with the named records.
+- Cross-checked frozen V003 Specification §8 and the M14 Production README. The Production case-study branch is a sibling of Fullstack Production under PROD_DEVOPS_BRAINBOX.
+- Cross-checked the relevant FootHive Origin Conversation and current M15 canonical Sandbox records. The trial is based on a public Upwork brief and the Operator role-played the client; the records do not establish paid-client work. The later Operator Addendum is used for its newer clarification that the existing T20 form response was Operator-confirmed and that Firefox/Safari were manually checked by the Operator.
+- Inspected the actual M14 Production tree, M15 Sandbox case study, and Portfolio source. The M16 target paths were absent before work. PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md is zero bytes and remains unchanged.
+- Reviewed the T20 production section of the canonical Sandbox Build Report. It records a ready, public Netlify deployment from the T20 merge commit and post-deployment checks. No M16 current-live recheck was performed.
+- M15's deferred asset and reference flags do not affect the M16 reference paths or migration correctness.
+- Found M16-README-01, classified BATCH-DEFERRED / NON-BLOCKING, detailed below. No blocking preflight flag exists.
+
+The dedicated M16 branch was created from verified M15 commit 2baffb5e554ec62a2ee8f422f66c428efe654beb. This preserves M15 dependency ancestry and gives M16 its own ticket branch.
+
+## 3. Implementation
+
+Created the Production records:
+
+- AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
+- AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
+
+Created the Portfolio records:
+
+- PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md
+- PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/HANDOFF_FOOTHIVE_BRAINBOX.md
+- PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md
+- PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md
+
+Updated the current local tree and population-state records in README_BRAINBOX.md, README_DEVOPS_AI_BRAINBOX.md, and README_PROD_DEVOPS_BRAINBOX.md. Added the M16 source dispositions and M16-README-01 to MIGRATION_MAP_V003_BRAINBOX.md.
+
+Production records summarize the T20 release evidence from the canonical Sandbox Build Report and link back to that evidence. Portfolio describes the static one-page site, the T20 release, integration scope, handoff, and trial disclosure. The T20 deployment identifier, release commit, published timestamp, public URL, and recorded QA outcomes are attributed to the existing source report; M16 did not independently query Netlify.
+
+The Operator Addendum is cited for the later Operator confirmation of Google Forms row persistence. The documented website limitation—its inability to inspect the cross-origin response sheet—is retained. No second form response or duplicate screenshot was created.
+
+No Sandbox evidence set, historical record, product image, catalog, or audit was copied into Production or Portfolio. The empty legacy Portfolio placeholder remains zero bytes. No source file was moved, renamed, or deleted, and no secret or environment value was introduced.
+
+## 4. Flag
+
+### M16-README-01 — BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact object:** PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md.
+- **Defect/evidence:** This parent README appears in the frozen target tree but is absent. M16 Target B enumerates the FootHive child and its four records, not the parent README. M19 is the authorized README / Canonical Reference / Population-State Reconciliation ticket. M16 updated the root current-local tree and the FootHive child README to show the actual partial state and assigned owner.
+- **Migration impact:** The FootHive child has its own navigation and the root README exposes its current files. Parent-level Portfolio navigation is incomplete until M19.
+- **Next-ticket impact:** M16's required Production and FootHive Portfolio records do not depend on the parent README. M19 owns the global parent README/reconciliation; M20 must retain the empty placeholder until its separately authorized review.
+- **Classification reason:** BATCH-DEFERRED / NON-BLOCKING under the Operator flag rule. Creating this parent README in M16 would expand the enumerated ticket scope; its absence does not invalidate the authorized child records or references.
+- **Correction timing/owner:** M19 — README / Canonical Reference / Population-State Reconciliation. Do not add it as an unscoped M16 file.
+
+## 5. Verification and limits
+
+- Checked eight authored/updated DEVOPS and M16 Markdown files: 0 broken relative local links and 0 trailing-whitespace lines.
+- git diff --check passed for the tracked M16 changes; git diff --cached --check passed before the implementation commit.
+- Confirmed the six target files exist and the legacy Portfolio placeholder remains at 0 bytes.
+- Confirmed only the ten scoped implementation/navigation/map files were committed.
+- No application test suite, browser/device QA, live Netlify check, Google Form submission, deployment, or website source change was performed for M16. The T20 QA results are historical evidence referenced from the Sandbox Build Report, not M16 test results.
+
+## 6. Git publication and disposition
+
+- M15 verification closeout: 2baffb5e554ec62a2ee8f422f66c428efe654beb, pushed to the dedicated M15 branch before creating M16.
+- M16 branch base: 2baffb5e554ec62a2ee8f422f66c428efe654beb.
+- M16 implementation commit: b615856aab6013c43917095615342175a36e6ab3, “V003-M16 migrate FootHive Production and Portfolio”.
+- GitHub origin/v003/m16-foothive-production-portfolio was verified at the implementation commit after push.
+- M16 report, conversation, README status, and migration-map Git closeout are recorded on the same M16 branch and pushed after the implementation commit.
+- M16 remains unmerged with no PR. Independent ChatGPT verification is pending.
+- Final M16 result: implementation PASS; no blocking flags; M16-README-01 is deferred to M19.

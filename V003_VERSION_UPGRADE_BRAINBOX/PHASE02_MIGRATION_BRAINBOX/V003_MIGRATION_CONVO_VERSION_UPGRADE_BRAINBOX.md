@@ -3274,3 +3274,93 @@ M15-ASSET-01 = BATCH-DEFERRED / NON-BLOCKING (29 source-only files; 25 product i
 Five authored case-study/navigation Markdown files have 33 valid local links / 0 broken and 0 trailing-whitespace lines. Iteration 01 remains the current evidence dataset; Iterations 02/03 and mastery remain PLANNED; website version history is distinct; no physical iteration subfolders. The earlier M15 conversation transcript assembly error is visibly annotated and the corrected Operator prompt is present later. The documentation closeout commit passes `git show --check`; historical copied-record whitespace remains unchanged for source equality.
 
 **M16 is substantively dependency-ready after this independent closeout is committed and the M15 worktree returns clean.** Do not move unresolved assets or rewrite archived links as a hidden part of M16. No PR/merge, application tests, deployment, or source retirement was performed by ChatGPT.
+
+
+---
+
+## Operator–Codex conversation — M15 verification and V003-M16 — 2026-10-09
+
+### Operator request (verbatim)
+
+<pre>
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE OF M15 BY CHATGPT, ONCE DONE, NOW PROCEED TO M16, ONCE YOU ARE DONE WITH M16, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+**# V003-M16 — FootHive Production Summary & Portfolio Migration**
+
+**Status:** AUTHORIZED FOR EXECUTION
+**Suggested branch:** `v003/m16-foothive-production-portfolio`
+**Dependencies:** `M15; M14 for production structure.`
+
+**Canonical authorities**
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+## Target A — Production
+
+`CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/`
+
+with:
+
+- `README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md`
+- `PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md`
+
+Production records summarize actual production/release operation only and reference the canonical Sandbox evidence where needed.
+
+## Target B — Portfolio
+
+`PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/`
+
+with:
+
+- `README_FOOTHIVE_PORTFOLIO_BRAINBOX.md`
+- `HANDOFF_FOOTHIVE_BRAINBOX.md`
+- `PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md`
+- `CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md`
+
+## Rules
+
+- Portfolio answers what was built/handed off/demonstrated.
+- Preserve truthful engagement/disclosure status; do not imply paid-client work where evidence says spec/trial/unpaid.
+- Production and Portfolio do not copy the canonical Sandbox evidence set.
+- Existing `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` was observed empty at ticket-drafting time; do not invent content from it.
+- Handoff/case-study references must point to real artifacts/evidence.
+
+## Success gate
+
+- Production and Portfolio responsibilities are distinct.
+- Canonical FootHive evidence remains in Sandbox.
+- No competing evidence copies.
+- Disclosure/provenance is truthful.
+- Empty legacy portfolio placeholder remains pending M20.
+</pre>
+
+### Codex progress messages (verbatim, in order)
+
+1. I’m checking the M15 branch and its remote first to see whether any verification edits remain unpublished. Then I’ll run M16’s ticket-specific preflight against the frozen V003 authorities, current M15 evidence, and the actual Production/Portfolio sources before creating the M16 branch.
+
+2. The M15 cross-check found nine unstaged verification edits on the M15 branch. I’m reviewing their contents now so I can isolate and publish only those changes before starting M16.
+
+3. The M15 edits are scoped to the independent-verification closeout: report and conversation records, the migration ledger, and status/readme references. They do not alter the transferred FootHive source evidence. The M15 tip matches its GitHub branch; I’m staging only those nine reviewed files and will publish them before opening M16.
+
+4. M15’s verification closeout is pushed as commit `2baffb5`. I’m confirming the remote tip and clean worktree, then I’ll read the exact M16 ticket and inspect the authoritative Production/Portfolio sources before creating the M16 branch.
+
+5. M15 is now clean and synchronized at `2baffb5`. The M16 preflight passes: the frozen tree places Production case studies under `PROD_DEVOPS_BRAINBOX`, the approved M16 target is absent as expected, and the production release record plus Operator’s trial/disclosure and form-persistence clarification are available. M15’s deferred asset and archived-link flags do not block this ticket. I’m creating M16 from the verified M15 tip now.
+
+6. The source record establishes a real T20 Netlify release on 2026-10-01, with the deployed commit and post-deployment checks documented. The project’s own history also identifies FootHive as a workflow trial based on a public brief, not paid-client work; M16 will keep that disclosure explicit and use links to the Sandbox records instead of copying them.
+
+7. The M16 records and navigation are in place. I’ve kept the empty legacy Portfolio file unchanged and added a non-blocking flag for the missing parent `README_PORTFOLIO_BRAINBOX.md`: M16’s target is the FootHive child, while M19 owns parent-level README and population reconciliation. I’m checking the final tree, references, and staged scope before the implementation push.
+
+8. M16 implementation is committed locally as `b615856`; the eight-document link/whitespace checks passed, and the legacy zero-byte Portfolio placeholder remains untouched. The Git push process is still open, so I’m checking whether GitHub received the branch before I write the execution closeout.
+
+9. M15’s verification commit and the M16 implementation are already pushed. I’m finishing the M16 report and verbatim conversation record now, then I’ll push those closeout documents and confirm the branch’s final GitHub state.
+
+
+### Codex final response (verbatim)
+
+M15’s nine verification-state edits were cross-checked, committed as `2baffb5e554ec62a2ee8f422f66c428efe654beb`, and pushed to its dedicated branch.
+
+M16 is implemented on `v003/m16-foothive-production-portfolio`; implementation commit `b615856aab6013c43917095615342175a36e6ab3` and the documentation closeout are pushed to GitHub. The local and remote M16 tips match, the worktree is clean, and the branch has no PR or merge.
+
+M16 creates the two Production summary records and four Portfolio records, with current tree/navigation and Migration Map updates. The empty legacy Portfolio placeholder and Sandbox evidence remain intact. The missing parent `README_PORTFOLIO_BRAINBOX.md` is documented as `M16-README-01`, BATCH-DEFERRED / NON-BLOCKING, assigned to M19.
+
+No M16 live-site check, application test, form submission, or deployment was performed; the report references the existing T20 production evidence. Independent ChatGPT verification of M16 remains pending.

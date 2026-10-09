@@ -1978,3 +1978,12 @@ The M16 Portfolio records preserve the disclosure that FootHive was a DEODINI wo
 - **Correction timing/owner:** M19 — README / Canonical Reference / Population-State Reconciliation. Do not create or rewrite the parent Portfolio README as an unscoped M16 change.
 
 M15-ASSET-01 and M15-REF-01 remain BATCH-DEFERRED / NON-BLOCKING as recorded in §44; neither is required for M16 because no source-only asset or historical link is promoted or rewritten. The empty legacy Portfolio placeholder and all canonical Sandbox source/evidence remain intact. No file was moved, renamed, deleted, or copied from the historical evidence set.
+
+
+### M15 verification and M16 implementation Git state — 2026-10-09
+
+- ChatGPT's nine M15 verification-state edits were reviewed, staged, committed as 2baffb5e554ec62a2ee8f422f66c428efe654beb, and pushed to the dedicated M15 branch. A fetch confirmed local and origin tips equal and the worktree clean.
+- M16 branch: v003/m16-foothive-production-portfolio, created from the verified M15 tip above.
+- M16 implementation commit: b615856aab6013c43917095615342175a36e6ab3. The origin branch was checked with ls-remote and matched the commit after push.
+- The M16 report/conversation and this Migration Map Git closeout are included in the subsequent documentation closeout on the same branch.
+- Neither ticket branch was merged and no PR was created. Batch D remains open; M16 independent ChatGPT verification is pending.
