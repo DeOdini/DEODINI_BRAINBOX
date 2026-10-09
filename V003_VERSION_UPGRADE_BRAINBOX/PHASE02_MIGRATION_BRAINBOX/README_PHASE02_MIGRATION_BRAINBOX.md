@@ -263,3 +263,15 @@ This update supersedes the earlier line that described M12 as merely next after 
 - Codex structural/link/whitespace verification: PASS. No blocking M12 flags. Independent ChatGPT verification of M12: pending.
 - The M12 migration-map entry, execution report, status updates, root-tree navigation reconciliation, and exact Operator–Codex transcript are in a separate documentation closeout commit on the same M12 branch.
 - No M12 PR or merge was created. M13 becomes eligible after independent M12 verification and clean handoff.
+
+
+---
+
+## Current Batch C verification override — 2026-10-09
+
+- M09: PASS.
+- M10: PASS.
+- M11: PASS.
+- M12 Backend Sandbox Taxonomy Migration: PASS.
+- M12 blocking flags: NONE.
+- M13: next dependency ticket after this M12 verification closeout is committed and the M12 worktree is clean.
