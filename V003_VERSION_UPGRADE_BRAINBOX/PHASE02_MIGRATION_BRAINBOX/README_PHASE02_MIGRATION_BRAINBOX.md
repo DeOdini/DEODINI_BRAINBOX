@@ -345,4 +345,23 @@ This section supersedes the earlier M15-only status as the current ticket state.
 - M16 FootHive Production Summary & Portfolio Migration is implemented and pushed on v003/m16-foothive-production-portfolio at b615856aab6013c43917095615342175a36e6ab3, based on the verified M15 tip. No PR or merge was created.
 - M16 execution report, exact Operator-Codex conversation record, Migration Map, and Phase 02 status closeout are published on the same M16 branch in the documentation closeout.
 - M16-README-01 (missing parent Portfolio README) is BATCH-DEFERRED / NON-BLOCKING and assigned to M19 parent-level README/population reconciliation. M15-ASSET-01 and M15-REF-01 remain non-blocking with their recorded owners.
-- Implementation documentation/link/whitespace checks passed. No fresh live-site verification, application test, form submission, or deployment was performed. Independent ChatGPT verification of M16: PASS (2026-10-09); verification-closeout publication pending.
+- Implementation documentation/link/whitespace checks passed. No fresh live-site verification, application test, form submission, or deployment was performed. Independent ChatGPT verification of M16: PASS (2026-10-09); closeout commit 36406b6c13b0c6fa8f2024032ae9349f6b25607b was pushed and fetched with the M16 branch clean.
+---
+
+## Current Phase 02 execution — V003-M17 — 2026-10-09
+
+- M16 independent-verification closeout 36406b6c13b0c6fa8f2024032ae9349f6b25607b was pushed and fetched; M16 local/origin tips matched, and the worktree was clean before M17.
+- M17 branch v003/m17-legacy-milestones-reconciliation is based on that verified M16 tip. Its M01 Migration Map classification commit bd7f294db67a7870113882e47dd4558555dc92c1 was pushed and fetched at the same remote tip.
+- M17 inspected both MILESTONES source records and Git provenance. The MILESTONES_BRAINBOX future Router plan is distinct; no frozen physical archive destination exists for the legacy checkpoint.
+- M17-DEST-01 blocks moving, renaming, or deleting the two legacy sources until Operator destination/disposition approval. M18 may create the separate planned Router record without touching them; M20 source retirement remains blocked.
+- The M17 execution report, exact conversation record, and final status are in the separate documentation closeout on this branch. No PR or merge was created.
+
+---
+
+## Current Phase 02 independent verification — V003-M17 — 2026-10-09
+
+- M17 source inspection/classification/map reconciliation: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- Both legacy milestone source files preserve exact M01 hashes/bytes/lines and their original Git blobs; no physical source migration was performed.
+- `M17-DEST-01`: **OPEN / BLOCKING** for moving, renaming, or retiring the original milestone sources; Operator must choose authorized destination/disposition before M20 retirement.
+- M18 is substantively dependency-ready to create the distinct planned Router/Agentic milestones only. Commit and publish this independent verification closeout on M17, confirm clean handoff, then create M18 branch and run its P14.
+- Batch D PR/merge/Git closure remains a batch-boundary requirement before M19.
