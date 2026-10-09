@@ -59,3 +59,10 @@ No additional EXE category is created. Copilot's Playwright configuration is rec
 - [Governance evidence rules](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
 
 **POPULATION STATE:** Four admitted category records and one reserved MEDIA record created by M06.
+
+
+---
+
+## Independent verification status — 2026-10-09
+
+V003-M06 independently verifies **PASS**. Exactly four evidence-backed categories are admitted (RESEARCH, BROWSER, FILE, CODE), all scoped to Codex evidence in frozen §9; MEDIA remains **RESERVED / EXECUTION EVIDENCE PENDING — NOT ADMITTED**. No speculative EXE category exists.

@@ -903,3 +903,41 @@ M06 populated the EXE registry with four admitted categories and reserved MEDIA.
 
 **M06 implementation:** Codex read-back PASS. **Independent ChatGPT verification:** PENDING.
 **M06 implementation publication:** commit `9635e5dd8e20b86ab879b55fc0da9fa63af34991` was pushed to `origin/v003/m06-func-exe-registry-migration`. Local and remote refs matched, the branch tracks `origin`, and the worktree was clean after the implementation push. Git Credential Manager paused that push for authentication; the Operator completed sign-in and the existing push then succeeded. No PR or merge was requested or performed. The status, report, migration-map, and conversation closeout updates are included in this same branch’s publication.
+
+
+---
+
+## 22. ChatGPT independent verification closure — M05 + M06 — 2026-10-09
+
+**M05 independent verification:** PASS.
+**M06 independent verification:** PASS.
+**M06 blocking flags:** NONE.
+**M07 dependency state:** READY AFTER M06 VERIFICATION-CLOSEOUT COMMIT + CLEAN HANDOFF.
+
+M05 archival gap is closed: the eight CORE records, §9 state schema, DeepSeek/Qwen treatment, retained source integrity, and M05 branch/commit state independently verify PASS.
+
+M06 independently confirms:
+
+- exact EXE slots: RESEARCH, BROWSER, FILE, CODE, MEDIA;
+- admitted: RESEARCH/BROWSER/FILE/CODE for the evidence-scoped Codex operations in frozen §9;
+- Copilot Browser configuration remains unverified and not admitted;
+- DeepSeek/Qwen are unassigned;
+- MEDIA remains RESERVED / EXECUTION EVIDENCE PENDING / NOT ADMITTED;
+- no speculative category exists;
+- CORE↔EXE assignments match the frozen matrix;
+- 16-file focused scan: 105 links / 0 broken;
+- 20-file independent scan: 113 links / 0 broken;
+- implementation commit `9635e5dd8e20b86ab879b55fc0da9fa63af34991`;
+- publication-closeout commit/current pre-verification tip `a6fe5769faaa36c60def8c2d255654657d7d2ecb`;
+- no M06 PR/merge.
+
+### M06-LINK-01
+
+Codex's historical report recorded 120 links/0 broken for its 20-file scan. Independent current scan returns 113/0 broken.
+
+**Classification:** BATCH-DEFERRED / NON-BLOCKING reporting-count discrepancy.
+**Migration impact:** NONE.
+**M07 impact:** NONE.
+**Integrity conclusion:** 0 broken links confirmed.
+
+Older M05/M06 “independent verification pending” lines are historical pre-verification states and are superseded by this section.

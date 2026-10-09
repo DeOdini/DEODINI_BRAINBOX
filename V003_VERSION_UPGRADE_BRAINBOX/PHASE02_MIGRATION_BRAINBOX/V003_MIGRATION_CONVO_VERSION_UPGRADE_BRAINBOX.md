@@ -1713,3 +1713,33 @@ M06’s implementation commit is on its dedicated branch. I’m finishing the ti
 ```text
 M06 implementation commit `9635e5dd8e20b86ab879b55fc0da9fa63af34991` and the ticket’s report, migration-map, conversation, and live-status closeout are pushed to `origin/v003/m06-func-exe-registry-migration`. Local and remote branch tips match; the worktree is clean. No PR or merge was opened. Independent ChatGPT verification remains pending.
 ```
+
+---
+
+# ChatGPT Verification Closure — M05 Archival Gap + M06 Substantive Review
+
+The Operator called out two repeated verification gaps:
+
+1. M05 substantive verification had completed, but its final archival append was interrupted when RDC went offline.
+2. M06 had only received Git/publication verification, not full substantive EXE verification.
+
+ChatGPT completed both reviews.
+
+**M05:** INDEPENDENT VERIFICATION PASS.
+**M06:** INDEPENDENT VERIFICATION PASS.
+**M06 blocking flags:** NONE.
+**M06-LINK-01:** BATCH-DEFERRED / NON-BLOCKING — Codex recorded 120 links/0 broken; independent current 20-file scan found 113/0 broken. Integrity result is unchanged: zero broken links.
+
+M06 target/admission review confirmed exactly RESEARCH, BROWSER, FILE, CODE, and reserved MEDIA; no speculative EXE category; Codex is the admitted executor for the four admitted categories; Copilot Browser remains configuration-only/unverified; DeepSeek/Qwen have no EXE assignment; MEDIA remains unadmitted.
+
+M06 Git history independently confirmed:
+
+- M05 parent `585f9600ca4940aab750488b2f46f7cb72a94d69`;
+- M06 implementation `9635e5dd8e20b86ab879b55fc0da9fa63af34991`;
+- M06 publication closeout `a6fe5769faaa36c60def8c2d255654657d7d2ecb`;
+- local/upstream M06 tips matched at `a6fe5769...` before this ChatGPT write;
+- no M06 PR or merge.
+
+M07 dependencies M03/M05/M06 are independently verified PASS.
+
+**M07 is dependency-ready after this verification closeout receives an M06 commit and the M06 worktree is clean.**

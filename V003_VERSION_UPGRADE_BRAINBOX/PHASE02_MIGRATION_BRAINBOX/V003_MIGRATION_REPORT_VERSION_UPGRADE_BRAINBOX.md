@@ -3269,3 +3269,205 @@ Updated navigation and live status records in the FUNC parent README, CORE regis
 - Git Credential Manager paused the push for sign-in. The Operator completed the GitHub sign-in; the already-running push then completed successfully. No authentication dialog was automated by Codex.
 - No pull request or merge was opened or performed.
 - The report, migration map, conversation record, and live navigation/status records are included in the documentation closeout on this same ticket branch. Independent ChatGPT verification remains PENDING; publication does not imply independent review.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M05 Archival Completion and V003-M06 FUNC EXE Registry
+
+**Date:** 2026-10-09
+**Scope:** Close the previously completed-but-unarchived M05 independent review and perform the full M06 substantive independent review.
+**M05 result:** **PASS**
+**M06 result:** **PASS**
+**Blocking flags for M07:** **NONE**
+**Non-blocking M06 note:** `M06-LINK-01` — link-count metric discrepancy only.
+**M07 dependency state:** **READY AFTER M06 VERIFICATION-CLOSEOUT COMMIT + CLEAN HANDOFF**
+
+## M05 — final independent verification record
+
+The M05 substantive verification was completed before M06 but its final archival append was interrupted when the Remote Desktop Commander relay went offline. This section closes that record.
+
+Verified M05 facts:
+
+- dedicated branch: `v003/m05-func-core-registry-migration`;
+- ticket commit: `585f9600ca4940aab750488b2f46f7cb72a94d69`;
+- local and remote M05 branch refs match that commit;
+- exactly eight CORE agent records exist: ChatGPT, Claude, Cline, Codex, Copilot, DeepSeek, Grok, Qwen;
+- all eight records contain the required §9 state sections: EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, AUTHORIZED, LIMITATIONS, CANONICAL EXE REFERENCES, LAST VERIFIED;
+- the eight original `*_FUNC_BRAINBOX.md` sources remain retained and match the M01 byte/line/SHA-256 baselines;
+- DeepSeek and Qwen use only the approved §9 role baseline and do not fabricate connection/authentication/execution evidence;
+- the M05 link check returned 0 broken local links;
+- no legacy FUNC source was moved, renamed, deleted, or rewritten by M05;
+- M05's capability-state separation matches frozen Specification §9.
+
+**V003-M05 independent ChatGPT verification: PASS.**
+
+Any historical/current-state text saying M05 independent verification is pending is superseded by this record and must be reconciled in the M06 verification-closeout commit.
+
+## M06 — target and admission verification
+
+Authorized target requires only:
+
+- RESEARCH;
+- BROWSER;
+- FILE;
+- CODE;
+- MEDIA.
+
+Live M06 target contains exactly those five category directories plus the EXE parent README. No additional EXE category exists.
+
+Frozen P06 matrix vs M06 registry:
+
+| Category | Frozen state | M06 state | Independent result |
+|---|---|---|---|
+| RESEARCH | ADMITTED — Codex | ADMITTED — Codex public-source research | PASS |
+| BROWSER | ADMITTED — Codex; Copilot config unverified | ADMITTED — Codex; Copilot explicitly unverified | PASS |
+| FILE | ADMITTED — Codex | ADMITTED — scoped Codex workspace/file operations | PASS |
+| CODE | ADMITTED — Codex | ADMITTED — scoped FootHive frontend change | PASS |
+| MEDIA | RESERVED / EXECUTION EVIDENCE PENDING | RESERVED / NOT ADMITTED | PASS |
+
+No category is admitted from tool/plugin/connector presence alone.
+
+## M06 — evidence verification
+
+### RESEARCH
+
+Frozen §9 P06 matrix records Codex retrieval/citation of official GitHub Status history on 2026-10-07.
+
+M06 preserves this as historical public-source research evidence and explicitly does not claim current-session reachability.
+
+**Result:** PASS.
+
+### BROWSER
+
+FootHive BUILD_REPORT T23 records Playwright CLI verification of the local preview, including 320×780, 390×844, 768×1024, and 1440×900 checks, responsive behavior, no horizontal overflow, and interaction checks.
+
+M06 admits Codex only. Copilot's Playwright configuration is retained as configuration evidence and explicitly not promoted to verified execution.
+
+**Result:** PASS.
+
+### FILE
+
+M05 commit `585f960...` and current Git history independently prove scoped repository file operations and commit/push activity in the authorized Brainbox workspace.
+
+M06 limits this admission to the granted workspace/filesystem boundary and does not convert technical access into destructive/write authority.
+
+**Result:** PASS.
+
+### CODE
+
+FootHive BUILD_REPORT T23 records the phone-width Pinterest/header spacing CSS change and Playwright verification.
+
+M06 scopes CODE admission to that evidenced frontend change and explicitly does not claim backend, database, production deployment, broad-framework, or formal-accessibility capability.
+
+**Result:** PASS.
+
+### MEDIA
+
+No verified media output artifact is present in the cited source set.
+
+M06 retains MEDIA as:
+
+`RESERVED / EXECUTION EVIDENCE PENDING — NOT ADMITTED`.
+
+Neither Codex nor Cline is presented as an admitted MEDIA executor.
+
+**Result:** PASS.
+
+## M06 — CORE ↔ EXE reconciliation
+
+Independent read-back confirms:
+
+- ChatGPT — EXE index only; no category assigned;
+- Claude — EXE index only; no category assigned;
+- Cline — EXE index + reserved MEDIA only; not admitted;
+- Codex — RESEARCH/BROWSER/FILE/CODE;
+- Copilot — EXE index + BROWSER candidate; execution explicitly unverified/not admitted;
+- DeepSeek — EXE index only; no category assigned;
+- Grok — EXE index only; no category assigned;
+- Qwen — EXE index only; no category assigned.
+
+DeepSeek/Qwen role descriptions are not used as execution evidence.
+
+**CORE↔EXE mapping:** PASS.
+
+## M06 — link and structural integrity
+
+Focused FUNC/CORE/EXE scan:
+
+- files checked: 16;
+- local links checked: 105;
+- broken: 0.
+
+Broader current 20-file root/FUNC/CORE/EXE/V003 scan:
+
+- files checked: 20;
+- local links checked independently: 113;
+- broken: 0.
+
+Codex's historical M06 report records 120 links / 0 broken for its own 20-file scan.
+
+### M06-LINK-01
+
+**Exact issue:** Codex's recorded total is 120 links; independent current scan of the same 20-file class returns 113.
+
+**Integrity impact:** NONE. Both checks agree on 0 broken links; no target path is missing.
+
+**M07 impact:** NONE.
+
+**Classification:** **BATCH-DEFERRED / NON-BLOCKING reporting-metric discrepancy.**
+
+**Disposition:** preserve Codex's historical count as its execution-time metric and use 113/0 as the independent-verification count. No migration content correction is required before M07.
+
+## M06 — Git / publication state
+
+Verified current branch history:
+
+- M05 parent: `585f9600ca4940aab750488b2f46f7cb72a94d69`;
+- M06 implementation: `9635e5dd8e20b86ab879b55fc0da9fa63af34991` — `V003-M06 migrate FUNC EXE registry`;
+- M06 publication closeout: `a6fe5769faaa36c60def8c2d255654657d7d2ecb` — `V003-M06 record publication closeout`.
+
+Before this ChatGPT archival write:
+
+- local branch: `v003/m06-func-exe-registry-migration`;
+- local HEAD: `a6fe5769...`;
+- upstream tracking ref: `origin/v003/m06-func-exe-registry-migration`;
+- local/upstream tips matched;
+- worktree was clean;
+- staged files: 0;
+- GitHub remote branch tip: `a6fe5769...`;
+- no PR exists for the M06 branch;
+- neither M06 commit is contained in `origin/main`;
+- `main` / `origin/main` remain `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`.
+
+**No M06 PR / merge:** PASS.
+
+## M06 final verdict
+
+- Target categories: PASS.
+- Frozen-matrix admission states: PASS.
+- MEDIA reserved: PASS.
+- No speculative category: PASS.
+- Evidence attribution and limitations: PASS.
+- CORE↔EXE references: PASS.
+- Legacy sources retained: PASS.
+- Link integrity: PASS — 0 broken.
+- Git publication claims: PASS, with branch tip clarified as closeout commit `a6fe5769...`.
+- Blocking flags: NONE.
+
+**V003-M06 independent ChatGPT verification: PASS.**
+
+## M07 handoff
+
+M07 dependencies M03, M05, and M06 are now independently verified PASS.
+
+M07 is therefore **substantively dependency-ready**.
+
+Because this verification archive/status correction is being written after the clean M06 tip `a6fe5769...`, the Operator's ticket-isolation rule requires one final handoff step before creating the M07 branch:
+
+1. commit these ChatGPT verification/status records on M06;
+2. confirm M06 worktree clean;
+3. create `v003/m07-func-ancillary-content-classification` from that clean M06 tip;
+4. run M07 P14 preflight.
+
+No M06 merge is required before M07 because remote Git lifecycle remains batch-boundary scoped.

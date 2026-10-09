@@ -68,3 +68,10 @@ AI_BRAINBOX/FUNC_AI_BRAINBOX/
 - [Governance ticketing rules](../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md)
 
 **STATUS:** [M06 IMPLEMENTATION COMMITTED/PUSHED AT 9635e5d; FOUR CATEGORIES ADMITTED; MEDIA RESERVED; INDEPENDENT VERIFICATION PENDING]
+
+
+---
+
+## Independent verification status — 2026-10-09
+
+M05 CORE and M06 EXE independently verify **PASS**. RESEARCH/BROWSER/FILE/CODE are admitted only for the evidence-scoped Codex operations in frozen §9; MEDIA remains reserved. M07 may proceed after the M06 verification-closeout commit and clean handoff.

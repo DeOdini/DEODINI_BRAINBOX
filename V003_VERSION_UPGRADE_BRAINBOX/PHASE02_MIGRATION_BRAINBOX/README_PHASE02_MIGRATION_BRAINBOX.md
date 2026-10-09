@@ -89,3 +89,17 @@ The Operator referred to the new parent as `PHASE02_MIGRATION_BRAINBOX.md`. Beca
 `PHASE02_MIGRATION_BRAINBOX/`
 
 No migration execution was performed as part of this placement correction.
+
+---
+
+## Current Batch B verification override — 2026-10-09
+
+This is the current execution state and supersedes older pre-verification status lines above.
+
+- M05 FUNC CORE Registry Migration: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- M06 FUNC EXE Registry Migration: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- M06 implementation commit: `9635e5dd8e20b86ab879b55fc0da9fa63af34991`.
+- M06 publication closeout: `a6fe5769faaa36c60def8c2d255654657d7d2ecb`.
+- M06 PR/merge: none.
+- M06-LINK-01: **BATCH-DEFERRED / NON-BLOCKING** — Codex count 120/0 vs independent current count 113/0; zero broken links confirmed.
+- M07: dependency-ready after this verification closeout is committed on M06 and the M06 worktree is clean.

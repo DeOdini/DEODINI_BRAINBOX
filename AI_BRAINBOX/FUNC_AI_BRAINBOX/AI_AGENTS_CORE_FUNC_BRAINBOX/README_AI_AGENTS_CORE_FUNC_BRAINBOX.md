@@ -51,3 +51,10 @@ Use YES, NO, UNKNOWN / NOT VERIFIED, or NOT APPLICABLE for the status value, the
 - [Phase 02 ticket set, including M06](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
 
 **STATUS:** [M05 COMMITTED/PUSHED; M05 INDEPENDENT VERIFICATION PENDING; M06 COMMIT 9635e5d PUSHED; M06 INDEPENDENT VERIFICATION PENDING; NO M06 PR/MERGE]
+
+
+---
+
+## Independent verification status — 2026-10-09
+
+M05 CORE and the M06 CORE↔EXE reconciliation independently verify **PASS**. Codex maps to RESEARCH/BROWSER/FILE/CODE; Copilot Browser remains unverified; Cline MEDIA remains reserved-only; ChatGPT/Claude/DeepSeek/Grok/Qwen have no admitted EXE category from M06.

@@ -138,3 +138,15 @@ These values describe the current local file at the time of the verification abo
 This folder structure was created under authorized ticket `V003-P01`.
 
 It does not authorize broader DEODINI BRAINBOX migration.
+
+---
+
+## Current Phase 02 verification override — 2026-10-09
+
+Supersedes earlier M05/M06 “independent verification pending” status text:
+
+**M05:** PASS.
+**M06:** PASS.
+**M06-LINK-01:** NON-BLOCKING reporting-count discrepancy only; independent 20-file scan = 113 links / 0 broken.
+**M07:** dependency-ready after M06 verification-closeout commit + clean branch handoff.
+**Batch B remote push/PR/merge:** still batch-boundary scoped.

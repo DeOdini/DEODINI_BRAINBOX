@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M06 EXE registry implementation and read-back. M06 implementation commit `9635e5d` was pushed to its dedicated branch; no PR/merge. Independent ChatGPT verification of M06 remains pending. M05 independent verification also remains pending.
+**VERIFIER:** Codex — M05 CORE and M06 EXE implementation/read-back; ChatGPT — M05 and M06 independent verification PASS. M05 is published at `585f960`; M06 implementation is `9635e5d` with publication-closeout commit `a6fe576`; no M06 PR/merge.
 **LAST VERIFIED:** 2026-10-08
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
@@ -534,3 +534,17 @@ M03 created the approved Governance tree and mapped current system-wide rules in
 - **Agent:** Codex
 - **Timestamp:** 2026-10-08
 - **Signed & Authorized by:** DE O'DINI (OPERATOR)
+
+
+---
+
+## Current Phase 02 verification override — 2026-10-09
+
+This note supersedes any earlier current-state line in this file that says M05 or M06 independent verification is pending.
+
+- M05 FUNC CORE: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- M06 FUNC EXE: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- M06 implementation: `9635e5dd8e20b86ab879b55fc0da9fa63af34991`.
+- M06 publication closeout/pre-verification branch tip: `a6fe5769faaa36c60def8c2d255654657d7d2ecb`.
+- M06 PR/merge: none.
+- M07: dependency-ready after the M06 verification-closeout records are committed and the M06 worktree is clean.
