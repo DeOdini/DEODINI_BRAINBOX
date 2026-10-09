@@ -1739,3 +1739,7 @@ Push: PASS after Operator completed GitHub sign-in. Local HEAD and `origin/v003/
 ### Documentation publication verification — 2026-10-09
 
 The separate M14 documentation closeout commit `2f01afbf4eb734a42a0b49d0b89044e4194ab7f9` (`V003-M14 publish migration closeout`) was pushed after Operator sign-in. A fetch confirmed local HEAD and `origin/v003/m14-production-devops-environment` both equal that commit. Ahead/behind = 0/0; worktree clean. This supersedes the preceding in-progress publication wording. No PR or merge was created.
+
+### Final report-update publication — 2026-10-09
+
+The follow-up report/transcript verification commit `89af2d34a3caabaabe7882706098b8a0b3472e54` was pushed and fetched. Local/upstream tips match; ahead/behind 0/0; worktree clean. No PR or merge.
