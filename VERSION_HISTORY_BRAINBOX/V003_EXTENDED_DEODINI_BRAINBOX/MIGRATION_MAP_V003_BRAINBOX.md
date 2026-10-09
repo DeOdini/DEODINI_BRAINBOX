@@ -1232,3 +1232,82 @@ Batch-deferred flags M06-LINK-01, M07-WF-01, and M07-AUTH-01 remain non-blocking
 **Blocking Batch B flags:** NONE.
 
 This final status supersedes the preceding note that the post-merge report closeout was pending. Batch B is closed. M09 is dependency-eligible for its own P14 preflight; no M09 implementation began here.
+
+
+
+---
+
+## 30. V003-M09 — DEVOPS Legacy RAW / FAILED / PROVEN Reconciliation — 2026-10-09
+
+**Authorization:** Operator-authorized V003-M09; executed on its dedicated branch.
+**Branch:** `v003/m09-devops-legacy-reconciliation`.
+**Pre-state:** Local `main` and `origin/main` both at `79df224c5c8529cdf3137ce7324280ca63ddbc6b`; GitHub `ls-remote` confirmed the same remote tip. Main was clean, had no untracked working-tree entries, and was synchronized. No pending ChatGPT modifications existed to clean up or publish. The ticket branch was created from that main commit.
+**Dependency state:** M01 and M03 are merged into main; Batch B M05–M08 and its closeout are merged; no dependency hold remained.
+**Target outcome:** Three authority READMEs established under DEVOPS AI. Legacy source files remain byte-for-byte unchanged. No workflow content was copied, moved, renamed, or deleted.
+**Implementation commit/push:** Pending at this map revision; recorded in the later M09 report closeout.
+
+### M09 source baseline and disposition
+
+The following source baselines were checked against the M01 manifest. Current size, line count, and SHA-256 matched the recorded baseline.
+
+| Source path | Current baseline | M09 content/authority disposition | Target / owner | Source removal |
+|---|---:|---|---|---|
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md` | 1,319 bytes; 28 lines; `f85c3a95c15b8546a58677a2976fda19389f71c3c7b58852fb3376cfff51cc65` | Legacy local navigation; its RAW/PROVEN/FAILED links are no longer the canonical execution model. It also refers to reserved FRONTEND/BACKEND raw folders absent from the current filesystem. Retained unchanged as historical/reference source. | DEVOPS navigation established by M09; reference reconciliation M19; retirement review M20. | No removal in M09. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROVEN_PATTERN_PROJ_BRAINBOX.md` | 0 bytes; 0 lines; `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | Empty legacy placeholder; contains no tested or production evidence and cannot be promoted. | No content destination. Permanent PROVEN bucket is superseded by DEVOPS Sandbox/Production lifecycle. | Preserve pending M20. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FAILED_PATTERN_PROJ_BRAINBOX.md` | 0 bytes; 0 lines; `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | Empty legacy placeholder; contains no failure record or lesson to migrate. | No content destination. Sandbox/Production failure evidence uses its own lifecycle-specific record when evidence exists. | Preserve pending M20. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md` | 4,441 bytes; 57 lines; `be80758c5188f319c7f5b1a3ca4f862077530982e932f8d596469940c9a33f41` | Describes a raw, adapted pre-build document set not yet tested on a live build. Its procedure content is a Sandbox Fullstack candidate; its top-level heading names a different filename than the actual file. Retained unchanged. | Sandbox Fullstack detailed content classification/migration M10; reference reconciliation M19; retirement review M20. | No removal in M09. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md` | 25,450 bytes; 565 lines; `e9ad5963cf5e59555a0bf5b3c797eade93f2995007117c3684aeb158a6da9105` | Proposes a Fullstack development workflow, states “To Be Tested and Proven,” and assumes a stack. This is meaningful but explicitly unproven source material; no execution outcome is inferred. | Sandbox Fullstack workflow candidate; M10 owns detailed migration and section classification. | No removal in M09; M20 only after evidence/reference checks. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md` | 26,261 bytes; 615 lines; `0a7270ecc83db51416aaab7d6d5a78231f783dcdf5d01e4a9a7e0499fdbf45ea` | Identifies itself as RAW/unverified and not tested end-to-end; its preset agent assignments are proposals, not proof or standing authority. Retained separately from 001. | Sandbox Fullstack workflow candidate; M10 owns detailed migration and section classification. | No removal in M09; M20 only after evidence/reference checks. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/FSTACK_MUST_README.md` | 8,174 bytes; 87 lines; `a4ff12448bf458d5252bc36ace55acccd8841cbaaca4d32e052b59840c976cd0` | Legacy comparison/navigation record. It explicitly says both workflow sources are not proven and carries old RAW/PROVEN/FAILED destination language. Retained unchanged as source context. | Sandbox authority now lives in M09 README; M10 classifies the workflow content; M19 references; M20 source-retirement review. | No removal in M09. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/` | 83 tracked files in M01 inventory: six direct records, 37 evidence files, and 40 asset/catalog files. See M01 manifest for per-file integrity values. | Separate project/trial evidence and source assets; not a generic RAW workflow bucket and not Production evidence by inference. No FootHive file was opened for migration or changed by M09. | Canonical Sandbox FootHive trial/evidence M15; Production and Portfolio summary handling M16. | Retain until authorized destination/integrity checks and M20. |
+
+The legacy project-workflow directory itself remains present. M09 does not create or remove the reserved FRONTEND/BACKEND raw directories, rename the legacy parent, or rewrite any source. No secret-bearing content was copied.
+
+### M09 target records established
+
+- `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/README_DEVOPS_AI_BRAINBOX.md`
+- `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md`
+- `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md`
+
+These records distinguish Sandbox experimentation from Production operation, link to Governance and the frozen authorities, show the approved direct target branches with truthful planned/populated states, and list the current local tree separately. M09 created no additional child architecture, workflow, evidence, or environment folders.
+
+### M09 flags and disposition
+
+#### M09-OBS-01 — legacy FRONTEND/BACKEND entries are reserved and absent — NO FLAG
+
+- **Exact source:** `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md`, lines 17–18.
+- **Evidence:** The README explicitly calls `FRONTEND_RAW_BRAINBOX/` and `BACKEND_RAW_BRAINBOX/` reserved children. Neither directory exists, which is consistent with that reservation; there is no source content at either path.
+- **Migration impact:** No M09 source content or DEVOPS target depends on either absent directory. M09 makes no speculative folders and preserves the original README.
+- **Next-ticket impact:** M10 handles the extant Fullstack sources only; it does not require these reserved branches. The mismatch does not block M10.
+- **Reason no flag is raised:** The legacy README describes these as reserved, not as currently populated folders; the observed filesystem matches that stated status.
+- **Disposition:** Preserve the historical reservation wording. Do not create these folders in M09; no follow-up correction is assigned unless a later ticket adopts either domain.
+
+#### M09-REF-02 — legacy README title does not match its filename — BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact source:** `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md`, line 1.
+- **Defect/evidence:** Its title is `RAW_WORKFLOW_PROJ_BRAINBOX.md`, while the actual file is `RAW_PROJ_MUST_README.md`.
+- **Migration impact:** All new links use the actual path. The file is retained unchanged; no canonical DEVOPS authority relies on the mismatched title.
+- **Next-ticket impact:** M10 can classify its contents using the actual filename and hash; no dependency is blocked.
+- **Classification reason:** Historical source labeling issue, isolated from the authorized target naming and migration.
+- **Correction/owner/timing:** Preserve as provenance; M19 may reconcile the reference/title, or M20 may retire only after destination and integrity checks.
+
+#### M09-REF-03 — legacy promotion language still names the superseded PROVEN/FAILED files — BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact sources:** `RAW_PROJ_MUST_README.md`, line 57; `FSTACK_MUST_README.md`, line 41; `002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md`, lines 23, 25, 290, 334–335, 347–348, 588–589, and 601–602.
+- **Defect/evidence:** Retained instructions direct future promotion into the legacy top-level PROVEN/FAILED files, although V003 §10 supersedes PROVEN as a permanent bucket and the current top-level files are empty.
+- **Migration impact:** M09's new authority READMEs explicitly state the current Sandbox/Production model and do not copy those instructions as active policy. No record is promoted.
+- **Next-ticket impact:** M10 must classify legacy references and procedures under current workflow/Promotion authority; its source documents remain available unchanged.
+- **Classification reason:** The conflicting language is contained only in retained legacy sources; the new canonical destination model is established and unambiguous.
+- **Correction/owner/timing:** M10 documents content-specific disposition; M19 reconciles references; M20 assesses source retirement. No historical source rewrite in M09.
+
+#### M01-GIT-01 — dangling checkpoint objects — carried, BATCH-DEFERRED / NON-BLOCKING
+
+- **Exact object:** Git object-store checkpoint IDs and details are listed under the M01 “Object-integrity check and recovery flag.”
+- **Defect/evidence:** The objects are dangling and not reachable from active branches or GitHub main; the existing M01 report says not to garbage-collect/prune or expire reflogs until reviewed.
+- **Migration impact:** M09 performs no GC, pruning, reflog expiry, force-push, or history rewrite.
+- **Next-ticket impact:** No impact on M10's content migration while preservation instructions are observed.
+- **Classification reason:** The recovery concern is real but outside M09's non-destructive README/map changes.
+- **Correction/owner/timing:** Preserve; review in the designated recovery/retirement process before any history cleanup.
+
+**Blocking M09 flags:** NONE.
+**Scope:** No source migration or retirement; no Production evidence invented; no FootHive content copied; no general tree created beyond the three authority README paths.
