@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex - M12 Backend self-check and M14 structural/security checks. ChatGPT - M05-M14 independent PASS; M15 Codex implementation pending independent verification. Batch C M09-M14 merged to main through PRs #28-#33; see the active Phase 02 report for the merge table and deferred-flag dispositions.
+**VERIFIER:** Codex - M12 Backend self-check and M14 structural/security checks. ChatGPT - M05-M15 independent PASS; M15 case-study source integrity independently verified, with deferred asset/reference flags assigned as recorded. Batch C M09-M14 merged to main through PRs #28-#33; see the active Phase 02 report for the merge table and deferred-flag dispositions.
 **LAST VERIFIED:** 2026-10-09
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
@@ -658,7 +658,7 @@ M15 has not started. No Production deployment or source retirement occurred in B
 
 ## Current Phase 02 execution - V003-M15 - 2026-10-09
 
-V003-M15 is being implemented on v003/m15-foothive-sandbox-evidence-iteration from the synchronized main tip. The canonical FootHive Sandbox case study is present locally, including its historical records, 37 existing evidence artifacts, two design-direction records, the located original audit, and a source/destination integrity manifest. The existing dataset is represented as logical Iteration 01; Iterations 02/03 and mastery remain planned. Source-only assets without approved destinations remain in the legacy source. M15 is not merged; independent verification and ticket/batch Git closure remain pending.
+V003-M15 is implemented and pushed on v003/m15-foothive-sandbox-evidence-iteration, created from the synchronized Batch C main tip. The canonical FootHive Sandbox case study is present locally, including its historical records, 37 existing evidence artifacts, two design-direction records, the located original audit, and a source/destination integrity manifest. The existing dataset is represented as logical Iteration 01; Iterations 02/03 and mastery remain planned. Source-only assets without approved destinations remain in the legacy source. M15 is not merged; independent ChatGPT verification PASS (2026-10-09), pending publication of the verification closeout and later Batch D Git closure.
 
 ---
 

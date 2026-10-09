@@ -6707,3 +6707,144 @@ The M10 and M14 verbatim hard breaks can still appear in a full historical-range
 - M15-ASSET-01 remains batch-deferred/non-blocking; M15-REF-01 is assigned to M19 while preserving archive bytes.
 - The original FootHive source remains intact until M20 source-retirement review.
 - This report and its companion conversation entry are included in the documentation closeout commit on the same unmerged M15 branch.
+---
+
+# ChatGPT Independent Verification — V003-M15 FootHive Canonical Sandbox Evidence & Iteration Migration
+
+**Date:** 2026-10-09
+**Ticket:** V003-M15 — FootHive Canonical Sandbox Evidence & Iteration Migration
+**Independent result:** PASS
+**Blocking M15 flags:** NONE
+**Deferred flags:** M15-ASSET-01 and M15-REF-01; M01-FH-01 preserved within the asset/catalog disposition
+**Next:** M16 after publication of this independent verification and a clean dedicated-branch handoff
+
+## 1. GitHub and local Git verification
+
+- M15 branch: `v003/m15-foothive-sandbox-evidence-iteration`.
+- Base commit: `d8296578e53ea75509c3c3fee15f21c99dbfeab7`, the completed Batch C main.
+- Implementation commit: `6c25f120fcce1d90f583921b3db0f7252e5f30fc`, direct parent = Batch C main.
+- Report/transcript closeout: `08d89ad06b64ac9c7abf6092375ae6c65d00ac21`, direct parent = M15 implementation.
+- Before this verification write, local HEAD, upstream, and GitHub M15 branch tip matched at `08d89ad06b64ac9c7abf6092375ae6c65d00ac21`.
+- Ahead/behind: 0/0. Worktree clean before this verification write.
+- M15 tip is not an ancestor of `origin/main`; no M15 PR or merge exists.
+- No M16 local or GitHub branch was found.
+- No pre-ticket pending ChatGPT verification worktree changes existed on clean Batch C main.
+
+**Publication and branch-isolation claim: PASS.**
+
+## 2. Independent physical transfer verification
+
+Case-study destination:
+`AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/`
+
+Independent Python byte comparison against every physical source/destination pair in `EVIDENCE_FH_BRAINBOX/COPY_INTEGRITY_MANIFEST_FH_BRAINBOX.csv`:
+
+- Manifest records: 45.
+- Unique source and target paths: 45/45.
+- Source/destination missing files: 0.
+- Byte inequality: 0.
+- File size mismatches: 0.
+- SHA-256 mismatches: 0.
+- Manifest equality-flag mismatches: 0.
+- Total source bytes: **3,623,461**.
+- Manifest SHA-256: `6bb20277f377295e0439e2b9a9ab7cf9aee484f3031b57317ad9afc1278f309d`.
+
+Distribution: 5 copied historical records, 37 copied evidence files, 2 copied historical design-direction images, and 1 original Deep Audit from a separately located attachment.
+
+The canonical case-study directory contains exactly **50 files**, all non-zero-byte: 45 historical transfers plus 5 authored navigation/retrospective/manifest records.
+
+**Transfer-integrity claim: PASS.**
+
+## 3. Original audit provenance
+
+Located source: `C:\Users\USER\.codex\attachments\808d07cb-df14-43f9-a784-286aac6e23ba\Pasted text.txt`.
+
+The manifest's independent source/destination comparison confirms exact transfer to `AUDITS_FH_BRAINBOX/DEEP_AUDIT_ORIGINAL_FH_BRAINBOX.md`. Independent target read-back confirms:
+
+- 37,224 bytes.
+- 749 lines.
+- SHA-256 `de429ebbd2c6ae561b71954834df6f240c57b5fef91fdb6897ab2cef470bf746`.
+
+The audit README names its original attachment and the newer Operator Addendum separately; no audit prose was reconstructed or silently rewritten.
+
+**Deep Audit provenance and fidelity: PASS.**
+
+## 4. Complete original-source disposition
+
+The legacy FootHive tree has 83 files and shows zero tracked changes between Batch C main and the M15 tip.
+
+- 44 of the 83 original-tree files are present in the transfer manifest.
+- 1 separately located original Deep Audit makes the 45th transfer.
+- 1 remaining original-tree file is the historical pre-build `FH_MUST_README.md`, retained without promotion as current canonical navigation.
+- 9 additional asset files have independently confirmed SHA-256-identical counterparts under `C:\Users\USER\FOOTHIVE\assets`: 7 product images and 2 logos.
+- 29 remaining product/catalog files have no approved target and stay in the original source unchanged.
+
+Independent enumeration of those 29 = 25 product images + 4 catalogs.
+
+No legacy source file was moved, modified, or deleted; neither the M15 implementation nor closeout commit changes a file in the legacy project tree.
+
+**Legacy preservation and source disposition: PASS.**
+
+## 5. M15-ASSET-01 — BATCH-DEFERRED / NON-BLOCKING
+
+The 29 files without an approved case-study destination were not forced into EVIDENCE. They retain source provenance, and M16 can build references and a Production/Portfolio summary without requiring those assets to move.
+
+The four retained catalogs still have the 32 previously recorded broken relative image references under M01-FH-01, and the 11 FAILED-record product exclusions remain in force. M15 did not claim they were repaired.
+
+**Disposition:** retain 29 source-only files; require later Operator-authorized destination/disposition before M20 retirement. No current M16 dependency blocker.
+
+## 6. M15-REF-01 — BATCH-DEFERRED / NON-BLOCKING
+
+Independent source read-back found all eleven historical path references at the recorded exact locations:
+
+- 6 source-era relative screenshot/evidence links in copied Build Report lines 922, 924, 942–945.
+- 5 absolute legacy-record links in copied conversation: four on line 3842 and one on line 4250.
+
+The copied documents remain byte-identical to source. Newly authored case-study navigation supplies current valid paths. M19 owns later reference reconciliation without silently altering archived evidence.
+
+**Disposition:** source-faithful copies retained; M19 to reconcile current reference/navigation treatment. Not an M16 blocker.
+
+## 7. Authored document / iteration truth
+
+The current case-study README, evidence README, audit README, retrospective, and parent case-study README were inspected.
+
+- New authored navigation Markdown files: 5.
+- Relative local links: **33**.
+- Broken links: **0**.
+- Trailing-whitespace lines: **0** in each of the five authored files.
+- Iteration 01 = existing experimental corpus at the case-study root.
+- Iterations 02/03 and Workflow Mastery Assessment = PLANNED; no physical iteration directories.
+- Workflow iteration is explicitly distinct from FootHive website version/ticket history.
+- Retrospective is source-backed and makes no mastery/Production claim.
+- Operator Addendum is treated as later clarification on its specified subjects, not a retroactive overwrite of the original audit.
+- Design directions are archived as historical trial design evidence rather than approved new product requirements.
+
+**Authority, navigation, iteration and population-state checks: PASS.**
+
+## 8. Transcript fidelity and whitespace
+
+The M15 Phase 02 conversation record contains an earlier mistakenly assembled section with M01 inventory text. This section is explicitly annotated as a Codex transcript assembly error, not an Operator instruction. The complete corrected M15 Operator prompt is separately present later under `Operator prompt correction — V003-M15 — verbatim task text`.
+
+The M15 documentation closeout commit `08d89ad...` independently passes `git show --check` with exit 0.
+
+A full M15 implementation-range `git diff --check` reports inherited Markdown whitespace in byte-preserved historical records; this is not a clean full-range whitespace result. The five newly authored case-study Markdown records have zero trailing-space lines and must not be confused with those copied archives.
+
+**Transcript correction recorded; source-faithful archive formatting preserved. No blocking authenticity or whitespace defect identified.**
+
+## 9. Execution/test boundary
+
+Only Brainbox case-study records, historical copies, evidence assets, manifest, navigation and migration documentation were changed. No FootHive application source or runtime/deployment configuration was changed in M15.
+
+The Codex execution record says no application/browser test or deployment was run. This aligns with the scope of changed files, but does not independently replay or prove the absence of unrelated external runtime activity.
+
+## 10. Final disposition and M16 handoff
+
+**V003-M15 independent ChatGPT verification: PASS.**
+**Blocking M15 flags: NONE.**
+**M15-ASSET-01: BATCH-DEFERRED / NON-BLOCKING.**
+**M15-REF-01: BATCH-DEFERRED / NON-BLOCKING.**
+**M01-FH-01: catalog references preserved; source-asset disposition remains open.**
+
+M16 is in the same Batch D and may progress after this M15 independent verification closeout is committed on M15 and the worktree is clean. Create M16 on its own approved branch from the verified M15 branch tip; run M16-specific P14. No M15 PR or merge is required before M16 within the same Batch D.
+
+No staging, commit, push, PR, merge, source retirement, test or deployment was performed by ChatGPT in this verification.

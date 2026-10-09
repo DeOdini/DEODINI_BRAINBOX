@@ -11,7 +11,7 @@
 **REFERENCES:** Sandbox and DEVOPS parent READMEs; M15 living migration map.
 **POPULATION STATE:** FootHive workflow trial populated by M15; no other case study is claimed.
 **LAST VERIFIED:** 2026-10-09
-**VERIFIER:** Codex - M15 local tree review; independent verification pending.
+**VERIFIER:** Codex - M15 local tree review; ChatGPT - independent M15 verification PASS (2026-10-09).
 **APPLIES TO:** Sandbox case-study navigation.
 **ENTRY NAVIGATION:** Start here and select a case-study README.
 **EXIT NAVIGATION:** Return to Sandbox DEVOPS or the DEVOPS parent.

@@ -7,7 +7,7 @@
 **GOVERNED BY:** Governance Evidence and Promotion rules.
 **CANONICAL SOURCE:** CONVO_FH_BRAINBOX.md, PASSED_FH_BRAINBOX.md, FAILED_FH_BRAINBOX.md, BUILD_REPORT_FH_BRAINBOX.md, OPERATOR_ADDENDUM_FH_BRAINBOX.md, and preserved audit.
 **LAST VERIFIED:** 2026-10-09
-**VERIFIER:** Codex - source-backed synthesis; independent review pending.
+**VERIFIER:** Codex - source-backed synthesis; ChatGPT - independent M15 retrospective/provenance review PASS (2026-10-09).
 **APPLIES TO:** The existing FootHive workflow dataset only.
 
 ## Scope and provenance
