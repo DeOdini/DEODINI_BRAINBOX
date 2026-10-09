@@ -1,6 +1,6 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE — AUTHORIZED] — Batch A and BATCHA-DOC-01 are published/closed through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`. Batch B M05 FUNC CORE migration is independently verified PASS on its dedicated branch. M05 remains unstaged/uncommitted and has no remote branch/PR/merge. M06 branch creation waits for M05's ticket-specific local commit and a clean M05 worktree; Batch B remote Git closure remains deferred to the batch boundary.
+**Status:** [ACTIVE — AUTHORIZED] — Batch A and BATCHA-DOC-01 are published/closed through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`. M05 FUNC CORE implementation is committed and pushed at 585f960; independent ChatGPT verification remains pending. M06 implementation commit `9635e5d` is pushed on v003/m06-func-exe-registry-migration; M06 independent ChatGPT verification remains pending. No M06 PR/merge; Batch B remote Git closure remains deferred to the batch boundary.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
@@ -61,7 +61,7 @@ PHASE02_MIGRATION_BRAINBOX/
 
 **Execution authorization:** AUTHORIZED — V003-M01 through V003-M21, executed one ticket at a time under dependencies, P14 preflight, Codex reporting, ChatGPT independent verification, and Operator merge/closure authority.
 
-**Current Batch A progression:** M01-M04 remain independently verified PASS and merged through PRs #16-#19; Batch A documentation closeout PR #20 and BATCHA-DOC-01 correction PR #21 are merged. Final main is 3201a1e80c5bfb2f4f2053599608ff8fce15f9db. Deferred flag owners remain M15, M19/M20, and M21. Batch A is closed; Batch B M05 is now active on v003/m05-func-core-registry-migration.
+**Current Batch A progression:** M01-M04 remain independently verified PASS and merged through PRs #16-#19; Batch A documentation closeout PR #20 and BATCHA-DOC-01 correction PR #21 are merged. Final main is 3201a1e80c5bfb2f4f2053599608ff8fce15f9db. Deferred flag owners remain M15, M19/M20, and M21. Batch A is closed. M05 was committed and pushed at 585f960, with independent ChatGPT verification pending. M06 implementation commit 9635e5d is pushed on its dedicated branch; independent ChatGPT verification is pending and no PR/merge has occurred.
 
 **M01 inventory and migration map:** PASS; dedicated commit `bc6d1309a71f4a309469788074c381c8665e5490` is pushed and matches its origin branch. M01-GIT-01 is preserved for M21 integrity/recovery review; M01-FH-01 is assigned to M15.
 
@@ -89,3 +89,17 @@ The Operator referred to the new parent as `PHASE02_MIGRATION_BRAINBOX.md`. Beca
 `PHASE02_MIGRATION_BRAINBOX/`
 
 No migration execution was performed as part of this placement correction.
+
+---
+
+## Current Batch B verification override — 2026-10-09
+
+This is the current execution state and supersedes older pre-verification status lines above.
+
+- M05 FUNC CORE Registry Migration: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- M06 FUNC EXE Registry Migration: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- M06 implementation commit: `9635e5dd8e20b86ab879b55fc0da9fa63af34991`.
+- M06 publication closeout: `a6fe5769faaa36c60def8c2d255654657d7d2ecb`.
+- M06 PR/merge: none.
+- M06-LINK-01: **BATCH-DEFERRED / NON-BLOCKING** — Codex count 120/0 vs independent current count 113/0; zero broken links confirmed.
+- M07: dependency-ready after this verification closeout is committed on M06 and the M06 worktree is clean.

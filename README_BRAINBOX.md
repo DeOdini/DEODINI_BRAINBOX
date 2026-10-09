@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; retained legacy sources pending M19/M20 reconciliation.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is complete as an architectural map; most target branches are not yet migrated. Inline states and the population table describe the actual current repository state.
-**VERIFIER:** Codex — M05 FUNC CORE implementation; ChatGPT — M05 independent verification PASS recorded in the Phase 02 report. Batch A closeout and BATCHA-DOC-01 publication remain verified through PR #21 at `3201a1e80c5bfb2f4f2053599608ff8fce15f9db`.
+**VERIFIER:** Codex — M05 CORE and M06 EXE implementation/read-back; ChatGPT — M05 and M06 independent verification PASS. M05 is published at `585f960`; M06 implementation is `9635e5d` with publication-closeout commit `a6fe576`; no M06 PR/merge.
 **LAST VERIFIED:** 2026-10-08
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
@@ -70,7 +70,7 @@ DEODINI_BRAINBOX/
 ├── MILESTONES_BRAINBOX/ [PLANNED]
 │   ├── README_MILESTONES_BRAINBOX.md
 │   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
-├── AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05 FUNC CORE migrated; legacy sources retained; M06–M13 pending]
+├── AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05 FUNC CORE and M06 EXE index migrated; legacy sources retained; M07–M13 pending]
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
 │   │   ├── README_FUNC_AI_BRAINBOX.md
@@ -390,7 +390,7 @@ DEODINI_BRAINBOX/
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
 | `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial; M04] | Parent README and Git-backed V001/V002 tree snapshots are present. Their conceptual retrospectives explicitly report missing rationale evidence; V003 Architecture Decisions and the living migration map are retained. Final V003 snapshot remains assigned to M21. |
 | `MILESTONES_BRAINBOX/` | [PLANNED] | Not yet populated; M18. The legacy `MILESTONES/` remains a separate source pending M17. |
-| `AI_BRAINBOX/` | [PARTIALLY POPULATED — M05] | M05 populated the FUNC parent index and eight-agent CORE registry while retaining all original FUNC sources. `README_AI_BRAINBOX.md` and remaining AI target domains are still pending M06–M13. |
+| `AI_BRAINBOX/` | [PARTIALLY POPULATED — M05/M06] | M05 populated the FUNC parent and eight-agent CORE registry. M06 created evidence-backed RESEARCH, BROWSER, FILE, and CODE records and a reserved MEDIA record; original sources remain. `README_AI_BRAINBOX.md` and remaining AI targets are pending M07–M13. |
 | `PORTFOLIO_BRAINBOX/` | [PLANNED V003 target] | Existing legacy Portfolio source is only a zero-byte placeholder; target structure is pending M16. |
 
 ## Current local root tree
@@ -411,7 +411,7 @@ DEODINI_BRAINBOX/
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── DOB_MUST_README.md [retained legacy source; unchanged through M03]
-├── AI_BRAINBOX/ [legacy source tree retained + M05 FUNC CORE target populated; remaining target migration pending]
+├── AI_BRAINBOX/ [legacy sources retained + M05 CORE and M06 EXE targets populated; remaining target migration pending]
 ├── BRAINBOX/ [EMPTY physical directory; not tracked by Git; review under M20]
 ├── MILESTONES/ [legacy source records; review under M17]
 ├── PORTFOLIO_BRAINBOX/ [legacy zero-byte placeholder; review under M16]
@@ -534,3 +534,17 @@ M03 created the approved Governance tree and mapped current system-wide rules in
 - **Agent:** Codex
 - **Timestamp:** 2026-10-08
 - **Signed & Authorized by:** DE O'DINI (OPERATOR)
+
+
+---
+
+## Current Phase 02 verification override — 2026-10-09
+
+This note supersedes any earlier current-state line in this file that says M05 or M06 independent verification is pending.
+
+- M05 FUNC CORE: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- M06 FUNC EXE: **INDEPENDENT CHATGPT VERIFICATION PASS**.
+- M06 implementation: `9635e5dd8e20b86ab879b55fc0da9fa63af34991`.
+- M06 publication closeout/pre-verification branch tip: `a6fe5769faaa36c60def8c2d255654657d7d2ecb`.
+- M06 PR/merge: none.
+- M07: dependency-ready after the M06 verification-closeout records are committed and the M06 worktree is clean.

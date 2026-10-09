@@ -46,7 +46,12 @@ Observed: repository reads, local branch creation, staged/committed changes, Git
 
 ## CANONICAL EXE REFERENCES
 
-NOT YET ASSIGNED — V003-M06 is the next ticket for evidence-backed executable capability indexing.
+- [RESEARCH](../AI_AGENTS_EXE_FUNC_BRAINBOX/RESEARCH_EXE_FUNC_BRAINBOX/README_RESEARCH_EXE_FUNC_BRAINBOX.md) - admitted for cited public-source research.
+- [BROWSER](../AI_AGENTS_EXE_FUNC_BRAINBOX/BROWSER_EXE_FUNC_BRAINBOX/README_BROWSER_EXE_FUNC_BRAINBOX.md) - admitted for cited local-preview checks.
+- [FILE](../AI_AGENTS_EXE_FUNC_BRAINBOX/FILE_EXE_FUNC_BRAINBOX/README_FILE_EXE_FUNC_BRAINBOX.md) - admitted for scoped workspace operations.
+- [CODE](../AI_AGENTS_EXE_FUNC_BRAINBOX/CODE_EXE_FUNC_BRAINBOX/README_CODE_EXE_FUNC_BRAINBOX.md) - admitted for the cited FootHive frontend change.
+
+No standing authorization is implied; use remains task-scoped.
 
 ## LAST VERIFIED
 

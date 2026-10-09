@@ -43,7 +43,7 @@ Only an explicit, task-specific Operator instruction authorizes an action. A rep
 
 ## CANONICAL EXE REFERENCES
 
-NOT YET ASSIGNED — V003-M06 will establish executable categories from evidence. No path is guessed.
+[EXE index](../AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md). No category is assigned in the frozen M06 matrix; historical file-operation claims do not meet its admitted-executor evidence.
 
 ## LAST VERIFIED
 

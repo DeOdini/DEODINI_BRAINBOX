@@ -43,7 +43,7 @@ A technically available GitHub integration does not authorize a push. Qwen has n
 
 ## CANONICAL EXE REFERENCES
 
-NOT YET ASSIGNED — V003-M06 will assign categories based on present evidence; role descriptions alone are not executable evidence.
+[EXE index](../AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md). No category is assigned: the approved role baseline and pending notice do not establish execution evidence.
 
 ## LAST VERIFIED
 

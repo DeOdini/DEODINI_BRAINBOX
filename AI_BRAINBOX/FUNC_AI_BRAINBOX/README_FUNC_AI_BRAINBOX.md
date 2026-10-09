@@ -5,11 +5,11 @@
 **PURPOSE:** Navigate retained agent-source reports and the new CORE capability registry while keeping functional capability separate from reusable knowledge and operational workflow.
 **MENTAL MODEL:** FUNC records what an agent is exposed to and can do, what is connected and authenticated, what execution is evidenced, what is authorized, and the limitations. A tool or skill being listed does not prove connection, execution, or permission.
 **GOVERNED BY:** Governance system-wide rules; the frozen V003 Specification; Phase 02 ticket-specific authorization.
-**CANONICAL SOURCES:** Frozen V003 Specification §9; V003-M05; legacy FUNC reports as attributed source evidence.
+**CANONICAL SOURCES:** Frozen V003 Specification §9; V003-M05 and V003-M06; legacy FUNC reports as attributed source evidence.
 **REFERENCES:** See the local tree and links below.
-**POPULATION STATE:** M05 created the eight CORE records. The eight original agent FUNC reports remain unchanged. FQ_MUST_README, FUNC_REQ, and FUNC_WORKFLOW remain active legacy sources for their respective functions and are not migrated by M05. The executable capability registry is assigned to M06 and has not yet been created.
+**POPULATION STATE:** M05 created eight CORE records and retained all eight original reports. M06 populated the EXE index: RESEARCH, BROWSER, FILE, and CODE are admitted for evidence-scoped Codex operations; MEDIA is reserved. FQ_MUST_README, FUNC_REQ, and FUNC_WORKFLOW remain for later content-specific migration.
 **LAST VERIFIED:** 2026-10-08
-**VERIFIER:** Codex — M05 source inventory, file integrity, and local read-back.
+**VERIFIER:** Codex — M05 source inventory plus M06 EXE evidence/index and CORE-reference read-back.
 **APPLIES TO:** AI agent capability disclosure and FUNC registry navigation.
 **ENTRY NAVIGATION:** Begin with the CORE registry README for current field definitions and agent records.
 **EXIT NAVIGATION:** Return to AI_BRAINBOX/README_AI_BRAINBOX.md or the root README_BRAINBOX.md when leaving the FUNC domain.
@@ -29,7 +29,7 @@ AI_BRAINBOX/FUNC_AI_BRAINBOX/
 ├── DEEPSEEK_FUNC_BRAINBOX.md — three-line pending notice retained
 ├── GROK_FUNC_BRAINBOX.md — original source retained
 ├── QWEN_FUNC_BRAINBOX.md — three-line pending notice retained
-└── AI_AGENTS_CORE_FUNC_BRAINBOX/
+├── AI_AGENTS_CORE_FUNC_BRAINBOX/
     ├── README_AI_AGENTS_CORE_FUNC_BRAINBOX.md
     ├── CHATGPT_CORE_FUNC_BRAINBOX.md
     ├── CLAUDE_CORE_FUNC_BRAINBOX.md
@@ -39,11 +39,18 @@ AI_BRAINBOX/FUNC_AI_BRAINBOX/
     ├── DEEPSEEK_CORE_FUNC_BRAINBOX.md
     ├── GROK_CORE_FUNC_BRAINBOX.md
     └── QWEN_CORE_FUNC_BRAINBOX.md
+└── AI_AGENTS_EXE_FUNC_BRAINBOX/
+    ├── README_AI_AGENTS_EXE_FUNC_BRAINBOX.md
+    ├── RESEARCH_EXE_FUNC_BRAINBOX/README_RESEARCH_EXE_FUNC_BRAINBOX.md
+    ├── BROWSER_EXE_FUNC_BRAINBOX/README_BROWSER_EXE_FUNC_BRAINBOX.md
+    ├── FILE_EXE_FUNC_BRAINBOX/README_FILE_EXE_FUNC_BRAINBOX.md
+    ├── CODE_EXE_FUNC_BRAINBOX/README_CODE_EXE_FUNC_BRAINBOX.md
+    └── MEDIA_EXE_FUNC_BRAINBOX/README_MEDIA_EXE_FUNC_BRAINBOX.md - reserved
 
 ## Domain boundaries
 
 - CORE records summarize evidence-backed and explicitly unknown agent capabilities.
-- Executable capability categories and their evidence-backed index belong to M06.
+- M06 populated the evidence-backed EXE index; category admission and evidence limits are recorded in its linked records.
 - Reusable knowledge and skill content belongs to Skills.
 - Procedures, routing, and operating sequences belong to the appropriate workflow or DEVOPS domain.
 - FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, and FUNC_WORKFLOW_BRAINBOX.md remain in place until their own authorized migration and source-retirement gates. M05 does not rewrite or remove them.
@@ -51,6 +58,7 @@ AI_BRAINBOX/FUNC_AI_BRAINBOX/
 ## Canonical references
 
 - [CORE registry](AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md)
+- [EXE capability index](AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md)
 - [FQ local compliance source](FQ_MUST_README.md)
 - [Function requests source](FUNC_REQ_BRAINBOX.md)
 - [Function workflow source](FUNC_WORKFLOW_BRAINBOX.md)
@@ -59,4 +67,11 @@ AI_BRAINBOX/FUNC_AI_BRAINBOX/
 - [Governance evidence rules](../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
 - [Governance ticketing rules](../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md)
 
-**STATUS:** [ACTIVE — M05 INDEPENDENT CHATGPT VERIFICATION PASS]
+**STATUS:** [M06 IMPLEMENTATION COMMITTED/PUSHED AT 9635e5d; FOUR CATEGORIES ADMITTED; MEDIA RESERVED; INDEPENDENT VERIFICATION PENDING]
+
+
+---
+
+## Independent verification status — 2026-10-09
+
+M05 CORE and M06 EXE independently verify **PASS**. RESEARCH/BROWSER/FILE/CODE are admitted only for the evidence-scoped Codex operations in frozen §9; MEDIA remains reserved. M07 may proceed after the M06 verification-closeout commit and clean handoff.
