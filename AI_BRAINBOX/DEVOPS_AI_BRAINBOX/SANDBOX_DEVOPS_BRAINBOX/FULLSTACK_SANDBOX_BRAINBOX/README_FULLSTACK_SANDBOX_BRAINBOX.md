@@ -6,7 +6,7 @@
 **PURPOSE:** Navigate Fullstack workflow candidates, application-specific architecture records, and orchestration knowledge while preserving their actual evidence status.
 **MENTAL MODEL:** WORKFLOWS = how work is performed; ARCHITECTURE = how a specific application is selected and structured; ORCHESTRATION = how its parts coordinate.
 **GOVERNED BY:** Governance Evidence, Reference, Promotion, Ticketing, and Migration rules; Sandbox DEVOPS authority.
-**CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 11; V003 Origin Conversation; V003-M10 migration record.
+**CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 11, and 13; V003 Origin Conversation; V003-M10 and V003-M13 migration records.
 **APPLIES TO:** Fullstack workflow, architecture-application, and orchestration records.
 **LAST VERIFIED:** 2026-10-09
 
@@ -16,7 +16,7 @@ This README is local navigation. The root `README_BRAINBOX.md` remains the compl
 
 ## Authoritative target tree
 
-This follows frozen Specification §8. Frontend is present from M11 and the Backend taxonomy is now present from M12. Backend knowledge leaves remain empty until source-backed content is approved.
+This follows frozen Specification §8. Frontend is present from M11, Backend is present from M12, and M13 adds analytics responsibility/navigation records. Backend and analytics knowledge leaves remain empty until source-backed content is approved.
 
 ```text
 FULLSTACK_SANDBOX_BRAINBOX/
@@ -45,7 +45,9 @@ FULLSTACK_SANDBOX_BRAINBOX/
 |   |-- API_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
 |   |-- AUTH_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
 |   |-- DATA_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
-|   |-- ANALYTICS_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
+|   |-- ANALYTICS_ORCH_BRAINBOX/
+|   |   |-- README_ANALYTICS_ORCH_BRAINBOX.md [PRESENT — M13 NAVIGATION]
+|   |   `-- .gitkeep [EMPTY — NO OPERATIONAL FLOW]
 |   |-- TEST_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
 |   |-- RELEASE_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
 |   |-- AI_AGENT_ORCH_BRAINBOX/
@@ -145,7 +147,9 @@ FULLSTACK_SANDBOX_BRAINBOX/
 |   |-- API_ORCH_BRAINBOX/.gitkeep
 |   |-- AUTH_ORCH_BRAINBOX/.gitkeep
 |   |-- DATA_ORCH_BRAINBOX/.gitkeep
-|   |-- ANALYTICS_ORCH_BRAINBOX/.gitkeep
+|   |-- ANALYTICS_ORCH_BRAINBOX/
+|   |   |-- README_ANALYTICS_ORCH_BRAINBOX.md
+|   |   `-- .gitkeep
 |   |-- TEST_ORCH_BRAINBOX/.gitkeep
 |   |-- RELEASE_ORCH_BRAINBOX/.gitkeep
 |   |-- AI_AGENT_ORCH_BRAINBOX/
@@ -221,6 +225,7 @@ FULLSTACK_SANDBOX_BRAINBOX/
 - [Workflow candidates and source dispositions](WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md)
 - [Architecture application branches](ARCHITECTURE_FULLSTACK_BRAINBOX/README_ARCHITECTURE_FULLSTACK_BRAINBOX.md)
 - [Orchestration branches and handoff classification](ORCHESTRATION_FULLSTACK_BRAINBOX/README_ORCHESTRATION_FULLSTACK_BRAINBOX.md)
+- [Analytics Orchestration ownership and population state](ORCHESTRATION_FULLSTACK_BRAINBOX/ANALYTICS_ORCH_BRAINBOX/README_ANALYTICS_ORCH_BRAINBOX.md)
 - [Frontend Sandbox and UI/UX taxonomy](FRONTEND_SANDBOX_BRAINBOX/README_FRONTEND_SANDBOX_BRAINBOX.md)
 - [Backend Sandbox and backend knowledge ownership](BACKEND_SANDBOX_BRAINBOX/README_BACKEND_SANDBOX_BRAINBOX.md)
 - [Sandbox DEVOPS parent](../README_SANDBOX_DEVOPS_BRAINBOX.md)
@@ -230,6 +235,7 @@ FULLSTACK_SANDBOX_BRAINBOX/
 - Workflow records describe actors, ordered actions, prerequisites, evidence, failure handling, verification, and completion gates.
 - Architecture branches hold project-specific evaluation, selection, implementation, and validation. Generic pattern knowledge belongs under Skills.
 - Orchestration describes relationships, interfaces, dependencies, triggers, handoffs, and cross-component flow. A step-by-step procedure remains a workflow.
+- Analytics Orchestration owns collection, transmission, event, service, and integration flow. Frontend Data Visualization owns dashboards, charts, KPI, and reporting interfaces; reusable GA4 technology knowledge stays under Skills Technologies. M13 records these boundaries and links without asserting an operational analytics flow.
 - Production deployment/release belongs under Production DEVOPS. M10 found no actual deployment sequence in its sources.
 - Raw source content remains RAW / UNPROVEN. It is not promoted by being copied into this target.
 
@@ -255,11 +261,11 @@ FULLSTACK_SANDBOX_BRAINBOX/
 
 - Workflow candidates: two source-backed RAW / UNPROVEN records.
 - Architecture application branches: structurally present, empty; no architecture choice is claimed.
-- Orchestration branches: structurally present; only the unverified agent-role references are classified. No service-coordination, test-orchestration, or release-orchestration behavior is claimed.
+- Orchestration branches: structurally present; only the unverified agent-role references are classified. M13 adds Analytics Orchestration navigation and ownership boundaries, but no operational collection/transmission/event flow. No service-coordination, test-orchestration, or release-orchestration behavior is claimed.
 - No Production outcome, deployment, or validation evidence was created.
 
-**Prepared by:** Codex under the Operator-authorized V003-M10 ticket.
-**Last verified:** 2026-10-09
+**Prepared by:** Codex under the Operator-authorized V003-M10 and V003-M13 tickets.
+**Last verified:** 2026-10-09 — Codex M13 navigation read-back
 
 
 ---
