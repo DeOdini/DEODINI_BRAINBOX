@@ -5812,3 +5812,10 @@ Because this independent-verification closeout is written after the clean M12 ti
 4. run M13 P14 preflight.
 
 No M12 PR/merge is required before M13 because M09–M14 remain inside Batch C.
+
+
+## 15. M12 verification metadata reconciliation — 2026-10-09
+
+The independent M12 verification result remains **PASS**, with no blocking flags. During the M13 P14 cross-check, three M12-authored Backend navigation READMEs were found to retain `independent ChatGPT verification pending` in their `VERIFIER` field after the M12 PASS was recorded. The Backend parent, Integrations, and Code Patterns verifier fields now state the completed PASS. The stale M12 verification sentence in the root README was reconciled in commit `a5a87325144749bfe6ccc9ae601405b852958714`.
+
+This closeout corrects verification metadata only. It changes no Backend hierarchy, knowledge content, source disposition, or authority boundary; it creates no new M12 flag. M12 remains unmerged. The M12 follow-up publication and final branch tip are confirmed in the M13 execution report.

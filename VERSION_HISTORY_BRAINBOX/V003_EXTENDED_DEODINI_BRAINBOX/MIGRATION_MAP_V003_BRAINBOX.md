@@ -1587,3 +1587,12 @@ Independent verification confirmed:
 - no application test suite was required/run.
 
 Older “M12 independent verification pending” statements are historical pre-verification states and are superseded by this section.
+
+
+---
+
+## 38. V003-M12 — verification metadata reconciliation — 2026-10-09
+
+The M12 independent ChatGPT verification remains **PASS** with no blocking flags. A downstream M13 preflight cross-check found three M12-authored Backend README `VERIFIER` fields still saying that independent verification was pending. The fields in the Backend parent, Integrations, and Code Patterns READMEs now state the completed PASS. The root README's stale M12 status sentence was corrected in commit `a5a87325144749bfe6ccc9ae601405b852958714`.
+
+This is a verification-status metadata correction only. It changes no target taxonomy, source disposition, or knowledge content. No M12 PR or merge has been created. See Phase 02 migration report §15 and the M13 report for the final M12 follow-up branch tip and push check.

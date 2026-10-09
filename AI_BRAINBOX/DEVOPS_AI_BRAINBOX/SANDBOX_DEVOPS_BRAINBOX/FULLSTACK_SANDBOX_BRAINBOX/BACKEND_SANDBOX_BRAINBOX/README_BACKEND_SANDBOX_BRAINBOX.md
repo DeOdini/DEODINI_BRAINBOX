@@ -12,7 +12,7 @@
 **CANONICAL SOURCES:** Frozen V003 Specification; V003 Origin Conversation; V003-M12 ticket.
 **POPULATION STATE:** Backend taxonomy and navigation are present. All 17 knowledge leaves are empty placeholders; no backend implementation or reusable pattern was promoted.
 **LAST VERIFIED:** 2026-10-09 — Codex structural and local-link verification.
-**VERIFIER:** Codex implementation read-back; independent ChatGPT verification pending.
+**VERIFIER:** Codex implementation read-back; independent ChatGPT verification: PASS (2026-10-09).
 
 ## Authority boundary
 
