@@ -3656,6 +3656,7 @@ I completed sign-in
 22. GitHub confirms the closeout branch tip is `77c4ca2`, matching the local branch. I’m checking that `main` has not moved, then I’ll fast-forward and push the closeout.
 23. The latest transcript-only commit is being pushed to the same closeout branch. The earlier push completed after a similar delay; I’m waiting for this fetch-confirmed update before touching `main`.
 24. The follow-up transcript commit reached GitHub at `e15ba26` and matches the local closeout branch. I’m confirming `main` still matches the ticket-merge tip before fast-forwarding the closeout.
+25. `main` was still at the expected M18 merge tip, and the closeout fast-forward succeeded. The `main` push is running now; I’ll verify the final remote tip, all five branch ancestries, and the clean worktree afterward.
 
 ## Codex final response (verbatim)
 
