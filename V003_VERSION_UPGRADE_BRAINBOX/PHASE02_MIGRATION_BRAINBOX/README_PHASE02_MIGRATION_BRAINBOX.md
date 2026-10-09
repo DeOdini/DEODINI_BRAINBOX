@@ -143,3 +143,17 @@ This is the current execution state and supersedes earlier M07/M08 readiness wor
 - M08 blocking flags: NONE.
 - Batch B substantive ticket work M05–M08: COMPLETE.
 - M09: hold until this M08 verification closeout is committed and Batch B Git/flag closure is completed.
+
+
+---
+
+## Current Batch B closure override — 2026-10-09
+
+- M05 FUNC CORE: independently verified PASS; PR #22 merged.
+- M06 FUNC EXE: independently verified PASS; PR #23 merged.
+- M07 ancillary classification: independently verified PASS; PR #24 merged.
+- M08 Skills taxonomy: independently verified PASS; PR #25 merged.
+- All four branches remain on GitHub and pass the remote-main ancestry check.
+- M06-LINK-01, M07-WF-01, and M07-AUTH-01 remain batch-deferred / non-blocking with their later-ticket owners; no blocking Batch B flag remains.
+- Batch B Git closure is complete. Final report closeout is being committed/pushed on the M08 branch and merged in a separate documentation PR.
+- M09 may proceed to its own P14 preflight after report closeout and local main synchronization. M09 has not been started in this closeout.

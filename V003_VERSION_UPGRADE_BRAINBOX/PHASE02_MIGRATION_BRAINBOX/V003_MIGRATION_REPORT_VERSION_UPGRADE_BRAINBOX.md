@@ -4183,3 +4183,55 @@ M05, M06, M07, and M08 each have a dedicated pushed branch with a verified local
 **Next authorized action:** create/merge separate PRs to &#96;main&#96; in ticket order M05 → M06 → M07 → M08.
 **Branch deletion:** not requested; retain all ticket branches.
 **Post-merge verification and final report:** pending merge completion.
+
+
+---
+
+# Batch B Post-Merge Verification — V003-M05 through V003-M08 — 2026-10-09
+
+**Result: PASS — all four ticket branches are committed, pushed, individually merged, and verified as ancestors of the current remote main.**
+**Blocking Batch B flags:** NONE.
+**Branches:** retained; no branch deletion was requested.
+
+## 1. Ordered GitHub merge record
+
+| Ticket | Dedicated branch | Published ticket head | PR | Merge commit | Result |
+|---|---|---|---:|---|---|
+| V003-M05 — FUNC CORE Registry Migration | v003/m05-func-core-registry-migration | 585f9600ca4940aab750488b2f46f7cb72a94d69 | #22 | 32842fbdd77086557afa1e42f8c51cf664250fda | Merged |
+| V003-M06 — FUNC EXE Registry Migration | v003/m06-func-exe-registry-migration | 16aab11293f656ae21f1ca215195186992b60cd2 | #23 | 3e73be88402f6cfa22b9b97de1a2bf759d5473c7 | Merged |
+| V003-M07 — FUNC Ancillary Content Classification | v003/m07-func-ancillary-content-classification | 8aeebe0990f4d1e1d9f68ece524ca07fe20fca68 | #24 | 0ca243f3aa3da84e57df6ddf4055311c266a0353 | Merged |
+| V003-M08 — Skills AI Taxonomy & Legacy Skills Reconciliation | v003/m08-skills-ai-taxonomy-migration | 141b98d3e53133cc59c1cc04f605cb0ce9ac953e | #25 | 2713a841a1704e4fdecf5b40ad48b5088ca426aa | Merged |
+
+PRs #22–#25 were opened and merged one at a time in dependency order. The remote main was rechecked between merges. Each PR was fetched before merge, showed the expected branch/head/base, and was mergeable. The M08 crosscheck/verification documentation was committed as 141b98d3e53133cc59c1cc04f605cb0ce9ac953e and pushed before opening PR #25.
+
+At the post-merge verification point, GitHub origin/main was 2713a841a1704e4fdecf5b40ad48b5088ca426aa. The four remote ticket refs remained published at their recorded ticket heads. Git fetch updated origin/main; git merge-base --is-ancestor confirmed each of the four ticket refs is an ancestor of origin/main. GitHub fetch confirmed all four PRs are closed and merged with the merge commits shown above.
+
+## 2. Ticket artifact crosscheck
+
+- **M05 CORE:** AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/ contains the registry README and eight agent CORE records: ChatGPT, Claude, Cline, Codex, Copilot, DeepSeek, Grok, and Qwen. Each record distinguishes exposure, connection, authentication, execution, authorization, limitations, EXE references, and verification date. The eight legacy source files remain retained and baseline-matched; DeepSeek/Qwen pending notices were not promoted as empty factual records.
+- **M06 EXE:** AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_EXE_FUNC_BRAINBOX/ contains its index and exactly RESEARCH, BROWSER, FILE, CODE, and MEDIA categories. MEDIA remains reserved / execution evidence pending. The CORE-to-EXE references match the approved evidence matrix; tool configuration alone is not treated as execution proof.
+- **M07 ancillary classification:** FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, and FUNC_WORKFLOW_BRAINBOX.md remain in their original locations and match the M01 SHA-256 baselines recorded in the earlier Batch B crosscheck. Their substantive sections have dispositions without wholesale source migration. No duplicate Governance policy was created; n8n/email remains unproven.
+- **M08 Skills:** the Skills tree matches frozen Specification §8 exactly: 147 expected / 147 physical directories, zero missing or extra; 120 tracked zero-byte .gitkeep markers; and 13 Markdown records. All five retained legacy Skills sources match M01; four empty sources remain empty. The recorded Markdown link check is 64 local links / zero broken. No product/application source changed.
+
+## 3. Batch-deferred flags and final disposition
+
+- **M06-LINK-01 — BATCH-DEFERRED / NON-BLOCKING:** preserve the execution-time Codex scan of 120 links / zero broken and the independent ChatGPT scan of 113 / zero broken as separately sourced historical counts. Both found zero broken targets. Do not rewrite either historical measurement. M19 owns future repository-wide reference reconciliation and its separately scoped count.
+- **M07-WF-01 — BATCH-DEFERRED / NON-BLOCKING:** n8n/email remains unproven and is not added as Skills knowledge. Applicable workflow destinations remain with M09/M10; M19 handles later reference reconciliation and M20 source-retirement review.
+- **M07-AUTH-01 — BATCH-DEFERRED / NON-BLOCKING:** generic legacy push/notify wording remains superseded by Governance. M10 references canonical authority where applicable; M19/M20 retain reference and source-retirement responsibilities.
+- **M08:** independent verification PASS; no blocking M08 flag.
+
+The three carried flags have explicit later-ticket owners and no material dependency on Batch B completion. No source move, rename, deletion, or new content correction was required for this closure.
+
+## 4. Final checks and limits
+
+- GitHub PR state: #22, #23, #24, and #25 all closed / merged.
+- GitHub branch state: the four dedicated branch refs remain available and point to their ticket-specific heads.
+- Remote ancestry: all four branch tips verified as ancestors of origin/main.
+- Remote main at the ticket-merge verification point: 2713a841a1704e4fdecf5b40ad48b5088ca426aa.
+- Local worktree on v003/m08-skills-ai-taxonomy-migration was clean before this post-merge report edit; local main was then 14 commits behind origin/main and was not discarded or reset. Local synchronization will be performed after publishing the report closeout.
+- Documentation diff check passed after removing newly authored trailing whitespace; CRLF conversion notices are Git line-ending notices, not whitespace errors.
+- No application/product tests were run: this batch migrates documentation and taxonomy, and no application code changed.
+
+**Batch B Git closure:** COMPLETE for M05–M08.
+**Final report closeout:** being recorded on the M08 branch, then will be staged, committed, pushed, and merged as a separate documentation-closeout PR to main.
+**M09:** dependency gate is satisfied after this report closeout and local main synchronization; M09 execution is not part of this report.

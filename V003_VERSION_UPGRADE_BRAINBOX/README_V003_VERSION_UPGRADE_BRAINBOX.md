@@ -173,3 +173,10 @@ Supersedes earlier M05/M06 “independent verification pending” status text:
 - M08 blocking flags: NONE.
 - Batch B: at closure boundary.
 - M09: not yet eligible; complete M08 verification-closeout commit and authorized Batch B push/PR/merge/closure first.
+
+
+---
+
+## Current Phase 02 status — Batch B closure — 2026-10-09
+
+M05–M08 have independently verified PASS and are merged to main through PRs #22–#25 in dependency order. Their dedicated GitHub branches remain available. The three documented batch-deferred flags retain their later-ticket owners; no blocking Batch B flag remains. The post-merge report closeout is being published from the M08 branch. M09 awaits that report closeout and local main synchronization, then requires its own P14 preflight.

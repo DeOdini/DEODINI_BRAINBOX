@@ -565,3 +565,10 @@ M07 FUNC ancillary classification independently verifies **PASS**. The three leg
 ## Current Phase 02 verification override — 2026-10-09
 
 M08 Skills AI Taxonomy & Legacy Skills Reconciliation independently verifies **PASS**. The frozen Skills tree matches exactly at 147/147 directories, 120 zero-byte Git-only markers are retained, and the five legacy Skills sources remain unchanged. M08 completes substantive Batch B ticket work; M09 waits for Batch B Git closure.
+
+
+---
+
+## Current Phase 02 status — Batch B closure — 2026-10-09
+
+Batch B tickets M05–M08 independently verify PASS and are merged to main through PRs #22–#25 in dependency order. All four dedicated branches remain available. M06-LINK-01, M07-WF-01, and M07-AUTH-01 remain documented as batch-deferred/non-blocking with their later-ticket owners. No blocking Batch B flag remains. The post-merge report closeout is being published before M09 begins its own P14 preflight.

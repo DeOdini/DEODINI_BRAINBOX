@@ -228,3 +228,8 @@ The retained source remains at AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/. Its README
 ## Independent verification status — 2026-10-09
 
 V003-M08 independently verifies **PASS**. The physical Skills taxonomy matches frozen §8 exactly, retained legacy Skills sources remain unchanged, empty placeholders remain unpopulated, and canonical/reference boundaries are preserved.
+
+
+## Batch B Git closure — 2026-10-09
+
+V003-M08 independently verifies PASS and is merged to main through PR #25. The M08 branch remains available. Batch B M05–M08 is merged in order; the detailed Git and flag disposition is recorded in the Phase 02 migration report.

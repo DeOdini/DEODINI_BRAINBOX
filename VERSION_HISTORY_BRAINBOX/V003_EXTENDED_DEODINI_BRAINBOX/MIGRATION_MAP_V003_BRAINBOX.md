@@ -1193,3 +1193,28 @@ The branch history is linear M05 → M06 → M07 → M08. Current main is an anc
 **Batch B:** substantive M05–M08 work PASS; Git closure is authorized and pending ordered PR merges.
 **M09:** wait until Batch B merge/remote-verification closure completes.
 **Branch deletion:** not requested.
+
+
+---
+
+## 28. Batch B post-merge verification and closure — 2026-10-09
+
+**Result:** PASS — M05, M06, M07, and M08 are individually merged to main in dependency order.
+**Blocking flags:** NONE.
+**Current Batch B state:** Git closure complete; branches retained.
+
+| Ticket | Branch | Ticket head | Merged PR | Merge commit |
+|---|---|---|---:|---|
+| M05 FUNC CORE | v003/m05-func-core-registry-migration | 585f9600ca4940aab750488b2f46f7cb72a94d69 | #22 | 32842fbdd77086557afa1e42f8c51cf664250fda |
+| M06 FUNC EXE | v003/m06-func-exe-registry-migration | 16aab11293f656ae21f1ca215195186992b60cd2 | #23 | 3e73be88402f6cfa22b9b97de1a2bf759d5473c7 |
+| M07 ancillary classification | v003/m07-func-ancillary-content-classification | 8aeebe0990f4d1e1d9f68ece524ca07fe20fca68 | #24 | 0ca243f3aa3da84e57df6ddf4055311c266a0353 |
+| M08 Skills taxonomy | v003/m08-skills-ai-taxonomy-migration | 141b98d3e53133cc59c1cc04f605cb0ce9ac953e | #25 | 2713a841a1704e4fdecf5b40ad48b5088ca426aa |
+
+GitHub reported each PR closed/merged. All four origin ticket refs remained published. After fetching origin, each ticket tip passed git merge-base --is-ancestor against origin/main. At the check point origin/main was 2713a841a1704e4fdecf5b40ad48b5088ca426aa. The M08 crosscheck and M08 verification closeout had been pushed in commit 141b98d3e53133cc59c1cc04f605cb0ce9ac953e before PR #25.
+
+The artifact audit and dispositions are detailed in the Batch B Post-Merge Verification section of V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md. In brief: M05 eight CORE records and sources retained; M06 five evidence-bounded EXE categories with MEDIA reserved; M07 three source files unchanged and classified; M08 frozen-tree exact match with empty legacy Skills sources preserved.
+
+Batch-deferred flags M06-LINK-01, M07-WF-01, and M07-AUTH-01 remain non-blocking with M19/M20/M09/M10 ownership as detailed in the report. No source-removal action or new migration was introduced by Batch B closure.
+
+**M09:** eligible for its own P14 preflight after this report closeout and local main synchronization. M09 was not executed here.
+**Final report closeout:** to be committed/pushed on the M08 branch and merged in its own documentation PR.
