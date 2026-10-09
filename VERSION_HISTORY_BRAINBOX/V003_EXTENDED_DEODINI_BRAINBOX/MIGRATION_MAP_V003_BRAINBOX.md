@@ -1,7 +1,7 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01–M21 migration ledger. M01–M09 are recorded below; M09 ChatGPT independent verification PASS and its verification closeout were pushed on `v003/m09-devops-legacy-reconciliation` at `d61f015b4f1fdedac89f2d7e518082f2777bec12`. V003-M10 is authorized and in progress on dedicated branch `v003/m10-fullstack-workflow-architecture-orchestration`, created from that M09 tip. M10 implementation and documentation are not yet committed or pushed.
+**Status:** Living M01–M21 migration ledger. M09 ChatGPT independent verification PASS and its closeout are published on `v003/m09-devops-legacy-reconciliation` at `d61f015b4f1fdedac89f2d7e518082f2777bec12`. V003-M10 implementation commit `7def360de6bc72142f89758d9be6fe70f21c0492` is pushed to `v003/m10-fullstack-workflow-architecture-orchestration` and verified on GitHub. The M10 execution report and conversation record are being published in a separate follow-up commit. No PR or merge was requested.
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
 **Current active branch:** v003/m07-func-ancillary-content-classification
@@ -1354,7 +1354,7 @@ Older “M09 independent verification pending” statements are historical pre-v
 **Branch:** `v003/m10-fullstack-workflow-architecture-orchestration`.
 **Pre-state:** Dedicated branch created from the clean M09 verification-closeout tip `d61f015b4f1fdedac89f2d7e518082f2777bec12`. M09 ChatGPT verification changes had already been committed and pushed on `v003/m09-devops-legacy-reconciliation`; local and remote M09 tips matched. M10 began with no branch-specific edits.
 **Dependencies:** M09 and M08 independently verified PASS; M09 source classification assigns the Fullstack records to M10.
-**Implementation state at this ledger update:** Created locally; not yet committed or pushed. No PR or merge.
+**Implementation state:** Commit `7def360de6bc72142f89758d9be6fe70f21c0492` is pushed and verified on the dedicated M10 branch. This follow-up documentation commit records the execution report and conversation. No PR or merge was requested or performed.
 
 ### P14 preflight and source integrity
 
@@ -1390,7 +1390,7 @@ The DEVOPS and Sandbox parent READMEs now show Fullstack as present and link its
 - The superseded handoff filename was removed from the Fullstack tree listings and the classification heading now matches its parent-infix filename.
 - M09-REF-02 and M09-REF-03 remain BATCH-DEFERRED / NON-BLOCKING; M10 treats the legacy overview as reference-only and retains all source files.
 - M01-GIT-01 remains carried. No garbage collection, pruning, reflog expiry, force-push, source retirement, or other destructive Git operation was performed.
-- **Blocking M10 flags:** NONE. `M10-WS-01` is documented below as BATCH-DEFERRED / NON-BLOCKING.
+- **Blocking M10 flags:** NONE. `M10-WS-01` is documented below; the transcript-preservation note `M10-DOC-WS-01` is documented in the Phase 02 report. Both are BATCH-DEFERRED / NON-BLOCKING.
 - **M10 success gate:** source-backed target and classification records created; source statuses preserved; no source removal; no unsupported architecture/orchestration content added.
 
 
