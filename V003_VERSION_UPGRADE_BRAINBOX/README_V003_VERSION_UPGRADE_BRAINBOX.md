@@ -2,25 +2,33 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02 - Batch C M09-M14 independently verified and merged through PRs #28-#33. Batch C closeout is recorded in the active Phase 02 report. M15 P14 preflight passed; implementation is in progress on its dedicated branch.
-**Migration status:** V003-M01-M21 AUTHORIZED / M01-M14 INDEPENDENTLY VERIFIED AND MERGED / BATCH C PRS #28-#33 MERGED / M15 IN PROGRESS / DEFERRED FLAGS REMAIN ASSIGNED TO M15, M19/M20, M21 / MERGE AUTHORITY RETAINED BY OPERATOR
+**Current phase:** V003 Phase 02 — Batches A-D are closed; M01-M18 independently verified and merged. M19 is active on its dedicated branch after clean-main P14 preflight; M20/M21 remain pending.
+**Migration status:** V003-M01-M21 AUTHORIZED / M01-M18 INDEPENDENTLY VERIFIED AND MERGED / M19 IMPLEMENTATION IN PROGRESS ON ITS DEDICATED BRANCH / M20-M21 PENDING / M15-ASSET-01 AND M17-DEST-01 REMAIN OPEN / MERGE AUTHORITY RETAINED BY OPERATOR
 
 ## Purpose
 
 This folder contains the canonical V003 Origin Conversation and Specification, the closed Phase 01 polishing/verification archive, and the active Phase 02 migration planning/reporting container. Supporting Phase 01 and Phase 02 records document execution, audit, migration scoping, and verification history; they are not competing architecture authorities.
 
-## Local Tree
+## Local target-authority tree
 
 ```text
 V003_VERSION_UPGRADE_BRAINBOX/
 ├── README_V003_VERSION_UPGRADE_BRAINBOX.md
 ├── V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md
-├── V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md
-├── PHASE01_POLISH_BRAINBOX/
+└── V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md
+```
+
+## Phase 01 archive and Phase 02 process-support overlay
+
+These support branches remain reachable from the V003 parent, outside its operational target tree. They document audit/history and migration execution; neither competes with the frozen Specification or Origin Conversation.
+
+```text
+V003_VERSION_UPGRADE_BRAINBOX/
+├── PHASE01_POLISH_BRAINBOX/ [CLOSED AUDIT/HISTORY]
 │   ├── README_PHASE01_POLISH_BRAINBOX.md
 │   ├── V003_POLISH_CONVO_VERSION_UPGRADE_BRAINBOX.md
 │   └── V003_POLISH_REPORT_VERSION_UPGRADE_BRAINBOX.md
-└── PHASE02_MIGRATION_BRAINBOX/
+└── PHASE02_MIGRATION_BRAINBOX/ [ACTIVE PROCESS SUPPORT]
     ├── README_PHASE02_MIGRATION_BRAINBOX.md
     ├── V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md
     ├── V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md

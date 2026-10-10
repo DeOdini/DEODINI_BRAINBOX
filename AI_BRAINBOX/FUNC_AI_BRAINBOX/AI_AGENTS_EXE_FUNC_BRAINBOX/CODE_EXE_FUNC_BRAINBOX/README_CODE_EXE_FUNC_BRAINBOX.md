@@ -9,7 +9,7 @@
 **REFERENCED_BY:** EXE index; CODEX_CORE_FUNC_BRAINBOX.md.
 **REFERENCES:** T23 build report; Codex CORE/source reports.
 **STATUS:** [ADMITTED - SCOPED FRONTEND CHANGE]
-**LAST_VERIFIED:** 2026-10-08 - T23 implementation record reviewed; code execution was not repeated for M06.
+**LAST_VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **APPLIES_TO:** Codex source editing for the evidenced frontend change.
 **SOURCE_TYPE:** Evidence-backed capability record.
 **VERIFIER:** Codex, V003-M06 source read-back.
@@ -20,7 +20,7 @@
 - **Exposure/connection:** Source editing tools and the FootHive workspace are described in the Codex report and P06 matrix.
 - **Authentication:** Not applicable for local code editing.
 - **Execution verified:** YES - T23's phone-width header spacing CSS change was verified with Playwright on 2026-10-03.
-- **Evidence:** [Frozen P06 matrix](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md); [FootHive T23 report](../../../../AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md); [Codex CORE](../../../../AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md).
+- **Evidence:** [Frozen P06 matrix](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md); [FootHive T23 report](../../../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md); [Codex CORE](../../../../AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md).
 
 ## Limits and authority
 

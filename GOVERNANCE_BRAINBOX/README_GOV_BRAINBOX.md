@@ -11,9 +11,9 @@
 **RELATED DOMAINS:** Root README, AI, Skills, DevOps Sandbox/Production, Portfolio, Version History, and Phase 02 migration support.
 **CANONICAL SOURCES:** Frozen V003 Specification §§5, 25–27; V003 Origin Conversation; listed legacy sources as provenance only.
 **REFERENCES:** See the source and navigation index below.
-**POPULATION STATE:** All approved Governance files are present. Legacy sources remain in place pending M19 reference reconciliation and M20 source-retirement review.
+**POPULATION STATE:** All approved Governance files are present. M19 reconciled active README references; original legacy sources remain in place pending the separate M20 source-retirement review.
 **VERIFIER:** Codex — M03 implementation; ChatGPT — independent verification PASS, recorded in the Phase 02 report.
-**LAST VERIFIED:** 2026-10-08
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **ENTRY NAVIGATION:** Start here for system-wide policy, then open the relevant governance domain.
 **EXIT NAVIGATION:** Return to `README_BRAINBOX.md` for the complete root tree.
 **APPLIES TO:** Operators and AI agents working in DEODINI_BRAINBOX.
@@ -22,7 +22,7 @@
 
 Governance is the canonical home for current system-wide rules. The frozen V003 Specification remains the approved architecture and migration-target authority; the Origin Conversation remains historical decision evidence. This folder operationalizes the approved governance rules without replacing either V003 authority.
 
-The prior root and subsystem documents listed below remain unmodified source records during migration. Their rules are mapped here only where they are system-wide and still current. Local or workflow-specific material remains with its domain until its own ticket classifies it. M19 owns complete reference reconciliation; M20 is the later source-retirement gate. No source is removed by M03.
+The prior root and subsystem documents listed below remain unmodified source records during migration. Their rules are mapped here only where they are system-wide and still current. Local or workflow-specific material remains with its domain until its own ticket classifies it. M19 completed active README reference reconciliation; M20 is the later source-retirement gate. No source is removed by M03.
 
 The Phase 02 ticket set and Operator declaration supply the current Phase 02 execution cadence and flag classification. That scoped update does not rewrite the frozen Specification or create a general exception for unrelated work.
 

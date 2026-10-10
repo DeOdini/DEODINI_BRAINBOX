@@ -10,7 +10,7 @@
 **LOCAL TREE:** Google Forms is the one explicitly approved child in this migration.
 **RELATED DOMAINS:** Fullstack Analytics Orchestration, Frontend Data Visualization, Skills Analytics Technologies, and FootHive case-study source.
 **POPULATION STATE:** Google Forms integration folder is present and empty. FootHive is source-specific evidence retained under its current project source for M15.
-**LAST VERIFIED:** 2026-10-09 — Codex M13 cross-domain navigation read-back.
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** M12 independent verification: PASS. M13 reference update: Codex read-back PASS; independent ChatGPT M13 verification: PASS (2026-10-09).
 
 ## Authority boundary
@@ -35,7 +35,7 @@ INTEGRATIONS_BACKEND_BRAINBOX/
 - [GA4 Technology](../../../../../SKILLS_AI_BRAINBOX/TECHNOLOGIES_SKILLS_BRAINBOX/ANALYTICS_TECHNOLOGIES_BRAINBOX/GA4_TECHNOLOGY_BRAINBOX/README_GA4_TECHNOLOGY_BRAINBOX.md)
 - [Governance Security](../../../../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
 - [Google Forms placeholder](GOOGLE_FORMS_INTEGRATION_BRAINBOX/.gitkeep)
-- [FootHive source build report](../../../../../PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — project-specific reference; M15 owns migration and disposition.
+- [FootHive source build report](../../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — project-specific reference; the canonical M15 Sandbox copy is linked here, and the original source remains for M20 review.
 - [Frozen V003 Specification](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8 and 14
 - [V003 Origin Conversation](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
 

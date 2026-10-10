@@ -9,7 +9,7 @@
 **AUTHORITATIVE TREE:** Frozen V003 Specification §§8 and 13; V003-M13.
 **RELATED DOMAINS:** Backend Integrations, Frontend Data Visualization, Skills Analytics Technologies, and FootHive project evidence.
 **POPULATION STATE:** M13 adds this ownership/navigation record. The retained `.gitkeep` is empty; no operational analytics flow has been migrated or verified.
-**LAST VERIFIED:** 2026-10-09 — Codex M13 implementation read-back.
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex M13 implementation read-back; independent ChatGPT M13 verification: PASS (2026-10-09).
 
 ## Ownership boundary
@@ -41,7 +41,7 @@ M13 copies no measurement identifier, endpoint, credential, event payload, or pe
 - [Frontend Data Visualization](../../FRONTEND_SANDBOX_BRAINBOX/UI_UX_DESIGN_FRONTEND_BRAINBOX/DATA_VISUALIZATION_DESIGN_BRAINBOX/README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md)
 - [Analytics Technologies](../../../../../SKILLS_AI_BRAINBOX/TECHNOLOGIES_SKILLS_BRAINBOX/ANALYTICS_TECHNOLOGIES_BRAINBOX/README_ANALYTICS_TECHNOLOGIES_BRAINBOX.md)
 - [Governance Security](../../../../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
-- [FootHive build report](../../../../../PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — project evidence reference; M15 owns its migration.
+- [FootHive build report](../../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — canonical M15 Sandbox evidence reference; this orchestration record does not duplicate GA4 technology knowledge.
 - [Frozen V003 Specification](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §13
 - [V003 Origin Conversation](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
 - [V003-M13 ticket](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)

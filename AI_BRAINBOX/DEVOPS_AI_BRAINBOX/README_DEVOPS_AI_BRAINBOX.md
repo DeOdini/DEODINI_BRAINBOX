@@ -9,7 +9,7 @@
 **CANONICAL SOURCE:** Frozen V003 Specification §§8 and 10; V003 Origin Conversation; V003-M09, M15, and M16 migration records.
 **POPULATION STATE:** Sandbox FootHive trial evidence is present under M15; the T20 FootHive Production summary is present under M16. Other Production operational branches remain empty unless stated in their local READMEs.
 **APPLIES TO:** DEODINI operators and agents creating or using execution, validation, release, and operations records.
-**LAST VERIFIED:** 2026-10-09
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 
 ## Authority boundary
 
@@ -48,6 +48,7 @@ DEVOPS_AI_BRAINBOX/
     │       ├── .env.example [PLACEHOLDER ONLY]
     │       └── .gitignore [TEMPLATE]
     ├── CASE_STUDIES_PROD_BRAINBOX/ [PRESENT — M16]
+    │   ├── README_CASE_STUDIES_PROD_BRAINBOX.md [P12 local navigation]
     │   └── FOOTHIVE_PROD_SUMMARY_BRAINBOX/
     │       ├── README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
     │       └── PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
@@ -111,7 +112,7 @@ DEVOPS_AI_BRAINBOX/
 The FootHive Sandbox case study is present under M15. The M16 Production case-study branch now contains a summary of the recorded T20 release; Production PASSED, FAILED, INCIDENTS, and REGRESSIONS areas still have no records. M16 did not trigger a deployment.
 ## M16 Production case-study update
 
-The M16 child summary documents the actual T20 Netlify deployment and recorded post-deployment checks from the canonical Sandbox Build Report. It does not copy the Sandbox evidence set, add a deployment procedure, claim current live status, or create other Production outcomes. The separate FootHive Portfolio child is indexed in the root `README_BRAINBOX.md`; the parent Portfolio README is assigned to M19.
+The M16 child summary documents the actual T20 Netlify deployment and recorded post-deployment checks from the canonical Sandbox Build Report. It does not copy the Sandbox evidence set, add a deployment procedure, claim current live status, or create other Production outcomes. The separate FootHive Portfolio child and parent `PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md` are indexed in the root `README_BRAINBOX.md`; M19 completed this navigation reconciliation.
 
 ## Domain boundary
 

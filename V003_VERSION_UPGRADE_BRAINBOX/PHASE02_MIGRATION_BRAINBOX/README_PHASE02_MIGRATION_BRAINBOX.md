@@ -1,12 +1,12 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE - AUTHORIZED] - Batch C M09-M14 independently verified and merged through PRs #28-#33; Batch C records are current below; M15 P14 preflight passed and implementation is in progress on its dedicated branch.
+**Status:** [ACTIVE - AUTHORIZED] - Batches A-D are closed; M01-M18 independently verified and merged. M19 is active on its dedicated branch following clean-main P14 preflight; M20/M21 remain pending.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
 **MENTAL MODEL:** Phase 01 froze the target; Phase 02 compares the live Brainbox against that target and migrates through individually scoped V003-Mxx tickets covered by the Operator's explicit M01–M21 set authorization, with each ticket subject to dependencies and P14 preflight.
 **GOVERNED BY:** The frozen V003 Specification, Origin Conversation, P14 migration preflight, the V003 parent README, and the Operator's explicit approval of V003-M01–M21 recorded in the Phase 02 report/conversation.
-**LAST VERIFIED:** 2026-10-09
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 
 ## Authority boundary
 
@@ -61,13 +61,13 @@ PHASE02_MIGRATION_BRAINBOX/
 
 **Execution authorization:** AUTHORIZED — V003-M01 through V003-M21, executed one ticket at a time under dependencies, P14 preflight, Codex reporting, ChatGPT independent verification, and Operator merge/closure authority.
 
-**Current Batch A progression:** M01-M04 remain independently verified PASS and merged through PRs #16-#19; Batch A documentation closeout PR #20 and BATCHA-DOC-01 correction PR #21 are merged. Final main is 3201a1e80c5bfb2f4f2053599608ff8fce15f9db. Deferred flag owners remain M15, M19/M20, and M21. Batch A is closed. M05 was committed and pushed at 585f960, with independent ChatGPT verification pending. M06 implementation commit 9635e5d is pushed on its dedicated branch; independent ChatGPT verification is pending and no PR/merge has occurred.
+**Batch A-D closure summary:** M01-M18 passed independent verification and merged at their respective batch boundaries. M01-M04 were merged through PRs #16-#19, with Batch A documentation closeout PRs #20/#21. Batch B (M05-M08), Batch C (M09-M14), and Batch D (M15-M18) closeout evidence is recorded below. M19 is active on its own branch. M15-ASSET-01 remains for M20 disposition; M17-DEST-01 still blocks only movement or retirement of the two legacy milestone records.
 
 **M01 inventory and migration map:** PASS; dedicated commit `bc6d1309a71f4a309469788074c381c8665e5490` is pushed and matches its origin branch. M01-GIT-01 is preserved for M21 integrity/recovery review; M01-FH-01 is assigned to M15.
 
-**M02 root-authority migration:** PASS; dedicated commit `3971f48c4c75641e46a23a86b0792e44e2d794e3` is pushed and matches its origin branch. `M02-BR-01` preserves both README byte/hash records; the 340-line hierarchy, link, and whitespace checks pass. Recheck under M19.
+**M02 root-authority migration:** PASS; dedicated commit `3971f48c4c75641e46a23a86b0792e44e2d794e3` is pushed and matches its origin branch. `M02-BR-01` preserves both README byte/hash records; the 340-line hierarchy, link, and whitespace checks pass. M19 confirms current root/local navigation and README references resolve.
 
-**M03 Governance canonicalization:** INDEPENDENT CHATGPT VERIFICATION PASS; implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` plus status-reconciliation commit `f0113e74bc2cc50a9e91fc340b5406b19494f026` are pushed on its dedicated branch and merged through PR #18 (`19c707cd6d2d443ff56081d0e73c7d6c5f705918`). All nine approved Governance records are present; the stale README verification label reflects the recorded pass. `M03-REF-01` remains assigned to M19/M20.
+**M03 Governance canonicalization:** INDEPENDENT CHATGPT VERIFICATION PASS; implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` plus status-reconciliation commit `f0113e74bc2cc50a9e91fc340b5406b19494f026` are pushed on its dedicated branch and merged through PR #18 (`19c707cd6d2d443ff56081d0e73c7d6c5f705918`). All nine approved Governance records are present; the stale README verification label reflects the recorded pass. `M03-REF-01` is resolved for active README references by M19; M20 remains the source-by-source retirement gate.
 
 **M04 Version History migration:** PASS; implementation commit `4747286c1b3c134001c6f6d08cb7dcba32685461` and cross-check/report commit `f05a87a188bbcdca7038a2f8518d00175371153d` were pushed on its dedicated branch and merged through PR #19 (`e0e05e2afec7795b916595c8c6ca3f09a8b227d0`). V001/V002 path inventories match Git exactly (10/10 and 111/111); conceptual retrospective gaps remain explicitly deferred to M21.
 

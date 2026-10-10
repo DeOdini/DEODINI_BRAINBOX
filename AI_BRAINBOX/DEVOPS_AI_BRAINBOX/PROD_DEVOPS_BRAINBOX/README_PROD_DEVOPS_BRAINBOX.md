@@ -9,8 +9,8 @@
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 21–22, 25; V003 Origin Conversation; V003-M09 and V003-M14 migration records.
 **APPLIES TO:** Actual production operations and their evidence, subject to applicable Operator authorization.
 **POPULATION STATE:** M14 structure plus the M16 FootHive T20 Production summary are present. No separate Production deployment procedure, ongoing operations, or monitoring outcome is claimed.
-**VERIFIER:** Codex — M14 implementation checks and M16 current-tree/link checks; independent ChatGPT M14 verification: PASS (2026-10-09), M16 verification pending.
-**LAST VERIFIED:** 2026-10-09
+**VERIFIER:** Codex — M14 implementation checks and M16 current-tree/link checks; independent ChatGPT M14 verification: PASS (2026-10-09); M16 independent verification: PASS (Batch D closeout, 2026-10-09).
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 
 ## Authority boundary
 

@@ -12,8 +12,8 @@
 **CANONICAL SOURCES:** Frozen V003 Specification §§8 and 17.
 **REFERENCES:** See Sources below.
 **POPULATION STATE:** All language leaves are [EMPTY] / [PLANNED]; no language content was promoted from legacy placeholders.
-**LAST VERIFIED:** 2026-10-09 — Codex read-back after implementation.
-**VERIFIER:** Codex implementation read-back; ChatGPT independent verification pending.
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**VERIFIER:** Codex implementation read-back; ChatGPT independent M08 verification: PASS (Batch B closeout, 2026-10-09).
 
 ## Local tree
 
