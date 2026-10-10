@@ -8,7 +8,7 @@
 **GOVERNED BY:** Governance Evidence, Reference, Promotion, and Ticketing rules.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 21–22, 25; V003 Origin Conversation; V003-M09 migration record.
 **APPLIES TO:** Sandbox execution knowledge and its evidence.
-**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**LAST VERIFIED:** 2026-10-10 - Codex M20 empty-source and current-reference check.
 
 ## Authority boundary
 
@@ -62,7 +62,7 @@ The following current sources contain meaningful proposed/raw workflow material.
 
 These are Sandbox Fullstack workflow candidates, not canonical procedures yet. M09 records their destination and status; M10 owns detailed section-by-section migration and any split among workflows, architecture, orchestration, or references. Do not merge the two source documents merely because one is a preset variant.
 
-The legacy `PROVEN_PATTERN_PROJ_BRAINBOX.md` and `FAILED_PATTERN_PROJ_BRAINBOX.md` are both 0-byte, 0-line placeholders. They contain no outcomes to copy into Sandbox Passed/Failed records. Their existence does not establish a successful or failed experiment.
+The legacy `PROVEN_PATTERN_PROJ_BRAINBOX.md` and `FAILED_PATTERN_PROJ_BRAINBOX.md` were 0-byte, 0-line placeholders and were retired by M20 after source and recovery checks. They contained no outcomes to copy into Sandbox or Production evidence. Source-era references in retained raw workflow records remain historical, not current promotion instructions.
 
 ## M10 current disposition
 

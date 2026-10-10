@@ -2320,3 +2320,46 @@ Independent active README scan **72 files / 496 relative links / 0 broken**; all
 M15-REF-01 and M16-README-01 remain resolved for current navigation. M15-ASSET-01 (29 source-only files) and M17-DEST-01 (legacy milestones without approved destination) remain OPEN. M19-HIST-01 remains OPEN for source-fidelity/retirement: 44/45 worktree exact pairs; 17/45 Git-stored destination blobs match original manifest raw-byte hashes; 45/45 LF-normalized content equal. No change was made to those historical files, and no universal raw-byte archival PASS is claimed.
 
 **M19 substantive ticket complete / independent PASS. M20 cannot remove any unresolved source without separate Operator authorization and verified reference/integrity disposition.**
+
+
+---
+
+## 56. V003-M20 source-by-source retirement disposition - 2026-10-10
+
+**Branch:** v003/m20-legacy-source-retirement, created from published M19 verification tip 5f2cdcd9b37d38d0a2fde030a28f8f4f117efc23. M01-M19 independent verification is recorded in Phase 02. M20 does not merge, deploy, or perform Git garbage collection.
+
+### Seven verified zero-byte sources retired
+
+Each path below was 0 bytes / 0 lines at the M01 baseline and immediately before M20 removal. Each exact SHA-256 was e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. The M01 baseline commit 27e73f828bb367298442c2e621c18d1cc1ceb4f4 contains each original empty blob. The baseline is an ancestor of M20; Git history and the published M19 branch preserve the tracked source paths. A scan of tracked Markdown link destinations found zero links to these seven files. Source-era plain-text mentions remain historical and are not current destinations.
+
+| Former source path | Canonical responsibility now present | Disposition |
+|---|---|---|
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROVEN_PATTERN_PROJ_BRAINBOX.md | Sandbox/Production DEVOPS READMEs and evidence-based promotion rules; no permanent PROVEN bucket | RETIRED - empty placeholder, no outcomes |
+| AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FAILED_PATTERN_PROJ_BRAINBOX.md | Sandbox/Production DEVOPS README and scoped PASSED/FAILED evidence responsibility; no failure content | RETIRED - empty placeholder, no outcomes |
+| AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/RAW_SKILLS_BRAINBOX.md | SKILLS_AI_BRAINBOX approved taxonomy and local README | RETIRED - empty placeholder |
+| AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/PROVEN_SKILLS_BRAINBOX.md | SKILLS_AI_BRAINBOX approved taxonomy and evidence/promotion references | RETIRED - empty placeholder |
+| AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/REUSABLE_SKILLS_BRAINBOX.md | SKILLS_AI_BRAINBOX approved taxonomy and reusable-knowledge references | RETIRED - empty placeholder |
+| AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/FAILED_SKILLS_BRAINBOX.md | SKILLS_AI_BRAINBOX troubleshooting/reference taxonomy | RETIRED - empty placeholder |
+| PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md | PORTFOLIO_BRAINBOX parent README and FootHive Portfolio child records | RETIRED - empty placeholder |
+
+**Six-gate result for each of the seven:** (1) approved current responsibility exists; no source content needed transfer; (2) zero-byte worktree and M01 Git-baseline contents/hash match; (3) no Markdown link destination requires the old file; current README overlays were updated; (4) historical existence is preserved in M01 manifest, V002 tree snapshot, M20 ledger and Git; (5) tracked empty blobs are restorable from baseline Git history and the remote branch; no bundle was claimed and unrelated untracked files/configuration are not covered by Git; (6) M20 explicitly lists the Portfolio, Skills and project-workflow legacy sources for conditional retirement. No source-era historical document was rewritten to conceal the original paths.
+
+The legacy root BRAINBOX/ directory was already physically absent at M20 preflight. Git never tracked it; M20 did not delete it. The root current-state overlay was corrected so it does not claim that the directory exists.
+
+### Retained source groups and exact stopping conditions
+
+| Source group | M20 disposition and reason |
+|---|---|
+| DOB_MUST_README.md and AI_BRAINBOX/AI_MUST_README.md | RETAIN. Current Governance/local records still link to these as provenance; removing them would break active source references. |
+| Eight flat AI_BRAINBOX/FUNC_AI_BRAINBOX/*_FUNC_BRAINBOX.md agent reports | RETAIN. CORE records link to these dated source reports; the new CORE summaries do not replace their raw historical evidence. |
+| FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, FUNC_WORKFLOW_BRAINBOX.md | RETAIN. FUNC/Governance records still link to the originals and M07 classified mixed responsibilities without a byte-identical archival replacement. |
+| PROJ_MUST_README.md and RAW_WORKFLOW_PROJ_BRAINBOX/ | RETAIN. Current DEVOPS/Fullstack records link to the originals; raw workflows and local READMEs remain historical provenance. Only the two empty top-level placeholders above were removed. |
+| FOOTHIVE_PROJ_BRAINBOX/ and all historical files/assets within | RETAIN. M15-ASSET-01 leaves 29 source-only product/catalog assets without approved destination; M19-HIST-01 leaves raw-byte worktree/Git-blob fidelity qualified (44/45 worktree pairs; 17/45 Git-stored destination blobs match original manifest hashes). The source tree cannot be retired wholesale. |
+| SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md | RETAIN. Current Skills and Governance references still link to this substantive source. Only four empty sibling placeholders above were removed. |
+| MILESTONES/ two historical records | RETAIN. M17-DEST-01 lacks an Operator-approved physical destination; no move, copy-as-canonical, rename or retirement was performed. |
+| V003_VERSION_UPGRADE_BRAINBOX/, PHASE01_POLISH_BRAINBOX/, PHASE02_MIGRATION_BRAINBOX/ | RETAIN. These are protected authority/support/archive records, not M20 cleanup targets. |
+| VERSION_HISTORY_BRAINBOX/ and current canonical domain records | RETAIN. Not legacy cleanup targets. |
+
+**M20-REF-01 - source-specific BLOCKING for substantive legacy removal, non-blocking for the seven empty-source retirements:** Current canonical/local records still provide provenance links into DOB, AI, FUNC, project workflow and Skills legacy sources. Removing those sources would break active references or discard original content. The affected paths are listed in the table above. Correction requires separately verified archival/reference disposition, exact source integrity and Operator authority where scope changes; retain under M20 and revisit only in a later authorized ticket. M15-ASSET-01, M17-DEST-01, M19-HIST-01 and M01-GIT-01 remain open within their recorded boundaries.
+
+**M20 source moves/copies/renames:** NONE. **M20 source deletions:** only the seven exact zero-byte tracked placeholders above. **M20 current READMEs updated:** root, AI, Portfolio, Skills and Sandbox DEVOPS. **M20 protected archives and frozen authorities:** unchanged.

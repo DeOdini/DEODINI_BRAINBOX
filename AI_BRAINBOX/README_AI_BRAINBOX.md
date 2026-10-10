@@ -11,9 +11,9 @@
 **RELATED DOMAINS:** Governance, Version History, Milestones, Portfolio, and FootHive Sandbox/Production.
 **CANONICAL SOURCES:** Frozen V003 Specification §§8-10, 15-20; Governance; V003 Origin Conversation for decision history; Phase 02 for migration process.
 **REFERENCES:** Use the local navigation links and Migration Map below.
-**POPULATION STATE:** M05-M16 target records are present. M17 classified and retained legacy milestone sources; M18 records remain [PLANNED]. Legacy source trees are preserved for M20 review. M19 reference reconciliation is complete.
-**LAST VERIFIED:** 2026-10-10 - Codex M19 tree and reference audit.
-**VERIFIER:** Codex - M19 local tree and link checks; ChatGPT - M05-M19 independent verification PASS (2026-10-10), including M19-TREE-01 closure; details in Phase 02.
+**POPULATION STATE:** M05-M16 target records are present. M17 classified and retained legacy milestone sources; M18 records remain [PLANNED]. Seven empty legacy placeholders were retired in M20; substantive source trees remain under individual gates. M19 reference reconciliation is complete.
+**LAST VERIFIED:** 2026-10-10 - Codex M20 physical source and local navigation check.
+**VERIFIER:** Codex - M19 local tree/link and M20 empty-source checks; ChatGPT - M05-M19 independent verification PASS (2026-10-10), including M19-TREE-01 closure; details in Phase 02.
 **ENTRY NAVIGATION:** Start with FUNC, DEVOPS, or Skills according to the knowledge responsibility.
 **EXIT NAVIGATION:** Return to root `README_BRAINBOX.md` for the complete target tree or Governance for system-wide rules.
 **APPLIES TO:** `AI_BRAINBOX/` and its approved V003 target branches.
@@ -21,7 +21,7 @@
 ## Authoritative and local target tree
 
 ```text
-AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05-M16 migrated; M17 legacy sources retained; M18 planned milestone records; M19 reconciled; M20-M21 pending]
+AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05-M16 migrated; M17 legacy sources retained; M18 planned milestone records; M19 reconciled; M20 empty-source retirement; M21 pending]
 ├── README_AI_BRAINBOX.md
 ├── FUNC_AI_BRAINBOX/
 │   ├── README_FUNC_AI_BRAINBOX.md
