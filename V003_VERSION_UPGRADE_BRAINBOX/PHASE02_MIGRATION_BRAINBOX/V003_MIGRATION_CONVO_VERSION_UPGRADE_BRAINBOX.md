@@ -3667,3 +3667,71 @@ Batch D cross-check, merge, and report closeout are complete.
 - The M15 transfer manifest passes all 45 source/destination size and SHA-256 checks; its case-study tree contains 50 nonempty files. M16 has 2 Production and 4 Portfolio records. M17’s 2 legacy milestone files still match their M01 hashes. M18 has only its 2 `[PLANNED]` records.
 - M15-ASSET-01 remains at source pending disposition before retirement; M15-REF-01 and M16-README-01 are assigned to authorized M19; M17-DEST-01 remains open and blocks moving or retiring the legacy milestone sources until you decide their disposition. No source was moved or deleted.
 - No application tests, form submissions, or deployments were run for this documentation/repository closeout.
+
+---
+
+## V003-M19 ? Operator and Codex conversation (verbatim record) ? 2026-10-10
+
+### De O'Dini ? Operator request (verbatim)
+
+````markdown
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE  BY CHATGPT, ONCE DONE, NOW PROCEED TO M19, ONCE YOU ARE DONE WITH M19, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+**# V003-M19 ? README / Canonical Reference / Population-State Reconciliation**
+
+**Status:** AUTHORIZED FOR EXECUTION
+**Suggested branch:** `v003/m19-readme-reference-population-reconciliation`
+**Dependencies:** M02?M18 as applicable.
+
+**Canonical authorities**
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+## Scope
+
+Perform a complete post-migration documentation/reference reconciliation before any legacy source retirement.
+
+Verify:
+
+- `README_BRAINBOX.md` complete-tree authority;
+- each governed parent with defined children has required local README/local tree;
+- local trees match the corresponding root branch;
+- population states are truthful;
+- canonical/reference relationships are explicit;
+- links/references resolve;
+- no active README still treats superseded root/FUNC/PROJ/SKILLS/MILESTONES authorities as canonical;
+- Governance is system-wide authority;
+- Guardrail prompts reference Governance;
+- Technologies / execution-domain / Commands / FUNC responsibilities are cross-referenced without duplicate canonical knowledge;
+- V003 Phase 01 archive remains audit/history support, not migration authority.
+- V003 Phase 02 migration folder remains migration-process planning/execution/verification support, not operational target-domain authority.
+- Phase 02 conversation/report/ticket records remain reachable from the V003 parent and do not get silently absorbed into domain content.
+
+## README filename ambiguity rule
+
+If P12 requires a README for a nested governed parent but the frozen ?8 tree does not explicitly name that README, do not invent it silently. Apply the approved naming rule only when the result is unambiguous; otherwise STOP and report the exact parent and naming ambiguity.
+
+## Success gate
+
+- Root and local tree relationships are consistent.
+- No broken active reference remains.
+- No duplicate canonical authority is detected.
+- Population states reflect actual content.
+- M01 map records documentation reconciliation.
+````
+
+### Codex commentary (verbatim)
+
+1. I?m continuing with M19 on its own ticket branch. The starting check found no uncommitted ChatGPT verification edits to publish, so I?m moving into the ticket?s read-only preflight and README/reference audit before changing anything.
+
+2. The active README audit now reports 72 READMEs, 494 relative links, and zero broken links. I found a few current summaries that still described M19 as future work, so I?m reconciling those status lines while leaving the dated historical checkpoints intact.
+
+3. The remaining ?no local tree? matches are limited to five EXE category folders that contain only their README and have no defined children; the V003 README uses an explicitly labeled authority tree plus a separate support overlay. I?ve recorded both exceptions and am running the final pre-commit checks now.
+
+4. The implementation is staged as 51 README/ledger files. The staged whitespace check passed; `git` only warned that the existing Windows checkout will normalize several edited Markdown files to CRLF. I?m committing the implementation first, then I?ll verify and push that branch before adding the report/transcript closeout.
+
+5. The implementation commit `694b703` has pushed successfully to the new M19 branch. I?m confirming the remote tip and clean state now, then I?ll add the execution report and the exact M19 prompt/current-turn commentary to the Phase 02 record and push that as the separate closeout commit.
+
+### Transcript boundary
+
+The Operator request above and all Codex commentary from the continuation available in this record are transcribed verbatim. Earlier M19 progress before that continuation was summarized in the execution report; its unavailable exact commentary has not been reconstructed or presented as a verbatim transcript.

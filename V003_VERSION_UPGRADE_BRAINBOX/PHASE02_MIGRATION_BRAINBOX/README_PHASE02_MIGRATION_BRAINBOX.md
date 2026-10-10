@@ -1,6 +1,6 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE - AUTHORIZED] - Batches A-D are closed; M01-M18 independently verified and merged. M19 is active on its dedicated branch following clean-main P14 preflight; M20/M21 remain pending.
+**Status:** [ACTIVE - AUTHORIZED] - Batches A-D are closed; M01-M18 independently verified and merged. M19 implementation commit `694b70360340c13abf8cea2cf3580b45eefaf5f5` is pushed on its dedicated branch; report/conversation are recorded in a separate closeout commit on the same branch; independent ChatGPT verification pending; M20/M21 remain pending.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
@@ -61,7 +61,7 @@ PHASE02_MIGRATION_BRAINBOX/
 
 **Execution authorization:** AUTHORIZED — V003-M01 through V003-M21, executed one ticket at a time under dependencies, P14 preflight, Codex reporting, ChatGPT independent verification, and Operator merge/closure authority.
 
-**Batch A-D closure summary:** M01-M18 passed independent verification and merged at their respective batch boundaries. M01-M04 were merged through PRs #16-#19, with Batch A documentation closeout PRs #20/#21. Batch B (M05-M08), Batch C (M09-M14), and Batch D (M15-M18) closeout evidence is recorded below. M19 is active on its own branch. M15-ASSET-01 remains for M20 disposition; M17-DEST-01 still blocks only movement or retirement of the two legacy milestone records.
+**Batch A-D closure summary:** M01-M18 passed independent verification and merged at their respective batch boundaries. M01-M04 were merged through PRs #16-#19, with Batch A documentation closeout PRs #20/#21. Batch B (M05-M08), Batch C (M09-M14), and Batch D (M15-M18) closeout evidence is recorded below. M19 implementation commit `694b70360340c13abf8cea2cf3580b45eefaf5f5` is pushed on its own branch; no merge has been created. M15-ASSET-01 remains for M20 disposition; M17-DEST-01 still blocks only movement or retirement of the two legacy milestone records.
 
 **M01 inventory and migration map:** PASS; dedicated commit `bc6d1309a71f4a309469788074c381c8665e5490` is pushed and matches its origin branch. M01-GIT-01 is preserved for M21 integrity/recovery review; M01-FH-01 is assigned to M15.
 
