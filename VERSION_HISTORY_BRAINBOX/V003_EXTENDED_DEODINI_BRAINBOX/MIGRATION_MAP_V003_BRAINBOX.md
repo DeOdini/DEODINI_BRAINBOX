@@ -2363,3 +2363,8 @@ The legacy root BRAINBOX/ directory was already physically absent at M20 preflig
 **M20-REF-01 - source-specific BLOCKING for substantive legacy removal, non-blocking for the seven empty-source retirements:** Current canonical/local records still provide provenance links into DOB, AI, FUNC, project workflow and Skills legacy sources. Removing those sources would break active references or discard original content. The affected paths are listed in the table above. Correction requires separately verified archival/reference disposition, exact source integrity and Operator authority where scope changes; retain under M20 and revisit only in a later authorized ticket. M15-ASSET-01, M17-DEST-01, M19-HIST-01 and M01-GIT-01 remain open within their recorded boundaries.
 
 **M20 source moves/copies/renames:** NONE. **M20 source deletions:** only the seven exact zero-byte tracked placeholders above. **M20 current READMEs updated:** root, AI, Portfolio, Skills and Sandbox DEVOPS. **M20 protected archives and frozen authorities:** unchanged.
+
+
+### M20 Git publication and verification
+
+The seven-empty-source M20 implementation was committed as 17a320e850086d77547f387bbccec3fb3a4f8947 and pushed to origin/v003/m20-legacy-source-retirement. Local branch and origin tracking ref matched after the push. Post-removal active README check: 72 README files / 496 relative Markdown links / 0 broken. The root approved target-tree block is unchanged. The protected V003 archive, FootHive originals and legacy MILESTONES/ have no M20 implementation diff. Independent ChatGPT verification remains pending. No PR/merge or Batch E closure occurred.

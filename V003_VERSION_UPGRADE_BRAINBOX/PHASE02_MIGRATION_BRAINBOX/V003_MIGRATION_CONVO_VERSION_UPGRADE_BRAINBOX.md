@@ -3776,3 +3776,89 @@ Independent active README scan **72 README files / 496 local links / 0 broken**.
 M15-REF-01 and M16-README-01 are resolved for active navigation. M15-ASSET-01, M17-DEST-01 and M19-HIST-01 stay open with exact M20/M21 boundaries. M19-HIST-01 retains 44/45 physical raw-byte pairs and 17/45 committed destination-original manifest raw-byte hashes, but 45/45 LF-normalized equivalent content; this is a retirement/provenance guard, not an M19 link failure.
 
 **M19 acceptance PASS; M19-TREE-01 closed.** Publish this independent closeout on M19, confirm a clean branch, then begin only M20's separately authorized P14 source-by-source retirement review. No source deletion or merge was performed by ChatGPT.
+
+
+---
+
+# Operator — V003-M20 request — 2026-10-10
+
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE  BY CHATGPT, ONCE DONE, NOW PROCEED TO M20, ONCE YOU ARE DONE WITH M20, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+
+**# V003-M20 — Verified Legacy Source Retirement & Deprecated-Path Cleanup**
+
+**\*\*Status:\*\*** AUTHORIZED FOR EXECUTION
+**\*\*Suggested branch:\*\*** `v003/m20-legacy-source-retirement`
+**\*\*Dependencies:\*\*** M02–M19 complete/verified; no unresolved destination may exist for a source proposed for removal.
+
+**\*\*Canonical authorities\*\***
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+**## Purpose**
+
+This is the destructive cleanup gate. It does not assume every old source is deletable.
+
+Potential legacy sources include, subject to verification:
+
+**\*\*Support/archive safeguard:\*\*** `V003_VERSION_UPGRADE_BRAINBOX/`, `PHASE01_POLISH_BRAINBOX/`, and `PHASE02_MIGRATION_BRAINBOX/` are not generic cleanup targets. They must not be deleted, collapsed, or reclassified under M20 unless a separate Operator-authorized decision explicitly changes their support/archive disposition after final migration verification.
+
+- empty root `BRAINBOX/` directory;
+- `DOB_MUST_README.md`;
+- legacy `AI_MUST_README.md`;
+- flat legacy FUNC `*_FUNC_BRAINBOX.md` source records after CORE/EXE migration;
+- `FQ_MUST_README.md`, `FUNC_REQ_BRAINBOX.md`, `FUNC_WORKFLOW_BRAINBOX.md` after M07;
+- `PROJ_WORKFLOW_AI_BRAINBOX/` after M09–M16;
+- `SKILLS_AVAIL_AI_BRAINBOX/` after M08;
+- empty legacy `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md`;
+- legacy `MILESTONES/` only if M17 produced an explicitly authorized and verified disposition;
+- other paths marked source-removal-eligible in the migration map.
+
+**## Mandatory destructive-operation gate**
+
+Before removing each source:
+
+1. verify target/canonical destination exists;
+2. verify content integrity/provenance;
+3. verify references no longer require old path;
+4. verify historical evidence remains preserved;
+5. verify Git history/backups are adequate;
+6. verify the active ticket explicitly authorizes that specific removal.
+
+If any source has unresolved destination or historical-evidence risk, retain it and flag it. Do not make cleanup success depend on deleting evidence that should remain.
+
+**## Success gate**
+
+- Only independently verified obsolete/empty/superseded sources are removed.
+- No source with unresolved disposition is removed.
+- No broken active reference remains.
+- Migration map records retained vs removed sources and evidence.
+
+
+# Codex — response 1
+
+I’ll inspect the current Git state and ChatGPT’s M19 verification edits first, then check M20 removal candidates against the migration map and the actual files. I’ll retire only sources that pass the ticket’s six checks and record the retained paths and reasons.
+
+# Codex — response 2
+
+The M19 edits record ChatGPT’s independent PASS and the resolved tree issue. The remaining FootHive asset, milestone destination, and historical byte fidelity flags are still clearly marked for M20, and the diff has no whitespace errors. I’m publishing this verification record before opening the M20 branch.
+
+# Codex — response 3
+
+The M19 verification commit is pushed, and M20 now has its own clean branch. I’m working through the retirement checks source by source; the existing FootHive fidelity, asset, and milestone flags remain hard limits on what can be removed.
+
+# Codex — response 4
+
+The source scan found seven zero-byte legacy placeholders. Their M01 baseline bytes still match, and no Markdown link targets any of them. Several substantive legacy files still have active provenance links, while the FootHive and milestone sources have unresolved retirement conditions; I’m preserving those. I’ll remove only the empty placeholders and update the current navigation to reflect that change.
+
+# Codex — response 5
+
+The seven empty placeholders are now removed. The migration map records each former path, hash, recovery point, and the reason substantive legacy sources remain. I’m checking the resulting links and physical tree before committing M20.
+
+# Codex — response 6
+
+M20’s local checks pass: all seven retired paths are absent, retained source groups are still present, the frozen target tree is unchanged, and the 72 active READMEs have 496 relative links with none broken. I’m committing this source retirement and its migration-map disposition now, then I’ll publish the branch and write the separate execution report.
+
+# Codex — response 7
+
+The M20 implementation is pushed to `v003/m20-legacy-source-retirement` at `17a320e`. I’m writing the separate Phase 02 execution report and conversation entry now, including the seven retirements, the retained source groups, and the verification limits. That documentation will get its own commit and push.
