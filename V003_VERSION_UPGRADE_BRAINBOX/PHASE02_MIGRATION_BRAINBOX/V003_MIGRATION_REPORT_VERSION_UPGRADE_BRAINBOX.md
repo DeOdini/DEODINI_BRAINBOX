@@ -7609,3 +7609,123 @@ No source file or directory was moved, renamed, rewritten, or deleted. M20 must 
 - Pushed branch: `origin/v003/m19-readme-reference-population-reconciliation`.
 - Post-push `fetch` confirmed local `HEAD` equals the branch upstream at the implementation commit; ahead/behind **0/0** and the working tree clean before report/conversation edits.
 - The report, conversation, and status closeout are included in a separate follow-up commit on the same branch. No PR/merge was requested or performed. ChatGPT independent M19 verification is still pending.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M19 — 2026-10-10
+
+**Disposition: CORRECTION REQUIRED — M19 NOT YET INDEPENDENTLY VERIFIED PASS.**
+**Blocking M19 acceptance flag: M19-TREE-01 — AI parent local tree has incorrect nested UI/UX paths.**
+**Non-blocking-for-navigation historical flag: M19-HIST-01 — current worktree and Git-stored raw-byte fidelity require separate treatment before source retirement.**
+**M20:** NOT ELIGIBLE until M19 tree correction and renewed independent verification; M20 additionally remains constrained by source-by-source retirement safeguards, including M15-ASSET-01 and M17-DEST-01.
+
+## Verified Git and publication
+
+- Dedicated branch: `v003/m19-readme-reference-population-reconciliation`.
+- Implementation commit: `694b70360340c13abf8cea2cf3580b45eefaf5f5`, directly descended from closed Batch D main `e2edd669cb30d243b0b916db3e67ebde83653574`.
+- Separate documentation/report/conversation closeout: `96c8e3eb7bbb381110a2414f783bf4d802ecf3bc`.
+- Local HEAD = upstream = GitHub branch tip at `96c8e3eb7bbb381110a2414f783bf4d802ecf3bc`, 0/0 ahead/behind, worktree clean before this ChatGPT write.
+- Local `main`, `origin/main` and GitHub `main` remain `e2edd669cb30d243b0b916db3e67ebde83653574`.
+- M19 branch unmerged; no M19 PR; no M20 local/GitHub branch.
+- Implementation changes only active README files and living Migration Map; reporting closeout changes six active report/status records. Original FootHive source, legacy milestone files, legacy Portfolio placeholder and frozen Specification unchanged.
+
+**Git/publication/scope claims: PASS.**
+
+## Independent README and link audit
+
+Exactly **17** files were newly added by the implementation commit, all named `README_<CONTAINING_PARENT_FOLDER>.md`. Each contains the asserted P12 metadata/ownership/population/local-tree fields and has zero trailing-whitespace lines.
+
+Independent tracked-file scan of the 72 active `README_*.md` records (root, AI, Governance, Portfolio, Milestones, Version History and V003 support):
+- files: **72**;
+- relative Markdown links: **496**;
+- broken link targets: **0**.
+
+Both implementation and complete M19 range pass `git diff --check` with exit 0.
+
+`PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md` now exists, correctly navigates to its FootHive child and explicitly retains the historical zero-byte portfolio source. M16-README-01 is resolved for active navigation.
+
+M15-REF-01 has current canonical FootHive crosswalk/navigation. The source-era Build Report and conversation records are not rewritten; their source-era references are kept as history. The Screenshot 13 link targets the physically existing `screenshot-13-deploy-preview-cropped.png`.
+
+Current Governance remains the system-wide authority and the V003 support overlay remains separate from target operational-domain authority.
+
+**Counts, links, 17 new indexes, navigation and non-destructive source handling: PASS.**
+
+## M19-TREE-01 — BLOCKING M19 acceptance
+
+Independent hierarchy reconstruction detected **13 wrongly indented UI/UX entries** in the M19-created `AI_BRAINBOX/README_AI_BRAINBOX.md`, around lines **88–102**:
+
+- `README_UI_UX_PATTERNS_BRAINBOX.md` and `LAYOUT_PATTERNS_BRAINBOX/` are displayed as siblings of `UI_UX_PATTERNS_BRAINBOX/`; their child folders are consequently assigned to incorrect parent paths.
+- `README_EXPERIENCE_DESIGN_BRAINBOX.md` and `RESPONSIVE_DESIGN_BRAINBOX/` are displayed as siblings of `EXPERIENCE_DESIGN_BRAINBOX/`; their child folders are incorrectly nested.
+- `README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md` and `DASHBOARD_DESIGN_BRAINBOX/` are displayed as siblings of `DATA_VISUALIZATION_DESIGN_BRAINBOX/`; their child folders are incorrectly nested.
+
+The root `README_BRAINBOX.md`, Frontend parent README and physical filesystem place these nodes correctly inside their own respective design-domain parent folders. Relative link integrity does not detect a false ASCII/Unicode tree indentation path. A structured physical-path check found 13 genuinely incorrect UI/UX paths in the AI parent text; two further planned Sandbox outcome directory entries are physically absent but explicitly [PLANNED] in the Sandbox parent README, so those two are **not** treated as missing migrated content.
+
+**M19-TREE-01 is a concrete violation of M19's success requirement that local and root tree relationships match.**
+
+**Required correction:** Codex should repair only the visual-tree nesting in `AI_BRAINBOX/README_AI_BRAINBOX.md`; compare every affected path against the root and physical Frontend tree and rerun a hierarchy/path check, 72-file link scan, `git diff --check`, and a full M19 P14 ticket read-back. Do not relocate files to fit an incorrect diagram. M19 cannot be marked independent PASS before this fix is republished and verified.
+
+## M19-HIST-01 — expanded historical raw-byte qualification
+
+Codex correctly recorded that the physical FootHive `PASSED_FH_BRAINBOX.md` source is LF, 15,597 bytes, SHA `f21dcff41416c08810fe0b9baa159acaa322fa8648d7cfdb4ceca8bd3c627f2a`, while its checked-out destination is CRLF, 15,731 bytes, SHA `4146c3a8311fd44c99022f081c89dccd4d5a7f6943e2c3ac833466d9c408cfd4`. The 134-byte delta reflects 134 CRLF line endings, not changed text.
+
+A broader independent recheck of **all 45** FootHive manifest rows at the M19 branch tip found:
+- **physical worktree**: 44/45 exact source/destination byte matches; source-side manifest hashes 45/45; destination-side manifest hashes 44/45;
+- **Git-stored destination blobs versus original manifest raw-byte hashes**: 17/45 match; **28/45 differ** from original raw-byte baselines due to line-ending normalization;
+- **Git-stored source/destination direct equality**: 44/45 exact; the separately sourced original Deep Audit is stored with CRLF in its external source and LF in its tracked target;
+- **LF-normalized content**: 45/45 source/destination/worktree/Git representations agree, with **zero non-line-ending content discrepancies**.
+
+Git for Windows has `core.autocrlf=true`, consistent with the observed checkout normalization. This is a provenance/fidelity recording requirement, not a claim of missing or substantively rewritten FootHive evidence. M19-HIST-01 must include the wider Git-blob-vs-original-manifest hash distinction before any M20/M21 final raw-byte integrity assertion or source retirement; do not silently claim universal 45/45 raw-byte integrity across working-tree and stored Git representations.
+
+**Historical-integrity qualification: documented; navigation non-blocking; retirement decisions guarded.**
+
+## Flags and exact handoff
+
+- `M15-REF-01`: resolved for active navigation; retained historical links are not rewritten.
+- `M16-README-01`: resolved for active Portfolio parent navigation.
+- `M15-ASSET-01`: OPEN, 29 source-only product/catalog assets without approved disposition.
+- `M17-DEST-01`: OPEN, BLOCKING any move, rename, canonical destination assignment or retirement of the two historical milestone source files until explicit Operator approval.
+- `M19-HIST-01`: OPEN for raw-byte fidelity/retirement review; expand recorded scope as above.
+- **`M19-TREE-01`: OPEN / BLOCKING M19 independent verification PASS** until the AI parent local-tree error is corrected and reverified.
+
+**Final independent outcome: M19 Git, 17-index, link and source-preservation checks PASS; M19 overall verification is NOT PASS because M19-TREE-01 violates the required hierarchy gate.**
+
+No application tests or deployment actions were required for documentation-only M19. This verification did not stage/commit/push/merge or change any frozen source or historical evidence.
+
+
+---
+
+# Codex M19-TREE-01 Correction Report — 2026-10-10
+
+**Agent:** Codex
+**Timestamp:** 10/10/2026, 17:57:11 America/Chicago
+**Authorization:** Operator explicitly requested analysis, diagnosis, correction and reporting of ChatGPT’s M19 assessment in the current chat.
+**Ticket / branch:** V003-M19 / `v003/m19-readme-reference-population-reconciliation`.
+**Pre-state:** HEAD/upstream `96c8e3eb7bbb381110a2414f783bf4d802ecf3bc`, ahead/behind 0/0. Four existing uncommitted ChatGPT verification records were present (Phase 02 README, conversation, report, and Migration Map); preserved without replacing their contents.
+
+## Diagnosis and exact correction
+
+ChatGPT’s M19-TREE-01 was reproduced: 13 parsed UI/UX paths disagreed with the authoritative root tree. Six lines in `AI_BRAINBOX/README_AI_BRAINBOX.md` lacked one indentation level: the README and first child directory in each of UI_UX_PATTERNS, EXPERIENCE_DESIGN and DATA_VISUALIZATION_DESIGN. That made subsequent sibling nodes appear under the wrong parent. Only those six diagram prefixes were repaired; no file was moved to fit the diagram.
+
+## P14 read-back and scope
+
+Read the complete M19 ticket and common P14/report contract; cross-checked frozen Specification §8 UI/UX hierarchy, root tree, Frontend README and physical paths, plus the Origin Conversation executor/verifier agreement. M02–M18 remain the recorded completed dependencies. The Operator’s correction request authorizes repairing the blocking diagram defect. No ambiguity, unsupported rename, canonical reassignment, secret-bearing change or destructive operation is introduced. No M20 work started.
+
+## Verification
+
+- Before correction: 13 incorrect affected hierarchy paths.
+- After read-back: all 24 UI/UX subtree entries agree with root and Frontend trees and exist physically; zero mismatches/missing paths.
+- Full active README scan: 72 files, 496 relative Markdown links, zero broken targets.
+- `git -c core.longpaths=true diff --check`: no whitespace findings; Windows normalization warnings are advisory and historical files were not edited.
+- Implementation diff: exactly six indentation-line replacements in the AI parent README.
+- No application test or deployment is applicable to this diagram correction.
+
+## Historical fidelity and outstanding gates
+
+M19-HIST-01 retains ChatGPT’s expanded scope: physical source/destination exact bytes 44/45; original source manifest hashes 45/45; destination worktree hashes 44/45; stored destination blobs versus original manifest raw-byte hashes 17/45 match and 28/45 differ; stored source/destination direct equality 44/45; LF-normalized content 45/45 agrees with zero substantive differences. These are ChatGPT’s independently recorded findings, not a new raw-byte audit by this correction. Do not assert universal raw-byte integrity or retire sources on this basis. M15-ASSET-01 and M17-DEST-01 remain open with their existing source-retirement safeguards.
+
+**M19-TREE-01:** corrected and locally verified by Codex; renewed independent ChatGPT verification is pending. **M19 overall:** not independently closed. **M20:** remains ineligible until renewed M19 independent PASS and its own safeguards.
+
+**Paths edited by this correction:** AI parent README; this Phase 02 report; Phase 02 conversation (Operator request and outcome appended); Phase 02 README (latest status appended); living Migration Map (correction disposition appended). Existing ChatGPT additions preserved. No source/evidence/authority file created, copied, moved, renamed, retired or deleted.
+
+**Signed & Authorized by: DE O'DINI (OPERATOR)**

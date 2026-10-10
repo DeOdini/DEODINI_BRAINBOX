@@ -85,18 +85,18 @@ AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05-M16 migrated; M17 legacy s
 │   │   │   │   │   │   ├── SPACING_DESIGN_BRAINBOX/
 │   │   │   │   │   │   └── DESIGN_TOKENS_BRAINBOX/
 │   │   │   │   │   ├── UI_UX_PATTERNS_BRAINBOX/
-│   │   │   │   │   ├── README_UI_UX_PATTERNS_BRAINBOX.md
-│   │   │   │   │   ├── LAYOUT_PATTERNS_BRAINBOX/
+│   │   │   │   │   │   ├── README_UI_UX_PATTERNS_BRAINBOX.md
+│   │   │   │   │   │   ├── LAYOUT_PATTERNS_BRAINBOX/
 │   │   │   │   │   │   ├── COMPONENT_PATTERNS_BRAINBOX/
 │   │   │   │   │   │   └── NAVIGATION_DESIGN_BRAINBOX/
 │   │   │   │   │   ├── EXPERIENCE_DESIGN_BRAINBOX/
-│   │   │   │   │   ├── README_EXPERIENCE_DESIGN_BRAINBOX.md
-│   │   │   │   │   ├── RESPONSIVE_DESIGN_BRAINBOX/
+│   │   │   │   │   │   ├── README_EXPERIENCE_DESIGN_BRAINBOX.md
+│   │   │   │   │   │   ├── RESPONSIVE_DESIGN_BRAINBOX/
 │   │   │   │   │   │   ├── MOTION_INTERACTION_BRAINBOX/
 │   │   │   │   │   │   └── ACCESSIBILITY_DESIGN_BRAINBOX/
 │   │   │   │   │   ├── DATA_VISUALIZATION_DESIGN_BRAINBOX/
-│   │   │   │   │   ├── README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md
-│   │   │   │   │   ├── DASHBOARD_DESIGN_BRAINBOX/
+│   │   │   │   │   │   ├── README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md
+│   │   │   │   │   │   ├── DASHBOARD_DESIGN_BRAINBOX/
 │   │   │   │   │   │   ├── CHART_DESIGN_BRAINBOX/
 │   │   │   │   │   │   ├── KPI_DESIGN_BRAINBOX/
 │   │   │   │   │   │   └── REPORTING_INTERFACE_DESIGN_BRAINBOX/

@@ -403,3 +403,18 @@ This section supersedes the earlier M15-only status as the current ticket state.
 - The closeout report branch was pushed and fast-forwarded into main. Final fetch confirmed local main = origin/main, each remote M15–M18 ticket tip is an ancestor of origin/main, all ticket branches are retained, and the worktree is clean.
 - No application test, form submission, deployment, source move, source deletion, or branch deletion occurred in this closure.
 - M19 is next after this closure and its own P14 preflight; M17-DEST-01 must remain visible and M20 cannot remove those historical files while unresolved.
+
+---
+
+## Current independent-verification status — V003-M19 — 2026-10-10
+
+**M19 CORRECTION REQUIRED — NOT YET INDEPENDENTLY VERIFIED PASS.**
+
+Implementation and branch publication verify, and the 17 new indexes plus 72 active README/496 link/0 broken checks reproduce. **M19-TREE-01** is a blocking M19 hierarchy correction: `AI_BRAINBOX/README_AI_BRAINBOX.md` inaccurately displays the UI/UX Patterns, Experience Design and Data Visualization Design children outside their correct nested folders. Codex must correct this local tree, publish a clean M19 amendment and request independent re-verification before M20 starts.
+
+`M19-HIST-01` requires the wider committed-Git raw-byte versus original-manifest line-ending qualification (28/45 Git-stored target hashes differ from the original manifest; LF-normalized evidence matches 45/45). Existing M15-ASSET-01 and M17-DEST-01 source disposition stops remain open. **No source migration or deletion is authorized by M19.**
+
+
+## Latest M19 correction status — 2026-10-10
+
+Codex repaired M19-TREE-01 in the AI parent visual tree and verified all 24 affected subtree paths against root, Frontend and physical paths. Active README scan: 72 files / 496 local links / zero broken; whitespace check clean. Renewed independent ChatGPT verification remains pending; M19 is not independently closed and M20 remains ineligible. M19-HIST-01 retains the wider worktree/Git-blob raw-byte qualification recorded in the ChatGPT review; M15-ASSET-01 and M17-DEST-01 safeguards remain unchanged.

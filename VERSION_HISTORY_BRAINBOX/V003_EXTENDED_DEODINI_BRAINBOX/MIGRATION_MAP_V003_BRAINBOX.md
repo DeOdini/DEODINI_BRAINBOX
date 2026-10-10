@@ -2273,3 +2273,30 @@ The M15 `PASSED_FH_BRAINBOX.md` source and canonical M15 destination have identi
 ### Git publication
 
 - Implementation commit `694b70360340c13abf8cea2cf3580b45eefaf5f5` was fetched and confirmed as both local HEAD and upstream; ahead/behind is 0/0 and the worktree is clean after the push. No PR or merge was created. The execution report and conversation are included in a separate closeout commit on the same branch; ChatGPT independent verification remains pending.
+
+
+---
+
+## 54. ChatGPT Independent Verification — V003-M19 — 2026-10-10
+
+**Disposition:** M19 CORRECTION REQUIRED / NOT YET INDEPENDENT PASS.
+**M19-TREE-01:** OPEN / BLOCKING M19 success and M20 start; fix AI parent nested UI/UX tree.
+**M19-HIST-01:** raw-byte provenance distinction OPEN; nonblocking for navigation, restricts future source retirement until accurately dispositioned.
+**M20:** NOT ELIGIBLE while M19-TREE-01 remains open.
+
+Independent GitHub/local M19: `694b70360340c13abf8cea2cf3580b45eefaf5f5` implementation; `96c8e3eb7bbb381110a2414f783bf4d802ecf3bc` closeout/tip. Local/upstream/GitHub matched, 0/0, clean before this verification write, no PR/merge; main unchanged `e2edd669cb30d243b0b916db3e67ebde83653574`. M20 absent.
+
+Verified **17** added named parent READMEs, all requisite metadata/local-tree terms and zero trailing whitespace. Active `README_*.md` scan **72 files / 496 local links / 0 broken**; complete M19 range `git diff --check` PASS. Portfolio parent and canonical FootHive historical crosswalk exist; M15-REF-01 and M16-README-01 resolved for active navigation. Source materials and frozen V003 authority were unchanged.
+
+**Blocking hierarchy finding:** `AI_BRAINBOX/README_AI_BRAINBOX.md` around lines 88–102 misnests three UI/UX child README records and their subordinate branches (13 incorrect physical path interpretations) compared with the correct root README, Frontend README and actual filesystem. Correct the AI local tree in M19, rerun hierarchy validation, republish and request ChatGPT re-verification; link success alone does not satisfy the local-tree success gate. Two absent planned Sandbox outcome directories are not treated as failed migrated content because Sandbox README marks them [PLANNED].
+
+**Historical raw-byte qualification:** 45 FootHive original manifest pairs; worktree byte-equal pairs 44, source raw hash matches 45, checked-out destination raw hash matches 44; Git-stored destination blobs that reproduce original manifest hash 17, 28 are line-ending-normalized alternatives. LF-normalized contents agree 45/45, with no other changes. Expand M19-HIST-01 before M20/M21 archival integrity or retirement claims. Do not silently normalize historical sources.
+
+`M15-ASSET-01` 29 unplaced source-only assets and `M17-DEST-01` unresolved historical milestone destination remain OPEN. M17-DEST-01 bars physical legacy milestone move, canonical copying, rename or retirement without Operator approval.
+
+**Overall M19 independence gate NOT PASSED. M20 may not begin until M19-TREE-01 remediation and successful independent recheck.**
+
+
+## Latest M19 correction status — 2026-10-10
+
+Codex repaired M19-TREE-01 in the AI parent visual tree and verified all 24 affected subtree paths against root, Frontend and physical paths. Active README scan: 72 files / 496 local links / zero broken; whitespace check clean. Renewed independent ChatGPT verification remains pending; M19 is not independently closed and M20 remains ineligible. M19-HIST-01 retains the wider worktree/Git-blob raw-byte qualification recorded in the ChatGPT review; M15-ASSET-01 and M17-DEST-01 safeguards remain unchanged.

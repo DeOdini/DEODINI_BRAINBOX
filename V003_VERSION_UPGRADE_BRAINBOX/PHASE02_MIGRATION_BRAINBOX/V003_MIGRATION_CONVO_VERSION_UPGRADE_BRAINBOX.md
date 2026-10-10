@@ -3735,3 +3735,27 @@ If P12 requires a README for a nested governed parent but the frozen ?8 tree doe
 ### Transcript boundary
 
 The Operator request above and all Codex commentary from the continuation available in this record are transcribed verbatim. Earlier M19 progress before that continuation was summarized in the execution report; its unavailable exact commentary has not been reconstructed or presented as a verbatim transcript.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M19 — 2026-10-10 — CORRECTION REQUIRED
+
+Independent GitHub/local state: implementation `694b70360340c13abf8cea2cf3580b45eefaf5f5`, closeout `96c8e3eb7bbb381110a2414f783bf4d802ecf3bc`; local/upstream/GitHub tips equal before this verification write, 0/0, clean worktree, unmerged, no PR, main unchanged at `e2edd669cb30d243b0b916db3e67ebde83653574`, M20 not started.
+
+Confirmed 17 exactly named new READMEs with P12 metadata/trees and 0 new trailing-whitespace lines, 72 active READMEs, 496 relative links / 0 broken, M19 full-range `git diff --check` PASS. Active FootHive history crosswalk, Portfolio parent README and canonical Governance navigation are present. Original FootHive and milestone source trees are unchanged.
+
+**M19-TREE-01 BLOCKING:** M19-created `AI_BRAINBOX/README_AI_BRAINBOX.md` lines 88–102 incorrectly display 13 nested UI/UX nodes as siblings of their containing design-domain parents. Physical Frontend tree and root README show the correct parent/child paths. This fails M19's root/local hierarchy success gate despite zero broken links. Codex must fix/republish the diagram and request independent re-verification. Do not move physical directories to match an incorrect ASCII tree.
+
+**M19-HIST-01 raw-byte scope expansion:** physical FootHive source/destination equality 44/45, Git-stored target/original manifest hash equality 17/45, LF-normalized content equality 45/45 with no substantive text loss. The broader 28 stored-blob hash differences and separately attached original Deep Audit line-endings must remain explicit before any source-retirement or final archive-integrity decision. This is non-blocking for M19 navigation but not a universal 45/45 raw-byte PASS.
+
+M15-REF-01 and M16-README-01 resolved for active navigation; M15-ASSET-01 and M17-DEST-01 remain open, with M17-DEST-01 blocking legacy milestone retirement. No source move/delete or Git publication performed by ChatGPT. **M19 overall independent verification: CORRECTION REQUIRED / NOT PASS. M20 MUST WAIT.**
+
+
+# Operator — M19 correction request — 2026-10-10
+
+I WANT YOU CHECK FOR CHATGPT REPORT ONLY, CHATGPT AS SPECIFIED A CORRETION THAT NEEDS ATTENDING TO BEFORE M19 IS PROPERLY CLOSED. WHEN YOU HAVE ANALYSE WHAT THE CORRECTION IS AND DIAGNOSE THE RIGHT FIX, EXECUTE THE FIX AND PROCEED TO RECORD YOUR REPORT. THEN REPORT BACK TO ME.
+
+# Codex — M19 correction result
+
+M19-TREE-01 corrected through six indentation-line repairs. All 24 affected subtree paths match root/Frontend/physical paths; 72 READMEs, 496 local links, zero broken. Full correction report appended to the Phase 02 report. Independent ChatGPT re-verification remains pending; M20 not started.
