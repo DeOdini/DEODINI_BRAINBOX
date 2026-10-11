@@ -4026,3 +4026,77 @@ ChatGPT’s renewed M20 report gives M20 a full independent PASS and marks `M20-
 **Codex (commentary, verbatim):**
 
 ChatGPT’s verification closeout is now pushed at `99e7fd6`; local HEAD, the tracking branch, and GitHub match, and the worktree is clean. I’m replacing the two live “publication pending” status lines with the confirmed state and adding the final Codex report.
+
+
+---
+
+# Operator → Codex - V003-M21 continuation - 2026-10-11
+
+**Operator (verbatim):**
+
+PROCEED TO M21 IF ALL M20 AS PASS
+
+**Codex (commentary, verbatim):**
+
+M20 has a published independent PASS and a clean, matching branch. I’ll run M21’s preflight against the frozen Specification, Origin Conversation, ticket, and live repository before creating the dedicated M21 branch and final snapshot.
+
+**Codex (commentary, verbatim):**
+
+Preflight found M01–M20 execution and separate ChatGPT verification records, including M20’s final PASS. The five carried flags restrict specific source retirement or Git cleanup; they do not block a read-only final reconciliation. I’ll create M21’s dedicated branch and keep those limits explicit in the snapshot and map.
+
+**Codex (commentary, verbatim):**
+
+The frozen target comparison found one M21 deliverable still absent: the V003 snapshot. Two Sandbox PASSED/FAILED directories are also absent, but their parent READMEs explicitly mark them `[PLANNED]`. I’m checking the FootHive integrity manifest, links, and secret boundaries before writing the snapshot and final source dispositions.
+
+**Codex (commentary, verbatim):**
+
+M21’s snapshot will record the repository as it actually stands, including retained historical sources and the two planned Sandbox directories. I’ll also update the Version History and root navigation text that still describes the snapshot as pending.
+
+**Codex (commentary, verbatim):**
+
+The M01 baseline accounts for all 122 original files: 110 still match their original hashes, five are the expected updated V003 authority or Phase 02 process records, and seven were the verified empty files retired in M20. I’m adding a disposition for each original path to the migration map.
+
+**Codex (commentary, verbatim):**
+
+The snapshot now lists 289 directories and 460 files, including the snapshot itself. The map records all 122 original sources individually. I’m checking the frozen tree comparison, links, secret boundaries, and Git diff before writing the M21 execution report.
+
+**Operator (verbatim):**
+
+I TOLD YOU TO "PROCEED TO M21 IF ALL M20 AS PASS" BUT YOUR 5 HOURS TOKEN WAS EXHAUSTED MID TASK... CONTINUE FROM WHERE YOU STOPPED
+
+**Codex (commentary, verbatim):**
+
+I’ve completed the snapshot and per-source map. One important M21 check surfaced a recovery discrepancy: the 20 Cline checkpoint commit IDs listed in M01 are not currently readable from this repository’s object database. I’m checking Git’s object store and reference/recovery state before deciding how to record this; I will preserve the repository as it is.
+
+**Codex (commentary, verbatim):**
+
+The M01 recovery flag is confirmed: none of its 20 named checkpoint commits is present in the Brainbox object store, reflogs, or the separate `pedestal-archive` repository I checked. I’m recording this as a blocker to M21 acceptance and Phase 02 closure, while completing and publishing the snapshot, source ledger, and evidence for independent review.
+
+**Codex (final response, verbatim):**
+
+M21’s snapshot and 122-source ledger are recorded on `v003/m21-final-migration-verification-closeout`. The final M21 acceptance is **held** by `M21-GIT-01`: none of the 20 Cline checkpoint commit IDs recorded in the M01 baseline is present in the inspected Brainbox object store, reflogs, or the separate `pedestal-archive` repository. I could not establish when or why they became unavailable. The records are preserved; no garbage collection or pruning was run.
+
+The frozen tree comparison found 337 of 339 approved child paths physically present. The two absent Sandbox outcome directories are explicitly `[PLANNED]`. I also checked 72 active READMEs and 496 relative links with no broken links, scanned the high-confidence secret patterns, and reconciled every M01 source disposition.
+
+The snapshot, map, and report are on the dedicated M21 branch for independent review. M21 still needs ChatGPT verification and your acceptance, and Phase 02 remains open until the checkpoint recovery flag is resolved or explicitly dispositioned.
+
+
+---
+
+# Operator -> Codex - M21 continuation after session interruption - 2026-10-11
+
+**Operator (verbatim):**
+
+I TOLD YOU TO "PROCEED TO M21 IF ALL M20 AS PASS" BUT YOUR 5 HOURS TOKEN WAS EXHAUSTED MID TASK... CONTINUE FROM WHERE YOU STOPPED
+
+**Codex (commentary, verbatim):**
+
+I’m resuming at the M21 branch push. The snapshot and source ledger are committed locally; I’ll verify the remote publication, then publish the separate report/transcript records and recheck the final branch state.
+
+**Codex (commentary, verbatim):**
+
+The implementation commit is confirmed on the remote branch (`d8b2921`), and the branch is tracking correctly. I’m checking the report/transcript closeout text and whitespace now, then I’ll publish those two records in a separate documentation commit.
+
+**Codex (commentary, verbatim):**
+
+The M21 report has one publication sentence that is now outdated because the implementation commit is already on GitHub. I’ll update that sentence to distinguish the pushed implementation from the still-pending report/transcript commit, and I’ll preserve the recovery blocker as unresolved.
