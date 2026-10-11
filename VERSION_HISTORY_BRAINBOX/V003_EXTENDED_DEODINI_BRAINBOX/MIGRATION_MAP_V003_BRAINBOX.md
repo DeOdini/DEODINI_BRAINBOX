@@ -2406,3 +2406,23 @@ Independent README scan **72 tracked active READMEs / 496 relative Markdown link
 ChatGPT's M20 review independently passed the seven zero-byte retirements but held overall M20 acceptance on stale active current-state text. The review was committed as `0f2fe7f` and pushed. Codex corrected the root Population table and physical-tree introduction, FootHive Portfolio Population state, Phase 02 and V003 parent current statuses, and Governance Population state in corrective commit `0e89b85`. The approved root target-tree content, frozen authorities, historical sources, and seven retired-file dispositions remain unchanged. Codex rechecked 72 active READMEs / 496 relative links / 0 broken and found the retired Portfolio placeholder and root empty directory absent.
 
 **M20-STATE-01:** CORRECTION PUBLISHED; renewed independent ChatGPT verification PENDING. **M21 dependency:** HELD until M20 independent PASS. All other recorded source-specific flags and retained-source dispositions remain as documented in Sections 56-57.
+
+
+---
+
+## 59. ChatGPT renewed independent verification — V003-M20 — 2026-10-11
+
+**V003-M20 independent result: PASS.**
+**M20-STATE-01: RESOLVED.**
+**M20 ticket acceptance blockers: NONE.**
+**M21:** dependency-ready after publication of this verification closeout on M20 and a clean branch; M21 P14 remains mandatory.
+
+Independent GitHub/local: M19 verification tip `5f2cdcd9b37d38d0a2fde030a28f8f4f117efc23`; M20 deletion `17a320e850086d77547f387bbccec3fb3a4f8947`; first review publication `0f2fe7f065d3a9b13cdd1f134e9ef2b638650a9a`; corrected current metadata `0e89b85f944d98311ddfd31684c917b1743e4130`; published correction tip `3aae5b17e5d9851a6a5fe04e6c32cd2ac76f65f2`. Before renewed verification write, local HEAD/upstream/GitHub equal at `3aae5b1...`, 0/0 and clean; no M20 PR/merge; `main` unchanged `e2edd669cb30d243b0b916db3e67ebde83653574`; M21 absent.
+
+Corrected `M20-STATE-01` physical/current tree facts: seven placeholders remain absent, root Portfolio Population row and FootHive Portfolio child now call the empty Portfolio placeholder retired; root AI Population reports seven completed empty-source deletions with substantive historical sources still retained; root local-tree intro no longer claims `BRAINBOX/` exists; Phase 02 accurately records M19 independent PASS; V003/Governance statuses distinguish completed empty retirements from continued safeguards. Renewal-verification metadata now updates the last Phase 02 timing phrase from correction pending to verified and published.
+
+Independent check **72 active READMEs / 496 relative Markdown links / 0 broken**; seven deleted M01/pre-M20 zero-byte blobs still absent, recoverable through Git. Frozen root target block and historic FootHive/Milestones/Phase 01/frozen Specification/Origin sources unchanged; full M20-range `git diff --check` PASS.
+
+**Flags retained:** M20-REF-01 substantive provenance-linked source retention; M15-ASSET-01 29 FootHive source-only assets; M17-DEST-01 Operator decision required before historical milestone relocation/retirement; M19-HIST-01 44/45 worktree raw-byte pairs, 17/45 original-manifest destination Git-blob hashes, but 45/45 LF-normalized contents; M01-GIT-01 local-only historical Git objects protected until separately dispositioned. M20 PASS does not override any of these stops.
+
+**Final M20: INDEPENDENT PASS, M20-STATE-01 RESOLVED. M21 P14 may begin only after this verification closeout is published and M20 handoff branch is clean.**

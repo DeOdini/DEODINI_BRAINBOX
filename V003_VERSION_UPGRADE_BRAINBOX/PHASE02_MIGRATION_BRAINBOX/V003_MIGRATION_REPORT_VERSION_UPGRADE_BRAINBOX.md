@@ -7988,3 +7988,80 @@ ChatGPT performed no staging, commit, push, merge, source restoration/deletion, 
 - M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01, and M01-GIT-01 retain their prior source-specific restrictions.
 
 **Next gate:** A separate ChatGPT re-verification of the published correction must return full M20 PASS before M21's P14 preflight, branch, snapshot, or map closure begins.
+
+
+---
+
+# ChatGPT Renewed Independent Verification — V003-M20 — 2026-10-11
+
+**Overall result: PASS — seven authorized zero-byte retirements and corrected current-state records.**
+**M20-STATE-01: RESOLVED.**
+**M20-specific acceptance blockers: NONE.**
+**M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01 and M01-GIT-01: OPEN under the recorded source-specific boundaries.**
+**M21:** substantively eligible for its own P14 after this M20 verification closeout is committed/pushed and a clean handoff is confirmed. No permission for additional source retirement, Git pruning, or production deployment follows from M20 PASS.
+
+## 1. GitHub, local publication and ancestry
+
+- Dedicated branch: `v003/m20-legacy-source-retirement`.
+- Published M19 independent verification: `5f2cdcd9b37d38d0a2fde030a28f8f4f117efc23`.
+- M20 retirement implementation: `17a320e850086d77547f387bbccec3fb3a4f8947`.
+- M20 initial report: `f627ccf0684a979eb6f5a2e6ad8a75991bcdedd5`.
+- Published transcript closeout: `64cfd97c617db242401b5759d7c682d8c327983f`.
+- ChatGPT initial correction-required verification published by Codex: `0f2fe7f065d3a9b13cdd1f134e9ef2b638650a9a`.
+- Corrective active-README commit: `0e89b85f944d98311ddfd31684c917b1743e4130`.
+- Final pre-verification publication commit: `3aae5b17e5d9851a6a5fe04e6c32cd2ac76f65f2`.
+- Before this verification write, local `HEAD`, upstream and GitHub M20 tip matched at `3aae5b17...`; ahead/behind **0/0**, worktree clean, nothing staged.
+- `main` and `origin/main` remain `e2edd669cb30d243b0b916db3e67ebde83653574`. No M20 PR or merge; M21 branch absent locally, in remote tracking and on GitHub.
+
+**Commit ancestry and publication: PASS.**
+
+## 2. M20-STATE-01 — independent correction recheck
+
+Independent Git diff of `0e89b85...` confirmed five active-document changes (eight old lines replaced by eight corrected lines) and a separate reporting follow-up at `3aae5b1...`:
+
+1. Root `README_BRAINBOX.md` Portfolio Population row now states `001_PORT_BRAINBOX.md` **was retired in M20**, rather than retained for review.
+2. Root AI Population row now distinguishes **seven empty-source removals completed** from continued safeguards on substantive historical sources.
+3. Root Current local tree introduction no longer claims the already absent `BRAINBOX/` directory exists.
+4. FootHive Portfolio child README active `POPULATION STATE` now records the Portfolio placeholder as retired.
+5. Phase 02 top Status now accurately records **M19 independent PASS**, M20 implementation published, and the need for renewed independent verification.
+6. The V003 parent current-phase/migration status and Governance Population fields were also appropriately reconciled to completed empty-source review and continued source-specific safeguards.
+
+**One final timestamp-dependent wording adjustment:** the Phase 02 top Status at the pre-verification tip still says the M20 *correction* is pending, although `0e89b85...` and `3aae5b1...` have published it. The renewed independent-verification closeout updates that live status to **correction published / M20 independent verification PASS**. This is verification-state metadata, not an uncorrected tree or source failure.
+
+**M20-STATE-01: RESOLVED / independent PASS.**
+
+## 3. Repeated mechanical and source-integrity gates
+
+On live M20 at `3aae5b1...`:
+
+- Seven historical placeholder files remain **physically absent**.
+- Every removed file was exactly **0 bytes** at M01 commit `27e73f828bb367298442c2e621c18d1cc1ceb4f4` and at pre-M20 tip `5f2cdcd...`, with SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`. The Git history of each path remains recoverable.
+- Removal set = **two project PROVEN/FAILED placeholders**, **four Skills RAW/PROVEN/REUSABLE/FAILED placeholders**, **one Portfolio empty placeholder**. No substantive source contents were removed.
+- Independent active-index scan = **72** Git-tracked active READMEs, **496** relative Markdown links, **0 broken**.
+- M20 full range from `5f2cdcd...` through `3aae5b1...`: `git diff --check` exit **0**.
+- Root approved frozen target tree remains unchanged. The actual current root overlay no longer asserts `BRAINBOX/` exists.
+- Git diff confirms zero changes across historical `MILESTONES/`, original FootHive project subtree, frozen Specification and Origin Conversation, and Phase 01 archive. Both milestone source records are present; FootHive's original project retains its evidence.
+- No PR, merge, Git GC/prune, force push, deployment, application test or form submission was performed as part of ChatGPT verification.
+
+**Authorized limited retirement, links, historical preservation and current-state truth: PASS.**
+
+## 4. Continuing source-specific restrictions
+
+- **M20-REF-01:** original DOB/AI/FUNC/PROJ/Skills records and raw workflows remain necessary to current provenance links; their deletion is **not authorized** by this result.
+- **M15-ASSET-01:** 29 FootHive product/catalog assets still lack an approved destination; original FootHive tree remains retained.
+- **M17-DEST-01:** no Operator-approved archival destination/disposition for two historical `MILESTONES/` files; no move, canonical copying, rename or retirement may occur without authorization.
+- **M19-HIST-01:** FootHive original-manifest strict raw-byte checks remain qualified: 44/45 physical worktree pairs exact, 17/45 committed destination hashes equal original raw-byte manifest hashes, and 45/45 contents match after LF normalization. Do not declare full raw-byte archival parity or retire guarded evidence.
+- **M01-GIT-01:** preserve local-only checkpoint/dangling Git objects; no GC, prune or reflog expiry without separate M21 disposition.
+
+Each restriction remains open for its own source, but none is a reason to reject the narrowly authorized seven empty-source retirements or the corrected M20 acceptance gate.
+
+## 5. Verdict and M21 handoff
+
+**V003-M20 RENEWED INDEPENDENT CHATGPT VERIFICATION: PASS.**
+**M20-STATE-01: RESOLVED.**
+**Blocking M20 ticket acceptance flags: NONE.**
+**Substantive legacy retirement flags: OPEN and still enforceable.**
+
+To hand off M21, Codex must commit/push this ChatGPT verification-state closeout on dedicated M20, fetch/confirm the local/upstream/GitHub tip, and confirm a clean worktree. Only then create `v003/m21-final-migration-verification-closeout` from the independently verified M20 tip and run M21 P14 against its final tree/snapshot/evidence/flag obligations. Batch E remains unmerged pending batch-boundary review and Git closure; no same-batch M20 merge is prerequisite for starting M21.
+
+ChatGPT did **not** stage, commit, push, merge, retire sources, restore placeholders, prune Git objects, test applications or deploy.

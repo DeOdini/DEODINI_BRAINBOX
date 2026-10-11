@@ -3988,3 +3988,20 @@ ChatGPT’s M20 review confirms the seven file retirements, but it flags five st
 **Codex (commentary, verbatim):**
 
 The stale M20 statements are corrected in the active root, Portfolio, Governance, and V003 status READMEs. The seven retired files remain absent; the approved root tree is unchanged. I checked 72 active READMEs and 496 relative links, with no broken links. I’ll publish the correction and record it for independent re-verification.
+
+
+---
+
+# ChatGPT Renewed Independent Verification — V003-M20 — 2026-10-11
+
+**FINAL INDEPENDENT V003-M20 VERDICT: PASS. M20-STATE-01 RESOLVED.**
+
+Published correction `0e89b85f944d98311ddfd31684c917b1743e4130` and report `3aae5b17e5d9851a6a5fe04e6c32cd2ac76f65f2` independently verified on `v003/m20-legacy-source-retirement`. Local HEAD/upstream/GitHub M20 tip matched `3aae5b1...`, 0/0 ahead/behind and clean worktree before this ChatGPT verification write; no M20 PR/merge; main unchanged `e2edd669cb30d243b0b916db3e67ebde83653574`; M21 not started.
+
+**M20-STATE-01 CLOSED:** root AI/Portfolio Population rows, root physical-tree introduction, FootHive Portfolio child Population State, top Phase 02 status, V003 parent and Governance status reconciled with the actual M20 file removals. The initial Phase 02 header's residual wording that the already published M20 *correction* was pending is brought current by this independent verification-state closeout.
+
+Reproduced **72 active README files / 496 relative links / 0 broken**; all **seven** removed placeholders remain absent, each a zero-byte M01/pre-M20 Git blob; original FootHive and Milestones source trees/frozen authorities unchanged; complete M20 range `git diff --check` PASS.
+
+**M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01 and M01-GIT-01 remain OPEN** as source-specific preservation/retirement constraints. M20 verification PASS does **not** authorize deleting substantive legacy sources, resolving FootHive raw-byte qualification without proof, moving historical Milestones, or pruning local-only Git objects.
+
+**M21 dependency-ready only after Codex commits/pushes this M20 independent-verification closeout, confirms matching clean branch, creates M21's own branch, and runs M21 P14.** No same-batch PR/merge is required before M21; Batch E Git closure follows ticket verification.

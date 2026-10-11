@@ -12,8 +12,8 @@
 **CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; M19 active-reference reconciliation complete; M20 retired seven verified zero-byte placeholders; substantive legacy retirement remains source-gated.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is the complete approved architectural map. Inline states and the population table report the current partial, planned, and retained-source states.
-**VERIFIER:** Codex - scoped structural/navigation checks through M18; ChatGPT - M05-M19 independent verification PASS, including the M19-TREE-01 recheck. Codex completed M19 README/reference/population reconciliation and M20 verified empty-source retirement on 2026-10-10. M15-ASSET-01 and M17-DEST-01 remain open within their recorded boundaries; see Phase 02 records.
-**LAST VERIFIED:** 2026-10-10 - Codex M20 empty-source integrity, recovery, destination and reference audit; M19 independent verification is recorded in Phase 02.
+**VERIFIER:** Codex - M20 empty-source and current navigation review; ChatGPT - independent M05-M20 verification PASS, including M19-TREE-01 and M20-STATE-01 resolution (2026-10-11). Substantive sources remain protected by M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01 and M01-GIT-01; see Phase 02.
+**LAST VERIFIED:** 2026-10-11 - ChatGPT renewed independent M20 verification PASS; seven zero-byte retirements and corrected population/root tree, 72 active README files / 496 local links / 0 broken.
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
 **APPLIES TO:** Operators and AI agents navigating or modifying DEODINI_BRAINBOX.
