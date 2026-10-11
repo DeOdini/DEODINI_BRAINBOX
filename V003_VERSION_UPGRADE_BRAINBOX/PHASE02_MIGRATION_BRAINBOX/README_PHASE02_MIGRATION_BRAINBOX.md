@@ -1,6 +1,6 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE - AUTHORIZED] - Batches A-D are closed; M01-M18 independently verified and merged. M19 implementation commit `694b70360340c13abf8cea2cf3580b45eefaf5f5` is pushed on its dedicated branch; report/conversation are recorded in a separate closeout commit on the same branch; independent ChatGPT verification pending; M20/M21 remain pending.
+**Status:** [ACTIVE - AUTHORIZED] - Batches A-D are closed; M01-M18 are independently verified and merged. M19 independent verification passed and its branch is published but unmerged. M20 retired seven verified empty sources and published its implementation/report; ChatGPT found M20-STATE-01 in current-state metadata, so M20 correction and renewed independent verification are pending. M21 is dependency-held.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.

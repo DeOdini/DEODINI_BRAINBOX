@@ -11,7 +11,7 @@
 **RELATED DOMAINS:** Root README, AI, Skills, DevOps Sandbox/Production, Portfolio, Version History, and Phase 02 migration support.
 **CANONICAL SOURCES:** Frozen V003 Specification §§5, 25–27; V003 Origin Conversation; listed legacy sources as provenance only.
 **REFERENCES:** See the source and navigation index below.
-**POPULATION STATE:** All approved Governance files are present. M19 reconciled active README references; original legacy sources remain in place pending the separate M20 source-retirement review.
+**POPULATION STATE:** All approved Governance files are present. M19 reconciled active README references. M20 retired only seven verified empty placeholders; substantive original legacy sources remain under source-specific retirement safeguards.
 **VERIFIER:** Codex — M03 implementation; ChatGPT — independent verification PASS, recorded in the Phase 02 report.
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **ENTRY NAVIGATION:** Start here for system-wide policy, then open the relevant governance domain.

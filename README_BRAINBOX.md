@@ -416,12 +416,12 @@ DEODINI_BRAINBOX/
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
 | `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial; M04] | Parent README and Git-backed V001/V002 tree snapshots are present. Their conceptual retrospectives explicitly report missing rationale evidence; V003 Architecture Decisions and the living migration map are retained. Final V003 snapshot remains assigned to M21. |
 | `MILESTONES_BRAINBOX/` | [POPULATED — M18] | The two approved records are present and remain [PLANNED]; no Router or enabling infrastructure is implemented. Legacy `MILESTONES/` remains unchanged under M17-DEST-01 pending Operator disposition. |
-| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16; M19 RECONCILED] | FUNC CORE/EXE, Skills, Sandbox/Production, Fullstack, Frontend, Backend, analytics, and FootHive records are present; M17 legacy sources remain separate and M18 milestone records remain [PLANNED]. M20 source review and M21 final closure remain. |
-| `PORTFOLIO_BRAINBOX/` | [PARTIALLY POPULATED - M16; M19 RECONCILED] | The parent README and FootHive portfolio child are present. The zero-byte legacy placeholder remains untouched for M20 source review. |
+| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16; M19 RECONCILED] | FUNC CORE/EXE, Skills, Sandbox/Production, Fullstack, Frontend, Backend, analytics, and FootHive records are present; M17 legacy sources remain separate and M18 milestone records remain [PLANNED]. M20 retired seven verified empty source files; substantive legacy sources remain under source-specific safeguards. M21 final reconciliation is pending. |
+| `PORTFOLIO_BRAINBOX/` | [PARTIALLY POPULATED - M16; M19 RECONCILED] | The parent README and FootHive portfolio child are present. M20 retired the verified zero-byte legacy placeholder `001_PORT_BRAINBOX.md`; the portfolio evidence and current navigation remain. |
 
 ## Current local root tree
 
-Current physical root layout — updated during M18 (2026-10-09). It includes the separate planned milestone records, retained legacy sources, and the empty local directory; retained items are not extra branches in the approved V003 target tree.
+Current physical root layout - reviewed during M20 (2026-10-11). It includes the separate planned milestone records and retained legacy sources; retained items are not extra branches in the approved V003 target tree.
 
 ```text
 DEODINI_BRAINBOX/
