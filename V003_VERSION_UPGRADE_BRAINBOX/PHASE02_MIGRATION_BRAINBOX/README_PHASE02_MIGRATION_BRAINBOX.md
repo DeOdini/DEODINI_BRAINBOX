@@ -1,12 +1,12 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE - AUTHORIZED] - Batches A-D are closed; M01-M18 independently verified and merged. M19 independent PASS, published/unmerged. M20 independent ChatGPT PASS (2026-10-11), M20-STATE-01 resolved; its verification closeout was published at `99e7fd6`. M21 is dependency-eligible for its own P14 after a clean Git handoff; source-specific safeguards remain open.
+**Status:** [ACTIVE - AUTHORIZED] - Batches A-D closed; M01-M18 independently verified and merged. M19-M20 independently verified/published but unmerged. M21 P14 passed; Codex snapshot/map drafted. M21-GIT-01 blocks ticket acceptance pending recovery disposition; ChatGPT verification and Operator acceptance remain pending. Source safeguards remain open.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
 **MENTAL MODEL:** Phase 01 froze the target; Phase 02 compares the live Brainbox against that target and migrates through individually scoped V003-Mxx tickets covered by the Operator's explicit M01–M21 set authorization, with each ticket subject to dependencies and P14 preflight.
 **GOVERNED BY:** The frozen V003 Specification, Origin Conversation, P14 migration preflight, the V003 parent README, and the Operator's explicit approval of V003-M01–M21 recorded in the Phase 02 report/conversation.
-**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**LAST VERIFIED:** 2026-10-11 - Codex M21 snapshot/source/map checks; M21-GIT-01 blocks final acceptance; ChatGPT independent verification pending.
 
 ## Authority boundary
 
