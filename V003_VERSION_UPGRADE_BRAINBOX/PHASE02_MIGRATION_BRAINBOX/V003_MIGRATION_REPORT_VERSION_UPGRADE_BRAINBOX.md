@@ -8175,3 +8175,123 @@ These dispositions are listed source-by-source in the migration map. Planned San
 **Batch E merge / Phase 02 closure:** NOT PERFORMED.
 
 The M21 snapshot, finalized source map, and status-navigation updates were published to the dedicated branch in implementation commit `d8b2921c0c68ef6ed3dbdbeae0e71e8f008282e8`. This report and the conversation transcript were published in documentation commit `35b4e3b41d49bcc82314245d25f1b9830f41c155`. The resumed-session continuation record is appended to the transcript in a follow-up documentation update. Before that follow-up, GitHub's branch ref, local HEAD, and upstream all matched `35b4e3b41d49bcc82314245d25f1b9830f41c155`, and the worktree was clean. Publishing the blocker does not resolve it or authorize merging.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M21 Final Migration Snapshot / Ledger — 2026-10-11
+
+**Independent disposition: IMPLEMENTATION / EVIDENCE CHECKS PASS; M21 ACCEPTANCE BLOCKED.**
+**Blocking flag: M21-GIT-01 — 20 M01 Cline checkpoint commits not recoverable from the verified repositories or GitHub exact-SHA API.**
+**M21/Phase 02 accepted or closed:** NO.
+**Operator authorization of checkpoint loss/recovery disposition:** NOT PROVIDED.
+**Branch:** `v003/m21-final-migration-verification-closeout` — published, unmerged.
+
+## Git, dependency and publication
+
+- Independently verified M20 published independent-PASS tip `b9cde157375c519c189feb7cacb58409a8fc631b`; M21 implementation `d8b2921c0c68ef6ed3dbdbeae0e71e8f008282e8`; execution/archive closeout `35b4e3b41d49bcc82314245d25f1b9830f41c155`; final pre-verification branch tip `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`.
+- Before this ChatGPT verification write, local HEAD, upstream ref and GitHub M21 branch tip matched at `7ccd0daf...`; ahead/behind **0/0**, clean worktree.
+- GitHub M21 PRs: none; M21 is not merged. `main`, `origin/main` and GitHub main remain `e2edd669cb30d243b0b916db3e67ebde83653574`. Batch E remains unmerged.
+- The authorized ticket V003-M21 requires separate ChatGPT independent review, Operator closure approval and a STOP for unresolved migration discrepancies.
+
+**Publication / branch isolation: PASS.**
+
+## Exact physical snapshot and target reconciliation
+
+Independent complete directory walk excluding `.git/`:
+- **289 physical directories and 460 files**.
+- `TREE_SNAPSHOT_V003_BRAINBOX.md` contains precisely **289 directory entries and 460 file entries**, with **0 missing/extra** paths against the current filesystem.
+- Independent parsing of frozen Specification §8: **339 approved child paths**; **337 physically present**, with exactly `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/PASSED_SANDBOX_BRAINBOX/` and `.../FAILED_SANDBOX_BRAINBOX/` absent. Both are explicitly `[PLANNED]`, not fictitious Production/Sandbox results.
+- Physical snapshot truth and the frozen-target comparison are PASS; planned FootHive Iterations 02/03 and Router/Agentic infrastructure remain separate future work.
+
+## M01 original-source ledger integrity
+
+Independent table recheck of the original M01 manifest and current §61 source ledger:
+- Original M01 tracked files: **122** unique paths.
+- M21 disposition ledger: **122** unique original paths.
+- Exact current physical SHA-256 + byte-size matches against the **original M01 physical manifest**: **110**.
+- Updated authority/Phase 02 process records: **5**, explicitly identified and retained; no unauthorized loss claimed.
+- Absent/retired sources: **7**, exactly the authorized M20 zero-byte placeholders with original empty Git blobs still in history.
+- Total current original paths present: **115/122**; no unexpected missing path.
+
+Comparison against the raw M01 Git blobs alone is not interchangeable with the physical M01 manifest: Windows LF/CRLF normalization produces additional raw SHA differences. Verification used the original M01 physical SHA-256/size manifest to reproduce 110/5/7. `M19-HIST-01` continues to qualify FootHive strict raw-byte recovery.
+
+**Source ledger and preservation: PASS.**
+
+## Navigation, security, hygiene and scope
+
+- Tracked active READMEs: **72**; relative local links **496**; broken **0**.
+- Snapshot links: **4**; broken **0**. Combined **500 links / 0 broken**.
+- Scoped high-confidence credential-pattern scan of **203** tracked text/source files: **0** matches for AWS-style key IDs, Google API keys, GitHub tokens, common Slack/OpenAI/Stripe live key patterns, or private-key PEM headers. This is not a comprehensive secret-leak guarantee.
+- No tracked `.env`, `.env.local` or `.env.production`. Production `.env.example` exists and is comment-only, with zero active configuration lines.
+- Full M21 Git range `b9cde157...7ccd0daf`: `git diff --check` **exit 0**. Snapshot contains 0 trailing-space lines.
+- M21 changed the actual snapshot, source ledger/Map, root/Version History/V003/Phase 02 navigation, report and conversation; it did not deploy, implement Router capabilities, move historical source records, or remove any legacy source.
+
+## M21-GIT-01 — independently confirmed blocking checkpoint-object deficiency
+
+The original M01 Migration Map §2 lists exactly **20 unique full-SHA Cline checkpoint commits** previously observed as dangling local commits.
+
+Independent read-only recovery checks, using those 20 exact IDs:
+- Brainbox `git cat-file -t`: **0/20 readable**.
+- Brainbox `git reflog --all`: **0/20 referenced**.
+- Brainbox `git fsck --full --no-reflogs --unreachable`: **0/20 listed**, exit 0.
+- Separate `C:\Users\USER\pedestal-archive` Git repository: **0/20 readable**, **0/20 in current reflogs or read-only fsck**.
+- Direct GitHub commit API lookup against `DeOdini/DEODINI_BRAINBOX` for all **20/20** SHAs: **0 found**, each returned no matching commit.
+- Current Brainbox read-only fsck found **5 other unreachable commits**, **262 trees**, **152 blobs**; none of the 20 missing checkpoint IDs. Git reported zero garbage. These counts reflect the later M21 object store and need not equal the earlier Codex pre-publication counts.
+- No checked source establishes when or why the 20 checkpoint objects ceased to be available. A search of two repositories and the remote API does not rule out external backups.
+
+**Impact:** the historical M01 local-only checkpoint-recovery baseline cannot be independently certified. There is no authorized basis to claim it is intact, to retroactively erase that baseline, or to declare M21/Phase 02 accepted.
+
+**Required decision:** Operator either identifies an independent backup/object store/archive containing these exact IDs for Codex to verify read-only, or explicitly authorizes a documented unavailable/lost-checkpoint disposition after considering the recovery limitation. Neither action/decision has occurred here. Even if treated as unavailable by Operator approval, M21 must preserve the recorded limitation and then undergo renewed verification and explicit Operator acceptance before Phase 02 closure.
+
+**NO Git garbage collection, pruning, reflog expiry, destructive object-store repair, history rewrite or forced push is authorized.**
+
+## Remaining source-specific deferrals
+
+`M20-REF-01`, `M15-ASSET-01` (29 FootHive source-only assets), `M17-DEST-01` (two legacy Milestones awaiting Operator disposition), `M19-HIST-01` (strict FootHive raw-byte archival qualifications), and `M01-GIT-01 / M21-GIT-01` remain accurately open within their defined limits. None is silently waived by structural coverage.
+
+**FINAL INDEPENDENT M21 VERDICT: VERIFIED SNAPSHOT / LEDGER / LINKS / SOURCE SAFEGUARDS; BLOCKED AT M21-GIT-01. M21 NOT ACCEPTED, BATCH E NOT MERGED, PHASE 02 NOT CLOSED.**
+
+ChatGPT made no Git changes, source cleanup, object-store mutation, application test, form submission or deployment; only this independent verification documentation is being recorded.
+
+---
+
+# ChatGPT Independent Reverification Addendum — V003-M21 — 2026-10-11
+
+**Status: RE-VERIFICATION RECORDED; M21 ACCEPTANCE HELD / BLOCKED.**
+**Scope:** Follow-up independent inspection after the Codex M21 publication claim; this section supplements rather than replaces the earlier ChatGPT M21 verification. No Operator acceptance is implied.
+
+## Prior-record audit
+Before this addendum, this Phase 02 report already contained a detailed "ChatGPT Independent Verification — V003-M21 Final Migration Snapshot / Ledger — 2026-10-11" section. The Phase 02 conversation also held a ChatGPT verification entry. Those historical records remain intact; neither captured the subsequent seven-file dirty-worktree discovery. This addendum is a new report, not a claim that the earlier ChatGPT verification was absent.
+
+## New read-only observations
+- On authorized RDC device DESKTOP-DHRIH27, in C:/Users/USER/DEODINI_BRAINBOX, active branch: `v003/m21-final-migration-verification-closeout`.
+- Local HEAD and upstream tracking ref both resolved to `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`; `git rev-list --left-right --count HEAD...origin/v003/m21-final-migration-verification-closeout` returned **0 / 0**. This confirms alignment with the locally stored upstream tracking ref, **not** a fresh authenticated GitHub remote-ref check.
+- `git status --short` showed **seven modified tracked files**: `README_BRAINBOX.md`, Phase 02 README/report/conversation, V003 parent README, V003 migration map, and V003 tree snapshot. `git diff --stat` showed **123 insertions, 8 deletions** across seven files. The local worktree therefore was **NOT CLEAN** at this reverification checkpoint. Earlier reports of a clean pre-verification worktree describe a different checkpoint and must not be projected onto current state.
+- Local `git cat-file -t` confirmed implementation commit `d8b2921c0c68ef6ed3dbdbeae0e71e8f008282e8` and documentation commit `35b4e3b41d49bcc82314245d25f1b9830f41c155` exist as commit objects.
+- `git -c core.longpaths=true diff --check` emitted line-ending warnings but no whitespace-error lines; current dirty status cannot be dismissed as whitespace alone.
+
+## M21-GIT-01 checkpoint-object test
+Read the 20 full Cline checkpoint SHAs from the M01 section of the migration map and independently ran a read-only `git cat-file -e <sha>^{commit}` check against each in the current Brainbox repository. Result: **0 / 20 readable**. This independently reproduces the central local object-store blocker. The earlier detailed verification record additionally describes checks of reflogs, fsck, pedestal-archive and GitHub API; those broader checks were **not** rerun in this specific reverification pass. Neither a disappearance cause nor a complete absence of external backups has been established.
+
+## Evidence boundary
+The prior detailed ChatGPT independent verification entry reports 289 physical directories / 460 files, 337/339 frozen target paths with two planned Sandbox absences, 122/122 M01 ledger dispositions (110 unchanged, five updated, seven retired placeholders), 72 READMEs / 496 relative links / zero broken, and a scoped credential-pattern scan. This reverification read those results **from the prior record**; it did **not** independently rerun every inventory, link, hash or secret scan. No fresh PR/merge or GitHub remote-ref query was successfully completed in this pass. Earlier verification records characterize Batch E as unmerged; treat that as an earlier observation unless freshly rechecked.
+
+## Disposition and safeguards
+**M21-GIT-01 remains BLOCKING.** M21 is NOT accepted or closed; Phase 02 closure is NOT authorized; Batch E must NOT be merged on the basis of this addendum. Preserve Git objects; do not run GC, prune, reflog expiry, destructive repair, forced push or rewrite. Resolve the seven-file working-tree discrepancy, determine whether current addenda and other pending edits should be committed/published through normal authorization, and obtain Operator disposition for the 20 checkpoint SHAs (read-only restore from independent backup or explicit documented-unavailability decision). Reverify before acceptance.
+
+**This addendum was appended to local documentation. A write to the working tree does not itself prove a commit or GitHub push.**
+
+---
+
+## Codex follow-up to ChatGPT M21 reverification and Operator instruction — 2026-10-11
+
+The Operator asked Codex to inspect the newest ChatGPT-recorded M21 verification, carry out its correction, and stage/commit without pushing.
+
+- Reviewed the ChatGPT Independent Verification and Reverification Addendum, plus the associated changes to root/Phase 02/V003 status, the M21 snapshot, and the migration map.
+- The pending working-tree correction consisted of seven tracked files: the two root/parent status READMEs, Phase 02 README, Phase 02 conversation/report, M21 migration map, and M21 snapshot. No unrelated modified or untracked path was present.
+- `git diff --check` passed. The current tracked diff at this checkpoint was **161 insertions / 8 deletions**. ChatGPT's reported **123 / 8** is preserved as its earlier verification checkpoint measurement; it is not substituted for this later current diff count.
+- A fresh read-only remote check confirmed that, before the authorized local commit, local HEAD, upstream tracking ref, and GitHub's M21 branch all matched `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`.
+- The Operator explicitly authorized staging and committing the report-driven local state and explicitly withheld push authorization. Codex will stage the seven reviewed paths and commit locally; no push, PR, merge, or Phase 02 closure is included.
+
+This documentation/status correction resolves the seven-file uncommitted-state issue only. `M21-GIT-01` remains BLOCKING, M21 remains unaccepted, and the Operator's checkpoint recovery/disposition decision is still pending.

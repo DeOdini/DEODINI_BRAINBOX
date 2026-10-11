@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02 - Batches A-D closed; M01-M18 independently verified and merged. M19-M20 independently verified/published but unmerged. M21 P14 passed; Codex snapshot/map drafted. M21-GIT-01 blocks ticket acceptance pending recovery disposition; ChatGPT verification and Operator acceptance pending.
-**Migration status:** V003-M01-M21 AUTHORIZED / M01-M18 VERIFIED AND MERGED / M19-M20 INDEPENDENT PASS, PUBLISHED, UNMERGED / M21 SNAPSHOT+MAP DRAFTED, ACCEPTANCE BLOCKED BY M21-GIT-01; CHATGPT VERIFICATION PENDING / M15-ASSET-01, M17-DEST-01, M19-HIST-01, M20-REF-01, M01-GIT-01 OPEN WITH SOURCE-SPECIFIC RESTRICTIONS / PHASE 02 CLOSURE AND MERGE AUTHORITY RETAINED BY OPERATOR
+**Current phase:** V003 Phase 02 - Batches A-D closed; M01-M18 independently verified and merged. M19-M20 independently verified/published but unmerged. M21 snapshot/ledger independently checked by ChatGPT (2026-10-11), but M21-GIT-01 remains BLOCKING; Operator recovery/disposition and acceptance are pending. Phase 02 NOT CLOSED.
+**Migration status:** V003-M01-M21 AUTHORIZED / M01-M18 VERIFIED AND MERGED / M19-M20 INDEPENDENT PASS, PUBLISHED, UNMERGED / M21 SNAPSHOT+MAP VERIFIED, GIT CHECKPOINT 20/20 UNAVAILABLE IN CHECKED SOURCES; M21-GIT-01 BLOCKING, NOT ACCEPTED / M15-ASSET-01, M17-DEST-01, M19-HIST-01, M20-REF-01, M01-GIT-01 OPEN WITH SOURCE-SPECIFIC RESTRICTIONS / PHASE 02 OPEN; OPERATOR CLOSURE AND MERGE AUTHORITY RETAINED
 
 ## Purpose
 

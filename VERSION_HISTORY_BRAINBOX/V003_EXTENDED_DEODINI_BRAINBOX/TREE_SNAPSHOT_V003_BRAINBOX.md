@@ -1,6 +1,6 @@
 # TREE_SNAPSHOT_V003_BRAINBOX
 
-**Status:** [M21 CODEX SNAPSHOT - M21-GIT-01 BLOCKS CLOSEOUT; CHATGPT VERIFICATION AND OPERATOR ACCEPTANCE PENDING]
+**Status:** [M21 PHYSICAL SNAPSHOT INDEPENDENTLY CHECKED (2026-10-11); M21-GIT-01 CONFIRMED BLOCKING; M21 / PHASE 02 NOT ACCEPTED OR CLOSED]
 **Ticket:** V003-M21 — Final V003 Migration Verification, Snapshot & Map Closure
 **Snapshot boundary:** Actual physical worktree on `v003/m21-final-migration-verification-closeout`, before M21 commit or Batch E merge.
 **Local timestamp:** 2026-10-11 04:03:04 -0500

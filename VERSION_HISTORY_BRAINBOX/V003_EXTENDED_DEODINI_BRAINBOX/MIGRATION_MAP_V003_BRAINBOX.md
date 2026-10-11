@@ -2584,3 +2584,25 @@ The seven verified empty-source retirements and all retained substantive-source 
 - V003 Phase 01/02 support folders remain audit/process evidence, outside operational target-domain knowledge. Frozen Specification, Origin Conversation, and Architecture Decisions retain distinct authority.
 - Sandbox PASSED/FAILED directories remain physically absent and explicitly `[PLANNED]`. FootHive Iterations 02/03, workflow mastery, and Router infrastructure remain future work.
 - M21 performs no deployment, source retirement, PR, merge, or Phase 02 closure. ChatGPT independent verification and Operator acceptance are outstanding.
+
+
+---
+
+## 62. ChatGPT independent verification — V003-M21 — 2026-10-11
+
+**M21 evidence verification:** snapshot/tree/source-ledger/README/security-scoped checks PASS.
+**M21 acceptance:** BLOCKED — `M21-GIT-01` CONFIRMED.
+**Phase 02:** NOT CLOSED; Operator acceptance NOT GIVEN.
+**Batch E:** UNMERGED.
+
+Independent pre-verification Git: published M20 PASS handoff `b9cde157375c519c189feb7cacb58409a8fc631b`; M21 published tip `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`, local/upstream/GitHub match 0/0, worktree clean, no PR/merge; main `e2edd669cb30d243b0b916db3e67ebde83653574`.
+
+Independent complete filesystem/snapshot comparison: **289 directories / 460 files** in both, 0 missing/extra paths; frozen §8 **339 approved / 337 present**, absent only approved planned Sandbox PASSED and FAILED outcome directories. M01 exact original physical baseline hashes: **122 originals / 110 unchanged / 5 updated V003 process-authority / 7 removed empty blobs**, 115 current original paths. **72 active READMEs / 496 valid relative links; 4 snapshot links; 500/500 total valid.** M21 range `git diff --check` PASS. 203 tracked text/source files scanned for specified high-confidence credential patterns with 0 hits; no tracked forbidden .env files.
+
+**M21-GIT-01 exact recovery recheck:** the original M01 list contains 20 unique Cline checkpoint commit SHAs; 0 readable in Brainbox `git cat-file`, 0 current reflog or read-only fsck matches; 0 readable in the separate pedestal-archive Git repository, its reflogs or fsck; **0 retrievable directly by SHA through GitHub commit API**. Other unreachable commits exist (5 at independent check), none is one of the 20. The missing commits' fate and disappearance timing are **UNKNOWN**, not inferred. No GC, prune, reflog expiry or object mutation was performed.
+
+**Operator decision required:** find and identify an independent recovery source carrying those full SHAs, or explicitly authorize a documented unavailability disposition. Codex must recheck IDs and recovery constraints; ChatGPT must independently verify that outcome, and only the Operator may accept/close M21 and Phase 02. Preserve all current Git objects and open `M01-GIT-01/M21-GIT-01` until then.
+
+Retain `M15-ASSET-01`, `M17-DEST-01`, `M19-HIST-01`, `M20-REF-01` as source-specific restrictions. M21 snapshot and source-ledger publication do not grant retirement, deployment, Git cleanup, Phase 02 closure or future Router capability authority.
+
+**Final verdict: M21 EVIDENCE PARTIALLY VERIFIED; OVERALL ACCEPTANCE BLOCKED.**

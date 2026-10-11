@@ -414,9 +414,9 @@ DEODINI_BRAINBOX/
 | `README_BRAINBOX.md` | [ACTIVE] | This M02 root navigation authority. |
 | `V003_VERSION_UPGRADE_BRAINBOX/` | [POPULATED] | Contains canonical Origin/Specification and separate Phase 01 and Phase 02 support archives. |
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
-| `VERSION_HISTORY_BRAINBOX/` | [POPULATED - M21 snapshot drafted; independent verification pending] | Parent README and Git-backed V001/V002 snapshots are present. Conceptual retrospective rationale remains evidence-limited. V003 Architecture Decisions, the living migration map, and the actual M21 physical-tree snapshot are present. |
+| `VERSION_HISTORY_BRAINBOX/` | [POPULATED - M21 physical snapshot independently verified; final M21 acceptance BLOCKED on M21-GIT-01] | Parent README and Git-backed V001/V002 snapshots are present. Conceptual retrospective rationale remains evidence-limited. V003 Architecture Decisions, the living migration map, and the actual M21 physical-tree snapshot are present. |
 | `MILESTONES_BRAINBOX/` | [POPULATED — M18] | The two approved records are present and remain [PLANNED]; no Router or enabling infrastructure is implemented. Legacy `MILESTONES/` remains unchanged under M17-DEST-01 pending Operator disposition. |
-| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16; M19 RECONCILED] | FUNC CORE/EXE, Skills, Sandbox/Production, Fullstack, Frontend, Backend, analytics, and FootHive records are present; M17 legacy sources remain separate and M18 milestone records remain [PLANNED]. M20 retired seven verified empty source files; substantive legacy sources remain under source-specific safeguards. M21 snapshot/map drafted; final acceptance held on M21-GIT-01; ChatGPT verification pending. |
+| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16; M19 RECONCILED] | FUNC CORE/EXE, Skills, Sandbox/Production, Fullstack, Frontend, Backend, analytics, and FootHive records are present; M17 legacy sources remain separate and M18 milestone records remain [PLANNED]. M20 retired seven verified empty source files; substantive legacy sources remain under source-specific safeguards. M21 snapshot/map independently checked; final M21 acceptance held on confirmed M21-GIT-01 pending Operator recovery/disposition decision. |
 | `PORTFOLIO_BRAINBOX/` | [PARTIALLY POPULATED - M16; M19 RECONCILED] | The parent README and FootHive portfolio child are present. M20 retired the verified zero-byte legacy placeholder `001_PORT_BRAINBOX.md`; the portfolio evidence and current navigation remain. |
 
 ## Current local root tree
@@ -494,7 +494,7 @@ VERSION_HISTORY_BRAINBOX/
 └── V003_EXTENDED_DEODINI_BRAINBOX/
     ├── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md [retained; unchanged]
     ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map; M21 source dispositions recorded]
-    └── TREE_SNAPSHOT_V003_BRAINBOX.md [present; M21 independent verification pending]
+    └── TREE_SNAPSHOT_V003_BRAINBOX.md [present; snapshot independently verified, M21 acceptance blocked by M21-GIT-01]
 ```
 
 The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The M21 V003 physical-tree snapshot is present; independent verification and Operator closeout remain pending. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
