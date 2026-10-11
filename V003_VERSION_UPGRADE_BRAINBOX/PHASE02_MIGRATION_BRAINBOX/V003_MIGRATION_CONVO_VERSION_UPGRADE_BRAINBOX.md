@@ -3890,3 +3890,101 @@ Exactly seven deleted paths; all were zero-byte in M01 baseline and immediately 
 **M20-STATE-01:** active root Population state Portfolio row still asserts the already-deleted empty Portfolio placeholder “remains untouched for M20 source review”; root Current local tree introduction still describes an “empty local directory” that is absent; FootHive Portfolio child `POPULATION STATE` says the retired placeholder “remains unchanged for M20 review”; root AI Population row describes M20 review as remaining. Phase 02 top Status still calls M19 verification pending. These active, present-tense claims contradict the verified current tree. Codex must reconcile them in M20, publish a correction, and request independent recheck. Do not alter frozen root target tree or the protected historical source copies.
 
 **Verdict: retirement checks PASS; overall M20 CORRECTION REQUIRED, not independent PASS. M21 must wait.** No source or Git history changed by ChatGPT.
+
+
+---
+
+# Operator → Codex — V003-M21 request and M20 verification publication — 2026-10-11
+
+**Operator (verbatim):**
+
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE , ONCE DONE, NOW PROCEED TO M21, ONCE YOU ARE DONE WITH M21, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+**# V003-M21 — Final V003 Migration Verification, Snapshot & Map Closure**
+
+**Status:** AUTHORIZED FOR EXECUTION
+**Suggested branch:** `v003/m21-final-migration-verification-closeout`
+**Dependencies:** All authorized/required prior M-tickets completed and independently verified; unresolved intentional deferrals explicitly recorded.
+
+**Canonical authorities**
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+**## Scope**
+
+Perform final Phase 02 migration reconciliation.
+
+Create/finalize:
+
+`VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/TREE_SNAPSHOT_V003_BRAINBOX.md`
+
+Close/finalize:
+
+`MIGRATION_MAP_V003_BRAINBOX.md`
+
+**## Required verification**
+
+Cross-check actual live tree against frozen V003 target and all approved Phase 02 decisions:
+
+- root authority;
+- V003 canonical authority container;
+- Phase 01 audit/archive support;
+- Phase 02 migration conversation/report/ticket support;
+- Governance;
+- Version History;
+- Milestones;
+- FUNC CORE/EXE;
+- Skills;
+- Sandbox/Production DEVOPS;
+- Fullstack Architecture/Orchestration/Workflows;
+- Frontend;
+- Backend;
+- Analytics;
+- Production environment/secrets;
+- FootHive canonical evidence;
+- FootHive production/portfolio references;
+- README/local trees;
+- population states;
+- canonical/reference ownership;
+- legacy source dispositions;
+- historical evidence preservation;
+- no secret leakage;
+- Git state.
+
+**## Closeout rules**
+
+- Snapshot actual final migrated state, not merely the frozen proposal.
+- Migration map must identify every original source as migrated, split, merged, referenced, retained historical, deprecated, removed, or explicitly deferred.
+- Do not erase intentional future/planned states.
+- Confirm that every executed V003-Mxx ticket has a Codex execution report and a separate ChatGPT independent-verification result, with any Operator-resolved flags traceable in the Phase 02 records.
+- Confirm that no ticket was treated as closed solely on Codex self-verification.
+- Confirm the Phase 02 support/archive disposition is recorded in the final migration map and remains separate from target-domain knowledge unless the Operator explicitly decides otherwise.
+- If any migration discrepancy remains, STOP and report; do not declare Phase 02 migration closed.
+- Phase 02 closeout requires ChatGPT independent verification of the final Codex claim and Operator acceptance/closure authority.
+- This ticket does not authorize deployment or any future milestone implementation.
+
+**## Success gate**
+
+Only if all required migration tickets and final checks pass may the migration be declared structurally complete.
+
+A successful result should distinguish:
+
+- V003 target migration structurally complete;
+- planned/empty branches remain truthful;
+- FootHive Iteration 02/03 remain future work unless separately executed later;
+- future Router/Agentic milestone remains planned;
+- deployment/production runtime changes are outside the migration unless separately authorized.
+
+.
+
+**Codex (commentary, verbatim):**
+
+I’ll inspect ChatGPT’s M20 verification edits and the current Git state first. Once those edits are published and M20’s dependency status is clear, I’ll open M21 and reconcile the live tree against the frozen V003 target. I’ll record any discrepancy before making a closure claim.
+
+**Codex (commentary, verbatim):**
+
+ChatGPT’s M20 review confirms the seven file retirements, but it flags five stale statements in active READMEs. M21 depends on an independent M20 pass, so I’ll publish the review, correct those statements on M20, and check the result before starting M21.
+
+**Codex (commentary, verbatim):**
+
+The stale M20 statements are corrected in the active root, Portfolio, Governance, and V003 status READMEs. The seven retired files remain absent; the approved root tree is unchanged. I checked 72 active READMEs and 496 relative links, with no broken links. I’ll publish the correction and record it for independent re-verification.

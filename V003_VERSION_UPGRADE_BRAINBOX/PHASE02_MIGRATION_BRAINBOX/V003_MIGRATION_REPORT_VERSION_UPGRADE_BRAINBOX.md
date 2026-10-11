@@ -7963,3 +7963,28 @@ These do not invalidate removal of the seven verified empty files, but remain en
 **Final result: M20 RETIREMENT CONTENT PASS; M20 OVERALL INDEPENDENT VERIFICATION CORRECTION REQUIRED (M20-STATE-01). M21 MUST WAIT for a corrected/verified M20.**
 
 ChatGPT performed no staging, commit, push, merge, source restoration/deletion, Git cleanup or deployment.
+
+
+---
+
+# V003-M20 correction after ChatGPT independent review — 2026-10-11
+
+**Status:** M20-STATE-01 corrected locally and committed; renewed ChatGPT independent verification PENDING. M21 remains dependency-held until independent M20 PASS. This Codex check is not an independent ChatGPT result.
+
+## Published review and correction
+
+- The four ChatGPT verification edits were cross-checked, committed as `0f2fe7f`, and pushed to `origin/v003/m20-legacy-source-retirement`.
+- ChatGPT independently passed the seven zero-byte source retirements but held overall M20 acceptance on five stale active current-state statements (M20-STATE-01).
+- Codex corrected the active metadata in `README_BRAINBOX.md`, `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md`, `GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md`, `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md`, and `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md`. Correction commit: `0e89b85`.
+- The root Population table now states that M20 retired seven verified empty sources and the Portfolio placeholder; substantive legacy retirement remains source-gated. The current physical-tree introduction no longer claims an absent empty directory exists. The FootHive Portfolio Population state records the placeholder retirement. The Phase 02 and V003 parent status lines now state M19 independent PASS, M20 correction pending independent recheck, and M21 dependency hold. Governance's current Population state no longer presents M20 as future.
+- The frozen Specification, Origin Conversation, historic source evidence, and root approved target-tree block were not changed by the correction.
+
+## Codex local recheck
+
+- Tracked active README scan: **72 READMEs, 496 relative Markdown links, 0 broken**.
+- `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` absent; root `BRAINBOX/` absent.
+- Root README content before its Population-state section is unchanged after normalizing worktree CRLF vs Git LF.
+- Corrective staged diff: 5 files, 8 changed lines; `git diff --cached --check` PASS.
+- M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01, and M01-GIT-01 retain their prior source-specific restrictions.
+
+**Next gate:** A separate ChatGPT re-verification of the published correction must return full M20 PASS before M21's P14 preflight, branch, snapshot, or map closure begins.

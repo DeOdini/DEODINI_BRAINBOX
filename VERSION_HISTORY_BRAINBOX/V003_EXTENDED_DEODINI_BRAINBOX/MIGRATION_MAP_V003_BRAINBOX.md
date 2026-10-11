@@ -2397,3 +2397,12 @@ Independent README scan **72 tracked active READMEs / 496 relative Markdown link
 **Carried safeguards:** M20-REF-01 (substantive provenance-link sources), M15-ASSET-01 (29 FootHive assets), M17-DEST-01 (milestones awaiting Operator decision), M19-HIST-01 (FootHive raw-byte normalization), M01-GIT-01 (local-only Git objects) remain OPEN with their current conditional stops.
 
 **Final independent M20: physical retirement PASS / full M20 closeout NOT PASS until M20-STATE-01 resolved.**
+
+
+---
+
+## 58. V003-M20-STATE-01 corrective publication — 2026-10-11
+
+ChatGPT's M20 review independently passed the seven zero-byte retirements but held overall M20 acceptance on stale active current-state text. The review was committed as `0f2fe7f` and pushed. Codex corrected the root Population table and physical-tree introduction, FootHive Portfolio Population state, Phase 02 and V003 parent current statuses, and Governance Population state in corrective commit `0e89b85`. The approved root target-tree content, frozen authorities, historical sources, and seven retired-file dispositions remain unchanged. Codex rechecked 72 active READMEs / 496 relative links / 0 broken and found the retired Portfolio placeholder and root empty directory absent.
+
+**M20-STATE-01:** CORRECTION PUBLISHED; renewed independent ChatGPT verification PENDING. **M21 dependency:** HELD until M20 independent PASS. All other recorded source-specific flags and retained-source dispositions remain as documented in Sections 56-57.
