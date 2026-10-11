@@ -100,7 +100,7 @@ The defensible finding is **“all 20 checkpoint SHAs were not found in the sear
 
 **Phase 02 Git publication:** Phase 02 records were committed as `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e` on `v003/m21-final-migration-verification-closeout` and pushed; the remote branch tip was confirmed at that commit. The push included earlier branch commits `621b016` and `e6b8df2` in its ancestry, as recorded before publication.
 
-**F01 first publication:** Branch `v003/f01-m21-git-checkpoint-recovery-disposition` was created from Phase 02 commit `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e`. First documentation commit `f7904f6ec86d06a136e2270907e5ba0c0c42811e` (author `pedestal-archive <deodinihq@gmail.com>`) was pushed. `git ls-remote` confirmed that exact SHA as the remote branch tip; local HEAD matched it and the worktree was clean immediately after the push. This commit contains the Phase 03 planning package plus the current F01 authorization/status summary. The detailed report and conversation entry are being published in a separate follow-up commit.
+**F01 first publication:** Branch `v003/f01-m21-git-checkpoint-recovery-disposition` was created from Phase 02 commit `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e`. First documentation commit `f7904f6ec86d06a136e2270907e5ba0c0c42811e` (author `pedestal-archive <deodinihq@gmail.com>`) was pushed. `git ls-remote` confirmed that exact SHA as the remote branch tip; local HEAD matched it and the worktree was clean immediately after the push. This commit contains the Phase 03 planning package plus the current F01 authorization/status summary. At the time of this initial publication checkpoint, the detailed report and conversation entry were being prepared for a separate follow-up commit.
 
 **Independent verification:** ChatGPT's separately authored F01 verification is still pending. Codex's search result is not represented as that independent verification or as Operator acceptance.
 
@@ -166,3 +166,11 @@ F01 has **not passed** its acceptance gate. M21-GIT-01 remains BLOCKING; M21 is 
 The 20 SHA entries above were cross-checked against the M01 migration-map list in §2. A scoped `git diff --check` for the F01 report and conversation files passed with no whitespace findings. An unscoped repository check encountered five “Filename too long” errors for existing FootHive T23 Playwright evidence paths; these files are outside F01, were not changed, and no Git long-path configuration was altered. The unscoped check therefore cannot be reported as a clean repository-wide check.
 
 **Operator action requested:** Either (A) identify any additional backup/device/path for a further read-only search, or (B) explicitly choose a documented-unavailability disposition for these 20 IDs based on the documented search coverage. Neither choice authorizes recovery mutation. ChatGPT independent verification and renewed M21 review remain required afterward.
+
+
+### Final report publication verification — 2026-10-11
+
+- The report and conversation closeout commit `de924458c0a87996223ce43819c0975e92a18755` was pushed to `v003/f01-m21-git-checkpoint-recovery-disposition`.
+- `git ls-remote --heads origin v003/f01-m21-git-checkpoint-recovery-disposition` returned that same commit as the remote branch tip.
+- Local HEAD also matched `de924458c0a87996223ce43819c0975e92a18755`; the worktree was clean and the branch tracked its origin branch at verification.
+- No PR or merge was created or performed.
