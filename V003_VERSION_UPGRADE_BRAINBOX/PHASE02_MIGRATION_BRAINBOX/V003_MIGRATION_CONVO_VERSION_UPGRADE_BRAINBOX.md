@@ -3873,3 +3873,20 @@ Both M20 commits are pushed. I’m doing the final remote-tip and clean-worktree
 M19’s independent verification was committed and pushed (`5f2cdcd`). M20 retired seven verified zero-byte placeholders: two project-pattern files, four Skills files, and the Portfolio placeholder. Substantive legacy sources remain because their provenance links or unresolved FootHive/milestone evidence block retirement. `BRAINBOX/` was already absent.
 
 M20 implementation (`17a320e`) and the execution report (`f627ccf`) are pushed on `v003/m20-legacy-source-retirement`; the branch is clean and matches GitHub. Checks: 72 READMEs, 496 relative links, zero broken; frozen target tree unchanged. Independent ChatGPT M20 verification is pending. No merge was performed.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M20 — 2026-10-10 — CORRECTION REQUIRED
+
+**M20's seven zero-byte retirements independently PASS. Overall independent verification is NOT YET PASS due to M20-STATE-01.**
+
+Verified GitHub/local M20 branch `v003/m20-legacy-source-retirement`: M19 publication `5f2cdcd9b37d38d0a2fde030a28f8f4f117efc23`; implementation `17a320e850086d77547f387bbccec3fb3a4f8947`; report `f627ccf0684a979eb6f5a2e6ad8a75991bcdedd5`; final tip `64cfd97c617db242401b5759d7c682d8c327983f`. Local/upstream/GitHub matched, 0/0, worktree clean before this independent write. No M20 PR/merge; main unchanged; M21 absent.
+
+Exactly seven deleted paths; all were zero-byte in M01 baseline and immediately before M20, SHA-256 empty-file digest, now physically absent. Five active README files and Migration Map updated; no other implementation deletions. M20 conditional removal gates pass individually. `BRAINBOX/` already absent, not removed by M20.
+
+72 active README files / 496 relative links / 0 broken; no tracked Markdown link to a retired filename; approved root target block unchanged; M20 `git diff --check` PASS; substantive FootHive, milestone, frozen authority and support archives retained. M20-REF-01 and inherited M15-ASSET-01/M17-DEST-01/M19-HIST-01/M01-GIT-01 source-specific restrictions remain in both report and Migration Map.
+
+**M20-STATE-01:** active root Population state Portfolio row still asserts the already-deleted empty Portfolio placeholder “remains untouched for M20 source review”; root Current local tree introduction still describes an “empty local directory” that is absent; FootHive Portfolio child `POPULATION STATE` says the retired placeholder “remains unchanged for M20 review”; root AI Population row describes M20 review as remaining. Phase 02 top Status still calls M19 verification pending. These active, present-tense claims contradict the verified current tree. Codex must reconcile them in M20, publish a correction, and request independent recheck. Do not alter frozen root target tree or the protected historical source copies.
+
+**Verdict: retirement checks PASS; overall M20 CORRECTION REQUIRED, not independent PASS. M21 must wait.** No source or Git history changed by ChatGPT.

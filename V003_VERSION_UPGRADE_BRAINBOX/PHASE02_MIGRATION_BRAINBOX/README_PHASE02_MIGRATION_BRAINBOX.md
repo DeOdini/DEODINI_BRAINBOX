@@ -438,3 +438,16 @@ Commit and push this independent-verification closeout on the M19 branch; confir
 M19 independent-verification closeout was committed and pushed at 5f2cdcd9b37d38d0a2fde030a28f8f4f117efc23. The dedicated M20 branch was created cleanly. M20 retired exactly seven verified zero-byte placeholders, updated five active READMEs and Section 56 of the Migration Map, and published implementation commit 17a320e850086d77547f387bbccec3fb3a4f8947 on origin/v003/m20-legacy-source-retirement.
 
 Source-specific safeguards remain: M15-ASSET-01, M17-DEST-01, M19-HIST-01, M20-REF-01 and M01-GIT-01. All substantive legacy sources, FootHive originals, milestones, and protected V003/Phase 01/Phase 02 records remain. Current README scan: 72 files / 496 relative links / 0 broken. The full execution report and conversation closeout are published as the M20 documentation follow-up. Independent ChatGPT M20 verification is pending; no PR/merge or Batch E closure occurred.
+
+
+---
+
+## Current M20 independent verification — 2026-10-10
+
+**V003-M20: CORRECTION REQUIRED — NOT YET INDEPENDENT PASS.** The seven authorized zero-byte placeholder deletions and per-source six-gate checks independently PASS: seven original M01/pre-M20 empty blobs are now absent, no substantive source lost. GitHub/local M20 published at `64cfd97c617db242401b5759d7c682d8c327983f` before ChatGPT review, worktree clean, no M20 PR/merge.
+
+Independent active README audit: **72 files, 496 relative Markdown links, 0 broken**, zero links to the seven removed paths; frozen root target-tree block unchanged; M20 full-range `git diff --check` PASS.
+
+**M20-STATE-01 OPEN:** root README active Portfolio Population row still says retired `001_PORT_BRAINBOX.md` remains untouched; root physical-tree intro still mentions absent “empty local directory”; FootHive Portfolio child active Population State still says placeholder remains unchanged for M20 review; root AI Population state mislabels completed M20 review as future; initial Phase 02 Status line calls M19 verification pending. These are stale current-state labels despite correct M20 physical tree. Correct current-state documentation only on M20 and request independent re-verification. Do not rewrite archived source/evidence or the frozen root target tree.
+
+M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01, and M01-GIT-01 remain OPEN as source-specific removal/integrity safeguards. **M21 must not begin until M20 independent acceptance PASS after correction and clean publication.**

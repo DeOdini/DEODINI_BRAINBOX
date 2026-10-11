@@ -2368,3 +2368,32 @@ The legacy root BRAINBOX/ directory was already physically absent at M20 preflig
 ### M20 Git publication and verification
 
 The seven-empty-source M20 implementation was committed as 17a320e850086d77547f387bbccec3fb3a4f8947 and pushed to origin/v003/m20-legacy-source-retirement. Local branch and origin tracking ref matched after the push. Post-removal active README check: 72 README files / 496 relative Markdown links / 0 broken. The root approved target-tree block is unchanged. The protected V003 archive, FootHive originals and legacy MILESTONES/ have no M20 implementation diff. Independent ChatGPT verification remains pending. No PR/merge or Batch E closure occurred.
+
+
+---
+
+## 57. ChatGPT Independent Verification — V003-M20 — 2026-10-10
+
+**Seven zero-byte source retirements:** INDEPENDENT PASS.
+**M20 overall independent acceptance:** CORRECTION REQUIRED / NOT YET PASS.
+**M20-STATE-01:** OPEN — active root/Portfolio population and physical-tree prose contradict M20 empty-placeholder retirement; correct before M21.
+**M21:** NOT ELIGIBLE until M20-STATE-01 correction and renewed independent verification.
+
+Independent live GitHub/local verification: M19 verification tip `5f2cdcd9b37d38d0a2fde030a28f8f4f117efc23`, M20 implementation `17a320e850086d77547f387bbccec3fb3a4f8947`, report `f627ccf0684a979eb6f5a2e6ad8a75991bcdedd5`, final tip `64cfd97c617db242401b5759d7c682d8c327983f`; local/upstream/GitHub matched 0/0 clean before ChatGPT verification. Main unchanged at `e2edd669cb30d243b0b916db3e67ebde83653574`; no PR/merge; M21 absent.
+
+M20 implementation exactly **7 deletions + 5 README updates + 1 Migration Map update**. All seven deleted paths were zero bytes in original M01 commit `27e73f828bb367298442c2e621c18d1cc1ceb4f4` and immediately pre-M20; identical empty SHA-256 digest; now absent and recoverable from Git. No knowledge, outcome evidence or substantive source was deleted. Empty root `BRAINBOX/` was already absent and untracked.
+
+Independent README scan **72 tracked active READMEs / 496 relative Markdown links / 0 broken**, no Markdown link destinations to the deleted seven filenames. Root approved frozen target-tree block unchanged; full M20 `git diff --check` PASS; original FootHive and historical milestone sources, Specification, Origin, Phase 01 archive and Phase 02 ticket authority untouched.
+
+**M20-STATE-01 current-state defects:**
+1. Root Population state Portfolio row (~420) says deleted `001_PORT_BRAINBOX.md` remains untouched for M20 review.
+2. Root Current local root tree introduction (~424) incorrectly mentions an empty local directory although `BRAINBOX/` is already absent and excluded from the physical diagram.
+3. FootHive Portfolio child README active `POPULATION STATE` (~11) still says zero-byte legacy placeholder remains unchanged for M20 review.
+4. Root AI Population state row (~419) describes M20 source review as future, not completed for seven empty placeholders with substantive retirements still held.
+5. Phase 02 top Status still inaccurately calls M19 independent verification pending. Historical recorded checkpoints need not be rewritten; fix present-tense metadata only.
+
+**Codex must correct this M20 current-state metadata, publish a separate amendment, rerun links/hierarchy/whitespace and obtain renewed independent verification. Do not restore empty files to fit stale text.**
+
+**Carried safeguards:** M20-REF-01 (substantive provenance-link sources), M15-ASSET-01 (29 FootHive assets), M17-DEST-01 (milestones awaiting Operator decision), M19-HIST-01 (FootHive raw-byte normalization), M01-GIT-01 (local-only Git objects) remain OPEN with their current conditional stops.
+
+**Final independent M20: physical retirement PASS / full M20 closeout NOT PASS until M20-STATE-01 resolved.**
