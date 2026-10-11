@@ -4160,3 +4160,13 @@ ChatGPT’s newest M21 addendum identifies the actionable issue: its verificatio
 **Codex (commentary, verbatim):**
 
 The seven-file diff matches ChatGPT’s verification and status reconciliation: no unrelated files are present, and `git diff --check` passes. The current diff is 161 insertions/8 deletions; ChatGPT’s 123/8 figure is its earlier checkpoint. I also freshly confirmed the remote M21 branch still points to `7ccd0da`. I’ll record that distinction, then commit exactly the seven changed files locally without pushing.
+
+
+
+**Codex (final response, verbatim):**
+
+I reviewed ChatGPT’s latest M21 verification. The correction was to preserve its independent verification and the seven related status/map/snapshot updates in Git history, while keeping the checkpoint-recovery blocker and “not accepted” status clear. All seven modified paths were relevant, and `git diff --check` passed. The current diff was 161 insertions and 8 deletions; ChatGPT’s 123/8 count is retained as its earlier checkpoint.
+
+The seven-file correction is committed locally on `v003/m21-final-migration-verification-closeout` as `621b016694da5dba3142ceec5dd878dba6be35c4`. I also committed the report and conversation closeout locally. The branch is clean and two commits ahead of GitHub; the remote still points to `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`. Nothing was pushed.
+
+M21 remains blocked by `M21-GIT-01`; it is not accepted or closed. The checkpoint recovery/disposition decision and later independent verification are still required.
