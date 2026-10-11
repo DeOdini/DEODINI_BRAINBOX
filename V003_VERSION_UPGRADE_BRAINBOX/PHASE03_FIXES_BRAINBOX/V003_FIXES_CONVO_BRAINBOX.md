@@ -63,3 +63,33 @@
 **Interpretation:** The five-batch V003-F01–V003-F16 planning framework is approved. The Phase 02 Codex-executor / ChatGPT-independent-verifier / Operator-acceptance arrangement and blocking versus batch-deferred issue treatment are adopted for Phase 03. Individual ticket implementations are not authorized; the present approval is planning-only. All Git publication and merges require separate approval, with ticket-specific authorization required for any Git modification. M21 remains blocked by M21-GIT-01 and Phase 02 remains open.
 
 **Next gate:** Obtain an exact Operator authorization for V003-F01 investigation, including branch/preflight scope and permitted actions; seek independent authorization for recovery changes and any Git publication.
+
+
+# V003-F01 — checkpoint search, disposition and publication — 2026-10-11
+
+This section records the visible Operator/Codex dialogue for this ticket. Search commands, outputs, hashes and Git verification are recorded in `V003_FIXES_REPORT_BRAINBOX.md`.
+
+**Assistant (question, verbatim):** “Please finish GitHub sign-in on Windows for the pending Phase 02 push, then reply here.”
+
+**Operator (verbatim):** “I completed sign-in”
+
+**Operator instruction (verbatim):**
+
+> CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE FOR PHASE02, ONCE DONE, NOW PROCEED TO BATCH A , F01, ONCE YOU ARE DONE WITH F01, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+>
+> **## BATCH-A — mandatory acceptance blocker**
+>
+> **### V003-F01 — M21-GIT-01 / M01-GIT-01 historical checkpoint-object recovery/disposition**
+> **Class:** GLOBAL BLOCKING; **effort:** HIGH/uncertain. **Depends:** none. **Sources:** M01 map containing 20 checkpoint SHAs; previous independent M21 check 0/20 available in present Git object store.
+> **Draft authorized scope to request:** Read-only independent backup/ref/object/bundle search and SHA-provenance verification; present exact recoverable-vs-unavailable evidence, request Operator choice. Recovery action only by separate scoped authority. **Forbidden:** fake replacement IDs, object cleanup, forced push/rewrite or invented loss cause.
+> **Pass gate:** 20/20 SHA dispositions and independent proof for restored objects OR explicit Operator documented-unavailability disposition; renewed M21 verification, not automatic closure.
+
+**Codex commentary (verbatim):** “The Phase 02 push is confirmed. I’m checking the F01 branch and the Phase 03 files now so I can verify the edits before staging anything. The checkpoint search is read-only; no recovery or object-store changes have been made.”
+
+**Codex commentary (verbatim):** “The first read confirms the F01 planning files still show the earlier planning-only state. I’m updating their current status while keeping that earlier framework authorization as historical record, and I’ll attach the search findings to F01 without declaring the missing commits globally unrecoverable.”
+
+**Codex commentary (verbatim):** “F01’s current status is now explicit: the investigation is complete, but the result is ‘not found in searched sources,’ not a global-unavailability finding. I’m preparing the first F01 documentation commit on its dedicated branch; the detailed evidence report and conversation entry will follow in a second commit as requested.”
+
+**Codex commentary (verbatim):** “The first F01 push is still running and hasn’t returned a result yet. I’m checking its process state before I proceed to the post-push report, so I can distinguish a completed push from an authentication wait.”
+
+**Publication status at this record:** Phase 02 push and F01 first documentation push were confirmed. The detailed F01 evidence report and this dialogue record are being added as the follow-up publication requested by the Operator. No Operator disposition of the 20 SHAs has yet been made; no independent ChatGPT verification or M21 closure is claimed.
