@@ -2426,3 +2426,12 @@ Independent check **72 active READMEs / 496 relative Markdown links / 0 broken**
 **Flags retained:** M20-REF-01 substantive provenance-linked source retention; M15-ASSET-01 29 FootHive source-only assets; M17-DEST-01 Operator decision required before historical milestone relocation/retirement; M19-HIST-01 44/45 worktree raw-byte pairs, 17/45 original-manifest destination Git-blob hashes, but 45/45 LF-normalized contents; M01-GIT-01 local-only historical Git objects protected until separately dispositioned. M20 PASS does not override any of these stops.
 
 **Final M20: INDEPENDENT PASS, M20-STATE-01 RESOLVED. M21 P14 may begin only after this verification closeout is published and M20 handoff branch is clean.**
+
+
+---
+
+## 60. V003-M20 independent verification publication — 2026-10-11
+
+ChatGPT's renewed independent M20 verification is **PASS** and **M20-STATE-01 RESOLVED**. Codex published the six verification-state records in commit `99e7fd6908848c04cb651a813c144f77b0db9f41` on `v003/m20-legacy-source-retirement`. Local HEAD, origin tracking and GitHub ref matched at that commit with a clean worktree. Current Phase 02 and V003 parent status fields were then reconciled to say the verification closeout is published.
+
+The seven verified empty-source retirements and all retained substantive-source dispositions remain unchanged. **M21 is dependency-eligible only for its own P14 after clean handoff**; the M20 independent PASS does not close Phase 02 or remove M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01 or M01-GIT-01.

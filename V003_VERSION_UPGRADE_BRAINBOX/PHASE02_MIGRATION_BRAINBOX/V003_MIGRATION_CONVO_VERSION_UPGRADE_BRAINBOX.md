@@ -4005,3 +4005,24 @@ Reproduced **72 active README files / 496 relative links / 0 broken**; all **sev
 **M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01 and M01-GIT-01 remain OPEN** as source-specific preservation/retirement constraints. M20 verification PASS does **not** authorize deleting substantive legacy sources, resolving FootHive raw-byte qualification without proof, moving historical Milestones, or pruning local-only Git objects.
 
 **M21 dependency-ready only after Codex commits/pushes this M20 independent-verification closeout, confirms matching clean branch, creates M21's own branch, and runs M21 P14.** No same-batch PR/merge is required before M21; Batch E Git closure follows ticket verification.
+
+
+---
+
+# Operator → Codex — M20 final independent-verification correction — 2026-10-11
+
+**Operator (verbatim):**
+
+I WANT YOU CHECK FOR CHATGPT REPORT ONLY, CHATGPT AS SPECIFIED A CORRETION THAT NEEDS ATTENDING TO BEFORE M20 IS PROPERLY CLOSED. WHEN YOU HAVE ANALYSE WHAT THE CORRECTION IS AND DIAGNOSE THE RIGHT FIX, EXECUTE THE FIX AND PROCEED TO RECORD YOUR REPORT. THEN REPORT BACK TO ME.
+
+**Codex (commentary, verbatim):**
+
+I’ll read the latest ChatGPT M20 report, identify the specific remaining correction, make that scoped fix, and record what changed. I’ll keep M21 on hold until M20’s independent verification is complete.
+
+**Codex (commentary, verbatim):**
+
+ChatGPT’s renewed M20 report gives M20 a full independent PASS and marks `M20-STATE-01` resolved. Its six local edits record that result. I found one timing issue: the live Phase 02 and V003 status headers still say publication is pending, which will become stale once I push the closeout. I’ll publish ChatGPT’s verification first, then update those live headers and record the final publication.
+
+**Codex (commentary, verbatim):**
+
+ChatGPT’s verification closeout is now pushed at `99e7fd6`; local HEAD, the tracking branch, and GitHub match, and the worktree is clean. I’m replacing the two live “publication pending” status lines with the confirmed state and adding the final Codex report.

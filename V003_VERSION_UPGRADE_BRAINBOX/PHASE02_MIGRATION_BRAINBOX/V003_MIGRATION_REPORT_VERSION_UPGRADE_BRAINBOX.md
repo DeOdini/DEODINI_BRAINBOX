@@ -8065,3 +8065,28 @@ Each restriction remains open for its own source, but none is a reason to reject
 To hand off M21, Codex must commit/push this ChatGPT verification-state closeout on dedicated M20, fetch/confirm the local/upstream/GitHub tip, and confirm a clean worktree. Only then create `v003/m21-final-migration-verification-closeout` from the independently verified M20 tip and run M21 P14 against its final tree/snapshot/evidence/flag obligations. Batch E remains unmerged pending batch-boundary review and Git closure; no same-batch M20 merge is prerequisite for starting M21.
 
 ChatGPT did **not** stage, commit, push, merge, retire sources, restore placeholders, prune Git objects, test applications or deploy.
+
+
+---
+
+# V003-M20 final independent-verification publication and status reconciliation — 2026-10-11
+
+**Scope:** Respond to the Operator's instruction to read ChatGPT's latest M20 report, diagnose its final correction, apply it, and report. M21 implementation is outside this turn.
+
+## Diagnosis
+
+ChatGPT's renewed independent review gives V003-M20 full **PASS** and resolves **M20-STATE-01**. The seven verified zero-byte retirements, active navigation, link integrity, protected historical evidence, and M20 commit ancestry pass. The report identifies one timestamp-dependent closeout detail: at pre-verification tip `3aae5b1`, the live Phase 02 status still said M20 correction/renewed verification were pending. ChatGPT's local verification edits changed that to independent PASS while accurately stating that publication and clean handoff were pending.
+
+The remaining action for M20 was to publish those six ChatGPT-edited records, confirm the remote and local tips, then reconcile live top-level status wording so it no longer says publication is pending. No additional source file deletion, architectural migration, or M21 work is justified by the review.
+
+## Execution and evidence
+
+- Cross-checked the six local ChatGPT verification edits: root README, Phase 02 README, Phase 02 Conversation, Phase 02 Report, V003 parent README, and Migration Map. `git diff --check` found no whitespace error.
+- Committed them as `99e7fd6908848c04cb651a813c144f77b0db9f41` (`M20 publish renewed independent verification pass`) and pushed `v003/m20-legacy-source-retirement` to GitHub.
+- Confirmed local HEAD, origin tracking, and `git ls-remote` all equal `99e7fd6908848c04cb651a813c144f77b0db9f41`; worktree was clean at that verification checkpoint.
+- Updated only the live Phase 02 and V003 parent status fields that still called the verification-closeout publication pending. They now cite the confirmed published verification commit and make M21 eligibility conditional on its own P14 and clean handoff.
+- Historical ChatGPT verification text was preserved as written. The frozen Specification, Origin Conversation, original FootHive and Milestones sources, approved root target tree, seven M20 retired-file dispositions, and Phase 01 archive were not altered.
+
+## Boundary and next state
+
+**M20:** independently verified PASS; M20-STATE-01 resolved; verification closeout published. **Batch E:** unmerged. **M21:** not started in this turn; its dedicated P14, final snapshot, and map closure remain separate work. M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01, and M01-GIT-01 remain enforceable for their specific sources. M20 PASS does not authorize retirement of substantive sources, Git pruning, deployment, or a Phase 02 closure claim.
