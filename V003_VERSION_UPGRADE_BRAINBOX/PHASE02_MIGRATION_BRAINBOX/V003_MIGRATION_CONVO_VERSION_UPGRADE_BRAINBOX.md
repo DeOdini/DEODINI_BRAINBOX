@@ -4170,3 +4170,54 @@ I reviewed ChatGPT’s latest M21 verification. The correction was to preserve i
 The seven-file correction is committed locally on `v003/m21-final-migration-verification-closeout` as `621b016694da5dba3142ceec5dd878dba6be35c4`. I also committed the report and conversation closeout locally. The branch is clean and two commits ahead of GitHub; the remote still points to `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`. Nothing was pushed.
 
 M21 remains blocked by `M21-GIT-01`; it is not accepted or closed. The checkpoint recovery/disposition decision and later independent verification are still required.
+
+---
+
+# Operator–ChatGPT — V003 Phase 03 Planning, Origin Review and Recording Handoff — 2026-10-11
+
+**Record status:** ChatGPT reconstructed session excerpt and traceable conversation summary, not a verbatim export of every message. Direct Operator instructions quoted below are verbatim from the current chat; ChatGPT response descriptions summarize the delivered results. Full live conversation remains the original source for word-for-word detail. No Phase 03 ticket has been authorized.
+
+## Conversation sequence (chronological)
+
+**Operator:** "I WANT YOU TO PROPERLY EVALUATE THIS REPORTS AND ALSO SCAN FOR THE STATED FLAGS WITH DEODINI BRAINBOX TO CONFIRM IF THOSE CLAIMS ARE TRUE... ALSO YOU SHOULD SCAN FOR MORE FLAGS AND REPORT BACK TO ME."
+
+**ChatGPT (report summary):** Independently inspected the desktop DEODINI_BRAINBOX repository and compared six Operator concerns plus Grok/Claude reviews with current file paths, sources, live Git state and navigation. Reported M21 checkpoint blocker, two unpublished local commits, protected M15/M17/M19/M20 source dispositions, possible legacy routing/capability-intake/FootHive authority issues, five Windows long paths, and four unresolved ordinary relative links (38 when images included). No fixes or commits.
+
+**Operator (origin/access request, substantive text):** Requested reading the two other project sessions ("CAPABILITY INTEGRATION REPORT" and "VERIFY CODEX CLAIMS") and an every-file/every-folder read-only review of DEODINI BRAINBOX local and repository data before categorizing closure flags. Asked ChatGPT to request links if chats were inaccessible.
+
+**ChatGPT (inventory and limitations):** Connected desktop DESKTOP-DHRIH27; separate device named localhost was offline. Traversed/read bytes of 460/460 non-.git files across 289 physical directories, hashed/inventoried them, and recognized 190 zero-byte .gitkeep placeholders. Located frozen V003 Specification, Origin Conversation, Phase 02 approved ticket set, migration map, and prior verification; expressly distinguished binary/full-tree inspection from exhaustive semantic review and Git internal forensic inspection. Requested shared chat links.
+
+**Operator (verbatim shared links):**
+- https://chatgpt.com/share/6acbb476-e730-83e9-93ad-1ba9688883d8
+- https://chatgpt.com/share/6acbb49f-4c78-83e9-9c28-c974a2a76ec6
+
+**ChatGPT (access result):** Both shared pages opened successfully. First identified as Capability Integration Report and shows initial September 19 capability, connector, skill, RDC and email reporting requirements with active/available/test distinction. Second identified as Verify Codex Claims; discusses P09–P16 checks and the Phase 01 correction/freeze history. ChatGPT distinguished intermediate defects from final P16 reconciliation and noted shared snapshots may omit private/later turns.
+
+**Operator (verbatim Phase 03 instruction):** "NOW YOU ARE TO FOLLOW THE SAME RULES ESTABLISHED WITHIN THOSE CONVERSATION AND DEODINI BRAINBOX. YOU ARE TO LIST SPECIFICALLY ONLY THE KNOWN FLAGS MEANT FOR FIXING IN OTHER FOR V003 UPGRADE TO BE CLOSED. THIS FIXES WILL BE PHASE 03, JUST HAS PHASE 01 WAS POLISH, PHASE 02 IS THE CURRENT MIGRATION, EACH CLASSIFIED AS P01, P02 ETC, M01, M02 ETC, THIS FIXES WILL BE CLASSIFIED PHASE 03 V003-F01, V003-F02 ETC YOU ARE TO ISSUE FIRST ALL THE LIST THE KNOWN FLAGS THEN I WILL INSTRUCT YOU ON HOW TO PROVIDE THE TICKETING FOR V003 TO BE FINALLY CONCLUDED"
+
+**ChatGPT (response summary):** Issued a proposed 16-item V003-F01..F16 known-flags register. It covers original M21/M01 Git checkpoint blocker, Git lifecycle, M15 assets, M17 milestones, M19 history, M20 legacy references, Windows long paths, legacy navigation, FUNC CORE/EXE and questionnaire, Skills dual domains, legacy Project Workflow, FootHive authority, Production case-study placement, historical broken links, stale status text and Architecture Decisions placement. The register was **PROPOSED, awaiting Operator review**, not approved ticket authority. Deferred/planned content and resolved Phase 01 history were excluded from automatic defects.
+
+**Operator (verbatim current recording instruction):** "I WANT YOU TO RECORD YOUR REPORTS AND OUR CONVERSATION SO FAR, FOLLOW THE SAME PATTERN CHATGPT HAS USED OVER TIME. ONCE DONE REPORT BACK."
+
+**ChatGPT (recording action):** Inspected previous Phase 02 migration report/conversation tail and clean worktree/two-ahead branch checkpoint, then appended the above comprehensive independent audit/register into the existing Phase 02 migration report and this conversation provenance record into the existing Phase 02 migration conversation. Prior material preserved. Only these documentation files were intended to change. No Phase 03 directory/ticket file created, no authorized execution, no commit/push/merge by this recording action.
+
+## Handoff state
+**Proposed Phase 03 IDs F01–F16 only; awaiting Operator's ticketing instructions. M21-GIT-01 still blocking; M21 and Phase 02 remain unclosed.**
+
+---
+
+# Operator–ChatGPT — Governance Ticketing Review and Phase 03 Batching Directive — 2026-10-11
+
+**ENTRY TYPE:** Conversation reconstruction with Operator's current instruction quoted verbatim; not a full export of the entire ChatGPT exchange. **INPUTTED BY:** ChatGPT. Original Operator authorship preserved.
+
+**Operator (preceding request, verbatim):** "NOW YOU ARE TO READ THE TICKETING RULES IN GOVERNANCE AND ALSO ANY RELIVANT HISTORY OR GUIDE FOUND IN DEODINI BRAINBOX. ONCE YOU ARE THROUGH WITH THAT, I WANT YOU GIVE ME A SUMMARY OF THE RULES AND HOW YOU INTEND TO APPLY IT TO THE CURRENT PHASE 03 FIXES."
+
+**ChatGPT (summary of response):** Read active Governance Ticketing, Evidence, Versioning, Documentation and Promotion authorities and compared frozen Specification §§25–27, Phase 02 P14 preflight and report contract, and Operator flag-defer declaration. Explained explicit Operator authorization, accurate pre/post/verification/Git lifecycle, history preservation, Codex execution/ChatGPT independent verification/Operator acceptance, and crucial Phase 02-only scope of the non-blocking batch-defer exception. Proposed a fourteen-field Phase 03 ticket contract and provisional grouping, clearly not yet approved.
+
+**Operator (current instruction, verbatim):** "RECORD YOUR REPORTS ACCORDINGLING AND THE CONVERSATION.
+
+AFTERWARDS YOU ARE TO CARRY OUT THE BATCHING ACCORDINGLY, ENSURE TO BLOCKING FIXES ARE TREATED FIRST, THEN THE EASIET FIX COMES FIRST BEFORE THE MEDIUM."
+
+**ChatGPT (current action):** Appended a dated Governance-rule report and risk/dependency-first proposed batching plan to the existing Phase 02 migration report, and appended this conversation addendum to the Phase 02 migration conversation. Proposed batch A F01/F05 (hard blocker and historical integrity), batch B F04/F03/F06 (conditional source-retirement gates, easier decision first), batch C F15/F08/F14/F07 (easy nonblocking concerns), batch D F10/F11/F09/F12/F13/F16 (medium architecture/content concerns), and batch E F02 (publication and final acceptance, with early push separated from final merge). F01's high effort does not demote its blocking risk. These are planning batches only, not authorized implementations.
+
+**UNCHANGED GATES:** Original M-series flags remain traceable; frozen V003 architecture still controls; Phase 03-specific procedures and tickets require explicit Operator approval. M21-GIT-01 unresolved, M21 not accepted, Phase 02 open. No fixes, new tickets, Git commit/push or merge performed under this directive.

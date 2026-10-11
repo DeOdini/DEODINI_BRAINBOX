@@ -8295,3 +8295,106 @@ The Operator asked Codex to inspect the newest ChatGPT-recorded M21 verification
 - The Operator explicitly authorized staging and committing the report-driven local state and explicitly withheld push authorization. Codex staged the seven reviewed paths and committed them locally as `621b016694da5dba3142ceec5dd878dba6be35c4` (`M21 record ChatGPT independent verification and status correction`). A fresh `git ls-remote` check confirmed GitHub still points to `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`; the new commit was not pushed. No PR, merge, or Phase 02 closure was performed.
 
 This documentation/status correction resolves the seven-file uncommitted-state issue only. `M21-GIT-01` remains BLOCKING, M21 remains unaccepted, and the Operator's checkpoint recovery/disposition decision is still pending.
+
+---
+
+# ChatGPT Independent Audit and Proposed V003 Phase 03 Flag Register — 2026-10-11
+
+**STATUS:** [RECORDED — PROPOSED FOR OPERATOR REVIEW; NOT AUTHORIZED FOR EXECUTION]
+**RECORD TYPE:** Independent post-M21 assessment, origin/source review and flag-planning handoff; not a Codex execution report, final M21 acceptance, or Phase 03 ticket issuance.
+**SOURCE BASIS:** Operator's six stated concerns and uploaded Grok/Claude audits; ChatGPT's live read-only RDC scan of desktop DEODINI_BRAINBOX; local frozen V003 Specification, Origin Conversation, Phase 01/02 material, migration map and prior independent M21 evidence; two Operator-provided shared ChatGPT session URLs.
+**CHAT SOURCES:** Capability Integration Report https://chatgpt.com/share/6acbb476-e730-83e9-93ad-1ba9688883d8 ; Verify Codex Claims https://chatgpt.com/share/6acbb49f-4c78-83e9-9c28-c974a2a76ec6 . Both shared pages were successfully opened. They are shared snapshots, not proof of later private additions.
+**SCOPE LIMITS:** No fixes, source retirement, new authority, ticket approval, checkpoint recovery, merge, deployment or Git object cleanup. Filesystem byte inspection is distinct from exhaustive semantic reading of every historical document. Separate device 'localhost' was offline; online authorized device was DESKTOP-DHRIH27.
+
+## 1. Repository and provenance observations
+- Live desktop repository: C:/Users/USER/DEODINI_BRAINBOX; active branch v003/m21-final-migration-verification-closeout. Prior read-only Git verification found local commits 621b016694da5dba3142ceec5dd878dba6be35c4 and e6b8df2cdc239f7fc6535cb16754ca8ebc1a3992; locally clean, two ahead of GitHub tip 7ccd0daf6af7d5c0d8230ad600e2307ada254f5b; no push by ChatGPT. This status was rechecked immediately before recording the present entry.
+- Physical-tree byte audit read 460/460 files without read errors, under 289 directories, excluding .git. File types: 154 Markdown, 58 PNG, 40 YAML, eight logs, four JPG, two SVG, one CSV, one .example, and 192 extensionless (including .gitkeep); 190 zero-byte files, all .gitkeep. This was a read/hash/inventory pass, not a manual comprehension claim for all 460 files or a complete .git object audit.
+- Domain files: AI_BRAINBOX 421; GOVERNANCE_BRAINBOX nine; VERSION_HISTORY_BRAINBOX eight; V003_VERSION_UPGRADE_BRAINBOX ten; PORTFOLIO_BRAINBOX five; milestone branches four; root three.
+- Principal authorities examined: frozen V003 Specification (1,760 lines), Origin Conversation (6,569 lines), Phase 02 migration tickets (1,416 lines), migration map (2,608 lines); selective deep reading of governing sections completed. Phase 01 freeze is recorded in Specification §31–32. The authoritative source hierarchy and exact ticket-specific preflight remain in Specification §§2, 26–27 and Phase 02 tickets §§3–4.
+- Original shared Capability Integration Report establishes the required separation of active connected abilities from available/potential abilities, with linkage, purpose, active usage, safe tests and limitations. Shared Verify Codex Claims session documents Phase 01 P09–P16 staged review, corrections and eventual freeze; intermediate unresolved issues are not evidence of live regressions without rechecking P16.
+- The original Phase 02 operating model remains Operator authorizes/accepts/merges, Codex executes, ChatGPT independently verifies. A finding/flag does NOT itself authorize a fix. Blocking versus batch-deferred classification must consider affected dependency; non-blocking findings need recorded disposition, not automatic source deletion.
+
+## 2. Earlier third-party audit claims — independent assessment
+- The physical 460-file / 289-directory counts and deliberate planned scaffolding are supported.
+- Five T23 evidence paths measured 260–263 Windows path characters and core.longpaths was unset in the desktop repository; portability concern real, failure of every future clone not proven.
+- Legacy DOB/FQ/Skills Availability entry routes can misdirect an agent away from active root and Governance authorities. Historical preservation means redirect/status wording is safer than unapproved deletion.
+- AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX had one 847-byte SKILLS_MUST_README.md and no substantive RAW/PROVEN/REUSABLE/FAILED files at that location. It is a candidate for Operator-directed disposition, not automatically safe for deletion.
+- FUNC contained eight CORE agent records (~3.3–4.8 KB each), several longer legacy FUNC documents and short DeepSeek/Qwen legacy placeholders. Differences in length do not prove missing required content; source-level question-to-CORE/EXE evidence mapping is needed. FUNC_REQ_BRAINBOX.md predates V003-specific CORE/EXE placement guidance.
+- The current PROJ_WORKFLOW legacy tree has populated FOOTHIVE_PROJ_BRAINBOX and RAW_WORKFLOW_PROJ_BRAINBOX; RAW contains four substantive Markdown files totaling ~64 KB. No finding authorizes general retirement.
+- Production FootHive case-study tree currently has one case-study index and two FootHive summary/lessons files; its README defines Sandbox evidence as canonical and Production as T20 release summary, not current live monitoring. Portfolio is packaging rather than canonical trial evidence.
+- Ordinary relative Markdown link scan found four unresolved links in migrated Sandbox FootHive BUILD_REPORT; when embedded Markdown images were included, 38 unresolved relative targets across Build Report and original FootHive image catalogs. Historical sandbox: URLs/absolute links and README-only counts belong to separate scopes. Claude's older 64 count was not reproduced on an identical documented counting basis.
+- Root README retains historical 494 vs later 496 relative-link metrics and a literal '?' in the M03-REF-01 status sentence. Older M08/M20 PENDING language within chronological sections is not a current status by itself; later Phase 02 header supersedes it.
+- Existing M21-GIT-01 independent check: 0/20 original M01 checkpoint Git commits available in current Brainbox object store; previous broader report includes other repositories/ref and GitHub checks. Cause of absence and availability of other backups remain unestablished.
+
+## 3. Proposed V003 Phase 03 issue/flag IDs — NOT authorized tickets
+The IDs below are planning labels only; any exact fix, disposition, new Phase 03 path, or dependency scope still requires Operator decision and individually authorized ticketing. Do not silently transform 'needs decision' into 'defect confirmed'.
+
+| Proposed ID | Inherited flag / known issue | Provisional gate |
+| --- | --- | --- |
+| V003-F01 | M21-GIT-01 / M01-GIT-01: 20 original checkpoint commits unreadable; independent recovery or documented-unavailability decision | BLOCKING for M21 acceptance |
+| V003-F02 | M21 final documentation/Git publication: two committed local closeout commits not yet pushed; Batch E PR/merge/acceptance pending | Closure/lifecycle gate; Operator controls push/merge |
+| V003-F03 | M15-ASSET-01: 29 source-only FootHive product/catalog assets lack authorized destination | Operator source disposition before retirement |
+| V003-F04 | M17-DEST-01: two historical MILESTONES/ documents lack approved target | Operator source disposition before move/retire |
+| V003-F05 | M19-HIST-01: historical FootHive Git blob vs manifest/raw-byte normalization qualification | Preserve integrity evidence; source-specific safeguard |
+| V003-F06 | M20-REF-01: substantive legacy source retirement/reference-provenance safeguard | Preserve source until approved |
+| V003-F07 | Windows long paths: five T23 Playwright files (260–263 full-path chars), core.longpaths unset | BATCH-DEFERRED portability assessment |
+| V003-F08 | Legacy DOB/AI_MUST/FQ and navigation/reading-order conflict with current root/Governance | BATCH-DEFERRED routing correction |
+| V003-F09 | FUNC questionnaire and eight CORE/EXE capability mappings versus detailed legacy agent reports | Operator classification design decision; no assumed data loss |
+| V003-F10 | V002 Skills Availability versus V003 Skills taxonomy and legacy retirement | Operator disposition, references and provenance first |
+| V003-F11 | Legacy Project Workflow, RAW workflow sources and original FootHive materials | Operator destination/retirement decision, preserve original |
+| V003-F12 | FootHive canonical source responsibilities across PROJ, Sandbox, Prod and Portfolio | Operator authority clarification |
+| V003-F13 | Exact evidence-promotion and file organization criteria for FootHive/future Prod DEVOPS case studies | Operator architecture/operating clarification |
+| V003-F14 | Unresolved historical Build Report/evidence paths and image catalog references | BATCH-DEFERRED reference classification |
+| V003-F15 | Superseded chronological statuses, historical link counts and minor root text inconsistencies | BATCH-DEFERRED documentary reconciliation |
+| V003-F16 | Operator's proposed relocation/naming of V003-wide ARCHITECTURE_DECISIONS under Fullstack Sandbox ARCH_DECISIONS | Operator architecture decision; existing V003-wide provenance is intentional and not itself proven wrong |
+
+## 4. Not automatically fixable / non-defect scope
+- Planned .gitkeep Skills/DEVOPS/Router branches are not evidence that the architecture migration failed.
+- Future FootHive Iterations 02/03, Router infrastructure, runtime deployments and content-enrichment initiatives remain separately scoped unless Operator adds them.
+- Historical Phase 01 P06/P09/P13 defects were recorded as reconciled at P16; do not re-open from interim chat excerpts alone.
+- Parallel source and copied evidence do not establish redundant-authority defects without canonical/reference and hash/provenance classification.
+- V003-F01..F16 are not the same as previously authorized V003-M01..M21; Phase 03 naming, grouping and ticket contracts await Operator instructions.
+
+## 5. Remaining review limits and handoff
+- Shared conversations were retrievable and representative passages examined; full individual-message-level forensic reconciliation with every local archive entry was not completed.
+- Full physical file reading as bytes succeeded; manual semantic reading of all historical/technical records, Git internals, entire Phase 01/Phase 02 event chronology, external linked artifacts, and offline localhost was not completed. Do not claim an exhaustive semantic audit.
+- Final risk ranking, consolidation, dependencies, success gates, authorization and issuance of V003-F01..F16 tickets are specifically RESERVED for a subsequent Operator instruction.
+- As of recording: **M21 NOT ACCEPTED; Phase 02 OPEN; Batch E not authorized to merge; checkpoint-disposition blocker unresolved.** This report does not amend the frozen Specification or close a flag.
+
+**Recording action:** Appended to existing Phase 02 migration report as provenance/planning support only. Git status after append determines whether committed/pushed; neither is implicit.
+
+---
+
+# ChatGPT Governance Ticketing Review and Proposed Phase 03 Dependency-First Batching — 2026-10-11
+
+**STATUS:** [RECORDED — PROPOSED PLAN, NOT OPERATOR-APPROVED EXECUTION TICKETS]
+**SOURCE AUTHORITY:** GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md; EVIDENCE_GOV_BRAINBOX.md; DOCUMENTATION_GOV_BRAINBOX.md; VERSIONING_GOV_BRAINBOX.md; PROMOTION_GOV_BRAINBOX.md; frozen V003 Specification §§25–27; Phase 02 ticket set §§3–4 and V003-M21; current Phase 02 conversation and Operator declaration. These governing files were read live on authorized desktop DESKTOP-DHRIH27.
+**AUTHORITY BOUNDARY:** The Phase 02 Operator exception allowing non-blocking flags to proceed between tickets is explicitly scoped to Phase 02. Adoption of identical Phase 03 flag/batch and Codex/ChatGPT role handling requires Operator authorization. This is a planning sequence, not permission to execute, publish, merge, delete, rewrite historical evidence, amend the frozen Specification or create a Phase 03 directory.
+
+## 1. Governing rules applied
+1. Flag/recommendation != authorization. Every F ticket must be individually scoped/authorized and must inspect exact pre-state, source content, links, integrity, Git state, canonical destination and dependencies.
+2. Frozen V003 Specification is architecture target; Origin Conversation is decision provenance; Governance controls system-wide policy; root/local READMEs control navigation; migration ledger describes but does not authorize source disposition.
+3. Blocking safety/integrity/dependency issue stops the affected work. Non-blocking batch carry-forward applies to Phase 02 by existing exception, NOT automatically Phase 03.
+4. Codex implementation reports must distinguish authorization, pre-state, exact actions, source-to-target disposition, read-back/tests, post-state, remaining flags, limits, Git lifecycle. ChatGPT independently verifies under the Phase 02 model; Operator alone authorizes merger/acceptance. Proposed for Phase 03 pending approval.
+5. Preserve historical records and evidence; use dated addenda. Never equate write with verification, commit with push, push with merge, or merge with deployment/Operator verification. Destructive actions require separately approved recoverability.
+
+## 2. Operator-requested sequencing: blocking first, then easier before medium
+The labels F01–F16 remain PROPOSED planning identities; do not infer every entry is a defect or needs a physical fix. A 'gate' means decide/verify/disposition first, not necessarily implement or erase.
+
+| Proposed planning batch | Proposed internal order | Risk, estimated effort and dependency |
+| --- | --- | --- |
+| A — Hard closure blocker / historical integrity FIRST | F01 -> F05 | F01 M21-GIT-01 20 missing checkpoint objects: HIGH difficulty / blocking; begin immediately despite high effort, read-only recovery source search or explicit Operator unavailability decision. F05 M19-HIST-01: relatively bounded archival-byte reconciliation, source safeguard, address alongside F01 where needed; never rewrite original evidence. |
+| B — Source-specific blocking retirement decisions SECOND | F04 -> F03 -> F06 | F04 M17-DEST-01 (two milestone sources; easier bounded decision), F03 M15-ASSET-01 (29 FootHive assets; medium inventory), F06 M20-REF-01 (broader legacy retirement/provenance; medium to high). These block respective moves/deletions only, not necessarily unrelated M21 acceptance. Each can end in approved retention/no-deletion, not forced migration. |
+| C — Easy, nonblocking corrections THIRD | F15 -> F08 -> F14 -> F07 | F15 stale status/count wording and minor typo (easy); F08 legacy entry and reading-order redirects (easy to medium, provenance-preserving); F14 broken historical Build Report and image links (bounded review, no silent rewrite); F07 five Windows long paths/configuration (bounded evaluation, requires Operator choice if rename). |
+| D — Medium design/content decisions FOURTH | F10 -> F11 -> F09 -> F12 -> F13 -> F16 | F10 Skills Availability vs Skills taxonomy; F11 legacy project/RAW workflow; F09 capability questionnaire, CORE/EXE evidence mapping; F12 FootHive canonical boundaries; F13 Prod promotion/case-study rules (depends on F12); F16 architecture-decision document location (requires explicit Operator decision, frozen target impact assessment). Within D, start with narrowly scoped assessments, then medium cross-domain classification. |
+| E — Final publication and integrated closure LAST | F02 | F02 contains a separable early documentation push decision (currently two older committed local M21 closeout commits plus newly uncommitted report/conversation addenda) and a final publication/PR/merge/Operator acceptance gate. Do not perform final Batch E merge or declare Phase 02/V003 closed until F01 and all mandatory acceptance gates are independently satisfied. Existing no-push/no-merge restrictions remain unless explicitly changed by Operator. |
+
+**Ordering nuance:** User directed blocking before easy-before-medium. Hard blocker F01 is necessarily high effort; risk priority overrides ease. F04/F03/F06 are conditional source-retirement gates, not blanket blockers of every ticket. F02 is a final closure dependency and must not be prematurely executed merely because its first two actions are mechanically easy.
+
+## 3. Ticket authorization and closure requirements (proposed)
+Each future individually approved V003-Fxx ticket should have unique ID/title, classification, exact source paths/line/object evidence, frozen authority and Origin anchors, predecessor dependencies, purpose and scope exclusions, mandatory preflight, stop and escalation rules, permitted/prohibited actions, recovery/integrity requirements, expected deliverables, independent test/acceptance criteria, Codex execution-report contract, ChatGPT independent-verification gate and separate Operator merge/closeout disposition. Keep unresolved existing M-series IDs attached to F-series planning work as provenance.
+
+Do not retrospectively label planned Router/Skills/DEVOPS scaffolds as defects; do not re-open corrected Phase 01 P06/P09/P13 without new regression evidence; do not delete V002 sources solely for emptiness or duplication. Any need to change frozen architecture requires a separately approved authority decision.
+
+## 4. Disposition and current repository state
+**M21-GIT-01 remains BLOCKING; M21 NOT ACCEPTED; Phase 02 OPEN; Batch E NOT MERGED.** No Phase 03 ticket or batch has been accepted by Operator. Report and conversation recording are local append-only documentation; changes remain uncommitted/unpushed unless separately authorized and verified.
