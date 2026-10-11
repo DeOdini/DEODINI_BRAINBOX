@@ -8174,4 +8174,4 @@ These dispositions are listed source-by-source in the migration map. Planned San
 **Operator acceptance:** PENDING.
 **Batch E merge / Phase 02 closure:** NOT PERFORMED.
 
-The M21 snapshot, finalized source map, and status-navigation updates were published to the dedicated branch in implementation commit `d8b2921c0c68ef6ed3dbdbeae0e71e8f008282e8`. This report and the conversation transcript are being published in a separate documentation commit. Publishing the blocker does not resolve it or authorize merging.
+The M21 snapshot, finalized source map, and status-navigation updates were published to the dedicated branch in implementation commit `d8b2921c0c68ef6ed3dbdbeae0e71e8f008282e8`. This report and the conversation transcript were published in documentation commit `35b4e3b41d49bcc82314245d25f1b9830f41c155`. The resumed-session continuation record is appended to the transcript in a follow-up documentation update. Before that follow-up, GitHub's branch ref, local HEAD, and upstream all matched `35b4e3b41d49bcc82314245d25f1b9830f41c155`, and the worktree was clean. Publishing the blocker does not resolve it or authorize merging.

@@ -4100,3 +4100,18 @@ The implementation commit is confirmed on the remote branch (`d8b2921`), and the
 **Codex (commentary, verbatim):**
 
 The M21 report has one publication sentence that is now outdated because the implementation commit is already on GitHub. I’ll update that sentence to distinguish the pushed implementation from the still-pending report/transcript commit, and I’ll preserve the recovery blocker as unresolved.
+
+
+**Codex (commentary, verbatim):**
+
+Both M21 commits are on the remote branch, and the local branch matches `origin` with a clean worktree. The snapshot/map and execution report are published for review; M21 acceptance is still held on the checkpoint-recovery flag, so I’m keeping the ticket and Phase 02 open.
+
+**Codex (final response, verbatim):**
+
+M21 has continued from the confirmed M20 PASS. Its dedicated branch, `v003/m21-final-migration-verification-closeout`, is pushed to GitHub with the snapshot, source ledger, status updates, report, and conversation record. The local branch matches its upstream and is clean. No PR or merge was performed; Batch E remains unmerged.
+
+M21 is **not accepted or closed**. `M21-GIT-01` remains blocking: none of the 20 M01 checkpoint commit IDs were found in the Brainbox repository, its current reflogs, or the checked `pedestal-archive` repository. I could not establish when or why they became unavailable, and did not run Git cleanup. The next step is to locate an independent backup containing those commits, or decide they are unavailable; then Codex can recheck the IDs. ChatGPT’s independent M21 verification and your acceptance are still required before closure.
+
+The snapshot records 289 directories and 460 files. The physical tree contains 337 of 339 approved child paths; the two absent Sandbox outcome directories are explicitly `[PLANNED]`. I checked 72 READMEs and 496 relative links with no broken links, found no high-confidence secret-pattern hits, and recorded dispositions for all 122 M01 sources.
+
+Files: [M21 snapshot](C:/Users/USER/DEODINI_BRAINBOX/VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/TREE_SNAPSHOT_V003_BRAINBOX.md), [migration map](C:/Users/USER/DEODINI_BRAINBOX/VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md), [Phase 02 report](C:/Users/USER/DEODINI_BRAINBOX/V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md), and [Phase 02 conversation](C:/Users/USER/DEODINI_BRAINBOX/V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md).
