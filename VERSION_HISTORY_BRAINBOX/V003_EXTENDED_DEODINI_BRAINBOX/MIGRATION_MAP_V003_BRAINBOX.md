@@ -2666,3 +2666,8 @@ Read-only `git grep` found exact legacy path references in:
 ### Disposition gate
 
 Evidence supports historical retention of both records at their existing paths as the lowest-risk proposal. No approved alternate destination exists; copying into the planned Router branch would contradict its authority boundary. **Operator choice remains required for each source:** retain in place as historical, or specify an explicit destination/authority. Until that choice is recorded, M17-DEST-01 remains OPEN for physical move, copy-as-destination, rename, or retirement. No files were moved, copied, renamed, edited, or deleted by V003-F04.
+
+
+### V003-F04 Git publication checkpoint — 2026-10-12
+
+Evidence commit `da2569211e868737f806df7373b71acf582e7e73` is present on `v003/f04-m17-milestone-source-disposition`; fetched upstream and live remote tip matched local HEAD. F04's source inventory is recorded above. The recommended disposition is to retain both original records unchanged at source, but Operator confirmation is pending. No source operation or merge occurred.

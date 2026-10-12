@@ -159,3 +159,18 @@ The Operator then supplied the full Batch B scopes for V003-F04, V003-F03, V003-
 > **Class:** CONDITIONAL STOP for deletion; **effort:** HIGH; **depends:** F03,F04,F05 findings when relevant.
 > **Sources:** retained DOB, AI, FUNC, Skills, PROJ and archival material enumerated in M20/M21 ledger.
 > **Draft work:** Full source-by-source authority and incoming-reference audit; propose retain/reference/move/retire by Operator decision. **Pass:** complete scoped disposition ledger with authorization and validated recoverability; retain-only is acceptable.
+
+
+## V003-F04 execution and Operator disposition request — 2026-10-12
+
+**Codex commentary:** “The F04 evidence commit is created; its push is waiting at Git Credential Manager. While that completes, I’m only locating F03’s existing asset ledger and source files. I won’t create or switch to the F03 branch until F04’s push and closeout record are verified.”
+
+**Codex commentary:** “F04’s push has now completed. I’m verifying the remote tip and recording the F04 evidence as ‘investigation complete, source disposition awaiting Operator choice.’ That leaves the historical files intact while allowing F03’s independent read-only inventory to continue.”
+
+**Publication verification:** Branch `v003/f04-m17-milestone-source-disposition` was fetched. Local HEAD, the upstream tracking ref, and live `git ls-remote` all returned `da2569211e868737f806df7373b71acf582e7e73`. The earlier evidence commit is published; this report/conversation closeout is being recorded separately. No PR/merge or source operation occurred.
+
+**Codex question to Operator (verbatim):** “For F04, do you approve retaining both `MILESTONES/MILESTONES_MUST_README.md` and `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` unchanged at their current source paths, with no move, copy, rename, or deletion?”
+
+**Operator response:** Pending when this record was written. The recommendation is to retain both at source; this remains a recommendation until the Operator answers. The two source files remain unchanged.
+
+**F04 status:** Evidence investigation is complete; the required source disposition remains open. F03 read-only inventory is proceeding independently; no F03 branch has been created yet.

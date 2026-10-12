@@ -198,3 +198,8 @@ Both current files match the M01 SHA/blob baselines. The two planned `MILESTONES
 **Proposed disposition:** Retain each in place as historical. No destination is authorized by the frozen tree. The Operator may choose separately for each: retain at the current path, or specify an explicit destination/authority. Source movement, copying, renaming, or retirement remains unauthorized pending that choice.
 
 **Mutation check:** No legacy or planned milestone source file was changed.
+
+
+### V003-F04 Git publication and disposition gate — 2026-10-12
+
+The F04 evidence commit `da2569211e868737f806df7373b71acf582e7e73` was pushed to `origin/v003/f04-m17-milestone-source-disposition`; fetch and live remote-ref checks matched local HEAD and tracking ref. The F04 report and conversation record are being published in a separate closeout commit on the same branch. The two source files remain unchanged. Final F04 status remains **EVIDENCE COMPLETE — OPERATOR DISPOSITION PENDING**, not PASS.

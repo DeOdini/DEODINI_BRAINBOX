@@ -234,3 +234,49 @@ Codex independently rechecked all 20 listed commit IDs in the active DEODINI_BRA
 The Operator authorized V003-F04 → V003-F03 → V003-F05 → V003-F06. Each ticket will be executed on its own branch. Permitted work is limited to the requested evidence inventory, hashing/comparison, reference audit, and proposed disposition records. The authorization does not permit moving, copying, renaming, normalizing, or deleting source material absent the ticket’s explicit per-source Operator approval. Any unresolved or unsupported destination will be recorded as such.
 
 **Publication boundary:** The current Phase 03 crosscheck edits are staged only after scoped path/status review. No PR, merge, source retirement, or Phase 02 closure is authorized here.
+# V003-F04 — M17-DEST-01 Legacy Milestone Source Disposition Audit — 2026-10-12
+
+**Ticket:** V003-F04 — M17-DEST-01 two legacy milestone sources
+**Branch:** `v003/f04-m17-milestone-source-disposition`
+**Status:** Evidence inventory complete; Operator source disposition pending. **Not disposition-closed / not PASS.**
+
+## Source-by-source evidence
+
+| Source | Size / lines | SHA-256 | Git blob | Provenance |
+|---|---:|---|---|---|
+| `MILESTONES/MILESTONES_MUST_README.md` | 2,230 bytes / 56 lines | `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e` | `fb0636ce9d75fab2128e018e8c73af30ac196090` | First added by `9e884c60e2f5c2989e9a8cdf7326c9a3e6565044` (2026-09-25) |
+| `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` | 26,420 bytes / 462 lines | `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8` | `c796b2a1e278e8a1d35b4bc4ebc2cd58dc52e8b4` | First added by `9e884c60e2f5c2989e9a8cdf7326c9a3e6565044` (2026-09-25) |
+
+Both current files match the M01 SHA-256 manifest and current Git blob exactly. No source file changed during this audit.
+
+## Purpose and authority distinction
+
+- `MILESTONES_MUST_README.md` is the local authority/navigation record for the earlier `MILESTONES/` folder and explains its earlier jointly maintained milestone-record conventions.
+- `MILESTONE_CHECKPOINT_BRAINBOX.md` is a historical consolidated checkpoint from the earlier Brainbox generation, covering milestones M01–M12 and recording the then-current state and evidence limitations.
+- The V003 `MILESTONES_BRAINBOX/` records describe future Router/Agentic intent. They remain `[PLANNED]` and explicitly keep the earlier milestone records separate. They are not a historical archive destination and must not be populated by relabeling or copying the legacy checkpoint.
+- The frozen target and migration records do not establish another approved physical destination for the legacy files.
+
+## References checked
+
+- `DOB_MUST_README.md` lines 98 and 130 still name `MILESTONES/MILESTONES_MUST_README.md` as an earlier navigation/subsystem authority.
+- `VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md` lines 130–131 records both legacy paths as part of the historical snapshot.
+- The V003 Migration Map records the original M01 inventory (including hashes and first-add provenance), M17 source findings, and the current retained/deferred disposition. Relevant rows include its baseline entries and the M17/M20/M21 reconciliation sections.
+- Phase 02 M17 report/conversation and the Phase 03 ticket/conversation refer to the records as historical sources.
+- The planned V003 milestone README and Router/Agentic record preserve the non-equivalence boundary; they do not claim to contain the legacy M01–M12 checkpoint.
+
+No active consumer or approved migration rule was found that requires copying the two legacy records into the planned Router milestone or another canonical branch.
+
+## Proposed disposition and Operator decision gate
+
+**Recommended:** Retain each source unchanged at its current `MILESTONES/` path as historical material. This preserves provenance and avoids inventing a destination. This is a recommendation only; it has not been applied as an Operator disposition.
+
+The Operator was asked whether to approve retaining both files at their current paths, unchanged and without moving, copying, renaming, or deleting them, or to specify destinations separately. No answer had been recorded at the time of this report. Until the Operator decides, source movement, canonical copying, renaming, and retirement remain unauthorized. M17-DEST-01 therefore remains open for physical disposition, and M20 must retain both files.
+
+## Git publication
+
+- Evidence commit: `da2569211e868737f806df7373b71acf582e7e73` — `Record V003-F04 milestone source evidence`.
+- Dedicated branch: `v003/f04-m17-milestone-source-disposition`.
+- Push completed; a fetch and `git ls-remote` confirmed local HEAD, tracking ref, and live remote ref all equal `da2569211e868737f806df7373b71acf582e7e73`.
+- No PR or merge was created. No legacy source was modified.
+
+**F04 result:** Evidence-backed source comparison PASS; final ticket disposition gate PENDING OPERATOR. This is not a Batch B closure or Phase 02 closure claim.
