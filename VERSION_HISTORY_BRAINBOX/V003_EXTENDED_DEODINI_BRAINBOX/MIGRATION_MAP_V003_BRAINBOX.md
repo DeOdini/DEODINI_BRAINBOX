@@ -2630,3 +2630,39 @@ Retain `M15-ASSET-01`, `M17-DEST-01`, `M19-HIST-01`, `M20-REF-01` as source-spec
 The Operator confirmed that the recorded response “PROCEED WITH TO RECORDING YOUR REPORT ACCORDINGLY TO YOUR SUGGESTIONS” was approval of the limited-unavailability disposition for the 20 historical checkpoint objects. The disposition is expressly bounded to searched sources; it does not establish global irrecoverability, cause, or nonexistence. Codex independently rechecked the active repository and found 0/20 readable. ChatGPT’s independent report records that broader searches were not all repeated by ChatGPT.
 
 **Status:** F01 search/disposition evidence recorded; renewed M21 review and Operator acceptance remain pending. M21-GIT-01 continues to block M21/Phase 02 closure. No Git object manipulation, GC, prune, source deletion, or history rewrite is authorized.
+
+---
+
+## V003-F04 — M17-DEST-01 legacy milestone source cross-check — 2026-10-12
+
+### Source integrity and Git provenance
+
+| Current source path | Bytes | Lines | SHA-256 | Current Git blob | M01 baseline |
+|---|---:|---:|---|---|---|
+| `MILESTONES/MILESTONES_MUST_README.md` | 2,230 | 56 | `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e` | `fb0636ce9d75fab2128e018e8c73af30ac196090` | Exact match |
+| `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` | 26,420 | 462 | `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8` | `c796b2a1e278e8a1d35b4bc4ebc2cd58dc52e8b4` | Exact match |
+
+Both files were first added in Git commit `9e884c60e2f5c2989e9a8cdf7326c9a3e6565044` (2026-09-25). Current working-file SHA-256 values match the M01 integrity baseline; `HEAD:path` blobs and `git hash-object --path` also match the M01 blob IDs. No source mutation was performed.
+
+### Purpose and non-equivalence
+
+- `MILESTONES_MUST_README.md` is the local authority for the earlier `MILESTONES/` folder. It describes the checkpoint as a global, jointly maintained milestone record under Operator authority, sets local naming/record rules, and preserves the instruction not to recreate a former single-agent Grok appendix.
+- `MILESTONE_CHECKPOINT_BRAINBOX.md` is a historical consolidated milestone checkpoint. Its contents cover the earlier M01–M12 progression, the then-current file tree and authority model, historical Git state, evidence limits and next steps. Its internal checkpoint date is 2026-09-24; the Git add was 2026-09-25. Its recorded 'uncommitted/unpushed at checkpoint creation' status is historical context, not its present Git state.
+- The two records under `MILESTONES_BRAINBOX/` are different: `README_MILESTONES_BRAINBOX.md` navigates future planned intent, and `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` describes future Router/agentic capabilities. Both remain `[PLANNED]`; neither is a historical checkpoint or local authority replacement.
+- The Router record itself says the legacy source is separate and must not be copied or relabeled as current architecture. Frozen Specification §28 defines only the two planned future-intent records; the Version History target does not name a legacy milestone-checkpoint destination.
+
+### Current references
+
+Read-only `git grep` found exact legacy path references in:
+
+- `DOB_MUST_README.md` lines 98 and 130 (legacy reading-order and subsystem-authority references).
+- `VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md` lines 130–131 (historical tree snapshot).
+- `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` baseline/M17 entries (source inventory, SHA/blob evidence, and disposition).
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/` conversation and report (M17 inspection and source-decision history).
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/` current F04 scope and evidence.
+
+`MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` and `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` explicitly keep the old source separate and state M17 found no authorized destination. The root `README_BRAINBOX.md` retains the old folder in its historical-source tree and identifies M17-DEST-01.
+
+### Disposition gate
+
+Evidence supports historical retention of both records at their existing paths as the lowest-risk proposal. No approved alternate destination exists; copying into the planned Router branch would contradict its authority boundary. **Operator choice remains required for each source:** retain in place as historical, or specify an explicit destination/authority. Until that choice is recorded, M17-DEST-01 remains OPEN for physical move, copy-as-destination, rename, or retirement. No files were moved, copied, renamed, edited, or deleted by V003-F04.

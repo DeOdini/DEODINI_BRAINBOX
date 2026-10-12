@@ -183,3 +183,18 @@ The Operator authorized these tickets in the order shown, each on its own branch
 4. **V003-F06:** audit legacy sources, authority and incoming references and propose source-by-source dispositions. No deletion or retirement without explicit approval.
 
 The work may produce complete evidence/proposals while a material disposition remains pending. Such tickets must not be reported as disposition-closed until the corresponding Operator choices and any required independent verification are complete.
+
+---
+
+## V003-F04 execution record — 2026-10-12
+
+**Status:** Inventory and source comparison completed; Operator disposition pending for both files. **Not disposition-closed.**
+
+- `MILESTONES/MILESTONES_MUST_README.md`: 2,230 bytes, 56 lines, SHA-256 `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e`; Git blob `fb0636ce9d75fab2128e018e8c73af30ac196090`; introduced by `9e884c60e2f5c2989e9a8cdf7326c9a3e6565044`. Its role is local authority for the old folder.
+- `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md`: 26,420 bytes, 462 lines, SHA-256 `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8`; Git blob `c796b2a1e278e8a1d35b4bc4ebc2cd58dc52e8b4`; introduced by the same commit. Its role is an earlier-generation historical consolidated checkpoint covering M01–M12.
+
+Both current files match the M01 SHA/blob baselines. The two planned `MILESTONES_BRAINBOX/` records are future Router/Agentic intent, remain `[PLANNED]`, and explicitly prohibit treating the legacy checkpoint as their content. Exact current references and the full source comparison are in the V003-F04 section of `MIGRATION_MAP_V003_BRAINBOX.md`.
+
+**Proposed disposition:** Retain each in place as historical. No destination is authorized by the frozen tree. The Operator may choose separately for each: retain at the current path, or specify an explicit destination/authority. Source movement, copying, renaming, or retirement remains unauthorized pending that choice.
+
+**Mutation check:** No legacy or planned milestone source file was changed.
