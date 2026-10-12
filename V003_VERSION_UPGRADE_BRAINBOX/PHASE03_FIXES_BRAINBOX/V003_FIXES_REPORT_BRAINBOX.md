@@ -444,3 +444,77 @@ No source, destination, catalog, manifest, or Git object was normalized, rewritt
 - Push completed after the Operator completed GitHub sign-in.
 - A fresh fetch, local HEAD, upstream tracking ref, and live GitHub branch ref all matched `2841dd3f5bff60e2dc6e5bfad4d0ea95ef512a54`; ahead/behind was 0/0 and the worktree was clean at that checkpoint.
 - No PR or merge was created.
+
+## V003-F06 — M20-REF-01 broad legacy-source and incoming-reference audit — 2026-10-12
+
+**Branch:** `v003/f06-m20-legacy-source-reference-audit`
+**Execution state:** scoped source/reference audit and evidence publication complete; Operator source dispositions and the separate F06-REF-01 correction decision remain pending.
+**Evidence checkpoint:** `32fa1bd4a70317802a6b73ae92925e6a530d35fe` — `Record V003-F06 legacy source reference audit evidence`, pushed to the dedicated branch.
+**Scope:** Inspect the 122 file-level source rows in the M21 migration ledger, the separately listed empty legacy root directory, their M01 baselines and current Git-backed state; search tracked text for exact path and basename references; propose safe source dispositions. No source operation was authorized by this ticket.
+
+### Method and evidence
+
+- Cross-checked all 122 M21 source-ledger file paths against the M01 integrity manifest. The path sets match 122/122.
+- Checked M01 Git baseline blobs by object ID at commit `27e73f828bb367298442c2e621c18d1cc1ceb4f4`. All 122/122 source blobs are available in the repository’s current Git object history. This establishes repository-history recoverability, not an independent backup.
+- Compared each ledger source with current worktree presence, physical size/SHA-256, and current-HEAD Git-blob availability/object ID. The row-level results are in the F06 CSV.
+- Searched tracked text blobs at the F06 base HEAD for exact repository-relative source paths and basename-only mentions, excluding the migration map from the reference targets. The broad basename search is deliberately treated as an indicator, not proof of a link or operational dependency.
+- Reviewed the current root README, Portfolio README, FootHive Portfolio README, and FootHive case-study reference around the retired portfolio placeholder mention.
+- Validated the CSV structure/counts with PowerShell `Import-Csv`, checked the evidence diff, and used Git status/fetch/ref comparison for publication state.
+
+### Reconciled source state
+
+| Check | Result |
+|---|---:|
+| M21 file-level source rows | 122 |
+| M01 manifest paths matched | 122/122 |
+| M01 baseline Git blobs available | 122/122 |
+| Current source files present | 115/122 |
+| Current source files absent | 7/122 |
+| Current present-file SHA-256 values equal to M01 | 110/115 |
+| Current present-file SHA-256 values differ from M01 | 5/115 |
+| Empty legacy root `BRAINBOX/` directory | Absent; no file payload or Git empty-directory object |
+| F06 audit CSV data rows | 123 (122 sources plus the `BRAINBOX/` directory check) |
+
+The seven absent file paths are exactly the zero-byte placeholders already retired under M20: `FAILED_PATTERN_PROJ_BRAINBOX.md`, `PROVEN_PATTERN_PROJ_BRAINBOX.md`, four empty legacy Skills records (`FAILED`, `PROVEN`, `RAW`, and `REUSABLE`), and `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md`. Their M01 baseline blobs remain available. F06 did not restore them.
+
+The five current SHA-256 differences are four Phase 02 process records (README, conversation, report, and ticket set) and `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md`. These are records whose state/history changed after M01 during the migration/authority process. The row-level baseline/current values are visible in the CSV; the audit found no other unexplained M01-baseline hash difference among the 115 present source files.
+
+The M21 disposition classes across the 122 file rows reconcile as follows: 44 MIGRATED COPY; 11 SPLIT; 15 REFERENCE_ONLY; 9 REFERENCED EXTERNAL; 2 MIGRATED RAW COPY; 3 RETAINED HISTORICAL; 2 DEFERRED; 29 Operator-approved F03 retain-at-source; and 7 REMOVED under M20. Total: 122. F04’s two legacy milestone files retain their separate Operator-approved unchanged-at-source disposition. These prior decisions were checked and preserved; F06 creates no broader source-operation authority.
+
+### Incoming-reference search
+
+The tracked-text scan found path/basename mentions across 143 tracked files: 695 exact-path line matches and 1,658 basename-only line matches. The CSV records locations per source and distinguishes exact-path from basename-only matches. Mentions can be historical provenance, plain text, a source inventory, or an active link; the counts are not treated as counts of live dependencies.
+
+The root README, Portfolio README, and FootHive Portfolio README all accurately state that the zero-byte `001_PORT_BRAINBOX.md` placeholder was retired under M20. One current record contains an outdated factual statement:
+
+**F06-REF-01 — stale portfolio historical-source statement**
+
+- **Exact location:** `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md:27`
+- **Current statement:** the empty `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` “remains for its separately assigned legacy review.”
+- **Conflict:** M20 retired that zero-byte file; M21’s migration map records it as REMOVED, and the current parent/Portfolio navigation records correctly describe the retirement.
+- **Classification:** non-blocking factual documentation flag affecting this case-study reference.
+- **Proposed correction:** replace the obsolete “remains” statement with a concise note that M20 retired the empty placeholder and that the migration map preserves its former path and digest.
+- **Timing/owner:** requires a separate Operator decision before editing; this F06 audit did not modify the case-study reference.
+
+The four original/preset workflow documents also contain historical source-list mentions of the two empty project-pattern placeholders retired by M20. Those mentions are provenance in retained raw/preset records, not active link targets; F06 preserves them.
+
+### Source disposition proposal
+
+The only source operations recorded as completed are M20’s seven previously authorized empty-file retirements. The explicit F03 and F04 Operator decisions to retain their respective 29 and 2 source records unchanged are preserved. For other still-present original source files, the recommendation is to retain each at its current path pending an explicit per-source Operator disposition. Migrated copies, references, splits, or current target destinations do not by themselves authorize original-source retirement. No unresolved source is proposed for deletion by this report.
+
+### Artifact and integrity
+
+The row-level evidence is in `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv`: 355,927 bytes; 124 physical lines; SHA-256 `327bcfdd68bb69500da906b040d15674f876457d20d134d7b1e73c0f52ba540d`. It includes each source path, M01 bytes/hash/blob availability/object ID, current worktree state/bytes/hash, current HEAD blob availability/object ID, M21 disposition/target, reference locations, F06 recommendation, and authority notes, plus the `BRAINBOX/` directory check.
+
+The migration map carries the concise F06 result and links to this CSV. The evidence commit contains only the CSV and the map addition. No M21 source, canonical content, historical file, Git object, or source path was altered.
+
+### Git and execution boundary
+
+- Dedicated branch: `v003/f06-m20-legacy-source-reference-audit`.
+- Evidence commit: `32fa1bd4a70317802a6b73ae92925e6a530d35fe`.
+- Push succeeded to `origin/v003/f06-m20-legacy-source-reference-audit`.
+- A fresh `git fetch origin` showed local HEAD, upstream tracking ref, and `origin/v003/f06-m20-legacy-source-reference-audit` all equal to `32fa1bd4a70317802a6b73ae92925e6a530d35fe`; ahead/behind was 0/0 at that checkpoint.
+- No PR, merge, deployment, source move/copy/rename/edit/restore/deletion, or historical rewrite occurred in F06.
+- The complete execution report and Operator/Codex conversation closeout are being published separately on the same ticket branch.
+
+**Result:** F06’s inventory, integrity/recoverability evidence, reference audit, and scoped disposition proposals are recorded. The audit does not claim that every substantive source has an Operator-approved final disposition. F06-REF-01 awaits a separate correction decision; the other source-specific recommendations await Operator acceptance or exceptions. This Codex report is not a ChatGPT independent verification or Operator final acceptance.

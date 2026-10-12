@@ -266,3 +266,54 @@ Draft work: Independently reproduce source/working/Git-blob byte comparison, lin
 **F05 result recorded:** 45/45 source baselines match; 44/45 physical source/destination pairs are raw-byte equal; 45/45 match after CRLF-to-LF comparison; all 45 destination Git blobs were read by object ID; 17/45 match the source raw bytes and all 45 match after CRLF-to-LF comparison. The only physical pair discrepancy is the 134-byte line-ending expansion in `PASSED_FH_BRAINBOX.md`. No source or destination was normalized or rewritten.
 
 **Transcript boundary:** This section records the F05 ticket text, the F05-related Operator response and Codex messages above. The full measurements and limitations are in `V003_FIXES_REPORT_BRAINBOX.md`, and the source-to-target ledger entry is in `MIGRATION_MAP_V003_BRAINBOX.md`. No separate ChatGPT independent-verification result or Operator acceptance beyond the stated batch authorization is claimed here.
+
+## V003-F06 — M20-REF-01 source/reference audit conversation — 2026-10-12
+
+### Operator instruction (verbatim excerpt from the Batch B authorization)
+
+```text
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE FOR PHASE03, ONCE DONE, NOW PROCEED TO BATCH B , F01, ONCE YOU ARE DONE, PROCEED TO STAGE, COMMIT AND PUSH ALL OF THE FIXES EACH TICKET AT A TIME TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+### V003-F06 — M20-REF-01 broad legacy-source retirement gate
+Class: CONDITIONAL STOP for deletion; effort: HIGH; depends: F03,F04,F05 findings when relevant.
+Sources: retained DOB, AI, FUNC, Skills, PROJ and archival material enumerated in M20/M21 ledger.
+Draft work: Full source-by-source authority and incoming-reference audit; propose retain/reference/move/retire by Operator decision. Pass: complete scoped disposition ledger with authorization and validated recoverability; retain-only is acceptable outcome.
+```
+
+The F06 source/reference audit was executed on its dedicated branch, `v003/f06-m20-legacy-source-reference-audit`, after the F05 evidence push had been confirmed. The prior `I completed sign-in` response applied to the F05 push, not an F06 disposition decision.
+
+### Codex progress messages (verbatim)
+
+1. “I’m finishing the F06 reference check on the remaining mentions of the retired portfolio placeholder, then I’ll record the audit evidence, push it, and close out the separate report and conversation records. I’ll keep F06 limited to audit and proposed dispositions; the stale-reference correction and any additional retirements will remain for your decision.”
+
+2. “The F06 source ledger contains 122 real entries. I’m checking each mapped path against the current worktree/Git history and searching tracked files for exact incoming path references. That will expose which entries are already retired, still retained, or still referenced before I record any recommendation.”
+
+3. “The reference scan surfaced one concrete stale statement: the FootHive portfolio reference still says the empty legacy `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` ‘remains,’ while M20 retired that zero-byte placeholder. I’m recording it as a precise F06 finding; I’ll leave that portfolio record unchanged because F06 authorizes the audit and proposal, not unrelated source edits.”
+
+4. “The line-level check confirms a single stale sentence in the FootHive case-study index; the root and Portfolio navigation records already correctly say the placeholder was retired. The audit ledger is appended with the evidence, classifications, and the proposed correction kept separate from authorized work. I’m validating the ledger and staging only the F06 audit CSV and migration map for the evidence checkpoint.”
+
+5. “The evidence commit is live and matches the refreshed origin branch tip at `32fa1bd`; ahead/behind is `0/0`. The audit distinguishes the 7 previously retired empty source files from the separate empty-directory check, and confirms all 122 ledger sources have recoverable M01 Git blobs. I’m now recording the detailed report, the F06 conversation, and the exact pending disposition/correction decisions.”
+
+### Codex execution actions and results
+
+- Audited 122 M21 source rows against the M01 integrity manifest and baseline Git objects. The row-level comparison, exact/basename reference locations and recommendations were written to `F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv`.
+- Added the F06 findings, source disposition classes, F06-REF-01, and CSV link to the living migration map.
+- Staged only the audit CSV and migration map; committed them as `32fa1bd4a70317802a6b73ae92925e6a530d35fe` (`Record V003-F06 legacy source reference audit evidence`).
+- Pushed the evidence checkpoint. A fresh `git fetch origin` confirmed local HEAD, upstream tracking ref and origin branch ref all equal `32fa1bd4a70317802a6b73ae92925e6a530d35fe`; ahead/behind was 0/0.
+- No source was moved, copied, renamed, edited, restored, or deleted. No PR or merge was created.
+- Root README and Portfolio READMEs were confirmed to describe the M20 placeholder retirement accurately. The FootHive case-study reference at line 27 has the stale “remains” statement recorded as F06-REF-01; it was not edited.
+
+### Pending Operator decisions and transcript boundary
+
+No new Operator disposition response was received during F06 execution. The explicit F03/F04 decisions remain as previously recorded; this F06 entry does not extend them. Current source files beyond those earlier decisions and completed M20 placeholder retirements remain unchanged. The recommendation for other source rows is retain-at-current-path pending explicit per-source disposition.
+
+The Operator decision remains pending for (1) whether to authorize the proposed one-sentence correction at F06-REF-01 and (2) whether to approve the proposed retain-at-source disposition for the other currently present source rows or identify exceptions. No destructive or source-moving action is queued or implied.
+
+This transcript preserves the exact Batch B authorization excerpt and the Codex progress statements shown above. The complete results, limitations, counts, hashes and artifact details are in `V003_FIXES_REPORT_BRAINBOX.md`; the per-source ledger is in `MIGRATION_MAP_V003_BRAINBOX.md` and its linked CSV.
+
+
+### Transcript sequencing supplement — 2026-10-12
+
+The following Codex commentary was sent after progress-message item 4 and before item 5 above; it is placed here to preserve the exact text without rewriting the preceding conversation record:
+
+**Codex (verbatim):** “The evidence checkpoint is committed as `32fa1bd`, containing only the 123-row source/reference CSV (122 sources plus the empty-directory check) and the migration-map entry. The staged diff passed `git diff --cached --check`. I’m pushing this checkpoint now, then I’ll verify the remote before adding the report and conversation closeout.”

@@ -245,3 +245,13 @@ The sole physical worktree difference is `PASSED_FH_BRAINBOX.md`: the source con
 **M19-HIST-01:** the prior unknown-cause status is superseded by the bounded finding that raw-byte differences are line-ending-only across the 45 source/target/Git destination comparisons. F05 does not claim universal raw-byte parity, normalize historical data, or authorize source retirement. Preserve the source and destination records as they stand; F06/M20 source review remains separate.
 
 **Git:** evidence commit `2841dd3f5bff60e2dc6e5bfad4d0ea95ef512a54` was pushed to the dedicated branch; remote confirmation matched local HEAD. The report, transcript, ticket status, README and map publication checkpoint are recorded in a separate documentation commit on this branch. No PR or merge.
+
+## V003-F06 execution update — 2026-10-12
+
+**Execution status:** Scoped source integrity/recoverability and incoming-reference audit complete; evidence checkpoint committed and pushed. The F06 source-operation/disposition gate remains pending Operator decisions; no source operation was performed.
+**Branch:** `v003/f06-m20-legacy-source-reference-audit`
+**Evidence commit:** `32fa1bd4a70317802a6b73ae92925e6a530d35fe`
+**Evidence:** row-level F06 CSV and M01/M21 source-reference summary in the migration map.
+**Findings:** 122/122 source rows matched the M01 manifest and had available M01 Git blobs; 115 source files remain present and 7 previously retired zero-byte placeholders remain absent; a separate empty `BRAINBOX/` directory check found no payload. Five present process/authority records differ from the M01 physical digest because they evolved after that baseline. Exact and basename reference findings are recorded per source.
+**F06-REF-01:** stale M20 retirement statement identified at `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md:27`; correction not applied. It is a non-blocking documentation-accuracy flag, pending separate Operator decision.
+**Disposition boundary:** The existing F03/F04 Operator retention decisions and the seven completed M20 empty-file retirements are preserved. For other still-present source records, retain-at-current-path is a proposal pending per-source Operator acceptance or exceptions. No unapproved movement, copy, rename, edit, restore, or deletion is authorized.
