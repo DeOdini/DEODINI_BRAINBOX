@@ -231,3 +231,17 @@ The F04 evidence commit `da2569211e868737f806df7373b71acf582e7e73` was pushed to
 The Operator answered “YES” to the exact request covering each of all 29 source-only files listed in the report, approving RETAIN UNCHANGED AT ITS EXISTING SOURCE PATH with no move, copy, rename, edit, normalization, or deletion. The 29 matching M01 FH-ASSET map entries now carry the same dated approved status. No source operation occurred.
 
 **Final F03 gate:** evidence PASS; per-file disposition PASS; **V003-F03 PASS**. M15-ASSET-01 is resolved for these 29 files as retain at source. Rights/reuse are not authorized or established, and no PR/merge has been performed.
+
+
+## V003-F05 execution status — 2026-10-12
+
+**Branch:** `v003/f05-m19-blob-byte-qualification`
+**Status:** Evidence comparison PASS; documentation closeout recorded; no source operation.
+
+The 45-row M15 copy manifest was replayed against physical source and destination bytes and the Git blobs at F05 HEAD. Source files match the manifest baseline 45/45. Current physical source/destination pairs match 44/45 byte-for-byte and 45/45 after CRLF-to-LF comparison. Forty-four repository source blobs and all 45 destination blobs were retrieved by object ID. Seventeen of 45 destination blobs match the source's raw hash; all 45 agree after CRLF-to-LF comparison. The external original Deep Audit source is physically available and matches its manifest entry but has no source-side Git blob.
+
+The sole physical worktree difference is `PASSED_FH_BRAINBOX.md`: the source contains 134 LF endings; the destination contains 134 CRLF endings, adding 134 bytes. Its Git destination blob matches the source raw hash. No other content differences were detected after line-ending normalization.
+
+**M19-HIST-01:** the prior unknown-cause status is superseded by the bounded finding that raw-byte differences are line-ending-only across the 45 source/target/Git destination comparisons. F05 does not claim universal raw-byte parity, normalize historical data, or authorize source retirement. Preserve the source and destination records as they stand; F06/M20 source review remains separate.
+
+**Git:** evidence commit `2841dd3f5bff60e2dc6e5bfad4d0ea95ef512a54` was pushed to the dedicated branch; remote confirmation matched local HEAD. The report, transcript, ticket status, README and map publication checkpoint are recorded in a separate documentation commit on this branch. No PR or merge.

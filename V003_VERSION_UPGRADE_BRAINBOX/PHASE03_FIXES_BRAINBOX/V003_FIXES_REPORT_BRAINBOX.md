@@ -384,3 +384,63 @@ This dated decision supersedes the earlier pending-disposition status recorded a
 The Operator approved the stated retention disposition for every one of the 29 numbered report rows. Each exact source record is designated **RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12)**. The M01 migration-map entries for those 29 source-only records have been updated to reflect that decision. No file was moved, copied, renamed, edited, normalized, or deleted.
 
 **F03 result:** evidence and per-file disposition gates **PASS**; M15-ASSET-01 is resolved for these 29 sources as retention at their existing paths. This decision does not establish image rights or authorize reuse, publication, or a separate future source operation. M20 must preserve the approved retained sources unless a later explicit Operator decision supersedes this disposition.
+
+
+## V003-F05 — M19-HIST-01 source/target Git-blob byte qualification — 2026-10-12
+
+**Ticket:** V003-F05 — source/target Git-blob byte qualification
+**Branch:** `v003/f05-m19-blob-byte-qualification`
+**Base:** published F03 closeout `b8099c94a7af86982290f8d73a444254ff2fd5bc`
+**Evidence record:** `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md`, Phase 03 F05 addendum
+**Execution result:** 45-pair integrity comparison PASS; no historical source or destination was modified.
+
+### Question and scope
+
+F05 rechecked the M15 FootHive copy manifest because M19/M21 had reported 28/45 destination Git blobs whose raw SHA-256 did not match the original manifest, while all 45 pairs reportedly matched after LF normalization. The authorized work was a read-only source/worktree/Git-blob comparison and explanatory documentation. It did not authorize normalization, replacement, source retirement, or a broader M20 decision.
+
+### Method
+
+- Parsed the 45 data rows in `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/EVIDENCE_FH_BRAINBOX/COPY_INTEGRITY_MANIFEST_FH_BRAINBOX.csv`; verified 45 unique source paths and 45 unique destination paths.
+- Read each source and destination as bytes; measured size and SHA-256 against the manifest. The source set is 44 tracked repository paths plus the separately located original Deep Audit attachment. The external attachment was available and matched the manifest but has no source-side Git blob in this repository.
+- Retrieved 44 in-repository source blobs and all 45 destination blobs at F05 HEAD. Git blob object IDs were resolved with `git rev-parse HEAD:<path>` and bytes were retrieved with `git cat-file blob <object-id>`.
+- Compared exact bytes, then compared again after replacing CRLF with LF in memory only. No bytes were written by the comparison.
+
+### Reproduced results
+
+| Check | Result |
+|---|---:|
+| Manifest source size/SHA matches | 45/45 |
+| Manifest destination size/SHA matches | 44/45 |
+| Current physical source/destination byte equality | 44/45 |
+| Current physical source/destination equality after CRLF-to-LF comparison | 45/45 |
+| In-repository source Git blobs retrieved | 44/44 |
+| Source Git blobs raw-byte equal to current physical source | 17/44 |
+| Source Git blobs equal after CRLF-to-LF comparison | 44/44 |
+| Destination Git blobs retrieved | 45/45 |
+| Destination Git blobs raw-byte equal to original physical source | 17/45 |
+| Destination Git blobs equal to source and destination worktree after CRLF-to-LF comparison | 45/45 |
+| Aggregate source bytes / destination bytes | 3,623,461 / 3,623,595 |
+
+All 28 destination Git blobs that differ from the physical source in raw bytes match after CRLF-to-LF comparison. This confirms line-ending encoding as the complete cause of those 28 raw-byte hash differences; it does not establish raw-byte identity.
+
+The sole physical source/destination mismatch is `PASSED_FH_BRAINBOX.md`. The original is 15,597 bytes, has 134 LF endings, and SHA-256 `f21dcff41416c08810fe0b9baa159acaa322fa8648d7cfdb4ceca8bd3c627f2a`. The destination is 15,731 bytes, has 134 CRLF endings, and SHA-256 `4146c3a8311fd44c99022f081c89dccd4d5a7f6943e2c3ac833466d9c408cfd4`. The destination Git blob matches the source raw hash. The 134-byte size difference is exactly the added CR byte for each CRLF line ending; source, destination, and Git blob contents agree after CRLF-to-LF comparison.
+
+### Command/tool notes
+
+The first `git show HEAD:<path>` comparison could not read five long T23 destination paths because Windows rejected their path lengths. No Git configuration was changed. Resolving each Git tree object with `git rev-parse` and reading its blob by object ID with `git cat-file` completed all 45 destination reads. The temporary verifier was removed after use.
+
+A documentation edit attempt timed out while fuzzy-matching the large migration map and did not modify the file. The F05 appendix was then corrected by a bounded rewrite of only that newly added appendix; prior map bytes were preserved. Scoped `git diff --check` passed. Temporary correction scripts were removed.
+
+### Disposition and limits
+
+**V003-F05 evidence gate: PASS.** M19-HIST-01 is now characterized: all 45 pairs have matching content after CRLF-to-LF comparison; 44/45 working-tree pairs are byte-identical; 17/45 destination Git blobs match the original raw-byte hash. The line-ending qualification supersedes the earlier unknown-cause state, but it is not a 45/45 raw-byte-parity claim.
+
+No source, destination, catalog, manifest, or Git object was normalized, rewritten, moved, copied, renamed, or deleted. The findings do not authorize source retirement or override F03/F04 retention decisions and the M20 source-by-source gate. The unresolved external-source retention/reference questions remain within F06/M20 review. This Codex execution report does not claim separate ChatGPT independent review or Operator final acceptance.
+
+### Evidence publication checkpoint
+
+- Evidence commit: `2841dd3f5bff60e2dc6e5bfad4d0ea95ef512a54` — `Record V003-F05 FootHive byte qualification evidence`.
+- Branch: `v003/f05-m19-blob-byte-qualification`.
+- Push completed after the Operator completed GitHub sign-in.
+- A fresh fetch, local HEAD, upstream tracking ref, and live GitHub branch ref all matched `2841dd3f5bff60e2dc6e5bfad4d0ea95ef512a54`; ahead/behind was 0/0 and the worktree was clean at that checkpoint.
+- No PR or merge was created.

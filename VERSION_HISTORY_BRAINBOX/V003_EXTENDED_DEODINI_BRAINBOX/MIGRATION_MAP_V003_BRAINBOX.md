@@ -2729,3 +2729,7 @@ Git blobs were read using `git rev-parse HEAD:<repository-path>` followed by `gi
 **Disposition:** The earlier M19-HIST-01 question is resolved as to the nature and scope of the observed differences: all 45 source/target/Git destination contents agree after CRLF-to-LF comparison, while raw-byte identity is not universal. Preserve both source and destination histories as they stand; do not normalize or claim 45/45 raw-byte equality. This verification alone does not authorize retiring any source or override F03/F04 Operator retention decisions or the separate M20 gates.
 
 **F05 result:** evidence-backed 45-pair qualification **PASS**; historical bytes unchanged; M19-HIST-01 is documented as a bounded line-ending fidelity qualification, not a semantic-content discrepancy or blanket raw-byte PASS. M20/F06 source-retirement review must retain the raw-byte caveat where applicable.
+
+### V003-F05 evidence publication checkpoint — 2026-10-12
+
+Evidence commit `2841dd3f5bff60e2dc6e5bfad4d0ea95ef512a54` was pushed to `v003/f05-m19-blob-byte-qualification`. A fresh fetch confirmed local HEAD, upstream tracking ref and live GitHub branch ref matched; ahead/behind was 0/0. No PR or merge was created. The Phase 03 report, conversation and ticket closeout were recorded afterward for a separate publication commit on the same branch.

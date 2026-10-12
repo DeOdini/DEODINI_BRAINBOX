@@ -226,3 +226,43 @@ The Operator then supplied the full Batch B scopes for V003-F04, V003-F03, V003-
 **Disposition applied to records:** Each of the 29 numbered report entries is approved as RETAIN UNCHANGED AT ITS EXISTING SOURCE PATH. The 29 M01 FH-ASSET map rows are updated to RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12). The original asset/catalog files remain unchanged. No source operation or image reuse is authorized.
 
 **V003-F03 status:** Evidence and per-file disposition PASS. M15-ASSET-01 is resolved for these 29 source-only files. M20 must preserve these records absent a later explicit superseding Operator decision.
+
+
+## V003-F05 execution transcript — 2026-10-12
+
+### Operator authorization and F05 scope
+
+**Operator's Batch B sequence:** V003-F04 → V003-F03 → V003-F05 → V003-F06, with each ticket handled on its own branch and source-changing actions subject to the stated Operator decision gates.
+
+**Operator's V003-F05 ticket text (verbatim):**
+
+```text
+### V003-F05 — M19-HIST-01 source/target Git blob-byte qualification
+Class: HISTORICAL INTEGRITY SAFEGUARD; effort: MEDIUM.
+Sources: FootHive Sandbox copied evidence and M19 45-file manifest, prior reported 28/45 raw-byte mismatch vs LF-normalized 45/45 match.
+Draft work: Independently reproduce source/working/Git-blob byte comparison, line-ending-only or other limits; append truthful explanatory evidence, never silently normalize history. Pass: reproducible 45-file disposition, no unauthorized source mutation.
+```
+
+### Codex progress messages
+
+**Codex (verbatim):** “F03’s operator-approved retention decision is recorded and pushed, with all 29 listed files left untouched. I’m continuing on the separate F05 branch to reproduce the 45-file byte comparison from the migration evidence, then I’ll document and publish that ticket before moving to F06.”
+
+**Codex (verbatim):** “The authoritative M15 copy manifest is present with 45 source/target pairs, including the external Deep Audit source. I’m checking each row against current source bytes, destination bytes, and the blobs in the current F05 `HEAD`; the comparison is read-only and will also identify whether each byte difference is limited to CRLF/LF endings.”
+
+**Codex (verbatim):** “The first pass reproduced the main M19 counts: source manifest hashes match 45/45, worktree source/target bytes match 44/45, and line-ending-normalized content matches 45/45. Five Git blob reads were blocked by Windows long-path handling, so I’m switching those reads to Git tree-object IDs and `cat-file` to finish the blob comparison without changing repository settings or files.”
+
+**Codex (verbatim):** “I found the reason for the earlier 28/45 Git-blob mismatch: all 45 destination blobs compare equal after CRLF-to-LF normalization; 28 are line-ending-only raw-byte differences. The one worktree mismatch is the `PASSED_FH_BRAINBOX.md` copy, with 134 extra CR bytes. An automated edit timed out without changing the file, so I’m applying the correction only to the new F05 appendix and preserving the earlier map history.”
+
+### Authentication and evidence publication
+
+**Codex question (verbatim):** “The F05 evidence push is still running without a Git response and may be waiting at Git Credential Manager. If a GitHub sign-in prompt is visible on Windows, complete it and choose ‘I completed sign-in.’ If no prompt is visible, choose ‘No prompt is visible’ so I can troubleshoot.”
+
+**Operator response (verbatim):** “I completed sign-in”
+
+**Codex (verbatim):** “The F05 evidence commit `2841dd3` is pushed on its dedicated branch after your sign-in. I’m confirming the live branch tip now; then I’ll publish the full F05 execution report and conversation/ticket closeout as a separate commit on that same branch.”
+
+**Publication verification:** The evidence commit `2841dd3f5bff60e2dc6e5bfad4d0ea95ef512a54` was pushed to `v003/f05-m19-blob-byte-qualification`. Fresh fetch, local HEAD, upstream tracking ref, and live GitHub ref matched; ahead/behind was 0/0. No PR or merge was created.
+
+**F05 result recorded:** 45/45 source baselines match; 44/45 physical source/destination pairs are raw-byte equal; 45/45 match after CRLF-to-LF comparison; all 45 destination Git blobs were read by object ID; 17/45 match the source raw bytes and all 45 match after CRLF-to-LF comparison. The only physical pair discrepancy is the 134-byte line-ending expansion in `PASSED_FH_BRAINBOX.md`. No source or destination was normalized or rewritten.
+
+**Transcript boundary:** This section records the F05 ticket text, the F05-related Operator response and Codex messages above. The full measurements and limitations are in `V003_FIXES_REPORT_BRAINBOX.md`, and the source-to-target ledger entry is in `MIGRATION_MAP_V003_BRAINBOX.md`. No separate ChatGPT independent-verification result or Operator acceptance beyond the stated batch authorization is claimed here.
