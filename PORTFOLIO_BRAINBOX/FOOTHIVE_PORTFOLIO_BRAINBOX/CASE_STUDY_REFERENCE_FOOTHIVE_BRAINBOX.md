@@ -24,4 +24,4 @@ This index points to existing records. The source evidence is not copied into Po
 
 ## Historical source boundary
 
-The original FootHive project source and canonical Sandbox evidence remain separate records. The empty `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` was not used to invent project content and remains for its separately assigned legacy review.
+The original FootHive project source and canonical Sandbox evidence remain separate records. The empty `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` was not used to invent project content and was retired under the Operator-authorized V003-M20 migration. Its former path, empty-file status, and historical integrity baseline remain documented in `MIGRATION_MAP_V003_BRAINBOX.md`.

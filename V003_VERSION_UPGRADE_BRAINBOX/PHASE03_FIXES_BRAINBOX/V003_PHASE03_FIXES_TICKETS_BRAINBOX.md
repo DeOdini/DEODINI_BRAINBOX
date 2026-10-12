@@ -260,3 +260,35 @@ The sole physical worktree difference is `PASSED_FH_BRAINBOX.md`: the source con
 ### V003-F06 publication verification update — 2026-10-12
 
 The report/conversation closeout commit `4508e7607e62e63b15b92a175020ff9290d23ab4` was pushed. Fresh fetch confirmed local HEAD, upstream, and origin branch equality; ahead/behind 0/0; worktree clean. This verifies publication only. Operator decisions for remaining source dispositions and F06-REF-01 are still pending.
+
+---
+
+## Operator V003-F06 source-retention authorization and F06-REF-01 correction — 2026-10-12
+
+**Operator decision:** APPROVED the narrowly scoped correction of the stale FootHive Portfolio sentence and APPROVED retention unchanged at their recorded current paths for the remaining unresolved source rows in the published F06 source-reference CSV. The earlier F03 retention of 29 FootHive assets, F04 retention of two milestone files, and M20 retirement of seven zero-byte placeholders remain intact.
+
+**Correction scope:** `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md`, historical source boundary line 27, now truthfully states that `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` was retired under V003-M20 and its former path and integrity baseline survive in the Migration Map. No unrelated Portfolio history rewrite approved.
+
+**Disposition:** The F06 CSV's source-row recommendations without an earlier explicit operation decision are now accepted as **RETAIN UNCHANGED AT CURRENT PATH**. This is a bounded retention decision, not a blanket authority for modification, relocation, promotion or eventual deletion; remaining sources still require individually authorized operations. The seven retired files stay absent; no restoration. The verified 122/122 M01 Git blobs remain recoverable from repository history, which does not by itself prove independent backup availability.
+
+**Verification and Git lifecycle:** ChatGPT must independently verify the exact sentence change, row-level preservation, and source integrity before F06 closure. Local recording and correction do not authorize staging, commit, push, PR or merge; separate Operator authorization required. F06 status: **CORRECTION/RETENTION DECISION RECORDED — AWAITING INDEPENDENT POST-EDIT VERIFICATION AND OPERATOR ACCEPTANCE**. M21 and Phase 02 are not thereby closed.
+
+---
+
+## Operator confirmation of V003-F06 decisions and ChatGPT post-edit audit — 2026-10-12
+
+**Operator instruction (verbatim):** "APPEND THIS RESPONSE AS OPERATOR AUTHORISATION OF THOSE DECISION, RECORD OUR CURRENT DIALOGUE REGARDING THIS DECISION MADE. I WILL THEN INSTRUCT CODEX TO CHECK YOUR AUDIT."
+
+**Decision wording previously entered by ChatGPT (not authenticated as a verbatim Operator message when first entered):** "My Operator decisions for V003-F06: F06-REF-01 sentence correction: approve. Retention of remaining unresolved source rows: approve. Record my decision in the Phase 03 report, conversation, ticket record and relevant migration map. Any approved edits must be limited to the exact authorized scope. Keep Git publication separately authorized and require ChatGPT independent verification before F06 closure."
+
+**Operator confirmation by reference (verbatim, current turn):** "PROCEED WITH THE AUTHORITY STATED ACCORDINGLY, I APPROVE."
+
+**Authority record:** The Operator's current response confirms the scope above effective 2026-10-12. The longer wording is not retroactively represented as an earlier verbatim Operator message. The approved content scope is limited to the stated sentence correction and retention of the remaining F06 CSV source rows unchanged at their recorded paths. The previously authorized Batch B Git lifecycle still governs publication; this confirmation does not authorize PR creation, merge, or final F06 closure.
+
+**Authorized decisions:** (1) Correct only the stale historical-source sentence in `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md` to state M20 retired the empty `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` and retained its path/status/integrity baseline in the Migration Map. (2) Retain the remaining unresolved F06 CSV source rows unchanged at their recorded paths. Existing F03 retention of 29 source-only FootHive assets, F04 retention of two milestone sources and M20's seven empty-placeholder retirements remain unchanged.
+
+**Independent integrity recheck (Codex, 2026-10-12):** The published F06 CSV contains 123 records: 122 historical file-path rows (115 present files and 7 M20-retired zero-byte placeholders) plus one filesystem-only `BRAINBOX/` empty-directory candidate. Codex independently recomputed SHA-256 for all 115 present files against the CSV's current-worktree digest: 115 matched, 0 differed, 0 were missing. The working diff remains limited to five files: the single approved Portfolio sentence and four report/conversation/ticket/map records. No source move, delete, restore, or historical source rewrite occurred.
+
+**Verification verdict:** `V003-F06-REF-01` is corrected and locally verified; the bounded source-retention disposition is confirmed and recorded. This is not final Operator acceptance/closure of V003-F06 and does not approve a merge. The separately stated Batch B Git instruction governs staging, commit, and push after the required ticket work and verification; it does not authorize PR creation or merge.
+
+**Next gate:** Complete independent review of the scoped diff and records, then follow the previously authorized Batch B Git lifecycle. Keep F06 open until its required independent verification and Operator closure decision are recorded. **Inputted by:** ChatGPT; the current confirmation is authored by Operator.

@@ -326,3 +326,27 @@ The following Codex commentary was sent after progress-message item 4 and before
 **Publication verification:** Closeout commit `4508e7607e62e63b15b92a175020ff9290d23ab4` was pushed to `origin/v003/f06-m20-legacy-source-reference-audit`. After a fresh `git fetch origin`, local HEAD, upstream tracking ref and origin branch ref all matched; ahead/behind was 0/0 and the worktree was clean at verification. No PR or merge was created.
 
 No further Operator response was received during this closeout step. The source-specific disposition and F06-REF-01 decision requests remain pending.
+
+---
+
+## V003-F06 decision wording and Operator confirmation by reference — 2026-10-12
+
+**Decision wording previously entered by ChatGPT (not authenticated as a verbatim Operator message when first entered):** "My Operator decisions for V003-F06: F06-REF-01 sentence correction: approve. Retention of remaining unresolved source rows: approve. Record my decision in the Phase 03 report, conversation, ticket record and relevant migration map. Any approved edits must be limited to the exact authorized scope. Keep Git publication separately authorized and require ChatGPT independent verification before F06 closure."
+
+**Operator confirmation (verbatim, current turn):** "PROCEED WITH THE AUTHORITY STATED ACCORDINGLY, I APPROVE."
+
+**Codex record:** The Operator's current response confirms by reference the exact decision scope stated above, effective 2026-10-12. It is not represented as an earlier verbatim Operator utterance. The approved content scope is limited to the single specified Portfolio sentence correction and retaining the remaining F06 CSV source rows unchanged at their recorded paths. The publication clause remains a separate Git-lifecycle boundary; this confirmation does not by itself broaden that boundary or close F06.
+
+---
+
+## Current Operator/ChatGPT dialogue — V003-F06 decision and independent audit — 2026-10-12
+
+**ChatGPT decision wording (reproduced from the prior draft; not verbatim Operator text):** "My Operator decisions for V003-F06: F06-REF-01 sentence correction: approve. Retention of remaining unresolved source rows: approve. Record my decision in the Phase 03 report, conversation, ticket record and relevant migration map. Any approved edits must be limited to the exact authorized scope. Keep Git publication separately authorized and require ChatGPT independent verification before F06 closure."
+
+**ChatGPT (previous response, faithful summary):** Applied one authorized sentence correction in `CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md`; appended retention approval to the Phase 03 report, conversation, ticket record and migration map. Independently recomputed all 115 present source SHA-256 values against the F06 published CSV: 0 differences; diff limited to five files. Reported locally verified F06-REF-01 and Operator-approved bounded retention; F06 not finally accepted/closed, five modified files not staged, committed, pushed or merged. Recommended Codex stage/commit subject to separate authority.
+
+**Earlier Operator instruction (verbatim as previously transcribed):** "APPEND THIS RESPONSE AS OPERATOR AUTHORISATION OF THOSE DECISION, RECORD OUR CURRENT DIALOGUE REGARDING THIS DECISION MADE. I WILL THEN INSTRUCT CODEX TO CHECK YOUR AUDIT."
+
+**Operator confirmation (verbatim, current turn):** "PROCEED WITH THE AUTHORITY STATED ACCORDINGLY, I APPROVE."
+
+**ChatGPT action (earlier turn, as recorded):** Appended decision wording, decision boundaries and the previous independent audit summary to Phase 03 records as a dated addendum. The longer decision wording had not been authenticated as an earlier verbatim Operator message at that time. The Operator's current confirmation by reference is recorded above; it does not expand Git publication authority or constitute final F06 acceptance. **Inputted by:** ChatGPT; the confirmation is authored by Operator.

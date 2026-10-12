@@ -2772,3 +2772,19 @@ The reference audit found a current factual statement that conflicts with the co
 The complete row-level audit, including paths, M01 size/SHA/blob IDs, current physical state/SHA, current HEAD blob availability, M21 disposition/target, reference locations, recommendation, and authority state, is recorded in [F06 M20 source/reference audit CSV](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv).
 
 **F06 execution disposition:** the scoped inventory, integrity/recoverability review, and tracked-reference audit are complete. No source was moved, copied, renamed, edited, restored, or deleted. Only the already-authorized F03/F04 retention decisions and completed M20 retirements are represented as such. Other substantive-source dispositions remain subject to explicit Operator decision; the stale sentence is reported for separate correction approval.
+
+---
+
+## Operator V003-F06 source-retention authorization and F06-REF-01 correction — 2026-10-12
+
+**Operator decision confirmed by reference (2026-10-12):** APPROVED the narrowly scoped correction of the stale FootHive Portfolio sentence and APPROVED retention unchanged at their recorded current paths for the remaining unresolved source rows in the published F06 source-reference CSV. The earlier F03 retention of 29 FootHive assets, F04 retention of two milestone files, and M20 retirement of seven zero-byte placeholders remain intact.
+
+**Operator confirmation (verbatim, current turn):** "PROCEED WITH THE AUTHORITY STATED ACCORDINGLY, I APPROVE." The longer decision wording was entered by ChatGPT and is confirmed by reference from this date; it is not presented as a prior verbatim Operator message.
+
+**Correction scope:** `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md`, historical source boundary line 27, now truthfully states that `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` was retired under V003-M20 and its former path and integrity baseline survive in the Migration Map. No unrelated Portfolio history rewrite approved.
+
+**Disposition:** The F06 CSV's source-row recommendations without an earlier explicit operation decision are now accepted as **RETAIN UNCHANGED AT CURRENT PATH**. This is a bounded retention decision, not a blanket authority for modification, relocation, promotion or eventual deletion; remaining sources still require individually authorized operations. The seven retired files stay absent; no restoration. The verified 122/122 M01 file-record Git blobs remain recoverable from repository history, which does not by itself prove independent backup availability.
+
+**CSV accounting and current integrity recheck:** the published F06 CSV has 123 records: 122 historical file-path rows (115 present and 7 M20-retired zero-byte placeholders) plus one filesystem-only `BRAINBOX/` empty-directory candidate. Codex recomputed SHA-256 for all 115 present files against the CSV's current-worktree digest: 115 matched; 0 mismatched; 0 missing.
+
+**Verification and Git lifecycle:** ChatGPT must independently verify the exact sentence change, row-level preservation, and source integrity before F06 closure. Local recording and correction do not authorize staging, commit, push, PR or merge; separate Operator authorization required. F06 status: **CORRECTION/RETENTION DECISION RECORDED — AWAITING INDEPENDENT POST-EDIT VERIFICATION AND OPERATOR ACCEPTANCE**. M21 and Phase 02 are not thereby closed.
