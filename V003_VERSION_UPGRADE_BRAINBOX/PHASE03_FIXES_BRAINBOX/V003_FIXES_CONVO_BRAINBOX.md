@@ -422,3 +422,19 @@ Ticket commits pushed: F15 f16f9bd, F08 a4f9278, F14 e04a5fb, and F07 ee2fe63. T
 F14 corrected the 38 broken references in scope (4 ordinary links and 34 Markdown image links); all 40 local references now resolve. No asset moved. F07 reproduced Git’s default path failure at 260–263 characters and verified the transient -c core.longpaths=true workaround; no persistent setting or rename was made.
 
 The current-status README, detailed report, ticket outcomes, and transcript are updated. F14’s unavailable prior parser implementation is recorded as a non-blocking method-provenance limitation. Batch C Operator acceptance remains pending; F01’s renewed M21/Phase 02 review remains a separate open gate.
+
+# V003-F07 — Batch C closeout chronology correction — 2026-10-12
+
+**Operator (verbatim):** “PROCEED WITH THE FIX THAT NEEDS MY APPROVAL”
+
+**Codex commentary (verbatim):** “The approved fix is to clarify the chronology in the Phase 03 report: the ‘no edits after `c21a278`’ statement describes the state before the later `cb00df4` documentation update. I’m checking the current branch and file before editing so the correction lands in the right place.”
+
+**Codex commentary (verbatim):** “The same stale statement appears in the ticket record as well as the report. I’ll correct both on the existing F07 branch, clarifying that the timed-out status check left the local working-tree state unconfirmed; I won’t change the findings or evidence.”
+
+**Codex commentary (verbatim):** “Both corrections are now on the existing F07 branch, and GitHub readback confirms the old wording is gone from both files. I’m checking the final commit record before I report back.”
+
+**Execution record:** The report and ticket were read from the published F07 branch. The report wording was changed to state that the post-push status scan timed out and therefore did not confirm a clean local working tree. The ticket now scopes that same fact to the `c21a278` checkpoint and acknowledges later documentation updates. GitHub readback confirmed both corrected passages and absence of the stale sentences. The report correction was committed as `99a64b7296bf6fd51948d17be0b0e170adb8aff0`; the ticket correction was committed as `3eeb43eb50bb31974a143b1afd5a5c6bc44e8d7c`. No evidence or ticket outcome changed. RDC/local working-tree verification remained unavailable because the device calls timed out.
+
+**Codex final response (verbatim):**
+
+The closeout wording correction is committed and verified on `v003/f07-t23-windows-path-compatibility`. Report commit `99a64b7` and ticket commit `3eeb43e` replace the unscoped statement with checkpoint-specific wording. Both files were read back from the branch; no evidence or results changed. I could not verify the local working tree because RDC timed out. No merge was performed.
