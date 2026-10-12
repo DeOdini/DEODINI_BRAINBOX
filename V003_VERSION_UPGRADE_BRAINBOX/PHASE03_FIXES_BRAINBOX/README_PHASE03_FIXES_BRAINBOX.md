@@ -1,12 +1,12 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 FRAMEWORK APPROVED; V003-F01 DISPOSITION RECORDED; BATCH B AUTHORIZED IN ORDER; F04 EVIDENCE AND OPERATOR RETENTION DISPOSITION PASS; F03 INVENTORY EVIDENCE RECORDED; F03 PER-FILE OPERATOR DISPOSITION PENDING; RENEWED M21 REVIEW PENDING]
+**STATUS:** [PHASE 03 FRAMEWORK APPROVED; V003-F01 DISPOSITION RECORDED; BATCH B AUTHORIZED IN ORDER; F04 EVIDENCE AND OPERATOR RETENTION DISPOSITION PASS; F03 INVENTORY AND PER-FILE RETENTION DISPOSITION PASS; RENEWED M21 REVIEW PENDING]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [PHASE 03 PLANNING; F01 SEARCH/DISPOSITION AND INDEPENDENT VERIFICATION RECORDED; F04 EVIDENCE/DISPOSITION PASS; F03 INVENTORY COMPLETE / SOURCE DISPOSITION PENDING; F05/F06 AUTHORIZED / PENDING]
-**LAST UPDATED:** 2026-10-12 — Codex; F01 disposition confirmed; F04 retention disposition approved by Operator; F03 inventory evidence pushed; per-file retention choice pending.
+**POPULATION:** [PHASE 03 PLANNING; F01 SEARCH/DISPOSITION AND INDEPENDENT VERIFICATION RECORDED; F04 EVIDENCE/DISPOSITION PASS; F03 INVENTORY AND SOURCE DISPOSITION PASS; F05/F06 AUTHORIZED / PENDING]
+**LAST UPDATED:** 2026-10-12 — Codex; F01 disposition confirmed; F04 retention disposition approved by Operator; F03 inventory evidence pushed; Operator-approved retention disposition recorded for closeout; sources unchanged.
 
 ## Local tree
 ```text
@@ -14,7 +14,7 @@ PHASE03_FIXES_BRAINBOX/
 ├── README_PHASE03_FIXES_BRAINBOX.md
 ├── V003_FIXES_REPORT_BRAINBOX.md
 ├── V003_FIXES_CONVO_BRAINBOX.md
-└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; F04 disposition PASS; F03 inventory recorded / per-file disposition pending; F05/F06 authorized; other tickets draft]
+└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; F04 disposition PASS; F03 inventory and per-file retention disposition PASS; F05/F06 authorized; other tickets draft]
 ```
 
 ## Navigation

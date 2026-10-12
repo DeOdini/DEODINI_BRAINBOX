@@ -371,3 +371,16 @@ The inventory and evidence are complete. The per-file Operator disposition remai
 - Fetch, local HEAD, upstream tracking ref, and live `git ls-remote` all returned `8151a14596fe427f6b532b63472c36921a0f2bf8`.
 - No PR or merge was created. No asset source was changed.
 - F03 remains **inventory evidence complete; per-file Operator disposition pending; not PASS**. The separately asked disposition question covers each of the 29 numbered report rows. Do not proceed to source movement or retirement based on the proposed retention alone.
+
+
+## V003-F03 Operator disposition resolution — 2026-10-12
+
+This dated decision supersedes the earlier pending-disposition status recorded above.
+
+**Codex question (verbatim):** “Do you approve the proposed disposition for each of all 29 source files in the V003-F03 report table—including the four Markdown catalogs and 25 product images—as: RETAIN UNCHANGED AT ITS EXISTING SOURCE PATH, with no move, copy, rename, edit, normalization, or deletion? If you do not approve that same disposition for every row, identify each file by its exact path and its separate disposition.”
+
+**Operator response (verbatim):** “YES”
+
+The Operator approved the stated retention disposition for every one of the 29 numbered report rows. Each exact source record is designated **RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12)**. The M01 migration-map entries for those 29 source-only records have been updated to reflect that decision. No file was moved, copied, renamed, edited, normalized, or deleted.
+
+**F03 result:** evidence and per-file disposition gates **PASS**; M15-ASSET-01 is resolved for these 29 sources as retention at their existing paths. This decision does not establish image rights or authorize reuse, publication, or a separate future source operation. M20 must preserve the approved retained sources unless a later explicit Operator decision supersedes this disposition.

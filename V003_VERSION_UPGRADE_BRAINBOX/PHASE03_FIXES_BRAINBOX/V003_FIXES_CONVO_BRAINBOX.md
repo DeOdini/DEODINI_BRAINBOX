@@ -213,3 +213,16 @@ The Operator then supplied the full Batch B scopes for V003-F04, V003-F03, V003-
 **Codex disposition request:** “Do you approve the proposed disposition for each of all 29 source files in the V003-F03 report table—including the four Markdown catalogs and 25 product images—as: RETAIN UNCHANGED AT ITS EXISTING SOURCE PATH, with no move, copy, rename, edit, normalization, or deletion? If you do not approve that same disposition for every row, identify each file by its exact path and its separate disposition.”
 
 **Operator answer:** Pending when this record was updated. F03 remains not PASS until the per-file decision is recorded. The 29 source files remain unchanged.
+
+
+## V003-F03 Operator disposition response — 2026-10-12
+
+**Codex question (verbatim):** “Do you approve the proposed disposition for each of all 29 source files in the V003-F03 report table—including the four Markdown catalogs and 25 product images—as: RETAIN UNCHANGED AT ITS EXISTING SOURCE PATH, with no move, copy, rename, edit, normalization, or deletion? If you do not approve that same disposition for every row, identify each file by its exact path and its separate disposition.”
+
+**Operator response (verbatim):** “YES”
+
+**Codex response (verbatim):** “You approved the exact retention proposal for all 29 entries. I’m recording that as an Operator-approved, per-file retain-at-source disposition. It does not authorize reuse or relocation, and all 29 source files remain untouched.”
+
+**Disposition applied to records:** Each of the 29 numbered report entries is approved as RETAIN UNCHANGED AT ITS EXISTING SOURCE PATH. The 29 M01 FH-ASSET map rows are updated to RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12). The original asset/catalog files remain unchanged. No source operation or image reuse is authorized.
+
+**V003-F03 status:** Evidence and per-file disposition PASS. M15-ASSET-01 is resolved for these 29 source-only files. M20 must preserve these records absent a later explicit superseding Operator decision.
