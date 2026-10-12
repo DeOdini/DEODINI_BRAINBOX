@@ -2676,3 +2676,15 @@ Evidence commit `da2569211e868737f806df7373b71acf582e7e73` is present on `v003/f
 ### V003-F04 Operator disposition resolution — 2026-10-12
 
 The Operator approved retaining both `MILESTONES/MILESTONES_MUST_README.md` and `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` unchanged at their current paths. Both match their M01 SHA-256 and Git-blob baselines. Their disposition is `RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE`; no physical destination or copy is required. They remain distinct from future `MILESTONES_BRAINBOX/` Router/Agentic intent. `M17-DEST-01` is resolved for these two records. M20 must honor their retention. No move, copy, rename, rewrite, or deletion occurred.
+
+
+## V003-F03 — M15-ASSET-01 source-only asset evidence update — 2026-10-12
+
+**Current status:** Inventory evidence recorded; per-file Operator disposition pending. This update does not authorize any asset operation and does not close V003-F03.
+
+- The M01 FH-ASSET inventory has 38 records. The 29 source-only items are the 25 product images and four Markdown catalogs listed individually, with path, size, SHA-256, catalog consumer and proposal, in `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md`, section “V003-F03 — M15-ASSET-01 FootHive Source-Only Asset Disposition Audit.”
+- Current verification: 29/29 listed files exist; their sizes and raw SHA-256 values match the report and M01 FH-ASSET ledger; each is byte-identical to its Git blob at F03 branch HEAD. **0/29 discrepancies.**
+- The separately inspected FootHive project assets folder had 11 files and 0 hash matches among these 29. Five website text/source files had 0 exact filename references. The four catalogs contain 32 broken relative image links (9 boot, 9 classic, 4 sneaker, 10 Timberland). These findings are limited to the inspected locations and are not proof of no external or uninspected consumer.
+- Existing M01/M15 rows label the 29 items deferred/retained historical and identify no approved asset destination. That remains a description of current location and earlier disposition state; it does not substitute for the F03 per-file Operator decision now requested.
+- Proposed per-file decision: retain each of the 29 exact source records unchanged at its existing path. Operator answer pending. Rights/licensing are not established. No copy, move, rename, edit, normalization, link repair, or deletion was performed.
+- **Source-removal eligibility:** not approved. **Dependent destructive cleanup:** prohibited pending explicit disposition and the M20 source-retirement gates.

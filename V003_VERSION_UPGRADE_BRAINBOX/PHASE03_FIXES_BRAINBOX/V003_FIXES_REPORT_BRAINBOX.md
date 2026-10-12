@@ -291,3 +291,73 @@ The Operator approved retaining both `MILESTONES/MILESTONES_MUST_README.md` and 
 **Updated result:** F04 evidence and disposition gate **PASS**. Both files match their M01 SHA-256 and Git-blob baselines; their historical role is distinct from the future `MILESTONES_BRAINBOX/` Router/Agentic records. **M17-DEST-01 is resolved for these two sources as RETAIN AT CURRENT SOURCE PATH.** M20 must honor that retention decision; it is not permission to retire these files. No source mutation was performed.
 
 The prior report status “Operator source disposition pending” was accurate when first written and is superseded by this dated decision addendum.
+
+
+# V003-F03 — M15-ASSET-01 FootHive Source-Only Asset Disposition Audit — 2026-10-12
+
+**Ticket:** V003-F03 — 29 FootHive product/catalog source-only files
+**Branch:** `v003/f03-m15-foothive-asset-disposition`
+**Status:** Inventory and evidence-backed proposals complete; per-file Operator disposition pending. **Not disposition-closed / not PASS.**
+
+## Scope and comparison method
+
+Source root: `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/`. The M01 manifest lists the original asset set. The 29 source-only entries below were hashed from the current working files and compared with the M01 SHA-256 manifest and the current Git blob at HEAD. All 29/29 match both. The complete asset grouping has 38 files across five folders: 29 source-only files and nine files already SHA-matched by the prior ledger to `C:/Users/USER/FOOTHIVE/assets`.
+
+The separate FootHive project `assets/` directory was independently scanned: 11 files; none of the 29 source-only SHA-256 values matched. Five website text/source files were scanned for the 29 exact filenames; no filename references were found. This search supports the current no-consumer finding but does not establish that no uninspected external backup or private project exists.
+
+## Per-file inventory and proposal
+
+Each path below is relative to the source root stated above. The catalog path and line are the only current in-repository use found for each image; those Markdown image links are unresolved because each link expects a nested `boot-images/`, `classic-images/`, `sneaker-images/`, or `images/` child that is absent. The four catalogs contain 32 broken image references total (9 boot, 9 classic, 4 sneaker, 10 Timberland). The 25 source-only images account for 25 of those links. No link was repaired.
+
+| # | Relative path | Bytes | Current SHA-256 | Consuming reference / evidence | Proposed disposition |
+|---:|---|---:|---|---|---|
+| 1 | `FOOTHIVE BOOTS IMAGES/americana-star-western-boot.png` | 1,792,411 | `89dbc63dfc375459e8e36bf8334787e6d302fd3d4547b0b38985a3526b2b3268` | `foothive-boot-images.md:30`; unresolved link | Retain unchanged at source pending Operator decision |
+| 2 | `FOOTHIVE BOOTS IMAGES/blue-blossom-western-boot.png` | 1,734,723 | `cbe6077b100562090454fb9d6668d948f06c74224382f5d1927789a36d6094cb` | `foothive-boot-images.md:27`; unresolved link | Retain unchanged at source pending Operator decision |
+| 3 | `FOOTHIVE BOOTS IMAGES/foothive-boot-images.md` | 1,231 | `5baf8f3b175791f26b884ffa8773b6be81743220e544b7a399680adb451869da` | Source catalog; 9/9 links unresolved; no site-code consumer found | Retain unchanged as historical source/catalog |
+| 4 | `FOOTHIVE BOOTS IMAGES/olive-canvas-buckle-combat-boot-rear.png` | 536,214 | `3ddc6ab8bc04d0e844e224780084b11ce032fac4ffc28b46e42e6ee8e0821fa7` | `foothive-boot-images.md:18`; unresolved link | Retain unchanged at source pending Operator decision |
+| 5 | `FOOTHIVE BOOTS IMAGES/stars-stripes-western-boot.png` | 479,778 | `817b7cc4fdf9eeea51708b60a166bb44332eaff81c289bcd5e14b224fc21dcec` | `foothive-boot-images.md:6`; unresolved link | Retain unchanged at source pending Operator decision |
+| 6 | `FOOTHIVE BOOTS IMAGES/sunflower-embroidered-western-boot.png` | 1,189,578 | `4fbc9b28f6a52b2dad36c5a849a73e60f57a22407eb5beca38ba570ed61b9d44` | `foothive-boot-images.md:12`; unresolved link | Retain unchanged at source pending Operator decision |
+| 7 | `FOOTHIVE BOOTS IMAGES/winged-cross-studded-western-boot.png` | 1,493,098 | `a92b7f68e1994e7e6490dfba376cfbf8fadb8b31494736fa428d9990bb16f431` | `foothive-boot-images.md:9`; unresolved link | Retain unchanged at source pending Operator decision |
+| 8 | `FOOTHIVE CLASSIC SHOES IMAGES/chestnut-ivory-suede-panel-wingtip.png` | 4,372,094 | `2324f77f23a8100a739c80f635ace9906df0ae8fed5d3e64b78a2c7d997496fd` | `foothive-classic-images.md:15`; unresolved link | Retain unchanged at source pending Operator decision |
+| 9 | `FOOTHIVE CLASSIC SHOES IMAGES/chestnut-two-tone-wingtip-boot.png` | 1,817,639 | `5f57d20754a738b58112528b70c42e0d422201964d69659a72342fe8b16a2c5c` | `foothive-classic-images.md:24`; unresolved link | Retain unchanged at source pending Operator decision |
+| 10 | `FOOTHIVE CLASSIC SHOES IMAGES/crimson-navy-patina-wingtip.png` | 313,835 | `b7a5610823ea8a18987e1ed00f651ac52733b8f5d632a0411e8004bbe6bbd568` | `foothive-classic-images.md:21`; unresolved link | Retain unchanged at source pending Operator decision |
+| 11 | `FOOTHIVE CLASSIC SHOES IMAGES/foothive-classic-images.md` | 1,218 | `58386c5d00a65dd7801cb0bdd0afa2405d4e92334e2485282af724383444fe15` | Source catalog; 9/9 links unresolved; no site-code consumer found | Retain unchanged as historical source/catalog |
+| 12 | `FOOTHIVE CLASSIC SHOES IMAGES/four-pair-shoe-tree-lineup.png` | 688,810 | `c734b8e75ee1e9fd68aae39da5d04a288b5d35ab67283e73bf27deee84bb27f8` | `foothive-classic-images.md:12`; unresolved link | Retain unchanged at source pending Operator decision |
+| 13 | `FOOTHIVE CLASSIC SHOES IMAGES/tan-croc-embossed-derby.png` | 430,372 | `82f016cb21dc6300b6bc74ed4698fcef3fcaaed680b1ce4fc3ff3692ccf5f3b2` | `foothive-classic-images.md:27`; unresolved link | Retain unchanged at source pending Operator decision |
+| 14 | `FOOTHIVE CLASSIC SHOES IMAGES/tri-tone-patent-wingtip-derby.png` | 805,708 | `c2a9335a7b77947cd12b784fa161a0bb4162683b19a067f77f24f8dce0bd00b5` | `foothive-classic-images.md:9`; unresolved link | Retain unchanged at source pending Operator decision |
+| 15 | `FOOTHIVE CLASSIC SHOES IMAGES/two-tone-cap-toe-field-boot.png` | 591,572 | `8ba73dd0eab551ffaece1a46c616d0c3c276a125b3f3fd6c1de70d0ea0f111eb` | `foothive-classic-images.md:30`; unresolved link | Retain unchanged at source pending Operator decision |
+| 16 | `FOOTHIVE SNEAKER IMAGES/charcoal-tactical-boot-runner.png` | 646,172 | `1588b3dd3e79a9c5e9bf878b7b31ee3360c51f5a3a2609b7274c650246c5440d` | `foothive-sneaker-images.md:6`; unresolved link | Retain unchanged at source pending Operator decision |
+| 17 | `FOOTHIVE SNEAKER IMAGES/foothive-sneaker-images.md` | 573 | `1e645b5962f960fddda5a0919ad9a9ceae1f10dab59ba9fefadacf036c94917f` | Source catalog; 4/4 links unresolved; no site-code consumer found | Retain unchanged as historical source/catalog |
+| 18 | `FOOTHIVE SNEAKER IMAGES/navy-tan-stripe.png` | 341,243 | `bd16210c8f806ee44b92aad50396bd86ce4b418339517514f983b8f51995f710` | `foothive-sneaker-images.md:9`; unresolved link | Retain unchanged at source pending Operator decision |
+| 19 | `FOOTHIVE TIMBERLAND IMAGES/foothive-timberland-images.md` | 871 | `41833999931e3d0ec762f2b9a08e6d1e9fe814a53765e584da1a96b0ef144b79` | Source catalog; 10/10 links unresolved; no site-code consumer found | Retain unchanged as historical source/catalog |
+| 20 | `FOOTHIVE TIMBERLAND IMAGES/image02.png` | 1,109,106 | `c0f4d1f4e81f30dc8b39482141603b09009bd7fb7e2bb3c8a8101da24e57bd10` | `foothive-timberland-images.md:6`; unresolved link | Retain unchanged at source pending Operator decision |
+| 21 | `FOOTHIVE TIMBERLAND IMAGES/image03.png` | 991,052 | `11390e47e9327c69577a8abfc9d8251457057c54e58efb1f471b26d69e3fe79b` | `foothive-timberland-images.md:9`; unresolved link | Retain unchanged at source pending Operator decision |
+| 22 | `FOOTHIVE TIMBERLAND IMAGES/image04.png` | 718,804 | `8abe32149c35e2b790c458cbcc88fb0899158460f43fc2899b119cb049d43c6a` | `foothive-timberland-images.md:12`; unresolved link | Retain unchanged at source pending Operator decision |
+| 23 | `FOOTHIVE TIMBERLAND IMAGES/image05.png` | 1,385,905 | `0afcbe97cb83c52d2d8e9d7b1856c3583f1d4688236d1471cf08cba0603842e3` | `foothive-timberland-images.md:15`; unresolved link | Retain unchanged at source pending Operator decision |
+| 24 | `FOOTHIVE TIMBERLAND IMAGES/image08.png` | 1,020,555 | `4b3f3285cbfcdcc192542248fad8d17a79d2836d74195269f042f16dbd47bbf7` | `foothive-timberland-images.md:18`; unresolved link | Retain unchanged at source pending Operator decision |
+| 25 | `FOOTHIVE TIMBERLAND IMAGES/image13.png` | 796,479 | `07dd6563a4127a2e2958a281b56c3af1b7950aa64b697cf03fcb1f93637926e4` | `foothive-timberland-images.md:21`; unresolved link | Retain unchanged at source pending Operator decision |
+| 26 | `FOOTHIVE TIMBERLAND IMAGES/image15.png` | 980,549 | `38e4c0e763d9046428bb2fe9bd9e364035bda5188a44f417eac7fa445eaea36b` | `foothive-timberland-images.md:24`; unresolved link | Retain unchanged at source pending Operator decision |
+| 27 | `FOOTHIVE TIMBERLAND IMAGES/image16.png` | 650,096 | `1052679193b3a06aac70f40ee61fb2fc7f4cc902fd980e2113a50dd090363808` | `foothive-timberland-images.md:27`; unresolved link | Retain unchanged at source pending Operator decision |
+| 28 | `FOOTHIVE TIMBERLAND IMAGES/image17.png` | 2,556,387 | `7cd01613bedd8e445b9efa19439abdbc764cf9bf2f558c28aeacd58968332613` | `foothive-timberland-images.md:30`; unresolved link | Retain unchanged at source pending Operator decision |
+| 29 | `FOOTHIVE TIMBERLAND IMAGES/image19.png` | 1,661,839 | `b4cbfc042422de85c1794fe817fc3459a3b600bf36620a1c8004e89b98d7a68d` | `foothive-timberland-images.md:33`; unresolved link | Retain unchanged at source pending Operator decision |
+
+## Proposed disposition and safety boundary
+
+Proposed for all 29 listed records: retain unchanged at the legacy source paths until the Operator explicitly signs the per-file disposition. No destination in the frozen M15 evidence structure is defined for product-source assets; these are not test evidence and were not forced into `EVIDENCE_FH_BRAINBOX/`. The 25 image entries are linked from their historical catalogs but not from the current website source found in this search. The four catalogs preserve the image-group descriptions but their displayed galleries currently have broken relative links. These files may be retained as historical source even though catalog links are unresolved.
+
+Rights/provenance status was not independently established by this inventory. The catalog statements that images are brand-neutral are source claims, not a new license or permission determination. Do not copy/reuse/publish the assets based on this report alone.
+
+**No change performed:** No image/catalog file was copied, moved, renamed, edited, normalized, or deleted. F03 does not pass until the Operator signs a disposition for each of the 29 rows. M20 must retain unresolved assets.
+## V003-F03 integrity-validation addendum — 2026-10-12
+
+A focused validation was rerun against the 29 F03 inventory rows. **29 rows were parsed; 29/29 current paths exist; all 29 file sizes and raw SHA-256 values match the report and the M01 `FH-ASSET` baseline rows; and all 29 current files are byte-identical to their Git blobs at the F03 branch HEAD.** The M01 asset ledger contains 38 total FH-ASSET rows, including the 29 source-only records and nine previously identified as matching FootHive project assets. Validation result: **29 checked, 0 discrepancies**.
+
+The inventory search also recorded: the separate FootHive project `assets/` folder contained 11 files and no hash match for these 29 source-only items; five website text/source files contained no exact filename references to them; the four Markdown catalogs contain 32 broken relative image links (9 boot, 9 classic, 4 sneaker, 10 Timberland). These results describe the inspected paths and files only; they do not prove that no external or uninspected consumer exists. No links were repaired.
+
+### Validation-command correction record
+
+An initial broad PowerShell table selector included unrelated numeric tables and failed to parse nonnumeric cells; its 49 reported “failures” were validation-script parsing errors, not asset mismatches. A subsequent inline Python invocation also failed because Windows PowerShell stripped the embedded quoting. Neither attempt changed any source or evidence file. I replaced both with a temporary Python verifier scoped to the F03 table, corrected its comma-formatted byte-count parsing, obtained the 29/29 result above, and removed the temporary verifier afterward.
+
+### Current F03 gate
+
+The inventory and evidence are complete. The per-file Operator disposition remains pending. The proposed disposition for each of the 29 table entries is retention unchanged at its current legacy source path; no move, copy, rename, edit, normalization, or deletion has occurred. Do not treat “deferred/retained historical” in the earlier M01/M15 ledger as a signed F03 Operator decision. F03 is not disposition-closed or PASS until the Operator answers the explicit per-file decision request recorded in the Phase 03 conversation.

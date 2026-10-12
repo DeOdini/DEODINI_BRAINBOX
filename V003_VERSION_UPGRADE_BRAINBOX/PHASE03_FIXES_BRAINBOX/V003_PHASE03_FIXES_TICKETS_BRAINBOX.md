@@ -1,6 +1,6 @@
 # V003 Phase 03 — Detailed Proposed Fix Ticket Set
 
-**STATUS (2026-10-12):** V003-F01 search/disposition evidence and independent verification are recorded; renewed M21 review and acceptance remain pending. V003-F04/F03/F05/F06 are individually authorized for Batch B in that order. Other F-tickets remain draft and unauthorized.
+**STATUS (2026-10-12):** V003-F01 search/disposition evidence and independent verification are recorded; renewed M21 review and acceptance remain pending. V003-F04 evidence/disposition PASS. V003-F03 inventory evidence complete with per-file Operator disposition pending; F05/F06 remain authorized and pending in Batch B order. Other F-tickets remain draft and unauthorized.
 **VERSION:** V003
 **CONVENTION:** Always use full `V003-F01` through `V003-F16`, even though proposed execution order is non-numeric.
 **AUTHORITIES:** Frozen V003 Specification §§25–27; Origin Conversation; active Governance; Phase 02 P14 and ticket evidence pattern; actual original-source ledger.
@@ -210,3 +210,14 @@ The F04 evidence commit `da2569211e868737f806df7373b71acf582e7e73` was pushed to
 **Operator decision:** “YES” to retaining both named historical records unchanged at current source paths, with no move/copy/rename/deletion.
 
 **Current F04 status:** **PASS — evidence and per-source disposition complete.** Both sources match their M01 SHA-256 and Git blob baselines. `M17-DEST-01` is resolved for the two records by `RETAIN AT CURRENT SOURCE PATH`. This is a binding retention disposition for M20; no source operation was performed. The planned Router/Agentic milestone records remain separate and `[PLANNED]`.
+
+
+## V003-F03 execution update — 2026-10-12
+
+**Branch:** `v003/f03-m15-foothive-asset-disposition` (created from the published F04 closeout tip `3aa126f87ec83583ee9c3de02ac1ac0a639dcb56`).
+
+**Read-only evidence:** The 29 source-only files listed in the execution report were independently rechecked against the M01 FH-ASSET ledger and current F03 HEAD: 29/29 exist; all recorded sizes and SHA-256 values match; all 29 are byte-identical to their Git blobs. The ledger contains 38 FH-ASSET records overall, of which nine were previously matched to project assets. The separate FootHive project assets folder (11 files) had zero hash matches for the 29; five inspected site source/text files had zero exact filename references. The four Markdown catalogs have 32 unresolved relative image links. Inspection limitations and license/provenance uncertainty are recorded in the report.
+
+**Proposed disposition:** Retain each of the 29 exact entries unchanged at its present legacy source path. No asset has been modified, copied, moved, renamed, normalized, or deleted. No destination for these source assets is approved by the frozen target structure. The M01/M15 “deferred/retained historical” ledger language does not replace the explicit F03 Operator decision gate.
+
+**Gate:** Inventory evidence complete; per-file Operator decision pending; F03 is not PASS. M20 must not retire these sources absent a signed disposition and its own source-specific gate. See the exact 29-row report table and the Migration Map F03 update.
