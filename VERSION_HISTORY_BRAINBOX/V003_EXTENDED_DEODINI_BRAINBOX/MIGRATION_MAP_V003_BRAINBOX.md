@@ -2733,3 +2733,42 @@ Git blobs were read using `git rev-parse HEAD:<repository-path>` followed by `gi
 ### V003-F05 evidence publication checkpoint — 2026-10-12
 
 Evidence commit `2841dd3f5bff60e2dc6e5bfad4d0ea95ef512a54` was pushed to `v003/f05-m19-blob-byte-qualification`. A fresh fetch confirmed local HEAD, upstream tracking ref and live GitHub branch ref matched; ahead/behind was 0/0. No PR or merge was created. The Phase 03 report, conversation and ticket closeout were recorded afterward for a separate publication commit on the same branch.
+
+## Phase 03 — V003-F06 M20-REF-01 legacy source and reference audit — 2026-10-12
+
+**Ticket:** V003-F06 — broad legacy-source retirement gate
+**Branch:** `v003/f06-m20-legacy-source-reference-audit`
+**Audit scope:** the 122 file-level source rows carried in the M21 source ledger, plus the empty legacy root `BRAINBOX/` directory check. This is a source/reference audit and recommendation record; it did not authorize or perform source changes.
+
+### Baseline and recoverability
+
+The audit cross-checked all **122/122** ledger source paths against the M01 integrity manifest. The path sets match. For each file, the M01 Git blob is available at baseline commit `27e73f828bb367298442c2e621c18d1cc1ceb4f4` (**122/122**); the recorded object IDs and sizes are included in the linked audit CSV. This verifies recoverability from the repository’s current Git object history. It is not evidence of an independent backup.
+
+At the audit worktree/HEAD, **115/122** file paths are present and **7/122** are absent. Those seven are the verified zero-byte placeholders already retired under M20: the two empty legacy project pattern files, four empty legacy Skills files, and `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md`. Their M01 Git blobs remain available. The root `BRAINBOX/` directory is also absent; Git records no empty-directory object, and the audit found no file payload to restore.
+
+For the 115 present paths, **110** current physical SHA-256 values match M01. The five differing paths are post-M01 Phase 02/V003 process or authority records whose contents evolved during authorized migration. No other M01-baseline hash difference was found among the present ledger sources. These five are explicitly identified in the audit CSV; they are not classified as unexplained legacy-source edits.
+
+### Current references and mapped dispositions
+
+A tracked-text search outside this migration map found exact path and basename mentions across **143 tracked files**: **695 exact-path line matches** and **1,658 basename-only line matches**. These are textual mentions, not all Markdown links or operational dependencies. The audit CSV preserves the per-source locations and labels the exact-path and broad basename-only results separately. A mention alone is not treated as a reason to delete a source.
+
+The 122 source rows retain their M21 disposition classes in the CSV: **44 MIGRATED COPY**, **11 SPLIT**, **15 REFERENCE_ONLY**, **9 REFERENCED EXTERNAL**, **2 MIGRATED RAW COPY**, **3 RETAINED HISTORICAL**, **2 DEFERRED**, **29 Operator-approved retain-at-source (F03)**, and **7 REMOVED under M20**. This reconciles to 122 rows. The two `MILESTONES/` sources retain their separate Operator-approved unchanged-at-source disposition from F04. No approval for any other source move, copy, rename, edit, or retirement is inferred.
+
+For current source files not covered by the explicit F03/F04 decisions or M20 empty-file retirements, the F06 recommendation is **retain at the current source path pending explicit per-source Operator disposition**. This is a recommendation, not a new retention decision and not a deletion authorization. M20’s seven completed empty-placeholder retirements remain complete and are not proposed for restoration.
+
+### F06-REF-01 — stale portfolio historical-source statement
+
+The reference audit found a current factual statement that conflicts with the completed M20 retirement:
+
+- **Path:** `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md`
+- **Line:** 27
+- **Statement:** the empty `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` “remains for its separately assigned legacy review.”
+- **Evidence:** the file has no current worktree path; the M21 map records it as `REMOVED`; its zero-byte M01 Git blob remains available. In contrast, the current root README, Portfolio README, and FootHive Portfolio README correctly describe the placeholder as retired.
+
+**Classification:** non-blocking documentation-accuracy flag for the affected case-study reference; it does not undermine source integrity or authorize source restoration/deletion. **Proposed action:** correct that sentence to state the placeholder was retired under M20 and point readers to the migration map for its preserved path/digest. No edit was made in F06 because the ticket authorizes audit and proposed dispositions, not an unrelated correction. Operator decision is required before that correction is applied.
+
+### Evidence artifact
+
+The complete row-level audit, including paths, M01 size/SHA/blob IDs, current physical state/SHA, current HEAD blob availability, M21 disposition/target, reference locations, recommendation, and authority state, is recorded in [F06 M20 source/reference audit CSV](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv).
+
+**F06 execution disposition:** the scoped inventory, integrity/recoverability review, and tracked-reference audit are complete. No source was moved, copied, renamed, edited, restored, or deleted. Only the already-authorized F03/F04 retention decisions and completed M20 retirements are represented as such. Other substantive-source dispositions remain subject to explicit Operator decision; the stale sentence is reported for separate correction approval.
