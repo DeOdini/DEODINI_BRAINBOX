@@ -203,3 +203,10 @@ Both current files match the M01 SHA/blob baselines. The two planned `MILESTONES
 ### V003-F04 Git publication and disposition gate — 2026-10-12
 
 The F04 evidence commit `da2569211e868737f806df7373b71acf582e7e73` was pushed to `origin/v003/f04-m17-milestone-source-disposition`; fetch and live remote-ref checks matched local HEAD and tracking ref. The F04 report and conversation record are being published in a separate closeout commit on the same branch. The two source files remain unchanged. Final F04 status remains **EVIDENCE COMPLETE — OPERATOR DISPOSITION PENDING**, not PASS.
+
+
+### V003-F04 Operator disposition — 2026-10-12
+
+**Operator decision:** “YES” to retaining both named historical records unchanged at current source paths, with no move/copy/rename/deletion.
+
+**Current F04 status:** **PASS — evidence and per-source disposition complete.** Both sources match their M01 SHA-256 and Git blob baselines. `M17-DEST-01` is resolved for the two records by `RETAIN AT CURRENT SOURCE PATH`. This is a binding retention disposition for M20; no source operation was performed. The planned Router/Agentic milestone records remain separate and `[PLANNED]`.

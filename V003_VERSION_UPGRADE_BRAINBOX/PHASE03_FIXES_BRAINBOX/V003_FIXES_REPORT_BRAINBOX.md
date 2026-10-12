@@ -280,3 +280,14 @@ The Operator was asked whether to approve retaining both files at their current 
 - No PR or merge was created. No legacy source was modified.
 
 **F04 result:** Evidence-backed source comparison PASS; final ticket disposition gate PENDING OPERATOR. This is not a Batch B closure or Phase 02 closure claim.
+
+
+## Operator disposition — V003-F04 — 2026-10-12
+
+**Operator decision (verbatim):** “YES”
+
+The Operator approved retaining both `MILESTONES/MILESTONES_MUST_README.md` and `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` unchanged at their existing paths, with no move, copy, rename, or deletion. This is the exact per-source disposition for both records. The recommendation has now become an Operator-approved disposition.
+
+**Updated result:** F04 evidence and disposition gate **PASS**. Both files match their M01 SHA-256 and Git-blob baselines; their historical role is distinct from the future `MILESTONES_BRAINBOX/` Router/Agentic records. **M17-DEST-01 is resolved for these two sources as RETAIN AT CURRENT SOURCE PATH.** M20 must honor that retention decision; it is not permission to retire these files. No source mutation was performed.
+
+The prior report status “Operator source disposition pending” was accurate when first written and is superseded by this dated decision addendum.

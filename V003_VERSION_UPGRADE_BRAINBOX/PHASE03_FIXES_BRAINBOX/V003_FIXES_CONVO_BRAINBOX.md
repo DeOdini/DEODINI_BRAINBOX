@@ -174,3 +174,14 @@ The Operator then supplied the full Batch B scopes for V003-F04, V003-F03, V003-
 **Operator response:** Pending when this record was written. The recommendation is to retain both at source; this remains a recommendation until the Operator answers. The two source files remain unchanged.
 
 **F04 status:** Evidence investigation is complete; the required source disposition remains open. F03 read-only inventory is proceeding independently; no F03 branch has been created yet.
+
+
+## V003-F04 Operator source disposition — 2026-10-12
+
+**Codex question (verbatim):** “For F04, do you approve retaining both `MILESTONES/MILESTONES_MUST_README.md` and `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` unchanged at their current source paths, with no move, copy, rename, or deletion?”
+
+**Operator (verbatim):** “YES”
+
+**Codex response:** “F04’s source disposition is now explicit: you approved retaining both legacy milestone files unchanged at their existing paths. The evidence report is already committed locally; I’m updating it with your decision and verifying its closeout push. The files themselves remain untouched.”
+
+**Disposition recorded:** Retain each exact source at its existing `MILESTONES/` path, unchanged. No move, canonical copy, rename, or deletion is authorized or performed. F04’s evidence and disposition gate is PASS. M17-DEST-01 is resolved for these two source records by Operator-approved retention; M20 must retain them.

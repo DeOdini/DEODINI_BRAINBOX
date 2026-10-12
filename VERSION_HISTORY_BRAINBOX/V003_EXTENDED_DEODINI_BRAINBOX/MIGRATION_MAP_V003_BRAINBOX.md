@@ -2671,3 +2671,8 @@ Evidence supports historical retention of both records at their existing paths a
 ### V003-F04 Git publication checkpoint — 2026-10-12
 
 Evidence commit `da2569211e868737f806df7373b71acf582e7e73` is present on `v003/f04-m17-milestone-source-disposition`; fetched upstream and live remote tip matched local HEAD. F04's source inventory is recorded above. The recommended disposition is to retain both original records unchanged at source, but Operator confirmation is pending. No source operation or merge occurred.
+
+
+### V003-F04 Operator disposition resolution — 2026-10-12
+
+The Operator approved retaining both `MILESTONES/MILESTONES_MUST_README.md` and `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` unchanged at their current paths. Both match their M01 SHA-256 and Git-blob baselines. Their disposition is `RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE`; no physical destination or copy is required. They remain distinct from future `MILESTONES_BRAINBOX/` Router/Agentic intent. `M17-DEST-01` is resolved for these two records. M20 must honor their retention. No move, copy, rename, rewrite, or deletion occurred.
