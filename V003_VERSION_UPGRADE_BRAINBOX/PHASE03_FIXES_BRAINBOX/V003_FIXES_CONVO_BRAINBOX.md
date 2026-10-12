@@ -185,3 +185,31 @@ The Operator then supplied the full Batch B scopes for V003-F04, V003-F03, V003-
 **Codex response:** “F04’s source disposition is now explicit: you approved retaining both legacy milestone files unchanged at their existing paths. The evidence report is already committed locally; I’m updating it with your decision and verifying its closeout push. The files themselves remain untouched.”
 
 **Disposition recorded:** Retain each exact source at its existing `MILESTONES/` path, unchanged. No move, canonical copy, rename, or deletion is authorized or performed. F04’s evidence and disposition gate is PASS. M17-DEST-01 is resolved for these two source records by Operator-approved retention; M20 must retain them.
+
+
+## V003-F04 sign-in reply and V003-F03 verification continuation — 2026-10-12
+
+**Codex commentary (verbatim):** “F04’s push was already confirmed on GitHub, so the sign-in reply did not require another authentication attempt. I’m continuing on F03: I’ll finish recording the verified 29-file inventory and source dispositions, then request your per-file retention decision before marking that ticket complete.”
+
+**Operator response to the earlier F04 authentication prompt (verbatim):** “YES I HAVE AND IF IT DOESNT WORJ, RETRY THE AUTHENTICATION ONCE MORE.”
+
+**Codex clarification:** The F04 closeout tip had already been fetched and confirmed on the live remote as `3aa126f87ec83583ee9c3de02ac1ac0a639dcb56`; therefore no authentication retry was necessary. The response is preserved as a record of the prompt, not as evidence of an additional sign-in.
+
+**V003-F03 verification result:** A scoped integrity validator checked the 29 inventory rows against the current files, M01 FH-ASSET ledger and Git blobs: 29/29 match, zero discrepancies. Four catalogs contain 32 unresolved relative image links. The separate project-assets and website-source scans, their limits, and the full per-file table are recorded in the report. No source asset was changed.
+
+**Codex question to Operator (verbatim):** “Do you approve the proposed disposition for each of all 29 source files in the V003-F03 report table—including the four Markdown catalogs and 25 product images—as: RETAIN UNCHANGED AT ITS EXISTING SOURCE PATH, with no move, copy, rename, edit, normalization, or deletion? If you do not approve that same disposition for every row, identify each file by its exact path and its separate disposition.”
+
+**Operator response:** Pending. Until an answer is recorded, the 29 source files remain untouched, the proposed retention is not an approved disposition, and V003-F03 is not PASS.
+
+
+## V003-F03 evidence push and Operator disposition prompt — 2026-10-12
+
+**Operator response to F03 authentication prompt (verbatim):** “I completed sign-in”
+
+**Codex commentary (verbatim):** “The F03 evidence branch push completed after your sign-in. I’m checking that the live remote tip matches the local commit, then I’ll record the publication outcome and present the exact 29-file disposition choice.”
+
+**Publication verification:** Evidence commit `8151a14596fe427f6b532b63472c36921a0f2bf8` was pushed on `v003/f03-m15-foothive-asset-disposition`. A fresh fetch, local HEAD, tracking ref and live `git ls-remote` all returned the same commit. No PR or merge was opened. The commit contains inventory evidence and the F03 status/map updates; no source assets were changed.
+
+**Codex disposition request:** “Do you approve the proposed disposition for each of all 29 source files in the V003-F03 report table—including the four Markdown catalogs and 25 product images—as: RETAIN UNCHANGED AT ITS EXISTING SOURCE PATH, with no move, copy, rename, edit, normalization, or deletion? If you do not approve that same disposition for every row, identify each file by its exact path and its separate disposition.”
+
+**Operator answer:** Pending when this record was updated. F03 remains not PASS until the per-file decision is recorded. The 29 source files remain unchanged.

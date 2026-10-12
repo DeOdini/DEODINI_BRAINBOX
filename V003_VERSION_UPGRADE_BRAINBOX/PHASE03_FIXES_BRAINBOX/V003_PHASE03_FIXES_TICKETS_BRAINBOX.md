@@ -221,3 +221,6 @@ The F04 evidence commit `da2569211e868737f806df7373b71acf582e7e73` was pushed to
 **Proposed disposition:** Retain each of the 29 exact entries unchanged at its present legacy source path. No asset has been modified, copied, moved, renamed, normalized, or deleted. No destination for these source assets is approved by the frozen target structure. The M01/M15 “deferred/retained historical” ledger language does not replace the explicit F03 Operator decision gate.
 
 **Gate:** Inventory evidence complete; per-file Operator decision pending; F03 is not PASS. M20 must not retire these sources absent a signed disposition and its own source-specific gate. See the exact 29-row report table and the Migration Map F03 update.
+
+
+**Git publication:** Evidence commit `8151a14596fe427f6b532b63472c36921a0f2bf8` was pushed to `v003/f03-m15-foothive-asset-disposition`. A fetch and `git ls-remote` confirmed local HEAD, upstream and GitHub branch tip match. No PR/merge. Report/conversation closeout is pending; source disposition is still awaiting Operator response.

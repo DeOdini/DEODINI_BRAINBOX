@@ -361,3 +361,13 @@ An initial broad PowerShell table selector included unrelated numeric tables and
 ### Current F03 gate
 
 The inventory and evidence are complete. The per-file Operator disposition remains pending. The proposed disposition for each of the 29 table entries is retention unchanged at its current legacy source path; no move, copy, rename, edit, normalization, or deletion has occurred. Do not treat “deferred/retained historical” in the earlier M01/M15 ledger as a signed F03 Operator decision. F03 is not disposition-closed or PASS until the Operator answers the explicit per-file decision request recorded in the Phase 03 conversation.
+
+
+### V003-F03 evidence publication checkpoint — 2026-10-12
+
+- Evidence commit: `8151a14596fe427f6b532b63472c36921a0f2bf8` — `Record V003-F03 FootHive asset inventory evidence`.
+- Dedicated branch: `v003/f03-m15-foothive-asset-disposition`.
+- Push succeeded after the Operator completed the GitHub sign-in prompt.
+- Fetch, local HEAD, upstream tracking ref, and live `git ls-remote` all returned `8151a14596fe427f6b532b63472c36921a0f2bf8`.
+- No PR or merge was created. No asset source was changed.
+- F03 remains **inventory evidence complete; per-file Operator disposition pending; not PASS**. The separately asked disposition question covers each of the 29 numbered report rows. Do not proceed to source movement or retirement based on the proposed retention alone.

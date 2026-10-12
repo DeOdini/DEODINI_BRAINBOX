@@ -2688,3 +2688,8 @@ The Operator approved retaining both `MILESTONES/MILESTONES_MUST_README.md` and 
 - Existing M01/M15 rows label the 29 items deferred/retained historical and identify no approved asset destination. That remains a description of current location and earlier disposition state; it does not substitute for the F03 per-file Operator decision now requested.
 - Proposed per-file decision: retain each of the 29 exact source records unchanged at its existing path. Operator answer pending. Rights/licensing are not established. No copy, move, rename, edit, normalization, link repair, or deletion was performed.
 - **Source-removal eligibility:** not approved. **Dependent destructive cleanup:** prohibited pending explicit disposition and the M20 source-retirement gates.
+
+
+### V003-F03 publication state — 2026-10-12
+
+F03 evidence commit `8151a14596fe427f6b532b63472c36921a0f2bf8` is pushed on `v003/f03-m15-foothive-asset-disposition`; local HEAD, tracking ref, and live remote tip match. No PR or merge. Per-file Operator disposition for the 29 source-only files remains pending; the proposal is not an applied or approved disposition.

@@ -6,7 +6,7 @@
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
 **POPULATION:** [PHASE 03 PLANNING; F01 SEARCH/DISPOSITION AND INDEPENDENT VERIFICATION RECORDED; F04 EVIDENCE/DISPOSITION PASS; F03 INVENTORY COMPLETE / SOURCE DISPOSITION PENDING; F05/F06 AUTHORIZED / PENDING]
-**LAST UPDATED:** 2026-10-12 — Codex; F01 disposition confirmed; F04 retention disposition approved by Operator; F03 29-file integrity/reference inventory recorded; per-file retention choice pending.
+**LAST UPDATED:** 2026-10-12 — Codex; F01 disposition confirmed; F04 retention disposition approved by Operator; F03 inventory evidence pushed; per-file retention choice pending.
 
 ## Local tree
 ```text
