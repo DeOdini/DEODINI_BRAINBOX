@@ -1,12 +1,22 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE - AUTHORIZED] - Batches A-D closed; M01-M18 independently verified and merged. M19-M20 independently verified/published but unmerged. M21 snapshot/map and source ledger independently checked (2026-10-11); M21-GIT-01 independently confirmed BLOCKING. M21 NOT ACCEPTED; Operator checkpoint recovery/disposition and explicit closure approval remain pending. Batch E unmerged; source safeguards remain open.
+**Status:** [ACTIVE - AUTHORIZED] - Batches A-D closed; M01-M18 independently verified and merged. M19-M20 independently verified/published but unmerged. M21 snapshot/map and source ledger independently checked (2026-10-11); M21-GIT-01 remains BLOCKING. The Operator-approved limited-unavailability disposition covers the 20 checkpoint SHAs only within searched sources; renewed M21 verification and explicit Operator acceptance remain pending. M21 NOT ACCEPTED; Phase 02 OPEN. Batch E unmerged; source safeguards remain open.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
 **MENTAL MODEL:** Phase 01 froze the target; Phase 02 compares the live Brainbox against that target and migrates through individually scoped V003-Mxx tickets covered by the Operator's explicit M01–M21 set authorization, with each ticket subject to dependencies and P14 preflight.
 **GOVERNED BY:** The frozen V003 Specification, Origin Conversation, P14 migration preflight, the V003 parent README, and the Operator's explicit approval of V003-M01–M21 recorded in the Phase 02 report/conversation.
-**LAST VERIFIED:** 2026-10-11 - ChatGPT independent M21 snapshot/ledger/links and checkpoint-object review completed; M21-GIT-01 BLOCKING, M21 NOT ACCEPTED, Phase 02 OPEN.
+**LAST VERIFIED:** 2026-10-12 - Codex F15 current-status routing and README-link check; M08/M20 status and the F01 limited-unavailability disposition reconciled. M21 remains unaccepted pending renewed review and Operator acceptance.
+
+## Current-status routing - 2026-10-12
+
+This index supersedes the older PENDING and CORRECTION REQUIRED entries below for current navigation. Those entries remain intact as dated checkpoints.
+
+- **M08:** Independent verification PASS; PR #25 merged. The 2026-10-09 PENDING line is superseded by the later verification and Batch B closure overrides below.
+- **M20:** The correction was independently verified PASS on 2026-10-11. Its implementation remains published but unmerged. The 2026-10-10 PENDING/CORRECTION REQUIRED text below records the earlier review checkpoint; source-specific safeguards remain active.
+- **M21-GIT-01:** Operator approved the bounded limited-unavailability disposition for the 20 checkpoint SHAs within the sources searched. Renewed M21 verification and explicit Operator acceptance remain pending; M21 is not accepted and Phase 02 remains open.
+
+For the F01 disposition record, see [Phase 03 fixes report](../PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md).
 
 ## Authority boundary
 
