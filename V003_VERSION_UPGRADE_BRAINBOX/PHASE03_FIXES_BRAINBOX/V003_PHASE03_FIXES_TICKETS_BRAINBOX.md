@@ -363,3 +363,6 @@ For each file, default `git hash-object` failed with “Filename too long” (ex
 
 
 **Formal flag:** V003-F14-METHOD-01 is classified BATCH-DEFERRED / NON-BLOCKING. The line-54 request to use a “stated parser” has no parser implementation in the reviewed active records. The current regex/method is fully recorded in V003_FIXES_REPORT_BRAINBOX.md; it reproduces the recorded count and all 38 corrected targets were verified. The missing historical parser provenance does not affect F07 or the file-by-file path result. Present the limitation to the Operator at Batch C acceptance.
+
+
+**Final closeout publication:** Phase 03 documentation commit c21a2789af6f2fc229dc9e915f7ca422df1fa141 was pushed on v003/f07-t23-windows-path-compatibility. Fresh fetch returned exit code 0 and the local HEAD equals the origin tracking ref. The earlier branch matrix captures the pre-closeout F07 result commit ee2fe63; c21a2789 is the later documentation tip. The final status command timed out in RDC; no edits followed the commit.

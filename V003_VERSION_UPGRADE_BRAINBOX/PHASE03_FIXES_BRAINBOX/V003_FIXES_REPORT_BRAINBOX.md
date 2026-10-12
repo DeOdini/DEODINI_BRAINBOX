@@ -695,3 +695,10 @@ Remote Desktop Commander PowerShell was used for read-only source inspection, SH
 - **Classification and reason:** BATCH-DEFERRED / NON-BLOCKING. The outstanding item is method provenance only; the bounded result and every corrected target are independently reproducible.
 - **Proposed correction:** Retain the exact regex and scope in this report. If the historical parser becomes available, compare it separately; do not retroactively claim equivalence.
 - **Timing / owner:** Recorded by Codex during F14 closeout; present to the Operator at Batch C acceptance. No source or asset change is pending.
+
+
+## Final Batch C closeout publication update — 2026-10-12
+
+The Phase 03 report/conversation/status closeout was committed as c21a2789af6f2fc229dc9e915f7ca422df1fa141 and pushed to v003/f07-t23-windows-path-compatibility. A fresh fetch completed with exit code 0; local HEAD and refs/remotes/origin/v003/f07-t23-windows-path-compatibility both resolve to c21a2789af6f2fc229dc9e915f7ca422df1fa141. The earlier branch table above records the pre-closeout F07 ticket-result checkpoint ee2fe63; c21a2789 is the later report/conversation closeout tip.
+
+The push succeeded. A final git status scan timed out at the RDC request layer after the push; the four staged Phase 03 files were included in the reported commit, and no file edits were made after that commit. The earlier clean status was recorded immediately before the four documentation edits.
