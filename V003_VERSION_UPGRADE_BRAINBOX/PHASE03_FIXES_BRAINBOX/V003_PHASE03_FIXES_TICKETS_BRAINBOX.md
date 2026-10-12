@@ -1,6 +1,6 @@
 # V003 Phase 03 — Detailed Proposed Fix Ticket Set
 
-**STATUS:** V003-F01 read-only investigation individually authorized and completed; Operator disposition and independent verification pending. V003-F02–F16 remain draft and unauthorized.
+**STATUS (2026-10-12):** V003-F01 search/disposition evidence and independent verification are recorded; renewed M21 review and acceptance remain pending. V003-F04/F03/F05/F06 are individually authorized for Batch B in that order. Other F-tickets remain draft and unauthorized.
 **VERSION:** V003
 **CONVENTION:** Always use full `V003-F01` through `V003-F16`, even though proposed execution order is non-numeric.
 **AUTHORITIES:** Frozen V003 Specification §§25–27; Origin Conversation; active Governance; Phase 02 P14 and ticket evidence pattern; actual original-source ledger.
@@ -146,3 +146,40 @@ Operator decisions received explicitly:
 **CODEX RESULT:** All 20 source-listed checkpoint SHAs are individually classified as **not found in searched sources**. Search coverage and the exact SHA-by-SHA table are recorded in `V003_FIXES_REPORT_BRAINBOX.md`. This does not establish global unavailability; the Operator disposition remains pending.
 
 **CURRENT GATE:** V003-F01 remains **OPEN — OPERATOR DISPOSITION AND CHATGPT INDEPENDENT VERIFICATION PENDING**. M21-GIT-01 remains blocking. M21 and Phase 02 are not accepted/closed. V003-F02–F16 remain draft and unauthorized.
+
+---
+
+## Operator disposition — V003-F01 historical checkpoint availability — 2026-10-11
+
+**Decision:** The Operator directed ChatGPT to record the previously recommended LIMITED UNAVAILABILITY disposition for the 20 original M01 Cline checkpoint commit objects. This is a present-date risk/disposition record, NOT a claim that the original SHAs were never recorded, never existed, or are irrecoverable worldwide.
+
+**Record identity and population:** The original SHA inventory in `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` remains **[POPULATED]**. Frozen V003 Specification §6 defines [ACTIVE], [POPULATED], [EMPTY], [PLANNED], [DEPRECATED], [REFERENCE]; it does not establish [UNAVAILABLE] or [NOT POPULATED] as population states. The commit recovery finding is therefore an **evidence-status annotation**, not a new folder-population status.
+
+**Evidence status:** `20/20 historical checkpoint objects — NOT FOUND IN SEARCHED SOURCES AS OF 2026-10-11`. Brainbox local Git object check: 0/20 readable; GitHub repository direct commit lookups: Codex reported 0/20; `DeOdini/pedestal-archive` GitHub direct commit lookups: independently confirmed 0/20. Codex reported 0/20 across 13 local Git repositories and inspected C:-drive candidate bundles, ZIPs and backup locations; other offline drives, private/external/cloud snapshots and undiscovered recovery sources were not checked comprehensively. SHA strings remain present in historical migration map and F01 report.
+
+**Operator-accepted limitation:** Preserve full 20-SHA ledger and M01 original observation without alteration. Document that original commit contents remain unrecovered, whereabouts and loss mechanism UNKNOWN, and other unsearched storage might yet carry them. Treat this historical limitation as recorded rather than insist on speculative reconstruction or more searches solely to pursue Phase 03 planning. If a new credible source is identified later, re-open read-only assessment without inventing objects or authorship.
+
+**Authority boundary:** This does NOT authorize Git gc/prune, reflog expiry, history rewrite, replacement SHAs, object/ref restoration, source deletion, forced push, branch merge, deployment, or any automatic M21 PASS. `M21-GIT-01` remains a historical evidence limitation pending an explicit **renewed M21 closeout review and independent verification** under Operator acceptance authority. `V003-F01` search/report phase completed and its limited-unavailability decision recorded; ticket final verification/Operator acceptance remains a separate gate. No claim is made that all Git-history recovery risks have been eliminated.
+
+**Publication state:** Local documentation append only. Do not claim committed/pushed unless subsequently authorized and independently confirmed.
+
+---
+
+## Current execution / authorization reconciliation — 2026-10-12
+
+### V003-F01 status
+
+The Operator confirmed that “PROCEED WITH TO RECORDING YOUR REPORT ACCORDINGLY TO YOUR SUGGESTIONS” approved recording the bounded limited-unavailability disposition. The 20 SHA findings remain limited to searched sources; this does not claim global irrecoverability. Codex independently rechecked the active repository and found 0/20 readable. The ChatGPT verification and its search-coverage limitation are recorded in the report.
+
+**Current gate:** F01’s search, bounded disposition, and independent verification are documented. Renewed M21 review and Operator acceptance remain pending; M21-GIT-01 still blocks M21/Phase 02 closure.
+
+### Batch B ticket authorization — 2026-10-12
+
+The Operator authorized these tickets in the order shown, each on its own branch:
+
+1. **V003-F04:** inspect/hash the two legacy milestone sources, establish purpose/references/non-equivalence, and present retention-versus-destination choices. No move, rename, copy-as-canonical, or retirement without Operator choice.
+2. **V003-F03:** inventory all 29 FootHive product/catalog source-only files, hashes, consumers, and proposed dispositions. No per-file source operation without Operator-signed disposition.
+3. **V003-F05:** reproduce source/working/Git-blob byte comparison for the 45-file manifest and document line-ending or other differences. Do not normalize or rewrite historical source.
+4. **V003-F06:** audit legacy sources, authority and incoming references and propose source-by-source dispositions. No deletion or retirement without explicit approval.
+
+The work may produce complete evidence/proposals while a material disposition remains pending. Such tickets must not be reported as disposition-closed until the corresponding Operator choices and any required independent verification are complete.

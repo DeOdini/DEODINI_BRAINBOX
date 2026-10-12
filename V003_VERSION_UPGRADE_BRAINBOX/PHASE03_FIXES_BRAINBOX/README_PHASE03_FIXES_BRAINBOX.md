@@ -1,12 +1,12 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 FRAMEWORK APPROVED; V003-F01 READ-ONLY INVESTIGATION AUTHORIZED AND COMPLETED; OPERATOR DISPOSITION PENDING]
+**STATUS:** [PHASE 03 FRAMEWORK APPROVED; V003-F01 DISPOSITION RECORDED; BATCH-B V003-F04/F03/F05/F06 AUTHORIZED IN ORDER; RENEWED M21 REVIEW PENDING]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [PHASE 03 PLANNING RECORDS; V003-F01 INVESTIGATION RESULT RECORDED; OPERATOR DISPOSITION AND INDEPENDENT VERIFICATION PENDING]
-**LAST UPDATED:** 2026-10-11 — Codex; independent ChatGPT verification pending.
+**POPULATION:** [PHASE 03 PLANNING; F01 SEARCH/DISPOSITION AND INDEPENDENT VERIFICATION RECORDED; BATCH B AUTHORIZED; F04 PREFLIGHT PENDING]
+**LAST UPDATED:** 2026-10-12 — Codex; F01 disposition confirmed by Operator; Batch B authorized.
 
 ## Local tree
 ```text
@@ -14,7 +14,7 @@ PHASE03_FIXES_BRAINBOX/
 ├── README_PHASE03_FIXES_BRAINBOX.md
 ├── V003_FIXES_REPORT_BRAINBOX.md
 ├── V003_FIXES_CONVO_BRAINBOX.md
-└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 AUTHORIZED; F02–F16 DRAFT]
+└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; F04/F03/F05/F06 authorized; other tickets draft]
 ```
 
 ## Navigation
@@ -29,7 +29,7 @@ PHASE03_FIXES_BRAINBOX/
 - [Migration Map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 
 ## Safeguards
-Use full `V003-Fxx` identifiers; proposed batch order does not change IDs. Preserve Phase 02 records intact. The Operator explicitly adopted Phase 02's blocking versus batch-deferred flag model for Phase 03 on 2026-10-11. Ticket-specific authorization is still required. This F01 instruction authorizes publication of F01 records only; it does not authorize object restoration/manipulation, merge, source retirement, history rewrite, M21 acceptance or V003 closure.
+Use full `V003-Fxx` identifiers; proposed batch order does not change IDs. Preserve Phase 02 records intact. The Operator explicitly adopted Phase 02's blocking versus batch-deferred flag model for Phase 03 on 2026-10-11. Ticket-specific authorization is still required. The 2026-10-11 F01 instruction authorized publication of F01 records. The Operator separately authorized Batch B inventory, comparison, reference-audit, proposal work, and ticket-scoped Git publication on 2026-10-12. Neither instruction authorizes checkpoint-object restoration/manipulation, source moves or retirement without the stated Operator choices, merge, history rewrite, M21 acceptance, or V003 closure.
 
 ---
 

@@ -2606,3 +2606,27 @@ Independent complete filesystem/snapshot comparison: **289 directories / 460 fil
 Retain `M15-ASSET-01`, `M17-DEST-01`, `M19-HIST-01`, `M20-REF-01` as source-specific restrictions. M21 snapshot and source-ledger publication do not grant retirement, deployment, Git cleanup, Phase 02 closure or future Router capability authority.
 
 **Final verdict: M21 EVIDENCE PARTIALLY VERIFIED; OVERALL ACCEPTANCE BLOCKED.**
+
+---
+
+## Operator disposition — V003-F01 historical checkpoint availability — 2026-10-11
+
+**Decision:** The Operator directed ChatGPT to record the previously recommended LIMITED UNAVAILABILITY disposition for the 20 original M01 Cline checkpoint commit objects. This is a present-date risk/disposition record, NOT a claim that the original SHAs were never recorded, never existed, or are irrecoverable worldwide.
+
+**Record identity and population:** The original SHA inventory in `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` remains **[POPULATED]**. Frozen V003 Specification §6 defines [ACTIVE], [POPULATED], [EMPTY], [PLANNED], [DEPRECATED], [REFERENCE]; it does not establish [UNAVAILABLE] or [NOT POPULATED] as population states. The commit recovery finding is therefore an **evidence-status annotation**, not a new folder-population status.
+
+**Evidence status:** `20/20 historical checkpoint objects — NOT FOUND IN SEARCHED SOURCES AS OF 2026-10-11`. Brainbox local Git object check: 0/20 readable; GitHub repository direct commit lookups: Codex reported 0/20; `DeOdini/pedestal-archive` GitHub direct commit lookups: independently confirmed 0/20. Codex reported 0/20 across 13 local Git repositories and inspected C:-drive candidate bundles, ZIPs and backup locations; other offline drives, private/external/cloud snapshots and undiscovered recovery sources were not checked comprehensively. SHA strings remain present in historical migration map and F01 report.
+
+**Operator-accepted limitation:** Preserve full 20-SHA ledger and M01 original observation without alteration. Document that original commit contents remain unrecovered, whereabouts and loss mechanism UNKNOWN, and other unsearched storage might yet carry them. Treat this historical limitation as recorded rather than insist on speculative reconstruction or more searches solely to pursue Phase 03 planning. If a new credible source is identified later, re-open read-only assessment without inventing objects or authorship.
+
+**Authority boundary:** This does NOT authorize Git gc/prune, reflog expiry, history rewrite, replacement SHAs, object/ref restoration, source deletion, forced push, branch merge, deployment, or any automatic M21 PASS. `M21-GIT-01` remains a historical evidence limitation pending an explicit **renewed M21 closeout review and independent verification** under Operator acceptance authority. `V003-F01` search/report phase completed and its limited-unavailability decision recorded; ticket final verification/Operator acceptance remains a separate gate. No claim is made that all Git-history recovery risks have been eliminated.
+
+**Publication state:** Local documentation append only. Do not claim committed/pushed unless subsequently authorized and independently confirmed.
+
+---
+
+## V003-F01 Operator disposition confirmation — 2026-10-12
+
+The Operator confirmed that the recorded response “PROCEED WITH TO RECORDING YOUR REPORT ACCORDINGLY TO YOUR SUGGESTIONS” was approval of the limited-unavailability disposition for the 20 historical checkpoint objects. The disposition is expressly bounded to searched sources; it does not establish global irrecoverability, cause, or nonexistence. Codex independently rechecked the active repository and found 0/20 readable. ChatGPT’s independent report records that broader searches were not all repeated by ChatGPT.
+
+**Status:** F01 search/disposition evidence recorded; renewed M21 review and Operator acceptance remain pending. M21-GIT-01 continues to block M21/Phase 02 closure. No Git object manipulation, GC, prune, source deletion, or history rewrite is authorized.

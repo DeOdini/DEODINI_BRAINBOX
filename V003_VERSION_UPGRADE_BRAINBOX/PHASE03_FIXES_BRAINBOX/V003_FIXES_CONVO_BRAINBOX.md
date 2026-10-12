@@ -93,3 +93,69 @@ This section records the visible Operator/Codex dialogue for this ticket. Search
 **Codex commentary (verbatim):** “The first F01 push is still running and hasn’t returned a result yet. I’m checking its process state before I proceed to the post-push report, so I can distinguish a completed push from an authentication wait.”
 
 **Publication status at this record:** Phase 02 push and F01 first documentation push were confirmed. The detailed F01 evidence report and this dialogue record are being added as the follow-up publication requested by the Operator. No Operator disposition of the 20 SHAs has yet been made; no independent ChatGPT verification or M21 closure is claimed.
+
+---
+
+# V003-F01 — Operator-requested independent Codex verification — 2026-10-11
+
+**Operator (verbatim request):** "CONFIRM CODEX CLAIMS AND RECORD YOUR REPORT AND CONVO ACCORDNINGLY"
+**Operator-provided Codex statement:** Phase 02 `cdac062` pushed; F01 branch `cec841237fe28989becc023983ffc72505aabaee` matches local HEAD/remote and is clean; the F01 three commits are `f7904f6`, `de92445`, `cec8412`. Read-only 20-SHA search across 13 local repositories, GitHub commit lookups, candidate bundles/ZIPs and backups found no matching SHA in searched sources; only visible C: inspected; no restore/cleanup/history rewrite. F01 and M21-GIT-01 remain open/blocking. Operator is requested to identify another source or approve a limited documented-unavailability disposition.
+
+**ChatGPT independent investigation:** Confirmed via live remote branch refs that Phase 02 is at `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e` and F01 at `cec841237fe28989becc023983ffc72505aabaee`. Verified clean pre-recording local F01 checkout, direct commit chain, and M21 commit ancestry. Parsed the 20 distinct SHAs in F01 report and independently tested each in the active Brainbox repository: 0/20 readable. Other repositories/backups/GitHub REST were read as Codex report evidence and not all repeated by ChatGPT.
+
+**ChatGPT verdict:** Publication PASS and current repository SHA absence independently confirmed; broader search coverage remains Codex-reported. V003-F01 OPEN; M21-GIT-01 BLOCKING; no M21 acceptance. No fix performed. Independent report appended to V003_FIXES_REPORT_BRAINBOX.md. This recording may dirty the formerly clean worktree. **Inputted by:** ChatGPT; Operator authored request.
+
+---
+
+## Operator → ChatGPT — V003-F01 limited-unavailability recording instruction — 2026-10-11
+
+**Operator (verbatim):** "PROCEED WITH TO RECORDING YOUR REPORT ACCORDINGLY TO YOUR SUGGESTIONS."
+
+**Antecedent decision:** The Operator stated that, if the 20 commits were absent from inspected DEODINI and pedestal-archive records, they could be marked unavailable **at the moment of decision**, as a historical recordkeeping limitation rather than a demonstrated live development dependency. ChatGPT independently checked 20/20 identifiers in DeOdini/pedestal-archive GitHub commit lookups: none returned a commit; local DEODINI Brainbox Git checks also found none. ChatGPT clarified that the SHA strings DO exist in the populated M01 Migration Map and the Phase 03 F01 report.
+
+**ChatGPT recording action:** Added a dated limited-unavailability disposition to Phase 03 report/ticket status and Migration Map, using [POPULATED] for the historical ledger and 'NOT FOUND IN SEARCHED SOURCES AS OF 2026-10-11' as a descriptive evidence finding (not an invented Governance population code). Prior M01 findings preserved intact. No checkpoint object operations, restoration, source changes, commit, push or merge authorized by this recording instruction.
+
+**Decision interpretation:** Operator accepts a bounded historical recovery limitation, NOT global irrecoverability. F01 final independent/Operator closure review and renewed M21 acceptance remain distinct steps. **Inputted by:** ChatGPT; Operator retains decision authorship.
+
+---
+
+## Operator confirmation and Batch B authorization — 2026-10-12
+
+**Codex clarification question (verbatim):** “The pending Phase 03 edits say you approved a limited-unavailability disposition for the 20 F01 checkpoint SHAs. The exact response recorded is ‘PROCEED WITH TO RECORDING YOUR REPORT ACCORDINGLY TO YOUR SUGGESTIONS,’ after a report describing options. Was that intended as your approval of the limited-unavailability disposition?”
+
+**Operator (verbatim):** “Yes, that was my approval”
+
+**Codex response:** “Thanks; I’ll record that as your approval of the limited-unavailability disposition for the 20 checkpoint objects within the searched-source boundary. The 20 SHA checks still read 0/20 in this repository, and I’ll keep M21/Phase 02 closure pending a renewed M21 review.”
+
+**Operator authorization (verbatim):** “CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE FOR PHASE03, ONCE DONE, NOW PROCEED TO BATCH B , ONCE YOU ARE DONE, PROCEED TO STAGE, COMMIT AND PUSH ALL OF THE FIXES EACH TICKET AT A TIME TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.”
+
+The Operator then supplied the full Batch B scopes for V003-F04, V003-F03, V003-F05, and V003-F06. Execution order is F04 → F03 → F05 → F06; each receives its own branch and ticket-scoped commits. This authorizes the documented inventory, comparison, reference audit, and proposal work described in each scope. It does not authorize source moves, copies, renames, normalization, or deletion without the ticket’s stated per-source Operator decision.
+
+**Inputted by:** ChatGPT/Codex recorder. Operator quotations retain Operator authorship.
+
+
+### Full Operator Batch B instruction (verbatim) — 2026-10-12
+
+> CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE FOR PHASE03, ONCE DONE, NOW PROCEED TO BATCH B , ONCE YOU ARE DONE, PROCEED TO STAGE, COMMIT AND PUSH ALL OF THE FIXES EACH TICKET AT A TIME TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+>
+> **## BATCH-B — source-specific stop decisions (simplest first)**
+>
+> **### V003-F04 — M17-DEST-01 two legacy milestone sources**
+> **Class:** CONDITIONAL STOP (affected move/retire); **effort:** LOW–MEDIUM; **depends:** approved source policy.
+> **Sources:** root `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md`, `MILESTONES/MILESTONES_MUST_README.md` versus two V003 `MILESTONES_BRAINBOX` planned capability records.
+> **Draft work:** Document exact hash, purpose, references and non-equivalence of Router milestones; Operator chooses historical retention vs explicit destination. **Pass:** disposition for both with evidence and no unauthorized deletion/Router claim.
+>
+> **### V003-F03 — M15-ASSET-01 FootHive 29 product/catalog source-only files**
+> **Class:** CONDITIONAL STOP; **effort:** MEDIUM.
+> **Sources:** legacy `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX` and M15 asset ledger.
+> **Draft work:** 29/29 path, hash, consuming references and justified retention/reference/approved copy/retire proposal. **Pass:** Operator-signed disposition per file, original evidence preserved until authorized.
+>
+> **### V003-F05 — M19-HIST-01 source/target Git blob-byte qualification**
+> **Class:** HISTORICAL INTEGRITY SAFEGUARD; **effort:** MEDIUM.
+> **Sources:** FootHive Sandbox copied evidence and M19 45-file manifest, prior reported 28/45 raw-byte mismatch vs LF-normalized 45/45 match.
+> **Draft work:** Independently reproduce source/working/Git-blob byte comparison, line-ending-only or other limits; append truthful explanatory evidence, never silently normalize history. **Pass:** reproducible 45-file disposition, no unauthorized source mutation.
+>
+> **### V003-F06 — M20-REF-01 broad legacy-source retirement gate**
+> **Class:** CONDITIONAL STOP for deletion; **effort:** HIGH; **depends:** F03,F04,F05 findings when relevant.
+> **Sources:** retained DOB, AI, FUNC, Skills, PROJ and archival material enumerated in M20/M21 ledger.
+> **Draft work:** Full source-by-source authority and incoming-reference audit; propose retain/reference/move/retire by Operator decision. **Pass:** complete scoped disposition ledger with authorization and validated recoverability; retain-only is acceptable.

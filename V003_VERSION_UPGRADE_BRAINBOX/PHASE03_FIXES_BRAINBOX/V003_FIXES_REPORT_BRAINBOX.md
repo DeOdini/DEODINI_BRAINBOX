@@ -174,3 +174,63 @@ The 20 SHA entries above were cross-checked against the M01 migration-map list i
 - `git ls-remote --heads origin v003/f01-m21-git-checkpoint-recovery-disposition` returned that same commit as the remote branch tip.
 - Local HEAD also matched `de924458c0a87996223ce43819c0975e92a18755`; the worktree was clean and the branch tracked its origin branch at verification.
 - No PR or merge was created or performed.
+
+---
+
+# ChatGPT Independent Verification — V003-F01 — 2026-10-11
+
+**STATUS:** [INDEPENDENT VERIFICATION RECORDED — PARTIAL PASS / BLOCKING RESIDUAL; V003-F01 OPEN]
+**ROLE:** ChatGPT independent verifier, not Codex executor or Operator acceptance.
+**SOURCE:** Codex F01 build report/20-SHA ledger and conversation; active Desktop Commander repo; live git ls-remote and local Git object tests.
+**PRE-STATE:** Active v003/f01-m21-git-checkpoint-recovery-disposition tracking origin, clean worktree, local HEAD cec841237fe28989becc023983ffc72505aabaee.
+
+## Independently verified
+1. Live `git ls-remote origin`: refs/heads/v003/m21-final-migration-verification-closeout = `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e`; refs/heads/v003/f01-m21-git-checkpoint-recovery-disposition = `cec841237fe28989becc023983ffc72505aabaee`.
+2. Local F01 HEAD and origin tracking branch agree; `git status -sb` was clean before this verification append. Local F01 commits `f7904f6`, `de92445`, `cec8412` exist and form direct ancestry. `cdac062` is F01 branch ancestor. Original M21 report commits `621b016` and `e6b8df2` are ancestors of `cdac062`.
+3. Parsed the 20 distinct full checkpoint SHAs in the F01 report. Ran read-only `git cat-file -e <sha>^{commit}` for each against the currently active DEODINI_BRAINBOX repository: **0 readable / 20 unreadable**.
+4. Codex report enumerates 13 local repositories/worktrees, 20 GitHub repository commit GET responses recorded as HTTP 422, eight non-Git bundle candidates, two archive inspections, and several local backup locations. This independent verification READ the report but **did not independently repeat the full 13-repository / archive / GitHub REST search**, nor inspect absent/offline/network/cloud storage.
+5. Documentation says F01 search was read-only as to checkpoint objects/refs. Local verification did not audit all historical process mutations, so absence of restoration/cleanup is Codex-reported rather than independently proven across all sites.
+6. The F01 build report provides 20/20 SHA-by-SHA dispositions scoped to inspected sources, detailed search boundaries and honest unresolved Operator choice. The earlier final de92445 publication checkpoint is a historical checkpoint; cec8412 is the newer current remote tip.
+
+## Verdict and limits
+- **PASS:** Publication/commit/branch alignment claims, F01 recorded evidence presence, 20/20 unreadability in active repo, clean pre-append working tree.
+- **SUPPORTED BY CODEX REPORT, NOT FULLY INDEPENDENTLY RECHECKED:** 13 candidate repositories, ZIP/bundle searches, other local backup directories and all GitHub REST outcomes.
+- **BLOCKING:** No recovered checkpoint commit objects and no Operator documented-unavailability disposition. **V003-F01 remains OPEN; M21-GIT-01 remains BLOCKING; M21 NOT ACCEPTED; Phase 02 OPEN; no merge authorized.**
+- This entry is independently authored and appended *after* the earlier clean/remote-tip observation; this write itself makes report/conversation files modified locally until separately committed. Do not treat the prior clean-worktree claim as a post-recording status.
+- Any further read-only backup search requires an identified accessible source and ticket authorization as applicable; any object restoration, ref update, cleanup, rewrite, Git commit/push/merge requires exact separate Operator authority.
+
+**NEXT OPERATOR GATE:** (A) Supply another backup/device/path for scoped read-only search, OR (B) explicitly direct a documented-unavailability disposition **limited to sources searched**. Neither alone authorizes changing Git objects or closing M21.
+
+---
+
+## Operator disposition — V003-F01 historical checkpoint availability — 2026-10-11
+
+**Decision:** The Operator directed ChatGPT to record the previously recommended LIMITED UNAVAILABILITY disposition for the 20 original M01 Cline checkpoint commit objects. This is a present-date risk/disposition record, NOT a claim that the original SHAs were never recorded, never existed, or are irrecoverable worldwide.
+
+**Record identity and population:** The original SHA inventory in `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` remains **[POPULATED]**. Frozen V003 Specification §6 defines [ACTIVE], [POPULATED], [EMPTY], [PLANNED], [DEPRECATED], [REFERENCE]; it does not establish [UNAVAILABLE] or [NOT POPULATED] as population states. The commit recovery finding is therefore an **evidence-status annotation**, not a new folder-population status.
+
+**Evidence status:** `20/20 historical checkpoint objects — NOT FOUND IN SEARCHED SOURCES AS OF 2026-10-11`. Brainbox local Git object check: 0/20 readable; GitHub repository direct commit lookups: Codex reported 0/20; `DeOdini/pedestal-archive` GitHub direct commit lookups: independently confirmed 0/20. Codex reported 0/20 across 13 local Git repositories and inspected C:-drive candidate bundles, ZIPs and backup locations; other offline drives, private/external/cloud snapshots and undiscovered recovery sources were not checked comprehensively. SHA strings remain present in historical migration map and F01 report.
+
+**Operator-accepted limitation:** Preserve full 20-SHA ledger and M01 original observation without alteration. Document that original commit contents remain unrecovered, whereabouts and loss mechanism UNKNOWN, and other unsearched storage might yet carry them. Treat this historical limitation as recorded rather than insist on speculative reconstruction or more searches solely to pursue Phase 03 planning. If a new credible source is identified later, re-open read-only assessment without inventing objects or authorship.
+
+**Authority boundary:** This does NOT authorize Git gc/prune, reflog expiry, history rewrite, replacement SHAs, object/ref restoration, source deletion, forced push, branch merge, deployment, or any automatic M21 PASS. `M21-GIT-01` remains a historical evidence limitation pending an explicit **renewed M21 closeout review and independent verification** under Operator acceptance authority. `V003-F01` search/report phase completed and its limited-unavailability decision recorded; ticket final verification/Operator acceptance remains a separate gate. No claim is made that all Git-history recovery risks have been eliminated.
+
+**Publication state:** Local documentation append only. Do not claim committed/pushed unless subsequently authorized and independently confirmed.
+
+---
+
+## Current Phase 03 status reconciliation — 2026-10-12
+
+### V003-F01 — checkpoint-object search and disposition
+
+The Operator confirmed verbatim, “Yes, that was my approval,” referring to the recorded direction “PROCEED WITH TO RECORDING YOUR REPORT ACCORDINGLY TO YOUR SUGGESTIONS.” The bounded limited-unavailability disposition for the 20 checkpoint objects is therefore Operator-approved. It applies only to the sources searched and does not claim global irrecoverability, prove a cause of loss, or establish that the objects never existed.
+
+Codex independently rechecked all 20 listed commit IDs in the active DEODINI_BRAINBOX object database: **0/20 readable**. The F01 branch is `v003/f01-m21-git-checkpoint-recovery-disposition`; local HEAD and the live remote branch tip both equal `cec841237fe28989becc023983ffc72505aabaee`. The Phase 02 branch tip equals `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e`. The prior ChatGPT verification accurately limits its claim: it did not independently repeat all 13-repository/archive/GitHub API searches; those remain documented from Codex evidence.
+
+**Current F01 state:** Search result, Operator disposition, and independent verification are recorded. Renewed M21 review and Operator acceptance remain pending; M21-GIT-01 continues to block M21/Phase 02 closure. This record does not accept M21 or close Phase 02.
+
+### Batch B authorization and safety boundary
+
+The Operator authorized V003-F04 → V003-F03 → V003-F05 → V003-F06. Each ticket will be executed on its own branch. Permitted work is limited to the requested evidence inventory, hashing/comparison, reference audit, and proposed disposition records. The authorization does not permit moving, copying, renaming, normalizing, or deleting source material absent the ticket’s explicit per-source Operator approval. Any unresolved or unsupported destination will be recorded as such.
+
+**Publication boundary:** The current Phase 03 crosscheck edits are staged only after scoped path/status review. No PR, merge, source retirement, or Phase 02 closure is authorized here.
