@@ -2700,3 +2700,32 @@ F03 evidence commit `8151a14596fe427f6b532b63472c36921a0f2bf8` is pushed on `v00
 The Operator answered **“YES”** to the exact question applying the proposed disposition to all 29 numbered source-only rows in the F03 report table. Each of those 29 M01 FH-ASSET rows is now recorded as **RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12)**. This decision applies to the four catalogs and 25 images enumerated in the F03 report; it authorizes no move, copy, rename, edit, normalization, deletion, reuse, or publication. All 29 source files remain unchanged at their original paths.
 
 **M15-ASSET-01:** resolved for the 29 source-only files by approved retention at source. **F03:** evidence and disposition PASS. The separate nine project-asset matches remain classified as project-asset references, not these 29 source-only records. No broader M20 source-retirement authority is implied.
+
+
+
+## Phase 03 — V003-F05 M19-HIST-01 byte qualification — 2026-10-12
+
+**Ticket:** V003-F05 — M19-HIST-01 source/target Git blob-byte qualification
+**Branch:** `v003/f05-m19-blob-byte-qualification`
+**Base HEAD:** `b8099c94a7af86982290f8d73a444254ff2fd5bc` (published F03 closeout tip)
+**Manifest:** `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/EVIDENCE_FH_BRAINBOX/COPY_INTEGRITY_MANIFEST_FH_BRAINBOX.csv`
+
+The 45-row manifest was independently replayed against current physical source/target bytes and Git blobs at this branch HEAD. All 45 source paths and destination paths are unique and physically readable. All 45 source sizes and SHA-256 values match the manifest baseline. The source paths include 44 repository files plus the separately located original Deep Audit attachment; all 45 destination Git blobs were retrieved and checked. The Deep Audit source is external to this repository and has no source-side Git blob.
+
+**Reproduced results:**
+
+- Source bytes match the manifest: **45/45**.
+- Destination bytes match the manifest destination digest: **44/45**.
+- Physical source/destination pairs match byte-for-byte: **44/45**.
+- Physical pairs match after CRLF-to-LF comparison only: **45/45**.
+- In-repository source blobs retrieved: **44/44**; raw-byte matches to their physical source: **17/44**; CRLF-to-LF normalized matches: **44/44**.
+- Destination blobs retrieved: **45/45**; raw-byte matches to the original physical source: **17/45**; CRLF-to-LF normalized matches to both the source and destination worktree: **45/45**.
+- Total source bytes: **3,623,461**; total destination bytes: **3,623,595**.
+
+The only physical source/destination raw-byte mismatch is `PASSED_FH_BRAINBOX.md`: source is 15,597 bytes with 134 LF endings, SHA-256 `f21dcff41416c08810fe0b9baa159acaa322fa8648d7cfdb4ceca8bd3c627f2a`; destination is 15,731 bytes with 134 CRLF endings, SHA-256 `4146c3a8311fd44c99022f081c89dccd4d5a7f6943e2c3ac833466d9c408cfd4`. Its destination Git blob matches the source raw hash. After converting CRLF sequences to LF for comparison only, source, destination, and Git blob contents agree.
+
+Git blobs were read using `git rev-parse HEAD:<repository-path>` followed by `git cat-file blob <object-id>`; this avoided Windows long-path failures from `git show` on five T23 evidence paths. A temporary Python verifier read the 45 CSV rows, measured sizes/SHA-256 and compared raw plus CRLF-to-LF normalized bytes. It was removed after use. No repository configuration was changed, and no historical source, destination, manifest, or Git object was rewritten or normalized.
+
+**Disposition:** The earlier M19-HIST-01 question is resolved as to the nature and scope of the observed differences: all 45 source/target/Git destination contents agree after CRLF-to-LF comparison, while raw-byte identity is not universal. Preserve both source and destination histories as they stand; do not normalize or claim 45/45 raw-byte equality. This verification alone does not authorize retiring any source or override F03/F04 Operator retention decisions or the separate M20 gates.
+
+**F05 result:** evidence-backed 45-pair qualification **PASS**; historical bytes unchanged; M19-HIST-01 is documented as a bounded line-ending fidelity qualification, not a semantic-content discrepancy or blanket raw-byte PASS. M20/F06 source-retirement review must retain the raw-byte caveat where applicable.
