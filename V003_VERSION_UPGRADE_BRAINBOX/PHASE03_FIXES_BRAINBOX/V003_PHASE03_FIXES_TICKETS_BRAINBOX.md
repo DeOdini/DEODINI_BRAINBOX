@@ -319,3 +319,44 @@ The F06 CSV has 123 records (122 file paths plus the filesystem-only `BRAINBOX/`
 **Git lifecycle:** Batch B ticket-branch publication is documented. No PR or merge was performed by ChatGPT here. Batch closure and permission to begin the next batch do not grant Git PR, merge, force push, history rewrite, source retirement, or production deployment. Git publication permissions remain separately governed.
 
 **Other open gates:** V003-F01's 20 checkpoint-object historical recovery limitation and M21 acceptance remain separate from the Batch B conclusion. Phase 02 and V003 final closure are not automatically implied. **Inputted by:** ChatGPT; decision authored by Operator. **Status:** [BATCH B OPERATOR ACCEPTED / BATCH C AUTHORIZED TO PROCEED AT BATCH LEVEL].
+
+
+---
+
+## Batch C ticket outcomes — V003-F14 and V003-F07 — 2026-10-12
+
+### V003-F14 — FootHive historical links
+
+**Status:** PASS — all 38 previously unresolved local references in the bounded scope now resolve to verified existing files. The four original catalog records remain present. Only Markdown destinations changed; no image/evidence asset was moved, copied, renamed, normalized, or deleted.
+
+**Reproduction scope and method:** The five named Markdown records were scanned: the canonical Sandbox `BUILD_REPORT_FH_BRAINBOX.md` and the four legacy product-catalog Markdown files listed in the F14 ticket. No concrete parser implementation was found in the live F14 ticket, Phase 03 report/conversation, or FootHive Build Report. This run therefore used and records a bounded inline-Markdown parser: `(?<img>!)?\[[^\]]*\]\((?<d>[^)\s]+)(?:\s+[^)]*)?\)`; it skips external schemes, strips query/fragment suffixes, URL-decodes relative paths, and resolves them from the containing file directory. It is a documented regex-based reproduction, not a claim to have reproduced an unavailable earlier parser implementation. The exact parser provenance gap is recorded as non-blocking because the observed counts matched and every corrected destination was separately verified.
+
+**Observed counts:** 45 inline Markdown references total (11 ordinary links and 34 image references); 40 relative local references and 5 external references. Before correction, 4 ordinary local links and 34 Markdown image links failed resolution: 38 total. After correction, all 40 local references resolve; 0 broken local references remain in this scope.
+
+**Disposition:** The four ordinary references were the Edge T11 screenshots in the Sandbox Build Report. Two additional report image links referenced the Header Review screenshots. Their paths were updated to the existing canonical `EVIDENCE_FH_BRAINBOX/HEADER_REVIEW_FH_BRAINBOX/` and `EVIDENCE_FH_BRAINBOX/T11_RESPONSIVE_QA_FH_BRAINBOX/` locations. The 32 image links in the four source catalogs referenced nonexistent prefixed subfolders; all referenced image files exist as siblings of their catalog Markdown file, so the prefixes were removed. These are historical evidence/catalog references, not active website navigation.
+
+F03 had earlier approved retaining 29 source-only entries without move/copy/rename/edit/normalization/deletion. The later, ticket-specific F14 authorization expressly allowed correction of proven link targets. It was applied narrowly to the four Markdown destinations only; the retention, location, and binary image contents remain intact.
+
+**Integrity baseline before F14 edits (SHA-256 / bytes / lines):**
+
+| File | Before SHA-256 | Bytes | Lines |
+|---|---|---:|---:|
+| Sandbox `BUILD_REPORT_FH_BRAINBOX.md` | `83E1724B146DB02E62663B9A788B7F76CEE2A96460DC6FEE36FCBC2F97D12A9F` | 159133 | 2427 |
+| `foothive-boot-images.md` | `5BAF8F3B175791F26B884FFA8773B6BE81743220E544B7A399680ADB451869DA` | 1231 | 30 |
+| `foothive-classic-images.md` | `58386C5D00A65DD7801CB0BDD0AFA2405D4E92334E2485282AF724383444FE15` | 1218 | 30 |
+| `foothive-sneaker-images.md` | `1E645B5962F960FDDDA5A0919AD9A9CEAE1F10DAB59BA9FEFADACF036C94917F` | 573 | 15 |
+| `foothive-timberland-images.md` | `41833999931E3D0EC762F2B9A08E6D1E9FE814A53765E584DA1A96B0EF144B79` | 871 | 33 |
+
+**Git:** Fix commit `e04a5fbcc35f62b2e67f9d38c9cca644711e1a0d` was pushed to `v003/f14-foothive-historical-link-audit`. A fresh fetch confirmed local and `origin` branch refs equal; working tree was clean. The scoped diff contained exactly 38 path replacements and passed `git diff --check`.
+
+### V003-F07 — Windows T23 long-path compatibility
+
+**Status:** PASS — the Windows/Git path-length incompatibility is reproducible; the tracked evidence remains intact and accessible using a command-scoped workaround. No persistent configuration change or path rename was made.
+
+Five files under `EVIDENCE_FH_BRAINBOX/T23_MOBILE_HEADER_FH_BRAINBOX/PLAYWRIGHT_CLI_FH_BRAINBOX/` were checked. Their full Windows paths are 263 characters for the two console logs and 260 characters for the three YAML files. PowerShell successfully read all five. The merged Git configuration has no `core.longpaths` value.
+
+For each file, default `git hash-object` failed with “Filename too long” (exit 128). `git -c core.longpaths=true hash-object` succeeded for all five and returned the exact object IDs from `git rev-parse HEAD:<path>`. A temporary shared local clone was also tested: clone and `read-tree` succeeded; default `checkout-index` failed (exit 1) on the long paths; command-scoped `core.longpaths=true` then checked out all five at 280/283-character clone paths, and PowerShell read them. The temporary clone was removed after a path guard verified its exact location under the repository root.
+
+**Safe option demonstrated:** Apply `-c core.longpaths=true` to an individual Git operation requiring those paths. This is transient and was verified without changing local/global/system Git configuration. A permanent setting or evidence-folder/file rename was not authorized or performed. No T23 content was edited, moved, renamed, or deleted.
+
+**Ticket-specific branch:** `v003/f07-t23-windows-path-compatibility`, created from the pushed F14 fix commit. Batch C final report and conversation publication are recorded separately below.
