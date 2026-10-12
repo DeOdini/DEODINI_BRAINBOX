@@ -317,3 +317,12 @@ This transcript preserves the exact Batch B authorization excerpt and the Codex 
 The following Codex commentary was sent after progress-message item 4 and before item 5 above; it is placed here to preserve the exact text without rewriting the preceding conversation record:
 
 **Codex (verbatim):** “The evidence checkpoint is committed as `32fa1bd`, containing only the 123-row source/reference CSV (122 sources plus the empty-directory check) and the migration-map entry. The staged diff passed `git diff --cached --check`. I’m pushing this checkpoint now, then I’ll verify the remote before adding the report and conversation closeout.”
+
+
+### F06 closeout publication — 2026-10-12
+
+**Codex commentary (verbatim):** “The report/conversation closeout commit `4508e76` also pushed successfully. I’m doing the final fresh-fetch check now; after that I’ll record the verified closeout tip in the Phase 03 records so the ticket history shows both publication checkpoints accurately.”
+
+**Publication verification:** Closeout commit `4508e7607e62e63b15b92a175020ff9290d23ab4` was pushed to `origin/v003/f06-m20-legacy-source-reference-audit`. After a fresh `git fetch origin`, local HEAD, upstream tracking ref and origin branch ref all matched; ahead/behind was 0/0 and the worktree was clean at verification. No PR or merge was created.
+
+No further Operator response was received during this closeout step. The source-specific disposition and F06-REF-01 decision requests remain pending.

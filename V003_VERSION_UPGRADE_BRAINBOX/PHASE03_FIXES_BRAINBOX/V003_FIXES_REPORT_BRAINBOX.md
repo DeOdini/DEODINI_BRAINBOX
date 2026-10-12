@@ -518,3 +518,8 @@ The migration map carries the concise F06 result and links to this CSV. The evid
 - The complete execution report and Operator/Codex conversation closeout are being published separately on the same ticket branch.
 
 **Result:** F06’s inventory, integrity/recoverability evidence, reference audit, and scoped disposition proposals are recorded. The audit does not claim that every substantive source has an Operator-approved final disposition. F06-REF-01 awaits a separate correction decision; the other source-specific recommendations await Operator acceptance or exceptions. This Codex report is not a ChatGPT independent verification or Operator final acceptance.
+
+
+### F06 report/conversation closeout publication verification — 2026-10-12
+
+The report, conversation, README status/tree, and ticket update were committed as `4508e7607e62e63b15b92a175020ff9290d23ab4` (`Document V003-F06 legacy source audit closeout`) and pushed to `origin/v003/f06-m20-legacy-source-reference-audit`. A fresh `git fetch origin` confirmed local HEAD, upstream tracking ref, and origin branch ref all equal that commit; ahead/behind was 0/0 and the worktree was clean at verification. This completes the report publication checkpoint. The earlier statement that the closeout records “are being published separately” described the state before this successful publication.

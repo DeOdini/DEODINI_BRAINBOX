@@ -255,3 +255,8 @@ The sole physical worktree difference is `PASSED_FH_BRAINBOX.md`: the source con
 **Findings:** 122/122 source rows matched the M01 manifest and had available M01 Git blobs; 115 source files remain present and 7 previously retired zero-byte placeholders remain absent; a separate empty `BRAINBOX/` directory check found no payload. Five present process/authority records differ from the M01 physical digest because they evolved after that baseline. Exact and basename reference findings are recorded per source.
 **F06-REF-01:** stale M20 retirement statement identified at `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md:27`; correction not applied. It is a non-blocking documentation-accuracy flag, pending separate Operator decision.
 **Disposition boundary:** The existing F03/F04 Operator retention decisions and the seven completed M20 empty-file retirements are preserved. For other still-present source records, retain-at-current-path is a proposal pending per-source Operator acceptance or exceptions. No unapproved movement, copy, rename, edit, restore, or deletion is authorized.
+
+
+### V003-F06 publication verification update — 2026-10-12
+
+The report/conversation closeout commit `4508e7607e62e63b15b92a175020ff9290d23ab4` was pushed. Fresh fetch confirmed local HEAD, upstream, and origin branch equality; ahead/behind 0/0; worktree clean. This verifies publication only. Operator decisions for remaining source dispositions and F06-REF-01 are still pending.
