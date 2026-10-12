@@ -568,3 +568,19 @@ The report, conversation, README status/tree, and ticket update were committed a
 **Content commit and push:** Commit `fc082859f74ff3b30e973d85f6dbffd25b0fc056` ("Record V003-F06 decision and integrity audit") pushed to `origin/v003/f06-m20-legacy-source-reference-audit`. A fresh fetch confirmed local HEAD, upstream and origin all equal this commit; ahead/behind was 0/0. The staged set contained only the five scoped files. No source files were moved, renamed, deleted or restored. No PR or merge was created.
 
 **Disposition:** This publishes the approved correction and decision records only. V003-F06 remains open pending the required independent verification and Operator closure decision; M21 and Phase 02 are not declared closed.
+
+---
+
+## Operator Batch B closure acceptance and Batch C progression — 2026-10-12
+
+**Operator (verbatim):** "YES I APPROVE BATCH B CLOSURE AND THE PROCEEDING TO BATCH C"
+
+**Decision:** Operator expressly ACCEPTS closure of Phase 03 Batch B, comprising V003-F04, V003-F03, V003-F05, V003-F06. Prior source-specific decisions remain binding: F04 retains two legacy milestone sources unchanged; F03 retains 29 source-only FootHive assets unchanged; F05 records line-ending-only historical raw-byte qualification (not universal raw-byte parity); F06 approves retention at the current source paths and corrects F06-REF-01. Seven previously retired M20 zero-byte placeholders remain retired. Acceptance is for the recorded Batch B deliverables, with historical evidence limitations maintained rather than erased.
+
+**Prior independent F06 verification:** ChatGPT checked the published F06 commits fc082859 and ba999175, live branch ref and clean local tracking; CSV 123 rows including 122 files plus one directory check, 115 present-file SHA-256 values matched, seven retired absent, and the authorized one-sentence Portfolio correction present. F06 was then explicitly accepted through this Operator Batch B closure decision. Do not project F06's detailed checks onto other tickets as if they were repeated in this turn.
+
+**Batch C PROGRESSION APPROVED:** V003-F15 → V003-F08 → V003-F14 → V003-F07 (documentation/status consistency, legacy authority routing, historical reference qualification, Windows portability). This approves moving to the next batch under the Phase 03 framework; it does not constitute blanket permission to modify any file under every C ticket without its specifically authorized scope and preflight.
+
+**Git lifecycle:** Batch B ticket-branch publication is documented. No PR or merge was performed by ChatGPT here. Batch closure and permission to begin the next batch do not grant Git PR, merge, force push, history rewrite, source retirement, or production deployment. Git publication permissions remain separately governed.
+
+**Other open gates:** V003-F01's 20 checkpoint-object historical recovery limitation and M21 acceptance remain separate from the Batch B conclusion. Phase 02 and V003 final closure are not automatically implied. **Inputted by:** ChatGPT; decision authored by Operator. **Status:** [BATCH B OPERATOR ACCEPTED / BATCH C AUTHORIZED TO PROCEED AT BATCH LEVEL].
