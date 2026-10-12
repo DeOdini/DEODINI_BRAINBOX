@@ -584,3 +584,114 @@ The report, conversation, README status/tree, and ticket update were committed a
 **Git lifecycle:** Batch B ticket-branch publication is documented. No PR or merge was performed by ChatGPT here. Batch closure and permission to begin the next batch do not grant Git PR, merge, force push, history rewrite, source retirement, or production deployment. Git publication permissions remain separately governed.
 
 **Other open gates:** V003-F01's 20 checkpoint-object historical recovery limitation and M21 acceptance remain separate from the Batch B conclusion. Phase 02 and V003 final closure are not automatically implied. **Inputted by:** ChatGPT; decision authored by Operator. **Status:** [BATCH B OPERATOR ACCEPTED / BATCH C AUTHORIZED TO PROCEED AT BATCH LEVEL].
+
+
+---
+
+# Batch C execution and publication report — 2026-10-12
+
+## Result
+
+Batch B closure and progression to Batch C were explicitly approved by the Operator. Batch C tickets were handled separately in the prescribed order: F15, F08, F14, F07. The F15/F08/F14 correction commits were pushed on their own ticket branches. F07’s compatibility finding was recorded and pushed on its own branch. The report and conversation closeout are being published as a separate documentation commit on the F07 branch.
+
+No pull request or merge was created. F01’s limited-unavailability disposition and the renewed M21/Phase 02 acceptance gate remain separate and open.
+
+## Phase 03 branch cross-check
+
+A fresh fetch from origin was followed by local-branch versus origin-ref comparison. Each pair matched exactly:
+
+| Branch | Verified local/origin commit |
+|---|---|
+| v003/f06-m20-legacy-source-reference-audit | 011799f9c3ec619c7d82eba99331f1a0b6aa79f4 |
+| v003/f15-stale-status-routing | f16f9bd69aa0f63abe7b0e0cdcbbcdfb840cffd7 |
+| v003/f08-legacy-entry-routing | a4f92786296da266d11c681739e0450062f83066 |
+| v003/f14-foothive-historical-link-audit | e04a5fbcc35f62b2e67f9d38c9cca644711e1a0d |
+| v003/f07-t23-windows-path-compatibility | ee2fe63c4e63a9c5c8f22bf9a814126cbcd33cb9 |
+
+The F07 working tree was clean after the temporary compatibility clone was removed. These are separate pushed branches; this check does not imply merge.
+
+## Ticket outcomes
+
+### V003-F15 — stale status routing and documentation typo
+
+PASS. The literal “M03-REF-01 ? RESOLVED” was corrected. Historical 494/496 README link counts remain attributed to their dated checkpoints; the current independent scan covers 73 tracked README files, 506 relative Markdown links, and 0 broken links. Current-status routing was clarified while older Phase 02 PENDING entries were preserved as historical checkpoints. Commit f16f9bd was pushed on v003/f15-stale-status-routing.
+
+### V003-F08 — legacy entry-point routing
+
+PASS. Provenance-preserving current-routing notices were added to DOB_MUST_README.md, AI_MUST_README.md, FQ_MUST_README.md, and SKILLS_MUST_README.md. Their historical bodies were verified byte-for-byte against the pre-edit body hashes. The current root/AI/FUNC/Skills indexes were updated to identify the routing notices. The four legacy entry files had 19 relative links total, all resolving; the broader README scan remained 73 files / 506 relative links / 0 broken. Commit a4f9278 was pushed on v003/f08-legacy-entry-routing.
+
+### V003-F14 — FootHive historical links
+
+PASS for the bounded link scope. The five records named by the ticket contained 45 inline Markdown references: 11 ordinary links and 34 image references. Forty were relative local references and five were external. Before correction, 4 ordinary local links plus 34 image references failed resolution, matching the recorded 38 total. After correction, all 40 local references resolve; none remain broken.
+
+The four ordinary links were Edge T11 screenshot references in the Sandbox Build Report. Two more Build Report image links referenced the Header Review screenshots. Their destinations now point to the existing canonical EVIDENCE_FH_BRAINBOX/HEADER_REVIEW_FH_BRAINBOX and EVIDENCE_FH_BRAINBOX/T11_RESPONSIVE_QA_FH_BRAINBOX paths. The 32 legacy catalog images were already present beside their Markdown files; obsolete subfolder prefixes were removed. All 38 candidate destinations were checked against the filesystem before editing. These are historical evidence/catalog references, not active website navigation. No image or evidence asset was moved, copied, renamed, normalized, or deleted.
+
+The F03 ticket had previously approved retaining 29 source-only entries without edits. F14’s later ticket-specific instruction expressly allowed correcting proven link targets. The only changes to the four catalog records were their 32 Markdown destinations; their locations and binary image contents remain unchanged.
+
+#### F14 parser scope and limitation
+
+No concrete implementation for the ticket’s “stated parser” was found in the active Phase 03 ticket, report, conversation, or FootHive Build Report. To make this run reproducible, I used the following bounded inline-Markdown regex:
+
+    (?<img>!)?\[[^\]]*\]\((?<d>[^)\s]+)(?:\s+[^)]*)?\)
+
+The check skipped external URI schemes, removed query/fragment suffixes, URL-decoded local destinations, and resolved them relative to each Markdown file. It is not a full CommonMark parser and does not claim to reproduce an unavailable historical parser. It matches the recorded counts, and each corrected destination was independently checked. The missing earlier parser provenance is retained as a BATCH-DEFERRED / NON-BLOCKING method note, not hidden.
+
+#### F14 integrity checkpoints
+
+| File | Before SHA-256 | After SHA-256 | Bytes before → after | Lines |
+|---|---|---|---:|---:|
+| Sandbox BUILD_REPORT_FH_BRAINBOX.md | 83E1724B146DB02E62663B9A788B7F76CEE2A96460DC6FEE36FCBC2F97D12A9F | CEBCE73664386335362F742FAEBB63614390F1B464C4A91001FAE04DEAC71787 | 159133 → 159277 | 2427 |
+| foothive-boot-images.md | 5BAF8F3B175791F26B884FFA8773B6BE81743220E544B7A399680ADB451869DA | 7DEB7F76818E2FBDD7F735F76D6F6322060DEE2E68CAADF34350E4348E3060FD | 1231 → 1123 | 30 |
+| foothive-classic-images.md | 58386C5D00A65DD7801CB0BDD0AFA2405D4E92334E2485282AF724383444FE15 | 1F31BA5FB90C03A137B50A411E79CBB2023BF1411F89334440A401FEC290955A | 1218 → 1083 | 30 |
+| foothive-sneaker-images.md | 1E645B5962F960FDDDA5A0919AD9A9CEAE1F10DAB59BA9FEFADACF036C94917F | E6BE9631AD33BD3DD1214B46E1F7ECFBA5BAAC26390EA1BF0A0D59D99DA4E386 | 573 → 513 | 15 |
+| foothive-timberland-images.md | 41833999931E3D0EC762F2B9A08E6D1E9FE814A53765E584DA1A96B0EF144B79 | 5FCD23D4F770953638AE43A905DD50073AAC38C27678075C91359F41143F102C | 871 → 801 | 33 |
+
+The F14 scoped diff contained exactly 38 path replacements and passed git diff --check. Fix commit e04a5fb was pushed, and the subsequent fresh fetch confirmed its local and origin refs match.
+
+### V003-F07 — Windows T23 long-path compatibility
+
+PASS as a reproducible platform diagnosis with a verified command-scoped workaround. Five T23 Playwright files have full Windows paths of 260 characters (three YAML files) and 263 characters (two console logs). PowerShell successfully read all five. The merged Git configuration has no core.longpaths value.
+
+With core.longpaths=false, git hash-object failed for each worktree file with “Filename too long” (exit 128). With the transient command option git -c core.longpaths=true, all five hashes matched their committed Git object IDs:
+
+| File | Full path chars | Bytes | Git object ID |
+|---|---:|---:|---|
+| console-2026-10-03T13-56-08-136Z.log | 263 | 181 | 3704fe590c99fb43eda0bb1fce7163206aa05260 |
+| console-2026-10-03T14-16-15-547Z.log | 263 | 181 | 7ee2f3209565c7941f013714a89db5a453d49e01 |
+| page-2026-10-03T13-56-12-224Z.yml | 260 | 10921 | fd5a27537a920bb96b422e17b40373cb27e873db |
+| page-2026-10-03T14-00-15-971Z.yml | 260 | 12224 | 53c78bdbe0caf403ba66415c538de57ab8d299fa |
+| page-2026-10-03T14-16-19-258Z.yml | 260 | 10921 | fd5a27537a920bb96b422e17b40373cb27e873db |
+
+A temporary shared local clone was created under a guarded temporary child of the repository. Clone and read-tree succeeded. Its default checkout-index failed with exit 1 for the long paths. Re-running checkout-index with command-scoped core.longpaths=true succeeded for all five at 280/283-character clone paths; PowerShell read each file. The temporary clone was removed, and a guard verified the exact cleanup target before removal.
+
+This demonstrates the difference between native PowerShell reads and Git’s default path handling in this checkout. The safe transient option is:
+
+    git -c core.longpaths=true <git-operation>
+
+No persistent local/global/system setting was changed. No T23 file or folder was renamed or edited. The ticket’s required compatibility evidence remains intact. A permanent Git setting or path rename was outside the authorized scope and was not performed.
+
+F07 outcome commit ee2fe63 was pushed on v003/f07-t23-windows-path-compatibility. The final report/conversation documentation is published separately on that same ticket branch.
+
+## Methods and verification used
+
+Remote Desktop Commander PowerShell was used for read-only source inspection, SHA-256/size/line baselines, path resolution, Git operations, and the temporary clone test. The Markdown link scan used the explicit regex described above. Git diff inspection confirmed only link-target strings changed in F14. Git diff --check and staged diff checks passed. A fresh fetch and direct local/origin ref comparisons confirmed the listed branches. No browser tests, site changes, persistent Git configuration changes, PRs, or merges were performed.
+
+## Remaining state
+
+- Batch B is Operator-accepted.
+- Batch C execution and per-ticket publication are complete; Operator acceptance of Batch C is still pending.
+- F14’s historical parser implementation was not available; the current bounded parser and its exact scope are recorded.
+- F01’s approved limited-unavailability disposition does not close the separate renewed M21 review, Operator acceptance, Phase 02, or V003.
+- No branch merge or cleanup was authorized here.
+
+
+### Formal flag record — V003-F14-METHOD-01
+
+- **Exact source:** V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md, line 54, requests reproduction “using stated parser.”
+- **Defect:** The parser implementation/version or precise syntax was not present in the active F14 ticket, Phase 03 report/conversation, or FootHive Build Report. The exact historical parser therefore cannot be claimed as reproduced.
+- **Evidence:** A bounded parser was documented in this report. It found 4 broken ordinary relative links and 34 broken image references before correction; every proposed destination existed; the post-edit scan found zero broken links among 40 local references.
+- **Migration impact:** None to source authority or historical data; link targets were corrected only where actual destination files were verified.
+- **Next-ticket impact:** No dependency or correctness effect on F07; F07 path testing was completed independently.
+- **Classification and reason:** BATCH-DEFERRED / NON-BLOCKING. The outstanding item is method provenance only; the bounded result and every corrected target are independently reproducible.
+- **Proposed correction:** Retain the exact regex and scope in this report. If the historical parser becomes available, compare it separately; do not retroactively claim equivalence.
+- **Timing / owner:** Recorded by Codex during F14 closeout; present to the Operator at Batch C acceptance. No source or asset change is pending.

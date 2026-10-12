@@ -359,4 +359,7 @@ For each file, default `git hash-object` failed with “Filename too long” (ex
 
 **Safe option demonstrated:** Apply `-c core.longpaths=true` to an individual Git operation requiring those paths. This is transient and was verified without changing local/global/system Git configuration. A permanent setting or evidence-folder/file rename was not authorized or performed. No T23 content was edited, moved, renamed, or deleted.
 
-**Ticket-specific branch:** `v003/f07-t23-windows-path-compatibility`, created from the pushed F14 fix commit. Batch C final report and conversation publication are recorded separately below.
+**Ticket-specific branch:** `v003/f07-t23-windows-path-compatibility`, created from the pushed F14 fix commit. Batch C report and conversation closeout are recorded in the Phase 03 report and conversation records.
+
+
+**Formal flag:** V003-F14-METHOD-01 is classified BATCH-DEFERRED / NON-BLOCKING. The line-54 request to use a “stated parser” has no parser implementation in the reviewed active records. The current regex/method is fully recorded in V003_FIXES_REPORT_BRAINBOX.md; it reproduces the recorded count and all 38 corrected targets were verified. The missing historical parser provenance does not affect F07 or the file-by-file path result. Present the limitation to the Operator at Batch C acceptance.

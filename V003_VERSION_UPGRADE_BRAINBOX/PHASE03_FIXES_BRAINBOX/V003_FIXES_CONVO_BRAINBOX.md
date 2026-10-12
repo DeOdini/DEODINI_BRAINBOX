@@ -362,3 +362,63 @@ No further Operator response was received during this closeout step. The source-
 **ChatGPT interpretation:** Operator accepts Phase 03 Batch B closure (V003-F04, V003-F03, V003-F05, V003-F06) with already recorded retention, historical line-ending and F06 correction dispositions. Operator authorizes Phase 03 progression to Batch C, whose agreed sequence is V003-F15 then V003-F08 then V003-F14 then V003-F07. This is a batch-level decision; individual corrective edits, Git publication, PR and merge retain their own authorization boundaries. No work on Batch C has yet been executed by this entry.
 
 **Recording:** ChatGPT appended this decision into the Phase 03 report, conversation and ticket record. **Inputted by:** ChatGPT, Operator remains the instruction author.
+
+
+---
+
+## Operator → Codex — Batch C execution authorization and ticket scopes — 2026-10-12
+
+### Operator (verbatim)
+
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE FOR PHASE03, ONCE DONE, NOW PROCEED TO BATCH C, TO WHICH I APPROVE THE CLOSURE OF BATCH B AND THE PROCEEDING TO BATCH C, ONCE YOU ARE DONE, PROCEED TO STAGE, COMMIT AND PUSH ALL OF THE FIXES EACH TICKET AT A TIME TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+**## BATCH-C — easy non-blocking corrections**
+
+**### V003-F15 — stale current-status routing and documentation typo**
+**\*\*Class:\*\*** CORRECTIVE; **\*\*effort:\*\*** LOW.
+**\*\*Sources:\*\*** root README dated 494/496 links and literal \`M03-REF-01 ? RESOLVED\`; Phase 02 README older M08/M20 PENDING entries.
+**\*\*Draft work:\*\*** Clarify current status and time-scoped metrics, fix actual typo where approved; preserve historical checkpoints. **\*\*Pass:\*\*** active index resolves correctly and scoped links check.
+
+**### V003-F08 — legacy entry-point routing**
+**\*\*Class:\*\*** CORRECTIVE; **\*\*effort:\*\*** LOW.
+**\*\*Sources:\*\*** \`DOB_MUST_README.md\`, \`AI_MUST_README.md\`, \`FUNC_AI_BRAINBOX/FQ_MUST_README.md\`, \`SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md\`.
+**\*\*Draft work:\*\*** Verify callers, add provenance-preserving V003 root/Governance redirects if authorized. **\*\*Pass:\*\*** no ambiguity for current agent reading order, links valid, historical text retained.
+
+**### V003-F14 — FootHive unresolved historical links and Markdown image paths**
+**\*\*Class:\*\*** CORRECTIVE / HISTORICAL QUALIFICATION; **\*\*effort:\*\*** LOW–MEDIUM.
+**\*\*Sources:\*\*** Sandbox \`BUILD_REPORT_FH_BRAINBOX.md\` and four original product-catalog Markdown records.
+**\*\*Draft work:\*\*** Reproduce four unresolved ordinary relative links and 38 including images using stated parser; classify active navigation vs historical references; correct only proven targets or add historical notices. **\*\*Pass:\*\*** bounded, reproducible categorization with no fabricated screenshots/assets.
+
+**### V003-F07 — Windows T23 long-path compatibility**
+**\*\*Class:\*\*** PORTABILITY; **\*\*effort:\*\*** LOW–MEDIUM.
+**\*\*Sources:\*\*** five T23 Playwright files 260–263 full Windows path characters, \`core.longpaths\` unset.
+**\*\*Draft work:\*\*** Non-destructively compare clone/read behavior and safe config or shortened directory alternatives; seek approval before renaming/configuration modification. **\*\*Pass:\*\*** reproducible compatibility or explicit platform limitation and intact evidence.
+
+### Codex commentary (verbatim, chronological)
+
+1. “Phase 03’s approved Batch B closure is reflected in the current branch history, and F15/F08 are individually pushed. I’m continuing Batch C on the per-ticket branch workflow, starting with F14’s link evidence; I’ll preserve the earlier approval to leave the four original catalog files unchanged unless a correction is clearly authorized.”
+
+2. “F14’s reproduction matched the recorded finding: 4 broken ordinary evidence links plus 34 broken Markdown image links, 38 total. The targets are present: the report links need the canonical evidence-folder names, and each catalog image is a sibling of its Markdown file. I’m applying only those verified path corrections; no assets or evidence files will be moved or recreated.”
+
+3. “F14’s 38 broken references are corrected to verified files, and the ticket commit is pushed on `v003/f14-foothive-historical-link-audit` (`e04a5fb`). I’m checking the remote tip, then I’ll handle F07 with temporary/non-persistent path handling only; I will not change Git configuration or rename evidence folders without your approval.”
+
+4. “F07 is reproducible: PowerShell reads all five files, but Git’s default path handling cannot hash them at 260–263 characters; a per-command `-c core.longpaths=true` hashes each to the exact committed object. The setting remains unset. I’m doing a narrow temporary clone/checkout comparison now, then I’ll record the outcome without persistent config or filename changes.”
+
+5. “The temporary clone reproduced the compatibility issue cleanly: default checkout failed on the five long paths, while the command-scoped override checked them all out and they remained readable. The temporary clone was removed. I’m recording the F14/F07 outcomes now; the whitespace check on the staged Phase 03 ticket record is taking longer than expected, so I’m waiting on that result before committing.”
+
+6. “F07’s ticket-result record is pushed on its own branch (`ee2fe63`). The branch includes the F14 fix in its ancestry, and no temporary clone, Git setting change, or evidence-path rename remains. I’m now preparing the separate Phase 03 report/conversation closeout and updating its status index, then I’ll publish that documentation commit.”
+
+### Execution record boundary
+
+The ticket-by-ticket results, integrity baselines, parser limitations, Git refs, and remaining gates are recorded separately in V003_FIXES_REPORT_BRAINBOX.md. The current Operator/Codex transcript is appended here; no historical source or evidence record was rewritten.
+
+
+### Codex final response (verbatim)
+
+Batch C execution and publication are complete. A fresh fetch confirmed the local and origin refs match for F06, F15, F08, F14, and F07.
+
+Ticket commits pushed: F15 f16f9bd, F08 a4f9278, F14 e04a5fb, and F07 ee2fe63. The separate report/conversation closeout is published on v003/f07-t23-windows-path-compatibility. No PR or merge was created.
+
+F14 corrected the 38 broken references in scope (4 ordinary links and 34 Markdown image links); all 40 local references now resolve. No asset moved. F07 reproduced Git’s default path failure at 260–263 characters and verified the transient -c core.longpaths=true workaround; no persistent setting or rename was made.
+
+The current-status README, detailed report, ticket outcomes, and transcript are updated. F14’s unavailable prior parser implementation is recorded as a non-blocking method-provenance limitation. Batch C Operator acceptance remains pending; F01’s renewed M21/Phase 02 review remains a separate open gate.

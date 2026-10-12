@@ -1,12 +1,12 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 FRAMEWORK APPROVED; V003-F01 DISPOSITION RECORDED; BATCH B AUTHORIZED IN ORDER; F04 EVIDENCE AND OPERATOR RETENTION DISPOSITION PASS; F03 INVENTORY AND PER-FILE RETENTION DISPOSITION PASS; F05 BYTE QUALIFICATION PASS; F06 AUDIT EVIDENCE PUBLISHED; F06 SOURCE DISPOSITION AND F06-REF-01 DECISIONS PENDING; RENEWED M21 REVIEW PENDING]
+**STATUS:** [PHASE 03 ACTIVE; BATCH B OPERATOR ACCEPTED; BATCH C F15/F08/F14/F07 EXECUTED ON PER-TICKET BRANCHES; BATCH C REPORT/CONVERSATION RECORDED; F14 PARSER-PROVENANCE LIMITATION DOCUMENTED AS NON-BLOCKING; F01 DISPOSITION RECORDED; RENEWED M21 REVIEW AND OPERATOR ACCEPTANCE PENDING]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [PHASE 03 PLANNING; F01 SEARCH/DISPOSITION AND INDEPENDENT VERIFICATION RECORDED; F04 EVIDENCE/DISPOSITION PASS; F03 INVENTORY AND SOURCE DISPOSITION PASS; F05 BYTE QUALIFICATION PASS; F06 AUDIT EVIDENCE PUBLISHED; SOURCE DISPOSITION AND F06-REF-01 DECISIONS PENDING]
-**LAST UPDATED:** 2026-10-12 — Codex; F01 disposition confirmed; F04 retention disposition approved by Operator; F03 inventory evidence pushed and retention disposition recorded; F05 byte comparison reproduced and documented; F06 audit evidence and report/conversation closeout committed and pushed on its dedicated branch; no source files changed during F06.
+**POPULATION:** [PHASE 03 ACTIVE; F01 LIMITED-UNAVAILABILITY DISPOSITION RECORDED; RENEWED M21 REVIEW PENDING; BATCH B OPERATOR ACCEPTED; BATCH C F15/F08/F14/F07 EXECUTION AND GIT RESULTS RECORDED; BATCH C OPERATOR ACCEPTANCE PENDING]
+**LAST UPDATED:** 2026-10-12 — Codex; refreshed Phase 03 branch refs; F14 historical-link corrections and F07 Windows path-compatibility results are published on their ticket branches; Batch C report/conversation closeout is recorded on F07; no persistent Git configuration or T23 evidence-path changes.
 
 ## Local tree
 ```text
@@ -15,7 +15,7 @@ PHASE03_FIXES_BRAINBOX/
 ├── F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv [F06 row-level source/reference audit evidence]
 ├── V003_FIXES_REPORT_BRAINBOX.md
 ├── V003_FIXES_CONVO_BRAINBOX.md
-└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; F04 disposition PASS; F03 inventory and per-file retention disposition PASS; F05 byte qualification PASS; F06 evidence published; Operator disposition pending; other tickets draft]
+└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; Batch B Operator accepted; Batch C F15/F08/F14/F07 outcomes recorded; Batch C Operator acceptance pending]
 ```
 
 ## Navigation
