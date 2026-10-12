@@ -222,7 +222,7 @@ SKILLS_AI_BRAINBOX/
 
 ## Legacy source boundary
 
-The legacy SKILLS_MUST_README.md remains at AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/ as a linked provenance source. M20 verified and retired the four zero-byte RAW/PROVEN/REUSABLE/FAILED placeholder files. They contained no reusable knowledge. M08 and M19 migration history remains recorded in the map; substantive Skills source retirement is still source-gated.
+The legacy SKILLS_MUST_README.md remains at AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/ as a linked provenance source. V003-F08 adds a top routing notice to this Skills README and Governance while preserving the historical body byte-for-byte. M20 verified and retired the four zero-byte RAW/PROVEN/REUSABLE/FAILED placeholder files. They contained no reusable knowledge. M08 and M19 migration history remains recorded in the map; substantive Skills source retirement is still source-gated.
 
 ## Sources
 

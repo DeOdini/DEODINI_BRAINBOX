@@ -1,3 +1,6 @@
+<!-- V003-F08 routing notice added by Codex on 2026-10-12; original source body preserved below. -->
+> **Current routing:** This is the retained legacy Skills entry. Use the [Brainbox root README](../../README_BRAINBOX.md), [current Skills README](../SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md), and [Governance README](../../GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md) for current navigation and system-wide rules. The historical content below remains provenance, not the active V003 reading order.
+
 # SKILLS_MUST_README.md
 
 ## Skills Availability Subsystem

@@ -1,3 +1,6 @@
+<!-- V003-F08 routing notice added by Codex on 2026-10-12; original source body preserved below. -->
+> **Current routing:** This is the retained pre-V003 root entry record. For current Brainbox tree and navigation, start at [README_BRAINBOX.md](README_BRAINBOX.md). For current system-wide rules, use the [Governance README](GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md). The historical content below remains provenance and is not the active V003 reading order.
+
 [Reading 168 lines from start (total: 168 lines, 0 remaining)]
 
 [Reading 172 lines from start (total: 172 lines, 0 remaining)]

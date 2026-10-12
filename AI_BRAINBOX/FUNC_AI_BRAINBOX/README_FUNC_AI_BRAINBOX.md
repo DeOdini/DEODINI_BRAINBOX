@@ -18,7 +18,7 @@
 
 AI_BRAINBOX/FUNC_AI_BRAINBOX/
 ├── README_FUNC_AI_BRAINBOX.md
-├── FQ_MUST_README.md — retained local compliance checkpoint; M07/M20 disposition
+├── FQ_MUST_README.md — retained compliance source; F08 routing notice, historical body preserved
 ├── FUNC_REQ_BRAINBOX.md — retained function requests; M07/M20 disposition
 ├── FUNC_WORKFLOW_BRAINBOX.md — retained legacy workflow; M07/M20 disposition
 ├── CHATGPT_FUNC_BRAINBOX.md — original source retained
@@ -53,17 +53,17 @@ AI_BRAINBOX/FUNC_AI_BRAINBOX/
 - M06 populated the evidence-backed EXE index; category admission and evidence limits are recorded in its linked records.
 - Reusable knowledge and skill content belongs to Skills.
 - Procedures, routing, and operating sequences belong to the appropriate workflow or DEVOPS domain.
-- FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, and FUNC_WORKFLOW_BRAINBOX.md remain unchanged at their source paths; M07 classified each section without moving or rewriting them. M19 completed active README reference reconciliation; M20 owns source-retirement review.
+- FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, and FUNC_WORKFLOW_BRAINBOX.md remain at their original paths. M07 classified their sections without moving or rewriting the original bodies. F08 added a routing notice to FQ_MUST_README.md while preserving its historical body. M20 review is complete; source-specific safeguards govern future action.
 
 ## M07 ancillary-source classification
 
 | Retained source | Current canonical disposition | Follow-up |
 |---|---|---|
-| FQ_MUST_README.md | Governance owns current system-wide rules; FUNC README keeps local navigation. Legacy request-file/compliance-file sequence is not recreated. | M19 reference reconciliation complete; M20 source-retirement review |
-| FUNC_REQ_BRAINBOX.md | M05 CORE records own current capability-report schema; Governance owns evidence, naming, documentation, and ticketing rules. | M19 reference reconciliation complete; M20 retirement gate |
-| FUNC_WORKFLOW_BRAINBOX.md | Mixed workflow is historical/reference-only pending content-specific destination. Generic technology knowledge may fit M08; DEVOPS/Fullstack processes are candidates for M09/M10. n8n/email remain unproven. | M08/M09/M10 classify only their authorized content; M19 reference reconciliation complete; M20 source review |
+| FQ_MUST_README.md | Governance owns current system-wide rules; FUNC README keeps local navigation. Legacy request-file/compliance-file sequence is not recreated. | M20 review complete; F08 notice routes current readers to the root, FUNC, and Governance authorities; historical body preserved |
+| FUNC_REQ_BRAINBOX.md | M05 CORE records own current capability-report schema; Governance owns evidence, naming, documentation, and ticketing rules. | M20 review complete; source-specific disposition remains recorded in Phase 03 |
+| FUNC_WORKFLOW_BRAINBOX.md | Mixed workflow is historical/reference-only pending content-specific destination. Generic technology knowledge may fit M08; DEVOPS/Fullstack processes are candidates for M09/M10. n8n/email remain unproven. | M08/M09/M10 classified only their authorized content; M20 review complete; source-specific disposition remains recorded in Phase 03 |
 
-No policy text was copied into FUNC. All three sources remain unchanged. The detailed per-section ledger is in the [M01 migration map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md); the execution report is in the [Phase 02 report](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md).
+No policy text was copied into FUNC. All three legacy sources remain at their original paths; F08 adds only a routing notice to FQ, with the historical body byte-for-byte preserved. The detailed per-section ledger is in the [M01 migration map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md); the execution report is in the [Phase 02 report](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md).
 
 ## Canonical references
 
