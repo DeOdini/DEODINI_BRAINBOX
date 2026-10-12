@@ -292,3 +292,14 @@ The report/conversation closeout commit `4508e7607e62e63b15b92a175020ff9290d23ab
 **Verification verdict:** `V003-F06-REF-01` is corrected and locally verified; the bounded source-retention disposition is confirmed and recorded. This is not final Operator acceptance/closure of V003-F06 and does not approve a merge. The separately stated Batch B Git instruction governs staging, commit, and push after the required ticket work and verification; it does not authorize PR creation or merge.
 
 **Next gate:** Complete independent review of the scoped diff and records, then follow the previously authorized Batch B Git lifecycle. Keep F06 open until its required independent verification and Operator closure decision are recorded. **Inputted by:** ChatGPT; the current confirmation is authored by Operator.
+
+
+---
+
+### V003-F06 decision/publication checkpoint — 2026-10-12
+
+Operator confirmed the F06-REF-01 sentence correction and the bounded retain-at-current-path disposition by reference: "PROCEED WITH THE AUTHORITY STATED ACCORDINGLY, I APPROVE." The wording previously inserted as a supposed earlier verbatim authorization is now explicitly labeled ChatGPT-authored and confirmed by reference as of this date.
+
+The F06 CSV has 123 records (122 file paths plus the filesystem-only `BRAINBOX/` directory candidate). Codex rehashed all 115 present files: 115 matched; 0 mismatched; 0 missing. The five scoped files were committed as `fc082859f74ff3b30e973d85f6dbffd25b0fc056` and pushed. Fresh fetch showed local HEAD, upstream and origin equal; ahead/behind 0/0. No PR/merge was created.
+
+**Status:** The authorized F06 correction/disposition and its publication checkpoint are recorded. F06 remains open for required independent verification and Operator closure; this ticket does not close M21 or Phase 02.

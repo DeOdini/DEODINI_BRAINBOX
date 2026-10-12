@@ -2788,3 +2788,8 @@ The complete row-level audit, including paths, M01 size/SHA/blob IDs, current ph
 **CSV accounting and current integrity recheck:** the published F06 CSV has 123 records: 122 historical file-path rows (115 present and 7 M20-retired zero-byte placeholders) plus one filesystem-only `BRAINBOX/` empty-directory candidate. Codex recomputed SHA-256 for all 115 present files against the CSV's current-worktree digest: 115 matched; 0 mismatched; 0 missing.
 
 **Verification and Git lifecycle:** ChatGPT must independently verify the exact sentence change, row-level preservation, and source integrity before F06 closure. Local recording and correction do not authorize staging, commit, push, PR or merge; separate Operator authorization required. F06 status: **CORRECTION/RETENTION DECISION RECORDED — AWAITING INDEPENDENT POST-EDIT VERIFICATION AND OPERATOR ACCEPTANCE**. M21 and Phase 02 are not thereby closed.
+
+
+### F06 content-publication checkpoint — 2026-10-12
+
+The scoped correction and decision records were committed as `fc082859f74ff3b30e973d85f6dbffd25b0fc056` ("Record V003-F06 decision and integrity audit") and pushed to `origin/v003/f06-m20-legacy-source-reference-audit`. Fresh fetch confirmed HEAD/upstream/origin equality and ahead/behind 0/0. This records publication only: F06 remains open pending its required independent verification and Operator closure; no PR or merge was created.

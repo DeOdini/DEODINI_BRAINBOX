@@ -555,3 +555,16 @@ The report, conversation, README status/tree, and ticket update were committed a
 **Verification verdict:** `V003-F06-REF-01` is corrected and locally verified; the bounded source-retention disposition is confirmed and recorded. This is not final Operator acceptance/closure of V003-F06 and does not approve a merge. The separately stated Batch B Git instruction governs staging, commit, and push after the required ticket work and verification; it does not authorize PR creation or merge.
 
 **Next gate:** Complete independent review of the scoped diff and records, then follow the previously authorized Batch B Git lifecycle. Keep F06 open until its required independent verification and Operator closure decision are recorded. **Inputted by:** ChatGPT; the current confirmation is authored by Operator.
+
+
+---
+
+## F06 decision and content publication verification — 2026-10-12
+
+**Operator confirmation:** The Operator confirmed by reference, verbatim: "PROCEED WITH THE AUTHORITY STATED ACCORDINGLY, I APPROVE." The confirmed content scope is the single F06-REF-01 Portfolio sentence correction and retaining remaining unresolved F06 CSV file rows unchanged at their recorded paths. The longer decision wording is ChatGPT-authored and is not attributed as an earlier verbatim Operator message.
+
+**Independent integrity check:** The F06 CSV contains 123 records: 122 file-path rows (115 present, 7 M20-retired zero-byte placeholders) and one filesystem-only empty-directory candidate, `BRAINBOX/`. All 115 current files matched their recorded SHA-256 values; no missing or mismatched file was found.
+
+**Content commit and push:** Commit `fc082859f74ff3b30e973d85f6dbffd25b0fc056` ("Record V003-F06 decision and integrity audit") pushed to `origin/v003/f06-m20-legacy-source-reference-audit`. A fresh fetch confirmed local HEAD, upstream and origin all equal this commit; ahead/behind was 0/0. The staged set contained only the five scoped files. No source files were moved, renamed, deleted or restored. No PR or merge was created.
+
+**Disposition:** This publishes the approved correction and decision records only. V003-F06 remains open pending the required independent verification and Operator closure decision; M21 and Phase 02 are not declared closed.
