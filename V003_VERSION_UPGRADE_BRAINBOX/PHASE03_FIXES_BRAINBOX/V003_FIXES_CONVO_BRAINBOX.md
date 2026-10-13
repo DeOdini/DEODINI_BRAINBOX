@@ -547,3 +547,10 @@ GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf17
 **Operator response (verbatim):** “RESERVE THIS IN YOUR REPORT AS UNDECIDED.”
 
 **Codex response:** Recorded the catalog precedence as undecided. The current four catalog files and the other 25 approved product-image files remain unchanged during F11. No edit, revert, move, copy, rename, or deletion is performed to resolve this uncertainty.
+
+
+## V003-F12 execution record — authority matrix proposal — 2026-10-13
+
+**Codex:** Inspected the existing M15 Sandbox authority and evidence layout, M16 Production release records, Portfolio summary/handoff/reference, and F11 asset-source ledger. Prepared a responsibility-by-responsibility matrix separating trial history, active implementation, testing, production operation, Portfolio/handoff, assets, and future workflow iterations.
+
+**Codex status:** The matrix is presented for Operator approval, not represented as an approved authority change. No source file, frozen Specification, production deployment, or live site state was changed or tested. The F11 catalog precedence remains separately undecided.

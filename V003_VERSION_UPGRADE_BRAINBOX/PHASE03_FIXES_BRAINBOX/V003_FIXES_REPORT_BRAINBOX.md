@@ -860,3 +860,32 @@ The four RAW source files were inspected against M09/M10. The two substantive 00
 - Tests: none required or run; this ticket is an evidence/reference audit.
 - Independent ChatGPT verification: not performed or claimed in this Codex execution record.
 - F11 status: evidence complete, final disposition gate open for the four F03/F14-edited catalog records.
+
+
+## V003-F12 — FootHive canonical authority matrix — 2026-10-13
+
+**Status:** Evidence review complete; proposed authority matrix is ready for Operator decision. **F12 is not accepted or closed** until the Operator approves or revises the matrix. This proposal does not change frozen V003 architecture, move/copy/edit source records, deploy, or run a new production check.
+
+### Evidence inspected
+
+Reviewed the M15 Sandbox case-study README and its canonical evidence layout; the M16 Production summary/lessons; the FootHive Portfolio README, handoff, project summary and case-study reference; the F11 per-file source inventory; and the separate FootHive site repository references. The existing records state that Iteration 01 is the current historical trial dataset, T20 is the only documented release operation in the Production summary, and the project is a workflow trial rather than a paid-client engagement.
+
+### Proposed record/action authority matrix
+
+| Responsibility | Canonical record/home | What it owns | Reference and boundary |
+|---|---|---|---|
+| Trial and project history | M15 Sandbox case study: `CONVO_FH_BRAINBOX.md`, `BUILD_REPORT_FH_BRAINBOX.md`, `PASSED_FH_BRAINBOX.md`, `FAILED_FH_BRAINBOX.md`, `OPERATOR_ADDENDUM_FH_BRAINBOX.md`, Audits and Evidence | Chronological trial, workflow iteration, test/audit evidence, failures and Operator clarifications | Keep one canonical evidence set in Sandbox. Legacy PROJ files remain source/history references until separately dispositioned; the four F03/F14 catalogs remain undecided under F11. |
+| Active website implementation | Separate `DeOdini/FOOTHIVE` repository | Current website code, assets, project changes and repository history | Brainbox links/references to the actual project repository; do not copy current implementation into the historical evidence or Portfolio records. F11 verified nine referenced image/logo files currently exist with matching SHA-256 values. |
+| Testing and verification | M15 Sandbox Build Report, Passed/Failed records, Audits and Evidence; Operator clarifications in the Addendum | Test method, environment, date, observed outcomes, failures and limits | Keep Operator-performed checks attributed to Operator. A Sandbox result does not imply Production verification or current live health. |
+| Production release/operation | M16 `FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md` and `PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md` | Actual documented T20 release/deployment operation and lessons | Record only the 2026-10-01 T20 Netlify release and its cited evidence. No later live check or ongoing availability is claimed; do not copy the Sandbox evidence set. |
+| Portfolio and handoff | `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/` — project summary, handoff, case-study reference | What the trial built/demonstrated and how to find its canonical records | Link to Sandbox and Production authorities; summarize scope without duplicating evidence. Preserve the disclosure that this was a DEODINI trial based on a public brief, with the Operator role-playing client; do not imply paid-client work or client acceptance. |
+| Assets and catalogs | Active product/logo assets in the separate FootHive repository; 25 retained source-only product images and four legacy catalogs in the F11 inventory | Current application asset usage versus historical source-only material | Reference the separate active assets. Keep all 25 source-only images unchanged. The four catalogs' F03/F14 edit precedence remains **UNDECIDED**; no copy/move/normalization is proposed. |
+| Future workflow iteration | M15 Sandbox case study and planned Iteration 02/03 and mastery placeholders | Future workflow testing distinct from website ticket/version numbers | Keep Iteration 02, Iteration 03 and Workflow Mastery Assessment [PLANNED]. Do not present T01–T20 as workflow iteration numbers or imply mastery. |
+
+### Proposed operating rule
+
+Each record is written only in its responsibility's canonical home and cross-links to the other relevant authorities. A source does not become canonical because it is older, is named “passed,” or lives in the active website repository. No bulk evidence copying is proposed. A new production record requires a real production event and source-linked evidence; a portfolio summary remains a description and navigation layer.
+
+### Decision gate
+
+**Operator approval requested:** approve this matrix as the F12 authority map, or identify specific rows to amend. Until that decision is recorded, the matrix is a Codex proposal only. F11's catalog decision remains separate and explicitly undecided. No independent ChatGPT verification is claimed in this execution report.
