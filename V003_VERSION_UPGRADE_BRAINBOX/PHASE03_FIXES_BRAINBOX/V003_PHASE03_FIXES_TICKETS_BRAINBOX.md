@@ -411,3 +411,15 @@ The Operator explicitly approved Batch C closure and proceeding to Batch D, and 
 **Recommended disposition:** retain the V003 record unchanged and leave the Fullstack decision folder empty until a source-backed application decision exists. The frozen Specification names the folder but no child filename. Do not invent a file/name or revise the frozen target without Operator direction.
 
 **Decision requested:** approve retain-and-wait; request a specifically named domain-local record now; or authorize a precisely scoped architecture revision. No source edits, moves, copies, or deletions were performed.
+
+---
+
+## V003-F16 closeout — Operator Batch D acceptance and publication — 2026-10-13
+
+**Independent cross-check:** Published F16 head before closeout was `3c5144069eb741d33ae6c44b57c37770534176a8`. The published ticket/report/conversation records describe complementary V003-wide and Fullstack decision authorities; no architecture source change is needed.
+
+**Provenance flag:** A subsequently observed local, uncommitted closeout attributed a detailed retain-and-wait sentence as Operator verbatim. The exact sentence was not present in the published F16 records or in the Operator instruction reproduced in the conversation record for this closeout. It is not authenticated here as a direct quotation. The current Operator instruction does explicitly accept Batch D closure and authorize Batch E progression; that batch-level acceptance is the basis for closing F16 and is recorded separately.
+
+**Disposition:** F16 is accepted/closed under the Operator's Batch D closure. Preserve the V003-wide rationale record and leave the Fullstack `ARCH_DECISIONS_BRAINBOX/` folder empty until project-specific evidence exists. No architecture file, Specification, or source file was modified.
+
+**Git:** F16 documentation was committed on `v003/f16-architecture-decisions-ownership` via the authenticated GitHub Git Data API with a guarded update from `3c5144069eb741d33ae6c44b57c37770534176a8`. This is a remote commit/ref update, not local Git staging. No PR/merge was created.

@@ -2826,3 +2826,13 @@ The Operator approved KEEP IN PLACE for AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKI
 **Disposition/evidence:** The V003 decision-history file remains the system-wide rationale record and contains the concise P03 authority-boundary decision. The Fullstack `ARCH_DECISIONS_BRAINBOX/` domain is an empty, zero-byte-`.gitkeep` placeholder. The frozen Specification assigns application-specific architecture selection/rationale to this domain and generic pattern knowledge to Skills; the Fullstack README says no project decision is populated and raw stack assumptions are unverified. No duplicate or competing authority was found.
 
 **Recommended:** retain the V003 record unchanged; keep the Fullstack domain empty until an evidence-backed project decision exists. The Specification defines the folder but not a child decision filename. Operator disposition is pending. No move, copy, rename, edit, deletion, or frozen-tree revision performed.
+
+---
+
+### V003-F16 Operator Batch D acceptance and publication checkpoint — 2026-10-13
+
+The Operator explicitly accepted Batch D closure and progression to Batch E in the 2026-10-13 instruction recorded in the Phase 03 conversation log. F16 is accepted/closed at the batch level. Its technical disposition remains: retain the V003-wide architecture rationale record unchanged and leave Fullstack `ARCH_DECISIONS_BRAINBOX/` empty until project-specific evidence exists. No architecture/source migration occurred.
+
+A separate local uncommitted F16 note had represented detailed retain-and-wait wording as an Operator verbatim statement. The exact wording was not independently authenticated against the published F16 conversation or the current Operator instruction; it is not relied on as verbatim evidence. RDC follow-up requests timed out, so the post-timeout local tree could not be confirmed. F16 publication used verified remote source content and a guarded GitHub branch update.
+
+**F16 remote closeout:** branch `v003/f16-architecture-decisions-ownership`; prior head `3c5144069eb741d33ae6c44b57c37770534176a8`; exact closeout commit is recorded in the Phase 03 report. No PR or merge.

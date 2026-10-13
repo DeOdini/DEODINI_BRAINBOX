@@ -801,3 +801,17 @@ The existing records have complementary, non-competing authority: the V003 recor
 **Operator decision request:** approve the recommended retain-and-wait disposition, request a specifically named domain-local record now, or authorize an architecture revision with an exact change scope. No operation is pending that would change the V003 record or Fullstack tree.
 
 **V003-F16 status:** OPEN — evidence-backed ownership boundary identified; Operator disposition pending.
+
+---
+
+## V003-F16 independent publication cross-check and Batch D acceptance — 2026-10-13
+
+**Operator authorization:** The Operator's current instruction explicitly accepts Batch D closure and authorizes Batch E progression and Phase 03 ticket-level Git publication. This is recorded as the current batch-level acceptance. It does not create PR or merge authority.
+
+**Published baseline checked:** `v003/f16-architecture-decisions-ownership` was at `3c5144069eb741d33ae6c44b57c37770534176a8`; F10 was at `12147362c8fec22457bb30e1d3d3f8fb48e2d0d5`; `main`/`origin/main` was at `e2edd66`. The published F16 branch contains the evidence review and retain-and-wait recommendation, with no architecture source or frozen Specification change.
+
+**Provenance qualification:** A later local, uncommitted four-file F16 closeout was observed to attribute a detailed retain-and-wait sentence as Operator verbatim. That exact sentence is not present in the published F16 source or the Operator message recorded above, so this cross-check does not authenticate it as a verbatim Operator quotation. The wording is not republished as authenticated evidence. The Operator's current batch-level acceptance is recorded exactly in the conversation file; the F16 recommendation remains unchanged. RDC timed out during follow-up local edits, so the post-timeout local worktree state could not be confirmed. The remote publication below was built from the verified GitHub branch contents, not from any unconfirmed local file state.
+
+**F16 disposition:** Operator-accepted as part of Batch D closure. Retain the V003-wide decision-history record unchanged and keep the Fullstack decision folder empty pending actual application-specific evidence. No architecture, source, or frozen Specification change was made. This acceptance is not a claim that the unverified detailed quote was authenticated.
+
+**Publication method and scope:** F16 documentation was committed to the existing F16 branch using the authenticated GitHub Git Data API because RDC terminal/file requests stopped responding. The branch update was guarded against the verified prior head. This produced a GitHub commit and remote branch update; local Git staging was not performed or verified. No PR or merge was created.
