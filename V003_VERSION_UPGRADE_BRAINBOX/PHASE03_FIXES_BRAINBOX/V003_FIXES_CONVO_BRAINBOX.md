@@ -548,3 +548,9 @@ GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf17
 **Codex findings (verbatim from current turn):** “The ref check confirms the F16 branch exists remotely, but F11, F12, F13, and F09 have no corresponding Phase 03 branches or execution reports, and no F-series PR/merge appears in the fetched history. I’m recording Batch D’s Operator-approved closure accurately while treating F02 as a final gate that still has unmet documentary prerequisites.”
 
 **Codex response:** F02's read-only checks found the M21 branch is pushed to origin but remains 18 commits ahead of `main`, with no M21 PR or merge. The approved F01 limited-unavailability disposition is recorded, while renewed M21 acceptance remains open. The Phase 03 ticket/report/branch records lack execution and independent-verification entries for F09, F11, F12, and F13. The Operator has accepted Batch D closure, but the repository does not establish those tickets as executed or passed. F02 therefore remains blocked and does not close V003. No PR or merge was created.
+
+---
+
+## V003-F02 preflight publication verification — 2026-10-13
+
+GitHub ref `v003/f02-final-publication-verification` was read back at `5dbe315ebf1bbe4bb3f16fab33da1d3c16ba7e0d`. The commit `Record V003-F02 final publication preflight (blocked)` has parent `8ef230785b617f58f0e6b4d6b959533295b1b237` and changes the Phase 03 conversation, report, ticket record, and migration map only. No PR or merge was created. F02 remains BLOCKED / OPEN.

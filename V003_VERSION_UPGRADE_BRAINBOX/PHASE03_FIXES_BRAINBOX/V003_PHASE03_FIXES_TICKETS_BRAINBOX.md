@@ -443,3 +443,9 @@ Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit
 **Git/authorization:** Operator authorized Phase 03 ticket-level commit/push. No PR/merge authority or final V003 closure was included. F02 report is on its own branch `v003/f02-final-publication-verification`; no PR or merge is created. RDC timeout prevented local staging/status confirmation; the remote commit was made through GitHub's Git Data API, and the local F02 branch is not checked out.
 
 **Pass gate:** NOT MET. No final independent V003 verdict or Operator V003 closure is claimed.
+
+---
+
+### V003-F02 preflight publication checkpoint — 2026-10-13
+
+GitHub ref `v003/f02-final-publication-verification` was verified at `5dbe315ebf1bbe4bb3f16fab33da1d3c16ba7e0d`. The commit changes only the Phase 03 conversation/report/ticket register and V003 migration map. It was published through GitHub Git Data API because RDC was unresponsive; local Git staging/push was not verified. F02 remains BLOCKED / OPEN, with no PR or merge.

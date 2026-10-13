@@ -2856,3 +2856,9 @@ GitHub ref `v003/f16-architecture-decisions-ownership` was confirmed at `e8dbf17
 **F16:** published on its own branch through guarded remote commits; latest F16 ref `8ef230785b617f58f0e6b4d6b959533295b1b237`. No architecture/source migration occurred. No PR/merge was created.
 
 **Authorization:** Phase 03 commit/push was authorized; PR, merge, and final V003 closure were not authorized in this instruction. This F02 note records the remote state and does not update or retire migration sources.
+
+---
+
+### V003-F02 publication checkpoint — 2026-10-13
+
+Remote branch `v003/f02-final-publication-verification` was read back at `5dbe315ebf1bbe4bb3f16fab33da1d3c16ba7e0d` (parent `8ef230785b617f58f0e6b4d6b959533295b1b237`). The preflight report and ticket evidence are published on the dedicated branch. Local worktree state could not be reconfirmed because RDC timed out. No PR or merge occurred; F02 remains blocked pending its listed prerequisites.

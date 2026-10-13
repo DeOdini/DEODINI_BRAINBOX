@@ -861,3 +861,14 @@ At the initial read, the local branch was `v003/f16-architecture-decisions-owner
 The current Operator instruction authorizes Phase 03 ticket-level commit/push, Batch D closure, and Batch E progression. It does not authorize a PR, merge, or final V003 closure. The F02 final lifecycle remains **BLOCKED** on unresolved M21 acceptance and missing per-ticket execution/verification evidence or a specific Operator disposition of F09/F11/F12/F13. Do not merge M21 or Phase 03 branches, create a PR, or declare V003 closed under this record.
 
 **F02 preflight:** complete as a read-only assessment and recorded as a blocked result. **F02 final PASS/closure:** not granted.
+
+---
+
+## V003-F02 post-publication verification — 2026-10-13
+
+**Branch:** `v003/f02-final-publication-verification`.
+**Preflight commit:** `5dbe315ebf1bbe4bb3f16fab33da1d3c16ba7e0d` — `Record V003-F02 final publication preflight (blocked)`.
+**Parent:** `8ef230785b617f58f0e6b4d6b959533295b1b237`.
+**Remote confirmation:** GitHub branch-ref readback returned the exact preflight commit. Commit inspection confirmed the four intended Phase 03/V003 records only: conversation, report, ticket register, and migration map.
+**Method/limit:** Published through the authenticated GitHub Git Data API after RDC stopped responding. This created a remote commit/ref update; local staging, local checkout, and a local `git push` were not verified. No PR/merge was created.
+**Disposition:** The recorded preflight remains BLOCKED / OPEN. The publication does not satisfy the missing F09/F11/F12/F13 execution evidence, renewed M21 acceptance, or V003 final closure gate.
