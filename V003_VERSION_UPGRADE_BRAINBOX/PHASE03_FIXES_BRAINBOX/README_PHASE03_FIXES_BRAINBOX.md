@@ -1,12 +1,12 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 ACTIVE; BATCH B OPERATOR ACCEPTED; BATCH C F15/F08/F14/F07 EXECUTED ON PER-TICKET BRANCHES; BATCH C REPORT/CONVERSATION RECORDED; F14 PARSER-PROVENANCE LIMITATION DOCUMENTED AS NON-BLOCKING; F01 DISPOSITION RECORDED; RENEWED M21 REVIEW AND OPERATOR ACCEPTANCE PENDING]
+**STATUS:** [PHASE 03 ACTIVE; BATCH A-D OPERATOR-ACCEPTED; F02 M21-GIT-01 DISPOSITION RECONCILIATION IN PROGRESS; M19-M21 GIT MERGES VERIFIED; M21/PHASE 02 ACCEPTANCE AND V003 FINAL CLOSURE PENDING]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [PHASE 03 ACTIVE; F01 LIMITED-UNAVAILABILITY DISPOSITION RECORDED; RENEWED M21 REVIEW PENDING; BATCH B OPERATOR ACCEPTED; BATCH C F15/F08/F14/F07 EXECUTION AND GIT RESULTS RECORDED; BATCH C OPERATOR ACCEPTANCE PENDING]
-**LAST UPDATED:** 2026-10-12 — Codex; refreshed Phase 03 branch refs; F14 historical-link corrections and F07 Windows path-compatibility results are published on their ticket branches; Batch C report/conversation closeout is recorded on F07; no persistent Git configuration or T23 evidence-path changes.
+**POPULATION:** [F01-F16 records and branches present; Batch D accepted by Operator; Batch E F02 evidence/reconciliation active; M21 limited-unavailability disposition recorded; renewed independent review and Operator acceptance pending]
+**LAST UPDATED:** 2026-10-13 - Codex F02 preflight verified M19-M21 PR merges, current F01-F16 branch refs, and unresolved M21/F-ticket acceptance gates.
 
 ## Local tree
 ```text

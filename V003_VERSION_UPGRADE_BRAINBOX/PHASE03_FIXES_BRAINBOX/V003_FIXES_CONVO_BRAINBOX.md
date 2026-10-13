@@ -554,3 +554,20 @@ GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf17
 ## V003-F02 preflight publication verification — 2026-10-13
 
 GitHub ref `v003/f02-final-publication-verification` was read back at `5dbe315ebf1bbe4bb3f16fab33da1d3c16ba7e0d`. The commit `Record V003-F02 final publication preflight (blocked)` has parent `8ef230785b617f58f0e6b4d6b959533295b1b237` and changes the Phase 03 conversation, report, ticket record, and migration map only. No PR or merge was created. F02 remains BLOCKED / OPEN.
+
+
+## Operator instruction and Codex response - V003-F02 merge of M21-GIT-01 correction - 2026-10-13
+
+### Operator (verbatim)
+
+```text
+CONDUCT THE FIX AND MERGE ON THE PHASE03 F02 BRANCH OF THE `M21-GIT-01`   SINCE ITS OWN M21 BRANCH AS BEEN MERGED. WE CAN THEN USE THE BRANCH IN WHICH IT IS BEING FIXED, THE MAJOR ASPECT IS TO HAVE THE RESULT SHOWN ON THE MAIN AFTER MERGE TAKES PLACE FOR F02.
+```
+
+### Codex commentary (verbatim)
+
+> Understood: you want the M21-GIT-01 correction recorded on F02 and visible on main after F02 merges. Before merging, I’m checking the exact F02-to-main diff: this branch is cumulative, so I need to make sure the proposed merge won’t bring along unrelated Phase 03 ticket changes that were previously meant to stay unmerged.
+
+### Codex response
+
+The Operator authorized the correction on `v003/f02-final-publication-verification` and its merge to `main`. The current comparison confirms M21 PR #37 is already merged, while the F02 branch contains cumulative Phase 03 history. The correction records the already approved limited-unavailability disposition without claiming the 20 checkpoint objects were restored or globally irrecoverable. It preserves the remaining renewed M21 review and Operator-acceptance gates. The F02 PR contents and resulting merge will be checked and documented separately; no automatic M21, Phase 02, or V003 acceptance is inferred.

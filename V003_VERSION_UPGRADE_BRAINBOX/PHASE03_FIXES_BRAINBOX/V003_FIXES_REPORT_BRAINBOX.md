@@ -872,3 +872,39 @@ The current Operator instruction authorizes Phase 03 ticket-level commit/push, B
 **Remote confirmation:** GitHub branch-ref readback returned the exact preflight commit. Commit inspection confirmed the four intended Phase 03/V003 records only: conversation, report, ticket register, and migration map.
 **Method/limit:** Published through the authenticated GitHub Git Data API after RDC stopped responding. This created a remote commit/ref update; local staging, local checkout, and a local `git push` were not verified. No PR/merge was created.
 **Disposition:** The recorded preflight remains BLOCKED / OPEN. The publication does not satisfy the missing F09/F11/F12/F13 execution evidence, renewed M21 acceptance, or V003 final closure gate.
+
+
+## V003-F02 current publication and M21-GIT-01 reconciliation - 2026-10-13
+
+**Codex result:** The current-state preflight and bounded documentation correction are complete on `v003/f02-final-publication-verification`. The F02 final acceptance gate is **NOT PASSED** and V003/Phase 02 are **NOT CLOSED**. This report records current facts, not a final independent ChatGPT verdict.
+
+### Verified Git publication state
+
+- Current `origin/main`: `1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a`.
+- M19 PR #35 merged to `main` at merge commit `3a8106c303b23421331ad437cd4f5bb629d3bdda`; M20 PR #36 merged at `5b4a1bac64a7a2bc8b520da4767f428164664b6b`; M21 PR #37 merged at `1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a`. All three PR records report `closed / merged=true`.
+- The M21 branch tip `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e` has zero commits ahead and three behind current `main`; it is an ancestor of `main`. This corrects the earlier F02 preflight statement that M21 was not merged.
+- Before this F02 update, the F02 branch was `6effb70adbba013437256e220a43171382beabe6`, 36 commits ahead and 3 behind current `main`, with merge base `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e`. The existing F02 head had no pull request. The Phase 03 branch search returned all F01-F16 refs. The open-PR search for V003 returned no results at preflight.
+- The F02 branch is cumulative. Its pre-update comparison to `main` contained 21 changed paths (2,431 insertions / 93 deletions), including the Phase 03 records and previously ticketed F08 routing notices and F14 relative-link corrections. No deleted paths appeared in that comparison. The Operator has now expressly authorized the F02 correction and merge so the result appears on `main`; the actual PR and merge state will be recorded in a post-publication update.
+
+### M21-GIT-01 disposition correction
+
+The 20 checkpoint commit IDs remain **not found in the sources searched**. No object restoration, replacement SHA, global-unavailability claim, loss-cause claim, object mutation, GC, prune, or reflog expiry is recorded. F01 already records the Operator's explicit approval of the **bounded limited-unavailability disposition** for those 20 IDs within the documented search boundary. That disposition resolves the choice to recover from an identified source or document unavailability; it does not mean the objects were recovered.
+
+The remaining M21/Phase 02 acceptance gate is renewed independent ChatGPT verification of the updated M21/F01 record and explicit Operator M21/Phase 02 acceptance. Until those are recorded, `M21-GIT-01` remains **blocking for M21/Phase 02 acceptance**, while publication of this correction is authorized. The Migration Map current-status wording was corrected on the F02 branch to record the approved disposition and the actual M19-M21 merge state; the older dated M21 assessment remains preserved as historical evidence.
+
+### Batch D records and remaining ticket decisions
+
+The Operator has explicitly accepted Batch D closure and authorized Batch E progression. This records batch acceptance and does not rewrite ticket-specific evidence or fabricate PASS results. The current published F09/F11/F12/F13 records show:
+
+- **F09:** Eight-agent source mapping and evidence classification are documented. The revised intake questionnaire remains a proposal awaiting Operator approval; F09's intake-method pass condition is not met.
+- **F11:** Source inventory is recorded. Whether the four catalog path edits from F14 are covered by F03's unchanged-retention decision remains explicitly **UNDECIDED**; no edit, revert, move, copy, normalization, or deletion is proposed here.
+- **F12:** The FootHive authority matrix is a proposal awaiting Operator approval.
+- **F13:** Production promotion criteria remain a proposal dependent on F12 and Operator approval. No post-T20 live check or new production outcome is claimed.
+
+These findings are carried into F02 as unresolved acceptance decisions; the Operator's Batch D closure is preserved. F02 cannot claim all per-ticket independent passes from Codex's own reports. No separate final ChatGPT verdict is available in this execution context.
+
+### Scope, checks, and limits
+
+The preflight refreshed origin refs, confirmed the clean F02 checkout before edits, checked current branch/ancestry and PR states, read the live Migration Map, and compared the F02 branch to `main`. No implementation source, image, evidence asset, secret, or frozen Specification was changed. Existing M21 snapshot/hash/security checks and the prior F15 link scan are cited as historical evidence, not claimed as newly rerun. This F02 update adds no navigation links; existing link results are not expanded by this change.
+
+**Current gate:** F02 execution evidence and the approved M21-GIT-01 disposition reconciliation are recorded; F02 final PASS remains pending the independent final review and Operator acceptance. The F02 branch merge is separately authorized by the Operator and is being handled as a Git publication step, not as automatic Phase 02/V003 closure.

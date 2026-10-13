@@ -449,3 +449,16 @@ Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit
 ### V003-F02 preflight publication checkpoint — 2026-10-13
 
 GitHub ref `v003/f02-final-publication-verification` was verified at `5dbe315ebf1bbe4bb3f16fab33da1d3c16ba7e0d`. The commit changes only the Phase 03 conversation/report/ticket register and V003 migration map. It was published through GitHub Git Data API because RDC was unresponsive; local Git staging/push was not verified. F02 remains BLOCKED / OPEN, with no PR or merge.
+
+
+## V003-F02 current execution and merge authorization - 2026-10-13
+
+**Status:** F02 current-state preflight complete; M21-GIT-01 disposition and actual M19-M21 Git merge facts reconciled in the report and living Migration Map. F02 final acceptance remains **OPEN / NOT PASSED**; no Phase 02 or V003 closure is claimed.
+
+**Verified:** M19 PR #35, M20 PR #36, and M21 PR #37 are merged into `main`; current `main` is `1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a`. The M21 branch has no unique commits relative to main. All F01-F16 branch refs are present. F02's prior head was 36 ahead / 3 behind main and had no PR.
+
+**M21-GIT-01:** The Operator-approved limited-unavailability disposition is recorded for all 20 checkpoint IDs within the searched-source boundary. No SHA replacement or Git-object recovery is claimed. M21 acceptance still requires renewed independent ChatGPT review and explicit Operator acceptance.
+
+**Batch D:** Operator closure is recorded. F09 questionnaire approval, F11 catalog precedence (UNDECIDED), F12 matrix approval, and F13 criteria approval remain visible as ticket-specific decisions; no result was promoted to PASS by batch acceptance.
+
+**Current Operator authority:** The Operator expressly directed Codex to correct M21-GIT-01 on the F02 branch and merge F02 so the result appears on `main`. That authorizes the F02 branch publication/merge described by this ticket. It does not authorize falsely marking M21/Phase 02 accepted or V003 closed. The exact F02 diff is cumulative and includes previously published Phase 03 records and ticket-authorized documentation changes; its actual PR contents and merge result must be checked and recorded after publication.

@@ -1,7 +1,7 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01-M21 source-backed ledger. Codex M21 snapshot/map drafted; final acceptance is BLOCKED by M21-GIT-01 pending recovery disposition. ChatGPT independent M21 verification and Operator acceptance remain pending; Batch E is unmerged.
+**Status:** Living M01-M21 source-backed ledger. Codex M21 snapshot/map drafted; final acceptance is BLOCKED by M21-GIT-01 pending renewed independent verification and Operator acceptance after the Operator-approved limited-unavailability disposition. ChatGPT independent M21 verification and Operator acceptance remain pending; M19-M21 Git PRs #35-#37 are merged to main as of 2026-10-13; M21 acceptance remains blocked pending renewed verification and Operator acceptance.
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
 **Current active branch:** v003/m21-final-migration-verification-closeout
@@ -2862,3 +2862,12 @@ GitHub ref `v003/f16-architecture-decisions-ownership` was confirmed at `e8dbf17
 ### V003-F02 publication checkpoint — 2026-10-13
 
 Remote branch `v003/f02-final-publication-verification` was read back at `5dbe315ebf1bbe4bb3f16fab33da1d3c16ba7e0d` (parent `8ef230785b617f58f0e6b4d6b959533295b1b237`). The preflight report and ticket evidence are published on the dedicated branch. Local worktree state could not be reconfirmed because RDC timed out. No PR or merge occurred; F02 remains blocked pending its listed prerequisites.
+
+
+## V003-F02 current-state reconciliation - 2026-10-13
+
+The F02 preflight verified `origin/main` at `1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a`. M19 PR #35, M20 PR #36, and M21 PR #37 are merged to `main`; PR #37's merge commit is the current main tip. The M21 branch `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e` has zero commits ahead and three behind main. This dated note supersedes the earlier current-state wording that Batch E was unmerged; the earlier dated M21 verification section is preserved as a historical checkpoint.
+
+The F01 record documents the Operator-approved limited-unavailability disposition for the 20 checkpoint IDs, scoped to the searched sources. The IDs remain unrecovered and no global irrecoverability or loss cause is claimed. This disposition is recorded; the remaining M21-GIT-01 acceptance gate is renewed independent ChatGPT verification of the updated record plus explicit Operator M21/Phase 02 acceptance. No Git object recovery or mutation is authorized or claimed here.
+
+**Current status:** Batch E Git lifecycle MERGED; M21/Phase 02 acceptance BLOCKED pending the renewed verification and Operator acceptance; Phase 02 and V003 are not declared closed. This entry is a Phase 03 F02 factual reconciliation and does not alter the frozen Specification or historical source records.
