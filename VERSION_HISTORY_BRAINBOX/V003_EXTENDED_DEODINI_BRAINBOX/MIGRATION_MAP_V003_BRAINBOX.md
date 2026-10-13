@@ -2793,3 +2793,21 @@ The complete row-level audit, including paths, M01 size/SHA/blob IDs, current ph
 ### F06 content-publication checkpoint — 2026-10-12
 
 The scoped correction and decision records were committed as `fc082859f74ff3b30e973d85f6dbffd25b0fc056` ("Record V003-F06 decision and integrity audit") and pushed to `origin/v003/f06-m20-legacy-source-reference-audit`. Fresh fetch confirmed HEAD/upstream/origin equality and ahead/behind 0/0. This records publication only: F06 remains open pending its required independent verification and Operator closure; no PR or merge was created.
+
+
+
+## V003-F10 — Skills legacy authority and retirement assessment — 2026-10-13
+
+**Source:** AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md.
+
+**M01 baseline:** 847 bytes / 24 lines / SHA-256 1850965879a9494dd3004e605125c2d3e2bde42e678fe8d11d5e8fc9872dbef6; original Git blob 5635f3403e876c0b8f9f4b4766c892f024680c18.
+
+**Current F07/F10 branch state:** F08 commit a4f92786296da266d11c681739e0450062f83066 added a three-line routing banner before the original content, preserving the original body. Current branch Git blob 9d12397205ab86c4cc63c6c6220e4285421ea2ea, 1,353 bytes / 27 lines. This is a later reference notice, not a change to the M01 baseline; the Windows checkout’s 1,355-byte representation reflects local newline form.
+
+**Current authority:** AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md is the current Skills domain entry point. The legacy source is reference-only historical navigation; F08 routes readers to current root/Skills/Governance entry points.
+
+**Reference audit:** Nineteen tracked files point to or record this legacy path; seven are current root/Governance/Skills navigation records and twelve are historical or migration-process records. Full path inventory and classification are in the V003-F10 report section. The existing F06 audit CSV row 108 independently records REFERENCE_ONLY; RETAINED HISTORICAL and no source-retirement approval.
+
+**Codex recommendation:** KEEP the source at its current path as a reference-only historical entry with its F08 routing notice; preserve the original body, do not duplicate, and do not delete. No source change was made.
+
+**Operator disposition:** PENDING. Source stays intact pending explicit Operator choice.

@@ -386,3 +386,12 @@ The Operator explicitly approved Batch C closure and proceeding to Batch D, and 
 
 
 **Phase 03 verification publication / Batch C closure:** Commit `eb66f86ef8c810790f27039f7c4b639b9772b703` was pushed on `v003/f07-t23-windows-path-compatibility`. Fresh fetch verified local HEAD equals the origin branch tip, and the worktree is clean. The Operator explicitly closed Batch C and authorized Batch D progression. This closeout performed no merge.
+
+
+## V003-F10 — V002 Skills legacy authority and retirement
+
+**Status:** EVIDENCE AUDIT COMPLETE — OPERATOR DISPOSITION REQUIRED.
+
+**Verified:** Current V003 Skills entry authority is AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md. The source legacy Skills README has an M01 original baseline of 847 bytes / 24 lines / SHA-256 1850965879a9494dd3004e605125c2d3e2bde42e678fe8d11d5e8fc9872dbef6. F08 added a three-line routing notice without deleting the historical body; the current F07/F10 Git blob is 1,353 bytes / 27 lines. The M01 map and F06 source-reference audit preserve the pre-F08 baseline. Nineteen tracked inbound files were inventoried and classified in the report.
+
+**Recommended:** Keep the source at its current path as reference-only historical material with the existing F08 routing notice; do not duplicate or delete it. **Operator disposition:** PENDING. No source operation was performed. The ticket remains open to that decision.

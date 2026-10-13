@@ -738,3 +738,34 @@ Batch D sequence: F10, F16, F11, F12, F13, then F09. Each begins with evidence/r
 **Independent push check:** A fresh `git fetch origin` completed successfully. Local `HEAD` and `origin/v003/f07-t23-windows-path-compatibility` both resolve to `eb66f86ef8c810790f27039f7c4b639b9772b703`; `git status --short --branch` showed the branch synchronized with no working-tree changes.
 
 **Batch disposition:** Batch C is closed by the Operator’s explicit approval. Batch D is authorized to begin with F10, followed by F16, F11, F12, F13, and F09. No source deletion/move or merge is implied by this closeout.
+
+
+## V003-F10 — Skills legacy authority and retirement assessment — 2026-10-13
+
+**Status:** Evidence audit complete; recommended disposition is presented below; Operator decision pending. No legacy source edit, move, copy, rename, or deletion was made.
+
+### Source and integrity evidence
+
+- Source: AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md.
+- M01 baseline: 847 bytes, 24 lines, SHA-256 1850965879a9494dd3004e605125c2d3e2bde42e678fe8d11d5e8fc9872dbef6; original Git blob 5635f3403e876c0b8f9f4b4766c892f024680c18.
+- Current F10 branch base contains the authorized F08 routing notice. F08 commit a4f92786296da266d11c681739e0450062f83066 added a three-line banner at the beginning of this file; the Git diff shows additions only and leaves the original body below it. Current F07/F10 branch blob: 9d12397205ab86c4cc63c6c6220e4285421ea2ea, 1,353 Git-blob bytes, 27 lines. The Windows working copy reports 1,355 bytes because its checked-out newline representation differs; Git status was clean. M01’s original hash remains the historical pre-F08 baseline.
+
+### Current authority and archive duty
+
+The current Skills entry authority is AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md. Its competency child authority is AI_BRAINBOX/SKILLS_AI_BRAINBOX/SKILLS_BRAINBOX/README_SKILLS_BRAINBOX.md. Governance remains canonical for system-wide rules. The legacy README is no longer the current V003 Skills authority; the F08 banner directs readers to the root README, current Skills README, and Governance README while preserving the historical body.
+
+The M01 migration-map source row records the 847-byte baseline and its initial retention as a historical/local source. F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv row 108 classifies the file as REFERENCE_ONLY; RETAINED HISTORICAL, points its target reference to the V003 Skills root, and states that no separate source-retirement approval was found. M20 did not authorize removal of this substantive source.
+
+### Inbound reference inventory on the current F07/F10 branch
+
+A Git-tracked text search found 19 inbound files, excluding the source itself:
+
+**Current navigation/reference records:** DOB_MUST_README.md; README_BRAINBOX.md; GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md; GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md; AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md; AI_BRAINBOX/SKILLS_AI_BRAINBOX/SKILLS_BRAINBOX/README_SKILLS_BRAINBOX.md; and AI_BRAINBOX/SKILLS_AI_BRAINBOX/REFERENCES_SKILLS_BRAINBOX/README_REFERENCES_SKILLS_BRAINBOX.md. The V003 Skills records label the old README as retained legacy material; Governance lists it as a retained source; the root README indexes it as legacy and says the current M08/M19/M20 reviews are complete. DOB still contains older tree/entry references, while the F08 routing notices provide the current reading route.
+
+**Historical/process records:** MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv; V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_CONVO_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md; VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md; VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md; and VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/TREE_SNAPSHOT_V003_BRAINBOX.md. These references preserve former structure, migration provenance, or historical tree snapshots and must not be mass-rewritten as if they were current navigation.
+
+### Recommendation and decision gate
+
+**Recommended disposition: KEEP the file at its existing path as a reference-only historical entry with the existing F08 routing notice.** Keep the original body below the banner; use README_SKILLS_AI_BRAINBOX.md as the sole current Skills entry authority. Do not create a duplicate archival copy and do not delete the legacy file. This preserves its historical/local context and link targets while directing current readers to the proper authority. A later retirement could be considered only under a separate explicit source-specific approval after confirming every live navigation link and preserving the source’s history.
+
+**Operator disposition:** PENDING. F10 is not closed until the Operator confirms or changes this recommendation. No source operation is authorized by this assessment.

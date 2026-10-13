@@ -476,3 +476,16 @@ The closeout wording correction is committed and verified on `v003/f07-t23-windo
 **Codex final response (verbatim):**
 
 Phase 03 verification records are committed and pushed on `v003/f07-t23-windows-path-compatibility` as `eb66f86ef8c810790f27039f7c4b639b9772b703`. The commit adds the independent verification and Operator authorization to the conversation, report, and ticket records; it preserves the later remote chronology corrections. A fresh fetch confirmed local and origin refs match and the worktree is clean. Batch C closure and progression to Batch D are Operator-approved. No merge was performed. I am recording this closeout separately before beginning F10.
+
+
+## Batch D — V003-F10 Skills legacy authority and retirement — 2026-10-13
+
+**Operator (ticket scope, verbatim):** “V003-F10 — V002 SKILLS_AVAIL legacy authority and retirement. Class: OPERATOR DISPOSITION; effort: LOW–MEDIUM. Sources: AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md (847 bytes); V003 SKILLS_AI_BRAINBOX. Draft work: Trace inbound references and archive duty; recommend explicit keep/redirect/retire decision. Pass: one current Skills entry authority, historical source fate and no unapproved deletion.”
+
+**Codex commentary (verbatim):** “F10’s first-pass trace shows the new V003 Skills README is already the current entry point, while the old Skills README remains linked from active reference/navigation records and appears in historical snapshots. I’m checking every exact inbound path and the migration map before writing the recommendation; the legacy file itself stays untouched pending your disposition.”
+
+**Codex commentary (verbatim):** “I found a source-integrity discrepancy during F10’s local check: the local working copy of SKILLS_MUST_README.md reports 1,355 bytes and 27 lines, while the M01 migration map and GitHub main record 847 bytes and 24 lines. I’m comparing the actual local content with the tracked branch blob before deciding whether this is an encoding/working-copy difference or an unrecorded modification. I will not edit or retire that source while this is unresolved.”
+
+**Codex commentary (verbatim):** “The apparent size mismatch is explained by the already published F08 change: it adds a three-line routing banner to the legacy Skills README and leaves the original body intact. M01’s 847-byte SHA-256 remains the pre-F08 baseline; the F07/F10 branch’s Git blob is now 1,353 bytes. I also found the existing F06 audit already labels this source ‘reference-only / retained historical’ but explicitly says no separate Operator retirement approval was present.”
+
+**Execution status:** Source/reference audit and recommendation are recorded on the F10 branch. The legacy source has not been moved, renamed, copied, rewritten, or deleted. The ticket is awaiting the Operator’s explicit source disposition.
