@@ -357,7 +357,7 @@ These sources remain at their original paths for historical/source review. They 
 
 ```text
 AI_BRAINBOX legacy sources/
-+-- AI_MUST_README.md [historical AI navigation]
++-- AI_MUST_README.md [legacy entry; F08 routes to current root/AI/Governance, body preserved]
 +-- PROJ_WORKFLOW_AI_BRAINBOX/ [legacy workflow and FootHive source records]
 +-- SKILLS_AVAIL_AI_BRAINBOX/ [legacy Skills source records]
 ```

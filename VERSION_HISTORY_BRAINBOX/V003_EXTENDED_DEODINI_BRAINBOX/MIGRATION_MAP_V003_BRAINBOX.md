@@ -1,7 +1,7 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01-M21 source-backed ledger. Codex M21 snapshot/map drafted; final acceptance is BLOCKED by M21-GIT-01 pending recovery disposition. ChatGPT independent M21 verification and Operator acceptance remain pending; Batch E is unmerged.
+**Status:** Living M01-M21 source-backed ledger. Codex M21 snapshot/map drafted; final acceptance is BLOCKED by M21-GIT-01 pending renewed independent verification and Operator acceptance after the Operator-approved limited-unavailability disposition. ChatGPT independent M21 verification and Operator acceptance remain pending; M19-M21 Git PRs #35-#37 are merged to main as of 2026-10-13; M21 acceptance remains blocked pending renewed verification and Operator acceptance.
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
 **Current active branch:** v003/m21-final-migration-verification-closeout
@@ -2506,44 +2506,44 @@ The seven verified empty-source retirements and all retained substantive-source 
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-57-46-657Z.yml` | MIGRATED COPY; RETAINED HISTORICAL | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/EVIDENCE_FH_BRAINBOX/PLAYWRIGHT_FH_BRAINBOX/page-2026-10-01T18-57-46-657Z.yml | M01 SHA match | M19-HIST-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FAILED_FH_BRAINBOX.md` | MIGRATED COPY; RETAINED HISTORICAL | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/FAILED_FH_BRAINBOX.md | M01 SHA match | M19-HIST-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FH_MUST_README.md` | REFERENCE_ONLY; RETAINED HISTORICAL | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md | M01 SHA match | M20-REF-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/americana-star-western-boot.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/blue-blossom-western-boot.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/americana-star-western-boot.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/blue-blossom-western-boot.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/crimson-triple-buckle-boot.png` | REFERENCED EXTERNAL; RETAINED HISTORICAL | C:/Users/USER/FOOTHIVE/assets/products/crimson-triple-buckle-boot.png | M01 SHA match | Project asset, not Brainbox evidence |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/foothive-boot-images.md` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/foothive-boot-images.md` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/ivory-shaft-western-boot.png` | REFERENCED EXTERNAL; RETAINED HISTORICAL | C:/Users/USER/FOOTHIVE/assets/products/ivory-shaft-western-boot.png | M01 SHA match | Project asset, not Brainbox evidence |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/olive-canvas-buckle-combat-boot-front.png` | REFERENCED EXTERNAL; RETAINED HISTORICAL | C:/Users/USER/FOOTHIVE/assets/products/olive-canvas-buckle-boot-front.png | M01 SHA match | Project asset, not Brainbox evidence |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/olive-canvas-buckle-combat-boot-rear.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/stars-stripes-western-boot.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/sunflower-embroidered-western-boot.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/winged-cross-studded-western-boot.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/olive-canvas-buckle-combat-boot-rear.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/stars-stripes-western-boot.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/sunflower-embroidered-western-boot.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/winged-cross-studded-western-boot.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/burnished-cognac-patina-oxford.png` | REFERENCED EXTERNAL; RETAINED HISTORICAL | C:/Users/USER/FOOTHIVE/assets/products/burnished-cognac-patina-oxford.png | M01 SHA match | Project asset, not Brainbox evidence |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/chestnut-ivory-suede-panel-wingtip.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/chestnut-two-tone-wingtip-boot.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/crimson-navy-patina-wingtip.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/foothive-classic-images.md` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/four-pair-shoe-tree-lineup.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/chestnut-ivory-suede-panel-wingtip.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/chestnut-two-tone-wingtip-boot.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/crimson-navy-patina-wingtip.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/foothive-classic-images.md` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/four-pair-shoe-tree-lineup.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/olive-suede-wingtip-brogue.png` | REFERENCED EXTERNAL; RETAINED HISTORICAL | C:/Users/USER/FOOTHIVE/assets/products/olive-suede-wingtip-brogue.png | M01 SHA match | Project asset, not Brainbox evidence |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/tan-croc-embossed-derby.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/tri-tone-patent-wingtip-derby.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/two-tone-cap-toe-field-boot.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/tan-croc-embossed-derby.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/tri-tone-patent-wingtip-derby.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/two-tone-cap-toe-field-boot.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE LOGO + DARK MODE/foothive-logo-dark.svg` | REFERENCED EXTERNAL; RETAINED HISTORICAL | C:/Users/USER/FOOTHIVE/assets/logo/foothive-logo-dark.svg | M01 SHA match | Project asset, not Brainbox evidence |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE LOGO + DARK MODE/foothive-logo.svg` | REFERENCED EXTERNAL; RETAINED HISTORICAL | C:/Users/USER/FOOTHIVE/assets/logo/foothive-logo.svg | M01 SHA match | Project asset, not Brainbox evidence |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/charcoal-tactical-boot-runner.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/foothive-sneaker-images.md` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/charcoal-tactical-boot-runner.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/foothive-sneaker-images.md` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/frost-glow-sock.png` | REFERENCED EXTERNAL; RETAINED HISTORICAL | C:/Users/USER/FOOTHIVE/assets/products/frost-glow-sock-runner.png | M01 SHA match | Project asset, not Brainbox evidence |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/navy-tan-stripe.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/navy-tan-stripe.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/talon-blade.png` | REFERENCED EXTERNAL; RETAINED HISTORICAL | C:/Users/USER/FOOTHIVE/assets/products/talon-blade-runner.png | M01 SHA match | Project asset, not Brainbox evidence |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/foothive-timberland-images.md` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image02.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image03.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image04.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image05.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image08.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image13.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image15.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image16.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image17.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image19.png` | DEFERRED; RETAINED HISTORICAL | No approved asset destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/foothive-timberland-images.md` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image02.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image03.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image04.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image05.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image08.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image13.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image15.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image16.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image17.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image19.png` | RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12) | Current source path; no migration destination | M01 SHA match | M15-ASSET-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/OPERATOR_ADDENDUM_FH_BRAINBOX.md` | MIGRATED COPY; RETAINED HISTORICAL | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/OPERATOR_ADDENDUM_FH_BRAINBOX.md | M01 SHA match | M19-HIST-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/PASSED_FH_BRAINBOX.md` | MIGRATED COPY; RETAINED HISTORICAL | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/PASSED_FH_BRAINBOX.md | M01 SHA match | M19-HIST-01 |
 | `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md` | REFERENCE_ONLY; RETAINED HISTORICAL | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/README_DEVOPS_AI_BRAINBOX.md | M01 SHA match | M20-REF-01 |
@@ -2606,3 +2606,268 @@ Independent complete filesystem/snapshot comparison: **289 directories / 460 fil
 Retain `M15-ASSET-01`, `M17-DEST-01`, `M19-HIST-01`, `M20-REF-01` as source-specific restrictions. M21 snapshot and source-ledger publication do not grant retirement, deployment, Git cleanup, Phase 02 closure or future Router capability authority.
 
 **Final verdict: M21 EVIDENCE PARTIALLY VERIFIED; OVERALL ACCEPTANCE BLOCKED.**
+
+---
+
+## Operator disposition — V003-F01 historical checkpoint availability — 2026-10-11
+
+**Decision:** The Operator directed ChatGPT to record the previously recommended LIMITED UNAVAILABILITY disposition for the 20 original M01 Cline checkpoint commit objects. This is a present-date risk/disposition record, NOT a claim that the original SHAs were never recorded, never existed, or are irrecoverable worldwide.
+
+**Record identity and population:** The original SHA inventory in `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` remains **[POPULATED]**. Frozen V003 Specification §6 defines [ACTIVE], [POPULATED], [EMPTY], [PLANNED], [DEPRECATED], [REFERENCE]; it does not establish [UNAVAILABLE] or [NOT POPULATED] as population states. The commit recovery finding is therefore an **evidence-status annotation**, not a new folder-population status.
+
+**Evidence status:** `20/20 historical checkpoint objects — NOT FOUND IN SEARCHED SOURCES AS OF 2026-10-11`. Brainbox local Git object check: 0/20 readable; GitHub repository direct commit lookups: Codex reported 0/20; `DeOdini/pedestal-archive` GitHub direct commit lookups: independently confirmed 0/20. Codex reported 0/20 across 13 local Git repositories and inspected C:-drive candidate bundles, ZIPs and backup locations; other offline drives, private/external/cloud snapshots and undiscovered recovery sources were not checked comprehensively. SHA strings remain present in historical migration map and F01 report.
+
+**Operator-accepted limitation:** Preserve full 20-SHA ledger and M01 original observation without alteration. Document that original commit contents remain unrecovered, whereabouts and loss mechanism UNKNOWN, and other unsearched storage might yet carry them. Treat this historical limitation as recorded rather than insist on speculative reconstruction or more searches solely to pursue Phase 03 planning. If a new credible source is identified later, re-open read-only assessment without inventing objects or authorship.
+
+**Authority boundary:** This does NOT authorize Git gc/prune, reflog expiry, history rewrite, replacement SHAs, object/ref restoration, source deletion, forced push, branch merge, deployment, or any automatic M21 PASS. `M21-GIT-01` remains a historical evidence limitation pending an explicit **renewed M21 closeout review and independent verification** under Operator acceptance authority. `V003-F01` search/report phase completed and its limited-unavailability decision recorded; ticket final verification/Operator acceptance remains a separate gate. No claim is made that all Git-history recovery risks have been eliminated.
+
+**Publication state:** Local documentation append only. Do not claim committed/pushed unless subsequently authorized and independently confirmed.
+
+---
+
+## V003-F01 Operator disposition confirmation — 2026-10-12
+
+The Operator confirmed that the recorded response “PROCEED WITH TO RECORDING YOUR REPORT ACCORDINGLY TO YOUR SUGGESTIONS” was approval of the limited-unavailability disposition for the 20 historical checkpoint objects. The disposition is expressly bounded to searched sources; it does not establish global irrecoverability, cause, or nonexistence. Codex independently rechecked the active repository and found 0/20 readable. ChatGPT’s independent report records that broader searches were not all repeated by ChatGPT.
+
+**Status:** F01 search/disposition evidence recorded; renewed M21 review and Operator acceptance remain pending. M21-GIT-01 continues to block M21/Phase 02 closure. No Git object manipulation, GC, prune, source deletion, or history rewrite is authorized.
+
+---
+
+## V003-F04 — M17-DEST-01 legacy milestone source cross-check — 2026-10-12
+
+### Source integrity and Git provenance
+
+| Current source path | Bytes | Lines | SHA-256 | Current Git blob | M01 baseline |
+|---|---:|---:|---|---|---|
+| `MILESTONES/MILESTONES_MUST_README.md` | 2,230 | 56 | `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e` | `fb0636ce9d75fab2128e018e8c73af30ac196090` | Exact match |
+| `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` | 26,420 | 462 | `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8` | `c796b2a1e278e8a1d35b4bc4ebc2cd58dc52e8b4` | Exact match |
+
+Both files were first added in Git commit `9e884c60e2f5c2989e9a8cdf7326c9a3e6565044` (2026-09-25). Current working-file SHA-256 values match the M01 integrity baseline; `HEAD:path` blobs and `git hash-object --path` also match the M01 blob IDs. No source mutation was performed.
+
+### Purpose and non-equivalence
+
+- `MILESTONES_MUST_README.md` is the local authority for the earlier `MILESTONES/` folder. It describes the checkpoint as a global, jointly maintained milestone record under Operator authority, sets local naming/record rules, and preserves the instruction not to recreate a former single-agent Grok appendix.
+- `MILESTONE_CHECKPOINT_BRAINBOX.md` is a historical consolidated milestone checkpoint. Its contents cover the earlier M01–M12 progression, the then-current file tree and authority model, historical Git state, evidence limits and next steps. Its internal checkpoint date is 2026-09-24; the Git add was 2026-09-25. Its recorded 'uncommitted/unpushed at checkpoint creation' status is historical context, not its present Git state.
+- The two records under `MILESTONES_BRAINBOX/` are different: `README_MILESTONES_BRAINBOX.md` navigates future planned intent, and `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` describes future Router/agentic capabilities. Both remain `[PLANNED]`; neither is a historical checkpoint or local authority replacement.
+- The Router record itself says the legacy source is separate and must not be copied or relabeled as current architecture. Frozen Specification §28 defines only the two planned future-intent records; the Version History target does not name a legacy milestone-checkpoint destination.
+
+### Current references
+
+Read-only `git grep` found exact legacy path references in:
+
+- `DOB_MUST_README.md` lines 98 and 130 (legacy reading-order and subsystem-authority references).
+- `VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md` lines 130–131 (historical tree snapshot).
+- `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` baseline/M17 entries (source inventory, SHA/blob evidence, and disposition).
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/` conversation and report (M17 inspection and source-decision history).
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/` current F04 scope and evidence.
+
+`MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` and `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` explicitly keep the old source separate and state M17 found no authorized destination. The root `README_BRAINBOX.md` retains the old folder in its historical-source tree and identifies M17-DEST-01.
+
+### Disposition gate
+
+Evidence supports historical retention of both records at their existing paths as the lowest-risk proposal. No approved alternate destination exists; copying into the planned Router branch would contradict its authority boundary. **Operator choice remains required for each source:** retain in place as historical, or specify an explicit destination/authority. Until that choice is recorded, M17-DEST-01 remains OPEN for physical move, copy-as-destination, rename, or retirement. No files were moved, copied, renamed, edited, or deleted by V003-F04.
+
+
+### V003-F04 Git publication checkpoint — 2026-10-12
+
+Evidence commit `da2569211e868737f806df7373b71acf582e7e73` is present on `v003/f04-m17-milestone-source-disposition`; fetched upstream and live remote tip matched local HEAD. F04's source inventory is recorded above. The recommended disposition is to retain both original records unchanged at source, but Operator confirmation is pending. No source operation or merge occurred.
+
+
+### V003-F04 Operator disposition resolution — 2026-10-12
+
+The Operator approved retaining both `MILESTONES/MILESTONES_MUST_README.md` and `MILESTONES/MILESTONE_CHECKPOINT_BRAINBOX.md` unchanged at their current paths. Both match their M01 SHA-256 and Git-blob baselines. Their disposition is `RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE`; no physical destination or copy is required. They remain distinct from future `MILESTONES_BRAINBOX/` Router/Agentic intent. `M17-DEST-01` is resolved for these two records. M20 must honor their retention. No move, copy, rename, rewrite, or deletion occurred.
+
+
+## V003-F03 — M15-ASSET-01 source-only asset evidence update — 2026-10-12
+
+**Current status:** Inventory evidence recorded; per-file Operator disposition pending. This update does not authorize any asset operation and does not close V003-F03.
+
+- The M01 FH-ASSET inventory has 38 records. The 29 source-only items are the 25 product images and four Markdown catalogs listed individually, with path, size, SHA-256, catalog consumer and proposal, in `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md`, section “V003-F03 — M15-ASSET-01 FootHive Source-Only Asset Disposition Audit.”
+- Current verification: 29/29 listed files exist; their sizes and raw SHA-256 values match the report and M01 FH-ASSET ledger; each is byte-identical to its Git blob at F03 branch HEAD. **0/29 discrepancies.**
+- The separately inspected FootHive project assets folder had 11 files and 0 hash matches among these 29. Five website text/source files had 0 exact filename references. The four catalogs contain 32 broken relative image links (9 boot, 9 classic, 4 sneaker, 10 Timberland). These findings are limited to the inspected locations and are not proof of no external or uninspected consumer.
+- Existing M01/M15 rows label the 29 items deferred/retained historical and identify no approved asset destination. That remains a description of current location and earlier disposition state; it does not substitute for the F03 per-file Operator decision now requested.
+- Proposed per-file decision: retain each of the 29 exact source records unchanged at its existing path. Operator answer pending. Rights/licensing are not established. No copy, move, rename, edit, normalization, link repair, or deletion was performed.
+- **Source-removal eligibility:** not approved. **Dependent destructive cleanup:** prohibited pending explicit disposition and the M20 source-retirement gates.
+
+
+### V003-F03 publication state — 2026-10-12
+
+F03 evidence commit `8151a14596fe427f6b532b63472c36921a0f2bf8` is pushed on `v003/f03-m15-foothive-asset-disposition`; local HEAD, tracking ref, and live remote tip match. No PR or merge. Per-file Operator disposition for the 29 source-only files remains pending; the proposal is not an applied or approved disposition.
+
+
+## V003-F03 Operator disposition — 2026-10-12
+
+The Operator answered **“YES”** to the exact question applying the proposed disposition to all 29 numbered source-only rows in the F03 report table. Each of those 29 M01 FH-ASSET rows is now recorded as **RETAINED HISTORICAL — OPERATOR APPROVED AT SOURCE (F03, 2026-10-12)**. This decision applies to the four catalogs and 25 images enumerated in the F03 report; it authorizes no move, copy, rename, edit, normalization, deletion, reuse, or publication. All 29 source files remain unchanged at their original paths.
+
+**M15-ASSET-01:** resolved for the 29 source-only files by approved retention at source. **F03:** evidence and disposition PASS. The separate nine project-asset matches remain classified as project-asset references, not these 29 source-only records. No broader M20 source-retirement authority is implied.
+
+
+
+## Phase 03 — V003-F05 M19-HIST-01 byte qualification — 2026-10-12
+
+**Ticket:** V003-F05 — M19-HIST-01 source/target Git blob-byte qualification
+**Branch:** `v003/f05-m19-blob-byte-qualification`
+**Base HEAD:** `b8099c94a7af86982290f8d73a444254ff2fd5bc` (published F03 closeout tip)
+**Manifest:** `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/EVIDENCE_FH_BRAINBOX/COPY_INTEGRITY_MANIFEST_FH_BRAINBOX.csv`
+
+The 45-row manifest was independently replayed against current physical source/target bytes and Git blobs at this branch HEAD. All 45 source paths and destination paths are unique and physically readable. All 45 source sizes and SHA-256 values match the manifest baseline. The source paths include 44 repository files plus the separately located original Deep Audit attachment; all 45 destination Git blobs were retrieved and checked. The Deep Audit source is external to this repository and has no source-side Git blob.
+
+**Reproduced results:**
+
+- Source bytes match the manifest: **45/45**.
+- Destination bytes match the manifest destination digest: **44/45**.
+- Physical source/destination pairs match byte-for-byte: **44/45**.
+- Physical pairs match after CRLF-to-LF comparison only: **45/45**.
+- In-repository source blobs retrieved: **44/44**; raw-byte matches to their physical source: **17/44**; CRLF-to-LF normalized matches: **44/44**.
+- Destination blobs retrieved: **45/45**; raw-byte matches to the original physical source: **17/45**; CRLF-to-LF normalized matches to both the source and destination worktree: **45/45**.
+- Total source bytes: **3,623,461**; total destination bytes: **3,623,595**.
+
+The only physical source/destination raw-byte mismatch is `PASSED_FH_BRAINBOX.md`: source is 15,597 bytes with 134 LF endings, SHA-256 `f21dcff41416c08810fe0b9baa159acaa322fa8648d7cfdb4ceca8bd3c627f2a`; destination is 15,731 bytes with 134 CRLF endings, SHA-256 `4146c3a8311fd44c99022f081c89dccd4d5a7f6943e2c3ac833466d9c408cfd4`. Its destination Git blob matches the source raw hash. After converting CRLF sequences to LF for comparison only, source, destination, and Git blob contents agree.
+
+Git blobs were read using `git rev-parse HEAD:<repository-path>` followed by `git cat-file blob <object-id>`; this avoided Windows long-path failures from `git show` on five T23 evidence paths. A temporary Python verifier read the 45 CSV rows, measured sizes/SHA-256 and compared raw plus CRLF-to-LF normalized bytes. It was removed after use. No repository configuration was changed, and no historical source, destination, manifest, or Git object was rewritten or normalized.
+
+**Disposition:** The earlier M19-HIST-01 question is resolved as to the nature and scope of the observed differences: all 45 source/target/Git destination contents agree after CRLF-to-LF comparison, while raw-byte identity is not universal. Preserve both source and destination histories as they stand; do not normalize or claim 45/45 raw-byte equality. This verification alone does not authorize retiring any source or override F03/F04 Operator retention decisions or the separate M20 gates.
+
+**F05 result:** evidence-backed 45-pair qualification **PASS**; historical bytes unchanged; M19-HIST-01 is documented as a bounded line-ending fidelity qualification, not a semantic-content discrepancy or blanket raw-byte PASS. M20/F06 source-retirement review must retain the raw-byte caveat where applicable.
+
+### V003-F05 evidence publication checkpoint — 2026-10-12
+
+Evidence commit `2841dd3f5bff60e2dc6e5bfad4d0ea95ef512a54` was pushed to `v003/f05-m19-blob-byte-qualification`. A fresh fetch confirmed local HEAD, upstream tracking ref and live GitHub branch ref matched; ahead/behind was 0/0. No PR or merge was created. The Phase 03 report, conversation and ticket closeout were recorded afterward for a separate publication commit on the same branch.
+
+## Phase 03 — V003-F06 M20-REF-01 legacy source and reference audit — 2026-10-12
+
+**Ticket:** V003-F06 — broad legacy-source retirement gate
+**Branch:** `v003/f06-m20-legacy-source-reference-audit`
+**Audit scope:** the 122 file-level source rows carried in the M21 source ledger, plus the empty legacy root `BRAINBOX/` directory check. This is a source/reference audit and recommendation record; it did not authorize or perform source changes.
+
+### Baseline and recoverability
+
+The audit cross-checked all **122/122** ledger source paths against the M01 integrity manifest. The path sets match. For each file, the M01 Git blob is available at baseline commit `27e73f828bb367298442c2e621c18d1cc1ceb4f4` (**122/122**); the recorded object IDs and sizes are included in the linked audit CSV. This verifies recoverability from the repository’s current Git object history. It is not evidence of an independent backup.
+
+At the audit worktree/HEAD, **115/122** file paths are present and **7/122** are absent. Those seven are the verified zero-byte placeholders already retired under M20: the two empty legacy project pattern files, four empty legacy Skills files, and `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md`. Their M01 Git blobs remain available. The root `BRAINBOX/` directory is also absent; Git records no empty-directory object, and the audit found no file payload to restore.
+
+For the 115 present paths, **110** current physical SHA-256 values match M01. The five differing paths are post-M01 Phase 02/V003 process or authority records whose contents evolved during authorized migration. No other M01-baseline hash difference was found among the present ledger sources. These five are explicitly identified in the audit CSV; they are not classified as unexplained legacy-source edits.
+
+### Current references and mapped dispositions
+
+A tracked-text search outside this migration map found exact path and basename mentions across **143 tracked files**: **695 exact-path line matches** and **1,658 basename-only line matches**. These are textual mentions, not all Markdown links or operational dependencies. The audit CSV preserves the per-source locations and labels the exact-path and broad basename-only results separately. A mention alone is not treated as a reason to delete a source.
+
+The 122 source rows retain their M21 disposition classes in the CSV: **44 MIGRATED COPY**, **11 SPLIT**, **15 REFERENCE_ONLY**, **9 REFERENCED EXTERNAL**, **2 MIGRATED RAW COPY**, **3 RETAINED HISTORICAL**, **2 DEFERRED**, **29 Operator-approved retain-at-source (F03)**, and **7 REMOVED under M20**. This reconciles to 122 rows. The two `MILESTONES/` sources retain their separate Operator-approved unchanged-at-source disposition from F04. No approval for any other source move, copy, rename, edit, or retirement is inferred.
+
+For current source files not covered by the explicit F03/F04 decisions or M20 empty-file retirements, the F06 recommendation is **retain at the current source path pending explicit per-source Operator disposition**. This is a recommendation, not a new retention decision and not a deletion authorization. M20’s seven completed empty-placeholder retirements remain complete and are not proposed for restoration.
+
+### F06-REF-01 — stale portfolio historical-source statement
+
+The reference audit found a current factual statement that conflicts with the completed M20 retirement:
+
+- **Path:** `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md`
+- **Line:** 27
+- **Statement:** the empty `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` “remains for its separately assigned legacy review.”
+- **Evidence:** the file has no current worktree path; the M21 map records it as `REMOVED`; its zero-byte M01 Git blob remains available. In contrast, the current root README, Portfolio README, and FootHive Portfolio README correctly describe the placeholder as retired.
+
+**Classification:** non-blocking documentation-accuracy flag for the affected case-study reference; it does not undermine source integrity or authorize source restoration/deletion. **Proposed action:** correct that sentence to state the placeholder was retired under M20 and point readers to the migration map for its preserved path/digest. No edit was made in F06 because the ticket authorizes audit and proposed dispositions, not an unrelated correction. Operator decision is required before that correction is applied.
+
+### Evidence artifact
+
+The complete row-level audit, including paths, M01 size/SHA/blob IDs, current physical state/SHA, current HEAD blob availability, M21 disposition/target, reference locations, recommendation, and authority state, is recorded in [F06 M20 source/reference audit CSV](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv).
+
+**F06 execution disposition:** the scoped inventory, integrity/recoverability review, and tracked-reference audit are complete. No source was moved, copied, renamed, edited, restored, or deleted. Only the already-authorized F03/F04 retention decisions and completed M20 retirements are represented as such. Other substantive-source dispositions remain subject to explicit Operator decision; the stale sentence is reported for separate correction approval.
+
+---
+
+## Operator V003-F06 source-retention authorization and F06-REF-01 correction — 2026-10-12
+
+**Operator decision confirmed by reference (2026-10-12):** APPROVED the narrowly scoped correction of the stale FootHive Portfolio sentence and APPROVED retention unchanged at their recorded current paths for the remaining unresolved source rows in the published F06 source-reference CSV. The earlier F03 retention of 29 FootHive assets, F04 retention of two milestone files, and M20 retirement of seven zero-byte placeholders remain intact.
+
+**Operator confirmation (verbatim, current turn):** "PROCEED WITH THE AUTHORITY STATED ACCORDINGLY, I APPROVE." The longer decision wording was entered by ChatGPT and is confirmed by reference from this date; it is not presented as a prior verbatim Operator message.
+
+**Correction scope:** `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md`, historical source boundary line 27, now truthfully states that `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md` was retired under V003-M20 and its former path and integrity baseline survive in the Migration Map. No unrelated Portfolio history rewrite approved.
+
+**Disposition:** The F06 CSV's source-row recommendations without an earlier explicit operation decision are now accepted as **RETAIN UNCHANGED AT CURRENT PATH**. This is a bounded retention decision, not a blanket authority for modification, relocation, promotion or eventual deletion; remaining sources still require individually authorized operations. The seven retired files stay absent; no restoration. The verified 122/122 M01 file-record Git blobs remain recoverable from repository history, which does not by itself prove independent backup availability.
+
+**CSV accounting and current integrity recheck:** the published F06 CSV has 123 records: 122 historical file-path rows (115 present and 7 M20-retired zero-byte placeholders) plus one filesystem-only `BRAINBOX/` empty-directory candidate. Codex recomputed SHA-256 for all 115 present files against the CSV's current-worktree digest: 115 matched; 0 mismatched; 0 missing.
+
+**Verification and Git lifecycle:** ChatGPT must independently verify the exact sentence change, row-level preservation, and source integrity before F06 closure. Local recording and correction do not authorize staging, commit, push, PR or merge; separate Operator authorization required. F06 status: **CORRECTION/RETENTION DECISION RECORDED — AWAITING INDEPENDENT POST-EDIT VERIFICATION AND OPERATOR ACCEPTANCE**. M21 and Phase 02 are not thereby closed.
+
+
+### F06 content-publication checkpoint — 2026-10-12
+
+The scoped correction and decision records were committed as `fc082859f74ff3b30e973d85f6dbffd25b0fc056` ("Record V003-F06 decision and integrity audit") and pushed to `origin/v003/f06-m20-legacy-source-reference-audit`. Fresh fetch confirmed HEAD/upstream/origin equality and ahead/behind 0/0. This records publication only: F06 remains open pending its required independent verification and Operator closure; no PR or merge was created.
+
+
+
+## V003-F10 — Skills legacy authority and retirement assessment — 2026-10-13
+
+**Source:** AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md.
+
+**M01 baseline:** 847 bytes / 24 lines / SHA-256 1850965879a9494dd3004e605125c2d3e2bde42e678fe8d11d5e8fc9872dbef6; original Git blob 5635f3403e876c0b8f9f4b4766c892f024680c18.
+
+**Current F07/F10 branch state:** F08 commit a4f92786296da266d11c681739e0450062f83066 added a three-line routing banner before the original content, preserving the original body. Current branch Git blob 9d12397205ab86c4cc63c6c6220e4285421ea2ea, 1,353 bytes / 27 lines. This is a later reference notice, not a change to the M01 baseline; the Windows checkout’s 1,355-byte representation reflects local newline form.
+
+**Current authority:** AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md is the current Skills domain entry point. The legacy source is reference-only historical navigation; F08 routes readers to current root/Skills/Governance entry points.
+
+**Reference audit:** Nineteen tracked files point to or record this legacy path; seven are current root/Governance/Skills navigation records and twelve are historical or migration-process records. Full path inventory and classification are in the V003-F10 report section. The existing F06 audit CSV row 108 independently records REFERENCE_ONLY; RETAINED HISTORICAL and no source-retirement approval.
+
+**Codex recommendation:** KEEP the source at its current path as a reference-only historical entry with its F08 routing notice; preserve the original body, do not duplicate, and do not delete. No source change was made.
+
+**Operator disposition:** PENDING. Source stays intact pending explicit Operator choice.
+
+
+
+### V003-F10 Operator disposition update — 2026-10-13
+
+The Operator approved KEEP IN PLACE for AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md as reference-only historical material, preserving the original body and existing F08 routing banner. README_SKILLS_AI_BRAINBOX.md remains the sole current Skills entry authority. No move, copy, rename, edit, or deletion occurred. This approved disposition supersedes the preceding “Operator disposition: PENDING” status. Any later retirement requires separate source-specific authorization.
+
+
+### V003-F16 — Architecture Decisions ownership reconciliation — 2026-10-13
+
+**Sources checked:** `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md`; frozen Specification §§8 and 11; Fullstack architecture README and Fullstack Sandbox README; physical `ARCH_DECISIONS_BRAINBOX/` contents.
+
+**Disposition/evidence:** The V003 decision-history file remains the system-wide rationale record and contains the concise P03 authority-boundary decision. The Fullstack `ARCH_DECISIONS_BRAINBOX/` domain is an empty, zero-byte-`.gitkeep` placeholder. The frozen Specification assigns application-specific architecture selection/rationale to this domain and generic pattern knowledge to Skills; the Fullstack README says no project decision is populated and raw stack assumptions are unverified. No duplicate or competing authority was found.
+
+**Recommended:** retain the V003 record unchanged; keep the Fullstack domain empty until an evidence-backed project decision exists. The Specification defines the folder but not a child decision filename. Operator disposition is pending. No move, copy, rename, edit, deletion, or frozen-tree revision performed.
+
+---
+
+### V003-F16 Operator Batch D acceptance and publication checkpoint — 2026-10-13
+
+The Operator explicitly accepted Batch D closure and progression to Batch E in the 2026-10-13 instruction recorded in the Phase 03 conversation log. F16 is accepted/closed at the batch level. Its technical disposition remains: retain the V003-wide architecture rationale record unchanged and leave Fullstack `ARCH_DECISIONS_BRAINBOX/` empty until project-specific evidence exists. No architecture/source migration occurred.
+
+A separate local uncommitted F16 note had represented detailed retain-and-wait wording as an Operator verbatim statement. The exact wording was not independently authenticated against the published F16 conversation or the current Operator instruction; it is not relied on as verbatim evidence. RDC follow-up requests timed out, so the post-timeout local tree could not be confirmed. F16 publication used verified remote source content and a guarded GitHub branch update.
+
+**F16 remote closeout:** branch `v003/f16-architecture-decisions-ownership`; prior head `3c5144069eb741d33ae6c44b57c37770534176a8`; exact closeout commit is recorded in the Phase 03 report. No PR or merge.
+
+---
+
+### V003-F16 remote publication verification — 2026-10-13
+
+GitHub ref `v003/f16-architecture-decisions-ownership` was confirmed at `e8dbf176ab46a616c992ea253d6af5eb68771139`, parent `3c5144069eb741d33ae6c44b57c37770534176a8`. The remote closeout commit updates only the four Phase 03/V003 documentation records. RDC prevented confirmation of local staging or worktree state. No PR or merge occurred.
+
+---
+
+### V003-F02 final publication preflight — 2026-10-13
+
+**Status:** BLOCKED / OPEN; read-only preflight complete, final closure gate not passed.
+
+**M21 branch state:** `v003/m21-final-migration-verification-closeout` is at `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e` on origin. GitHub compare against `main` (`e2edd669cb30d243b0b916db3e67ebde83653574`) reports 18 commits ahead and 0 behind. No PR/merge was identified. F01's limited-unavailability choice is recorded for the 20 checkpoint SHAs, but renewed M21 review/Operator acceptance and `M21-GIT-01` remain pending.
+
+**Phase 03 ticket state:** Operator accepts Batch D closure and progression to Batch E. Branch/report audit found no F09/F11/F12/F13 execution and independent-verification records. Their absence is not converted into a PASS; F02 remains blocked pending evidence or explicit Operator scope disposition.
+
+**F16:** published on its own branch through guarded remote commits; latest F16 ref `8ef230785b617f58f0e6b4d6b959533295b1b237`. No architecture/source migration occurred. No PR/merge was created.
+
+**Authorization:** Phase 03 commit/push was authorized; PR, merge, and final V003 closure were not authorized in this instruction. This F02 note records the remote state and does not update or retire migration sources.
+
+---
+
+### V003-F02 publication checkpoint — 2026-10-13
+
+Remote branch `v003/f02-final-publication-verification` was read back at `5dbe315ebf1bbe4bb3f16fab33da1d3c16ba7e0d` (parent `8ef230785b617f58f0e6b4d6b959533295b1b237`). The preflight report and ticket evidence are published on the dedicated branch. Local worktree state could not be reconfirmed because RDC timed out. No PR or merge occurred; F02 remains blocked pending its listed prerequisites.
+
+
+## V003-F02 current-state reconciliation - 2026-10-13
+
+The F02 preflight verified `origin/main` at `1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a`. M19 PR #35, M20 PR #36, and M21 PR #37 are merged to `main`; PR #37's merge commit is the current main tip. The M21 branch `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e` has zero commits ahead and three behind main. This dated note supersedes the earlier current-state wording that Batch E was unmerged; the earlier dated M21 verification section is preserved as a historical checkpoint.
+
+The F01 record documents the Operator-approved limited-unavailability disposition for the 20 checkpoint IDs, scoped to the searched sources. The IDs remain unrecovered and no global irrecoverability or loss cause is claimed. This disposition is recorded; the remaining M21-GIT-01 acceptance gate is renewed independent ChatGPT verification of the updated record plus explicit Operator M21/Phase 02 acceptance. No Git object recovery or mutation is authorized or claimed here.
+
+**Current status:** Batch E Git lifecycle MERGED; M21/Phase 02 acceptance BLOCKED pending the renewed verification and Operator acceptance; Phase 02 and V003 are not declared closed. This entry is a Phase 03 F02 factual reconciliation and does not alter the frozen Specification or historical source records.
