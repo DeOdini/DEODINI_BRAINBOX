@@ -826,3 +826,37 @@ The existing records have complementary, non-competing authority: the V003 recor
 **Remote confirmation:** GitHub ref lookup after the update returned the branch at `e8dbf176ab46a616c992ea253d6af5eb68771139`. The commit includes the Phase 03 conversation, report, ticket record, and V003 migration map.
 **Limit:** RDC requests timed out, so this was a GitHub Git Data API remote branch update, not a local `git push`; local staging/worktree cleanliness was not verified. No PR or merge was created.
 **F16:** Operator-accepted as part of Batch D closure. The publication verifies documentation and ref state; it does not authenticate the separate uncommitted exact-quote claim.
+
+
+## V003-F11 — FootHive project and RAW source disposition — evidence audit — 2026-10-13
+
+**Status:** Evidence inventory complete; catalog disposition remains **UNDECIDED** by Operator. F11 is not disposition-closed. No FootHive or RAW source was moved, copied, renamed, edited, normalized, or deleted in this ticket.
+
+**Branch:** `v003/f11-project-workflow-foothive-disposition`. The ticket ledger is `F11_FOOTHIVE_SOURCE_DISPOSITION_PHASE03_FIXES_BRAINBOX.csv`.
+
+### Scope and source inventory
+
+The ledger contains 87 rows: 83 current FootHive project-source paths and four RAW project/fullstack workflow records. It captures source path, current SHA-256, size/line count where applicable, M01 baseline hash where present, canonical target/reference, source status, M15/M10 transfer state, and per-file disposition.
+
+For the 44 FootHive records present in the M15 copy-integrity manifest, all 44 manifest destinations exist and the manifest records exact source/destination byte equality at transfer. Current readback finds 42 source/destination exact SHA-256 matches, one text file differing only by CRLF/LF, and one content difference in the Build Report. The M15/M19 records explain these later differences; they do not invalidate the transfer-time equality evidence.
+
+### F03/F14 catalog and asset gate
+
+All 25 source-only product-image files retain the M01 SHA-256 recorded in the ledger. The four product-catalog Markdown files differ from their M01 hashes following F14 commit `e04a5fb`, which changed relative image-path prefixes. F03 had approved retention of all 29 catalog/image files unchanged, and F14 later published the path edits. The Operator’s response to whether F11 treats those exact F14 edits as authorized is recorded as **UNDECIDED**. Current catalog bytes are preserved as found; this ticket does not resolve precedence, revert, further edit, move, copy, or delete any of the four files. This remains an open F11 disposition gate.
+
+The nine image/logo paths referenced by the committed FootHive site are mapped to the separate `C:\\Users\\USER\\FOOTHIVE` repository. All nine current target files exist and their SHA-256 hashes match the corresponding retained Brainbox source assets. The ledger now states this verified byte-identity relationship explicitly. The Brainbox originals remain in place as historical references; no asset copy was made.
+
+### RAW workflow disposition
+
+The four RAW source files were inspected against M09/M10. The two substantive 001/002 workflow records have corresponding renamed target records under Fullstack Sandbox Workflows and remain marked RAW/UNPROVEN. The RAW overview and FSTACK README are reference-only navigation to the current Fullstack workflow authority. No RAW source is promoted to PROVEN or removed.
+
+**F11-M01-HASH-01 — BATCH-DEFERRED / NON-BLOCKING:** `RAW_PROJ_MUST_README.md` has no pre-migration SHA-256 row in the M01 migration-map hash table. Its current hash, size and line count are captured in the F11 ledger. This limits comparison to the M01 checkpoint, but no source mutation or retirement is proposed in F11, so it does not prevent the other Batch D evidence/design work. Preserve the limitation in any later source-retirement review.
+
+### Gate and verification boundary
+
+- Evidence inventory: complete for 83 FootHive and four RAW records in the ledger.
+- Catalog precedence: **UNDECIDED**; no operation taken.
+- Source removal/migration: none.
+- Tests: none required or run; this ticket is an evidence/reference audit.
+- Independent ChatGPT verification: not performed or claimed in this Codex execution record.
+- F11 status: evidence complete, final disposition gate open for the four F03/F14-edited catalog records.

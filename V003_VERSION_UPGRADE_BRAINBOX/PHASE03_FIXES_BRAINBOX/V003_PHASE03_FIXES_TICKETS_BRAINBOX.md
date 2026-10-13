@@ -1,6 +1,6 @@
 # V003 Phase 03 — Detailed Proposed Fix Ticket Set
 
-**STATUS (2026-10-12):** V003-F01 search/disposition evidence and independent verification are recorded; renewed M21 review and acceptance remain pending. V003-F04 evidence/disposition PASS. V003-F03 inventory evidence and Operator-approved per-file retention disposition PASS; F05/F06 remain authorized and pending in Batch B order. Other F-tickets remain draft and unauthorized.
+**STATUS (2026-10-13):** F01 bounded search/disposition evidence and independent verification are recorded; renewed M21 review and acceptance remain pending. F03/F04/F05/F06 and Batch C outcomes are recorded in their ticket sections. Batch C is Operator-accepted; Batch D is authorized. F10 is closed by approved retention; F16 is accepted under Batch D closure; F11 evidence inventory is complete but the four F03/F14 catalog precedence is Operator-undecided; F12/F13/F09 remain in progress with required design/intake approvals pending. Phase 03 branches remain unmerged.
 **VERSION:** V003
 **CONVENTION:** Always use full `V003-F01` through `V003-F16`, even though proposed execution order is non-numeric.
 **AUTHORITIES:** Frozen V003 Specification §§25–27; Origin Conversation; active Governance; Phase 02 P14 and ticket evidence pattern; actual original-source ledger.
@@ -429,3 +429,12 @@ The Operator explicitly approved Batch C closure and proceeding to Batch D, and 
 ### V003-F16 publication closeout — 2026-10-13
 
 Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit `e8dbf176ab46a616c992ea253d6af5eb68771139` (parent `3c5144069eb741d33ae6c44b57c37770534176a8`). The commit records the F16 closeout across the Phase 03 conversation, report, ticket record, and migration map. It was published via GitHub Git Data API after RDC stopped responding; no local staging/commit was verified. No PR or merge was created.
+
+
+## V003-F11 execution status — 2026-10-13
+
+**Branch:** `v003/f11-project-workflow-foothive-disposition`.
+**Evidence:** The 87-row FootHive/RAW source ledger records 83 FootHive paths plus four RAW workflow sources. M15 manifest transfer checks, current source/target hashes, nine external FootHive asset references, F03 source-only image/catalog baseline comparison, and M09/M10 RAW classifications are documented in the CSV and F11 report.
+**Disposition:** Evidence inventory complete; not disposition-closed. The Operator explicitly reserved the F03/F14 precedence decision for the four catalog Markdown files as **UNDECIDED**. Present file contents are preserved. No source operation occurred.
+**F11-M01-HASH-01:** The M01 migration map does not provide a baseline hash for `RAW_PROJ_MUST_README.md`; its current integrity details are captured in the F11 ledger. Batch-deferred/non-blocking for current evidence and design work because no source mutation or retirement is proposed; retain this limitation for any later retirement gate.
+**Independent verification:** ChatGPT independent verification is not performed or claimed by Codex. Ticket remains open pending the catalog disposition and any required independent review.

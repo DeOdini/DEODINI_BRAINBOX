@@ -1,21 +1,22 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 ACTIVE; BATCH B OPERATOR ACCEPTED; BATCH C F15/F08/F14/F07 EXECUTED ON PER-TICKET BRANCHES; BATCH C REPORT/CONVERSATION RECORDED; F14 PARSER-PROVENANCE LIMITATION DOCUMENTED AS NON-BLOCKING; F01 DISPOSITION RECORDED; RENEWED M21 REVIEW AND OPERATOR ACCEPTANCE PENDING]
+**STATUS:** [PHASE 03 ACTIVE; BATCH B OPERATOR ACCEPTED; BATCH C OPERATOR ACCEPTED; BATCH D AUTHORIZED; F10 CLOSED; F16 ACCEPTED IN BATCH D; F11 EVIDENCE INVENTORY COMPLETE, FINAL CATALOG DISPOSITION UNDECIDED; F12/F13/F09 IN PROGRESS; F01 DISPOSITION RECORDED; RENEWED M21 REVIEW AND OPERATOR ACCEPTANCE PENDING]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [PHASE 03 ACTIVE; F01 LIMITED-UNAVAILABILITY DISPOSITION RECORDED; RENEWED M21 REVIEW PENDING; BATCH B OPERATOR ACCEPTED; BATCH C F15/F08/F14/F07 EXECUTION AND GIT RESULTS RECORDED; BATCH C OPERATOR ACCEPTANCE PENDING]
-**LAST UPDATED:** 2026-10-12 — Codex; refreshed Phase 03 branch refs; F14 historical-link corrections and F07 Windows path-compatibility results are published on their ticket branches; Batch C report/conversation closeout is recorded on F07; no persistent Git configuration or T23 evidence-path changes.
+**POPULATION:** [PHASE 03 ACTIVE; F01 LIMITED-UNAVAILABILITY DISPOSITION RECORDED; RENEWED M21 REVIEW PENDING; BATCH B AND C OPERATOR ACCEPTED; BATCH D AUTHORIZED; F10 CLOSED; F16 ACCEPTED; F11 INVENTORY RECORDED WITH FOUR CATALOGS UNDECIDED; F12/F13/F09 REMAIN OPEN]
+**LAST UPDATED:** 2026-10-13 — Codex; Batch D execution underway. F11 source ledger and evidence report are recorded on `v003/f11-project-workflow-foothive-disposition`; four F03/F14 catalog precedence remains Operator-undecided; no FootHive/RAW source operation performed.
 
 ## Local tree
 ```text
 PHASE03_FIXES_BRAINBOX/
 ├── README_PHASE03_FIXES_BRAINBOX.md
 ├── F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv [F06 row-level source/reference audit evidence]
+├── F11_FOOTHIVE_SOURCE_DISPOSITION_PHASE03_FIXES_BRAINBOX.csv [F11 per-file FootHive and RAW source ledger]
 ├── V003_FIXES_REPORT_BRAINBOX.md
 ├── V003_FIXES_CONVO_BRAINBOX.md
-└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; Batch B Operator accepted; Batch C F15/F08/F14/F07 outcomes recorded; Batch C Operator acceptance pending]
+└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; Batch B/C accepted; Batch D F10/F16/F11 progress recorded; F11 disposition open]
 ```
 
 ## Navigation

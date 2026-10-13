@@ -538,3 +538,12 @@ Operator approval is specifically required for Phase 03 branch/batch workflow, w
 GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf176ab46a616c992ea253d6af5eb68771139` (`V003-F16 record Batch D acceptance and publication verification`), with parent `3c5144069eb741d33ae6c44b57c37770534176a8`. The remote branch ref was fetched after the update and confirmed at the new commit. The commit contains only the four intended Phase 03/V003 record files. No PR or merge was created.
 
 **Codex publication response:** F16's report/conversation/ticket/map closeout is present on the remote branch. Local Git staging and local post-publication status remain unverified because RDC stopped responding.
+
+
+## V003-F11 Operator clarification — catalog authority conflict — 2026-10-13
+
+**Codex question (verbatim):** “F03 approved 29 source-only files to remain unchanged. After that, F14’s published commit `e04a5fb` changed only relative image paths in the four legacy catalog Markdown files. Should F11 treat those exact path-only edits as authorized by F14 while retaining the current files and the other 25 approved assets unchanged? I will not revert or edit them without your direction.”
+
+**Operator response (verbatim):** “RESERVE THIS IN YOUR REPORT AS UNDECIDED.”
+
+**Codex response:** Recorded the catalog precedence as undecided. The current four catalog files and the other 25 approved product-image files remain unchanged during F11. No edit, revert, move, copy, rename, or deletion is performed to resolve this uncertainty.
