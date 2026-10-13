@@ -1,12 +1,12 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 ACTIVE; BATCH A-D OPERATOR-ACCEPTED; F02 M21-GIT-01 DISPOSITION RECONCILIATION IN PROGRESS; M19-M21 GIT MERGES VERIFIED; M21/PHASE 02 ACCEPTANCE AND V003 FINAL CLOSURE PENDING]
+**STATUS:** [PHASE 03 ACTIVE; BATCH A-D OPERATOR-ACCEPTED; F02 PR #38 MERGED; M19-M21 GIT MERGES VERIFIED; M21/PHASE 02 ACCEPTANCE AND V003 FINAL CLOSURE PENDING]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [F01-F16 records and branches present; Batch D accepted by Operator; Batch E F02 evidence/reconciliation active; M21 limited-unavailability disposition recorded; renewed independent review and Operator acceptance pending]
-**LAST UPDATED:** 2026-10-13 - Codex F02 preflight verified M19-M21 PR merges, current F01-F16 branch refs, and unresolved M21/F-ticket acceptance gates.
+**POPULATION:** [F01-F16 records and branches present; Batch D accepted by Operator; Batch E F02 correction merged via PR #38; M21 limited-unavailability disposition recorded; renewed independent review and Operator acceptance pending]
+**LAST UPDATED:** 2026-10-13 - Codex verified F02 PR #38 merged to main; M21/F-ticket acceptance gates remain open.
 
 ## Local tree
 ```text

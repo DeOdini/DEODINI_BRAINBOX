@@ -1,7 +1,7 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01-M21 source-backed ledger. Codex M21 snapshot/map drafted; final acceptance is BLOCKED by M21-GIT-01 pending renewed independent verification and Operator acceptance after the Operator-approved limited-unavailability disposition. ChatGPT independent M21 verification and Operator acceptance remain pending; M19-M21 Git PRs #35-#37 are merged to main as of 2026-10-13; M21 acceptance remains blocked pending renewed verification and Operator acceptance.
+**Status:** Living M01-M21 source-backed ledger. Codex M21 snapshot/map drafted; final acceptance is BLOCKED by M21-GIT-01 pending renewed independent verification and Operator acceptance after the Operator-approved limited-unavailability disposition. ChatGPT independent M21 verification and Operator acceptance remain pending; M19-M21 Git PRs #35-#37 and F02 PR #38 are merged to main as of 2026-10-13; M21 acceptance remains blocked pending renewed verification and Operator acceptance.
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
 **Current active branch:** v003/m21-final-migration-verification-closeout
@@ -2871,3 +2871,7 @@ The F02 preflight verified `origin/main` at `1d603ad69a6276a2ba03a4f0b28d49b4f6e
 The F01 record documents the Operator-approved limited-unavailability disposition for the 20 checkpoint IDs, scoped to the searched sources. The IDs remain unrecovered and no global irrecoverability or loss cause is claimed. This disposition is recorded; the remaining M21-GIT-01 acceptance gate is renewed independent ChatGPT verification of the updated record plus explicit Operator M21/Phase 02 acceptance. No Git object recovery or mutation is authorized or claimed here.
 
 **Current status:** Batch E Git lifecycle MERGED; M21/Phase 02 acceptance BLOCKED pending the renewed verification and Operator acceptance; Phase 02 and V003 are not declared closed. This entry is a Phase 03 F02 factual reconciliation and does not alter the frozen Specification or historical source records.
+
+## V003-F02 PR #38 publication record — 2026-10-13
+
+PR #38 (`v003/f02-final-publication-verification` → `main`) merged at `8540440c6c41ddd8e373ff83cf00a10adb9c97e1`. A fresh remote fetch and ancestry check confirm the merge commit is on `origin/main`. The merge publishes the F02 M21-GIT-01 disposition/status reconciliation and the branch's cumulative 21-file Phase 03 documentation diff. The F11 decision on the four F14 catalog-link path edits remains UNDECIDED. The approved limited-unavailability disposition is bounded to searched sources; the 20 IDs remain unrecovered. M21/Phase 02 acceptance and V003 closure remain pending renewed independent review and Operator acceptance.
