@@ -398,3 +398,16 @@ The Operator explicitly approved Batch C closure and proceeding to Batch D, and 
 
 
 **V003-F10 Operator disposition (2026-10-13):** APPROVED — retain AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md at its existing path as reference-only historical material, preserving the original body and the F08 routing banner. README_SKILLS_AI_BRAINBOX.md remains the sole current Skills entry authority. No source operation occurred. **F10: CLOSED.**
+
+
+### V003-F16 — V003-wide Architecture Decisions vs Fullstack Sandbox design decisions
+
+**Status:** Evidence review complete; Operator disposition pending. **Branch:** `v003/f16-architecture-decisions-ownership`.
+
+**Verified ownership:** `ARCHITECTURE_DECISIONS_V003_BRAINBOX.md` remains the concise system-wide history explaining why V003 took its current shape. Frozen Specification §11 assigns project-specific architecture selection/rationale to Fullstack `ARCH_DECISIONS_BRAINBOX/`, and generic patterns to Skills. These are distinct authority scopes; no frozen-tree conflict was found.
+
+**Current population:** The V003 decision record contains the P03 authority-boundary ADR. Fullstack `ARCH_DECISIONS_BRAINBOX/` contains only zero-byte `.gitkeep`; its local README marks the domain empty pending evidence-backed project decisions. The raw assumed stack is explicitly not promoted to a project architecture decision.
+
+**Recommended disposition:** retain the V003 record unchanged and leave the Fullstack decision folder empty until a source-backed application decision exists. The frozen Specification names the folder but no child filename. Do not invent a file/name or revise the frozen target without Operator direction.
+
+**Decision requested:** approve retain-and-wait; request a specifically named domain-local record now; or authorize a precisely scoped architecture revision. No source edits, moves, copies, or deletions were performed.

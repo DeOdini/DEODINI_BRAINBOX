@@ -2817,3 +2817,12 @@ The scoped correction and decision records were committed as `fc082859f74ff3b30e
 ### V003-F10 Operator disposition update — 2026-10-13
 
 The Operator approved KEEP IN PLACE for AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md as reference-only historical material, preserving the original body and existing F08 routing banner. README_SKILLS_AI_BRAINBOX.md remains the sole current Skills entry authority. No move, copy, rename, edit, or deletion occurred. This approved disposition supersedes the preceding “Operator disposition: PENDING” status. Any later retirement requires separate source-specific authorization.
+
+
+### V003-F16 — Architecture Decisions ownership reconciliation — 2026-10-13
+
+**Sources checked:** `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md`; frozen Specification §§8 and 11; Fullstack architecture README and Fullstack Sandbox README; physical `ARCH_DECISIONS_BRAINBOX/` contents.
+
+**Disposition/evidence:** The V003 decision-history file remains the system-wide rationale record and contains the concise P03 authority-boundary decision. The Fullstack `ARCH_DECISIONS_BRAINBOX/` domain is an empty, zero-byte-`.gitkeep` placeholder. The frozen Specification assigns application-specific architecture selection/rationale to this domain and generic pattern knowledge to Skills; the Fullstack README says no project decision is populated and raw stack assumptions are unverified. No duplicate or competing authority was found.
+
+**Recommended:** retain the V003 record unchanged; keep the Fullstack domain empty until an evidence-backed project decision exists. The Specification defines the folder but not a child decision filename. Operator disposition is pending. No move, copy, rename, edit, deletion, or frozen-tree revision performed.

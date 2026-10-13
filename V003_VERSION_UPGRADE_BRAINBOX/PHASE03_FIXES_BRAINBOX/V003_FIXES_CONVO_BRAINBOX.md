@@ -494,3 +494,12 @@ Phase 03 verification records are committed and pushed on `v003/f07-t23-windows-
 **Operator disposition (verbatim):** “Approve keep in place”
 
 **Codex response:** Approval recorded for the F10 recommendation. The legacy Skills README remains at its existing path, with its original body and existing F08 routing banner intact. No move, copy, rename, edit, or deletion was performed. F10 is closed with a reference-only historical disposition; any future retirement requires separate source-specific authorization.
+
+
+## Batch D — V003-F16 Architecture Decisions ownership — 2026-10-13
+
+**Operator (ticket scope, verbatim):** “V003-F16 — V003-wide Architecture Decisions vs Fullstack Sandbox design decisions. Class: OPERATOR ARCHITECTURE DECISION; effort: LOW for decision / HIGH if moving. Sources: VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md; Sandbox Fullstack ARCH_DECISIONS_BRAINBOX. Draft work: Distinguish system-wide provenance from Fullstack-specific architecture; Operator chooses retain V003 decision record and optionally create domain-local record versus approved architecture revision. Pass: clear ownership without unapproved frozen-tree change.”
+
+**Codex commentary (verbatim):** “The evidence confirms the two records serve different levels: the V003 file explains why the Brainbox architecture was shaped this way, while the Fullstack folder is empty and reserved for project-specific architecture decisions. The frozen Specification explicitly assigns project-specific selection/rationale there, but does not name a child file. I’m recording that boundary and the unresolved file-level choice on a new F16 branch before asking you to decide.”
+
+**Execution checkpoint:** Created the separate branch `v003/f16-architecture-decisions-ownership` from the published F10 tip. Read-only inspection found the V003 decision record remains a concise system-wide rationale record; the Fullstack decision folder contains only its zero-byte `.gitkeep` placeholder. No architecture file, frozen Specification, or source was changed. The recommendation and exact decision request are recorded in the F16 report; Operator disposition remains pending.

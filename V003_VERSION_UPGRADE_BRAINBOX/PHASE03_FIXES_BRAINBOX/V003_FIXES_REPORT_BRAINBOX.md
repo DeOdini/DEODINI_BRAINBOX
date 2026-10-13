@@ -778,3 +778,26 @@ A Git-tracked text search found 19 inbound files, excluding the source itself:
 **Execution:** No move, copy, rename, edit, or deletion of the source was performed. The migration map, F06 source-reference audit, and current routing remain the provenance record. Any future source retirement requires a separate source-specific authorization after live references and historical preservation are reconfirmed.
 
 **V003-F10 status: CLOSED — approved retention disposition documented; no source operation required.**
+
+
+## V003-F16 — V003-wide vs Fullstack architecture decision ownership — 2026-10-13
+
+**Status:** Evidence review complete; Operator disposition required for whether to create a domain-local record. No architecture file, frozen Specification, or source was changed.
+
+### Evidence inspected
+
+- System-wide history: `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/ARCHITECTURE_DECISIONS_V003_BRAINBOX.md`. It is marked active and limited to concise V003 rationale/provenance. Its current ADR explains why the canonical V003 Specification and decision history are separate. It explicitly does not duplicate Fullstack application decisions.
+- Canonical target: `V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`, §8 tree and §11 Fullstack architecture/pattern boundary. The frozen Specification says `ARCHITECTURE_FULLSTACK_BRAINBOX/` holds application knowledge, lists `ARCH_DECISIONS_BRAINBOX/` as a child, and assigns project-specific architecture selection/rationale there. It assigns generic architecture principles and reusable patterns to Skills Architecture Patterns. It names the folder, not a child decision-record filename.
+- Fullstack local authority: `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/ARCHITECTURE_FULLSTACK_BRAINBOX/README_ARCHITECTURE_FULLSTACK_BRAINBOX.md`. The 12 approved branches are present and empty. The README says no architecture decision record is populated; the Fullstack decision folder is an empty placeholder pending evidence-backed project-specific decisions. It also says the earlier React/TypeScript + FastAPI + Supabase/PostgreSQL + Docker stack remains an unverified raw workflow assumption, not a project architecture decision.
+- Parent status: `README_FULLSTACK_SANDBOX_BRAINBOX.md` likewise shows `ARCH_DECISIONS_BRAINBOX/.gitkeep` as empty.
+- Physical state: `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/ARCHITECTURE_FULLSTACK_BRAINBOX/ARCH_DECISIONS_BRAINBOX/` contains only a zero-byte `.gitkeep`.
+
+### Finding and recommendation
+
+The existing records have complementary, non-competing authority: the V003 record explains why the Brainbox-wide V003 architecture became its current form; a Fullstack record, when supported by actual project evidence, would capture application-specific requirements, evaluation, selected architecture, rationale, implementation and validation. The frozen target already defines this distinction, so the evidence does not justify revising the frozen architecture or moving/rewriting the V003 history.
+
+**Recommended disposition:** retain `ARCHITECTURE_DECISIONS_V003_BRAINBOX.md` unchanged as the system-wide V003 decision-history record, and leave the Fullstack `ARCH_DECISIONS_BRAINBOX/` folder empty until an evidence-backed project-specific decision exists. This avoids inventing a decision or a filename; the frozen target names the folder but not a child record. If the Operator wants a domain-local record created now, the exact filename and evidence/content basis must be approved first.
+
+**Operator decision request:** approve the recommended retain-and-wait disposition, request a specifically named domain-local record now, or authorize an architecture revision with an exact change scope. No operation is pending that would change the V003 record or Fullstack tree.
+
+**V003-F16 status:** OPEN — evidence-backed ownership boundary identified; Operator disposition pending.
