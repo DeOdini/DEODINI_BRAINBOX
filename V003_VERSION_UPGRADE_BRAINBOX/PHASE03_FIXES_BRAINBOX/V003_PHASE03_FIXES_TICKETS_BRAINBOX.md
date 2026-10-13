@@ -395,3 +395,6 @@ The Operator explicitly approved Batch C closure and proceeding to Batch D, and 
 **Verified:** Current V003 Skills entry authority is AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md. The source legacy Skills README has an M01 original baseline of 847 bytes / 24 lines / SHA-256 1850965879a9494dd3004e605125c2d3e2bde42e678fe8d11d5e8fc9872dbef6. F08 added a three-line routing notice without deleting the historical body; the current F07/F10 Git blob is 1,353 bytes / 27 lines. The M01 map and F06 source-reference audit preserve the pre-F08 baseline. Nineteen tracked inbound files were inventoried and classified in the report.
 
 **Recommended:** Keep the source at its current path as reference-only historical material with the existing F08 routing notice; do not duplicate or delete it. **Operator disposition:** PENDING. No source operation was performed. The ticket remains open to that decision.
+
+
+**V003-F10 Operator disposition (2026-10-13):** APPROVED — retain AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md at its existing path as reference-only historical material, preserving the original body and the F08 routing banner. README_SKILLS_AI_BRAINBOX.md remains the sole current Skills entry authority. No source operation occurred. **F10: CLOSED.**

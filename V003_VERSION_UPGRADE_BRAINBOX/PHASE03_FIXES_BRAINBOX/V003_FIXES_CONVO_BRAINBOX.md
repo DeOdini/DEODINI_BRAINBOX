@@ -489,3 +489,8 @@ Phase 03 verification records are committed and pushed on `v003/f07-t23-windows-
 **Codex commentary (verbatim):** “The apparent size mismatch is explained by the already published F08 change: it adds a three-line routing banner to the legacy Skills README and leaves the original body intact. M01’s 847-byte SHA-256 remains the pre-F08 baseline; the F07/F10 branch’s Git blob is now 1,353 bytes. I also found the existing F06 audit already labels this source ‘reference-only / retained historical’ but explicitly says no separate Operator retirement approval was present.”
 
 **Execution status:** Source/reference audit and recommendation are recorded on the F10 branch. The legacy source has not been moved, renamed, copied, rewritten, or deleted. The ticket is awaiting the Operator’s explicit source disposition.
+
+
+**Operator disposition (verbatim):** “Approve keep in place”
+
+**Codex response:** Approval recorded for the F10 recommendation. The legacy Skills README remains at its existing path, with its original body and existing F08 routing banner intact. No move, copy, rename, edit, or deletion was performed. F10 is closed with a reference-only historical disposition; any future retirement requires separate source-specific authorization.

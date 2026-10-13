@@ -2811,3 +2811,9 @@ The scoped correction and decision records were committed as `fc082859f74ff3b30e
 **Codex recommendation:** KEEP the source at its current path as a reference-only historical entry with its F08 routing notice; preserve the original body, do not duplicate, and do not delete. No source change was made.
 
 **Operator disposition:** PENDING. Source stays intact pending explicit Operator choice.
+
+
+
+### V003-F10 Operator disposition update — 2026-10-13
+
+The Operator approved KEEP IN PLACE for AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md as reference-only historical material, preserving the original body and existing F08 routing banner. README_SKILLS_AI_BRAINBOX.md remains the sole current Skills entry authority. No move, copy, rename, edit, or deletion occurred. This approved disposition supersedes the preceding “Operator disposition: PENDING” status. Any later retirement requires separate source-specific authorization.

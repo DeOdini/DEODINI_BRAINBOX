@@ -769,3 +769,12 @@ A Git-tracked text search found 19 inbound files, excluding the source itself:
 **Recommended disposition: KEEP the file at its existing path as a reference-only historical entry with the existing F08 routing notice.** Keep the original body below the banner; use README_SKILLS_AI_BRAINBOX.md as the sole current Skills entry authority. Do not create a duplicate archival copy and do not delete the legacy file. This preserves its historical/local context and link targets while directing current readers to the proper authority. A later retirement could be considered only under a separate explicit source-specific approval after confirming every live navigation link and preserving the source’s history.
 
 **Operator disposition:** PENDING. F10 is not closed until the Operator confirms or changes this recommendation. No source operation is authorized by this assessment.
+
+
+## V003-F10 Operator disposition and closeout — 2026-10-13
+
+**Operator disposition:** APPROVED — keep AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md in place as reference-only historical material, preserving its original body and existing F08 routing banner. README_SKILLS_AI_BRAINBOX.md remains the sole current Skills entry authority.
+
+**Execution:** No move, copy, rename, edit, or deletion of the source was performed. The migration map, F06 source-reference audit, and current routing remain the provenance record. Any future source retirement requires a separate source-specific authorization after live references and historical preservation are reconfirmed.
+
+**V003-F10 status: CLOSED — approved retention disposition documented; no source operation required.**
