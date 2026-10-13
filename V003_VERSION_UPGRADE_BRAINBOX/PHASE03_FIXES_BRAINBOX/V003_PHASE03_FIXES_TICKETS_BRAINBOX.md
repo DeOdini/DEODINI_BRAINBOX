@@ -366,3 +366,20 @@ For each file, default `git hash-object` failed with “Filename too long” (ex
 
 
 **Final closeout publication:** Phase 03 documentation commit c21a2789af6f2fc229dc9e915f7ca422df1fa141 was pushed on v003/f07-t23-windows-path-compatibility. Fresh fetch returned exit code 0 and the local HEAD equals the origin tracking ref. The earlier branch matrix captures the pre-closeout F07 result commit ee2fe63; c21a2789 is the later documentation tip. At the c21a278 closeout checkpoint, the final status command timed out in RDC, so a clean local working-tree state could not be confirmed. Later report and ticket publication updates followed that checkpoint; this entry does not claim that the branch had no subsequent edits.
+
+## V003 Batch C — ChatGPT independent verification addendum and disposition — 2026-10-13
+
+**V003-F15:** INDEPENDENT PASS for 73 tracked README Markdown files / 506 local relative inline links / 0 broken in published GitHub snapshot `cb00df4`. Existing directories are valid link targets.
+
+**V003-F08:** GitHub routing commit `a4f9278` confirmed; Codex-reported historic-body byte integrity was not independently recomputed.
+
+**V003-F14:** INDEPENDENT PASS for post-correction local references: 45 total inline refs = **38 local (34 images, 4 ordinary) + 7 external**. All 38 local targets resolve; 0 broken. **F14-COUNT-01 — RESOLVED BY DATED DOCUMENTATION ADDENDUM**: Codex's previously written 40-local/5-external split is corrected here, without rewriting the historical execution statement. No image/source operations authorized. **V003-F14-METHOD-01 — BATCH-DEFERRED / NON-BLOCKING**: unavailable original parser implementation; bounded current parser documented, no claim of identical historical parser.
+
+**V003-F07:** GitHub T23 five blob IDs and Windows path length figures verified; local Windows checkout experiment remained Codex-evidenced in the earlier independent review, because RDC timed out. Transient `git -c core.longpaths=true` documented; no permanent change authorized.
+
+**Publication and gates:** F15, F08, F14 and F07 ticket branch/commit publication independently checked at GitHub; final F07 report tip `cb00df4`. These are historical verification results; the local documentation recording here is not itself published. **Batch C acceptance/closure remains Operator-only, not yet granted.** M21/Phase 02 gates are separate. No PR, merge, stage, commit or push authorized by this addendum.
+
+
+## Operator authorization — Phase 03 publication and Batch D progression — 2026-10-13
+
+The Operator explicitly approved Batch C closure and proceeding to Batch D, and authorized publication of the Phase 03 verification-modified state. The earlier dated statement that Batch C closure/Git publication had not been authorized remains a historical checkpoint, not the current state. Batch D tickets are to be handled individually on their own branches. The current instruction authorizes no merge.
