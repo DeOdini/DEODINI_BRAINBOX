@@ -1,6 +1,6 @@
 # V003 Phase 03 — Detailed Proposed Fix Ticket Set
 
-**STATUS (2026-10-13):** F01 bounded search/disposition evidence and independent verification are recorded; renewed M21 review and acceptance remain pending. F03/F04/F05/F06 and Batch C outcomes are recorded in their ticket sections. Batch C is Operator-accepted; Batch D is authorized. F10 is closed by approved retention; F16 is accepted under Batch D closure; F11 evidence inventory is complete but the four F03/F14 catalog precedence is Operator-undecided; F12/F13/F09 remain in progress with required design/intake approvals pending. Phase 03 branches remain unmerged.
+**STATUS (2026-10-13):** F01 bounded search/disposition evidence and independent verification are recorded; renewed M21 review and acceptance remain pending. F03/F04/F05/F06 and Batch C outcomes are recorded in their ticket sections. Batch C is Operator-accepted; Batch D is authorized. F10 is closed by approved retention; F16 is accepted under Batch D closure. F11 inventory is complete but four catalog precedence is Operator-undecided. F12/F13 proposals await approval. F09 maps all eight agents and verifies hashes, but the intake proposal awaits approval. Phase 03 branches remain unmerged.
 **VERSION:** V003
 **CONVENTION:** Always use full `V003-F01` through `V003-F16`, even though proposed execution order is non-numeric.
 **AUTHORITIES:** Frozen V003 Specification §§25–27; Origin Conversation; active Governance; Phase 02 P14 and ticket evidence pattern; actual original-source ledger.
@@ -452,3 +452,11 @@ Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit
 **Status:** Proposed Production promotion criteria are recorded in the Phase 03 report; F13 is not closed. It depends on F12, whose authority matrix is awaiting Operator approval. Operator approval of the F13 criteria is also pending.
 **Current T20 boundary:** The existing Production record remains limited to the documented 2026-10-01 release and its contemporaneous evidence. No later live check, ongoing availability, new deployment, incident, regression, rollback, or post-T20 lesson is claimed or added.
 **Changes:** No Production, Sandbox, or Portfolio source record was edited; no evidence was copied; no deployment or browser verification was performed. ChatGPT independent verification is not claimed by Codex.
+
+
+## V003-F09 execution status — 2026-10-13
+
+**Status:** Eight-agent source-to-CORE mapping and hash checks are complete; proposed revised intake method is recorded in the Phase 03 report and the per-agent CSV. **Operator approval pending; F09 is not closed.**
+**Integrity:** 8/8 legacy source hashes match M01 baselines; 8/8 CORE hashes match the CSV; 0 recorded hash failures. All eight agents have source rows. DeepSeek/Qwen placeholder-only sources were not promoted as reports.
+**Disposition:** M06 admits only Codex to RESEARCH/BROWSER/FILE/CODE within cited scope; MEDIA remains reserved/unadmitted; no other agent receives an EXE category. Historical self-reports and configurations are time-bounded. No source or CORE/EXE record was changed; no secret values were copied.
+**Gate:** Approve/revise the proposed intake method before changes to mandatory FUNC requirements/CORE records. ChatGPT independent verification has not been performed or claimed.

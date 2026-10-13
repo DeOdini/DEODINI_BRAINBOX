@@ -912,3 +912,42 @@ The present Production record describes the documented T20 Netlify deployment on
 ### Decision gate
 
 **F12 dependency:** F12's proposed authority matrix has been recorded but awaits Operator approval. **Operator approval requested:** approve these F13 criteria after or together with the F12 matrix, or state row-level changes. Until both gates are satisfied, these are Codex proposals and F13 is not closed. No independent ChatGPT verification is claimed here.
+
+
+## V003-F09 — FUNC CORE/EXE source-to-target integrity — 2026-10-13
+
+**Status:** Eight-agent source mapping and evidence classification are complete. The revised intake questionnaire below is a proposal; **Operator approval is pending** before changing the mandatory `FUNC_REQ_BRAINBOX.md` or any CORE/EXE record. F09 is not closed.
+
+### Source and target integrity
+
+Reviewed the eight legacy files named in the F09 scope, all eight corresponding CORE records, the CORE registry README, EXE registry and its five category records, `FUNC_REQ_BRAINBOX.md`, and the legacy `FQ_MUST_README.md` routing notice. The accompanying `F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv` maps each agent's source and CORE path, current SHA-256, M01 baseline match, dated status/claim classification, M06 EXE disposition, authority boundary and last-verified scope.
+
+**Integrity:** 8/8 legacy source hashes match the M01 baseline values recorded in the Migration Map; 8/8 current CORE hashes match the CSV readback; 0 hash/baseline failures. All eight agents have a source-to-CORE row. The two short DeepSeek/Qwen files are placeholder notices, not capability reports, and are not promoted as populated knowledge.
+
+### Capability classification
+
+- **ChatGPT, Claude, Cline, Copilot, Grok:** legacy reports are dated self-reports or configuration statements. The CORE files mark present runtime states UNKNOWN / NOT VERIFIED. Old connector/skill listings do not prove current exposure, connection, authentication, execution or authorization.
+- **Cline:** its source contains both an initial failed file-write diagnostic and a later capability report. These remain separate historical facts; neither is generalized into current execution status.
+- **Copilot:** configured Playwright/MCP references are historical configuration evidence only. M06 explicitly did not admit Copilot Browser execution; configuration does not prove server startup, connection, authentication or successful browser operation.
+- **DeepSeek and Qwen:** the source files are pending-report placeholders. CORE records use only the frozen Specification §9 Operator-approved role/limitation baseline: research/creation, quick client-preview and downloadable/package delivery; direct local DEODINI integration is limited; operational connector/authentication/execution states remain UNKNOWN / NOT VERIFIED. No production or migration authority is inferred.
+- **Codex:** the CORE file records positive, time-scoped M05 evidence dated 2026-10-08, including specified GitHub/RDC operations. This is not a standing permission or a blanket claim about later sessions. In this F09 session Codex also performed task-scoped local file and Git operations and published the F11 branch; the GitHub account identity was not separately queried. This current observation does not automatically update the canonical CORE record.
+- **M06 EXE boundary:** only Codex is admitted to RESEARCH, BROWSER, FILE and CODE, within the cited evidence scopes. ChatGPT, Claude, Cline, Copilot, DeepSeek, Grok and Qwen have no M06-admitted category. MEDIA remains RESERVED / EXECUTION EVIDENCE PENDING, not admitted. No additional category is proposed.
+
+### Proposed intake questionnaire — approval required
+
+For each connector, skill, other tool/API, or email item, retain the original five requested descriptive dimensions: (a) inventory/status, (b) linkage, (c) purpose, (d) active usage, and (e) safe test examples/results. For RDC retain its four fields: connected device, access level, active use, and examples. Then add this separate evidence block so narrative linkage is not mistaken for capability proof:
+
+1. **EXPOSED:** YES / NO / UNKNOWN; exact session/tool inventory and observation date.
+2. **CONNECTED:** YES / NO / UNKNOWN; named target and whether it responded in the relevant runtime.
+3. **AUTHENTICATED:** YES / NO / UNKNOWN; only non-secret evidence and identity scope if actually verified. Never record a token, password, recovery code, or secret value.
+4. **EXECUTABLE:** YES / NO / UNKNOWN; exact successful operation, environment, result, evidence reference and date. Suggested test examples are not execution evidence.
+5. **AUTHORIZED:** action-specific scope, Operator/authority source, date and expiry/one-time boundary; otherwise UNKNOWN / NOT GRANTED. Technical access is not authorization.
+6. **LIMITATIONS:** missing access, uncertainty, known constraints and scope exclusions.
+7. **CANONICAL EXE REFERENCE:** admitted category record, or “none admitted” under the frozen M06 matrix.
+8. **LAST VERIFIED / VERIFIER / SOURCE RECORD:** date, exact evidence checked, agent/runtime, and verifier; distinguish live testing from source-file/hash review.
+
+Each claim must remain time- and environment-scoped. “Linked” is a descriptive field, not a replacement for CONNECTED or AUTHENTICATED. “Test examples” are labeled as proposed until actually run. A successful action grants no standing permission for future writes, sends, pushes, merges, migration or deployment.
+
+### Decision gate and limits
+
+**Operator approval requested:** approve this intake method before any change to the mandatory questionnaire or CORE/EXE records, or specify changes. Until then it remains a Codex proposal. The 8/8 mapping is complete, but the F09 pass condition requiring an approved intake method is not met. No legacy or CORE source was changed; no credentials or secret values were copied; no new agent category was created. Independent ChatGPT verification is not claimed in this Codex report.

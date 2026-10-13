@@ -561,3 +561,12 @@ GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf17
 **Codex:** Reviewed the T20 Production release summary and lessons against the canonical M15 Sandbox evidence boundary and F12's proposed authority matrix. Prepared criteria for production releases, release-specific post-deployment checks, incidents/regressions, actual rollback events, production-derived lessons, time-bounded monitoring claims, and Sandbox-to-Production separation.
 
 **Codex status:** F13 criteria remain a proposal pending the F12 authority-matrix decision and Operator approval. No release, test, live check, incident, rollback, lesson migration, or evidence copy was created.
+
+
+## V003-F09 execution record — FUNC source/CORE/EXE traceability proposal — 2026-10-13
+
+**Operator instruction (verbatim):** “I WANT YOU TO REINSTATE V003 PHASE03 FIXES TICKETS BRAINBOX, AND ALSO COMPLETE THE BATCH D. ONCE YOU ARE DONE, I WANT YOU TO STAGE AND COMMIT AND PUSH ALL UNSTAGED, UNCOMMIT AND UNPUSHED FILE... WHEN YOU ARE DONE, I WANT YOU TO FINISH UP ALL THE PHASE02 MERGE, MERGE ALL THE REMAINING PHASE02 MERGE, BUT LEAVE ONLY PHASE03 FIXES UNMERGED.”
+
+**Codex:** Read the legacy FUNC requirements and routing notice, CORE registry schema and records, EXE admission matrix, and eight old agent source files. Created an eight-row source/CORE integrity crosswalk. All eight source SHA-256 values match the M01 baseline; current CORE hashes also match the crosswalk. Prepared a proposed revised intake questionnaire retaining the legacy descriptive fields while separately recording EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, AUTHORIZED, LIMITATIONS, canonical EXE references, last verification and evidence source.
+
+**Codex status:** The questionnaire proposal awaits Operator approval. No legacy source, mandatory questionnaire, CORE record, or EXE record was modified. No secrets were copied; no categories beyond M06 were proposed. Codex did not claim independent ChatGPT verification.
