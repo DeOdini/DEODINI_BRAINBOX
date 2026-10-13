@@ -570,3 +570,15 @@ GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf17
 **Codex:** Read the legacy FUNC requirements and routing notice, CORE registry schema and records, EXE admission matrix, and eight old agent source files. Created an eight-row source/CORE integrity crosswalk. All eight source SHA-256 values match the M01 baseline; current CORE hashes also match the crosswalk. Prepared a proposed revised intake questionnaire retaining the legacy descriptive fields while separately recording EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, AUTHORIZED, LIMITATIONS, canonical EXE references, last verification and evidence source.
 
 **Codex status:** The questionnaire proposal awaits Operator approval. No legacy source, mandatory questionnaire, CORE record, or EXE record was modified. No secrets were copied; no categories beyond M06 were proposed. Codex did not claim independent ChatGPT verification.
+
+## Phase 03 Batch D publication and Phase 02 merge dialogue — 2026-10-13
+
+**Codex commentary (verbatim):** “Understood. I’ll record the F11 catalog question as undecided and preserve the files as they are. I’m continuing the Batch D work and will keep Phase 03 branches unmerged.”
+
+**Codex commentary (verbatim):** “F11 is now documented with the catalog precedence explicitly left undecided. I also corrected the ledger to state that the nine active asset references have present targets with matching SHA-256 hashes; no FootHive source files were changed. I’m committing only the F11 records on its ticket branch.”
+
+**Codex commentary (verbatim):** “F12’s matrix and F13’s promotion criteria are recorded as proposals, not silently treated as approved policy. The evidence review also confirms T20’s Production record is historical and contains no post-T20 live recheck. I’m completing F09’s eight-agent source-to-CORE/EXE crosswalk and a proposed questionnaire that keeps exposure, connection, authentication, execution and authorization separate.”
+
+**Codex commentary (verbatim):** “F11, F12, F13 and F09 are now individually committed and pushed to their own Phase 03 branches. The F12 matrix, F13 promotion criteria and F09 intake form remain proposals awaiting your approval; I’ve preserved those gates. Next I’m checking the live refs, then I’ll merge only the remaining Phase 02 branches in M19 → M20 → M21 order.”
+
+**Codex closeout:** GitHub PRs #35, #36 and #37 merged M19, M20 and M21 in that order. A fresh remote fetch confirmed all three tips are ancestors of main; the only unmerged remote refs are Phase 03 branches F01–F16, and no open PR remains. Phase 03 was not merged. This is Git lifecycle status only; F01/M21 acceptance remains pending, and Batch D remains open pending its documented Operator decisions.

@@ -460,3 +460,15 @@ Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit
 **Integrity:** 8/8 legacy source hashes match M01 baselines; 8/8 CORE hashes match the CSV; 0 recorded hash failures. All eight agents have source rows. DeepSeek/Qwen placeholder-only sources were not promoted as reports.
 **Disposition:** M06 admits only Codex to RESEARCH/BROWSER/FILE/CODE within cited scope; MEDIA remains reserved/unadmitted; no other agent receives an EXE category. Historical self-reports and configurations are time-bounded. No source or CORE/EXE record was changed; no secret values were copied.
 **Gate:** Approve/revise the proposed intake method before changes to mandatory FUNC requirements/CORE records. ChatGPT independent verification has not been performed or claimed.
+
+## Batch D current outcome and Phase 02 Git lifecycle — 2026-10-13
+
+**F10:** closed by approved retention of the legacy Skills README.
+**F16:** accepted under Batch D; the V003-wide architecture history remains distinct from an empty Fullstack project-decision placeholder.
+**F11:** evidence ledger and report published; exact F03/F14 precedence for four catalogs is **UNDECIDED** by Operator. No catalog edit/revert/move/copy/delete.
+**F12:** proposed FootHive authority matrix published; awaiting Operator approval.
+**F13:** proposed Production promotion criteria published; depends on F12 and Operator approval.
+**F09:** eight-agent traceability and integrity checks published (8/8 M01 hashes match; 0 failures); questionnaire method awaits Operator approval. No CORE/EXE or mandatory request source was changed.
+**Batch status:** Work records and ticket branches published; Codex does not mark Batch D closed while these stated decisions/approvals remain open.
+
+**Phase 02 Git merge receipts:** M19 merged by PR #35 at 3a8106c303b23421331ad437cd4f5bb629d3bdda; M20 merged by PR #36 at 5b4a1bac64a7a2bc8b520da4767f428164664b6b; M21 merged by PR #37 at 1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a. A fresh fetch confirms all three source tips are ancestors of origin/main. The only remaining unmerged remote branches are Phase 03 F01–F16. This Git merge does not close M21/Phase 02: F01/M21-GIT-01 and renewed acceptance remain pending. No Phase 03 PR or merge was created.
