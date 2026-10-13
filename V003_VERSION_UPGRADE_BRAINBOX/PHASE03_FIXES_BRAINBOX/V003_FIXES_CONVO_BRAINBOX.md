@@ -582,3 +582,11 @@ GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf17
 **Codex commentary (verbatim):** “F11, F12, F13 and F09 are now individually committed and pushed to their own Phase 03 branches. The F12 matrix, F13 promotion criteria and F09 intake form remain proposals awaiting your approval; I’ve preserved those gates. Next I’m checking the live refs, then I’ll merge only the remaining Phase 02 branches in M19 → M20 → M21 order.”
 
 **Codex closeout:** GitHub PRs #35, #36 and #37 merged M19, M20 and M21 in that order. A fresh remote fetch confirmed all three tips are ancestors of main; the only unmerged remote refs are Phase 03 branches F01–F16, and no open PR remains. Phase 03 was not merged. This is Git lifecycle status only; F01/M21 acceptance remains pending, and Batch D remains open pending its documented Operator decisions.
+
+
+
+## Post-push verification note — 2026-10-13
+
+**Codex:** “The closeout commit 12e46b1 is pushed and matches its remote ref. The final scan also reproduced five Windows ‘Filename too long’ warnings on the known T23 Playwright evidence paths; I haven’t touched or staged those files. I’m adding that limitation and correcting the report’s F09 commit row so it records both the traceability and closeout commits accurately.”
+
+**Codex result:** The post-push fetch verified F09 at 12e46b1b9c9aa11e1e7b3669459292aa7b559ae6 and origin/main at 1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a. The only unmerged remote branches remained Phase 03 F01–F16; open PR count was zero. Five long-path scan warnings are retained as an F07 limitation; those files and Git configuration were not changed.

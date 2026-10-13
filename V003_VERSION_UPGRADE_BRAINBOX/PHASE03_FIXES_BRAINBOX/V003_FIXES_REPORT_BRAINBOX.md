@@ -958,14 +958,14 @@ Each claim must remain time- and environment-scoped. “Linked” is a descripti
 
 ### Batch D branch publication
 
-| Ticket | Remote branch | Published tip | Current recorded gate |
+| Ticket | Remote branch | Published checkpoint(s) | Current recorded gate |
 |---|---|---|---|
 | F10 | v003/f10-skills-legacy-authority-disposition | 12147362c8fec22457bb30e1d3d3f8fb48e2d0d5 | Closed by approved keep-in-place disposition. |
 | F16 | v003/f16-architecture-decisions-ownership | 8ef230785b617f58f0e6b4d6b959533295b1b237 (remote tip observed during this check) | Operator-accepted under Batch D; no architecture source changed. |
 | F11 | v003/f11-project-workflow-foothive-disposition | ee85c3e7e26aa4d7b273ca2e3f3f0c6ec871dbc8 | Evidence inventory published; four F03/F14 catalog precedence remains undecided. |
 | F12 | v003/f12-foothive-canonical-authority-matrix | 7bffe371758c17640e8fe04a9acb3994030f8e31 | Matrix proposal published; Operator approval pending. |
 | F13 | v003/f13-production-case-study-promotion-rules | 9fed90deca74ac64abd24a564797ade93ab6d0c2 | Criteria proposal published; F12 and Operator approval pending. |
-| F09 | v003/f09-func-core-exe-source-integrity | e3e4da3e86bbed75f072f7a5fefe2b93c6793ecf | Eight-agent mapping published; intake questionnaire approval pending. |
+| F09 | v003/f09-func-core-exe-source-integrity | e3e4da3e (traceability) and 12e46b1 (Batch D/Phase 02 closeout record) | Eight-agent mapping published; intake questionnaire approval pending. |
 
 A fresh fetch verified the local and remote tips match for F11, F12, F13 and F09; the F09 worktree was clean before this final closeout append. The F01–F16 branches remain unmerged and no Phase 03 PR is open. F11/F12/F13/F09 are evidence/proposal-complete for the work performed, but their pending Operator decisions mean Batch D is **not declared closed** by Codex.
 
@@ -982,3 +982,11 @@ The three remaining Phase 02 branches were merged individually into main, in dep
 **Final repository check:** origin/main is 1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a. M19, M20 and M21 branch tips are all ancestors of main. The complete remote --no-merged origin/main result consists of exactly v003/f01 through v003/f16; no non-Phase-03 branch remains unmerged. GitHub returned no open PRs after the three merges.
 
 **Acceptance boundary:** The Phase 02 Git lifecycle is synchronized for M19–M21, but the earlier F01/M21-GIT-01 historical checkpoint-object limitation and renewed M21 acceptance review remain open. This report does not claim Phase 02 acceptance, M21 PASS, or V003 final closure. Phase 03 branches remain unmerged as instructed.
+
+
+
+## Post-push verification and Windows path-scan note — 2026-10-13
+
+After publishing the Batch D/Phase 02 closeout commit 12e46b1, a fresh fetch confirmed F09 local HEAD equaled origin/v003/f09-func-core-exe-source-integrity at 12e46b1b9c9aa11e1e7b3669459292aa7b559ae6; origin/main remained 1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a. The remote unmerged list remained exactly Phase 03 branches F01–F16, and the GitHub open-PR query returned zero results.
+
+The final Windows Git status scan printed five “Filename too long” warnings for the known T23 Playwright evidence paths under EVIDENCE_FH_BRAINBOX/T23_MOBILE_HEADER_FH_BRAINBOX/PLAYWRIGHT_CLI_FH_BRAINBOX. The warning matches the already-recorded F07 Windows path-compatibility limitation. No long-path files were staged or altered, and no core.longpaths setting or directory rename was made. The status output showed no other worktree changes before this report correction. This note does not claim that Windows Git could inspect those five paths.

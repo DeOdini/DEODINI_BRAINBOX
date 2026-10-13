@@ -472,3 +472,9 @@ Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit
 **Batch status:** Work records and ticket branches published; Codex does not mark Batch D closed while these stated decisions/approvals remain open.
 
 **Phase 02 Git merge receipts:** M19 merged by PR #35 at 3a8106c303b23421331ad437cd4f5bb629d3bdda; M20 merged by PR #36 at 5b4a1bac64a7a2bc8b520da4767f428164664b6b; M21 merged by PR #37 at 1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a. A fresh fetch confirms all three source tips are ancestors of origin/main. The only remaining unmerged remote branches are Phase 03 F01–F16. This Git merge does not close M21/Phase 02: F01/M21-GIT-01 and renewed acceptance remain pending. No Phase 03 PR or merge was created.
+
+
+
+## Final repository-state check — 2026-10-13
+
+F09 closeout commit 12e46b1 was pushed and independently read back by fetch at the same local/remote SHA. origin/main was 1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a. All remote unmerged branches were Phase 03 F01–F16; no open PRs remained. The Git status scan repeated five known F07 “Filename too long” warnings for T23 Playwright evidence paths; those files were left untouched and unstaged, and no long-path configuration was changed. This does not claim those paths are readable by Windows Git.
