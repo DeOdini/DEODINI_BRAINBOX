@@ -725,3 +725,16 @@ The push of c21a278 succeeded. A final `git status` scan timed out at the RDC re
 The Operator explicitly approved Batch C closure and proceeding to Batch D, and directed Codex to publish the Phase 03 verification-modified state, then handle each Batch D ticket on its own branch with ticket-level stage/commit/push and a report. This is the current instruction and supersedes earlier dated notes that Batch C acceptance or Git publication was pending. No merge was authorized in this instruction.
 
 Batch D sequence: F10, F16, F11, F12, F13, then F09. Each begins with evidence/reference inspection. Tickets requiring an Operator source disposition or architecture choice will be documented and held at that decision point before moving or deleting source material.
+
+
+## Phase 03 verification publication and Batch C closure report — 2026-10-13
+
+**Authorization:** Operator approved Phase 03 verification publication, Batch C closure, and progression to Batch D. Ticket branches are to be handled individually; this instruction did not authorize a merge.
+
+**Publication:** On `v003/f07-t23-windows-path-compatibility`, commit `eb66f86ef8c810790f27039f7c4b639b9772b703` (`Record Phase 03 verification and Batch C closeout`) was pushed to `origin`. It adds 73 lines across the Phase 03 conversation, report, and ticket records, with no deletions or changes to other paths. The scoped diff passed `git diff --check`.
+
+**Reconciliation:** Before publishing, the local branch was three documentation commits behind the remote. The local verification additions were committed, rebased over remote commits `99a64b7`, `3eeb43e`, and `5c05ead`, and the conflicts were resolved by retaining the remote chronology corrections and appending the local dated verification material. The rebase result preserved all previous remote wording; the published diff contains additions only.
+
+**Independent push check:** A fresh `git fetch origin` completed successfully. Local `HEAD` and `origin/v003/f07-t23-windows-path-compatibility` both resolve to `eb66f86ef8c810790f27039f7c4b639b9772b703`; `git status --short --branch` showed the branch synchronized with no working-tree changes.
+
+**Batch disposition:** Batch C is closed by the Operator’s explicit approval. Batch D is authorized to begin with F10, followed by F16, F11, F12, F13, and F09. No source deletion/move or merge is implied by this closeout.

@@ -383,3 +383,6 @@ For each file, default `git hash-object` failed with “Filename too long” (ex
 ## Operator authorization — Phase 03 publication and Batch D progression — 2026-10-13
 
 The Operator explicitly approved Batch C closure and proceeding to Batch D, and authorized publication of the Phase 03 verification-modified state. The earlier dated statement that Batch C closure/Git publication had not been authorized remains a historical checkpoint, not the current state. Batch D tickets are to be handled individually on their own branches. The current instruction authorizes no merge.
+
+
+**Phase 03 verification publication / Batch C closure:** Commit `eb66f86ef8c810790f27039f7c4b639b9772b703` was pushed on `v003/f07-t23-windows-path-compatibility`. Fresh fetch verified local HEAD equals the origin branch tip, and the worktree is clean. The Operator explicitly closed Batch C and authorized Batch D progression. This closeout performed no merge.
