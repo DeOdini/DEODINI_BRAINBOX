@@ -8090,3 +8090,311 @@ The remaining action for M20 was to publish those six ChatGPT-edited records, co
 ## Boundary and next state
 
 **M20:** independently verified PASS; M20-STATE-01 resolved; verification closeout published. **Batch E:** unmerged. **M21:** not started in this turn; its dedicated P14, final snapshot, and map closure remain separate work. M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01, and M01-GIT-01 remain enforceable for their specific sources. M20 PASS does not authorize retirement of substantive sources, Git pruning, deployment, or a Phase 02 closure claim.
+
+
+---
+
+# V003-M21 - Codex Execution Report - 2026-10-11
+
+**Ticket:** V003-M21 - Final V003 Migration Verification, Snapshot & Map Closure
+**Branch:** `v003/m21-final-migration-verification-closeout`
+**Base:** Independently verified M20 tip `b9cde157375c519c189feb7cacb58409a8fc631b`
+**Execution result:** Snapshot and per-source ledger drafted; **M21 acceptance HELD / BLOCKED by M21-GIT-01**. ChatGPT independent M21 verification and Operator acceptance remain pending. Phase 02 is **not closed**.
+
+## 1. Authority and preflight
+
+Read the V003 ticket, frozen Specification and Origin Conversation, Phase 02 ticket and execution rules, M01 migration map, M20 verification closeout, and current root/domain authority files.
+
+M20 had a separately recorded ChatGPT **PASS**, M20-STATE-01 was resolved, its verification closeout was published, and the M20 branch was clean at b9cde157375c519c189feb7cacb58409a8fc631b. Created and switched to the dedicated M21 branch from that commit. M21 P14 preflight was completed before implementation. The branch has no remote tracking ref yet; it is 12 commits ahead of main at the pre-publication checkpoint.
+
+The report contains separate Codex execution and ChatGPT independent-verification records for each M01-M20 ticket. The M19 and M20 branches remain published/unmerged; Batch E has not been merged.
+
+## 2. M21 implementation
+
+Created VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/TREE_SNAPSHOT_V003_BRAINBOX.md from the actual M21 worktree. It inventories **289 physical directories and 460 files**, excludes .git, and explicitly states that the snapshot is a physical path record rather than a Git tree object or release tag.
+
+Finalized the M01 migration map with a row for each of the **122 original M01 source files**, assigning an explicit disposition, target/reference, current integrity state, and applicable retained flag. Results:
+
+- **110** existing original files still match their M01 SHA-256.
+- **5** files differ from the M01 hash; all are expected active V003 authority or Phase 02 process records updated during migration.
+- **7** zero-byte placeholders retired under M20 are absent and recoverable from the M01 Git baseline.
+- **115/122** original paths remain physically present. M21 did not remove any original source.
+- **45** FootHive copy-manifest pairs were rechecked: 45/45 source baseline hashes match; 44/45 destination raw hashes match; 44/45 current source/destination pairs are byte-equal; 45/45 are equal after LF normalization. The M19 Git-stored destination result of 17/45 original raw hashes remains a separate qualification under M19-HIST-01.
+- Nine product/logo assets remain SHA-matched references in the separate FootHive website repository. The other 29 FootHive source-only product/catalog files remain deferred under M15-ASSET-01.
+- Two legacy MILESTONES/ records remain at source under M17-DEST-01; they are not merged into the planned Router milestone.
+- Phase 01 and Phase 02 remain support/archive records. The frozen Specification, Origin Conversation, and Architecture Decisions keep their separate roles.
+
+Reconciled the current root, Version History, V003 parent, and Phase 02 status text to show the M21 snapshot/map draft and its actual held state.
+
+## 3. Structural and integrity checks
+
+| Check | Result |
+|---|---|
+| Frozen Specification §8 hierarchy | 339 child paths |
+| Root README authority tree | 365 paths; all 339 frozen paths present, plus 26 already established local README/reference entries |
+| Physical target paths | 337/339 present |
+| Approved absent paths | Sandbox PASSED_SANDBOX_BRAINBOX/ and FAILED_SANDBOX_BRAINBOX/; both explicitly [PLANNED] |
+| Active README links | 72 READMEs, 496 relative links, 0 broken |
+| Snapshot links | Included in a combined 500-link scan; 0 broken |
+| Secret-pattern scan | 0 high-confidence matches in scanned tracked/current text |
+| Secret file check | No tracked .env, .env.local, or .env.production; the sole .env.example is comment-only |
+| Whitespace | git diff --check passed; M21-added map section and snapshot have 0 trailing-whitespace lines |
+| Source manifest | 122 individual baseline rows accounted for |
+
+The absent Sandbox outcome directories are truthful planned states. No other frozen §8 target path was missing in the physical tree.
+
+## 4. Blocking flag - M21-GIT-01
+
+**Exact object:** the 20 Cline checkpoint commit IDs listed in the M01 map, lines 78-97. All IDs are reproduced in the M21 map so they can be checked against an independent backup.
+
+**Evidence:** At M21, **0/20** IDs were readable by git cat-file -t; **0/20** appeared in git fsck --full --no-reflogs --unreachable or the current reflogs. The separate C:\Users\USER\pedestal-archive Git repository also contained **0/20**. Current git fsck found five other unreachable commits, 257 trees, and 147 blobs; none is one of the 20 listed checkpoint commits. git count-objects -v reported 81 loose objects, three packs, and zero garbage. No cause or date for the checkpoint objects' absence is established.
+
+**Impact:** The M01 local-only checkpoint recovery baseline cannot be certified from the inspected repositories. This affects historical evidence and recovery assurance.
+
+**Classification:** **BLOCKING for M21 acceptance and Phase 02 closure; non-blocking for publishing the M21 findings.**
+
+**Required disposition:** Preserve the current Git object store. Do not run garbage collection, pruning, or reflog expiry. The Operator must locate an independent backup containing the IDs or decide that these checkpoint objects may be treated as unavailable; Codex can then recheck each ID from that identified source. No recovery source was found or modified during M21.
+
+## 5. Other retained flags
+
+- **M20-REF-01:** Substantive provenance-linked legacy records remain retained.
+- **M15-ASSET-01:** 29 FootHive source-only product/catalog files have no approved destination.
+- **M17-DEST-01:** The two legacy milestone files have no Operator-approved destination.
+- **M19-HIST-01:** FootHive raw-byte and Git-blob fidelity remains qualified; original records are preserved.
+- **M01-GIT-01 / M21-GIT-01:** The 20 M01 checkpoint commits are currently unavailable in the inspected Git object stores. No cleanup or object-store mutation is authorized.
+
+These dispositions are listed source-by-source in the migration map. Planned Sandbox outcome folders, FootHive Iterations 02/03, workflow mastery, and Router/Agentic infrastructure remain planned. No deployment, source retirement, application change, PR, merge, or Git cleanup was performed.
+
+## 6. Verdict and publication state
+
+**M21 snapshot/map implementation:** DRAFTED.
+**M21 structural inventory:** CODEX CHECKS PASS, with the two explicitly planned Sandbox absences.
+**M21 final acceptance:** **HELD / BLOCKED by M21-GIT-01.**
+**ChatGPT independent verification:** PENDING.
+**Operator acceptance:** PENDING.
+**Batch E merge / Phase 02 closure:** NOT PERFORMED.
+
+The M21 snapshot, finalized source map, and status-navigation updates were published to the dedicated branch in implementation commit `d8b2921c0c68ef6ed3dbdbeae0e71e8f008282e8`. This report and the conversation transcript were published in documentation commit `35b4e3b41d49bcc82314245d25f1b9830f41c155`. The resumed-session continuation record is appended to the transcript in a follow-up documentation update. Before that follow-up, GitHub's branch ref, local HEAD, and upstream all matched `35b4e3b41d49bcc82314245d25f1b9830f41c155`, and the worktree was clean. Publishing the blocker does not resolve it or authorize merging.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M21 Final Migration Snapshot / Ledger — 2026-10-11
+
+**Independent disposition: IMPLEMENTATION / EVIDENCE CHECKS PASS; M21 ACCEPTANCE BLOCKED.**
+**Blocking flag: M21-GIT-01 — 20 M01 Cline checkpoint commits not recoverable from the verified repositories or GitHub exact-SHA API.**
+**M21/Phase 02 accepted or closed:** NO.
+**Operator authorization of checkpoint loss/recovery disposition:** NOT PROVIDED.
+**Branch:** `v003/m21-final-migration-verification-closeout` — published, unmerged.
+
+## Git, dependency and publication
+
+- Independently verified M20 published independent-PASS tip `b9cde157375c519c189feb7cacb58409a8fc631b`; M21 implementation `d8b2921c0c68ef6ed3dbdbeae0e71e8f008282e8`; execution/archive closeout `35b4e3b41d49bcc82314245d25f1b9830f41c155`; final pre-verification branch tip `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`.
+- Before this ChatGPT verification write, local HEAD, upstream ref and GitHub M21 branch tip matched at `7ccd0daf...`; ahead/behind **0/0**, clean worktree.
+- GitHub M21 PRs: none; M21 is not merged. `main`, `origin/main` and GitHub main remain `e2edd669cb30d243b0b916db3e67ebde83653574`. Batch E remains unmerged.
+- The authorized ticket V003-M21 requires separate ChatGPT independent review, Operator closure approval and a STOP for unresolved migration discrepancies.
+
+**Publication / branch isolation: PASS.**
+
+## Exact physical snapshot and target reconciliation
+
+Independent complete directory walk excluding `.git/`:
+- **289 physical directories and 460 files**.
+- `TREE_SNAPSHOT_V003_BRAINBOX.md` contains precisely **289 directory entries and 460 file entries**, with **0 missing/extra** paths against the current filesystem.
+- Independent parsing of frozen Specification §8: **339 approved child paths**; **337 physically present**, with exactly `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/PASSED_SANDBOX_BRAINBOX/` and `.../FAILED_SANDBOX_BRAINBOX/` absent. Both are explicitly `[PLANNED]`, not fictitious Production/Sandbox results.
+- Physical snapshot truth and the frozen-target comparison are PASS; planned FootHive Iterations 02/03 and Router/Agentic infrastructure remain separate future work.
+
+## M01 original-source ledger integrity
+
+Independent table recheck of the original M01 manifest and current §61 source ledger:
+- Original M01 tracked files: **122** unique paths.
+- M21 disposition ledger: **122** unique original paths.
+- Exact current physical SHA-256 + byte-size matches against the **original M01 physical manifest**: **110**.
+- Updated authority/Phase 02 process records: **5**, explicitly identified and retained; no unauthorized loss claimed.
+- Absent/retired sources: **7**, exactly the authorized M20 zero-byte placeholders with original empty Git blobs still in history.
+- Total current original paths present: **115/122**; no unexpected missing path.
+
+Comparison against the raw M01 Git blobs alone is not interchangeable with the physical M01 manifest: Windows LF/CRLF normalization produces additional raw SHA differences. Verification used the original M01 physical SHA-256/size manifest to reproduce 110/5/7. `M19-HIST-01` continues to qualify FootHive strict raw-byte recovery.
+
+**Source ledger and preservation: PASS.**
+
+## Navigation, security, hygiene and scope
+
+- Tracked active READMEs: **72**; relative local links **496**; broken **0**.
+- Snapshot links: **4**; broken **0**. Combined **500 links / 0 broken**.
+- Scoped high-confidence credential-pattern scan of **203** tracked text/source files: **0** matches for AWS-style key IDs, Google API keys, GitHub tokens, common Slack/OpenAI/Stripe live key patterns, or private-key PEM headers. This is not a comprehensive secret-leak guarantee.
+- No tracked `.env`, `.env.local` or `.env.production`. Production `.env.example` exists and is comment-only, with zero active configuration lines.
+- Full M21 Git range `b9cde157...7ccd0daf`: `git diff --check` **exit 0**. Snapshot contains 0 trailing-space lines.
+- M21 changed the actual snapshot, source ledger/Map, root/Version History/V003/Phase 02 navigation, report and conversation; it did not deploy, implement Router capabilities, move historical source records, or remove any legacy source.
+
+## M21-GIT-01 — independently confirmed blocking checkpoint-object deficiency
+
+The original M01 Migration Map §2 lists exactly **20 unique full-SHA Cline checkpoint commits** previously observed as dangling local commits.
+
+Independent read-only recovery checks, using those 20 exact IDs:
+- Brainbox `git cat-file -t`: **0/20 readable**.
+- Brainbox `git reflog --all`: **0/20 referenced**.
+- Brainbox `git fsck --full --no-reflogs --unreachable`: **0/20 listed**, exit 0.
+- Separate `C:\Users\USER\pedestal-archive` Git repository: **0/20 readable**, **0/20 in current reflogs or read-only fsck**.
+- Direct GitHub commit API lookup against `DeOdini/DEODINI_BRAINBOX` for all **20/20** SHAs: **0 found**, each returned no matching commit.
+- Current Brainbox read-only fsck found **5 other unreachable commits**, **262 trees**, **152 blobs**; none of the 20 missing checkpoint IDs. Git reported zero garbage. These counts reflect the later M21 object store and need not equal the earlier Codex pre-publication counts.
+- No checked source establishes when or why the 20 checkpoint objects ceased to be available. A search of two repositories and the remote API does not rule out external backups.
+
+**Impact:** the historical M01 local-only checkpoint-recovery baseline cannot be independently certified. There is no authorized basis to claim it is intact, to retroactively erase that baseline, or to declare M21/Phase 02 accepted.
+
+**Required decision:** Operator either identifies an independent backup/object store/archive containing these exact IDs for Codex to verify read-only, or explicitly authorizes a documented unavailable/lost-checkpoint disposition after considering the recovery limitation. Neither action/decision has occurred here. Even if treated as unavailable by Operator approval, M21 must preserve the recorded limitation and then undergo renewed verification and explicit Operator acceptance before Phase 02 closure.
+
+**NO Git garbage collection, pruning, reflog expiry, destructive object-store repair, history rewrite or forced push is authorized.**
+
+## Remaining source-specific deferrals
+
+`M20-REF-01`, `M15-ASSET-01` (29 FootHive source-only assets), `M17-DEST-01` (two legacy Milestones awaiting Operator disposition), `M19-HIST-01` (strict FootHive raw-byte archival qualifications), and `M01-GIT-01 / M21-GIT-01` remain accurately open within their defined limits. None is silently waived by structural coverage.
+
+**FINAL INDEPENDENT M21 VERDICT: VERIFIED SNAPSHOT / LEDGER / LINKS / SOURCE SAFEGUARDS; BLOCKED AT M21-GIT-01. M21 NOT ACCEPTED, BATCH E NOT MERGED, PHASE 02 NOT CLOSED.**
+
+ChatGPT made no Git changes, source cleanup, object-store mutation, application test, form submission or deployment; only this independent verification documentation is being recorded.
+
+---
+
+# ChatGPT Independent Reverification Addendum — V003-M21 — 2026-10-11
+
+**Status: RE-VERIFICATION RECORDED; M21 ACCEPTANCE HELD / BLOCKED.**
+**Scope:** Follow-up independent inspection after the Codex M21 publication claim; this section supplements rather than replaces the earlier ChatGPT M21 verification. No Operator acceptance is implied.
+
+## Prior-record audit
+Before this addendum, this Phase 02 report already contained a detailed "ChatGPT Independent Verification — V003-M21 Final Migration Snapshot / Ledger — 2026-10-11" section. The Phase 02 conversation also held a ChatGPT verification entry. Those historical records remain intact; neither captured the subsequent seven-file dirty-worktree discovery. This addendum is a new report, not a claim that the earlier ChatGPT verification was absent.
+
+## New read-only observations
+- On authorized RDC device DESKTOP-DHRIH27, in C:/Users/USER/DEODINI_BRAINBOX, active branch: `v003/m21-final-migration-verification-closeout`.
+- Local HEAD and upstream tracking ref both resolved to `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`; `git rev-list --left-right --count HEAD...origin/v003/m21-final-migration-verification-closeout` returned **0 / 0**. This confirms alignment with the locally stored upstream tracking ref, **not** a fresh authenticated GitHub remote-ref check.
+- `git status --short` showed **seven modified tracked files**: `README_BRAINBOX.md`, Phase 02 README/report/conversation, V003 parent README, V003 migration map, and V003 tree snapshot. `git diff --stat` showed **123 insertions, 8 deletions** across seven files. The local worktree therefore was **NOT CLEAN** at this reverification checkpoint. Earlier reports of a clean pre-verification worktree describe a different checkpoint and must not be projected onto current state.
+- Local `git cat-file -t` confirmed implementation commit `d8b2921c0c68ef6ed3dbdbeae0e71e8f008282e8` and documentation commit `35b4e3b41d49bcc82314245d25f1b9830f41c155` exist as commit objects.
+- `git -c core.longpaths=true diff --check` emitted line-ending warnings but no whitespace-error lines; current dirty status cannot be dismissed as whitespace alone.
+
+## M21-GIT-01 checkpoint-object test
+Read the 20 full Cline checkpoint SHAs from the M01 section of the migration map and independently ran a read-only `git cat-file -e <sha>^{commit}` check against each in the current Brainbox repository. Result: **0 / 20 readable**. This independently reproduces the central local object-store blocker. The earlier detailed verification record additionally describes checks of reflogs, fsck, pedestal-archive and GitHub API; those broader checks were **not** rerun in this specific reverification pass. Neither a disappearance cause nor a complete absence of external backups has been established.
+
+## Evidence boundary
+The prior detailed ChatGPT independent verification entry reports 289 physical directories / 460 files, 337/339 frozen target paths with two planned Sandbox absences, 122/122 M01 ledger dispositions (110 unchanged, five updated, seven retired placeholders), 72 READMEs / 496 relative links / zero broken, and a scoped credential-pattern scan. This reverification read those results **from the prior record**; it did **not** independently rerun every inventory, link, hash or secret scan. No fresh PR/merge or GitHub remote-ref query was successfully completed in this pass. Earlier verification records characterize Batch E as unmerged; treat that as an earlier observation unless freshly rechecked.
+
+## Disposition and safeguards
+**M21-GIT-01 remains BLOCKING.** M21 is NOT accepted or closed; Phase 02 closure is NOT authorized; Batch E must NOT be merged on the basis of this addendum. Preserve Git objects; do not run GC, prune, reflog expiry, destructive repair, forced push or rewrite. Resolve the seven-file working-tree discrepancy, determine whether current addenda and other pending edits should be committed/published through normal authorization, and obtain Operator disposition for the 20 checkpoint SHAs (read-only restore from independent backup or explicit documented-unavailability decision). Reverify before acceptance.
+
+**This addendum was appended to local documentation. A write to the working tree does not itself prove a commit or GitHub push.**
+
+---
+
+## Codex follow-up to ChatGPT M21 reverification and Operator instruction — 2026-10-11
+
+The Operator asked Codex to inspect the newest ChatGPT-recorded M21 verification, carry out its correction, and stage/commit without pushing.
+
+- Reviewed the ChatGPT Independent Verification and Reverification Addendum, plus the associated changes to root/Phase 02/V003 status, the M21 snapshot, and the migration map.
+- The pending working-tree correction consisted of seven tracked files: the two root/parent status READMEs, Phase 02 README, Phase 02 conversation/report, M21 migration map, and M21 snapshot. No unrelated modified or untracked path was present.
+- `git diff --check` passed. The current tracked diff at this checkpoint was **161 insertions / 8 deletions**. ChatGPT's reported **123 / 8** is preserved as its earlier verification checkpoint measurement; it is not substituted for this later current diff count.
+- A fresh read-only remote check confirmed that, before the authorized local commit, local HEAD, upstream tracking ref, and GitHub's M21 branch all matched `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`.
+- The Operator explicitly authorized staging and committing the report-driven local state and explicitly withheld push authorization. Codex staged the seven reviewed paths and committed them locally as `621b016694da5dba3142ceec5dd878dba6be35c4` (`M21 record ChatGPT independent verification and status correction`). A fresh `git ls-remote` check confirmed GitHub still points to `7ccd0daf6af7d5c0d8230ad600e2307ada254f5b`; the new commit was not pushed. No PR, merge, or Phase 02 closure was performed.
+
+This documentation/status correction resolves the seven-file uncommitted-state issue only. `M21-GIT-01` remains BLOCKING, M21 remains unaccepted, and the Operator's checkpoint recovery/disposition decision is still pending.
+
+---
+
+# ChatGPT Independent Audit and Proposed V003 Phase 03 Flag Register — 2026-10-11
+
+**STATUS:** [RECORDED — PROPOSED FOR OPERATOR REVIEW; NOT AUTHORIZED FOR EXECUTION]
+**RECORD TYPE:** Independent post-M21 assessment, origin/source review and flag-planning handoff; not a Codex execution report, final M21 acceptance, or Phase 03 ticket issuance.
+**SOURCE BASIS:** Operator's six stated concerns and uploaded Grok/Claude audits; ChatGPT's live read-only RDC scan of desktop DEODINI_BRAINBOX; local frozen V003 Specification, Origin Conversation, Phase 01/02 material, migration map and prior independent M21 evidence; two Operator-provided shared ChatGPT session URLs.
+**CHAT SOURCES:** Capability Integration Report https://chatgpt.com/share/6acbb476-e730-83e9-93ad-1ba9688883d8 ; Verify Codex Claims https://chatgpt.com/share/6acbb49f-4c78-83e9-9c28-c974a2a76ec6 . Both shared pages were successfully opened. They are shared snapshots, not proof of later private additions.
+**SCOPE LIMITS:** No fixes, source retirement, new authority, ticket approval, checkpoint recovery, merge, deployment or Git object cleanup. Filesystem byte inspection is distinct from exhaustive semantic reading of every historical document. Separate device 'localhost' was offline; online authorized device was DESKTOP-DHRIH27.
+
+## 1. Repository and provenance observations
+- Live desktop repository: C:/Users/USER/DEODINI_BRAINBOX; active branch v003/m21-final-migration-verification-closeout. Prior read-only Git verification found local commits 621b016694da5dba3142ceec5dd878dba6be35c4 and e6b8df2cdc239f7fc6535cb16754ca8ebc1a3992; locally clean, two ahead of GitHub tip 7ccd0daf6af7d5c0d8230ad600e2307ada254f5b; no push by ChatGPT. This status was rechecked immediately before recording the present entry.
+- Physical-tree byte audit read 460/460 files without read errors, under 289 directories, excluding .git. File types: 154 Markdown, 58 PNG, 40 YAML, eight logs, four JPG, two SVG, one CSV, one .example, and 192 extensionless (including .gitkeep); 190 zero-byte files, all .gitkeep. This was a read/hash/inventory pass, not a manual comprehension claim for all 460 files or a complete .git object audit.
+- Domain files: AI_BRAINBOX 421; GOVERNANCE_BRAINBOX nine; VERSION_HISTORY_BRAINBOX eight; V003_VERSION_UPGRADE_BRAINBOX ten; PORTFOLIO_BRAINBOX five; milestone branches four; root three.
+- Principal authorities examined: frozen V003 Specification (1,760 lines), Origin Conversation (6,569 lines), Phase 02 migration tickets (1,416 lines), migration map (2,608 lines); selective deep reading of governing sections completed. Phase 01 freeze is recorded in Specification §31–32. The authoritative source hierarchy and exact ticket-specific preflight remain in Specification §§2, 26–27 and Phase 02 tickets §§3–4.
+- Original shared Capability Integration Report establishes the required separation of active connected abilities from available/potential abilities, with linkage, purpose, active usage, safe tests and limitations. Shared Verify Codex Claims session documents Phase 01 P09–P16 staged review, corrections and eventual freeze; intermediate unresolved issues are not evidence of live regressions without rechecking P16.
+- The original Phase 02 operating model remains Operator authorizes/accepts/merges, Codex executes, ChatGPT independently verifies. A finding/flag does NOT itself authorize a fix. Blocking versus batch-deferred classification must consider affected dependency; non-blocking findings need recorded disposition, not automatic source deletion.
+
+## 2. Earlier third-party audit claims — independent assessment
+- The physical 460-file / 289-directory counts and deliberate planned scaffolding are supported.
+- Five T23 evidence paths measured 260–263 Windows path characters and core.longpaths was unset in the desktop repository; portability concern real, failure of every future clone not proven.
+- Legacy DOB/FQ/Skills Availability entry routes can misdirect an agent away from active root and Governance authorities. Historical preservation means redirect/status wording is safer than unapproved deletion.
+- AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX had one 847-byte SKILLS_MUST_README.md and no substantive RAW/PROVEN/REUSABLE/FAILED files at that location. It is a candidate for Operator-directed disposition, not automatically safe for deletion.
+- FUNC contained eight CORE agent records (~3.3–4.8 KB each), several longer legacy FUNC documents and short DeepSeek/Qwen legacy placeholders. Differences in length do not prove missing required content; source-level question-to-CORE/EXE evidence mapping is needed. FUNC_REQ_BRAINBOX.md predates V003-specific CORE/EXE placement guidance.
+- The current PROJ_WORKFLOW legacy tree has populated FOOTHIVE_PROJ_BRAINBOX and RAW_WORKFLOW_PROJ_BRAINBOX; RAW contains four substantive Markdown files totaling ~64 KB. No finding authorizes general retirement.
+- Production FootHive case-study tree currently has one case-study index and two FootHive summary/lessons files; its README defines Sandbox evidence as canonical and Production as T20 release summary, not current live monitoring. Portfolio is packaging rather than canonical trial evidence.
+- Ordinary relative Markdown link scan found four unresolved links in migrated Sandbox FootHive BUILD_REPORT; when embedded Markdown images were included, 38 unresolved relative targets across Build Report and original FootHive image catalogs. Historical sandbox: URLs/absolute links and README-only counts belong to separate scopes. Claude's older 64 count was not reproduced on an identical documented counting basis.
+- Root README retains historical 494 vs later 496 relative-link metrics and a literal '?' in the M03-REF-01 status sentence. Older M08/M20 PENDING language within chronological sections is not a current status by itself; later Phase 02 header supersedes it.
+- Existing M21-GIT-01 independent check: 0/20 original M01 checkpoint Git commits available in current Brainbox object store; previous broader report includes other repositories/ref and GitHub checks. Cause of absence and availability of other backups remain unestablished.
+
+## 3. Proposed V003 Phase 03 issue/flag IDs — NOT authorized tickets
+The IDs below are planning labels only; any exact fix, disposition, new Phase 03 path, or dependency scope still requires Operator decision and individually authorized ticketing. Do not silently transform 'needs decision' into 'defect confirmed'.
+
+| Proposed ID | Inherited flag / known issue | Provisional gate |
+| --- | --- | --- |
+| V003-F01 | M21-GIT-01 / M01-GIT-01: 20 original checkpoint commits unreadable; independent recovery or documented-unavailability decision | BLOCKING for M21 acceptance |
+| V003-F02 | M21 final documentation/Git publication: two committed local closeout commits not yet pushed; Batch E PR/merge/acceptance pending | Closure/lifecycle gate; Operator controls push/merge |
+| V003-F03 | M15-ASSET-01: 29 source-only FootHive product/catalog assets lack authorized destination | Operator source disposition before retirement |
+| V003-F04 | M17-DEST-01: two historical MILESTONES/ documents lack approved target | Operator source disposition before move/retire |
+| V003-F05 | M19-HIST-01: historical FootHive Git blob vs manifest/raw-byte normalization qualification | Preserve integrity evidence; source-specific safeguard |
+| V003-F06 | M20-REF-01: substantive legacy source retirement/reference-provenance safeguard | Preserve source until approved |
+| V003-F07 | Windows long paths: five T23 Playwright files (260–263 full-path chars), core.longpaths unset | BATCH-DEFERRED portability assessment |
+| V003-F08 | Legacy DOB/AI_MUST/FQ and navigation/reading-order conflict with current root/Governance | BATCH-DEFERRED routing correction |
+| V003-F09 | FUNC questionnaire and eight CORE/EXE capability mappings versus detailed legacy agent reports | Operator classification design decision; no assumed data loss |
+| V003-F10 | V002 Skills Availability versus V003 Skills taxonomy and legacy retirement | Operator disposition, references and provenance first |
+| V003-F11 | Legacy Project Workflow, RAW workflow sources and original FootHive materials | Operator destination/retirement decision, preserve original |
+| V003-F12 | FootHive canonical source responsibilities across PROJ, Sandbox, Prod and Portfolio | Operator authority clarification |
+| V003-F13 | Exact evidence-promotion and file organization criteria for FootHive/future Prod DEVOPS case studies | Operator architecture/operating clarification |
+| V003-F14 | Unresolved historical Build Report/evidence paths and image catalog references | BATCH-DEFERRED reference classification |
+| V003-F15 | Superseded chronological statuses, historical link counts and minor root text inconsistencies | BATCH-DEFERRED documentary reconciliation |
+| V003-F16 | Operator's proposed relocation/naming of V003-wide ARCHITECTURE_DECISIONS under Fullstack Sandbox ARCH_DECISIONS | Operator architecture decision; existing V003-wide provenance is intentional and not itself proven wrong |
+
+## 4. Not automatically fixable / non-defect scope
+- Planned .gitkeep Skills/DEVOPS/Router branches are not evidence that the architecture migration failed.
+- Future FootHive Iterations 02/03, Router infrastructure, runtime deployments and content-enrichment initiatives remain separately scoped unless Operator adds them.
+- Historical Phase 01 P06/P09/P13 defects were recorded as reconciled at P16; do not re-open from interim chat excerpts alone.
+- Parallel source and copied evidence do not establish redundant-authority defects without canonical/reference and hash/provenance classification.
+- V003-F01..F16 are not the same as previously authorized V003-M01..M21; Phase 03 naming, grouping and ticket contracts await Operator instructions.
+
+## 5. Remaining review limits and handoff
+- Shared conversations were retrievable and representative passages examined; full individual-message-level forensic reconciliation with every local archive entry was not completed.
+- Full physical file reading as bytes succeeded; manual semantic reading of all historical/technical records, Git internals, entire Phase 01/Phase 02 event chronology, external linked artifacts, and offline localhost was not completed. Do not claim an exhaustive semantic audit.
+- Final risk ranking, consolidation, dependencies, success gates, authorization and issuance of V003-F01..F16 tickets are specifically RESERVED for a subsequent Operator instruction.
+- As of recording: **M21 NOT ACCEPTED; Phase 02 OPEN; Batch E not authorized to merge; checkpoint-disposition blocker unresolved.** This report does not amend the frozen Specification or close a flag.
+
+**Recording action:** Appended to existing Phase 02 migration report as provenance/planning support only. Git status after append determines whether committed/pushed; neither is implicit.
+
+---
+
+# ChatGPT Governance Ticketing Review and Proposed Phase 03 Dependency-First Batching — 2026-10-11
+
+**STATUS:** [RECORDED — PROPOSED PLAN, NOT OPERATOR-APPROVED EXECUTION TICKETS]
+**SOURCE AUTHORITY:** GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md; EVIDENCE_GOV_BRAINBOX.md; DOCUMENTATION_GOV_BRAINBOX.md; VERSIONING_GOV_BRAINBOX.md; PROMOTION_GOV_BRAINBOX.md; frozen V003 Specification §§25–27; Phase 02 ticket set §§3–4 and V003-M21; current Phase 02 conversation and Operator declaration. These governing files were read live on authorized desktop DESKTOP-DHRIH27.
+**AUTHORITY BOUNDARY:** The Phase 02 Operator exception allowing non-blocking flags to proceed between tickets is explicitly scoped to Phase 02. Adoption of identical Phase 03 flag/batch and Codex/ChatGPT role handling requires Operator authorization. This is a planning sequence, not permission to execute, publish, merge, delete, rewrite historical evidence, amend the frozen Specification or create a Phase 03 directory.
+
+## 1. Governing rules applied
+1. Flag/recommendation != authorization. Every F ticket must be individually scoped/authorized and must inspect exact pre-state, source content, links, integrity, Git state, canonical destination and dependencies.
+2. Frozen V003 Specification is architecture target; Origin Conversation is decision provenance; Governance controls system-wide policy; root/local READMEs control navigation; migration ledger describes but does not authorize source disposition.
+3. Blocking safety/integrity/dependency issue stops the affected work. Non-blocking batch carry-forward applies to Phase 02 by existing exception, NOT automatically Phase 03.
+4. Codex implementation reports must distinguish authorization, pre-state, exact actions, source-to-target disposition, read-back/tests, post-state, remaining flags, limits, Git lifecycle. ChatGPT independently verifies under the Phase 02 model; Operator alone authorizes merger/acceptance. Proposed for Phase 03 pending approval.
+5. Preserve historical records and evidence; use dated addenda. Never equate write with verification, commit with push, push with merge, or merge with deployment/Operator verification. Destructive actions require separately approved recoverability.
+
+## 2. Operator-requested sequencing: blocking first, then easier before medium
+The labels F01–F16 remain PROPOSED planning identities; do not infer every entry is a defect or needs a physical fix. A 'gate' means decide/verify/disposition first, not necessarily implement or erase.
+
+| Proposed planning batch | Proposed internal order | Risk, estimated effort and dependency |
+| --- | --- | --- |
+| A — Hard closure blocker / historical integrity FIRST | F01 -> F05 | F01 M21-GIT-01 20 missing checkpoint objects: HIGH difficulty / blocking; begin immediately despite high effort, read-only recovery source search or explicit Operator unavailability decision. F05 M19-HIST-01: relatively bounded archival-byte reconciliation, source safeguard, address alongside F01 where needed; never rewrite original evidence. |
+| B — Source-specific blocking retirement decisions SECOND | F04 -> F03 -> F06 | F04 M17-DEST-01 (two milestone sources; easier bounded decision), F03 M15-ASSET-01 (29 FootHive assets; medium inventory), F06 M20-REF-01 (broader legacy retirement/provenance; medium to high). These block respective moves/deletions only, not necessarily unrelated M21 acceptance. Each can end in approved retention/no-deletion, not forced migration. |
+| C — Easy, nonblocking corrections THIRD | F15 -> F08 -> F14 -> F07 | F15 stale status/count wording and minor typo (easy); F08 legacy entry and reading-order redirects (easy to medium, provenance-preserving); F14 broken historical Build Report and image links (bounded review, no silent rewrite); F07 five Windows long paths/configuration (bounded evaluation, requires Operator choice if rename). |
+| D — Medium design/content decisions FOURTH | F10 -> F11 -> F09 -> F12 -> F13 -> F16 | F10 Skills Availability vs Skills taxonomy; F11 legacy project/RAW workflow; F09 capability questionnaire, CORE/EXE evidence mapping; F12 FootHive canonical boundaries; F13 Prod promotion/case-study rules (depends on F12); F16 architecture-decision document location (requires explicit Operator decision, frozen target impact assessment). Within D, start with narrowly scoped assessments, then medium cross-domain classification. |
+| E — Final publication and integrated closure LAST | F02 | F02 contains a separable early documentation push decision (currently two older committed local M21 closeout commits plus newly uncommitted report/conversation addenda) and a final publication/PR/merge/Operator acceptance gate. Do not perform final Batch E merge or declare Phase 02/V003 closed until F01 and all mandatory acceptance gates are independently satisfied. Existing no-push/no-merge restrictions remain unless explicitly changed by Operator. |
+
+**Ordering nuance:** User directed blocking before easy-before-medium. Hard blocker F01 is necessarily high effort; risk priority overrides ease. F04/F03/F06 are conditional source-retirement gates, not blanket blockers of every ticket. F02 is a final closure dependency and must not be prematurely executed merely because its first two actions are mechanically easy.
+
+## 3. Ticket authorization and closure requirements (proposed)
+Each future individually approved V003-Fxx ticket should have unique ID/title, classification, exact source paths/line/object evidence, frozen authority and Origin anchors, predecessor dependencies, purpose and scope exclusions, mandatory preflight, stop and escalation rules, permitted/prohibited actions, recovery/integrity requirements, expected deliverables, independent test/acceptance criteria, Codex execution-report contract, ChatGPT independent-verification gate and separate Operator merge/closeout disposition. Keep unresolved existing M-series IDs attached to F-series planning work as provenance.
+
+Do not retrospectively label planned Router/Skills/DEVOPS scaffolds as defects; do not re-open corrected Phase 01 P06/P09/P13 without new regression evidence; do not delete V002 sources solely for emptiness or duplication. Any need to change frozen architecture requires a separately approved authority decision.
+
+## 4. Disposition and current repository state
+**M21-GIT-01 remains BLOCKING; M21 NOT ACCEPTED; Phase 02 OPEN; Batch E NOT MERGED.** No Phase 03 ticket or batch has been accepted by Operator. Report and conversation recording are local append-only documentation; changes remain uncommitted/unpushed unless separately authorized and verified.

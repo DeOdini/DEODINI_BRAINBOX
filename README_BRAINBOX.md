@@ -70,7 +70,7 @@ DEODINI_BRAINBOX/
 ├── MILESTONES_BRAINBOX/ [PLANNED]
 │   ├── README_MILESTONES_BRAINBOX.md
 │   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
-├── AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05-M16 migrated; M17 legacy sources retained; M18 planned milestone records; M19 reconciled; M20-M21 pending]
+├── AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05-M16 migrated; M17 legacy sources retained; M18 planned milestone records; M19-M20 reconciled; M21 verification pending]
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
 │   │   ├── README_FUNC_AI_BRAINBOX.md
@@ -398,7 +398,7 @@ DEODINI_BRAINBOX/
 │       │   └── README_SECURITY_SKILLS_BRAINBOX.md
 │       └── REFERENCES_SKILLS_BRAINBOX/
 │           └── README_REFERENCES_SKILLS_BRAINBOX.md
-└── PORTFOLIO_BRAINBOX/ [PLANNED V003 target — M16]
+└── PORTFOLIO_BRAINBOX/ [PARTIALLY POPULATED — M16]
     ├── README_PORTFOLIO_BRAINBOX.md
     └── FOOTHIVE_PORTFOLIO_BRAINBOX/
         ├── README_FOOTHIVE_PORTFOLIO_BRAINBOX.md
@@ -414,9 +414,9 @@ DEODINI_BRAINBOX/
 | `README_BRAINBOX.md` | [ACTIVE] | This M02 root navigation authority. |
 | `V003_VERSION_UPGRADE_BRAINBOX/` | [POPULATED] | Contains canonical Origin/Specification and separate Phase 01 and Phase 02 support archives. |
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
-| `VERSION_HISTORY_BRAINBOX/` | [POPULATED — partial; M04] | Parent README and Git-backed V001/V002 tree snapshots are present. Their conceptual retrospectives explicitly report missing rationale evidence; V003 Architecture Decisions and the living migration map are retained. Final V003 snapshot remains assigned to M21. |
+| `VERSION_HISTORY_BRAINBOX/` | [POPULATED - M21 physical snapshot independently verified; final M21 acceptance BLOCKED on M21-GIT-01] | Parent README and Git-backed V001/V002 snapshots are present. Conceptual retrospective rationale remains evidence-limited. V003 Architecture Decisions, the living migration map, and the actual M21 physical-tree snapshot are present. |
 | `MILESTONES_BRAINBOX/` | [POPULATED — M18] | The two approved records are present and remain [PLANNED]; no Router or enabling infrastructure is implemented. Legacy `MILESTONES/` remains unchanged under M17-DEST-01 pending Operator disposition. |
-| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16; M19 RECONCILED] | FUNC CORE/EXE, Skills, Sandbox/Production, Fullstack, Frontend, Backend, analytics, and FootHive records are present; M17 legacy sources remain separate and M18 milestone records remain [PLANNED]. M20 retired seven verified empty source files; substantive legacy sources remain under source-specific safeguards. M21 final reconciliation is pending. |
+| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16; M19 RECONCILED] | FUNC CORE/EXE, Skills, Sandbox/Production, Fullstack, Frontend, Backend, analytics, and FootHive records are present; M17 legacy sources remain separate and M18 milestone records remain [PLANNED]. M20 retired seven verified empty source files; substantive legacy sources remain under source-specific safeguards. M21 snapshot/map independently checked; final M21 acceptance held on confirmed M21-GIT-01 pending Operator recovery/disposition decision. |
 | `PORTFOLIO_BRAINBOX/` | [PARTIALLY POPULATED - M16; M19 RECONCILED] | The parent README and FootHive portfolio child are present. M20 retired the verified zero-byte legacy placeholder `001_PORT_BRAINBOX.md`; the portfolio evidence and current navigation remain. |
 
 ## Current local root tree
@@ -493,11 +493,11 @@ VERSION_HISTORY_BRAINBOX/
 │   └── RETROSPECTIVE_V002_BRAINBOX.md [conceptual rationale blocked]
 └── V003_EXTENDED_DEODINI_BRAINBOX/
     ├── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md [retained; unchanged]
-    ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map; updated through M18]
-    └── TREE_SNAPSHOT_V003_BRAINBOX.md [deferred to M21]
+    ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map; M21 source dispositions recorded]
+    └── TREE_SNAPSHOT_V003_BRAINBOX.md [present; snapshot independently verified, M21 acceptance blocked by M21-GIT-01]
 ```
 
-The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The final V003 tree snapshot remains assigned to M21. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
+The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The M21 V003 physical-tree snapshot is present; independent verification and Operator closeout remain pending. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
 
 ## Navigation index
 
