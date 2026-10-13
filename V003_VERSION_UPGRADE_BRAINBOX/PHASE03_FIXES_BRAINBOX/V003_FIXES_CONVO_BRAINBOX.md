@@ -530,3 +530,11 @@ Operator approval is specifically required for Phase 03 branch/batch workflow, w
 **Codex commentary (verbatim):** “I found one record-integrity issue before publication: the uncommitted F16 closeout labels a detailed sentence as Operator verbatim, but I cannot independently locate that exact message in the available conversation. I’m preserving its wording as a prior ChatGPT-recorded claim with a provenance note, and recording your current, verifiable instruction exactly as given.”
 
 **Codex response:** The Operator's instruction authorizes Phase 03 verification publication, accepts Batch D closure, authorizes progression to Batch E, and directs ticket-level staging/commit/push. It does not authorize PR creation or merge. The F02 read-only cross-check and its actual dependency status are recorded in the ticket report; no F02 PASS or V003 closure will be claimed unless the evidence meets its success gate.
+
+---
+
+## V003-F16 publication verification — 2026-10-13
+
+GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf176ab46a616c992ea253d6af5eb68771139` (`V003-F16 record Batch D acceptance and publication verification`), with parent `3c5144069eb741d33ae6c44b57c37770534176a8`. The remote branch ref was fetched after the update and confirmed at the new commit. The commit contains only the four intended Phase 03/V003 record files. No PR or merge was created.
+
+**Codex publication response:** F16's report/conversation/ticket/map closeout is present on the remote branch. Local Git staging and local post-publication status remain unverified because RDC stopped responding.

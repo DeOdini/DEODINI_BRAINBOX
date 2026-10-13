@@ -2836,3 +2836,9 @@ The Operator explicitly accepted Batch D closure and progression to Batch E in t
 A separate local uncommitted F16 note had represented detailed retain-and-wait wording as an Operator verbatim statement. The exact wording was not independently authenticated against the published F16 conversation or the current Operator instruction; it is not relied on as verbatim evidence. RDC follow-up requests timed out, so the post-timeout local tree could not be confirmed. F16 publication used verified remote source content and a guarded GitHub branch update.
 
 **F16 remote closeout:** branch `v003/f16-architecture-decisions-ownership`; prior head `3c5144069eb741d33ae6c44b57c37770534176a8`; exact closeout commit is recorded in the Phase 03 report. No PR or merge.
+
+---
+
+### V003-F16 remote publication verification — 2026-10-13
+
+GitHub ref `v003/f16-architecture-decisions-ownership` was confirmed at `e8dbf176ab46a616c992ea253d6af5eb68771139`, parent `3c5144069eb741d33ae6c44b57c37770534176a8`. The remote closeout commit updates only the four Phase 03/V003 documentation records. RDC prevented confirmation of local staging or worktree state. No PR or merge occurred.

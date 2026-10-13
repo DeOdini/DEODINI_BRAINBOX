@@ -423,3 +423,9 @@ The Operator explicitly approved Batch C closure and proceeding to Batch D, and 
 **Disposition:** F16 is accepted/closed under the Operator's Batch D closure. Preserve the V003-wide rationale record and leave the Fullstack `ARCH_DECISIONS_BRAINBOX/` folder empty until project-specific evidence exists. No architecture file, Specification, or source file was modified.
 
 **Git:** F16 documentation was committed on `v003/f16-architecture-decisions-ownership` via the authenticated GitHub Git Data API with a guarded update from `3c5144069eb741d33ae6c44b57c37770534176a8`. This is a remote commit/ref update, not local Git staging. No PR/merge was created.
+
+---
+
+### V003-F16 publication closeout — 2026-10-13
+
+Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit `e8dbf176ab46a616c992ea253d6af5eb68771139` (parent `3c5144069eb741d33ae6c44b57c37770534176a8`). The commit records the F16 closeout across the Phase 03 conversation, report, ticket record, and migration map. It was published via GitHub Git Data API after RDC stopped responding; no local staging/commit was verified. No PR or merge was created.

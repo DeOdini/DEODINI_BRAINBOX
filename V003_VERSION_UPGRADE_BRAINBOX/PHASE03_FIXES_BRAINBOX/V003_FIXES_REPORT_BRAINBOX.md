@@ -815,3 +815,14 @@ The existing records have complementary, non-competing authority: the V003 recor
 **F16 disposition:** Operator-accepted as part of Batch D closure. Retain the V003-wide decision-history record unchanged and keep the Fullstack decision folder empty pending actual application-specific evidence. No architecture, source, or frozen Specification change was made. This acceptance is not a claim that the unverified detailed quote was authenticated.
 
 **Publication method and scope:** F16 documentation was committed to the existing F16 branch using the authenticated GitHub Git Data API because RDC terminal/file requests stopped responding. The branch update was guarded against the verified prior head. This produced a GitHub commit and remote branch update; local Git staging was not performed or verified. No PR or merge was created.
+
+---
+
+## V003-F16 post-publication verification — 2026-10-13
+
+**Remote branch:** `v003/f16-architecture-decisions-ownership`.
+**Published commit:** `e8dbf176ab46a616c992ea253d6af5eb68771139` — `V003-F16 record Batch D acceptance and publication verification`.
+**Parent:** `3c5144069eb741d33ae6c44b57c37770534176a8`.
+**Remote confirmation:** GitHub ref lookup after the update returned the branch at `e8dbf176ab46a616c992ea253d6af5eb68771139`. The commit includes the Phase 03 conversation, report, ticket record, and V003 migration map.
+**Limit:** RDC requests timed out, so this was a GitHub Git Data API remote branch update, not a local `git push`; local staging/worktree cleanliness was not verified. No PR or merge was created.
+**F16:** Operator-accepted as part of Batch D closure. The publication verifies documentation and ref state; it does not authenticate the separate uncommitted exact-quote claim.
