@@ -9,7 +9,7 @@
 **AUTHORITATIVE TREE:** Frozen V003 Specification §§8, 13, and 20; V003-M13.
 **RELATED DOMAINS:** Fullstack Analytics Orchestration, Backend Integrations, Frontend Data Visualization, and FootHive project evidence.
 **POPULATION STATE:** The GA4 technology slot is [REFERENCE]; its reusable profile content is [EMPTY]. No project-specific GA4 configuration has been copied here.
-**LAST VERIFIED:** 2026-10-09 — Codex M13 implementation read-back.
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex M13 implementation read-back; independent ChatGPT M13 verification: PASS (2026-10-09).
 
 ## Current local tree
@@ -35,7 +35,7 @@ The FootHive records remain project-specific evidence. M13 does not duplicate id
 - [Fullstack Analytics Orchestration](../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/ORCHESTRATION_FULLSTACK_BRAINBOX/ANALYTICS_ORCH_BRAINBOX/README_ANALYTICS_ORCH_BRAINBOX.md)
 - [Backend Integrations](../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/BACKEND_SANDBOX_BRAINBOX/INTEGRATIONS_BACKEND_BRAINBOX/README_INTEGRATIONS_BACKEND_BRAINBOX.md)
 - [Frontend Data Visualization](../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/FRONTEND_SANDBOX_BRAINBOX/UI_UX_DESIGN_FRONTEND_BRAINBOX/DATA_VISUALIZATION_DESIGN_BRAINBOX/README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md)
-- [FootHive build report](../../../PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — project-specific evidence; M15 owns migration.
+- [FootHive build report](../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — project-specific evidence in the canonical M15 Sandbox case study; GA4 technology guidance remains canonical here.
 - [Governance Security](../../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
 - [Frozen V003 Specification](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §20
 - [V003 Origin Conversation](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)

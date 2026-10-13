@@ -8,7 +8,7 @@
 **CANONICAL SOURCES:** Frozen V003 Specification §9; each agent's retained FUNC source report, except DeepSeek and Qwen, whose approved role baseline is in Specification §9.
 **REFERENCES:** The parent FUNC README and linked source records.
 **POPULATION STATE:** Eight CORE records remain; M06 added their evidence-scoped EXE links. Four categories are admitted for Codex; Copilot's Browser configuration is explicitly unverified; MEDIA is reserved. Historical agent claims remain time-bounded.
-**LAST VERIFIED:** 2026-10-08
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex — M05 source/hash cross-check and M06 CORE-to-EXE reference reconciliation; M06 commit `9635e5d` pushed.
 **APPLIES TO:** ChatGPT, Claude, Cline, Codex, Copilot, DeepSeek, Grok, and Qwen.
 
@@ -50,7 +50,7 @@ Use YES, NO, UNKNOWN / NOT VERIFIED, or NOT APPLICABLE for the status value, the
 - [Governance ticketing rules](../../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md)
 - [Phase 02 ticket set, including M06](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
 
-**STATUS:** [M05 COMMITTED/PUSHED; M05 INDEPENDENT VERIFICATION PENDING; M06 COMMIT 9635e5d PUSHED; M06 INDEPENDENT VERIFICATION PENDING; NO M06 PR/MERGE]
+**STATUS:** [M05/M06 independently verified PASS during Batch B closeout (2026-10-09); both ticket branches merged]
 
 
 ---

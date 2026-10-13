@@ -8,7 +8,7 @@
 **CANONICAL SOURCES:** Frozen V003 Specification §§9–10; V003-M05/M06/M07; legacy FUNC reports as attributed source evidence.
 **REFERENCES:** See the local tree and links below.
 **POPULATION STATE:** M05 CORE and M06 EXE remain populated; M07 classified all three ancillary sources section-by-section, without moving or rewriting them. Workflow/technology destinations remain with M08–M10 where applicable.
-**LAST VERIFIED:** 2026-10-09
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex — M07 source-section classification and M01 hash recheck; M05/M06 PASS per the independent verification archive.
 **APPLIES TO:** AI agent capability disclosure and FUNC registry navigation.
 **ENTRY NAVIGATION:** Begin with the CORE registry README for current field definitions and agent records.
@@ -53,15 +53,15 @@ AI_BRAINBOX/FUNC_AI_BRAINBOX/
 - M06 populated the evidence-backed EXE index; category admission and evidence limits are recorded in its linked records.
 - Reusable knowledge and skill content belongs to Skills.
 - Procedures, routing, and operating sequences belong to the appropriate workflow or DEVOPS domain.
-- FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, and FUNC_WORKFLOW_BRAINBOX.md remain unchanged at their source paths; M07 classified each section without moving or rewriting them. M19 owns reference reconciliation and M20 owns source-retirement review.
+- FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, and FUNC_WORKFLOW_BRAINBOX.md remain unchanged at their source paths; M07 classified each section without moving or rewriting them. M19 completed active README reference reconciliation; M20 owns source-retirement review.
 
 ## M07 ancillary-source classification
 
 | Retained source | Current canonical disposition | Follow-up |
 |---|---|---|
-| FQ_MUST_README.md | Governance owns current system-wide rules; FUNC README keeps local navigation. Legacy request-file/compliance-file sequence is not recreated. | M19 reference reconciliation; M20 source-retirement review |
-| FUNC_REQ_BRAINBOX.md | M05 CORE records own current capability-report schema; Governance owns evidence, naming, documentation, and ticketing rules. | M19 references; M20 retirement gate |
-| FUNC_WORKFLOW_BRAINBOX.md | Mixed workflow is historical/reference-only pending content-specific destination. Generic technology knowledge may fit M08; DEVOPS/Fullstack processes are candidates for M09/M10. n8n/email remain unproven. | M08/M09/M10 classify only their own authorized content; M19/M20 follow-up |
+| FQ_MUST_README.md | Governance owns current system-wide rules; FUNC README keeps local navigation. Legacy request-file/compliance-file sequence is not recreated. | M19 reference reconciliation complete; M20 source-retirement review |
+| FUNC_REQ_BRAINBOX.md | M05 CORE records own current capability-report schema; Governance owns evidence, naming, documentation, and ticketing rules. | M19 reference reconciliation complete; M20 retirement gate |
+| FUNC_WORKFLOW_BRAINBOX.md | Mixed workflow is historical/reference-only pending content-specific destination. Generic technology knowledge may fit M08; DEVOPS/Fullstack processes are candidates for M09/M10. n8n/email remain unproven. | M08/M09/M10 classify only their authorized content; M19 reference reconciliation complete; M20 source review |
 
 No policy text was copied into FUNC. All three sources remain unchanged. The detailed per-section ledger is in the [M01 migration map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md); the execution report is in the [Phase 02 report](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md).
 
@@ -77,7 +77,7 @@ No policy text was copied into FUNC. All three sources remain unchanged. The det
 - [Governance evidence rules](../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
 - [Governance ticketing rules](../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md)
 
-**STATUS:** [M05 CORE PASS; M06 EXE PASS; M07 IMPLEMENTATION COMMIT b4e3534 PUSHED TO ITS DEDICATED BRANCH; REPORT/CONVERSATION CLOSEOUT INCLUDED IN FOLLOW-UP COMMIT; M07 INDEPENDENT VERIFICATION PENDING]
+**STATUS:** [M05 CORE PASS; M06 EXE PASS; M07 INDEPENDENT VERIFICATION: PASS (Batch B closeout, 2026-10-09); Batch B merged]
 
 
 ---

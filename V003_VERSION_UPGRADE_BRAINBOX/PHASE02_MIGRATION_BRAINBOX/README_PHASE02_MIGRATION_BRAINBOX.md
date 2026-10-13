@@ -1,12 +1,12 @@
 # README_PHASE02_MIGRATION_BRAINBOX
 
-**Status:** [ACTIVE - AUTHORIZED] - Batch C M09-M14 independently verified and merged through PRs #28-#33; Batch C records are current below; M15 P14 preflight passed and implementation is in progress on its dedicated branch.
+**Status:** [ACTIVE - AUTHORIZED] - Batches A-D are closed; M01-M18 independently verified and merged. M19 implementation commit `694b70360340c13abf8cea2cf3580b45eefaf5f5` is pushed on its dedicated branch; report/conversation are recorded in a separate closeout commit on the same branch; independent ChatGPT verification pending; M20/M21 remain pending.
 **PARENT:** `V003_VERSION_UPGRADE_BRAINBOX/`
 **CURRENT DOMAIN:** V003 Phase 02 migration planning, ticket issuance, execution conversation, and migration verification reporting
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
 **MENTAL MODEL:** Phase 01 froze the target; Phase 02 compares the live Brainbox against that target and migrates through individually scoped V003-Mxx tickets covered by the Operator's explicit M01–M21 set authorization, with each ticket subject to dependencies and P14 preflight.
 **GOVERNED BY:** The frozen V003 Specification, Origin Conversation, P14 migration preflight, the V003 parent README, and the Operator's explicit approval of V003-M01–M21 recorded in the Phase 02 report/conversation.
-**LAST VERIFIED:** 2026-10-09
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 
 ## Authority boundary
 
@@ -61,13 +61,13 @@ PHASE02_MIGRATION_BRAINBOX/
 
 **Execution authorization:** AUTHORIZED — V003-M01 through V003-M21, executed one ticket at a time under dependencies, P14 preflight, Codex reporting, ChatGPT independent verification, and Operator merge/closure authority.
 
-**Current Batch A progression:** M01-M04 remain independently verified PASS and merged through PRs #16-#19; Batch A documentation closeout PR #20 and BATCHA-DOC-01 correction PR #21 are merged. Final main is 3201a1e80c5bfb2f4f2053599608ff8fce15f9db. Deferred flag owners remain M15, M19/M20, and M21. Batch A is closed. M05 was committed and pushed at 585f960, with independent ChatGPT verification pending. M06 implementation commit 9635e5d is pushed on its dedicated branch; independent ChatGPT verification is pending and no PR/merge has occurred.
+**Batch A-D closure summary:** M01-M18 passed independent verification and merged at their respective batch boundaries. M01-M04 were merged through PRs #16-#19, with Batch A documentation closeout PRs #20/#21. Batch B (M05-M08), Batch C (M09-M14), and Batch D (M15-M18) closeout evidence is recorded below. M19 implementation commit `694b70360340c13abf8cea2cf3580b45eefaf5f5` is pushed on its own branch; no merge has been created. M15-ASSET-01 remains for M20 disposition; M17-DEST-01 still blocks only movement or retirement of the two legacy milestone records.
 
 **M01 inventory and migration map:** PASS; dedicated commit `bc6d1309a71f4a309469788074c381c8665e5490` is pushed and matches its origin branch. M01-GIT-01 is preserved for M21 integrity/recovery review; M01-FH-01 is assigned to M15.
 
-**M02 root-authority migration:** PASS; dedicated commit `3971f48c4c75641e46a23a86b0792e44e2d794e3` is pushed and matches its origin branch. `M02-BR-01` preserves both README byte/hash records; the 340-line hierarchy, link, and whitespace checks pass. Recheck under M19.
+**M02 root-authority migration:** PASS; dedicated commit `3971f48c4c75641e46a23a86b0792e44e2d794e3` is pushed and matches its origin branch. `M02-BR-01` preserves both README byte/hash records; the 340-line hierarchy, link, and whitespace checks pass. M19 confirms current root/local navigation and README references resolve.
 
-**M03 Governance canonicalization:** INDEPENDENT CHATGPT VERIFICATION PASS; implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` plus status-reconciliation commit `f0113e74bc2cc50a9e91fc340b5406b19494f026` are pushed on its dedicated branch and merged through PR #18 (`19c707cd6d2d443ff56081d0e73c7d6c5f705918`). All nine approved Governance records are present; the stale README verification label reflects the recorded pass. `M03-REF-01` remains assigned to M19/M20.
+**M03 Governance canonicalization:** INDEPENDENT CHATGPT VERIFICATION PASS; implementation commit `2bd21bb0a7e09ba014809df27868c9b4e7546cb7` plus status-reconciliation commit `f0113e74bc2cc50a9e91fc340b5406b19494f026` are pushed on its dedicated branch and merged through PR #18 (`19c707cd6d2d443ff56081d0e73c7d6c5f705918`). All nine approved Governance records are present; the stale README verification label reflects the recorded pass. `M03-REF-01` is resolved for active README references by M19; M20 remains the source-by-source retirement gate.
 
 **M04 Version History migration:** PASS; implementation commit `4747286c1b3c134001c6f6d08cb7dcba32685461` and cross-check/report commit `f05a87a188bbcdca7038a2f8518d00175371153d` were pushed on its dedicated branch and merged through PR #19 (`e0e05e2afec7795b916595c8c6ca3f09a8b227d0`). V001/V002 path inventories match Git exactly (10/10 and 111/111); conceptual retrospective gaps remain explicitly deferred to M21.
 
@@ -403,3 +403,29 @@ This section supersedes the earlier M15-only status as the current ticket state.
 - The closeout report branch was pushed and fast-forwarded into main. Final fetch confirmed local main = origin/main, each remote M15–M18 ticket tip is an ancestor of origin/main, all ticket branches are retained, and the worktree is clean.
 - No application test, form submission, deployment, source move, source deletion, or branch deletion occurred in this closure.
 - M19 is next after this closure and its own P14 preflight; M17-DEST-01 must remain visible and M20 cannot remove those historical files while unresolved.
+
+---
+
+## Current independent-verification status — V003-M19 — 2026-10-10
+
+**M19 CORRECTION REQUIRED — NOT YET INDEPENDENTLY VERIFIED PASS.**
+
+Implementation and branch publication verify, and the 17 new indexes plus 72 active README/496 link/0 broken checks reproduce. **M19-TREE-01** is a blocking M19 hierarchy correction: `AI_BRAINBOX/README_AI_BRAINBOX.md` inaccurately displays the UI/UX Patterns, Experience Design and Data Visualization Design children outside their correct nested folders. Codex must correct this local tree, publish a clean M19 amendment and request independent re-verification before M20 starts.
+
+`M19-HIST-01` requires the wider committed-Git raw-byte versus original-manifest line-ending qualification (28/45 Git-stored target hashes differ from the original manifest; LF-normalized evidence matches 45/45). Existing M15-ASSET-01 and M17-DEST-01 source disposition stops remain open. **No source migration or deletion is authorized by M19.**
+
+
+## Latest M19 correction status — 2026-10-10
+
+Codex repaired M19-TREE-01 in the AI parent visual tree and verified all 24 affected subtree paths against root, Frontend and physical paths. Active README scan: 72 files / 496 local links / zero broken; whitespace check clean. Renewed independent ChatGPT verification remains pending; M19 is not independently closed and M20 remains ineligible. M19-HIST-01 retains the wider worktree/Git-blob raw-byte qualification recorded in the ChatGPT review; M15-ASSET-01 and M17-DEST-01 safeguards remain unchanged.
+
+
+---
+
+## Current M19 independent verification — 2026-10-10
+
+**V003-M19: INDEPENDENT CHATGPT VERIFICATION PASS.** The earlier M19-TREE-01 blocking hierarchy finding is RESOLVED after six corrected indentation lines; independent reconstruction validates all 24 UI/UX subtree paths against root, Frontend and actual files. Renewed audit: 72 active README files / 496 relative links / 0 broken; 17/17 new index metadata/parent filenames/whitespace pass; full M19 Git range `git diff --check` PASS.
+
+`M15-REF-01` and `M16-README-01` are resolved for active navigation. `M15-ASSET-01`, `M17-DEST-01` and `M19-HIST-01` remain open as source-specific M20/M21 retirement safeguards. This verification does not authorize removal or claim 45/45 raw-byte archival Git integrity.
+
+Commit and push this independent-verification closeout on the M19 branch; confirm clean, matching local/upstream/GitHub tips before opening M20's dedicated branch for P14. M20 may inspect individual sources under its authorized gates, but cannot retire any unresolved source without Operator approval. M19 is still unmerged; Batch E Git closure remains at the batch boundary.

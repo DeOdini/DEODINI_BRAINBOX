@@ -11,7 +11,7 @@
 **RELATED DOMAINS:** Fullstack Workflows, Architecture, Orchestration; Skills Languages, Commands, API Design, Patterns, and Technologies; FootHive case study source.
 **CANONICAL SOURCES:** Frozen V003 Specification; V003 Origin Conversation; V003-M12 ticket.
 **POPULATION STATE:** Backend taxonomy and navigation are present. All 17 knowledge leaves are empty placeholders; no backend implementation or reusable pattern was promoted.
-**LAST VERIFIED:** 2026-10-09 — Codex structural and local-link verification.
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex implementation read-back; independent ChatGPT verification: PASS (2026-10-09).
 
 ## Authority boundary
@@ -54,7 +54,7 @@ This is both the M12 target tree and the current local tree. Each .gitkeep is ze
 
 - The retained Fullstack Workflows copies of [001](../WORKFLOWS_FULLSTACK_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md) and [002](../WORKFLOWS_FULLSTACK_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md) remain RAW / UNPROVEN. They contain backend examples and draft stack choices, including FastAPI/Supabase examples, but M12 does not select, copy, or certify those choices.
 - The [agent handoff classification](../ORCHESTRATION_FULLSTACK_BRAINBOX/AI_AGENT_ORCH_BRAINBOX/AI_AGENT_ORCH_HANDOFF_CLASSIFICATION_BRAINBOX.md) remains reference-only under Orchestration. M12 does not recast it as a backend workflow or service.
-- [FootHive’s build record](../../../../PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) is a project-specific source that records a Google Forms integration and Operator-confirmed response persistence. It remains in its original project source area for the later M15 migration. M12 copies no endpoint, form field mapping, response data, or project-specific implementation into this taxonomy.
+- [FootHive’s build record](../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) is a project-specific source that records a Google Forms integration and Operator-confirmed response persistence. The canonical copy is now under the M15 FootHive Sandbox case study; the legacy source remains unchanged for M20 review. M12 copies no endpoint, form field mapping, response data, or project-specific implementation into this taxonomy.
 
 ## Knowledge ownership
 

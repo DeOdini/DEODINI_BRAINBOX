@@ -8,7 +8,7 @@
 **GOVERNED BY:** Governance Evidence and Reference; UI/UX Design authority.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8 and 13; V003-P09; V003-M11; V003-M13.
 **POPULATION STATE:** Navigation present; four visualization-design branches empty.
-**LAST VERIFIED:** 2026-10-09 — Codex M13 reference read-back.
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** M11 independent verification: PASS. M13 reference update: Codex read-back PASS; independent ChatGPT M13 verification: PASS (2026-10-09).
 
 ## Local tree
@@ -35,4 +35,4 @@ This domain owns the design and presentation of dashboards, charts, KPI interfac
 - [Fullstack Analytics Orchestration](../../../ORCHESTRATION_FULLSTACK_BRAINBOX/ANALYTICS_ORCH_BRAINBOX/README_ANALYTICS_ORCH_BRAINBOX.md)
 - [GA4 Technology](../../../../../../SKILLS_AI_BRAINBOX/TECHNOLOGIES_SKILLS_BRAINBOX/ANALYTICS_TECHNOLOGIES_BRAINBOX/GA4_TECHNOLOGY_BRAINBOX/README_GA4_TECHNOLOGY_BRAINBOX.md)
 - [Governance Security](../../../../../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
-- [FootHive project evidence](../../../../../../PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — source reference only; M15 owns migration.
+- [FootHive project evidence](../../../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — canonical M15 Sandbox evidence reference; no duplicate visualization knowledge is copied here.

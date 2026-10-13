@@ -12,8 +12,8 @@
 **CANONICAL SOURCES:** Frozen V003 Specification §§8 and 16.
 **REFERENCES:** See Sources and the single package-command explanation.
 **POPULATION STATE:** One bounded package-command reference is [POPULATED]; remaining command branches are [EMPTY] / [PLANNED].
-**LAST VERIFIED:** 2026-10-09 — Codex read-back after implementation.
-**VERIFIER:** Codex implementation read-back; ChatGPT independent verification pending.
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**VERIFIER:** Codex implementation read-back; ChatGPT independent M08 verification: PASS (Batch B closeout, 2026-10-09).
 
 ## Local tree
 
@@ -32,10 +32,12 @@ COMMANDS_SKILLS_BRAINBOX/
 ├── KUBERNETES_COMMANDS_BRAINBOX/
 ├── TERRAFORM_COMMANDS_BRAINBOX/
 ├── CLOUD_CLI_COMMANDS_BRAINBOX/
+│   ├── README_CLOUD_CLI_COMMANDS_BRAINBOX.md [P12 local navigation]
 │   ├── AWS_CLI_COMMANDS_BRAINBOX/
 │   ├── AZURE_CLI_COMMANDS_BRAINBOX/
 │   └── GCLOUD_CLI_COMMANDS_BRAINBOX/
 ├── PACKAGE_COMMANDS_BRAINBOX/
+│   ├── README_PACKAGE_COMMANDS_BRAINBOX.md [P12 local navigation]
 │   ├── NPM_COMMANDS_BRAINBOX/
 │   ├── NPX_COMMANDS_BRAINBOX/
 │   ├── PNPM_COMMANDS_BRAINBOX/
@@ -44,12 +46,14 @@ COMMANDS_SKILLS_BRAINBOX/
 │   ├── UV_COMMANDS_BRAINBOX/
 │   └── NPM_NPX_POWERSHELL_COMMAND_REFERENCE_BRAINBOX.md
 ├── DATABASE_COMMANDS_BRAINBOX/
+│   ├── README_DATABASE_COMMANDS_BRAINBOX.md [P12 local navigation]
 │   ├── POSTGRESQL_COMMANDS_BRAINBOX/
 │   ├── MYSQL_COMMANDS_BRAINBOX/
 │   ├── SQLITE_COMMANDS_BRAINBOX/
 │   ├── MONGODB_COMMANDS_BRAINBOX/
 │   └── REDIS_COMMANDS_BRAINBOX/
 └── NETWORK_COMMANDS_BRAINBOX/
+    ├── README_NETWORK_COMMANDS_BRAINBOX.md [P12 local navigation]
     ├── CURL_COMMANDS_BRAINBOX/
     ├── SSH_COMMANDS_BRAINBOX/
     ├── DNS_COMMANDS_BRAINBOX/

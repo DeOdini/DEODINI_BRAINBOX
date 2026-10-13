@@ -8,8 +8,8 @@
 **GOVERNED BY:** Governance Evidence, Reference, Promotion, and Ticketing; Fullstack Sandbox authority.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 11, and 13; V003-P08; V003-M10; V003-M13.
 **APPLIES TO:** Fullstack system coordination and handoff relationships.
-**LAST VERIFIED:** 2026-10-09 — Codex M13 navigation read-back.
-**VERIFIER:** M10 independent verification: PASS. M13 navigation read-back: Codex PASS; independent M13 verification pending.
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**VERIFIER:** M10 independent verification: PASS. M13 navigation read-back: Codex PASS; independent ChatGPT M13 verification: PASS (Batch C closeout, 2026-10-09).
 
 ## Authoritative and local tree
 

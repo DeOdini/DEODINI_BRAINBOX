@@ -8,7 +8,7 @@
 **GOVERNED BY:** Governance Evidence, Reference, Promotion, Ticketing, and Migration rules; Sandbox DEVOPS authority.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 11, and 13; V003 Origin Conversation; V003-M10 and V003-M13 migration records.
 **APPLIES TO:** Fullstack workflow, architecture-application, and orchestration records.
-**LAST VERIFIED:** 2026-10-09
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 
 ## Authority boundary
 
@@ -285,7 +285,7 @@ V003-M10 independently verifies **PASS**. The frozen Fullstack Workflow / Archit
 - The nine Frontend and Fullstack parent READMEs have 63 local links; all 63 resolve.
 - The M10 001/002 workflow copies remain RAW / UNPROVEN and hash-identical to their legacy sources. M11 did not split or duplicate their frontend passages.
 - No Frontend-specific reusable knowledge was populated. Backend remains absent and is assigned to M12.
-- Codex structural checks: PASS. Independent ChatGPT verification: pending. No PR or merge was performed.
+- Codex structural checks: PASS. Independent ChatGPT verification: PASS (Batch C closeout, 2026-10-09). Batch C merged at its boundary.
 
 
 ---

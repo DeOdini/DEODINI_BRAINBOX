@@ -3667,3 +3667,112 @@ Batch D cross-check, merge, and report closeout are complete.
 - The M15 transfer manifest passes all 45 source/destination size and SHA-256 checks; its case-study tree contains 50 nonempty files. M16 has 2 Production and 4 Portfolio records. M17’s 2 legacy milestone files still match their M01 hashes. M18 has only its 2 `[PLANNED]` records.
 - M15-ASSET-01 remains at source pending disposition before retirement; M15-REF-01 and M16-README-01 are assigned to authorized M19; M17-DEST-01 remains open and blocks moving or retiring the legacy milestone sources until you decide their disposition. No source was moved or deleted.
 - No application tests, form submissions, or deployments were run for this documentation/repository closeout.
+
+---
+
+## V003-M19 ? Operator and Codex conversation (verbatim record) ? 2026-10-10
+
+### De O'Dini ? Operator request (verbatim)
+
+````markdown
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE  BY CHATGPT, ONCE DONE, NOW PROCEED TO M19, ONCE YOU ARE DONE WITH M19, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+**# V003-M19 ? README / Canonical Reference / Population-State Reconciliation**
+
+**Status:** AUTHORIZED FOR EXECUTION
+**Suggested branch:** `v003/m19-readme-reference-population-reconciliation`
+**Dependencies:** M02?M18 as applicable.
+
+**Canonical authorities**
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+## Scope
+
+Perform a complete post-migration documentation/reference reconciliation before any legacy source retirement.
+
+Verify:
+
+- `README_BRAINBOX.md` complete-tree authority;
+- each governed parent with defined children has required local README/local tree;
+- local trees match the corresponding root branch;
+- population states are truthful;
+- canonical/reference relationships are explicit;
+- links/references resolve;
+- no active README still treats superseded root/FUNC/PROJ/SKILLS/MILESTONES authorities as canonical;
+- Governance is system-wide authority;
+- Guardrail prompts reference Governance;
+- Technologies / execution-domain / Commands / FUNC responsibilities are cross-referenced without duplicate canonical knowledge;
+- V003 Phase 01 archive remains audit/history support, not migration authority.
+- V003 Phase 02 migration folder remains migration-process planning/execution/verification support, not operational target-domain authority.
+- Phase 02 conversation/report/ticket records remain reachable from the V003 parent and do not get silently absorbed into domain content.
+
+## README filename ambiguity rule
+
+If P12 requires a README for a nested governed parent but the frozen ?8 tree does not explicitly name that README, do not invent it silently. Apply the approved naming rule only when the result is unambiguous; otherwise STOP and report the exact parent and naming ambiguity.
+
+## Success gate
+
+- Root and local tree relationships are consistent.
+- No broken active reference remains.
+- No duplicate canonical authority is detected.
+- Population states reflect actual content.
+- M01 map records documentation reconciliation.
+````
+
+### Codex commentary (verbatim)
+
+1. I?m continuing with M19 on its own ticket branch. The starting check found no uncommitted ChatGPT verification edits to publish, so I?m moving into the ticket?s read-only preflight and README/reference audit before changing anything.
+
+2. The active README audit now reports 72 READMEs, 494 relative links, and zero broken links. I found a few current summaries that still described M19 as future work, so I?m reconciling those status lines while leaving the dated historical checkpoints intact.
+
+3. The remaining ?no local tree? matches are limited to five EXE category folders that contain only their README and have no defined children; the V003 README uses an explicitly labeled authority tree plus a separate support overlay. I?ve recorded both exceptions and am running the final pre-commit checks now.
+
+4. The implementation is staged as 51 README/ledger files. The staged whitespace check passed; `git` only warned that the existing Windows checkout will normalize several edited Markdown files to CRLF. I?m committing the implementation first, then I?ll verify and push that branch before adding the report/transcript closeout.
+
+5. The implementation commit `694b703` has pushed successfully to the new M19 branch. I?m confirming the remote tip and clean state now, then I?ll add the execution report and the exact M19 prompt/current-turn commentary to the Phase 02 record and push that as the separate closeout commit.
+
+### Transcript boundary
+
+The Operator request above and all Codex commentary from the continuation available in this record are transcribed verbatim. Earlier M19 progress before that continuation was summarized in the execution report; its unavailable exact commentary has not been reconstructed or presented as a verbatim transcript.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M19 — 2026-10-10 — CORRECTION REQUIRED
+
+Independent GitHub/local state: implementation `694b70360340c13abf8cea2cf3580b45eefaf5f5`, closeout `96c8e3eb7bbb381110a2414f783bf4d802ecf3bc`; local/upstream/GitHub tips equal before this verification write, 0/0, clean worktree, unmerged, no PR, main unchanged at `e2edd669cb30d243b0b916db3e67ebde83653574`, M20 not started.
+
+Confirmed 17 exactly named new READMEs with P12 metadata/trees and 0 new trailing-whitespace lines, 72 active READMEs, 496 relative links / 0 broken, M19 full-range `git diff --check` PASS. Active FootHive history crosswalk, Portfolio parent README and canonical Governance navigation are present. Original FootHive and milestone source trees are unchanged.
+
+**M19-TREE-01 BLOCKING:** M19-created `AI_BRAINBOX/README_AI_BRAINBOX.md` lines 88–102 incorrectly display 13 nested UI/UX nodes as siblings of their containing design-domain parents. Physical Frontend tree and root README show the correct parent/child paths. This fails M19's root/local hierarchy success gate despite zero broken links. Codex must fix/republish the diagram and request independent re-verification. Do not move physical directories to match an incorrect ASCII tree.
+
+**M19-HIST-01 raw-byte scope expansion:** physical FootHive source/destination equality 44/45, Git-stored target/original manifest hash equality 17/45, LF-normalized content equality 45/45 with no substantive text loss. The broader 28 stored-blob hash differences and separately attached original Deep Audit line-endings must remain explicit before any source-retirement or final archive-integrity decision. This is non-blocking for M19 navigation but not a universal 45/45 raw-byte PASS.
+
+M15-REF-01 and M16-README-01 resolved for active navigation; M15-ASSET-01 and M17-DEST-01 remain open, with M17-DEST-01 blocking legacy milestone retirement. No source move/delete or Git publication performed by ChatGPT. **M19 overall independent verification: CORRECTION REQUIRED / NOT PASS. M20 MUST WAIT.**
+
+
+# Operator — M19 correction request — 2026-10-10
+
+I WANT YOU CHECK FOR CHATGPT REPORT ONLY, CHATGPT AS SPECIFIED A CORRETION THAT NEEDS ATTENDING TO BEFORE M19 IS PROPERLY CLOSED. WHEN YOU HAVE ANALYSE WHAT THE CORRECTION IS AND DIAGNOSE THE RIGHT FIX, EXECUTE THE FIX AND PROCEED TO RECORD YOUR REPORT. THEN REPORT BACK TO ME.
+
+# Codex — M19 correction result
+
+M19-TREE-01 corrected through six indentation-line repairs. All 24 affected subtree paths match root/Frontend/physical paths; 72 READMEs, 496 local links, zero broken. Full correction report appended to the Phase 02 report. Independent ChatGPT re-verification remains pending; M20 not started.
+
+
+---
+
+# ChatGPT Renewed Independent Verification — V003-M19 — 2026-10-10
+
+**FINAL M19 INDEPENDENT RESULT: PASS.**
+
+GitHub/local Git verified M19 correction `e0cfa15f38d235c4c6d25e694b767c1111e7a270` on dedicated `v003/m19-readme-reference-population-reconciliation`, directly descended from `96c8e3eb7bbb381110a2414f783bf4d802ecf3bc`. The correction/published tip, local HEAD, upstream and GitHub matched 0/0 with a clean worktree before this verification write; no PR/merge; main unchanged `e2edd669cb30d243b0b916db3e67ebde83653574`; M20 branch absent.
+
+**M19-TREE-01 RESOLVED:** exactly six indentation-line edits repaired the 13 prior invalid UI/UX paths in `AI_BRAINBOX/README_AI_BRAINBOX.md`. Independent hierarchy reconstruction confirms **24/24** entire affected UI/UX subtree entries match root and Frontend local trees and physically exist. Two absent approved [PLANNED] Sandbox outcomes were excluded correctly as not populated.
+
+Independent active README scan **72 README files / 496 local links / 0 broken**. All 17 new indexes still pass parent-filename/P12 metadata/local-tree/trailing-space checks. Full M19 Git range and correction-only `git diff --check` return exit 0. Frozen specification, FootHive original source/evidence and legacy milestones unchanged.
+
+M15-REF-01 and M16-README-01 are resolved for active navigation. M15-ASSET-01, M17-DEST-01 and M19-HIST-01 stay open with exact M20/M21 boundaries. M19-HIST-01 retains 44/45 physical raw-byte pairs and 17/45 committed destination-original manifest raw-byte hashes, but 45/45 LF-normalized equivalent content; this is a retirement/provenance guard, not an M19 link failure.
+
+**M19 acceptance PASS; M19-TREE-01 closed.** Publish this independent closeout on M19, confirm a clean branch, then begin only M20's separately authorized P14 source-by-source retirement review. No source deletion or merge was performed by ChatGPT.

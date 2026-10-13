@@ -12,8 +12,8 @@
 **CANONICAL SOURCES:** Frozen V003 Specification §§8 and 15–20; V003 Origin Conversation; Governance.
 **REFERENCES:** See Sources below.
 **POPULATION STATE:** Taxonomy directories exist. The four legacy Skills content files remain empty and unchanged. One bounded command reference and one Governance-linked guardrail prompt are populated; other domains are marked accurately below.
-**LAST VERIFIED:** 2026-10-09 — Codex read-back after implementation.
-**VERIFIER:** Codex implementation read-back; ChatGPT independent verification pending.
+**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**VERIFIER:** Codex implementation read-back; ChatGPT independent M08 verification: PASS (Batch B closeout, 2026-10-09).
 **APPLIES TO:** Operators and AI agents using reusable DEODINI Brainbox knowledge.
 
 ## Authority and content boundaries
@@ -63,10 +63,12 @@ SKILLS_AI_BRAINBOX/
 │   ├── KUBERNETES_COMMANDS_BRAINBOX/
 │   ├── TERRAFORM_COMMANDS_BRAINBOX/
 │   ├── CLOUD_CLI_COMMANDS_BRAINBOX/
+│   │   ├── README_CLOUD_CLI_COMMANDS_BRAINBOX.md [P12 local navigation]
 │   │   ├── AWS_CLI_COMMANDS_BRAINBOX/
 │   │   ├── AZURE_CLI_COMMANDS_BRAINBOX/
 │   │   └── GCLOUD_CLI_COMMANDS_BRAINBOX/
 │   ├── PACKAGE_COMMANDS_BRAINBOX/
+│   │   ├── README_PACKAGE_COMMANDS_BRAINBOX.md [P12 local navigation]
 │   │   ├── NPM_COMMANDS_BRAINBOX/
 │   │   ├── NPX_COMMANDS_BRAINBOX/
 │   │   ├── PNPM_COMMANDS_BRAINBOX/
@@ -75,12 +77,14 @@ SKILLS_AI_BRAINBOX/
 │   │   ├── UV_COMMANDS_BRAINBOX/
 │   │   └── NPM_NPX_POWERSHELL_COMMAND_REFERENCE_BRAINBOX.md
 │   ├── DATABASE_COMMANDS_BRAINBOX/
+│   │   ├── README_DATABASE_COMMANDS_BRAINBOX.md [P12 local navigation]
 │   │   ├── POSTGRESQL_COMMANDS_BRAINBOX/
 │   │   ├── MYSQL_COMMANDS_BRAINBOX/
 │   │   ├── SQLITE_COMMANDS_BRAINBOX/
 │   │   ├── MONGODB_COMMANDS_BRAINBOX/
 │   │   └── REDIS_COMMANDS_BRAINBOX/
 │   └── NETWORK_COMMANDS_BRAINBOX/
+│       ├── README_NETWORK_COMMANDS_BRAINBOX.md [P12 local navigation]
 │       ├── CURL_COMMANDS_BRAINBOX/
 │       ├── SSH_COMMANDS_BRAINBOX/
 │       ├── DNS_COMMANDS_BRAINBOX/
@@ -107,49 +111,59 @@ SKILLS_AI_BRAINBOX/
 ├── TECHNOLOGIES_SKILLS_BRAINBOX/
 │   ├── README_TECHNOLOGIES_SKILLS_BRAINBOX.md
 │   ├── VERSION_CONTROL_TECHNOLOGIES_BRAINBOX/
+│   │   ├── README_VERSION_CONTROL_TECHNOLOGIES_BRAINBOX.md [P12 local navigation]
 │   │   ├── GIT_TECHNOLOGY_BRAINBOX/
 │   │   ├── GITHUB_TECHNOLOGY_BRAINBOX/
 │   │   ├── GITLAB_TECHNOLOGY_BRAINBOX/
 │   │   └── BITBUCKET_TECHNOLOGY_BRAINBOX/
 │   ├── CONTAINER_TECHNOLOGIES_BRAINBOX/
+│   │   ├── README_CONTAINER_TECHNOLOGIES_BRAINBOX.md [P12 local navigation]
 │   │   ├── DOCKER_TECHNOLOGY_BRAINBOX/
 │   │   ├── PODMAN_TECHNOLOGY_BRAINBOX/
 │   │   └── CONTAINERD_TECHNOLOGY_BRAINBOX/
 │   ├── ORCHESTRATION_TECHNOLOGIES_BRAINBOX/
+│   │   ├── README_ORCHESTRATION_TECHNOLOGIES_BRAINBOX.md [P12 local navigation]
 │   │   ├── KUBERNETES_TECHNOLOGY_BRAINBOX/
 │   │   ├── HELM_TECHNOLOGY_BRAINBOX/
 │   │   └── KUSTOMIZE_TECHNOLOGY_BRAINBOX/
 │   ├── INFRASTRUCTURE_TECHNOLOGIES_BRAINBOX/
+│   │   ├── README_INFRASTRUCTURE_TECHNOLOGIES_BRAINBOX.md [P12 local navigation]
 │   │   ├── TERRAFORM_TECHNOLOGY_BRAINBOX/
 │   │   ├── OPENTOFU_TECHNOLOGY_BRAINBOX/
 │   │   ├── ANSIBLE_TECHNOLOGY_BRAINBOX/
 │   │   └── PULUMI_TECHNOLOGY_BRAINBOX/
 │   ├── CLOUD_TECHNOLOGIES_BRAINBOX/
+│   │   ├── README_CLOUD_TECHNOLOGIES_BRAINBOX.md [P12 local navigation]
 │   │   ├── AWS_TECHNOLOGY_BRAINBOX/
 │   │   ├── AZURE_TECHNOLOGY_BRAINBOX/
 │   │   └── GCP_TECHNOLOGY_BRAINBOX/
 │   ├── TESTING_TECHNOLOGIES_BRAINBOX/
+│   │   ├── README_TESTING_TECHNOLOGIES_BRAINBOX.md [P12 local navigation]
 │   │   ├── PLAYWRIGHT_TECHNOLOGY_BRAINBOX/
 │   │   ├── CYPRESS_TECHNOLOGY_BRAINBOX/
 │   │   ├── SELENIUM_TECHNOLOGY_BRAINBOX/
 │   │   ├── JEST_TECHNOLOGY_BRAINBOX/
 │   │   └── PYTEST_TECHNOLOGY_BRAINBOX/
 │   ├── DATABASE_TECHNOLOGIES_BRAINBOX/
+│   │   ├── README_DATABASE_TECHNOLOGIES_BRAINBOX.md [P12 local navigation]
 │   │   ├── POSTGRESQL_TECHNOLOGY_BRAINBOX/
 │   │   ├── MYSQL_TECHNOLOGY_BRAINBOX/
 │   │   ├── SQLITE_TECHNOLOGY_BRAINBOX/
 │   │   ├── MONGODB_TECHNOLOGY_BRAINBOX/
 │   │   └── REDIS_TECHNOLOGY_BRAINBOX/
 │   ├── DEPLOYMENT_TECHNOLOGIES_BRAINBOX/
+│   │   ├── README_DEPLOYMENT_TECHNOLOGIES_BRAINBOX.md [P12 local navigation]
 │   │   ├── NETLIFY_TECHNOLOGY_BRAINBOX/
 │   │   ├── VERCEL_TECHNOLOGY_BRAINBOX/
 │   │   └── CLOUDFLARE_TECHNOLOGY_BRAINBOX/
 │   ├── ANALYTICS_TECHNOLOGIES_BRAINBOX/
 │   │   └── GA4_TECHNOLOGY_BRAINBOX/
 │   ├── DESIGN_TECHNOLOGIES_BRAINBOX/
+│   │   ├── README_DESIGN_TECHNOLOGIES_BRAINBOX.md [P12 local navigation]
 │   │   ├── FIGMA_TECHNOLOGY_BRAINBOX/
 │   │   └── FRAMER_TECHNOLOGY_BRAINBOX/
 │   └── AI_TECHNOLOGIES_BRAINBOX/
+│       ├── README_AI_TECHNOLOGIES_BRAINBOX.md [P12 local navigation]
 │       ├── MCP_TECHNOLOGY_BRAINBOX/
 │       ├── LANGCHAIN_TECHNOLOGY_BRAINBOX/
 │       ├── LLAMAINDEX_TECHNOLOGY_BRAINBOX/
@@ -208,7 +222,7 @@ SKILLS_AI_BRAINBOX/
 
 ## Legacy source boundary
 
-The retained source remains at AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/. Its README describes the former evidence buckets. RAW_SKILLS_BRAINBOX.md, PROVEN_SKILLS_BRAINBOX.md, REUSABLE_SKILLS_BRAINBOX.md, and FAILED_SKILLS_BRAINBOX.md were empty at M01 and remain unchanged. M08 does not delete, rename, or rewrite them. M19 owns reference reconciliation; M20 is the source-by-source retirement gate.
+The retained source remains at AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/. Its README describes the former evidence buckets. RAW_SKILLS_BRAINBOX.md, PROVEN_SKILLS_BRAINBOX.md, REUSABLE_SKILLS_BRAINBOX.md, and FAILED_SKILLS_BRAINBOX.md were empty at M01 and remain unchanged. M08 does not delete, rename, or rewrite them. M19 completed active README reference reconciliation; M20 is the source-by-source retirement gate.
 
 ## Sources
 
