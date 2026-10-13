@@ -11,9 +11,9 @@
 **RELATED DOMAINS:** FUNC, DEVOPS, Governance, Fullstack, FootHive evidence, and Version History.
 **CANONICAL SOURCES:** Frozen V003 Specification §§8 and 15–20; V003 Origin Conversation; Governance.
 **REFERENCES:** See Sources below.
-**POPULATION STATE:** Taxonomy directories exist. The four legacy Skills content files remain empty and unchanged. One bounded command reference and one Governance-linked guardrail prompt are populated; other domains are marked accurately below.
-**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
-**VERIFIER:** Codex implementation read-back; ChatGPT independent M08 verification: PASS (Batch B closeout, 2026-10-09).
+**POPULATION STATE:** Taxonomy directories exist. The four empty legacy Skills placeholders were retired in M20; the substantive Skills source README remains. One bounded command reference and one Governance-linked guardrail prompt are populated; other domains are marked accurately below.
+**LAST VERIFIED:** 2026-10-10 - Codex M20 empty-source, current taxonomy and reference check.
+**VERIFIER:** Codex M20 local source/readme check; ChatGPT independent M08 verification: PASS (Batch B closeout, 2026-10-09).
 **APPLIES TO:** Operators and AI agents using reusable DEODINI Brainbox knowledge.
 
 ## Authority and content boundaries
@@ -222,7 +222,7 @@ SKILLS_AI_BRAINBOX/
 
 ## Legacy source boundary
 
-The retained source remains at AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/. Its README describes the former evidence buckets. RAW_SKILLS_BRAINBOX.md, PROVEN_SKILLS_BRAINBOX.md, REUSABLE_SKILLS_BRAINBOX.md, and FAILED_SKILLS_BRAINBOX.md were empty at M01 and remain unchanged. M08 does not delete, rename, or rewrite them. M19 completed active README reference reconciliation; M20 is the source-by-source retirement gate.
+The legacy SKILLS_MUST_README.md remains at AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/ as a linked provenance source. M20 verified and retired the four zero-byte RAW/PROVEN/REUSABLE/FAILED placeholder files. They contained no reusable knowledge. M08 and M19 migration history remains recorded in the map; substantive Skills source retirement is still source-gated.
 
 ## Sources
 

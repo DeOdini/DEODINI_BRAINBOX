@@ -3776,3 +3776,253 @@ Independent active README scan **72 README files / 496 local links / 0 broken**.
 M15-REF-01 and M16-README-01 are resolved for active navigation. M15-ASSET-01, M17-DEST-01 and M19-HIST-01 stay open with exact M20/M21 boundaries. M19-HIST-01 retains 44/45 physical raw-byte pairs and 17/45 committed destination-original manifest raw-byte hashes, but 45/45 LF-normalized equivalent content; this is a retirement/provenance guard, not an M19 link failure.
 
 **M19 acceptance PASS; M19-TREE-01 closed.** Publish this independent closeout on M19, confirm a clean branch, then begin only M20's separately authorized P14 source-by-source retirement review. No source deletion or merge was performed by ChatGPT.
+
+
+---
+
+# Operator — V003-M20 request — 2026-10-10
+
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE  BY CHATGPT, ONCE DONE, NOW PROCEED TO M20, ONCE YOU ARE DONE WITH M20, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+
+**# V003-M20 — Verified Legacy Source Retirement & Deprecated-Path Cleanup**
+
+**\*\*Status:\*\*** AUTHORIZED FOR EXECUTION
+**\*\*Suggested branch:\*\*** `v003/m20-legacy-source-retirement`
+**\*\*Dependencies:\*\*** M02–M19 complete/verified; no unresolved destination may exist for a source proposed for removal.
+
+**\*\*Canonical authorities\*\***
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+**## Purpose**
+
+This is the destructive cleanup gate. It does not assume every old source is deletable.
+
+Potential legacy sources include, subject to verification:
+
+**\*\*Support/archive safeguard:\*\*** `V003_VERSION_UPGRADE_BRAINBOX/`, `PHASE01_POLISH_BRAINBOX/`, and `PHASE02_MIGRATION_BRAINBOX/` are not generic cleanup targets. They must not be deleted, collapsed, or reclassified under M20 unless a separate Operator-authorized decision explicitly changes their support/archive disposition after final migration verification.
+
+- empty root `BRAINBOX/` directory;
+- `DOB_MUST_README.md`;
+- legacy `AI_MUST_README.md`;
+- flat legacy FUNC `*_FUNC_BRAINBOX.md` source records after CORE/EXE migration;
+- `FQ_MUST_README.md`, `FUNC_REQ_BRAINBOX.md`, `FUNC_WORKFLOW_BRAINBOX.md` after M07;
+- `PROJ_WORKFLOW_AI_BRAINBOX/` after M09–M16;
+- `SKILLS_AVAIL_AI_BRAINBOX/` after M08;
+- empty legacy `PORTFOLIO_BRAINBOX/001_PORT_BRAINBOX.md`;
+- legacy `MILESTONES/` only if M17 produced an explicitly authorized and verified disposition;
+- other paths marked source-removal-eligible in the migration map.
+
+**## Mandatory destructive-operation gate**
+
+Before removing each source:
+
+1. verify target/canonical destination exists;
+2. verify content integrity/provenance;
+3. verify references no longer require old path;
+4. verify historical evidence remains preserved;
+5. verify Git history/backups are adequate;
+6. verify the active ticket explicitly authorizes that specific removal.
+
+If any source has unresolved destination or historical-evidence risk, retain it and flag it. Do not make cleanup success depend on deleting evidence that should remain.
+
+**## Success gate**
+
+- Only independently verified obsolete/empty/superseded sources are removed.
+- No source with unresolved disposition is removed.
+- No broken active reference remains.
+- Migration map records retained vs removed sources and evidence.
+
+
+# Codex — response 1
+
+I’ll inspect the current Git state and ChatGPT’s M19 verification edits first, then check M20 removal candidates against the migration map and the actual files. I’ll retire only sources that pass the ticket’s six checks and record the retained paths and reasons.
+
+# Codex — response 2
+
+The M19 edits record ChatGPT’s independent PASS and the resolved tree issue. The remaining FootHive asset, milestone destination, and historical byte fidelity flags are still clearly marked for M20, and the diff has no whitespace errors. I’m publishing this verification record before opening the M20 branch.
+
+# Codex — response 3
+
+The M19 verification commit is pushed, and M20 now has its own clean branch. I’m working through the retirement checks source by source; the existing FootHive fidelity, asset, and milestone flags remain hard limits on what can be removed.
+
+# Codex — response 4
+
+The source scan found seven zero-byte legacy placeholders. Their M01 baseline bytes still match, and no Markdown link targets any of them. Several substantive legacy files still have active provenance links, while the FootHive and milestone sources have unresolved retirement conditions; I’m preserving those. I’ll remove only the empty placeholders and update the current navigation to reflect that change.
+
+# Codex — response 5
+
+The seven empty placeholders are now removed. The migration map records each former path, hash, recovery point, and the reason substantive legacy sources remain. I’m checking the resulting links and physical tree before committing M20.
+
+# Codex — response 6
+
+M20’s local checks pass: all seven retired paths are absent, retained source groups are still present, the frozen target tree is unchanged, and the 72 active READMEs have 496 relative links with none broken. I’m committing this source retirement and its migration-map disposition now, then I’ll publish the branch and write the separate execution report.
+
+# Codex — response 7
+
+The M20 implementation is pushed to `v003/m20-legacy-source-retirement` at `17a320e`. I’m writing the separate Phase 02 execution report and conversation entry now, including the seven retirements, the retained source groups, and the verification limits. That documentation will get its own commit and push.
+
+
+# Codex — response 8
+
+Both M20 commits are pushed. I’m doing the final remote-tip and clean-worktree check, then I’ll hand back the branch and the exact retirement limits for independent review.
+
+# Codex — final response
+
+M19’s independent verification was committed and pushed (`5f2cdcd`). M20 retired seven verified zero-byte placeholders: two project-pattern files, four Skills files, and the Portfolio placeholder. Substantive legacy sources remain because their provenance links or unresolved FootHive/milestone evidence block retirement. `BRAINBOX/` was already absent.
+
+M20 implementation (`17a320e`) and the execution report (`f627ccf`) are pushed on `v003/m20-legacy-source-retirement`; the branch is clean and matches GitHub. Checks: 72 READMEs, 496 relative links, zero broken; frozen target tree unchanged. Independent ChatGPT M20 verification is pending. No merge was performed.
+
+
+---
+
+# ChatGPT Independent Verification — V003-M20 — 2026-10-10 — CORRECTION REQUIRED
+
+**M20's seven zero-byte retirements independently PASS. Overall independent verification is NOT YET PASS due to M20-STATE-01.**
+
+Verified GitHub/local M20 branch `v003/m20-legacy-source-retirement`: M19 publication `5f2cdcd9b37d38d0a2fde030a28f8f4f117efc23`; implementation `17a320e850086d77547f387bbccec3fb3a4f8947`; report `f627ccf0684a979eb6f5a2e6ad8a75991bcdedd5`; final tip `64cfd97c617db242401b5759d7c682d8c327983f`. Local/upstream/GitHub matched, 0/0, worktree clean before this independent write. No M20 PR/merge; main unchanged; M21 absent.
+
+Exactly seven deleted paths; all were zero-byte in M01 baseline and immediately before M20, SHA-256 empty-file digest, now physically absent. Five active README files and Migration Map updated; no other implementation deletions. M20 conditional removal gates pass individually. `BRAINBOX/` already absent, not removed by M20.
+
+72 active README files / 496 relative links / 0 broken; no tracked Markdown link to a retired filename; approved root target block unchanged; M20 `git diff --check` PASS; substantive FootHive, milestone, frozen authority and support archives retained. M20-REF-01 and inherited M15-ASSET-01/M17-DEST-01/M19-HIST-01/M01-GIT-01 source-specific restrictions remain in both report and Migration Map.
+
+**M20-STATE-01:** active root Population state Portfolio row still asserts the already-deleted empty Portfolio placeholder “remains untouched for M20 source review”; root Current local tree introduction still describes an “empty local directory” that is absent; FootHive Portfolio child `POPULATION STATE` says the retired placeholder “remains unchanged for M20 review”; root AI Population row describes M20 review as remaining. Phase 02 top Status still calls M19 verification pending. These active, present-tense claims contradict the verified current tree. Codex must reconcile them in M20, publish a correction, and request independent recheck. Do not alter frozen root target tree or the protected historical source copies.
+
+**Verdict: retirement checks PASS; overall M20 CORRECTION REQUIRED, not independent PASS. M21 must wait.** No source or Git history changed by ChatGPT.
+
+
+---
+
+# Operator → Codex — V003-M21 request and M20 verification publication — 2026-10-11
+
+**Operator (verbatim):**
+
+CROSSCHECK, COMMIT AND PUSH THE VERIFICATION MODIFIED STATE , ONCE DONE, NOW PROCEED TO M21, ONCE YOU ARE DONE WITH M21, PROCEED TO STAGE, COMMIT AND PUSH TO GITHUB... ONCE DONE WITH THE PUSH, RECORD YOUR REPORT AND THEN STAGE, COMMIT AND PUSH THAT TO GITHUB.
+
+**# V003-M21 — Final V003 Migration Verification, Snapshot & Map Closure**
+
+**Status:** AUTHORIZED FOR EXECUTION
+**Suggested branch:** `v003/m21-final-migration-verification-closeout`
+**Dependencies:** All authorized/required prior M-tickets completed and independently verified; unresolved intentional deferrals explicitly recorded.
+
+**Canonical authorities**
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
+- `C:\Users\USER\DEODINI_BRAINBOX\V003_VERSION_UPGRADE_BRAINBOX\V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+**## Scope**
+
+Perform final Phase 02 migration reconciliation.
+
+Create/finalize:
+
+`VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/TREE_SNAPSHOT_V003_BRAINBOX.md`
+
+Close/finalize:
+
+`MIGRATION_MAP_V003_BRAINBOX.md`
+
+**## Required verification**
+
+Cross-check actual live tree against frozen V003 target and all approved Phase 02 decisions:
+
+- root authority;
+- V003 canonical authority container;
+- Phase 01 audit/archive support;
+- Phase 02 migration conversation/report/ticket support;
+- Governance;
+- Version History;
+- Milestones;
+- FUNC CORE/EXE;
+- Skills;
+- Sandbox/Production DEVOPS;
+- Fullstack Architecture/Orchestration/Workflows;
+- Frontend;
+- Backend;
+- Analytics;
+- Production environment/secrets;
+- FootHive canonical evidence;
+- FootHive production/portfolio references;
+- README/local trees;
+- population states;
+- canonical/reference ownership;
+- legacy source dispositions;
+- historical evidence preservation;
+- no secret leakage;
+- Git state.
+
+**## Closeout rules**
+
+- Snapshot actual final migrated state, not merely the frozen proposal.
+- Migration map must identify every original source as migrated, split, merged, referenced, retained historical, deprecated, removed, or explicitly deferred.
+- Do not erase intentional future/planned states.
+- Confirm that every executed V003-Mxx ticket has a Codex execution report and a separate ChatGPT independent-verification result, with any Operator-resolved flags traceable in the Phase 02 records.
+- Confirm that no ticket was treated as closed solely on Codex self-verification.
+- Confirm the Phase 02 support/archive disposition is recorded in the final migration map and remains separate from target-domain knowledge unless the Operator explicitly decides otherwise.
+- If any migration discrepancy remains, STOP and report; do not declare Phase 02 migration closed.
+- Phase 02 closeout requires ChatGPT independent verification of the final Codex claim and Operator acceptance/closure authority.
+- This ticket does not authorize deployment or any future milestone implementation.
+
+**## Success gate**
+
+Only if all required migration tickets and final checks pass may the migration be declared structurally complete.
+
+A successful result should distinguish:
+
+- V003 target migration structurally complete;
+- planned/empty branches remain truthful;
+- FootHive Iteration 02/03 remain future work unless separately executed later;
+- future Router/Agentic milestone remains planned;
+- deployment/production runtime changes are outside the migration unless separately authorized.
+
+.
+
+**Codex (commentary, verbatim):**
+
+I’ll inspect ChatGPT’s M20 verification edits and the current Git state first. Once those edits are published and M20’s dependency status is clear, I’ll open M21 and reconcile the live tree against the frozen V003 target. I’ll record any discrepancy before making a closure claim.
+
+**Codex (commentary, verbatim):**
+
+ChatGPT’s M20 review confirms the seven file retirements, but it flags five stale statements in active READMEs. M21 depends on an independent M20 pass, so I’ll publish the review, correct those statements on M20, and check the result before starting M21.
+
+**Codex (commentary, verbatim):**
+
+The stale M20 statements are corrected in the active root, Portfolio, Governance, and V003 status READMEs. The seven retired files remain absent; the approved root tree is unchanged. I checked 72 active READMEs and 496 relative links, with no broken links. I’ll publish the correction and record it for independent re-verification.
+
+
+---
+
+# ChatGPT Renewed Independent Verification — V003-M20 — 2026-10-11
+
+**FINAL INDEPENDENT V003-M20 VERDICT: PASS. M20-STATE-01 RESOLVED.**
+
+Published correction `0e89b85f944d98311ddfd31684c917b1743e4130` and report `3aae5b17e5d9851a6a5fe04e6c32cd2ac76f65f2` independently verified on `v003/m20-legacy-source-retirement`. Local HEAD/upstream/GitHub M20 tip matched `3aae5b1...`, 0/0 ahead/behind and clean worktree before this ChatGPT verification write; no M20 PR/merge; main unchanged `e2edd669cb30d243b0b916db3e67ebde83653574`; M21 not started.
+
+**M20-STATE-01 CLOSED:** root AI/Portfolio Population rows, root physical-tree introduction, FootHive Portfolio child Population State, top Phase 02 status, V003 parent and Governance status reconciled with the actual M20 file removals. The initial Phase 02 header's residual wording that the already published M20 *correction* was pending is brought current by this independent verification-state closeout.
+
+Reproduced **72 active README files / 496 relative links / 0 broken**; all **seven** removed placeholders remain absent, each a zero-byte M01/pre-M20 Git blob; original FootHive and Milestones source trees/frozen authorities unchanged; complete M20 range `git diff --check` PASS.
+
+**M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01 and M01-GIT-01 remain OPEN** as source-specific preservation/retirement constraints. M20 verification PASS does **not** authorize deleting substantive legacy sources, resolving FootHive raw-byte qualification without proof, moving historical Milestones, or pruning local-only Git objects.
+
+**M21 dependency-ready only after Codex commits/pushes this M20 independent-verification closeout, confirms matching clean branch, creates M21's own branch, and runs M21 P14.** No same-batch PR/merge is required before M21; Batch E Git closure follows ticket verification.
+
+
+---
+
+# Operator → Codex — M20 final independent-verification correction — 2026-10-11
+
+**Operator (verbatim):**
+
+I WANT YOU CHECK FOR CHATGPT REPORT ONLY, CHATGPT AS SPECIFIED A CORRETION THAT NEEDS ATTENDING TO BEFORE M20 IS PROPERLY CLOSED. WHEN YOU HAVE ANALYSE WHAT THE CORRECTION IS AND DIAGNOSE THE RIGHT FIX, EXECUTE THE FIX AND PROCEED TO RECORD YOUR REPORT. THEN REPORT BACK TO ME.
+
+**Codex (commentary, verbatim):**
+
+I’ll read the latest ChatGPT M20 report, identify the specific remaining correction, make that scoped fix, and record what changed. I’ll keep M21 on hold until M20’s independent verification is complete.
+
+**Codex (commentary, verbatim):**
+
+ChatGPT’s renewed M20 report gives M20 a full independent PASS and marks `M20-STATE-01` resolved. Its six local edits record that result. I found one timing issue: the live Phase 02 and V003 status headers still say publication is pending, which will become stale once I push the closeout. I’ll publish ChatGPT’s verification first, then update those live headers and record the final publication.
+
+**Codex (commentary, verbatim):**
+
+ChatGPT’s verification closeout is now pushed at `99e7fd6`; local HEAD, the tracking branch, and GitHub match, and the worktree is clean. I’m replacing the two live “publication pending” status lines with the confirmed state and adding the final Codex report.

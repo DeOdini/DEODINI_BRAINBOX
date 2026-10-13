@@ -7,13 +7,13 @@
 **MENTAL MODEL:** Portfolio describes the delivered/demo work; Production records actual operational outcomes; Sandbox owns the canonical workflow-trial evidence.
 **GOVERNED BY:** De O'Dini - Operator; Governance Evidence, Reference, Documentation, and Promotion rules; frozen V003 Specification.
 **AUTHORITATIVE TREE:** The Portfolio branch of `README_BRAINBOX.md` and frozen V003 Specification §8.
-**LOCAL TREE:** The complete approved Portfolio subtree is reproduced below. The empty legacy placeholder is listed separately.
+**LOCAL TREE:** The complete approved Portfolio subtree is reproduced below. The retired empty legacy placeholder is described separately.
 **RELATED DOMAINS:** FootHive Sandbox case study, FootHive Production summary, and Governance.
 **CANONICAL SOURCES:** Frozen V003 Specification §§8, 21-22, 25-27; canonical FootHive Sandbox evidence; Governance Promotion and Evidence.
 **REFERENCES:** See the child Portfolio README and canonical Sandbox case-study records below.
-**POPULATION STATE:** The parent README and FootHive child records are present. The old zero-byte `001_PORT_BRAINBOX.md` remains unchanged for M20 review; no content is inferred from it.
-**LAST VERIFIED:** 2026-10-10 - Codex M19 local tree/reference audit.
-**VERIFIER:** Codex - M19 tree and link checks; ChatGPT M16 independent verification is recorded in Phase 02.
+**POPULATION STATE:** The parent README and FootHive child records are present. The old zero-byte `001_PORT_BRAINBOX.md` was retired by M20 after integrity, reference, and recovery checks; no content is inferred from it.
+**LAST VERIFIED:** 2026-10-10 - Codex M20 source retirement and local-tree check.
+**VERIFIER:** Codex - M19 tree/link and M20 empty-source checks; ChatGPT M16 independent verification is recorded in Phase 02.
 **ENTRY NAVIGATION:** Open the relevant child portfolio record, then follow its evidence links.
 **EXIT NAVIGATION:** Return to root `README_BRAINBOX.md` or the canonical Sandbox case study.
 **APPLIES TO:** `PORTFOLIO_BRAINBOX/`.
@@ -21,7 +21,7 @@
 ## Authoritative and local target tree
 
 ```text
- PORTFOLIO_BRAINBOX/ [PARTIALLY POPULATED V003 target — M16 child populated; M19 parent navigation reconciled; legacy source retained for M20 review]
+ PORTFOLIO_BRAINBOX/ [PARTIALLY POPULATED V003 target — M16 child populated; M19 parent navigation reconciled; empty legacy source retired M20]
 ├── README_PORTFOLIO_BRAINBOX.md
 └── FOOTHIVE_PORTFOLIO_BRAINBOX/
     ├── README_FOOTHIVE_PORTFOLIO_BRAINBOX.md
@@ -30,12 +30,9 @@
     └── CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md
 ```
 
-## Retained legacy-source overlay
+## Retired empty legacy source
 
-```text
-PORTFOLIO_BRAINBOX legacy source/
-+-- 001_PORT_BRAINBOX.md [zero-byte placeholder; retained for M20 review]
-```
+The original 001_PORT_BRAINBOX.md had zero bytes and no Portfolio content. M20 removed that placeholder after checking the M01 baseline, current canonical Portfolio records, active references, and Git recovery. The migration map preserves its exact former path and digest.
 
 - [FootHive Portfolio README](FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md)
 - [Canonical FootHive Sandbox case study](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md)
