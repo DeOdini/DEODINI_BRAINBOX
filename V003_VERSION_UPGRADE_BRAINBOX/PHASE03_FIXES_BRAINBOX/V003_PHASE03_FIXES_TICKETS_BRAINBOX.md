@@ -429,3 +429,17 @@ The Operator explicitly approved Batch C closure and proceeding to Batch D, and 
 ### V003-F16 publication closeout — 2026-10-13
 
 Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit `e8dbf176ab46a616c992ea253d6af5eb68771139` (parent `3c5144069eb741d33ae6c44b57c37770534176a8`). The commit records the F16 closeout across the Phase 03 conversation, report, ticket record, and migration map. It was published via GitHub Git Data API after RDC stopped responding; no local staging/commit was verified. No PR or merge was created.
+
+---
+
+## V003-F02 preflight status — 2026-10-13
+
+**Status: BLOCKED / OPEN — read-only preflight complete; final publication/closure gate not passed.**
+
+**Evidence:** M21 branch `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e` is remote and compares as 18 commits ahead / 0 behind `main` at `e2edd669cb30d243b0b916db3e67ebde83653574`. No M21 PR or merge was found. F01's Operator-approved limited-unavailability decision covers 20/20 checkpoint SHAs only within the searched-source boundary; renewed M21 review, Operator acceptance, and M21-GIT-01 remain open.
+
+**Batch D:** Operator accepted Batch D closure and Batch E progression. The current repository has no F09, F11, F12, or F13 branch refs or execution/independent-verification report sections. No missing ticket is represented as executed or passed. The final gate remains blocked until the missing ticket evidence is supplied or the Operator explicitly dispositions those scopes.
+
+**Git/authorization:** Operator authorized Phase 03 ticket-level commit/push. No PR/merge authority or final V003 closure was included. F02 report is on its own branch `v003/f02-final-publication-verification`; no PR or merge is created. RDC timeout prevented local staging/status confirmation; the remote commit was made through GitHub's Git Data API, and the local F02 branch is not checked out.
+
+**Pass gate:** NOT MET. No final independent V003 verdict or Operator V003 closure is claimed.

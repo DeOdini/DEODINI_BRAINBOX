@@ -538,3 +538,13 @@ Operator approval is specifically required for Phase 03 branch/batch workflow, w
 GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf176ab46a616c992ea253d6af5eb68771139` (`V003-F16 record Batch D acceptance and publication verification`), with parent `3c5144069eb741d33ae6c44b57c37770534176a8`. The remote branch ref was fetched after the update and confirmed at the new commit. The commit contains only the four intended Phase 03/V003 record files. No PR or merge was created.
 
 **Codex publication response:** F16's report/conversation/ticket/map closeout is present on the remote branch. Local Git staging and local post-publication status remain unverified because RDC stopped responding.
+
+---
+
+## V003-F02 — read-only final publication preflight — 2026-10-13
+
+**Codex commentary (verbatim):** “F16 is now published as a guarded remote commit, and GitHub confirms the branch tip advanced from `3c51440` to `e8dbf17` with changes limited to its conversation, report, ticket record, and migration map. RDC remains unavailable, so this publication used the connected GitHub Git Data API; it did not stage or modify the local checkout. I’m adding the post-publication verification record, then I’ll record F02’s blocked preflight on its own branch.”
+
+**Codex findings (verbatim from current turn):** “The ref check confirms the F16 branch exists remotely, but F11, F12, F13, and F09 have no corresponding Phase 03 branches or execution reports, and no F-series PR/merge appears in the fetched history. I’m recording Batch D’s Operator-approved closure accurately while treating F02 as a final gate that still has unmet documentary prerequisites.”
+
+**Codex response:** F02's read-only checks found the M21 branch is pushed to origin but remains 18 commits ahead of `main`, with no M21 PR or merge. The approved F01 limited-unavailability disposition is recorded, while renewed M21 acceptance remains open. The Phase 03 ticket/report/branch records lack execution and independent-verification entries for F09, F11, F12, and F13. The Operator has accepted Batch D closure, but the repository does not establish those tickets as executed or passed. F02 therefore remains blocked and does not close V003. No PR or merge was created.
