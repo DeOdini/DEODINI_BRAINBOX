@@ -462,3 +462,7 @@ GitHub ref `v003/f02-final-publication-verification` was verified at `5dbe315ebf
 **Batch D:** Operator closure is recorded. F09 questionnaire approval, F11 catalog precedence (UNDECIDED), F12 matrix approval, and F13 criteria approval remain visible as ticket-specific decisions; no result was promoted to PASS by batch acceptance.
 
 **Current Operator authority:** The Operator expressly directed Codex to correct M21-GIT-01 on the F02 branch and merge F02 so the result appears on `main`. That authorizes the F02 branch publication/merge described by this ticket. It does not authorize falsely marking M21/Phase 02 accepted or V003 closed. The exact F02 diff is cumulative and includes previously published Phase 03 records and ticket-authorized documentation changes; its actual PR contents and merge result must be checked and recorded after publication.
+
+### V003-F02 PR #38 merge outcome — 2026-10-13
+
+PR #38 merged into `main` at `8540440c6c41ddd8e373ff83cf00a10adb9c97e1`; the remote ancestry check passed after fetch. The merged PR has 21 cumulative changed files (2,507 additions / 94 deletions), including previous Phase 03 records and F08/F14 documentation. The four catalog-link edits remain subject to the F11 **UNDECIDED** precedence record. This is F02 branch publication, not M21 acceptance, Phase 02 closure, or V003 final closure. F02 remains open pending renewed independent ChatGPT verification and explicit Operator acceptance.
