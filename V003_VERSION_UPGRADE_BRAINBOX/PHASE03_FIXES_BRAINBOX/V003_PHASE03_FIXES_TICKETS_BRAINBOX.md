@@ -1,6 +1,6 @@
 # V003 Phase 03 — Detailed Proposed Fix Ticket Set
 
-**STATUS (2026-10-12):** V003-F01 search/disposition evidence and independent verification are recorded; renewed M21 review and acceptance remain pending. V003-F04 evidence/disposition PASS. V003-F03 inventory evidence and Operator-approved per-file retention disposition PASS; F05/F06 remain authorized and pending in Batch B order. Other F-tickets remain draft and unauthorized.
+**STATUS (2026-10-13):** F01 bounded search/disposition evidence and independent verification are recorded; renewed M21 review and acceptance remain pending. F03/F04/F05/F06 and Batch C outcomes are recorded in their ticket sections. Batch C is Operator-accepted; Batch D is authorized. F10 is closed by approved retention; F16 is accepted under Batch D closure; F11 evidence inventory is complete but the four F03/F14 catalog precedence is Operator-undecided; F12/F13/F09 remain in progress with required design/intake approvals pending. Phase 03 branches remain unmerged.
 **VERSION:** V003
 **CONVENTION:** Always use full `V003-F01` through `V003-F16`, even though proposed execution order is non-numeric.
 **AUTHORITIES:** Frozen V003 Specification §§25–27; Origin Conversation; active Governance; Phase 02 P14 and ticket evidence pattern; actual original-source ledger.
@@ -430,6 +430,14 @@ The Operator explicitly approved Batch C closure and proceeding to Batch D, and 
 
 Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit `e8dbf176ab46a616c992ea253d6af5eb68771139` (parent `3c5144069eb741d33ae6c44b57c37770534176a8`). The commit records the F16 closeout across the Phase 03 conversation, report, ticket record, and migration map. It was published via GitHub Git Data API after RDC stopped responding; no local staging/commit was verified. No PR or merge was created.
 
+
+## V003-F11 execution status — 2026-10-13
+
+**Branch:** `v003/f11-project-workflow-foothive-disposition`.
+**Evidence:** The 87-row FootHive/RAW source ledger records 83 FootHive paths plus four RAW workflow sources. M15 manifest transfer checks, current source/target hashes, nine external FootHive asset references, F03 source-only image/catalog baseline comparison, and M09/M10 RAW classifications are documented in the CSV and F11 report.
+**Disposition:** Evidence inventory complete; not disposition-closed. The Operator explicitly reserved the F03/F14 precedence decision for the four catalog Markdown files as **UNDECIDED**. Present file contents are preserved. No source operation occurred.
+**F11-M01-HASH-01:** The M01 migration map does not provide a baseline hash for `RAW_PROJ_MUST_README.md`; its current integrity details are captured in the F11 ledger. Batch-deferred/non-blocking for current evidence and design work because no source mutation or retirement is proposed; retain this limitation for any later retirement gate.
+**Independent verification:** ChatGPT independent verification is not performed or claimed by Codex. Ticket remains open pending the catalog disposition and any required independent review.
 ---
 
 ## V003-F02 preflight status — 2026-10-13
@@ -501,3 +509,11 @@ PR #38 merged into `main` at `8540440c6c41ddd8e373ff83cf00a10adb9c97e1`; the rem
 **Closure boundary:** Non-Cline Phase 03 verified fixes are OPERATOR-APPROVED FOR SCOPED CLOSURE, preserving prior ticket qualifications and approved retention safeguards. F02 integrated final PASS, renewed M21 independent review and Operator acceptance, Phase 02 and V003 final closure are NOT granted by this decision. Superseded older PENDING/UNDECIDED statements remain unchanged as dated historical checkpoints.
 
 **Execution responsibility:** Operator directs Codex, not ChatGPT, to execute the authorized non-Cline closure and handle scope-controlled staging, commits, pushes, and merges, with checks and an auditable report of branch/PR/merge SHAs. This is authorization/instruction, not evidence those operations have occurred. ChatGPT records documentation locally only; no Git staging, commit, push, merge, branch switching, source edits, or frozen authority changes are authorized for ChatGPT.
+
+## V003-F11/F14 ticket identity reconciliation - 2026-10-14
+
+**F14:** The 32 approved destination-only catalog image-link corrections belong to F14 (commit `e04a5fb`) and are already in the mainline history. Their limited exception to F03 retention is approved and independently checked as recorded in the F02 closure report.
+
+**F11:** `v003/f11-project-workflow-foothive-disposition` is the separate FootHive/RAW source-inventory ticket. Its audit ledger and report are being integrated without source operations. The F14 approval resolves only the catalog-path precedence question; it does not close the broader F11 source-disposition and independent-verification gates. **F11 remains OPEN.**
+
+**F09/F12/F13:** Operator-approved closure is limited to the recorded methodology, ownership, and conditional promotion-policy scopes. No live connector status, source transfer, or Production outcome is inferred. The historical proposal/pending entries remain preserved; the later approval record controls current scope.
