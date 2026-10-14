@@ -751,3 +751,6 @@ The proposed root RECYCLE_BIN_BRAINBOX directory is not present. Specification �
 
 
 **Decision update after the pre-approval checkpoint — 2026-10-14:** The earlier “not present” statement records the state before approval. RECYCLE_BIN_BRAINBOX is now created locally under the Operator-approved post-freeze governance extension. F11 original-path retention is approved; per-file reconciliation and independent verification remain open. The M21 limited-unavailability treatment is approved; renewed independent M21 review remains pending. F02 and final Phase 02/V003 acceptance remain pending.
+
+
+**F11 evidence update — 2026-10-14:** Codex's read-only check matched all 87 F11 source-ledger entries to present files and current SHA-256 values, with complete enumeration of the 83-file FootHive project tree and 4-file RAW tree. Independent ChatGPT verification and formal F11 acceptance remain pending.

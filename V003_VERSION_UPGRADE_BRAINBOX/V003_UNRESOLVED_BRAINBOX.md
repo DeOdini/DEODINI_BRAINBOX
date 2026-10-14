@@ -358,3 +358,26 @@ Task A, the proposed root-level RECYCLE_BIN_BRAINBOX, was **not implemented**. S
 The pre-decision entries above remain historical checkpoints. Current disposition: the Recycle Bin is created locally under the approved additive governance extension; no legacy sources were moved or deleted. F11's original-path choice is resolved, while per-file source-ledger reconciliation, independent verification, and formal ticket acceptance remain open. The Operator accepted the bounded treatment for the 20 unrecovered M21 Cline objects; those objects remain unrecovered, and renewed independent M21 review plus final M21/Phase 02 acceptance recording remain pending. The Operator agreed to a qualified F02/V003 closeout route, but the integrated F02 verification has not been completed and F02 remains NOT PASSED / OPEN.
 
 I do not recommend qualified V003 closure yet. The outstanding independent M21 review, F11 verification/acceptance, and integrated F02 review must be completed and recorded. The accepted limited-history treatment, retention decisions, and intentionally planned states do not by themselves block closure once their conditions are satisfied; they also do not waive the remaining verification gates. No publication, merge, or final Operator closure is claimed here.
+
+
+## F11 original-path inventory verification — Codex read-only evidence (2026-10-14)
+
+**Source ledger:** `PHASE03_FIXES_BRAINBOX/F11_FOOTHIVE_SOURCE_DISPOSITION_PHASE03_FIXES_BRAINBOX.csv` (87 rows). **Operator decision:** retain the listed sources at their original paths; no move, copy, rename, edit, normalization, or deletion is authorized by that decision.
+
+**Checks run:** For all 87 ledger paths, `Test-Path -PathType Leaf` and `Get-FileHash -Algorithm SHA256` were compared with the ledger's `CurrentSHA256`. Recursive `Get-ChildItem -File -Recurse -Force` enumeration was compared with the ledger under `FOOTHIVE_PROJ_BRAINBOX/` and `RAW_WORKFLOW_PROJ_BRAINBOX/`.
+
+**Result:** 83/83 FootHive project files and 4/4 RAW files are present and fully enumerated; 0 unlisted files, 0 missing ledger paths, 0 hash mismatches, 0 read errors, and 0 paths outside the repository. All 87 current hashes match the ledger. No source file was changed by these checks.
+
+**Status boundary:** This is Codex's local execution evidence, not independent ChatGPT verification. F11's Operator disposition choice is resolved; its source-path/hash evidence now passes Codex's scoped check. Independent ChatGPT verification and formal F11 ticket acceptance remain pending. This check does not decide licensing, broader semantic authority, or future changes in disposition.
+
+
+**F11 status supersession:** The preceding qualified-closure assessment was written before this 87-file scan and said per-file reconciliation remained open. This scan completes Codex's presence/hash/tree-enumeration check only; independent ChatGPT verification and formal F11 ticket acceptance remain open.
+
+
+## F02/M21 read-only integration recheck — Codex evidence (2026-10-14)
+
+**Live mainline:** `git ls-remote origin refs/heads/main` returned `07274d32eea4a268e27fd7804b8666dc09181292`, matching both local `main` and `refs/remotes/origin/main`. A read-only ancestry check covered 42 existing local V003 ticket/closure branch refs and their available remote-tracking refs; every checked tip is an ancestor of `main`. Their branch names still exist, but their checked work is integrated. At this check, `v003/recycle-bin-and-unresolved-register` had two local commits beyond `origin/main`; its worktree was clean and the branch was not pushed or merged.
+
+**M21-GIT-01 object check:** The 20 original checkpoint SHAs preserved in the M01 Migration Map were rechecked in the active Brainbox repository using `git cat-file -e <sha>^{commit}`, `git reflog --all`, and `git fsck --full --no-reflogs --unreachable`: **0/20** were found in any of these checks. The known `C:\Users\USER\pedestal-archive` Git repository was also checked with `git cat-file`: **0/20**. No object, ref, reflog, or history was modified. The active repository currently reports 512 unreachable objects (8 commits, 301 trees, 203 blobs); none is one of the 20 named SHAs. This differs from older dated object-count reports; no cause for the count difference is inferred, and the current object store must be preserved.
+
+**F02 result boundary:** This is a new Codex read-only check, not the required independent ChatGPT review. It confirms live-main alignment, existing ticket-branch ancestry, and the bounded current-repository unavailability of the 20 listed objects. It does not claim recovery, global irrecoverability, renewed independent M21 PASS, F02 PASS, Phase 02 acceptance, or final V003 closure. F11's 87-file local path/hash check is recorded immediately above; independent ChatGPT review and formal ticket acceptance remain pending. No push or merge occurred.

@@ -2927,3 +2927,11 @@ Operator approved root RECYCLE_BIN_BRAINBOX/ as a separate additive governance a
 
 
 **Current decision status after Operator dispositions — 2026-10-14:** RECYCLE_BIN_BRAINBOX is created locally under the approved additive governance extension. F11's disposition is RETAIN AT ORIGINAL PATH; per-file reconciliation, independent verification and formal ticket acceptance remain open. The bounded M21 limited-unavailability treatment is approved, while renewed independent review remains pending. F02 final integrated verification and Phase 02/V003 acceptance remain pending. No legacy source was moved or deleted by these decisions.
+
+
+**F11 verification update — 2026-10-14:** Codex's read-only reconciliation of the 87-row F11 ledger found all 83 FootHive project files and all 4 RAW files present and enumerated, with all current SHA-256 values matching the ledger and no unlisted/missing entries. This does not substitute for independent ChatGPT verification or formal F11 acceptance.
+
+
+## F02/M21 live-Git and checkpoint-object recheck — Codex — 2026-10-14
+
+Live `origin/main` SHA `07274d32eea4a268e27fd7804b8666dc09181292` matched local `main` and its tracking ref. All 42 checked existing local V003 ticket/closure branch tips and available remote-tracking tips are ancestors of `main`; branch refs remain present. Codex rechecked the 20 M01 Cline checkpoint SHAs in the active repository via `cat-file`, reflogs, and unreachable-object set (0/20) and in the known `C:\Users\USER\pedestal-archive` repository (0/20). Current `fsck --full --no-reflogs --unreachable` output contains 8 unreachable commits, 301 trees and 203 blobs; none is one of the 20. Earlier counts remain dated historical observations; no reason for the difference is inferred. No Git object or history was modified. The check is Codex evidence only; renewed independent ChatGPT review, formal M21/F02 acceptance, and Phase 02/V003 closure remain pending. The register branch is local/unpublished; no push or merge occurred.
