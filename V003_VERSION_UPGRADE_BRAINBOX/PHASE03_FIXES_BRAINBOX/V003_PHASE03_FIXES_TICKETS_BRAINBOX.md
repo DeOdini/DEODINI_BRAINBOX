@@ -438,6 +438,13 @@ Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit
 **Disposition:** Evidence inventory complete; not disposition-closed. The Operator explicitly reserved the F03/F14 precedence decision for the four catalog Markdown files as **UNDECIDED**. Present file contents are preserved. No source operation occurred.
 **F11-M01-HASH-01:** The M01 migration map does not provide a baseline hash for `RAW_PROJ_MUST_README.md`; its current integrity details are captured in the F11 ledger. Batch-deferred/non-blocking for current evidence and design work because no source mutation or retirement is proposed; retain this limitation for any later retirement gate.
 **Independent verification:** ChatGPT independent verification is not performed or claimed by Codex. Ticket remains open pending the catalog disposition and any required independent review.
+
+
+## V003-F12 execution status — 2026-10-13
+
+**Status:** Evidence review complete; proposed canonical authority matrix recorded in the Phase 03 report. **Operator approval pending; F12 not closed.**
+**Boundary:** No source movement/copy/edit, production deployment/check, evidence duplication, or frozen Specification change. The matrix separates Sandbox trial evidence, separate active FOOTHIVE code/assets, T20-only Production operation, Portfolio/handoff, and planned workflow iterations. The engagement remains disclosed as a trial, not paid-client work.
+**Dependency note:** F11's four-catalog disposition remains Operator-undecided and is preserved as a separate gate; no matrix row resolves it.
 ---
 
 ## V003-F02 preflight status — 2026-10-13
