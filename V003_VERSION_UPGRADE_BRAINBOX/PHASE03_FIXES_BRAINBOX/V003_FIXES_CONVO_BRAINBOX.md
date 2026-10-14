@@ -641,22 +641,23 @@ The Operator authorized the correction on `v003/f02-final-publication-verificati
 **ChatGPT disposition:** Operator approved scoped closure of verified Phase 03 non-Cline work. F11 32 existing image-link destination-only edits; F09 evidence/intake method (not live connector proof); F12 documented FootHive record ownership (not source relocation); F13 Production promotion criteria effective after F12 verification (not real Production verification). Preserve remaining historical provenance/qualification limits. Twenty unrecovered Cline checkpoint SHA objects remain under separately open M21-GIT-01. F02 final PASS, M21 acceptance, Phase 02 closure and V003 closure are not implied. Codex, under Operator direction, owns stage/commit/push/merge and reporting; ChatGPT performs local documentation recording only.
 
 
-## Operator ` Codex ` outstanding Phase 03 branch merge correction ` 2026-10-14
+## Operator to Codex - outstanding Phase 03 branch merge correction - 2026-10-14
 
-**Operator (verbatim):** `I NOTICED THAT, SOME BRANCHES WERE NOT MERGED, ONLY THE LAST COMMIT WAS MERGE.`
+**Operator (verbatim):**
+> I NOTICED THAT, SOME BRANCHES WERE NOT MERGED, ONLY THE LAST COMMIT WAS MERGE.
 
 **Codex status messages from this merge-correction run (verbatim):**
 
-> F12 is now pushed with its merge reconciliation, and its branch still has its ticket changes ready for review. I`m checking the exact F12-to-main delta before opening its PR, then I`ll repeat that verification for F13 and F09.
+> F12 is now pushed with its merge reconciliation, and its branch still has its ticket changes ready for review. I’m checking the exact F12-to-main delta before opening its PR, then I’ll repeat that verification for F13 and F09.
 
-> F12`s PR #42 merged cleanly as `4183b3e`. The merge contains four Phase 03 documentation files and leaves the ticket`s approved evidence boundaries intact. I`m updating F13 against this new `main` tip now.
+> F12’s PR #42 merged cleanly as `4183b3e`. The merge contains four Phase 03 documentation files and leaves the ticket’s approved evidence boundaries intact. I’m updating F13 against this new `main` tip now.
 
-> F13`s branch was named `v003/f13-production-case-study-promotion-rules` (the shorter name I first tried does not exist). Its merge conflicts are limited to the shared Phase 03 records, and the GitHub warning is only for existing long T23 Playwright evidence paths. I`ve preserved both branches` append-only records and am reconciling the live README status before committing this merge.
+> F13’s branch was named `v003/f13-production-case-study-promotion-rules` (the shorter name I first tried does not exist). Its merge conflicts are limited to the shared Phase 03 records, and the GitHub warning is only for existing long T23 Playwright evidence paths. I’ve preserved both branches’ append-only records and am reconciling the live README status before committing this merge.
 
-> F13`s PR #43 merged as `715fc15`. F09 is the last outstanding branch; it contains the capability traceability work plus shared closeout records. I`m checking its exact branch name and merging current `main` into it before the final PR.
+> F13’s PR #43 merged as `715fc15`. F09 is the last outstanding branch; it contains the capability traceability work plus shared closeout records. I’m checking its exact branch name and merging current `main` into it before the final PR.
 
-> F09 is pushed. Its PR delta is the F09 traceability CSV plus the four Phase 03 records; it is four commits ahead of `main` and contains no FootHive source-file changes. I`m opening the final PR and checking that GitHub reports a clean merge.
+> F09 is pushed. Its PR delta is the F09 traceability CSV plus the four Phase 03 records; it is four commits ahead of `main` and contains no FootHive source-file changes. I’m opening the final PR and checking that GitHub reports a clean merge.
 
-> All four outstanding ticket branches now have their own merged PRs: F11 #41, F12 #42, F13 #43, and F09 #44. I`m doing the final remote ancestry check for each branch and confirming the current `main` tip before I report completion.
+> All four outstanding ticket branches now have their own merged PRs: F11 #41, F12 #42, F13 #43, and F09 #44. I’m doing the final remote ancestry check for each branch and confirming the current `main` tip before I report completion.
 
-> The remote checks now confirm F09, F11, F12, and F13 are all ancestors of `main` (each branch is 0 commits ahead). I found one follow-up needed before closeout: the Phase 03 README still says F09 integration is in progress. I`m correcting that status and recording the four PR merge SHAs on a small documentation branch, then I`ll merge that report branch and leave the workspace on `main`.
+> The remote checks now confirm F09, F11, F12, and F13 are all ancestors of `main` (each branch is 0 commits ahead). I found one follow-up needed before closeout: the Phase 03 README still says F09 integration is in progress. I’m correcting that status and recording the four PR merge SHAs on a small documentation branch, then I’ll merge that report branch and leave the workspace on `main`.

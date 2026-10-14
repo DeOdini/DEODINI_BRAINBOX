@@ -1,12 +1,12 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 ACTIVE; F02 PR #40 AND NON-CLINE PUBLICATION PRS #41?#44 MERGED; F09/F12/F13 SCOPED CLOSURE RECORDS PUBLISHED; F11 BROADER SOURCE-DISPOSITION TICKET REMAINS OPEN; M21/PHASE 02/V003 FINAL ACCEPTANCE PENDING]
+**STATUS:** [PHASE 03 ACTIVE; F02 PR #40 AND NON-CLINE PUBLICATION PRS #41-#44 MERGED; F09/F12/F13 SCOPED CLOSURE RECORDS PUBLISHED; F11 BROADER SOURCE-DISPOSITION TICKET REMAINS OPEN; M21/PHASE 02/V003 FINAL ACCEPTANCE PENDING]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
 **POPULATION:** [F01-F16 RECORDS PRESENT; F09 TRACEABILITY, F11 SOURCE LEDGER, F12 OWNERSHIP MATRIX, AND F13 PROMOTION POLICY ARE IN MAIN; F11 BROADER SOURCE-DISPOSITION AND M21 ACCEPTANCE GATES REMAIN OPEN]
-**LAST UPDATED:** 2026-10-14 - PRs #41?#44 integrated the outstanding F11, F12, F13, and F09 branch tips into main; see the report for merge SHAs and scope limits.
+**LAST UPDATED:** 2026-10-14 - PRs #41-#44 integrated the outstanding F11, F12, F13, and F09 branch tips into main; see the report for merge SHAs and scope limits.
 
 ## Local tree
 ```text
@@ -17,8 +17,7 @@ PHASE03_FIXES_BRAINBOX/
 ├── F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv [F09 eight-agent source/CORE hash/status crosswalk]
 ├── V003_FIXES_REPORT_BRAINBOX.md
 ├── V003_FIXES_CONVO_BRAINBOX.md
-└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; Batch B/C accepted; Batch D F10/F16/F11–F13/F09 outcomes and open approval gates recorded]
-└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; Batch B Operator accepted; Batch C F15/F08/F14/F07 outcomes recorded; Batch C Operator acceptance pending]
+└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [current F01-F16 ticket ledger; see ticket-specific statuses and approval boundaries]
 ```
 
 ## Navigation
