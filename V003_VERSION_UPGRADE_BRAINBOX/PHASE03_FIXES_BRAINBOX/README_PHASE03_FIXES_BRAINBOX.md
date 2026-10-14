@@ -1,12 +1,12 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 ACTIVE; F02 PR #40 AND NON-CLINE PUBLICATION PRS #41-#44 MERGED; F09/F12/F13 SCOPED CLOSURE RECORDS PUBLISHED; F11 BROADER SOURCE-DISPOSITION TICKET REMAINS OPEN; M21/PHASE 02/V003 FINAL ACCEPTANCE PENDING]
+**STATUS:** [PHASE 03 RECORDS PRESERVED; F11 BROADER SOURCE-DISPOSITION FOLLOW-UP REMAINS OPEN; V003 PROJECT-LEVEL QUALIFIED CLOSED BY OPERATOR (2026-10-14), WITH UNRESOLVED ITEMS RETAINED IN THE V003 REGISTER]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [F01-F16 RECORDS PRESENT; F09 TRACEABILITY, F11 SOURCE LEDGER, F12 OWNERSHIP MATRIX, AND F13 PROMOTION POLICY ARE IN MAIN; F11 BROADER SOURCE-DISPOSITION AND M21 ACCEPTANCE GATES REMAIN OPEN]
-**LAST UPDATED:** 2026-10-14 - PRs #41-#44 integrated the outstanding F11, F12, F13, and F09 branch tips into main; see the report for merge SHAs and scope limits.
+**POPULATION:** [F01-F16 RECORDS PRESENT; F09 TRACEABILITY, F11 SOURCE LEDGER, F12 OWNERSHIP MATRIX, AND F13 PROMOTION POLICY ARE IN MAIN; TICKET-LEVEL FOLLOW-UPS REMAIN OPEN IN THE V003 UNRESOLVED REGISTER]
+**LAST UPDATED:** 2026-10-14 - The Operator recorded qualified V003 closure with follow-ups retained in the Unresolved Register; see the dated closeout section below and the report for ticket scope limits.
 
 ## Local tree
 ```text
@@ -64,4 +64,8 @@ Use full `V003-Fxx` identifiers; proposed batch order does not change IDs. Prese
 - [V003 authority README](../README_V003_VERSION_UPGRADE_BRAINBOX.md) — canonical versus support-record boundaries.
 - [Migration Map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — current migration source dispositions.
 
-The current mainline contains the recorded Phase 03 branch merge closeout through PRs #41–#46. This records Git integration, not blanket ticket closure: F11 remains OPEN for broad source disposition; M21-GIT-01 and F02 final acceptance remain OPEN; Phase 02 and V003 are not declared closed. F09/F12/F13 remain bounded to their Operator-approved methodology, ownership, and policy scopes.
+**Historical status checkpoint — 2026-10-14, before the Operator's final qualified-closure clarification:** The mainline contained the recorded Phase 03 branch merge closeout through PRs #41–#46. F11, M21-GIT-01, and F02 retained open ticket-level findings at that checkpoint; F09/F12/F13 were bounded to their Operator-approved methodology, ownership, and policy scopes. The later project-level disposition does not rewrite those ticket findings.
+
+## Current project disposition — 2026-10-14
+
+V003 is **QUALIFIED CLOSED BY OPERATOR DIRECTION**, with unresolved ticket-level items retained in the [V003 Unresolved Register](../V003_UNRESOLVED_BRAINBOX.md) for later work. This does not claim blanket technical PASS, recovered Cline checkpoint objects, or live-production verification.

@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02 - Batches A-D closed; M01-M18 independently verified and merged. M19-M20 independently verified/published but unmerged. M21 snapshot/ledger independently checked by ChatGPT (2026-10-11), but M21-GIT-01 remains BLOCKING; Operator recovery/disposition and acceptance are pending. Phase 02 NOT CLOSED.
-**Migration status:** V003-M01-M21 AUTHORIZED / M01-M18 VERIFIED AND MERGED / M19-M20 INDEPENDENT PASS, PUBLISHED, UNMERGED / M21 SNAPSHOT+MAP VERIFIED, GIT CHECKPOINT 20/20 UNAVAILABLE IN CHECKED SOURCES; M21-GIT-01 BLOCKING, NOT ACCEPTED / M15-ASSET-01, M17-DEST-01, M19-HIST-01, M20-REF-01, M01-GIT-01 OPEN WITH SOURCE-SPECIFIC RESTRICTIONS / PHASE 02 OPEN; OPERATOR CLOSURE AND MERGE AUTHORITY RETAINED
+**Current disposition (2026-10-14):** V003 is QUALIFIED CLOSED by Operator direction. Unresolved follow-up items remain open in `V003_UNRESOLVED_BRAINBOX.md` for later work. This is a project-level documentation status; it does not claim that every ticket received technical PASS or that the 20 Cline checkpoint objects were recovered.
+**Migration record:** Ticket execution, verification, and Git integration details remain in the Phase 02 reports and Migration Map. V003's project-level status is QUALIFIED CLOSED by Operator direction (2026-10-14); unresolved limitations, historical qualifications, and later work remain listed in `V003_UNRESOLVED_BRAINBOX.md`. This status does not create blanket ticket-level technical PASS.
 
 ## Purpose
 
@@ -350,6 +350,10 @@ The frozen operational target tree and the V003 authority model are unchanged. T
 - [Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — living source and migration ledger.
 - [V003 Tree Snapshot](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/TREE_SNAPSHOT_V003_BRAINBOX.md) — actual V003 physical-tree snapshot.
 
-**Current disposition:** Phase 02 Git integration is recorded as merged, but Phase 02 is not accepted/closed. M21-GIT-01 remains open for the 20 unrecovered Cline checkpoint objects within the approved searched-source boundary; renewed independent M21 review and explicit Operator acceptance remain pending. F02 is NOT PASSED / OPEN. F11 remains OPEN for broad FootHive/RAW source disposition and independent verification. F09/F12/F13 scope limits and the separate F14 link-only approval remain as recorded in Phase 03. Do not infer current Production health, capability connectivity, or final V003 closure from merged commits.
+**Historical closeout checkpoint — 2026-10-14, before the Operator's final qualified-closure clarification:** At that checkpoint, the M21-GIT-01, F02, and broader F11 findings below were recorded as outstanding. Their underlying evidence and technical limitations remain unchanged and are retained in the Unresolved Register; the later project-level closure direction does not turn them into technical PASS. Do not infer current Production health or capability connectivity from merged commits.
 
-The root RECYCLE_BIN_BRAINBOX proposal was not implemented: it is absent from the frozen §8 hierarchy and needs a separate Operator authority decision before creation or Specification change.
+**Historical Recycle Bin checkpoint — 2026-10-14:** At this checkpoint the additive RECYCLE_BIN_BRAINBOX folder had not yet been created. It was subsequently created under the Operator-approved post-freeze governance extension; the frozen §8 hierarchy remains unchanged.
+
+## Operator-qualified V003 closeout — current disposition — 2026-10-14
+
+V003 project-level status is **QUALIFIED CLOSED BY OPERATOR DIRECTION**. Open limitations and future actions remain listed in [V003_UNRESOLVED_BRAINBOX.md](V003_UNRESOLVED_BRAINBOX.md). This status records the Operator's decision to close with follow-ups carried forward; it does not assert blanket technical PASS, recover the 20 Cline checkpoint objects, or implement planned capabilities.

@@ -1,10 +1,10 @@
 # MIGRATION_MAP_V003_BRAINBOX
 
 **Ticket:** V003-M01 — Current-State Inventory, Integrity/Recovery Baseline & Migration Map Bootstrap  
-**Status:** Living M01-M21 source-backed ledger. Codex M21 snapshot/map drafted; final acceptance is BLOCKED by M21-GIT-01 pending renewed independent verification and Operator acceptance after the Operator-approved limited-unavailability disposition. ChatGPT independent M21 verification and Operator acceptance remain pending; M19-M21 Git PRs #35-#37 and F02 PR #38 are merged to main as of 2026-10-13; M21 acceptance remains blocked pending renewed verification and Operator acceptance.
+**Status:** Living M01-M21 source-backed ledger. V003 project-level disposition: QUALIFIED CLOSED BY OPERATOR DIRECTION (2026-10-14), with unresolved follow-up items retained in `V003_UNRESOLVED_BRAINBOX.md`. This status does not assert blanket ticket-level technical PASS or recovery of the 20 Cline checkpoint objects; see the dated evidence and final disposition section below.
 **Baseline date:** 2026-10-08  
 **Repository:** C:\Users\USER\DEODINI_BRAINBOX  
-**Current active branch:** v003/m21-final-migration-verification-closeout
+**M21 verification branch recorded at its checkpoint:** v003/m21-final-migration-verification-closeout
 **M01 baseline branch:** v003/m01-current-state-inventory-migration-map
 **Baseline commit:** 27e73f828bb367298442c2e621c18d1cc1ceb4f4
 
@@ -2913,7 +2913,7 @@ PR #38 (`v003/f02-final-publication-verification` → `main`) merged at `8540440
 
 
 
-## V003 unresolved register support-record disposition — 2026-10-14
+## V003 unresolved register support-record disposition — pre-final-closure checkpoint — 2026-10-14
 
 V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md is a V003 audit/closeout support record. It reconciles the existing M01–M21 and F01–F16 evidence and does not create or replace a migration ticket, alter the frozen Specification or Origin Conversation, or change any source disposition.
 
@@ -2926,7 +2926,7 @@ The proposed root RECYCLE_BIN_BRAINBOX directory was not created. It is outside 
 Operator approved root RECYCLE_BIN_BRAINBOX/ as a separate additive governance archive without changing frozen V003 Specification §8. Its README and empty retirement ledger record the prospective source-specific archival rules; no current original source relocation, retirement or deletion was approved. Operator chose original-path retention for the F11 FootHive/RAW source set, subject to per-file reconciliation and independent acceptance. Operator also accepted the bounded limited-unavailability exception for 20 M01/M21 Cline checkpoint SHAs and agreed to a qualified F02/V003 closeout review, not an automatic independent verification PASS. Exact decision, outstanding evidence/acceptance gates and retained/planned/qualified source items are consolidated in [V003_UNRESOLVED_BRAINBOX.md](../../V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md); preserve earlier dated records as history.
 
 
-**Current decision status after Operator dispositions — 2026-10-14:** RECYCLE_BIN_BRAINBOX is created locally under the approved additive governance extension. F11's disposition is RETAIN AT ORIGINAL PATH; per-file reconciliation, independent verification and formal ticket acceptance remain open. The bounded M21 limited-unavailability treatment is approved, while renewed independent review remains pending. F02 final integrated verification and Phase 02/V003 acceptance remain pending. No legacy source was moved or deleted by these decisions.
+**Historical decision checkpoint before the final qualified-closure clarification — 2026-10-14:** RECYCLE_BIN_BRAINBOX was created locally under the approved additive governance extension. F11's disposition was RETAIN AT ORIGINAL PATH; per-file reconciliation and independent verification were then pending. The bounded M21 limited-unavailability treatment was approved, while renewed independent review was then pending. F02 final integrated verification and Phase 02/V003 acceptance had not yet been recorded at this checkpoint. No legacy source was moved or deleted by these decisions.
 
 
 **F11 verification update — 2026-10-14:** Codex's read-only reconciliation of the 87-row F11 ledger found all 83 FootHive project files and all 4 RAW files present and enumerated, with all current SHA-256 values matching the ledger and no unlisted/missing entries. This does not substitute for independent ChatGPT verification or formal F11 acceptance.
@@ -2934,4 +2934,10 @@ Operator approved root RECYCLE_BIN_BRAINBOX/ as a separate additive governance a
 
 ## F02/M21 live-Git and checkpoint-object recheck — Codex — 2026-10-14
 
-Live `origin/main` SHA `07274d32eea4a268e27fd7804b8666dc09181292` matched local `main` and its tracking ref. All 42 checked existing local V003 ticket/closure branch tips and available remote-tracking tips are ancestors of `main`; branch refs remain present. Codex rechecked the 20 M01 Cline checkpoint SHAs in the active repository via `cat-file`, reflogs, and unreachable-object set (0/20) and in the known `C:\Users\USER\pedestal-archive` repository (0/20). Current `fsck --full --no-reflogs --unreachable` output contains 8 unreachable commits, 301 trees and 203 blobs; none is one of the 20. Earlier counts remain dated historical observations; no reason for the difference is inferred. No Git object or history was modified. The check is Codex evidence only; renewed independent ChatGPT review, formal M21/F02 acceptance, and Phase 02/V003 closure remain pending. The register branch is local/unpublished; no push or merge occurred.
+Live `origin/main` SHA `07274d32eea4a268e27fd7804b8666dc09181292` matched local `main` and its tracking ref. All 42 checked existing local V003 ticket/closure branch tips and available remote-tracking tips are ancestors of `main`; branch refs remain present. Codex rechecked the 20 M01 Cline checkpoint SHAs in the active repository via `cat-file`, reflogs, and unreachable-object set (0/20) and in the known `C:\Users\USER\pedestal-archive` repository (0/20). Current `fsck --full --no-reflogs --unreachable` output contains 8 unreachable commits, 301 trees and 203 blobs; none is one of the 20. Earlier counts remain dated historical observations; no reason for the difference is inferred. No Git object or history was modified. This was a pre-publication Codex checkpoint. At that point, the register branch was local and unpublished; it was later published through the qualified-closeout PR. The bounded object-search findings remain as stated, and no Git object or history was modified.
+
+## Operator-qualified V003 closure disposition — 2026-10-14
+
+**Project-level status:** QUALIFIED CLOSED BY OPERATOR DIRECTION. The Operator's latest clarification, recorded in [V003_UNRESOLVED_BRAINBOX.md](../../V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md), directs that remaining matters stay as unresolved follow-up work for later access and do not prevent qualified project closure.
+
+This is a qualified administrative/documentation disposition, not a blanket technical PASS. The 20 Cline checkpoint commits remain unrecovered within the documented search boundary; no global irrecoverability or loss cause is claimed. Ticket-level findings, retention safeguards, planned states, and unverified capability or Production claims remain as recorded in the register. No frozen Specification or Origin Conversation change, source retirement, Git object mutation, or Git tag is asserted here.

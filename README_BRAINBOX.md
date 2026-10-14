@@ -741,16 +741,22 @@ The records below are V003 audit/closeout support, not new operational branches 
 - [Phase 03 fixes and closure navigation](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — ticket evidence and current scope boundaries.
 - [V003 authority-container README](V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md) — canonical authority and support-record boundaries.
 
-Current final status remains NOT CLOSED: M21-GIT-01 is still pending renewed independent M21 review and explicit Operator acceptance; F02 is NOT PASSED / OPEN; broader F11 source disposition remains OPEN. The non-Cline Phase 03 closures and the Batch E Git merges do not themselves close Phase 02 or V003. See the Unresolved Register for exact evidence and closure conditions.
+**Historical status checkpoint — 2026-10-14, before the Operator's final qualified-closure clarification:** At that checkpoint, M21-GIT-01, F02, and broader F11 work were recorded as open. These remain time-scoped findings and are preserved as history. The current project-level disposition is recorded in the final status section below and in the [V003 Unresolved Register](V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md).
 
-The proposed root RECYCLE_BIN_BRAINBOX directory is not present. Specification §8 does not include that root branch; its addition remains subject to a separate Operator authority decision.
+**Historical pre-approval checkpoint — 2026-10-14:** The root RECYCLE_BIN_BRAINBOX extension was not yet present at this checkpoint. A later dated update records the Operator-approved additive extension and its local creation; the frozen Specification remains unchanged.
 
 ## Post-V003 governance extension — Recycle Bin (Operator-approved 2026-10-14)
 
 [RECYCLE_BIN_BRAINBOX/](RECYCLE_BIN_BRAINBOX/README_RECYCLE_BIN_BRAINBOX.md) is an additive retirement archive approved by the Operator outside the frozen V003 Specification §8 root tree. The frozen V003 target and Origin Conversation remain unchanged. No V003 legacy sources were retired or moved by creating it. See the [V003 Unresolved Register](V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md) for four-step Operator closeout dispositions and carry-forward qualifications.
 
 
-**Decision update after the pre-approval checkpoint — 2026-10-14:** The earlier “not present” statement records the state before approval. RECYCLE_BIN_BRAINBOX is now created locally under the Operator-approved post-freeze governance extension. F11 original-path retention is approved; per-file reconciliation and independent verification remain open. The M21 limited-unavailability treatment is approved; renewed independent M21 review remains pending. F02 and final Phase 02/V003 acceptance remain pending.
+**Historical decision update before final qualified closure — 2026-10-14:** The earlier “not present” statement records the state before approval. RECYCLE_BIN_BRAINBOX is now created locally under the Operator-approved post-freeze governance extension. At this checkpoint, F11 original-path retention was approved while per-file reconciliation and independent verification were still open; the M21 limited-unavailability treatment was approved while renewed independent review was pending; and F02 / final Phase 02-V003 acceptance had not yet been recorded. The later Operator-qualified closure section below supersedes this checkpoint for project-level disposition without rewriting the underlying ticket evidence.
 
 
-**F11 evidence update — 2026-10-14:** Codex's read-only check matched all 87 F11 source-ledger entries to present files and current SHA-256 values, with complete enumeration of the 83-file FootHive project tree and 4-file RAW tree. Independent ChatGPT verification and formal F11 acceptance remain pending.
+**F11 evidence checkpoint — 2026-10-14:** Codex's read-only check matched all 87 F11 source-ledger entries to present files and current SHA-256 values, with complete enumeration of the 83-file FootHive project tree and 4-file RAW tree. This checkpoint did not state the later independent-review or project-level closure disposition; consult the Unresolved Register for the consolidated current status.
+
+## Current project disposition — Operator-qualified closure — 2026-10-14
+
+**Status:** QUALIFIED CLOSED BY OPERATOR DIRECTION. The unresolved follow-up items remain individually open and documented in the [V003 Unresolved Register](V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md) for later work.
+
+This project-level status records the Operator's decision that the listed follow-ups do not prevent qualified closure. It does not claim recovery of the 20 Cline checkpoint objects, blanket technical PASS for every ticket, or implementation of planned capabilities. The frozen V003 Specification and Origin Conversation remain unchanged. “QUALIFIED CLOSED” is a documentation status; no Git tag is asserted.
