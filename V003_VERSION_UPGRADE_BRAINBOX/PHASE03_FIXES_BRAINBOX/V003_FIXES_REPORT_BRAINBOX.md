@@ -1130,3 +1130,21 @@ The Operator-approved 32-link exception applies only to the demonstrated destina
 The later Operator approvals remain scoped as recorded on main: F09 approves evidence/intake methodology only; F12 approves the documented ownership boundaries, not unspecified source transfers; F13 approves evidence-promotion criteria only after F12 ownership verification, not a live Production promotion. These approvals do not upgrade any connector, authentication, execution, or current-production status.
 
 M21-GIT-01 remains open for the 20 unrecovered Cline checkpoint objects within the searched-source boundary. F02 final acceptance, Phase 02 acceptance, and V003 final closure remain pending.
+
+
+## V003-F09/F11/F12/F13 ` outstanding branch merge correction ` 2026-10-14
+
+**Finding:** PR #40 had merged earlier F02 closeout documentation, but did not bring the separate F09, F11, F12, or F13 branch tips into main. Those branch tips were each merged separately after branch reconciliation.
+
+| Ticket | Branch | PR head at merge | PR | Merge commit |
+|---|---|---|---:|---|
+| F11 ` FootHive/RAW source-disposition audit | `v003/f11-project-workflow-foothive-disposition` | `7011b4b0f2744a460011f9195fafb8909eddfb49` | #41 | `f04f752cb2be0b509cbe887dd4d323cd7e4ba574` |
+| F12 ` FootHive authority matrix | `v003/f12-foothive-canonical-authority-matrix` | `b31e91de2df81878a967650b3067a6e81f8c04da` | #42 | `4183b3ebfff3b5e3431fd14465ec1f5dbadade46` |
+| F13 ` Production evidence-promotion rules | `v003/f13-production-case-study-promotion-rules` | `7cc2db42e75777664eae8b3c840c350cf6c929fb` | #43 | `715fc154b209fea78a4115febeb764e81f4f0658` |
+| F09 ` CORE/EXE source traceability | `v003/f09-func-core-exe-source-integrity` | `3f8207591f29fd8337c52d327254cd1af3ad4771` | #44 | `36f5ddb1c616559dbccac9346d79eb1f4127e8c7` |
+
+GitHub reported each PR merged. Final branch-to-main comparisons reported 0 commits ahead for all four branches (the branches are behind the later main tip, as expected after integration). Main was at `36f5ddb1c616559dbccac9346d79eb1f4127e8c7` at this verification checkpoint. The local main branch was safely fast-forwarded from `e2edd669cb30d243b0b916db3e67ebde83653574` to that origin tip; the worktree was clean before the closeout-report branch was created.
+
+**Conflict handling:** F11/F12/F13/F09 were based on earlier shared Phase 03 document states. F11`F13 had conflicts in the four shared Phase 03 records; F09 had the same shared-record conflict pattern. Conflicts were resolved by preserving both append-only records, then reconciling the current README metadata. No unresolved conflict markers remained and the scoped git diff --check passed. Git emitted line-ending notices; merge also repeated existing Windows filename-length warnings for T23 Playwright evidence paths. No T23 evidence file was edited, renamed, or removed.
+
+**Scope and closure limits:** These merges publish branch-specific evidence and ticket records; they do not close tickets beyond their existing bounded Operator-approved dispositions. F11 remains open for its broader source-disposition and independent-verification gates. The approved F14 32-link destination exception remains separate from F11; no product image, source asset, or historical FootHive record was changed by these merges. No capability authentication/execution or live Production result is inferred from F09/F12/F13. M21-GIT-01 (20 unrecovered Cline checkpoint objects), M21/Phase 02 acceptance, and overall V003 closure remain pending. No branch was deleted.

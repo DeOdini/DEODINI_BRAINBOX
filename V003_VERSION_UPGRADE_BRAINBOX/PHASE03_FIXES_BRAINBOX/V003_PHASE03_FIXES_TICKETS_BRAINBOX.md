@@ -557,3 +557,13 @@ PR #38 merged into `main` at `8540440c6c41ddd8e373ff83cf00a10adb9c97e1`; the rem
 **F11:** `v003/f11-project-workflow-foothive-disposition` is the separate FootHive/RAW source-inventory ticket. Its audit ledger and report are being integrated without source operations. The F14 approval resolves only the catalog-path precedence question; it does not close the broader F11 source-disposition and independent-verification gates. **F11 remains OPEN.**
 
 **F09/F12/F13:** Operator-approved closure is limited to the recorded methodology, ownership, and conditional promotion-policy scopes. No live connector status, source transfer, or Production outcome is inferred. The historical proposal/pending entries remain preserved; the later approval record controls current scope.
+
+
+## V003-F09/F11/F12/F13 ? branch publication and merge status ? 2026-10-14
+
+The previously outstanding ticket branches are now merged to main through separate PRs: F11 #41 (f04f752), F12 #42 (4183b3e), F13 #43 (715fc15), and F09 #44 (36f5ddb). GitHub confirms all four PRs merged, and each branch has zero commits ahead of main.
+
+This is a Git integration status, not a blanket ticket-closure claim:
+- F11 remains OPEN for the broader source-disposition and independent-verification gates; only the narrow approved F14 catalog-link precedence exception is resolved.
+- F09/F12/F13 remain limited to their recorded Operator-approved methodology, ownership, and conditional promotion-policy scopes.
+- M21-GIT-01, renewed M21 acceptance, Phase 02 acceptance, and overall V003 closure remain pending.
