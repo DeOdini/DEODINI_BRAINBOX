@@ -889,6 +889,29 @@ Each record is written only in its responsibility's canonical home and cross-lin
 ### Decision gate
 
 **Operator approval requested:** approve this matrix as the F12 authority map, or identify specific rows to amend. Until that decision is recorded, the matrix is a Codex proposal only. F11's catalog decision remains separate and explicitly undecided. No independent ChatGPT verification is claimed in this execution report.
+
+
+## V003-F13 — Production DEVOPS case-study promotion rules — 2026-10-13
+
+**Status:** Draft promotion criteria prepared. F13 depends on the F12 authority matrix and needs Operator approval; **not closed**. No Production/Sandbox/Portfolio source record was changed, no evidence was copied, and no deployment or live check was performed.
+
+### Proposed evidence-based promotion criteria
+
+1. **Production release/deployment record:** Create or update a Production record only after an actual production release/deployment is evidenced. Record the application commit/ref, provider deployment/release identifier, environment, public URL where applicable, timestamp, observed status, and the source evidence. Missing details remain explicitly unknown; do not infer them from a Sandbox result or a Git merge alone.
+2. **Production post-release verification:** Record checks only when run against the actual production target and tied to the release/deployment identifier. Include observation time, target/environment, tools and versions where known, checks performed, results, and limits. A local preview or Sandbox check remains Sandbox evidence.
+3. **Incidents and regressions:** Add incident/regression records only for observed Production events. Link the affected release, evidence, impact, response, recovery/rollback if one occurred, and unresolved limitations. Do not populate incident or regression areas from hypothetical failure modes or old raw workflow material.
+4. **Rollback:** Record rollback only after an actual Production rollback operation, with the source/target release identifiers, time, reason, observed result, and supporting evidence. A rollback plan is a workflow/plan, not proof of a rollback event.
+5. **Operational lessons:** Promote a lesson into Production DEVOPS only when grounded in a verified Production operation or event. State the evidence and scope, distinguish inference from observation, and link back to the relevant canonical Sandbox trial evidence without copying the evidence set.
+6. **Monitoring and current-health claims:** Time-bound every monitoring/availability statement to its observation time, method and target. A past successful deployment or T20 browser check does not establish present service health.
+7. **Sandbox-to-Production boundary:** Sandbox observations may inform a future production procedure or lesson, but are not silently reclassified as production results. No bulk copy or status upgrade is performed.
+
+### Application to existing FootHive evidence
+
+The present Production record describes the documented T20 Netlify deployment on 2026-10-01 and its cited release checks. It does not document a post-T20 live recheck. The proposed rules therefore do not add a present-health claim, new release, incident, regression, rollback, or production lesson. The T20 record remains historical as written. The project remains a disclosed trial, not a paid-client engagement.
+
+### Decision gate
+
+**F12 dependency:** F12's proposed authority matrix has been recorded but awaits Operator approval. **Operator approval requested:** approve these F13 criteria after or together with the F12 matrix, or state row-level changes. Until both gates are satisfied, these are Codex proposals and F13 is not closed. No independent ChatGPT verification is claimed here.
 ---
 
 ## V003-F02 — final publication preflight and closure-gate result — 2026-10-13

@@ -554,6 +554,13 @@ GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf17
 **Codex:** Inspected the existing M15 Sandbox authority and evidence layout, M16 Production release records, Portfolio summary/handoff/reference, and F11 asset-source ledger. Prepared a responsibility-by-responsibility matrix separating trial history, active implementation, testing, production operation, Portfolio/handoff, assets, and future workflow iterations.
 
 **Codex status:** The matrix is presented for Operator approval, not represented as an approved authority change. No source file, frozen Specification, production deployment, or live site state was changed or tested. The F11 catalog precedence remains separately undecided.
+
+
+## V003-F13 execution record — Production promotion criteria proposal — 2026-10-13
+
+**Codex:** Reviewed the T20 Production release summary and lessons against the canonical M15 Sandbox evidence boundary and F12's proposed authority matrix. Prepared criteria for production releases, release-specific post-deployment checks, incidents/regressions, actual rollback events, production-derived lessons, time-bounded monitoring claims, and Sandbox-to-Production separation.
+
+**Codex status:** F13 criteria remain a proposal pending the F12 authority-matrix decision and Operator approval. No release, test, live check, incident, rollback, lesson migration, or evidence copy was created.
 ---
 
 ## V003-F02 — read-only final publication preflight — 2026-10-13
