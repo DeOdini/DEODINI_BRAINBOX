@@ -1,12 +1,12 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 ACTIVE; BATCH B OPERATOR ACCEPTED; BATCH C OPERATOR ACCEPTED; BATCH D AUTHORIZED; F10 CLOSED; F16 ACCEPTED IN BATCH D; F11 EVIDENCE INVENTORY COMPLETE, FINAL CATALOG DISPOSITION UNDECIDED; F12/F13/F09 IN PROGRESS; F01 DISPOSITION RECORDED; RENEWED M21 REVIEW AND OPERATOR ACCEPTANCE PENDING]
+**STATUS:** [PHASE 03 ACTIVE; BATCH A-D OPERATOR-ACCEPTED; F02 PR #40 merged; F09/F12/F13 non-Cline scopes approved for bounded closure; F11 source-disposition audit remains open; F14 32 catalog-link corrections limited to approved destination-only changes; M21/PHASE 02/V003 final acceptance pending]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [PHASE 03 ACTIVE; F01 LIMITED-UNAVAILABILITY DISPOSITION RECORDED; RENEWED M21 REVIEW PENDING; BATCH B AND C OPERATOR ACCEPTED; BATCH D AUTHORIZED; F10 CLOSED; F16 ACCEPTED; F11 INVENTORY RECORDED WITH FOUR CATALOGS UNDECIDED; F12/F13/F09 REMAIN OPEN]
-**LAST UPDATED:** 2026-10-13 — Codex; Batch D execution underway. F11 source ledger and evidence report are recorded on `v003/f11-project-workflow-foothive-disposition`; four F03/F14 catalog precedence remains Operator-undecided; no FootHive/RAW source operation performed.
+**POPULATION:** [F01-F16 records present; F11 source ledger included; F11 full source-disposition ticket remains open; F09/F12/F13 closure limits and Cline/M21 exception recorded]
+**LAST UPDATED:** 2026-10-14 - Codex reconciled F11 source-disposition scope with the separate F14 catalog-link corrections; earlier dated entries remain historical.
 
 ## Local tree
 ```text
@@ -16,7 +16,7 @@ PHASE03_FIXES_BRAINBOX/
 ├── F11_FOOTHIVE_SOURCE_DISPOSITION_PHASE03_FIXES_BRAINBOX.csv [F11 per-file FootHive and RAW source ledger]
 ├── V003_FIXES_REPORT_BRAINBOX.md
 ├── V003_FIXES_CONVO_BRAINBOX.md
-└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; Batch B/C accepted; Batch D F10/F16/F11 progress recorded; F11 disposition open]
+└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; Batch B Operator accepted; Batch C F15/F08/F14/F07 outcomes recorded; Batch C Operator acceptance pending]
 ```
 
 ## Navigation
