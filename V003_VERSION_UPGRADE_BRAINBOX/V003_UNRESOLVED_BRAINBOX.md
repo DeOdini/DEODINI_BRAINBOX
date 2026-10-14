@@ -1,12 +1,12 @@
 # V003_UNRESOLVED_BRAINBOX
 
-**Status:** OPEN — reconciliation record prepared; no V003 closure claimed
+**Status:** QUALIFIED CLOSED — Operator-directed closure with unresolved follow-up items retained in this register
 **Record type:** V003 authority/support record; outside the frozen operational target tree
 **Prepared:** 2026-10-14
 **Current repository baseline:** main / origin/main tracking ref at 07274d32eea4a268e27fd7804b8666dc09181292
 **Execution branch:** v003/recycle-bin-and-unresolved-register
 **Verifier:** Codex execution review; independent ChatGPT review is pending
-**V003 final status:** NOT YET FORMALLY CLOSED — QUALIFIED CLOSURE REVIEW PENDING
+**V003 final status:** QUALIFIED CLOSED BY OPERATOR DIRECTION — unresolved follow-up items remain open for later access
 
 ## Purpose and authority
 
@@ -309,7 +309,7 @@ Prior verification figures cited below remain attributed to their original repor
 
 The table maps the principal frozen requirements to their migration records and current evidence. The detailed register entries above state the remaining work and closure conditions. The full M01–M21 ticket plan, all F01–F16 records, and source-level dispositions remain reachable from the linked ticket/report/map files; their historical checkpoints are not rewritten here.
 
-## Qualified-closure assessment
+## Qualified-closure assessment — historical pre-Operator-decision checkpoint (superseded 2026-10-14)
 
 This register does not itself close V003. The current record supports no final qualified-closure recommendation yet: M21-GIT-01 remains an acceptance blocker pending renewed independent review and explicit Operator M21/Phase 02 acceptance; F02 remains NOT PASSED / OPEN; and F11 remains open for broad source disposition and independent verification. Approved retention decisions and intentionally planned structures may be carried forward only within their recorded scopes, but they do not waive those blocking gates.
 
@@ -353,7 +353,7 @@ Task A, the proposed root-level RECYCLE_BIN_BRAINBOX, was **not implemented**. S
 **Current status after recording:** RECYCLE BIN CREATED LOCALLY; F11 ORIGINAL-PATH RETENTION APPROVED; M21 QUALIFIED EXCEPTION APPROVED; F02/V003 FINAL INDEPENDENT CLOSEOUT VERIFICATION AND PUBLICATION STILL PENDING. No Git commit/push/merge by ChatGPT.
 
 
-## Current qualified-closure assessment after Operator dispositions — 2026-10-14
+## Current qualified-closure assessment after Operator dispositions — historical checkpoint (superseded by final clarification, 2026-10-14)
 
 The pre-decision entries above remain historical checkpoints. Current disposition: the Recycle Bin is created locally under the approved additive governance extension; no legacy sources were moved or deleted. F11's original-path choice is resolved, while per-file source-ledger reconciliation, independent verification, and formal ticket acceptance remain open. The Operator accepted the bounded treatment for the 20 unrecovered M21 Cline objects; those objects remain unrecovered, and renewed independent M21 review plus final M21/Phase 02 acceptance recording remain pending. The Operator agreed to a qualified F02/V003 closeout route, but the integrated F02 verification has not been completed and F02 remains NOT PASSED / OPEN.
 
@@ -381,3 +381,34 @@ I do not recommend qualified V003 closure yet. The outstanding independent M21 r
 **M21-GIT-01 object check:** The 20 original checkpoint SHAs preserved in the M01 Migration Map were rechecked in the active Brainbox repository using `git cat-file -e <sha>^{commit}`, `git reflog --all`, and `git fsck --full --no-reflogs --unreachable`: **0/20** were found in any of these checks. The known `C:\Users\USER\pedestal-archive` Git repository was also checked with `git cat-file`: **0/20**. No object, ref, reflog, or history was modified. The active repository currently reports 512 unreachable objects (8 commits, 301 trees, 203 blobs); none is one of the 20 named SHAs. This differs from older dated object-count reports; no cause for the count difference is inferred, and the current object store must be preserved.
 
 **F02 result boundary:** This is a new Codex read-only check, not the required independent ChatGPT review. It confirms live-main alignment, existing ticket-branch ancestry, and the bounded current-repository unavailability of the 20 listed objects. It does not claim recovery, global irrecoverability, renewed independent M21 PASS, F02 PASS, Phase 02 acceptance, or final V003 closure. F11's 87-file local path/hash check is recorded immediately above; independent ChatGPT review and formal ticket acceptance remain pending. No push or merge occurred.
+
+
+## Operator V003 final-verdict authority — F02 carried forward in Unresolved Register — 2026-10-14
+
+**Operator instruction (verbatim):** "YOU CAN RECORD THE F02 IN UNRESOLVED, WHICH MAKES V003 FINAL ACCEPTENCE MY VERDICT."
+
+**Disposition:** Retain V003-F02 in this register as a **carried-forward unresolved integrated-verification and closure-evidence obligation**, with references to V003 Phase 03 F02 ticket, report and conversation; M21 source ledger and tree snapshot in Version History; the 2026-10-14 F11 87/87 independently reproduced source/hash check; the independent 0/20 bounded M21 Git object-readability checks; and GitHub PRs #35–#46 / local branch verification. The F02 ticket record is not deleted, rewritten or converted to a technical PASS merely by entry in this register.
+
+**Operator's final decision authority:** The Operator explicitly reserves **V003 FINAL ACCEPTANCE AS THE OPERATOR'S VERDICT**, with F02 and any residual qualifications maintained here for future remediation. This is an instruction to treat F02 as a transparently accepted carry-forward candidate for a qualified V003 closeout, **not** a statement that the Operator has already issued a final PASS/closure verdict in this sentence. No automatic closure or waiver of independent verification is inferred.
+
+**Current evidence:** F11 retains all 87 source files at original paths, with independent 87/87 SHA-256 confirmation. The M21 20-SHA inventory remains 0/20 readable in current DEODINI BRAINBOX and pedestal-archive object stores; the bounded limited-unavailability disposition is approved. The frozen V003 specification tree, intentionally planned paths, retained source safeguards, M19 historical byte differences, F07 Windows path caveat, F14 parser methodology and unverified live capabilities/production claims remain documented under their preceding entries. New Recycle Bin is an approved post-freeze governance extension with no archived historical source moves.
+
+**What F02 still needs:** A dated integrated assessment of current merged main, documented exceptions, outstanding reports and the local unmerged closure-support branch; preservation of exact source and acceptance references; and an explicit final Operator V003 verdict. Publishing or merging the current local closure-support branch remains a separate Git action until specifically authorized.
+
+**Status:** F02 **RECORDED AS UNRESOLVED/CARRIED FORWARD**; FINAL V003 ACCEPTANCE **RESERVED TO OPERATOR VERDICT, NOT YET DECLARED OR PUBLISHED**. This later decision supersedes older wording suggesting that F02 must be technically closed before the Operator may consider a qualified final verdict, but it does not falsify F02 execution status or rewrite prior checkpoints.
+
+---
+
+## Operator clarification — qualified V003 closure with follow-ups deferred — 2026-10-14
+
+**Operator instruction (verbatim):** "THOSE WERE MEANT TO BE IN UNRESOLVED... ONCE RECORDED THERE WE CAN THEN SAY IT IS CLOSED, WITH THE UUNRESOLVED AS WHAT TO DO LATER ON, BUT SURELY IT CAN BE TAGGED.
+
+THOSE FEW UNRESOLVED I NEED TIME TO ACCESS THEM."
+
+**Current disposition:** The Operator directs that the outstanding matters documented in this register remain as unresolved follow-up work for later access. Their unresolved state does not prevent the project-level qualified closure described here. The current V003 status is **QUALIFIED CLOSED — unresolved follow-up items remain open and documented for later work**.
+
+**Closure meaning:** This records the Operator's qualified V003 closeout direction. It does not claim the 20 Cline checkpoint objects were recovered, that every ticket-level technical check passed, that every historical source question is resolved, or that planned capabilities were implemented. Each open item retains its individual evidence, limitation, and future action in this register. The Operator may return to any item when the relevant records or access are available.
+
+**History and authority:** This is the current project-level disposition. Earlier dated assessments and ticket-specific states remain preserved as historical checkpoints; their technical findings are not rewritten. The scoped decisions in the preceding Operator records remain intact.
+
+**Tag/publication boundary:** “QUALIFIED CLOSED” is the documentation status recorded here. No Git tag, push, PR, or merge was created by this append; publication remains a separate repository action.
