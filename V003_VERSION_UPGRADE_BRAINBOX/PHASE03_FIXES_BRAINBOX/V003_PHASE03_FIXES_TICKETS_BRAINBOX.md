@@ -559,7 +559,7 @@ PR #38 merged into `main` at `8540440c6c41ddd8e373ff83cf00a10adb9c97e1`; the rem
 **F09/F12/F13:** Operator-approved closure is limited to the recorded methodology, ownership, and conditional promotion-policy scopes. No live connector status, source transfer, or Production outcome is inferred. The historical proposal/pending entries remain preserved; the later approval record controls current scope.
 
 
-## V003-F09/F11/F12/F13 ? branch publication and merge status ? 2026-10-14
+## V003-F09/F11/F12/F13 - branch publication and merge status - 2026-10-14
 
 The previously outstanding ticket branches are now merged to main through separate PRs: F11 #41 (f04f752), F12 #42 (4183b3e), F13 #43 (715fc15), and F09 #44 (36f5ddb). GitHub confirms all four PRs merged, and each branch has zero commits ahead of main.
 
