@@ -912,6 +912,84 @@ The present Production record describes the documented T20 Netlify deployment on
 ### Decision gate
 
 **F12 dependency:** F12's proposed authority matrix has been recorded but awaits Operator approval. **Operator approval requested:** approve these F13 criteria after or together with the F12 matrix, or state row-level changes. Until both gates are satisfied, these are Codex proposals and F13 is not closed. No independent ChatGPT verification is claimed here.
+
+
+## V003-F09 — FUNC CORE/EXE source-to-target integrity — 2026-10-13
+
+**Status:** Eight-agent source mapping and evidence classification are complete. The revised intake questionnaire below is a proposal; **Operator approval is pending** before changing the mandatory `FUNC_REQ_BRAINBOX.md` or any CORE/EXE record. F09 is not closed.
+
+### Source and target integrity
+
+Reviewed the eight legacy files named in the F09 scope, all eight corresponding CORE records, the CORE registry README, EXE registry and its five category records, `FUNC_REQ_BRAINBOX.md`, and the legacy `FQ_MUST_README.md` routing notice. The accompanying `F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv` maps each agent's source and CORE path, current SHA-256, M01 baseline match, dated status/claim classification, M06 EXE disposition, authority boundary and last-verified scope.
+
+**Integrity:** 8/8 legacy source hashes match the M01 baseline values recorded in the Migration Map; 8/8 current CORE hashes match the CSV readback; 0 hash/baseline failures. All eight agents have a source-to-CORE row. The two short DeepSeek/Qwen files are placeholder notices, not capability reports, and are not promoted as populated knowledge.
+
+### Capability classification
+
+- **ChatGPT, Claude, Cline, Copilot, Grok:** legacy reports are dated self-reports or configuration statements. The CORE files mark present runtime states UNKNOWN / NOT VERIFIED. Old connector/skill listings do not prove current exposure, connection, authentication, execution or authorization.
+- **Cline:** its source contains both an initial failed file-write diagnostic and a later capability report. These remain separate historical facts; neither is generalized into current execution status.
+- **Copilot:** configured Playwright/MCP references are historical configuration evidence only. M06 explicitly did not admit Copilot Browser execution; configuration does not prove server startup, connection, authentication or successful browser operation.
+- **DeepSeek and Qwen:** the source files are pending-report placeholders. CORE records use only the frozen Specification §9 Operator-approved role/limitation baseline: research/creation, quick client-preview and downloadable/package delivery; direct local DEODINI integration is limited; operational connector/authentication/execution states remain UNKNOWN / NOT VERIFIED. No production or migration authority is inferred.
+- **Codex:** the CORE file records positive, time-scoped M05 evidence dated 2026-10-08, including specified GitHub/RDC operations. This is not a standing permission or a blanket claim about later sessions. In this F09 session Codex also performed task-scoped local file and Git operations and published the F11 branch; the GitHub account identity was not separately queried. This current observation does not automatically update the canonical CORE record.
+- **M06 EXE boundary:** only Codex is admitted to RESEARCH, BROWSER, FILE and CODE, within the cited evidence scopes. ChatGPT, Claude, Cline, Copilot, DeepSeek, Grok and Qwen have no M06-admitted category. MEDIA remains RESERVED / EXECUTION EVIDENCE PENDING, not admitted. No additional category is proposed.
+
+### Proposed intake questionnaire — approval required
+
+For each connector, skill, other tool/API, or email item, retain the original five requested descriptive dimensions: (a) inventory/status, (b) linkage, (c) purpose, (d) active usage, and (e) safe test examples/results. For RDC retain its four fields: connected device, access level, active use, and examples. Then add this separate evidence block so narrative linkage is not mistaken for capability proof:
+
+1. **EXPOSED:** YES / NO / UNKNOWN; exact session/tool inventory and observation date.
+2. **CONNECTED:** YES / NO / UNKNOWN; named target and whether it responded in the relevant runtime.
+3. **AUTHENTICATED:** YES / NO / UNKNOWN; only non-secret evidence and identity scope if actually verified. Never record a token, password, recovery code, or secret value.
+4. **EXECUTABLE:** YES / NO / UNKNOWN; exact successful operation, environment, result, evidence reference and date. Suggested test examples are not execution evidence.
+5. **AUTHORIZED:** action-specific scope, Operator/authority source, date and expiry/one-time boundary; otherwise UNKNOWN / NOT GRANTED. Technical access is not authorization.
+6. **LIMITATIONS:** missing access, uncertainty, known constraints and scope exclusions.
+7. **CANONICAL EXE REFERENCE:** admitted category record, or “none admitted” under the frozen M06 matrix.
+8. **LAST VERIFIED / VERIFIER / SOURCE RECORD:** date, exact evidence checked, agent/runtime, and verifier; distinguish live testing from source-file/hash review.
+
+Each claim must remain time- and environment-scoped. “Linked” is a descriptive field, not a replacement for CONNECTED or AUTHENTICATED. “Test examples” are labeled as proposed until actually run. A successful action grants no standing permission for future writes, sends, pushes, merges, migration or deployment.
+
+### Decision gate and limits
+
+**Operator approval requested:** approve this intake method before any change to the mandatory questionnaire or CORE/EXE records, or specify changes. Until then it remains a Codex proposal. The 8/8 mapping is complete, but the F09 pass condition requiring an approved intake method is not met. No legacy or CORE source was changed; no credentials or secret values were copied; no new agent category was created. Independent ChatGPT verification is not claimed in this Codex report.
+
+## Batch D publication and remaining Phase 02 merge verification — 2026-10-13
+
+**Operator authority:** The Operator directed publication of all remaining Phase 03 verification-modified work, completion of Batch D ticket work, and merging every remaining Phase 02 branch while leaving Phase 03 fixes unmerged. The F11 catalog precedence answer remains expressly **UNDECIDED**.
+
+### Batch D branch publication
+
+| Ticket | Remote branch | Published checkpoint(s) | Current recorded gate |
+|---|---|---|---|
+| F10 | v003/f10-skills-legacy-authority-disposition | 12147362c8fec22457bb30e1d3d3f8fb48e2d0d5 | Closed by approved keep-in-place disposition. |
+| F16 | v003/f16-architecture-decisions-ownership | 8ef230785b617f58f0e6b4d6b959533295b1b237 (remote tip observed during this check) | Operator-accepted under Batch D; no architecture source changed. |
+| F11 | v003/f11-project-workflow-foothive-disposition | ee85c3e7e26aa4d7b273ca2e3f3f0c6ec871dbc8 | Evidence inventory published; four F03/F14 catalog precedence remains undecided. |
+| F12 | v003/f12-foothive-canonical-authority-matrix | 7bffe371758c17640e8fe04a9acb3994030f8e31 | Matrix proposal published; Operator approval pending. |
+| F13 | v003/f13-production-case-study-promotion-rules | 9fed90deca74ac64abd24a564797ade93ab6d0c2 | Criteria proposal published; F12 and Operator approval pending. |
+| F09 | v003/f09-func-core-exe-source-integrity | e3e4da3e (traceability) and 12e46b1 (Batch D/Phase 02 closeout record) | Eight-agent mapping published; intake questionnaire approval pending. |
+
+A fresh fetch verified the local and remote tips match for F11, F12, F13 and F09; the F09 worktree was clean before this final closeout append. The F01–F16 branches remain unmerged and no Phase 03 PR is open. F11/F12/F13/F09 are evidence/proposal-complete for the work performed, but their pending Operator decisions mean Batch D is **not declared closed** by Codex.
+
+### Remaining Phase 02 Git merges
+
+The three remaining Phase 02 branches were merged individually into main, in dependency order, after local ancestry/merge-tree checks showed no content conflicts:
+
+| Ticket | Pull request | Merge commit | Result |
+|---|---|---|---|
+| M19 | [PR #35](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/35) | 3a8106c303b23421331ad437cd4f5bb629d3bdda | Merged. |
+| M20 | [PR #36](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/36) | 5b4a1bac64a7a2bc8b520da4767f428164664b6b | Merged. |
+| M21 | [PR #37](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/37) | 1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a | Merged; this does not itself accept/close M21 or Phase 02. |
+
+**Final repository check:** origin/main is 1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a. M19, M20 and M21 branch tips are all ancestors of main. The complete remote --no-merged origin/main result consists of exactly v003/f01 through v003/f16; no non-Phase-03 branch remains unmerged. GitHub returned no open PRs after the three merges.
+
+**Acceptance boundary:** The Phase 02 Git lifecycle is synchronized for M19–M21, but the earlier F01/M21-GIT-01 historical checkpoint-object limitation and renewed M21 acceptance review remain open. This report does not claim Phase 02 acceptance, M21 PASS, or V003 final closure. Phase 03 branches remain unmerged as instructed.
+
+
+
+## Post-push verification and Windows path-scan note — 2026-10-13
+
+After publishing the Batch D/Phase 02 closeout commit 12e46b1, a fresh fetch confirmed F09 local HEAD equaled origin/v003/f09-func-core-exe-source-integrity at 12e46b1b9c9aa11e1e7b3669459292aa7b559ae6; origin/main remained 1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a. The remote unmerged list remained exactly Phase 03 branches F01–F16, and the GitHub open-PR query returned zero results.
+
+The final Windows Git status scan printed five “Filename too long” warnings for the known T23 Playwright evidence paths under EVIDENCE_FH_BRAINBOX/T23_MOBILE_HEADER_FH_BRAINBOX/PLAYWRIGHT_CLI_FH_BRAINBOX. The warning matches the already-recorded F07 Windows path-compatibility limitation. No long-path files were staged or altered, and no core.longpaths setting or directory rename was made. The status output showed no other worktree changes before this report correction. This note does not claim that Windows Git could inspect those five paths.
 ---
 
 ## V003-F02 — final publication preflight and closure-gate result — 2026-10-13
