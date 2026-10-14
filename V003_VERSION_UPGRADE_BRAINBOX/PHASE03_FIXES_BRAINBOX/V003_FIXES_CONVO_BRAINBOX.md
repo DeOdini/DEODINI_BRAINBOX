@@ -571,3 +571,20 @@ CONDUCT THE FIX AND MERGE ON THE PHASE03 F02 BRANCH OF THE `M21-GIT-01`   SINCE 
 ### Codex response
 
 The Operator authorized the correction on `v003/f02-final-publication-verification` and its merge to `main`. The current comparison confirms M21 PR #37 is already merged, while the F02 branch contains cumulative Phase 03 history. The correction records the already approved limited-unavailability disposition without claiming the 20 checkpoint objects were restored or globally irrecoverable. It preserves the remaining renewed M21 review and Operator-acceptance gates. The F02 PR contents and resulting merge will be checked and documented separately; no automatic M21, Phase 02, or V003 acceptance is inferred.
+
+
+---
+
+## Operator → ChatGPT — F11/F09/F12/F13 disposition — 2026-10-14
+
+**Operator verbatim:** "My V003 Phase 03 disposition choices are: F11: approve; F09: approve; F12: approve; F13: approve. Treat these as Operator decisions with the restrictions already discussed: F11 only the 32 demonstrated link-target corrections, F09 only the evidence-methodology approval, F12 only verified authority ownership, and F13 contingent on F12. Record decisions in the project report, conversation, ticket register and migration map, perform independent verification, and do not stage, commit, push, merge, or alter protected source without separate authorization."
+
+**ChatGPT:** Recorded the four approval boundaries without changing historical sources or claiming complete technical-ticket verification. F11 permits only the 32 existing destination-only link repairs; F09 approves method, not live capabilities; F12 approves verified responsibility divisions, not file transfers; F13 is conditional on F12 validation and requires actual Production proof. Previous UNDECIDED/PENDING entries remain as dated history. Local documentation appended to report, conversation, ticket register and migration map; Git publication is separately controlled.
+
+---
+
+## Operator → ChatGPT — non-Cline Phase 03 closure authorization — 2026-10-14
+
+**Operator verbatim:** "RECORD YOUR CLOSURE REPORT AS APPROVED BY ME, WHILE I ORDER CODEX TO CARRY OUT THE CLOSURE, STAGE, COMMIT AND PUSH AND MERGED."
+
+**ChatGPT disposition:** Operator approved scoped closure of verified Phase 03 non-Cline work. F11 32 existing image-link destination-only edits; F09 evidence/intake method (not live connector proof); F12 documented FootHive record ownership (not source relocation); F13 Production promotion criteria effective after F12 verification (not real Production verification). Preserve remaining historical provenance/qualification limits. Twenty unrecovered Cline checkpoint SHA objects remain under separately open M21-GIT-01. F02 final PASS, M21 acceptance, Phase 02 closure and V003 closure are not implied. Codex, under Operator direction, owns stage/commit/push/merge and reporting; ChatGPT performs local documentation recording only.
