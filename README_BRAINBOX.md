@@ -744,3 +744,10 @@ The records below are V003 audit/closeout support, not new operational branches 
 Current final status remains NOT CLOSED: M21-GIT-01 is still pending renewed independent M21 review and explicit Operator acceptance; F02 is NOT PASSED / OPEN; broader F11 source disposition remains OPEN. The non-Cline Phase 03 closures and the Batch E Git merges do not themselves close Phase 02 or V003. See the Unresolved Register for exact evidence and closure conditions.
 
 The proposed root RECYCLE_BIN_BRAINBOX directory is not present. Specification §8 does not include that root branch; its addition remains subject to a separate Operator authority decision.
+
+## Post-V003 governance extension — Recycle Bin (Operator-approved 2026-10-14)
+
+[RECYCLE_BIN_BRAINBOX/](RECYCLE_BIN_BRAINBOX/README_RECYCLE_BIN_BRAINBOX.md) is an additive retirement archive approved by the Operator outside the frozen V003 Specification §8 root tree. The frozen V003 target and Origin Conversation remain unchanged. No V003 legacy sources were retired or moved by creating it. See the [V003 Unresolved Register](V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md) for four-step Operator closeout dispositions and carry-forward qualifications.
+
+
+**Decision update after the pre-approval checkpoint — 2026-10-14:** The earlier “not present” statement records the state before approval. RECYCLE_BIN_BRAINBOX is now created locally under the Operator-approved post-freeze governance extension. F11 original-path retention is approved; per-file reconciliation and independent verification remain open. The M21 limited-unavailability treatment is approved; renewed independent M21 review remains pending. F02 and final Phase 02/V003 acceptance remain pending.

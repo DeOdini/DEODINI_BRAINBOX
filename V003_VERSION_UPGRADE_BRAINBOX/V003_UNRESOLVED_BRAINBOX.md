@@ -318,6 +318,8 @@ V003 FINAL STATUS: NOT YET FORMALLY CLOSED — QUALIFIED CLOSURE REVIEW PENDING
 
 ## Execution scope and Recycle Bin stop gate
 
+**Historical pre-approval checkpoint:** The Task A state and Git-operation statements in this section describe the initial review before the Operator dispositions below. The later decision supersedes the Recycle Bin hold and creation status only; it does not authorize source retirement, push, or merge.
+
 Task B was implemented as a V003 support record. The frozen Specification and Origin Conversation were not edited. No historical source, evidence file, product image, checkpoint object, source asset, or legacy record was moved, copied, renamed, normalized, or deleted.
 
 Task A, the proposed root-level RECYCLE_BIN_BRAINBOX, was **not implemented**. Specification §8 defines the authoritative V003 target tree as the agreed/directly required tree and does not include this additional root directory. Adding it would extend the frozen root hierarchy and would require an authority decision that this instruction expressly says to request rather than assume. No Recycle Bin directory, README, ledger, or .gitkeep was created. The Operator must separately decide whether to amend the frozen hierarchy through its governed process or withdraw/change the proposed root location. This stop affects Task A only; it does not convert the Recycle Bin into a V003 migration requirement.
@@ -331,3 +333,28 @@ Task A, the proposed root-level RECYCLE_BIN_BRAINBOX, was **not implemented**. S
 - Stage/commit/push/merge: not yet performed at the time of drafting. The authorized next local Git step is to stage only the listed documentation files and create a ticket-scoped commit after the checks below. Push and merge are not authorized.
 - Verification contract: independent ChatGPT review should check each register entry against its cited records, the exact tree/support boundary, the current status, local links, and scoped diff before the Operator considers further publication.
 - Checks planned for this change: review the changed-file list and diff; run Git whitespace validation; inspect link targets added by this record. No application tests are applicable or were run.
+
+
+---
+
+## Operator four-step disposition — 2026-10-14 (supersedes prior pending proposals only within explicit scope)
+
+**Operator exact decision:** "STEP 1 I APPROVE; STEP 2 ORIGINAL PATH; STEP 3 APPROVED; STEP 4 AGREED; ALL UNRESOLVED V003, SHOULD GO INTO THE UNRESOLVED FILE WITH REFERENCE."
+
+1. **Recycle Bin:** Explicitly APPROVED as an additive post-freeze root governance extension at RECYCLE_BIN_BRAINBOX/, leaving the frozen V003 Specification §8 and Origin Conversation unchanged. README, retirement ledger and empty retired-items placeholder created under this new authority. **No legacy source has been moved or deleted.** This resolves the earlier Task A architecture-authorization hold, but publication and future individual retirements are separate gates.
+2. **F11 — original path:** Operator directs RETAIN AT ORIGINAL PATH for the broader FootHive Project Workflow/RAW source set documented in the published F11 inventory and its source-reference safeguards. Do not move, rename, copy, retire, normalize or delete any F11 source on the strength of this decision. The separate F14 32-link path-only exception remains in force. **F11 disposition-decision hold is resolved; individual source-ledger completeness, independent verification and formal F11 acceptance still require recording**, not automatic PASS.
+3. **M21-GIT-01 — approved limited-history qualification:** Operator APPROVES proceeding with M21 qualified acceptance **despite the 20 unrecovered Cline checkpoint commit objects**, subject to the existing bounded unavailability evidence and renewed independent verification. Preserve the 20 exact SHAs, investigation search boundary, unknown cause and possibility of future recovery. Do not represent them as recovered or authorize GC, pruning, history rewrite or manufactured replacement commits. **Approval of the exception is recorded; this does not claim a newly completed independent M21 recheck.**
+4. **F02/V003 — agreed qualified-closeout route:** Operator AGREES to a qualified final integration review and acceptance process that carries all explicitly documented remaining items in this register. This is not a new verification result or evidence that F02/Phase 02/V003 final closeout has been executed. **Keep formal final-closeout status pending completion of that verification and its record.**
+
+**Carry-forward unresolved/restricted references:** M21-GIT-01 20-object provenance; F02 integrated verification and final closeout; F11 source-ledger per-file verification/acceptance; F03 / M15-ASSET-01 (29 retained historical FootHive files); F04 / M17-DEST-01 (two retained milestones); F05 / M19-HIST-01 (raw-byte/line-ending qualifier); F06 / M20-REF-01 (substantive legacy retention); F07 (Windows T23 long paths); F09 (live agent connectivity/execution NOT certified); F10 (historical Skills reference retained); F12/F13 (policy authority does not certify live production); F14-METHOD-01 (historic parser unknown); F16 (project ADR remains empty); §8 planned PASSED/FAILED Sandbox folders; §9 reserved MEDIA; §21 planned FootHive iterations 02/03 and mastery; §28 planned Router/Agentic infrastructure; intended empty .gitkeep Skills/Fullstack/DEVOPS placeholders. Refer to existing entries above and the Migration Map source ledger for exact file identity and current disposition. These are not all active closure blockers: some are accepted limits, planned work, or retention safeguards.
+
+**Decision hierarchy:** This dated Operator approval supersedes earlier proposal/PENDING language **only** for the four named choices. It does not rewrite historical observations, authorize additional source operations, or convert unverified future work to completed functionality.
+
+**Current status after recording:** RECYCLE BIN CREATED LOCALLY; F11 ORIGINAL-PATH RETENTION APPROVED; M21 QUALIFIED EXCEPTION APPROVED; F02/V003 FINAL INDEPENDENT CLOSEOUT VERIFICATION AND PUBLICATION STILL PENDING. No Git commit/push/merge by ChatGPT.
+
+
+## Current qualified-closure assessment after Operator dispositions — 2026-10-14
+
+The pre-decision entries above remain historical checkpoints. Current disposition: the Recycle Bin is created locally under the approved additive governance extension; no legacy sources were moved or deleted. F11's original-path choice is resolved, while per-file source-ledger reconciliation, independent verification, and formal ticket acceptance remain open. The Operator accepted the bounded treatment for the 20 unrecovered M21 Cline objects; those objects remain unrecovered, and renewed independent M21 review plus final M21/Phase 02 acceptance recording remain pending. The Operator agreed to a qualified F02/V003 closeout route, but the integrated F02 verification has not been completed and F02 remains NOT PASSED / OPEN.
+
+I do not recommend qualified V003 closure yet. The outstanding independent M21 review, F11 verification/acceptance, and integrated F02 review must be completed and recorded. The accepted limited-history treatment, retention decisions, and intentionally planned states do not by themselves block closure once their conditions are satisfied; they also do not waive the remaining verification gates. No publication, merge, or final Operator closure is claimed here.
