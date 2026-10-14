@@ -2,8 +2,8 @@
 
 **Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
 **Operator authority:** DEODINI - OPERATOR
-**Current phase:** V003 Phase 02 - Batches A-D closed; M01-M18 independently verified and merged. M19-M20 independently verified/published but unmerged. M21 snapshot/ledger independently checked by ChatGPT (2026-10-11), but M21-GIT-01 remains BLOCKING; Operator recovery/disposition and acceptance are pending. Phase 02 NOT CLOSED.
-**Migration status:** V003-M01-M21 AUTHORIZED / M01-M18 VERIFIED AND MERGED / M19-M20 INDEPENDENT PASS, PUBLISHED, UNMERGED / M21 SNAPSHOT+MAP VERIFIED, GIT CHECKPOINT 20/20 UNAVAILABLE IN CHECKED SOURCES; M21-GIT-01 BLOCKING, NOT ACCEPTED / M15-ASSET-01, M17-DEST-01, M19-HIST-01, M20-REF-01, M01-GIT-01 OPEN WITH SOURCE-SPECIFIC RESTRICTIONS / PHASE 02 OPEN; OPERATOR CLOSURE AND MERGE AUTHORITY RETAINED
+**Current disposition (2026-10-14):** V003 is QUALIFIED CLOSED by Operator direction. Unresolved follow-up items remain open in `V003_UNRESOLVED_BRAINBOX.md` for later work. This is a project-level documentation status; it does not claim that every ticket received technical PASS or that the 20 Cline checkpoint objects were recovered.
+**Migration record:** Ticket execution, verification, and Git integration details remain in the Phase 02 reports and Migration Map. V003's project-level status is QUALIFIED CLOSED by Operator direction (2026-10-14); unresolved limitations, historical qualifications, and later work remain listed in `V003_UNRESOLVED_BRAINBOX.md`. This status does not create blanket ticket-level technical PASS.
 
 ## Purpose
 
@@ -339,3 +339,21 @@ Only the two approved M18 records exist under `MILESTONES_BRAINBOX/`, and both r
 V003-M15 through V003-M18 were cross-checked, pushed, and merged to main in dependency order. Batch D report and conversation are in the Phase 02 report/conversation files; Migration Map §52 records branch tips, merge commits, target dispositions, and open flags. The final closeout branch was fast-forwarded to main and fetch-verified.
 
 M19 is authorized and may begin after Batch D closeout with its own P14 preflight. M15-ASSET-01 and M15-REF-01 remain explicit; M16-README-01 is assigned to M19. M17-DEST-01 remains open and blocks any physical relocation or retirement of the two legacy milestone records pending Operator disposition. No M20 source removal is allowed while that flag remains unresolved.
+
+
+## Current V003 closeout status and support records — 2026-10-14
+
+The frozen operational target tree and the V003 authority model are unchanged. The records below are audit/closeout support, not competing architecture authorities.
+
+- [V003 Unresolved Register](V003_UNRESOLVED_BRAINBOX.md) — permanent record of incomplete, unverified, accepted-limitation, retained-historical, and planned V003 matters.
+- [Phase 03 fixes README](PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — ticket evidence, verification boundaries, and current Phase 03 status.
+- [Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — living source and migration ledger.
+- [V003 Tree Snapshot](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/TREE_SNAPSHOT_V003_BRAINBOX.md) — actual V003 physical-tree snapshot.
+
+**Historical closeout checkpoint — 2026-10-14, before the Operator's final qualified-closure clarification:** At that checkpoint, the M21-GIT-01, F02, and broader F11 findings below were recorded as outstanding. Their underlying evidence and technical limitations remain unchanged and are retained in the Unresolved Register; the later project-level closure direction does not turn them into technical PASS. Do not infer current Production health or capability connectivity from merged commits.
+
+**Historical Recycle Bin checkpoint — 2026-10-14:** At this checkpoint the additive RECYCLE_BIN_BRAINBOX folder had not yet been created. It was subsequently created under the Operator-approved post-freeze governance extension; the frozen §8 hierarchy remains unchanged.
+
+## Operator-qualified V003 closeout — current disposition — 2026-10-14
+
+V003 project-level status is **QUALIFIED CLOSED BY OPERATOR DIRECTION**. Open limitations and future actions remain listed in [V003_UNRESOLVED_BRAINBOX.md](V003_UNRESOLVED_BRAINBOX.md). This status records the Operator's decision to close with follow-ups carried forward; it does not assert blanket technical PASS, recover the 20 Cline checkpoint objects, or implement planned capabilities.
