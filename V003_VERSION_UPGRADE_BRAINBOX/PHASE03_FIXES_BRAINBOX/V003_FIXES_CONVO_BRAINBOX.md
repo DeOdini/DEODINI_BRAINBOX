@@ -554,3 +554,52 @@ GitHub branch `v003/f16-architecture-decisions-ownership` now points to `e8dbf17
 **Codex:** Inspected the existing M15 Sandbox authority and evidence layout, M16 Production release records, Portfolio summary/handoff/reference, and F11 asset-source ledger. Prepared a responsibility-by-responsibility matrix separating trial history, active implementation, testing, production operation, Portfolio/handoff, assets, and future workflow iterations.
 
 **Codex status:** The matrix is presented for Operator approval, not represented as an approved authority change. No source file, frozen Specification, production deployment, or live site state was changed or tested. The F11 catalog precedence remains separately undecided.
+---
+
+## V003-F02 — read-only final publication preflight — 2026-10-13
+
+**Codex commentary (verbatim):** “F16 is now published as a guarded remote commit, and GitHub confirms the branch tip advanced from `3c51440` to `e8dbf17` with changes limited to its conversation, report, ticket record, and migration map. RDC remains unavailable, so this publication used the connected GitHub Git Data API; it did not stage or modify the local checkout. I’m adding the post-publication verification record, then I’ll record F02’s blocked preflight on its own branch.”
+
+**Codex findings (verbatim from current turn):** “The ref check confirms the F16 branch exists remotely, but F11, F12, F13, and F09 have no corresponding Phase 03 branches or execution reports, and no F-series PR/merge appears in the fetched history. I’m recording Batch D’s Operator-approved closure accurately while treating F02 as a final gate that still has unmet documentary prerequisites.”
+
+**Codex response:** F02's read-only checks found the M21 branch is pushed to origin but remains 18 commits ahead of `main`, with no M21 PR or merge. The approved F01 limited-unavailability disposition is recorded, while renewed M21 acceptance remains open. The Phase 03 ticket/report/branch records lack execution and independent-verification entries for F09, F11, F12, and F13. The Operator has accepted Batch D closure, but the repository does not establish those tickets as executed or passed. F02 therefore remains blocked and does not close V003. No PR or merge was created.
+
+---
+
+## V003-F02 preflight publication verification — 2026-10-13
+
+GitHub ref `v003/f02-final-publication-verification` was read back at `5dbe315ebf1bbe4bb3f16fab33da1d3c16ba7e0d`. The commit `Record V003-F02 final publication preflight (blocked)` has parent `8ef230785b617f58f0e6b4d6b959533295b1b237` and changes the Phase 03 conversation, report, ticket record, and migration map only. No PR or merge was created. F02 remains BLOCKED / OPEN.
+
+
+## Operator instruction and Codex response - V003-F02 merge of M21-GIT-01 correction - 2026-10-13
+
+### Operator (verbatim)
+
+```text
+CONDUCT THE FIX AND MERGE ON THE PHASE03 F02 BRANCH OF THE `M21-GIT-01`   SINCE ITS OWN M21 BRANCH AS BEEN MERGED. WE CAN THEN USE THE BRANCH IN WHICH IT IS BEING FIXED, THE MAJOR ASPECT IS TO HAVE THE RESULT SHOWN ON THE MAIN AFTER MERGE TAKES PLACE FOR F02.
+```
+
+### Codex commentary (verbatim)
+
+> Understood: you want the M21-GIT-01 correction recorded on F02 and visible on main after F02 merges. Before merging, I’m checking the exact F02-to-main diff: this branch is cumulative, so I need to make sure the proposed merge won’t bring along unrelated Phase 03 ticket changes that were previously meant to stay unmerged.
+
+### Codex response
+
+The Operator authorized the correction on `v003/f02-final-publication-verification` and its merge to `main`. The current comparison confirms M21 PR #37 is already merged, while the F02 branch contains cumulative Phase 03 history. The correction records the already approved limited-unavailability disposition without claiming the 20 checkpoint objects were restored or globally irrecoverable. It preserves the remaining renewed M21 review and Operator-acceptance gates. The F02 PR contents and resulting merge will be checked and documented separately; no automatic M21, Phase 02, or V003 acceptance is inferred.
+
+
+---
+
+## Operator → ChatGPT — F11/F09/F12/F13 disposition — 2026-10-14
+
+**Operator verbatim:** "My V003 Phase 03 disposition choices are: F11: approve; F09: approve; F12: approve; F13: approve. Treat these as Operator decisions with the restrictions already discussed: F11 only the 32 demonstrated link-target corrections, F09 only the evidence-methodology approval, F12 only verified authority ownership, and F13 contingent on F12. Record decisions in the project report, conversation, ticket register and migration map, perform independent verification, and do not stage, commit, push, merge, or alter protected source without separate authorization."
+
+**ChatGPT:** Recorded the four approval boundaries without changing historical sources or claiming complete technical-ticket verification. F11 permits only the 32 existing destination-only link repairs; F09 approves method, not live capabilities; F12 approves verified responsibility divisions, not file transfers; F13 is conditional on F12 validation and requires actual Production proof. Previous UNDECIDED/PENDING entries remain as dated history. Local documentation appended to report, conversation, ticket register and migration map; Git publication is separately controlled.
+
+---
+
+## Operator → ChatGPT — non-Cline Phase 03 closure authorization — 2026-10-14
+
+**Operator verbatim:** "RECORD YOUR CLOSURE REPORT AS APPROVED BY ME, WHILE I ORDER CODEX TO CARRY OUT THE CLOSURE, STAGE, COMMIT AND PUSH AND MERGED."
+
+**ChatGPT disposition:** Operator approved scoped closure of verified Phase 03 non-Cline work. F11 32 existing image-link destination-only edits; F09 evidence/intake method (not live connector proof); F12 documented FootHive record ownership (not source relocation); F13 Production promotion criteria effective after F12 verification (not real Production verification). Preserve remaining historical provenance/qualification limits. Twenty unrecovered Cline checkpoint SHA objects remain under separately open M21-GIT-01. F02 final PASS, M21 acceptance, Phase 02 closure and V003 closure are not implied. Codex, under Operator direction, owns stage/commit/push/merge and reporting; ChatGPT performs local documentation recording only.

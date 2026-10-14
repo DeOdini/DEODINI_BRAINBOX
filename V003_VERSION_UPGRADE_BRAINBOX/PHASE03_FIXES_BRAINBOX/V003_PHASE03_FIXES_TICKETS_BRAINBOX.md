@@ -445,3 +445,82 @@ Remote branch `v003/f16-architecture-decisions-ownership` was verified at commit
 **Status:** Evidence review complete; proposed canonical authority matrix recorded in the Phase 03 report. **Operator approval pending; F12 not closed.**
 **Boundary:** No source movement/copy/edit, production deployment/check, evidence duplication, or frozen Specification change. The matrix separates Sandbox trial evidence, separate active FOOTHIVE code/assets, T20-only Production operation, Portfolio/handoff, and planned workflow iterations. The engagement remains disclosed as a trial, not paid-client work.
 **Dependency note:** F11's four-catalog disposition remains Operator-undecided and is preserved as a separate gate; no matrix row resolves it.
+---
+
+## V003-F02 preflight status — 2026-10-13
+
+**Status: BLOCKED / OPEN — read-only preflight complete; final publication/closure gate not passed.**
+
+**Evidence:** M21 branch `cdac06214e7befb5f9bc78e2aef89e8815e1ee5e` is remote and compares as 18 commits ahead / 0 behind `main` at `e2edd669cb30d243b0b916db3e67ebde83653574`. No M21 PR or merge was found. F01's Operator-approved limited-unavailability decision covers 20/20 checkpoint SHAs only within the searched-source boundary; renewed M21 review, Operator acceptance, and M21-GIT-01 remain open.
+
+**Batch D:** Operator accepted Batch D closure and Batch E progression. The current repository has no F09, F11, F12, or F13 branch refs or execution/independent-verification report sections. No missing ticket is represented as executed or passed. The final gate remains blocked until the missing ticket evidence is supplied or the Operator explicitly dispositions those scopes.
+
+**Git/authorization:** Operator authorized Phase 03 ticket-level commit/push. No PR/merge authority or final V003 closure was included. F02 report is on its own branch `v003/f02-final-publication-verification`; no PR or merge is created. RDC timeout prevented local staging/status confirmation; the remote commit was made through GitHub's Git Data API, and the local F02 branch is not checked out.
+
+**Pass gate:** NOT MET. No final independent V003 verdict or Operator V003 closure is claimed.
+
+---
+
+### V003-F02 preflight publication checkpoint — 2026-10-13
+
+GitHub ref `v003/f02-final-publication-verification` was verified at `5dbe315ebf1bbe4bb3f16fab33da1d3c16ba7e0d`. The commit changes only the Phase 03 conversation/report/ticket register and V003 migration map. It was published through GitHub Git Data API because RDC was unresponsive; local Git staging/push was not verified. F02 remains BLOCKED / OPEN, with no PR or merge.
+
+
+## V003-F02 current execution and merge authorization - 2026-10-13
+
+**Status:** F02 current-state preflight complete; M21-GIT-01 disposition and actual M19-M21 Git merge facts reconciled in the report and living Migration Map. F02 final acceptance remains **OPEN / NOT PASSED**; no Phase 02 or V003 closure is claimed.
+
+**Verified:** M19 PR #35, M20 PR #36, and M21 PR #37 are merged into `main`; current `main` is `1d603ad69a6276a2ba03a4f0b28d49b4f6e94e6a`. The M21 branch has no unique commits relative to main. All F01-F16 branch refs are present. F02's prior head was 36 ahead / 3 behind main and had no PR.
+
+**M21-GIT-01:** The Operator-approved limited-unavailability disposition is recorded for all 20 checkpoint IDs within the searched-source boundary. No SHA replacement or Git-object recovery is claimed. M21 acceptance still requires renewed independent ChatGPT review and explicit Operator acceptance.
+
+**Batch D:** Operator closure is recorded. F09 questionnaire approval, F11 catalog precedence (UNDECIDED), F12 matrix approval, and F13 criteria approval remain visible as ticket-specific decisions; no result was promoted to PASS by batch acceptance.
+
+**Current Operator authority:** The Operator expressly directed Codex to correct M21-GIT-01 on the F02 branch and merge F02 so the result appears on `main`. That authorizes the F02 branch publication/merge described by this ticket. It does not authorize falsely marking M21/Phase 02 accepted or V003 closed. The exact F02 diff is cumulative and includes previously published Phase 03 records and ticket-authorized documentation changes; its actual PR contents and merge result must be checked and recorded after publication.
+
+### V003-F02 PR #38 merge outcome — 2026-10-13
+
+PR #38 merged into `main` at `8540440c6c41ddd8e373ff83cf00a10adb9c97e1`; the remote ancestry check passed after fetch. The merged PR has 21 cumulative changed files (2,507 additions / 94 deletions), including previous Phase 03 records and F08/F14 documentation. The four catalog-link edits remain subject to the F11 **UNDECIDED** precedence record. This is F02 branch publication, not M21 acceptance, Phase 02 closure, or V003 final closure. F02 remains open pending renewed independent ChatGPT verification and explicit Operator acceptance.
+
+
+---
+
+## V003 Phase 03 F11/F09/F12/F13 — Operator disposition and bounded verification — 2026-10-14
+
+**Operator instruction (verbatim):** "My V003 Phase 03 disposition choices are: F11: approve; F09: approve; F12: approve; F13: approve. Treat these as Operator decisions with the restrictions already discussed: F11 only the 32 demonstrated link-target corrections, F09 only the evidence-methodology approval, F12 only verified authority ownership, and F13 contingent on F12. Record decisions in the project report, conversation, ticket register and migration map, perform independent verification, and do not stage, commit, push, merge, or alter protected source without separate authorization."
+
+**F11 — APPROVED, NARROW PRECEDENCE DISPOSITION:** The Operator accepts the already reported **32 Markdown image-link destination corrections across four FootHive historical catalog Markdown files** (F14 commit e04a5fb) as a specific exception to F03's earlier retain-unchanged disposition. The exception is only for demonstrated link targets, not images, visible labels, substantive text, copy/move/rename/delete, normalization or future catalog edits. The F14 Sandbox Build Report modifications are separate and not included in this F11 exception. Original versions remain recoverable via Git history. F11 precedence-decision gate is resolved subject to verifying that the final 32 changes truly are destination-only; source remains untouched in this recording action.
+
+**F09 — METHODOLOGY APPROVED:** Approve the evidence-based eight-agent CORE/EXE intake questionnaire and classification method documented in F09. Documented/claimed, implemented/exposed, connected, authenticated, tested, authorized, time-bounded, and unknown must remain distinguishable and source-supported. Configuration or historical report alone is not proof of current integration or successful execution (including Copilot Playwright). Approval does NOT authenticate any tool, prove connectivity or execution, or approve unverified capability claims. Any underlying integration testing and outstanding source/hash verification remain separate.
+
+**F12 — AUTHORITY OWNERSHIP APPROVED:** Adopt the evidence-backed FootHive ownership boundaries proposed in F12: historical original/RAW project provenance in legacy PROJ_WORKFLOW; active implementation in its own FootHive application repository; Sandbox for workflow trials/tests/defects/iteration evidence; Production DEVOPS for proven releases and operations; Portfolio for referenced, approved summaries. DEODINI trial work must not be conflated with paid-client work. This authorizes the authority rule, not unspecified file moves, source edits or broad navigation changes; the exact matrix remains subject to independent file-specific validation.
+
+**F13 — CONDITIONAL POLICY APPROVAL:** Accept the proposed Production evidence-promotion criteria **only as dependent on independently verified F12 ownership**. A Sandbox observation is not a Production result absent traceable release/operational evidence (version, environment, dated tests/deployment, approval and result). The October 1, 2026 T20 deployment is historical and does not imply later or current health. No live deployment, post-T20 verification, Production fact, or automatically promoted record is implied. F13 becomes effective after F12 ownership verification; no source operation is authorized.
+
+**Independent ChatGPT bounded verification:** Pre-recording local preflight on branch v003/f02-final-publication-verification at 065e147 showed a clean worktree and all five Phase 03 tracked records. The published/current Phase 03 F02 report states F09's questionnaire is a proposal, F11's catalog precedence is UNDECIDED, F12's authority matrix is proposed, and F13's promotion criteria depend on F12. This append records Operator decisions that supersede those dated historical checkpoints; historical entries are not silently rewritten. F11 full 32-destination diff, F09 all hashes, and F12's exact file-by-file matrix are not claimed revalidated by this preflight alone. **Approval recorded; independent technical ticket PASS and final F02/M21/Phase 02/V003 acceptance are separate gates.**
+
+**Git/scope:** Documentation-only local append in four named records. NO staging, commit, push, merge, branch change or protected-source alteration authorized. Report the local verification results separately.
+
+---
+
+## V003 Phase 03 — Operator-approved non-Cline closure disposition — 2026-10-14
+
+**Operator instruction (verbatim):** "RECORD YOUR CLOSURE REPORT AS APPROVED BY ME, WHILE I ORDER CODEX TO CARRY OUT THE CLOSURE, STAGE, COMMIT AND PUSH AND MERGED."
+
+**Approval and scope:** Operator approves ChatGPT's proposed closure of independently verified, non-Cline Phase 03 fixes only, under each ticket's existing evidence limits. F11 covers the already-made 32 catalog Markdown link-destination corrections (9 boots, 9 classic, 4 sneaker, 10 timberland), not separate Build Report edits or source changes. F09 approves eight-agent CORE/EXE evidence-classification and intake methodology, not live integration status. F12 approves the documented authority separation among legacy source/project history, the active FootHive repository, Sandbox trial evidence, evidenced Production operations, and Portfolio summaries. F13 approves evidence-based Production promotion policy after verification of F12 ownership, not an actual Production promotion or current health claim.
+
+**Independent verification boundary:** ChatGPT independently compared the F14 Git patch and confirmed 32 destination-only catalog changes with unchanged labels and other text. ChatGPT reviewed F09 methodology, F12 ownership matrix and F13 production-evidence policy and found them consistent with the approved scopes. Codex reported full 16 legacy/CORE hash matches, nine image/logo pairs and 62 Markdown links; ChatGPT did not independently reproduce these numerical checks, so these remain Codex-evidenced qualifications rather than independent recalculations. No new source changes or connector/deployment verification are claimed.
+
+**Excluded exception:** M01-GIT-01 / M21-GIT-01 remains open for 20 unrecovered Cline checkpoint commit objects. The approved limited-unavailability disposition is bounded to searched sources, not global irrecoverability, proven cause, recovered objects or replacement SHAs. This non-Cline closure is not a waiver of missing Git history.
+
+**Closure boundary:** Non-Cline Phase 03 verified fixes are OPERATOR-APPROVED FOR SCOPED CLOSURE, preserving prior ticket qualifications and approved retention safeguards. F02 integrated final PASS, renewed M21 independent review and Operator acceptance, Phase 02 and V003 final closure are NOT granted by this decision. Superseded older PENDING/UNDECIDED statements remain unchanged as dated historical checkpoints.
+
+**Execution responsibility:** Operator directs Codex, not ChatGPT, to execute the authorized non-Cline closure and handle scope-controlled staging, commits, pushes, and merges, with checks and an auditable report of branch/PR/merge SHAs. This is authorization/instruction, not evidence those operations have occurred. ChatGPT records documentation locally only; no Git staging, commit, push, merge, branch switching, source edits, or frozen authority changes are authorized for ChatGPT.
+
+## V003-F11/F14 ticket identity reconciliation - 2026-10-14
+
+**F14:** The 32 approved destination-only catalog image-link corrections belong to F14 (commit `e04a5fb`) and are already in the mainline history. Their limited exception to F03 retention is approved and independently checked as recorded in the F02 closure report.
+
+**F11:** `v003/f11-project-workflow-foothive-disposition` is the separate FootHive/RAW source-inventory ticket. Its audit ledger and report are being integrated without source operations. The F14 approval resolves only the catalog-path precedence question; it does not close the broader F11 source-disposition and independent-verification gates. **F11 remains OPEN.**
+
+**F09/F12/F13:** Operator-approved closure is limited to the recorded methodology, ownership, and conditional promotion-policy scopes. No live connector status, source transfer, or Production outcome is inferred. The historical proposal/pending entries remain preserved; the later approval record controls current scope.

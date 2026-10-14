@@ -1,12 +1,12 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 ACTIVE; BATCH B/C OPERATOR ACCEPTED; BATCH D AUTHORIZED; F10 CLOSED; F16 ACCEPTED; F11 INVENTORY COMPLETE, FOUR CATALOGS UNDECIDED; F12 AUTHORITY MATRIX PROPOSED, OPERATOR APPROVAL PENDING; F13/F09 IN PROGRESS; F01 DISPOSITION RECORDED; RENEWED M21 REVIEW PENDING]
+**STATUS:** [PHASE 03 ACTIVE; BATCH A-D OPERATOR-ACCEPTED; F02 PR #40 AND F11 PR #41 MERGED; F11 BROADER SOURCE-DISPOSITION TICKET OPEN; F09/F12/F13 NON-CLINE SCOPES APPROVED FOR BOUNDED CLOSURE; M21/PHASE 02/V003 FINAL ACCEPTANCE PENDING]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [PHASE 03 ACTIVE; F01 LIMITED-UNAVAILABILITY DISPOSITION RECORDED; RENEWED M21 REVIEW PENDING; BATCH B/C OPERATOR ACCEPTED; BATCH D AUTHORIZED; F10 CLOSED; F16 ACCEPTED; F11 CATALOG DISPOSITION UNDECIDED; F12 MATRIX PROPOSED/UNAPPROVED; F13/F09 OPEN]
-**LAST UPDATED:** 2026-10-13 — Codex; F11 inventory and F12 proposed authority matrix recorded on their ticket branches. F11 catalog precedence remains undecided; F12 Operator approval pending; no FootHive/RAW source operation performed.
+**POPULATION:** [F01-F16 records present; F11 source ledger in main; F12 authority-matrix scope being integrated; F13/F09 ticket commits remain to be integrated; F11 and M21 open gates preserved]
+**LAST UPDATED:** 2026-10-14 - F11 audit and F02 closure records are integrated; F12 branch integration is in progress. Earlier dated status entries remain historical.
 
 ## Local tree
 ```text
@@ -16,7 +16,7 @@ PHASE03_FIXES_BRAINBOX/
 ├── F11_FOOTHIVE_SOURCE_DISPOSITION_PHASE03_FIXES_BRAINBOX.csv [F11 per-file FootHive and RAW source ledger]
 ├── V003_FIXES_REPORT_BRAINBOX.md
 ├── V003_FIXES_CONVO_BRAINBOX.md
-└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; Batch B/C accepted; Batch D F10/F16/F11 progress recorded; F11 disposition open]
+└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [F01 disposition recorded; Batch B Operator accepted; Batch C F15/F08/F14/F07 outcomes recorded; Batch C Operator acceptance pending]
 ```
 
 ## Navigation
