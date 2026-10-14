@@ -2910,3 +2910,13 @@ PR #38 (`v003/f02-final-publication-verification` → `main`) merged at `8540440
 **Closure boundary:** Non-Cline Phase 03 verified fixes are OPERATOR-APPROVED FOR SCOPED CLOSURE, preserving prior ticket qualifications and approved retention safeguards. F02 integrated final PASS, renewed M21 independent review and Operator acceptance, Phase 02 and V003 final closure are NOT granted by this decision. Superseded older PENDING/UNDECIDED statements remain unchanged as dated historical checkpoints.
 
 **Execution responsibility:** Operator directs Codex, not ChatGPT, to execute the authorized non-Cline closure and handle scope-controlled staging, commits, pushes, and merges, with checks and an auditable report of branch/PR/merge SHAs. This is authorization/instruction, not evidence those operations have occurred. ChatGPT records documentation locally only; no Git staging, commit, push, merge, branch switching, source edits, or frozen authority changes are authorized for ChatGPT.
+
+
+
+## V003 unresolved register support-record disposition — 2026-10-14
+
+V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md is a V003 audit/closeout support record. It reconciles the existing M01–M21 and F01–F16 evidence and does not create or replace a migration ticket, alter the frozen Specification or Origin Conversation, or change any source disposition.
+
+Its current blockers and closure conditions are stated in the register. In particular, M21-GIT-01 remains open for renewed independent review and Operator M21/Phase 02 acceptance; F02 remains NOT PASSED / OPEN; F11 remains open for its broad source-disposition and independent-verification gates. Previously approved retain-at-source dispositions and planned/empty states remain unchanged.
+
+The proposed root RECYCLE_BIN_BRAINBOX directory was not created. It is outside the frozen Specification §8 root target tree; a separate Operator architecture decision is required before adding that root branch. This note records the support-record boundary only and does not amend the target tree.

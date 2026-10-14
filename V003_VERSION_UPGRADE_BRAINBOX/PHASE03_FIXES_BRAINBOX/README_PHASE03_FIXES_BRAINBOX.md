@@ -55,3 +55,13 @@ Use full `V003-Fxx` identifiers; proposed batch order does not change IDs. Prese
 - **Disposition:** “Not found in searched sources” is not a claim of global irrecoverability. Operator disposition and separate ChatGPT independent verification are pending.
 - **Acceptance:** V003-F01 is not yet a pass; M21-GIT-01 remains blocking, M21 is not accepted, and Phase 02 remains open.
 - **Next gate:** Operator may provide another backup/device/path for read-only search or explicitly authorize a documented-unavailability disposition. Either route still requires independent verification and renewed M21 review.
+
+
+
+## Current closeout and unresolved-register navigation — 2026-10-14
+
+- [V003 Unresolved Register](../V003_UNRESOLVED_BRAINBOX.md) — current blocker/limitation/planned-state reconciliation and objective closure conditions.
+- [V003 authority README](../README_V003_VERSION_UPGRADE_BRAINBOX.md) — canonical versus support-record boundaries.
+- [Migration Map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — current migration source dispositions.
+
+The current mainline contains the recorded Phase 03 branch merge closeout through PRs #41–#46. This records Git integration, not blanket ticket closure: F11 remains OPEN for broad source disposition; M21-GIT-01 and F02 final acceptance remain OPEN; Phase 02 and V003 are not declared closed. F09/F12/F13 remain bounded to their Operator-approved methodology, ownership, and policy scopes.

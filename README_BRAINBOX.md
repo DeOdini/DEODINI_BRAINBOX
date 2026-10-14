@@ -730,3 +730,17 @@ At Batch D closeout, M19 was eligible after final fetch verification and its own
 - Current system-wide policy points to Governance. Retained legacy source files remain labeled as historical/local evidence. Their content was not rewritten or retired.
 - M15-REF-01 and M16-README-01 are resolved for active navigation. M19-HIST-01 documents a preserved LF/CRLF discrepancy in the FootHive PASSED archive copy. M15-ASSET-01 remains open for 29 source-only catalog/image records, and M17-DEST-01 remains open for the two legacy milestone records. M20 review is complete; these source-specific flags continue to govern any future source disposition or removal.
 - Phase 01 and Phase 02 records remain a distinct V003 support overlay. See [Migration Map Section 53](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) and the [Phase 02 report](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md).
+
+
+
+## V003 current closeout and support navigation — 2026-10-14
+
+The records below are V003 audit/closeout support, not new operational branches in the frozen target tree. The V003 operational tree remains governed by V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md.
+
+- [V003 Unresolved Register](V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md) — requirement-to-ticket reconciliation, accepted limitations, planned states, current blockers, and closure conditions.
+- [Phase 03 fixes and closure navigation](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — ticket evidence and current scope boundaries.
+- [V003 authority-container README](V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md) — canonical authority and support-record boundaries.
+
+Current final status remains NOT CLOSED: M21-GIT-01 is still pending renewed independent M21 review and explicit Operator acceptance; F02 is NOT PASSED / OPEN; broader F11 source disposition remains OPEN. The non-Cline Phase 03 closures and the Batch E Git merges do not themselves close Phase 02 or V003. See the Unresolved Register for exact evidence and closure conditions.
+
+The proposed root RECYCLE_BIN_BRAINBOX directory is not present. Specification §8 does not include that root branch; its addition remains subject to a separate Operator authority decision.

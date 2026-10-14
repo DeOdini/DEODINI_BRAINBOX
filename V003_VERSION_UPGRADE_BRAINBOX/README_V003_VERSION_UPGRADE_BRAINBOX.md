@@ -339,3 +339,17 @@ Only the two approved M18 records exist under `MILESTONES_BRAINBOX/`, and both r
 V003-M15 through V003-M18 were cross-checked, pushed, and merged to main in dependency order. Batch D report and conversation are in the Phase 02 report/conversation files; Migration Map §52 records branch tips, merge commits, target dispositions, and open flags. The final closeout branch was fast-forwarded to main and fetch-verified.
 
 M19 is authorized and may begin after Batch D closeout with its own P14 preflight. M15-ASSET-01 and M15-REF-01 remain explicit; M16-README-01 is assigned to M19. M17-DEST-01 remains open and blocks any physical relocation or retirement of the two legacy milestone records pending Operator disposition. No M20 source removal is allowed while that flag remains unresolved.
+
+
+## Current V003 closeout status and support records — 2026-10-14
+
+The frozen operational target tree and the V003 authority model are unchanged. The records below are audit/closeout support, not competing architecture authorities.
+
+- [V003 Unresolved Register](V003_UNRESOLVED_BRAINBOX.md) — permanent record of incomplete, unverified, accepted-limitation, retained-historical, and planned V003 matters.
+- [Phase 03 fixes README](PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — ticket evidence, verification boundaries, and current Phase 03 status.
+- [Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — living source and migration ledger.
+- [V003 Tree Snapshot](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/TREE_SNAPSHOT_V003_BRAINBOX.md) — actual V003 physical-tree snapshot.
+
+**Current disposition:** Phase 02 Git integration is recorded as merged, but Phase 02 is not accepted/closed. M21-GIT-01 remains open for the 20 unrecovered Cline checkpoint objects within the approved searched-source boundary; renewed independent M21 review and explicit Operator acceptance remain pending. F02 is NOT PASSED / OPEN. F11 remains OPEN for broad FootHive/RAW source disposition and independent verification. F09/F12/F13 scope limits and the separate F14 link-only approval remain as recorded in Phase 03. Do not infer current Production health, capability connectivity, or final V003 closure from merged commits.
+
+The root RECYCLE_BIN_BRAINBOX proposal was not implemented: it is absent from the frozen §8 hierarchy and needs a separate Operator authority decision before creation or Specification change.
