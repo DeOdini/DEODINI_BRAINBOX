@@ -1507,3 +1507,10 @@ The Operator explicitly authorized moving both records from repository-root `MIL
 **Whitespace check:** After removing five whitespace-only separator lines from the newly authored F14 link-adaptation note and the extra terminal blank line from the Codex EXE README, the staged `git -c core.longpaths=true diff --cached --check` reports 28 trailing-whitespace lines, all in the review-only `V003_POC_NAMING_SCOPED_DIFF_BRAINBOX.diff` artifact. Those whitespace-only lines are preserved as quoted source-diff context; no source/archive copy was normalized. This remains a documented preservation qualification, not a clean `diff --check` result. The other staged paths produce no `diff --check` diagnostics.
 
 **Remote preflight:** A read-only `git ls-remote` completed successfully and returned no ref for `refs/heads/v003/repository-poc-naming-reconciliation`. The authorized push will create that branch. No commit or push had yet occurred at this staged-path review. No PR, merge, or main-branch update is authorized.
+## Commit and branch publication verification - 2026-10-15
+
+**Commit:** `e71a87d9b6b2f1c67d2b03b8a0fc8293d3628f50` - `Reconcile V003 POC naming and publication records`.
+**Commit identity:** `pedestal-archive <deodinihq@gmail.com>`, the repository's configured Git identity.
+**Branch:** `v003/repository-poc-naming-reconciliation`, tracking `origin/v003/repository-poc-naming-reconciliation`.
+**Push verification:** The push command returned without captured success text. A subsequent successful remote lookup confirmed `refs/heads/v003/repository-poc-naming-reconciliation` at exactly `e71a87d9b6b2f1c67d2b03b8a0fc8293d3628f50`. Local status shows the branch tracking the remote; `git rev-list --left-right --count HEAD...origin/v003/repository-poc-naming-reconciliation` returned `0 0`.
+**Closure boundary:** The branch is committed and pushed. It has not been merged, no pull request was created, and `main` was not changed. No force-push or history rewrite occurred.
