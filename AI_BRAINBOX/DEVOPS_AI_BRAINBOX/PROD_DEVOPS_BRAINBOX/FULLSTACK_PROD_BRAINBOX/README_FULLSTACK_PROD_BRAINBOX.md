@@ -11,19 +11,32 @@
 **LAST VERIFIED:** 2026-10-09
 **APPLIES TO:** Evidence-backed Fullstack production operations; folder presence is not evidence of deployment.
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+FULLSTACK_PROD_BRAINBOX/ [PRESENT · POPULATED]
+├── DEPLOYMENT_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── MONITORING_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── OPERATIONS_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── RELEASE_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── WORKFLOWS_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_FULLSTACK_PROD_BRAINBOX.md [PRESENT]
+```
+
 ## Authority boundary
 
 This is the local Fullstack Production tree and navigation record. It does not imply an application is deployed or authorize a release. Production results require Production evidence and are not inherited from Sandbox.
 
-## Authoritative and current local tree
+## Current-tree reference
 
-    FULLSTACK_PROD_BRAINBOX/
-    ├── README_FULLSTACK_PROD_BRAINBOX.md
-    ├── WORKFLOWS_PROD_BRAINBOX/.gitkeep [EMPTY]
-    ├── RELEASE_PROD_BRAINBOX/.gitkeep [EMPTY]
-    ├── DEPLOYMENT_PROD_BRAINBOX/.gitkeep [EMPTY]
-    ├── OPERATIONS_PROD_BRAINBOX/.gitkeep [EMPTY]
-    └── MONITORING_PROD_BRAINBOX/.gitkeep [EMPTY]
+The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Deployment-sequence disposition
 

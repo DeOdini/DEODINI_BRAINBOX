@@ -11,24 +11,37 @@
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** M10 independent verification: PASS. M13 navigation read-back: Codex PASS; independent ChatGPT M13 verification: PASS (Batch C closeout, 2026-10-09).
 
-## Authoritative and local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-ORCHESTRATION_FULLSTACK_BRAINBOX/
-|-- README_ORCHESTRATION_FULLSTACK_BRAINBOX.md
-|-- FRONTEND_BACKEND_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- API_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- AUTH_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- DATA_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- ANALYTICS_ORCH_BRAINBOX/
-|   |-- README_ANALYTICS_ORCH_BRAINBOX.md [PRESENT — M13 NAVIGATION]
-|   `-- .gitkeep [EMPTY — NO OPERATIONAL FLOW]
-|-- TEST_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- RELEASE_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- AI_AGENT_ORCH_BRAINBOX/
-|   `-- AI_AGENT_ORCH_HANDOFF_CLASSIFICATION_BRAINBOX.md [REFERENCE ONLY]
-`-- SERVICE_COORDINATION_ORCH_BRAINBOX/ [.gitkeep; EMPTY]
+ORCHESTRATION_FULLSTACK_BRAINBOX/ [PRESENT · POPULATED]
+├── AI_AGENT_ORCH_BRAINBOX/ [PRESENT · POPULATED]
+│   └── AI_AGENT_ORCH_HANDOFF_CLASSIFICATION_BRAINBOX.md [PRESENT]
+├── ANALYTICS_ORCH_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── .gitkeep [PRESENT · EMPTY]
+│   └── README_ANALYTICS_ORCH_BRAINBOX.md [PRESENT]
+├── API_ORCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── AUTH_ORCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── DATA_ORCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── FRONTEND_BACKEND_ORCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── RELEASE_ORCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SERVICE_COORDINATION_ORCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TEST_ORCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_ORCHESTRATION_FULLSTACK_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Evidence-backed classification
 

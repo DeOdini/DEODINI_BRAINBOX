@@ -18,16 +18,26 @@
 **EXIT NAVIGATION:** Return to the parent README or root `README_BRAINBOX.md`.
 **APPLIES TO:** The governed `VERSION_CONTROL_TECHNOLOGIES_BRAINBOX/` branch.
 
-## Authoritative and local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-VERSION_CONTROL_TECHNOLOGIES_BRAINBOX/
-+-- README_VERSION_CONTROL_TECHNOLOGIES_BRAINBOX.md [PRESENT]
-+-- BITBUCKET_TECHNOLOGY_BRAINBOX/ [EMPTY]
-+-- GITHUB_TECHNOLOGY_BRAINBOX/ [EMPTY]
-+-- GITLAB_TECHNOLOGY_BRAINBOX/ [EMPTY]
-+-- GIT_TECHNOLOGY_BRAINBOX/ [EMPTY]
+VERSION_CONTROL_TECHNOLOGIES_BRAINBOX/ [PRESENT · POPULATED]
+├── BITBUCKET_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── GIT_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── GITHUB_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── GITLAB_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_VERSION_CONTROL_TECHNOLOGIES_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Canonical references
 

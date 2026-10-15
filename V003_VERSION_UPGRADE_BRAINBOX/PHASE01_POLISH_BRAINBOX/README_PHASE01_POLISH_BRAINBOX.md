@@ -9,18 +9,24 @@
 **VERIFIER:** Codex, with Operator-supplied confirmations identified as such in the records.
 **LAST VERIFIED:** 2026-10-07
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+PHASE01_POLISH_BRAINBOX/ [PRESENT · POPULATED]
+├── README_PHASE01_POLISH_BRAINBOX.md [PRESENT]
+├── V003_POLISH_CONVO_VERSION_UPGRADE_BRAINBOX.md [PRESENT]
+└── V003_POLISH_REPORT_VERSION_UPGRADE_BRAINBOX.md [PRESENT]
+```
+
 ## Authoritative tree
 
 The complete V003 architecture tree is authoritative in the root `README_BRAINBOX.md` after its future migration ticket is executed. The approved V003 migration-target architecture is governed by `../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`. This archive is not part of that operational target tree and cannot authorize or redefine it.
 
-## Local tree
+## Current-tree reference
 
-```text
-PHASE01_POLISH_BRAINBOX/
-├── README_PHASE01_POLISH_BRAINBOX.md
-├── V003_POLISH_CONVO_VERSION_UPGRADE_BRAINBOX.md
-└── V003_POLISH_REPORT_VERSION_UPGRADE_BRAINBOX.md
-```
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Record roles
 

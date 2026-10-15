@@ -14,6 +14,15 @@
 **SOURCE_TYPE:** Reserved capability/evidence-gap record.
 **VERIFIER:** Codex, V003-M06 source read-back.
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+MEDIA_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+└── README_MEDIA_EXE_FUNC_BRAINBOX.md [PRESENT]
+```
+
 ## Evidence state
 
 - **Agents mentioned by the matrix:** Codex and Cline, as historical profiles.
@@ -28,3 +37,10 @@
 Do not change this record to ADMITTED until a later authorized ticket captures and verifies a safe generated or processed artifact, records the executor/environment, and independently checks the evidence.
 
 **POPULATION STATE:** Reserved marker only; no successful media output has been fabricated.
+
+---
+
+## V003 agent operation references — 2026-10-15
+
+CATEGORY IS AN INDEX ONLY, not evidence or a questionnaire.
+RESERVED: No M06 admitted agent operation.

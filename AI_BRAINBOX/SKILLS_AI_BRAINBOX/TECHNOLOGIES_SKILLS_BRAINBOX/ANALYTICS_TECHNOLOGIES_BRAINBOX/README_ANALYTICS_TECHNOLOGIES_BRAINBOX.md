@@ -12,15 +12,21 @@
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex M13 implementation read-back; independent ChatGPT M13 verification: PASS (2026-10-09).
 
-## Current local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-ANALYTICS_TECHNOLOGIES_BRAINBOX/
-├── README_ANALYTICS_TECHNOLOGIES_BRAINBOX.md
-└── GA4_TECHNOLOGY_BRAINBOX/
-    ├── README_GA4_TECHNOLOGY_BRAINBOX.md
-    └── .gitkeep [EMPTY — REUSABLE PROFILE CONTENT NOT POPULATED]
+ANALYTICS_TECHNOLOGIES_BRAINBOX/ [PRESENT · POPULATED]
+├── GA4_TECHNOLOGY_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── .gitkeep [PRESENT · EMPTY]
+│   └── README_GA4_TECHNOLOGY_BRAINBOX.md [PRESENT]
+└── README_ANALYTICS_TECHNOLOGIES_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Canonical ownership
 
@@ -35,7 +41,7 @@ The FootHive records remain project-specific evidence. M13 does not duplicate id
 - [Fullstack Analytics Orchestration](../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/ORCHESTRATION_FULLSTACK_BRAINBOX/ANALYTICS_ORCH_BRAINBOX/README_ANALYTICS_ORCH_BRAINBOX.md)
 - [Backend Integrations](../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/BACKEND_SANDBOX_BRAINBOX/INTEGRATIONS_BACKEND_BRAINBOX/README_INTEGRATIONS_BACKEND_BRAINBOX.md)
 - [Frontend Data Visualization](../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/FRONTEND_SANDBOX_BRAINBOX/UI_UX_DESIGN_FRONTEND_BRAINBOX/DATA_VISUALIZATION_DESIGN_BRAINBOX/README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md)
-- [FootHive build report](../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — project-specific evidence in the canonical M15 Sandbox case study; GA4 technology guidance remains canonical here.
+- [FootHive build report](../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — project-specific evidence in the canonical M15 Sandbox case study; GA4 technology guidance remains canonical here.
 - [Governance Security](../../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
 - [Frozen V003 Specification](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §20
 - [V003 Origin Conversation](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)

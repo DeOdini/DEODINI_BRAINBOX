@@ -33,4 +33,4 @@ The Operator Addendum records separate manual Firefox and Safari checks. Neither
 
 ## Canonical records
 
-Use the [case-study reference index](CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md) and the linked canonical Sandbox and Production records. The historical evidence set remains in Sandbox; this handoff does not copy it.
+Use the [case-study reference index](POC_REFERENCE_FOOTHIVE_BRAINBOX.md) and the linked canonical Sandbox and Production records. The historical evidence set remains in Sandbox; this handoff does not copy it.

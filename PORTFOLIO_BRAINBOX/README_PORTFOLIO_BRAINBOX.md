@@ -18,24 +18,30 @@
 **EXIT NAVIGATION:** Return to root `README_BRAINBOX.md` or the canonical Sandbox case study.
 **APPLIES TO:** `PORTFOLIO_BRAINBOX/`.
 
-## Authoritative and local target tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
- PORTFOLIO_BRAINBOX/ [PARTIALLY POPULATED V003 target — M16 child populated; M19 parent navigation reconciled; empty legacy source retired M20]
-├── README_PORTFOLIO_BRAINBOX.md
-└── FOOTHIVE_PORTFOLIO_BRAINBOX/
-    ├── README_FOOTHIVE_PORTFOLIO_BRAINBOX.md
-    ├── HANDOFF_FOOTHIVE_BRAINBOX.md
-    ├── PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md
-    └── CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md
+PORTFOLIO_BRAINBOX/ [PRESENT · POPULATED]
+├── FOOTHIVE_PORTFOLIO_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── HANDOFF_FOOTHIVE_BRAINBOX.md [PRESENT]
+│   ├── POC_REFERENCE_FOOTHIVE_BRAINBOX.md [PRESENT]
+│   ├── PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md [PRESENT]
+│   └── README_FOOTHIVE_PORTFOLIO_BRAINBOX.md [PRESENT]
+└── README_PORTFOLIO_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Retired empty legacy source
 
 The original 001_PORT_BRAINBOX.md had zero bytes and no Portfolio content. M20 removed that placeholder after checking the M01 baseline, current canonical Portfolio records, active references, and Git recovery. The migration map preserves its exact former path and digest.
 
 - [FootHive Portfolio README](FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md)
-- [Canonical FootHive Sandbox case study](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md)
-- [FootHive Production summary](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md)
+- [Canonical FootHive Sandbox case study](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md)
+- [FootHive Production summary](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md)
 - [Governance Promotion](../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
 - [V003 Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)

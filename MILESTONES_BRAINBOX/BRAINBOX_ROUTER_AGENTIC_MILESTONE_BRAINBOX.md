@@ -48,3 +48,11 @@ See [M17 classification in the V003 Migration Map](../VERSION_HISTORY_BRAINBOX/V
 - [MILESTONES_BRAINBOX README](README_MILESTONES_BRAINBOX.md) — local navigation and status.
 - [Governance](../GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md) — current cross-domain rule authority.
 - [V003 Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — migration evidence and M17 historical-source boundary.
+
+## Operator milestone classification — 2026-10-14
+
+**Current planning classification: [PLANNED] / OPTIONAL / UNSCHEDULED / SUBJECT TO SUPERSESSION.** The Router/Agentic concept is a possible future architecture milestone only. It is **not the mandatory next version, upgrade direction, task, or implementation priority**. Any future Operator-authorized project, event, or milestone may supersede or replace it; no advance implementation is required merely because V003 Specification §28 preserved the concept.
+
+This clarification does not revise the frozen V003 Specification or its historical M18 approval: [PLANNED] means documented possibility, not an undertaking to execute. Router, agents, memory, database/vector infrastructure, deployments and related features are not certified present. No implementation schedule, selection, expenditure, execution or project dependency is implied. Only a separate future Operator decision may activate this milestone. Supersession does not require implementing it first.
+
+The Operator explicitly classified this entry as a **prospective milestone, not an unresolved V003 corrective defect** and directed removal of its active entry from V003_UNRESOLVED_BRAINBOX.md. Permanent decision references are in the Phase 03 Fixes Report and V003 Migration Map.

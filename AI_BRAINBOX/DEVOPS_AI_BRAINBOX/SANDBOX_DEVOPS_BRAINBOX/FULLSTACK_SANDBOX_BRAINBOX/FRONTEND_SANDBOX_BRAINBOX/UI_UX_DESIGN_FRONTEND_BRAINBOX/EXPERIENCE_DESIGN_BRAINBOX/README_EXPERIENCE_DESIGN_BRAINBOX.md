@@ -10,15 +10,24 @@
 **POPULATION STATE:** Navigation present; three experience branches empty.
 **LAST VERIFIED:** 2026-10-09
 
-## Local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-EXPERIENCE_DESIGN_BRAINBOX/
-├── README_EXPERIENCE_DESIGN_BRAINBOX.md
-├── RESPONSIVE_DESIGN_BRAINBOX/ [.gitkeep; EMPTY]
-├── MOTION_INTERACTION_BRAINBOX/ [.gitkeep; EMPTY]
-└── ACCESSIBILITY_DESIGN_BRAINBOX/ [.gitkeep; EMPTY]
+EXPERIENCE_DESIGN_BRAINBOX/ [PRESENT · POPULATED]
+├── ACCESSIBILITY_DESIGN_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── MOTION_INTERACTION_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── RESPONSIVE_DESIGN_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_EXPERIENCE_DESIGN_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 The corresponding Skills domains are the canonical home for reusable responsive-design and accessibility knowledge. No generic Skills material was copied here, and no accessibility or responsive certification is claimed.
 

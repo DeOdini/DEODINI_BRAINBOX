@@ -1,0 +1,359 @@
+{
+  "retirement_id": "RET-2026-10-15-PROJ-WORKFLOW",
+  "source": "AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX",
+  "archive": "RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX",
+  "files": {
+    "FOOTHIVE_PROJ_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md": {
+      "sha256": "83e1724b146db02e62663b9a788b7f76cee2a96460dc6fee36fcbc2f97d12a9f",
+      "bytes": 159133
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/CONVO_FH_BRAINBOX.md": {
+      "sha256": "c5151958347e98e1df90ab9a98a85ef65d792f73f39b4b763af69cb3a9f1c091",
+      "bytes": 166094
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/DIRECTION A & B IMAGES/37n4T (DIRECTION B).jpg": {
+      "sha256": "90eea2c42ef2df1509d17f9712b0f277caf1f1bee1d6c6331d1e86e6cb4fd9db",
+      "bytes": 277800
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/DIRECTION A & B IMAGES/FZxXm (DIRECTION A).jpg": {
+      "sha256": "91fedc0e35796ffc017bd2b8241b8f2a651a707349abf756a7da516a9a9c7e66",
+      "bytes": 238564
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/header-review/screenshot-12-localhost-cropped.png": {
+      "sha256": "a49f8eb8182c411266a153fafcab8e87daaabaefbd0493445511452ba9ff8f45",
+      "bytes": 1001208
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/header-review/screenshot-13-deploy-preview-cropped.png": {
+      "sha256": "99bf84b4c80b2574cb8c6b203a18bd234072abc9bac2ca86dcc7a56c17c72291",
+      "bytes": 935185
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/console-2026-10-01T18-51-20-395Z.log": {
+      "sha256": "728e5fe75b0c9eaeaab8380b5eb9a8b21d059e83424273990d33a4fea732d9f9",
+      "bytes": 102735
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/console-2026-10-01T18-57-44-828Z.log": {
+      "sha256": "096fb55be01da66105f1f0e62c1737f9cddc550107334c0c93bd1ce6dd855e7e",
+      "bytes": 132
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-08-32-992Z.yml": {
+      "sha256": "b073bf6566231d3643de243cb854e63248c8875c19a80046fb62b078f97fea13",
+      "bytes": 11419
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-09-19-257Z.yml": {
+      "sha256": "554419f33666662faded3d34f5796c1355e9bc3e8520ea43b33ce43ead99c184",
+      "bytes": 12626
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-09-36-471Z.yml": {
+      "sha256": "45214962d7d07c62a853b4bc653411e015b55d0a9aadca9fea0f1c25b977b0bc",
+      "bytes": 12284
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-10-26-452Z.yml": {
+      "sha256": "d6d761e01f8db0ba53bc79c7677d0992c6ecc466e9e19f62718f6b9136656d3d",
+      "bytes": 11419
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-11-33-563Z.yml": {
+      "sha256": "383696a99545ef3504ae3e72d47ec928f9a4d854174dd36e99fdea5a8e9fd2a7",
+      "bytes": 11495
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-17-09-465Z.png": {
+      "sha256": "a7db7c81601cddc08ecbde58e54bc4cd36da81b16f0a7c6419c01df2dc96812a",
+      "bytes": 34988
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-23-32-165Z.yml": {
+      "sha256": "4d8d9d4520260c59eaa333aea673dd81a57144015fbc6e0997f597374a42e4e2",
+      "bytes": 11419
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-23-46-169Z.yml": {
+      "sha256": "4d8d9d4520260c59eaa333aea673dd81a57144015fbc6e0997f597374a42e4e2",
+      "bytes": 11419
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-35-51-735Z.yml": {
+      "sha256": "409c650d4d9287fc8d493fa5f20fd28f50b486a5d8b7da459c35283faa1f2d9f",
+      "bytes": 10762
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-50-17-343Z.yml": {
+      "sha256": "157cc07fe33ac009b7703d2fea8f7abde65c7565a648997527006d47980bb14b",
+      "bytes": 11585
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-51-29-238Z.yml": {
+      "sha256": "a38b1ec075b348e5ad170269e9df3870b37b84993d740c5c9d464b164e81e827",
+      "bytes": 11082
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-51-43-633Z.yml": {
+      "sha256": "a38b1ec075b348e5ad170269e9df3870b37b84993d740c5c9d464b164e81e827",
+      "bytes": 11082
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-53-09-210Z.yml": {
+      "sha256": "3bb2f0685e4f3b9ae1f22b918d7bbe64e427b87f088f6958a8028fdabccd4e5f",
+      "bytes": 12250
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-53-44-757Z.yml": {
+      "sha256": "9c1467c98d715b77ef7bca2df3eff976afb91a32bce337719a9d9c6bc186bcfe",
+      "bytes": 11920
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-55-00-671Z.yml": {
+      "sha256": "95c1435ad2cb5cba2a03c107d9403b2d24a6716dc05d03c87af55ed8a5bf9532",
+      "bytes": 11161
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-55-26-600Z.yml": {
+      "sha256": "297734b6739f68b07d653a60f47cd0fbcbcc997b4b740cadb379da806ee2b0cb",
+      "bytes": 12427
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-56-14-692Z.yml": {
+      "sha256": "297734b6739f68b07d653a60f47cd0fbcbcc997b4b740cadb379da806ee2b0cb",
+      "bytes": 12427
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/playwright/page-2026-10-01T18-57-46-657Z.yml": {
+      "sha256": "928fc2e5f3ea8550bc3a201836dd6b3c424b33b21fb02409f4f32307fe025cf2",
+      "bytes": 4889
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T11-responsive-qa/edge-1440x900.png": {
+      "sha256": "485bb830efb79254d464d4cc2bd38829e082589e3139100a16e2746ed05fd3a1",
+      "bytes": 91494
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T11-responsive-qa/edge-320x780.png": {
+      "sha256": "d41894343f0e545c1182b3ee9c574b3f54ec4b6f93e0c53c8569ea8efacbf002",
+      "bytes": 22092
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T11-responsive-qa/edge-390x844.png": {
+      "sha256": "6104383e7232e0e19ad53f1a6f31202dc13c12012a05b12e39d72fe52bc18015",
+      "bytes": 23761
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T11-responsive-qa/edge-768x1024.png": {
+      "sha256": "f202f619870d38d98568bf51e79846a27c64ae7fac93f5be952004dd8c549117",
+      "bytes": 38229
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/desktop-1440-after.png": {
+      "sha256": "b94ac3e53679b9ad8fb67f919b90d9df5c74c1605caf49c5cce8069f7883ec02",
+      "bytes": 93051
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/mobile-320-after.png": {
+      "sha256": "a95d5882d2215aaaae0669c7d5a7dea59dee9e5a665f4c66f1208bc6133bda47",
+      "bytes": 24050
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/mobile-320-before-simulated.png": {
+      "sha256": "f12d7804115b5c96ab37aabe9fdef690f7f4d07d62ea0138d6f35fb082040082",
+      "bytes": 24033
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/mobile-390-after.png": {
+      "sha256": "5cdb70d5f7cee5aa4dba8751583022f16e721b5235f40f9667fdc3445099c87b",
+      "bytes": 25590
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/mobile-390-before-simulated.png": {
+      "sha256": "2b5e6cb9843f7517a821c015f2beb5a40778d815c7866f27f1aacca2224089aa",
+      "bytes": 25586
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/playwright-cli/console-2026-10-03T13-56-08-136Z.log": {
+      "sha256": "c6074eaeae071e64392bed739ac77b4c52483fba51fa6caeb3d7c07f76870515",
+      "bytes": 181
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/playwright-cli/console-2026-10-03T14-16-15-547Z.log": {
+      "sha256": "486100594d14c730e446ef84b2d51aa182b20d969bb6ba93a7a46e50631dd180",
+      "bytes": 181
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/playwright-cli/page-2026-10-03T13-56-12-224Z.yml": {
+      "sha256": "2ed8bd3c91ffc6e98d2c2fa01ec3f6c5a4a51068b138bcfde8840d80cf5616b0",
+      "bytes": 10921
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/playwright-cli/page-2026-10-03T14-00-15-971Z.yml": {
+      "sha256": "70607e0a4ada7cfeec55db51829dcffc2c60ee061bff6b984890c00b18d434b8",
+      "bytes": 12224
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/playwright-cli/page-2026-10-03T14-16-19-258Z.yml": {
+      "sha256": "2ed8bd3c91ffc6e98d2c2fa01ec3f6c5a4a51068b138bcfde8840d80cf5616b0",
+      "bytes": 10921
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/EVIDENCE/T23-mobile-header/tablet-768-after.png": {
+      "sha256": "41390f438002ff42767d743741afdc600fb5a01ee63cb7fe689fc46efd64a748",
+      "bytes": 39641
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FAILED_FH_BRAINBOX.md": {
+      "sha256": "0ef078a4ca462aa57c72278b6622c99f4d939e152e6c05f531fbf5ad051ccee5",
+      "bytes": 17933
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FH_MUST_README.md": {
+      "sha256": "71078625c20dae419893d94f894867976aea7941a12589a2f8309de46f1d03b6",
+      "bytes": 11360
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/americana-star-western-boot.png": {
+      "sha256": "89dbc63dfc375459e8e36bf8334787e6d302fd3d4547b0b38985a3526b2b3268",
+      "bytes": 1792411
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/blue-blossom-western-boot.png": {
+      "sha256": "cbe6077b100562090454fb9d6668d948f06c74224382f5d1927789a36d6094cb",
+      "bytes": 1734723
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/crimson-triple-buckle-boot.png": {
+      "sha256": "d147a4a3718b3e4d8442b090c0f9d54843bbe1c20c2e06c4369200b064a353d8",
+      "bytes": 1884644
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/foothive-boot-images.md": {
+      "sha256": "c99c4ebb188ba8e58690cd6f73ff268145b97098b36f58011ab4be69db47a5fd",
+      "bytes": 1153
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/ivory-shaft-western-boot.png": {
+      "sha256": "314908ded14cbd76a33c66b6af6ebf177613046ae87dfa49a331883253682028",
+      "bytes": 670818
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/olive-canvas-buckle-combat-boot-front.png": {
+      "sha256": "7b8485cc1b68d1051aa6999f767fcb6d732af73bc0c5d404cbce754bbb817efd",
+      "bytes": 398700
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/olive-canvas-buckle-combat-boot-rear.png": {
+      "sha256": "3ddc6ab8bc04d0e844e224780084b11ce032fac4ffc28b46e42e6ee8e0821fa7",
+      "bytes": 536214
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/stars-stripes-western-boot.png": {
+      "sha256": "817b7cc4fdf9eeea51708b60a166bb44332eaff81c289bcd5e14b224fc21dcec",
+      "bytes": 479778
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/sunflower-embroidered-western-boot.png": {
+      "sha256": "4fbc9b28f6a52b2dad36c5a849a73e60f57a22407eb5beca38ba570ed61b9d44",
+      "bytes": 1189578
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE BOOTS IMAGES/winged-cross-studded-western-boot.png": {
+      "sha256": "a92b7f68e1994e7e6490dfba376cfbf8fadb8b31494736fa428d9990bb16f431",
+      "bytes": 1493098
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/burnished-cognac-patina-oxford.png": {
+      "sha256": "3fc305a7521cdefbc731f4af9c1eb09d1837fdeb5a6809765bf280dfeec6ce91",
+      "bytes": 724932
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/chestnut-ivory-suede-panel-wingtip.png": {
+      "sha256": "2324f77f23a8100a739c80f635ace9906df0ae8fed5d3e64b78a2c7d997496fd",
+      "bytes": 4372094
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/chestnut-two-tone-wingtip-boot.png": {
+      "sha256": "5f57d20754a738b58112528b70c42e0d422201964d69659a72342fe8b16a2c5c",
+      "bytes": 1817639
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/crimson-navy-patina-wingtip.png": {
+      "sha256": "b7a5610823ea8a18987e1ed00f651ac52733b8f5d632a0411e8004bbe6bbd568",
+      "bytes": 313835
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/foothive-classic-images.md": {
+      "sha256": "e722b7bb249d7f439627ea594b64e68af77274183228abf6d7f4a30f91551518",
+      "bytes": 1113
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/four-pair-shoe-tree-lineup.png": {
+      "sha256": "c734b8e75ee1e9fd68aae39da5d04a288b5d35ab67283e73bf27deee84bb27f8",
+      "bytes": 688810
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/olive-suede-wingtip-brogue.png": {
+      "sha256": "415157052b0f7a35f741fd7a48816e927c6cc75f8afbbb503d838b68b67f923f",
+      "bytes": 664091
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/tan-croc-embossed-derby.png": {
+      "sha256": "82f016cb21dc6300b6bc74ed4698fcef3fcaaed680b1ce4fc3ff3692ccf5f3b2",
+      "bytes": 430372
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/tri-tone-patent-wingtip-derby.png": {
+      "sha256": "c2a9335a7b77947cd12b784fa161a0bb4162683b19a067f77f24f8dce0bd00b5",
+      "bytes": 805708
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE CLASSIC SHOES IMAGES/two-tone-cap-toe-field-boot.png": {
+      "sha256": "8ba73dd0eab551ffaece1a46c616d0c3c276a125b3f3fd6c1de70d0ea0f111eb",
+      "bytes": 591572
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE LOGO + DARK MODE/foothive-logo-dark.svg": {
+      "sha256": "36df8baea37d04cf53b30ffaa51e2e239fb151471fcfc5a774a0084ae093966f",
+      "bytes": 9172
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE LOGO + DARK MODE/foothive-logo.svg": {
+      "sha256": "c28b7471e06429b81753151d7a8a610be4ed1286566c013c058d9c802edfd8c7",
+      "bytes": 9105
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/charcoal-tactical-boot-runner.png": {
+      "sha256": "1588b3dd3e79a9c5e9bf878b7b31ee3360c51f5a3a2609b7274c650246c5440d",
+      "bytes": 646172
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/foothive-sneaker-images.md": {
+      "sha256": "5669c5bedaca79ae79065970c03828c5488ecbc9b25defe33880ffc854f25dbf",
+      "bytes": 528
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/frost-glow-sock.png": {
+      "sha256": "2289b77dea3d12977cc3858d91397c537d9ccf72db7ce70d641836aeb5a4357e",
+      "bytes": 443169
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/navy-tan-stripe.png": {
+      "sha256": "bd16210c8f806ee44b92aad50396bd86ce4b418339517514f983b8f51995f710",
+      "bytes": 341243
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE SNEAKER IMAGES/talon-blade.png": {
+      "sha256": "4a889fc268bf0681fd8ea06521776946e5b877d048ef5c095184e5762305d24c",
+      "bytes": 687827
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/foothive-timberland-images.md": {
+      "sha256": "e6dca681472ffd08a00c7db5c10711a05dc2a8291b6c74385a518a9697387fa9",
+      "bytes": 834
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image02.png": {
+      "sha256": "c0f4d1f4e81f30dc8b39482141603b09009bd7fb7e2bb3c8a8101da24e57bd10",
+      "bytes": 1109106
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image03.png": {
+      "sha256": "11390e47e9327c69577a8abfc9d8251457057c54e58efb1f471b26d69e3fe79b",
+      "bytes": 991052
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image04.png": {
+      "sha256": "8abe32149c35e2b790c458cbcc88fb0899158460f43fc2899b119cb049d43c6a",
+      "bytes": 718804
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image05.png": {
+      "sha256": "0afcbe97cb83c52d2d8e9d7b1856c3583f1d4688236d1471cf08cba0603842e3",
+      "bytes": 1385905
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image08.png": {
+      "sha256": "4b3f3285cbfcdcc192542248fad8d17a79d2836d74195269f042f16dbd47bbf7",
+      "bytes": 1020555
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image13.png": {
+      "sha256": "07dd6563a4127a2e2958a281b56c3af1b7950aa64b697cf03fcb1f93637926e4",
+      "bytes": 796479
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image15.png": {
+      "sha256": "38e4c0e763d9046428bb2fe9bd9e364035bda5188a44f417eac7fa445eaea36b",
+      "bytes": 980549
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image16.png": {
+      "sha256": "1052679193b3a06aac70f40ee61fb2fc7f4cc902fd980e2113a50dd090363808",
+      "bytes": 650096
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image17.png": {
+      "sha256": "7cd01613bedd8e445b9efa19439abdbc764cf9bf2f558c28aeacd58968332613",
+      "bytes": 2556387
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/FOOTHIVE TIMBERLAND IMAGES/image19.png": {
+      "sha256": "b4cbfc042422de85c1794fe817fc3459a3b600bf36620a1c8004e89b98d7a68d",
+      "bytes": 1661839
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/OPERATOR_ADDENDUM_FH_BRAINBOX.md": {
+      "sha256": "6ea8740bb3a4f4c88dfc68bee7914040002aa1d2ecd66df12525f1cf4b11c797",
+      "bytes": 3247
+    },
+    "FOOTHIVE_PROJ_BRAINBOX/PASSED_FH_BRAINBOX.md": {
+      "sha256": "f21dcff41416c08810fe0b9baa159acaa322fa8648d7cfdb4ceca8bd3c627f2a",
+      "bytes": 15597
+    },
+    "PROJ_MUST_README.md": {
+      "sha256": "f85c3a95c15b8546a58677a2976fda19389f71c3c7b58852fb3376cfff51cc65",
+      "bytes": 1319
+    },
+    "RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md": {
+      "sha256": "e9ad5963cf5e59555a0bf5b3c797eade93f2995007117c3684aeb158a6da9105",
+      "bytes": 25450
+    },
+    "RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md": {
+      "sha256": "0a7270ecc83db51416aaab7d6d5a78231f783dcdf5d01e4a9a7e0499fdbf45ea",
+      "bytes": 26261
+    },
+    "RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/FSTACK_MUST_README.md": {
+      "sha256": "a4ff12448bf458d5252bc36ace55acccd8841cbaaca4d32e052b59840c976cd0",
+      "bytes": 8174
+    },
+    "RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md": {
+      "sha256": "be80758c5188f319c7f5b1a3ca4f862077530982e932f8d596469940c9a33f41",
+      "bytes": 4441
+    }
+  }
+}

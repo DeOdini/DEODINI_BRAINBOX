@@ -13,21 +13,32 @@
 **LAST VERIFIED:** 2026-10-09 — Codex read-back.
 **VERIFIER:** Codex implementation read-back; independent ChatGPT verification: PASS (2026-10-09).
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+CODE_PATTERNS_BACKEND_BRAINBOX/ [PRESENT · POPULATED]
+├── API_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── JAVASCRIPT_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── PYTHON_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SQL_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TYPESCRIPT_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_CODE_PATTERNS_BACKEND_BRAINBOX.md [PRESENT]
+```
+
 ## Authority boundary
 
 These are application-specific Backend destinations, not language guides or validated implementation recipes. Their presence does not select a runtime or framework. In particular, no Python knowledge is copied into the Python Backend branch.
 
-## Authoritative tree and current local tree
+## Current-tree reference
 
-<pre>
-CODE_PATTERNS_BACKEND_BRAINBOX/
-├── README_CODE_PATTERNS_BACKEND_BRAINBOX.md [PRESENT — LOCAL TREE]
-├── JAVASCRIPT_CODE_PATTERNS_BRAINBOX/.gitkeep [EMPTY]
-├── TYPESCRIPT_CODE_PATTERNS_BRAINBOX/.gitkeep [EMPTY]
-├── PYTHON_CODE_PATTERNS_BRAINBOX/.gitkeep [EMPTY]
-├── SQL_CODE_PATTERNS_BRAINBOX/.gitkeep [EMPTY]
-└── API_CODE_PATTERNS_BRAINBOX/.gitkeep [EMPTY]
-</pre>
+The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Canonical references and distinct responsibilities
 

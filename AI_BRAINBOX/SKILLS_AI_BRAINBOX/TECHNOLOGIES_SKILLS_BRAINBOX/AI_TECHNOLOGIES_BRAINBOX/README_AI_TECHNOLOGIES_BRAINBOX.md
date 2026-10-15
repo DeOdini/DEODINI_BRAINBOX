@@ -18,16 +18,26 @@
 **EXIT NAVIGATION:** Return to the parent README or root `README_BRAINBOX.md`.
 **APPLIES TO:** The governed `AI_TECHNOLOGIES_BRAINBOX/` branch.
 
-## Authoritative and local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-AI_TECHNOLOGIES_BRAINBOX/
-+-- README_AI_TECHNOLOGIES_BRAINBOX.md [PRESENT]
-+-- LANGCHAIN_TECHNOLOGY_BRAINBOX/ [EMPTY]
-+-- LLAMAINDEX_TECHNOLOGY_BRAINBOX/ [EMPTY]
-+-- MCP_TECHNOLOGY_BRAINBOX/ [EMPTY]
-+-- OLLAMA_TECHNOLOGY_BRAINBOX/ [EMPTY]
+AI_TECHNOLOGIES_BRAINBOX/ [PRESENT · POPULATED]
+├── LANGCHAIN_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── LLAMAINDEX_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── MCP_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── OLLAMA_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_AI_TECHNOLOGIES_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Canonical references
 

@@ -14,6 +14,15 @@
 **SOURCE_TYPE:** Evidence-backed capability record.
 **VERIFIER:** Codex, V003-M06 source read-back.
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+RESEARCH_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+└── README_RESEARCH_EXE_FUNC_BRAINBOX.md [PRESENT]
+```
+
 ## Executor and evidence
 
 - **Agent:** Codex.
@@ -28,3 +37,10 @@
 Evidence supports read-only research of public sources. Check source date and prefer primary/official sources. It does not prove current reachability or authorize external writes, account actions, or publication.
 
 **POPULATION STATE:** One Codex record admitted from the frozen matrix.
+
+---
+
+## V003 agent operation references — 2026-10-15
+
+CATEGORY IS AN INDEX ONLY, not evidence or a questionnaire.
+[Codex EXE-CODEX-RESEARCH-001](../CODEX_EXE_FUNC_BRAINBOX/README_CODEX_EXE_FUNC_BRAINBOX.md#exe-codex-research-001): historical M06 execution, currently unverified.

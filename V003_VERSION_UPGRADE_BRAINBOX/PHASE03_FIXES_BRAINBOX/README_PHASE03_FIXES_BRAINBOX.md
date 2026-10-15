@@ -1,24 +1,30 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PHASE 03 RECORDS PRESERVED; F11 BROADER SOURCE-DISPOSITION FOLLOW-UP REMAINS OPEN; V003 PROJECT-LEVEL QUALIFIED CLOSED BY OPERATOR (2026-10-14), WITH UNRESOLVED ITEMS RETAINED IN THE V003 REGISTER]
+**STATUS:** [PRESENT · POPULATED; V003 QUALIFIED CLOSED BY OPERATOR; ACTIVE FOLLOW-UP IS SPECIFICATION §§8–18 ONLY]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [F01-F16 RECORDS PRESENT; F09 TRACEABILITY, F11 SOURCE LEDGER, F12 OWNERSHIP MATRIX, AND F13 PROMOTION POLICY ARE IN MAIN; TICKET-LEVEL FOLLOW-UPS REMAIN OPEN IN THE V003 UNRESOLVED REGISTER]
-**LAST UPDATED:** 2026-10-14 - The Operator recorded qualified V003 closure with follow-ups retained in the Unresolved Register; see the dated closeout section below and the report for ticket scope limits.
+**POPULATION:** [F01–F16 ticket records and the execution/verification archive are present; approved F09/F11/F12/F13 scopes are merged; F11 content disposition is closed with the documented seven-empty-directory cleanup exception. The active Unresolved Register entry is Specification §§8–18.]
+**LAST UPDATED:** 2026-10-15 — Phase 03 publication/merge closure and Operator-qualified V003 status cross-checked; historical ticket-level findings remain preserved as dated evidence.
 
-## Local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
 ```text
-PHASE03_FIXES_BRAINBOX/
-├── README_PHASE03_FIXES_BRAINBOX.md
-├── F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv [F06 row-level source/reference audit evidence]
-├── F11_FOOTHIVE_SOURCE_DISPOSITION_PHASE03_FIXES_BRAINBOX.csv [F11 per-file FootHive and RAW source ledger]
-├── F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv [F09 eight-agent source/CORE hash/status crosswalk]
-├── V003_FIXES_REPORT_BRAINBOX.md
-├── V003_FIXES_CONVO_BRAINBOX.md
-└── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [current F01-F16 ticket ledger; see ticket-specific statuses and approval boundaries]
+PHASE03_FIXES_BRAINBOX/ [PRESENT · POPULATED]
+├── F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv [PRESENT]
+├── F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv [PRESENT]
+├── F11_FOOTHIVE_SOURCE_DISPOSITION_PHASE03_FIXES_BRAINBOX.csv [PRESENT]
+├── README_PHASE03_FIXES_BRAINBOX.md [PRESENT]
+├── V003_FIXES_CONVO_BRAINBOX.md [PRESENT]
+├── V003_FIXES_REPORT_BRAINBOX.md [PRESENT]
+├── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [PRESENT]
+└── V003_POC_NAMING_SCOPED_DIFF_BRAINBOX.diff [PRESENT]
 ```
+
+The canonical two-level tree above is the current Phase 03 folder view. It includes all eight physical direct children, including the scoped POC naming diff artifact; this README does not maintain a second abbreviated tree.
 
 ## Navigation
 - [Report, classification and batching](V003_FIXES_REPORT_BRAINBOX.md)
@@ -32,7 +38,7 @@ PHASE03_FIXES_BRAINBOX/
 - [Migration Map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 
 ## Safeguards
-Use full `V003-Fxx` identifiers; proposed batch order does not change IDs. Preserve Phase 02 records intact. The Operator explicitly adopted Phase 02's blocking versus batch-deferred flag model for Phase 03 on 2026-10-11. Ticket-specific authorization is still required. The 2026-10-11 F01 instruction authorized publication of F01 records. The Operator separately authorized Batch B inventory, comparison, reference-audit, proposal work, and ticket-scoped Git publication on 2026-10-12. Neither instruction authorizes checkpoint-object restoration/manipulation, source moves or retirement without the stated Operator choices, merge, history rewrite, M21 acceptance, or V003 closure.
+Use full `V003-Fxx` identifiers and preserve Phase 02 history. The ticket-specific approvals, closure decisions, and limits are recorded in the report and conversation. V003 is Operator-qualified closed; this does not assert a blanket technical PASS, recovery of the 20 Cline checkpoint objects, or current Production certification. The active follow-up is Specification §§8–18 in the Unresolved Register. Any new corrective work requires its own scope and authorization; do not rewrite historical checkpoints to match later dispositions.
 
 ---
 

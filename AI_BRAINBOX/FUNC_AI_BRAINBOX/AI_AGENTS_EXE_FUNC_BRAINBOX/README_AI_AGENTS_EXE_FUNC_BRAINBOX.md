@@ -14,20 +14,44 @@
 **SOURCE_TYPE:** Evidence-backed capability index.
 **VERIFIER:** Codex, V003-M06 read-back and link verification.
 
-## Authoritative and local tree
+## Canonical local tree — two descendant levels
 
-AI_AGENTS_EXE_FUNC_BRAINBOX/
-├── README_AI_AGENTS_EXE_FUNC_BRAINBOX.md
-├── RESEARCH_EXE_FUNC_BRAINBOX/
-│   └── README_RESEARCH_EXE_FUNC_BRAINBOX.md
-├── BROWSER_EXE_FUNC_BRAINBOX/
-│   └── README_BROWSER_EXE_FUNC_BRAINBOX.md
-├── FILE_EXE_FUNC_BRAINBOX/
-│   └── README_FILE_EXE_FUNC_BRAINBOX.md
-├── CODE_EXE_FUNC_BRAINBOX/
-│   └── README_CODE_EXE_FUNC_BRAINBOX.md
-└── MEDIA_EXE_FUNC_BRAINBOX/
-    └── README_MEDIA_EXE_FUNC_BRAINBOX.md
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+AI_AGENTS_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+├── BROWSER_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_BROWSER_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── CHATGPT_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_CHATGPT_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── CLAUDE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_CLAUDE_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── CLINE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_CLINE_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── CODE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_CODE_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── CODEX_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_CODEX_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── COPILOT_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_COPILOT_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── DEEPSEEK_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_DEEPSEEK_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── FILE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_FILE_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── GROK_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_GROK_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── MEDIA_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_MEDIA_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── QWEN_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_QWEN_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── RESEARCH_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_RESEARCH_EXE_FUNC_BRAINBOX.md [PRESENT]
+└── README_AI_AGENTS_EXE_FUNC_BRAINBOX.md [PRESENT]
+```
+
+## Current-tree reference
+
+The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Admission register
 
@@ -66,3 +90,37 @@ No additional EXE category is created. Copilot's Playwright configuration is rec
 ## Independent verification status — 2026-10-09
 
 V003-M06 independently verifies **PASS**. Exactly four evidence-backed categories are admitted (RESEARCH, BROWSER, FILE, CODE), all scoped to Codex evidence in frozen §9; MEDIA remains **RESERVED / EXECUTION EVIDENCE PENDING — NOT ADMITTED**. No speculative EXE category exists.
+
+---
+
+## V003 EXE questionnaire — 2026-10-15
+
+EXE = UNIVERSAL AGENT-SPECIFIC questionnaire applied ONLY to tools and skills listed by that agent in CORE. NO tool-specific preset questions.
+1. E01 Agent/runtime/date and exact CORE item IDs/links?
+2. E02 For each CORE item: which exact operations were attempted? Assign EXE-AGENT-OPERATION ID. Unattempted = NOT TESTED. Tool name alone is not an operation.
+3. E03 For each attempted ID: action, target, date, inputs, expected/actual outcome, success/partial/failure, evidence file, independent verifier?
+4. E04 Authentication during test, scope, read/write/external effect, exact Operator authorization and restrictions?
+5. E05 Repeat attempts, errors, reliability, last successful result, revalidation needs?
+6. E06 Project delegation fit and exact category index reference to this agent operation anchor. Propose nonduplicate new category ONLY if a major evidenced function lacks an index.
+States: VERIFIED EXECUTED / EXECUTED PENDING VERIFICATION / HISTORICALLY EXECUTED / PARTIAL / FAILED / NOT TESTED / UNAVAILABLE.
+One row per operation: EXE ID, linked CORE ID, exact action/tool, timestamp/runtime, result, evidence, verifier, permission, freshness, category. Never attribute another agent test.
+
+---
+
+## V003 agent EXE navigation — 2026-10-15
+
+Each agent EXE README owns operation evidence; these categories provide links, not repeated answers.
+
+- [CHATGPT EXE](CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md) / [CORE](../AI_AGENTS_CORE_FUNC_BRAINBOX/CHATGPT_CORE_FUNC_BRAINBOX.md)
+- [CLAUDE EXE](CLAUDE_EXE_FUNC_BRAINBOX/README_CLAUDE_EXE_FUNC_BRAINBOX.md) / [CORE](../AI_AGENTS_CORE_FUNC_BRAINBOX/CLAUDE_CORE_FUNC_BRAINBOX.md)
+- [CLINE EXE](CLINE_EXE_FUNC_BRAINBOX/README_CLINE_EXE_FUNC_BRAINBOX.md) / [CORE](../AI_AGENTS_CORE_FUNC_BRAINBOX/CLINE_CORE_FUNC_BRAINBOX.md)
+- [CODEX EXE](CODEX_EXE_FUNC_BRAINBOX/README_CODEX_EXE_FUNC_BRAINBOX.md) / [CORE](../AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md)
+- [COPILOT EXE](COPILOT_EXE_FUNC_BRAINBOX/README_COPILOT_EXE_FUNC_BRAINBOX.md) / [CORE](../AI_AGENTS_CORE_FUNC_BRAINBOX/COPILOT_CORE_FUNC_BRAINBOX.md)
+- [DEEPSEEK EXE](DEEPSEEK_EXE_FUNC_BRAINBOX/README_DEEPSEEK_EXE_FUNC_BRAINBOX.md) / [CORE](../AI_AGENTS_CORE_FUNC_BRAINBOX/DEEPSEEK_CORE_FUNC_BRAINBOX.md)
+- [GROK EXE](GROK_EXE_FUNC_BRAINBOX/README_GROK_EXE_FUNC_BRAINBOX.md) / [CORE](../AI_AGENTS_CORE_FUNC_BRAINBOX/GROK_CORE_FUNC_BRAINBOX.md)
+- [QWEN EXE](QWEN_EXE_FUNC_BRAINBOX/README_QWEN_EXE_FUNC_BRAINBOX.md) / [CORE](../AI_AGENTS_CORE_FUNC_BRAINBOX/QWEN_CORE_FUNC_BRAINBOX.md)
+
+
+## Agent path discovery requirement
+
+Before selecting a file path, consult the [Tree and Status Governance](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md) and the local two-level tree of the current folder; follow the child README to discover deeper paths. Verify existence instead of guessing; do not infer implementation from presence or populated documentation.

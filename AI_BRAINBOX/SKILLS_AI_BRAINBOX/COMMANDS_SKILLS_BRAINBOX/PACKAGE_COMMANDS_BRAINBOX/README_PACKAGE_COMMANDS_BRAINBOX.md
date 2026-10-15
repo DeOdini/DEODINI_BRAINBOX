@@ -18,19 +18,31 @@
 **EXIT NAVIGATION:** Return to the parent README or root `README_BRAINBOX.md`.
 **APPLIES TO:** The governed `PACKAGE_COMMANDS_BRAINBOX/` branch.
 
-## Authoritative and local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-PACKAGE_COMMANDS_BRAINBOX/
-+-- README_PACKAGE_COMMANDS_BRAINBOX.md [PRESENT]
-+-- NPM_NPX_POWERSHELL_COMMAND_REFERENCE_BRAINBOX.md [POPULATED]
-+-- NPM_COMMANDS_BRAINBOX/ [EMPTY]
-+-- NPX_COMMANDS_BRAINBOX/ [EMPTY]
-+-- PIP_COMMANDS_BRAINBOX/ [EMPTY]
-+-- PNPM_COMMANDS_BRAINBOX/ [EMPTY]
-+-- UV_COMMANDS_BRAINBOX/ [EMPTY]
-+-- YARN_COMMANDS_BRAINBOX/ [EMPTY]
+PACKAGE_COMMANDS_BRAINBOX/ [PRESENT · POPULATED]
+├── NPM_COMMANDS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── NPX_COMMANDS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── PIP_COMMANDS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── PNPM_COMMANDS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── UV_COMMANDS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── YARN_COMMANDS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── NPM_NPX_POWERSHELL_COMMAND_REFERENCE_BRAINBOX.md [PRESENT]
+└── README_PACKAGE_COMMANDS_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Canonical references
 

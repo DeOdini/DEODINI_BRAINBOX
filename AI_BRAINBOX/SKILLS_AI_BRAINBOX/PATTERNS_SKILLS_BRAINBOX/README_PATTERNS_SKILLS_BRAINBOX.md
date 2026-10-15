@@ -15,20 +15,34 @@
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex implementation read-back; ChatGPT independent M08 verification: PASS (Batch B closeout, 2026-10-09).
 
-## Local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-PATTERNS_SKILLS_BRAINBOX/
-├── README_PATTERNS_SKILLS_BRAINBOX.md
-├── CODE_PATTERNS_SKILLS_BRAINBOX/
-├── ARCHITECTURE_PATTERNS_SKILLS_BRAINBOX/
-├── INTEGRATION_PATTERNS_SKILLS_BRAINBOX/
-├── SECURITY_PATTERNS_SKILLS_BRAINBOX/
-├── TESTING_PATTERNS_SKILLS_BRAINBOX/
-├── DATA_PATTERNS_SKILLS_BRAINBOX/
-├── ERROR_HANDLING_PATTERNS_BRAINBOX/
-└── AI_AGENT_PATTERNS_BRAINBOX/
+PATTERNS_SKILLS_BRAINBOX/ [PRESENT · POPULATED]
+├── AI_AGENT_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── ARCHITECTURE_PATTERNS_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── CODE_PATTERNS_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── DATA_PATTERNS_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── ERROR_HANDLING_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── INTEGRATION_PATTERNS_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SECURITY_PATTERNS_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TESTING_PATTERNS_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_PATTERNS_SKILLS_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Python pattern boundary
 

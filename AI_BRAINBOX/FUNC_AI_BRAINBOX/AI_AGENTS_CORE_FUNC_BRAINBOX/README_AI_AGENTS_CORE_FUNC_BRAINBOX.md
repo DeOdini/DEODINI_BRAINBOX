@@ -12,18 +12,26 @@
 **VERIFIER:** Codex — M05 source/hash cross-check and M06 CORE-to-EXE reference reconciliation; M06 commit `9635e5d` pushed.
 **APPLIES TO:** ChatGPT, Claude, Cline, Codex, Copilot, DeepSeek, Grok, and Qwen.
 
-## Local tree
+## Canonical local tree — two descendant levels
 
-AI_AGENTS_CORE_FUNC_BRAINBOX/
-├── README_AI_AGENTS_CORE_FUNC_BRAINBOX.md
-├── CHATGPT_CORE_FUNC_BRAINBOX.md
-├── CLAUDE_CORE_FUNC_BRAINBOX.md
-├── CLINE_CORE_FUNC_BRAINBOX.md
-├── CODEX_CORE_FUNC_BRAINBOX.md
-├── COPILOT_CORE_FUNC_BRAINBOX.md
-├── DEEPSEEK_CORE_FUNC_BRAINBOX.md
-├── GROK_CORE_FUNC_BRAINBOX.md
-└── QWEN_CORE_FUNC_BRAINBOX.md
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+AI_AGENTS_CORE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+├── CHATGPT_CORE_FUNC_BRAINBOX.md [PRESENT]
+├── CLAUDE_CORE_FUNC_BRAINBOX.md [PRESENT]
+├── CLINE_CORE_FUNC_BRAINBOX.md [PRESENT]
+├── CODEX_CORE_FUNC_BRAINBOX.md [PRESENT]
+├── COPILOT_CORE_FUNC_BRAINBOX.md [PRESENT]
+├── DEEPSEEK_CORE_FUNC_BRAINBOX.md [PRESENT]
+├── GROK_CORE_FUNC_BRAINBOX.md [PRESENT]
+├── QWEN_CORE_FUNC_BRAINBOX.md [PRESENT]
+└── README_AI_AGENTS_CORE_FUNC_BRAINBOX.md [PRESENT]
+```
+
+## Current-tree reference
+
+The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Required status fields
 
@@ -58,3 +66,25 @@ Use YES, NO, UNKNOWN / NOT VERIFIED, or NOT APPLICABLE for the status value, the
 ## Independent verification status — 2026-10-09
 
 M05 CORE and the M06 CORE↔EXE reconciliation independently verify **PASS**. Codex maps to RESEARCH/BROWSER/FILE/CODE; Copilot Browser remains unverified; Cline MEDIA remains reserved-only; ChatGPT/Claude/DeepSeek/Grok/Qwen have no admitted EXE category from M06.
+
+---
+
+## V003 CORE questionnaire — 2026-10-15
+
+CORE = agent capability inventory; NOT execution evidence. Agent must answer in own CORE file with dated CORE item IDs.
+1. C01 Identity, model if known, runtime, workspace, date, source of claim?
+2. C02 For EVERY visible native tool, connector, MCP/API, plugin and skill: exact name, linkage, provider, purpose and advertised functions?
+3. C03 For each item independently: exposed, installed, configured, connected, authenticated, offline, untested? Last direct evidence, account/project/device scope?
+4. C04 Skill dependencies, skills versus credentials and connection requirements?
+5. C05 RDC devices, local/remote files, Git, browser, terminal and other resource access, boundaries and permission?
+6. C06 Email/calendar/communications: accounts, read/draft/send access, authorization?
+7. C07 Automation: n8n, Activepieces, native automation: available/configured/connected/authenticated; triggers and limitations, no claim of tested workflow?
+8. C08 Professional tasks in principle: frontend, backend, data, research, media, design, DevOps; constraints and unknowns?
+9. C09 Additional potential tools, how linked and why useful?
+10. C10 One row per CORE ID: tool, type, state dimensions, purpose, permissions, evidence and last checked, linked agent EXE record if present.
+Do not expose secrets or test external modifications; historical claims are not current runtime proof.
+
+
+## Agent path discovery requirement
+
+Before selecting a file path, consult the [Tree and Status Governance](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md) and the local two-level tree of the current folder; follow the child README to discover deeper paths. Verify existence instead of guessing; do not infer implementation from presence or populated documentation.

@@ -12,73 +12,55 @@
 **VERIFIER:** Codex — M14 implementation checks and M16 current-tree/link checks; independent ChatGPT M14 verification: PASS (2026-10-09); M16 independent verification: PASS (Batch D closeout, 2026-10-09).
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+PROD_DEVOPS_BRAINBOX/ [PRESENT · POPULATED]
+├── ENVIRONMENT_PROD_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── TEMPLATES_ENVIRONMENT_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── ENV_ROTATION_BRAINBOX.md [PRESENT]
+│   ├── ENV_SECURITY_BRAINBOX.md [PRESENT]
+│   ├── ENV_VALIDATION_BRAINBOX.md [PRESENT]
+│   ├── ENV_VARIABLES_BRAINBOX.md [PRESENT]
+│   └── README_ENVIRONMENT_PROD_BRAINBOX.md [PRESENT]
+├── FAILED_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── FULLSTACK_PROD_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── DEPLOYMENT_PROD_BRAINBOX/ [PRESENT · STUB]
+│   ├── MONITORING_PROD_BRAINBOX/ [PRESENT · STUB]
+│   ├── OPERATIONS_PROD_BRAINBOX/ [PRESENT · STUB]
+│   ├── RELEASE_PROD_BRAINBOX/ [PRESENT · STUB]
+│   ├── WORKFLOWS_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── README_FULLSTACK_PROD_BRAINBOX.md [PRESENT]
+├── INCIDENTS_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── PASSED_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── POC_PROD_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── FOOTHIVE_PROD_SUMMARY_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_POC_BRAINBOX.md [PRESENT]
+├── REGRESSIONS_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_PROD_DEVOPS_BRAINBOX.md [PRESENT]
+```
+
 ## Authority boundary
 
 Production is not a “proven forever” bucket. A workflow that passes in Sandbox can still fail in Production. Production records its own outcomes and operational evidence; it does not inherit Sandbox status.
 
 This README establishes Production navigation. It does not authorize a deployment, environment access, release, secret rotation, or production operation. It does not claim production readiness or client acceptance.
 
-## Authoritative target tree
+## Production target authority
 
-The hierarchy below follows frozen V003 Specification §8. M16 owns Production case-study content.
+The frozen V003 Specification §8 defines the complete Production hierarchy. The root `README_BRAINBOX.md` carries the complete project tree; the canonical local tree above is the current two-level physical navigation view. M16 owns Production case-study content.
 
-    PROD_DEVOPS_BRAINBOX/
-    ├── README_PROD_DEVOPS_BRAINBOX.md [PRESENT]
-    ├── FULLSTACK_PROD_BRAINBOX/ [PRESENT — M14]
-    │   ├── README_FULLSTACK_PROD_BRAINBOX.md
-    │   ├── WORKFLOWS_PROD_BRAINBOX/
-    │   ├── RELEASE_PROD_BRAINBOX/
-    │   ├── DEPLOYMENT_PROD_BRAINBOX/
-    │   ├── OPERATIONS_PROD_BRAINBOX/
-    │   └── MONITORING_PROD_BRAINBOX/
-    ├── ENVIRONMENT_PROD_BRAINBOX/ [PRESENT — M14]
-    │   ├── README_ENVIRONMENT_PROD_BRAINBOX.md
-    │   ├── ENV_VARIABLES_BRAINBOX.md
-    │   ├── ENV_SECURITY_BRAINBOX.md
-    │   ├── ENV_ROTATION_BRAINBOX.md
-    │   ├── ENV_VALIDATION_BRAINBOX.md
-    │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
-    │       ├── .env.example
-    │       └── .gitignore
-    ├── CASE_STUDIES_PROD_BRAINBOX/ [PRESENT — M16]
-    │   └── FOOTHIVE_PROD_SUMMARY_BRAINBOX/
-    │       ├── README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
-    │       └── PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
-    ├── PASSED_PROD_BRAINBOX/
-    ├── FAILED_PROD_BRAINBOX/
-    ├── INCIDENTS_PROD_BRAINBOX/
-    └── REGRESSIONS_PROD_BRAINBOX/
-
-## Current local tree
+## Current-tree reference
 
 The five Fullstack operational branches remain empty placeholders. Environment files are safe documentation/templates. Production evidence areas contain only zero-byte markers. M16 added the FootHive release-summary case study below; it references, and does not duplicate, the Sandbox evidence.
 
-    PROD_DEVOPS_BRAINBOX/
-    ├── README_PROD_DEVOPS_BRAINBOX.md
-    ├── FULLSTACK_PROD_BRAINBOX/
-    │   ├── README_FULLSTACK_PROD_BRAINBOX.md
-    │   ├── WORKFLOWS_PROD_BRAINBOX/.gitkeep
-    │   ├── RELEASE_PROD_BRAINBOX/.gitkeep
-    │   ├── DEPLOYMENT_PROD_BRAINBOX/.gitkeep
-    │   ├── OPERATIONS_PROD_BRAINBOX/.gitkeep
-    │   └── MONITORING_PROD_BRAINBOX/.gitkeep
-    ├── ENVIRONMENT_PROD_BRAINBOX/
-    │   ├── README_ENVIRONMENT_PROD_BRAINBOX.md
-    │   ├── ENV_VARIABLES_BRAINBOX.md
-    │   ├── ENV_SECURITY_BRAINBOX.md
-    │   ├── ENV_ROTATION_BRAINBOX.md
-    │   ├── ENV_VALIDATION_BRAINBOX.md
-    │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
-    │       ├── .env.example
-    │       └── .gitignore
-    ├── CASE_STUDIES_PROD_BRAINBOX/
-    │   └── FOOTHIVE_PROD_SUMMARY_BRAINBOX/
-    │       ├── README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
-    │       └── PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
-    ├── PASSED_PROD_BRAINBOX/.gitkeep
-    ├── FAILED_PROD_BRAINBOX/.gitkeep
-    ├── INCIDENTS_PROD_BRAINBOX/.gitkeep
-    └── REGRESSIONS_PROD_BRAINBOX/.gitkeep
+The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## M14 migration boundary
 

@@ -10,24 +10,42 @@
 **APPLIES TO:** Architecture choices and application records in Fullstack builds.
 **LAST VERIFIED:** 2026-10-09
 
-## Authoritative and local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-ARCHITECTURE_FULLSTACK_BRAINBOX/
-|-- README_ARCHITECTURE_FULLSTACK_BRAINBOX.md
-|-- STATIC_SITE_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- SPA_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- SSR_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- JAMSTACK_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- MONOLITH_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- MODULAR_MONOLITH_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- CLIENT_SERVER_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- MICROSERVICES_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- SERVERLESS_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- EVENT_DRIVEN_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-|-- API_FIRST_ARCH_BRAINBOX/ [.gitkeep; EMPTY]
-`-- ARCH_DECISIONS_BRAINBOX/ [.gitkeep; EMPTY]
+ARCHITECTURE_FULLSTACK_BRAINBOX/ [PRESENT · POPULATED]
+├── API_FIRST_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── ARCH_DECISIONS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── CLIENT_SERVER_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── EVENT_DRIVEN_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── JAMSTACK_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── MICROSERVICES_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── MODULAR_MONOLITH_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── MONOLITH_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SERVERLESS_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SPA_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SSR_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── STATIC_SITE_ARCH_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_ARCHITECTURE_FULLSTACK_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Scope and population state
 

@@ -1148,3 +1148,362 @@ GitHub reported each PR merged. Final branch-to-main comparisons reported 0 comm
 **Conflict handling:** F11, F12, F13, and F09 were based on earlier shared Phase 03 document states. The merges had conflicts in the four shared Phase 03 records. Conflicts were resolved by preserving both append-only records, then reconciling the current README metadata. No unresolved conflict markers remained and the scoped git diff --check passed. Git emitted line-ending notices; merge also repeated existing Windows filename-length warnings for T23 Playwright evidence paths. No T23 evidence file was edited, renamed, or removed.
 
 **Scope and closure limits:** These merges publish branch-specific evidence and ticket records; they do not close tickets beyond their existing bounded Operator-approved dispositions. F11 remains open for its broader source-disposition and independent-verification gates. The approved F14 32-link destination exception remains separate from F11; no product image, source asset, or historical FootHive record was changed by these merges. No capability authentication/execution or live Production result is inferred from F09/F12/F13. M21-GIT-01 (20 unrecovered Cline checkpoint objects), M21/Phase 02 acceptance, and overall V003 closure remain pending. No branch was deleted.
+
+
+---
+
+### V003-F01 / M21-GIT-01 final Operator case disposition — 2026-10-14
+
+Historical investigation **CLOSED ADMINISTRATIVELY BY OPERATOR** after accepted limited-unavailability evidence and additional Operator-supplied Grok repository research. All 20 recorded Cline checkpoint SHAs remain in the M01 ledger; 0/20 recovered from searched stores. The unrelated-workspace explanation is speculative; no proof of never-existing objects or global absence is claimed. This supersedes earlier OPEN as the current case status, without rewriting historical records or altering the separate technical evidence. The detailed research summary, original SHA list, and ongoing preservation safeguards appear in [V003_UNRESOLVED_BRAINBOX.md](../V003_UNRESOLVED_BRAINBOX.md). Qualified V003 closure remains the previously published Operator disposition; no additional Git publication is claimed.
+
+---
+
+## Operator final disposition — M01-GIT-01 / M21-GIT-01 — closed as bounded historical investigation — 2026-10-14
+
+**Operator decision:** The Operator directs that the investigation concerning 20 historical Cline checkpoint SHA strings is **ADMINISTRATIVELY CLOSED** as of 2026-10-14. This supersedes earlier OPEN/RECOVERY-PENDING status for the *investigation and mandatory recovery pursuit*, without changing the underlying historical evidence. The case is no longer a V003 project-level closure blocker. Reopen only if new, specific, credible recovery evidence emerges or the Operator explicitly orders a new investigation.
+
+**Independent and research evidence:** The M01 ledger preserves 20 full SHA strings attributed at that historical observation to dangling Cline checkpoint commits; M21/F01 rechecks and the 2026-10-14 ChatGPT independent read-only check found 0/20 readable commit objects in the current DEODINI_BRAINBOX and known pedestal-archive local repositories. The Operator supplied Grok research describing negative GitHub commit lookups/searches across DeOdini/DEODINI_BRAINBOX, DeOdini/FOOTHIVE, DeOdini/pedestal-archive and DeOdini/PESDESTAL-ARCHIVE-SHOP. That Grok result is an **Operator-supplied research report, not an independently reproduced full 20-by-4 remote GitHub audit**. It reports no accessible objects in tested repositories, while the SHA strings and investigation records persist in the V003 Migration Map, Phase 03 report and this register.
+
+**Operator inference and uncertainty:** The Operator concludes **for administrative treatment** that these 20 SHAs have *no established recoverable relationship or substantive dependency* to current DEODINI repository content, especially DEODINI_BRAINBOX, because no matching objects were recovered from checked stores and the V003 specification-tree obligations were substantively fulfilled within documented exceptions. One possible explanation is that Cline acted via a terminal in the same workspace on an unrelated working directory/repository or otherwise produced checkpoint observations not retained in the inspected repository. **This explanation is speculative, not demonstrated by terminal logs, Git object metadata or provenance.** Negative searches cannot prove the commits never existed or categorically had no relationship to any DEODINI repository. The M01 first-hand observation of dangling commits and the SHA ledger remain historical claims, not falsified or erased.
+
+**Disposition codes:** CASE_STATUS = CLOSED — OPERATOR-ACCEPTED LIMITED-UNAVAILABILITY / NO FURTHER RECOVERY MANDATE; EVIDENCE_STATUS = 20/20 SHA strings retained, 0/20 commit objects recovered from named searched stores; CAUSE = UNKNOWN; UNRELATED-WORKSPACE THEORY = SPECULATIVE / UNPROVEN; V003_DEPENDENCY = NO LONGER BLOCKING BY OPERATOR DISPOSITION. Prior repeated “M21-GIT-01 OPEN” wording is now **STALE AS A CURRENT ACTION STATUS**, but remains valid as a dated statement of the earlier investigation stage. Do not retroactively change the previous evidence, recovered-object counts, authorship attribution, or initial M01 ledger.
+
+**Grok research appendix (Operator-supplied; summarized without claiming independent source authentication):** The 20 full SHA strings are recorded under the M01/M21 Migration Map, V003-F01 Phase 03 report and V003 Unresolved Register. Grok reports GitHub object lookup failures in DEODINI_BRAINBOX, FOOTHIVE, pedestal-archive and PESDESTAL-ARCHIVE-SHOP. GitHub non-retrieval does not establish when or why an object was lost or whether it ever appeared as a pushed/reachable commit. The provided Grok report lists these exact 20 SHAs:
+
+11608d5fe238aa928595035adea0515db160c9b1; 4128193b9cddeb3f9606aa145e947c7abf35f72a; 42386db997a573f1edfd6c353dd8d9acbb2db109; 6518b841b4c59eb0564fdc7a9009ae3781a97121; 8a103985eb7323c7fb72b072ec162cc3bb4ab9a4; 8f00cc259c7a4074a6ad53c51a26cd6811df8640; 1bf22dc96e57dfbe13550b7a12e82b3535745fcb; 4da2542aeca39e2e1dac1b3ffb5d8952fca4b3c8; 581a249a9c254e344a35827c73486518b4a2f728; 5c739bead1d50105eeb2e89bdbdb8937036cfa5b; dfdc6754d5689a2a721843425532a8a43e6cfd54; 042dd7da838115b9661f837ed078c9c568e7be7b; 284da10ab19547a318aa82381bac6575c8729c08; 16a6707b3f28cc7029f31a5c42d99b5a18599501; 49b690d3739b10c050e36f9edf3afede2fc3ac8a; b2eef868d0397063b710d133b014cfe0840b0fa7; d74eeb19539aba111f08e81c2a6e5e789513cf69; 2d77921bb3cc1392e3479020070729e7c98bf2fa; 70071e5a7f07e0c5fd1327af1fd8e06ef0366ef0; a9ef3d7dcd5a7533ab6fcd661356ed2890c15dbf.
+
+**Safety/closure impact:** Do not run Git gc/prune, reflog expiry, history rewrite, forced push, or fabricate/restage replacement checkpoint commits on the strength of this closure. Preserve all investigation records, current objects and SHA references. V003 remains **OPERATOR-QUALIFIED CLOSED** as separately recorded; this disposition removes the historical case's mandatory-recovery hold but does not retroactively make unverified implementation claims true or close independently deferred F02 items. The case may be referenced as an accepted historical risk rather than an active blocker.
+
+## Operator reclassification — FootHive Iterations 02/03 and Workflow Mastery — 2026-10-14
+
+Operator approved the canonical FootHive Sandbox planning record at AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/FOOTHIVE_FUTURE_ITERATIONS_BRAINBOX.md. Frozen V003 Specification §§21–22 describe these as [PLANNED] workflow experiments and assessment, not failed V003 migration work. The corresponding active entry was removed from V003_UNRESOLVED_BRAINBOX.md. Historical specification, M15/M16 and original trial records remain intact; no future trial evidence, folder layout, website release, mastery or Production achievement is asserted.
+
+## Operator Router/Agentic future-milestone reclassification — 2026-10-14
+
+By express Operator approval, frozen V003 Specification §28 / V003-M18 Router/Agentic intent is classified as **[PLANNED], OPTIONAL, UNSCHEDULED, SUBJECT TO SUPERSESSION**, and **not the mandatory next DEODINI BRAINBOX upgrade**. Any later authorized event or priority may take precedence without implementing Router/Agentic. The existing MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md and README_MILESTONES_BRAINBOX.md contain the current future-milestone disposition; its unrelated-to-fixes entry was removed from the active V003 Unresolved Register. No Router capability, timeline, implementation ticket or deployment is claimed. Frozen Specification, Origin Conversation, and M18 historical evidence are unchanged.
+
+---
+
+## Operator retrospective disposition — F02 cleared from active Unresolved Register — 2026-10-15
+
+The Operator confirms F02 and M21 are CLOSED for the V003 qualified-closure disposition, following PR #47 (merge commit 47a024a5df5d2522e157ae61517771fe37115da6) and the separately recorded final M01-GIT-01/M21-GIT-01 20-SHA historical-case administrative closure. F02 is therefore **REMOVED from the active V003 Unresolved Register** as a stale pending-closeout item. This resolves current backlog classification; it does not revise historical F02 pre-close verification results into a technical PASS, or claim the 20 SHA objects were recovered. Any independently actionable future technical gap must receive its own fresh issue/ticket. The prior F02 entry is archived verbatim below for history.
+
+### Historical F02 active-register entry (retired from active backlog)
+
+### V003-F02 — Integrated publication verification and final closure gate
+
+- **Source authority:** Phase 03 F02 ticket; Phase 03 report, conversation, and ticket register; M21 Migration Map and V003 tree snapshot.
+- **Description:** Final integrated review and acceptance must reconcile the actual mainline, ticket dispositions, evidence, and the M21 checkpoint limitation.
+- **Expected state:** Independently verified current state, all required ticket dispositions and evidence reconciled, and explicit Operator acceptance before any final V003 closure statement.
+- **Current state:** Phase 02 M19–M21 Git integration is recorded through PRs #35–#37; F02 publication is recorded at PR #38; F09/F11/F12/F13 branch integration is recorded through PRs #41–#44; the later closeout and formatting corrections are merged through PRs #45–#46. Local main is at 07274d32eea4a268e27fd7804b8666dc09181292 and tracked origin/main without local divergence at preflight. The latest Phase 03 records still say F02 final acceptance is NOT PASSED / OPEN, M21-GIT-01 remains open, and Phase 02/V003 are not closed.
+- **Classification:** Blocking outstanding acceptance work.
+- **Blocking scope:** Remaining F02 technical verification and new unverified assertions only; Operator-qualified V003 project closure is already published.
+- **Dependencies:** Preserved M21 evidence and Operator-closed historical case in Phase 03 report/Migration Map; F11 approved retention and independent 87/87 integrity PASS; remaining technical F02 assessment only.
+- **Required action:** Complete the final F02 review only after prerequisites are reconciled. Do not treat PR merges, a clean worktree, or an unresolved register as closure.
+- **Owner:** Codex prepares the evidence; ChatGPT independently verifies; Operator accepts closure.
+- **Evidence:** PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md and V003_PHASE03_FIXES_TICKETS_BRAINBOX.md, F02 sections and 2026-10-14 merge closeout; Git history at the baseline SHA above; Migration Map M21 sections.
+- **Current disposition:** CARRIED FORWARD as technical F02 verification, not a bar to the already-published Operator-qualified V003 project closure.
+- **Closure condition:** Every mandatory gate is independently verified, all accepted limitations are explicitly dispositioned, and the Operator gives explicit final acceptance. No V003 closure is inferred here.
+
+## Operator-approved FootHive Sandbox POC path migration — 2026-10-15
+
+**Decision:** Rename `CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/` to `POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/` below the existing `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/` ancestor. Parent-level navigation file `README_CASE_STUDIES_SANDBOX_BRAINBOX.md` was correspondingly renamed to `README_POC_SANDBOX_BRAINBOX.md`. No old folder is retained at its old path.
+
+**Old canonical FootHive location:** `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/`
+**New canonical FootHive location:** `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/`
+
+**Initial move integrity:** All 52 physical files in the former CASE_STUDIES subtree matched SHA-256 hashes at the new location *immediately after moving*, before navigation text changes. Five original T23 timestamped Playwright evidence filenames were retained. On this Windows working root the original five absolute paths were 260–263 characters; their new paths are 240–243 characters, below the default 260-character boundary. Historical evidence, binary data and timestamped filenames were not modified by the move. Subsequent edits to current navigation README files intentionally change those documentation hashes, not the trial evidence.
+
+**Git command preference:** Operator approved command-scoped `git -c core.longpaths=true <command>` when needed; no persistent local/system/global Git setting was authorized. The path shortening itself reduces dependency on this workaround for these five files.
+
+**Documentation boundary:** Active README/navigation and portfolio/current reference documents are routed to the new POC location. Frozen V003 Specification §8 and Origin Conversation, old archived tickets/reports and historical tree snapshots are retained unchanged as dated historical observations; this section is the superseding present-day path mapping. Do not imply that the old V003 frozen physical specification was originally written with the revised names. Future approved directory layout changes remain subject to Operator-controlled governance.
+
+**Publication boundary:** Local workspace change only; this appendix does not claim a stage, commit, push or merge.
+
+## Codex execution report - repository-wide CASE STUDY / CASE STUDIES to POC naming reconciliation - 2026-10-15
+
+**Authority:** Operator-supplied execution ticket in the Codex attachment. Ticket status authorizes scoped local implementation. The ticket distinguishes POC naming from evidence classification and protects frozen/historical records.
+
+**Result:** Local naming and active-reference reconciliation completed. Independent ChatGPT verification remains pending. No staging, commit, push, pull request, merge, deployment, source retirement, or unresolved-register edit was performed.
+
+### Preflight and preservation
+
+- Repository: C:/Users/USER/DEODINI_BRAINBOX.
+- Initial branch and synchronized baseline: main at 47a024a5df5d2522e157ae61517771fe37115da6; origin/main matched (0 ahead / 0 behind).
+- Existing uncommitted V003, FootHive POC, and other documentation changes were present before this ticket. They were preserved.
+- Following the standing per-ticket branch practice, created local branch v003/repository-poc-naming-reconciliation at the same baseline SHA. No upstream is configured and no commit was created.
+- The prior Sandbox POC move was already in the working tree before this ticket. It was not repeated or overwritten.
+- No frozen V003 Specification, Origin Conversation, archived report, original evidence artifact, image, catalog, or source-only asset was edited. One current PARENT metadata field in the FootHive retrospective was corrected to the current path; no substantive retrospective findings or evidence were changed. Descriptive uses of 'case study' remain where they describe evidence or project history rather than a path identifier.
+- V003_UNRESOLVED_BRAINBOX.md was not modified.
+
+### Exact current path mapping
+
+| Old path | Current path | Operation in this ticket |
+|---|---|---|
+| AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/ | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/ | Renamed the directory; its summary child moved with the parent. |
+| AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/README_CASE_STUDIES_PROD_BRAINBOX.md | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/README_POC_BRAINBOX.md | Renamed the local index file; updated its active identifiers. |
+| AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/ | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/ | Relocated as a descendant of the renamed parent; child basename preserved. |
+| AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md | Parent-path relocation only; basename and content preserved. |
+| AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md | Parent-path relocation only; basename and content preserved. |
+| PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md | PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md | Renamed the Portfolio reference file; corrected its Production link. |
+
+The existing Sandbox transition is also recorded as current and source-backed in the dated Migration Map appendix. Its exact 51 tracked source-path to current-path pairs are listed there; this ticket did not perform that earlier move:
+- CASE_STUDIES_SANDBOX_BRAINBOX/ -> POC_SANDBOX_BRAINBOX/
+- FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/ -> FOOTHIVE_POC_BRAINBOX/
+- README_CASE_STUDIES_SANDBOX_BRAINBOX.md -> README_POC_SANDBOX_BRAINBOX.md
+
+This ticket itself changed one directory basename and two file basenames. The renamed Production parent also relocated one same-name child directory and two same-name child files.
+
+### Active references and changed-document inventory
+
+There were 25 exact old path/name identifiers replaced in 10 current README/navigation documents, plus one current PARENT metadata correction in the FootHive retrospective. No evidence classification was changed.
+
+The 10 navigation documents are:
+1. README_BRAINBOX.md
+2. AI_BRAINBOX/README_AI_BRAINBOX.md
+3. AI_BRAINBOX/DEVOPS_AI_BRAINBOX/README_DEVOPS_AI_BRAINBOX.md
+4. AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md
+5. AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/README_POC_BRAINBOX.md
+6. PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md
+7. PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md
+8. PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/HANDOFF_FOOTHIVE_BRAINBOX.md
+9. PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md
+10. PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md
+
+One additional current metadata field was corrected in:
+AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/RETROSPECTIVE_FH_BRAINBOX.md
+
+The Phase 03 Fixes Report and Migration Map were appended as required.
+
+### Integrity and path-collision results
+
+- Destination checks were performed before each move; all destinations were absent, no collision or overwrite occurred, and each old source path existed.
+- Production directory move: three contained files were SHA-256 checked before/after the move; all matched at move time. PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md remains SHA-256 b35b8ffb4f2dc8958ec99eea7225cb04edb5bcd1b24b1d8c53fb7b09bc78d058; README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md remains SHA-256 b104afd85072eff05af7f8169212c6f16eb9350e10c99eb17e2fd33fc4ded691.
+- Production index pure-move baseline: 2,431 bytes, SHA-256 101caa2fb77024aa8630720dfa6cd6830bff3b128329f258c5551c5aaf6962a1. After active-name corrections it is 2,381 bytes, SHA-256 ac7194a0dd2507da4c0e63fef666e7d304252f115451ed4a5b4ad6b27a0da0ed. The difference is the documented README identifier/path edits.
+- Portfolio reference pure-move baseline: 3,181 bytes, SHA-256 84bccd8dcf0dbda28d41586fa12c19ec6cc7c46e14688380040d7eda50184a61. After its Production-link correction it is 3,172 bytes, SHA-256 601a9f47929b6f8e62d8ab7fb69096c7c65f2f211e468ad7217d2acac40e22bb.
+- FootHive retrospective PARENT correction: SHA-256 before 959c97a19f009e1c7ad2db0faaedd9403fb5adfd96c61ad1c95311871bd5554f; after 5bcaac615b07c401b2a21de1eaba103c322213541fe65f34729956af226cea64. This was one intentional current-path metadata edit.
+- The prior Sandbox POC has 51 tracked HEAD source paths mapped, zero missing. Current bytes are: 16 byte-identical, 30 LF/CRLF-only differences with LF-normalized content matching, and five documented Markdown navigation differences. Four of those were already present before this ticket; the fifth is the PARENT correction above. The complete per-file old/new path and disposition table is appended to the Migration Map.
+- The current POC Sandbox tree has 52 physical files; one, FOOTHIVE_FUTURE_ITERATIONS_BRAINBOX.md, is pre-existing and has no old tracked path mapping. It was preserved.
+- All 51 source-vs-current checks used Git's HEAD blobs as a separate comparison baseline. This does not replace or rewrite the earlier M15 move-time manifest.
+- Current physical filesystem path-name scan: zero remaining CASE_STUDY / CASE_STUDIES variants.
+- Current non-archival active text scan for the old directory/file identifiers: zero hits. Historical and evidence references are intentionally retained and identified in the Migration Map.
+
+### Link, whitespace, and Windows path validation
+
+- Relative Markdown-link validation across the 11 edited active documents: 86 links checked, zero broken.
+- Old affected path/file identifiers in active Markdown navigation: zero.
+- Command-scoped Git baseline reads: git -c core.longpaths=true ls-files -z and git -c core.longpaths=true show HEAD:<old-path> for each of the 51 Sandbox source paths completed.
+- The five timestamped T23 Playwright files were retained unchanged by name and were all readable from the current POC location. Their current absolute path lengths are 240, 240, 240, 243, and 243 characters. No permanent Git configuration was changed.
+- git -c core.longpaths=true diff --check exited 0 with no whitespace errors. Git printed LF-to-CRLF conversion warnings for the two pre-existing MILESTONES_BRAINBOX Markdown files and the two appended report/map files, consistent with repository line-ending policy. No persistent Git configuration or manual line-ending conversion was performed.
+
+No application build or test suite was run; this ticket changes documentation paths and references only.
+
+### Final local Git state and next publication step
+
+The local branch is v003/repository-poc-naming-reconciliation at 47a024a5df5d2522e157ae61517771fe37115da6; it has no upstream and no new commit. The existing uncommitted repository work remains in the worktree, zero files were staged, and the new path/documentation changes remain local.
+
+Recommended next steps: independent ChatGPT verification of this report and the Migration Map appendix; then Operator-directed staging, commit and push for the ticket branch. Merge should occur only under explicit Operator authorization.
+
+
+### Scoped diff artifact
+
+Review-only scoped diff: V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_POC_NAMING_SCOPED_DIFF_BRAINBOX.diff. It isolates the ticket-attributable content changes from the pre-existing working-tree edits by reconstructing the ticket-start text from the recorded exact replacements and removing this ticket's append-only report/map sections. Path renames are listed in its header. The prior Sandbox POC move is identified as pre-existing baseline, not a change from this ticket. This is a review artifact, not an apply-ready patch.
+
+---
+
+## Operator F07 backlog clearance — renamed POC path resolves T23 path-length exposure — 2026-10-15
+
+**Decision:** Operator directs removal of F07 from active V003 Unresolved after approved CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX to POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX directory rename and confirms approved command-scoped `git -c core.longpaths=true <command>` fallback. All five preserved timestamped T23 Playwright files are present and have absolute path lengths 240–243 characters at the current Windows repository root, compared with historical 260–263 characters. This resolves the *specific five-path-length finding* and clears F07 from active backlog; it does **not** establish that all Windows environments, clones, or tools are immune from future long-path issues. No evidence files were deleted or renamed. No permanent Git configuration change is authorized.
+
+**History retained:** The historical F07 ticket verified and documented failures under default Windows Git handling and success with command-scoped workaround. The prior F07 active-register entry is archived below verbatim. Current POC path mapping and evidence-preservation check are in the Migration Map and existing Phase 03 report. Archived specification/tree snapshots remain unedited.
+
+### Former F07 unresolved-register entry (historical, no longer active)
+
+### V003-F07 — Windows long-path compatibility for T23 evidence
+
+- **Source authority:** Phase 03 F07 ticket/result and independent-verification qualification.
+- **Description:** Five T23 Playwright evidence paths are 260–263 characters and expose a Windows Git path-length limitation.
+- **Expected state:** Preserve evidence and avoid unapproved permanent Git configuration or renaming.
+- **Current state:** The report records default hash-object/read operations failing on long paths, while command-scoped core.longpaths=true worked; a temporary clone checkout required the same command-scoped option. No permanent configuration or path rename was made. The Phase 03 ticket records F07 PASS for reproducing the limitation and safe workaround; a later review notes some checkout experiment detail remained Codex-evidenced.
+- **Classification:** Documented platform limitation / non-blocking portability qualification.
+- **Blocking scope:** Default Windows Git operations on these paths; no claim that all Windows Git consumers can read/check out them without a workaround.
+- **Dependencies:** None for current archival retention.
+- **Required action:** Use an appropriately scoped workaround if a future task needs those exact paths; ask before persistent configuration changes or renaming.
+- **Owner:** Operator for persistent configuration or evidence-path changes.
+- **Evidence:** PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md, F07 result; V003_FIXES_REPORT_BRAINBOX.md; T23 evidence under the FootHive Sandbox; F07 verification qualification.
+- **Current disposition:** Ticket result PASS with a retained Windows portability limitation.
+- **Closure condition:** Preserve the qualification and evidence; any permanent fix requires a separate authorized change.
+
+
+---
+
+## V003 §9 FUNC CORE/EXE questionnaire reconnaissance — read-only source audit — 2026-10-15
+
+**Operator request:** Read V002 foundation (FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, FUNC_WORKFLOW_BRAINBOX.md, README_FUNC_AI_BRAINBOX.md), then eight V002 agent files (CHATGPT, CLAUDE, CLINE, CODEX, COPILOT, DEEPSEEK, GROK, QWEN), inventory stated connector capabilities and compare candidate execution classifications with V003 CORE/EXE records. **Scope:** source reading and report entry only; no agent files, registries, credential settings or connectors were changed. Do not interpret historical claims as live verification.
+
+### A. Legacy V002 questionnaire and workflow model
+
+- FQ_MUST_README.md: compliance reading sequence WORKFLOW → REQUIREMENTS → own agent capability record; if stale, agent reports discrepancies to Operator. Current file has later F08 routing notice and remains a retained source, not current V003 navigation authority.
+- FUNC_REQ_BRAINBOX.md: five-part questionnaire (1 connected connectors; 2 installed skills; 3 additional available connectors/skills; 4 RDC devices/access; 5 email accounts/integration); for 1–3,5 request (a) inventory/status, (b) authentication/linkage, (c) purpose, (d) active usage, (e) safe test examples. Mandated per-agent dated source reports and clear potential-versus-active distinction; no irreversible tests.
+- FUNC_WORKFLOW_BRAINBOX.md: historical Operator→ChatGPT orchestration and specialized agent handoffs, human approval, version-controlled branch work, primary n8n and backup email. Critically, email-trigger flow is explicitly described as **not yet tested** and n8n as newly set up/learning, NOT evidence of operational autonomous routing.
+- V003 README_FUNC_AI_BRAINBOX.md: separates retrospective agent-source files, evidence-qualified agent-specific CORE records, and category-based EXE execution index; Skills and DEVOPS/workflow have different ownership. Exposure ≠ connection ≠ authentication ≠ execution ≠ authorization.
+
+### B. Eight legacy agent reports — stated connections, NOT independently current
+
+| Agent | Legacy report claims / limitations |
+|---|---|
+| ChatGPT | Says verified GitHub, Figma, Supabase, Render, Outlook Email, Brevo; RDC DESKTOP-DHRIH27 online at report time and localhost offline; Base44/Replit available but current app list empty; Resend/Stripe/Upwork/Outlook Calendar linkage unverified. Many skills enumerated separately from account authentication. |
+| Claude | Self-reports Google Calendar, Drive, Gmail, Figma, RDC, Sentry, Stripe, Supabase, Render, Replit, Base44, Firecrawl, Brevo, Resend, SHIPMAIL, Upwork; expressly states GitHub connector not connected in that historical Claude session. Do not transplant these to other agents. |
+| Cline | Historical source reports local filesystem and shell, Supabase, Firestore, BigQuery, Firecrawl, Playwright, Microsoft Learn; says **no RDC** and **no email** in that session. Its initial diagnostic records an unsuccessful first submission, subsequently corrected with a capability report. Listed ecosystem skills are not proof of endpoint access. |
+| Codex | Exposed registry included GitHub, Playwright, RDC, browser/CUA, web, image and assorted provider families. GitHub push demonstrated in its cited session; RDC device discovery timed out and was **not live-confirmed**; Gmail/Outlook/Brevo/Resend registry exposure did **not** verify mailbox accounts. |
+| Copilot | VS Code/Copilot workflow and RDC DESKTOP-DHRIH27 shown operational; configuration referenced Firecrawl, Context7, Supabase, Figma, Stripe and Playwright but not independently tested for runtime functionality; explicitly **no live mailbox** verified in that session. |
+| Grok | Self-reported RDC, Gmail, Outlook, GitHub, Google Calendar, Figma, native automations and SHIPMAIL active; separately distinguished potential connectors. These are dated Grok claims, not current cross-agent evidence. |
+| DeepSeek | Only a short pending/placeholder source, no executable connector inventory. |
+| Qwen | Only a short pending/placeholder source, no executable connector inventory. |
+
+**Evidence grade:** All statements above are extracted from retained agent-authored reports and describe the state asserted at their writing. No present-day login, device, service permission, email sending or successful action is inferred for any other agent. Differences between agent reports are not necessarily contradictions because runtime sessions differ.
+
+### C. Current ChatGPT session visibility (narrow, not multi-agent certification)
+
+- This audit directly used authenticated RDC remote desktop operations on DESKTOP-DHRIH27 to read local sources; current GitHub integration had separately returned PR/main metadata in the V003 verification workflow. These are demonstrated **ChatGPT-session read executions**, not proof of every provider operation, every agent, or blanket write permission.
+- Current ChatGPT tool registry exposes provider families: GitHub, RDC, Figma, Supabase, Render, Gmail, Google Calendar/Drive/Contacts, Microsoft Outlook Email/Calendar, Brevo, Resend, Firecrawl, Replit, Base44, Stripe, Upwork, Activepieces, and others. **Registry exposure alone = DISCOVERABLE; authentication/current endpoint status and executable scope remain UNVERIFIED unless probed.** Do not elevate 2026-10-15 tool presence to live connected status for Claude/Cline/Codex/Copilot/Grok/DeepSeek/Qwen.
+
+### D. V003 EXE comparison and proposed questionnaire categories
+
+**Existing V003 EXE folders:** RESEARCH (historical Codex public-source execution admitted); BROWSER (historical Codex FootHive browser tests admitted; Copilot configuration alone unverified); FILE (Codex workspace operations admitted); CODE (Codex scoped T23 CSS implementation admitted); MEDIA ([RESERVED], no admitted executor). Current four admitted categories are historically evidenced, not automatic current-live certification.
+
+**Potential *additional* capability families for questionnaire coverage, NOT authorized EXE folder creations:** DATABASE/DATA (Supabase/Firestore/BigQuery/Render SQL); REPOSITORY/VERSION_CONTROL (GitHub and Git branch/push/PR); COMMUNICATION/EMAIL (Gmail/Outlook/Brevo/Resend/SHIPMAIL); AUTOMATION/ORCHESTRATION (n8n, events, native automations); DESIGN (Figma); DEPLOY/INFRASTRUCTURE (Render, Replit, Base44); CALENDAR/SCHEDULING (Google/Outlook Calendar); OBSERVABILITY (Sentry/logs); PAYMENTS/COMMERCE (Stripe); DEVICE/REMOTE_TERMINAL (RDC). **These are candidate execution taxonomy questions only**: many operations may correctly remain nested under FILE, CODE, BROWSER or RESEARCH. The existing frozen V003 EXE tree defines the current *physical* categories; do not create candidate category folders or claim admitted execution before governance authorization and dated evidence.
+
+**Agent-specific questionnaire must require per connector/operation:** claimed integration name and account identity (nonsecret); connector type and calling runtime; present registry visibility; tested connectivity and time; authentication state; read/write/execute permissions; exact harmless read-only test command plus returned evidence reference; whether write-capable actions were actually tested (normally NO); human-approval boundary; last verified timestamp; error/offline classification; mapped CORE role; mapped existing EXE category or PROPOSED category; evidence artifact/ticket and verifier. Separately ask installed skills vs credentials, n8n/email agent-to-agent reachability vs aspirational design, and whether a different agent's state was merely quoted.
+
+**Status classification recommendation:** NOT REPORTED / LISTED ONLY / CONFIGURED / CONNECTED (tested) / AUTHENTICATED (tested) / EXECUTED (evidence-backed exact action) / AUTHORIZED (specified permissions) / OFFLINE OR FAILED / STALE (past evidence). Record each independently: a connected service may not be executable, and a successful historical execution may now be stale.
+
+### E. Outstanding work for §9 backlog
+
+This is **reconnaissance only**, not a finalized questionnaire or live multi-agent connector census. Prepare a proposed V003-specific questionnaire against the source-derived model; obtain Operator approval; have each of eight agents answer in its **own current runtime** using safe non-destructive probes and dated evidence; independently verify enough claims to classify CORE and EXE. DeepSeek and Qwen need first substantive disclosures. Resolve differences in the current F09 traceability registry before admitting more EXE categories. Keep §9 active in V003 Unresolved until the Operator accepts the questionnaire and evidence plan. No other V003 Unresolved entry has been closed by this audit.
+
+
+## V003 §9 CORE/EXE agent-centered questionnaire implementation — 2026-10-15
+
+**Operator authorization:** Implement the separate CORE and EXE questionnaires and agent-centered EXE declaration architecture discussed after the V002 capability audit. This is an additive post-freeze documentation implementation, not a retroactive amendment to frozen Specification §9.
+
+**Local implementation:** Appended an inventory-only CORE questionnaire to AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md; appended a universal CORE-derived, operation/evidence-based EXE questionnaire to AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md. Created eight agent-specific EXE folders and README placeholders, one each for CHATGPT, CLAUDE, CLINE, CODEX, COPILOT, DEEPSEEK, GROK and QWEN. Seeded Codex's EXE README with four M06 historical, explicitly non-current operation references. Adapted the existing RESEARCH, BROWSER, FILE and CODE category READMEs as cross-agent reference indexes; MEDIA remains a reserved reference index with no admitted agent. Updated the parent README_FUNC_AI_BRAINBOX.md with the separation and navigation. No invented executable connections, execution tests or agent responses.
+
+**Governance:** CORE owns each agent's connector/skill/connectivity/authentication inventory. Each agent EXE file owns attempted operations, exact outputs, verifier/date, permission and linked CORE item. Categories index exact agent operation anchors and do not ask another questionnaire. New category references require a genuinely evidenced major operation not already covered; no speculative new category folder created. Historical V002 FUNC records and M05/M06 outcomes remain unchanged.
+
+**Verification:** Scoped git diff --check over FUNC returned without whitespace errors; 14 README files of the pattern README_*_EXE_FUNC_BRAINBOX.md appear under EXE, including eight new agent READMEs, five existing category READMEs and the EXE root README. No application/connector end-to-end tests were authorized or run. §9 remains open pending individual agent answers, credential/connection checks, independent execution verification and Operator acceptance. Local working branch remains v003/repository-poc-naming-reconciliation; changes are uncommitted and unpushed.
+
+---
+
+## Operator acceptance — Specification §9 CORE/EXE questionnaire architecture — 2026-10-15
+
+The Operator accepts the CORE/EXE questionnaire architecture as COMPLETE for the V003 unresolved cleanup and directs removal of the active `Specification §9 — Time-scoped CORE/EXE capability status` entry. CORE questions now reside in the CORE index README; universal, CORE-derived execution questions reside in the EXE index README; eight agent-owned EXE records exist; existing category files reference exact agent operation records rather than repeating questionnaires. The original V002 files and frozen V003 Specification §9 are retained as historical authority. This is **administrative completion of the architecture/questionnaire restructuring**, not a declaration that every agent has submitted a new questionnaire, that all listed connectors are currently live/authenticated, or that every EXE action has been newly tested. Agent-specific attestations, freshness and evidence rechecks remain operational requirements for delegation under CORE/EXE rules, not an active V003 migration defect.
+
+### Archived former §9 unresolved-register entry (not active)
+
+### Specification §9 — Time-scoped CORE/EXE capability status
+
+- **Source authority:** Frozen Specification §9; eight CORE records; EXE registry; F09 source-to-capability traceability record.
+- **Description:** Capability records contain statuses for exposure, connection, authentication, execution, authorization, limits, and verification time; these statuses are not interchangeable.
+- **Expected state:** Each current claim stays tied to its agent, tool, evidence, and last-verification date. Tool presence, prior configuration, or a historical task must not be treated as proof of current successful execution or authority.
+- **Current state:** Eight CORE records and the approved EXE taxonomy exist. F09 reconciles eight agent sources and approves the evidence-intake method. Specific evidence remains per record; MEDIA remains reserved pending successful execution evidence. No global current-connectivity or production-authorization state is established by this register.
+- **Classification:** Time-bounded/unverified capability claims; planned capability evidence intake.
+- **Blocking scope:** No block on the V003 tree itself. It blocks any new capability claim that lacks the required evidence.
+- **Dependencies:** New connector/execution evidence and a ticket-scoped verification if a status is to be updated.
+- **Required action:** Read the relevant CORE and EXE records before relying on a capability; refresh status only with evidence.
+- **Owner:** Agent/tool executor for evidence, Codex for record updates, ChatGPT for independent verification, Operator for authority.
+- **Evidence:** AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/; AI_AGENTS_EXE_FUNC_BRAINBOX/; PHASE03_FIXES_BRAINBOX/F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv; Specification §9.
+- **Current disposition:** Do not infer beyond each record’s stated exposure, connection, authentication, execution, authorization, limitations, and Last Verified fields.
+- **Closure condition:** No blanket closure; each individual claim is verified or explicitly remains unknown/reserved.
+
+
+## Operator-authorized FootHive exact-byte migration — 2026-10-15
+
+**Authorization:** (1) Migrate BUILD_REPORT_FH_BRAINBOX.md byte-for-byte to V003; (2) migrate PASSED_FH_BRAINBOX.md to V003, preserving original bytes; (3) migrate all FOOTHIVE TIMBERLAND IMAGES files byte-for-byte. This supersedes prior F03 retain-at-source disposition **only to permit an additional copy**; all V002 originals remain unchanged and retain their prior historical classification. The original M15 copy and later F14 navigable Build Report link edits are both preserved as history; the F14-specific link changes are documented separately, not reintroduced into the canonical exact-byte report. No third-party asset publication or reuse authorization is implied.
+
+**Source:** `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/`.
+
+**Destination:** `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/` for `BUILD_REPORT_FH_BRAINBOX.md` and `PASSED_FH_BRAINBOX.md`, and `ASSETS_FH_BRAINBOX/FOOTHIVE_TIMBERLAND_IMAGES_FH_BRAINBOX/` below that destination for 10 images and one catalogue. F14 link-adaptation changes formerly embedded in the V003 Build Report are preserved as `BUILD_REPORT_V003_LINK_ADAPTATIONS_FH_BRAINBOX.md`; archival report now retains original V002 relative references, which may not resolve in V003 and must not be silently rewritten.
+
+**Verification:** All 13 destination files are raw-byte equal to their corresponding existing V002 source files; SHA-256 equality independently asserted for every pair immediately after copy. BUILD_REPORT SHA-256 `83e1724b146db02e62663b9a788b7f76cee2a96460dc6fee36fcbc2f97d12a9f`; PASSED SHA-256 `f21dcff41416c08810fe0b9baa159acaa322fa8648d7cfdb4ceca8bd3c627f2a`. Timberland copied 11/11 with preserved originals. This is an Operator-approved archival fidelity correction, not a declaration of live asset usage, full application test or current release acceptance.
+
+**Git:** No staging, commit, push or merge authorized. Current branch `v003/repository-poc-naming-reconciliation`; earlier uncommitted changes preserved.
+
+
+## Operator-authorized remaining FootHive assets migration and PROJ_WORKFLOW retirement preflight — 2026-10-15
+
+**Execution scope:** Operator directed continuation of the previously recommended four-folder exact-byte archival migration and subsequent retirement-readiness assessment. No retirement/delete authorization. V002 source root `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX` retained unchanged.
+
+**Copied and verified:** `FOOTHIVE BOOTS IMAGES` (10/10 files), `FOOTHIVE CLASSIC SHOES IMAGES` (10/10), `FOOTHIVE LOGO + DARK MODE` (2/2), `FOOTHIVE SNEAKER IMAGES` (5/5) into `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/ASSETS_FH_BRAINBOX/` under matching canonical folder names `FOOTHIVE_BOOTS_IMAGES_FH_BRAINBOX`, `FOOTHIVE_CLASSIC_SHOES_IMAGES_FH_BRAINBOX`, `FOOTHIVE_LOGO_DARK_MODE_FH_BRAINBOX`, and `FOOTHIVE_SNEAKER_IMAGES_FH_BRAINBOX`. All 27 pairs byte-equal and SHA-256 verified after copy. Original source and third-party asset usage/exclusion restrictions preserved. This supersedes prior F03 retention-at-source only as authority for additional archival copies; not a source-retirement permission.
+
+**Whole-project source recheck:** 88 source files; 84 have exact SHA-256 equivalents elsewhere in DEODINI_BRAINBOX; four without identical copies are `PROJ_MUST_README.md`, `FOOTHIVE_PROJ_BRAINBOX/FH_MUST_README.md`, `RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md`, `RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/FSTACK_MUST_README.md`. Operator's README exception may cover all four, but that scope and historical-preservation requirements must be assessed before removal. Scan across text-like files outside legacy project root found 36 files and 1,832 occurrence matches for legacy folder/path naming strings; many are historical ledgers/provenance and are not necessarily broken links or active runtime dependencies. E.g. source audit CSVs, migration map, V002 snapshot, current V003 navigation READMEs. This is an advisory census, not a parsed broken-link scan. **Retirement is NOT approved or performed.** Next gates: classify each reference as historical vs live link, verify current navigation and preservation, confirm README exception and original source-retirement approval, then conduct read-only final preflight.
+
+**Publication:** Local uncommitted work only, no stage/commit/push/merge.
+
+
+## Operator-directed PROJ_WORKFLOW retirement — 2026-10-15 (archive verified; empty directories blocked)
+
+Operator explicitly authorized relocating `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/` into `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/`. Archived all 88 files, including all four historical READMEs, under `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/`. Original file bytes, paths, sizes and SHA-256 values are recorded in `RECYCLE_BIN_BRAINBOX/PROJ_WORKFLOW_RETIREMENT_MANIFEST_BRAINBOX.json`; 88 files exist in the archive and remaining 11 original source files were independently confirmed byte-identical before source cleanup. The original tree contains **no files** after cleanup, but Windows access denied removal of five empty product-image directories and their FootHive/project parent directories (7 empty directories total). Thus physical directory retirement is **not fully complete**. The preflight found 36 external text files referencing legacy names (1,832 string occurrences), not all independently classified; no active links were rewritten. Retirement ledger records state ARCHIVED — CLEANUP BLOCKED with recovery procedure. Existing old migration source descriptions remain historical. No stage/commit/push/merge.
+
+
+## Operator-directed V002 milestone relocation — 2026-10-15
+
+The Operator explicitly authorized moving both records from repository-root `MILESTONES/` into V003 `MILESTONES_BRAINBOX/`, superseding the earlier M17-DEST-01/F04 *retain at original source path* decision for these two exact files. Moved `MILESTONES_MUST_README.md` and `MILESTONE_CHECKPOINT_BRAINBOX.md` without changing filenames or contents. Verified exact bytes and SHA-256: README `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e`; checkpoint `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8`. Original `MILESTONES/` directory removed. These are historical records and distinct from the V003 planned Router/Agentic milestone; preexisting V003 files remain unchanged. Legacy path references in prior history/ledgers must be treated as historical or routed to the new location. No Git publication.
+
+
+## 2026-10-15 Operator closure — F11 and Production/Portfolio follow-up
+
+**Operator direction:** Following the independent review of migration and live HTTP results, close the two active follow-ups in V003_UNRESOLVED_BRAINBOX.md. This is a bounded administrative closure, not a claim of complete present-day production functionality.
+
+**F11 — RESOLVED / ACCEPTED WITH RETIREMENT CLEANUP EXCEPTION.** All 88 files in the former AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX tree (including four historical READMEs) are preserved in RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX with a SHA-256/size manifest; source files were cleared. 84 non-README files have SHA-256-identical repository counterparts outside the legacy project tree. Seven empty legacy directories remained physically present after Windows permission errors; cleanup remains an operational housekeeping item. Historical catalog changes and the approved archival migrations retain their source provenance and existing third-party imagery restrictions. Source-content disposition is closed; do not represent the empty-directory cleanup as completed.
+
+**Production/Portfolio — RESOLVED AS POINT-IN-TIME PUBLIC WEB AVAILABILITY, NOT FULL OPERATIONAL CERTIFICATION.** On 2026-10-15 the live https://foothive.netlify.app/ homepage responded HTTP 200, returning an 18,906-byte HTML document identifying FootHive. Fourteen unique same-site resource URLs extracted from its HTML were checked; all fourteen returned HTTP 200, including the CSS, JavaScript, product images and logos. This is independent post-T20 reachability evidence, distinct from the historical 2026-10-01 T20 deployment. It does NOT establish continuous uptime, successful browser interactions, form submissions, analytics correctness, Netlify deployment-log state, serverless/backend health, or full application quality. Any claim of ongoing health requires later live tests. Repository existence alone is not evidence of site operability.
+
+**Record action:** The two resolved entries were removed from the active Unresolved Register; their scope and exceptions remain in these permanent reports. Specification §§8–18 planned/empty/reserved state remains the only active entry. No Git stage/commit/push/merge authorized.
+
+
+## V003 pre-publication reconciliation ? 2026-10-15
+
+**Purpose and boundary:** This is the Codex pre-publication reconciliation for `v003/repository-poc-naming-reconciliation`. It reconciles the existing worktree against the approved POC naming change, V003 tree/status governance, preserved FootHive/PROJ evidence, later Operator dispositions, and active navigation. It does not modify the frozen Specification or Origin Conversation, delete evidence, alter Git history, merge to `main`, or claim technical recovery of the 20 Cline checkpoint commits.
+
+**Preflight:** Repository root `C:\Users\USER\DEODINI_BRAINBOX`; branch `v003/repository-poc-naming-reconciliation`; base HEAD `47a024a5df5d2522e157ae61517771fe37115da6`; no upstream configured; initial index empty. The working tree contained 145 tracked deletions, 75 tracked modifications, and 17 untracked status entries containing 196 untracked files. There were no unmerged paths or in-progress Git operations. `origin` is `https://github.com/DeOdini/DEODINI_BRAINBOX.git`. A successful `git ls-remote` returned no matching remote branch ref, so the authorized push will create the remote branch rather than replace an existing tip.
+
+### Reconciliation evidence
+
+- **POC naming and deletion audit:** All 55 tracked `CASE_STUDIES` / `CASE_STUDY_REFERENCE` source paths map to existing POC destinations. 44 destination Git blob IDs match their source blob IDs; 11 paths contain intentional, previously authorized content or destination-manifest updates. Those are the three Production POC/FootHive records, five Sandbox/FootHive navigation/evidence/retrospective records (including the POC parent README) plus the restored canonical Build Report and copy manifest, and the Portfolio POC reference. The 45-row copy manifest comparison confirms that the copy-manifest change affects only the 45 `DestinationPath` fields; `SourcePath`, byte counts, source/destination SHA-256 values, and `ByteEqual` values are unchanged. All 145 tracked deletions are accounted for: 55 POC path moves, 88 PROJ source files archived below, and two V002 milestone records moved to their approved destination.
+- **PROJ retirement archive:** The archived tree has exactly 88 files; the manifest has exactly the same 88 relative paths. Every archived size and SHA-256 matches `PROJ_WORKFLOW_RETIREMENT_MANIFEST_BRAINBOX.json`, including all four historical `*_MUST_README.md` records. The former source tree contains no files. Seven empty source directory shells remain physically (the parent and six descendants) after the recorded Windows cleanup limitation; they were not removed or hidden by this reconciliation.
+- **FootHive evidence and assets:** All 45 rows in `COPY_INTEGRITY_MANIFEST_FH_BRAINBOX.csv` pass path existence, byte count, source hash, destination hash, and `ByteEqual=True`. The 44 repository-origin rows resolve to the preserved PROJ archive; the one supplied-attachment source path also exists locally and matches its recorded source hash. The canonical Build Report and PASSED copy match their archived source bytes (Build Report SHA-256 `83e1724b146db02e62663b9a788b7f76cee2a96460dc6fee36fcbc2f97d12a9f`, 159,133 bytes; PASSED SHA-256 `f21dcff41416c08810fe0b9baa159acaa322fa8648d7cfdb4ceca8bd3c627f2a`, 15,597 bytes). All 38 image/catalog/logo files are byte-identical to the archived sources: Boots 10/10, Classic Shoes 10/10, Logo/Dark Mode 2/2, Sneakers 5/5, Timberland 11/11.
+- **F14 catalog exception:** Reproduced commit `e04a5fbcc35f62b2e67f9d38c9cca644711e1a0d` against parent `a4f92786296da266d11c681739e0450062f83066`. The four current catalog files match the F14 commit versions exactly. Their 32 changes are image-destination-only (Boots 9, Classic Shoes 9, Sneakers 4, Timberland 10); labels and other text match. The separate F14 Build Report link-adaptation record preserves that prior change, while the canonical V003 Build Report remains the byte-identical archival copy. No image, product asset, label, or historical source was edited here.
+- **V002 milestone move:** `MILESTONES_BRAINBOX/MILESTONES_MUST_README.md` SHA-256 `f5197f1e1f2c28ea0f6cdfaac53024c3d26d29fb50ce1b724d64c63082b2ef3e` and `MILESTONE_CHECKPOINT_BRAINBOX.md` SHA-256 `91ac1a35dea9b13cee37a9ae4fd11e61c8f112bbc6c4395325857b0c08fffdc8` both match the original Git blobs byte-for-byte. The old repository-root `MILESTONES/` location is absent. These historical records remain distinct from the V003 Router/Agentic milestone, which remains planned.
+- **Root and subordinate tree authority:** After applying only the approved POC path normalization, every one of the 339 frozen Specification ?8 hierarchy nodes appears in the root `README_BRAINBOX.md` authoritative tree. The root adds 26 existing README navigation files required by P12; none of the frozen target nodes is missing. The root tree has 365 hierarchy nodes. Across 82 active README files, all 81 subordinate READMEs have one canonical local-tree block. Those blocks contain 1,069 entries, stop at exactly two descendant levels, match all physical immediate-child and grandchild entries, and contain no missing/extra path or status contradiction. Status counts: 171 `PRESENT ? POPULATED`, 323 `PRESENT`, 378 `PRESENT ? STUB`, 193 `PRESENT ? EMPTY` zero-byte files, and four physically absent `ABSENT ? PLANNED` entries. Other subordinate tree diagrams have no depth over two.
+- **Navigation and history:** 669 local relative Markdown links in the active README set resolve (0 broken), including URL-decoded asset paths. No active README contains the superseded `CASE_STUDIES_*` or `FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX` path names. Historical reports, snapshots, migration records, and provenance retain old names as dated history; these were not blanket-rewritten. Current README links route to the POC tree or preserved Recycle Bin archive.
+- **Governance and closure state:** `GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md` is present and governs the root-complete-tree / subordinate two-level local-tree boundary and separate structural/evidence status vocabularies. `V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md` SHA-256 remains `08f8ebe71d26bbf17aa0b23b51b0dbd7c521f24c7abda574a03d886222e0065c`; `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` SHA-256 remains `11ea43a34c2026b15cf6b62d3eac6cf1be964d67fea19162bc90a121c4872b3d`. Both are byte-unchanged from HEAD. The active Unresolved Register contains only the intentional Specification ??8?18 planned/empty/reserved follow-up. F11 content disposition and Production/Portfolio point-in-time availability remain qualified closures; neither claims that seven empty shells were removed or that the live site has continuous operational certification. The 20 Cline objects remain unrecovered and administratively dispositioned, not technically recovered.
+
+### Mandatory gate results
+
+| Gate | Result |
+|---|---|
+| 1. Current source/destination inventory | PASS ? all 55 POC paths, 88 archived sources, 45 evidence-manifest rows, 38 asset files, and two milestone moves are accounted for. |
+| 2. Archive/moved-file integrity | PASS ? 88/88 archive path/hash/size; 45/45 FootHive manifest pairs; 38/38 image/catalog/logo pairs; 2/2 milestone Git-blob matches. |
+| 3. Git rename/deletion audit | PASS WITH RECORDED SOURCE-SHELL LIMIT ? all 145 deletions map to the 55 POC moves, 88 archived files, and two milestone moves; seven empty source directories remain. |
+| 4. README local-tree depth | PASS ? 81/81 subordinate local trees are exactly two descendant levels; no other subordinate tree block exceeds two. |
+| 5. Physical/planned-path check | PASS ? 1,069 local-tree entries and all 81 immediate-child/grandchild inventories match; absent planned paths are absent. |
+| 6. Structural/status labels | PASS ? PRESENT/ABSENT, POPULATED/STUB/EMPTY, and PLANNED annotations match checked path/file states. |
+| 7. Active relative links | PASS ? 669 checked, zero broken. |
+| 8. Active versus historical references | PASS ? active README navigation uses current POC/archive paths; historical names remain only as provenance. |
+| 9. Governance/frozen authority | PASS ? root and local tree authorities align; frozen Specification and Origin Conversation hashes unchanged. |
+| 10. Whitespace and line endings | PASS WITH PRESERVATION QUALIFICATION ? `git -c core.longpaths=true diff --check` on tracked modifications exited 0. The separate untracked-text scan found 1,316 trailing-space lines in 12 exact historical copy/diff files: 1,297 are in byte-verified archived/canonical source copies; 19 occur in the F14 and review-only POC diff records quoting historical lines. These were not normalized because source bytes and diff provenance are preserved. Git also emitted existing LF-to-CRLF working-copy warnings. A staged `diff --check` may report those preserved lines; they are recorded evidence, not newly authored whitespace edits. |
+| 11. Temporary, secret, unexpected-artifact scan | PASS ? no `_TEMP`, `.tmp`, `.bak`, or `.orig` artifact; the specified helper is absent; no secret-like filenames or common private-key/API-token patterns were found among changed/untracked content. All 196 untracked files belong to the documented POC, archive, milestone, CORE/EXE, report, or policy additions. |
+| 12. Staged-path inspection | PENDING at this append; to be completed after authorized staging and recorded before commit. |
+
+**Publication boundary at this checkpoint:** No files were staged, committed, pushed, merged, or deleted during the checks above. The operator-authorized branch push is the only pending Git publication action; no PR or merge is authorized by this record. The staged-path inventory and GitHub push result will be appended after they are performed and verified.
+
+## Gate 12 staged-path review - 2026-10-15
+
+**Index review:** The staged no-renames inventory contains 416 path records: 196 additions, 145 deletions, and 75 modifications. Git status presents these as 274 entries after rename detection. All 274 entries are staged-only; there are zero unstaged changes and zero untracked files.
+
+**Path boundary:** Staged paths are confined to the authorized root README, AI_BRAINBOX, GOVERNANCE_BRAINBOX, MILESTONES_BRAINBOX, PORTFOLIO_BRAINBOX, RECYCLE_BIN_BRAINBOX, V003 support records, and VERSION_HISTORY_BRAINBOX. The only legacy MILESTONES root entries are the two approved source deletions; both exact files are staged at MILESTONES_BRAINBOX and their integrity matches the recorded source hashes. Neither frozen V003 authority file is staged. No temporary helper, secret, or unrelated artifact is included.
+
+**Whitespace check:** After removing five whitespace-only separator lines from the newly authored F14 link-adaptation note and the extra terminal blank line from the Codex EXE README, the staged `git -c core.longpaths=true diff --cached --check` reports 28 trailing-whitespace lines, all in the review-only `V003_POC_NAMING_SCOPED_DIFF_BRAINBOX.diff` artifact. Those whitespace-only lines are preserved as quoted source-diff context; no source/archive copy was normalized. This remains a documented preservation qualification, not a clean `diff --check` result. The other staged paths produce no `diff --check` diagnostics.
+
+**Remote preflight:** A read-only `git ls-remote` completed successfully and returned no ref for `refs/heads/v003/repository-poc-naming-reconciliation`. The authorized push will create that branch. No commit or push had yet occurred at this staged-path review. No PR, merge, or main-branch update is authorized.
