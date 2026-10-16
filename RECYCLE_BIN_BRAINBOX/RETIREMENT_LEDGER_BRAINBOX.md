@@ -1,6 +1,6 @@
 # RETIREMENT_LEDGER_BRAINBOX
 
-**State:** [PRESENT · POPULATED] — one archive record, `RET-2026-10-15-PROJ-WORKFLOW`, with a seven-empty-directory cleanup exception.
+**State:** [PRESENT · POPULATED] — one archive record, `RET-2026-10-15-PROJ-WORKFLOW`; the former source tree was physically removed after its files were archived and verified (2026-10-16).
 
 Each later entry must record retirement ID, item type, original repository-relative path, purpose, reason, Operator approval/ticket, pre-operation SHA-256 and Git blob/commit where applicable, file manifest for directories, archive path, canonical/reference replacement, affected links, verification, recovery procedure, date, and publication references. Distinguish PROPOSED, AUTHORIZED, ARCHIVED, BLOCKED, and RESTORED.
 
@@ -18,3 +18,32 @@ Do not treat this ledger as standing authorization to retire protected or retain
 - **Dependency/reference caveat:** The preflight identified 36 non-source files containing 1,832 occurrences of historic project path fragments. These are largely documentary but have not been individually classified as historical versus live dependencies. No automatic rewrite was performed. Existing paths in historical ledgers may continue to refer to the retired original location; use the manifest to recover the source paths.
 - **Recovery:** Copy the archived `PROJ_WORKFLOW_AI_BRAINBOX/` tree back to `AI_BRAINBOX/` using the manifest to verify 88 SHA-256 values; do not overwrite an existing live tree without a new Operator decision.
 - **Publication:** Local only; no staging, commit, push or merge. Preexisting working changes and branch remain intact.
+
+
+## Corrective Ticket 01 follow-up - 2026-10-16
+
+**Baseline:** PR #48 merge commit 90a1c0c9c02017398b02406f57e8c95fd65b06ca; branch v003/proj-workflow-final-retirement-verification.
+
+**Archive check:** 88 manifest paths and 88 archived files; exact path set, no missing/extra records, four historical README files. Direct worktree SHA-256/size matches: 82/88. Six files differ from manifest only by CRLF conversion; their LF-normalized bytes and Git blobs match the recorded SHA-256 and byte count. No content difference outside line endings was found. Per the corrective ticket's strict gate, this remains a blocking raw-worktree checksum failure; this record does not claim a literal 88/88 raw file-hash pass.
+
+**Migration and source:** 84 archive-to-V003 direct copies were verified byte-identical in the current worktree: 44 archive-origin rows in the FootHive copy manifest, 38 design/product/logo asset files, and two Fullstack workflow documents. The four archived MUST_README records remain historical; each points to a separately authored current V003 navigation authority. The 001/002 documents remain RAW/UNPROVEN. The old source path contains 0 tracked files, 0 physical files, and seven empty directories.
+
+**Routing and disposition:** The stale project README link and M03-era retained-source listing in Governance were corrected on the ticket branch. Other inspected active routes already point to approved V003 or archive destinations. Empty-directory cleanup was not attempted because the hash gate is blocking. DEVOPS-02 remains open; the active Unresolved Register was not changed because its closure conditions are not fully met. No archived source, product asset, report, or RAW workflow record was modified. No stage, commit, push, PR, or merge was performed. See the [Corrective Ticket 01 Phase 03 report](../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md) for the 88-row ledger and all 15 gates.
+
+
+## Corrective Ticket 01 - Operator override and physical cleanup follow-up - 2026-10-16
+
+The Operator approved a Ticket 01-only CRLF qualification. The archive has 88/88 manifest paths, with no missing or extra entries. Rechecking the exact representations found 82 raw worktree/manifest matches, 54 direct Git-blob/manifest matches, 48 byte-identical worktree/blob pairs, 40 CRLF-only worktree/blob differences, and 0 unexplained mismatches. The 40 EOL-only pairs include 34 where the worktree matches the raw manifest and the Git blob is LF-normalized, and 6 where the Git blob matches the manifest while the Windows worktree is CRLF-converted. The measured direct Git-blob match is 54/88; the phrase 88/88 Git blobs match is not accurate and is not used as a result. No archived file or manifest was altered.
+
+Empty-directory-only cleanup was attempted at the authorized retired source after confirming zero files, zero tracked paths, zero reparse points and seven directory objects. Windows returned "You do not have sufficient access rights to perform this operation." for ordinary removal of all five leaf image folders: FOOTHIVE BOOTS IMAGES, FOOTHIVE CLASSIC SHOES IMAGES, FOOTHIVE LOGO + DARK MODE, FOOTHIVE SNEAKER IMAGES, and FOOTHIVE TIMBERLAND IMAGES. No directory was removed; all seven shells remain. No force, recursive deletion, privilege escalation, ownership, or ACL changes were attempted.
+
+Disposition: CONTENT RETIRED - PHYSICAL CLEANUP BLOCKED. DEVOPS-02 remains open. Per the Operator directive, publication was not started because cleanup did not complete and no separate partial-publication authorization was given. See the [Ticket 01 Phase 03 report](../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md).
+
+
+## Corrective Ticket 01 final cleanup acceptance - 2026-10-16
+
+The Operator supplied evidence that the approved Git Bash `find ... -depth -type d -empty -print -delete` command removed all seven empty directory shells, followed by a successful absence check. Independent verification in this checkout confirms `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/` does not exist and `git ls-files` returns zero paths beneath it. No directory shell is represented as a Git-tracked deletion.
+
+The archive remains complete: 88 manifest entries, 88 archived files, exact path set, 0 missing and 0 extra. Ticket 01's approved CRLF-only qualification is recorded with the measured counts: 82 raw worktree/manifest matches; 54 direct Git-blob/manifest matches; 48 exact worktree/blob pairs; 40 CRLF-only worktree/blob differences; 0 unexplained mismatches. No archive file or manifest was rewritten. All 84 direct archived-to-V003 migration destinations remain present and byte-identical to their archived source files. The four historical README files remain in the archive and their separately authored current navigation targets exist.
+
+**Final disposition:** SOURCE CONTENT RETIRED - ARCHIVE VERIFIED - MIGRATION VERIFIED - PHYSICAL SOURCE REMOVED. The prior access-denied entries above are retained as historical events and superseded by this final operator-evidence and checkout-verification record. DEVOPS-02 is resolved and removed from the active Unresolved Register; its evidence remains in the Phase 03 report and Migration Map.

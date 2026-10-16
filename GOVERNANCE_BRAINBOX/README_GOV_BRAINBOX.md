@@ -68,7 +68,8 @@ The current physical tree is documented in the canonical two-descendant-level lo
 - [Root README](../README_BRAINBOX.md) — complete target tree and root navigation.
 - [Phase 02 ticket set](../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md) and [Phase 02 README](../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md) — active migration execution rules.
 - [Migration map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — source profiles, integrity baselines, and M03 dispositions.
-- Retained legacy sources: `DOB_MUST_README.md`; `AI_BRAINBOX/AI_MUST_README.md`; `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md`, `FUNC_REQ_BRAINBOX.md`, and `FUNC_WORKFLOW_BRAINBOX.md`; `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md`; `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md`.
+- M03-era source inventory (historical): `DOB_MUST_README.md`; `AI_BRAINBOX/AI_MUST_README.md`; `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md`, `FUNC_REQ_BRAINBOX.md`, and `FUNC_WORKFLOW_BRAINBOX.md`; the former `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md` is archived by M20 at the [historical project README](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md); `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md`.
+- **Current PROJ_WORKFLOW disposition (2026-10-16):** The former source tree has been physically removed after its 88 files were archived and the approved migration/integrity checks passed. The M03-era list above is historical provenance; it does not indicate a current source path. See the [retirement ledger](../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) and [Ticket 01 report](../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md).
 
 ## M03 revision record
 
