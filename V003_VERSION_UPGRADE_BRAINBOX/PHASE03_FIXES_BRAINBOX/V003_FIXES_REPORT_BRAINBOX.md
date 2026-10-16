@@ -1741,16 +1741,25 @@ The Operator supplied evidence that the approved Git Bash empty-directory-only c
 | 8. Modified local relative links | PASS | Changed Governance links and new report/map/ledger cross-references resolve locally. |
 | 9. Frozen V003 authorities | PASS | Specification and Origin Conversation remain unchanged from the branch baseline. |
 | 10. Whitespace check | PASS | `git diff --check` passed before staging. |
-| 11. Staged paths and staged diff | PENDING | To be recorded after explicit six-path staging and cached-diff inspection. |
-| 12. GitHub publication and merge | PENDING | Authorized conditionally by the Operator; to be recorded after remote checks. |
+| 11. Staged paths and staged diff | PASS | Exactly the six authorized paths were staged; cached `git diff --check` exited 0; no unstaged or untracked files remained. |
+| 12. GitHub publication and merge | PASS | PR #49 merged to `main` at `5140df8c045fb124d13256822338b2355142ddac`; GitHub main and local main were verified at that SHA immediately after merge. |
 
 ### Current disposition
 
 **SOURCE CONTENT RETIRED - ARCHIVE VERIFIED - MIGRATION VERIFIED - PHYSICAL SOURCE REMOVED.** DEVOPS-02 is resolved and its active row was removed from `V003_UNRESOLVED_BRAINBOX.md` under the clear-on-resolution rule. The access-denied attempts and former blocked status remain as dated historical evidence in this report, the Migration Map, and the Retirement Ledger; the final result above supersedes them. No unrelated Governance, README, FUNC, Skills, DEVOPS, or historical-source reorganization was performed. Independent ChatGPT review is not claimed.
 
-**Git lifecycle:** local branch `v003/proj-workflow-final-retirement-verification`, baseline `90a1c0c9c02017398b02406f57e8c95fd65b06ca`; six intended paths remain the publication scope. Stage/commit/push/PR/merge results are to be reported after execution.
+**Git lifecycle:** local branch `v003/proj-workflow-final-retirement-verification`, baseline `90a1c0c9c02017398b02406f57e8c95fd65b06ca`; six intended paths were published under PR #49. Final merge and main synchronization are recorded below.
 
 
 ## Ticket 01 staged commit and branch publication - 2026-10-16
 
 The six authorized paths passed the staged-path comparison and `git diff --cached --check`; there were no unstaged or untracked files. Commit `46acb8e444d446bd866e85855091d8dc52f8dcb4` (`V003: finalize project-workflow retirement and close DEVOPS-02`) contains those six files only. The branch was pushed to `origin/v003/proj-workflow-final-retirement-verification`, and the local upstream now points to that same commit. GitHub's compare result reports the branch one commit ahead of `main` at `90a1c0c9c02017398b02406f57e8c95fd65b06ca`, zero commits behind, with exactly the six intended paths. No commit statuses/check-runs are configured or reported for this commit. Pull request creation, merge, and post-merge `main` verification remain pending at this checkpoint.
+
+
+## Ticket 01 PR merge and main synchronization - 2026-10-16
+
+Pull request [#49](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/49) from `v003/proj-workflow-final-retirement-verification` to `main` was merged using a merge commit. It contained two branch commits: implementation/closure `46acb8e444d446bd866e85855091d8dc52f8dcb4` and report checkpoint `e4326c3694a7319b184b3d0bed5edc068293847b`. GitHub returned merge SHA `5140df8c045fb124d13256822338b2355142ddac`.
+
+Post-merge checks confirmed GitHub `main` at `5140df8c045fb124d13256822338b2355142ddac`. Local `main` was switched and updated with `git pull --ff-only origin main`; it ended at the same SHA with a clean worktree. The PR was closed as merged, with six changed files. The repository reported `main` unprotected at preflight, no required checks, and no commit statuses/check-runs. No remote branch was deleted. No independent ChatGPT review is claimed.
+
+**Ticket 01 final Codex disposition:** PASS WITH THE OPERATOR-APPROVED TICKET-SPECIFIC CRLF QUALIFICATION. Source deletion, archive, migration, records, scoped publication, PR merge, and immediate post-merge synchronization gates passed. This does not assert independent ChatGPT verification or erase the dated records of the earlier access-denied attempt.
