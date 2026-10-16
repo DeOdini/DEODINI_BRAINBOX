@@ -1931,3 +1931,23 @@ The final staged diff contains 19 path records: 16 current/documentation/manifes
 ### Complete staged-scope Markdown reference qualification — 2026-10-16
 
 A second scan used the final staged changed-path set and included the three renamed archive documents. Across 18 changed extant Markdown files it found 159 local destinations. The 15 current changed documents contain 155 targets and 0 broken links. The other four targets are relative links embedded in the archived, byte-identical legacy Skills README; they cannot resolve from its new archive directory. They are historical/non-operative, are disclosed in the Recycle Bin README and ledger, and were not repaired because the authorized archive must remain unchanged. Current active navigation remains fully resolving. This is a preservation qualification, not a current-route defect.
+
+## Corrective Ticket 03 - post-merge Git closeout - 2026-10-16
+
+**Disposition:** Ticket 03 implementation and its authorized Git lifecycle completed. This entry supersedes the earlier dated statements that commit, publication, PR, and merge were pending. It does not claim an independent ChatGPT review or close M21, Phase 02, Phase 03, or overall V003 acceptance.
+
+| Item | Verified result |
+|---|---|
+| Ticket branch | `v003/skills-milestones-legacy-retirement` (retained locally and on GitHub) |
+| Implementation commit | `a85890972e8eeb4951f80f2dc5d0db7e8ab86aec` - `V003: retire legacy Skills and V002 Milestones records` |
+| Push | Confirmed on the GitHub branch; GitHub comparison showed one commit ahead of the pre-merge `main` |
+| Pull request | [#53](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/53), base `main`, head `v003/skills-milestones-legacy-retirement` |
+| PR scope | 19 changed path records, 905 additions, 42 deletions; three source-to-archive renames detected as 100% identical |
+| Mergeability and checks | GitHub reported `mergeable: true` on refreshed PR data. Combined commit statuses were empty and the commit check-runs endpoint returned `total_count: 0`. Repository rulesets endpoint returned an empty list. No PR reviews were present. |
+| Branch-protection visibility | The connected GitHub integration returned HTTP 403 for the `main` branch-protection endpoint, and `gh` CLI was unavailable. Therefore the configured legacy branch-protection details could not be independently read. GitHub's PR merge endpoint accepted the authorized merge and returned `merged: true`; no claim is made about unseen configuration details. |
+| Merge commit | `b6ccd6bb3815dc2a88f9f19384710dd8802d4eb8` |
+| Local `main` synchronization | `git fetch origin`, followed by `git pull --ff-only origin main`, fast-forwarded `6cc94ce2744d1bc87a4bf0fe318c729edef19217` to the merge commit. Local `main` and `origin/main` matched at `b6ccd6bb3815dc2a88f9f19384710dd8802d4eb8`; the worktree was clean at that checkpoint. |
+
+The three archive records remain byte-identical to their pre-move sources: raw SHA-256, byte sizes, and path-aware baseline Git blob identities matched 3/3. Gate 12 passes under the Operator's ticket-specific clarification. The old Skills directory is absent, `SKILLS_AI_BRAINBOX` remains the active Skills master, and the active Milestones folder contains only its README and unchanged `[PLANNED]` Router/Agentic record. The current-navigation scan found 155 local destinations with zero broken; the full changed-Markdown scan's four unresolved destinations remain solely inside the unchanged archived Skills document and are documented as historical.
+
+No tests were applicable to this documentation/archive ticket. The separate report-only closeout change that records this publication result is tracked independently from implementation commit `a858909`.

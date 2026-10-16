@@ -3300,3 +3300,9 @@ Revalidation confirmed 3/3 archive raw SHA-256/size and path-aware baseline Git 
 **Corrected Gate 12: PASS.** The staged-path and whitespace review is recorded in the Phase 03 report; the commit and remote lifecycle remain pending.
 
 Ticket 03 staged review (2026-10-16): 19 staged path records, exactly three R100 source-to-archive moves, no unstaged or untracked material, and both git diff --cached --check and git diff --check passed. The staged set contains only authorized Ticket 03 files. Commit and publication remain pending.
+
+## Corrective Ticket 03 - Git publication and merge disposition - 2026-10-16
+
+Ticket 03 implementation commit `a85890972e8eeb4951f80f2dc5d0db7e8ab86aec` (`V003: retire legacy Skills and V002 Milestones records`) was pushed to retained branch `v003/skills-milestones-legacy-retirement`. PR [#53](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/53) merged into `main` using a merge commit, `b6ccd6bb3815dc2a88f9f19384710dd8802d4eb8`. The PR covered 19 path records and included three R100 archive moves. GitHub's refreshed PR state was mergeable; no review submissions, commit statuses, check runs, or repository rulesets were returned. The integration could not read the legacy branch-protection endpoint (HTTP 403), and `gh` CLI was not available; the merge API accepted the authorized operation.
+
+Local `main` was fast-forwarded from `6cc94ce2744d1bc87a4bf0fe318c729edef19217` to `b6ccd6bb3815dc2a88f9f19384710dd8802d4eb8` and matched `origin/main` with a clean worktree at that checkpoint. The Ticket 03 branch is retained. This records Ticket 03's Git lifecycle only; it does not declare M21, Phase 02, Phase 03, or overall V003 accepted or closed.

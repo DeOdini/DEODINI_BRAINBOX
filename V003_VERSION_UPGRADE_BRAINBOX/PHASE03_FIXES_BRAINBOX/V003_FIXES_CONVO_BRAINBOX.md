@@ -1270,3 +1270,11 @@ The 19-record staged diff is limited to Ticket 03. Git detects the Skills README
 ## Codex response — complete staged-scope link scan correction — 2026-10-16
 
 The staged-scope parser also scanned all three archived Markdown files. It found 159 local destinations across 18 changed extant Markdown files: 155 across the 15 current changed documents, all resolving, plus four unresolved relative links inside the unchanged archived Skills README. Those four are historical/non-operative and already disclosed by the Recycle Bin README/ledger. The archive remains byte-identical as required. The earlier “155/0 across changed Markdown” wording above applied only to current changed documents; this correction states the full set and both scopes explicitly.
+
+## Codex response - Corrective Ticket 03 Git publication and merge closeout - 2026-10-16
+
+The authorized implementation commit `a85890972e8eeb4951f80f2dc5d0db7e8ab86aec` was pushed to `v003/skills-milestones-legacy-retirement`. GitHub confirmed the branch was one commit ahead of `main`, with 19 changed path records including the three exact source-to-archive renames. PR [#53](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/53) was opened against `main`; refreshed GitHub metadata reported it mergeable, with no reviews, zero commit statuses, zero check runs, and no repository rulesets. The connected integration could not read the legacy branch-protection endpoint (HTTP 403), and `gh` CLI was not installed. The authorized GitHub merge operation succeeded and returned merge commit `b6ccd6bb3815dc2a88f9f19384710dd8802d4eb8`.
+
+Local `main` was fetched and fast-forwarded with `git pull --ff-only origin main` from `6cc94ce2744d1bc87a4bf0fe318c729edef19217` to `b6ccd6bb3815dc2a88f9f19384710dd8802d4eb8`. At that checkpoint, local `main` equaled `origin/main` and the worktree was clean. The Ticket 03 branch remains retained locally and remotely. A separate report-only closeout branch/PR is being used to preserve these post-merge facts without adding them to the already merged implementation commit.
+
+This is Codex execution reporting, not an independent ChatGPT verdict. It does not close M21, Phase 02, Phase 03, or overall V003 acceptance.
