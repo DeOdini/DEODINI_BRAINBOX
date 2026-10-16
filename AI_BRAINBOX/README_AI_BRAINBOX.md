@@ -7,7 +7,7 @@
 **MENTAL MODEL:** FUNC records what agents can do and what execution is evidenced; DEVOPS records workflow, application, and operational knowledge; Skills owns reusable competencies, commands, formats, technologies, prompts, patterns, and references.
 **GOVERNED BY:** De O'Dini - Operator; current system-wide rules in Governance; the frozen V003 Specification defines the target.
 **AUTHORITATIVE TREE:** The AI branch of the complete target tree in `README_BRAINBOX.md`, following frozen V003 Specification §8.
-**LOCAL TREE:** The two-level physical tree below includes approved AI target branches and physically present legacy paths; the legacy-source overlay identifies which paths are historical/reference-only and not canonical V003 branches.
+**LOCAL TREE:** The two-level physical tree below shows current AI target branches. Archived legacy sources are listed separately in the retirement overlay and are not active V003 branches.
 **RELATED DOMAINS:** Governance, Version History, Milestones, Portfolio, and FootHive Sandbox/Production.
 **CANONICAL SOURCES:** Frozen V003 Specification §§8-10, 15-20; Governance; V003 Origin Conversation for decision history; Phase 02 for migration process.
 **REFERENCES:** Use the local navigation links and Migration Map below.
@@ -44,8 +44,6 @@ AI_BRAINBOX/ [PRESENT · POPULATED]
 │   ├── TECHNOLOGIES_SKILLS_BRAINBOX/ [PRESENT · POPULATED]
 │   ├── TROUBLESHOOTING_SKILLS_BRAINBOX/ [PRESENT · POPULATED]
 │   └── README_SKILLS_AI_BRAINBOX.md [PRESENT]
-├── SKILLS_AVAIL_AI_BRAINBOX/ [PRESENT · POPULATED] — reference-only legacy Skills source
-│   └── SKILLS_MUST_README.md [PRESENT]
 └── README_AI_BRAINBOX.md [PRESENT]
 ~~~
 
@@ -57,7 +55,7 @@ The current physical tree is documented in the canonical two-descendant-level lo
 
 ## Retired and retained legacy-source overlay
 
-The 11 legacy FUNC reports, requirements, and workflow files, plus the DOB_MUST_README.md and AI_MUST_README.md entry files, were retired from their former paths on 2026-10-16 and preserved byte-for-byte in the [Ticket 02 archive](../RECYCLE_BIN_BRAINBOX/README_RECYCLE_BIN_BRAINBOX.md). The former PROJ_WORKFLOW tree is physically absent; its 88 historical files remain in the [Ticket 01 archive](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/). SKILLS_AVAIL_AI_BRAINBOX remains reference-only under the prior F10 Operator decision. Archived sources are historical evidence, not current operating instructions:
+The 11 legacy FUNC reports, requirements, and workflow files, plus the DOB_MUST_README.md and AI_MUST_README.md entry files, were retired from their former paths on 2026-10-16 and preserved byte-for-byte in the [Ticket 02 archive](../RECYCLE_BIN_BRAINBOX/README_RECYCLE_BIN_BRAINBOX.md). The former PROJ_WORKFLOW tree is physically absent; its 88 historical files remain in the [Ticket 01 archive](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/). Corrective Ticket 03 retired the legacy Skills source and placed its unchanged historical body in the [Ticket 03 archive](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md). Archived sources are historical evidence, not current operating instructions:
 
 ~~~text
 AI_BRAINBOX legacy-source boundary/
@@ -65,7 +63,7 @@ AI_BRAINBOX legacy-source boundary/
 +-- ../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md [retired; historical root entry]
 +-- ../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/ [11 retired FUNC files; see manifest]
 +-- ../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/ [88 archived historical files; former source tree absent]
-+-- SKILLS_AVAIL_AI_BRAINBOX/ [reference-only legacy Skills source; retained by F10]
++-- ../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md [retired; historical Skills source]
 ~~~
 - [Root README and complete target tree](../README_BRAINBOX.md)
 - [Governance index](../GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md)
@@ -75,4 +73,4 @@ AI_BRAINBOX legacy-source boundary/
 - [V003 Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 - [Phase 02 migration records](../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md)
 
-**Legacy-source boundary:** Current system-wide rules are in Governance, and current capability/execution records are under CORE/EXE. Archived authority files and the retained Skills legacy source are historical/reference-only; do not execute their former procedures as current authority. The raw Fullstack preset remains RAW/UNPROVEN and is not an active replacement for archived FUNC workflow material.
+**Legacy-source boundary:** Current system-wide rules are in Governance, current capability/execution records are under CORE/EXE, and the sole active Skills master is `SKILLS_AI_BRAINBOX/`. Archived authority files and the retired Skills source are historical/reference-only; do not execute their former procedures as current authority. The raw Fullstack preset remains RAW/UNPROVEN and is not an active replacement for archived FUNC workflow material.

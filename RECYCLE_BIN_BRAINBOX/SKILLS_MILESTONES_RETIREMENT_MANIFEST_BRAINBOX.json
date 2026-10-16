@@ -1,0 +1,74 @@
+{
+  "schema": "deodini-retirement-manifest-v1",
+  "ticket": "V003 Corrective Ticket 03 — Legacy Skills and V002 Milestones Retirement",
+  "status": "ARCHIVED — raw source/archive integrity verified; Git rename status recorded in Phase 03 report",
+  "repository": "DeOdini/DEODINI_BRAINBOX",
+  "branch": "v003/skills-milestones-legacy-retirement",
+  "baseline_commit": "6cc94ce2744d1bc87a4bf0fe318c729edef19217",
+  "baseline_main_verified": "2026-10-16; GitHub main and local main matched before branch creation",
+  "manifest_generated_utc": "2026-10-16T13:18:52Z",
+  "authorization_attachment": "C:/Users/USER/.codex/attachments/c5b8ce22-a6d1-4028-9bbc-c88d7ce5ce80/Pasted text.txt",
+  "authorization_attachment_sha256": "E05ACCB900E708927C9FF85723331932E07F27C0212557156E4C20B5787D0C01",
+  "source_count": 3,
+  "archive_root": "RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/",
+  "archived_files": [
+    {
+      "original_path": "AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md",
+      "archive_path": "RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md",
+      "source_sha256_pre_move": "FACAE61FF9D3B5FBB4A0A07EA3C7D1E0252C42DF84C8127A29D21DF1454ED488",
+      "archive_sha256_current": "FACAE61FF9D3B5FBB4A0A07EA3C7D1E0252C42DF84C8127A29D21DF1454ED488",
+      "source_bytes_pre_move": 1380,
+      "archive_bytes_current": 1380,
+      "baseline_git_blob": "9d12397205ab86c4cc63c6c6220e4285421ea2ea",
+      "baseline_git_blob_bytes": 1353,
+      "line_count": 27,
+      "raw_worktree_crlf_sequences": 27,
+      "raw_source_to_archive_match": true,
+      "git_path_aware_blob_match": true,
+      "line_ending_disposition": "Raw source/archive bytes are identical. Windows core.autocrlf=true converts 27 CRLF sequences to the 1353-byte LF Git blob; path-aware hashing at the original path reproduces the baseline blob.",
+      "disposition": "Moved unchanged to historical archive; not current operating authority"
+    },
+    {
+      "original_path": "MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md",
+      "archive_path": "RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md",
+      "source_sha256_pre_move": "BD69ED1D79EB6C954B3664C627EA6F8D0A90FFCCCC1704DC1798E470A8D45F3B",
+      "archive_sha256_current": "BD69ED1D79EB6C954B3664C627EA6F8D0A90FFCCCC1704DC1798E470A8D45F3B",
+      "source_bytes_pre_move": 26882,
+      "archive_bytes_current": 26882,
+      "baseline_git_blob": "c796b2a1e278e8a1d35b4bc4ebc2cd58dc52e8b4",
+      "baseline_git_blob_bytes": 26420,
+      "line_count": 462,
+      "raw_worktree_crlf_sequences": 462,
+      "raw_source_to_archive_match": true,
+      "git_path_aware_blob_match": true,
+      "line_ending_disposition": "Raw source/archive bytes are identical. Windows core.autocrlf=true converts 462 CRLF sequences to the 26420-byte LF Git blob; path-aware hashing at the original path reproduces the baseline blob.",
+      "disposition": "Moved unchanged to historical archive; not current milestone authority"
+    },
+    {
+      "original_path": "MILESTONES_BRAINBOX/MILESTONES_MUST_README.md",
+      "archive_path": "RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONES_MUST_README.md",
+      "source_sha256_pre_move": "0F60420E3F4F4B8569A5557EF26149B1CB8C34CFA0B9E300B1A9A34F97675EC6",
+      "archive_sha256_current": "0F60420E3F4F4B8569A5557EF26149B1CB8C34CFA0B9E300B1A9A34F97675EC6",
+      "source_bytes_pre_move": 2286,
+      "archive_bytes_current": 2286,
+      "baseline_git_blob": "fb0636ce9d75fab2128e018e8c73af30ac196090",
+      "baseline_git_blob_bytes": 2230,
+      "line_count": 56,
+      "raw_worktree_crlf_sequences": 56,
+      "raw_source_to_archive_match": true,
+      "git_path_aware_blob_match": true,
+      "line_ending_disposition": "Raw source/archive bytes are identical. Windows core.autocrlf=true converts 56 CRLF sequences to the 2230-byte LF Git blob; path-aware hashing at the original path reproduces the baseline blob.",
+      "disposition": "Moved unchanged to historical archive; not current milestone authority"
+    }
+  ],
+  "active_authority": {
+    "skills_master": "AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md",
+    "milestones_records": [
+      "MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md",
+      "MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md"
+    ],
+    "router_agentic_status": "[PLANNED] — original file bytes unchanged"
+  },
+  "recovery": "Restore an archived file to its original path only under a separate Operator-authorized action. Verify the destination is absent and compare SHA-256 before any restore; do not overwrite current content.",
+  "git_rename_detection": "Initial git mv cached diff reported R100 for all three source-to-archive pairs against baseline 6cc94ce2744d1bc87a4bf0fe318c729edef19217. After Gate 12 clarification, the final staged diff was rechecked and detected R100 for all three source-to-archive pairs."
+}

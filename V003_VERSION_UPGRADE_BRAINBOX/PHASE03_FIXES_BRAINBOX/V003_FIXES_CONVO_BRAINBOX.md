@@ -699,3 +699,574 @@ The complete execution ticket was supplied as `C:/Users/USER/.codex/attachments/
 > PR #51 is open and now reports mergeable against `main`. GitHub’s comparison is one commit ahead, no review submissions or PR workflow runs are pending, and the branch head still matches the verified commit. I’m proceeding with the ticket-authorized merge.
 
 > PR #51 merged successfully as merge commit `1e3bee82f2fcb7a02c3f5465ca3a325132713683`. I’m updating the local `main` by fast-forward, then I’ll add the actual publication and merge results to the Phase 03 records in a report-only follow-up.
+
+
+
+
+## V003 Corrective Ticket 03 — Operator instruction (attachment text; Markdown whitespace normalized) — 2026-10-16
+
+The Operator request arrived as the attached ticket below. The attachment text is reproduced below with line endings and trailing Markdown padding normalized for the Git whitespace gate. The source attachment remains unchanged; SHA-256: E05ACCB900E708927C9FF85723331932E07F27C0212557156E4C20B5787D0C01.
+
+--- BEGIN ATTACHMENT TEXT ---
+# DEODINI_BRAINBOX — V003 CORRECTIVE TICKET 03
+## Legacy Skills and V002 Milestones Retirement, Master-Authority Routing and Tree Cleanup
+
+**Priority:** MEDIUM — Skills; LOW — Historical Milestones
+**Operator authorization:** Execute the bounded retirement, update affected references and trees, independently validate, then stage, commit, push and merge if mandatory checks pass.
+**Starting branch:** `main`
+**Working branch:** `v003/skills-milestones-legacy-retirement`
+**Repository:** `DeOdini/DEODINI_BRAINBOX`
+**Related findings:** SKILLS_AI_BRAINBOX historical-taxonomy review; MILESTONES_BRAINBOX V002 historical separation; corresponding dependencies of GOVERNANCE-02 and README-03.
+
+---
+
+## 1. Controlling Operator instructions
+
+The Operator has directed the following:
+
+1. Fully retire `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/` into `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/`.
+2. Make `AI_BRAINBOX/SKILLS_AI_BRAINBOX/` the sole active canonical/master Skills directory.
+3. Retire the historical V002 milestone files from `MILESTONES_BRAINBOX/`.
+4. Preserve the current V003 Milestones README and Router/Agentic milestone.
+5. Remove obsolete active references and tree entries pointing to retired locations.
+6. Preserve historical content in the retirement archive, with exact identity verification.
+7. Defer any further milestone migration, restructuring or capability development until the Operator personally supplies the details.
+8. Complete the Git publication lifecycle only if all mandatory ticket-specific gates pass.
+
+### Authority and execution boundary
+
+The current Governance framework remains accepted.
+
+Existing READMEs and historical source files are not assumed accurate merely because they exist. Where they conflict with this specific Operator-authorized retirement, follow the ticket's explicit destination and scope decisions.
+
+Do not allow obsolete V002 instructions, outdated README navigation, or unrelated corrective backlog entries to redirect this cleanup.
+
+This does not authorize bypassing data integrity checks, frozen evidence protections, Git branch protections or higher-priority safety requirements.
+
+**Do not initiate any other ticket.**
+
+---
+
+## 2. Mandatory preflight
+
+Before making modifications:
+
+1. Confirm the Git worktree is clean and synchronized with `origin/main`.
+2. Verify PR #51 and PR #52 are already included in `main`.
+3. Record the exact starting SHA.
+4. Create `v003/skills-milestones-legacy-retirement` from current `main`.
+5. Inspect all source paths listed in this ticket.
+6. Confirm the intended archival destinations do not contain conflicting material.
+7. Inventory existing Skills and Milestones structures, including physical paths, Git-tracked paths, symlinks and reparse points.
+8. Calculate source SHA-256, byte sizes and Git blob IDs for every file to be retired.
+9. Inspect the relevant V003 Migration Map, Phase 03 report, Unresolved Register, Recycle Bin ledger and current tree/status Governance policy.
+10. Search references using exact file paths, relative links, filenames and historical directory names.
+
+**Stop for unexplained source disappearance, conflicting archive destination, dirty baseline, unverified extra source content or a data-loss risk.**
+
+Do not silently expand the deletion list.
+
+---
+
+# PART A — SKILLS RETIREMENT
+
+## 3. Authoritative Skills decision
+
+### Retired source
+
+`AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/`
+
+### Historical file
+
+`SKILLS_MUST_README.md`
+
+### Retirement destination
+
+`RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md`
+
+### Active master
+
+`AI_BRAINBOX/SKILLS_AI_BRAINBOX/`
+
+### Required outcome
+
+The entire legacy `SKILLS_AVAIL_AI_BRAINBOX` source directory must cease to exist as an active directory after retirement.
+
+The current `SKILLS_AI_BRAINBOX` must be the only active canonical Skills directory within AI_BRAINBOX.
+
+Archive the historical file intact. Do not transfer its outdated instructions into the current Skills master.
+
+The historical source references `RAW_SKILLS`, `PROVEN_SKILLS`, `REUSABLE_SKILLS` and `FAILED_SKILLS`. These must not be created, claimed to exist, or represented as verified capabilities merely because the archived V002 document lists them.
+
+## 4. Protect the current Skills taxonomy
+
+Retain all existing current Skills child domains, including:
+
+- `COMMANDS_SKILLS_BRAINBOX/`
+- `LANGUAGES_SKILLS_BRAINBOX/`
+- `PATTERNS_SKILLS_BRAINBOX/`
+- `PROMPTS_SKILLS_BRAINBOX/`
+- `REFERENCES_SKILLS_BRAINBOX/`
+- `SECURITY_SKILLS_BRAINBOX/`
+- `SKILLS_BRAINBOX/`
+- `README_SKILLS_AI_BRAINBOX.md`
+
+Do not delete, rename, merge, flatten or artificially populate any of these domains.
+
+The current Skills README is the canonical local navigation entry point. It does not supersede the Operator's authority or applicable system-wide Governance.
+
+Preserve actual capability states:
+
+- PRESENT
+- POPULATED
+- STUB
+- EMPTY
+- PLANNED
+- UNVERIFIED
+- VERIFIED
+- RETIRED
+
+Use the existing Governance definitions accurately. Physical presence is not proof of operational capability.
+
+## 5. Execute Skills retirement
+
+1. Create the archive destination.
+2. Move `SKILLS_MUST_README.md` into that destination using Git-aware file movement.
+3. Preserve its bytes exactly.
+4. Verify source and destination hashes.
+5. Verify the original directory has no remaining physical files or Git-tracked paths.
+6. Delete only the empty source directory shell after verifying its contents.
+7. Do not use recursive forced deletion.
+8. Confirm the current Skills taxonomy is unchanged except for authorized navigation/reference corrections.
+
+If Windows prevents empty-folder removal, record the exact error and stop only the physical cleanup portion; do not falsely claim full retirement or publish a full-close disposition.
+
+---
+
+# PART B — V002 MILESTONES RETIREMENT
+
+## 6. Authoritative Milestones decision
+
+The Operator has explicitly directed retirement of the historical V002 milestone records.
+
+### Files to retire
+
+`MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md`
+
+`MILESTONES_BRAINBOX/MILESTONES_MUST_README.md`
+
+### Create retirement destination
+
+`RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/`
+
+Move both files into this destination, retaining their original filenames and exact contents.
+
+### Files that must remain active
+
+`MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md`
+
+`MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md`
+
+The remaining active structure must be:
+
+```text
+MILESTONES_BRAINBOX/
+├── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
+└── README_MILESTONES_BRAINBOX.md
+```
+
+The Router/Agentic record is a planned-future architecture document.
+
+**Its `[PLANNED]` status must remain unchanged.**
+
+## 7. Strict hold on future milestone migration
+
+The Operator will personally provide the requirements for a better migration of the remaining milestone material.
+
+Until then, Codex must not:
+
+- Design or implement Brainbox Router capabilities.
+- Create agentic milestones or new milestone sequences.
+- Rewrite the planned Router/Agentic record.
+- Change milestone ownership or implementation authority.
+- Promote planned capabilities to verified or implemented.
+- Delete other milestone records.
+- Create replacement V002 milestone instructions.
+- Merge V002 milestone content into V003 without specific approval.
+
+This ticket only retires the two identified historical V002 documents, preserves their evidence and updates the navigation affected by their removal.
+
+Any additional migration proposal belongs to a future Operator-authorized ticket.
+
+---
+
+# PART C — ACTIVE REFERENCE AND TREE CLEANUP
+
+## 8. Comprehensive discovery, narrowly scoped correction
+
+Search the repository for references to:
+
+- `SKILLS_AVAIL_AI_BRAINBOX`
+- `SKILLS_MUST_README.md`
+- `MILESTONE_CHECKPOINT_BRAINBOX.md`
+- `MILESTONES_MUST_README.md`
+- Former V002 `MILESTONES/` location where it is incorrectly represented as active.
+
+Search:
+
+- Markdown links.
+- Relative paths.
+- Plain-text path references.
+- README navigation sections.
+- Root and subordinate directory trees.
+- Governance source indexes.
+- Relevant agent instructions.
+- Current Recycle Bin indexes.
+
+Classify each reference before making a change.
+
+### Reference classification
+
+**ACTIVE AUTHORITY / OPERATING INSTRUCTION**
+
+Redirect from retired sources to the verified current V003 master location.
+
+For Skills, this is `AI_BRAINBOX/SKILLS_AI_BRAINBOX/` and its existing canonical README.
+
+For Milestones, this is the active Milestones README and retained Router/Agentic record, as applicable.
+
+**HISTORICAL EVIDENCE / CITATION**
+
+Retain the reference but route to the corresponding historical archived path.
+
+Identify it as historical, retired and non-authoritative for current operations.
+
+**CURRENT TREE / NAVIGATION**
+
+Remove obsolete former-location entries and update the verified structure.
+
+**FROZEN SPECIFICATION / HISTORICAL CHECKPOINT**
+
+Preserve the record without rewriting original historical facts.
+
+**UNRESOLVED OR AMBIGUOUS REFERENCE**
+
+Record the exact location and reason for the unresolved decision. Do not fabricate replacement authority.
+
+## 9. Mandatory navigation corrections
+
+Review and update only affected references in:
+
+- `README_BRAINBOX.md`
+- `AI_BRAINBOX/README_AI_BRAINBOX.md`
+- `AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md`
+- `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md`
+- Applicable Governance navigation/reference documents.
+- Recycle Bin README, tree and retirement ledger.
+- Any other current authoritative Markdown document with a directly affected reference.
+
+The current root README must show the two retired V002 Milestones files only within the retirement archive, not as active Milestones children.
+
+The AI tree must not show `SKILLS_AVAIL_AI_BRAINBOX` as an active branch.
+
+The active Skills master must remain navigable.
+
+The active Milestones folder must show only the two retained documents.
+
+### README structural requirements
+
+- Root README: complete current repository tree.
+- Subordinate README: canonical local view limited to two descendant levels.
+- Use true physical and lifecycle classifications.
+- Do not duplicate deep root trees into subordinate READMEs.
+- Do not create an archive-tree reference that mistakenly gives historical documents current operating authority.
+
+**Do not redesign README content outside the directly affected retirement and navigation scope.**
+
+## 10. Link validation
+
+After moving the historical files:
+
+1. Validate all modified relative Markdown links.
+2. Validate directly impacted links in files that reference the retired documents.
+3. Verify current Skills navigation resolves.
+4. Verify current Milestones navigation resolves.
+5. Verify historical links reach the archived file locations.
+6. Distinguish historical plain-text source-path mentions from actual broken links.
+7. Record exact counts and unresolved exceptions.
+
+Do not claim a repository-wide link PASS unless such a scan was actually performed.
+
+Do not make unrelated historical document changes just to reduce link counts.
+
+---
+
+# PART D — RETIREMENT INTEGRITY AND RECORDS
+
+## 11. File identity and evidence preservation
+
+For each of the three retired files, record:
+
+- Original source path.
+- Archive destination.
+- SHA-256 and byte size before relocation.
+- SHA-256 and byte size after relocation.
+- Git blob ID.
+- Git rename identity.
+- Source baseline or prior checkpoint where available.
+- CRLF-only qualifications where independently proven.
+- Any actual integrity discrepancy.
+
+Target **three exact byte-preserving moves**.
+
+If Git reports `R100` for all three, record that evidence.
+
+Never claim direct raw-byte matches where only a qualified Git/CRLF comparison is established.
+
+Do not edit archived historical bodies to repair their old links. Redirect current navigation from outside the archived documents.
+
+Do not rewrite or delete existing archive materials from Corrective Tickets 01 and 02.
+
+## 12. Permanent report updates
+
+Update:
+
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md`
+- `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_CONVO_BRAINBOX.md`
+- `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md`
+- `RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md`
+- `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md`
+
+Also update appropriate current navigation/index documents directly affected by the retirements.
+
+Record the following two dispositions separately:
+
+**SKILLS-RETIREMENT:** `SKILLS_AVAIL_AI_BRAINBOX` retired; `SKILLS_AI_BRAINBOX` designated the sole active master Skills directory.
+
+**MILESTONES-V002-RETIREMENT:** Both historical V002 milestone documents retired intact; active V003 Milestones directory retains its current README and planned Router/Agentic record.
+
+### Unresolved Register handling
+
+Close the original Skills historical-taxonomy issue only if:
+
+- Legacy source is retired.
+- Active Skills navigation is accurate.
+- Current Skills master is preserved.
+- Historical references are appropriately routed.
+- No unsupported skill-verification claims remain.
+
+Close the V002 Milestones separation issue only if:
+
+- Both historical files are archived.
+- Active Milestones tree is accurate.
+- Existing planned record is preserved.
+- Historical/current navigation is distinguished.
+
+Keep evidence in permanent reports and remove resolved issues from the active register in accordance with the established clear-on-resolution rule.
+
+Keep future Skills population/verification and any further Milestones migration as separate potential work, not automatically closed by these retirements.
+
+---
+
+# PART E — VERIFICATION AND GIT PUBLICATION
+
+## 13. Mandatory verification gates
+
+Codex must document PASS, FAIL or QUALIFIED for every gate:
+
+1. Clean, synchronized Git baseline.
+2. Starting SHA and dedicated feature branch recorded.
+3. Legacy Skills folder contains only the expected file before retirement.
+4. Both historical V002 Milestones files identified correctly.
+5. Three source hashes recorded before moves.
+6. All three historical files archived.
+7. All three former active source paths absent.
+8. Legacy Skills directory physically absent.
+9. All three archived file contents reconciled.
+10. Existing Skills taxonomy and child files preserved.
+11. `SKILLS_AI_BRAINBOX` is the sole active master Skills directory.
+12. Both retained V003 Milestones files remain unchanged.
+13. Active Milestones folder contains exactly the approved two documents.
+14. Router/Agentic milestone remains `[PLANNED]`.
+15. Current Skills references route to the current master.
+16. Current Milestones references route to retained records.
+17. Historical references route to the retirement archive.
+18. Active root/parent/local trees reflect the physical changes.
+19. Modified relative Markdown links resolve.
+20. No unsupported capabilities or placeholders promoted to VERIFIED.
+21. No unrelated file retirements or architecture redesign.
+22. Existing historical archives and frozen V003 Specification remain unchanged.
+23. Retirement manifest/ledger and Unresolved Register dispositions accurately updated.
+24. Complete unstaged and staged diffs reviewed.
+25. Applicable `git diff --check` and `git diff --cached --check` pass.
+26. No material unexplained integrity differences or data-loss risk.
+27. GitHub PR base/head, checks and authorized scope verified before merge.
+
+A blocking failure stops publication and must be reported with exact evidence.
+
+Non-blocking historical-only link text or proven LF/CRLF representation differences may be retained as documented qualifications.
+
+**The absence of additional milestone migration instructions is not a blocker** because the Operator expressly deferred that work.
+
+## 14. Stage, commit, push and merge authorization
+
+After all ticket-specific mandatory checks pass:
+
+1. Stage only files changed by this ticket, including the three historical moves, permitted navigation corrections, archival records and ticket reports.
+2. Run `git diff --cached --name-status -M` and verify all three authorized moves are present.
+3. Inspect the entire staged diff.
+4. Run `git diff --cached --check`.
+5. Confirm no unrelated files, credentials or protected historical modifications were staged.
+6. Commit with:
+
+   `V003: retire legacy Skills and V002 Milestones records`
+
+7. Push `v003/skills-milestones-legacy-retirement` to `origin`.
+8. Create a GitHub PR into `main`.
+9. Confirm no conflicts, unintended changes or missing mandatory checks.
+10. Merge the PR only when the ticket's blocking gates pass and branch protections allow the merge.
+11. Retain the branch unless the Operator separately authorizes deletion.
+12. Switch back to local `main` and synchronize via fast-forward-only pull.
+13. Verify the final local HEAD, `origin/main` and GitHub remote `main` all match.
+14. Verify the working tree is clean.
+
+No force-push, branch-protection bypass, history rewrite or unrelated deletion.
+
+If a post-merge closeout record requires publication, use a separately scoped report-only commit/PR following the previous ticket publication pattern.
+
+## 15. Required final Codex report
+
+Return:
+
+- Ticket 03 status.
+- Initial baseline SHA.
+- Feature branch and PR URL.
+- Git implementation and merge SHAs.
+- Exactly which three files were retired.
+- Source/archive hash reconciliation.
+- Physical absence of the legacy Skills directory.
+- Current master Skills location.
+- Final two-file active Milestones structure.
+- Confirmation that the planned Router milestone was not rewritten.
+- Number of active references corrected and historical links preserved.
+- Current tree/navigation validation results.
+- Retirement ledger, Phase 03 report, conversation and migration-map updates.
+- Remaining future Skills capability-validation issues, if any.
+- Explicit statement that further Milestones migration awaits the Operator's instructions.
+- All verification gate results.
+- Confirmation that local `main` matches GitHub and is clean.
+
+Do not claim independent ChatGPT verification or Operator final acceptance on their behalf.
+
+## 16. Final execution boundary
+
+This is a **retirement, preservation, navigation and tree-cleanup ticket** only.
+
+Do not:
+
+- Create new Skills capabilities.
+- Claim placeholder skills are proven.
+- Reconstruct V002 Skills authority.
+- Implement new Router/Agentic milestone work.
+- Invent future Milestones migration details.
+- Alter the frozen V003 Specification.
+- Reopen Corrective Tickets 01 or 02.
+- Begin Governance-02 or README-01/03 broad authority redesign.
+- Start the next ticket automatically.
+
+**OPERATOR AUTHORIZATION: Execute Corrective Ticket 03, retire the three specified files, remove the obsolete active Skills directory, establish the existing Skills directory as the sole active master, preserve the planned Milestones structure, correct affected references and trees, verify all gates, then stage, commit, push and merge when safe and compliant.**
+--- END ATTACHMENT TEXT ---
+
+
+## Codex response — pre-clarification execution checkpoint — 2026-10-16
+
+I completed the three authorized archive moves and updated current navigation, trees, archive records, the Migration Map, and the active Unresolved Register. The source/archive raw SHA-256 and sizes match for all three records, and path-aware Git hashing reproduces all three baseline blobs. Current Milestones contains exactly its README and the unchanged [PLANNED] Router/Agentic record. The affected current Markdown link check found 154 local targets and zero broken.
+
+I identified an internal wording conflict before publication: Part C requires updating the Milestones README's navigation, but gate 12 says both retained V003 Milestones files remain unchanged. The Router record is byte-identical; the README contains the required navigation update. I asked the Operator whether gate 12 allows README-only navigation updates or requires both retained files byte-identical. No response had been recorded at that checkpoint. The later Operator clarification below resolves the hold and authorizes the conditional Git lifecycle.
+
+The three git mv entries were automatically staged and then unstaged without altering the worktree. No commit or publication has occurred. The detailed gate results are recorded in the Phase 03 report and ticket register. This is an in-progress Codex execution record, not independent ChatGPT verification or Operator acceptance.
+
+## Operator clarification and conditional publication authorization — 2026-10-16
+
+**Operator instruction (verbatim):**
+
+# DEODINI_BRAINBOX — Corrective Ticket 03
+
+## Operator Clarification and Conditional Publication Authorization
+
+**Decision:** Resolve the Gate 12 contradiction in favor of the explicitly authorized Part C navigation updates.
+
+### 1. Corrected Gate 12
+
+The final two active Milestones files are subject to different preservation requirements:
+
+- `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` — **Navigation-only changes are authorized**, including correcting the active tree, historical archive links, status descriptions and dated retirement disposition.
+- `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` — **Must remain byte-for-byte unchanged**, including its `[PLANNED]` status.
+
+Do not interpret the original Gate 12 as prohibiting the README updates required by Part C.
+
+This clarification applies only to Corrective Ticket 03.
+
+### 2. Final verification
+
+Before publication:
+
+1. Reconfirm all three files are archived at their authorized destinations.
+2. Recalculate pre-move baseline comparisons, raw SHA-256 hashes, byte sizes and Git blob identities.
+3. Verify the old Skills directory is physically absent.
+4. Verify `SKILLS_AI_BRAINBOX` remains the sole active Skills master.
+5. Verify the active Milestones folder contains exactly its README and Router/Agentic record.
+6. Confirm the Router/Agentic file is byte-identical to the baseline.
+7. Validate all modified Markdown links and relevant retirement references.
+8. Confirm the three archived historical documents remain unchanged.
+9. Review all changed files against Ticket 03's authorized scope.
+10. Run `git diff --check` and `git diff --cached --check`.
+
+The previously reported **154 links with zero broken** must be revalidated or explicitly identified as the earlier scoped scan, not represented as a newly performed check.
+
+If all mandatory verification gates pass, the corrected Gate 12 is **PASS**.
+
+### 3. Stage, commit, push and merge
+
+The Operator authorizes completing the Git lifecycle without requesting another clarification, provided no material blocker remains.
+
+1. Stage only authorized Ticket 03 files, including the three retirement moves, navigation corrections and permanent records.
+2. Inspect the complete staged diff and verify the three archival moves.
+3. Commit with:
+
+   `V003: retire legacy Skills and V002 Milestones records`
+4. Push `v003/skills-milestones-legacy-retirement` to GitHub.
+5. Open a pull request into `main`.
+6. Verify scope, mergeability, required checks and repository protections.
+7. Merge the PR if all gates pass.
+8. Retain the ticket branch.
+9. Synchronize local `main` using a fast-forward-only pull.
+10. Confirm local `main`, `origin/main` and remote GitHub `main` match and the working tree is clean.
+
+If a report-only post-merge update is necessary, publish it through a separately scoped closeout PR.
+
+### 4. Execution boundary
+
+Do not begin additional Skills population or Milestones migration.
+
+The Operator will personally provide future Milestones migration requirements.
+
+Do not change Governance authority policy, expand the retirement list, modify protected historical contents, or reopen Tickets 01 and 02.
+
+### 5. Final report
+
+Return the three-file archival integrity evidence, corrected Gate 12 result, remaining verification results, commit SHA, PR URL, merge SHA and final synchronized repository state.
+
+**Authorization: Resolve Gate 12 as specified, finish verification, and stage, commit, push and merge Corrective Ticket 03 if no remaining blocker exists.**
+
+## Codex response — Gate 12 clarification and final pre-publication checks — 2026-10-16
+
+The Operator's ticket-specific clarification resolves Gate 12: navigation-only edits to `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` are authorized, while `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` must remain byte-identical and `[PLANNED]`. Revalidation confirmed 3/3 source/archive raw SHA-256, byte-size, and path-aware baseline Git blob matches; the former Skills directory and source files are absent; the current Skills master remains; and the active Milestones folder contains exactly its README and unchanged planned record. Router, Specification, and Origin Conversation hashes/blobs remain at baseline. A fresh scan of the 15 current changed Markdown files found 155 local destinations including images and reference definitions, with 0 broken. The full staged-scope scan later included three archived files: 18 changed extant Markdown files, 159 local destinations, and four unresolved links in the unchanged Skills archive only. The earlier 154/0 scan was the narrower 12-file current-navigation scan. The staged review now passes: 19 path records are in scope, all three moves are R100, no unstaged or untracked files remain, and both whitespace checks exit 0. No ChatGPT independent verdict is claimed.
+
+## Codex response — staged-path review — 2026-10-16
+
+The 19-record staged diff is limited to Ticket 03. Git detects the Skills README and both V002 Milestones moves as R100. All changes are staged; there are no unstaged or untracked files. git diff --cached --check and git diff --check both exit 0. The exact Operator-requested commit is next; no publication has occurred yet.
+
+## Codex response — complete staged-scope link scan correction — 2026-10-16
+
+The staged-scope parser also scanned all three archived Markdown files. It found 159 local destinations across 18 changed extant Markdown files: 155 across the 15 current changed documents, all resolving, plus four unresolved relative links inside the unchanged archived Skills README. Those four are historical/non-operative and already disclosed by the Recycle Bin README/ledger. The archive remains byte-identical as required. The earlier “155/0 across changed Markdown” wording above applied only to current changed documents; this correction states the full set and both scopes explicitly.

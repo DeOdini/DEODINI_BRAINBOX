@@ -417,7 +417,7 @@ DEODINI_BRAINBOX/
 | `V003_VERSION_UPGRADE_BRAINBOX/` | [POPULATED] | Contains canonical Origin/Specification and separate Phase 01 and Phase 02 support archives. |
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
 | `VERSION_HISTORY_BRAINBOX/` | [PRESENT · POPULATED] | Parent README and Git-backed V001/V002 snapshots are present. Conceptual retrospective rationale remains evidence-limited. V003 Architecture Decisions, the living migration map, and the M21 physical-tree snapshot are present. The 20 Cline SHAs remain unrecovered; the Operator administratively closed the investigation without asserting technical recovery. |
-| `MILESTONES_BRAINBOX/` | [PRESENT · POPULATED] | Four files are present: two byte/hash-verified historical V002 records and two V003 future-intent records. Only the Router/Agentic capability remains [PLANNED]; no enabling infrastructure is implemented. |
+| `MILESTONES_BRAINBOX/` | [PRESENT · POPULATED] | Exactly two active V003 records remain: the local README and the [PLANNED] Router/Agentic milestone. The two historical V002 records are preserved in the Recycle Bin archive. No enabling infrastructure is implemented. |
 | `AI_BRAINBOX/` | [PRESENT · POPULATED; migration reconciled] | FUNC CORE/EXE, Skills, Sandbox/Production, Fullstack, Frontend, Backend, analytics, and FootHive records are present. Historical PROJ_WORKFLOW files are preserved in the Recycle Bin archive; the former source tree and its seven empty directory shells were removed under Ticket 01 final acceptance. V003 Unresolved Register tracks intentionally empty/planned/reserved architecture. |
 | `PORTFOLIO_BRAINBOX/` | [PRESENT · POPULATED; M16 child present] | The parent README and FootHive portfolio child are present. M20 retired the verified zero-byte legacy placeholder `001_PORT_BRAINBOX.md`; the portfolio evidence and current navigation remain. |
 
@@ -439,12 +439,10 @@ DEODINI_BRAINBOX/
 │   ├── SECURITY_GOV_BRAINBOX.md
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
-├── AI_BRAINBOX/ [PRESENT · POPULATED; current V003 branches and retained legacy Skills reference]
-├── MILESTONES_BRAINBOX/ [PRESENT · POPULATED; V002 history plus V003 planned intent]
-│   ├── README_MILESTONES_BRAINBOX.md
+├── AI_BRAINBOX/ [PRESENT · POPULATED; current V003 branches; retired legacy Skills record is archived]
+├── MILESTONES_BRAINBOX/ [PRESENT · POPULATED; current V003 planned-intent records only]
 │   ├── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md [V003 capability PLANNED]
-│   ├── MILESTONES_MUST_README.md [historical V002 record; exact-byte/hash verified]
-│   └── MILESTONE_CHECKPOINT_BRAINBOX.md [historical V002 record; exact-byte/hash verified]
+│   └── README_MILESTONES_BRAINBOX.md
 ├── PORTFOLIO_BRAINBOX/ [PRESENT · POPULATED — M16 child; empty legacy placeholder retired M20]
 │   ├── README_PORTFOLIO_BRAINBOX.md
 │   └── FOOTHIVE_PORTFOLIO_BRAINBOX/ [PRESENT · POPULATED — M16]
@@ -455,13 +453,16 @@ DEODINI_BRAINBOX/
 ├── RECYCLE_BIN_BRAINBOX/ [PRESENT · POPULATED; Operator-approved archive]
 │   ├── LEGACY_AUTHORITY_RETIREMENT_MANIFEST_BRAINBOX.json [Ticket 02; 13 files]
 │   ├── PROJ_WORKFLOW_RETIREMENT_MANIFEST_BRAINBOX.json [Ticket 01; 88 files]
+│   ├── SKILLS_MILESTONES_RETIREMENT_MANIFEST_BRAINBOX.json [Ticket 03; 3 files]
 │   ├── README_RECYCLE_BIN_BRAINBOX.md
 │   ├── RETIREMENT_LEDGER_BRAINBOX.md
 │   └── RETIRED_ITEMS_BRAINBOX/
 │       ├── AI_MUST_README.md [retired historical source]
 │       ├── DOB_MUST_README.md [retired historical source]
 │       ├── FUNC_AI_BRAINBOX/ [11 retired files; see Ticket 02 manifest]
+│       ├── MILESTONES_BRAINBOX/ [2 retired historical V002 records; see Ticket 03 manifest]
 │       ├── PROJ_WORKFLOW_AI_BRAINBOX/ [88 archived files; see Ticket 01 manifest]
+│       ├── SKILLS_AVAIL_AI_BRAINBOX/ [1 retired historical Skills record; see Ticket 03 manifest]
 │       └── .gitkeep
 ├── V003_VERSION_UPGRADE_BRAINBOX/ [canonical authority and support container]
 └── VERSION_HISTORY_BRAINBOX/ [PRESENT · POPULATED — historical record set is intentionally incomplete; see population table]
@@ -541,8 +542,10 @@ The V001/V002 snapshots record evidence-selected Git tree cut points, not formal
 | `VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/TREE_SNAPSHOT_V001_BRAINBOX.md` | Git-backed V001 tracked-path snapshot. |
 | `VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md` | Git-backed V002 tracked-path snapshot. |
 | `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` | Living source-backed migration ledger; updated by each authorized migration ticket. |
-| `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` | Milestone navigation for two historical V002 records and the separate planned V003 Router/Agentic capability. |
+| `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` | Current V003 milestone navigation; historical V002 records are separately archived. |
 | `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` | Planned future Router/Agentic capabilities and infrastructure intent; not implementation authorization. |
+| [Archived V002 MILESTONES_MUST_README.md — RETIRED / HISTORICAL](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONES_MUST_README.md) | Preserved historical V002 milestone navigation; not current authority. |
+| [Archived V002 MILESTONE_CHECKPOINT_BRAINBOX.md — RETIRED / HISTORICAL](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md) | Preserved historical V002 checkpoint; not current milestone authority. |
 
 ## M02 source-to-target responsibility — historical checkpoint
 
@@ -578,6 +581,12 @@ M03 created the approved Governance tree and mapped current system-wide rules in
 Ticket 02 moved exactly 13 legacy files to the Recycle Bin without editing their source bodies: eight agent FUNC reports, FQ_MUST_README, FUNC_REQ, FUNC_WORKFLOW, DOB_MUST_README, and AI_MUST_README. The source files remain available as historical evidence and are not current operating authority. The [Ticket 02 manifest](RECYCLE_BIN_BRAINBOX/LEGACY_AUTHORITY_RETIREMENT_MANIFEST_BRAINBOX.json) records byte hashes, Git blobs, and line-ending qualifications; the [retirement ledger](RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) records source authority and recovery details.
 
 Active FUNC now contains only AI_AGENTS_CORE_FUNC_BRAINBOX/, AI_AGENTS_EXE_FUNC_BRAINBOX/, and README_FUNC_AI_BRAINBOX.md. The eight CORE records link to archived source reports only for historical provenance; only those link destinations changed under the Operator approval. CORE capability text was not validated by Ticket 02. The legacy FUNC local request/compliance procedure was not replaced; its absence is a documented authority gap. Historical references in archived content and explicitly RAW/UNPROVEN material are not current execution routes.
+
+## Corrective Ticket 03 current source disposition — 2026-10-16
+
+Ticket 03 supersedes the prior present-tense statements that the legacy Skills record remains active at its former path and that the two V002 Milestones records remain active children. The legacy Skills directory is absent; `AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md` is the sole active Skills master. The archived V002 Skills record is [preserved here](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
+
+The active `MILESTONES_BRAINBOX/` contains only `README_MILESTONES_BRAINBOX.md` and `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md`; the latter remains `[PLANNED]`. The two historical V002 records are preserved at [MILESTONES_MUST_README.md](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONES_MUST_README.md) and [MILESTONE_CHECKPOINT_BRAINBOX.md](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md). The [Ticket 03 manifest](RECYCLE_BIN_BRAINBOX/SKILLS_MILESTONES_RETIREMENT_MANIFEST_BRAINBOX.json) and [retirement ledger](RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) preserve source identity and recovery details. Earlier M17/F04 retain-at-source and October 15 relocation entries remain historical decision checkpoints and are superseded for these exact files only.
 
 ## Canonical sources and references
 

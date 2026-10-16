@@ -11,7 +11,7 @@
 **RELATED DOMAINS:** FUNC, DEVOPS, Governance, Fullstack, FootHive evidence, and Version History.
 **CANONICAL SOURCES:** Frozen V003 Specification §§8 and 15–20; V003 Origin Conversation; Governance.
 **REFERENCES:** See Sources below.
-**POPULATION STATE:** Taxonomy directories exist. The four empty legacy Skills placeholders were retired in M20; the substantive Skills source README remains. One bounded command reference and one Governance-linked guardrail prompt are populated; other domains are marked accurately below.
+**POPULATION STATE:** Taxonomy directories exist. The four empty legacy Skills placeholders were retired in M20. Corrective Ticket 03 retired the separate legacy Skills source README unchanged into the Recycle Bin; this V003 Skills directory is the sole active master. One bounded command reference and one Governance-linked guardrail prompt are populated; other domains are marked accurately below.
 **LAST VERIFIED:** 2026-10-15 — Codex current two-level tree, physical paths, local references, and status labels; Skills capability claims were not retested.
 **VERIFIER:** Codex M20 local source/readme check; ChatGPT independent M08 verification: PASS (Batch B closeout, 2026-10-09).
 **APPLIES TO:** Operators and AI agents using reusable DEODINI Brainbox knowledge.
@@ -157,7 +157,7 @@ The current physical tree is documented in the canonical two-descendant-level lo
 
 ## Legacy source boundary
 
-The legacy SKILLS_MUST_README.md remains at AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/ as a linked provenance source. V003-F08 adds a top routing notice to this Skills README and Governance while preserving the historical body byte-for-byte. M20 verified and retired the four zero-byte RAW/PROVEN/REUSABLE/FAILED placeholder files. They contained no reusable knowledge. M08 and M19 migration history remains recorded in the map; substantive Skills source retirement is still source-gated.
+The legacy `SKILLS_MUST_README.md` was retired from `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/` by Corrective Ticket 03 and is preserved unchanged at [its historical archive path](../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md). V003-F08's routing notice remains in the archived body; the current Skills master is this V003 directory. M20 verified and retired the four zero-byte RAW/PROVEN/REUSABLE/FAILED placeholder files; they contained no reusable knowledge. M08 and M19 migration history remains in the map. No unsupported skill claim was promoted.
 
 ## Sources
 
@@ -166,7 +166,7 @@ The legacy SKILLS_MUST_README.md remains at AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX
 - [Governance README](../../GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md).
 - [Governance Security](../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md).
 - [Migration map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md), M01 baseline and M08 disposition.
-- [Retained legacy Skills README](../SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
+- [Archived legacy Skills README — retired historical source](../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
 - [Phase 02 migration report](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md), M07 classification and M08 closeout.
 
 **GIT DIRECTORY MARKERS:** Any .gitkeep files below are Git-only markers to retain empty approved folders. They are not Brainbox knowledge, evidence, or population claims.

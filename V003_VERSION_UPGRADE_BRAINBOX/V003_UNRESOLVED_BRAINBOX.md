@@ -53,19 +53,14 @@ For each future resolved item: independently verify the closure condition, appen
 ### GOVERNANCE_BRAINBOX/ [CRITICAL]
 
 - **GOVERNANCE-01 [CRITICAL]** — Paths: `README_GOV_BRAINBOX.md`, `DOCUMENTATION_GOV_BRAINBOX.md`, `VERSIONING_GOV_BRAINBOX.md`. **Gap:** need explicit precedence among frozen V003 architecture, current Governance operating rules, root navigation, local domain READMEs, and historical authority bodies. **Correction to ticket:** define minimal universal precedence, with no premature hardcoding of unverified child paths. **Depends on:** LEGACY-01 for any invasive historical-file correction; general policy can be decided independently. **Gate:** no conflict with frozen Specification, Operator authority or source preservation. **State:** SELECTABLE / NOT FIXED.
-- **GOVERNANCE-02 [HIGH]** — Paths: `REFERENCE_GOV_BRAINBOX.md` and Governance README. **Gap:** canonical read/write matrix across FUNC, DEVOPS, Skills, Portfolio, FootHive, Milestones and archives. **Correction to ticket:** finalize matrix **after** respective source-folder mapping. **Depends on:** DEVOPS-01/02 and any selected Skills/Milestone audit; FUNC-01/02 routing was resolved by Corrective Ticket 02. **Gate:** exact verified destinations; never revive V002 paths. **State:** BLOCKED ON REMAINING SUBFOLDER ROUTING.
+- **GOVERNANCE-02 [HIGH]** — Paths: `REFERENCE_GOV_BRAINBOX.md` and Governance README. **Gap:** canonical read/write matrix across FUNC, DEVOPS, Skills, Portfolio, FootHive, Milestones and archives. **Correction to ticket:** finalize matrix **after** respective source-folder mapping. **Depends on:** DEVOPS-01/02 and remaining selected source-folder mappings; FUNC-01/02 routing was resolved by Corrective Ticket 02, and current Skills/Milestones routing was reconciled by Corrective Ticket 03. **Gate:** exact verified destinations; never revive V002 paths. **State:** BLOCKED ON REMAINING SUBFOLDER ROUTING.
 - **GOVERNANCE-03 [HIGH]** — Paths: `DOCUMENTATION_GOV_BRAINBOX.md`, `EVIDENCE_GOV_BRAINBOX.md`. **Gap:** lack of enforceable tool-output contamination safeguards. **Correction to ticket:** documented prevention and forensic preservation. **Depends on:** LEGACY-01 evidence. **Gate:** historical provenance unchanged until disposition. **State:** SELECTABLE / NOT FIXED.
 - **GOVERNANCE-04 [MEDIUM]** — Paths: `TREE_AND_STATUS_GOV_BRAINBOX.md` and tooling references. **Gap:** automatic enforcement of two-level trees, physical paths, status vocabulary and relative links. **Correction to ticket:** scoped validation checks; do not populate planned branches. **Depends on:** stable subordinate README routes. **Gate:** reproducible checks and qualified limitations. **State:** SELECTABLE / NOT FIXED.
-
-### Lower-risk categories — retain for later separate selection
-
-- **SKILLS_AI_BRAINBOX/ [MEDIUM]** — Validate current taxonomy versus `SKILLS_AVAIL_AI_BRAINBOX/` historical reference, and avoid treating placeholder/readme-only content as proven skills. Feeds GOVERNANCE-02.
-- **MILESTONES_BRAINBOX/ [LOW]** — Verify historical V002 checkpoint and planned Router/Agentic milestone remain separately identified in one canonical folder; old `MILESTONES/` physical path was retired. Feeds GOVERNANCE-02 if selected. Do not undo the verified relocation.
 
 ### Cross-category dependency / proposed selection order
 
 1. LEGACY-01/02/03 and FUNC-01/02 were resolved or qualified by Corrective Ticket 02; their permanent evidence remains in the Phase 03 report, Migration Map, and Recycle Bin ledger.
-2. DEVOPS-01/02; optionally Skills/Milestones/Portfolio when their destinations affect selected routes. FUNC-03 capability validation remains independently selectable.
+2. DEVOPS-01/02 and any selected Portfolio source-route review. Current Skills/Milestones routing was reconciled by Corrective Ticket 03; FUNC-03 capability validation remains independently selectable.
 3. LEGACY-02/03 once forensic preservation and precedence are settled.
 4. GOVERNANCE-02 canonical ownership matrix **after** child mappings.
 5. README-01/02/03 root routes **after** their named dependencies.
