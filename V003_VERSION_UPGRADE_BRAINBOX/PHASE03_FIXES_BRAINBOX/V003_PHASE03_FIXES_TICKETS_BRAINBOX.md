@@ -613,3 +613,7 @@ The Operator authorizes the conditional Git lifecycle on the retained branch `v0
 GitHub reported the refreshed PR mergeable, with no reviews, zero status contexts, zero check runs, and no repository rulesets. Direct access to the legacy `main` branch-protection endpoint was unavailable to the connected integration (HTTP 403); `gh` CLI was absent. The GitHub merge API accepted the authorized merge. Local `main` was fast-forwarded from `6cc94ce2744d1bc87a4bf0fe318c729edef19217` to `b6ccd6bb3815dc2a88f9f19384710dd8802d4eb8`; it matched `origin/main` and was clean at that checkpoint. The implementation branch remains retained locally and remotely.
 
 This closes only Corrective Ticket 03 execution/publication. It is not a ChatGPT independent verification or Operator acceptance of M21, Phase 02, Phase 03, or overall V003. Post-merge reporting is isolated on a separate closeout branch/PR.
+
+### Supplemental GitHub policy read - 2026-10-16
+
+A subsequent GitHub branch metadata read reports `main` as `protected: false`, `protection.enabled: false`, with required-status-check enforcement `off` and empty status contexts/checks. Repository rulesets are empty. This supplements the earlier limitation that the dedicated branch-protection endpoint returned HTTP 403; the branch metadata endpoint exposed the current protection state. The Ticket 03 implementation and separate report-only publication closeout remain complete; this note does not extend the ticket scope or claim broader V003 acceptance.

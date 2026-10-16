@@ -90,3 +90,7 @@ Ticket 03 staged-path review (2026-10-16): 19 path records, 3/3 exact R100 moves
 The three authorized retirement records were published byte-preserving under implementation commit `a85890972e8eeb4951f80f2dc5d0db7e8ab86aec` on retained branch `v003/skills-milestones-legacy-retirement`, then merged through [PR #53](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/53). GitHub merge commit: `b6ccd6bb3815dc2a88f9f19384710dd8802d4eb8`. The PR included all three source-to-archive moves as R100. Their source/archive SHA-256, byte-size, and path-aware baseline blob matches remain recorded above.
 
 Local `main` was fast-forwarded to the merge commit and matched `origin/main` with a clean worktree at that checkpoint. The implementation branch remains available for audit. This publication record does not authorize further source retirement or Milestones migration and does not assert overall V003 closure.
+
+### Supplemental GitHub main policy check - 2026-10-16
+
+The GitHub branch metadata endpoint reports `main` as `protected: false`, with `protection.enabled: false` and required-status-check enforcement `off` (empty contexts/checks). The repository rulesets endpoint is empty. This supplements the earlier unavailable dedicated protection endpoint and records the later branch metadata result. No additional source retirement is authorized by this note.
