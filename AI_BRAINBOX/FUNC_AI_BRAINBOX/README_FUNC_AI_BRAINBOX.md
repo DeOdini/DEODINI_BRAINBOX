@@ -14,38 +14,54 @@
 **ENTRY NAVIGATION:** Begin with the CORE registry README for current field definitions and agent records.
 **EXIT NAVIGATION:** Return to AI_BRAINBOX/README_AI_BRAINBOX.md or the root README_BRAINBOX.md when leaving the FUNC domain.
 
-## Local tree
+## Canonical local tree — two descendant levels
 
-AI_BRAINBOX/FUNC_AI_BRAINBOX/
-├── README_FUNC_AI_BRAINBOX.md
-├── FQ_MUST_README.md — retained compliance source; F08 routing notice, historical body preserved
-├── FUNC_REQ_BRAINBOX.md — retained function requests; M07/M20 disposition
-├── FUNC_WORKFLOW_BRAINBOX.md — retained legacy workflow; M07/M20 disposition
-├── CHATGPT_FUNC_BRAINBOX.md — original source retained
-├── CLAUDE_FUNC_BRAINBOX.md — original source retained
-├── CLINE_FUNC_BRAINBOX.md — original source retained
-├── CODEX_FUNC_BRAINBOX.md — original source retained
-├── COPILOT_FUNC_BRAINBOX.md — original source retained
-├── DEEPSEEK_FUNC_BRAINBOX.md — three-line pending notice retained
-├── GROK_FUNC_BRAINBOX.md — original source retained
-├── QWEN_FUNC_BRAINBOX.md — three-line pending notice retained
-├── AI_AGENTS_CORE_FUNC_BRAINBOX/
-    ├── README_AI_AGENTS_CORE_FUNC_BRAINBOX.md
-    ├── CHATGPT_CORE_FUNC_BRAINBOX.md
-    ├── CLAUDE_CORE_FUNC_BRAINBOX.md
-    ├── CLINE_CORE_FUNC_BRAINBOX.md
-    ├── CODEX_CORE_FUNC_BRAINBOX.md
-    ├── COPILOT_CORE_FUNC_BRAINBOX.md
-    ├── DEEPSEEK_CORE_FUNC_BRAINBOX.md
-    ├── GROK_CORE_FUNC_BRAINBOX.md
-    └── QWEN_CORE_FUNC_BRAINBOX.md
-└── AI_AGENTS_EXE_FUNC_BRAINBOX/
-    ├── README_AI_AGENTS_EXE_FUNC_BRAINBOX.md
-    ├── RESEARCH_EXE_FUNC_BRAINBOX/README_RESEARCH_EXE_FUNC_BRAINBOX.md
-    ├── BROWSER_EXE_FUNC_BRAINBOX/README_BROWSER_EXE_FUNC_BRAINBOX.md
-    ├── FILE_EXE_FUNC_BRAINBOX/README_FILE_EXE_FUNC_BRAINBOX.md
-    ├── CODE_EXE_FUNC_BRAINBOX/README_CODE_EXE_FUNC_BRAINBOX.md
-    └── MEDIA_EXE_FUNC_BRAINBOX/README_MEDIA_EXE_FUNC_BRAINBOX.md - reserved
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+FUNC_AI_BRAINBOX/ [PRESENT · POPULATED]
+├── AI_AGENTS_CORE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── CHATGPT_CORE_FUNC_BRAINBOX.md [PRESENT]
+│   ├── CLAUDE_CORE_FUNC_BRAINBOX.md [PRESENT]
+│   ├── CLINE_CORE_FUNC_BRAINBOX.md [PRESENT]
+│   ├── CODEX_CORE_FUNC_BRAINBOX.md [PRESENT]
+│   ├── COPILOT_CORE_FUNC_BRAINBOX.md [PRESENT]
+│   ├── DEEPSEEK_CORE_FUNC_BRAINBOX.md [PRESENT]
+│   ├── GROK_CORE_FUNC_BRAINBOX.md [PRESENT]
+│   ├── QWEN_CORE_FUNC_BRAINBOX.md [PRESENT]
+│   └── README_AI_AGENTS_CORE_FUNC_BRAINBOX.md [PRESENT]
+├── AI_AGENTS_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── BROWSER_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── CHATGPT_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── CLAUDE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── CLINE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── CODE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── CODEX_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── COPILOT_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── DEEPSEEK_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── FILE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── GROK_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── MEDIA_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── QWEN_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── RESEARCH_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_AI_AGENTS_EXE_FUNC_BRAINBOX.md [PRESENT]
+├── CHATGPT_FUNC_BRAINBOX.md [PRESENT]
+├── CLAUDE_FUNC_BRAINBOX.md [PRESENT]
+├── CLINE_FUNC_BRAINBOX.md [PRESENT]
+├── CODEX_FUNC_BRAINBOX.md [PRESENT]
+├── COPILOT_FUNC_BRAINBOX.md [PRESENT]
+├── DEEPSEEK_FUNC_BRAINBOX.md [PRESENT]
+├── FQ_MUST_README.md [PRESENT]
+├── FUNC_REQ_BRAINBOX.md [PRESENT]
+├── FUNC_WORKFLOW_BRAINBOX.md [PRESENT]
+├── GROK_FUNC_BRAINBOX.md [PRESENT]
+├── QWEN_FUNC_BRAINBOX.md [PRESENT]
+└── README_FUNC_AI_BRAINBOX.md [PRESENT]
+```
+
+## Current-tree reference
+
+The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Domain boundaries
 
@@ -92,3 +108,14 @@ M05 CORE and M06 EXE independently verify **PASS**. RESEARCH/BROWSER/FILE/CODE a
 ## Independent verification status — M07 (2026-10-09)
 
 M07 ancillary-source classification independently verifies **PASS**. All three retained sources remain byte-for-byte at the M01 baseline; no duplicate Governance policy was created; n8n/email automation remains UNPROVEN / NOT VERIFIED. M07-WF-01 and M07-AUTH-01 are non-blocking carry-forwards.
+
+---
+
+## V003 CORE/EXE questionnaire routing — 2026-10-15
+
+[CORE](AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md) owns declared abilities and connectivity; [EXE](AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md) owns each agent operation, evidence, verification and permission. Category folders only index agent operation anchors. Existing M05/M06 historical evidence and frozen Specification §9 remain authoritative as dated records; no runtime success or authorization inferred.
+
+
+## Agent path discovery requirement
+
+Before selecting a file path, consult the [Tree and Status Governance](../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md) and the local two-level tree of the current folder; follow the child README to discover deeper paths. Verify existence instead of guessing; do not infer implementation from presence or populated documentation.

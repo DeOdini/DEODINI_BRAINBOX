@@ -14,39 +14,56 @@
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex implementation read-back; independent ChatGPT verification: PASS (2026-10-09).
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+BACKEND_SANDBOX_BRAINBOX/ [PRESENT · POPULATED]
+├── API_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── ARCHITECTURE_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── AUTH_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── CACHING_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── CODE_PATTERNS_BACKEND_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── API_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   ├── JAVASCRIPT_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   ├── PYTHON_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   ├── SQL_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   ├── TYPESCRIPT_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── README_CODE_PATTERNS_BACKEND_BRAINBOX.md [PRESENT]
+├── DATABASE_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── INTEGRATIONS_BACKEND_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── GOOGLE_FORMS_INTEGRATION_BRAINBOX/ [PRESENT · STUB]
+│   └── README_INTEGRATIONS_BACKEND_BRAINBOX.md [PRESENT]
+├── JOBS_QUEUES_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SECURITY_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SERVERLESS_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── STORAGE_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TESTING_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── WORKFLOWS_BACKEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_BACKEND_SANDBOX_BRAINBOX.md [PRESENT]
+```
+
 ## Authority boundary
 
 The root README_BRAINBOX.md remains the complete repository-tree authority. Frozen Specification §8 defines the Backend taxonomy. These folders are Sandbox taxonomy placeholders, not deployed services, production evidence, or proof that a workflow, database, API, security control, or integration has been implemented.
 
 The local READMEs in Integrations and Code Patterns exist to show their defined child trees under the P12 README rule. They add navigation only; they do not add a new architecture domain beyond the frozen tree.
 
-## Authoritative tree and current local tree
+## Current-tree reference
 
-<pre>
-BACKEND_SANDBOX_BRAINBOX/
-├── README_BACKEND_SANDBOX_BRAINBOX.md [PRESENT]
-├── WORKFLOWS_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-├── ARCHITECTURE_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-├── API_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-├── DATABASE_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-├── AUTH_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-├── STORAGE_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-├── INTEGRATIONS_BACKEND_BRAINBOX/
-│   ├── README_INTEGRATIONS_BACKEND_BRAINBOX.md [PRESENT — LOCAL TREE]
-│   └── GOOGLE_FORMS_INTEGRATION_BRAINBOX/.gitkeep [EMPTY — PROJECT SOURCE RETAINED]
-├── SERVERLESS_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-├── JOBS_QUEUES_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-├── CACHING_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-├── SECURITY_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-├── CODE_PATTERNS_BACKEND_BRAINBOX/
-│   ├── README_CODE_PATTERNS_BACKEND_BRAINBOX.md [PRESENT — LOCAL TREE]
-│   ├── JAVASCRIPT_CODE_PATTERNS_BRAINBOX/.gitkeep [EMPTY]
-│   ├── TYPESCRIPT_CODE_PATTERNS_BRAINBOX/.gitkeep [EMPTY]
-│   ├── PYTHON_CODE_PATTERNS_BRAINBOX/.gitkeep [EMPTY]
-│   ├── SQL_CODE_PATTERNS_BRAINBOX/.gitkeep [EMPTY]
-│   └── API_CODE_PATTERNS_BRAINBOX/.gitkeep [EMPTY]
-└── TESTING_BACKEND_BRAINBOX/.gitkeep [EMPTY]
-</pre>
+The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 This is both the M12 target tree and the current local tree. Each .gitkeep is zero-byte Git structure evidence, not capability or implementation content.
 
@@ -54,7 +71,7 @@ This is both the M12 target tree and the current local tree. Each .gitkeep is ze
 
 - The retained Fullstack Workflows copies of [001](../WORKFLOWS_FULLSTACK_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md) and [002](../WORKFLOWS_FULLSTACK_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md) remain RAW / UNPROVEN. They contain backend examples and draft stack choices, including FastAPI/Supabase examples, but M12 does not select, copy, or certify those choices.
 - The [agent handoff classification](../ORCHESTRATION_FULLSTACK_BRAINBOX/AI_AGENT_ORCH_BRAINBOX/AI_AGENT_ORCH_HANDOFF_CLASSIFICATION_BRAINBOX.md) remains reference-only under Orchestration. M12 does not recast it as a backend workflow or service.
-- [FootHive’s build record](../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) is a project-specific source that records a Google Forms integration and Operator-confirmed response persistence. The canonical copy is now under the M15 FootHive Sandbox case study; the legacy source remains unchanged for M20 review. M12 copies no endpoint, form field mapping, response data, or project-specific implementation into this taxonomy.
+- [FootHive’s build record](../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) is a project-specific source that records a Google Forms integration and Operator-confirmed response persistence. The canonical copy is now under the M15 FootHive Sandbox case study; the legacy source remains unchanged for M20 review. M12 copies no endpoint, form field mapping, response data, or project-specific implementation into this taxonomy.
 
 ## Knowledge ownership
 

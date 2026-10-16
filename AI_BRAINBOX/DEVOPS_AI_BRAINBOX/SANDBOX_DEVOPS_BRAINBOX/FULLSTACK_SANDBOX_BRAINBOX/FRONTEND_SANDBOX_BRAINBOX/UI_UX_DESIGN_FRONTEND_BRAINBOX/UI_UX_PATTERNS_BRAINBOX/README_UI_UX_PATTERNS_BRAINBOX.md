@@ -10,15 +10,24 @@
 **POPULATION STATE:** Navigation present; three pattern branches empty.
 **LAST VERIFIED:** 2026-10-09
 
-## Local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-UI_UX_PATTERNS_BRAINBOX/
-├── README_UI_UX_PATTERNS_BRAINBOX.md
-├── LAYOUT_PATTERNS_BRAINBOX/ [.gitkeep; EMPTY]
-├── COMPONENT_PATTERNS_BRAINBOX/ [.gitkeep; EMPTY]
-└── NAVIGATION_DESIGN_BRAINBOX/ [.gitkeep; EMPTY]
+UI_UX_PATTERNS_BRAINBOX/ [PRESENT · POPULATED]
+├── COMPONENT_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── LAYOUT_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── NAVIGATION_DESIGN_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_UI_UX_PATTERNS_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 No pattern is claimed as tested or reusable. Reference canonical Skills patterns and technologies rather than copying generic material.
 

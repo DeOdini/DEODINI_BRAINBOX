@@ -15,28 +15,50 @@
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex implementation read-back; ChatGPT independent M08 verification: PASS (Batch B closeout, 2026-10-09).
 
-## Local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-SKILLS_BRAINBOX/
-├── README_SKILLS_BRAINBOX.md
-├── DEBUGGING_SKILLS_BRAINBOX/
-├── CODE_REVIEW_SKILLS_BRAINBOX/
-├── SYSTEM_DESIGN_SKILLS_BRAINBOX/
-├── ROOT_CAUSE_ANALYSIS_SKILLS_BRAINBOX/
-├── INCIDENT_RESPONSE_SKILLS_BRAINBOX/
-├── PERFORMANCE_SKILLS_BRAINBOX/
-├── ACCESSIBILITY_SKILLS_BRAINBOX/
-├── RESPONSIVE_DESIGN_SKILLS_BRAINBOX/
-├── DATABASE_DESIGN_SKILLS_BRAINBOX/
-├── API_DESIGN_SKILLS_BRAINBOX/
-├── SECURITY_REVIEW_SKILLS_BRAINBOX/
-├── TESTING_STRATEGY_SKILLS_BRAINBOX/
-├── GIT_OPERATIONS_SKILLS_BRAINBOX/
-├── DEPLOYMENT_SKILLS_BRAINBOX/
-├── TECHNICAL_WRITING_SKILLS_BRAINBOX/
-└── REQUIREMENTS_ANALYSIS_SKILLS_BRAINBOX/
+SKILLS_BRAINBOX/ [PRESENT · POPULATED]
+├── ACCESSIBILITY_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── API_DESIGN_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── CODE_REVIEW_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── DATABASE_DESIGN_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── DEBUGGING_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── DEPLOYMENT_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── GIT_OPERATIONS_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── INCIDENT_RESPONSE_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── PERFORMANCE_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── REQUIREMENTS_ANALYSIS_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── RESPONSIVE_DESIGN_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── ROOT_CAUSE_ANALYSIS_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SECURITY_REVIEW_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SYSTEM_DESIGN_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TECHNICAL_WRITING_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TESTING_STRATEGY_SKILLS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_SKILLS_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Population and evidence
 

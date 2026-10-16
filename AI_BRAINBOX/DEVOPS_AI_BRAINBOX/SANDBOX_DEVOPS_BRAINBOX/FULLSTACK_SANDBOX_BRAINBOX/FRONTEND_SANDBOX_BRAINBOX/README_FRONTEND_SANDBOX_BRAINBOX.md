@@ -11,6 +11,38 @@
 **POPULATION STATE:** Navigation and empty taxonomy placeholders; no frontend knowledge promoted from RAW sources.
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+FRONTEND_SANDBOX_BRAINBOX/ [PRESENT · POPULATED]
+├── CODE_PATTERNS_FRONTEND_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── CSS_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   ├── HTML_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   ├── JAVASCRIPT_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   ├── REACT_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   ├── TYPESCRIPT_CODE_PATTERNS_BRAINBOX/ [PRESENT · STUB]
+│   └── README_CODE_PATTERNS_FRONTEND_BRAINBOX.md [PRESENT]
+├── COMPONENTS_FRONTEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── REFERENCES_FRONTEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TESTING_FRONTEND_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── UI_UX_DESIGN_FRONTEND_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── DATA_VISUALIZATION_DESIGN_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── DESIGN_FOUNDATIONS_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── DESIGN_SYSTEMS_BRAINBOX/ [PRESENT · STUB]
+│   ├── EXPERIENCE_DESIGN_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── UI_UX_PATTERNS_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── VISUAL_REFERENCES_BRAINBOX/ [PRESENT · STUB]
+│   └── README_UI_UX_DESIGN_FRONTEND_BRAINBOX.md [PRESENT]
+├── WORKFLOWS_FRONTEND_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_WORKFLOWS_FRONTEND_BRAINBOX.md [PRESENT]
+└── README_FRONTEND_SANDBOX_BRAINBOX.md [PRESENT]
+```
+
 ## Authority boundary
 
 `README_BRAINBOX.md` remains the complete repository-tree authority. Frozen Specification §8 defines this branch. This README exposes the complete Frontend subtree and distinguishes present placeholders from source-backed references. Empty folders are not populated expertise or execution evidence.
@@ -26,27 +58,9 @@ FRONTEND_SANDBOX_BRAINBOX/
 │   ├── README_UI_UX_DESIGN_FRONTEND_BRAINBOX.md [PRESENT]
 │   ├── DESIGN_SYSTEMS_BRAINBOX/ [.gitkeep — EMPTY]
 │   ├── DESIGN_FOUNDATIONS_BRAINBOX/
-│   │   ├── README_DESIGN_FOUNDATIONS_BRAINBOX.md [PRESENT]
-│   │   ├── TYPOGRAPHY_DESIGN_BRAINBOX/ [.gitkeep — EMPTY]
-│   │   ├── COLOR_SYSTEMS_BRAINBOX/ [.gitkeep — EMPTY]
-│   │   ├── SPACING_DESIGN_BRAINBOX/ [.gitkeep — EMPTY]
-│   │   └── DESIGN_TOKENS_BRAINBOX/ [.gitkeep — EMPTY]
 │   ├── UI_UX_PATTERNS_BRAINBOX/
-│   │   ├── README_UI_UX_PATTERNS_BRAINBOX.md [PRESENT]
-│   │   ├── LAYOUT_PATTERNS_BRAINBOX/ [.gitkeep — EMPTY]
-│   │   ├── COMPONENT_PATTERNS_BRAINBOX/ [.gitkeep — EMPTY]
-│   │   └── NAVIGATION_DESIGN_BRAINBOX/ [.gitkeep — EMPTY]
 │   ├── EXPERIENCE_DESIGN_BRAINBOX/
-│   │   ├── README_EXPERIENCE_DESIGN_BRAINBOX.md [PRESENT]
-│   │   ├── RESPONSIVE_DESIGN_BRAINBOX/ [.gitkeep — EMPTY]
-│   │   ├── MOTION_INTERACTION_BRAINBOX/ [.gitkeep — EMPTY]
-│   │   └── ACCESSIBILITY_DESIGN_BRAINBOX/ [.gitkeep — EMPTY]
 │   ├── DATA_VISUALIZATION_DESIGN_BRAINBOX/
-│   │   ├── README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md [PRESENT]
-│   │   ├── DASHBOARD_DESIGN_BRAINBOX/ [.gitkeep — EMPTY]
-│   │   ├── CHART_DESIGN_BRAINBOX/ [.gitkeep — EMPTY]
-│   │   ├── KPI_DESIGN_BRAINBOX/ [.gitkeep — EMPTY]
-│   │   └── REPORTING_INTERFACE_DESIGN_BRAINBOX/ [.gitkeep — EMPTY]
 │   └── VISUAL_REFERENCES_BRAINBOX/ [.gitkeep — EMPTY]
 ├── CODE_PATTERNS_FRONTEND_BRAINBOX/
 │   ├── README_CODE_PATTERNS_FRONTEND_BRAINBOX.md [PRESENT]
@@ -68,8 +82,8 @@ The current tree is the same as the authoritative tree above. Its 31 approved ch
 
 - No standalone Frontend RAW source directory exists in the current repository.
 - The retained 001 and 002 records in [Fullstack Workflows](../WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md) contain frontend-related workflow and architecture passages. They remain RAW / UNPROVEN Fullstack workflow records; M11 did not split or duplicate them.
-- The legacy [001 source](../../../../PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md) and [002 source](../../../../PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md) remain unchanged. Their proposed stack and frontend standards are not verified patterns or selected architecture.
-- FootHive-specific source material stays in its project source area for the later M15 migration; M11 did not copy it.
+- The archived legacy [001 source](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md) and [002 source](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md) remain historical reference. Their proposed stack and frontend standards are not verified patterns or selected architecture.
+- FootHive-specific source material was migrated under M15 and its V002 source files are preserved in the [Recycle Bin archive](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/); the legacy source tree has no files and seven empty directories remain after Windows denied their removal.
 
 ## Knowledge ownership
 

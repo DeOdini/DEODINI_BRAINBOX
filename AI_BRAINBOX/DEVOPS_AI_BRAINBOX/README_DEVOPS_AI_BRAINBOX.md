@@ -11,6 +11,30 @@
 **APPLIES TO:** DEODINI operators and agents creating or using execution, validation, release, and operations records.
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+DEVOPS_AI_BRAINBOX/ [PRESENT · POPULATED]
+├── PROD_DEVOPS_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── ENVIRONMENT_PROD_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── FAILED_PROD_BRAINBOX/ [PRESENT · STUB]
+│   ├── FULLSTACK_PROD_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── INCIDENTS_PROD_BRAINBOX/ [PRESENT · STUB]
+│   ├── PASSED_PROD_BRAINBOX/ [PRESENT · STUB]
+│   ├── POC_PROD_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── REGRESSIONS_PROD_BRAINBOX/ [PRESENT · STUB]
+│   └── README_PROD_DEVOPS_BRAINBOX.md [PRESENT]
+├── SANDBOX_DEVOPS_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── FAILED_SANDBOX_BRAINBOX/ [ABSENT · PLANNED]
+│   ├── FULLSTACK_SANDBOX_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── PASSED_SANDBOX_BRAINBOX/ [ABSENT · PLANNED]
+│   ├── POC_SANDBOX_BRAINBOX/ [PRESENT · POPULATED]
+│   └── README_SANDBOX_DEVOPS_BRAINBOX.md [PRESENT]
+└── README_DEVOPS_AI_BRAINBOX.md [PRESENT]
+```
+
 ## Authority boundary
 
 This README is local navigation for DEVOPS AI. It does not replace the frozen Specification, Governance, or the chronological Origin Conversation. The root `README_BRAINBOX.md` remains the complete tree authority.
@@ -25,33 +49,14 @@ DEVOPS_AI_BRAINBOX/
 ├── SANDBOX_DEVOPS_BRAINBOX/
 │   ├── README_SANDBOX_DEVOPS_BRAINBOX.md [PRESENT]
 │   ├── FULLSTACK_SANDBOX_BRAINBOX/ [PRESENT — M10]
-│   │   └── README_FULLSTACK_SANDBOX_BRAINBOX.md [PRESENT]
-│   ├── CASE_STUDIES_SANDBOX_BRAINBOX/ [PRESENT - M15]
+│   ├── POC_SANDBOX_BRAINBOX/ [PRESENT - M15]
 │   ├── PASSED_SANDBOX_BRAINBOX/ [PLANNED]
 │   └── FAILED_SANDBOX_BRAINBOX/ [PLANNED]
 └── PROD_DEVOPS_BRAINBOX/
     ├── README_PROD_DEVOPS_BRAINBOX.md [PRESENT]
     ├── FULLSTACK_PROD_BRAINBOX/ [PRESENT — M14]
-    │   ├── README_FULLSTACK_PROD_BRAINBOX.md [PRESENT]
-    │   ├── WORKFLOWS_PROD_BRAINBOX/ [EMPTY]
-    │   ├── RELEASE_PROD_BRAINBOX/ [EMPTY]
-    │   ├── DEPLOYMENT_PROD_BRAINBOX/ [EMPTY — no procedure found]
-    │   ├── OPERATIONS_PROD_BRAINBOX/ [EMPTY]
-    │   └── MONITORING_PROD_BRAINBOX/ [EMPTY]
     ├── ENVIRONMENT_PROD_BRAINBOX/ [PRESENT — M14]
-    │   ├── README_ENVIRONMENT_PROD_BRAINBOX.md [PRESENT]
-    │   ├── ENV_VARIABLES_BRAINBOX.md [PRESENT — no app contract defined]
-    │   ├── ENV_SECURITY_BRAINBOX.md [PRESENT]
-    │   ├── ENV_ROTATION_BRAINBOX.md [PRESENT — procedure only]
-    │   ├── ENV_VALIDATION_BRAINBOX.md [PRESENT — procedure only]
-    │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
-    │       ├── .env.example [PLACEHOLDER ONLY]
-    │       └── .gitignore [TEMPLATE]
-    ├── CASE_STUDIES_PROD_BRAINBOX/ [PRESENT — M16]
-    │   ├── README_CASE_STUDIES_PROD_BRAINBOX.md [P12 local navigation]
-    │   └── FOOTHIVE_PROD_SUMMARY_BRAINBOX/
-    │       ├── README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
-    │       └── PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
+    ├── POC_PROD_BRAINBOX/ [PRESENT — M16]
     ├── PASSED_PROD_BRAINBOX/ [PRESENT — no records]
     ├── FAILED_PROD_BRAINBOX/ [PRESENT — no records]
     ├── INCIDENTS_PROD_BRAINBOX/ [PRESENT — no records]
@@ -60,54 +65,9 @@ DEVOPS_AI_BRAINBOX/
 
 The nested target structure is defined by the frozen Specification §8. The root README carries the complete repository tree; each child README owns its local navigation.
 
-## Current local tree
+## Current-tree reference
 
-~~~text
-DEVOPS_AI_BRAINBOX/
-+-- README_DEVOPS_AI_BRAINBOX.md
-+-- SANDBOX_DEVOPS_BRAINBOX/
-|   +-- README_SANDBOX_DEVOPS_BRAINBOX.md
-|   +-- FULLSTACK_SANDBOX_BRAINBOX/
-|   |   +-- README_FULLSTACK_SANDBOX_BRAINBOX.md
-|   +-- CASE_STUDIES_SANDBOX_BRAINBOX/
-|       +-- README_CASE_STUDIES_SANDBOX_BRAINBOX.md
-|       +-- FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/
-|           +-- README_FH_WORKFLOW_TRIAL_BRAINBOX.md
-|           +-- BUILD_REPORT_FH_BRAINBOX.md
-|           +-- PASSED_FH_BRAINBOX.md
-|           +-- FAILED_FH_BRAINBOX.md
-|           +-- CONVO_FH_BRAINBOX.md
-|           +-- OPERATOR_ADDENDUM_FH_BRAINBOX.md
-|           +-- AUDITS_FH_BRAINBOX/
-|           +-- EVIDENCE_FH_BRAINBOX/
-|           +-- RETROSPECTIVE_FH_BRAINBOX.md
-+-- PROD_DEVOPS_BRAINBOX/
-    +-- README_PROD_DEVOPS_BRAINBOX.md
-    +-- FULLSTACK_PROD_BRAINBOX/
-    |   +-- README_FULLSTACK_PROD_BRAINBOX.md
-    |   +-- WORKFLOWS_PROD_BRAINBOX/.gitkeep
-    |   +-- RELEASE_PROD_BRAINBOX/.gitkeep
-    |   +-- DEPLOYMENT_PROD_BRAINBOX/.gitkeep
-    |   +-- OPERATIONS_PROD_BRAINBOX/.gitkeep
-    |   +-- MONITORING_PROD_BRAINBOX/.gitkeep
-    +-- ENVIRONMENT_PROD_BRAINBOX/
-    |   +-- README_ENVIRONMENT_PROD_BRAINBOX.md
-    |   +-- ENV_VARIABLES_BRAINBOX.md
-    |   +-- ENV_SECURITY_BRAINBOX.md
-    |   +-- ENV_ROTATION_BRAINBOX.md
-    |   +-- ENV_VALIDATION_BRAINBOX.md
-    |   +-- TEMPLATES_ENVIRONMENT_BRAINBOX/
-    |       +-- .env.example
-    |       +-- .gitignore
-    +-- CASE_STUDIES_PROD_BRAINBOX/
-    |   +-- FOOTHIVE_PROD_SUMMARY_BRAINBOX/
-    |       +-- README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
-    |       +-- PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
-    +-- PASSED_PROD_BRAINBOX/.gitkeep
-    +-- FAILED_PROD_BRAINBOX/.gitkeep
-    +-- INCIDENTS_PROD_BRAINBOX/.gitkeep
-    +-- REGRESSIONS_PROD_BRAINBOX/.gitkeep
-~~~
+The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 The FootHive Sandbox case study is present under M15. The M16 Production case-study branch now contains a summary of the recorded T20 release; Production PASSED, FAILED, INCIDENTS, and REGRESSIONS areas still have no records. M16 did not trigger a deployment.
 ## M16 Production case-study update
@@ -147,8 +107,8 @@ The empty top-level legacy PROVEN and FAILED files contain no records. No Produc
 - [Governance ticket rules](../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md)
 - [Phase 02 ticket set](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
 - [Living migration map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
-- [Legacy project-workflow entry](../PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md) — retained source, not current DEVOPS authority
-- [Legacy raw workflow sources](../PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md) — retained pending scoped migration
+- [Archived legacy project-workflow entry](../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md) — historical source, not current DEVOPS authority
+- [Archived legacy raw workflow overview](../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md) — historical source; current workflow knowledge is indexed under DEVOPS and Fullstack
 - [M09 execution report and conversation](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md) and [conversation archive](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md)
 
 ## Record provenance
@@ -167,4 +127,4 @@ V003-M09 independently verifies **PASS**. The DEVOPS/Sandbox/Production authorit
 
 ## Current Sandbox case-study state - V003-M15 - 2026-10-09
 
-The FootHive workflow-trial evidence set is present at SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/. It represents the existing logical Iteration 01 dataset. Future workflow iterations and mastery remain planned. The legacy source remains intact; no Production case study or deployment was created by M15.
+The FootHive workflow-trial evidence set is present at SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/. It represents the existing logical Iteration 01 dataset. Future workflow iterations and mastery remain planned. The legacy source remains intact; no Production case study or deployment was created by M15.

@@ -1,22 +1,50 @@
 # README_V003_VERSION_UPGRADE_BRAINBOX
 
-**Status:** [ACTIVE] — V003 Authority Container; Phase 01 Closed / Frozen; Phase 02 Migration Tickets Authorized
+**Status:** [ACTIVE] — V003 authority/support container; Phase 01 frozen archive; Phase 02 closed migration-process archive
 **Operator authority:** DEODINI - OPERATOR
-**Current disposition (2026-10-14):** V003 is QUALIFIED CLOSED by Operator direction. Unresolved follow-up items remain open in `V003_UNRESOLVED_BRAINBOX.md` for later work. This is a project-level documentation status; it does not claim that every ticket received technical PASS or that the 20 Cline checkpoint objects were recovered.
-**Migration record:** Ticket execution, verification, and Git integration details remain in the Phase 02 reports and Migration Map. V003's project-level status is QUALIFIED CLOSED by Operator direction (2026-10-14); unresolved limitations, historical qualifications, and later work remain listed in `V003_UNRESOLVED_BRAINBOX.md`. This status does not create blanket ticket-level technical PASS.
+**Current disposition (2026-10-15):** V003 is QUALIFIED CLOSED by Operator direction. The active Unresolved Register retains planned/empty/reserved-state follow-up for later work. This project-level closure does not claim that every ticket received technical PASS or that the 20 Cline checkpoint objects were recovered.
+**Migration record:** Ticket execution, verification, and Git integration details remain in the closed Phase 02 support archive and Migration Map. The 20 Cline checkpoint objects remain unrecovered under the Operator-accepted bounded historical disposition. Project-level qualified closure does not create blanket ticket-level technical PASS.
+
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+V003_VERSION_UPGRADE_BRAINBOX/ [PRESENT · POPULATED]
+├── PHASE01_POLISH_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── README_PHASE01_POLISH_BRAINBOX.md [PRESENT]
+│   ├── V003_POLISH_CONVO_VERSION_UPGRADE_BRAINBOX.md [PRESENT]
+│   └── V003_POLISH_REPORT_VERSION_UPGRADE_BRAINBOX.md [PRESENT]
+├── PHASE02_MIGRATION_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── README_PHASE02_MIGRATION_BRAINBOX.md [PRESENT]
+│   ├── V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md [PRESENT]
+│   ├── V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md [PRESENT]
+│   └── V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md [PRESENT]
+├── PHASE03_FIXES_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv [PRESENT]
+│   ├── F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv [PRESENT]
+│   ├── F11_FOOTHIVE_SOURCE_DISPOSITION_PHASE03_FIXES_BRAINBOX.csv [PRESENT]
+│   ├── README_PHASE03_FIXES_BRAINBOX.md [PRESENT]
+│   ├── V003_FIXES_CONVO_BRAINBOX.md [PRESENT]
+│   ├── V003_FIXES_REPORT_BRAINBOX.md [PRESENT]
+│   ├── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md [PRESENT]
+│   └── V003_POC_NAMING_SCOPED_DIFF_BRAINBOX.diff [PRESENT]
+├── README_V003_VERSION_UPGRADE_BRAINBOX.md [PRESENT]
+├── V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md [PRESENT]
+├── V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md [PRESENT]
+└── V003_UNRESOLVED_BRAINBOX.md [PRESENT]
+```
 
 ## Purpose
 
-This folder contains the canonical V003 Origin Conversation and Specification, the closed Phase 01 polishing/verification archive, and the active Phase 02 migration planning/reporting container. Supporting Phase 01 and Phase 02 records document execution, audit, migration scoping, and verification history; they are not competing architecture authorities.
+This folder contains the canonical V003 Origin Conversation and Specification, the closed Phase 01 polishing/verification archive, and the closed Phase 02 migration-process archive. Supporting Phase 01 and Phase 02 records document execution, audit, migration scoping, and verification history; they are not competing architecture authorities.
 
-## Local target-authority tree
+## Canonical authority records
 
-```text
-V003_VERSION_UPGRADE_BRAINBOX/
-├── README_V003_VERSION_UPGRADE_BRAINBOX.md
-├── V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md
-└── V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md
-```
+- [Origin Conversation](V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md) — chronological historical discussion and ambiguity evidence.
+- [Frozen Specification](V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md) — approved V003 migration target and constraints.
+
+The canonical local tree above shows the complete current two-level V003 parent structure, including the Phase 01 and Phase 02 support archives. The root `README_BRAINBOX.md` carries the complete project tree.
 
 ## Phase 01 archive and Phase 02 process-support overlay
 
@@ -28,7 +56,7 @@ V003_VERSION_UPGRADE_BRAINBOX/
 │   ├── README_PHASE01_POLISH_BRAINBOX.md
 │   ├── V003_POLISH_CONVO_VERSION_UPGRADE_BRAINBOX.md
 │   └── V003_POLISH_REPORT_VERSION_UPGRADE_BRAINBOX.md
-└── PHASE02_MIGRATION_BRAINBOX/ [ACTIVE PROCESS SUPPORT]
+└── PHASE02_MIGRATION_BRAINBOX/ [CLOSED MIGRATION-PROCESS ARCHIVE]
     ├── README_PHASE02_MIGRATION_BRAINBOX.md
     ├── V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md
     ├── V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md
@@ -74,7 +102,7 @@ If a ticket, implementation instruction, filesystem state, or Specification stat
 3. present the ambiguity to the Operator;
 4. proceed only after Operator authorization.
 
-## Phase Boundary
+## Historical Phase Boundary checkpoint — superseded
 
 Phase 01 is frozen after the successful V003-P16 final reconciliation.
 
@@ -132,14 +160,14 @@ These values describe the current local file at the time of the verification abo
 ## Navigation
 
 - **PARENT:** `DEODINI_BRAINBOX/`
-- **CURRENT DOMAIN:** V003 Version Upgrade Authority, Phase 01 Audit Archive, and Phase 02 Migration Planning/Reporting
+- **CURRENT DOMAIN:** V003 Version Upgrade Authority, Phase 01 audit archive, and Phase 02 migration-process archive
 - **GOVERNED BY:** Current DEODINI authority rules and Operator-approved V003 tickets
 - **CANONICAL MIGRATION TARGET:** `V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
 - **HISTORICAL / AMBIGUITY SOURCE:** `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`
 - **PHASE 01 EXECUTION / VERIFICATION HISTORY:** `PHASE01_POLISH_BRAINBOX/`
-- **PHASE 02 MIGRATION PLANNING / REPORTING:** `PHASE02_MIGRATION_BRAINBOX/`
+- **PHASE 02 MIGRATION PROCESS ARCHIVE:** `PHASE02_MIGRATION_BRAINBOX/`
 - **PHASE 01 STATUS:** CLOSED / FROZEN
-- **PHASE 02 STATUS:** V003-M01 through V003-M21 explicitly Operator-approved for execution on 2026-10-08; Batch A M01-M04 verified and merged through PRs #16-#19; BATCHA-DOC-01 merged by PR #21 at 3201a1e80c5bfb2f4f2053599608ff8fce15f9db; M05 committed/pushed at 585f960 with independent verification pending; M06 implementation commit 9635e5d pushed on its dedicated branch, independent verification pending, no PR/merge; deferred flag owners remain M15, M19/M20, and M21.
+- **PHASE 02 STATUS:** CLOSED SUPPORT ARCHIVE. Batch A–E and M01–M21 Git integration are recorded in the Phase 02 README/report and Migration Map. M21/F02 project closure is Operator-qualified; the 20 Cline checkpoint objects remain unrecovered under the accepted bounded disposition. The only active V003 follow-up is Specification §§8–18 planned/empty/reserved-state documentation in `V003_UNRESOLVED_BRAINBOX.md`.
 
 ## V003-P01 Scope
 

@@ -1,19 +1,21 @@
 # README_BRAINBOX
 
+**TREE AND STATUS GOVERNANCE:** [Canonical tree and population-state rules](GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This root README alone holds the complete detailed tree; every other active folder README shows its own immediate children and each immediate directory child’s children, exactly two descendant levels. Tags distinguish physical existence, content and operational proof.
+
 **Status:** [ACTIVE] — canonical complete-tree authority and root navigation for the approved V003 target
 **PARENT:** `DEODINI_BRAINBOX/` — repository root
 **CURRENT DOMAIN:** Complete Brainbox target tree, population state, and root-level navigation
 **PURPOSE:** Expose the entire approved Brainbox architecture and identify which target branches are populated, planned, or still represented by legacy source material.
 **MENTAL MODEL:** This root README answers where each domain belongs and where to navigate. Each governed child README explains its own purpose and local tree. The root tree and child mental models work together.
-**GOVERNED BY:** De O'Dini — Operator; Governance for current system-wide rules; the frozen V003 Specification for target architecture; the Origin Conversation for historical decisions; and Phase 02 records for active migration controls.
-**AUTHORITATIVE TREE:** The complete V003 target tree in this file is the canonical root navigation tree. Its names and hierarchy follow §8 of the frozen V003 Specification.
+**GOVERNED BY:** De O'Dini — Operator; Governance for current system-wide rules; the frozen V003 Specification for target architecture; the Origin Conversation for historical decisions; Phase 02 as a closed migration-process archive; and Phase 03 for active unresolved follow-up navigation.
+**AUTHORITATIVE TREE:** The complete V003 target tree in this file is the canonical root navigation tree. It follows frozen Specification §8, with the Operator-approved POC naming adjustment recorded in Phase 03; the frozen Specification retains its historical CASE_STUDIES names.
 **LOCAL TREE:** The current physical repository layout and the separate V003 support/archive overlay are listed below.
 **RELATED DOMAINS:** Governance, Version History, Milestones, AI, Portfolio, and V003 authority/support.
-**CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; M19 active-reference reconciliation complete; M20 retired seven verified zero-byte placeholders; substantive legacy retirement remains source-gated.
+**CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; Phase 02 and Phase 03 reports for migration/closure evidence; Unresolved Register for remaining §§8–18 follow-up.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is the complete approved architectural map. Inline states and the population table report the current partial, planned, and retained-source states.
-**VERIFIER:** Codex - F15 current-status and README-link reconciliation (2026-10-12); ChatGPT - independent M05-M20 verification PASS (2026-10-11), including M19-TREE-01 and M20-STATE-01 resolution. Substantive sources remain protected by M20-REF-01, M15-ASSET-01, M17-DEST-01, M19-HIST-01 and M01-GIT-01; see Phase 02.
-**LAST VERIFIED:** 2026-10-12 - Codex F15 audit: 73 tracked README files / 506 relative Markdown links / 0 broken. M20 remains independently verified PASS; M21 final acceptance remains blocked by M21-GIT-01.
+**VERIFIER:** Codex — repository-wide pre-publication reconciliation (2026-10-15); prior independent ChatGPT verification and Operator-qualified closure are recorded in the Phase 02/03 reports. The 20 Cline checkpoint objects remain unrecovered; their investigation was administratively closed by the Operator without claiming technical recovery.
+**LAST VERIFIED:** 2026-10-15 — current README trees, physical paths, local links, archival integrity, frozen-authority hashes, and Git publication scope rechecked; exact counts and results are recorded in the Phase 03 report.
 **ENTRY NAVIGATION:** Begin here for the complete target tree, then open the relevant child README or source authority.
 **EXIT NAVIGATION:** Return to this README before moving between top-level Brainbox domains.
 **APPLIES TO:** Operators and AI agents navigating or modifying DEODINI_BRAINBOX.
@@ -22,7 +24,7 @@
 
 This README is the canonical complete-tree and root-navigation authority. The frozen V003 Specification remains the canonical architecture definition; the Origin Conversation preserves how decisions developed. This README represents their approved tree and records current population without claiming that planned paths already exist.
 
-M02 migrated root navigation responsibility from `DOB_MUST_README.md`. M03 established Governance as the canonical home for current system-wide reusable policy. M03 left DOB intact. V003-F08 added a routing notice at the top while preserving its full historical body; no historical content was rewritten or retired. M19 reconciled active references and preserved all source files; M20 retired only seven verified empty placeholders; substantive sources remain under individual retirement gates. This root README does not duplicate Governance policy.
+M02 migrated root navigation responsibility from `DOB_MUST_README.md`. M03 established Governance as the canonical home for current system-wide reusable policy. M03 left DOB intact. V003-F08 added a routing notice at the top while preserving its full historical body; no historical content was rewritten or retired. M19 reconciled active references and preserved source records. M20 archived 88 legacy project-workflow files and removed their tracked content from the former source path; seven empty directory shells remain physically because Windows denied their cleanup. The source-content disposition is closed, with this cleanup exception recorded in the Phase 03 report. This root README does not duplicate Governance policy.
 
 ## Operator and migration navigation
 
@@ -36,7 +38,7 @@ For current system-wide rules, consult `GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.
 
 ## Authoritative V003 target tree
 
-The tree below reproduces the complete structure approved in §8 of `V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`. Inline bracketed notes add population status only; they do not alter the approved names or hierarchy. A planned path is part of the architecture map and is not a claim that the path exists.
+The tree below represents the complete V003 target architecture, incorporating the Operator-approved post-freeze POC naming adjustment recorded in the Phase 03 report. The frozen Specification retains its original `CASE_STUDIES_*` names as historical authority. Inline bracketed notes add population state only; a planned path is not a claim that it physically exists.
 
 ```text
 DEODINI_BRAINBOX/
@@ -55,7 +57,7 @@ DEODINI_BRAINBOX/
 │   ├── SECURITY_GOV_BRAINBOX.md
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
-├── VERSION_HISTORY_BRAINBOX/ [POPULATED — partial; see population table]
+├── VERSION_HISTORY_BRAINBOX/ [PRESENT · POPULATED — see population table for evidence limits]
 │   ├── README_VERSION_HISTORY_BRAINBOX.md
 │   ├── V001_BRAINBOX/
 │   │   ├── TREE_SNAPSHOT_V001_BRAINBOX.md
@@ -67,10 +69,10 @@ DEODINI_BRAINBOX/
 │       ├── TREE_SNAPSHOT_V003_BRAINBOX.md
 │       ├── MIGRATION_MAP_V003_BRAINBOX.md
 │       └── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md
-├── MILESTONES_BRAINBOX/ [PLANNED]
+├── MILESTONES_BRAINBOX/ [PRESENT · POPULATED; Router/Agentic capability PLANNED]
 │   ├── README_MILESTONES_BRAINBOX.md
 │   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
-├── AI_BRAINBOX/ [PARTIALLY POPULATED V003 target — M05-M16 migrated; M17 legacy sources retained; M18 planned milestone records; M19-M20 reconciled; M21 verification pending]
+├── AI_BRAINBOX/ [PRESENT · POPULATED — M05-M20 migration reconciled; M21/F02 Operator-qualified closed; §§8–18 follow-up remains]
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
 │   │   ├── README_FUNC_AI_BRAINBOX.md
@@ -182,8 +184,8 @@ DEODINI_BRAINBOX/
 │   │   │   │       │   ├── SQL_CODE_PATTERNS_BRAINBOX/
 │   │   │   │       │   └── API_CODE_PATTERNS_BRAINBOX/
 │   │   │   │       └── TESTING_BACKEND_BRAINBOX/
-│   │   │   ├── CASE_STUDIES_SANDBOX_BRAINBOX/ [PRESENT - M15]
-│   │   │   │   └── FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/ [PRESENT - M15]
+│   │   │   ├── POC_SANDBOX_BRAINBOX/ [PRESENT · POPULATED]
+│   │   │   │   └── FOOTHIVE_POC_BRAINBOX/ [PRESENT · POPULATED]
 │   │   │   │       ├── README_FH_WORKFLOW_TRIAL_BRAINBOX.md
 │   │   │   │       ├── BUILD_REPORT_FH_BRAINBOX.md
 │   │   │   │       ├── PASSED_FH_BRAINBOX.md
@@ -213,8 +215,8 @@ DEODINI_BRAINBOX/
 │   │       │   └── TEMPLATES_ENVIRONMENT_BRAINBOX/
 │   │       │       ├── .env.example
 │   │       │       └── .gitignore
-│   │       ├── CASE_STUDIES_PROD_BRAINBOX/
-│   │       │   ├── README_CASE_STUDIES_PROD_BRAINBOX.md [P12 local navigation]
+│   │       ├── POC_PROD_BRAINBOX/
+│   │       │   ├── README_POC_BRAINBOX.md [P12 local navigation]
 │   │       │   └── FOOTHIVE_PROD_SUMMARY_BRAINBOX/
 │   │       │       ├── README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md
 │   │       │       └── PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md
@@ -398,13 +400,13 @@ DEODINI_BRAINBOX/
 │       │   └── README_SECURITY_SKILLS_BRAINBOX.md
 │       └── REFERENCES_SKILLS_BRAINBOX/
 │           └── README_REFERENCES_SKILLS_BRAINBOX.md
-└── PORTFOLIO_BRAINBOX/ [PARTIALLY POPULATED — M16]
+└── PORTFOLIO_BRAINBOX/ [PRESENT · POPULATED — M16 FootHive portfolio records]
     ├── README_PORTFOLIO_BRAINBOX.md
     └── FOOTHIVE_PORTFOLIO_BRAINBOX/
         ├── README_FOOTHIVE_PORTFOLIO_BRAINBOX.md
         ├── HANDOFF_FOOTHIVE_BRAINBOX.md
         ├── PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md
-        └── CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md
+        └── POC_REFERENCE_FOOTHIVE_BRAINBOX.md
 ```
 
 ## Population state
@@ -414,14 +416,14 @@ DEODINI_BRAINBOX/
 | `README_BRAINBOX.md` | [ACTIVE] | This M02 root navigation authority. |
 | `V003_VERSION_UPGRADE_BRAINBOX/` | [POPULATED] | Contains canonical Origin/Specification and separate Phase 01 and Phase 02 support archives. |
 | `GOVERNANCE_BRAINBOX/` | [POPULATED — M03] | All nine approved Governance records are present; the legacy-source dispositions and M19/M20 boundaries are recorded in the M03 migration-map section. |
-| `VERSION_HISTORY_BRAINBOX/` | [POPULATED - M21 physical snapshot independently verified; final M21 acceptance BLOCKED on M21-GIT-01] | Parent README and Git-backed V001/V002 snapshots are present. Conceptual retrospective rationale remains evidence-limited. V003 Architecture Decisions, the living migration map, and the actual M21 physical-tree snapshot are present. |
-| `MILESTONES_BRAINBOX/` | [POPULATED — M18] | The two approved records are present and remain [PLANNED]; no Router or enabling infrastructure is implemented. Legacy `MILESTONES/` remains unchanged under M17-DEST-01 pending Operator disposition. |
-| `AI_BRAINBOX/` | [PARTIALLY POPULATED - M05-M16; M19 RECONCILED] | FUNC CORE/EXE, Skills, Sandbox/Production, Fullstack, Frontend, Backend, analytics, and FootHive records are present; M17 legacy sources remain separate and M18 milestone records remain [PLANNED]. M20 retired seven verified empty source files; substantive legacy sources remain under source-specific safeguards. M21 snapshot/map independently checked; final M21 acceptance held on confirmed M21-GIT-01 pending Operator recovery/disposition decision. |
-| `PORTFOLIO_BRAINBOX/` | [PARTIALLY POPULATED - M16; M19 RECONCILED] | The parent README and FootHive portfolio child are present. M20 retired the verified zero-byte legacy placeholder `001_PORT_BRAINBOX.md`; the portfolio evidence and current navigation remain. |
+| `VERSION_HISTORY_BRAINBOX/` | [PRESENT · POPULATED] | Parent README and Git-backed V001/V002 snapshots are present. Conceptual retrospective rationale remains evidence-limited. V003 Architecture Decisions, the living migration map, and the M21 physical-tree snapshot are present. The 20 Cline SHAs remain unrecovered; the Operator administratively closed the investigation without asserting technical recovery. |
+| `MILESTONES_BRAINBOX/` | [PRESENT · POPULATED] | Four files are present: two byte/hash-verified historical V002 records and two V003 future-intent records. Only the Router/Agentic capability remains [PLANNED]; no enabling infrastructure is implemented. |
+| `AI_BRAINBOX/` | [PRESENT · POPULATED; migration reconciled] | FUNC CORE/EXE, Skills, Sandbox/Production, Fullstack, Frontend, Backend, analytics, and FootHive records are present. Historical PROJ_WORKFLOW files are preserved in the Recycle Bin archive; seven empty legacy directories remain after Windows denied their removal. V003 Unresolved Register §§8–18 tracks intentionally empty/planned/reserved architecture. |
+| `PORTFOLIO_BRAINBOX/` | [PRESENT · POPULATED; M16 child present] | The parent README and FootHive portfolio child are present. M20 retired the verified zero-byte legacy placeholder `001_PORT_BRAINBOX.md`; the portfolio evidence and current navigation remain. |
 
 ## Current local root tree
 
-Current physical root layout - reviewed during M20 (2026-10-11). It includes the separate planned milestone records and retained legacy sources; retained items are not extra branches in the approved V003 target tree.
+Current physical root layout — reconciled 2026-10-15. Historical/support records are identified separately from the frozen V003 target tree.
 
 ```text
 DEODINI_BRAINBOX/
@@ -438,20 +440,26 @@ DEODINI_BRAINBOX/
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── DOB_MUST_README.md [retained legacy source; unchanged through M03]
-├── AI_BRAINBOX/ [M05-M16 target content; M17 legacy sources retained; M18 milestone records planned; M19 complete; M20 empty-source retirement; M21 pending]
-├── MILESTONES/ [legacy source records; retained under M17-DEST-01]
-├── MILESTONES_BRAINBOX/ [two records present; both [PLANNED] — M18]
+├── AI_BRAINBOX/ [PRESENT · POPULATED; M05-M20 reconciled; M21/F02 Operator-qualified closure; §§8–18 follow-up remains]
+├── MILESTONES_BRAINBOX/ [PRESENT · POPULATED; V002 history plus V003 planned intent]
 │   ├── README_MILESTONES_BRAINBOX.md
-│   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
-├── PORTFOLIO_BRAINBOX/ [partially populated — M16; empty legacy placeholder retired M20]
+│   ├── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md [V003 capability PLANNED]
+│   ├── MILESTONES_MUST_README.md [historical V002 record; exact-byte/hash verified]
+│   └── MILESTONE_CHECKPOINT_BRAINBOX.md [historical V002 record; exact-byte/hash verified]
+├── PORTFOLIO_BRAINBOX/ [PRESENT · POPULATED — M16 child; empty legacy placeholder retired M20]
 │   ├── README_PORTFOLIO_BRAINBOX.md
-│   └── FOOTHIVE_PORTFOLIO_BRAINBOX/ [present — M16]
+│   └── FOOTHIVE_PORTFOLIO_BRAINBOX/ [PRESENT · POPULATED — M16]
 │       ├── README_FOOTHIVE_PORTFOLIO_BRAINBOX.md
 │       ├── HANDOFF_FOOTHIVE_BRAINBOX.md
 │       ├── PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md
-│       └── CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md
+│       └── POC_REFERENCE_FOOTHIVE_BRAINBOX.md
+├── RECYCLE_BIN_BRAINBOX/ [PRESENT · POPULATED; Operator-approved archive]
+│   ├── README_RECYCLE_BIN_BRAINBOX.md
+│   ├── PROJ_WORKFLOW_RETIREMENT_MANIFEST_BRAINBOX.json
+│   ├── RETIREMENT_LEDGER_BRAINBOX.md
+│   └── RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/ [88 archived files; see manifest]
 ├── V003_VERSION_UPGRADE_BRAINBOX/ [canonical authority and support container]
-└── VERSION_HISTORY_BRAINBOX/ [partially populated]
+└── VERSION_HISTORY_BRAINBOX/ [PRESENT · POPULATED — historical record set is intentionally incomplete; see population table]
 ```
 
 ## V003 authority and support overlay
@@ -467,18 +475,29 @@ V003_VERSION_UPGRADE_BRAINBOX/
 │   ├── README_PHASE01_POLISH_BRAINBOX.md
 │   ├── V003_POLISH_CONVO_VERSION_UPGRADE_BRAINBOX.md
 │   └── V003_POLISH_REPORT_VERSION_UPGRADE_BRAINBOX.md
-└── PHASE02_MIGRATION_BRAINBOX/ [ACTIVE — migration planning/execution support]
-    ├── README_PHASE02_MIGRATION_BRAINBOX.md
-    ├── V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md
-    ├── V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md
-    └── V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md
+├── PHASE02_MIGRATION_BRAINBOX/ [PRESENT · POPULATED; closed support archive]
+│   ├── README_PHASE02_MIGRATION_BRAINBOX.md
+│   ├── V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md
+│   ├── V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md
+│   └── V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md
+├── PHASE03_FIXES_BRAINBOX/ [PRESENT · POPULATED; qualified closeout and active §8–18 follow-up]
+│   ├── README_PHASE03_FIXES_BRAINBOX.md
+│   ├── F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv
+│   ├── F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv
+│   ├── F11_FOOTHIVE_SOURCE_DISPOSITION_PHASE03_FIXES_BRAINBOX.csv
+│   ├── V003_FIXES_CONVO_BRAINBOX.md
+│   ├── V003_FIXES_REPORT_BRAINBOX.md
+│   ├── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md
+│   └── V003_POC_NAMING_SCOPED_DIFF_BRAINBOX.diff
+└── V003_UNRESOLVED_BRAINBOX.md [ACTIVE — Specification §§8–18 follow-up]
 ```
 
 - **Canonical target:** `V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`.
 - **Historical decision evidence:** `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`.
 - **Phase 01:** closed/frozen; the archive records its execution and verification.
-- **Phase 02:** active; `README_PHASE02_MIGRATION_BRAINBOX.md` and the ticket/report records are the current source for authorization, batch progress, flags, and execution status.
-- The Phase 02 archive is a process/evidence container, not target-domain knowledge. Ticket presence does not make a path populated.
+- **Phase 02:** closed migration archive; the report, conversation, and ticket records preserve execution and Git-closure evidence.
+- **Phase 03:** V003 qualified closure is Operator-accepted; the active Unresolved Register contains the remaining §§8–18 planned/empty/reserved-state follow-up.
+- Phase 02 and Phase 03 are process/evidence containers, not target-domain knowledge. Ticket presence does not make a path populated.
 
 ## Current Version History layout
 
@@ -494,10 +513,10 @@ VERSION_HISTORY_BRAINBOX/
 └── V003_EXTENDED_DEODINI_BRAINBOX/
     ├── ARCHITECTURE_DECISIONS_V003_BRAINBOX.md [retained; unchanged]
     ├── MIGRATION_MAP_V003_BRAINBOX.md [living migration map; M21 source dispositions recorded]
-    └── TREE_SNAPSHOT_V003_BRAINBOX.md [present; snapshot independently verified, M21 acceptance blocked by M21-GIT-01]
+    └── TREE_SNAPSHOT_V003_BRAINBOX.md [present; M21 physical snapshot retained; qualified closure accepted without recovery of 20 Cline objects]
 ```
 
-The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The M21 V003 physical-tree snapshot is present; independent verification and Operator closeout remain pending. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
+The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The M21 V003 physical-tree snapshot is present. F02/M21 qualified closure was accepted by the Operator; the 20 Cline objects were not recovered. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
 
 ## Navigation index
 
@@ -511,12 +530,13 @@ The V001/V002 snapshots record evidence-selected Git tree cut points, not formal
 | `V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md` | Approved target architecture and migration constraints. |
 | `V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` | Historical decisions and ambiguity context. |
 | `V003_VERSION_UPGRADE_BRAINBOX/PHASE01_POLISH_BRAINBOX/README_PHASE01_POLISH_BRAINBOX.md` | Closed Phase 01 audit/archive navigation. |
-| `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md` | Active Phase 02 rules, current batch state, and ticket navigation. |
+| `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md` | Closed Phase 02 migration process/archive and ticket navigation. |
+| `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md` | Qualified Phase 03 closeout evidence and active follow-up navigation. |
 | `VERSION_HISTORY_BRAINBOX/README_VERSION_HISTORY_BRAINBOX.md` | Version History domain navigation, authority boundaries, and current population state. |
 | `VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/TREE_SNAPSHOT_V001_BRAINBOX.md` | Git-backed V001 tracked-path snapshot. |
 | `VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md` | Git-backed V002 tracked-path snapshot. |
 | `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` | Living source-backed migration ledger; updated by each authorized migration ticket. |
-| `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` | Planned milestone navigation and status; both local records remain future intent. |
+| `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` | Milestone navigation for two historical V002 records and the separate planned V003 Router/Agentic capability. |
 | `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` | Planned future Router/Agentic capabilities and infrastructure intent; not implementation authorization. |
 
 ## Source-to-target responsibility
@@ -541,7 +561,7 @@ M03 created the approved Governance tree and mapped current system-wide rules in
 | `AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` | General authorization/change-request principles referenced in Ticketing. | Function-area reading and request-submission procedure remains a local legacy source. | M07 classification and M19 reference reconciliation complete; M20 review completed; source remains retained at its original path pending any separately authorized source-specific disposition. |
 | `AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md` | Secret-safe reporting and limitation-disclosure principles referenced where applicable. | Agent capability-report request/output details remain legacy source content. | M07 classification and M19 reference reconciliation complete; M20 review completed; source remains retained at its original path pending any separately authorized source-specific disposition. |
 | `AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md` | Human approval, evidence, verification, engagement truth, and no-secrets principles referenced in Governance. | Agent sequencing, email workflow, and project-operating details remain legacy source material. | M07 and M09/M10 content classification plus M19 active-reference reconciliation are complete; M20 review completed; source remains retained at its original path pending any separately authorized source-specific disposition. |
-| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md` | Evidence/proven-claim principles referenced in Evidence and Promotion. | Legacy project-workflow navigation/source record remains at its original path and is indexed as legacy. | M09 classification and M19 active-reference reconciliation complete; M20 review completed; source remains retained at its original path pending any separately authorized source-specific disposition. |
+| `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md` | Evidence/proven-claim principles referenced in Evidence and Promotion. | [Archived legacy project-workflow README](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md) is preserved as historical source; Governance and DEVOPS are current authorities. | Archived with the 88-entry SHA-256 manifest; seven empty source directories remain because Windows denied their removal. |
 | `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md` | Tested-claim rule referenced in Evidence. | Legacy Skills source/inventory remains at its original path and is indexed as legacy. | M08 classification and M19 active-reference reconciliation complete; M20 review completed; source remains retained at its original path pending any separately authorized source-specific disposition. |
 
 **M03-REF-01: RESOLVED FOR ACTIVE README REFERENCES; LEGACY SOURCE TEXT PRESERVED:** The retained `AI_MUST_README.md`, `FQ_MUST_README.md`, and `DOB_MUST_README.md` still contain historical wording that treats DOB as a root/general authority. M03 did not rewrite those sources; M19 preserved them unchanged at its checkpoint. V003-F08 later added routing notices to the four legacy entry records while preserving each historical body byte-for-byte. Active README navigation now identifies Governance as the canonical source for current system-wide policy and labels retained legacy material as historical/local source content. M19 independent audit recorded 72 README files / 496 relative Markdown links / 0 broken. F15 rechecked the current tracked README set on 2026-10-12: 73 files / 506 relative links / 0 broken, including the later Phase 03 README. This does not authorize rewriting or retiring legacy files. M20 initial source-retirement review is complete; these substantive sources remain at their original paths. Current source-specific safeguards and dispositions control any future action; no source removal is authorized by this paragraph. **Owner/timing:** Codex completed the M19 implementation checks on 2026-10-10; ChatGPT renewed M19 independent verification PASS (2026-10-10); Operator retains source-removal authority.
@@ -553,7 +573,8 @@ M03 created the approved Governance tree and mapped current system-wide rules in
 - [V003 Origin Conversation](V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md) — historical decision record and ambiguity resolver.
 - [V003 authority-container README](V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md) — local V003 container map.
 - [Phase 01 archive README](V003_VERSION_UPGRADE_BRAINBOX/PHASE01_POLISH_BRAINBOX/README_PHASE01_POLISH_BRAINBOX.md) — closed audit/history support.
-- [Phase 02 migration README](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md) — active process and current batch state.
+- [Phase 02 migration README](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md) — closed process archive and migration evidence.
+- [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — qualified closure and active follow-up navigation.
 - [Phase 02 ticket set](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md) — individually scoped, authorized migration work.
 - [Migration map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — current-state inventory, integrity baseline, and living dispositions.
 - `DOB_MUST_README.md` — retained legacy root source; its system-wide policy has been mapped to Governance; see the M03 source disposition above.

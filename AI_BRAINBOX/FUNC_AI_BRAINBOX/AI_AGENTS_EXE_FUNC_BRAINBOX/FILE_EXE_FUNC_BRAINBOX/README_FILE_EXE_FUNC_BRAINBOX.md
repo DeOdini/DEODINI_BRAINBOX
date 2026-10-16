@@ -14,6 +14,15 @@
 **SOURCE_TYPE:** Evidence-backed capability record.
 **VERIFIER:** Codex, V003-M06 source read-back.
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+FILE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
+└── README_FILE_EXE_FUNC_BRAINBOX.md [PRESENT]
+```
+
 ## Executor and evidence
 
 - **Agent:** Codex.
@@ -27,3 +36,10 @@
 Access is limited by the current filesystem permissions and authorized workspace. RDC or another device must be verified separately. File execution does not itself authorize destructive changes, repository pushes, merges, or external service writes.
 
 **POPULATION STATE:** One Codex executor admitted; other agent file claims remain outside this matrix.
+
+---
+
+## V003 agent operation references — 2026-10-15
+
+CATEGORY IS AN INDEX ONLY, not evidence or a questionnaire.
+[Codex EXE-CODEX-FILE-001](../CODEX_EXE_FUNC_BRAINBOX/README_CODEX_EXE_FUNC_BRAINBOX.md#exe-codex-file-001): historical M06 execution, currently unverified.

@@ -18,6 +18,24 @@
 **EXIT NAVIGATION:** Return to `README_BRAINBOX.md` for the complete root tree.
 **APPLIES TO:** Operators and AI agents working in DEODINI_BRAINBOX.
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+GOVERNANCE_BRAINBOX/ [PRESENT · POPULATED]
+├── DOCUMENTATION_GOV_BRAINBOX.md [PRESENT]
+├── EVIDENCE_GOV_BRAINBOX.md [PRESENT]
+├── NAMING_GOV_BRAINBOX.md [PRESENT]
+├── PROMOTION_GOV_BRAINBOX.md [PRESENT]
+├── README_GOV_BRAINBOX.md [PRESENT]
+├── REFERENCE_GOV_BRAINBOX.md [PRESENT]
+├── SECURITY_GOV_BRAINBOX.md [PRESENT]
+├── TICKETING_GOV_BRAINBOX.md [PRESENT]
+├── TREE_AND_STATUS_GOV_BRAINBOX.md [PRESENT]
+└── VERSIONING_GOV_BRAINBOX.md [PRESENT]
+```
+
 ## Authority boundary
 
 Governance is the canonical home for current system-wide rules. The frozen V003 Specification remains the approved architecture and migration-target authority; the Origin Conversation remains historical decision evidence. This folder operationalizes the approved governance rules without replacing either V003 authority.
@@ -26,20 +44,9 @@ The prior root and subsystem documents listed below remain unmodified source rec
 
 The Phase 02 ticket set and Operator declaration supply the current Phase 02 execution cadence and flag classification. That scoped update does not rewrite the frozen Specification or create a general exception for unrelated work.
 
-## Local tree
+## Current-tree reference
 
-```text
-GOVERNANCE_BRAINBOX/
-├── README_GOV_BRAINBOX.md
-├── NAMING_GOV_BRAINBOX.md
-├── DOCUMENTATION_GOV_BRAINBOX.md
-├── REFERENCE_GOV_BRAINBOX.md
-├── VERSIONING_GOV_BRAINBOX.md
-├── EVIDENCE_GOV_BRAINBOX.md
-├── SECURITY_GOV_BRAINBOX.md
-├── TICKETING_GOV_BRAINBOX.md
-└── PROMOTION_GOV_BRAINBOX.md
-```
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Domain navigation
 
@@ -70,3 +77,8 @@ GOVERNANCE_BRAINBOX/
 - **Timestamp:** 2026-10-08
 - **Authorization:** Operator-approved V003-M03 under the approved V003-M01–M21 set.
 - **Signed & Authorized by:** DE O'DINI (OPERATOR)
+
+
+## Tree and status classification authority
+
+[Tree and Status Governance](TREE_AND_STATUS_GOV_BRAINBOX.md) defines mandatory two-descendant-level navigation for local READMEs, path validation, and separate structural/lifecycle tags. Root README remains complete-tree authority. This dated Operator-approved policy supplements, but does not rewrite, frozen V003 architecture.

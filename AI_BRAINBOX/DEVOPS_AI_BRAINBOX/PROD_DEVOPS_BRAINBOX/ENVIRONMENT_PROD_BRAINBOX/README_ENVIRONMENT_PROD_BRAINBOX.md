@@ -14,21 +14,29 @@
 **EXIT NAVIGATION:** Return to the Production DEVOPS README.
 **APPLIES TO:** Environment documentation and safe handling of runtime configuration; it does not grant access or deployment authority.
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+ENVIRONMENT_PROD_BRAINBOX/ [PRESENT · POPULATED]
+├── TEMPLATES_ENVIRONMENT_BRAINBOX/ [PRESENT · POPULATED]
+│   ├── .env.example [PRESENT]
+│   └── .gitignore [PRESENT]
+├── ENV_ROTATION_BRAINBOX.md [PRESENT]
+├── ENV_SECURITY_BRAINBOX.md [PRESENT]
+├── ENV_VALIDATION_BRAINBOX.md [PRESENT]
+├── ENV_VARIABLES_BRAINBOX.md [PRESENT]
+└── README_ENVIRONMENT_PROD_BRAINBOX.md [PRESENT]
+```
+
 ## Authority boundary
 
 This directory documents environment configuration safely. No environment values, credentials, tokens, or production runtime access are stored here. No application-specific variable names are approved by M14. Never infer a variable contract from a sample, source filename, or placeholder.
 
-## Authoritative and current local tree
+## Current-tree reference
 
-    ENVIRONMENT_PROD_BRAINBOX/
-    ├── README_ENVIRONMENT_PROD_BRAINBOX.md
-    ├── ENV_VARIABLES_BRAINBOX.md
-    ├── ENV_SECURITY_BRAINBOX.md
-    ├── ENV_ROTATION_BRAINBOX.md
-    ├── ENV_VALIDATION_BRAINBOX.md
-    └── TEMPLATES_ENVIRONMENT_BRAINBOX/
-        ├── .env.example [COMMENT-ONLY PLACEHOLDER]
-        └── .gitignore [SAFE TEMPLATE]
+The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 The repository root .gitignore also excludes local .env files throughout this repository and preserves placeholder-only .env.example files.
 

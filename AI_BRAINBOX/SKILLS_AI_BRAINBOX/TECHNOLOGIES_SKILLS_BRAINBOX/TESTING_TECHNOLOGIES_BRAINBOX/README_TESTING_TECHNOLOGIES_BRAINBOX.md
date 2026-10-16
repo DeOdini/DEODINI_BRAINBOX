@@ -18,17 +18,28 @@
 **EXIT NAVIGATION:** Return to the parent README or root `README_BRAINBOX.md`.
 **APPLIES TO:** The governed `TESTING_TECHNOLOGIES_BRAINBOX/` branch.
 
-## Authoritative and local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-TESTING_TECHNOLOGIES_BRAINBOX/
-+-- README_TESTING_TECHNOLOGIES_BRAINBOX.md [PRESENT]
-+-- CYPRESS_TECHNOLOGY_BRAINBOX/ [EMPTY]
-+-- JEST_TECHNOLOGY_BRAINBOX/ [EMPTY]
-+-- PLAYWRIGHT_TECHNOLOGY_BRAINBOX/ [EMPTY]
-+-- PYTEST_TECHNOLOGY_BRAINBOX/ [EMPTY]
-+-- SELENIUM_TECHNOLOGY_BRAINBOX/ [EMPTY]
+TESTING_TECHNOLOGIES_BRAINBOX/ [PRESENT · POPULATED]
+├── CYPRESS_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── JEST_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── PLAYWRIGHT_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── PYTEST_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SELENIUM_TECHNOLOGY_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_TESTING_TECHNOLOGIES_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Canonical references
 

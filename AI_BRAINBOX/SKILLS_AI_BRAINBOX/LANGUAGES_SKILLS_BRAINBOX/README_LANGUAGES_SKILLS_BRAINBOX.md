@@ -15,26 +15,46 @@
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex implementation read-back; ChatGPT independent M08 verification: PASS (Batch B closeout, 2026-10-09).
 
-## Local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-LANGUAGES_SKILLS_BRAINBOX/
-├── README_LANGUAGES_SKILLS_BRAINBOX.md
-├── JAVASCRIPT_LANGUAGE_BRAINBOX/
-├── TYPESCRIPT_LANGUAGE_BRAINBOX/
-├── PYTHON_LANGUAGE_BRAINBOX/
-├── JAVA_LANGUAGE_BRAINBOX/
-├── C_LANGUAGE_BRAINBOX/
-├── CPP_LANGUAGE_BRAINBOX/
-├── CSHARP_LANGUAGE_BRAINBOX/
-├── GO_LANGUAGE_BRAINBOX/
-├── RUST_LANGUAGE_BRAINBOX/
-├── PHP_LANGUAGE_BRAINBOX/
-├── RUBY_LANGUAGE_BRAINBOX/
-├── SWIFT_LANGUAGE_BRAINBOX/
-├── KOTLIN_LANGUAGE_BRAINBOX/
-└── SQL_LANGUAGE_BRAINBOX/
+LANGUAGES_SKILLS_BRAINBOX/ [PRESENT · POPULATED]
+├── C_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── CPP_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── CSHARP_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── GO_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── JAVA_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── JAVASCRIPT_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── KOTLIN_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── PHP_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── PYTHON_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── RUBY_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── RUST_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SQL_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SWIFT_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TYPESCRIPT_LANGUAGE_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_LANGUAGES_SKILLS_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Python ownership boundary
 

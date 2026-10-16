@@ -10,14 +10,20 @@
 **APPLIES TO:** Fullstack discovery, blueprint, build-order, ticketing, execution, testing, and workflow-candidate material.
 **LAST VERIFIED:** 2026-10-09
 
-## Authoritative and local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-WORKFLOWS_FULLSTACK_BRAINBOX/
-|-- README_WORKFLOWS_FULLSTACK_BRAINBOX.md
-|-- 001DOC_BYB5DOC_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md [RAW / UNPROVEN]
-`-- 002DOC_BYB5DOC_PRESET_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md [RAW / UNPROVEN]
+WORKFLOWS_FULLSTACK_BRAINBOX/ [PRESENT · POPULATED]
+├── 001DOC_BYB5DOC_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md [PRESENT]
+├── 002DOC_BYB5DOC_PRESET_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md [PRESENT]
+└── README_WORKFLOWS_FULLSTACK_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Source-backed workflow records
 
@@ -25,12 +31,12 @@ The two workflow records below were copied byte-for-byte from the legacy RAW fol
 
 | Target record | Legacy source | Current content state | Disposition |
 | --- | --- | --- | --- |
-| [001 raw workflow](001DOC_BYB5DOC_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md) | [Legacy 001 source](../../../../../AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md) | RAW / proposed / not proven | Copied without content edits; historical source retained pending M20 |
-| [002 preset workflow](002DOC_BYB5DOC_PRESET_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md) | [Legacy 002 source](../../../../../AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md) | RAW / unverified / not tested end-to-end | Copied without content edits; Part 13 governs its proposal and Part 8 remains historical per the recorded Operator approval |
+| [001 raw workflow](001DOC_BYB5DOC_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md) | [Archived legacy 001 source](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md) | RAW / proposed / not proven | Current Fullstack copy is retained as RAW; source-era record is preserved in the retirement archive |
+| [002 preset workflow](002DOC_BYB5DOC_PRESET_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md) | [Archived legacy 002 source](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md) | RAW / unverified / not tested end-to-end | Current Fullstack copy is retained as RAW; Part 13 governs its proposal and Part 8 remains historical per the recorded Operator approval |
 
-[Legacy RAW overview](../../../../../AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md) was also inspected. It summarizes the five-document pre-build sequence, overlaps the more detailed 001/002 workflow candidates, and retains old RAW-to-PROVEN/FAILED promotion language. It remains reference-only at its actual legacy path; M10 did not create a third workflow copy. Its title/filename mismatch remains M09-REF-02, and its obsolete promotion wording is handled as historical source text under M09-REF-03.
+[Archived RAW overview](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md) was also inspected. It summarizes the five-document pre-build sequence, overlaps the more detailed 001/002 workflow candidates, and retains old RAW-to-PROVEN/FAILED promotion language. It remains reference-only in the retirement archive; M10 did not create a third workflow copy. Its title/filename mismatch remains M09-REF-02, and its obsolete promotion wording is handled as historical source text under M09-REF-03.
 
-[Legacy comparison guide](../../../../../AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/FSTACK_MUST_README.md) was inspected and used to distinguish the raw base from the preset variant. It remains at the legacy path pending M20; it is not an additional workflow record.
+[Archived legacy comparison guide](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/FSTACK_MUST_README.md) was inspected and used to distinguish the raw base from the preset variant. It is preserved in the retirement archive; it is not an additional workflow record.
 
 The copied documents contain source-era Storage paths and references to RAW -> PROVEN / FAILED promotion. Those strings are preserved historical source text. They are not current paths or active status rules. Apply [Governance Promotion](../../../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md) and the [Sandbox DEVOPS authority](../../README_SANDBOX_DEVOPS_BRAINBOX.md) for current status and promotion decisions. Do not create a permanent PROVEN bucket.
 

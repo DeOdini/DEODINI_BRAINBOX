@@ -12,6 +12,16 @@
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex M13 implementation read-back; independent ChatGPT M13 verification: PASS (2026-10-09).
 
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
+
+```text
+ANALYTICS_ORCH_BRAINBOX/ [PRESENT · POPULATED]
+├── .gitkeep [PRESENT · EMPTY]
+└── README_ANALYTICS_ORCH_BRAINBOX.md [PRESENT]
+```
+
 ## Ownership boundary
 
 Analytics orchestration owns evidence-backed collection, transmission, event, service, and integration flow, including the movement between analytics sources/services, backend or APIs, and consumers. It does not own charts, KPI presentation, or general GA4 technology guidance.
@@ -22,13 +32,9 @@ The frozen Specification's conceptual path is:
 
 This is an architecture reference, not evidence that each connection is currently implemented, connected, or executing in FootHive or another project.
 
-## Current local tree
+## Current-tree reference
 
-```text
-ANALYTICS_ORCH_BRAINBOX/
-├── README_ANALYTICS_ORCH_BRAINBOX.md
-└── .gitkeep [EMPTY — NO OPERATIONAL FLOW]
-```
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Privacy and evidence boundary
 
@@ -41,7 +47,7 @@ M13 copies no measurement identifier, endpoint, credential, event payload, or pe
 - [Frontend Data Visualization](../../FRONTEND_SANDBOX_BRAINBOX/UI_UX_DESIGN_FRONTEND_BRAINBOX/DATA_VISUALIZATION_DESIGN_BRAINBOX/README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md)
 - [Analytics Technologies](../../../../../SKILLS_AI_BRAINBOX/TECHNOLOGIES_SKILLS_BRAINBOX/ANALYTICS_TECHNOLOGIES_BRAINBOX/README_ANALYTICS_TECHNOLOGIES_BRAINBOX.md)
 - [Governance Security](../../../../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
-- [FootHive build report](../../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — canonical M15 Sandbox evidence reference; this orchestration record does not duplicate GA4 technology knowledge.
+- [FootHive build report](../../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — canonical M15 Sandbox evidence reference; this orchestration record does not duplicate GA4 technology knowledge.
 - [Frozen V003 Specification](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §13
 - [V003 Origin Conversation](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
 - [V003-M13 ticket](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)

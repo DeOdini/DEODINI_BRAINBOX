@@ -13,21 +13,27 @@
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **APPLIES TO:** FootHive's documented workflow-trial project, its T20 release, and handoff references; not a paid-client claim.
 
-## Local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-FOOTHIVE_PORTFOLIO_BRAINBOX/
-├── README_FOOTHIVE_PORTFOLIO_BRAINBOX.md
-├── HANDOFF_FOOTHIVE_BRAINBOX.md
-├── PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md
-└── CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md
+FOOTHIVE_PORTFOLIO_BRAINBOX/ [PRESENT · POPULATED]
+├── HANDOFF_FOOTHIVE_BRAINBOX.md [PRESENT]
+├── POC_REFERENCE_FOOTHIVE_BRAINBOX.md [PRESENT]
+├── PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md [PRESENT]
+└── README_FOOTHIVE_PORTFOLIO_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Navigate
 
 - [Project summary](PROJECT_SUMMARY_FOOTHIVE_BRAINBOX.md)
 - [Handoff](HANDOFF_FOOTHIVE_BRAINBOX.md)
-- [Canonical case-study reference index](CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md)
-- [Canonical Sandbox FootHive case study](../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md)
-- [Production release summary](../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md)
+- [Canonical case-study reference index](POC_REFERENCE_FOOTHIVE_BRAINBOX.md)
+- [Canonical Sandbox FootHive case study](../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md)
+- [Production release summary](../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md)
 - [Living migration map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)

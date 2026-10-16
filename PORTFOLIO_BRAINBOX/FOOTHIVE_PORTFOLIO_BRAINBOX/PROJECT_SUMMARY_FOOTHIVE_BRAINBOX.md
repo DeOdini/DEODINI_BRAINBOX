@@ -26,8 +26,8 @@ The project is a DEODINI workflow trial based on a public Upwork brief, with the
 
 ## Evidence and navigation
 
-The canonical trial history, test evidence, audit, and Operator clarifications stay in the [Sandbox case study](../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/CASE_STUDIES_SANDBOX_BRAINBOX/FOOTHIVE_WORKFLOW_TRIAL_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md). This summary is not a replacement evidence record.
+The canonical trial history, test evidence, audit, and Operator clarifications stay in the [Sandbox case study](../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md). This summary is not a replacement evidence record.
 
 - [Handoff](HANDOFF_FOOTHIVE_BRAINBOX.md)
-- [Production lessons](../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/CASE_STUDIES_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md)
-- [Case-study reference index](CASE_STUDY_REFERENCE_FOOTHIVE_BRAINBOX.md)
+- [Production lessons](../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md)
+- [Case-study reference index](POC_REFERENCE_FOOTHIVE_BRAINBOX.md)

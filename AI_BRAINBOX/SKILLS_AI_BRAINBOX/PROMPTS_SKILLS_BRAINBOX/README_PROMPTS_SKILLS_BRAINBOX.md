@@ -15,29 +15,50 @@
 **LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
 **VERIFIER:** Codex implementation read-back; ChatGPT independent M08 verification: PASS (Batch B closeout, 2026-10-09).
 
-## Local tree
+## Canonical local tree — two descendant levels
+
+Current navigation snapshot; physical/population tags follow [Tree and status governance](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
 ```text
-PROMPTS_SKILLS_BRAINBOX/
-├── README_PROMPTS_SKILLS_BRAINBOX.md
-├── SYSTEM_PROMPTS_BRAINBOX/
-├── TASK_PROMPTS_BRAINBOX/
-├── RESEARCH_PROMPTS_BRAINBOX/
-├── CODING_PROMPTS_BRAINBOX/
-├── DEBUGGING_PROMPTS_BRAINBOX/
-├── REVIEW_PROMPTS_BRAINBOX/
-├── AUDIT_PROMPTS_BRAINBOX/
-├── TESTING_PROMPTS_BRAINBOX/
-├── DOCUMENTATION_PROMPTS_BRAINBOX/
-├── UI_UX_PROMPTS_BRAINBOX/
-├── AGENT_HANDOFF_PROMPTS_BRAINBOX/
-├── TOOL_USE_PROMPTS_BRAINBOX/
-├── STRUCTURED_OUTPUT_PROMPTS_BRAINBOX/
-├── RAG_PROMPTS_BRAINBOX/
-├── EVALUATION_PROMPTS_BRAINBOX/
-└── GUARDRAIL_PROMPTS_BRAINBOX/
-    └── GUARDRAIL_PREFLIGHT_PROMPT_BRAINBOX.md
+PROMPTS_SKILLS_BRAINBOX/ [PRESENT · POPULATED]
+├── AGENT_HANDOFF_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── AUDIT_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── CODING_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── DEBUGGING_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── DOCUMENTATION_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── EVALUATION_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── GUARDRAIL_PROMPTS_BRAINBOX/ [PRESENT · POPULATED]
+│   └── GUARDRAIL_PREFLIGHT_PROMPT_BRAINBOX.md [PRESENT]
+├── RAG_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── RESEARCH_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── REVIEW_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── STRUCTURED_OUTPUT_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── SYSTEM_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TASK_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TESTING_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── TOOL_USE_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+├── UI_UX_PROMPTS_BRAINBOX/ [PRESENT · STUB]
+│   └── .gitkeep [PRESENT · EMPTY]
+└── README_PROMPTS_SKILLS_BRAINBOX.md [PRESENT]
 ```
+
+## Current-tree reference
+
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Guardrail record
 
