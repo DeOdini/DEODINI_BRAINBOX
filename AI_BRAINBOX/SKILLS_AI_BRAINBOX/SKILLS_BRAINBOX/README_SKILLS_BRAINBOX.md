@@ -70,7 +70,7 @@ The four legacy Skills content files contain no material to transfer. No skill, 
 
 - [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8 and 15.
 - [Governance Evidence](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md).
-- [Legacy Skills README](../../SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
+- [Archived legacy Skills README — retired historical source](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
 - [Migration map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md).
 
 **LAST VERIFIED:** 2026-10-09 — Codex read-back after implementation.

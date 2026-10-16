@@ -1825,3 +1825,109 @@ The pre-publication link validation covered 243 local links in 25 then-changed M
 ### Ticket status and publication boundary
 
 Implementation, validation and the authorized Git lifecycle are complete with the historical/provenance qualifications above. Commit `de4a74b96872b0b63f68a3f0c8fe4981e181f614` was pushed on `v003/legacy-func-dob-ai-must-retirement`; PR #51 was merged to `main` as `1e3bee82f2fcb7a02c3f5465ca3a325132713683`. Local `main` and `origin/main` both resolve to that merge commit and the worktree was clean after fast-forward. The ticket branch is retained. No source was deleted from the archive, no CORE/EXE capability claim was promoted, and no M21/F02/overall V003 final acceptance is implied.
+
+
+## V003 Corrective Ticket 03 execution checkpoint — 2026-10-16
+
+**Status at the initial checkpoint:** IMPLEMENTED LOCALLY; PRE-PUBLICATION REVIEW HELD on gate 12 wording. This records the state before the later Operator clarification; current disposition follows below.
+
+### Authorization and Git baseline
+
+- Attachment: V003 CORRECTIVE TICKET 03, SHA-256 E05ACCB900E708927C9FF85723331932E07F27C0212557156E4C20B5787D0C01.
+- Repository: DeOdini/DEODINI_BRAINBOX.
+- Starting local main and independently queried GitHub main: 6cc94ce2744d1bc87a4bf0fe318c729edef19217. The starting worktree was clean and synchronized; PR #51 and #52 were included.
+- Dedicated branch: v003/skills-milestones-legacy-retirement, created from that main commit.
+- No source/archive destination collision or reparse point was found. The legacy Skills directory contained exactly the expected README before retirement.
+
+### Three source/archive integrity results
+
+| Original path | Archive path | Raw size / SHA-256 | Baseline Git blob | Result |
+|---|---|---|---|---|
+| AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md | RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md | 1,380 bytes; FACAE61FF9D3B5FBB4A0A07EA3C7D1E0252C42DF84C8127A29D21DF1454ED488 | 9d12397205ab86c4cc63c6c6220e4285421ea2ea | Exact raw match |
+| MILESTONES_BRAINBOX/MILESTONES_MUST_README.md | RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONES_MUST_README.md | 2,286 bytes; 0F60420E3F4F4B8569A5557EF26149B1CB8C34CFA0B9E300B1A9A34F97675EC6 | fb0636ce9d75fab2128e018e8c73af30ac196090 | Exact raw match |
+| MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md | RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md | 26,882 bytes; BD69ED1D79EB6C954B3664C627EA6F8D0A90FFCCCC1704DC1798E470A8D45F3B | c796b2a1e278e8a1d35b4bc4ebc2cd58dc52e8b4 | Exact raw match |
+
+Each archive raw SHA-256/size equals its pre-move baseline. Path-aware Git hashing at each original source path on each archived file reproduces its baseline Git blob. The worktree uses core.autocrlf=true; the corresponding LF-normalized Git blobs are 1,353, 2,230, and 26,420 bytes. This is a line-ending representation difference, not an unexplained source/archive mismatch. Git detects all three source/archive pairs as R100. The manifest records the hashes, sizes, line counts, CRLF counts, and Git blob qualifications.
+
+### Implemented current-state changes
+
+- The former AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX directory is physically absent, with zero remaining tracked paths. AI_BRAINBOX/SKILLS_AI_BRAINBOX remains the sole active Skills master. All existing Skills taxonomy child domains remain; no skill content or capability was added or promoted.
+- MILESTONES_BRAINBOX now contains exactly README_MILESTONES_BRAINBOX.md and BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md. The Router/Agentic file's SHA-256 remains 08A3E6E27649118875E47C4E9086FEFFC633182E3D2E3A0916317956B26E5D43 and its [PLANNED] state remains present.
+- Root, AI, Skills, Governance, Milestones, Recycle Bin, V003 authority, and migration navigation were updated within the ticket's scope. Four direct existing Markdown destinations to the old Skills source were corrected. The root complete tree and AI/Milestones local trees show the current physical structure; V002 records are routed to their archive.
+- The archived Skills source body and prior Ticket 01/02 archives were not edited. The preserved Skills source body has four relative Markdown destinations that no longer resolve from its archive path; they remain non-operative historical text and are disclosed in the Recycle Bin README/ledger. They were not rewritten.
+- Historical M03/M17/M18 and Phase 01/02/03 records, snapshots, the frozen Specification and Origin Conversation remain preserved. The new current-disposition entries supersede older present-tense source-location claims only for these three files.
+- The active Skills/Milestones lower-risk rows were removed from V003_UNRESOLVED_BRAINBOX.md after the specified routing/retirement conditions were verified. Future Skills population/testing and any additional Milestones migration remain separate future work.
+
+### Validation results at this checkpoint
+
+| # | Ticket gate | Result | Evidence / qualification |
+|---|---|---|---|
+| 1 | Clean, synchronized Git baseline | PASS | Local and GitHub main matched at 6cc94ce2744d1bc87a4bf0fe318c729edef19217 before branch creation. |
+| 2 | Starting SHA and dedicated branch | PASS | Branch created from the verified baseline. |
+| 3 | Legacy Skills source inventory | PASS | Exactly the expected README was present before the move. |
+| 4 | Two historical V002 Milestones files identified | PASS | Both specified source paths existed at baseline. |
+| 5 | Source hashes recorded before moves | PASS | All three raw SHA-256, sizes, line counts, CRLF counts and baseline blobs recorded in manifest. |
+| 6 | Three archives created | PASS | All specified archive destinations exist. |
+| 7 | Former source paths absent | PASS | All three original file paths are absent. |
+| 8 | Legacy Skills directory absent | PASS | Physical directory and tracked source paths are absent. |
+| 9 | Archived content reconciled | PASS | Raw SHA/size match 3/3; path-aware baseline Git blob match 3/3; unexplained mismatches 0. |
+| 10 | Existing Skills taxonomy preserved | PASS | Existing child domains remain; changes are limited to navigation/source-status records. |
+| 11 | V003 Skills is sole active master | PASS | The only active Skills master is AI_BRAINBOX/SKILLS_AI_BRAINBOX/. |
+| 12 | Both retained V003 Milestones files unchanged | HOLD — OPERATOR CLARIFICATION REQUIRED | The Router/Agentic file is byte-identical to baseline. Part C requires updating the Milestones README for correct current navigation, and that README was updated; gate 12 literally says both files remain unchanged. No interpretation is assumed. |
+| 13 | Active Milestones contains exactly approved two records | PASS | Physical folder contains the README and Router/Agentic record only. |
+| 14 | Router/Agentic state remains planned | PASS | [PLANNED] remains in the unchanged Router record. |
+| 15 | Current Skills references route to master | PASS | Four direct old-source Markdown destinations corrected; active navigation points to the V003 Skills README or archive. |
+| 16 | Current Milestones references route to retained records | PASS | Current README links the retained V003 record and archives the two historical V002 records. |
+| 17 | Historical references route/disclose archive disposition | PASS WITH HISTORICAL QUALIFICATION | Current navigation identifies archive paths. Older checkpoint text is preserved; four relative links inside the archived Skills body remain unresolved from the archive location and are non-operative. |
+| 18 | Root/local trees match current physical changes | PASS | Root complete tree and affected AI, Milestones, and Recycle Bin trees reflect the source/archive state. |
+| 19 | Modified local Markdown links resolve | PASS AT CHECKPOINT | 154 local link targets across 12 affected current Markdown files; 0 broken. The archived Skills body's four historical relative links are separately disclosed. |
+| 20 | No unsupported capabilities promoted | PASS | No Skills content or Router capability was created or promoted. |
+| 21 | No unrelated retirement or redesign | PASS | Only the three authorized sources were moved; other edits are in-scope navigation and record updates. |
+| 22 | Existing historical archives and frozen authorities unchanged | PASS | Frozen Specification, Origin Conversation, and unchanged Router hashes were checked against HEAD; no Ticket 01/02 archived source body was modified. |
+| 23 | Manifest, ledger and Unresolved Register updated | PASS | Manifest, retirement ledger, Migration Map, current Unresolved Register, and Phase 03 report/conversation/ticket register contain the disposition. |
+| 24 | Complete diffs reviewed | IN PROGRESS | Current worktree diff and report append reviewed; final staged-path review remains. |
+| 25 | Whitespace checks | PASS AT CHECKPOINT | git diff --check and git diff --cached --check were rerun after report/conversation/registry additions and produced no whitespace findings. |
+| 26 | No unexplained integrity issue/data-loss risk | PASS | Three exact raw archive matches and three baseline Git-blob matches; no unexplained mismatch. |
+| 27 | GitHub PR base/head/checks authorized scope verified | PENDING | No ticket implementation commit or PR has been created. |
+
+The three git mv entries had initially been staged automatically. They were subsequently unstaged without changing the worktree while gate 12 remains open. No commit or publication has occurred. Final staged review will occur after gate 12 is dispositioned.
+
+### Pre-clarification hold checkpoint — superseded by the Operator direction below
+
+At the time this checkpoint was written, Gate 12 and publication were held pending the Operator's interpretation. The dated Operator clarification below resolves Gate 12 for this ticket only. The earlier hold remains part of the chronology; it is no longer the current status. No independent ChatGPT verification or Operator acceptance is claimed.
+
+## Corrected Gate 12 and final pre-publication verification — 2026-10-16
+
+**Operator clarification:** Gate 12 is resolved for Corrective Ticket 03. Navigation-only updates to `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` are authorized. `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` must remain byte-for-byte unchanged, including `[PLANNED]`. The earlier hold is historical and no longer current.
+
+| Check | Result | Evidence |
+|---|---|---|
+| Three archive files and source paths | PASS | All three destinations exist; all three originals are absent. |
+| Old Skills directory | PASS | `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/` is physically absent. |
+| Active Skills master | PASS | `AI_BRAINBOX/SKILLS_AI_BRAINBOX/` remains the current master. |
+| Active Milestones contents | PASS | Exactly the README and Router/Agentic record are present. |
+| Router/Agentic integrity | PASS | Raw SHA-256 `08A3E6E27649118875E47C4E9086FEFFC633182E3D2E3A0916317956B26E5D43`; baseline blob `1a203d712d2682026156428af29b3a47325c184b`; filtered blob matches; baseline diff empty; `[PLANNED]` remains. |
+| Frozen Specification and Origin Conversation | PASS | Raw hashes `08F8EBE71D26BBF17AA0B23B51B0DBD7C521F24C7ABDA574A03D886222E0065C` and `11EA43A34C2026B15CF6B62D3EAC6CF1BE964D67FEA19162BC90A121C4872B3D`; baseline Git blobs match and baseline diffs are empty. |
+| Current navigation link validation | PASS | The 15 changed current Markdown files contain 155 local inline/reference targets including image syntax; 0 broken. The earlier 154/0 count covered 12 current navigation files. |
+| Archive bytes/Git objects | PASS | See the established 3/3 raw SHA/size and path-aware baseline blob matches listed below. |
+| Scope and whitespace | PASS | The complete staged set contains 19 path records, including exactly 3 R100 moves; no unstaged/untracked files remain; both diff whitespace checks exit 0. |
+
+| Original path → archive path | Raw bytes | Raw SHA-256 | Baseline Git blob |
+|---|---:|---|---|
+| `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md` → `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md` | 1,380 | `FACAE61FF9D3B5FBB4A0A07EA3C7D1E0252C42DF84C8127A29D21DF1454ED488` | `9d12397205ab86c4cc63c6c6220e4285421ea2ea` |
+| `MILESTONES_BRAINBOX/MILESTONES_MUST_README.md` → `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONES_MUST_README.md` | 2,286 | `0F60420E3F4F4B8569A5557EF26149B1CB8C34CFA0B9E300B1A9A34F97675EC6` | `fb0636ce9d75fab2128e018e8c73af30ac196090` |
+| `MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md` → `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md` | 26,882 | `BD69ED1D79EB6C954B3664C627EA6F8D0A90FFCCCC1704DC1798E470A8D45F3B` | `c796b2a1e278e8a1d35b4bc4ebc2cd58dc52e8b4` |
+
+Windows `core.autocrlf=true` accounts for raw CRLF worktree sizes differing from LF-normalized Git blobs. Raw source/archive hashes match all 3/3 and path-aware baseline blob checks match all 3/3; there are no unexplained differences.
+
+**Gate 12: PASS. Staged review: PASS. Commit/push/PR/merge remain pending.
+
+### Staged-path and whitespace review — 2026-10-16
+
+The final staged diff contains 19 path records: 16 current/documentation/manifest records and three exact source-to-archive moves. Git detects all three authorized moves as R100. The staged set is confined to Ticket 03's three retirement moves, navigation/tree corrections, manifest, retirement records, Phase 03 report/conversation/ticket register, V003 support navigation, and Migration Map. Neither frozen V003 authority file is staged. git status --short --branch shows every change staged on v003/skills-milestones-legacy-retirement, with no unstaged or untracked files. Both git diff --cached --check and git diff --check exited 0 with no findings. The manifest was updated to record the final 3/3 R100 result.
+
+**Commit boundary:** The staged diff is ready for the Operator-authorized commit message. No commit, push, PR, or merge had occurred at this review checkpoint.
+
+### Complete staged-scope Markdown reference qualification — 2026-10-16
+
+A second scan used the final staged changed-path set and included the three renamed archive documents. Across 18 changed extant Markdown files it found 159 local destinations. The 15 current changed documents contain 155 targets and 0 broken links. The other four targets are relative links embedded in the archived, byte-identical legacy Skills README; they cannot resolve from its new archive directory. They are historical/non-operative, are disclosed in the Recycle Bin README and ledger, and were not repaired because the authorized archive must remain unchanged. Current active navigation remains fully resolving. This is a preservation qualification, not a current-route defect.

@@ -385,3 +385,8 @@ The frozen operational target tree and the V003 authority model are unchanged. T
 ## Operator-qualified V003 closeout — current disposition — 2026-10-14
 
 V003 project-level status is **QUALIFIED CLOSED BY OPERATOR DIRECTION**. Open limitations and future actions remain listed in [V003_UNRESOLVED_BRAINBOX.md](V003_UNRESOLVED_BRAINBOX.md). This status records the Operator's decision to close with follow-ups carried forward; it does not assert blanket technical PASS, recover the 20 Cline checkpoint objects, or implement planned capabilities.
+
+
+## Corrective Ticket 03 current Skills and Milestones source disposition — 2026-10-16
+
+The dated M17/M18 checkpoint sections above preserve their original historical decisions and are superseded for the current locations of three exact sources by Corrective Ticket 03. The former `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/` directory is absent; the sole active Skills master is `AI_BRAINBOX/SKILLS_AI_BRAINBOX/`. The two historical V002 milestone files have been retired to `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/`; the active `MILESTONES_BRAINBOX/` contains only its README and unchanged `[PLANNED]` Router/Agentic record. See the [Ticket 03 report](PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md), [migration map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md), and [retirement manifest](../RECYCLE_BIN_BRAINBOX/SKILLS_MILESTONES_RETIREMENT_MANIFEST_BRAINBOX.json) for evidence. No other milestone material was moved or redesigned.

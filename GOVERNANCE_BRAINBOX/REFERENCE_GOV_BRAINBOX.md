@@ -30,8 +30,11 @@ Legacy policy-bearing sources still retained at their original locations preserv
 - [Archived AI local navigation reference — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md).
 - [Archived function-area source — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md).
 - [Archived project local reference](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md) - historical source; current navigation is in DEVOPS and Sandbox READMEs.
-- [Skills local reference](../AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
+- [Current Skills master navigation](../AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md) — sole active Skills authority.
+- [Archived legacy Skills README — retired historical source](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
 
 **Prepared by:** Codex under the Operator-authorized V003-M03 ticket.
 **Last verified:** 2026-10-08
 **Ticket 01 route check:** 2026-10-16; the former PROJ_WORKFLOW source is absent and the archive and Migration Map links resolve. Other M03 source authorities were not re-audited under Ticket 01.
+
+**Ticket 03 route check:** 2026-10-16; current Skills navigation resolves to `AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md`. The former Skills source is archived as historical, and both retired V002 Milestones files route to their Ticket 03 archive paths. No historical body was rewritten.

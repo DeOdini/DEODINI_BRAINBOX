@@ -580,3 +580,28 @@ This is a Git integration status, not a blanket ticket-closure claim:
 **Findings:** LEGACY-01 qualified resolved; LEGACY-02 resolved for active navigation/former-path directions; LEGACY-03 qualified resolved; FUNC-01 and FUNC-02 resolved within their stated tree/routing scope; README-02 resolved for Ticket 01/02 retirement routing. FUNC-04 remains open and non-blocking: no verified replacement exists for the retired local request/compliance procedure. The protected reference-only Skills file, V002 milestone records, RAW/UNPROVEN content, and historical audit/version records retain qualified historical path mentions.
 
 **Git lifecycle (updated 2026-10-16):** Commit `de4a74b96872b0b63f68a3f0c8fe4981e181f614` was pushed on the retained ticket branch. PR #51 merged into `main` as `1e3bee82f2fcb7a02c3f5465ca3a325132713683`; local `main` and `origin/main` match that SHA. Staged-path review and cached whitespace checks passed. No M21/F02/overall V003 acceptance is implied.
+
+
+## V003 Corrective Ticket 03 — Legacy Skills and V002 Milestones Retirement — 2026-10-16
+
+**Branch:** v003/skills-milestones-legacy-retirement
+**Baseline:** 6cc94ce2744d1bc87a4bf0fe318c729edef19217 (verified local/GitHub main; clean before branch)
+**Current state:** Implementation locally complete; pre-publication validation is held on a wording conflict in gate 12.
+
+Three explicitly authorized files were moved byte-for-byte into the Recycle Bin. All three raw SHA-256/size values and path-aware baseline Git blob IDs match. The old Skills source directory and all three original file paths are absent. The sole active Skills master remains AI_BRAINBOX/SKILLS_AI_BRAINBOX. The active Milestones folder contains only its README and the unchanged [PLANNED] Router/Agentic record.
+
+**Gate 12 hold:** Part C requires correction of the Milestones README's current tree and archive routing, but gate 12 says both retained V003 Milestones files remain unchanged. The Router file is unchanged; the README has the explicitly required navigation correction. Operator clarification is pending. Git changes are not committed, pushed, opened as a PR, or merged.
+
+The current Markdown link check found 154 local targets in 12 affected current Markdown files, with 0 broken. Four old Skills link destinations were redirected. Four relative destinations inside the archived Skills body remain unresolved by design because the body is preserved historical evidence; they are disclosed in the archive README/ledger.
+
+The detailed 27-gate table and integrity evidence are appended to V003_FIXES_REPORT_BRAINBOX.md. The verbatim Operator attachment and current Codex clarification are in V003_FIXES_CONVO_BRAINBOX.md. The Migration Map and Retirement Ledger contain the source dispositions. Final staged review, publication and Git closeout remain pending; no ChatGPT independent verification or Operator acceptance is claimed.
+
+## V003 Corrective Ticket 03 — Gate 12 resolution and publication authorization — 2026-10-16
+
+**Gate 12: PASS.** The Operator clarified that only navigation/tree/archive-link/status/retirement edits to `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` are authorized; `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` must remain byte-identical, including `[PLANNED]`. The prior hold remains dated history.
+
+Revalidation: 3/3 archive SHA-256/size and baseline Git blob matches; all original paths and legacy Skills directory absent; active Skills master remains; Milestones contains exactly two approved files; Router, Specification, and Origin Conversation match their baseline hashes/blobs; 15 current Markdown files with 155 local targets and 0 broken; all 18 changed extant Markdown files with 159 targets have only four archival unresolved links in the unchanged Skills source body. Staged-path review passed: 19 path records are in scope, including 3 R100 moves; no unstaged or untracked files remain; both whitespace checks exit 0.
+
+The Operator authorizes the conditional Git lifecycle on the retained branch `v003/skills-milestones-legacy-retirement`: stage only Ticket 03 paths, use commit subject `V003: retire legacy Skills and V002 Milestones records`, push, create/review PR into `main`, merge if gates pass, then fast-forward local main and confirm local/tracking/remote equality. No further Skills population or Milestones migration is authorized.
+
+**Staged review:** 19 path records; 3/3 archived moves detected as R100; exact Ticket 03 scope; clean worktree/index boundary; worktree and staged git diff --check passed. Commit is authorized and pending.

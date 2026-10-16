@@ -1,6 +1,6 @@
 # RETIREMENT_LEDGER_BRAINBOX
 
-**State:** [PRESENT · POPULATED] — two authorized archive records: RET-2026-10-15-PROJ-WORKFLOW and RET-2026-10-16-LEGACY-AUTHORITY.
+**State:** [PRESENT · POPULATED] — three authorized archive records: RET-2026-10-15-PROJ-WORKFLOW, RET-2026-10-16-LEGACY-AUTHORITY, and RET-2026-10-16-SKILLS-MILESTONES.
 
 Each later entry must record retirement ID, item type, original repository-relative path, purpose, reason, Operator approval/ticket, pre-operation SHA-256 and Git blob/commit where applicable, file manifest for directories, archive path, canonical/reference replacement, affected links, verification, recovery procedure, date, and publication references. Distinguish PROPOSED, AUTHORIZED, ARCHIVED, BLOCKED, and RESTORED.
 
@@ -61,3 +61,26 @@ The archive remains complete: 88 manifest entries, 88 archived files, exact path
 - **CORE/EXE boundary:** only the eight authorized CORE source-link destinations and the EXE Research source link were changed to point to the archive. Capability text and archived source bodies were not changed; current capability truth was not revalidated.
 - **Recovery:** restore by copying the exact manifest-listed path set to the original locations only under a separately authorized recovery action; verify SHA-256 and resolve path collisions before restoration.
 - **Publication:** commit `de4a74b96872b0b63f68a3f0c8fe4981e181f614` pushed on the ticket branch; PR #51 merged to `main` as `1e3bee82f2fcb7a02c3f5465ca3a325132713683`; local `main` and `origin/main` match. See the Ticket 02 Phase 03 report for the staged review and limitations.
+
+
+## RET-2026-10-16-SKILLS-MILESTONES — ARCHIVED / INTEGRITY VERIFIED
+
+- **Operator authorization:** V003 Corrective Ticket 03, submitted 2026-10-16; dedicated branch `v003/skills-milestones-legacy-retirement`.
+- **Source set:** exactly three files: the legacy `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md`, plus `MILESTONES_BRAINBOX/MILESTONES_MUST_README.md` and `MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md`.
+- **Archive destinations:** the legacy Skills README is under `RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/`; both historical V002 milestone files are under `RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/`.
+- **Manifest:** `RECYCLE_BIN_BRAINBOX/SKILLS_MILESTONES_RETIREMENT_MANIFEST_BRAINBOX.json` records original/archive paths, raw SHA-256, byte sizes, line counts, CRLF counts, baseline Git blob IDs, and path-aware blob qualification.
+- **Integrity:** all three archive files match their source pre-move raw SHA-256 and byte size. Path-aware Git hashing at each original source path reproduces its baseline Git blob. The Windows worktree used CRLF with `core.autocrlf=true`; Git's LF-normalized blob sizes are 1,353 bytes, 26,420 bytes, and 2,230 bytes respectively. This representation difference is explained; no source/archive byte mismatch exists.
+- **Skills disposition:** the old `SKILLS_AVAIL_AI_BRAINBOX/` source directory is physically absent. `AI_BRAINBOX/SKILLS_AI_BRAINBOX/` remains the sole active Skills master. The four empty Skills placeholders previously retired in M20 remain retired; no Skills content or capability was added or promoted.
+- **Milestones disposition:** the active folder contains exactly `README_MILESTONES_BRAINBOX.md` and `BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md`. The latter's `[PLANNED]` status and original bytes are unchanged. The historical V002 README and checkpoint are archived separately, not folded into Router intent.
+- **Authority precedence:** this Ticket 03 Operator authorization supersedes prior retain-at-source and 2026-10-15 relocation statements for these exact three files only. Prior M17/F04, F10, and relocation entries remain historical and are not erased. No other milestone source was moved.
+- **Recovery:** restore from the Ticket 03 manifest only under a separate Operator-authorized action; check for destination collisions and verify raw SHA-256 before restoring. Do not overwrite active material.
+- **Current navigation:** root, AI, Skills, Governance, Milestones, and Recycle Bin routes were updated. The archived Skills body retains its F08 routing banner and one historical DOB link: four relative Markdown destinations in that preserved source body no longer resolve from the archive location. They were not edited; the Recycle Bin README supplies valid external routes to current root, Skills, and Governance navigation. These four historical-body link failures are not current navigation links.
+- **Publication at initial checkpoint:** implementation was not yet committed. The initial git mv cached diff showed R100 for all three pairs, then was unstaged while Gate 12 wording was clarified. The later Operator direction below supersedes that hold; final staged review and Git lifecycle are recorded in the appended closeout.
+
+## Corrective Ticket 03 — Gate 12 clarification and revalidation — 2026-10-16
+
+The Operator clarified that Gate 12 permits only navigation/tree/archive-link/status/retirement edits to the active Milestones README. The Router/Agentic record remains byte-identical and `[PLANNED]`. The earlier hold is superseded for current status.
+
+Revalidation confirmed all three raw source/archive hashes and sizes and all path-aware baseline blobs; both V002 paths and old Skills directory are absent; active Skills and Milestones structures match; Router and frozen authorities match their baseline raw hashes and blobs; the 15 current changed Markdown files have 155 local targets with 0 broken; the full staged scope contains 18 extant Markdown files and 159 targets, with four unresolved links only in the unchanged archived Skills source body. The earlier 154/0 result was a narrower scan. Staged rename and whitespace checks and Git closeout are recorded after completion.
+
+Ticket 03 staged-path review (2026-10-16): 19 path records, 3/3 exact R100 moves, no unstaged or untracked changes, and both staged/worktree whitespace checks passed. Only the authorized Ticket 03 scope is staged; commit and publication follow.

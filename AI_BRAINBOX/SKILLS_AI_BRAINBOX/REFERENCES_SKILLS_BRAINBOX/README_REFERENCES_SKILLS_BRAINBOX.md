@@ -35,7 +35,7 @@ The current physical tree is documented in the canonical two-descendant-level lo
 - [Governance Reference](../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md).
 - [Governance Evidence](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md).
 - [M01/M08 Migration Map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md).
-- [Retained legacy Skills README](../../SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
+- [Archived legacy Skills README — retired historical source](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
 - [M07 classification report and M08 execution report](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md).
 
 **LAST VERIFIED:** 2026-10-09 — Codex read-back after implementation.
