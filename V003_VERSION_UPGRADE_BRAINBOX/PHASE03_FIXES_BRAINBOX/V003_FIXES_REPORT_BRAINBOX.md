@@ -1791,7 +1791,7 @@ The eight CORE records each have one source-link target change and no other line
 
 One protected exception is retained by prior Operator disposition: `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md` keeps its original body and F08 routing banner byte-for-byte. The historical body still contains a relative link to the former DOB path; the banner directs current readers to root, current Skills, and Governance navigation. It is not an active operating route and was not edited. The retired local request/compliance procedure has no verified replacement; the resulting FUNC-04 authority gap remains explicitly open for a later Operator-selected ticket.
 
-Link validation covered 243 local links in 25 changed, extant Markdown files: 0 broken. Worktree `git diff --check` reports no whitespace errors; Git emits existing line-ending conversion warnings for three CRLF-configured documents. Staged-scope and cached whitespace checks are to be recorded with the publication closeout.
+The pre-publication link validation covered 243 local links in 25 then-changed Markdown files: 0 broken. After the Ticket 02 record additions, the final scoped check covered 244 local links across 28 changed, extant Markdown files: 0 broken. Worktree and staged `git diff --check` reported no whitespace errors; Git emitted existing line-ending conversion warnings for CRLF-configured documents. The staged review contained only Ticket 02 paths, including 13 exact `R100` renames; 0 unstaged and 0 untracked paths remained.
 
 ### Mandatory Ticket 02 gates
 
@@ -1817,11 +1817,11 @@ Link validation covered 243 local links in 25 changed, extant Markdown files: 0 
 | 18 | Modified local Markdown links resolve | PASS | 243 local links in 25 changed extant Markdown files; 0 broken. |
 | 19 | Applicable two-descendant-level tree rule | PASS | Root complete tree and current AI/FUNC/Recycle Bin local trees match the checked filesystem. |
 | 20 | Frozen Specification and Origin Conversation unchanged | PASS | Both SHA-256 values match the baseline hashes above. |
-| 21 | Git diff scope and whitespace validation | PASS, staged check pending | Worktree `git diff --check` has no errors; three line-ending warnings; cached check is part of staging closeout. |
+| 21 | Git diff scope and whitespace validation | PASS | Worktree and cached `git diff --check` report no whitespace errors; staged path review is limited to Ticket 02; 13 archive moves are detected as exact `R100` renames. Existing line-ending conversion warnings are documented. |
 | 22 | No unrelated Governance/FUNC/DEVOPS redesign | PASS | No unrelated architecture or capability-content changes. |
 | 23 | Retirement ledger and unresolved dispositions accurate | PASS | Ledger, manifest, Migration Map and Unresolved Register reflect retired sources and FUNC-04 gap. |
 | 24 | No claim that CORE/EXE capability content is validated | PASS | The report explicitly limits this ticket to source-reference link changes. |
 
 ### Ticket status and publication boundary
 
-Implementation and pre-publication gates pass with the documented historical/provenance qualifications above. No source is deleted from the archive, no CORE/EXE capability claim is promoted, and no M21/F02/V003 final acceptance is implied. Staging, commit, push, PR and merge are authorized only after the staged-path review and cached whitespace/secret checks pass; their actual SHAs and outcome will be appended after GitHub publication.
+Implementation, validation and the authorized Git lifecycle are complete with the historical/provenance qualifications above. Commit `de4a74b96872b0b63f68a3f0c8fe4981e181f614` was pushed on `v003/legacy-func-dob-ai-must-retirement`; PR #51 was merged to `main` as `1e3bee82f2fcb7a02c3f5465ca3a325132713683`. Local `main` and `origin/main` both resolve to that merge commit and the worktree was clean after fast-forward. The ticket branch is retained. No source was deleted from the archive, no CORE/EXE capability claim was promoted, and no M21/F02/overall V003 final acceptance is implied.

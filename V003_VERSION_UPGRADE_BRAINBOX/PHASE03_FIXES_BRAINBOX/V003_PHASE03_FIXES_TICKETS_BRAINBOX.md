@@ -579,4 +579,4 @@ This is a Git integration status, not a blanket ticket-closure claim:
 
 **Findings:** LEGACY-01 qualified resolved; LEGACY-02 resolved for active navigation/former-path directions; LEGACY-03 qualified resolved; FUNC-01 and FUNC-02 resolved within their stated tree/routing scope; README-02 resolved for Ticket 01/02 retirement routing. FUNC-04 remains open and non-blocking: no verified replacement exists for the retired local request/compliance procedure. The protected reference-only Skills file, V002 milestone records, RAW/UNPROVEN content, and historical audit/version records retain qualified historical path mentions.
 
-**Git lifecycle:** Staged-path review, cached whitespace/secret checks, commit, push, PR, merge and local-main synchronization are pending. No Git publication or final closure is claimed here.
+**Git lifecycle (updated 2026-10-16):** Commit `de4a74b96872b0b63f68a3f0c8fe4981e181f614` was pushed on the retained ticket branch. PR #51 merged into `main` as `1e3bee82f2fcb7a02c3f5465ca3a325132713683`; local `main` and `origin/main` match that SHA. Staged-path review and cached whitespace checks passed. No M21/F02/overall V003 acceptance is implied.

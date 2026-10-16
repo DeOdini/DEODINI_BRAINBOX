@@ -681,3 +681,21 @@ The complete execution ticket was supplied as `C:/Users/USER/.codex/attachments/
 > The archive checks are intact, and I found one stale current-state sentence: the AI overview still says seven empty legacy directories remain, even though Ticket 01’s final evidence confirms they were removed. I’m correcting that status, then I’ll finish the references audit and append Ticket 02’s evidence to the migration and Phase 03 records.
 
 > The archive is 13/13 byte-identical to the captured source baseline, and path-aware Git hashing reproduces all 13 original blob IDs; five files retain their original CRLF checkout representation. The eight CORE records each differ only in the approved source-link destination, and the two Research citation updates are limited to archived-source references. A bounded check found 243 local links across 25 changed Markdown files, with zero broken links.
+
+## Codex continuation - Ticket 02 Git closeout - 2026-10-16
+
+**Operator authentication response (verbatim):** “Prompt visible; signed in”
+
+**Codex commentary (verbatim):**
+
+> The staged review is clean: all 13 archived files are detected as exact `R100` renames, 0 unstaged or untracked files remain, and `git diff --cached --check` reports no whitespace errors. I’m committing this ticket’s scoped changes now.
+
+> The commit is `de4a74b96872b0b63f68a3f0c8fe4981e181f614`; the ticket branch has no upstream yet. I’m publishing it as a new remote branch, as authorized.
+
+> The push is paused without a Git response, likely at Windows credential handling. Please check the desktop for GitHub sign-in and complete it if shown; tell me if no prompt is visible so I can troubleshoot.
+
+> The branch push succeeded. I’m verifying the remote tip and comparison against `main` before opening the authorized PR; the ticket permits merge only after those checks pass.
+
+> PR #51 is open and now reports mergeable against `main`. GitHub’s comparison is one commit ahead, no review submissions or PR workflow runs are pending, and the branch head still matches the verified commit. I’m proceeding with the ticket-authorized merge.
+
+> PR #51 merged successfully as merge commit `1e3bee82f2fcb7a02c3f5465ca3a325132713683`. I’m updating the local `main` by fast-forward, then I’ll add the actual publication and merge results to the Phase 03 records in a report-only follow-up.
