@@ -23,10 +23,10 @@ When documenting projects or portfolio material, identify the engagement accurat
 ## Sources
 
 - [Frozen V003 Specification](../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§25.5–25.6, 25.11–25.12, 27.
-- [Legacy root evidence principles](../DOB_MUST_README.md), “Nothing is discarded” and “Proven means tested.”
-- [Function workflow and verification loop](../AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md), §§2.2, 9.
-- [Project workflow evidence source](../AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md).
-- [AI portfolio disclosure source](../AI_BRAINBOX/AI_MUST_README.md), “Milestones and Career Objective.”
+- [Archived root evidence principles — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md), “Nothing is discarded” and “Proven means tested.”
+- [Archived function workflow and verification loop — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md), §§2.2, 9.
+- [Archived project workflow evidence source — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md).
+- [Archived AI portfolio disclosure source — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md), “Milestones and Career Objective.”
 
 **Prepared by:** Codex under the Operator-authorized V003-M03 ticket.
 **Last verified:** 2026-10-08

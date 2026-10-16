@@ -1763,3 +1763,65 @@ Pull request [#49](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/49) from `v0
 Post-merge checks confirmed GitHub `main` at `5140df8c045fb124d13256822338b2355142ddac`. Local `main` was switched and updated with `git pull --ff-only origin main`; it ended at the same SHA with a clean worktree. The PR was closed as merged, with six changed files. The repository reported `main` unprotected at preflight, no required checks, and no commit statuses/check-runs. No remote branch was deleted. No independent ChatGPT review is claimed.
 
 **Ticket 01 final Codex disposition:** PASS WITH THE OPERATOR-APPROVED TICKET-SPECIFIC CRLF QUALIFICATION. Source deletion, archive, migration, records, scoped publication, PR merge, and immediate post-merge synchronization gates passed. This does not assert independent ChatGPT verification or erase the dated records of the earlier access-denied attempt.
+
+
+## V003 Corrective Ticket 02 - Legacy FUNC, DOB and AI_MUST retirement - 2026-10-16
+
+### Authorization and baseline
+
+The Operator-provided execution ticket authorizes the 13 exact legacy-file moves, scoped active-navigation/tree corrections, archival integrity evidence, and conditional Git publication after all gates pass. The dedicated branch is `v003/legacy-func-dob-ai-must-retirement`. The synchronized baseline is `506ad69e705ea0964eebd62ea96f559633df8331`; live GitHub comparison reports local baseline and `main` identical (0 ahead / 0 behind). PR #49 and the report-only PR #50 are merged and included. The initial worktree was clean before this branch's changes.
+
+The Operator’s later clarification is recorded verbatim in the conversation record: “Update only the links to the archive.” It authorizes only the eight CORE source-link destination changes; it does not authorize capability-content edits or validation claims.
+
+### Retirement and integrity result
+
+- Exactly 13 listed source files were inventoried and moved: eight agent FUNC reports; `FQ_MUST_README.md`; `FUNC_REQ_BRAINBOX.md`; `FUNC_WORKFLOW_BRAINBOX.md`; root `DOB_MUST_README.md`; and `AI_BRAINBOX/AI_MUST_README.md`.
+- All 13 original source paths are absent; all 13 archive destinations exist.
+- The archived files’ current SHA-256 and byte counts match the pre-move source manifest for all 13/13 files. Path-aware Git hashing reproduces all 13 baseline Git blob IDs.
+- Five files have CRLF worktree bytes while Git stores the corresponding LF-normalized blob. This is documented as a representation qualification; no source or archived content was normalized. There are zero unexplained differences.
+- The three files with RDC tool-output markers were preserved unchanged. The earliest available marker-bearing commit is `2291f0ec3e676d242610d709fbd4d0c4b03a92ce`; its parent `adf0ddf51c16c5775cf7c6310bcc11dbcef290f0` lacks the marker. Actor and cause are not established.
+- The live FUNC directory has exactly three immediate children: `AI_AGENTS_CORE_FUNC_BRAINBOX/`, `AI_AGENTS_EXE_FUNC_BRAINBOX/`, and `README_FUNC_AI_BRAINBOX.md`. Root DOB and active AI_MUST are absent.
+- Frozen Specification SHA-256 remains `08f8ebe71d26bbf17aa0b23b51b0dbd7c521f24c7abda574a03d886222e0065c`; Origin Conversation SHA-256 remains `11ea43a34c2026b15cf6b62d3eac6cf1be964d67fea19162bc90a121c4872b3d`.
+
+### Reference and tree reconciliation
+
+A bounded filename census ran before the new Ticket 02 report/map/conversation entries were appended. It scanned 752 occurrences of the 13 retired filenames across 57 Markdown, JSON, text, YAML and CSV files. It classified 133 occurrences in 14 archived bodies; 437 in 15 Version/Phase/specification/history support records; 8 in one RAW/UNPROVEN preset; 3 in the retained reference-only Skills record; and 171 in 26 current-domain/navigation/archive-support documents, including historical V002 milestone records. Those mentions are historical citations, manifest entries, or explicitly non-authoritative source references, not active instructions to execute retired files from their former locations.
+
+The eight CORE records each have one source-link target change and no other line/content difference. The Research EXE README has two source-citation destination updates to the archive. The root, AI, FUNC, Governance and Recycle Bin navigation now identify the archived sources as **RETIRED / HISTORICAL / NOT CURRENT OPERATING AUTHORITY**. The root AI population row was corrected to reflect Ticket 01’s verified removal of the seven empty PROJ source shells. Existing V002 milestone records remain identified as historical by their parent README and were not rewritten. RAW/UNPROVEN workflow text remains unchanged; its parent README states that old path mentions are historical and not active routes.
+
+One protected exception is retained by prior Operator disposition: `AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md` keeps its original body and F08 routing banner byte-for-byte. The historical body still contains a relative link to the former DOB path; the banner directs current readers to root, current Skills, and Governance navigation. It is not an active operating route and was not edited. The retired local request/compliance procedure has no verified replacement; the resulting FUNC-04 authority gap remains explicitly open for a later Operator-selected ticket.
+
+Link validation covered 243 local links in 25 changed, extant Markdown files: 0 broken. Worktree `git diff --check` reports no whitespace errors; Git emits existing line-ending conversion warnings for three CRLF-configured documents. Staged-scope and cached whitespace checks are to be recorded with the publication closeout.
+
+### Mandatory Ticket 02 gates
+
+| # | Gate | Result | Evidence / qualification |
+|---|---|---|---|
+| 1 | Clean and synchronized baseline | PASS | Initial clean checkout; GitHub compare confirms `main` equals `506ad69e705ea0964eebd62ea96f559633df8331`. |
+| 2 | Exactly 13 authorized legacy paths inventoried | PASS | The manifest lists the 11 FUNC, one DOB, and one AI_MUST source. |
+| 3 | All 13 files archived | PASS | 13/13 destinations exist and match the pre-move SHA/size values. |
+| 4 | Original paths absent | PASS | All 13 source paths absent after move. |
+| 5 | Original and archive contents reconciled | PASS | Raw SHA-256 and byte counts match for 13/13. |
+| 6 | CRLF qualifications documented | PASS | Five Git blobs are LF-normalized relative to source worktree bytes; original bytes were retained. |
+| 7 | No unexplained hash/content mismatch | PASS | Path-aware blob check matches 13/13; unexplained mismatches: 0. |
+| 8 | Retained CORE/EXE preserved | PASS WITH APPROVED LINK-ONLY CHANGES | Eight CORE source links and two Research citations updated; all other changed text and capability bodies preserved. |
+| 9 | Active FUNC contains exactly three direct children | PASS | CORE directory, EXE directory, and FUNC README only. |
+| 10 | Root DOB absent | PASS | `Test-Path DOB_MUST_README.md` returned false. |
+| 11 | Active AI_MUST absent | PASS | `Test-Path AI_BRAINBOX/AI_MUST_README.md` returned false. |
+| 12 | RDC markers preserved and documented | PASS | Marker-bearing DOB, AI_MUST and FQ bytes match their pre-move hashes; no marker cleanup. |
+| 13 | Available provenance assessed without unsupported attribution | PASS WITH LIMITATION | Earliest marker commit and parent compared; actor/cause unknown. |
+| 14 | No active execution route points to former source paths | PASS WITH DOCUMENTED HISTORICAL EXCEPTIONS | Protected Skills body, V002 milestone history, RAW/UNPROVEN text, archive/audit and version records retain non-operative references. |
+| 15 | Current README tree representations updated | PASS | Root, AI, FUNC, Governance, Recycle Bin, and relevant Fullstack routing reflect current disposition. |
+| 16 | Historical/frozen records preserved | PASS | Archived source bytes and historical snapshots retained; frozen V003 hashes unchanged. |
+| 17 | No unauthorized source files moved/deleted/modified | PASS | Exactly the authorized 13 source paths moved; other changes are scoped navigation/evidence records. |
+| 18 | Modified local Markdown links resolve | PASS | 243 local links in 25 changed extant Markdown files; 0 broken. |
+| 19 | Applicable two-descendant-level tree rule | PASS | Root complete tree and current AI/FUNC/Recycle Bin local trees match the checked filesystem. |
+| 20 | Frozen Specification and Origin Conversation unchanged | PASS | Both SHA-256 values match the baseline hashes above. |
+| 21 | Git diff scope and whitespace validation | PASS, staged check pending | Worktree `git diff --check` has no errors; three line-ending warnings; cached check is part of staging closeout. |
+| 22 | No unrelated Governance/FUNC/DEVOPS redesign | PASS | No unrelated architecture or capability-content changes. |
+| 23 | Retirement ledger and unresolved dispositions accurate | PASS | Ledger, manifest, Migration Map and Unresolved Register reflect retired sources and FUNC-04 gap. |
+| 24 | No claim that CORE/EXE capability content is validated | PASS | The report explicitly limits this ticket to source-reference link changes. |
+
+### Ticket status and publication boundary
+
+Implementation and pre-publication gates pass with the documented historical/provenance qualifications above. No source is deleted from the archive, no CORE/EXE capability claim is promoted, and no M21/F02/V003 final acceptance is implied. Staging, commit, push, PR and merge are authorized only after the staged-path review and cached whitespace/secret checks pass; their actual SHAs and outcome will be appended after GitHub publication.

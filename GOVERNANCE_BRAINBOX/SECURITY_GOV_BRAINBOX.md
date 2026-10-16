@@ -19,8 +19,8 @@ Tool access or repository visibility does not grant authorization to read unrela
 ## Sources
 
 - [Frozen V003 Specification](../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §25.7 and environment/security notes in §8.
-- [Legacy function workflow](../AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md), §§2.6 and 7.2.
-- [Function reporting requirements](../AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md), safe examples and limitation disclosure.
+- [Archived function workflow — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md), §§2.6 and 7.2.
+- [Archived function reporting requirements — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md), safe examples and limitation disclosure.
 
 **Prepared by:** Codex under the Operator-authorized V003-M03 ticket.
 **Last verified:** 2026-10-08

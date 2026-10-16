@@ -661,3 +661,23 @@ The Operator authorized the correction on `v003/f02-final-publication-verificati
 > All four outstanding ticket branches now have their own merged PRs: F11 #41, F12 #42, F13 #43, and F09 #44. I’m doing the final remote ancestry check for each branch and confirming the current `main` tip before I report completion.
 
 > The remote checks now confirm F09, F11, F12, and F13 are all ancestors of `main` (each branch is 0 commits ahead). I found one follow-up needed before closeout: the Phase 03 README still says F09 integration is in progress. I’m correcting that status and recording the four PR merge SHAs on a small documentation branch, then I’ll merge that report branch and leave the workspace on `main`.
+---
+
+## Operator instruction - V003 Corrective Ticket 02 - 2026-10-16
+
+**Operator prompt (verbatim):** ?Pasted text contains the user's request.?
+
+The complete execution ticket was supplied as `C:/Users/USER/.codex/attachments/7e1f4949-fce4-4c83-8337-8a61ff4e8258/Pasted text.txt`, titled ?DEODINI_BRAINBOX ? V003 CORRECTIVE TICKET 02 ? Legacy FUNC, DOB and AI_MUST Retirement, Archive Preservation and Active-Tree Cleanup.? The attachment remains the controlling source text; this conversation record identifies it without reformatting its body.
+
+
+## Operator clarification - CORE source links - verbatim
+
+> Update only the links to the archive
+
+## Codex commentary - Ticket 02 continuation - verbatim
+
+> I’m continuing Ticket 02 from the verified archive and navigation changes. I’ll finish the bounded reference and integrity checks, document the ticket-specific results, then proceed through the authorized Git lifecycle only if the acceptance gates pass.
+
+> The archive checks are intact, and I found one stale current-state sentence: the AI overview still says seven empty legacy directories remain, even though Ticket 01’s final evidence confirms they were removed. I’m correcting that status, then I’ll finish the references audit and append Ticket 02’s evidence to the migration and Phase 03 records.
+
+> The archive is 13/13 byte-identical to the captured source baseline, and path-aware Git hashing reproduces all 13 original blob IDs; five files retain their original CRLF checkout representation. The eight CORE records each differ only in the approved source-link destination, and the two Research citation updates are limited to archived-source references. A bounded check found 243 local links across 25 changed Markdown files, with zero broken links.

@@ -32,9 +32,9 @@ Each reusable governance rule cites its frozen authority section and the inspect
 ## Sources
 
 - [Frozen V003 Specification](../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§5, 25.2, 25.6, 25.12, 27.
-- [Root legacy rules and revision-note instruction](../DOB_MUST_README.md).
-- [AI entry and disclosure source](../AI_BRAINBOX/AI_MUST_README.md).
-- [Legacy function workflow](../AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md).
+- [Archived root rules and revision-note source — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md).
+- [Archived AI entry and disclosure source — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md).
+- [Archived function workflow — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md).
 - [Phase 02 ticket set](../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md).
 
 **Prepared by:** Codex under the Operator-authorized V003-M03 ticket.

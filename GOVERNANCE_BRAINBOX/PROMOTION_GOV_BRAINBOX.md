@@ -19,9 +19,9 @@ When promoting a project into a portfolio or public-facing record, preserve whet
 ## Sources
 
 - [Frozen V003 Specification](../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§10, 21–22, 25.8.
-- [AI entry source for engagement disclosure](../AI_BRAINBOX/AI_MUST_README.md), “Milestones and Career Objective.”
-- [Legacy full-stack workflow](../AI_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md), §§2.2–2.3, 6, 9.
-- [Legacy project-workflow evidence source](../AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md).
+- [Archived AI entry source for engagement disclosure — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md), “Milestones and Career Objective.”
+- [Archived full-stack workflow — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md), §§2.2–2.3, 6, 9.
+- [Archived project-workflow evidence source — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md).
 
 **Prepared by:** Codex under the Operator-authorized V003-M03 ticket.
 **Last verified:** 2026-10-08

@@ -2,13 +2,13 @@
 
 **PARENT:** AI_BRAINBOX/FUNC_AI_BRAINBOX/
 **CURRENT DOMAIN:** Functional capability records and execution-capability indexing for AI agents
-**PURPOSE:** Navigate retained agent-source reports and the new CORE capability registry while keeping functional capability separate from reusable knowledge and operational workflow.
+**PURPOSE:** Navigate the active CORE and EXE registries while preserving historical FUNC source material in its governed archive.
 **MENTAL MODEL:** FUNC records what an agent is exposed to and can do, what is connected and authenticated, what execution is evidenced, what is authorized, and the limitations. A tool or skill being listed does not prove connection, execution, or permission.
 **GOVERNED BY:** Governance system-wide rules; the frozen V003 Specification; Phase 02 ticket-specific authorization.
 **CANONICAL SOURCES:** Frozen V003 Specification §§9–10; V003-M05/M06/M07; legacy FUNC reports as attributed source evidence.
 **REFERENCES:** See the local tree and links below.
-**POPULATION STATE:** M05 CORE and M06 EXE remain populated; M07 classified all three ancillary sources section-by-section, without moving or rewriting them. Workflow/technology destinations remain with M08–M10 where applicable.
-**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**POPULATION STATE:** M05 CORE and M06 EXE remain populated. Ticket 02 retired the 11 legacy FUNC source files to the Recycle Bin; only the two registries and this README remain as direct FUNC children. CORE capability content and EXE evidence were not revalidated by this retirement ticket.
+**LAST VERIFIED:** 2026-10-16 — Codex Ticket 02 tree and source-routing reconciliation.
 **VERIFIER:** Codex — M07 source-section classification and M01 hash recheck; M05/M06 PASS per the independent verification archive.
 **APPLIES TO:** AI agent capability disclosure and FUNC registry navigation.
 **ENTRY NAVIGATION:** Begin with the CORE registry README for current field definitions and agent records.
@@ -18,7 +18,7 @@
 
 Current navigation snapshot; physical/population tags follow [Tree and status governance](../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
-```text
+~~~text
 FUNC_AI_BRAINBOX/ [PRESENT · POPULATED]
 ├── AI_AGENTS_CORE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
 │   ├── CHATGPT_CORE_FUNC_BRAINBOX.md [PRESENT]
@@ -45,19 +45,8 @@ FUNC_AI_BRAINBOX/ [PRESENT · POPULATED]
 │   ├── QWEN_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
 │   ├── RESEARCH_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
 │   └── README_AI_AGENTS_EXE_FUNC_BRAINBOX.md [PRESENT]
-├── CHATGPT_FUNC_BRAINBOX.md [PRESENT]
-├── CLAUDE_FUNC_BRAINBOX.md [PRESENT]
-├── CLINE_FUNC_BRAINBOX.md [PRESENT]
-├── CODEX_FUNC_BRAINBOX.md [PRESENT]
-├── COPILOT_FUNC_BRAINBOX.md [PRESENT]
-├── DEEPSEEK_FUNC_BRAINBOX.md [PRESENT]
-├── FQ_MUST_README.md [PRESENT]
-├── FUNC_REQ_BRAINBOX.md [PRESENT]
-├── FUNC_WORKFLOW_BRAINBOX.md [PRESENT]
-├── GROK_FUNC_BRAINBOX.md [PRESENT]
-├── QWEN_FUNC_BRAINBOX.md [PRESENT]
 └── README_FUNC_AI_BRAINBOX.md [PRESENT]
-```
+~~~
 
 ## Current-tree reference
 
@@ -69,9 +58,14 @@ The current physical structure is shown in the canonical two-descendant-level lo
 - M06 populated the evidence-backed EXE index; category admission and evidence limits are recorded in its linked records.
 - Reusable knowledge and skill content belongs to Skills.
 - Procedures, routing, and operating sequences belong to the appropriate workflow or DEVOPS domain.
-- FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, and FUNC_WORKFLOW_BRAINBOX.md remain at their original paths. M07 classified their sections without moving or rewriting the original bodies. F08 added a routing notice to FQ_MUST_README.md while preserving its historical body. M20 review is complete; source-specific safeguards govern future action.
+- The legacy FQ, FUNC_REQ, and FUNC_WORKFLOW sources are now archived as historical references. No replacement for their local procedures is inferred; current system-wide rules remain in Governance and the current agent registries remain under CORE/EXE.
 
-## M07 ancillary-source classification
+## Ticket 02 current source disposition — 2026-10-16
+
+The active FUNC directory has exactly three immediate children: AI_AGENTS_CORE_FUNC_BRAINBOX/, AI_AGENTS_EXE_FUNC_BRAINBOX/, and this README. The eight agent source reports and three ancillary FUNC records were moved byte-for-byte to RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/. The root DOB and AI entry files are archived beside them. See the [Ticket 02 integrity manifest](../../RECYCLE_BIN_BRAINBOX/LEGACY_AUTHORITY_RETIREMENT_MANIFEST_BRAINBOX.json) and [retirement ledger](../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md).
+
+The Operator approved updating only the eight CORE records' source-link destinations to those archive copies. Their capability text is unchanged. This retirement does not establish that archived procedures remain current or that all CORE/EXE statements are operationally verified.
+## M07 ancillary-source classification — historical checkpoint
 
 | Retained source | Current canonical disposition | Follow-up |
 |---|---|---|
@@ -79,15 +73,15 @@ The current physical structure is shown in the canonical two-descendant-level lo
 | FUNC_REQ_BRAINBOX.md | M05 CORE records own current capability-report schema; Governance owns evidence, naming, documentation, and ticketing rules. | M20 review complete; source-specific disposition remains recorded in Phase 03 |
 | FUNC_WORKFLOW_BRAINBOX.md | Mixed workflow is historical/reference-only pending content-specific destination. Generic technology knowledge may fit M08; DEVOPS/Fullstack processes are candidates for M09/M10. n8n/email remain unproven. | M08/M09/M10 classified only their authorized content; M20 review complete; source-specific disposition remains recorded in Phase 03 |
 
-No policy text was copied into FUNC. All three legacy sources remain at their original paths; F08 adds only a routing notice to FQ, with the historical body byte-for-byte preserved. The detailed per-section ledger is in the [M01 migration map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md); the execution report is in the [Phase 02 report](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md).
+No policy text was copied into FUNC. This paragraph records the M07/M19 checkpoint before Ticket 02. Ticket 02 later moved all three ancillary sources byte-for-byte into the Recycle Bin; their archived copies are historical and no active local procedures were created. The detailed per-section ledger is in the [M01 migration map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md); the execution report is in the [Phase 02 report](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md).
 
 ## Canonical references
 
 - [CORE registry](AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md)
 - [EXE capability index](AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md)
-- [FQ local compliance source](FQ_MUST_README.md)
-- [Function requests source](FUNC_REQ_BRAINBOX.md)
-- [Function workflow source](FUNC_WORKFLOW_BRAINBOX.md)
+- [Archived FQ local compliance source — historical](../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md)
+- [Archived function requests source — historical](../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md)
+- [Archived function workflow source — historical](../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md)
 - [Frozen V003 Specification](../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md)
 - [V003 Phase 02 ticket set](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
 - [Governance evidence rules](../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)

@@ -26,9 +26,9 @@ Legacy policy-bearing sources still retained at their original locations preserv
 ## Sources
 
 - [Frozen V003 Specification](../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§5, 25.2–25.3, 27.
-- [Legacy root master-copy and reference-link rules](../DOB_MUST_README.md).
-- [AI local navigation reference](../AI_BRAINBOX/AI_MUST_README.md).
-- [Function-area source links](../AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md).
+- [Archived root master-copy and reference-link rules — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md).
+- [Archived AI local navigation reference — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md).
+- [Archived function-area source — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md).
 - [Archived project local reference](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md) - historical source; current navigation is in DEVOPS and Sandbox READMEs.
 - [Skills local reference](../AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
 
