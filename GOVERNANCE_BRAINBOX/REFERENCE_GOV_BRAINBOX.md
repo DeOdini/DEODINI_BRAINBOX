@@ -21,7 +21,7 @@
 
 ## Current migration references
 
-Legacy policy-bearing sources remain in place and retain their M01 integrity baselines. Their remaining references and retirement eligibility are listed in the M03 source-disposition section of the [Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md). M19 owns complete post-migration reference reconciliation; M20 separately gates each source retirement.
+Legacy policy-bearing sources still retained at their original locations preserve their M01 integrity baselines. M20 archived all former PROJ_WORKFLOW source files. The Operator then completed the authorized empty-directory-only cleanup on 2026-10-16; a fresh checkout check confirms the former source root is absent and has no tracked paths. The earlier Windows access-denied attempts remain historical evidence in the [retirement ledger](../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md). Its [historical project README](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md) remains in the Recycle Bin. Other legacy-source dispositions are listed in the M03 section of the [Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md).
 
 ## Sources
 
@@ -29,8 +29,9 @@ Legacy policy-bearing sources remain in place and retain their M01 integrity bas
 - [Legacy root master-copy and reference-link rules](../DOB_MUST_README.md).
 - [AI local navigation reference](../AI_BRAINBOX/AI_MUST_README.md).
 - [Function-area source links](../AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md).
-- [Project local reference](../AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md).
+- [Archived project local reference](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md) - historical source; current navigation is in DEVOPS and Sandbox READMEs.
 - [Skills local reference](../AI_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md).
 
 **Prepared by:** Codex under the Operator-authorized V003-M03 ticket.
 **Last verified:** 2026-10-08
+**Ticket 01 route check:** 2026-10-16; the former PROJ_WORKFLOW source is absent and the archive and Migration Map links resolve. Other M03 source authorities were not re-audited under Ticket 01.
