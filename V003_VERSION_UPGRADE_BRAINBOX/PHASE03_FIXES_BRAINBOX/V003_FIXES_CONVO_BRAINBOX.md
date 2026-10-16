@@ -1278,3 +1278,7 @@ The authorized implementation commit `a85890972e8eeb4951f80f2dc5d0db7e8ab86aec` 
 Local `main` was fetched and fast-forwarded with `git pull --ff-only origin main` from `6cc94ce2744d1bc87a4bf0fe318c729edef19217` to `b6ccd6bb3815dc2a88f9f19384710dd8802d4eb8`. At that checkpoint, local `main` equaled `origin/main` and the worktree was clean. The Ticket 03 branch remains retained locally and remotely. A separate report-only closeout branch/PR is being used to preserve these post-merge facts without adding them to the already merged implementation commit.
 
 This is Codex execution reporting, not an independent ChatGPT verdict. It does not close M21, Phase 02, Phase 03, or overall V003 acceptance.
+
+## Codex response - supplemental main branch protection verification - 2026-10-16
+
+A follow-up read of GitHub's repository branch metadata for `main` returned `protected: false`, `protection.enabled: false`, and required-status-check enforcement `off` with no contexts or checks. The repository rulesets endpoint was empty. This supplements the prior report that the dedicated branch-protection endpoint itself returned HTTP 403; the broader branch metadata endpoint provided the current protection state. A separate report-only record is being prepared so the final audit trail includes this supplemental verification.
