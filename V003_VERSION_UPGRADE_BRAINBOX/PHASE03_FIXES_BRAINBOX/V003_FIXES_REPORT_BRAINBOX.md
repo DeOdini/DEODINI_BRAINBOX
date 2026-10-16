@@ -1518,3 +1518,11 @@ The Operator explicitly authorized moving both records from repository-root `MIL
 ## Final branch synchronization verification - 2026-10-15
 
 Follow-up closeout commit `1e74ae71b56ee6df74a91cc3baa1e0f21d8643d8` was pushed to `v003/repository-poc-naming-reconciliation`. A fresh `git ls-remote` returned that exact SHA for the remote ref. Local `HEAD` matches the remote; `git rev-list --left-right --count HEAD...origin/v003/repository-poc-naming-reconciliation` returned `0 0`, and `git status --short --branch` showed no local changes. The branch remains unmerged, with no PR or `main` update.
+
+## Operator disposition — Specification §§8–18 — 2026-10-16
+
+**Decision:** RESOLVED — GOVERNANCE POLICY AND README NAVIGATION IMPLEMENTED; SEMANTIC STATUS VERIFICATION QUALIFIED. Operator explicitly approved removing this last active item from the V003 Unresolved Register.
+
+**Evidence:** GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md defines physical existence, populated/stub/empty/absent states, planned/active/unverified/verified/retired lifecycle distinctions, and mandatory two-descendant-level subtree navigation. Published V003 README reconciliation was checked across 81 applicable folder READMEs for canonical local-tree sections and fenced tree-depth compliance; the result does not represent a comprehensive independent semantic audit of every status label. Approved absent/planned, reserved and intentionally empty capabilities are valid architecture states, not necessarily migration defects.
+
+**Limit:** Closure does not populate reserved capabilities, establish operational verification, eliminate future drift or certify every label's semantic correctness. Future content population and validation hardening are separately ticketed work. V003 historical evidence and frozen Specification remain unchanged. Governance and root-README concerns identified in subsequent Grok and ChatGPT audits will be listed as separate categorized follow-ups, not conflated with this resolved matter.
