@@ -11,9 +11,9 @@
 **RELATED DOMAINS:** Governance, Version History, Milestones, Portfolio, and FootHive Sandbox/Production.
 **CANONICAL SOURCES:** Frozen V003 Specification §§8-10, 15-20; Governance; V003 Origin Conversation for decision history; Phase 02 for migration process.
 **REFERENCES:** Use the local navigation links and Migration Map below.
-**POPULATION STATE:** M05-M20 target records and reconciliations are present. M18 Router/Agentic implementation remains [PLANNED]. M20 archived 88 legacy project-workflow files; seven empty legacy directory shells remain physically present because Windows cleanup did not remove them. The archived source contents remain preserved in the Recycle Bin.
-**LAST VERIFIED:** 2026-10-15 — Codex pre-publication source, tree, and navigation reconciliation.
-**VERIFIER:** Codex — 2026-10-15 pre-publication reconciliation; prior ChatGPT independent ticket verifications are recorded in Phase 02. Current publication checks are recorded in Phase 03.
+**POPULATION STATE:** M05-M20 target records and reconciliations are present. M18 Router/Agentic implementation remains [PLANNED]. Ticket 02 archived the 11 legacy FUNC files and the root/AI MUST_README files without changing their source bytes. Ticket 01's 88-file project archive is retained; the former PROJ_WORKFLOW source tree is physically absent.
+**LAST VERIFIED:** 2026-10-16 — Codex Ticket 02 source, tree, and navigation reconciliation.
+**VERIFIER:** Codex — Ticket 02 filesystem, archive, and navigation checks; prior ChatGPT independent ticket verifications remain in Phase 02. Ticket 02 is awaiting independent review.
 **ENTRY NAVIGATION:** Start with FUNC, DEVOPS, or Skills according to the knowledge responsibility.
 **EXIT NAVIGATION:** Return to root `README_BRAINBOX.md` for the complete target tree or Governance for system-wide rules.
 **APPLIES TO:** `AI_BRAINBOX/` and its approved V003 target branches.
@@ -22,7 +22,7 @@
 
 Current navigation snapshot; physical/population tags follow [Tree and status governance](../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). This local view shows every direct child and each directory child’s direct children. For a deeper path, open the corresponding child README; consult the root README for the complete tree.
 
-```text
+~~~text
 AI_BRAINBOX/ [PRESENT · POPULATED]
 ├── DEVOPS_AI_BRAINBOX/ [PRESENT · POPULATED]
 │   ├── PROD_DEVOPS_BRAINBOX/ [PRESENT · POPULATED]
@@ -31,20 +31,7 @@ AI_BRAINBOX/ [PRESENT · POPULATED]
 ├── FUNC_AI_BRAINBOX/ [PRESENT · POPULATED]
 │   ├── AI_AGENTS_CORE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
 │   ├── AI_AGENTS_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
-│   ├── CHATGPT_FUNC_BRAINBOX.md [PRESENT]
-│   ├── CLAUDE_FUNC_BRAINBOX.md [PRESENT]
-│   ├── CLINE_FUNC_BRAINBOX.md [PRESENT]
-│   ├── CODEX_FUNC_BRAINBOX.md [PRESENT]
-│   ├── COPILOT_FUNC_BRAINBOX.md [PRESENT]
-│   ├── DEEPSEEK_FUNC_BRAINBOX.md [PRESENT]
-│   ├── FQ_MUST_README.md [PRESENT]
-│   ├── FUNC_REQ_BRAINBOX.md [PRESENT]
-│   ├── FUNC_WORKFLOW_BRAINBOX.md [PRESENT]
-│   ├── GROK_FUNC_BRAINBOX.md [PRESENT]
-│   ├── QWEN_FUNC_BRAINBOX.md [PRESENT]
 │   └── README_FUNC_AI_BRAINBOX.md [PRESENT]
-├── PROJ_WORKFLOW_AI_BRAINBOX/ [PRESENT · STUB] — seven empty legacy directory shells; source files archived
-│   └── FOOTHIVE_PROJ_BRAINBOX/ [PRESENT · STUB]
 ├── SKILLS_AI_BRAINBOX/ [PRESENT · POPULATED]
 │   ├── COMMANDS_SKILLS_BRAINBOX/ [PRESENT · POPULATED]
 │   ├── LANGUAGES_SKILLS_BRAINBOX/ [PRESENT · POPULATED]
@@ -59,9 +46,8 @@ AI_BRAINBOX/ [PRESENT · POPULATED]
 │   └── README_SKILLS_AI_BRAINBOX.md [PRESENT]
 ├── SKILLS_AVAIL_AI_BRAINBOX/ [PRESENT · POPULATED] — reference-only legacy Skills source
 │   └── SKILLS_MUST_README.md [PRESENT]
-├── AI_MUST_README.md [PRESENT] — legacy entry with F08 routing notice
 └── README_AI_BRAINBOX.md [PRESENT]
-```
+~~~
 
 ## Current-tree reference
 
@@ -69,17 +55,18 @@ The authoritative current local tree is limited to two descendant levels under t
 
 The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
-## Retained legacy-source overlay
+## Retired and retained legacy-source overlay
 
-The old project-workflow path remains only as seven empty filesystem directory shells; its 88 historical files are preserved under the [Recycle Bin archive](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/). `AI_MUST_README.md` remains at its source path with the F08 routing banner, and `SKILLS_AVAIL_AI_BRAINBOX/` remains reference-only. These paths do not replace the target branches above or own current system-wide policy:
+The 11 legacy FUNC reports, requirements, and workflow files, plus the DOB_MUST_README.md and AI_MUST_README.md entry files, were retired from their former paths on 2026-10-16 and preserved byte-for-byte in the [Ticket 02 archive](../RECYCLE_BIN_BRAINBOX/README_RECYCLE_BIN_BRAINBOX.md). The former PROJ_WORKFLOW tree is physically absent; its 88 historical files remain in the [Ticket 01 archive](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/). SKILLS_AVAIL_AI_BRAINBOX remains reference-only under the prior F10 Operator decision. Archived sources are historical evidence, not current operating instructions:
 
-```text
-AI_BRAINBOX legacy sources/
-+-- AI_MUST_README.md [legacy entry; F08 routes to current root/AI/Governance, body preserved]
-+-- PROJ_WORKFLOW_AI_BRAINBOX/ [7 empty directory shells; 88 source files archived]
-+-- SKILLS_AVAIL_AI_BRAINBOX/ [reference-only historical Skills source]
-```
-
+~~~text
+AI_BRAINBOX legacy-source boundary/
++-- ../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md [retired; historical entry]
++-- ../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md [retired; historical root entry]
++-- ../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/ [11 retired FUNC files; see manifest]
++-- ../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/ [88 archived historical files; former source tree absent]
++-- SKILLS_AVAIL_AI_BRAINBOX/ [reference-only legacy Skills source; retained by F10]
+~~~
 - [Root README and complete target tree](../README_BRAINBOX.md)
 - [Governance index](../GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md)
 - [FUNC navigation](FUNC_AI_BRAINBOX/README_FUNC_AI_BRAINBOX.md)
@@ -88,4 +75,4 @@ AI_BRAINBOX legacy sources/
 - [V003 Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 - [Phase 02 migration records](../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md)
 
-**Legacy-source boundary:** Current system-wide rules are in Governance. Old RAW/PROVEN/FAILED and MUST_README documents remain historical or pending ticket-specific review; they must not be used as current canonical authority.
+**Legacy-source boundary:** Current system-wide rules are in Governance, and current capability/execution records are under CORE/EXE. Archived authority files and the retained Skills legacy source are historical/reference-only; do not execute their former procedures as current authority. The raw Fullstack preset remains RAW/UNPROVEN and is not an active replacement for archived FUNC workflow material.

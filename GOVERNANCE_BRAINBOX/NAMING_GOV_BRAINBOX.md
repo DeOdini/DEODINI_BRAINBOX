@@ -19,7 +19,7 @@ The concise `GOV` infix was normalized during V003 Phase 01. The final approved 
 
 - [Frozen V003 Specification](../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md)
 - [V003 Origin Conversation](../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
-- [Legacy root naming/navigation source](../DOB_MUST_README.md)
+- [Archived root naming/navigation source — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md)
 - [Migration map and M03 source dispositions](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 
 **Prepared by:** Codex under the Operator-authorized V003-M03 ticket.

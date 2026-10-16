@@ -66,6 +66,8 @@ The copied documents contain source-era Storage paths and references to RAW -> P
 
 The preset's n8n-primary/email-backup dispatch is untested source content. M10 did not configure or claim automation. The source records remain RAW / UNPROVEN, and no Production result or application-specific architecture decision was created.
 
+The RAW preset preserves historical path mentions of FUNC_WORKFLOW, FUNC_REQ, FQ_MUST_README, AI_MUST_README, and DOB_MUST_README. Those legacy files are now RETIRED / HISTORICAL / NOT CURRENT OPERATING AUTHORITY in the Recycle Bin. These mentions remain unchanged in the RAW/UNPROVEN source and do not direct agents to execute those former procedures; consult the current FUNC/AI and Governance READMEs instead. The archive path and source disposition are recorded in the [Ticket 02 manifest](../../../../../RECYCLE_BIN_BRAINBOX/LEGACY_AUTHORITY_RETIREMENT_MANIFEST_BRAINBOX.json).
+
 ## References
 
 - [Fullstack Sandbox parent](../README_FULLSTACK_SANDBOX_BRAINBOX.md)

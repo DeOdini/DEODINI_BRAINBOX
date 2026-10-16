@@ -28,15 +28,14 @@ This Phase 02 operating addendum supersedes the frozen Specification's blanket s
 
 ## Local request procedures
 
-Function-area request submission and compliance procedures remain documented in `FQ_MUST_README.md` and `FUNC_REQ_BRAINBOX.md` pending their content-specific migration. This file owns system-wide ticket and authorization principles; it does not replace those local procedures.
-
+The former FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md sources are archived as historical records. No current replacement for the local function-area reading and request-submission procedure has been established; this is an authority gap for a later authorized ticket. This file owns current system-wide ticket and authorization principles. Agent capability-report fields belong to the CORE registry and do not recreate the retired local procedure.
 ## Sources
 
 - [Frozen V003 Specification](../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§25.8, 26–27.
 - [Phase 02 ticket set](../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md), P14, report contract, and batch rules.
 - [Phase 02 README](../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md), active flag-handling and batch cadence.
 - [Operator declaration record](../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md), “Operator Declaration — Phase 02 Flag Handling and Batch Fix Discipline.”
-- [Legacy function request/compliance records](../AI_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md) and `FUNC_REQ_BRAINBOX.md`, local procedure pending M07/M19/M20.
+- [Archived FQ request/compliance source — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md) and [archived FUNC_REQ source — historical](../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_REQ_BRAINBOX.md). No local replacement procedure is currently established.
 
 **Prepared by:** Codex under the Operator-authorized V003-M03 ticket.
 **Last verified:** 2026-10-08

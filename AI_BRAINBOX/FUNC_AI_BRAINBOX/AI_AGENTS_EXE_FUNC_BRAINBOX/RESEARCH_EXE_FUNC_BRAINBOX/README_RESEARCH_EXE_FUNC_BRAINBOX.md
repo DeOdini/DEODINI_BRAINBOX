@@ -7,7 +7,7 @@
 **GOVERNED BY:** Governance evidence rules; frozen V003 Specification §9; V003-M06.
 **CANONICAL_SOURCE:** Frozen V003 Specification §9, P06 proposed capability matrix.
 **REFERENCED_BY:** EXE index; CODEX_CORE_FUNC_BRAINBOX.md.
-**REFERENCES:** CODEX_FUNC_BRAINBOX.md; CODEX_CORE_FUNC_BRAINBOX.md; P06 matrix.
+**REFERENCES:** [Archived Codex FUNC source — historical](../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/CODEX_FUNC_BRAINBOX.md); CODEX_CORE_FUNC_BRAINBOX.md; P06 matrix.
 **STATUS:** [ADMITTED - HISTORICAL EXECUTION EVIDENCE]
 **LAST_VERIFIED:** 2026-10-08 - evidence record reviewed; live web runtime was not exercised for M06.
 **APPLIES_TO:** Codex public-source research.
@@ -30,7 +30,7 @@ RESEARCH_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED]
 - **Connection:** The P06 matrix records public-web connection on 2026-10-07; this is not a current-session connection assertion.
 - **Authentication:** Not applicable for the cited public sources.
 - **Execution verified:** YES - the P06 matrix records retrieval and citation of official GitHub Status history on 2026-10-07.
-- **Evidence:** [Frozen P06 matrix](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md); [Codex CORE](../../../../AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md); [Codex source report](../../../../AI_BRAINBOX/FUNC_AI_BRAINBOX/CODEX_FUNC_BRAINBOX.md).
+- **Evidence:** [Frozen P06 matrix](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md); [Codex CORE](../../../../AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md); [Codex source report](../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/CODEX_FUNC_BRAINBOX.md).
 
 ## Limits and authority
 

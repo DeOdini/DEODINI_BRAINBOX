@@ -567,3 +567,16 @@ This is a Git integration status, not a blanket ticket-closure claim:
 - F11 remains OPEN for the broader source-disposition and independent-verification gates; only the narrow approved F14 catalog-link precedence exception is resolved.
 - F09/F12/F13 remain limited to their recorded Operator-approved methodology, ownership, and conditional promotion-policy scopes.
 - M21-GIT-01, renewed M21 acceptance, Phase 02 acceptance, and overall V003 closure remain pending.
+
+
+## V003 Corrective Ticket 02 - Legacy FUNC, DOB and AI_MUST retirement - 2026-10-16
+
+**Ticket identity:** V003 Corrective Ticket 02 is distinct from Phase 03 ticket V003-F02. Its authorization is the Operator-provided attachment `# DEODINI_BRAINBOX — V003 CORRECTIVE TICKET 02`, on branch `v003/legacy-func-dob-ai-must-retirement`.
+
+**Implementation state:** COMPLETE / PRE-PUBLICATION VALIDATION PASS WITH DOCUMENTED QUALIFICATIONS. Thirteen authorized source files are archived unchanged; active FUNC contains exactly its two registries plus local README; root DOB and active AI_MUST are absent. The report, Migration Map, Recycle Bin manifest/ledger, current READMEs and Unresolved Register record the disposition. Frozen V003 Specification and Origin Conversation hashes match baseline.
+
+**Reference approval:** The Operator clarified, verbatim, “Update only the links to the archive.” Eight CORE source-link destinations were updated; CORE capability text was not edited. The Research EXE README has two archived-source citation destination changes. These are reference corrections, not capability verification.
+
+**Findings:** LEGACY-01 qualified resolved; LEGACY-02 resolved for active navigation/former-path directions; LEGACY-03 qualified resolved; FUNC-01 and FUNC-02 resolved within their stated tree/routing scope; README-02 resolved for Ticket 01/02 retirement routing. FUNC-04 remains open and non-blocking: no verified replacement exists for the retired local request/compliance procedure. The protected reference-only Skills file, V002 milestone records, RAW/UNPROVEN content, and historical audit/version records retain qualified historical path mentions.
+
+**Git lifecycle:** Staged-path review, cached whitespace/secret checks, commit, push, PR, merge and local-main synchronization are pending. No Git publication or final closure is claimed here.
