@@ -697,3 +697,7 @@ Audit commit `92bf125f8c9ae3211d122010e6cc3f70ba386285` is pushed and confirmed 
 **FUNC-03:** OPEN pending independent verification and Operator acceptance.
 **C02:** NOT STARTED; wait for the C01 independent verification gate.
 **Git lifecycle:** Correction and reporting records are authorized for staging, commit, and push on the existing batch branch. No PR or merge is authorized. Commit and remote SHA will be recorded after publication.
+
+### C01-R01 Git publication checkpoint - 2026-10-17
+
+Commit `955fbc9ea2c39959c0ae04a67c958a2376b0e1e4` (`V003: clarify historical Codex CORE capability status`) is pushed and confirmed by GitHub commit fetch. Compare: branch 3 commits ahead / 0 behind `main`; the three changed paths are the authorized Codex CORE record and the Phase 03 report/register. Local HEAD and upstream matched at the commit; worktree clean. No PR or merge; PR #70 untouched. Independent ChatGPT verification remains pending, FUNC-03 remains open, and C02 is not started.

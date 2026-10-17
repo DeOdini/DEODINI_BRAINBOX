@@ -2447,3 +2447,7 @@ The EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, and AUTHORIZED sections now i
 **FUNC-03:** OPEN pending independent verification and Operator acceptance; no issue closure is claimed.
 **C02:** NOT STARTED; remains gated on independent review of C01 and C01-R01.
 **Git publication:** Correction and this report/ticket-register update are authorized for the existing batch branch. Commit and remote verification details will be recorded in the publication checkpoint after push. No PR or merge is authorized.
+
+### C01-R01 publication checkpoint - 2026-10-17
+
+Correction commit `955fbc9ea2c39959c0ae04a67c958a2376b0e1e4` (`V003: clarify historical Codex CORE capability status`) was pushed to `origin/v003/func-bc-core-exe-and-procedure-disposition`. GitHub commit fetch returned the same full SHA and subject. GitHub compare reports the branch 3 commits ahead / 0 behind `main` at `b7a7a1d533277bc02f0613de198a9eaa9acb7afa`, with exactly three changed paths: the approved Codex CORE record and the two Phase 03 reporting records. Local HEAD and the upstream branch tip matched at the correction commit, and the worktree was clean. No PR was opened or merge performed; PR #70 was not changed. C01-R01 awaits ChatGPT independent verification; FUNC-03 remains open and C02 has not started.
