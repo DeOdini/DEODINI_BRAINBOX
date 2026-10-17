@@ -10,7 +10,7 @@
 **APPLIES TO:** Actual production operations and their evidence, subject to applicable Operator authorization.
 **POPULATION STATE:** M14 structure plus the M16 FootHive T20 Production summary are present. No separate Production deployment procedure, ongoing operations, or monitoring outcome is claimed.
 **VERIFIER:** Codex — M14 implementation checks and M16 current-tree/link checks; independent ChatGPT M14 verification: PASS (2026-10-09); M16 independent verification: PASS (Batch D closeout, 2026-10-09).
-**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**LAST VERIFIED:** 2026-10-17 — Codex A03 checked the Production tree, placeholder states, M14/M16 record boundaries, and local references; no live site or production system was tested.
 
 ## Canonical local tree — two descendant levels
 
@@ -81,22 +81,24 @@ M16 populated the Production case-study branch with the T20 release summary and 
 
 ## Related domains
 
-- [DEVOPS parent](../README_DEVOPS_AI_BRAINBOX.md)
-- [Production Fullstack](FULLSTACK_PROD_BRAINBOX/README_FULLSTACK_PROD_BRAINBOX.md)
-- [Production Environment](ENVIRONMENT_PROD_BRAINBOX/README_ENVIRONMENT_PROD_BRAINBOX.md)
-- [Sandbox DEVOPS](../SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md)
-- FootHive Production summary: M16; no FootHive material was moved by M14.
+- [DEVOPS parent](../README_DEVOPS_AI_BRAINBOX.md) — parent-level execution-domain navigation.
+- [Production Fullstack](FULLSTACK_PROD_BRAINBOX/README_FULLSTACK_PROD_BRAINBOX.md) — indexes the five Production workflow branches, which remain placeholders.
+- [Production Environment](ENVIRONMENT_PROD_BRAINBOX/README_ENVIRONMENT_PROD_BRAINBOX.md) — documents safe variable handling and placeholder templates, not a live environment.
+- [Sandbox DEVOPS](../SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md) — routes to trial/workflow evidence; Sandbox outcomes are not inherited by Production.
+- [Production POC index](POC_PROD_BRAINBOX/README_POC_BRAINBOX.md) — routes to the M16 FootHive T20 release summary; M14 did not move or create FootHive records.
 
 ## Canonical sources and references
 
-- [Root tree and navigation](../../../README_BRAINBOX.md)
-- [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25
-- [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
-- [Governance Security](../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
-- [Governance Evidence](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
-- [Governance Promotion](../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
-- [M10 Fullstack workflows and deployment classification](../SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md)
-- [Phase 02 ticket set](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
-- [Living migration map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
+- [Root tree and navigation](../../../README_BRAINBOX.md) — complete current repository tree and root navigation authority.
+- [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25 — approved domain structure and architecture.
+- [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md) — historical decision context, not current operational procedure.
+- [Governance Security](../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md) — secret-handling and access-authority boundaries.
+- [Governance Evidence](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md) — provenance and verification-claim requirements.
+- [Governance Promotion](../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md) — evidence gates between Sandbox, Production, and Portfolio claims.
+- [Governance Reference](../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md) — canonical ownership and current-versus-historical reference rules.
+- [Governance Ticketing](../../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md) — ticket scope and distinct Git/Operator approval gates; this link grants no operation authority.
+- [M10 Fullstack workflows and deployment classification](../SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md) — source review found no executable deployment procedure to promote.
+- [Phase 02 ticket set](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md) — migration-process scope, not Production operating instructions.
+- [Living migration map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — M09/M14/M16 dispositions and verification limits; not evidence of current site health.
 
 **Prepared by:** Codex under the Operator-authorized V003-M14 ticket.
