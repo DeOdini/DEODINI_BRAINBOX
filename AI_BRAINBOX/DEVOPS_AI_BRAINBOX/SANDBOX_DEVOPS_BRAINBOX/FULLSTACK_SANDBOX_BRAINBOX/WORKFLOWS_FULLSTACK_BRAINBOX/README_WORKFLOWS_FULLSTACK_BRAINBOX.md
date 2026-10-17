@@ -8,7 +8,7 @@
 **GOVERNED BY:** Governance Evidence, Reference, Promotion, and Ticketing; Sandbox DEVOPS authority.
 **CANONICAL SOURCE:** Frozen V003 Specification §11; V003-M10 migration record.
 **APPLIES TO:** Fullstack discovery, blueprint, build-order, ticketing, execution, testing, and workflow-candidate material.
-**LAST VERIFIED:** 2026-10-09
+**LAST VERIFIED:** 2026-10-17 — Codex B01 physical tree, RAW-status, current/archive source identity, and reference checks; no workflow was executed.
 
 ## Canonical local tree — two descendant levels
 
@@ -27,7 +27,7 @@ The current physical tree is documented in the canonical two-descendant-level lo
 
 ## Source-backed workflow records
 
-The two workflow records below were copied byte-for-byte from the legacy RAW folder after inspecting their actual content. Their original source files remain unchanged until M20. The target copies preserve the RAW / UNPROVEN status; copying does not prove, activate, or promote them.
+The two workflow records below were copied byte-for-byte from the legacy RAW folder after inspecting their actual content. M20 later archived the legacy originals at the paths shown in the table. B01 rechecked both pairs: byte size, line count, SHA-256, and Git blob identity match. The target copies remain RAW / UNPROVEN; copying does not prove, activate, or promote them.
 
 | Target record | Legacy source | Current content state | Disposition |
 | --- | --- | --- | --- |

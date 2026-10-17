@@ -8,7 +8,7 @@
 **GOVERNED BY:** Governance Evidence, Reference, Naming, and Ticketing; Fullstack Sandbox authority.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8 and 11; V003-P07; V003-M10.
 **APPLIES TO:** Architecture choices and application records in Fullstack builds.
-**LAST VERIFIED:** 2026-10-09
+**LAST VERIFIED:** 2026-10-17 — Codex B01 physical tree, placeholder-state, and reference checks; no architecture choice or runtime behavior was tested.
 
 ## Canonical local tree — two descendant levels
 
@@ -49,11 +49,11 @@ The current physical tree is documented in the canonical two-descendant-level lo
 
 ## Scope and population state
 
-The tree contains only the application branches approved in frozen Specification §11. These branches are structurally present and empty. M10 did not invent a static-site, SPA, SSR, Jamstack, monolith, microservices, serverless, event-driven, API-first, or other application choice.
+The tree contains the 11 architecture application branches approved in frozen Specification §11 plus the `ARCH_DECISIONS_BRAINBOX/` register. Each of these 12 directories is physically present with only a zero-byte `.gitkeep` marker and is therefore `[PRESENT · STUB]` under Tree and Status Governance. M10 did not invent a static-site, SPA, SSR, Jamstack, monolith, microservices, serverless, event-driven, API-first, or other application choice.
 
 The legacy RAW workflow's assumed React/TypeScript + FastAPI + Supabase/PostgreSQL + Docker stack remains an unverified workflow assumption. It is not a project architecture decision. The preset's Supabase/FastAPI authentication example is illustrative source material, not an implemented application.
 
-No architecture decision record is populated. `ARCH_DECISIONS_BRAINBOX/` is an empty placeholder pending evidence-backed, project-specific decisions.
+No architecture decision record is populated. `ARCH_DECISIONS_BRAINBOX/` contains only a zero-byte `.gitkeep` marker and remains a structural stub pending evidence-backed, project-specific decisions.
 
 ## Canonical pattern relationship
 
@@ -62,6 +62,8 @@ Generic principles, tradeoffs, and reusable evaluation guidance belong in [Skill
 When application evidence exists, the Fullstack application record must reference the canonical Skills pattern record. A Skills pattern may reference a Fullstack application, but must not duplicate its project-specific decision content.
 
 ## Related domains and references
+
+The frozen Specification defines the approved application branches and boundaries. The Origin Conversation supplies decision-history context, Governance Reference supplies the canonical-ownership and reference-purpose rules, and the M10 ticket plus living migration map preserve source classification and migration dispositions; none of these references establishes a current architecture selection.
 
 - [Fullstack Sandbox](../README_FULLSTACK_SANDBOX_BRAINBOX.md)
 - [Workflows](../WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md)
