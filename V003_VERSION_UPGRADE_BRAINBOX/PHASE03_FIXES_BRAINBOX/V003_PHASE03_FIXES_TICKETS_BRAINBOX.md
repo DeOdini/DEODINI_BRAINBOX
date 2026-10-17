@@ -786,3 +786,11 @@ Implementation commit `d8159e0e0ef35cc598838d8626d79497d1bea19d` (`V003: align D
 - **Unresolved Register:** The accepted FUNC-03 and FUNC-04 active rows are removed. Eight active IDs remain: V003-STATUS-01, V003-STATUS-02, README-01, README-03, GOVERNANCE-01, GOVERNANCE-02, GOVERNANCE-03, GOVERNANCE-04. Historical evidence and permanent IDs remain preserved.
 - **PR #70:** This branch is reconciled with current origin/main at 3cb187d4b3bb32aa34322e1ba759854dfbe1e6a2. The PR description and final changed-file list will be verified after push. No additional issue closure, runtime certification, source retirement, force-push, or branch deletion is authorized or performed.
 - **Git publication and synchronization:** Exact report commit(s), PR #70 head, merge result, main SHA, and clean local/remote state are recorded in the publication follow-up checkpoint after the authorized lifecycle completes.
+
+### CLOSEOUT-01 Git publication and merge verification - 2026-10-17
+
+- PR #70 was merged into main at e02445f5b5182fb081e03698d56eb58c90cd5967. The final published PR head was be7c575cb70dfc0791f4472a6d845eddda65f41e.
+- The PR contained exactly three files: the active Unresolved Register, Phase 03 Fixes Report, and Phase 03 Ticket Register. The active index records eight remaining issue IDs; FUNC-03 and FUNC-04 remain traceable in permanent evidence and are absent from active rows.
+- The final GitHub PR readback confirmed state CLOSED / MERGED. No force operation or branch deletion was used.
+- Local main was fast-forwarded to origin/main at e02445f5b5182fb081e03698d56eb58c90cd5967 and verified clean and synchronized (ahead/behind 0/0).
+- At post-merge audit, no remote branch tip was unmerged from main. The merged PR branch remains retained. Exact closeout verification and this report-only publication are separate from application/runtime certification and overall V003 closure claims.
