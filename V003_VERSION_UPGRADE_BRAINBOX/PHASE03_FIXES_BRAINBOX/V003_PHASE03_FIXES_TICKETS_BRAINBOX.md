@@ -706,3 +706,21 @@ Commit `955fbc9ea2c39959c0ae04a67c958a2376b0e1e4` (`V003: clarify historical Cod
 ### C01 / FUNC-03 Operator acceptance checkpoint — 2026-10-17
 
 ChatGPT independently verified the C01 audit and C01-R01 historical-status correction as PASS. Operator explicitly accepted FUNC-03 closure and directed continuation to C02. **FUNC-03: CLOSED — OPERATOR ACCEPTED; pending batch merge/publication to main.** C02 / FUNC-04 remains OPEN. Existing historical and current-runtime evidence limitations retained. No PR/merge authorized by this checkpoint.
+
+
+## V003-FUNC-BC-C02 - FUNC Local Procedure Requirement and Authority Disposition - 2026-10-17
+
+**Issue:** FUNC-04 (displayed as 01 in the cleaned register).
+**Operator authorization:** Authorized C02-01 through C02-10, a report/register-only assessment, and ticket-level stage/commit/push on the existing batch branch.
+**Branch/base:** v003/func-bc-core-exe-and-procedure-disposition; C02 baseline 0fa2fc362e2261c28223a79a3fb71fb6e646fd6b, equal to origin after a fast-forward-only update. Preflight worktree clean. PR #70 was read-only checked (OPEN, one unrelated changed file, no overlap) and was not modified.
+**Inspected:** Archived FQ_MUST_README, FUNC_REQ_BRAINBOX, FUNC_WORKFLOW_BRAINBOX; current FUNC README; CORE/EXE READMEs and questionnaires; Ticketing, Documentation, and Evidence Governance; frozen V003 §9 and Phase 02/M07 source classifications; Recycle Bin integrity manifest and V003 migration ledger.
+**C02-01 through C02-10:** Completed. The full responsibility-by-responsibility matrix, evidence references, archive integrity values, 66-link/0-broken result, and Git/source limitations are recorded in the Phase 03 Fixes Report under this C02 heading.
+**Disposition recommendation:** NO LOCAL REPLACEMENT REQUIRED. System-wide ticketing/authorization, documentation, and evidence rules plus the FUNC README route and CORE/EXE schemas cover capability request routing, evidence intake, operation records, and permissions. No second local compliance/request procedure is needed or implemented.
+**C02-GOV-01:** GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md:29-31 still labels the lack of a local replacement an "authority gap for a later authorized ticket." C02 finds the newer active TGB standard sufficient, so the phrase requires separate dated Governance wording reconciliation. This is a closure gate for FUNC-04, not a blocker to publishing the C02 assessment. Governance was not modified.
+**Historical integrity:** Archived sources remain at their approved paths and were not written. Their current Git blobs match the retirement-manifest baseline. Current core.autocrlf=true expands CRLF in two working-tree files; LF-normalized content and Git blobs match the source record. Raw byte identity is qualified for those two checkout representations.
+**FUNC-03:** Its recorded ChatGPT PASS and Operator acceptance are preserved without change.
+**C02 result:** Codex assessment QUALIFIED COMPLETE; ChatGPT independent verification and Operator acceptance pending. FUNC-04 remains OPEN. No procedure design or implementation, Governance/CORE/EXE edit, archive edit, PR, merge, or issue closure occurred.
+**Git lifecycle:** Ticket-level staging, commit, and push are authorized on the existing branch. Record resulting commit and remote-tip evidence in the C02 publication checkpoint. PR #70 remains untouched.
+
+
+**Registry-wide route check:** Read-only inspection counted eight CORE agent records and eight agent EXE READMEs. All eight EXE READMEs link the same universal EXE questionnaire; no separate request-intake procedure was found in either registry. Historical DeepSeek/Qwen source notices remain historical and do not establish a new requirement.
