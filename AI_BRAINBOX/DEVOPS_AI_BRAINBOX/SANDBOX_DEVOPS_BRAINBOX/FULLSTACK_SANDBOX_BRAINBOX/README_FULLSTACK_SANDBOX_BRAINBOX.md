@@ -4,11 +4,11 @@
 **PARENT:** `SANDBOX_DEVOPS_BRAINBOX/`
 **CURRENT DOMAIN:** Fullstack Sandbox
 **PURPOSE:** Navigate Fullstack workflow candidates, application-specific architecture records, and orchestration knowledge while preserving their actual evidence status.
-**MENTAL MODEL:** WORKFLOWS = how work is performed; ARCHITECTURE = how a specific application is selected and structured; ORCHESTRATION = how its parts coordinate.
+**MENTAL MODEL:** WORKFLOWS = process/order candidates whose usability depends on their evidence status; ARCHITECTURE = how a specific application is selected and structured; ORCHESTRATION = how its parts coordinate.
 **GOVERNED BY:** Governance Evidence, Reference, Promotion, Ticketing, and Migration rules; Sandbox DEVOPS authority.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 11, and 13; V003 Origin Conversation; V003-M10 and V003-M13 migration records.
 **APPLIES TO:** Fullstack workflow, architecture-application, and orchestration records.
-**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**LAST VERIFIED:** 2026-10-17 — Codex B01 physical tree, contextual-reference, source-status, and archive-route checks; workflow execution and runtime behavior were not tested.
 
 ## Canonical local tree — two descendant levels
 
@@ -81,7 +81,7 @@ The frozen V003 Specification §8 defines the complete Fullstack target hierarch
 
 ## Current-tree reference
 
-The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
+The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the [root README](../../../../README_BRAINBOX.md).
 
 ## Local navigation
 
@@ -110,6 +110,8 @@ The current physical tree is documented in the canonical two-descendant-level lo
 - Frontend-specific design/application taxonomy is populated under [Frontend Sandbox](FRONTEND_SANDBOX_BRAINBOX/README_FRONTEND_SANDBOX_BRAINBOX.md) by M11. Its six approved design domains remain nested under `UI_UX_DESIGN_FRONTEND_BRAINBOX/`; code patterns, components, testing, and references remain Frontend siblings. Backend taxonomy is present under [Backend Sandbox](BACKEND_SANDBOX_BRAINBOX/README_BACKEND_SANDBOX_BRAINBOX.md) from M12; its knowledge leaves remain empty.
 
 ## Canonical sources and references
+
+The Origin Conversation is linked for V003 decision-history context, while the M10 ticket and living migration map document source classification and source-to-target dispositions. These records support migration provenance; they are not active operating procedures.
 
 - [Frozen V003 Specification](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 11
 - [V003 Origin Conversation](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)

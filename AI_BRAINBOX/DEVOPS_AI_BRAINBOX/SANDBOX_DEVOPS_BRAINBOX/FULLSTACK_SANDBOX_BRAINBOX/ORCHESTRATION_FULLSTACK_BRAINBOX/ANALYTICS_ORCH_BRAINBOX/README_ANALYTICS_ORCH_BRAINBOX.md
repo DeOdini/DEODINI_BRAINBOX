@@ -9,7 +9,7 @@
 **AUTHORITATIVE TREE:** Frozen V003 Specification §§8 and 13; V003-M13.
 **RELATED DOMAINS:** Backend Integrations, Frontend Data Visualization, Skills Analytics Technologies, and FootHive project evidence.
 **POPULATION STATE:** M13 adds this ownership/navigation record. The retained `.gitkeep` is empty; no operational analytics flow has been migrated or verified.
-**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**LAST VERIFIED:** 2026-10-17 — Codex B02 review of analytics ownership, placeholder state, project evidence routing, and local references; no analytics pipeline was executed.
 **VERIFIER:** Codex M13 implementation read-back; independent ChatGPT M13 verification: PASS (2026-10-09).
 
 ## Canonical local tree — two descendant levels
@@ -38,16 +38,16 @@ The current physical tree is documented in the canonical two-descendant-level lo
 
 ## Privacy and evidence boundary
 
-M13 copies no measurement identifier, endpoint, credential, event payload, or personal data. Project-specific analytics implementation and verification remain in the FootHive evidence source. Applicable privacy and security controls remain governed by Governance.
+M13 copies no measurement identifier, endpoint, credential, event payload, or personal data. The FootHive M15 Build Report holds project-specific implementation and dated Operator evidence; it does not establish reusable GA4 knowledge or a running analytics pipeline in this Brainbox taxonomy. Applicable privacy and security controls remain governed by Governance.
 
 ## References
 
 - [Fullstack Orchestration](../README_ORCHESTRATION_FULLSTACK_BRAINBOX.md)
-- [Backend Integrations](../../BACKEND_SANDBOX_BRAINBOX/INTEGRATIONS_BACKEND_BRAINBOX/README_INTEGRATIONS_BACKEND_BRAINBOX.md)
-- [Frontend Data Visualization](../../FRONTEND_SANDBOX_BRAINBOX/UI_UX_DESIGN_FRONTEND_BRAINBOX/DATA_VISUALIZATION_DESIGN_BRAINBOX/README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md)
-- [Analytics Technologies](../../../../../SKILLS_AI_BRAINBOX/TECHNOLOGIES_SKILLS_BRAINBOX/ANALYTICS_TECHNOLOGIES_BRAINBOX/README_ANALYTICS_TECHNOLOGIES_BRAINBOX.md)
+- [Backend Integrations](../../BACKEND_SANDBOX_BRAINBOX/INTEGRATIONS_BACKEND_BRAINBOX/README_INTEGRATIONS_BACKEND_BRAINBOX.md) — owns application-side external-service connection records; its current Google Forms branch is a stub.
+- [Frontend Data Visualization](../../FRONTEND_SANDBOX_BRAINBOX/UI_UX_DESIGN_FRONTEND_BRAINBOX/DATA_VISUALIZATION_DESIGN_BRAINBOX/README_DATA_VISUALIZATION_DESIGN_BRAINBOX.md) — owns dashboard, chart, KPI, and reporting-interface presentation, not analytics collection or transmission.
+- [Analytics Technologies](../../../../../SKILLS_AI_BRAINBOX/TECHNOLOGIES_SKILLS_BRAINBOX/ANALYTICS_TECHNOLOGIES_BRAINBOX/README_ANALYTICS_TECHNOLOGIES_BRAINBOX.md) — canonical home for reusable GA4 and other analytics-platform knowledge, not project-specific execution evidence.
 - [Governance Security](../../../../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
-- [FootHive build report](../../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — canonical M15 Sandbox evidence reference; this orchestration record does not duplicate GA4 technology knowledge.
+- [FootHive M15 Sandbox Build Report](../../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — canonical project-specific trial evidence, including the recorded T08 analytics work and Operator realtime observations; it does not prove a reusable or currently running pipeline.
 - [Frozen V003 Specification](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §13
 - [V003 Origin Conversation](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
 - [V003-M13 ticket](../../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)

@@ -10,7 +10,7 @@
 **REFERENCES:** The canonical Sandbox case study and the M16 section of the living Migration Map.
 **POPULATION STATE:** [POPULATED] with the recorded T20 Netlify release and post-deployment checks. No later production operation or live recheck is claimed.
 **VERIFIER:** Codex — M16 source and link checks; ChatGPT independent M16 verification PASS (2026-10-09).
-**LAST VERIFIED:** 2026-10-17 - scoped Reference Governance cross-domain review and Markdown-link check; historical release claims were not rerun.
+**LAST VERIFIED:** 2026-10-17 - Codex scoped Reference Governance cross-domain review and Markdown-link check; historical T20 release claims were not rerun.
 **APPLIES TO:** The FootHive T20 release record; not ongoing service monitoring or client acceptance.
 
 ## Canonical local tree — two descendant levels
@@ -27,7 +27,7 @@ FOOTHIVE_PROD_SUMMARY_BRAINBOX/ [PRESENT · POPULATED]
 
 This Production summary records the actual release operation documented for T20. It references the canonical Sandbox evidence; it does not copy the Sandbox evidence set. It records the observed release as of 2026-10-01 and does not claim the public site was rechecked during M16.
 
-The [V003 Origin Conversation](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md#L4210) is the historical source for the Operator's designation of FootHive V01 as a Production website. The [Sandbox case study](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) remains the canonical owner of workflow-trial evidence; Iteration 01 is not a Production test. The [Portfolio reference index](../../../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) owns presentation routing. This Production README records the T20 release evidence only; it does not assert current live health.
+The [V003 Origin Conversation](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md#L4210) records the Operator designation that FootHive website V01 exists as a Production website while the workflow experiment remains incomplete. Website V01 and the Sandbox's logical workflow Iteration 01 are separate identifiers. This historical designation does not establish current live health, close the workflow experiment, or claim workflow mastery.
 
 ## Current-tree reference
 
@@ -35,12 +35,16 @@ The current physical tree is documented in the canonical two-descendant-level lo
 
 ## Navigate
 
-- [Production lessons and T20 release facts](PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md)
-- [Canonical Sandbox FootHive case study](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md)
-- [Canonical Sandbox Build Report](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md)
-- [Operator Addendum and later verification clarifications](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/OPERATOR_ADDENDUM_FH_BRAINBOX.md)
-- [M16 migration-map disposition](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
-- [Root navigation](../../../../../README_BRAINBOX.md)
-- [Documentation Governance - active requirements; Universal Framework remains DRAFT](../../../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
-- [Reference Governance - canonical ownership and reference classification](../../../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
-- [Tree and Status Governance - physical tree and lifecycle status](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
+- [Documentation Governance - active requirements; Universal Documentation Governance Framework remains DRAFT](../../../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Reference Governance - canonical ownership and current/historical reference classification](../../../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
+- [Tree and Status Governance - current tree and lifecycle classifications](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
+
+- [Production lessons and T20 release facts](PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md) — this Production record's deployment identifiers, dated checks, and operating limits.
+- [Canonical Sandbox FootHive case study](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) — owner of the workflow-trial dataset, iteration state, and Sandbox evidence; not copied into Production.
+- [Canonical Sandbox Build Report](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — chronological implementation, release, and verification evidence underlying this summary.
+- [Operator Addendum and later verification clarifications](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/OPERATOR_ADDENDUM_FH_BRAINBOX.md) — subsequent Operator-performed evidence and clarifications, kept distinct from agent checks.
+- [FootHive Portfolio reference index](../../../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) — navigation to project presentation and handoff; Portfolio does not own release evidence.
+- [External FootHive application repository](https://github.com/DeOdini/FOOTHIVE) — website source-control location; the repository's `main` branch contains the application entry file, but that does not verify a current deployment.
+- [V003 Origin Conversation](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md), line 4210 — historical source for the Operator's website V01 versus unfinished workflow distinction stated above.
+- [M16 migration-map disposition](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — source-to-target disposition and migration integrity record for the Production summary.
+- [Root navigation](../../../../../README_BRAINBOX.md) — complete Brainbox tree and top-level domain navigation.

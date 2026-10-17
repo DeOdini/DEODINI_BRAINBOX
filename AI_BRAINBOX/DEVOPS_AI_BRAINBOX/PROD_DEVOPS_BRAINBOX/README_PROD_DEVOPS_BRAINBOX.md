@@ -10,7 +10,7 @@
 **APPLIES TO:** Actual production operations and their evidence, subject to applicable Operator authorization.
 **POPULATION STATE:** M14 structure plus the M16 FootHive T20 Production summary are present. No separate Production deployment procedure, ongoing operations, or monitoring outcome is claimed.
 **VERIFIER:** Codex — M14 implementation checks and M16 current-tree/link checks; independent ChatGPT M14 verification: PASS (2026-10-09); M16 independent verification: PASS (Batch D closeout, 2026-10-09).
-**LAST VERIFIED:** 2026-10-17 - scoped Reference Governance cross-domain review and Markdown-link check; historical operations were not rerun.
+**LAST VERIFIED:** 2026-10-17 - Codex A03 checked the Production tree, placeholder states, M14/M16 record boundaries, and local references; the DOCGOV-01 cross-domain reference review also ran. No live site or production system was tested.
 
 ## Canonical local tree — two descendant levels
 
@@ -72,18 +72,6 @@ M14 created the approved structure and safe environment guidance only. No deploy
 
 M16 populated the Production case-study branch with the T20 release summary and lessons. The release evidence is summarized from the canonical Sandbox Build Report and Operator Addendum. No deployment procedure was promoted from Sandbox, no separate Production pass/fail/incident was fabricated, and no new deployment was triggered.
 
-## V01 production designation and cross-domain ownership
-
-The [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md#L4210) records the Operator's designation of FootHive V01 as a production website while the workflow experiment remains incomplete. This is the website's production designation; it does not convert Sandbox workflow Iteration 01 into a Production test or assert current deployment health.
-
-| Information | Canonical owner and path | Relationship and classification | Boundary |
-|---|---|---|---|
-| Website implementation | [DeOdini/FOOTHIVE](https://github.com/DeOdini/FOOTHIVE) | External project source | Repository identity was checked; website contents and current live status were not inspected for this ticket. |
-| Workflow-trial records and test evidence | [FootHive Sandbox case study](../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) | SOURCE EVIDENCE; canonical Sandbox record | Workflow history, tests, failures, and iteration evidence remain owned by Sandbox. |
-| T20 release operation | [FootHive Production summary](POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) | HISTORICAL PRODUCTION operation evidence | Records the 2026-10-01 T20 release and checks; no post-T20 live check is claimed. |
-| Project presentation and handoff | [FootHive Portfolio reference index](../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) | RELATED DOMAIN; Portfolio presentation | Portfolio links to the canonical Sandbox and Production records without copying their evidence. |
-| Retirement and migration history | [Retirement Ledger](../../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) and [Migration Map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) | HISTORICAL EVIDENCE / MIGRATION EVIDENCE | Archive paths preserve source history and are not active Production instructions. |
-
 ## Evidence and environment boundaries
 
 - Record source, environment/context, date, observed result, verification method, limits, and responsible verifier in future operational records as appropriate.
@@ -93,25 +81,27 @@ The [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO
 
 ## Related domains
 
-- [DEVOPS parent](../README_DEVOPS_AI_BRAINBOX.md)
-- [Production Fullstack](FULLSTACK_PROD_BRAINBOX/README_FULLSTACK_PROD_BRAINBOX.md)
-- [Production Environment](ENVIRONMENT_PROD_BRAINBOX/README_ENVIRONMENT_PROD_BRAINBOX.md)
-- [Sandbox DEVOPS](../SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md)
-- [FootHive Production summary](POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) owns the T20 release summary; [Portfolio's FootHive reference index](../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) owns presentation routing. No FootHive material was moved by M14.
+- [DEVOPS parent](../README_DEVOPS_AI_BRAINBOX.md) — parent-level execution-domain navigation.
+- [Production Fullstack](FULLSTACK_PROD_BRAINBOX/README_FULLSTACK_PROD_BRAINBOX.md) — indexes the five Production workflow branches, which remain placeholders.
+- [Production Environment](ENVIRONMENT_PROD_BRAINBOX/README_ENVIRONMENT_PROD_BRAINBOX.md) — documents safe variable handling and placeholder templates, not a live environment.
+- [Sandbox DEVOPS](../SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md) — routes to trial/workflow evidence; Sandbox outcomes are not inherited by Production.
+- [Production POC index](POC_PROD_BRAINBOX/README_POC_BRAINBOX.md) — routes to the M16 FootHive T20 release summary; M14 did not move or create FootHive records.
 
 ## Canonical sources and references
 
-- [Root tree and navigation](../../../README_BRAINBOX.md)
-- [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25
-- [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
-- [Governance Security](../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
-- [Governance Evidence](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
-- [Documentation Governance - active requirements; Universal Framework remains DRAFT](../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
-- [Reference Governance - canonical ownership and reference classification](../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
-- [Tree and Status Governance - tree and lifecycle classification](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
-- [Governance Promotion](../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
-- [M10 Fullstack workflows and deployment classification](../SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md)
-- [Phase 02 ticket set](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
-- [Living migration map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
+- [Documentation Governance - active requirements; Universal Documentation Governance Framework remains DRAFT](../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Tree and Status Governance - current tree and lifecycle classifications](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
+
+- [Root tree and navigation](../../../README_BRAINBOX.md) — complete current repository tree and root navigation authority.
+- [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25 — approved domain structure and architecture.
+- [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md) — historical decision context, not current operational procedure.
+- [Governance Security](../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md) — secret-handling and access-authority boundaries.
+- [Governance Evidence](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md) — provenance and verification-claim requirements.
+- [Governance Promotion](../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md) — evidence gates between Sandbox, Production, and Portfolio claims.
+- [Governance Reference](../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md) — canonical ownership and current-versus-historical reference rules.
+- [Governance Ticketing](../../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md) — ticket scope and distinct Git/Operator approval gates; this link grants no operation authority.
+- [M10 Fullstack workflows and deployment classification](../SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md) — source review found no executable deployment procedure to promote.
+- [Phase 02 ticket set](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md) — migration-process scope, not Production operating instructions.
+- [Living migration map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — M09/M14/M16 dispositions and verification limits; not evidence of current site health.
 
 **Prepared by:** Codex under the Operator-authorized V003-M14 ticket.

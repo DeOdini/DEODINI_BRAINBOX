@@ -98,9 +98,11 @@ M15 defines the canonical FootHive trial evidence set. The canonical two-level l
 
 The iteration labels describe workflow experimentation. A FootHive website version, deployment, ticket, or repository commit remains a different identifier.
 
-## Current source disposition — 2026-10-15
+## Source disposition — 2026-10-15 checkpoint; physical cleanup verified 2026-10-16
 
-The former `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/` files are preserved in the [Recycle Bin archive](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/) and enumerated by the [retirement manifest](../../../../../RECYCLE_BIN_BRAINBOX/PROJ_WORKFLOW_RETIREMENT_MANIFEST_BRAINBOX.json). The archive contains 88/88 files with source paths, byte counts, and SHA-256 values; 84 non-README files have matching repository counterparts outside the former source tree. The former tree has no files, but seven empty directories remain because Windows denied their removal. Content disposition is closed under the Operator's qualified decision, with that directory-cleanup exception preserved.
+At the 2026-10-15 checkpoint, the former `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/` files were preserved in the [Recycle Bin archive](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/) and enumerated by the [retirement manifest](../../../../../RECYCLE_BIN_BRAINBOX/PROJ_WORKFLOW_RETIREMENT_MANIFEST_BRAINBOX.json). The archive contained 88/88 files with source paths, byte counts, and SHA-256 values; 84 non-README files had matching repository counterparts outside the former source tree. At that checkpoint, seven empty directories remained after Windows denied their removal. That sentence records the historical checkpoint, not the current filesystem state.
+
+Corrective Ticket 01 records that the Operator's approved empty-directory-only cleanup removed all seven shells on 2026-10-16. This checkout confirms the former source root is physically absent and `git ls-files` returns no tracked paths beneath it. Git does not represent empty-directory removal as a tracked deletion. The archive and 88-entry manifest remain available as historical recovery/provenance records; see the [retirement ledger](../../../../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) and [Corrective Ticket 01 report](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md) for the earlier access-denied attempts, final cleanup evidence, and qualified integrity results. Content disposition remains closed under the Operator's qualified decision.
 
 F03's approval to retain 29 source-only catalog/image files at their original paths was later superseded only by separately approved exact-byte copies and the authorized archive relocation. Their historical source bytes remain preserved in the archive. This does not grant image reuse, publishing, or third-party asset rights. The approved F14 catalog link-destination changes are separately recorded in `BUILD_REPORT_V003_LINK_ADAPTATIONS_FH_BRAINBOX.md`; original source catalog bytes remain in the archive.
 
@@ -118,16 +120,19 @@ The original audit remains historical evidence. Its statements are not silently 
 
 ## Related domains and canonical references
 
-- [Sandbox DEVOPS](../../README_SANDBOX_DEVOPS_BRAINBOX.md)
-- [DEVOPS domain](../../../README_DEVOPS_AI_BRAINBOX.md)
-- [Frozen V003 Specification](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md)
-- [V003 Origin Conversation](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
-- [Migration map](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
-- [Phase 02 migration report](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md)
-- [Phase 02 migration conversation](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md)
-- [Governance evidence rules](../../../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
-- [Governance promotion rules](../../../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
-- [M15 ticket](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
+- [Sandbox DEVOPS](../../README_SANDBOX_DEVOPS_BRAINBOX.md) — parent-level navigation and current Sandbox scope.
+- [DEVOPS domain](../../../README_DEVOPS_AI_BRAINBOX.md) — system-level DEVOPS navigation and the Sandbox/Production split.
+- [FootHive Production summary](../../../../../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) — canonical summary of the documented T20 release and dated Production observations; it does not establish current live health.
+- [FootHive Portfolio reference index](../../../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) — points to the project summary and handoff; Portfolio presents the project and does not own the trial evidence.
+- [External FootHive application repository](https://github.com/DeOdini/FOOTHIVE) — source-control location for the website implementation (public repository, default branch `main`, with `index.html` present when checked for A05); it is not the canonical trial-evidence record and does not prove a current deployment.
+- [Frozen V003 Specification](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25–27 — approved target hierarchy, domain boundaries, and lifecycle states.
+- [V003 Origin Conversation](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md), line 4210 — historical Operator designation that website V01 exists while the workflow experiment remains incomplete; it distinguishes a website version from workflow Iteration 01 and is not current deployment evidence.
+- [Migration map](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — source-to-target migration dispositions and integrity history.
+- [Phase 02 migration report](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md) — recorded migration executions and independent-verification outcomes.
+- [Phase 02 migration conversation](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md) — chronological Operator/agent migration exchange, not a substitute for the canonical FootHive evidence records.
+- [Governance evidence rules](../../../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md) — evidence provenance, tested-claim, and Operator-versus-agent attribution requirements.
+- [Governance promotion rules](../../../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md) — evidence and authorization requirements for moving Sandbox findings into Production or Portfolio claims.
+- [M15 ticket](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md) — original scope and constraints for migrating this case study.
 
 ## Provenance and promotion boundary
 

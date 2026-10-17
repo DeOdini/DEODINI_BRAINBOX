@@ -28,7 +28,7 @@ This Phase 02 operating addendum supersedes the frozen Specification's blanket s
 
 ## Local request procedures
 
-The former FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md sources are archived as historical records. No current replacement for the local function-area reading and request-submission procedure has been established; this is an authority gap for a later authorized ticket. This file owns current system-wide ticket and authorization principles. Agent capability-report fields belong to the CORE registry and do not recreate the retired local procedure.
+The former FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md sources are archived as historical records, and no replacement FUNC-local procedure has been established. Following the Operator-accepted V003-FUNC-BC-C02 assessment of 2026-10-17, no local replacement is required for the assessed capability-request, evidence-intake, authorization and verification responsibilities. Current Ticketing Governance provides the shared discovery, ticketing, approval, verification and closure process. Documentation and Evidence Governance govern their respective requirements; the CORE registry owns agent capability descriptions, and EXE owns operation-level execution evidence. This disposition does not validate untested agent capabilities, recreate retired procedures or establish standing execution authority. This file owns current system-wide ticket and authorization principles. Agent capability-report fields belong to the CORE registry and do not recreate the retired local procedure.
 ## Sources
 
 - [Frozen V003 Specification](../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§25.8, 26–27.
@@ -39,3 +39,123 @@ The former FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md sources are archived as hi
 
 **Prepared by:** Codex under the Operator-authorized V003-M03 ticket.
 **Last verified:** 2026-10-08
+## Operator-approved discovery-first atomic-ticket and batch execution standard — 2026-10-17
+
+**STATUS:** [ACTIVE — OPERATOR APPROVED]
+**SCOPE:** System-wide prospective ticket planning, decomposition, execution and verification. Supplements existing Ticketing Governance and preserves the specifically scoped Phase 02 addendum and frozen V003 architecture.
+
+**Execution sequence:** DISCOVER → INVENTORY → CLASSIFY → DECOMPOSE → GROUP → OPERATOR APPROVAL → PREFLIGHT → EXECUTE ONE TICKET → VERIFY → PROCEED → BATCH CLOSEOUT → PUBLICATION → ACCEPTANCE. No stage implies authorization for the next.
+
+### Mandatory rules
+
+**TGB-001 — Discovery precedes tickets.** Inspect actual files, approved architecture, physical paths, authority, source history, decisions, and evidence before drafting implementation tickets. An isolated observation is not a bulk implementation mandate.
+
+**TGB-002 — Maintain a specific findings register.** Record each specific with unique ID, issue, exact path or discovery boundary, observed and expected condition, authority, reason, evidence, classification, required assessment/correction, dependency, owning ticket and acceptance evidence. Do not impose an arbitrary cap: 30–40 or more specifics are acceptable when evidence warrants.
+
+**TGB-003 — Separate factual states.** Mark findings CONFIRMED (demonstrated defect), REVIEW (requires contextual examination), VERIFY (test with a possible NO CHANGE REQUIRED result), or BLOCKED (direct material dependency/authorization barrier). Never automatically convert a REVIEW or VERIFY into a write instruction.
+
+**TGB-004 — Investigate why before fixing.** Check intentional architecture, empty/stub/planned destinations, historical versus current sources, physical versus capability status, missing contextual explanation, already applicable rules and actual authority gaps.
+
+**TGB-005 — Reuse canonical Governance.** Identify the existing owner and governing section first. Propose genuinely missing system-wide rules at the proper authority and obtain approval. Do not duplicate shared policies in local documents.
+
+**TGB-006 — One coherent responsibility per ticket.** Ordinarily scope to one file, one closely related parent/child family, one bounded ownership/reference relationship, or one independently verifiable audit. Related specifics may be grouped only when they are one coherent and jointly verifiable responsibility.
+
+**TGB-007 — Split excessive tickets before execution.** Multiple independent authorities, unrelated files, separate risks or separately approvable changes must become separate tickets; internal bullet points do not make a bulk ticket atomic.
+
+**TGB-008 — Controlled batches.** Group related tickets normally in batches of four through ten, organized by common outcome, dependencies, applicable authority, validation and publication boundary. Explain and obtain approval for justified exceptions; never fabricate work to reach the range.
+
+**TGB-009 — Explicit dependencies.** Document prerequisites, downstream dependents, conflicting file ownership and stop conditions. A flag blocks directly dependent work unless a broader safety or authority boundary independently requires a wider stop. Preserve nonblocking findings for batch closeout.
+
+**TGB-010 — Distinct approval gates.** Separate approval of findings, batch plan, ticket text, execution, new policies/structural decisions, independent verification, Git publication/merge, and final closure. Approval at one gate grants no other gate implicitly.
+
+**TGB-011 — Mandatory preflight.** Verify repository, branch, HEAD, local/remote status, pre-existing modifications, exact path scope, current canonical Governance, protected frozen/historical evidence, dependencies, authorization, tests and safe recovery. Report PASS, QUALIFIED PASS or BLOCKED.
+
+**TGB-012 — Executable ticket contract.** Include ID, title, objective/reason, specific IDs, exact writable scope, exclusions/read-only sources, authorities, prerequisites, preflight, ordered steps, no-change criteria, negative requirements, verifications, evidence/report destinations, stop conditions, publication boundary, independent verification and Operator acceptance.
+
+**TGB-013 — Sequential ticket and independent verification.** Codex implements one authorized ticket at a time, tests/reads back actual results and supplies reproducible evidence for ChatGPT independent review before a dependent next ticket. Operator may explicitly authorize continuation of independent nondependent work. Codex self-PASS is not independent PASS.
+
+**TGB-014 — Valid NO CHANGE REQUIRED.** If actual content already meets the requirement, preserve it and report exact inspection evidence; never edit to manufacture a diff.
+
+**TGB-015 — Minimum necessary changes.** Preserve accurate words, frozen architecture, source ownership, historical bodies, prior acceptance and provenance. Register out-of-scope defects separately instead of expanding scope unilaterally.
+
+**TGB-016 — Ticket-specific acceptance evidence.** Test applicable correctness, physical structure, authority, link integrity, status truth, historical preservation, change scope, Git diff and independent reproducibility. Qualified results identify every limitation.
+
+**TGB-017 — Authorized Git lifecycle.** Unless the Operator explicitly directs ticket-level publication, stage, commit, push, PR and merge at the authorized batch boundary. The Operator may direct staging/committing/pushing after each approved ticket; such instruction does not authorize PR or merge. Stage only approved files, preserve ticket traceability and verify remotes. This prospective rule does not rewrite the Phase 02 addendum.
+
+**TGB-018 — Full reporting chain.** Maintain finding-to-ticket mapping, preflight, changed and unchanged decisions, validation, Codex report, ChatGPT review, flags, Git state, batch closeout and Operator decisions. Implementation, staging, commit, push, PR, merge and acceptance are different states.
+
+**TGB-019 — Evidence-based issue closure.** A multi-ticket issue closes only after all mandatory specifics have passed or received explicit accepted dispositions, independent review is satisfied, and the Operator accepts its closure. Partial reference alignment does not close broader DEVOPS-01/03 issues.
+
+**TGB-020 — New discovery and rework.** Register new evidence, determine classification and dependencies, check Governance, test authorized scope and seek a revised/new approved ticket for anything outside scope. Never silently broaden the work.
+
+### Mandatory planning and execution templates
+
+**Template A — Individual specific**
+
+```text
+SPECIFIC ID:
+ORIGINATING ISSUE:
+AFFECTED PATH OR DISCOVERY BOUNDARY:
+CLASSIFICATION: CONFIRMED / REVIEW / VERIFY / BLOCKED
+OBSERVED CONDITION:
+EXPECTED CONDITION AND GOVERNING AUTHORITY:
+EVIDENCE AND WHY IT MATTERS:
+REQUIRED INSPECTION:
+PROPOSED CORRECTION OR NO-CHANGE CONDITION:
+DEPENDENCIES:
+ASSIGNED TICKET:
+ACCEPTANCE EVIDENCE:
+```
+
+**Template B — Batch plan**
+
+```text
+BATCH ID / OBJECTIVE:
+OPERATOR APPROVAL STATUS:
+BASELINE BRANCH AND SHA:
+GOVERNANCE PREREQUISITES:
+ORDERED TICKETS AND SPECIFICS:
+DIRECT DEPENDENCIES AND SHARED-FILE RISKS:
+PROTECTED FILES:
+INDEPENDENT PER-TICKET VERIFICATION GATES:
+BATCH CLOSEOUT AND GIT PUBLICATION GATES:
+OPEN FLAGS:
+```
+
+**Template C — Atomic ticket**
+
+```text
+TICKET ID / TITLE / BATCH:
+EXECUTION AGENT / INDEPENDENT VERIFIER:
+OPERATOR EXECUTION APPROVAL:
+OBJECTIVE AND SPECIFICS:
+EXACT WRITABLE PATHS AND READ-ONLY SOURCES:
+EXCLUSIONS AND AUTHORITY REFERENCES:
+PREFLIGHT:
+STEPWISE EXECUTION:
+NO-CHANGE AND STOP CONDITIONS:
+TESTS AND REPRODUCIBLE EVIDENCE:
+REPORT LOCATION:
+STAGING / COMMIT / PUSH / PR / MERGE AUTHORITY:
+INDEPENDENT ACCEPTANCE AND OPERATOR DECISION:
+```
+
+**Template D — Ticket result**
+
+```text
+TICKET / BASELINE:
+PREFLIGHT:
+PATHS INSPECTED / SPECIFICS:
+CHANGES / NO-CHANGE RESULTS:
+TEST RESULTS AND EVIDENCE:
+FLAGS / DEPENDENCY IMPACT:
+CODEX DISPOSITION:
+CHATGPT INDEPENDENT VERIFICATION:
+OPERATOR ACCEPTANCE:
+EXACT GIT STATE:
+NEXT AUTHORIZED TICKET:
+```
+
+### Responsibility and precedence
+
+The **findings register** establishes coverage; **batch plan** coordinates related atomic tickets; **ticket** defines execution; **canonical Governance** defines authority; **independent verification and Operator acceptance** decide closure. These instruments are distinct. Existing frozen V003 authority and phase-scoped rules remain protected. Agents act only on evidence-backed specifics and explicitly approved scope, never convenient assumptions.

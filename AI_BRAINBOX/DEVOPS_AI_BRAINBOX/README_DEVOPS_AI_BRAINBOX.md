@@ -9,7 +9,7 @@
 **CANONICAL SOURCE:** Frozen V003 Specification §§8 and 10; V003 Origin Conversation; V003-M09, M15, and M16 migration records.
 **POPULATION STATE:** Sandbox FootHive trial evidence is present under M15; the T20 FootHive Production summary is present under M16. Other Production operational branches remain empty unless stated in their local READMEs.
 **APPLIES TO:** DEODINI operators and agents creating or using execution, validation, release, and operations records.
-**LAST VERIFIED:** 2026-10-17 - scoped Reference Governance cross-domain review and Markdown-link check; no live site, deployment, or Production operations were rechecked.
+**LAST VERIFIED:** 2026-10-17 - Codex A02 reviewed this README, the DEVOPS two-level tree, linked references, and post-M20 source dispositions; the DOCGOV-01 cross-domain reference review also ran. No application behavior or current live Production status was rechecked.
 
 ## Canonical local tree — two descendant levels
 
@@ -67,12 +67,22 @@ The nested target structure is defined by the frozen Specification §8. The root
 
 ## Current-tree reference
 
-The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
+The current physical structure is shown in the canonical two-descendant-level local tree above. For domain-specific navigation, continue to the [Sandbox README](SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md) or [Production README](PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md). The complete project tree is maintained only in the root README.
 
 The FootHive Sandbox case study is present under M15. The M16 Production case-study branch now contains a summary of the recorded T20 release; Production PASSED, FAILED, INCIDENTS, and REGRESSIONS areas still have no records. M16 did not trigger a deployment.
 ## M16 Production case-study update
 
 The M16 child summary documents the actual T20 Netlify deployment and recorded post-deployment checks from the canonical Sandbox Build Report. It does not copy the Sandbox evidence set, add a deployment procedure, claim current live status, or create other Production outcomes. The separate FootHive Portfolio child and parent `PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md` are indexed in the root `README_BRAINBOX.md`; M19 completed this navigation reconciliation.
+
+## FootHive record routing and status boundary
+
+| Record | Current route and purpose | What the record does not establish |
+|---|---|---|
+| Sandbox workflow trial | [FootHive case-study README](SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) routes to the canonical Iteration 01 experimental dataset and its evidence. | It does not mean the experiment is complete, establish workflow mastery, or identify the website version. |
+| Website version and workflow iteration | The V003 Origin Conversation citation below records FootHive V01 as a production website while distinguishing the ongoing workflow experiment's Iteration 01 record. Website version and workflow iteration are separate identifiers. | V01 must not be equated with Iteration 01. |
+| Production release | [FootHive Production summary](PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) routes to the historical T20 release record and its point-in-time checks. | The 2026-10-01 release record does not establish current site availability or a later live check. |
+| Portfolio presentation | [FootHive Portfolio README](../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md) routes to the project summary, handoff, and case-study reference index. | Portfolio presentation is not the canonical Sandbox test record or proof of paid-client work. |
+| Retired project sources | The [Retirement Ledger](../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) records the M20 archive and source disposition; archived source entry points below preserve provenance. | Archived sources are historical records, not current DEVOPS navigation or operating authority. |
 
 ## Domain boundary
 
@@ -82,11 +92,11 @@ The M16 child summary documents the actual T20 Netlify deployment and recorded p
 - **PROVEN** is not a permanent destination. Evidence-backed status belongs to the relevant lifecycle record; Production outcomes are recorded independently.
 - Empty legacy PROVEN/FAILED files are not evidence and are not promoted into populated records.
 
-## M09 source classification - historical checkpoint (2026-10-09)
+## M09 source disposition
 
-At M09/M10, the two Fullstack workflow documents were classified as raw, unproven candidates and copied into the Fullstack Workflows target without content changes. The top-level legacy PROVEN and FAILED files were empty and contained no outcomes. These are historical ticket states, not current source locations or migration status.
+At the M09 checkpoint, the former project-workflow sources remained at their original paths. M09 classified the two Fullstack workflow documents as proposed/raw and unproven; M10 later copied 001 and 002 into the Fullstack Workflows target without changing their content. The statement that originals were pending M20 described that earlier checkpoint and was superseded by M20 / Corrective Ticket 01: the former source tree was archived under Recycle Bin, its 88-file path set was verified, and the physical source tree was removed. The archived records preserve provenance; current workflow candidates are indexed in the [Fullstack Sandbox README](SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/README_FULLSTACK_SANDBOX_BRAINBOX.md). M10 also created empty architecture/orchestration placeholders and one reference-only, unverified AI-agent handoff classification. No workflow was promoted.
 
-M20 later retired the eligible legacy project-workflow files to the Recycle Bin. The archive is historical recovery material; the current Fullstack workflow records are under [Sandbox Fullstack Workflows](SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md). The FootHive trial evidence is under the [canonical Sandbox case study](SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md), while the recorded T20 production release is summarized separately under Production. Sandbox evidence is not a Production result by implication.
+The M09 source set's top-level PROVEN and FAILED files were empty placeholders with no outcomes; M20 retired them without promoting evidence. No Production operation, incident, or regression record was migrated from the M09 source set. The FootHive trial evidence was migrated under M15 to the Sandbox case study; M16 separately summarized the historical T20 Production release. Sandbox evidence is not a Production record by implication.
 
 ## Current authority and cross-domain reference map
 
@@ -102,18 +112,17 @@ M20 later retired the eligible legacy project-workflow files to the Recycle Bin.
 
 - FUNC AI records agent capability; it does not define project workflow execution.
 - Skills AI owns reusable general knowledge; it does not own project-specific execution evidence.
-- Governance owns shared policy; this domain links to it rather than reproducing it. Existing active Governance requirements apply; the Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
-- Portfolio owns FootHive-facing summaries and handoff; Sandbox owns workflow-trial evidence; Production DEVOPS owns the documented T20 release-operation summary. These references do not transfer ownership or imply a current deployment check.
+- Governance owns shared policy; this domain links to it rather than reproducing it.
+- Portfolio and FootHive case-study records must preserve project engagement and evidence provenance.
 
 ## Canonical sources and references
 
+- [Documentation Governance - active requirements; Universal Documentation Governance Framework remains DRAFT](../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Tree and Status Governance - current tree and lifecycle classifications](../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
+
 - [Root tree and navigation](../../README_BRAINBOX.md)
 - [Frozen V003 Specification](../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25
-- [V003 Origin Conversation](../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
 - [Governance entry](../../GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md)
-- [Documentation Governance - active requirements; the Universal Framework remains DRAFT](../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
-- [Reference Governance - canonical ownership, reference quality, and current/historical routing](../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
-- [Tree and Status Governance - current tree and lifecycle classifications](../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 - [Governance evidence rules](../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
 - [Governance promotion rules](../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
 - [Governance reference rules](../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
@@ -122,12 +131,13 @@ M20 later retired the eligible legacy project-workflow files to the Recycle Bin.
 - [Living migration map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 - [Archived legacy project-workflow entry](../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md) — historical source, not current DEVOPS authority
 - [Archived legacy raw workflow overview](../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md) — historical source; current workflow knowledge is indexed under DEVOPS and Fullstack
-- [M09 execution report and conversation](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md) and [conversation archive](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md)
+- [V003 Origin Conversation — FootHive V01 / workflow Iteration 01 decision and chronology](../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
+- [M09 execution report](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md) — source classifications and migration outcomes; [M09 conversation archive](../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md) — execution chronology
 
 ## Record provenance
 
 **Prepared by:** Codex under the Operator-authorized V003-M09 ticket.
-**M09 status:** Authority READMEs established; source records retained; Fullstack content migration deferred to its own ticket.
+**M09 checkpoint status:** At M09 closeout, authority READMEs were established, source records were retained, and Fullstack content migration was deferred to its own ticket. Later M20 dispositions are recorded above.
 **Independent verification:** To be recorded in the Phase 02 report after review.
 
 
@@ -138,6 +148,6 @@ M20 later retired the eligible legacy project-workflow files to the Recycle Bin.
 V003-M09 independently verifies **PASS**. The DEVOPS/Sandbox/Production authority split matches frozen V003, all inspected legacy sources remain unchanged at their M01 baselines, and no evidence state was upgraded.
 
 
-## Current Sandbox case-study state - V003-M15 - 2026-10-09
+## M15 Sandbox case-study checkpoint — 2026-10-09
 
-The FootHive workflow-trial evidence set is present at SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/. It represents the existing logical Iteration 01 dataset. Future workflow iterations and mastery remain planned. The legacy source remains intact; no Production case study or deployment was created by M15.
+At M15 closeout, the FootHive workflow-trial evidence set was recorded under SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/ as the existing logical Iteration 01 dataset; future workflow iterations and mastery remained planned. At that checkpoint, the legacy source remained intact; M15 did not create a Production case-study summary or trigger a deployment. M20 / Corrective Ticket 01 later archived and verified the legacy source records and removed the former source tree. M16 separately summarized the historical T20 release; see the current routes above.
