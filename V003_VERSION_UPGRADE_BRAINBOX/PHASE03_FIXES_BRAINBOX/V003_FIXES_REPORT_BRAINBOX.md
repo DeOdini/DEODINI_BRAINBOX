@@ -2679,3 +2679,14 @@ This report is staged with the dedicated ticket changes. The branch is to be pus
 **Remote verification:** GitHub branch metadata reports tip `d8159e0e0ef35cc598838d8626d79497d1bea19d`; local `HEAD` and `origin/v003/devops-docgov-01-reference-governance-alignment` matched that commit at verification. The worktree was clean after the implementation push.
 
 **PR/merge:** No pull request was opened and no ticket-branch merge was performed. The branch is published for independent verification. This closeout does not claim independent ChatGPT verification or Operator acceptance.
+
+## V003-FUNC-BC-CLOSEOUT-01 - Final FUNC acceptance and active-register disposition - 2026-10-17
+
+- **Operator acceptance:** In response to the explicit final FUNC-04 closure gate, the Operator stated: "Accept closure as documented." This is the required final acceptance under CLOSEOUT-01 section 5.
+- **FUNC-04:** CLOSED - OPERATOR ACCEPTED; NO LOCAL REPLACEMENT REQUIRED. C02 remains a QUALIFIED PASS for documentation authority and procedure sufficiency only. It does not certify a live integration, agent execution, current authentication, or workflow operation.
+- **C02-GOV-01:** Independent ChatGPT verification PASS is recorded in the approved closeout baseline. PR #71 merged at 5538e8479f744bce6ea6da5226d6ab6f1595a926; the corrected Governance ownership wording is present on main.
+- **FUNC-03:** CLOSED - OPERATOR ACCEPTED. C01 and C01-R01 independent PASS and Operator acceptance remain recorded in their earlier permanent checkpoints.
+- **Unresolved Register:** FUNC-03 and FUNC-04 are removed from the active index after their acceptance gates. The remaining active index contains exactly eight entries: V003-STATUS-01, V003-STATUS-02, README-01, README-03, GOVERNANCE-01, GOVERNANCE-02, GOVERNANCE-03, and GOVERNANCE-04. Permanent issue IDs and historical checkpoints are preserved.
+- **PR #70:** The PR branch is being updated to record the accepted FUNC-04 closure, the eight-entry index, and the required closeout evidence. The PR body will be reconciled to the actual eight active entries. No other issue is closed by this action.
+- **Git scope:** Authorized changes are limited to V003_UNRESOLVED_BRAINBOX.md, this report, and the Phase 03 ticket register. The branch was reconciled with current origin/main at 3cb187d4b3bb32aa34322e1ba759854dfbe1e6a2 using a normal merge; no force operation, branch deletion, stash change, or source retirement occurred.
+- **Verification:** Git whitespace validation, active-ID/index reconciliation, local Markdown link checks, commit, push, PR merge, and final main synchronization are recorded in the publication follow-up checkpoint after completion.
