@@ -36,9 +36,6 @@ For each future resolved item: independently verify the closure condition, appen
 - **DEVOPS-01 [HIGH]** — Paths: `README_DEVOPS_AI_BRAINBOX.md`; `SANDBOX_DEVOPS_BRAINBOX/`; `PROD_DEVOPS_BRAINBOX/`; related `PORTFOLIO_BRAINBOX/`. **Finding:** POC, Sandbox, Production, Portfolio and historical evidence need unambiguous source routing. **Correction to ticket:** validate and reconcile current read/write ownership. **Depends on:** verified POC migration; final routes feed GOVERNANCE-02 and README-03. **Gate:** live destinations resolve, Production is not inferred from Sandbox. **State:** SELECTABLE / NOT FIXED.
 - **DEVOPS-03 [MEDIUM]** — Paths: Sandbox/Production READMEs and placeholder-only operational branches. **Finding:** populated documentation may be misread as deployed/operational. **Correction to ticket:** apply existing status/proof tags truthfully. **Depends on:** existing Tree and Status Governance; no capability-population mandate. **Gate:** no unsupported operational readiness claims. **State:** SELECTABLE / NOT FIXED.
 
-### Legacy authority files — DOB/FQ/AI_MUST [CRITICAL]
-
-
 ### V003_VERSION_UPGRADE_BRAINBOX/ [HIGH]
 
 - **V003-STATUS-01 [HIGH]** — Paths: `README_V003_VERSION_UPGRADE_BRAINBOX.md`; `PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md`; `V003_UNRESOLVED_BRAINBOX.md`. **Finding:** QUALIFIED CLOSED and historical M21/F02 pending checkpoints can be confused. **Correction to ticket:** provide concise dated present-state pointers while preserving prior checkpoint text. **Depends on:** already approved Operator dispositions; GOVERNANCE-01 if policy precedence needed. **Gate:** qualified closure never asserted as blanket technical PASS. **State:** SELECTABLE / NOT FIXED.
@@ -52,32 +49,24 @@ For each future resolved item: independently verify the closure condition, appen
 
 ### GOVERNANCE_BRAINBOX/ [CRITICAL]
 
-- **GOVERNANCE-01 [CRITICAL]** — Paths: `README_GOV_BRAINBOX.md`, `DOCUMENTATION_GOV_BRAINBOX.md`, `VERSIONING_GOV_BRAINBOX.md`. **Gap:** need explicit precedence among frozen V003 architecture, current Governance operating rules, root navigation, local domain READMEs, and historical authority bodies. **Correction to ticket:** define minimal universal precedence, with no premature hardcoding of unverified child paths. **Depends on:** LEGACY-01 for any invasive historical-file correction; general policy can be decided independently. **Gate:** no conflict with frozen Specification, Operator authority or source preservation. **State:** SELECTABLE / NOT FIXED.
+- **GOVERNANCE-01 [CRITICAL]** — Paths: `README_GOV_BRAINBOX.md`, `DOCUMENTATION_GOV_BRAINBOX.md`, `VERSIONING_GOV_BRAINBOX.md`. **Gap:** need explicit precedence among frozen V003 architecture, current Governance operating rules, root navigation, local domain READMEs, and historical authority bodies. **Correction to ticket:** define minimal universal precedence, with no premature hardcoding of unverified child paths. **Depends on:** no remaining legacy retirement; historical provenance was dispositioned in Ticket 02 and remains preserved in permanent records. **Gate:** no conflict with frozen Specification, Operator authority or source preservation. **State:** SELECTABLE / NOT FIXED.
 - **GOVERNANCE-02 [HIGH]** — Paths: `REFERENCE_GOV_BRAINBOX.md` and Governance README. **Gap:** canonical read/write matrix across FUNC, DEVOPS, Skills, Portfolio, FootHive, Milestones and archives. **Correction to ticket:** finalize matrix **after** respective source-folder mapping. **Depends on:** DEVOPS-01/02 and remaining selected source-folder mappings; FUNC-01/02 routing was resolved by Corrective Ticket 02, and current Skills/Milestones routing was reconciled by Corrective Ticket 03. **Gate:** exact verified destinations; never revive V002 paths. **State:** BLOCKED ON REMAINING SUBFOLDER ROUTING.
-- **GOVERNANCE-03 [HIGH]** — Paths: `DOCUMENTATION_GOV_BRAINBOX.md`, `EVIDENCE_GOV_BRAINBOX.md`. **Gap:** lack of enforceable tool-output contamination safeguards. **Correction to ticket:** documented prevention and forensic preservation. **Depends on:** LEGACY-01 evidence. **Gate:** historical provenance unchanged until disposition. **State:** SELECTABLE / NOT FIXED.
+- **GOVERNANCE-03 [HIGH]** — Paths: `DOCUMENTATION_GOV_BRAINBOX.md`, `EVIDENCE_GOV_BRAINBOX.md`. **Gap:** lack of enforceable tool-output contamination safeguards. **Correction to ticket:** documented prevention and forensic preservation. **Depends on:** preserved Ticket 02 forensic evidence in permanent records. **Gate:** historical provenance unchanged until disposition. **State:** SELECTABLE / NOT FIXED.
 - **GOVERNANCE-04 [MEDIUM]** — Paths: `TREE_AND_STATUS_GOV_BRAINBOX.md` and tooling references. **Gap:** automatic enforcement of two-level trees, physical paths, status vocabulary and relative links. **Correction to ticket:** scoped validation checks; do not populate planned branches. **Depends on:** stable subordinate README routes. **Gate:** reproducible checks and qualified limitations. **State:** SELECTABLE / NOT FIXED.
 
 ### Cross-category dependency / proposed selection order
 
-1. LEGACY-01/02/03 and FUNC-01/02 were resolved or qualified by Corrective Ticket 02; their permanent evidence remains in the Phase 03 report, Migration Map, and Recycle Bin ledger.
-2. DEVOPS-01/02 and any selected Portfolio source-route review. Current Skills/Milestones routing was reconciled by Corrective Ticket 03; FUNC-03 capability validation remains independently selectable.
-3. LEGACY-02/03 once forensic preservation and precedence are settled.
-4. GOVERNANCE-02 canonical ownership matrix **after** child mappings.
-5. README-01/02/03 root routes **after** their named dependencies.
-6. V003-STATUS-01/02 and GOVERNANCE-03/04 when their respective prerequisites are met; independent fixes may proceed earlier.
+1. DEVOPS-01 and any selected Portfolio source-route review; FUNC-03/04 remain independently selectable. Skills/Milestones retirements and legacy FUNC/DOB/AI_MUST retirements are closed.
+2. GOVERNANCE-01 can proceed independently; GOVERNANCE-02 canonical ownership matrix follows the remaining child mappings.
+3. README-01 and README-03 root routes follow their named dependencies; README-02 retirement routing is already resolved.
+4. V003-STATUS-01/02 and GOVERNANCE-03/04 may proceed when their respective prerequisites are met; unrelated fixes remain selectable.
 
 **Per-ticket execution rule:** Operator selects a category/file and authorizes planning; Codex implements only the named approved ticket; ChatGPT independently verifies; Operator accepts; Git staging/publication remains a separate approval gate. A blocking flag stops only directly dependent tickets, not unrelated work.
 ### AI_BRAINBOX/FUNC_AI_BRAINBOX/ — current unresolved authority gap
 
 - **FUNC-04 [MEDIUM]** — Path: AI_BRAINBOX/FUNC_AI_BRAINBOX/README_FUNC_AI_BRAINBOX.md. **Finding:** Ticket 02 retired the legacy local request/compliance sequence with no verified replacement. Governance remains system-wide authority and CORE/EXE remain the active capability registries, but no current FUNC-specific procedure replaces the archived request/compliance workflow. **Required action:** Operator selects a separately scoped ticket to determine whether a local procedure is needed and, if so, authorize its design. Do not reconstruct the archived workflow by assumption. **State:** OPEN / NON-BLOCKING TO TICKET 02; future ticket required.
 
-## Ticket 02 resolved findings — 2026-10-16
 
-The following former active items were resolved within the bounded Ticket 02 scope and removed from the active unresolved list. Their full evidence remains in the [Ticket 02 Phase 03 execution report](PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md), the [Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md), and the [Retirement Ledger](../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md):
+## Closure reference — Operator acceptance, 2026-10-16
 
-- **FUNC-01:** RESOLVED for the current three-child FUNC tree and current CORE/EXE ownership routing. This does not certify capability content.
-- **FUNC-02:** RESOLVED for removal of the 11 legacy files from active FUNC and current entry-point routing. Archived instructions are historical only; RAW/UNPROVEN source mentions remain unchanged and explicitly non-authoritative.
-- **LEGACY-01:** QUALIFIED RESOLVED. Contamination markers remain byte-preserved in the archive. The earliest available marker-containing revision and its parent were compared; actor and cause remain unknown.
-- **LEGACY-02:** RESOLVED for active navigation and former-path execution directions. No active entry point directs agents to execute the retired sources.
-- **LEGACY-03:** QUALIFIED RESOLVED. Raw source/archive SHA-256 and byte counts match all 13 files; five Git-blob comparisons are explained by CRLF-to-LF clean-filter representation, with zero unexplained mismatches.
-- **README-02:** RESOLVED for the Ticket 01/02 retired-source routing and dated supersession notices. Historical checkpoint tables remain preserved and explicitly labeled; current links point to the archive or current authority.
+The Legacy DOB/FQ/AI_MUST findings (LEGACY-01 qualified, LEGACY-02 resolved, LEGACY-03 qualified), old Skills Availability retirement, and historical V002 Milestones retirement are **CLOSED** and intentionally excluded from the active corrective register. Source integrity and qualifications are preserved in the Phase 03 Fixes Report, Migration Map, and Recycle Bin Retirement Ledger. Corrective Ticket 02 was published in PRs #51–52; Ticket 03 in PRs #53–55. This acceptance does not validate unproven Skills capabilities, implement the planned Router milestone, or close separate remaining Governance and FUNC issues.
