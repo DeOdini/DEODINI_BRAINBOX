@@ -5,13 +5,13 @@
 **CURRENT DOMAIN:** Evidence-backed Sandbox case studies
 **PURPOSE:** Navigate individual workflow-trial case records while preserving each trial's scope and evidence.
 **MENTAL MODEL:** CASE STUDY = SOURCE + CONTEXT + EVIDENCE + LIMITATIONS + DISPOSITION.
-**GOVERNED BY:** Governance Evidence, Reference, Documentation, Versioning, and Promotion rules.
+**GOVERNED BY:** Active Governance Documentation, Reference, Tree and Status, Evidence, Versioning, and Promotion rules. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **AUTHORITATIVE TREE:** The local case-study tree below is the current populated branch under Sandbox.
 **CANONICAL SOURCES:** Frozen V003 Specification §§8, 10, 21-22, 25-27; V003-M15.
 **REFERENCES:** Sandbox and DEVOPS parent READMEs; M15 living migration map.
 **POPULATION STATE:** FootHive workflow trial populated by M15; no other case study is claimed.
-**LAST VERIFIED:** 2026-10-09
-**VERIFIER:** Codex - M15 local tree review; ChatGPT - independent M15 verification PASS (2026-10-09).
+**LAST VERIFIED:** 2026-10-17 - scoped Reference Governance cross-domain review and Markdown-link check; case-study outcomes were not rerun.
+**VERIFIER:** Codex - scoped local route/link review; the earlier ChatGPT M15 independent verification PASS remains recorded in the Phase 02 report.
 **APPLIES TO:** Sandbox case-study navigation.
 **ENTRY NAVIGATION:** Start here and select a case-study README.
 **EXIT NAVIGATION:** Return to Sandbox DEVOPS or the DEVOPS parent.
@@ -42,6 +42,8 @@ POC_SANDBOX_BRAINBOX/ [PRESENT · POPULATED]
 
 M15 defines the FootHive trial evidence responsibilities. The canonical local tree above shows the current two-level physical structure, including the later-authorized `ASSETS_FH_BRAINBOX` archive. The root `README_BRAINBOX.md` carries the complete project tree. Detailed audit, evidence, and asset contents are indexed by the [FootHive README](FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md).
 
+The FootHive case study is the canonical Sandbox owner of workflow-trial records and test evidence. The [external FootHive implementation repository](https://github.com/DeOdini/FOOTHIVE) owns website source; the [Production record](../../PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) owns the historical T20 release summary; and the [Portfolio reference index](../../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) owns presentation navigation. V01 production designation does not convert workflow Iteration 01 into a production test or claim a current live check.
+
 ## Related domains and references
 
 - [Sandbox DEVOPS](../README_SANDBOX_DEVOPS_BRAINBOX.md)
@@ -49,3 +51,6 @@ M15 defines the FootHive trial evidence responsibilities. The canonical local tr
 - [FootHive trial](FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md)
 - [Migration map](../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 - [Frozen V003 Specification](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md)
+- [Documentation Governance - active requirements; Universal Framework remains DRAFT](../../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Reference Governance - canonical ownership and reference classification](../../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
+- [Tree and Status Governance - tree and lifecycle classification](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)

@@ -1955,3 +1955,102 @@ No tests were applicable to this documentation/archive ticket. The separate repo
 ### Supplemental GitHub branch-protection read - 2026-10-16
 
 After PR #54, the GitHub branch metadata endpoint for `main` was read successfully. It reports `protected: false`, `protection.enabled: false`, and required-status-check enforcement `off` with empty `contexts` and `checks`. The repository rulesets endpoint also returned an empty list. This supplements the earlier note that the dedicated `/branches/main/protection` endpoint returned HTTP 403: that endpoint was unavailable to the connected integration, but the branch metadata was subsequently readable. No active branch-protection requirement was reported by the available GitHub metadata.
+
+## V003-DEVOPS-DOCGOV-01 - Reference Governance alignment - execution report - 2026-10-17
+
+**Status:** IMPLEMENTED; scoped documentation and reference validation PASS. Ticket branch publication is recorded in the Git closeout entry appended after the push. This is not an independent ChatGPT review, PR merge, or overall V003 acceptance.
+
+### Authorization and ticket source
+
+The Operator authorized execution in the current instruction after supplying `Pasted text.txt` titled **DEVOPS CODEX TICKET - REFERENCE GOVERNANCE ALIGNMENT AMENDMENT**. Its SHA-256 is `38930FD94FF13DCB1EDEADE98AD57635CD5B3F20B9FAF0A0BB44DA552CEAF4D7`. The attachment applies to `V003-DEVOPS-DOCGOV-01`. A standalone ticket file for that identifier was not present in the repository at preflight; execution was bounded to the supplied amendment. The attachment's own statement that it did not itself authorize changes was honored: implementation proceeded only after the Operator's direct execution instruction.
+
+### Baseline and canonical source inspected
+
+- Repository: `DeOdini/DEODINI_BRAINBOX`.
+- Updated `main` baseline and ticket-branch base: `a0eee3d27b428d42e542d217ac73b57fd09a921d`, the merge commit for PR [#56](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/56).
+- PR #56 was independently read from GitHub during this task and reports `merged: true`, base `main`, merge SHA `a0eee3d27b428d42e542d217ac73b57fd09a921d`.
+- Ticket branch: `v003/devops-docgov-01-reference-governance-alignment`, created from that updated main baseline.
+- Canonical policy inspected: `GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md` at baseline `a0eee3d`; Git blob `c2c878dc28224fa33f55ab848428626450e51f13`.
+- The Reference Governance reconciliation status now records PR #56 and the merge SHA. The separate Universal Documentation Governance Framework remains DRAFT and is not adopted as active policy.
+
+### Applicable Reference Governance provisions
+
+The review applied the sections **Canonical ownership**, **Reference quality**, **Relationship to Documentation Governance**, and **Current migration references**. The active governing boundary remains: one canonical owner for each information class; references do not transfer ownership; active authority is distinct from historical and migration evidence; and planned locations are not represented as present until checked.
+
+### Canonical ownership and relationships established
+
+| Information | Owner and destination | Relationship / status | Boundary recorded |
+|---|---|---|---|
+| Website implementation | External repository `DeOdini/FOOTHIVE` | EXTERNAL PROJECT SOURCE | GitHub metadata confirms the public repository exists. Its code, branch contents, deployment, and current health were not inspected. |
+| FootHive V01 designation | `V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`, line 4210 | HISTORICAL OPERATOR DECISION | Line 4210 states V01 is a Production website and the workflow experiment is not complete. Website V01 is distinct from workflow Iteration 01. |
+| Workflow-trial history and evidence | `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/` | ACTIVE CANONICAL SANDBOX SOURCE EVIDENCE | Owns the trial dataset, tests, failures, evidence, and iteration state; no mastery or experiment closure is claimed. |
+| T20 release and lessons | `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/` | HISTORICAL PRODUCTION OPERATION EVIDENCE | Owns the documented 2026-10-01 T20 release summary; no later live-health check is claimed. |
+| Project summary, handoff, and navigation | `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/` | PORTFOLIO PRESENTATION | Owns portfolio-facing content and presentation routing, not website source, Sandbox evidence, or Production operations. |
+| Retired project sources | `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/` plus `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` | HISTORICAL EVIDENCE / MIGRATION EVIDENCE | Records former paths, provenance, and dispositions; does not reactivate archived instructions. Seven legacy empty directory shells remain as a recorded Windows cleanup limitation; source files were archived under the authorized M20 disposition. |
+| Shared policy | `GOVERNANCE_BRAINBOX/` | GOVERNED BY | Documentation, Reference, Tree and Status, Evidence, Security, Promotion, and Ticketing policies remain at their Governance owner; the new universal framework is still DRAFT. |
+
+### Implemented references and routing changes
+
+Fourteen active Markdown documents were updated. The changes clarify the owner/status relationship, link the relevant Governance authorities without copying their policy text, correct stale present-tense M09/M10/M12 source-location statements, and point current navigation to the verified Sandbox, Production, Portfolio, or Recycle Bin destination as appropriate. The Backend/Integrations build-report routes now resolve to the canonical M15 Sandbox record. Existing historical RAW workflow bodies and retired source bodies were not rewritten.
+
+Affected paths:
+
+1. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/README_DEVOPS_AI_BRAINBOX.md`
+2. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md`
+3. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/README_POC_SANDBOX_BRAINBOX.md`
+4. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md`
+5. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md`
+6. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/BACKEND_SANDBOX_BRAINBOX/README_BACKEND_SANDBOX_BRAINBOX.md`
+7. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/BACKEND_SANDBOX_BRAINBOX/INTEGRATIONS_BACKEND_BRAINBOX/README_INTEGRATIONS_BACKEND_BRAINBOX.md`
+8. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md`
+9. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/README_POC_BRAINBOX.md`
+10. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md`
+11. `PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md`
+12. `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md`
+13. `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md`
+14. `GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md`
+
+### Historical and current routing assessment
+
+The active DEVOPS navigation now points to current verified destinations and classifies former project, Skills, FUNC, DOB/AI_MUST, and V002 Milestones material as archived/historical where linked. M20 migration and M01 baselines are cited as migration evidence, not current authority. The retained RAW Fullstack copies still contain old path strings and proposed promotion language as historical source text; their local README explicitly says those strings are non-operative and directs readers to current FUNC/AI and Governance authorities. No protected historical source body, frozen Specification, or Origin Conversation was edited.
+
+The active migration notes preserve the distinction between file archival and physical empty-shell cleanup. They do not claim all seven empty former project-workflow directories were removed.
+
+### Validation and evidence
+
+- `git diff --check`: PASS; no whitespace errors at report authoring.
+- Modified current Markdown scope before appending this report: 14 files.
+- Local inline Markdown destinations checked in those files: 279.
+- Broken local destinations: 0 after correcting the discovered `FOOTHIVE_PROD_SUMMARY_BRAINBOX` path.
+- A second scan after adding this report and the ticket-register entry checked all 16 changed Markdown files: 281 local inline destinations, 0 broken.
+- External links are reported separately from local-path checks. GitHub metadata verified `DeOdini/FOOTHIVE` exists as a public, non-archived repository with default branch `main`; repository contents and live website health were not checked.
+- The V003 Origin Conversation anchor was cross-checked against line 4210; the line contains the stated V01 Production designation.
+- No browser, production deployment, service-health, or application test was performed; this is a reference/documentation ticket.
+- No secret values, implementation assets, or production records were introduced.
+
+### Reference Governance Compliance Assessment
+
+| Gate | Result | Evidence |
+|---|---|---|
+| VG-21 - Canonical reference ownership | PASS | The Website source, Origin decision, Sandbox evidence, Production release summary, Portfolio presentation, archive/migration evidence, and Governance policies have separate owners and exact destinations. No new competing canonical evidence copy was created. |
+| VG-22 - Reference relationship classification | PASS | Updated references distinguish EXTERNAL PROJECT SOURCE, HISTORICAL OPERATOR DECISION, SOURCE EVIDENCE, HISTORICAL PRODUCTION OPERATION EVIDENCE, RELATED DOMAIN / PORTFOLIO PRESENTATION, MIGRATION EVIDENCE, and GOVERNED BY. |
+| VG-23 - Governance cross-reference integrity | PASS, scoped to affected DEVOPS and cross-domain parent/case-study READMEs | Applicable Documentation, Reference, and Tree and Status sources are linked from the reviewed DEVOPS parents and the directly affected Sandbox, Production, Backend integration, and Portfolio navigation records. Shared rules were not copied. Universal Framework status remains DRAFT. |
+| VG-24 - Historical and current routing | PASS | Active navigation links resolve to current canonical or archive destinations. Historical source strings in preserved RAW bodies remain labeled non-operative; they were not rewritten. |
+| VG-25 - FootHive cross-domain reference integrity | PASS | V01 provenance resolves to Origin line 4210; Sandbox/Production/Portfolio references resolve locally; T20 is labeled historical; no current deployment-health claim is introduced. |
+| VG-26 - Reference change accountability | PASS | The supplied amendment and the Operator's current execution instruction are identified; baseline commit/blob, affected paths, old-to-current routing, link results, and limits are recorded here. |
+
+### Unresolved authority questions and limits
+
+No unresolved canonical-owner decision was found within this bounded DEVOPS/FootHive/Portfolio scope. The repository did not contain a standalone ticket document named `V003-DEVOPS-DOCGOV-01`; the implementation follows the supplied amendment. The FootHive repo's internal content, website deployment, and current production health remain unverified. No current operating status is inferred from the historical T20 record.
+
+### Independent reproduction instructions for ChatGPT
+
+1. Confirm baseline and branch: `git show -s --format=%H a0eee3d27b428d42e542d217ac73b57fd09a921d` and `git branch --show-current`.
+2. Inspect the Reference Governance baseline blob: `git show a0eee3d27b428d42e542d217ac73b57fd09a921d:GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md` and compare the report's baseline blob SHA `c2c878dc28224fa33f55ab848428626450e51f13`.
+3. Review the exact ticket diff with `git diff a0eee3d27b428d42e542d217ac73b57fd09a921d -- <the 14 listed paths>`; inspect the appended report and ticket-register entry separately.
+4. Re-run `git diff --check` and validate local destinations in every modified Markdown file by extracting each inline `](target)` destination, skipping `http:`, `https:`, `mailto:`, `tel:`, data, and same-document fragments, URL-decoding the remaining path, stripping any `#anchor`, resolving it against the containing Markdown file, and checking that the filesystem target exists. Anchor line 4210 can be verified with `Get-Content V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md | Select-Object -Skip 4209 -First 1`.
+5. Independently read PR #56 and the `DeOdini/FOOTHIVE` repository metadata using the GitHub connector; do not interpret repository metadata as a live-site check.
+
+### Publication boundary
+
+This report is staged with the dedicated ticket changes. The branch is to be pushed for independent verification; no PR or merge for this ticket is requested or claimed. Ticket execution PASS here is Codex's own scoped evidence only; ChatGPT independent verification and Operator ticket acceptance remain pending.

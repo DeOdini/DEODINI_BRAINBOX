@@ -5,13 +5,13 @@
 **CURRENT DOMAIN:** Backend Sandbox
 **PURPOSE:** Index backend workflows, architecture application, APIs, data, authentication, storage, integrations, runtime patterns, security, code patterns, and testing without upgrading raw examples into verified knowledge.
 **MENTAL MODEL:** Backend branches hold application-specific backend responsibilities; Fullstack Architecture and Orchestration cover system selection and coordination; Skills owns reusable language, command, and generic pattern knowledge.
-**GOVERNED BY:** Sandbox DEVOPS; canonical Governance Evidence, Reference, Security, and Promotion rules.
+**GOVERNED BY:** Sandbox DEVOPS; active Governance Documentation, Reference, Tree and Status, Evidence, Security, and Promotion rules. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **AUTHORITATIVE TREE:** Frozen V003 Specification §8; Backend responsibility and Google Forms placement in §14; Python ownership in §§17 and 19.
 **LOCAL TREE:** This README and the two child READMEs expose the Backend subtree required by the approved taxonomy and P12.
 **RELATED DOMAINS:** Fullstack Workflows, Architecture, Orchestration; Skills Languages, Commands, API Design, Patterns, and Technologies; FootHive case study source.
 **CANONICAL SOURCES:** Frozen V003 Specification; V003 Origin Conversation; V003-M12 ticket.
 **POPULATION STATE:** Backend taxonomy and navigation are present. All 17 knowledge leaves are empty placeholders; no backend implementation or reusable pattern was promoted.
-**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**LAST VERIFIED:** 2026-10-17 - scoped Reference Governance route review; backend implementation and source evidence were not rechecked.
 **VERIFIER:** Codex implementation read-back; independent ChatGPT verification: PASS (2026-10-09).
 
 ## Canonical local tree — two descendant levels
@@ -71,7 +71,7 @@ This is both the M12 target tree and the current local tree. Each .gitkeep is ze
 
 - The retained Fullstack Workflows copies of [001](../WORKFLOWS_FULLSTACK_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md) and [002](../WORKFLOWS_FULLSTACK_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_WORKFLOWS_FULLSTACK_BRAINBOX.md) remain RAW / UNPROVEN. They contain backend examples and draft stack choices, including FastAPI/Supabase examples, but M12 does not select, copy, or certify those choices.
 - The [agent handoff classification](../ORCHESTRATION_FULLSTACK_BRAINBOX/AI_AGENT_ORCH_BRAINBOX/AI_AGENT_ORCH_HANDOFF_CLASSIFICATION_BRAINBOX.md) remains reference-only under Orchestration. M12 does not recast it as a backend workflow or service.
-- [FootHive’s build record](../../../../DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) is a project-specific source that records a Google Forms integration and Operator-confirmed response persistence. The canonical copy is now under the M15 FootHive Sandbox case study; the legacy source remains unchanged for M20 review. M12 copies no endpoint, form field mapping, response data, or project-specific implementation into this taxonomy.
+- [FootHive’s build record](../../POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) is a project-specific source that records a Google Forms integration and Operator-confirmed response persistence. The canonical copy is under the M15 FootHive Sandbox case study; eligible legacy source files were later archived by M20. M12 copies no endpoint, form field mapping, response data, or project-specific implementation into this taxonomy.
 
 ## Knowledge ownership
 
@@ -94,6 +94,9 @@ This is both the M12 target tree and the current local tree. Each .gitkeep is ze
 - [Skills reusable capabilities](../../../../SKILLS_AI_BRAINBOX/SKILLS_BRAINBOX/README_SKILLS_BRAINBOX.md)
 - [Frozen V003 Specification](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 14, 17, 19
 - [V003 Origin Conversation](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
+- [Documentation Governance - active requirements; Universal Framework remains DRAFT](../../../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Reference Governance - canonical ownership and reference classification](../../../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
+- [Tree and Status Governance - physical tree and lifecycle status](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 - [V003-M12 ticket](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
 - [Living migration map](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 

@@ -5,12 +5,12 @@
 **CURRENT DOMAIN:** Production DEVOPS
 **PURPOSE:** Organize evidence-backed release, deployment, operations, monitoring, environment controls, and production learning.
 **MENTAL MODEL:** APPLY → RELEASE → OPERATE → MONITOR → LEARN.
-**GOVERNED BY:** Governance Evidence, Reference, Security, Promotion, and Ticketing rules.
+**GOVERNED BY:** Active Governance Documentation, Reference, Tree and Status, Evidence, Security, Promotion, and Ticketing rules. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 21–22, 25; V003 Origin Conversation; V003-M09 and V003-M14 migration records.
 **APPLIES TO:** Actual production operations and their evidence, subject to applicable Operator authorization.
 **POPULATION STATE:** M14 structure plus the M16 FootHive T20 Production summary are present. No separate Production deployment procedure, ongoing operations, or monitoring outcome is claimed.
 **VERIFIER:** Codex — M14 implementation checks and M16 current-tree/link checks; independent ChatGPT M14 verification: PASS (2026-10-09); M16 independent verification: PASS (Batch D closeout, 2026-10-09).
-**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**LAST VERIFIED:** 2026-10-17 - scoped Reference Governance cross-domain review and Markdown-link check; historical operations were not rerun.
 
 ## Canonical local tree — two descendant levels
 
@@ -72,6 +72,18 @@ M14 created the approved structure and safe environment guidance only. No deploy
 
 M16 populated the Production case-study branch with the T20 release summary and lessons. The release evidence is summarized from the canonical Sandbox Build Report and Operator Addendum. No deployment procedure was promoted from Sandbox, no separate Production pass/fail/incident was fabricated, and no new deployment was triggered.
 
+## V01 production designation and cross-domain ownership
+
+The [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md#L4210) records the Operator's designation of FootHive V01 as a production website while the workflow experiment remains incomplete. This is the website's production designation; it does not convert Sandbox workflow Iteration 01 into a Production test or assert current deployment health.
+
+| Information | Canonical owner and path | Relationship and classification | Boundary |
+|---|---|---|---|
+| Website implementation | [DeOdini/FOOTHIVE](https://github.com/DeOdini/FOOTHIVE) | External project source | Repository identity was checked; website contents and current live status were not inspected for this ticket. |
+| Workflow-trial records and test evidence | [FootHive Sandbox case study](../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) | SOURCE EVIDENCE; canonical Sandbox record | Workflow history, tests, failures, and iteration evidence remain owned by Sandbox. |
+| T20 release operation | [FootHive Production summary](POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) | HISTORICAL PRODUCTION operation evidence | Records the 2026-10-01 T20 release and checks; no post-T20 live check is claimed. |
+| Project presentation and handoff | [FootHive Portfolio reference index](../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) | RELATED DOMAIN; Portfolio presentation | Portfolio links to the canonical Sandbox and Production records without copying their evidence. |
+| Retirement and migration history | [Retirement Ledger](../../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) and [Migration Map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) | HISTORICAL EVIDENCE / MIGRATION EVIDENCE | Archive paths preserve source history and are not active Production instructions. |
+
 ## Evidence and environment boundaries
 
 - Record source, environment/context, date, observed result, verification method, limits, and responsible verifier in future operational records as appropriate.
@@ -85,7 +97,7 @@ M16 populated the Production case-study branch with the T20 release summary and 
 - [Production Fullstack](FULLSTACK_PROD_BRAINBOX/README_FULLSTACK_PROD_BRAINBOX.md)
 - [Production Environment](ENVIRONMENT_PROD_BRAINBOX/README_ENVIRONMENT_PROD_BRAINBOX.md)
 - [Sandbox DEVOPS](../SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md)
-- FootHive Production summary: M16; no FootHive material was moved by M14.
+- [FootHive Production summary](POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) owns the T20 release summary; [Portfolio's FootHive reference index](../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) owns presentation routing. No FootHive material was moved by M14.
 
 ## Canonical sources and references
 
@@ -94,6 +106,9 @@ M16 populated the Production case-study branch with the T20 release summary and 
 - [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
 - [Governance Security](../../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md)
 - [Governance Evidence](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
+- [Documentation Governance - active requirements; Universal Framework remains DRAFT](../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Reference Governance - canonical ownership and reference classification](../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
+- [Tree and Status Governance - tree and lifecycle classification](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 - [Governance Promotion](../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
 - [M10 Fullstack workflows and deployment classification](../SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md)
 - [Phase 02 ticket set](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)

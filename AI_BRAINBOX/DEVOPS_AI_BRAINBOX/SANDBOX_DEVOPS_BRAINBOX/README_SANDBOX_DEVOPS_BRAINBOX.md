@@ -5,10 +5,10 @@
 **CURRENT DOMAIN:** Sandbox DEVOPS
 **PURPOSE:** Hold accurately labeled experimentation, workflow trials, validation, failures, refinements, and lessons that have not thereby become Production evidence.
 **MENTAL MODEL:** EXPERIMENT → TEST → FAIL → REFINE → VALIDATE.
-**GOVERNED BY:** Governance Evidence, Reference, Promotion, and Ticketing rules.
+**GOVERNED BY:** Active Governance Documentation, Reference, Tree and Status, Evidence, Promotion, and Ticketing rules. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 21–22, 25; V003 Origin Conversation; V003-M09 migration record.
 **APPLIES TO:** Sandbox execution knowledge and its evidence.
-**LAST VERIFIED:** 2026-10-15 — Codex current two-level tree, physical paths, local references, and legacy-shell status; Sandbox outcomes were not rerun.
+**LAST VERIFIED:** 2026-10-17 - scoped Reference Governance cross-domain review and Markdown-link check; Sandbox outcomes were not rerun.
 
 ## Canonical local tree — two descendant levels
 
@@ -43,7 +43,11 @@ The frozen V003 Specification §8 defines the approved Sandbox hierarchy. The ro
 
 The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
-The Fullstack README lists its own workflow, architecture, and orchestration subtree. The FootHive case-study records and historical evidence are now present under the approved Sandbox case-study destination. M15 did not retire or alter the original project-workflow source.
+## FootHive cross-domain classification
+
+The [FootHive V01 website](https://github.com/DeOdini/FOOTHIVE) is Operator-designated as a production website in the [Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md#L4210). The separate [FootHive Sandbox case study](POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) owns the workflow-trial dataset and test evidence; Iteration 01 is a workflow label, not website V01. The [Production summary](../PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) owns the historical T20 release-operation summary, while the [Portfolio reference index](../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) owns presentation routing. No current live-health check is implied.
+
+The Fullstack README lists its own workflow, architecture, and orchestration subtree. The FootHive case-study records and historical evidence are now present under the approved Sandbox case-study destination. M15 did not retire or alter the original project-workflow source at that ticket checkpoint; M20 later archived the eligible source files as recorded above.
 
 ## Content classification from M09 — historical closeout state
 
@@ -78,6 +82,8 @@ Do not use “PROVEN” as a permanent bucket. Describe what was tried, the evid
 - [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25
 - [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
 - [Governance entry](../../../GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md)
+- [Documentation Governance - active requirements; Universal Framework remains DRAFT](../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Tree and Status Governance - local-tree and lifecycle classifications](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 - [Evidence rules](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
 - [Promotion rules](../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
 - [Reference rules](../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)

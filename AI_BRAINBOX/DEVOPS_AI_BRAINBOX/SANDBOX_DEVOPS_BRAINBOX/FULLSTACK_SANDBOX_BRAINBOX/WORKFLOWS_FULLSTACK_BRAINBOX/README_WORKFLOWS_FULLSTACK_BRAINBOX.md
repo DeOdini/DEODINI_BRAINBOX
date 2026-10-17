@@ -5,10 +5,10 @@
 **CURRENT DOMAIN:** Fullstack Sandbox Workflows
 **PURPOSE:** Store and navigate source-backed Fullstack workflow candidates without representing them as validated procedures.
 **MENTAL MODEL:** RAW INPUT -> CLASSIFY -> TEST -> REFINE -> EVIDENCE-BASED STATUS.
-**GOVERNED BY:** Governance Evidence, Reference, Promotion, and Ticketing; Sandbox DEVOPS authority.
+**GOVERNED BY:** Active Governance Documentation, Reference, Tree and Status, Evidence, Promotion, and Ticketing rules; Sandbox DEVOPS authority. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **CANONICAL SOURCE:** Frozen V003 Specification §11; V003-M10 migration record.
 **APPLIES TO:** Fullstack discovery, blueprint, build-order, ticketing, execution, testing, and workflow-candidate material.
-**LAST VERIFIED:** 2026-10-09
+**LAST VERIFIED:** 2026-10-17 - scoped Reference Governance cross-domain review and Markdown-link check; workflow execution was not retested.
 
 ## Canonical local tree — two descendant levels
 
@@ -27,7 +27,7 @@ The current physical tree is documented in the canonical two-descendant-level lo
 
 ## Source-backed workflow records
 
-The two workflow records below were copied byte-for-byte from the legacy RAW folder after inspecting their actual content. Their original source files remain unchanged until M20. The target copies preserve the RAW / UNPROVEN status; copying does not prove, activate, or promote them.
+The two workflow records below were copied byte-for-byte from the legacy RAW folder after inspecting their actual content. At the M10 checkpoint the legacy sources remained unchanged pending M20; M20 later archived the eligible source files. The target copies preserve the RAW / UNPROVEN status; copying does not prove, activate, or promote them.
 
 | Target record | Legacy source | Current content state | Disposition |
 | --- | --- | --- | --- |
@@ -75,6 +75,9 @@ The RAW preset preserves historical path mentions of FUNC_WORKFLOW, FUNC_REQ, FQ
 - [Orchestration boundaries](../ORCHESTRATION_FULLSTACK_BRAINBOX/README_ORCHESTRATION_FULLSTACK_BRAINBOX.md)
 - [Governance Promotion](../../../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
 - [Governance Evidence](../../../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
+- [Documentation Governance - active requirements; Universal Framework remains DRAFT](../../../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Reference Governance - canonical ownership and reference classification](../../../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
+- [Tree and Status Governance - local-tree and lifecycle classifications](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 - [M09 Sandbox source disposition](../../README_SANDBOX_DEVOPS_BRAINBOX.md)
 - [M10 ticket](../../../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
 - [Living migration map](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)

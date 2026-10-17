@@ -5,12 +5,12 @@
 **CURRENT DOMAIN:** FootHive workflow-trial evidence, source provenance, and iteration tracking
 **PURPOSE:** Preserve the evidence-backed FootHive trial and link to retained project sources without claiming the experiment is closed or mastered.
 **MENTAL MODEL:** RECORD ITERATION 01 EVIDENCE -> RECONCILE FLAGS -> PLAN LATER ITERATIONS -> ASSESS MASTERY ONLY WHEN AUTHORIZED AND EVIDENCED.
-**GOVERNED BY:** Governance Evidence, Reference, Versioning, Documentation, and Promotion rules.
+**GOVERNED BY:** Active Governance Documentation, Reference, Tree and Status, Evidence, Versioning, and Promotion rules. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **AUTHORITATIVE TREE:** The local tree below is the M15 FootHive case-study target.
 **CANONICAL SOURCES:** Frozen V003 Specification §§8, 10, 21-22, 25-27; V003 Origin Conversation; V003-M15.
 **REFERENCES:** M15 migration map, report, and conversation archive; the integrity manifest in EVIDENCE_FH_BRAINBOX.
 **POPULATION STATE:** Current historical records are the Iteration 01 experimental dataset. Iterations 02 and 03 and Workflow Mastery Assessment are [PLANNED].
-**LAST VERIFIED:** 2026-10-15 — repository-wide POC naming and current-reference reconciliation; historical test claims were not rerun.
+**LAST VERIFIED:** 2026-10-17 - scoped Reference Governance cross-domain review and Markdown-link check; historical test claims were not rerun.
 **VERIFIER:** Codex - M15 implementation/integrity checks; ChatGPT - independent verification PASS (2026-10-09), recorded in the Phase 02 report and Migration Map.
 **APPLIES TO:** The FootHive workflow experiment and its evidence, not the FootHive website's version number or production state.
 **ENTRY NAVIGATION:** Start here, then follow the linked canonical records and evidence index.
@@ -59,6 +59,19 @@ The website project and the workflow iteration are separate dimensions. Website 
 The source README was a dated pre-build snapshot and is preserved in the Recycle Bin archive. This README provides current navigation and status. The original build report, passed record, failed record, conversation, and Operator addendum remain historical evidence; byte-preservation qualifications are recorded in the manifest and migration reports. Do not rewrite those historical records here.
 
 The trial's project context is a workflow exercise in which the Operator role-played a client using a public brief as a starting point. The records do not establish a paid client engagement. Consult the dated source records before making claims about any specific pass, failure, deployment, browser check, or form response.
+
+## Cross-domain ownership and reference relationships
+
+| Information | Canonical owner and exact destination | Relationship and classification | Purpose and limit |
+|---|---|---|---|
+| FootHive website implementation | [External repository](https://github.com/DeOdini/FOOTHIVE) (`DeOdini/FOOTHIVE`) | EXTERNAL PROJECT SOURCE | Owns website source. Repository identity was checked; this ticket did not inspect its worktree or current deployment health. |
+| V01 Production designation | [V003 Origin Conversation, line 4210](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md#L4210) | HISTORICAL OPERATOR DECISION | Establishes the website's Production designation; it does not mean workflow Iteration 01 was a Production test. |
+| Workflow-trial history and evidence | [This case-study README](README_FH_WORKFLOW_TRIAL_BRAINBOX.md); `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/` | ACTIVE CANONICAL SANDBOX SOURCE EVIDENCE | Owns workflow Iteration 01, test records, failures, assets, and iteration status. It does not claim mastery or a completed experiment. |
+| T20 release and Production lessons | [FootHive Production summary](../../../PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) | HISTORICAL PRODUCTION OPERATION EVIDENCE | Owns the recorded 2026-10-01 T20 release summary; no later live check is implied. |
+| Portfolio summary and handoff | [FootHive Portfolio reference index](../../../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) | RELATED DOMAIN; PORTFOLIO PRESENTATION | Owns presentation and handoff navigation; it links to Sandbox and Production evidence without acquiring their source ownership. |
+| Retired V002 project sources | [Recycle Bin archive](../../../../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) and [V003 Migration Map](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) | HISTORICAL EVIDENCE / MIGRATION EVIDENCE | Preserve source provenance and dispositions; archived records are not current operating instructions. |
+
+Applicable system-wide rules remain owned by Governance: [Documentation Governance](../../../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md), [Reference Governance](../../../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md), and [Tree and Status Governance](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md). The Universal Documentation Governance Framework is still DRAFT.
 
 ## Evidence-set scope and current navigation
 

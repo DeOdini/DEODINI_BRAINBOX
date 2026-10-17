@@ -617,3 +617,17 @@ This closes only Corrective Ticket 03 execution/publication. It is not a ChatGPT
 ### Supplemental GitHub policy read - 2026-10-16
 
 A subsequent GitHub branch metadata read reports `main` as `protected: false`, `protection.enabled: false`, with required-status-check enforcement `off` and empty status contexts/checks. Repository rulesets are empty. This supplements the earlier limitation that the dedicated branch-protection endpoint returned HTTP 403; the branch metadata endpoint exposed the current protection state. The Ticket 03 implementation and separate report-only publication closeout remain complete; this note does not extend the ticket scope or claim broader V003 acceptance.
+
+## V003-DEVOPS-DOCGOV-01 - Reference Governance alignment - 2026-10-17
+
+**Status:** IMPLEMENTED; scoped validation PASS; dedicated ticket branch publication pending in this record's initial execution checkpoint; no PR or merge claimed. This is not independent ChatGPT verification or overall V003 acceptance.
+
+**Source:** Operator-supplied `DEVOPS CODEX TICKET - REFERENCE GOVERNANCE ALIGNMENT AMENDMENT`; standalone repository ticket file was not found. The Operator separately authorized execution. Source attachment SHA-256: `38930FD94FF13DCB1EDEADE98AD57635CD5B3F20B9FAF0A0BB44DA552CEAF4D7`.
+
+**Branch/base:** `v003/devops-docgov-01-reference-governance-alignment`, based on merged main commit `a0eee3d27b428d42e542d217ac73b57fd09a921d` (PR #56). The baseline Reference Governance file blob is `c2c878dc28224fa33f55ab848428626450e51f13`.
+
+**Scope:** Align active DEVOPS and FootHive cross-domain owner/reference navigation; distinguish Sandbox evidence, T20 Production release history, Portfolio presentation, external website source, and archived migration evidence; correct stale M09/M10/M12 checkpoint wording; point relevant Backend/Integrations links to current canonical Sandbox sources; update the Reference Governance PR #56 publication record. The Universal Documentation Governance Framework remains DRAFT. No historical source, frozen V003 authority, production deployment, or website content was modified.
+
+**Evidence and gates:** Fourteen implementation READMEs had 279 local inline link destinations checked, 0 broken after correction. A post-report scan checked all 16 changed Markdown files with 281 local inline destinations and 0 broken; `git diff --check` passed. VG-21 through VG-26 results and reproducible review steps are in the [V003-DEVOPS-DOCGOV-01 execution report](V003_FIXES_REPORT_BRAINBOX.md). GitHub confirms PR #56 is merged as `a0eee3d27b428d42e542d217ac73b57fd09a921d`; the external FootHive repository exists, but its code and live health were not checked. No live-site/deployment test is claimed.
+
+**Ticket execution result:** Codex-scoped implementation and validation PASS. ChatGPT independent verification pending; Operator acceptance pending. Ticket-branch push is recorded in the subsequent Git closeout entry. No PR or merge of this ticket branch was requested or performed.
