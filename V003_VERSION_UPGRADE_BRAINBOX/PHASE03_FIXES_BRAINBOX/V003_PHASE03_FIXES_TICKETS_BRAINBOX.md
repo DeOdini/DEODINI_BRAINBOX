@@ -724,3 +724,6 @@ ChatGPT independently verified the C01 audit and C01-R01 historical-status corre
 
 
 **Registry-wide route check:** Read-only inspection counted eight CORE agent records and eight agent EXE READMEs. All eight EXE READMEs link the same universal EXE questionnaire; no separate request-intake procedure was found in either registry. Historical DeepSeek/Qwen source notices remain historical and do not establish a new requirement.
+### C02 publication checkpoint - 2026-10-17
+
+Commit 1f7436272352dd838a8b6c82bb3a87af93078e7f (V003: assess FUNC-local procedure requirement) is pushed to origin/v003/func-bc-core-exe-and-procedure-disposition. GitHub fetch matched the full SHA/subject and confirmed exactly the two authorized reporting files (58 insertions, 0 deletions). Compare: 7 commits ahead / 0 behind main at b7a7a1d533277bc02f0613de198a9eaa9acb7afa; branch-wide paths remain the earlier Codex CORE correction and the two Phase 03 records. Local HEAD equals upstream; worktree clean; whitespace checks pass. No PR/merge was created; PR #70 was untouched. ChatGPT independent verification and Operator acceptance remain pending; FUNC-04 remains OPEN.
