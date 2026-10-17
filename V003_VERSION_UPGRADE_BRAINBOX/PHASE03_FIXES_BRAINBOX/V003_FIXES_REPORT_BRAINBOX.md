@@ -2690,3 +2690,11 @@ This report is staged with the dedicated ticket changes. The branch is to be pus
 - **PR #70:** The PR branch is being updated to record the accepted FUNC-04 closure, the eight-entry index, and the required closeout evidence. The PR body will be reconciled to the actual eight active entries. No other issue is closed by this action.
 - **Git scope:** Authorized changes are limited to V003_UNRESOLVED_BRAINBOX.md, this report, and the Phase 03 ticket register. The branch was reconciled with current origin/main at 3cb187d4b3bb32aa34322e1ba759854dfbe1e6a2 using a normal merge; no force operation, branch deletion, stash change, or source retirement occurred.
 - **Verification:** Git whitespace validation, active-ID/index reconciliation, local Markdown link checks, commit, push, PR merge, and final main synchronization are recorded in the publication follow-up checkpoint after completion.
+
+### CLOSEOUT-01 Git publication and merge verification - 2026-10-17
+
+- PR #70 was merged into main with merge commit e02445f5b5182fb081e03698d56eb58c90cd5967. GitHub readback confirmed PR #70 closed and merged; its published head was be7c575cb70dfc0791f4472a6d845eddda65f41e.
+- PR #70 changed exactly the Unresolved Register, Phase 03 Fixes Report, and Phase 03 Ticket Register. GitHub reported three files, 38 additions and 34 deletions across the PR after the accepted closure and register cleanup.
+- The PR description now states the eight remaining active issue IDs and the accepted FUNC-04 disposition. No other issue was closed.
+- After merge, origin/main advanced from 3cb187d4b3bb32aa34322e1ba759854dfbe1e6a2 to e02445f5b5182fb081e03698d56eb58c90cd5967. Local main was fast-forwarded; local main and origin/main matched at the merge SHA, ahead/behind 0/0, with a clean worktree.
+- The remote branch audit found no branch tips outside main ancestry. The PR #70 topic branch is retained; no branches were deleted, and no stashes or unrelated work were changed.
