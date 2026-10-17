@@ -27,15 +27,20 @@ FOOTHIVE_PROD_SUMMARY_BRAINBOX/ [PRESENT · POPULATED]
 
 This Production summary records the actual release operation documented for T20. It references the canonical Sandbox evidence; it does not copy the Sandbox evidence set. It records the observed release as of 2026-10-01 and does not claim the public site was rechecked during M16.
 
+The V003 Origin Conversation's Operator designation at line 4210 states that FootHive website V01 exists as a production website while the workflow experiment remains incomplete. Website version V01 and the Sandbox's logical workflow Iteration 01 are separate identifiers. This historical designation does not establish the site's present live health, close the workflow experiment, or claim workflow mastery.
+
 ## Current-tree reference
 
 The current physical tree is documented in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Navigate
 
-- [Production lessons and T20 release facts](PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md)
-- [Canonical Sandbox FootHive case study](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md)
-- [Canonical Sandbox Build Report](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md)
-- [Operator Addendum and later verification clarifications](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/OPERATOR_ADDENDUM_FH_BRAINBOX.md)
-- [M16 migration-map disposition](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
-- [Root navigation](../../../../../README_BRAINBOX.md)
+- [Production lessons and T20 release facts](PRODUCTION_LESSONS_FOOTHIVE_BRAINBOX.md) — this Production record's deployment identifiers, dated checks, and operating limits.
+- [Canonical Sandbox FootHive case study](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) — owner of the workflow-trial dataset, iteration state, and Sandbox evidence; not copied into Production.
+- [Canonical Sandbox Build Report](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md) — chronological implementation, release, and verification evidence underlying this summary.
+- [Operator Addendum and later verification clarifications](../../../SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/OPERATOR_ADDENDUM_FH_BRAINBOX.md) — subsequent Operator-performed evidence and clarifications, kept distinct from agent checks.
+- [FootHive Portfolio reference index](../../../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) — navigation to project presentation and handoff; Portfolio does not own release evidence.
+- [External FootHive application repository](https://github.com/DeOdini/FOOTHIVE) — website source-control location; the repository's `main` branch contains the application entry file, but that does not verify a current deployment.
+- [V003 Origin Conversation](../../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md), line 4210 — historical source for the Operator's website V01 versus unfinished workflow distinction stated above.
+- [M16 migration-map disposition](../../../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — source-to-target disposition and migration integrity record for the Production summary.
+- [Root navigation](../../../../../README_BRAINBOX.md) — complete Brainbox tree and top-level domain navigation.
