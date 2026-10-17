@@ -8,7 +8,7 @@
 **GOVERNED BY:** Governance Evidence, Reference, Promotion, and Ticketing rules.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 21–22, 25; V003 Origin Conversation; V003-M09 migration record.
 **APPLIES TO:** Sandbox execution knowledge and its evidence.
-**LAST VERIFIED:** 2026-10-15 — Codex current two-level tree, physical paths, local references, and legacy-shell status; Sandbox outcomes were not rerun.
+**LAST VERIFIED:** 2026-10-17 — Codex verified the current two-level tree, absent former PROJ source root, zero tracked paths beneath it, archive references, and planned destinations; Sandbox outcomes were not rerun.
 
 ## Canonical local tree — two descendant levels
 
@@ -60,7 +60,7 @@ The legacy `PROVEN_PATTERN_PROJ_BRAINBOX.md` and `FAILED_PATTERN_PROJ_BRAINBOX.m
 
 ## M10 disposition at closeout — historical; source retirement later completed by M20
 
-M10 copied the two unproven Fullstack workflow documents into `FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/` without changing their content. At M10 closeout, their legacy originals and `FSTACK_MUST_README.md` remained pending M20. M20 later archived the legacy project-workflow files under the Recycle Bin; seven empty source directory shells remain because Windows denied their removal. The architecture and orchestration branches have empty placeholders, except the AI-agent branch's reference-only, unverified handoff classification. No architecture choice, service-coordination behavior, production deployment sequence, or Production evidence was invented.
+M10 copied the two unproven Fullstack workflow documents into `FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/` without changing their content. At M10 closeout, their legacy originals and `FSTACK_MUST_README.md` remained pending M20. M20 later archived the legacy project-workflow files under the Recycle Bin; that operation initially left seven empty source directory shells after Windows denied their removal. Corrective Ticket 01 later removed the shells; its cleanup evidence was verified on 2026-10-16, as recorded below. The architecture and orchestration branches have empty placeholders, except the AI-agent branch's reference-only, unverified handoff classification. No architecture choice, service-coordination behavior, production deployment sequence, or Production evidence was invented.
 
 ## Status and promotion
 
@@ -68,28 +68,31 @@ Do not use “PROVEN” as a permanent bucket. Describe what was tried, the evid
 
 ## Related domains
 
-- [DEVOPS parent](../README_DEVOPS_AI_BRAINBOX.md)
-- [Fullstack Sandbox workflow/architecture/orchestration](FULLSTACK_SANDBOX_BRAINBOX/README_FULLSTACK_SANDBOX_BRAINBOX.md), migrated in M10.
-- FootHive trial and evidence: M15; later Production and Portfolio summaries: M16.
-- Reusable technology/pattern knowledge belongs to Skills, with references rather than duplicate project-specific records.
+- [DEVOPS parent](../README_DEVOPS_AI_BRAINBOX.md) — system-wide DEVOPS navigation and the relationship between Sandbox and Production.
+- [Fullstack Sandbox workflow/architecture/orchestration](FULLSTACK_SANDBOX_BRAINBOX/README_FULLSTACK_SANDBOX_BRAINBOX.md) — the Sandbox's Fullstack-specific workflow candidates and application-architecture/orchestration branches, migrated in M10.
+- [FootHive Sandbox POC](POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) — canonical M15 trial records and evidence; M16 Production and Portfolio summaries have separate ownership.
+- [Skills master](../../SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md) — canonical reusable technology and pattern knowledge; Sandbox keeps project-specific trial records and references Skills instead of duplicating general knowledge.
 
 ## Canonical sources and references
 
-- [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25
-- [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md)
-- [Governance entry](../../../GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md)
-- [Evidence rules](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md)
-- [Promotion rules](../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md)
-- [Reference rules](../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
-- [Ticket rules](../../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md)
-- [Archived legacy project README](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md) — historical source; use this DEVOPS README for current navigation.
-- [Archived RAW workflow overview](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md)
-- [Archived RAW Fullstack workflow guide](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/FSTACK_MUST_README.md)
-- [Archived RAW workflow 001](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md)
-- [Archived RAW workflow 002](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md)
+- [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25 — approved Sandbox hierarchy, domain boundaries, and population-state authority.
+- [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md) — chronological provenance and ambiguity evidence behind the frozen authority.
+- [Governance entry](../../../GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md) — entry point for the system-wide rules inherited by Sandbox.
+- [Evidence rules](../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md) — how Sandbox observations, outcomes, and limitations are recorded.
+- [Promotion rules](../../../GOVERNANCE_BRAINBOX/PROMOTION_GOV_BRAINBOX.md) — evidence and authorization required before Sandbox findings become Production claims.
+- [Reference rules](../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md) — provenance and cross-reference requirements for these records.
+- [Ticket rules](../../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md) — ticket scope, authorization, and verification boundaries.
+- [Archived legacy project README](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/PROJ_MUST_README.md) — historical source navigation; use this README for current Sandbox navigation.
+- [Archived RAW workflow overview](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/RAW_PROJ_MUST_README.md) — retained to document the original RAW source structure and classification.
+- [Archived RAW Fullstack workflow guide](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/FSTACK_MUST_README.md) — retained as historical source comparison; it does not certify either workflow.
+- [Archived RAW workflow 001](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md) — original unproven candidate retained for provenance.
+- [Archived RAW workflow 002](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md) — original unproven preset candidate retained for provenance.
 - [Canonical FootHive Sandbox POC](POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) is populated by M15. The [archived original project source](../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/) remains available under the retirement manifest for historical integrity and reference.
-- [M09 ticket](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md)
-- [Living migration map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
+- [M09 ticket](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md) — source-classification scope and evidence requirements.
+- [Living migration map](../../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — source-to-target disposition and migration chronology.
+- [Project-workflow retirement manifest](../../../RECYCLE_BIN_BRAINBOX/PROJ_WORKFLOW_RETIREMENT_MANIFEST_BRAINBOX.json) — archived file paths, sizes, and source hashes.
+- [Retirement ledger](../../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) — cleanup attempts and final physical-removal verification.
+- [Corrective Ticket 01 report](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md) — detailed archive comparison and source-cleanup evidence.
 
 ## Record provenance
 
@@ -109,6 +112,6 @@ V003-M09 independently verified **PASS**. At that date the raw Fullstack sources
 
 V003-M15 had created POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/ and its canonical navigation, historical record, audit, evidence, and retrospective files. The records represented the existing logical Iteration 01 dataset. Iterations 02 and 03 and the Workflow Mastery Assessment remained planned; no physical iteration folders or mastery claim were created. At that date, source assets without an approved target remained in the legacy FootHive source, and no source had been removed.
 
-## Current FootHive source disposition — 2026-10-15
+## FootHive source disposition — 2026-10-15 checkpoint; cleanup verified 2026-10-16
 
-The current canonical FootHive POC and approved asset groups are under `POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/`. The former project-workflow source files are preserved in the Recycle Bin archive with the 88-entry SHA-256 manifest; seven empty legacy directories remain because Windows denied their removal. The archive is historical recovery material, not the active Sandbox navigation path. The Migration Map and Phase 03 report record the source/destination integrity and the qualified cleanup exception.
+At the 2026-10-15 checkpoint, the canonical FootHive POC and approved asset groups were under `POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/`; the former project-workflow source files were preserved in the Recycle Bin archive with the 88-entry SHA-256 manifest, while seven empty legacy directories remained after Windows denied their removal. That is historical checkpoint state, not the current physical state. Corrective Ticket 01 cleanup was subsequently verified on 2026-10-16: this checkout confirms the former source root is absent and `git ls-files` reports no tracked paths beneath it. The archive remains historical recovery material, not the active Sandbox navigation path. See the [retirement manifest](../../../RECYCLE_BIN_BRAINBOX/PROJ_WORKFLOW_RETIREMENT_MANIFEST_BRAINBOX.json), [retirement ledger](../../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md), and [Corrective Ticket 01 report](../../../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md) for source/destination integrity, the earlier access-denied attempts, and the qualified cleanup evidence.
