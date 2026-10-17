@@ -53,7 +53,7 @@ For each future resolved item: independently verify the closure condition, appen
 
 ### Cross-category dependency / proposed selection order
 
-1. DEVOPS-01 is closed within its accepted documentation scope (2026-10-17). Any selected Portfolio source-route review remains separately selectable; FUNC-03/04 remain independently selectable. Skills/Milestones retirements and legacy FUNC/DOB/AI_MUST retirements are closed.
+1. DEVOPS-01 is closed within its accepted documentation scope (2026-10-17). Any selected Portfolio source-route review remains separately selectable; FUNC-03 is closed with Operator acceptance and its removal is reflected in this register update, while FUNC-04 remains active pending final Operator closure acceptance. Skills/Milestones retirements and legacy FUNC/DOB/AI_MUST retirements are closed.
 2. GOVERNANCE-01 can proceed independently; GOVERNANCE-02 canonical ownership matrix follows the remaining child mappings.
 3. README-01 and README-03 root routes follow their named dependencies; resolved README-02 retirement routing is documented in the permanent Phase 03 records.
 4. V003-STATUS-01/02 and GOVERNANCE-03/04 may proceed when their respective prerequisites are met; unrelated fixes remain selectable.
