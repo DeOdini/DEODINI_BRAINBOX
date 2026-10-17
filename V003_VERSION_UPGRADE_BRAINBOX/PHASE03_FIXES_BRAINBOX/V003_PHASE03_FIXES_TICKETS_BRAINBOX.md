@@ -776,3 +776,13 @@ The execution report was published on `v003/func-bc-closeout-01` at `3b1891744d6
 ### Git closeout - 2026-10-17
 
 Implementation commit `d8159e0e0ef35cc598838d8626d79497d1bea19d` (`V003: align DEVOPS references with Governance`) was pushed successfully to `v003/devops-docgov-01-reference-governance-alignment`. GitHub branch tip, local `HEAD`, and the local `origin` tracking ref matched at verification. The implementation worktree was clean after the push. No PR or merge was performed; ChatGPT independent verification and Operator acceptance remain pending.
+
+## V003-FUNC-BC-CLOSEOUT-01 - Final FUNC acceptance and active-register disposition - 2026-10-17
+
+- **Operator acceptance:** The Operator explicitly replied "Accept closure as documented" to the final FUNC-04 acceptance gate in CLOSEOUT-01 section 5.
+- **FUNC-03:** CLOSED - OPERATOR ACCEPTED; C01 and C01-R01 independent PASS and Operator acceptance are retained in their dated checkpoints.
+- **FUNC-04:** CLOSED - OPERATOR ACCEPTED; NO LOCAL REPLACEMENT REQUIRED. C02 remains a QUALIFIED PASS limited to documentation authority and procedure sufficiency; it is not live integration, agent execution, authentication, or workflow certification.
+- **C02-GOV-01:** Independent ChatGPT verification PASS is recorded in the closeout baseline. PR #71 merge SHA: 5538e8479f744bce6ea6da5226d6ab6f1595a926.
+- **Unresolved Register:** The accepted FUNC-03 and FUNC-04 active rows are removed. Eight active IDs remain: V003-STATUS-01, V003-STATUS-02, README-01, README-03, GOVERNANCE-01, GOVERNANCE-02, GOVERNANCE-03, GOVERNANCE-04. Historical evidence and permanent IDs remain preserved.
+- **PR #70:** This branch is reconciled with current origin/main at 3cb187d4b3bb32aa34322e1ba759854dfbe1e6a2. The PR description and final changed-file list will be verified after push. No additional issue closure, runtime certification, source retirement, force-push, or branch deletion is authorized or performed.
+- **Git publication and synchronization:** Exact report commit(s), PR #70 head, merge result, main SHA, and clean local/remote state are recorded in the publication follow-up checkpoint after the authorized lifecycle completes.
