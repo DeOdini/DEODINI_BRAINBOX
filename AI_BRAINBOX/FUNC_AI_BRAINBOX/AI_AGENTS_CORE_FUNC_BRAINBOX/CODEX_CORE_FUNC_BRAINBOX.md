@@ -11,30 +11,30 @@
 
 ## EXPOSED
 
-**Current status:** YES, for the present Codex session only.
-The current tool registry exposed GitHub MCP operations, Remote Desktop Commander, workspace/process operations, web search, browser-control and image-generation tools, and a skill catalog. The 2026-10-03 source report also listed Playwright, Google and Microsoft services, Figma, Firecrawl, Render, Supabase, Base44, Replit, Sites, Brevo, Resend, Stripe, Upwork, and related integrations. Tool presence alone does not prove a reachable account or target.
+**Status at 2026-10-08 verification:** YES, for the tool registry and source evidence recorded for that session.
+On 2026-10-08, the tool registry exposed GitHub MCP operations, Remote Desktop Commander, workspace/process operations, web search, browser-control and image-generation tools, and a skill catalog. The 2026-10-03 source report also listed Playwright, Google and Microsoft services, Figma, Firecrawl, Render, Supabase, Base44, Replit, Sites, Brevo, Resend, Stripe, Upwork, and related integrations. Tool presence alone does not prove a reachable account or target; current session exposure requires a fresh inspection.
 
 ## CONNECTED
 
-**Current status:** YES, for the scoped operations verified here.
+**Status at 2026-10-08 verification:** YES, for the scoped operations verified in that session.
 - GitHub MCP answered repository/PR requests; PR #21 was created, fetched, and merged.
 - The RDC device DESKTOP-DHRIH27 responded to file and process requests.
 - Git CLI reached origin and pushed the BATCHA-DOC-01 branch.
-This does not establish that every exposed integration is connected.
+This historical evidence does not establish that every exposed integration was connected or that any connection remains current; current connectivity requires separate verification.
 
 ## AUTHENTICATED
 
-**Current status:** YES for the GitHub MCP account observed as DeOdini when creating and merging PR #21; YES for successful Git remote push using the configured credential, with the underlying credential identity not separately queried; YES for the active RDC device session.
-The local Git commit identity is configured as pedestal-archive <deodinihq@gmail.com>. Commit author identity and the GitHub MCP actor are separate facts.
+**Status at 2026-10-08 verification:** YES for the GitHub MCP account observed as DeOdini when creating and merging PR #21; YES for successful Git remote push using the configured credential, with the underlying credential identity not separately queried; YES for the active RDC device session at that time.
+The local Git commit identity is configured as pedestal-archive <deodinihq@gmail.com>. Commit author identity and the GitHub MCP actor are separate facts. These are historical authentication observations; present-day authentication requires separate verification.
 
 ## EXECUTABLE
 
-**Current status:** YES, within the operations evidenced in this session.
-Observed: repository reads, local branch creation, staged/committed changes, Git push, PR creation/fetch/merge, and local synchronization of main. Evidence: BATCHA-DOC-01 commit 7c0a419d8f6e74f5dfd0f5600a1a2187003131f7 and PR #21 merge commit 3201a1e80c5bfb2f4f2053599608ff8fce15f9db. Other service or deployment operations were not verified here.
+**Status at 2026-10-08 verification:** YES, within the operations evidenced in that session.
+Observed in that session: repository reads, local branch creation, staged/committed changes, Git push, PR creation/fetch/merge, and local synchronization of main. Evidence: BATCHA-DOC-01 commit 7c0a419d8f6e74f5dfd0f5600a1a2187003131f7 and PR #21 merge commit 3201a1e80c5bfb2f4f2053599608ff8fce15f9db. Other service or deployment operations were not verified in that session. Current executable access requires separate verification.
 
 ## AUTHORIZED
 
-**Current status:** YES, scoped to the Operator's explicit instruction to publish the Batch A correction and proceed with M05. This does not establish standing authority for future commits, pushes, merges, deployments, or external writes. Each action still follows its task authorization.
+**Status at 2026-10-08 verification:** YES, scoped to the Operator's explicit instruction to publish the Batch A correction and proceed with M05. This historical authorization did not establish standing authority. Present or future actions require their own explicit task-scoped authorization.
 
 ## LIMITATIONS
 

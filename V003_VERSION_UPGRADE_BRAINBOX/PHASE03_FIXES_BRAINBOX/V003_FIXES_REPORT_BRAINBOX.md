@@ -2432,3 +2432,18 @@ The FUNC / CORE / EXE trees match the filesystem and all local file and heading 
 ### C01 audit publication checkpoint - 2026-10-17
 
 Audit commit `92bf125f8c9ae3211d122010e6cc3f70ba386285` was pushed to `origin/v003/func-bc-core-exe-and-procedure-disposition`. GitHub commit fetch returned the same full SHA and subject. A live GitHub compare shows the branch is 1 commit ahead / 0 behind `main` at `b7a7a1d533277bc02f0613de198a9eaa9acb7afa`, with exactly the two authorized Phase 03 reporting files and 109 additions / 0 deletions. Local HEAD and the upstream branch tip matched after push. No PR or merge was created; none is authorized by this plan.
+
+## V003-FUNC-BC-C01-R01 - Historical Capability Status Clarification - 2026-10-17
+
+**Operator authorization:** Approved for execution; parent ticket C01, Issue 01 / FUNC-03.
+**Branch:** `v003/func-bc-core-exe-and-procedure-disposition`.
+**Changed CORE record:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md` only.
+
+The EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, and AUTHORIZED sections now identify their affirmative status as verified on 2026-10-08. The record preserves the underlying session evidence and authorization limits, and clarifies that current exposure, connectivity, authentication, executable access, and authorization require fresh or task-scoped verification. No present-day capability was inferred. Existing canonical EXE references and their destinations remain unchanged.
+
+**Validation:** Exactly one CORE source record was modified; all five required status sections identify 2026-10-08. All 11 local file links among 12 Markdown links in the record resolve; the remaining link is the existing external PR #21 reference. The scoped diff shows no other CORE or EXE record changed, the canonical EXE reference block is unchanged, and `git diff --check` passed. The original C01 audit findings above remain intact as historical evidence.
+
+**C01-R01 execution:** COMPLETE; pending independent ChatGPT verification.
+**FUNC-03:** OPEN pending independent verification and Operator acceptance; no issue closure is claimed.
+**C02:** NOT STARTED; remains gated on independent review of C01 and C01-R01.
+**Git publication:** Correction and this report/ticket-register update are authorized for the existing batch branch. Commit and remote verification details will be recorded in the publication checkpoint after push. No PR or merge is authorized.

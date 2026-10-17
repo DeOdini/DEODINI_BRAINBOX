@@ -686,3 +686,14 @@ PR #68 merged as 483529b52c6c505694dc22935e92581731c04016. The eleven authorized
 ### C01 Git publication checkpoint - 2026-10-17
 
 Audit commit `92bf125f8c9ae3211d122010e6cc3f70ba386285` is pushed and confirmed at the matching GitHub branch tip. The branch is 1 commit ahead / 0 behind `main`; its only changed files are the authorized report and ticket register, with 109 additions and no deletions. No PR or merge was created.
+
+## V003-FUNC-BC-C01-R01 - Historical Capability Status Clarification - 2026-10-17
+
+**Operator authority:** Approved for execution under parent ticket C01, Issue 01 / FUNC-03.
+**Implementation:** The five affirmative status sections in `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md` are dated to the 2026-10-08 verification. Historical evidence and limitations remain; current exposure, connectivity, authentication, execution, and authorization are not inferred.
+**Scope check:** Exactly one CORE record changed. No other CORE or EXE record changed. Existing canonical EXE references remain unchanged.
+**Validation:** Five dated status sections confirmed; 11 local file links resolve; scoped `git diff --check` passed.
+**C01-R01:** Codex correction complete; ChatGPT independent verification PENDING.
+**FUNC-03:** OPEN pending independent verification and Operator acceptance.
+**C02:** NOT STARTED; wait for the C01 independent verification gate.
+**Git lifecycle:** Correction and reporting records are authorized for staging, commit, and push on the existing batch branch. No PR or merge is authorized. Commit and remote SHA will be recorded after publication.
