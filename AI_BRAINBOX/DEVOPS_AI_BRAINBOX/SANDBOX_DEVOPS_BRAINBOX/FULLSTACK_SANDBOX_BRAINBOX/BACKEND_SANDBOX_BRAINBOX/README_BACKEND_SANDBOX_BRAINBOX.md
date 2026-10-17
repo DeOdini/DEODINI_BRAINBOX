@@ -5,13 +5,13 @@
 **CURRENT DOMAIN:** Backend Sandbox
 **PURPOSE:** Index backend workflows, architecture application, APIs, data, authentication, storage, integrations, runtime patterns, security, code patterns, and testing without upgrading raw examples into verified knowledge.
 **MENTAL MODEL:** Backend branches hold application-specific backend responsibilities; Fullstack Architecture and Orchestration cover system selection and coordination; Skills owns reusable language, command, and generic pattern knowledge.
-**GOVERNED BY:** Sandbox DEVOPS; canonical Governance Evidence, Reference, Security, and Promotion rules.
+**GOVERNED BY:** Sandbox DEVOPS; active Governance Documentation, Reference, Tree and Status, Evidence, Security, and Promotion rules. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **AUTHORITATIVE TREE:** Frozen V003 Specification §8; Backend responsibility and Google Forms placement in §14; Python ownership in §§17 and 19.
 **LOCAL TREE:** This README and the two child READMEs expose the Backend subtree required by the approved taxonomy and P12.
 **RELATED DOMAINS:** Fullstack Workflows, Architecture, Orchestration; Skills Languages, Commands, API Design, Patterns, and Technologies; FootHive case study source.
 **CANONICAL SOURCES:** Frozen V003 Specification; V003 Origin Conversation; V003-M12 ticket.
 **POPULATION STATE:** Backend taxonomy and navigation are present. All 17 knowledge leaves are empty placeholders; no backend implementation or reusable pattern was promoted.
-**LAST VERIFIED:** 2026-10-17 — Codex B02 review of Backend structure, placeholders, Skills ownership, M15 report routing, and current reference claims; no Backend integration was executed.
+**LAST VERIFIED:** 2026-10-17 - Codex B02 reviewed Backend structure, placeholders, Skills ownership, M15 report routing, and current reference claims; the DOCGOV-01 cross-domain reference review also ran. No Backend integration was executed.
 **VERIFIER:** Codex implementation read-back; independent ChatGPT verification: PASS (2026-10-09).
 
 ## Canonical local tree — two descendant levels
@@ -82,6 +82,10 @@ This is both the M12 target tree and the current local tree. Each .gitkeep is ze
 - No database, auth, storage, serverless, jobs/queues, caching, security, API, or testing implementation was evidenced for promotion by M12.
 
 ## Related domains and canonical references
+
+- [Documentation Governance - active requirements; Universal Documentation Governance Framework remains DRAFT](../../../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Reference Governance - canonical ownership and current/historical reference classification](../../../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
+- [Tree and Status Governance - current tree and lifecycle classifications](../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 
 - [Fullstack Sandbox](../README_FULLSTACK_SANDBOX_BRAINBOX.md)
 - [Sandbox DEVOPS authority](../../README_SANDBOX_DEVOPS_BRAINBOX.md)

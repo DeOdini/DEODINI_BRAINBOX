@@ -5,12 +5,12 @@
 **CURRENT DOMAIN:** Production DEVOPS
 **PURPOSE:** Organize evidence-backed release, deployment, operations, monitoring, environment controls, and production learning.
 **MENTAL MODEL:** APPLY → RELEASE → OPERATE → MONITOR → LEARN.
-**GOVERNED BY:** Governance Evidence, Reference, Security, Promotion, and Ticketing rules.
+**GOVERNED BY:** Active Governance Documentation, Reference, Tree and Status, Evidence, Security, Promotion, and Ticketing rules. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 21–22, 25; V003 Origin Conversation; V003-M09 and V003-M14 migration records.
 **APPLIES TO:** Actual production operations and their evidence, subject to applicable Operator authorization.
 **POPULATION STATE:** M14 structure plus the M16 FootHive T20 Production summary are present. No separate Production deployment procedure, ongoing operations, or monitoring outcome is claimed.
 **VERIFIER:** Codex — M14 implementation checks and M16 current-tree/link checks; independent ChatGPT M14 verification: PASS (2026-10-09); M16 independent verification: PASS (Batch D closeout, 2026-10-09).
-**LAST VERIFIED:** 2026-10-17 — Codex A03 checked the Production tree, placeholder states, M14/M16 record boundaries, and local references; no live site or production system was tested.
+**LAST VERIFIED:** 2026-10-17 - Codex A03 checked the Production tree, placeholder states, M14/M16 record boundaries, and local references; the DOCGOV-01 cross-domain reference review also ran. No live site or production system was tested.
 
 ## Canonical local tree — two descendant levels
 
@@ -88,6 +88,9 @@ M16 populated the Production case-study branch with the T20 release summary and 
 - [Production POC index](POC_PROD_BRAINBOX/README_POC_BRAINBOX.md) — routes to the M16 FootHive T20 release summary; M14 did not move or create FootHive records.
 
 ## Canonical sources and references
+
+- [Documentation Governance - active requirements; Universal Documentation Governance Framework remains DRAFT](../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Tree and Status Governance - current tree and lifecycle classifications](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 
 - [Root tree and navigation](../../../README_BRAINBOX.md) — complete current repository tree and root navigation authority.
 - [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25 — approved domain structure and architecture.

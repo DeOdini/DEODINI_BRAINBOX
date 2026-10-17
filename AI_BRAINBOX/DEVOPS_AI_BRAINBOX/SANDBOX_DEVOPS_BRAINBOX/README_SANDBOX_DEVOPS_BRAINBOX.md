@@ -5,10 +5,10 @@
 **CURRENT DOMAIN:** Sandbox DEVOPS
 **PURPOSE:** Hold accurately labeled experimentation, workflow trials, validation, failures, refinements, and lessons that have not thereby become Production evidence.
 **MENTAL MODEL:** EXPERIMENT → TEST → FAIL → REFINE → VALIDATE.
-**GOVERNED BY:** Governance Evidence, Reference, Promotion, and Ticketing rules.
+**GOVERNED BY:** Active Governance Documentation, Reference, Tree and Status, Evidence, Promotion, and Ticketing rules. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8, 10, 21–22, 25; V003 Origin Conversation; V003-M09 migration record.
 **APPLIES TO:** Sandbox execution knowledge and its evidence.
-**LAST VERIFIED:** 2026-10-17 — Codex verified the current two-level tree, absent former PROJ source root, zero tracked paths beneath it, archive references, and planned destinations; Sandbox outcomes were not rerun.
+**LAST VERIFIED:** 2026-10-17 - Codex checked the current two-level tree, absent former PROJ source root, archived-source references, and planned destinations; the DOCGOV-01 cross-domain reference review also ran. Sandbox outcomes were not rerun.
 
 ## Canonical local tree — two descendant levels
 
@@ -74,6 +74,9 @@ Do not use “PROVEN” as a permanent bucket. Describe what was tried, the evid
 - [Skills master](../../SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md) — canonical reusable technology and pattern knowledge; Sandbox keeps project-specific trial records and references Skills instead of duplicating general knowledge.
 
 ## Canonical sources and references
+
+- [Documentation Governance - active requirements; Universal Documentation Governance Framework remains DRAFT](../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Tree and Status Governance - current tree and lifecycle classifications](../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 
 - [Frozen V003 Specification](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25 — approved Sandbox hierarchy, domain boundaries, and population-state authority.
 - [V003 Origin Conversation](../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md) — chronological provenance and ambiguity evidence behind the frozen authority.

@@ -758,3 +758,21 @@ Correction commit 4fb4bfc25b5109e4ac43ff0ffa4982f116f1cfd5 (V003: reconcile FUNC
 ### CLOSEOUT-01 publication checkpoint - 2026-10-17
 
 The execution report was published on `v003/func-bc-closeout-01` at `3b1891744d61267210c5bcafd8105c889062c428`; the PR #70 register branch was separately updated at `9528aea61dd95fbb94cc531fc38543a1535c1ccd`. PR #70 is still open and unmerged. Its published active index contains nine issues (FUNC-04 plus V003-STATUS-01/02, README-01/03, and GOVERNANCE-01/02/03/04), while the PR body says ten; the discrepancy is preserved as a review flag. FUNC-03 is removed from the candidate active index with permanent closure evidence retained. FUNC-04 remains active and awaits explicit final Operator acceptance. No PR merge or final FUNC-04 closure occurred. Local `main` and `origin/main` match merged PR #71 at `5538e8479f744bce6ea6da5226d6ab6f1595a926`; the four pre-existing stashes remain intact.
+
+## V003-DEVOPS-DOCGOV-01 - Reference Governance alignment - 2026-10-17
+
+**Status:** IMPLEMENTED; scoped validation PASS; ticket branch commit and push COMPLETE; no PR or merge claimed. This is not independent ChatGPT verification or overall V003 acceptance.
+
+**Source:** Operator-supplied `DEVOPS CODEX TICKET - REFERENCE GOVERNANCE ALIGNMENT AMENDMENT`; standalone repository ticket file was not found. The Operator separately authorized execution. Source attachment SHA-256: `38930FD94FF13DCB1EDEADE98AD57635CD5B3F20B9FAF0A0BB44DA552CEAF4D7`.
+
+**Branch/base:** `v003/devops-docgov-01-reference-governance-alignment`, based on merged main commit `a0eee3d27b428d42e542d217ac73b57fd09a921d` (PR #56). The baseline Reference Governance file blob is `c2c878dc28224fa33f55ab848428626450e51f13`.
+
+**Scope:** Align active DEVOPS and FootHive cross-domain owner/reference navigation; distinguish Sandbox evidence, T20 Production release history, Portfolio presentation, external website source, and archived migration evidence; correct stale M09/M10/M12 checkpoint wording; point relevant Backend/Integrations links to current canonical Sandbox sources; update the Reference Governance PR #56 publication record. The Universal Documentation Governance Framework remains DRAFT. No historical source, frozen V003 authority, production deployment, or website content was modified.
+
+**Evidence and gates:** Fourteen implementation READMEs had 279 local inline link destinations checked, 0 broken after correction. A post-report scan checked all 16 changed Markdown files with 281 local inline destinations and 0 broken; `git diff --check` passed. VG-21 through VG-26 results and reproducible review steps are in the [V003-DEVOPS-DOCGOV-01 execution report](V003_FIXES_REPORT_BRAINBOX.md). GitHub confirms PR #56 is merged as `a0eee3d27b428d42e542d217ac73b57fd09a921d`; the external FootHive repository exists, but its code and live health were not checked. No live-site/deployment test is claimed.
+
+**Ticket execution result:** Codex-scoped implementation and validation PASS. ChatGPT independent verification pending; Operator acceptance pending. Ticket-branch push is recorded in the subsequent Git closeout entry. No PR or merge of this ticket branch was requested or performed.
+
+### Git closeout - 2026-10-17
+
+Implementation commit `d8159e0e0ef35cc598838d8626d79497d1bea19d` (`V003: align DEVOPS references with Governance`) was pushed successfully to `v003/devops-docgov-01-reference-governance-alignment`. GitHub branch tip, local `HEAD`, and the local `origin` tracking ref matched at verification. The implementation worktree was clean after the push. No PR or merge was performed; ChatGPT independent verification and Operator acceptance remain pending.

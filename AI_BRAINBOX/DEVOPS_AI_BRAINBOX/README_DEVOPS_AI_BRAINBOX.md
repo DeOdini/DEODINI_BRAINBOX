@@ -5,11 +5,11 @@
 **CURRENT DOMAIN:** DEVOPS AI
 **PURPOSE:** Define where execution-learning and production-operation records belong and navigate to their canonical domains.
 **MENTAL MODEL:** DEVOPS answers “How is work executed?” Sandbox is for experimentation and learning; Production records actual release and operation outcomes.
-**GOVERNED BY:** `GOVERNANCE_BRAINBOX/`, especially Evidence, Reference, Promotion, and Ticketing.
+**GOVERNED BY:** Active Governance policies for Documentation, Reference, Tree and Status, Evidence, Promotion, and Ticketing. The Universal Documentation Governance Framework in the Documentation record remains a separate draft and is not treated as active policy.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8 and 10; V003 Origin Conversation; V003-M09, M15, and M16 migration records.
 **POPULATION STATE:** Sandbox FootHive trial evidence is present under M15; the T20 FootHive Production summary is present under M16. Other Production operational branches remain empty unless stated in their local READMEs.
 **APPLIES TO:** DEODINI operators and agents creating or using execution, validation, release, and operations records.
-**LAST VERIFIED:** 2026-10-17 — Codex A02 review of this README, the DEVOPS two-level tree, linked references, and post-M20 source dispositions; no application behavior or current live Production status was rechecked.
+**LAST VERIFIED:** 2026-10-17 - Codex A02 reviewed this README, the DEVOPS two-level tree, linked references, and post-M20 source dispositions; the DOCGOV-01 cross-domain reference review also ran. No application behavior or current live Production status was rechecked.
 
 ## Canonical local tree — two descendant levels
 
@@ -98,6 +98,16 @@ At the M09 checkpoint, the former project-workflow sources remained at their ori
 
 The M09 source set's top-level PROVEN and FAILED files were empty placeholders with no outcomes; M20 retired them without promoting evidence. No Production operation, incident, or regression record was migrated from the M09 source set. The FootHive trial evidence was migrated under M15 to the Sandbox case study; M16 separately summarized the historical T20 Production release. Sandbox evidence is not a Production record by implication.
 
+## Current authority and cross-domain reference map
+
+| Information | Canonical owner and exact destination | Relationship and classification | Purpose and limit |
+|---|---|---|---|
+| FootHive website implementation | [DeOdini/FOOTHIVE](https://github.com/DeOdini/FOOTHIVE) (external project repository) | External project source; repository identity confirmed 2026-10-17 | Owns the website implementation. This ticket checked repository metadata, not its working tree, deployment health, or current release. |
+| FootHive workflow-trial history and test evidence | [FootHive Sandbox case study](SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) | SOURCE EVIDENCE; active canonical Sandbox record | Owns the workflow-trial dataset and evidence. Workflow Iteration 01 is distinct from website V01. |
+| FootHive V01 production designation and T20 release summary | [FootHive Production summary](PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md); designation provenance: [Origin Conversation](../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md#L4210) | PRODUCTION designation; T20 release is HISTORICAL operation evidence | The Operator's V003 decision identifies V01 as a production website while the workflow experiment remains incomplete. The recorded T20 release is dated 2026-10-01; no current live health check is claimed. |
+| FootHive presentation and handoff | [Portfolio reference index](../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md) and [Portfolio README](../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md) | RELATED DOMAIN; Portfolio owns presentation, not source evidence | Presents the project summary and handoff while linking back to Sandbox evidence and the Production release record. |
+| Retired source and migration history | [Recycle Bin Retirement Ledger](../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) and [V003 Migration Map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) | HISTORICAL EVIDENCE and MIGRATION EVIDENCE | Preserve provenance and dispositions; archived instructions are not current operating authority. |
+
 ## Related domains
 
 - FUNC AI records agent capability; it does not define project workflow execution.
@@ -106,6 +116,9 @@ The M09 source set's top-level PROVEN and FAILED files were empty placeholders w
 - Portfolio and FootHive case-study records must preserve project engagement and evidence provenance.
 
 ## Canonical sources and references
+
+- [Documentation Governance - active requirements; Universal Documentation Governance Framework remains DRAFT](../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Tree and Status Governance - current tree and lifecycle classifications](../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 
 - [Root tree and navigation](../../README_BRAINBOX.md)
 - [Frozen V003 Specification](../../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§8, 10, 21–22, 25
