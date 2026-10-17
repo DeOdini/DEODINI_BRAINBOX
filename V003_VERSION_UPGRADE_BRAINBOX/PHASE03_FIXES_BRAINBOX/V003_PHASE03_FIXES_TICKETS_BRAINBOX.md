@@ -743,3 +743,18 @@ Commit 1f7436272352dd838a8b6c82bb3a87af93078e7f (V003: assess FUNC-local procedu
 ### C02-GOV-01 publication checkpoint - 2026-10-17
 
 Correction commit 4fb4bfc25b5109e4ac43ff0ffa4982f116f1cfd5 (V003: reconcile FUNC local procedure governance disposition) is published on the FUNC batch branch. GitHub fetch matched its SHA/subject and exact three-file scope (39 insertions, 1 deletion); push advanced the remote from 5c65ec7. Branch comparison: 9 ahead / 0 behind main at b7a7a1d533277bc02f0613de198a9eaa9acb7afa. Six local links in the changed Governance file resolve; archived FQ, FUNC_REQ, and FUNC_WORKFLOW Git blobs match baseline. PR #70 remains separate and unmodified. Operator has now directly requested merge; its result is reported in the execution response. FUNC-04 remains OPEN pending independent verification of the correction and Operator acceptance.
+
+
+## V003-FUNC-BC-CLOSEOUT-01 — FUNC-03/04 Closure and Git Synchronization — 2026-10-17
+
+**FUNC-03:** C01 and C01-R01 are recorded as ChatGPT PASS and Operator accepted; disposition remains **CLOSED — OPERATOR ACCEPTED**.
+**FUNC-04 / C02:** C02 remains **QUALIFIED PASS — NO LOCAL REPLACEMENT REQUIRED**, with its documentation-only scope and no-runtime-certification limitations preserved. C02-GOV-01 is recorded as independently verified **PASS** per the Operator-provided closeout baseline; current GitHub `main` contains the corrected Governance ownership wording.
+**Final acceptance gate:** The Operator accepted the C02 recommendation but, under CLOSEOUT-01 section 5, has not yet granted final formal FUNC-04 closure. State: **READY FOR OPERATOR FINAL CLOSURE ACCEPTANCE**. Keep FUNC-04 active until that explicit acceptance; if accepted, record `FUNC-04 — CLOSED — OPERATOR ACCEPTED; NO LOCAL REPLACEMENT REQUIRED` without implying live integration or workflow certification.
+**PR #71:** Merged into `main` at `5538e8479f744bce6ea6da5226d6ab6f1595a926`.
+**PR #70:** OPEN / NOT MERGED at preflight; head `5e0093b6b9a15047f710b138b45cc0d0a823971d`. Its one-file patch removes FUNC-03, retains FUNC-04 as display issue 01, and indexes nine issue IDs 01–09. The final eight-issue index applies only after FUNC-04 acceptance. Do not merge PR #70 or remove FUNC-04 before that acceptance.
+**Git synchronization:** Safe fetch and fast-forward-only local synchronization succeeded. Final local `main`, `origin/main`, and live GitHub `main` equal `5538e8479f744bce6ea6da5226d6ab6f1595a926`; worktree clean, ahead/behind 0/0. No ACL or ownership change, force operation, or destructive cleanup occurred. All four existing stashes remain.
+**Closeout status:** FUNC-03 closed; FUNC-04 awaits final Operator acceptance; active-register cleanup awaits the applicable acceptance and PR lifecycle gates. Publication SHAs will be recorded in the follow-up checkpoint.
+
+### CLOSEOUT-01 publication checkpoint - 2026-10-17
+
+The execution report was published on `v003/func-bc-closeout-01` at `3b1891744d61267210c5bcafd8105c889062c428`; the PR #70 register branch was separately updated at `9528aea61dd95fbb94cc531fc38543a1535c1ccd`. PR #70 is still open and unmerged. Its published active index contains nine issues (FUNC-04 plus V003-STATUS-01/02, README-01/03, and GOVERNANCE-01/02/03/04), while the PR body says ten; the discrepancy is preserved as a review flag. FUNC-03 is removed from the candidate active index with permanent closure evidence retained. FUNC-04 remains active and awaits explicit final Operator acceptance. No PR merge or final FUNC-04 closure occurred. Local `main` and `origin/main` match merged PR #71 at `5538e8479f744bce6ea6da5226d6ab6f1595a926`; the four pre-existing stashes remain intact.
