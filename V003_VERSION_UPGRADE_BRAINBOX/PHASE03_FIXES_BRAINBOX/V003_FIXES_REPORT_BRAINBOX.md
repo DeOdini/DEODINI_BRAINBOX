@@ -2225,7 +2225,7 @@ The DEVOPS-01 portion of the README-01, README-03 and GOVERNANCE-02 dependencies
 
 ### Checkpoint A - closure publication (recorded before merge)
 
-Closure branch, required commit, pushed head, PR URL and merge result will be appended after the authorized commit/push and PR creation. This checkpoint does not claim the final closure PR is already merged. Branch cleanup and its evidence are a separate post-merge checkpoint.
+Closure branch: v003/devops-final-01-closure-and-cleanup. Required commit: 7661bf293caeea0d1e2af1afba9838489f02b766 (V003: close DEVOPS-01 and DEVOPS-03 with Operator acceptance). The pushed branch ref matched this SHA. PR #68: https://github.com/DeOdini/DEODINI_BRAINBOX/pull/68, targeting main at 7f79282486a96356647a8d51714935d76aacfc48. GitHub lists exactly the three authorized record files in the PR. The create response initially reported mergeable=false; a subsequent PR read returned OPEN, mergeable=true, merged=false, with no commit status checks reported. This checkpoint is recorded before merge. Branch cleanup and its evidence are a separate post-merge checkpoint.
 
 ### Remaining unrelated V003 work
 
