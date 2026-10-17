@@ -7,8 +7,8 @@
 **MENTAL MODEL:** Design systems, foundations, interface patterns, user experience, data visualization, and visual references are related design domains with distinct responsibilities.
 **GOVERNED BY:** Governance Evidence, Reference, and Promotion; Frontend Sandbox authority.
 **CANONICAL SOURCE:** Frozen V003 Specification §§8 and 25; V003-P09; V003-M11.
-**POPULATION STATE:** Structure present; all six domains are empty placeholders.
-**LAST VERIFIED:** 2026-10-09
+**POPULATION STATE:** Four domain directories are [PRESENT · POPULATED] by substantive navigation READMEs; no design guidance or validated patterns have been populated. Design Systems and Visual References are [PRESENT · STUB].
+**LAST VERIFIED:** 2026-10-17 — Codex B03 rechecked the UI/UX physical tree, navigation-population states and references; no design guidance or UI behavior was tested.
 
 ## Canonical local tree — two descendant levels
 

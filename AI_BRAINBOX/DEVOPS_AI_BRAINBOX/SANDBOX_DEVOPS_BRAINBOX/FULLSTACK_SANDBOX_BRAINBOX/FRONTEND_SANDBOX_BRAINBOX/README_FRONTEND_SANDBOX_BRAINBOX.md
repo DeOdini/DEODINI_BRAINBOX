@@ -9,7 +9,7 @@
 **CANONICAL SOURCE:** Frozen V003 Specification §§5, 8, 10–11, 25; V003 Origin Conversation; V003-M11.
 **APPLIES TO:** Frontend-specific Sandbox material under Fullstack.
 **POPULATION STATE:** Navigation and empty taxonomy placeholders; no frontend knowledge promoted from RAW sources.
-**LAST VERIFIED:** 2026-10-10 ? Codex M19 README tree/reference reconciliation; substantive source evidence and execution claims were not re-run.
+**LAST VERIFIED:** 2026-10-17 — Codex B03 rechecked the physical source cleanup, archive path set, Frontend tree, all local links and material destination states; no application behavior was tested.
 
 ## Canonical local tree — two descendant levels
 
@@ -83,7 +83,7 @@ The current tree is the same as the authoritative tree above. Its 31 approved ch
 - No standalone Frontend RAW source directory exists in the current repository.
 - The retained 001 and 002 records in [Fullstack Workflows](../WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md) contain frontend-related workflow and architecture passages. They remain RAW / UNPROVEN Fullstack workflow records; M11 did not split or duplicate them.
 - The archived legacy [001 source](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/001DOC_BYB5DOC_FLOW_STACK_BRAINBOX.md) and [002 source](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/RAW_WORKFLOW_PROJ_BRAINBOX/FULLSTACK_RAW_BRAINBOX/002DOC_BYB5DOC_PRESET_FLOW_STACK_BRAINBOX.md) remain historical reference. Their proposed stack and frontend standards are not verified patterns or selected architecture.
-- FootHive-specific source material was migrated under M15 and its V002 source files are preserved in the [Recycle Bin archive](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/); the legacy source tree has no files and seven empty directories remain after Windows denied their removal.
+- FootHive-specific source material was migrated under M15 and its V002 source files are preserved in the [Recycle Bin archive](../../../../../RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/). The former `AI_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/` tree was physically removed on 2026-10-16 after earlier Windows access-denied attempts were resolved by deleting its seven empty directory shells. The [Retirement Ledger](../../../../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md) records both the failed attempts and successful cleanup; that directory-only cleanup did not alter archived files or the manifest.
 
 ## Knowledge ownership
 
