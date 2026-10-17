@@ -2561,3 +2561,12 @@ Correction commit: 4fb4bfc25b5109e4ac43ff0ffa4982f116f1cfd5, subject V003: recon
 - Final read-back: local `HEAD`, local `main`, `origin/main`, and live GitHub `main` all equal `5538e8479f744bce6ea6da5226d6ab6f1595a926`; branch is `main`, upstream is `origin/main`, ahead/behind is 0/0, and the worktree is clean. All four pre-existing stashes were preserved. No destructive synchronization or history rewrite was used.
 
 **Publication checkpoint:** Commit SHAs for this report/ticket update and any PR #70 branch update will be recorded after the authorized pushes. PR #70 remains unmerged pending the explicit final FUNC-04 acceptance.
+
+### CLOSEOUT-01 publication checkpoint - 2026-10-17
+
+- The closeout report branch `v003/func-bc-closeout-01` was pushed at commit `3b1891744d61267210c5bcafd8105c889062c428` (V003: record FUNC batch closeout verification). The separate Unresolved Register branch was updated and pushed at `9528aea61dd95fbb94cc531fc38543a1535c1ccd` (V003: clarify FUNC closeout routing in register).
+- GitHub confirms PR #71 is merged at `5538e8479f744bce6ea6da5226d6ab6f1595a926`. Local `main` and `origin/main` were fast-forwarded to that same SHA; no reset, force operation, or Git metadata permission change was used. Four pre-existing stashes remain preserved.
+- PR #70 remains OPEN and NOT MERGED. Its branch head is `9528aea61dd95fbb94cc531fc38543a1535c1ccd`; GitHub compare reports 4 commits ahead and 11 behind `main`, with one changed file: `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md` (18 additions, 31 deletions across the full PR diff).
+- The PR #70 branch has nine active display entries: FUNC-04; V003-STATUS-01; V003-STATUS-02; README-01; README-03; GOVERNANCE-01; GOVERNANCE-02; GOVERNANCE-03; GOVERNANCE-04. FUNC-03 is absent from the active list; its accepted closure remains documented permanently. FUNC-04 remains active as display issue 01 pending final Operator acceptance.
+- The PR #70 description says the change keeps ten unresolved issue rows, while the published branch index contains nine. This discrepancy is flagged for review; the PR description was not edited. GitHub `main` remains unmodified by PR #70 and retains the earlier active register until that PR is merged.
+- No PR #70 merge, FUNC-04 closure, or FUNC-04 removal was performed. Under CLOSEOUT-01, these remain gated on explicit final Operator acceptance; merge also remains withheld.
