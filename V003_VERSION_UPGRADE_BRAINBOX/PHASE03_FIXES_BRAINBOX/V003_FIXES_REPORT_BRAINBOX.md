@@ -2137,3 +2137,10 @@ PR/merge: B04 does not authorize; not performed.
 ### 9. B04 disposition
 
 Codex evidence collection/reporting is complete and ready for independent ChatGPT review; this is not final DEVOPS issue or Batch B closure. DEVOPS-01/03 remain unchanged in the Unresolved Register. No README correction was made. This report is not ChatGPT PASS, Operator issue acceptance, PR or merge.
+
+
+### B04 Git publication verification - 2026-10-17
+
+The required audit commit `82dd855f676f78b02a4563e34d8f73c2a17dbeca` (`V003: record Batch B B04 DEVOPS closure verification`) was pushed successfully to `origin/v003/devops-bb-b04-devops-closure-verification`. The local upstream ref matched the commit after push. GitHub branch search found the B04 branch; GitHub fetched the exact commit SHA and message. GitHub comparison reports the B04 branch is 4 commits ahead of `main`, 0 behind, with the inherited B01-B03 ten README changes plus the two authorized B04 Phase 03 report/register files (12 files total). This comparison confirms B04 was pushed as an unmerged branch. No PR was opened and no merge was performed.
+
+The direct push initially returned no terminal output while Git Credential Manager/network activity continued; it completed successfully without requiring a user sign-in prompt. The publication check is complete. Working-tree/index cleanliness is recorded at the subsequent closeout checkpoint.
