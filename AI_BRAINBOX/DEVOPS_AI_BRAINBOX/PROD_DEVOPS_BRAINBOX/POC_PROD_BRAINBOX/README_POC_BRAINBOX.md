@@ -5,14 +5,14 @@
 **CURRENT DOMAIN:** Production case-study records
 **PURPOSE:** Index the evidence-backed production case-study summaries that belong under Production DEVOPS.
 **MENTAL MODEL:** Production case studies summarize actual release and operation evidence. They reference canonical Sandbox evidence without duplicating it.
-**GOVERNED BY:** De O'Dini - Operator; Governance Evidence, Reference, and Promotion requirements; approved architecture in the frozen V003 Specification.
+**GOVERNED BY:** Active Governance Documentation, Reference, Tree and Status, Evidence, Security, Promotion, and Ticketing rules; approved architecture in the frozen V003 Specification. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **AUTHORITATIVE TREE:** The complete target tree in the root README; this local branch follows frozen V003 Specification §8 and the P12 README requirement.
 **LOCAL TREE:** The full defined subtree for this parent is reproduced below, including its README and every approved child.
 **RELATED DOMAINS:** Production DEVOPS, Sandbox trial evidence, Portfolio presentation, and the external FootHive application repository.
 **CANONICAL SOURCES:** Frozen V003 Specification §8; the nested M16 Production summary and its linked Sandbox source records; Governance Evidence, Reference, and Promotion.
 **REFERENCES:** See the navigation links below.
 **POPULATION STATE:** One FootHive Production summary child is populated; no additional production case studies are claimed.
-**LAST VERIFIED:** 2026-10-17 — Codex A03 checked the current child tree, ownership routes, and local references; no live service check was performed.
+**LAST VERIFIED:** 2026-10-17 - Codex A03 checked the current child tree, ownership routes, and local references; the DOCGOV-01 cross-domain reference review also ran. No live service check was performed.
 **VERIFIER:** Codex — A03 filesystem, status, and link review; historical M19 local tree/link check retained.
 **ENTRY NAVIGATION:** Use this index to select a child domain; read its record before treating a placeholder as knowledge or capability.
 **EXIT NAVIGATION:** Return to the parent README or root `README_BRAINBOX.md`.
@@ -45,7 +45,12 @@ The nested [FootHive Production summary](FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_F
 | [FootHive Portfolio README](../../../../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md) | Project presentation, handoff, and case-study references. | Portfolio presentation is not the operational evidence authority and does not imply paid-client work. |
 | [DeOdini/FOOTHIVE application repository](https://github.com/DeOdini/FOOTHIVE) | External source-code repository identified by the Portfolio handoff. | Repository existence is distinct from internal release/evidence records and does not verify a deployment or live service. |
 
+The [V003 Origin Conversation](../../../../V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md#L4210) records the Operator designation of FootHive website V01 as a Production website while the workflow experiment remained incomplete. Website V01 and workflow Iteration 01 are distinct; this historical designation does not establish current live health.
+
 ## Canonical references
+
+- [Documentation Governance - active requirements; Universal Documentation Governance Framework remains DRAFT](../../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Tree and Status Governance - current tree and lifecycle classifications](../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 
 - [Root tree authority](../../../../README_BRAINBOX.md) — complete repository navigation.
 - [Governance Evidence](../../../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md) — provenance and limits for release/test claims.

@@ -28,7 +28,7 @@ This Phase 02 operating addendum supersedes the frozen Specification's blanket s
 
 ## Local request procedures
 
-The former FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md sources are archived as historical records. No current replacement for the local function-area reading and request-submission procedure has been established; this is an authority gap for a later authorized ticket. This file owns current system-wide ticket and authorization principles. Agent capability-report fields belong to the CORE registry and do not recreate the retired local procedure.
+The former FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md sources are archived as historical records, and no replacement FUNC-local procedure has been established. Following the Operator-accepted V003-FUNC-BC-C02 assessment of 2026-10-17, no local replacement is required for the assessed capability-request, evidence-intake, authorization and verification responsibilities. Current Ticketing Governance provides the shared discovery, ticketing, approval, verification and closure process. Documentation and Evidence Governance govern their respective requirements; the CORE registry owns agent capability descriptions, and EXE owns operation-level execution evidence. This disposition does not validate untested agent capabilities, recreate retired procedures or establish standing execution authority. This file owns current system-wide ticket and authorization principles. Agent capability-report fields belong to the CORE registry and do not recreate the retired local procedure.
 ## Sources
 
 - [Frozen V003 Specification](../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md), §§25.8, 26–27.

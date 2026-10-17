@@ -5,12 +5,12 @@
 **CURRENT DOMAIN:** Backend Integrations
 **PURPOSE:** Navigate backend integration records while distinguishing reusable integration knowledge from project-specific evidence.
 **MENTAL MODEL:** An integration record describes an application's connection to an external service; orchestration owns coordination, and Skills/Technologies own reusable general knowledge.
-**GOVERNED BY:** Backend Sandbox; Governance Evidence, Reference, Security, and Promotion rules.
+**GOVERNED BY:** Backend Sandbox; active Governance Documentation, Reference, Tree and Status, Evidence, Security, and Promotion rules. The Universal Documentation Governance Framework remains DRAFT pending separate Operator adoption.
 **AUTHORITATIVE TREE:** Frozen V003 Specification §§8, 13, and 14; V003 Origin Conversation Google Forms and analytics ownership decisions; V003-M13.
 **LOCAL TREE:** Google Forms is the one explicitly approved child in this migration.
 **RELATED DOMAINS:** Fullstack Analytics Orchestration, Frontend Data Visualization, Skills Analytics Technologies, and FootHive case-study source.
 **POPULATION STATE:** Google Forms is [PRESENT · STUB]: its folder contains only a zero-byte `.gitkeep`, with no integration documentation or implementation. FootHive trial and form-response evidence is project-specific and is preserved in the canonical M15 Sandbox case study.
-**LAST VERIFIED:** 2026-10-17 — Codex B02 review of the Google Forms stub, M15 evidence route, ownership boundaries, and local references; no external service was accessed or integration executed.
+**LAST VERIFIED:** 2026-10-17 - Codex B02 reviewed the Google Forms stub, M15 evidence route, ownership boundaries, and local references; the DOCGOV-01 cross-domain reference review also ran. No external service was accessed or integration executed.
 **VERIFIER:** M12 independent verification: PASS. M13 reference update: Codex read-back PASS; independent ChatGPT M13 verification: PASS (2026-10-09).
 
 ## Canonical local tree — two descendant levels
@@ -35,6 +35,10 @@ No form endpoint, field identifier, response content, or secret value is copied 
 The current physical structure is shown in the canonical two-descendant-level local tree above. The complete project tree is maintained only in the root README.
 
 ## Sources and references
+
+- [Documentation Governance - active requirements; Universal Documentation Governance Framework remains DRAFT](../../../../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
+- [Reference Governance - canonical ownership and current/historical reference classification](../../../../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
+- [Tree and Status Governance - current tree and lifecycle classifications](../../../../../../GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md)
 
 - [Backend Sandbox](../README_BACKEND_SANDBOX_BRAINBOX.md)
 - [Fullstack Analytics Orchestration](../../ORCHESTRATION_FULLSTACK_BRAINBOX/ANALYTICS_ORCH_BRAINBOX/README_ANALYTICS_ORCH_BRAINBOX.md) — owns analytics collection, event, service, and integration-flow relationships; its operational-flow slot is not populated.

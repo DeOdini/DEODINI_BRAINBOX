@@ -2333,3 +2333,349 @@ All four pre-existing stashes were preserved without modification or deletion:
 - stash@{3}: F16 pre-reconciliation backup.
 
 This cleanup closes only the named DEVOPS-01 and DEVOPS-03 documentation findings with the Operator-accepted qualifications. It does not close unrelated Phase 03 tickets, Phase 02 migration, or overall V003 acceptance. The temporary report-only branch v003/devops-final-01-cleanup-report was initially pushed at commit c680f5f59cc9b6963bfe033d6cfa37bfdec2287a. PR #69 (https://github.com/DeOdini/DEODINI_BRAINBOX/pull/69) targets main at 483529b52c6c505694dc22935e92581731c04016 and contains exactly the two authorized report records. The latest PR read returned OPEN, mergeable=true, merged=false; no commit status checks were reported. The immediate create response temporarily returned mergeable=false, followed by the mergeable=true read. The report-only branch must be deleted after PR #69 merges; its final deletion and resulting main state will be confirmed in the Codex response.
+
+## V003-FUNC-BC-C01 - CORE/EXE Capability Integrity and Evidence Verification - 2026-10-17
+
+**Issue:** 01 - FUNC-03
+**Execution agent:** Codex
+**Independent verifier:** ChatGPT - PENDING
+**Final acceptance authority:** Operator - PENDING
+**Codex audit status:** EXECUTION COMPLETE; REVIEW / VERIFY
+**FUNC-03 disposition:** OPEN; no issue closure claimed.
+**C02 status:** NOT STARTED; wait for independent review and disposition of C01-R01.
+
+### 1. Preflight and publication boundary
+
+- Repository: `DeOdini/DEODINI_BRAINBOX`.
+- Local `main`, local `origin/main`, and the live GitHub `main` were verified at `b7a7a1d533277bc02f0613de198a9eaa9acb7afa` before branch creation. GitHub compare reported `main` identical to that base (0 ahead / 0 behind).
+- The dedicated batch branch `v003/func-bc-core-exe-and-procedure-disposition` was created locally from that clean base. It was absent locally and remotely before creation. No ticket files were staged or committed at preflight.
+- PR #70 was checked first and remains OPEN, mergeable, and based on the same `main` SHA. Its single changed file is `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md`; the PR does not overlap this ticket's two writable files. Its branch was not modified or merged.
+- GitHub MCP successfully fetched the current Codex CORE document from `main`; the returned Git blob SHA was `62accecc5686671f55167cebb8ce44bd38ce7ac5`, matching the local `main` blob. A direct `git ls-remote` attempt was blocked by this environment's network restriction, so live remote comparison used the connected GitHub read API.
+- C01's authorized write scope is append-only updates to this report and the Phase 03 ticket register. CORE/EXE records, the frozen Specification, legacy archives, and the Unresolved Register remain unchanged. No PR or merge is authorized by this plan.
+
+### 2. C01-01 - Physical inventory and tree
+
+The active FUNC parent contains exactly `README_FUNC_AI_BRAINBOX.md`, `AI_AGENTS_CORE_FUNC_BRAINBOX/`, and `AI_AGENTS_EXE_FUNC_BRAINBOX/`.
+
+- CORE contains its README plus the eight agent records: CHATGPT, CLAUDE, CLINE, CODEX, COPILOT, DEEPSEEK, GROK, and QWEN.
+- EXE contains its README, eight agent-specific directories (each with its README), and exactly five capability directories: RESEARCH, BROWSER, FILE, CODE, and MEDIA (each with its README).
+- The physical names match the FUNC, CORE, and EXE local trees exactly. The audited FUNC subtree contains 24 Markdown files.
+- The required CORE metadata fields are present in all eight records: EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, AUTHORIZED, LIMITATIONS, CANONICAL EXE REFERENCES, and LAST VERIFIED.
+- Link scan across the 24 Markdown files found 175 local path links and 12 local heading-fragment links; 0 unresolved. The EXE-questionnaire fragment's double hyphen is valid under GitHub-style heading slug normalization for the em dash in its heading.
+
+**Classification:** CONFIRMED - physical tree, required schema, and navigation match the current records.
+
+### 3. C01-02 through C01-04 and C01-10 - Agent status and capability claims
+
+The eight rows in `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv` were cross-checked against their CORE records, source archive, M01 retirement manifest, and applicable M06 evidence. The archived source directory is `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/`; the active CORE directory is `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/`.
+
+| Agent | Historical source claim checked | Current CORE state and EXE disposition | Classification |
+|---|---|---|---|
+| ChatGPT | `CHATGPT_FUNC_BRAINBOX.md`: dated connector, skill, RDC, and email self-report. | Current exposure, connection, authentication, and execution are UNKNOWN / NOT VERIFIED; no category admitted. | Historical report attribution confirmed; present capability unverified. |
+| Claude | `CLAUDE_FUNC_BRAINBOX.md`: dated connector/capability self-report, including historical authorization wording. | Current runtime states are UNKNOWN / NOT VERIFIED; historical wording is not current authentication or permission; no category admitted. | Historical report attribution confirmed; no present auth or execution established. |
+| Cline | `CLINE_FUNC_BRAINBOX.md`: initial failed file-write diagnostic and later dated capability report are distinct source events. | Current states UNKNOWN / NOT VERIFIED; no category admitted. CORE reference to MEDIA does not admit Cline as an executor. | Historical distinction preserved; no present file execution inferred. |
+| Codex | `CODEX_FUNC_BRAINBOX.md` and dated M05/M06 records describe scoped research, browser, file, and code actions. | Four categories are admitted only for cited historical Codex operations. The CORE's affirmative `Current status` wording is date-framing review item C01-R01 below. | Historical operations supported within their recorded scope; broad current status not re-established. |
+| Copilot | `COPILOT_FUNC_BRAINBOX.md`: dated workspace/MCP/RDC and Playwright configuration claims. | Current states UNKNOWN / NOT VERIFIED; BROWSER record explicitly says Copilot execution is not verified; no Copilot category admission. | Configuration is not connection/authentication/execution proof. |
+| DeepSeek | `DEEPSEEK_FUNC_BRAINBOX.md`: three-line pending-report notice, not a capability report. | Only the approved V003 role/limitations baseline is recorded; connector, authentication, and execution states UNKNOWN; no category admitted. | Correctly not promoted from placeholder to execution claim. |
+| Grok | `GROK_FUNC_BRAINBOX.md`: dated connector/skill/RDC/email self-report; its no-direct-Playwright-MCP statement is date-bound. | Current states UNKNOWN / NOT VERIFIED; no category admitted. | Historical report only; no present integration inferred. |
+| Qwen | `QWEN_FUNC_BRAINBOX.md`: three-line pending-report notice, not a capability report. | Only the approved V003 role/limitations baseline is recorded; connector, authentication, and execution states UNKNOWN; no category admitted. | Correctly not promoted from placeholder to execution claim. |
+
+A successful public repository read does not prove the identity of the GitHub API principal or a specific agent's general authentication state. During this C01 session, the GitHub MCP read of the public Codex CORE file succeeded; this establishes only that this scoped read route worked. The caller identity was not queried, no external write was attempted, and no connector/account for the other seven agents was tested. Current authentication remains unverified where the records say UNKNOWN / NOT VERIFIED.
+
+**Classification:** CONFIRMED - historical claims are labeled as historical or unknown; VERIFY - no current runtime census is asserted. F09's Operator-approved questionnaire methodology is not evidence that any listed integration is currently connected or executable.
+
+### 4. C01-05 through C01-08 - Operation evidence and category integrity
+
+The frozen Specification section 9 P06 matrix and the M06 report define admission as evidence of at least one successful scoped operation, not as a guarantee of present availability. The M06 report records four admitted categories for Codex only and MEDIA as reserved. The agent-specific EXE records label all four Codex entries as historical and say current connection/execution was not rechecked.
+
+| Claim ID / capability | Exposure, connection, authentication | Executed evidence and exact source | Authorization / classification |
+|---|---|---|---|
+| C01-OP-RESEARCH - Codex public research | Public web lookup; connection recorded for public requests; authentication N/A for public sources. | Official GitHub Status history retrieved and cited on 2026-10-07. Evidence: frozen V003 Specification section 9 P06 matrix; `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_EXE_FUNC_BRAINBOX/CODEX_EXE_FUNC_BRAINBOX/README_CODEX_EXE_FUNC_BRAINBOX.md` (`EXE-CODEX-RESEARCH-001`) and the RESEARCH category README. | Read-only research in assigned scope; historical execution CONFIRMED, no current runtime guarantee. |
+| C01-OP-BROWSER - Codex local browser preview | Playwright CLI reached a local FootHive preview; authentication N/A for local preview. | T23 responsive/interaction checks dated 2026-10-03. Evidence: `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md` and `.../EVIDENCE_FH_BRAINBOX/T23_MOBILE_HEADER_FH_BRAINBOX/` (screenshots and Playwright CLI records). | Local-preview checks only; not accessibility certification, cross-browser certification, or permission for external clicks/submissions. Historical execution CONFIRMED. |
+| C01-OP-FILE - Codex scoped repository files | Shell/workspace tools in the authorized DEODINI workspace; local authentication N/A. Git remote credential identity is not inferred from a local commit. | P03-P05 and M05 file operations are recorded in the M05 report; M05 commit `585f9600ca4940aab750488b2f46f7cb72a94d69`. | Ticket/workspace-scoped local file activity only; historical execution CONFIRMED, no standing write/push/merge authority. |
+| C01-OP-CODE - Codex FootHive CSS change | Source editing and local code/test tools were used in the recorded T23 work. | T23 phone-width header CSS correction and Playwright verification, dated 2026-10-03; evidence in the T23 Build Report and `EXE-CODEX-CODE-001` / CODE category README. | One ticket-scoped frontend correction only; historical execution CONFIRMED, not general backend or production coding proof. |
+| C01-OP-MEDIA - Media generation | The CORE/source reports describe possible media tools; no particular endpoint/account is established. | No verified media output artifact is recorded. | MEDIA remains RESERVED / EXECUTION EVIDENCE PENDING / NOT ADMITTED, as the frozen matrix requires. |
+| C01-OP-CURRENT-READ - Current Codex session | GitHub MCP file-read route and local repository read tools were exposed and worked in this session on 2026-10-17. Authentication principal and general account state were not checked. | One read-only fetch of the public Codex CORE record on `main`; local read-only tree/hash checks. No external write and no current browser, media, deployment, or other-agent execution test. | Current evidence is restricted to this audit read. It does not renew the older M05/M06 status claims or create standing authority. |
+
+**Classification:** CONFIRMED - the existing four-category admission matches the frozen P06/M06 baseline; REVIEW - the Codex CORE present-tense status descriptions should be explicitly time-qualified; no new category or executor is supported or proposed.
+
+### 5. C01-09 - Freshness review item C01-R01
+
+**Exact path:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md`.
+
+Its `LAST_VERIFIED` metadata (line 7) is dated 2026-10-08. The EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, and AUTHORIZED sections (lines 12-37) use `Current status` / `YES` language and refer to the Codex session, GitHub identity, RDC session, Git push, and a prior Batch A/M05 authorization. The limitation text says there is no standing future authority, and the date is present in the metadata; therefore this audit does not establish a factual falsehood. However, the status wording can be mistaken for a fresh 2026-10-17 verification if the date is missed. The one current GitHub MCP read recorded above does not re-verify the historical account identity, push, RDC, browser, or authorization claims.
+
+**Finding:** REVIEW / VERIFY - stale present-tense framing on one record.
+**Minimum proposed correction (not applied):** in that one CORE file, relabel the five status lines as status *at the 2026-10-08 verification* and preserve the historical facts and limitations. If an updated current status is desired, verify each interface separately under a separately scoped ticket.
+**Timing/owner:** after ChatGPT independently reviews C01 and the Operator selects whether the wording warrants a correction ticket. CORE/EXE are read-only in C01; no source record was changed.
+
+The other seven CORE records explicitly say current connection/authentication/execution is UNKNOWN / NOT VERIFIED or state only the approved DeepSeek/Qwen role baseline; no contradictory affirmative live-status claim was found. Dated M06 operation records say current execution was not rechecked and therefore remain properly historical.
+
+### 6. C01-11 - Archived source integrity and authority
+
+- All eight legacy agent source paths in the F09 traceability CSV map to the M01 retirement manifest and to the existing Recycle Bin archive.
+- For all eight, the F09 `LegacySourceSHA256`, manifest `source_sha256_pre_move`, and M01 baseline classification match. All eight current archive Git blob IDs match the manifest's `baseline_git_blob` (8/8).
+- Checkout line endings explain the raw-byte comparison: six archived files' LF-normalized current bytes match the recorded SHA-256; Codex and Copilot match their recorded raw bytes. The manifest explicitly records the applicable line-ending treatment. No unexplained content mismatch was found.
+- The F09 `CurrentCoreSHA256` values were compared with the eight CORE records at commit `e3e4da3e86bbed75f072f7a5fefe2b93c6793ecf` (CRLF worktree representation); all eight match that captured snapshot. The later commit `de4a74b96872b0b63f68a3f0c8fe4981e181f614` changed one `CANONICAL_SOURCE` destination line per CORE record to point at the approved Recycle Bin archive path. The diff is exactly 1 insertion / 1 deletion for each of the eight records; no capability claim or status text changed in that link-only update.
+- The active FUNC README explicitly identifies FQ, FUNC_REQ and FUNC_WORKFLOW as archived historical sources and states that no local replacement procedure is inferred. CORE and EXE remain the active registries. The archived agent reports are source history, not active procedures or proof of current connection.
+
+**Classification:** CONFIRMED - source integrity and historical-only boundary; no archive recovery or source mutation required.
+
+### 7. C01-12 - References, status, and result
+
+The FUNC / CORE / EXE trees match the filesystem and all local file and heading links resolve under the documented scan. CORE references are assigned as expected: Codex links to RESEARCH/BROWSER/FILE/CODE; Copilot's BROWSER reference states unverified and not admitted; Cline links to reserved MEDIA without admission; the other agents link to the EXE index without a category. No misattributed agent operation, speculative EXE category, or promoted placeholder was found.
+
+**C01 result:** The inventory, source/manifest linkage, tree, metadata schema, and historical M06 admission boundaries pass. One date-framing review item remains (`C01-R01`). Codex audit execution is complete; ChatGPT independent verification and Operator disposition are pending. FUNC-03 is not closed. Do not begin dependent C02 until ChatGPT has reviewed this report and C01-R01 has an explicit disposition.
+
+**Files changed by C01:** only this Phase 03 Fixes Report and `V003_PHASE03_FIXES_TICKETS_BRAINBOX.md`; append-only. No CORE/EXE, legacy source, frozen Specification, Unresolved Register, product code, or external service data was changed. No product test or broad agent runtime test was run; neither is authorized or required by this read-only evidence audit.
+
+### C01 audit publication checkpoint - 2026-10-17
+
+Audit commit `92bf125f8c9ae3211d122010e6cc3f70ba386285` was pushed to `origin/v003/func-bc-core-exe-and-procedure-disposition`. GitHub commit fetch returned the same full SHA and subject. A live GitHub compare shows the branch is 1 commit ahead / 0 behind `main` at `b7a7a1d533277bc02f0613de198a9eaa9acb7afa`, with exactly the two authorized Phase 03 reporting files and 109 additions / 0 deletions. Local HEAD and the upstream branch tip matched after push. No PR or merge was created; none is authorized by this plan.
+
+## V003-FUNC-BC-C01-R01 - Historical Capability Status Clarification - 2026-10-17
+
+**Operator authorization:** Approved for execution; parent ticket C01, Issue 01 / FUNC-03.
+**Branch:** `v003/func-bc-core-exe-and-procedure-disposition`.
+**Changed CORE record:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md` only.
+
+The EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, and AUTHORIZED sections now identify their affirmative status as verified on 2026-10-08. The record preserves the underlying session evidence and authorization limits, and clarifies that current exposure, connectivity, authentication, executable access, and authorization require fresh or task-scoped verification. No present-day capability was inferred. Existing canonical EXE references and their destinations remain unchanged.
+
+**Validation:** Exactly one CORE source record was modified; all five required status sections identify 2026-10-08. All 11 local file links among 12 Markdown links in the record resolve; the remaining link is the existing external PR #21 reference. The scoped diff shows no other CORE or EXE record changed, the canonical EXE reference block is unchanged, and `git diff --check` passed. The original C01 audit findings above remain intact as historical evidence.
+
+**C01-R01 execution:** COMPLETE; pending independent ChatGPT verification.
+**FUNC-03:** OPEN pending independent verification and Operator acceptance; no issue closure is claimed.
+**C02:** NOT STARTED; remains gated on independent review of C01 and C01-R01.
+**Git publication:** Correction and this report/ticket-register update are authorized for the existing batch branch. Commit and remote verification details will be recorded in the publication checkpoint after push. No PR or merge is authorized.
+
+### C01-R01 publication checkpoint - 2026-10-17
+
+Correction commit `955fbc9ea2c39959c0ae04a67c958a2376b0e1e4` (`V003: clarify historical Codex CORE capability status`) was pushed to `origin/v003/func-bc-core-exe-and-procedure-disposition`. GitHub commit fetch returned the same full SHA and subject. GitHub compare reports the branch 3 commits ahead / 0 behind `main` at `b7a7a1d533277bc02f0613de198a9eaa9acb7afa`, with exactly three changed paths: the approved Codex CORE record and the two Phase 03 reporting records. Local HEAD and the upstream branch tip matched at the correction commit, and the worktree was clean. No PR was opened or merge performed; PR #70 was not changed. C01-R01 awaits ChatGPT independent verification; FUNC-03 remains open and C02 has not started.
+
+
+### C01 and C01-R01 — Independent verification and Operator acceptance (2026-10-17)
+
+ChatGPT independently verified C01 as an evidence audit (PASS, with C01-R01 identified) and subsequently independently verified the five dated status corrections in `CODEX_CORE_FUNC_BRAINBOX.md` (PASS): five sections date their YES findings to 2026-10-08, 11 local links resolve, no other CORE/EXE record was changed, and publication commits `955fbc9ea2c39959c0ae04a67c958a2376b0e1e4` and `f489d13bf80d15245e68f7b1432b278ffb6393ee` were verified on the batch branch. The Operator explicitly ACCEPTED closure of FUNC-03 on 2026-10-17. **FUNC-03 disposition: CLOSED — OPERATOR ACCEPTED, subject to final batch publication to main.** Historical execution evidence remains date- and operation-scoped; no current availability or authority is certified. FUNC-04 remains OPEN; C02 may proceed under its separate audit ticket. PR/merge remain separately gated.
+
+
+## V003-FUNC-BC-C02 - FUNC Local Procedure Requirement and Authority Disposition - 2026-10-17
+
+**Operator authorization:** Authorized to complete C02-01 through C02-10, write this assessment only to the Phase 03 Fixes Report and Ticket Register, and stage/commit/push those reporting changes on the existing branch.
+**Issue:** FUNC-04 (displayed as 01 in the cleaned register).
+**Branch:** v003/func-bc-core-exe-and-procedure-disposition.
+**Preflight:** The local branch was initially at f489d13bf80d15245e68f7b1432b278ffb6393ee, clean and tracking its upstream. GitHub showed two later commits on the same remote branch, ending at 0fa2fc362e2261c28223a79a3fb71fb6e646fd6b; GitHub comparison confirmed the local SHA was an ancestor and the additions touched only these two reporting records. A fast-forward-only pull incorporated the C01/FUNC-03 acceptance checkpoint. C02 baseline is now 0fa2fc362e2261c28223a79a3fb71fb6e646fd6b, clean and equal to upstream. PR #70 was read-only checked: OPEN, based on main at b7a7a1d533277bc02f0613de198a9eaa9acb7afa, with one changed file and no overlap with C02's report/register scope. PR #70 was not modified.
+
+**Disposition recommendation: NO LOCAL REPLACEMENT REQUIRED.** Current system-wide Ticketing Governance, FUNC navigation, and the distinct CORE/EXE registries provide a complete route for capability requests, evidence intake, authorization, operation verification, and closure. The legacy function-specific compliance-file/request-file chain is not needed. This is Codex's evidence-backed recommendation for independent review; it does not close FUNC-04 or authorize creation of a new procedure.
+
+### C02-01 through C02-10 responsibility and coverage matrix
+
+| Check | Historical responsibility inspected | Current owner and evidence | Coverage and disposition |
+|---|---|---|---|
+| C02-01 - Decompose sources | FQ_MUST_README.md Steps 1-5 and its enforcement/checkpoint; FUNC_REQ_BRAINBOX.md Requests 1-2; FUNC_WORKFLOW_BRAINBOX.md multi-agent and automation sections. | Historical-only archive paths are linked from the [FUNC README](../../AI_BRAINBOX/FUNC_AI_BRAINBOX/README_FUNC_AI_BRAINBOX.md#L78); its domain boundaries explicitly separate current CORE/EXE, Skills, and workflow/DEVOPS responsibilities (lines 55-63). | Complete classification. No legacy body was treated as active policy. |
+| C02-02 - Map system-wide rules | Former FQ change-request, compliance, and human-approval assertions. | [Ticketing Governance](../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md#L9) lines 9-16 and TGB-005, TGB-010-019 (lines 59-87) assign scope, approvals, ticketing, verification, publication, and closure. [Documentation Governance](../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md#L7) lines 7-30 defines authority placement, truthful states, historical integrity, and provenance. | Complete for shared policy. FUNC does not need a second compliance policy. |
+| C02-03 - Map capability and execution fields | FUNC_REQ capability/connector inventory and safe test-example reporting. | [CORE README](../../AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md#L35) lines 35-49 and 72-84 separates exposed, connected, authenticated, executable, authorized, limitations, evidence, and last-verified state; C01-C10 prescribe capability inventory. [EXE README](../../AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md#L96) lines 96-107 requires operation IDs, action/result/evidence, authorization, verifier, freshness, and category. | Complete with the correct separation: CORE is not execution proof; EXE records tested operations. |
+| C02-04 - Request initiation and entrypoint | FQ mandatory reading order and instructions to create/compile request files and update the single compliance constant. | FUNC README entry navigation (line 14) leads to CORE field definitions; its canonical references (lines 78-88) link CORE, EXE, and Ticketing Governance. TGB-001-002 and TGB-006, TGB-010-012 (lines 51-73) define discovery, findings, coherent tickets, approval gates, and the ticket contract. | Adequate through existing local navigation to the shared ticket route. No separate FUNC intake file or compliance constant is needed. |
+| C02-05 - Evidence intake | FUNC_REQ safe examples, reporting context, limitations, and report confirmation; historical workflow verification loop. | [Evidence Governance](../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md#L7) lines 7-17 requires preservation of authorship/context, distinction of Operator/agent/independent checks, integrity evidence, tested claims, outcome, verifier, and limits. TGB-012 and TGB-016 (lines 73 and 81) require evidence destinations and ticket-specific reproducibility; CORE C10 and EXE E03/E04 record evidence and permission. | Complete. Evidence is submitted through the authorized ticket/report and recorded in its canonical CORE or EXE record as applicable. |
+| C02-06 - Authorization boundaries | Former mandatory compliance checkpoint and change-request reference. | Ticketing general discipline lines 9-16 and TGB-010-012, TGB-017, TGB-019 (lines 69-87) separate finding, execution, testing scope, Git publication, PR/merge, and closure authority. CORE's AUTHORIZED definition (line 44) denies standing write/push/merge/deployment authority; EXE E04 requires exact Operator authorization and restrictions. | Complete. Tool access or an EXE result does not grant future authority. |
+| C02-07 - Unassigned responsibilities | Function-specific task sequencing, agent roles, email/n8n automation, and request aggregation described in the old workflow. | FUNC README line 60 assigns procedures/routing/operating sequences to the appropriate workflow or DEVOPS domain. Its M07 disposition (lines 64-76) preserves the mixed legacy source as history and records n8n/email as unproven. Governance owns shared authorization/evidence; CORE/EXE own agent capability and operation records. | No unassigned current FUNC capability-intake responsibility found. Unproven automation and cross-domain execution sequences are not recreated in FUNC. |
+| C02-08 - Minimum local design | Whether the missing old function-area compliance/request-file sequence leaves a unique FUNC-only procedure gap. | Existing ticket templates include specific, batch, atomic-ticket, and result forms in Ticketing Governance lines 91-156; FUNC README already links the relevant current entrypoints. | No local replacement design required. Do not create a second universal ticketing process or restore the old compliance constant. |
+| C02-09 - Historical preservation | Archived FQ, FUNC_REQ, and FUNC_WORKFLOW records and the retirement manifest. | RECYCLE_BIN_BRAINBOX/LEGACY_AUTHORITY_RETIREMENT_MANIFEST_BRAINBOX.json records their archival hashes, sizes, line counts, and baseline Git blobs (entries at lines 147-191). Current Git blobs match manifest baseline IDs: FQ d496245c56e6bd8b8e766bbc7de406c3f1471dbc; FUNC_REQ d25d6640bb88f29e2a9305f358a6533fbe4e298e; FUNC_WORKFLOW 7a6e609161c22903f8ba66f10fa626eb2b3c4dab. With core.autocrlf=true, current LF-normalized content matches the recorded source values: FQ raw SHA-256 6cd454a665f571cb9a7b7b2c31cc255daf2a07f7ffb1be1beefe90b30952d347, 4,972 bytes, 106 lines; FUNC_REQ LF-normalized SHA-256 e2d9ec14ca1d96703fca5be75316a92efa261b245307923be9f78cb986bd8e90, 4,943 bytes, 111 lines; FUNC_WORKFLOW LF-normalized SHA-256 7a73a3b43226ddd5eb9c6119274b95f2bd623d5fdb30a30573d65447ae5602bd, 11,857 bytes, 230 lines. Current raw CRLF worktree representations of FUNC_REQ and FUNC_WORKFLOW are 5,053 and 12,086 bytes with SHA-256 307e6fbf095038b95c97b8d968e09a68ba76a01d18a542a4abf1d28d6bd9a2a0 and 050ecab6849f3a264130593e3be9af64eae31c4009bea5af4714cd15e6a6e046 respectively. | Qualified preservation PASS: archive entries exist and tracked blobs match the original baseline. No source was edited by C02. Raw worktree bytes for two files are line-ending-expanded; raw-byte identity is not claimed for those current checkout representations. |
+| C02-10 - Formal disposition | Whether existing authority is sufficient without a new FUNC-local procedure. | Current Ticketing Governance, Documentation/Evidence Governance, FUNC navigation, and CORE/EXE schemas cover the responsibilities above. A scoped scan of six active Markdown authorities checked 66 local links; 0 were broken. | NO LOCAL REPLACEMENT REQUIRED is the Codex recommendation. No procedure, policy, Governance file, CORE/EXE record, FUNC README, or archive source was changed. |
+
+### Residual wording flag and closure boundary
+
+**C02-GOV-01 - Ticketing wording reconciliation; GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md:29-31.** The earlier paragraph says no local replacement exists and calls it an "authority gap for a later authorized ticket." The active 2026-10-17 TGB standard now provides a system-wide discovery-to-ticket-to-verification route, and this C02 assessment concludes a separate FUNC procedure is unnecessary. The absence of a local document remains true; the "authority gap" label now needs dated reconciliation to this disposition. This is blocking to FUNC-04 closure only, not to C02 report publication. Governance is read-only in C02, so no wording was edited. Recommended timing: separate, narrowly scoped Governance wording reconciliation after independent C02 review; owner: Operator-authorized ticket executor.
+
+**C02-01 through C02-10:** Completed as a read-only authority and responsibility audit. No runtime capability tests were performed or needed; this ticket assessed documentation coverage, not live integrations.
+**C02 execution disposition:** QUALIFIED COMPLETE - recommend NO LOCAL REPLACEMENT REQUIRED, with C02-GOV-01 carried for separate resolution before FUNC-04 closure.
+**FUNC-04:** Remains OPEN pending independent ChatGPT verification, Operator acceptance of this disposition, and appropriate disposition of C02-GOV-01. No issue closure is claimed.
+**FUNC-03:** The previously recorded ChatGPT PASS and Operator acceptance are carried forward unchanged; this C02 report does not reopen or modify them.
+**Git publication:** The two authorized reporting files are to be staged, committed, pushed, and verified on this branch. PR creation and merge remain unauthorized by the batch plan; PR #70 remains untouched.
+
+
+### C02 registry-wide route check addendum
+
+A read-only pass counted all eight CORE agent records and all eight agent-specific EXE READMEs. All eight EXE READMEs point to the same universal EXE questionnaire; a focused search of both registry trees found no separate local request-intake or submission procedure. The only matching request-submission wording in current agent records is the historical source notice in the DeepSeek and Qwen CORE records stating those agents had not submitted their own capability reports. Those notices are not promoted into a current request policy. This supports one shared, ticket-governed intake path rather than a FUNC-specific duplicate.
+### C02 publication checkpoint - 2026-10-17
+
+Commit 1f7436272352dd838a8b6c82bb3a87af93078e7f (V003: assess FUNC-local procedure requirement) was pushed to origin/v003/func-bc-core-exe-and-procedure-disposition. GitHub commit fetch returned the same full SHA and subject and listed exactly the two authorized C02 reporting files. The commit contains 58 insertions and no deletions. GitHub compare reports the branch 7 commits ahead and 0 behind main at b7a7a1d533277bc02f0613de198a9eaa9acb7afa. The branch-wide changed paths are the earlier Codex CORE correction plus the report and ticket register. Local HEAD and upstream match at 1f7436272352dd838a8b6c82bb3a87af93078e7f; the worktree is clean and worktree/cached whitespace checks pass. No C02 PR or merge was created, and PR #70 was not modified. C02 awaits independent ChatGPT verification and Operator acceptance; FUNC-04 remains open.
+
+
+## V003-FUNC-BC-C02-GOV-01 - Governance wording reconciliation - 2026-10-17
+
+**Operator approval:** The Operator-approved ticket accepts the independent C02 assessment and its recommendation, **NO LOCAL REPLACEMENT REQUIRED**, and authorizes this narrow Ticketing Governance wording correction. This supersedes the earlier C02 checkpoint that recorded independent verification and Operator acceptance as pending. That historical checkpoint is retained. This edit itself remains pending independent ChatGPT verification.
+**Preflight:** Repository remote is DeOdini/DEODINI_BRAINBOX. Branch is v003/func-bc-core-exe-and-procedure-disposition. Initial worktree was clean; local HEAD and upstream were both 5c65ec74a876b8940474b81b01fe9f0b7335ed12, and that C02 publication checkpoint is an ancestor. PR #70 remains OPEN on v003/unresolved-register-resolved-entry-cleanup, with no overlap; it was not modified.
+**Before:**
+> The former FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md sources are archived as historical records. No current replacement for the local function-area reading and request-submission procedure has been established; this is an authority gap for a later authorized ticket. This file owns current system-wide ticket and authorization principles. Agent capability-report fields belong to the CORE registry and do not recreate the retired local procedure.
+
+**After:**
+> The former FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md sources are archived as historical records, and no replacement FUNC-local procedure has been established. Following the Operator-accepted V003-FUNC-BC-C02 assessment of 2026-10-17, no local replacement is required for the assessed capability-request, evidence-intake, authorization and verification responsibilities. Current Ticketing Governance provides the shared discovery, ticketing, approval, verification and closure process. Documentation and Evidence Governance govern their respective requirements; the CORE registry owns agent capability descriptions, and EXE owns operation-level execution evidence. This disposition does not validate untested agent capabilities, recreate retired procedures or establish standing execution authority. This file owns current system-wide ticket and authorization principles. Agent capability-report fields belong to the CORE registry and do not recreate the retired local procedure.
+
+**Verification:**
+- **V01 - Correct authority statement:** PASS. The active local-request paragraph no longer describes the accepted absence of a FUNC-local replacement as an authority gap.
+- **V02 - Historical truth:** PASS. It states that the historical records remain archived and no replacement document exists.
+- **V03 - Canonical authority:** PASS. Current Ticketing Governance, Documentation Governance and Evidence Governance retain their existing system-wide responsibilities; no other Governance file changed.
+- **V04 - CORE/EXE separation:** PASS. The correction assigns agent capability descriptions to CORE and operation-level evidence to EXE.
+- **V05 - Scope integrity:** PASS. One substantive paragraph in the primary Governance file changed; no unrelated policy wording changed. The two authorized Phase 03 reporting files are append-only.
+- **V06 - Historical integrity:** PASS. Archived FQ, FUNC_REQ and FUNC_WORKFLOW sources remain unchanged; current Git blob IDs match the retirement-manifest baseline (FQ d496245c56e6bd8b8e766bbc7de406c3f1471dbc; FUNC_REQ d25d6640bb88f29e2a9305f358a6533fbe4e298e; FUNC_WORKFLOW 7a6e609161c22903f8ba66f10fa626eb2b3c4dab).
+- **V07 - References:** PASS. A scoped scan checked all 6 local Markdown links in the modified Ticketing Governance file; 0 were broken.
+- **V08 - Git integrity:** PASS. The staged list contains exactly the three authorized files (39 insertions, 1 deletion); git diff --check and git diff --cached --check returned no findings.
+- **V09 - Reporting:** PASS. This report and the Phase 03 Ticket Register record the before/after wording, Operator acceptance, verification, limits and publication evidence.
+- **V10 - Closure readiness:** NOT YET PASS. C02-GOV-01 is corrected, but FUNC-04 remains OPEN until ChatGPT independently verifies this correction and the Operator accepts that verification. No Unresolved Register entry was removed.
+
+**Limits:** This was a documentation/authority correction; no runtime integrations or agent capabilities were tested. No FUNC-local procedure was created, no archived source or CORE/EXE record was edited, and the frozen V003 Specification was not changed. The operator-approved ticket separately requests PR/merge, but this ticket's remaining independent-verification gate still governs FUNC-04 closure.
+
+**Git publication:** Correction commit 4fb4bfc25b5109e4ac43ff0ffa4982f116f1cfd5 was pushed and independently fetched from GitHub. Its changed-file list is exactly the Governance file and the two authorized Phase 03 records. The remote branch tip matched the commit after push. The publication checkpoint below records the branch comparison and lifecycle state.
+
+
+### C02-GOV-01 publication checkpoint - 2026-10-17
+
+Correction commit: 4fb4bfc25b5109e4ac43ff0ffa4982f116f1cfd5, subject V003: reconcile FUNC local procedure governance disposition. GitHub fetch returned the matching SHA, subject, and exactly three files: GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and the two authorized Phase 03 report/register files (39 additions, 1 deletion). Push output confirmed origin advanced from 5c65ec7 to 4fb4bfc. GitHub compare reports the FUNC batch branch 9 commits ahead and 0 behind main at b7a7a1d533277bc02f0613de198a9eaa9acb7afa; branch-wide files are the earlier approved Codex CORE correction, Ticketing Governance, and the two Phase 03 records. Local HEAD and upstream matched at the correction commit; the worktree was clean after publication. The modified Governance file has 6 local Markdown links, 0 broken; the three retired source Git blob IDs still match the manifest. No FUNC-04 entry was removed. PR #70 remains open on its separate branch and was not modified. The Operator's current request authorizes branch merge; PR creation and merge status are reported in the execution response. FUNC-04 remains open pending independent verification of this correction and subsequent Operator acceptance.
+
+
+## V003-FUNC-BC-CLOSEOUT-01 — FUNC-03/04 Closure and Git Synchronization — 2026-10-17
+
+**Repository:** `DeOdini/DEODINI_BRAINBOX`.
+**Execution branch:** `v003/func-bc-closeout-01`, created from the verified PR #71 merge commit.
+**Disposition:** This closeout records the completed evidence checks and prepares the remaining FUNC-04 acceptance. It does not claim final FUNC-04 acceptance.
+
+### Independent evidence and dispositions
+
+- **FUNC-03:** C01 CORE/EXE evidence audit and C01-R01 historical-status correction have the recorded ChatGPT PASS and explicit Operator acceptance. FUNC-03 remains **CLOSED — OPERATOR ACCEPTED**. PR #70's pending register patch removes its active row; its permanent issue ID and closure evidence remain in this report and the ticket register.
+- **FUNC-04 / C02:** The C02 procedure assessment remains **QUALIFIED PASS — NO LOCAL REPLACEMENT REQUIRED**, with its documented limits preserved: an authority/documentation assessment, not live integration, agent-execution, or workflow certification. The historical source records remain archived and unchanged; the prior report qualifies CRLF-expanded worktree representations for two archived records while their Git blobs and LF-normalized content match the baselines.
+- **C02-GOV-01:** The Operator-provided CLOSEOUT-01 baseline records ChatGPT independent verification as **PASS**. Codex's current read-back confirms the corrected Ticketing Governance text is present on GitHub `main`: Ticketing Governance owns the shared ticketing/approval/verification/closure process; Documentation and Evidence Governance retain their respective responsibilities; CORE owns capability descriptions; EXE owns operation-level execution evidence. The correction does not claim a replacement FUNC-local document exists or that untested capabilities work.
+- **Operator decision:** The Operator accepted the C02 recommendation **NO LOCAL REPLACEMENT REQUIRED**. Under CLOSEOUT-01 section 5, that prior approval did not grant final formal FUNC-04 closure. FUNC-04 is therefore **READY FOR OPERATOR FINAL CLOSURE ACCEPTANCE** and remains open until the Operator explicitly grants that final acceptance. If accepted, the authorized disposition is `FUNC-04 — CLOSED — OPERATOR ACCEPTED; NO LOCAL REPLACEMENT REQUIRED`, retaining the stated qualifications.
+
+### Unresolved Register and PR #70
+
+- PR #70 remains **OPEN / NOT MERGED** on `v003/unresolved-register-resolved-entry-cleanup`, head `5e0093b6b9a15047f710b138b45cc0d0a823971d` at preflight. Its one-file patch removes FUNC-03, retains FUNC-04 as display issue 01, and indexes the current remaining nine issue IDs as 01–09. Those numbers are display numbers; permanent issue IDs remain unchanged.
+- The PR #70 branch index is: `FUNC-04`, `V003-STATUS-01`, `V003-STATUS-02`, `README-01`, `README-03`, `GOVERNANCE-01`, `GOVERNANCE-02`, `GOVERNANCE-03`, and `GOVERNANCE-04`. The proposed eight-issue index in CLOSEOUT-01 applies only after FUNC-04 receives final Operator acceptance and is removed.
+- GitHub `main` still contains the pre-PR #70 register; PR #70 remains the pending change for removal of FUNC-03 and the previously approved resolved README-02 entry. No FUNC-04 removal, PR merge, or issue closure was performed in this closeout step.
+- CLOSEOUT-01 section 8 withholds PR #70 merge authority until final FUNC-04 acceptance. No force-push, branch deletion, or unrelated PR action occurred.
+
+### Git synchronization verification
+
+- Before synchronization, local `main` and `origin/main` were both `b7a7a1d533277bc02f0613de198a9eaa9acb7afa`; GitHub `main` was the PR #71 merge `5538e8479f744bce6ea6da5226d6ab6f1595a926`.
+- Read-only diagnostics found no active Git or Git Credential Manager process and no `.git` lock file. `.git/FETCH_HEAD` was owned by `DESKTOP-DHRIH27\USER`; the default sandbox fetch returned `Permission denied`. No ACL, ownership, lock, or Git configuration was changed.
+- The ticket-authorized `git fetch origin main` succeeded under the approved elevated execution boundary and advanced `origin/main` from `b7a7a1d` to `5538e8479f744bce6ea6da5226d6ab6f1595a926`. The clean local checkout switched to `main`; `git merge --ff-only origin/main` advanced it by fast-forward only.
+- Final read-back: local `HEAD`, local `main`, `origin/main`, and live GitHub `main` all equal `5538e8479f744bce6ea6da5226d6ab6f1595a926`; branch is `main`, upstream is `origin/main`, ahead/behind is 0/0, and the worktree is clean. All four pre-existing stashes were preserved. No destructive synchronization or history rewrite was used.
+
+**Publication checkpoint:** Commit SHAs for this report/ticket update and any PR #70 branch update will be recorded after the authorized pushes. PR #70 remains unmerged pending the explicit final FUNC-04 acceptance.
+
+### CLOSEOUT-01 publication checkpoint - 2026-10-17
+
+- The closeout report branch `v003/func-bc-closeout-01` was pushed at commit `3b1891744d61267210c5bcafd8105c889062c428` (V003: record FUNC batch closeout verification). The separate Unresolved Register branch was updated and pushed at `9528aea61dd95fbb94cc531fc38543a1535c1ccd` (V003: clarify FUNC closeout routing in register).
+- GitHub confirms PR #71 is merged at `5538e8479f744bce6ea6da5226d6ab6f1595a926`. Local `main` and `origin/main` were fast-forwarded to that same SHA; no reset, force operation, or Git metadata permission change was used. Four pre-existing stashes remain preserved.
+- PR #70 remains OPEN and NOT MERGED. Its branch head is `9528aea61dd95fbb94cc531fc38543a1535c1ccd`; GitHub compare reports 4 commits ahead and 11 behind `main`, with one changed file: `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md` (18 additions, 31 deletions across the full PR diff).
+- The PR #70 branch has nine active display entries: FUNC-04; V003-STATUS-01; V003-STATUS-02; README-01; README-03; GOVERNANCE-01; GOVERNANCE-02; GOVERNANCE-03; GOVERNANCE-04. FUNC-03 is absent from the active list; its accepted closure remains documented permanently. FUNC-04 remains active as display issue 01 pending final Operator acceptance.
+- The PR #70 description says the change keeps ten unresolved issue rows, while the published branch index contains nine. This discrepancy is flagged for review; the PR description was not edited. GitHub `main` remains unmodified by PR #70 and retains the earlier active register until that PR is merged.
+- No PR #70 merge, FUNC-04 closure, or FUNC-04 removal was performed. Under CLOSEOUT-01, these remain gated on explicit final Operator acceptance; merge also remains withheld.
+
+## V003-DEVOPS-DOCGOV-01 - Reference Governance alignment - execution report - 2026-10-17
+
+**Status:** IMPLEMENTED; scoped documentation and reference validation PASS. Ticket branch publication is recorded in the Git closeout entry appended after the push. This is not an independent ChatGPT review, PR merge, or overall V003 acceptance.
+
+### Authorization and ticket source
+
+The Operator authorized execution in the current instruction after supplying `Pasted text.txt` titled **DEVOPS CODEX TICKET - REFERENCE GOVERNANCE ALIGNMENT AMENDMENT**. Its SHA-256 is `38930FD94FF13DCB1EDEADE98AD57635CD5B3F20B9FAF0A0BB44DA552CEAF4D7`. The attachment applies to `V003-DEVOPS-DOCGOV-01`. A standalone ticket file for that identifier was not present in the repository at preflight; execution was bounded to the supplied amendment. The attachment's own statement that it did not itself authorize changes was honored: implementation proceeded only after the Operator's direct execution instruction.
+
+### Baseline and canonical source inspected
+
+- Repository: `DeOdini/DEODINI_BRAINBOX`.
+- Updated `main` baseline and ticket-branch base: `a0eee3d27b428d42e542d217ac73b57fd09a921d`, the merge commit for PR [#56](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/56).
+- PR #56 was independently read from GitHub during this task and reports `merged: true`, base `main`, merge SHA `a0eee3d27b428d42e542d217ac73b57fd09a921d`.
+- Ticket branch: `v003/devops-docgov-01-reference-governance-alignment`, created from that updated main baseline.
+- Canonical policy inspected: `GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md` at baseline `a0eee3d`; Git blob `c2c878dc28224fa33f55ab848428626450e51f13`.
+- The Reference Governance reconciliation status now records PR #56 and the merge SHA. The separate Universal Documentation Governance Framework remains DRAFT and is not adopted as active policy.
+
+### Applicable Reference Governance provisions
+
+The review applied the sections **Canonical ownership**, **Reference quality**, **Relationship to Documentation Governance**, and **Current migration references**. The active governing boundary remains: one canonical owner for each information class; references do not transfer ownership; active authority is distinct from historical and migration evidence; and planned locations are not represented as present until checked.
+
+### Canonical ownership and relationships established
+
+| Information | Owner and destination | Relationship / status | Boundary recorded |
+|---|---|---|---|
+| Website implementation | External repository `DeOdini/FOOTHIVE` | EXTERNAL PROJECT SOURCE | GitHub metadata confirms the public repository exists. Its code, branch contents, deployment, and current health were not inspected. |
+| FootHive V01 designation | `V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`, line 4210 | HISTORICAL OPERATOR DECISION | Line 4210 states V01 is a Production website and the workflow experiment is not complete. Website V01 is distinct from workflow Iteration 01. |
+| Workflow-trial history and evidence | `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/` | ACTIVE CANONICAL SANDBOX SOURCE EVIDENCE | Owns the trial dataset, tests, failures, evidence, and iteration state; no mastery or experiment closure is claimed. |
+| T20 release and lessons | `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/` | HISTORICAL PRODUCTION OPERATION EVIDENCE | Owns the documented 2026-10-01 T20 release summary; no later live-health check is claimed. |
+| Project summary, handoff, and navigation | `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/` | PORTFOLIO PRESENTATION | Owns portfolio-facing content and presentation routing, not website source, Sandbox evidence, or Production operations. |
+| Retired project sources | `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/` plus `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` | HISTORICAL EVIDENCE / MIGRATION EVIDENCE | Records former paths, provenance, and dispositions; does not reactivate archived instructions. Seven legacy empty directory shells remain as a recorded Windows cleanup limitation; source files were archived under the authorized M20 disposition. |
+| Shared policy | `GOVERNANCE_BRAINBOX/` | GOVERNED BY | Documentation, Reference, Tree and Status, Evidence, Security, Promotion, and Ticketing policies remain at their Governance owner; the new universal framework is still DRAFT. |
+
+### Implemented references and routing changes
+
+Fourteen active Markdown documents were updated. The changes clarify the owner/status relationship, link the relevant Governance authorities without copying their policy text, correct stale present-tense M09/M10/M12 source-location statements, and point current navigation to the verified Sandbox, Production, Portfolio, or Recycle Bin destination as appropriate. The Backend/Integrations build-report routes now resolve to the canonical M15 Sandbox record. Existing historical RAW workflow bodies and retired source bodies were not rewritten.
+
+Affected paths:
+
+1. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/README_DEVOPS_AI_BRAINBOX.md`
+2. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md`
+3. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/README_POC_SANDBOX_BRAINBOX.md`
+4. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md`
+5. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/WORKFLOWS_FULLSTACK_BRAINBOX/README_WORKFLOWS_FULLSTACK_BRAINBOX.md`
+6. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/BACKEND_SANDBOX_BRAINBOX/README_BACKEND_SANDBOX_BRAINBOX.md`
+7. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/BACKEND_SANDBOX_BRAINBOX/INTEGRATIONS_BACKEND_BRAINBOX/README_INTEGRATIONS_BACKEND_BRAINBOX.md`
+8. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md`
+9. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/README_POC_BRAINBOX.md`
+10. `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md`
+11. `PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md`
+12. `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md`
+13. `PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/POC_REFERENCE_FOOTHIVE_BRAINBOX.md`
+14. `GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md`
+
+### Historical and current routing assessment
+
+The active DEVOPS navigation now points to current verified destinations and classifies former project, Skills, FUNC, DOB/AI_MUST, and V002 Milestones material as archived/historical where linked. M20 migration and M01 baselines are cited as migration evidence, not current authority. The retained RAW Fullstack copies still contain old path strings and proposed promotion language as historical source text; their local README explicitly says those strings are non-operative and directs readers to current FUNC/AI and Governance authorities. No protected historical source body, frozen Specification, or Origin Conversation was edited.
+
+The active migration notes preserve the distinction between file archival and physical empty-shell cleanup. They do not claim all seven empty former project-workflow directories were removed.
+
+### Validation and evidence
+
+- `git diff --check`: PASS; no whitespace errors at report authoring.
+- Modified current Markdown scope before appending this report: 14 files.
+- Local inline Markdown destinations checked in those files: 279.
+- Broken local destinations: 0 after correcting the discovered `FOOTHIVE_PROD_SUMMARY_BRAINBOX` path.
+- A second scan after adding this report and the ticket-register entry checked all 16 changed Markdown files: 281 local inline destinations, 0 broken.
+- External links are reported separately from local-path checks. GitHub metadata verified `DeOdini/FOOTHIVE` exists as a public, non-archived repository with default branch `main`; repository contents and live website health were not checked.
+- The V003 Origin Conversation anchor was cross-checked against line 4210; the line contains the stated V01 Production designation.
+- No browser, production deployment, service-health, or application test was performed; this is a reference/documentation ticket.
+- No secret values, implementation assets, or production records were introduced.
+
+### Reference Governance Compliance Assessment
+
+| Gate | Result | Evidence |
+|---|---|---|
+| VG-21 - Canonical reference ownership | PASS | The Website source, Origin decision, Sandbox evidence, Production release summary, Portfolio presentation, archive/migration evidence, and Governance policies have separate owners and exact destinations. No new competing canonical evidence copy was created. |
+| VG-22 - Reference relationship classification | PASS | Updated references distinguish EXTERNAL PROJECT SOURCE, HISTORICAL OPERATOR DECISION, SOURCE EVIDENCE, HISTORICAL PRODUCTION OPERATION EVIDENCE, RELATED DOMAIN / PORTFOLIO PRESENTATION, MIGRATION EVIDENCE, and GOVERNED BY. |
+| VG-23 - Governance cross-reference integrity | PASS, scoped to affected DEVOPS and cross-domain parent/case-study READMEs | Applicable Documentation, Reference, and Tree and Status sources are linked from the reviewed DEVOPS parents and the directly affected Sandbox, Production, Backend integration, and Portfolio navigation records. Shared rules were not copied. Universal Framework status remains DRAFT. |
+| VG-24 - Historical and current routing | PASS | Active navigation links resolve to current canonical or archive destinations. Historical source strings in preserved RAW bodies remain labeled non-operative; they were not rewritten. |
+| VG-25 - FootHive cross-domain reference integrity | PASS | V01 provenance resolves to Origin line 4210; Sandbox/Production/Portfolio references resolve locally; T20 is labeled historical; no current deployment-health claim is introduced. |
+| VG-26 - Reference change accountability | PASS | The supplied amendment and the Operator's current execution instruction are identified; baseline commit/blob, affected paths, old-to-current routing, link results, and limits are recorded here. |
+
+### Unresolved authority questions and limits
+
+No unresolved canonical-owner decision was found within this bounded DEVOPS/FootHive/Portfolio scope. The repository did not contain a standalone ticket document named `V003-DEVOPS-DOCGOV-01`; the implementation follows the supplied amendment. The FootHive repo's internal content, website deployment, and current production health remain unverified. No current operating status is inferred from the historical T20 record.
+
+### Independent reproduction instructions for ChatGPT
+
+1. Confirm baseline and branch: `git show -s --format=%H a0eee3d27b428d42e542d217ac73b57fd09a921d` and `git branch --show-current`.
+2. Inspect the Reference Governance baseline blob: `git show a0eee3d27b428d42e542d217ac73b57fd09a921d:GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md` and compare the report's baseline blob SHA `c2c878dc28224fa33f55ab848428626450e51f13`.
+3. Review the exact ticket diff with `git diff a0eee3d27b428d42e542d217ac73b57fd09a921d -- <the 14 listed paths>`; inspect the appended report and ticket-register entry separately.
+4. Re-run `git diff --check` and validate local destinations in every modified Markdown file by extracting each inline `](target)` destination, skipping `http:`, `https:`, `mailto:`, `tel:`, data, and same-document fragments, URL-decoding the remaining path, stripping any `#anchor`, resolving it against the containing Markdown file, and checking that the filesystem target exists. Anchor line 4210 can be verified with `Get-Content V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md | Select-Object -Skip 4209 -First 1`.
+5. Independently read PR #56 and the `DeOdini/FOOTHIVE` repository metadata using the GitHub connector; do not interpret repository metadata as a live-site check.
+
+### Publication boundary
+
+This report is staged with the dedicated ticket changes. The branch is to be pushed for independent verification; no PR or merge for this ticket is requested or claimed. Ticket execution PASS here is Codex's own scoped evidence only; ChatGPT independent verification and Operator ticket acceptance remain pending.
+
+### V003-DEVOPS-DOCGOV-01 - Git closeout - 2026-10-17
+
+**Implementation commit:** `d8159e0e0ef35cc598838d8626d79497d1bea19d` - `V003: align DEVOPS references with Governance`.
+
+**Push:** `git push -u origin v003/devops-docgov-01-reference-governance-alignment` succeeded and established the upstream tracking branch.
+
+**Remote verification:** GitHub branch metadata reports tip `d8159e0e0ef35cc598838d8626d79497d1bea19d`; local `HEAD` and `origin/v003/devops-docgov-01-reference-governance-alignment` matched that commit at verification. The worktree was clean after the implementation push.
+
+**PR/merge:** No pull request was opened and no ticket-branch merge was performed. The branch is published for independent verification. This closeout does not claim independent ChatGPT verification or Operator acceptance.

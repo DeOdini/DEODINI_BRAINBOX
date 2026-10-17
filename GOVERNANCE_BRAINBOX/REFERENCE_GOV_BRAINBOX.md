@@ -99,7 +99,7 @@ The [Retirement Ledger](../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md), 
 **Review initiated and wording approved by:** Operator
 **Review and insertion performed by:** ChatGPT
 **Inputted by:** ChatGPT
-**Status:** Locally inserted following Operator approval; Git publication and independent post-publication acceptance not claimed.
+**Status:** Published in PR [#56](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/56) and merged into `main` at merge commit `a0eee3d27b428d42e542d217ac73b57fd09a921d`; independent post-publication acceptance is not claimed.
 **Verification classification:** QUALIFIED REVIEW
 
 The canonical ownership and reference principles remain consistent with Documentation Governance. The prior general statement about original legacy locations was superseded with current retirement dispositions. The proposed universal framework is now explicitly referenced with its draft-status qualification. Current and archived Milestones links are added while pre-existing historical verification and ticket-route records remain intact.
