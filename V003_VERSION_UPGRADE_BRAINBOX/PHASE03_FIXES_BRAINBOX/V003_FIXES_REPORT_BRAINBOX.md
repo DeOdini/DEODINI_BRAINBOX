@@ -2499,3 +2499,30 @@ A read-only pass counted all eight CORE agent records and all eight agent-specif
 ### C02 publication checkpoint - 2026-10-17
 
 Commit 1f7436272352dd838a8b6c82bb3a87af93078e7f (V003: assess FUNC-local procedure requirement) was pushed to origin/v003/func-bc-core-exe-and-procedure-disposition. GitHub commit fetch returned the same full SHA and subject and listed exactly the two authorized C02 reporting files. The commit contains 58 insertions and no deletions. GitHub compare reports the branch 7 commits ahead and 0 behind main at b7a7a1d533277bc02f0613de198a9eaa9acb7afa. The branch-wide changed paths are the earlier Codex CORE correction plus the report and ticket register. Local HEAD and upstream match at 1f7436272352dd838a8b6c82bb3a87af93078e7f; the worktree is clean and worktree/cached whitespace checks pass. No C02 PR or merge was created, and PR #70 was not modified. C02 awaits independent ChatGPT verification and Operator acceptance; FUNC-04 remains open.
+
+
+## V003-FUNC-BC-C02-GOV-01 - Governance wording reconciliation - 2026-10-17
+
+**Operator approval:** The Operator-approved ticket accepts the independent C02 assessment and its recommendation, **NO LOCAL REPLACEMENT REQUIRED**, and authorizes this narrow Ticketing Governance wording correction. This supersedes the earlier C02 checkpoint that recorded independent verification and Operator acceptance as pending. That historical checkpoint is retained. This edit itself remains pending independent ChatGPT verification.
+**Preflight:** Repository remote is DeOdini/DEODINI_BRAINBOX. Branch is v003/func-bc-core-exe-and-procedure-disposition. Initial worktree was clean; local HEAD and upstream were both 5c65ec74a876b8940474b81b01fe9f0b7335ed12, and that C02 publication checkpoint is an ancestor. PR #70 remains OPEN on v003/unresolved-register-resolved-entry-cleanup, with no overlap; it was not modified.
+**Before:**
+> The former FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md sources are archived as historical records. No current replacement for the local function-area reading and request-submission procedure has been established; this is an authority gap for a later authorized ticket. This file owns current system-wide ticket and authorization principles. Agent capability-report fields belong to the CORE registry and do not recreate the retired local procedure.
+
+**After:**
+> The former FQ_MUST_README.md and FUNC_REQ_BRAINBOX.md sources are archived as historical records, and no replacement FUNC-local procedure has been established. Following the Operator-accepted V003-FUNC-BC-C02 assessment of 2026-10-17, no local replacement is required for the assessed capability-request, evidence-intake, authorization and verification responsibilities. Current Ticketing Governance provides the shared discovery, ticketing, approval, verification and closure process. Documentation and Evidence Governance govern their respective requirements; the CORE registry owns agent capability descriptions, and EXE owns operation-level execution evidence. This disposition does not validate untested agent capabilities, recreate retired procedures or establish standing execution authority. This file owns current system-wide ticket and authorization principles. Agent capability-report fields belong to the CORE registry and do not recreate the retired local procedure.
+
+**Verification:**
+- **V01 - Correct authority statement:** PASS. The active local-request paragraph no longer describes the accepted absence of a FUNC-local replacement as an authority gap.
+- **V02 - Historical truth:** PASS. It states that the historical records remain archived and no replacement document exists.
+- **V03 - Canonical authority:** PASS. Current Ticketing Governance, Documentation Governance and Evidence Governance retain their existing system-wide responsibilities; no other Governance file changed.
+- **V04 - CORE/EXE separation:** PASS. The correction assigns agent capability descriptions to CORE and operation-level evidence to EXE.
+- **V05 - Scope integrity:** PASS. One substantive paragraph in the primary Governance file changed; no unrelated policy wording changed. The two authorized Phase 03 reporting files are append-only.
+- **V06 - Historical integrity:** PASS. Archived FQ, FUNC_REQ and FUNC_WORKFLOW sources remain unchanged; current Git blob IDs match the retirement-manifest baseline (FQ d496245c56e6bd8b8e766bbc7de406c3f1471dbc; FUNC_REQ d25d6640bb88f29e2a9305f358a6533fbe4e298e; FUNC_WORKFLOW 7a6e609161c22903f8ba66f10fa626eb2b3c4dab).
+- **V07 - References:** PASS. A scoped scan checked all 6 local Markdown links in the modified Ticketing Governance file; 0 were broken.
+- **V08 - Git integrity:** PASS. The staged list contains exactly the three authorized files (39 insertions, 1 deletion); git diff --check and git diff --cached --check returned no findings.
+- **V09 - Reporting:** PASS. This report and the Phase 03 Ticket Register record the before/after wording, Operator acceptance, verification, limits and publication evidence.
+- **V10 - Closure readiness:** NOT YET PASS. C02-GOV-01 is corrected, but FUNC-04 remains OPEN until ChatGPT independently verifies this correction and the Operator accepts that verification. No Unresolved Register entry was removed.
+
+**Limits:** This was a documentation/authority correction; no runtime integrations or agent capabilities were tested. No FUNC-local procedure was created, no archived source or CORE/EXE record was edited, and the frozen V003 Specification was not changed. The operator-approved ticket separately requests PR/merge, but this ticket's remaining independent-verification gate still governs FUNC-04 closure.
+
+**Git publication:** Correction commit, pushed branch SHA, merge decision and final worktree state will be recorded after the corresponding checks.

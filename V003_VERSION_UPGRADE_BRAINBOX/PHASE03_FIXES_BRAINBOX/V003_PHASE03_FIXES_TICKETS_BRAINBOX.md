@@ -727,3 +727,14 @@ ChatGPT independently verified the C01 audit and C01-R01 historical-status corre
 ### C02 publication checkpoint - 2026-10-17
 
 Commit 1f7436272352dd838a8b6c82bb3a87af93078e7f (V003: assess FUNC-local procedure requirement) is pushed to origin/v003/func-bc-core-exe-and-procedure-disposition. GitHub fetch matched the full SHA/subject and confirmed exactly the two authorized reporting files (58 insertions, 0 deletions). Compare: 7 commits ahead / 0 behind main at b7a7a1d533277bc02f0613de198a9eaa9acb7afa; branch-wide paths remain the earlier Codex CORE correction and the two Phase 03 records. Local HEAD equals upstream; worktree clean; whitespace checks pass. No PR/merge was created; PR #70 was untouched. ChatGPT independent verification and Operator acceptance remain pending; FUNC-04 remains OPEN.
+
+
+## V003-FUNC-BC-C02-GOV-01 - Governance wording reconciliation - 2026-10-17
+
+**Originating issue:** FUNC-04. **Status:** Governance contradiction corrected; correction awaits independent ChatGPT verification. FUNC-04 remains OPEN.
+**Operator disposition:** Accepts the independent C02 assessment and **NO LOCAL REPLACEMENT REQUIRED**; authorizes the scoped wording update. The earlier pending-verification checkpoint remains historical and is superseded by this newer Operator-approved ticket. Verification of this corrective edit is still pending.
+**Changed scope:** One substantive paragraph under Local request procedures in GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md; append-only additions to this report and the Phase 03 Ticket Register. No Unresolved Register change.
+**Result:** Historical FQ/FUNC_REQ records are accurately described as archived with no replacement file; the accepted C02 finding replaces the obsolete authority-gap label. Ticketing, Documentation and Evidence Governance roles and CORE/EXE separation remain explicit.
+**Integrity:** Archived FQ, FUNC_REQ and FUNC_WORKFLOW Git blobs match their retirement-manifest baseline. The modified Governance file has 6 local Markdown links; all resolve. The scoped staged diff has 3 authorized paths; worktree and cached whitespace checks pass.
+**Boundaries:** No local procedure created; no archive, CORE/EXE, other Governance, FUNC README, Specification or PR #70 change. No FUNC-04 closure or Unresolved Register removal before independent verification.
+**Publication:** Commit, remote branch SHA, merge state and final worktree status to be completed in the publication checkpoint.
