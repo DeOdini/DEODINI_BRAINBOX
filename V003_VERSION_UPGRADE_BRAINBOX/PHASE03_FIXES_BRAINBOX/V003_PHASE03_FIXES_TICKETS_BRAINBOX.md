@@ -738,3 +738,8 @@ Commit 1f7436272352dd838a8b6c82bb3a87af93078e7f (V003: assess FUNC-local procedu
 **Integrity:** Archived FQ, FUNC_REQ and FUNC_WORKFLOW Git blobs match their retirement-manifest baseline. The modified Governance file has 6 local Markdown links; all resolve. The scoped staged diff has 3 authorized paths; worktree and cached whitespace checks pass.
 **Boundaries:** No local procedure created; no archive, CORE/EXE, other Governance, FUNC README, Specification or PR #70 change. No FUNC-04 closure or Unresolved Register removal before independent verification.
 **Publication:** Commit, remote branch SHA, merge state and final worktree status to be completed in the publication checkpoint.
+
+
+### C02-GOV-01 publication checkpoint - 2026-10-17
+
+Correction commit 4fb4bfc25b5109e4ac43ff0ffa4982f116f1cfd5 (V003: reconcile FUNC local procedure governance disposition) is published on the FUNC batch branch. GitHub fetch matched its SHA/subject and exact three-file scope (39 insertions, 1 deletion); push advanced the remote from 5c65ec7. Branch comparison: 9 ahead / 0 behind main at b7a7a1d533277bc02f0613de198a9eaa9acb7afa. Six local links in the changed Governance file resolve; archived FQ, FUNC_REQ, and FUNC_WORKFLOW Git blobs match baseline. PR #70 remains separate and unmodified. Operator has now directly requested merge; its result is reported in the execution response. FUNC-04 remains OPEN pending independent verification of the correction and Operator acceptance.
