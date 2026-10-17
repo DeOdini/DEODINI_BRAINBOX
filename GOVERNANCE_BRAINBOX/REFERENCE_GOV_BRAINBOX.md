@@ -19,6 +19,27 @@
 - Keep a reference to a source while its content is still retained for historical or migration purposes.
 - Do not infer that a planned destination exists merely because it appears in an approved target tree.
 
+### Reference purpose and contextual explanation
+
+**Operator-approved amendment — 2026-10-17.** Approved by the Operator and recorded by Codex. This subsection is an active Reference Governance requirement. It does not adopt the Universal Documentation Governance Framework, which remains **DRAFT — NOT YET ADOPTED**.
+
+For each active documentation reference, its reason for inclusion must be discernible from the referencing document. The purpose may appear beside the link or in an immediately identifiable contextual paragraph, ownership table, or reference directory. Do not add repetitive explanations when the existing context already makes the purpose clear.
+
+When constructing or evaluating a reference, establish:
+
+1. What destination is referenced?
+2. What relationship connects that destination to the current document?
+3. Why is that relationship necessary?
+4. What is the destination's state, where material (for example, current, planned, empty, historical, or external)?
+5. What may an agent legitimately obtain from the destination?
+6. What must not be inferred from the reference?
+
+An empty or planned destination may be linked for authorized navigation, but the link does not establish that it is populated or active. A historical source may be cited for provenance, but must not be presented as current execution authority. An external project reference does not establish that its implementation, deployment, or live service has been verified.
+
+Before labeling an unclear reference defective or correcting it, inspect the destination and the surrounding documentation. Do not add generic descriptions without inspection, assume a stub contains implementation knowledge, change canonical ownership for convenience, duplicate governing text into local READMEs, fill empty folders to justify links, rewrite historical files, or perform blanket reference-list rewrites.
+
+[Documentation Governance §9](DOCUMENTATION_GOV_BRAINBOX.md#9-reference-construction-standard), including Template C's reference-entry fields, is available as a construction guide only; it remains part of the DRAFT framework and is not the source of this binding requirement. This subsection states the required outcome without reproducing the full template or creating a second template authority.
+
 ## Relationship to Documentation Governance
 
 [DOCUMENTATION_GOV_BRAINBOX.md](DOCUMENTATION_GOV_BRAINBOX.md) owns the system-wide documentation methodology and includes the proposed **Universal Documentation Governance Framework Specification — V003**, inserted on 2026-10-16 and still marked **DRAFT — OPERATOR REVIEW REQUIRED**. Its pre-existing canonical provisions remain active; the new draft becomes binding only after separate approval.
