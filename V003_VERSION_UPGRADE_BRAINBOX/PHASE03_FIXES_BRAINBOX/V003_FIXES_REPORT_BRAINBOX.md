@@ -2333,3 +2333,98 @@ All four pre-existing stashes were preserved without modification or deletion:
 - stash@{3}: F16 pre-reconciliation backup.
 
 This cleanup closes only the named DEVOPS-01 and DEVOPS-03 documentation findings with the Operator-accepted qualifications. It does not close unrelated Phase 03 tickets, Phase 02 migration, or overall V003 acceptance. The temporary report-only branch v003/devops-final-01-cleanup-report was initially pushed at commit c680f5f59cc9b6963bfe033d6cfa37bfdec2287a. PR #69 (https://github.com/DeOdini/DEODINI_BRAINBOX/pull/69) targets main at 483529b52c6c505694dc22935e92581731c04016 and contains exactly the two authorized report records. The latest PR read returned OPEN, mergeable=true, merged=false; no commit status checks were reported. The immediate create response temporarily returned mergeable=false, followed by the mergeable=true read. The report-only branch must be deleted after PR #69 merges; its final deletion and resulting main state will be confirmed in the Codex response.
+
+## V003-FUNC-BC-C01 - CORE/EXE Capability Integrity and Evidence Verification - 2026-10-17
+
+**Issue:** 01 - FUNC-03
+**Execution agent:** Codex
+**Independent verifier:** ChatGPT - PENDING
+**Final acceptance authority:** Operator - PENDING
+**Codex audit status:** EXECUTION COMPLETE; REVIEW / VERIFY
+**FUNC-03 disposition:** OPEN; no issue closure claimed.
+**C02 status:** NOT STARTED; wait for independent review and disposition of C01-R01.
+
+### 1. Preflight and publication boundary
+
+- Repository: `DeOdini/DEODINI_BRAINBOX`.
+- Local `main`, local `origin/main`, and the live GitHub `main` were verified at `b7a7a1d533277bc02f0613de198a9eaa9acb7afa` before branch creation. GitHub compare reported `main` identical to that base (0 ahead / 0 behind).
+- The dedicated batch branch `v003/func-bc-core-exe-and-procedure-disposition` was created locally from that clean base. It was absent locally and remotely before creation. No ticket files were staged or committed at preflight.
+- PR #70 was checked first and remains OPEN, mergeable, and based on the same `main` SHA. Its single changed file is `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md`; the PR does not overlap this ticket's two writable files. Its branch was not modified or merged.
+- GitHub MCP successfully fetched the current Codex CORE document from `main`; the returned Git blob SHA was `62accecc5686671f55167cebb8ce44bd38ce7ac5`, matching the local `main` blob. A direct `git ls-remote` attempt was blocked by this environment's network restriction, so live remote comparison used the connected GitHub read API.
+- C01's authorized write scope is append-only updates to this report and the Phase 03 ticket register. CORE/EXE records, the frozen Specification, legacy archives, and the Unresolved Register remain unchanged. No PR or merge is authorized by this plan.
+
+### 2. C01-01 - Physical inventory and tree
+
+The active FUNC parent contains exactly `README_FUNC_AI_BRAINBOX.md`, `AI_AGENTS_CORE_FUNC_BRAINBOX/`, and `AI_AGENTS_EXE_FUNC_BRAINBOX/`.
+
+- CORE contains its README plus the eight agent records: CHATGPT, CLAUDE, CLINE, CODEX, COPILOT, DEEPSEEK, GROK, and QWEN.
+- EXE contains its README, eight agent-specific directories (each with its README), and exactly five capability directories: RESEARCH, BROWSER, FILE, CODE, and MEDIA (each with its README).
+- The physical names match the FUNC, CORE, and EXE local trees exactly. The audited FUNC subtree contains 24 Markdown files.
+- The required CORE metadata fields are present in all eight records: EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, AUTHORIZED, LIMITATIONS, CANONICAL EXE REFERENCES, and LAST VERIFIED.
+- Link scan across the 24 Markdown files found 175 local path links and 12 local heading-fragment links; 0 unresolved. The EXE-questionnaire fragment's double hyphen is valid under GitHub-style heading slug normalization for the em dash in its heading.
+
+**Classification:** CONFIRMED - physical tree, required schema, and navigation match the current records.
+
+### 3. C01-02 through C01-04 and C01-10 - Agent status and capability claims
+
+The eight rows in `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv` were cross-checked against their CORE records, source archive, M01 retirement manifest, and applicable M06 evidence. The archived source directory is `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/`; the active CORE directory is `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/`.
+
+| Agent | Historical source claim checked | Current CORE state and EXE disposition | Classification |
+|---|---|---|---|
+| ChatGPT | `CHATGPT_FUNC_BRAINBOX.md`: dated connector, skill, RDC, and email self-report. | Current exposure, connection, authentication, and execution are UNKNOWN / NOT VERIFIED; no category admitted. | Historical report attribution confirmed; present capability unverified. |
+| Claude | `CLAUDE_FUNC_BRAINBOX.md`: dated connector/capability self-report, including historical authorization wording. | Current runtime states are UNKNOWN / NOT VERIFIED; historical wording is not current authentication or permission; no category admitted. | Historical report attribution confirmed; no present auth or execution established. |
+| Cline | `CLINE_FUNC_BRAINBOX.md`: initial failed file-write diagnostic and later dated capability report are distinct source events. | Current states UNKNOWN / NOT VERIFIED; no category admitted. CORE reference to MEDIA does not admit Cline as an executor. | Historical distinction preserved; no present file execution inferred. |
+| Codex | `CODEX_FUNC_BRAINBOX.md` and dated M05/M06 records describe scoped research, browser, file, and code actions. | Four categories are admitted only for cited historical Codex operations. The CORE's affirmative `Current status` wording is date-framing review item C01-R01 below. | Historical operations supported within their recorded scope; broad current status not re-established. |
+| Copilot | `COPILOT_FUNC_BRAINBOX.md`: dated workspace/MCP/RDC and Playwright configuration claims. | Current states UNKNOWN / NOT VERIFIED; BROWSER record explicitly says Copilot execution is not verified; no Copilot category admission. | Configuration is not connection/authentication/execution proof. |
+| DeepSeek | `DEEPSEEK_FUNC_BRAINBOX.md`: three-line pending-report notice, not a capability report. | Only the approved V003 role/limitations baseline is recorded; connector, authentication, and execution states UNKNOWN; no category admitted. | Correctly not promoted from placeholder to execution claim. |
+| Grok | `GROK_FUNC_BRAINBOX.md`: dated connector/skill/RDC/email self-report; its no-direct-Playwright-MCP statement is date-bound. | Current states UNKNOWN / NOT VERIFIED; no category admitted. | Historical report only; no present integration inferred. |
+| Qwen | `QWEN_FUNC_BRAINBOX.md`: three-line pending-report notice, not a capability report. | Only the approved V003 role/limitations baseline is recorded; connector, authentication, and execution states UNKNOWN; no category admitted. | Correctly not promoted from placeholder to execution claim. |
+
+A successful public repository read does not prove the identity of the GitHub API principal or a specific agent's general authentication state. During this C01 session, the GitHub MCP read of the public Codex CORE file succeeded; this establishes only that this scoped read route worked. The caller identity was not queried, no external write was attempted, and no connector/account for the other seven agents was tested. Current authentication remains unverified where the records say UNKNOWN / NOT VERIFIED.
+
+**Classification:** CONFIRMED - historical claims are labeled as historical or unknown; VERIFY - no current runtime census is asserted. F09's Operator-approved questionnaire methodology is not evidence that any listed integration is currently connected or executable.
+
+### 4. C01-05 through C01-08 - Operation evidence and category integrity
+
+The frozen Specification ?9 P06 matrix and the M06 report define admission as evidence of at least one successful scoped operation, not as a guarantee of present availability. The M06 report records four admitted categories for Codex only and MEDIA as reserved. The agent-specific EXE records label all four Codex entries as historical and say current connection/execution was not rechecked.
+
+| Claim ID / capability | Exposure, connection, authentication | Executed evidence and exact source | Authorization / classification |
+|---|---|---|---|
+| C01-OP-RESEARCH - Codex public research | Public web lookup; connection recorded for public requests; authentication N/A for public sources. | Official GitHub Status history retrieved and cited on 2026-10-07. Evidence: frozen V003 Specification ?9 P06 matrix; `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_EXE_FUNC_BRAINBOX/CODEX_EXE_FUNC_BRAINBOX/README_CODEX_EXE_FUNC_BRAINBOX.md` (`EXE-CODEX-RESEARCH-001`) and the RESEARCH category README. | Read-only research in assigned scope; historical execution CONFIRMED, no current runtime guarantee. |
+| C01-OP-BROWSER - Codex local browser preview | Playwright CLI reached a local FootHive preview; authentication N/A for local preview. | T23 responsive/interaction checks dated 2026-10-03. Evidence: `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/BUILD_REPORT_FH_BRAINBOX.md` and `.../EVIDENCE_FH_BRAINBOX/T23_MOBILE_HEADER_FH_BRAINBOX/` (screenshots and Playwright CLI records). | Local-preview checks only; not accessibility certification, cross-browser certification, or permission for external clicks/submissions. Historical execution CONFIRMED. |
+| C01-OP-FILE - Codex scoped repository files | Shell/workspace tools in the authorized DEODINI workspace; local authentication N/A. Git remote credential identity is not inferred from a local commit. | P03-P05 and M05 file operations are recorded in the M05 report; M05 commit `585f9600ca4940aab750488b2f46f7cb72a94d69`. | Ticket/workspace-scoped local file activity only; historical execution CONFIRMED, no standing write/push/merge authority. |
+| C01-OP-CODE - Codex FootHive CSS change | Source editing and local code/test tools were used in the recorded T23 work. | T23 phone-width header CSS correction and Playwright verification, dated 2026-10-03; evidence in the T23 Build Report and `EXE-CODEX-CODE-001` / CODE category README. | One ticket-scoped frontend correction only; historical execution CONFIRMED, not general backend or production coding proof. |
+| C01-OP-MEDIA - Media generation | The CORE/source reports describe possible media tools; no particular endpoint/account is established. | No verified media output artifact is recorded. | MEDIA remains RESERVED / EXECUTION EVIDENCE PENDING / NOT ADMITTED, as the frozen matrix requires. |
+| C01-OP-CURRENT-READ - Current Codex session | GitHub MCP file-read route and local repository read tools were exposed and worked in this session on 2026-10-17. Authentication principal and general account state were not checked. | One read-only fetch of the public Codex CORE record on `main`; local read-only tree/hash checks. No external write and no current browser, media, deployment, or other-agent execution test. | Current evidence is restricted to this audit read. It does not renew the older M05/M06 status claims or create standing authority. |
+
+**Classification:** CONFIRMED - the existing four-category admission matches the frozen P06/M06 baseline; REVIEW - the Codex CORE present-tense status descriptions should be explicitly time-qualified; no new category or executor is supported or proposed.
+
+### 5. C01-09 - Freshness review item C01-R01
+
+**Exact path:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CODEX_CORE_FUNC_BRAINBOX.md`.
+
+Its `LAST_VERIFIED` metadata (line 7) is dated 2026-10-08. The EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, and AUTHORIZED sections (lines 12-37) use `Current status` / `YES` language and refer to the Codex session, GitHub identity, RDC session, Git push, and a prior Batch A/M05 authorization. The limitation text says there is no standing future authority, and the date is present in the metadata; therefore this audit does not establish a factual falsehood. However, the status wording can be mistaken for a fresh 2026-10-17 verification if the date is missed. The one current GitHub MCP read recorded above does not re-verify the historical account identity, push, RDC, browser, or authorization claims.
+
+**Finding:** REVIEW / VERIFY - stale present-tense framing on one record.
+**Minimum proposed correction (not applied):** in that one CORE file, relabel the five status lines as status *at the 2026-10-08 verification* and preserve the historical facts and limitations. If an updated current status is desired, verify each interface separately under a separately scoped ticket.
+**Timing/owner:** after ChatGPT independently reviews C01 and the Operator selects whether the wording warrants a correction ticket. CORE/EXE are read-only in C01; no source record was changed.
+
+The other seven CORE records explicitly say current connection/authentication/execution is UNKNOWN / NOT VERIFIED or state only the approved DeepSeek/Qwen role baseline; no contradictory affirmative live-status claim was found. Dated M06 operation records say current execution was not rechecked and therefore remain properly historical.
+
+### 6. C01-11 - Archived source integrity and authority
+
+- All eight legacy agent source paths in the F09 traceability CSV map to the M01 retirement manifest and to the existing Recycle Bin archive.
+- For all eight, the F09 `LegacySourceSHA256`, manifest `source_sha256_pre_move`, and M01 baseline classification match. All eight current archive Git blob IDs match the manifest's `baseline_git_blob` (8/8).
+- Checkout line endings explain the raw-byte comparison: six archived files' LF-normalized current bytes match the recorded SHA-256; Codex and Copilot match their recorded raw bytes. The manifest explicitly records the applicable line-ending treatment. No unexplained content mismatch was found.
+- The F09 `CurrentCoreSHA256` values were compared with the eight CORE records at commit `e3e4da3e86bbed75f072f7a5fefe2b93c6793ecf` (CRLF worktree representation); all eight match that captured snapshot. The later commit `de4a74b96872b0b63f68a3f0c8fe4981e181f614` changed one `CANONICAL_SOURCE` destination line per CORE record to point at the approved Recycle Bin archive path. The diff is exactly 1 insertion / 1 deletion for each of the eight records; no capability claim or status text changed in that link-only update.
+- The active FUNC README explicitly identifies FQ, FUNC_REQ and FUNC_WORKFLOW as archived historical sources and states that no local replacement procedure is inferred. CORE and EXE remain the active registries. The archived agent reports are source history, not active procedures or proof of current connection.
+
+**Classification:** CONFIRMED - source integrity and historical-only boundary; no archive recovery or source mutation required.
+
+### 7. C01-12 - References, status, and result
+
+The FUNC / CORE / EXE trees match the filesystem and all local file and heading links resolve under the documented scan. CORE references are assigned as expected: Codex links to RESEARCH/BROWSER/FILE/CODE; Copilot's BROWSER reference states unverified and not admitted; Cline links to reserved MEDIA without admission; the other agents link to the EXE index without a category. No misattributed agent operation, speculative EXE category, or promoted placeholder was found.
+
+**C01 result:** The inventory, source/manifest linkage, tree, metadata schema, and historical M06 admission boundaries pass. One date-framing review item remains (`C01-R01`). Codex audit execution is complete; ChatGPT independent verification and Operator disposition are pending. FUNC-03 is not closed. Do not begin dependent C02 until ChatGPT has reviewed this report and C01-R01 has an explicit disposition.
+
+**Files changed by C01:** only this Phase 03 Fixes Report and `V003_PHASE03_FIXES_TICKETS_BRAINBOX.md`; append-only. No CORE/EXE, legacy source, frozen Specification, Unresolved Register, product code, or external service data was changed. No product test or broad agent runtime test was run; neither is authorized or required by this read-only evidence audit.

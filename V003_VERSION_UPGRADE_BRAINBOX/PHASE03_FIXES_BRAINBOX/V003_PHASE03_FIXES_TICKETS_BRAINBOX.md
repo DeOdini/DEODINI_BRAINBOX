@@ -668,3 +668,17 @@ The required closure commit 7661bf293caeea0d1e2af1afba9838489f02b766 was pushed 
 ### Checkpoint B - post-merge cleanup - 2026-10-17
 
 PR #68 merged as 483529b52c6c505694dc22935e92581731c04016. The eleven authorized DEVOPS Batch A/B and final-closure branches listed in the Phase 03 Fixes Report were verified merged and deleted locally/remotely with normal deletion. GitHub PR readback confirmed #57-#68 closed and merged; branch ancestry checks returned zero commits ahead before deletion; local/remote branch refs are absent afterward. Fifty-two unrelated non-main branches remain unchanged on both local and remote and are enumerated by exact name in the report. All four previously inventoried stashes remain. Local main and origin/main matched at the PR #68 merge SHA before this report-only publication. Temporary report branch v003/devops-final-01-cleanup-report was pushed at initial commit c680f5f59cc9b6963bfe033d6cfa37bfdec2287a. PR #69 (https://github.com/DeOdini/DEODINI_BRAINBOX/pull/69) contains exactly the two authorized report records and targets main at 483529b52c6c505694dc22935e92581731c04016. The latest PR read was OPEN, mergeable=true, merged=false; no commit status checks were reported. The branch must be deleted after the PR merges; Codex will confirm its final deletion and main synchronization.
+
+## V003-FUNC-BC-C01 - CORE/EXE Capability Integrity and Evidence Verification - 2026-10-17
+
+**Issue:** 01 / FUNC-03.
+**Operator authority:** Accepted the attached V003-FUNC-BC batch execution plan on 2026-10-17.
+**Branch/base:** `v003/func-bc-core-exe-and-procedure-disposition`, created from clean verified `main` at `b7a7a1d533277bc02f0613de198a9eaa9acb7afa`.
+**Codex execution:** Audit complete; append-only evidence/reporting scope. CORE/EXE and historical source files remain unchanged.
+**Classification:** REVIEW / VERIFY. Physical inventory, required CORE fields, local trees/links, historical source integrity, and M06 admission boundaries are CONFIRMED.
+**C01-R01:** The Codex CORE record's five affirmative `Current status` lines are dated by `LAST_VERIFIED` 2026-10-08 but could be read as current on a later date. Proposed date-qualification only; no CORE change made.
+**ChatGPT independent verification:** PENDING.
+**Operator acceptance / FUNC-03 closure:** PENDING; FUNC-03 remains OPEN.
+**C02 dependency:** Not started. Wait for independent review and explicit disposition of C01-R01.
+**PR #70:** Checked before branch creation; OPEN, mergeable, based on the same main SHA, and limited to `V003_UNRESOLVED_BRAINBOX.md`. No overlap; no action taken on PR #70.
+**Git lifecycle:** Branch created locally. C01 report publication commit/push checkpoint will be appended after successful publication. No PR or merge is authorized.
