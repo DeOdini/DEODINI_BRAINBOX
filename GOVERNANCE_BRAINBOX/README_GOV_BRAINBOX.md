@@ -32,7 +32,9 @@ GOVERNANCE_BRAINBOX/ [PRESENT · POPULATED]
 ├── REFERENCE_GOV_BRAINBOX.md [PRESENT]
 ├── SECURITY_GOV_BRAINBOX.md [PRESENT]
 ├── TICKETING_GOV_BRAINBOX.md [PRESENT]
+├── test_validate_tree_status.py [PRESENT]
 ├── TREE_AND_STATUS_GOV_BRAINBOX.md [PRESENT]
+├── validate_tree_status.py [PRESENT]
 └── VERSIONING_GOV_BRAINBOX.md [PRESENT]
 ```
 
@@ -86,3 +88,16 @@ For verified cross-domain read sources and ticket-scoped update destinations, se
 ## Tree and status classification authority
 
 [Tree and Status Governance](TREE_AND_STATUS_GOV_BRAINBOX.md) defines mandatory two-descendant-level navigation for local READMEs, path validation, and separate structural/lifecycle tags. Root README remains complete-tree authority. This dated Operator-approved policy supplements, but does not rewrite, frozen V003 architecture.
+
+## Local read-only validation
+
+Run from the repository root:
+
+```powershell
+python GOVERNANCE_BRAINBOX/validate_tree_status.py
+python -B GOVERNANCE_BRAINBOX/test_validate_tree_status.py
+```
+
+The validator inventories active `README*.md` files, checks each non-root canonical local tree against its direct children and grandchildren, enforces the two-descendant limit, validates the two approved absent Sandbox paths, checks structural status claims that can be compared with the filesystem, and resolves relative Markdown destinations after URL decoding. It does not modify files. `README_BRAINBOX.md` is checked for local links; its full-depth authority tree is not parsed as a two-level local tree. Semantic judgments such as whether content is truly substantive or an authorization is current remain qualified for human review. The current baseline reports existing Sandbox tree placement/omission findings; the validator does not repair them.
+
+Source: [read-only validator](validate_tree_status.py); [controlled fixture tests](test_validate_tree_status.py).

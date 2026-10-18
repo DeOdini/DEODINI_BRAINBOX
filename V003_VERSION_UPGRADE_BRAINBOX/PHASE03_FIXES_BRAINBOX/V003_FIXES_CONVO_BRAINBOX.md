@@ -2842,3 +2842,32 @@ The final readback confirmed the readable path matrices, exact attachment-byte i
 **De O'Dini — Operator:** STAGE COMMIT PUSH AND MERGE ALL BRANCHES
 
 **Codex:** I inventoried the branches and working tree. The prior ticket branches were already merged; the only pending changes were the five-file V003-BF-F02 change set. I staged and committed those files on `v003/bf-f02-root-tree-canonical-child-path-reconciliation`, pushed commit `d543e57d08586b49d1befaf2ac89edee3916b916`, opened PR #85, and merged it into `main` at `259bada3851cdbe46e74341124b9afc378aa1cbc`. I fast-forwarded local `main` to the same SHA and verified a clean worktree and no unmerged local/remote branch tips. F02 remains open pending independent ChatGPT verification and Operator acceptance; this Git integration is not ticket acceptance.
+
+
+
+
+## V003-BF-F03 ? Governance-04 validator execution ? 2026-10-18
+
+**Operator ? attached ticket:** `V003-BF-COMBINED-01 ? Batch F three-ticket execution and Git publication`; authorization is sequential F01, F02, F03 execution and scoped Git publication, with PR/merge kept separate.
+
+**Operator ? F02 README status scope:** ?Authorize status-only correction (Recommended)?.
+
+**Codex:** F01 was verified complete from PRs #82?#84. F02 cleanup was published on `v003/bf-f02-register-cleanup`: implementation commit `f8f64d53f8359caf4460248a6aeb480d80f56436`, report commit `980ff22de9dec1d2d2e298cce0c667c72a7af189`; the branch tip was verified against GitHub. No PR/merge was opened. F02 is closed within its accepted qualified scope; the cleanup is not yet on `main`.
+
+**Codex ? F03:** Created `v003/bf-f03-governance-04-validator` from `main` at `f6809cd9c060b288581ff56425b41c4f1d533e82`. The validator and 11 fixture tests are implemented locally. The fixture suite passes. The repository run reports 12 pre-existing Sandbox local-tree placement/omission findings and no broken or out-of-repository Markdown targets among 867 checked links. The ticket prohibits automatic README repair; no affected Sandbox README was changed. F03 remains pending independent ChatGPT verification; no F03 staging, commit, push, PR, merge, or closure was performed.
+
+## Codex follow-up — F03 independent-review correction — 2026-10-18
+
+The initial independent ChatGPT review returned **FAIL pending a validator correction**: an unknown status tag such as `[PRESNET]` was silently accepted, and the Ticket Register reported 10 tests while the actual first suite run had 11.
+
+Codex changed the validator to reject unknown uppercase status-shaped tags and added one controlled test method with two subcases covering `[PRESNET]` and `[PRESENT · POPULATD]`. Current fixture result: **12 tests passed**. The full repository scan remains at 12 previously documented Sandbox hierarchy findings across 82 READMEs / 81 local trees / 1,049 entries; 867 local Markdown targets have no broken or escaping links. Governance README-only check passes (20 links), and whitespace checks pass. The Ticket Register now records both the initial 11-test result and the corrected 12-test result.
+
+No Sandbox README was modified. F03 is resubmitted for fresh independent ChatGPT review. No F03 Git staging, commit, push, PR, merge, or closure has occurred.
+
+## Operator acceptance and publication authorization — F03 — 2026-10-18
+
+**Codex:** The fresh independent review returned QUALIFIED PASS. The only qualification is the 12 documented pre-existing Sandbox README hierarchy/approved-absence findings, which remain unchanged. The ticket requires Operator acceptance before publishing a qualified result. Do you accept this result? If accepted, only the seven F03 paths will be staged, committed, and pushed; no PR or merge will be created.
+
+**De O'Dini — Operator (verbatim):** “Accept and publish F03”.
+
+**Codex:** The acceptance is recorded. I will stage, commit, and push only the seven reviewed F03 paths on `v003/bf-f03-governance-04-validator`. PR creation and merge remain separate and unauthorized. The commit and remote branch-tip verification will be recorded after publication.
