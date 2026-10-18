@@ -23,7 +23,7 @@ The 20-SHA M01-GIT-01/M21-GIT-01 case is **CLOSED ADMINISTRATIVELY** and therefo
 For each future resolved item: independently verify the closure condition, append a dated record to the permanent report, update canonical references, then delete its active entry from this file. DEVOPS-02 was removed under this rule after Ticket 01 final cleanup acceptance; the permanent evidence remains in the Phase 03 report, Migration Map and Retirement Ledger. Intentionally planned future capabilities remain until implemented or explicitly removed from the backlog by an Operator decision. Never erase historical reports or alter protected source files as part of backlog cleanup.
 ## Active categorized corrective findings — Operator-approved intake (reviewed 2026-10-18)
 
-**Active issue index (01-02, F01 closure verified 2026-10-18):** 01 README-03; 02 GOVERNANCE-04. Permanent issue IDs are unchanged. GOVERNANCE-02 and GOVERNANCE-03 remain closed with evidence in the Phase 03 records. README-01 is closed after F01 integration and post-merge verification; its permanent ID and historical evidence are retained in the closure record below and the Phase 03 report. V003-STATUS-01, V003-STATUS-02 and GOVERNANCE-01 remain retired from active intake by Operator disposition; historical records and D01/D02 verifier-provenance qualifications remain in the Phase 03 report.
+**Active issue index (01, Operator cleanup 2026-10-18):** 01 GOVERNANCE-04. Permanent issue IDs are unchanged. GOVERNANCE-02 and GOVERNANCE-03 remain closed with evidence in the Phase 03 records. README-01 is closed after F01 integration and post-merge verification; its permanent ID and historical evidence are retained in the closure record below and the Phase 03 report. V003-STATUS-01, V003-STATUS-02 and GOVERNANCE-01 remain retired from active intake by Operator disposition; historical records and D01/D02 verifier-provenance qualifications remain in the Phase 03 report.
 
 **Scope:** This is the new, separately selected corrective-work backlog following closure of the former Specification §§8–18 classification case. The earlier case remains closed and is not reopened. Findings are not executed by adding them here. **State:** ACTIVE UNRESOLVED FINDINGS / AWAITING PER-FILE TICKET SELECTION; verified symptoms are distinguished from proposed mitigations. The Operator selects each folder/file for a separately scoped Codex ticket, independent ChatGPT verification and acceptance. No blanket retirement or replacement is authorized.
 
@@ -32,22 +32,15 @@ For each future resolved item: independently verify the closure condition, appen
 ### V003_VERSION_UPGRADE_BRAINBOX/ [HIGH]
 
 
-### README_BRAINBOX.md — root and navigation [CRITICAL]
-
-
-- **01. README-03 [HIGH]** - Path: root README and direct-child navigation. **Risk:** root full tree can become inconsistent with verified descendant paths/authorities. **Correction to ticket:** refresh current root pointers only after subordinate branches are independently verified. DEVOPS-01's reviewed documentation-routing portion is closed with Operator-accepted qualifications (2026-10-17). GOVERNANCE-02 ownership mapping was published in E03 PR #79 and is no longer an active dependency; FUNC-01 is resolved by Corrective Ticket 02. **Gate:** link/path and status truth, no contradictory root-local trees. **State:** IN PROGRESS — F02 scoped root-tree/navigation implementation published in PR #85 (merge `259bada3851cdbe46e74341124b9afc378aa1cbc`); independent ChatGPT verification and Operator acceptance remain pending.
-  **2026-10-18 F02 checkpoint:** The previous named-subfolder-routing block is being addressed by this scoped root-tree and canonical-child-path reconciliation. README-03 remains active until independent verification, Operator acceptance, and separately authorized publication.
-  **2026-10-18 F02 publication checkpoint:** The implementation was merged to `main` in PR #85 at `259bada3851cdbe46e74341124b9afc378aa1cbc`. README-03 remains active pending independent verification and Operator acceptance; this publication does not close F02.
-
 ### GOVERNANCE_BRAINBOX/ [CRITICAL]
 
-- **02. GOVERNANCE-04 [MEDIUM]** — Paths: `TREE_AND_STATUS_GOV_BRAINBOX.md` and tooling references. **Gap:** automatic enforcement of two-level trees, physical paths, status vocabulary and relative links. **Correction to ticket:** scoped validation checks; do not populate planned branches. **Depends on:** stable subordinate README routes. **Gate:** reproducible checks and qualified limitations. **State:** SELECTABLE / NOT FIXED.
+- **01. GOVERNANCE-04 [MEDIUM]** — Paths: `TREE_AND_STATUS_GOV_BRAINBOX.md` and tooling references. **Gap:** automatic enforcement of two-level trees, physical paths, status vocabulary and relative links. **Correction to ticket:** scoped validation checks; do not populate planned branches. **Depends on:** stable subordinate README routes. **Gate:** reproducible checks and qualified limitations. **State:** PARTIALLY OBSERVED — read-only structural/navigation tests found no mismatches in 80 local README trees; a URL-decoded target resolved in a scan of 780 links. Automated reproducible enforcement and full semantic status checks remain unimplemented. Not closed.
 
 ### Cross-category dependency / proposed selection order
 
 1. DEVOPS-01 is closed within its accepted documentation scope (2026-10-17). Any selected Portfolio source-route review remains separately selectable; FUNC-03 and FUNC-04 are closed with Operator acceptance, and their active entries are removed here while permanent closure evidence remains in the Phase 03 report and ticket register. Skills/Milestones retirements and legacy FUNC/DOB/AI_MUST retirements are closed.
 2. GOVERNANCE-01 was dispositioned under Batch D. GOVERNANCE-02 was resolved by the E03 ownership matrix merged in PR #79; this active register update follows the verified publication.
-3. README-03 root route follows its named dependencies; resolved README-02 retirement routing is documented in the permanent Phase 03 records.
+3. README-03 root reconciliation was merged in PR #85 and is removed from active intake by Operator cleanup on 2026-10-18; resolved README-02 retirement routing remains in permanent records.
 4. GOVERNANCE-03 was resolved by the accepted E01 safeguards published in PR #78. GOVERNANCE-04 remains active with its structural-validation prerequisites; the three Batch D findings are no longer in active intake.
 
 **Per-ticket execution rule:** Operator selects a category/file and authorizes planning; Codex implements only the named approved ticket; ChatGPT independently verifies; Operator accepts; Git staging/publication remains a separate approval gate. A blocking flag stops only directly dependent tickets, not unrelated work.
@@ -78,3 +71,9 @@ GOVERNANCE-02 is supported by the eight-domain canonical read/update ownership m
 **Post-merge state:** The root canonical-source description is accurate for the active register. The Batch D Migration Map file exists, and its Section 52 heading matches the fragment previously verified against GitHub rendering. No F02 tree/status corrections were made.
 
 **Remaining active issues:** README-03 and GOVERNANCE-04 remain active, retain their permanent IDs, and are renumbered 01 and 02 in the active display index. F02 and F03 were not implemented under F01-P02.
+
+## Batch F observational cleanup — Operator direction, 2026-10-18
+
+**README-03:** Removed from active intake following F02 independent QUALIFIED PASS, V01 path-count reconciliation, and F02 publication in PR #85 (merge `259bada3851cdbe46e74341124b9afc378aa1cbc`). This is an Operator-directed active-backlog disposition; historical verification limits, including the GitHub-rendered anchor, remain documented. This disposition does not certify automatic enforcement.
+
+**GOVERNANCE-04:** Retained as the sole active issue. ChatGPT observational checks found no mismatches across 80 canonical local README trees and no broken file targets after URL decoding in 780 local README links. These checks are a snapshot, not a persistent validation tool, exhaustive semantic status audit, or historical GitHub fragment verification. Implementation of reproducible enforcement remains open.

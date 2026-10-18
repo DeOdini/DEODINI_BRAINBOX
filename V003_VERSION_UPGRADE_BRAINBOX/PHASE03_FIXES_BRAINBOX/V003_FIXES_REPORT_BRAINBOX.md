@@ -4032,3 +4032,10 @@ Final Git whitespace checks: `git diff --check` exit 0; `git diff --cached --che
 **Local synchronization:** `git fetch origin` succeeded. Local `main` was fast-forwarded from `cbee5c9101662441a49818e4315766e0a585bc94` to `259bada3851cdbe46e74341124b9afc378aa1cbc`. Local `main`, `origin/main`, `origin/HEAD`, and `HEAD` match; the worktree is clean.
 
 **Current disposition:** F02 implementation is published, but remains open as a QUALIFIED candidate pending independent ChatGPT verification and Operator acceptance. README-03 remains active. No F03 implementation or source retirement was performed. Earlier entries saying publication had not yet happened remain historical checkpoints at their recorded times.
+
+
+## V003-BF-F02/F03 — Operator-directed unresolved-register cleanup — 2026-10-18
+
+The Operator directed removal of resolved findings from the active register. F02 root-tree reconciliation had received ChatGPT independent QUALIFIED PASS, count reconciliation (395 logical entries; 393 present; two planned absent), and publication through PR #85 at merge `259bada3851cdbe46e74341124b9afc378aa1cbc`. README-03 was therefore removed from active intake as an Operator-directed disposition, not a retroactive unconditional verifier PASS. Prior evidence limitations remain preserved.
+
+GOVERNANCE-04 remains active because read-only observation of 80 canonical local README trees and 780 README relative links (no confirmed broken file target after URL decoding) does not itself implement reproducible automated structural/status/link validation. No frozen authority, root README, or Governance policy was modified by this cleanup. Git publication is not claimed.

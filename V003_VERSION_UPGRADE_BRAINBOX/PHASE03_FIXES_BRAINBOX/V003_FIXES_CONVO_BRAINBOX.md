@@ -2842,3 +2842,10 @@ The final readback confirmed the readable path matrices, exact attachment-byte i
 **De O'Dini — Operator:** STAGE COMMIT PUSH AND MERGE ALL BRANCHES
 
 **Codex:** I inventoried the branches and working tree. The prior ticket branches were already merged; the only pending changes were the five-file V003-BF-F02 change set. I staged and committed those files on `v003/bf-f02-root-tree-canonical-child-path-reconciliation`, pushed commit `d543e57d08586b49d1befaf2ac89edee3916b916`, opened PR #85, and merged it into `main` at `259bada3851cdbe46e74341124b9afc378aa1cbc`. I fast-forwarded local `main` to the same SHA and verified a clean worktree and no unmerged local/remote branch tips. F02 remains open pending independent ChatGPT verification and Operator acceptance; this Git integration is not ticket acceptance.
+
+
+## V003-BF-F02/F03 — Operator-directed unresolved-register cleanup — 2026-10-18
+
+The Operator directed removal of resolved findings from the active register. F02 root-tree reconciliation had received ChatGPT independent QUALIFIED PASS, count reconciliation (395 logical entries; 393 present; two planned absent), and publication through PR #85 at merge `259bada3851cdbe46e74341124b9afc378aa1cbc`. README-03 was therefore removed from active intake as an Operator-directed disposition, not a retroactive unconditional verifier PASS. Prior evidence limitations remain preserved.
+
+GOVERNANCE-04 remains active because read-only observation of 80 canonical local README trees and 780 README relative links (no confirmed broken file target after URL decoding) does not itself implement reproducible automated structural/status/link validation. No frozen authority, root README, or Governance policy was modified by this cleanup. Git publication is not claimed.

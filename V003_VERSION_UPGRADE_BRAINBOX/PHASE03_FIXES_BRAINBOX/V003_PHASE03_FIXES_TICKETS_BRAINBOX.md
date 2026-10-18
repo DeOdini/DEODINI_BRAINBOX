@@ -1109,3 +1109,10 @@ Final readback: the appended readable matrix tables contain 16 mapping rows, 339
 ### V003-BF-F02 Git publication and merge closeout — 2026-10-18
 
 Operator separately authorized staging, commit, push, and merge. Exactly the five F02 implementation/evidence paths were committed as `d543e57d08586b49d1befaf2ac89edee3916b916` and pushed. PR #85 merged to `main` at `259bada3851cdbe46e74341124b9afc378aa1cbc`. All extant local and remote branch tips are ancestors of `main`; no other branches remained unmerged and no branches were deleted. Local `main`, `origin/main`, and `HEAD` match at the merge SHA; the worktree is clean. F02 remains open pending independent ChatGPT verification and Operator acceptance; F03 was not started.
+
+
+## V003-BF-F02/F03 — Operator-directed unresolved-register cleanup — 2026-10-18
+
+The Operator directed removal of resolved findings from the active register. F02 root-tree reconciliation had received ChatGPT independent QUALIFIED PASS, count reconciliation (395 logical entries; 393 present; two planned absent), and publication through PR #85 at merge `259bada3851cdbe46e74341124b9afc378aa1cbc`. README-03 was therefore removed from active intake as an Operator-directed disposition, not a retroactive unconditional verifier PASS. Prior evidence limitations remain preserved.
+
+GOVERNANCE-04 remains active because read-only observation of 80 canonical local README trees and 780 README relative links (no confirmed broken file target after URL decoding) does not itself implement reproducible automated structural/status/link validation. No frozen authority, root README, or Governance policy was modified by this cleanup. Git publication is not claimed.
