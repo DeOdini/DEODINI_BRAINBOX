@@ -4039,3 +4039,11 @@ Final Git whitespace checks: `git diff --check` exit 0; `git diff --cached --che
 The Operator directed removal of resolved findings from the active register. F02 root-tree reconciliation had received ChatGPT independent QUALIFIED PASS, count reconciliation (395 logical entries; 393 present; two planned absent), and publication through PR #85 at merge `259bada3851cdbe46e74341124b9afc378aa1cbc`. README-03 was therefore removed from active intake as an Operator-directed disposition, not a retroactive unconditional verifier PASS. Prior evidence limitations remain preserved.
 
 GOVERNANCE-04 remains active because read-only observation of 80 canonical local README trees and 780 README relative links (no confirmed broken file target after URL decoding) does not itself implement reproducible automated structural/status/link validation. No frozen authority, root README, or Governance policy was modified by this cleanup. Git publication is not claimed.
+
+## V003-BF-F02 — Publication checkpoint — 2026-10-18
+
+- **Scope:** Four authorized active-register/report records plus the Operator-approved status-only correction in `README_BRAINBOX.md` (five files total). No tree shape, Markdown destination, frozen authority, or Governance policy changed.
+- **Validation:** Staged-file scope was exactly those five paths. `git diff --cached --check` passed; after commit, `git diff HEAD~1..HEAD --check` passed. The committed diff contained 38 insertions and 18 deletions.
+- **Commit/push:** Commit `f8f64d53f8359caf4460248a6aeb480d80f56436` (`V003-BF-F02: reconcile resolved README issue intake`) is present at `origin/v003/bf-f02-register-cleanup`; `git ls-remote` and local `HEAD` returned the same SHA. The worktree was clean after publication.
+- **Main/merge:** `origin/main` remains `f6809cd9c060b288581ff56425b41c4f1d533e82`. No PR was created and no merge was performed because the combined ticket reserves those actions for separate authorization.
+- **Disposition:** F02 is closed for its accepted and independently qualified reconciliation scope after branch publication and register verification. README-03 is removed from active intake by Operator direction; historical qualifications remain. GOVERNANCE-04 remains the sole active issue and is not closed. The F02 cleanup branch is published but not integrated into `main`.
