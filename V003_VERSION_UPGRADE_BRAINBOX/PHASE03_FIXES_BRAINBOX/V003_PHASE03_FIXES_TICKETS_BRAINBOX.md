@@ -1154,3 +1154,7 @@ Operator separately authorized staging, commit, push, and merge. Exactly the fiv
 - **Governance README:** 1 README/tree, 12 entries, 20 Markdown targets; zero findings, exit 0 (`PASS (qualified)`).
 - **Whitespace/scope:** `git diff --check` exit 0. Only two Python files and the three authorized Phase 03 records changed; no Sandbox README or root README changed.
 - **Git:** Staging, commit, push, and remote SHA confirmation pending. PR and merge are not authorized.
+
+#### C01 implementation publication
+
+The five authorized C01 files were committed as `317e5ab8598b6d34aad7ab1f0c636c05ec6703d8` using the required message and pushed to `v003/bf-f03-governance-04-validator`. A read-only remote check confirmed the branch at the same SHA; `origin/main` remains `f6809cd9c060b288581ff56425b41c4f1d533e82`. No PR or merge occurred. This publication record is being published in a separate report-only commit.
