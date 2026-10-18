@@ -6,7 +6,7 @@
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
 **POPULATION:** [F01-F16 history and execution records are present; D01-D03 governance/status checkpoints are recorded in the report and ticket register. The active issue index and current verification/acceptance gates are in the V003 Unresolved Register.]
-**LAST UPDATED:** 2026-10-18 - D03 historical checkpoint navigation added; independent ChatGPT verification and Operator acceptance remain pending.
+**LAST UPDATED:** 2026-10-18 - D04 records the D03 qualified independent verification and Operator acceptance; D01/D02 verifier-provenance reconciliation remains open.
 
 ## Canonical local tree — two descendant levels
 
@@ -84,4 +84,4 @@ This index points to the latest status records while preserving all older ticket
 - **Operator-qualified project closeout:** [V003 authority README](../README_V003_VERSION_UPGRADE_BRAINBOX.md#current-status-checkpoint-navigation-2026-10-18) and the dated closeout evidence in the Phase 03 report. This status is administrative/project-level and does not certify technical runtime or Production health.
 - **Phase 02 history:** [Phase 02 README](../PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md#current-phase-02-checkpoint-navigation-2026-10-18) and [Phase 02 report](../PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md). The 20 Cline checkpoint SHAs remain not found in the documented search sources; no recovery or global-irrecoverability claim is made.
 
-**Current gate distinction:** The D01 execution and D02 status-correction reports are not substitutes for separate ChatGPT independent-verification records. The D03 ticket asserts D01 and D02 independent results, but the checked permanent records state that the separate verifier results were absent or pending. The discrepancy is recorded in the D03 report; GOVERNANCE-01 and V003-STATUS-01 remain active. D03 itself remains pending independent verification and Operator acceptance. Staging/push, verification, Operator acceptance, and issue closure are distinct states.
+**Current gate distinction:** The D01 execution and D02 status-correction reports are not substitutes for separate ChatGPT independent-verification records. D03 has an attributed ChatGPT QUALIFIED PASS and Operator acceptance recorded in D04. The D01/D02 verifier-provenance discrepancy remains documented; GOVERNANCE-01 and V003-STATUS-01 remain active. V003-STATUS-02 remains in the Unresolved Register and is not removed by D03 acceptance. Staging/push, verification, Operator acceptance, and issue closure are distinct states.

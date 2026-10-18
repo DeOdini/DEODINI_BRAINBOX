@@ -1282,3 +1282,39 @@ This is Codex execution reporting, not an independent ChatGPT verdict. It does n
 ## Codex response - supplemental main branch protection verification - 2026-10-16
 
 A follow-up read of GitHub's repository branch metadata for `main` returned `protected: false`, `protection.enabled: false`, and required-status-check enforcement `off` with no contexts or checks. The repository rulesets endpoint was empty. This supplements the prior report that the dedicated branch-protection endpoint itself returned HTTP 403; the broader branch metadata endpoint provided the current protection state. A separate report-only record is being prepared so the final audit trail includes this supplemental verification.
+
+## V003-BD-D04 Operator and Codex closeout exchange - 2026-10-18
+
+### Operator request
+
+> IF THIS FIXES THE CLOSURE OF BATCH D, THEN PROCEED, BUT IF IT IS DIFFERENT FROM WHAT WE HAVE BEEN HANDLING DO ALERT ME.
+
+### Codex response
+
+The supplied V003-BD-D04 ticket is a direct Batch D final-closeout continuation. It authorizes documenting the D03 independent-verification result and Operator acceptance, publishing the Batch D branch through a pull request, merging only after the ticket gates pass, and recording post-merge evidence. It does not authorize closing individual Unresolved Register entries or starting Batch E.
+
+### Operator-supplied D03 verification and acceptance
+
+The D04 ticket attributes a QUALIFIED PASS for D03 to ChatGPT and records the Operator disposition as ACCEPTED on 2026-10-18. The ticket states that the review covered six distinct D03 changed paths, with reporting-checkpoint additions in two of those paths; local and upstream HEAD matched at 18293df397ae187175bd009bf74f55982f3ec557; ahead/behind was 0/0; the worktree was clean; both committed patches passed whitespace checks; and 61 relative Markdown destinations had zero missing file destinations. It qualifies that heading-fragment coverage was not fully independently reproduced.
+
+The D01/D02 verifier-provenance discrepancy remains open. This attributed D03 result does not invent missing D01/D02 verifier artifacts or close any active Unresolved Register issue.
+
+### Codex preflight and scope question
+
+Codex confirmed the authorized branch and D03 tip, the two-commit-ahead/zero-behind comparison with main, a clean worktree, four existing stashes, and no pre-existing Batch D pull request. The two current-facing READMEs still said D03 verification and Operator acceptance were pending. D04 originally authorized three reporting files; Codex asked before changing those additional status statements.
+
+### Operator clarification
+
+> Authorize two status edits (Recommended)
+
+### Codex response
+
+Thanks. I’ll make only the D03 status corrections in those two README files, alongside D04’s three reporting files. The discrepancy about D01/D02 verifier provenance and all eight active issue IDs will remain recorded; I won’t close individual issues.
+
+### Attribution boundary
+
+The D03 QUALIFIED PASS above is recorded as the ChatGPT result supplied in the Operator-provided D04 ticket and is distinct from Codex execution evidence. The post-merge ChatGPT closeout verification required by D04 has not yet occurred.
+
+### Codex execution update - pre-merge D04 validation - 2026-10-18
+
+The five-file D04 scope is staged. The scoped path scan found 49 local relative destinations and 0 missing file destinations; heading-fragment coverage is not claimed. Both Git whitespace checks passed. The frozen Specification and Origin Conversation hashes match their HEAD blobs. D01-D03 historical checkpoint bodies and the Unresolved Register are unchanged. The D04 commit, push, PR, merge, post-merge report publication, and independent ChatGPT closeout review remain pending.

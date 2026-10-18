@@ -834,3 +834,22 @@ Implementation commit `d8159e0e0ef35cc598838d8626d79497d1bea19d` (`V003: align D
 - **Validation:** six modified Markdown files; 61 local relative link destinations checked, 0 broken paths/line/heading anchors; staged and unstaged whitespace checks passed. Worktree was clean immediately after the implementation push.
 - **D03-FLAG-01:** prior D01/D02 independent-verification claims in the supplied ticket remain uncorroborated by the checked permanent records; independent review/Operator acceptance are pending. No active issue was cleared.
 - **Next Git record:** this publication checkpoint is a separate report-only commit/push; after it, verify the final remote branch tip and clean worktree. PR/merge remain outside scope.
+
+## V003-BD-D04 - Batch D final closeout pre-merge checkpoint - 2026-10-18
+
+- **Authorization:** Operator-provided D04 ticket authorizes D03 acceptance recording, publication of the existing Batch D branch through a PR, conditional merge after all gates pass, and post-merge reporting. The Operator additionally approved exactly two current-status README edits after Codex raised the stale-status conflict.
+- **D03 result:** The D04 ticket attributes an independent ChatGPT QUALIFIED PASS and Operator acceptance dated 2026-10-18. Its qualification is preserved: 61 relative Markdown destinations had zero missing file destinations, while heading-fragment coverage was not fully independently reproduced.
+- **Provenance boundary:** This is the D03 verifier statement supplied in the D04 ticket. Codex does not claim to be the independent verifier. The D01/D02 verifier-provenance discrepancy remains open.
+- **Preflight:** Repository DeOdini/DEODINI_BRAINBOX; branch v003/batch-d-governance-status-clarity; local and upstream tip 18293df397ae187175bd009bf74f55982f3ec557; clean worktree; branch two commits ahead of main and zero behind; GitHub main e2e012135c9adcba36e60104c6465e1bad1dc539; no existing Batch D PR. Four existing stashes and unrelated branches were preserved.
+- **Scope:** Three D04 reporting files plus the two Operator-approved D03 status edits in the V003 parent README and Phase 03 README. No Unresolved Register or frozen authority is changed.
+- **Issue boundary:** No individual active issue is closed or removed. The D01/D02 evidence discrepancy remains recorded. This checkpoint does not declare Batch D closed.
+- **Next gates:** Validate the five-file diff, stage/commit/push the authorized branch, open and inspect the PR, merge only if the actual PR gates pass, publish post-merge evidence separately, then submit for independent ChatGPT closeout verification.
+
+### D04-B - pre-merge validation - 2026-10-18
+
+- **Scope:** exactly five authorized paths; 89 insertions and 3 deletions. The current-status README edits are limited to the two approved D03 status statements.
+- **Markdown paths:** 49 local relative destinations checked; 0 missing file destinations. This scan does not claim complete heading-fragment validation.
+- **Git checks:** staged and unstaged whitespace checks passed.
+- **Protected authorities:** Specification and Origin Conversation working-tree hashes match their HEAD blobs (31a83b2d32d46331af703aafbe097a320c10b996 and 07ab10a2c40404baefdd2291c9dcd22875bd6c8f).
+- **Historical and issue boundaries:** earlier D01-D03 records remain intact; the Unresolved Register was not changed and no issue was closed.
+- **Current gate:** commit, push, PR inspection, conditional merge, report-only post-merge publication, and separate ChatGPT closeout verification remain pending.
