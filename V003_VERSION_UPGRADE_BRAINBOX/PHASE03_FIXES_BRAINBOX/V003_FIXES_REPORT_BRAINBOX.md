@@ -2921,3 +2921,42 @@ This is the pre-merge D04 record. The report-only post-merge closeout, PR number
 - **Frozen authorities:** working-tree hashes match their HEAD blobs: Specification 31a83b2d32d46331af703aafbe097a320c10b996; Origin Conversation 07ab10a2c40404baefdd2291c9dcd22875bd6c8f.
 - **Historical preservation:** D01-D03 historical report and ticket-register bodies remain unchanged; updates are additive, except the two Operator-approved current-status README statements. The Unresolved Register is unchanged.
 - **Publication state at this checkpoint:** the five D04 files are staged on the authorized branch. Commit, push, PR, merge, post-merge reporting, and independent final ChatGPT closeout verification are still pending.
+
+## V003-BD-D04 - post-merge verification and report publication - 2026-10-18
+
+### D04-C/D - pull request merge and post-merge verification
+
+- **PR:** #75, https://github.com/DeOdini/DEODINI_BRAINBOX/pull/75; base main; head v003/batch-d-governance-status-clarity.
+- **Pre-merge state:** The first create response briefly reported mergeable false. A refreshed PR read reported mergeable true. The final actual PR contained seven approved unique paths and three commits; it had no submitted reviews, no commit statuses, and no configured required checks in the reviewed repository metadata.
+- **Merge:** GitHub reports PR #75 CLOSED / MERGED at 2026-10-18T08:35:03Z. Merge commit: 860dd1ae5707f62a12023f36c697cbbd9b1e0b12. The merge API was called with expected head 521bf62f73c74ab1a882e11f843bcf4e676e720f and returned success.
+- **Ancestry:** GitHub compare shows main is one merge commit ahead of the D04 head; the merge base is the D04 commit. Local ancestry checks confirm D03 implementation 9d3962dfa6a49f845ae9ba9d4ab049511182c841, D03 publication checkpoint 18293df397ae187175bd009bf74f55982f3ec557, and D04 commit 521bf62f73c74ab1a882e11f843bcf4e676e720f are all ancestors of main.
+- **Scope:** PR #75 contains seven unique paths: the six previously approved D03 paths and the D04 conversation file; four paths overlap. The D04 commit itself changed exactly five paths: the two Operator-approved README status updates and the three Phase 03 reporting records. No frozen authority or unrelated file was added.
+- **Final scoped checks:** After merge, the five D04 paths were rescanned and 49 local relative path destinations were found with zero missing file destinations. This path-only scan does not claim complete heading-fragment validation. Git whitespace check on main passed.
+- **Local synchronization:** Local main was fast-forwarded from e2e012135c9adcba36e60104c6465e1bad1dc539 to 860dd1ae5707f62a12023f36c697cbbd9b1e0b12. Local main and origin/main match at the merge SHA; ahead/behind is 0/0 and the worktree was clean.
+- **Retention:** The Batch D topic branch remains on GitHub and locally at 521bf62f73c74ab1a882e11f843bcf4e676e720f. Four stashes and unrelated local branches were preserved.
+- **Active issues:** The Unresolved Register still lists eight permanent IDs. No individual issue was removed by D04.
+- **New discrepancy D04-F01:** At current V003_UNRESOLVED_BRAINBOX.md line 35, V003-STATUS-02 still says D03 independent verification and Operator acceptance are pending. D04 records both gates as satisfied. D04 did not authorize editing/removing that row; the conflict is recorded as D04-F01 in this report and the ticket register, and awaits Operator disposition.
+
+### D04 publication and closure state
+
+The D04 Git integration is complete: the five-file D04 commit was pushed, PR #75 was merged, and local main is synchronized. The post-merge report-only record is now published on a separate branch and PR. Batch D is not marked formally closed here: D04 requires separate independent ChatGPT closeout verification after publication, and D04-F01 requires a disposition so the active register does not retain a stale current gate. This status does not close any individual Unresolved Register item or begin Batch E.
+
+### D04-F01 - active-register status discrepancy details
+
+**Exact location:** V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md, line 35.
+
+**Current entry text:** V003-STATUS-02 says the D03 checkpoint navigation and index are implemented locally, then says independent ChatGPT verification and Operator acceptance are pending.
+
+**Later accepted evidence:** The Operator-provided D04 ticket records the D03 independent ChatGPT result as QUALIFIED PASS and the Operator disposition as ACCEPTED on 2026-10-18. The README status lines were updated under the Operator's separate approval; the active Unresolved Register was not.
+
+**Impact:** The active register still lists V003-STATUS-02 among eight active issues, with a stale description of the D03 verification/acceptance gates. The D01/D02 verifier-provenance discrepancy remains separately open. This does not prove that every issue-level closure criterion for V003-STATUS-02 has been satisfied.
+
+**Disposition boundary:** No Unresolved Register wording or issue state was changed. D04 authorizes no automatic issue removal. Operator direction is needed on whether to correct the row while retaining the issue for any remaining gate, or to approve issue-level closure/removal based on the D03 accepted result.
+
+### D04-E - report-only publication validation - 2026-10-18
+
+- **Branch/base:** v003/batch-d-final-closeout-report was created from synchronized main at 860dd1ae5707f62a12023f36c697cbbd9b1e0b12.
+- **Scope:** exactly the Phase 03 Fixes Report, Conversation, and Ticket Register. The Unresolved Register and all other files are unchanged.
+- **Link destinations:** nine local relative path destinations across the three report-only files; zero missing file destinations. No heading-fragment verification is claimed by this scan.
+- **Whitespace:** git diff --check passed.
+- **Pre-publication state:** report-only changes are ready for their separate commit, push, PR, and conditional merge.

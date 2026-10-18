@@ -1318,3 +1318,19 @@ The D03 QUALIFIED PASS above is recorded as the ChatGPT result supplied in the O
 ### Codex execution update - pre-merge D04 validation - 2026-10-18
 
 The five-file D04 scope is staged. The scoped path scan found 49 local relative destinations and 0 missing file destinations; heading-fragment coverage is not claimed. Both Git whitespace checks passed. The frozen Specification and Origin Conversation hashes match their HEAD blobs. D01-D03 historical checkpoint bodies and the Unresolved Register are unchanged. The D04 commit, push, PR, merge, post-merge report publication, and independent ChatGPT closeout review remain pending.
+
+### Codex response - D04 post-merge verification - 2026-10-18
+
+PR #75 merged successfully into main with merge commit 860dd1ae5707f62a12023f36c697cbbd9b1e0b12. GitHub marked the PR CLOSED / MERGED; the D03 implementation commit, D03 publication checkpoint, and D04 commit are ancestors of main. Local main was fast-forwarded and now equals origin/main at the merge SHA with a clean worktree. The topic branch remains retained. Post-merge review of the five D04 paths found 49 local relative path destinations and zero missing paths; heading-fragment coverage is not claimed as complete.
+
+### Codex response - D04-F01 active-register discrepancy - 2026-10-18
+
+A read-only post-merge check found V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md line 35 still describes V003-STATUS-02 as pending D03 independent verification and Operator acceptance. D04 records D03 QUALIFIED PASS and Operator ACCEPTED on 2026-10-18. D04 did not authorize changing or removing this active row, so it remains unchanged and is reported for Operator disposition. All eight active IDs remain.
+
+### D04 closure boundary
+
+Git integration and the report-only post-merge publication are complete. The final independent ChatGPT closeout verification required by D04 has not yet occurred. The D04-F01 active-register wording also needs an Operator disposition before this execution record claims formal Batch D closure.
+
+### Codex report-only branch validation - 2026-10-18
+
+The D04 post-merge report is on v003/batch-d-final-closeout-report, created from synchronized main at 860dd1ae5707f62a12023f36c697cbbd9b1e0b12. Only the Phase 03 Fixes Report, Conversation, and Ticket Register are changed. A scoped path scan found nine local destinations and zero missing paths; git diff --check passed. The Unresolved Register remains unchanged.
