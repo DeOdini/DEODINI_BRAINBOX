@@ -2960,3 +2960,17 @@ The D04 Git integration is complete: the five-file D04 commit was pushed, PR #75
 - **Link destinations:** nine local relative path destinations across the three report-only files; zero missing file destinations. No heading-fragment verification is claimed by this scan.
 - **Whitespace:** git diff --check passed.
 - **Pre-publication state:** report-only changes are ready for their separate commit, push, PR, and conditional merge.
+
+## V003-BD-D04-F01 — Operator-directed resolved-case removal — 2026-10-18
+
+**Authorization:** The Operator instructed ChatGPT: “THIS TASK IS FOR YOU, YOU ARE TO DELETE THE RESOLVED CASE FROM THE UNRESOLVED, RECORD YOUR REPORT ACCORDNINGLY.”
+
+**Independent evidence:** PR #75 merged at `860dd1ae5707f62a12023f36c697cbbd9b1e0b12`; PR #76 merged at `d77ebc546820827b97356faaf14f3b76e1a81c74`. Local `main` matched `origin/main` and was clean before this action. D03 was independently verified QUALIFIED PASS and Operator-accepted. D04-F01 was the obsolete current-state description of V003-STATUS-02.
+
+**Disposition:** By the Operator's explicit issue-specific acceptance, ChatGPT removed V003-STATUS-02 from the active Unresolved Register, renumbered the seven remaining display entries, and retained the permanent issue IDs and historical D03/D04 evidence. V003-STATUS-01 and GOVERNANCE-01 remain active pending their independent gates. The D01/D02 verifier provenance qualification remains preserved. No frozen authority or historical checkpoint was rewritten.
+
+**Git and closure boundary:** This action was made in the local working tree only. No staging, commit, push, PR or merge was authorized by this instruction. D04 integration was previously verified; publication of this corrective addendum remains outstanding. This record does not assert that the revised register is already on GitHub `main`.
+
+## Batch D remaining issue retirement - 2026-10-18
+
+Operator instructed ChatGPT to remove the precise resolved Batch D cases from active unresolved intake. Following the previously removed V003-STATUS-02, GOVERNANCE-01 (D01: accepted QUALIFIED PASS / NO GOVERNANCE POLICY CHANGE REQUIRED) and V003-STATUS-01 (D02: implemented qualified-status clarification) were removed on Operator disposition. Five unrelated Batch E/F cases remain with permanent IDs unchanged. D01/D02 separate verifier artifacts were not corroborated in the permanent records; this limitation is preserved, and Operator-directed backlog disposition is not misreported as independently established technical PASS. D04 PRs #75/#76 were previously merged, but these additional local edits are not committed or published. No frozen/historical authority changed.

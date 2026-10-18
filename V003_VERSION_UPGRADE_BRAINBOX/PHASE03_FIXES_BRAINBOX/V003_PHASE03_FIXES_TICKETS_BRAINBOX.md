@@ -873,3 +873,11 @@ Implementation commit `d8159e0e0ef35cc598838d8626d79497d1bea19d` (`V003: align D
 - **Link scan:** nine local relative destinations, zero missing paths; heading fragments not fully checked.
 - **Whitespace:** git diff --check passed.
 - **Next:** commit/push, open and inspect report-only PR, merge if its verified gates pass.
+
+## V003-BD-D04-F01 — Operator accepted resolution and independent reporting — 2026-10-18
+
+**Result:** Operator authorized ChatGPT to remove resolved V003-STATUS-02 from active intake. D03 QUALIFIED PASS and Operator acceptance are recorded; D04 PRs #75 and #76 are merged. The obsolete active row was deleted and display index changed from eight to seven without changing remaining permanent issue IDs. The Phase 03 report and conversation now document this dated resolution; D01/D02 provenance limitations and active STATUS-01/GOVERNANCE-01 are preserved. **Publication state:** local, uncommitted; no new PR or merge was authorized.
+
+## Batch D remaining issue retirement - 2026-10-18
+
+Operator instructed ChatGPT to remove the precise resolved Batch D cases from active unresolved intake. Following the previously removed V003-STATUS-02, GOVERNANCE-01 (D01: accepted QUALIFIED PASS / NO GOVERNANCE POLICY CHANGE REQUIRED) and V003-STATUS-01 (D02: implemented qualified-status clarification) were removed on Operator disposition. Five unrelated Batch E/F cases remain with permanent IDs unchanged. D01/D02 separate verifier artifacts were not corroborated in the permanent records; this limitation is preserved, and Operator-directed backlog disposition is not misreported as independently established technical PASS. D04 PRs #75/#76 were previously merged, but these additional local edits are not committed or published. No frozen/historical authority changed.
