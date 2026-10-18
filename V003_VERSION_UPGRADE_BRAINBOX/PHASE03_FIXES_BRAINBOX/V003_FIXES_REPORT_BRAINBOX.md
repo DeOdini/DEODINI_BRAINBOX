@@ -2879,3 +2879,14 @@ The D03 ticket states D01 received independent QUALIFIED PASS and D02 received i
 ### Git state before publication
 
 The D01/D02/D03 changes remain on v003/batch-d-governance-status-clarity. This ticket authorizes staging only the six approved files, committing and pushing the cumulative Batch D changes, then publishing a reporting checkpoint. PR creation, merge, branch deletion, and unrelated branch publication are not authorized.
+### D03 Git publication checkpoint 2026-10-18
+
+- **Implementation commit:** 9d3962dfa6a49f845ae9ba9d4ab049511182c841 — V003: reconcile Batch D governance and status documentation.
+- **Push:** Git push created origin/v003/batch-d-governance-status-clarity and established upstream tracking. GitHub branch-ref readback returned 9d3962dfa6a49f845ae9ba9d4ab049511182c841. Local HEAD and origin tracking ref matched at that SHA; ahead/behind was 0/0 after push.
+- **GitHub main:** still e2e012135c9adcba36e60104c6465e1bad1dc539 at this verification. No PR or merge was opened or performed.
+- **Published scope:** exactly these six authorized paths: V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md. The pushed commit contains 265 insertions and 16 deletions.
+- **Links and whitespace:** a scoped scan of all six modified Markdown files checked 61 local relative destinations, including path, line, and heading targets; 0 were broken. git diff --check and git diff --cached --check both passed before the implementation commit.
+- **Staging ACL:** the first git add attempt could not create .git/index.lock; inspection found no stale lock. The workspace ACL denied Git metadata writes, so the explicitly authorized stage/commit/push operations used the required elevated access. No lock was removed or unrelated Git metadata changed.
+- **Working tree:** clean immediately after the implementation commit/push; the report-only publication checkpoint is now the only subsequent pending change.
+- **Independent review:** D03-FLAG-01 remains open. The D03 ticket's claims of separate D01/D02 independent PASS results were not corroborated by the checked permanent records. No active issue is cleared; D03 remains pending independent ChatGPT verification and Operator acceptance.
+- **Publication boundary:** no pull request, merge, branch deletion, unrelated branch publication, source retirement, or frozen-authority modification occurred. The publication checkpoint itself is to be committed and pushed as a second traceable report-only commit.

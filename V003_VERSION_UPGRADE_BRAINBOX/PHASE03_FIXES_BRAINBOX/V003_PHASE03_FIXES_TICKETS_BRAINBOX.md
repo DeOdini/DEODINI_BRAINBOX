@@ -827,3 +827,10 @@ Implementation commit `d8159e0e0ef35cc598838d8626d79497d1bea19d` (`V003: align D
 - **Validation:** only six ticket-authorized paths changed; new navigation links/fragments and Git whitespace checks are recorded in the report. Four stashes and unrelated branches were left untouched.
 - **Git boundary:** D03 authorizes staging, committing, and pushing cumulative D01/D02/D03 changes on v003/batch-d-governance-status-clarity after validation. No PR, merge, deletion, or unrelated-branch publication is authorized.
 - **Disposition:** D03 implementation is submitted for independent ChatGPT verification and Operator acceptance. It is not closed; STATUS-02 remains active until both gates pass.
+### D03 Git publication checkpoint 2026-10-18
+
+- **Implementation commit:** 9d3962dfa6a49f845ae9ba9d4ab049511182c841; pushed successfully to origin/v003/batch-d-governance-status-clarity. GitHub branch-ref readback and local HEAD/origin tracking ref matched; upstream tracking is established.
+- **Scope:** exactly the six D03-authorized files; 265 insertions, 16 deletions. GitHub main remains e2e012135c9adcba36e60104c6465e1bad1dc539. No PR or merge was authorized or performed.
+- **Validation:** six modified Markdown files; 61 local relative link destinations checked, 0 broken paths/line/heading anchors; staged and unstaged whitespace checks passed. Worktree was clean immediately after the implementation push.
+- **D03-FLAG-01:** prior D01/D02 independent-verification claims in the supplied ticket remain uncorroborated by the checked permanent records; independent review/Operator acceptance are pending. No active issue was cleared.
+- **Next Git record:** this publication checkpoint is a separate report-only commit/push; after it, verify the final remote branch tip and clean worktree. PR/merge remain outside scope.
