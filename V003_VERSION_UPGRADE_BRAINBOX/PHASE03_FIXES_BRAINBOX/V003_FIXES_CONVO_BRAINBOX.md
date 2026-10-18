@@ -1645,3 +1645,13 @@ Do not automatically begin Batch F implementation under this ticket.
 **Codex (verbatim):** Your confirmation supplies the independent review and Operator acceptance. F01 still requires E03 to be published, merged, and Batch E closeout recorded first, so I’m completing that authorized E05 closeout before touching the F01 README work.
 
 **Codex verification update:** Before publication, the active E03 branch still had exactly five authorized modified files and no staged or untracked paths. A fresh scan checked 56 relative Markdown links in the two Governance files; all 56 resolved. `git diff --check` passed, and the root README and frozen V003 Specification remained unchanged. The Operator's statement is recorded as attestation that ChatGPT independently verified E03 and the Operator verified it; no separate ChatGPT review artifact was supplied in this repository exchange, so no unstated review details are attributed to ChatGPT. The E05 publication gate is accepted for the controlled PR sequence.
+
+## 2026-10-18 - E03 GitHub publication and E05 closeout progress
+
+**Codex update:** E03's five-file change was committed and pushed, opened as PR #79, and merged to `main` after its exact file scope, mergeability, and reported check state were confirmed. I fast-forwarded local `main` to the verified GitHub merge.
+
+**Operator (verbatim):** CHATGPT AS VERIFIED AND I HAVE VERIFIED, DO PROCEED
+
+**Recorded acceptance basis:** The Operator confirmed independent ChatGPT verification and their own verification. This repository records the statement as Operator attestation; a separate ChatGPT review artifact was not supplied in this exchange.
+
+**Codex closeout work:** E05's dedicated closeout branch removes only GOVERNANCE-02 and GOVERNANCE-03 from active intake, updates the issue display index to README-01, README-03, and GOVERNANCE-04, and preserves permanent issue IDs/history. Batch E remains open until this branch is merged and post-merge checks confirm the final state.
