@@ -1655,3 +1655,11 @@ Do not automatically begin Batch F implementation under this ticket.
 **Recorded acceptance basis:** The Operator confirmed independent ChatGPT verification and their own verification. This repository records the statement as Operator attestation; a separate ChatGPT review artifact was not supplied in this exchange.
 
 **Codex closeout work:** E05's dedicated closeout branch removes only GOVERNANCE-02 and GOVERNANCE-03 from active intake, updates the issue display index to README-01, README-03, and GOVERNANCE-04, and preserves permanent issue IDs/history. Batch E remains open until this branch is merged and post-merge checks confirm the final state.
+
+## 2026-10-18 - E05 post-merge verification and Batch E closeout
+
+**Codex update:** PR #80 merged at `e70acf7d1924876e5c138a21c7944f5f558fe547`. The GitHub Unresolved Register now lists 01 README-01, 02 README-03, and 03 GOVERNANCE-04; GOVERNANCE-02 and GOVERNANCE-03 no longer appear as active entries. I fast-forwarded local `main` to the verified merge and confirmed local `main`, `origin/main`, and GitHub `main` matched at that commit.
+
+**Disposition:** E01, E02, and E03 acceptance/publication conditions are recorded; the E05 register correction and post-merge checks pass. Batch E is closed. Batch F is next. F01's read-only readiness preflight is authorized and dependency-ready; its README implementation gate remains separate.
+
+**Operator verification provenance:** The Operator stated verbatim, CHATGPT AS VERIFIED AND I HAVE VERIFIED, DO PROCEED. The record treats this as Operator attestation that ChatGPT independently verified E03 and the Operator verified it. No separate ChatGPT review artifact was provided in this repository exchange.
