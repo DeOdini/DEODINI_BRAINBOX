@@ -1,12 +1,12 @@
 # README_PHASE03_FIXES_BRAINBOX
 
-**STATUS:** [PRESENT · POPULATED; V003 QUALIFIED CLOSED BY OPERATOR; ACTIVE FOLLOW-UP IS SPECIFICATION §§8–18 ONLY]
+**STATUS:** [PRESENT / POPULATED; V003 QUALIFIED CLOSED BY OPERATOR; CURRENT CORRECTIVE FOLLOW-UP IS TRACKED IN THE UNRESOLVED REGISTER]
 **VERSION:** V003; **PHASE:** 03 — FIXES
 **PURPOSE:** Phase-correct home for proposed V003 fix tickets, independent reports, and Operator/ChatGPT conversation.
 **GOVERNED BY:** ../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md and other active Governance; frozen ../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md; ../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md.
 **AUTHORITY:** This Phase 03 planning container does not silently amend the frozen Specification. Operator approval is mandatory for substantive changes.
-**POPULATION:** [F01–F16 ticket records and the execution/verification archive are present; approved F09/F11/F12/F13 scopes are merged; F11 content disposition is closed with the documented seven-empty-directory cleanup exception. The active Unresolved Register entry is Specification §§8–18.]
-**LAST UPDATED:** 2026-10-15 — Phase 03 publication/merge closure and Operator-qualified V003 status cross-checked; historical ticket-level findings remain preserved as dated evidence.
+**POPULATION:** [F01-F16 history and execution records are present; D01-D03 governance/status checkpoints are recorded in the report and ticket register. The active issue index and current verification/acceptance gates are in the V003 Unresolved Register.]
+**LAST UPDATED:** 2026-10-18 - D03 historical checkpoint navigation added; independent ChatGPT verification and Operator acceptance remain pending.
 
 ## Canonical local tree — two descendant levels
 
@@ -38,8 +38,7 @@ The canonical two-level tree above is the current Phase 03 folder view. It inclu
 - [Migration Map](../../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md)
 
 ## Safeguards
-Use full `V003-Fxx` identifiers and preserve Phase 02 history. The ticket-specific approvals, closure decisions, and limits are recorded in the report and conversation. V003 is Operator-qualified closed; this does not assert a blanket technical PASS, recovery of the 20 Cline checkpoint objects, or current Production certification. The active follow-up is Specification §§8–18 in the Unresolved Register. Any new corrective work requires its own scope and authorization; do not rewrite historical checkpoints to match later dispositions.
-
+Use full V003-Fxx identifiers and preserve Phase 02 history. Ticket-specific approvals, closure decisions, and limitations are recorded in the permanent report and ticket register. V003 is Operator-qualified closed; this does not assert blanket technical PASS, recovery of the 20 Cline checkpoint objects, or current Production certification. Current corrective findings and active gates are listed in the V003 Unresolved Register; the former Specification §§8-18 case is closed and is not the current sole follow-up. Any new work requires its own scope and authorization; do not rewrite historical checkpoints to match later dispositions.
 ---
 
 ## Operator authorization update — 2026-10-11
@@ -75,3 +74,14 @@ Use full `V003-Fxx` identifiers and preserve Phase 02 history. The ticket-specif
 ## Current project disposition — 2026-10-14
 
 V003 is **QUALIFIED CLOSED BY OPERATOR DIRECTION**, with unresolved ticket-level items retained in the [V003 Unresolved Register](../V003_UNRESOLVED_BRAINBOX.md) for later work. This does not claim blanket technical PASS, recovered Cline checkpoint objects, or live-production verification.
+
+## Current Phase 03 checkpoint navigation 2026-10-18
+
+This index points to the latest status records while preserving all older ticket outcomes as dated evidence.
+
+- **Active issues and exact closure gates:** [V003 Unresolved Register](../V003_UNRESOLVED_BRAINBOX.md). Eight issues remain active at this checkpoint; V003-STATUS-01, V003-STATUS-02, and GOVERNANCE-01 are not removed.
+- **D01-D03 execution findings and current verification limits:** [Phase 03 Fixes Report](V003_FIXES_REPORT_BRAINBOX.md#v003-bd-d03-historical-checkpoint-index-2026-10-18) and [Phase 03 Ticket Register](V003_PHASE03_FIXES_TICKETS_BRAINBOX.md).
+- **Operator-qualified project closeout:** [V003 authority README](../README_V003_VERSION_UPGRADE_BRAINBOX.md#current-status-checkpoint-navigation-2026-10-18) and the dated closeout evidence in the Phase 03 report. This status is administrative/project-level and does not certify technical runtime or Production health.
+- **Phase 02 history:** [Phase 02 README](../PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md#current-phase-02-checkpoint-navigation-2026-10-18) and [Phase 02 report](../PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md). The 20 Cline checkpoint SHAs remain not found in the documented search sources; no recovery or global-irrecoverability claim is made.
+
+**Current gate distinction:** The D01 execution and D02 status-correction reports are not substitutes for separate ChatGPT independent-verification records. The D03 ticket asserts D01 and D02 independent results, but the checked permanent records state that the separate verifier results were absent or pending. The discrepancy is recorded in the D03 report; GOVERNANCE-01 and V003-STATUS-01 remain active. D03 itself remains pending independent verification and Operator acceptance. Staging/push, verification, Operator acceptance, and issue closure are distinct states.

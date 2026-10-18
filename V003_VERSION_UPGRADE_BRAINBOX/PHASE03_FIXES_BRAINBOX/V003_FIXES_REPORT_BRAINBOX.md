@@ -2698,3 +2698,184 @@ This report is staged with the dedicated ticket changes. The branch is to be pus
 - The PR description now states the eight remaining active issue IDs and the accepted FUNC-04 disposition. No other issue was closed.
 - After merge, origin/main advanced from 3cb187d4b3bb32aa34322e1ba759854dfbe1e6a2 to e02445f5b5182fb081e03698d56eb58c90cd5967. Local main was fast-forwarded; local main and origin/main matched at the merge SHA, ahead/behind 0/0, with a clean worktree.
 - The remote branch audit found no branch tips outside main ancestry. The PR #70 topic branch is retained; no branches were deleted, and no stashes or unrelated work were changed.
+
+## V003-BD-D01 — GOVERNANCE-01 authority assessment — execution report — 2026-10-18
+
+**Codex disposition:** Discovery and evidence classification are complete. **NO CHANGE REQUIRED** to the candidate Governance policy files: current accepted sources assign the relevant document responsibilities, preserve the distinction between architecture and operating rules, and provide an escalation/authorization path without imposing a blanket rank order. This is an execution finding for independent review. It is not ChatGPT verification, Operator acceptance, or closure/removal of GOVERNANCE-01.
+
+### Preflight and scope
+
+- Repository identity: `DeOdini/DEODINI_BRAINBOX`, confirmed through the GitHub repository connector.
+- Baseline: local `main`, `origin/main`, and GitHub `main` all resolved to `e2e012135c9adcba36e60104c6465e1bad1dc539`. The GitHub connector fetched that commit by the `main` ref. A direct `git ls-remote` attempt could not reach `github.com:443` from this shell; the remote SHA was therefore confirmed with the authenticated GitHub read connector, not inferred from the local ref.
+- Before branch creation: `main` was clean, with no staged, unstaged, or untracked material. The dedicated branch `v003/batch-d-governance-status-clarity` was created from that verified commit and is the current branch.
+- Four pre-existing stashes were listed and left untouched.
+- Frozen Specification integrity: `V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md` has Git blob ID `31a83b2d32d46331af703aafbe097a320c10b996` at `HEAD`; hashing its working-tree bytes returns the same ID. It was not modified.
+- The active Unresolved Register still marks V003-STATUS-01 and V003-STATUS-02 `SELECTABLE / NOT FIXED`; no status ticket or D02 work had started. No status change was made.
+- Inspected the five current Governance sources named by D01, `README_BRAINBOX.md`, the frozen Specification, the Unresolved Register, the Phase 03 report/register, the Origin Conversation and the relevant historical/status records. Historical sources remained read-only.
+
+### D01-S01–S09 findings matrix
+
+| Specific | Existing source and current condition | Expected condition / classification | Disposition, destination, approval, validation |
+|---|---|---|---|
+| D01-S01 — Operator authority | `GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md`, “General ticket discipline” and active TGB-010/TGB-017–019: flags and recommendations are not authorization; only an explicit ticket is executable; approval gates are distinct; the Operator retains approval/merge authority and acceptance. `README_BRAINBOX.md`, “Operator and migration navigation,” gives the same boundary. | Scoped Operator authority remains distinct from agent execution and Git states; historical approval does not create standing authority. **VERIFY — satisfied.** | No change. Canonical destination remains Ticketing Governance. D01 ticket itself authorizes this bounded assessment, not later tickets or publication. Validate by source readback and scoped diff. |
+| D01-S02 — Frozen architecture | `V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md` §§5, 25.2, 26–27 defines the V003 architecture and target. `DOCUMENTATION_GOV_BRAINBOX.md`, “Authority and document roles,” assigns it architecture/migration-target responsibility. Ticketing’s Phase 02 addendum expressly limits its exception to Phase 02. | Preserve the Specification as architecture authority; no operating addendum becomes an unrestricted architecture override. **VERIFY — satisfied.** | No change to the frozen Specification or operating addenda. Confirm unchanged blob ID and no path in the diff. |
+| D01-S03 — Current Governance | `README_GOV_BRAINBOX.md`, “Authority boundary,” and `DOCUMENTATION_GOV_BRAINBOX.md`, “Authority and document roles,” identify Governance as current system-wide policy. Approved prospective additions must carry their own active status; historical and draft material is not promoted by location alone. | Current accepted cross-domain rules remain in Governance; scoped amendments keep their stated scope. **VERIFY — satisfied.** | No change. Use the existing Governance documents; validate statuses and the report-only diff. |
+| D01-S04 — Root README | `README_BRAINBOX.md` metadata and “Root authority and scope”; frozen Specification §5 and §25.2 assign the complete tree and root navigation to the root README. Root documentation points shared policy to Governance. | Root navigation does not confer ownership of specialized policy. **VERIFY — satisfied.** | No root README change, as prohibited by D01. Validate its unchanged path in the diff. |
+| D01-S05 — Local documentation | Active `DOCUMENTATION_GOV_BRAINBOX.md`, “Authority and document roles,” and `REFERENCE_GOV_BRAINBOX.md`, canonical ownership rules, assign local purpose, mental model, local tree and navigation to local READMEs while shared rules stay in Governance. | Local instructions remain within their domain and do not silently redefine shared rules. **VERIFY — satisfied.** | No local README change. Validate source responsibility and exact changed-file scope. |
+| D01-S06 — Historical evidence | `VERSIONING_GOV_BRAINBOX.md`, “Generation history”; `DOCUMENTATION_GOV_BRAINBOX.md`, “Historical integrity”; and active Reference Governance distinguish the Origin Conversation, retained archives and superseded sources from current operating rules. | Preserve provenance without automatically treating a historical body as current authority. **VERIFY — satisfied.** | No historical source edited. Validate protected paths are absent from the diff. Origin Conversation references about authority were used only as history, not as current approval. |
+| D01-S07 — Conflict handling | Active `REFERENCE_GOV_BRAINBOX.md`, “Relationship to Documentation Governance,” says conflicts require documented escalation through approved procedures and agents must not invent precedence. Active Ticketing general rules and TGB-003/009–013/020 supply flag reporting, classification, separate approval gates and the route to Operator direction. The detailed conflict steps in Documentation Governance §13 are inside the separately marked DRAFT framework and are not relied on as active policy. | Report the evidence and scope, stop any unapproved policy choice, and seek Operator direction when accepted sources do not resolve the issue; do not invent a rank order. **VERIFY — satisfied at the current rule level.** | No new conflict procedure or precedence clause added. A broader ranked hierarchy would be a new policy requiring separate Operator approval. Validate that the draft text remains unchanged and no policy candidate changed. |
+| D01-S08 — Draft boundary | `DOCUMENTATION_GOV_BRAINBOX.md`, dated framework insertion and framework header, retain `DRAFT — OPERATOR REVIEW REQUIRED`. Its L0–L6 table and §13 conflict steps are proposals, not active policy. Separately marked active rules retain their own status. | Do not adopt draft classifications or requirements by implication. **VERIFY — satisfied.** | No framework promotion or rewrite. Validate DRAFT wording remains unchanged and the diff contains no Documentation Governance edits. |
+| D01-S09 — Status dependencies | `V003_UNRESOLVED_BRAINBOX.md` identifies GOVERNANCE-01 as a dependency only “where policy precedence [is] needed”; V003-STATUS-01/02 remain selectable/not fixed. The report/register contain no execution of either status ticket. | Identify whether a new authority policy is needed before those tickets, without starting them. **VERIFY — no new policy dependency identified; status work remains separately gated.** | D01 may be submitted for independent review. This finding does not authorize or execute STATUS-01/02, close GOVERNANCE-01, or begin D02. Validate statuses and changed-file scope. |
+
+### Policy and wording disposition
+
+No Governance candidate file was changed. The existing role statements already distinguish Operator authorization, frozen architecture, system-wide Governance, root navigation, local documentation, and historical evidence. Active Reference and Ticketing rules provide the minimal conflict escalation boundary. A strict “who always outranks whom” ladder would exceed those accepted role statements and is neither proposed nor adopted here. The exact cited existing wording remains unchanged; no before/after policy text exists. If the Operator later wants a strict rank ordering or a more detailed universal conflict workflow, that must be supplied as a separate exact policy proposal for approval.
+
+## V003-BD-D01 — verification checkpoint — 2026-10-18
+
+The following checks were run after the findings were appended:
+
+- `git diff --name-only`: exactly `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md` and `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md`.
+- `git diff --check`: PASS; no whitespace errors. The reviewed diff is append-only: 57 report lines and 12 ticket-register lines (69 additions total), with no deletions.
+- Local Markdown links: 8 relative file links scanned across the two modified documents; 0 broken. The added matrix uses repository paths as code spans and creates no new links.
+- Protected-file check: `git diff --exit-code` passed for all five Governance candidates, root README, frozen Specification, Origin Conversation, and Unresolved Register. The frozen Specification blob ID and working-tree `git hash-object` result both equal `31a83b2d32d46331af703aafbe097a320c10b996`.
+- D01-V01 Authority correctness: PASS — role statements and escalation boundaries cite approved active sources.
+- D01-V02 Operator boundary: PASS — no standing authorization or authority override was introduced.
+- D01-V03 Architectural preservation: PASS — frozen Specification unchanged.
+- D01-V04 Document ownership: PASS — Governance, root navigation, local documentation and history remain distinct.
+- D01-V05 Historical preservation: PASS — no historical source was edited.
+- D01-V06 Draft integrity: PASS — Universal Documentation Framework remains DRAFT and was not adopted.
+- D01-V07 Conflict procedure: PASS — active Reference and Ticketing rules require documented escalation and Operator authorization rather than agent-invented precedence; no broader ordering was created.
+- D01-V08 Scope integrity: PASS — exactly the two authorized reporting files changed.
+- D01-V09 Link verification: PASS — 8 relative links checked, 0 broken.
+- D01-V10 Git validation: PASS — reviewed complete scoped diff; `git diff --check` clean; no staged changes or unrelated work.
+- D01-V11 Evidence traceability: PASS — each specific cites the inspected governing path/section or the unresolved dependency record.
+- D01-V12 Downstream readiness: QUALIFIED PASS — no new policy dependency was found for STATUS-01; the no-change disposition still requires independent ChatGPT review and Operator acceptance, and STATUS-01/02 require their own authorized tickets.
+- Final Git state: current branch `v003/batch-d-governance-status-clarity` with no upstream configured; two modified, unstaged files; no staged files, commit, push, PR, or merge. The branch remains unpublished under the D01 boundary.
+- No application/runtime tests apply to this documentation-only assessment. Governance content, protected paths, local links, Git scope and whitespace were checked as required.
+
+**Recommendation:** QUALIFIED PASS / NO CHANGE REQUIRED for the D01 policy implementation; submit this evidence package for independent ChatGPT verification. GOVERNANCE-01 remains active until independent review and Operator acceptance.
+
+## V003-BD-D02 — V003-STATUS-01 current-status and historical-closure clarification — execution report — 2026-10-18
+
+**Status:** IMPLEMENTED LOCALLY — scoped documentation validation PASS; independent ChatGPT verification and Operator closure acceptance are pending. No ticket closure, staging, commit, push, PR, or merge is claimed.
+
+### Preflight and dependency record
+
+- Repository: `DeOdini/DEODINI_BRAINBOX`; current branch: `v003/batch-d-governance-status-clarity`; HEAD: `e2e012135c9adcba36e60104c6465e1bad1dc539`.
+- Live GitHub `main`, read through the GitHub repository/ref API on 2026-10-18, is also `e2e012135c9adcba36e60104c6465e1bad1dc539`. Local `main` and `origin/main` point to that same baseline. The D02 branch has no upstream configured.
+- Initial worktree contained only the two unstaged D01 report/register changes (69 additions, 0 deletions); no staged files. Four pre-existing stashes were listed and preserved. `.git/FETCH_HEAD` exists and is owned by `DESKTOP-DHRIH27\USER`; `index.lock`, `HEAD.lock`, and `packed-refs.lock` were absent. No fetch or synchronization write was attempted.
+- The frozen Specification and Origin Conversation match their `HEAD` Git blobs exactly: Specification `31a83b2d32d46331af703aafbe097a320c10b996`; Origin `07ab10a2c40404baefdd2291c9dcd22875bd6c8f`.
+- D01 execution evidence is present in the local Phase 03 report and ticket register. The Operator's D02 authorization states that D01's `QUALIFIED PASS / NO GOVERNANCE POLICY CHANGE REQUIRED` disposition is accepted. However, the D01 ticket-register entry still says independent ChatGPT review is pending, and no separate D01 independent-verification record was found in the preflight files or GitHub `main`. This is a blocking gap for removing GOVERNANCE-01 under the clear-on-resolution rule, but it does not prevent the separately authorized status-document corrections. GOVERNANCE-01 therefore remains active and its missing verification record is explicitly reported rather than inferred.
+- The current Unresolved Register before implementation listed eight active IDs: V003-STATUS-01/02, README-01/03, and GOVERNANCE-01/02/03/04. The earlier §8–18 classification/navigation case is recorded as Operator-closed on 2026-10-16.
+
+### D02-S01–S10 discovery findings
+
+| Specific | Finding and source-backed treatment |
+|---|---|
+| D02-S01 — V003 project status | The accepted project-level status is **QUALIFIED CLOSED BY OPERATOR DIRECTION**, dated 2026-10-15. It is administrative/project-level closure with identified limitations and follow-ups; it is not blanket technical PASS or runtime/Production certification. Sources: this V003 README's dated closeout and Unresolved Register; Phase 03 records preserve the Operator closeout. |
+| D02-S02 — Phase 02 | Phase 02 is a **CLOSED MIGRATION-PROCESS SUPPORT ARCHIVE**. Its M01–M21 execution and verification history is historical process evidence, not current authorization and not proof of current capability/runtime behavior. Sources: Phase 02 README status/authority boundary and root V003 README. |
+| D02-S03 — M21-GIT-01 | The 20 SHA strings remain recorded; 0/20 objects were recovered from the named searched sources. The Operator-accepted limited-unavailability case is administratively closed as of 2026-10-14; cause is unknown and global irrecoverability is not established. No recovery is claimed. Source: Phase 03 report section `Operator final disposition — M01-GIT-01 / M21-GIT-01`. |
+| D02-S04 — F02/history | Earlier M21/F02 `PENDING`, `CORRECTION REQUIRED`, and `NOT PASSED` text remains a dated pre-closure checkpoint. The later 2026-10-15 Operator-qualified disposition supersedes it for current project status without retroactively changing those historical technical results. Historical bodies were not rewritten. |
+| D02-S05 — V003 README | The navigation statement that the §8–18 planned/empty/reserved documentation was the *only* active V003 follow-up was stale: the current register has eight categorized findings and the §8–18 case closed on 2026-10-16. It was replaced with current eight-item routing and the closure date. |
+| D02-S06 — Phase 02 README | The 2026-10-15 paragraph is retained as a dated historical snapshot; its heading now identifies it as historical. A 2026-10-18 current-routing section identifies the eight active issues and the Unresolved Register as the current route. |
+| D02-S07 — Unresolved Register | The active index has eight unique permanent IDs with consecutive display numbers 01–08. D01's Operator-accepted disposition is traceable to the supplied D02 authorization and is recorded, but the separate independent-verification artifact is absent; GOVERNANCE-01 remains active under clear-on-resolution. V003-STATUS-01 is implemented locally but remains active pending its own independent verification and Operator acceptance. |
+| D02-S08 — status versus implementation | Current wording distinguishes qualified administrative closure from technical ticket PASS, recovered objects, runtime health, and Production/capability certification. Later corrective tickets remain individually authorized work, not a reopening or denial of the project-level closure. |
+| D02-S09 — authority/provenance | Operator decisions are attributed to dated Operator disposition records/authorization; Codex execution findings are labeled as such; independent ChatGPT review is not claimed when absent; GitHub publication is not claimed. Primary pointers are the V003 parent README, Phase 02 README, Unresolved Register, Phase 03 report and ticket register. |
+| D02-S10 — D03 | No historical checkpoint indexing or retrospective reorganization was performed. Such indexing remains reserved for D03. |
+
+### Corrections and resulting status
+
+- `README_V003_VERSION_UPGRADE_BRAINBOX.md`: replaced the outdated opening description of the active follow-up; clarified 2026-10-15 qualified closure, 2026-10-18 current routing, the eight active findings, the 2026-10-16 §8–18 closure, bounded SHA disposition, and lack of blanket technical/runtime certification. Updated its Phase 02/current-follow-up navigation lines.
+- `PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md`: preserved the 2026-10-15 status paragraph as a historical snapshot, added current 2026-10-18 follow-up routing and non-authorization boundary, and updated `LAST VERIFIED`.
+- `V003_UNRESOLVED_BRAINBOX.md`: updated the review date and current index; marked V003-STATUS-01 implementation complete but still awaiting independent verification/Operator acceptance; recorded D01's Operator-accepted no-change disposition and retained GOVERNANCE-01 pending independent verification/clear-on-resolution.
+- `V003_FIXES_REPORT_BRAINBOX.md` and `V003_PHASE03_FIXES_TICKETS_BRAINBOX.md`: append this D02 evidence and execution checkpoint. The prior D01 section remains intact and distinguishable.
+
+### Current-facing wording — before and after
+
+- **V003 parent README, before:** “The active Unresolved Register retains planned/empty/reserved-state follow-up for later work”; its navigation line said the “only active V003 follow-up” was Specification §§8–18 planned/empty/reserved-state documentation.
+- **V003 parent README, after:** the current disposition names eight active register entries and points to the register; V003-STATUS-01 is identified as implemented locally and awaiting independent verification; the 2026-10-16 closure of the old §§8–18 case and the non-certification boundary are explicit.
+- **Phase 02 README, before:** the 2026-10-15 paragraph said the only active follow-up was §§8–18. **After:** that paragraph is retained as a dated historical snapshot; the new 2026-10-18 section states the current eight-entry register and identifies it as the live follow-up route.
+
+Active issue count: **8 before / 8 after**. The expected count of seven after D01 removal was not applied because the independent-verification record required by clear-on-resolution was not found. Permanent issue IDs, severities, dependencies, historical checkpoints and unrelated wording remain intact.
+
+### D02-V01–V13 validation
+
+- **V01:** PASS — current V003 qualified closure and dated limits are explicit.
+- **V02:** PASS — Phase 02 is clearly a closed process archive, not current authorization.
+- **V03:** PASS with limitation — administrative limited-unavailability is recorded; no object recovery or global irrecoverability is claimed.
+- **V04:** PASS — older M21/F02 checkpoints remain historical; no prior checkpoint body was rewritten.
+- **V05:** PASS — current-facing V003 and Phase 02 README routing no longer presents the closed §8–18 matter as the only active follow-up.
+- **V06:** QUALIFIED PASS — eight active IDs and numbering reconcile; GOV-01 remains active because its separate independent-verification record is missing; STATUS-01 awaits its independent verification and Operator acceptance.
+- **V07:** PASS — exactly the five ticket-authorized files changed. The two pre-existing D01 report files were preserved and received a separate appended D02 section.
+- **V08:** PASS — frozen Specification and Origin Conversation hashes match `HEAD`; historical README/report checkpoints and source evidence were preserved.
+- **V09:** PASS — all 31 local relative Markdown destinations in the five changed files were checked; 0 were broken. Counts: V003 parent README 14, Phase 02 README 5, Unresolved Register 4, Phase 03 report 7, ticket register 1. External links were excluded from the local-path check.
+- **V10:** PASS — cumulative D01+D02 diff reviewed and `git diff --check` passed after implementation; no D01 lines were replaced or removed.
+- **V11:** PASS — D01 report/ticket content remains intact; D02 updates are separately headed and dated. D01 independent verification remains explicitly absent, not fabricated.
+- **V12:** PASS — no checkpoint indexing or retrospective cleanup was started; D03 boundary preserved.
+- **V13:** PASS — paths, source headings, before/after wording, remote baseline and reproducible validation results are identified in this report. The absent D01 verifier record is the stated exception.
+
+**Changed paths:** the two Phase 03 reporting records above; `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md`; `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md`; and `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md`.
+
+**Git boundary:** branch `v003/batch-d-governance-status-clarity`; D01+D02 cumulative changes remain local and unstaged. No commit, push, PR, or merge was performed, as expressly required by D02. No stashes, branch refs, frozen authorities, or historical source files were changed.
+
+**Recommendation:** D02 implementation is ready for independent ChatGPT verification with a qualified status-register result. Do not close V003-STATUS-01 or remove GOVERNANCE-01 until their separate verification and acceptance gates pass. Stop before D03.
+## V003-BD-D03 historical checkpoint index 2026-10-18
+
+**Execution status:** Implemented locally on the authorized Batch D branch. Submitted for independent ChatGPT verification and Operator acceptance; not closed. D03-FLAG-01 records a mismatch between the supplied ticket's prior-verification claims and the permanent D01/D02 evidence. No verifier result was invented, no active issue was removed, and no historical checkpoint body was rewritten.
+
+### Preflight and baseline
+
+- Repository/branch: DeOdini/DEODINI_BRAINBOX; v003/batch-d-governance-status-clarity.
+- Local HEAD, origin/main, and GitHub main: e2e012135c9adcba36e60104c6465e1bad1dc539. The ticket branch had no upstream; GitHub branch search found no remote branch with this name.
+- Initial worktree: exactly five D01/D02 authorized files modified and unstaged; no staged or untracked files. Four pre-existing stashes were left untouched.
+- Other Batch D branch: remote v003/batch-d-git-closure at e2edd669cb30d243b0b916db3e67ebde83653574. GitHub compare shows it is 166 commits behind main, ahead by zero, with no unique files; its tip is an ancestor of main. It was not modified or published.
+- Frozen Specification: SHA-256 08F8EBE71D26BBF17AA0B23B51B0DBD7C521F24C7ABDA574A03D886222E0065C; HEAD Git blob 31a83b2d32d46331af703aafbe097a320c10b996; working-tree Git hash matches the HEAD blob.
+- Origin Conversation: SHA-256 11EA43A34C2026B15CF6B62D3EAC6CF1BE964D67FEA19162BC90A121C4872B3D; HEAD Git blob 07ab10a2c40404baefdd2291c9dcd22875bd6c8f; working-tree Git hash matches the HEAD blob.
+- No unrelated path, branch, or stash was changed.
+
+### D03-S01–S10 findings matrix
+
+| ID | Exact source/checkpoint and date | Historical state | Later evidence/current disposition and qualification | New pointer necessary? Destination |
+|---|---|---|---|---|
+| D03-S01 | Phase 03 report, “V003-BD-D01 — GOVERNANCE-01 authority assessment — execution report — 2026-10-18” | Codex completed the nine-specific Governance assessment; disposition was QUALIFIED PASS / NO GOVERNANCE POLICY CHANGE REQUIRED. | The Operator accepted this execution disposition in the D02 authorization. The report expressly says this is not ChatGPT verification or issue closure. | Yes — current register and D01/D03 report route. |
+| D03-S02 | Phase 03 report, “V003-BD-D01 — verification checkpoint — 2026-10-18”; ticket register D01-V12 | D01-V01–V11 are Codex checks; D01-V12 is Codex's qualified downstream-readiness result and recommends independent ChatGPT review. | No separate D01 independent-verification result was located in the checked report, ticket register, conversation, or GitHub main. The D03 ticket's D01-pass assertion is uncorroborated. GOVERNANCE-01 stays active. | Yes — current register and this discrepancy record. |
+| D03-S03 | Phase 03 report, “V003-BD-D02 — V003-STATUS-01 current-status and historical-closure clarification — execution report — 2026-10-18”; D02 ticket checkpoint | D02 implemented current-status corrections and recorded Codex D02-V checks. | D02 recommends independent ChatGPT verification and says no separate D01 verifier record was found. No separate D02 independent-PASS result was located in the checked permanent records. V003-STATUS-01 remains active pending independent review and final Operator closure acceptance. | Yes — D02 report, current register, and discrepancy record. |
+| D03-S04 | Phase 02 README historical checkpoints dated 2026-10-12 and 2026-10-15; M21-GIT-01/F02 reports | Earlier PENDING, CORRECTION REQUIRED, and NOT PASSED statements represent their dated review states. | Later Operator-qualified project closure supersedes only current administrative status. The 20 SHAs were not found in named search sources; no recovery or global irrecoverability is claimed. | Yes — Phase 02 checkpoint guide and Phase 03 report. |
+| D03-S05 | V003 and Phase 02 README routing records dated 2026-10-18 | Older “only active follow-up” wording is a historical snapshot. | The former Specification §§8–18 case closed on 2026-10-16. The Unresolved Register is the current route and has eight active IDs. | Yes — current V003 and Phase 02 navigation. |
+| D03-S06 | Unresolved Register active index dated 2026-10-18 | Eight permanent IDs are numbered 01–08. | The index remains eight entries. STATUS-01 and GOVERNANCE-01 stay active pending their verification/acceptance gates. STATUS-02 is locally implemented by D03 but remains active pending independent verification and Operator acceptance. | Yes — direct link to the active register. |
+| D03-S07 | D03 execution checkpoint dated 2026-10-18 | D03 performs dated navigation/indexing. | D03 is locally implemented, not independently verified or Operator-accepted. It cannot clear STATUS-02 before both gates pass. | Yes — D03 report and ticket-register checkpoint. |
+| D03-S08 | Frozen Specification and Origin Conversation | Canonical architecture and chronological evidence authorities. | Their working-tree hashes match their HEAD Git blobs; neither was modified. | No new pointer required; canonical links remain in the parent README. |
+| D03-S09 | Local branch and GitHub references checked 2026-10-18 | D01/D02 edits were local and unstaged on the dedicated Batch D branch. | D03 authorizes cumulative D01/D02/D03 stage/commit/push after validation, but no PR or merge. The older Batch D closure branch is already an ancestor of main and was left untouched. | Yes — publication checkpoint records the final branch state. |
+| D03-S10 | Supplied D03 ticket compared with permanent D01/D02 records | Ticket states D01 independent QUALIFIED PASS and D02 independent PASS already exist. | Checked records instead show D01 review pending/not found and D02 review pending. This is D03-FLAG-01; the executor preserves the active items and submits the mismatch for independent review. | Yes — D03 flag, report, and current register. |
+
+### D03 implementation and active issues
+
+Added current checkpoint navigation in the V003 parent README, Phase 02 README, and Phase 03 README. The Phase 03 README's stale claim that §§8–18 is the only active follow-up was corrected. Updated the Unresolved Register so STATUS-02 reflects local implementation with independent verification and Operator acceptance still pending. Appended this findings matrix to the Phase 03 report and a separate D03 checkpoint to the ticket register. D01/D02 bodies remain dated historical records.
+
+Eight active IDs remain in consecutive display order: V003-STATUS-01, V003-STATUS-02, README-01, README-03, GOVERNANCE-01, GOVERNANCE-02, GOVERNANCE-03, GOVERNANCE-04. No ID was removed or renumbered. D01 Operator acceptance is preserved; its independent verifier artifact was not found. D02 independent PASS is also not substantiated by the checked records. D03-FLAG-01 remains open.
+
+### D03-V01–V14
+
+- V01 PASS — historical checkpoints remain traceable.
+- V02 PASS — current pointers lead to canonical reports/register.
+- V03 PASS — execution, independent verification, Operator acceptance, Git publication, and issue closure are distinguished.
+- V04 PASS — 20-SHA disposition remains bounded to named search sources.
+- V05 PASS — no historical checkpoint body was rewritten.
+- V06 PASS — new navigation destinations and heading fragments validated; totals recorded in the publication checkpoint.
+- V07 PASS — eight uniquely numbered permanent IDs remain; no entry was cleared.
+- V08 PASS — D01/D02 evidence is preserved; the discrepancy is additive.
+- V09 PASS — frozen Specification and Origin Conversation hashes match their HEAD blobs.
+- V10 PASS — only the six authorized paths changed.
+- V11 PASS — git diff --check and cached-diff check passed at the implementation checkpoint.
+- V12 PASS — four stashes and unrelated branches were left untouched; the existing remote Batch D closure branch was inventoried.
+- V13 QUALIFIED — current claims are reproducible, but the D03 ticket's asserted D01/D02 independent passes were not found in permanent records. D03-FLAG-01 awaits independent review.
+- V14 PENDING — D03 awaits independent ChatGPT verification and Operator acceptance; STATUS-02 remains active.
+
+### D03-FLAG-01 — independent-verification provenance mismatch
+
+The D03 ticket states D01 received independent QUALIFIED PASS and D02 received independent PASS. The D01 report's “verification checkpoint” is Codex execution evidence and recommends submission for ChatGPT review; the D02 report records Codex checks and recommends independent review. D02 also states no separate D01 verifier artifact was found. No separate D01/D02 ChatGPT result was located in the checked report, ticket register, conversation, or GitHub main. The ticket assertion is not treated as a verifier artifact. GOVERNANCE-01 and V003-STATUS-01 remain active; no entry was removed. Independent ChatGPT review should confirm whether an external verifier record exists and whether the permanent status should be reconciled.
+
+### Git state before publication
+
+The D01/D02/D03 changes remain on v003/batch-d-governance-status-clarity. This ticket authorizes staging only the six approved files, committing and pushing the cumulative Batch D changes, then publishing a reporting checkpoint. PR creation, merge, branch deletion, and unrelated branch publication are not authorized.

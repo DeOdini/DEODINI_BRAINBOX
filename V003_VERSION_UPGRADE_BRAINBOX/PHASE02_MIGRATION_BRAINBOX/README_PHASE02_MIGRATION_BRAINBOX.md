@@ -6,11 +6,21 @@
 **PURPOSE:** Keep Phase 02 migration planning and later execution evidence separate from the closed Phase 01 polish archive.
 **MENTAL MODEL:** Phase 01 froze the target; Phase 02 compares the live Brainbox against that target and migrates through individually scoped V003-Mxx tickets covered by the Operator's explicit M01–M21 set authorization, with each ticket subject to dependencies and P14 preflight.
 **GOVERNED BY:** The frozen V003 Specification, Origin Conversation, P14 migration preflight, the V003 parent README, and the Operator's explicit approval of V003-M01–M21 recorded in the Phase 02 report/conversation.
-**LAST VERIFIED:** 2026-10-15 — Phase 02 closure and current V003 qualified-closure routing cross-checked against the Phase 03 report, Unresolved Register, Migration Map, and PR #47 closeout.
+**LAST VERIFIED:** 2026-10-18 — Phase 02 remains a closed migration-process archive; current V003 follow-up routing was reconciled with the Phase 03 report, Unresolved Register, Migration Map, and accepted closeout records.
 
-## Current archival disposition — 2026-10-15
+## Historical archival disposition snapshot — 2026-10-15
 
 Phase 02 is closed as a migration process. M19–M21 and the related Phase 03 publication/merge records are integrated through the documented Git lifecycle, including PR #47. The Operator accepted the qualified V003 closure; the 20 Cline checkpoint SHAs remain unrecovered and the administrative disposition does not assert their technical recovery. The only active V003 follow-up is Specification §§8–18 planned/empty/reserved-state documentation, tracked in `../V003_UNRESOLVED_BRAINBOX.md`. The detailed ticket histories below remain historical execution and verification records.
+
+## Current archival routing update — 2026-10-18
+
+The paragraph above is a dated 2026-10-15 snapshot. The former Specification §§8–18 classification/navigation case was closed by Operator approval on 2026-10-16. As of 2026-10-18, the current V003 Unresolved Register indexes eight active entries: V003-STATUS-01, V003-STATUS-02, README-01, README-03, GOVERNANCE-01, GOVERNANCE-02, GOVERNANCE-03, and GOVERNANCE-04. V003-STATUS-01 is implemented locally and awaits independent verification; the register is the current follow-up route, and the earlier §§8–18 case is not the sole active follow-up. Phase 02 remains a closed migration-process archive, not a current authorization source or runtime/capability certification. Historical M01–M21 ticket and verification entries remain dated records; a past ticket or report does not authorize new work. See [V003 Unresolved Register](../V003_UNRESOLVED_BRAINBOX.md).
+
+## Current Phase 02 checkpoint navigation 2026-10-18
+
+Earlier M21/F02 PENDING, CORRECTION REQUIRED, and NOT PASSED sections below are dated checkpoints and are preserved as historical evidence. For the later project-level disposition, use the [V003 parent README](../README_V003_VERSION_UPGRADE_BRAINBOX.md#current-status-checkpoint-navigation-2026-10-18), the [Phase 03 fixes report](../PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md#v003-bd-d03-historical-checkpoint-index-2026-10-18), and the [active Unresolved Register](../V003_UNRESOLVED_BRAINBOX.md).
+
+The Operator-accepted M21-GIT-01 limited-unavailability disposition is administrative: the 20 recorded checkpoint SHAs were not found in the documented search sources. No recovery or global irrecoverability is claimed. This Phase 02 folder remains a closed migration-process archive; current corrective tickets and their verification/acceptance gates are tracked in Phase 03.
 
 ## Canonical local tree — two descendant levels
 

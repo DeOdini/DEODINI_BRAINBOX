@@ -794,3 +794,36 @@ Implementation commit `d8159e0e0ef35cc598838d8626d79497d1bea19d` (`V003: align D
 - The final GitHub PR readback confirmed state CLOSED / MERGED. No force operation or branch deletion was used.
 - Local main was fast-forwarded to origin/main at e02445f5b5182fb081e03698d56eb58c90cd5967 and verified clean and synchronized (ahead/behind 0/0).
 - At post-merge audit, no remote branch tip was unmerged from main. The merged PR branch remains retained. Exact closeout verification and this report-only publication are separate from application/runtime certification and overall V003 closure claims.
+
+## V003-BD-D01 — GOVERNANCE-01 authority assessment — execution checkpoint — 2026-10-18
+
+- **Execution result:** Codex completed the nine-specific discovery matrix. Its disposition is **NO CHANGE REQUIRED** to Governance policy: current accepted sources define role ownership and a bounded escalation/Operator-authorization path without requiring a blanket authority ranking. Detailed evidence is in the dated D01 section of `V003_FIXES_REPORT_BRAINBOX.md`.
+- **Preflight:** repository `DeOdini/DEODINI_BRAINBOX`; verified `main`/GitHub baseline `e2e012135c9adcba36e60104c6465e1bad1dc539`; clean before work; current branch `v003/batch-d-governance-status-clarity` created from that baseline. The frozen Specification Git blob and worktree hash match at `31a83b2d32d46331af703aafbe097a320c10b996`. Four existing stashes were preserved.
+- **Changed files:** this ticket register and the Phase 03 Fixes Report only. No Governance file, root/local README, frozen authority, Origin Conversation, Unresolved Register, or historical source was modified.
+- **D01-S01–S09:** all were inspected; no new active policy amendment was justified. DRAFT framework wording remains DRAFT and was not used as current authority.
+- **D01-V01–V11:** PASS. The protected-file diff check passed; the frozen Specification blob and working-tree hash match; 8 local relative links in the modified report/register were checked with 0 broken; `git diff --check` passed; exactly the two authorized report files changed.
+- **D01-V12:** QUALIFIED PASS — no new policy dependency was identified for STATUS-01, but D01 still requires independent ChatGPT review and Operator acceptance; STATUS-01/02 need their own authorized tickets.
+- **GOVERNANCE-01:** remains in the active Unresolved Register pending independent ChatGPT review and Operator acceptance. D01 does not remove or close it.
+- **Downstream:** V003-STATUS-01/02 remain `SELECTABLE / NOT FIXED`; no status ticket or D02 was started. D01’s no-change finding is not authorization for those tickets.
+- **Git boundary:** no files staged or committed; no push, PR, or merge. D01 stops at the independent-verification handoff as instructed.
+
+## V003-BD-D02 — V003-STATUS-01 current-status and historical-closure clarification — execution checkpoint — 2026-10-18
+
+- **Authorization/scope:** Executed the Operator-issued D02 ticket on `v003/batch-d-governance-status-clarity`. Updated only the V003 parent README, Phase 02 README, Unresolved Register, Phase 03 Fixes Report, and Phase 03 Ticket Register. No staging, commit, push, PR, merge, D03 work, frozen-authority edit, or historical-body rewrite.
+- **Current status:** V003 is Operator-qualified closed (2026-10-15); Phase 02 is a closed migration-process archive; the 20 M01/M21 checkpoint objects remain unrecovered from named searches under the Operator-accepted limited-unavailability disposition. This is not blanket technical PASS, global irrecoverability, or runtime/Production certification.
+- **Follow-up routing:** The former §§8–18 classification/navigation case closed on 2026-10-16. Current register index remains eight IDs (01–08): V003-STATUS-01/02, README-01/03, GOVERNANCE-01/02/03/04. Both current-facing README routes now point to this active register and do not identify the closed §§8–18 case as the only follow-up.
+- **D01 dependency:** The D02 authorization records Operator acceptance of D01's `QUALIFIED PASS / NO GOVERNANCE POLICY CHANGE REQUIRED` disposition. The D01 execution entry still calls for independent ChatGPT review, and no separate D01 independent-verification record was found in the preflight files or GitHub `main`. GOVERNANCE-01 was therefore retained as active pending independent verification and clear-on-resolution; the seven-entry post-removal count was not applied.
+- **STATUS-01:** Current-facing corrections are implemented locally. Its active entry remains until independent ChatGPT verification and Operator acceptance.
+- **Validation:** D02-S01–S10 findings, pre/post statements and D02-V01–V13 results are in the D02 report section. Frozen Specification/Origin Git blobs match worktree; earlier D01 records remain intact; historical M21/F02 checkpoints were not rewritten; D03 indexing was not begun. The five changed files contain 31 checked local relative Markdown destinations and 0 broken; `git diff --check` passed.
+- **Git state:** Initial branch HEAD and verified GitHub `main` baseline were both `e2e012135c9adcba36e60104c6465e1bad1dc539`; no upstream is configured. Four existing stashes were preserved. D01+D02 edits remain unstaged and unpublished under the ticket's batch-boundary rule.
+- **Disposition:** IMPLEMENTATION COMPLETE — SUBMITTED FOR INDEPENDENT CHATGPT VERIFICATION; V003-STATUS-01 not closed; GOVERNANCE-01 not removed; stop before D03.
+## V003-BD-D03 execution checkpoint 2026-10-18
+
+- **Execution result:** D03 checkpoint navigation and active-status indexing are implemented locally. See the [D03 execution report](V003_FIXES_REPORT_BRAINBOX.md#v003-bd-d03-historical-checkpoint-index-2026-10-18) for the findings matrix and D03-V01–V14.
+- **D03-S01–S10:** D01/D02 findings, M21/F02 historical checkpoints, current qualified closeout, active-register count, and uncorroborated prior-verification claims are indexed in the report.
+- **Current active IDs:** eight entries remain: V003-STATUS-01, V003-STATUS-02, README-01, README-03, GOVERNANCE-01, GOVERNANCE-02, GOVERNANCE-03, GOVERNANCE-04. STATUS-02 is implemented locally and remains active pending independent ChatGPT verification and Operator acceptance. GOVERNANCE-01 and STATUS-01 remain active.
+- **D03-FLAG-01:** The ticket states D01 independent QUALIFIED PASS and D02 independent PASS were recorded; checked permanent reports/register instead show those separate reviews as pending or not found. No verifier result is invented and no active issue is cleared.
+- **Preservation:** D01/D02 report and ticket bodies remain; historical PENDING/CORRECTION REQUIRED/NOT PASSED sections remain dated snapshots. Frozen Specification and Origin Conversation hashes match their HEAD Git blobs.
+- **Validation:** only six ticket-authorized paths changed; new navigation links/fragments and Git whitespace checks are recorded in the report. Four stashes and unrelated branches were left untouched.
+- **Git boundary:** D03 authorizes staging, committing, and pushing cumulative D01/D02/D03 changes on v003/batch-d-governance-status-clarity after validation. No PR, merge, deletion, or unrelated-branch publication is authorized.
+- **Disposition:** D03 implementation is submitted for independent ChatGPT verification and Operator acceptance. It is not closed; STATUS-02 remains active until both gates pass.

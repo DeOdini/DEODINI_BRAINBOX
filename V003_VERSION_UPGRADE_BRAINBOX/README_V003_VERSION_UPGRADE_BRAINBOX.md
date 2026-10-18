@@ -2,8 +2,9 @@
 
 **Status:** [ACTIVE] — V003 authority/support container; Phase 01 frozen archive; Phase 02 closed migration-process archive
 **Operator authority:** DEODINI - OPERATOR
-**Current disposition (2026-10-15):** V003 is QUALIFIED CLOSED by Operator direction. The active Unresolved Register retains planned/empty/reserved-state follow-up for later work. This project-level closure does not claim that every ticket received technical PASS or that the 20 Cline checkpoint objects were recovered.
-**Migration record:** Ticket execution, verification, and Git integration details remain in the closed Phase 02 support archive and Migration Map. The 20 Cline checkpoint objects remain unrecovered under the Operator-accepted bounded historical disposition. Project-level qualified closure does not create blanket ticket-level technical PASS.
+**Current disposition (Operator-accepted 2026-10-15; clarified 2026-10-18):** V003 is QUALIFIED CLOSED by Operator direction, with specific limitations and follow-ups carried forward. This project-level disposition is not blanket technical PASS, does not certify runtime or Production health/capabilities, and does not claim recovery of the 20 checkpoint objects.
+**Current follow-up (2026-10-18):** Eight active register entries are tracked in the [V003 Unresolved Register](V003_UNRESOLVED_BRAINBOX.md), including V003-STATUS-01, now implemented locally and awaiting independent verification. The former Specification §§8–18 classification/navigation case was closed by Operator approval on 2026-10-16; it is not the only or current follow-up. Each corrective ticket requires its own authorization, verification, and acceptance.
+**Migration record:** Phase 02 ticket execution, verification, and Git integration remain in the closed migration-process support archive and Migration Map. The 20 recorded Cline checkpoint SHAs were not recovered from the named searched sources; the accepted administrative limited-unavailability disposition does not establish global irrecoverability or cause.
 
 ## Canonical local tree — two descendant levels
 
@@ -167,7 +168,21 @@ These values describe the current local file at the time of the verification abo
 - **PHASE 01 EXECUTION / VERIFICATION HISTORY:** `PHASE01_POLISH_BRAINBOX/`
 - **PHASE 02 MIGRATION PROCESS ARCHIVE:** `PHASE02_MIGRATION_BRAINBOX/`
 - **PHASE 01 STATUS:** CLOSED / FROZEN
-- **PHASE 02 STATUS:** CLOSED SUPPORT ARCHIVE. Batch A–E and M01–M21 Git integration are recorded in the Phase 02 README/report and Migration Map. M21/F02 project closure is Operator-qualified; the 20 Cline checkpoint objects remain unrecovered under the accepted bounded disposition. The only active V003 follow-up is Specification §§8–18 planned/empty/reserved-state documentation in `V003_UNRESOLVED_BRAINBOX.md`.
+- **PHASE 02 STATUS:** CLOSED SUPPORT ARCHIVE. Batch A–E and M01–M21 Git integration are recorded in the Phase 02 README/report and Migration Map. M21/F02 project closure is Operator-qualified; 20 recorded Cline checkpoint SHAs were not recovered from the named searched sources and were administratively dispositioned without a recovery or global-irrecoverability claim.
+- **CURRENT V003 FOLLOW-UP:** Eight active register entries are indexed in `V003_UNRESOLVED_BRAINBOX.md`, including V003-STATUS-01, implemented locally and awaiting independent verification. The former Specification §§8–18 classification/navigation case was closed on 2026-10-16 and is not the current sole follow-up. A qualified project-level closure is not blanket technical or runtime certification; each further correction remains separately ticketed and authorized.
+
+## Current status checkpoint navigation 2026-10-18
+
+This is a navigation index into dated evidence, not a replacement chronology. Older PENDING, CORRECTION REQUIRED, and in-progress statements remain historical snapshots. Use the current records below for the latest disposition.
+
+- **Current active findings and closure gates:** [V003 Unresolved Register](V003_UNRESOLVED_BRAINBOX.md). At this checkpoint it lists eight active issues; see each permanent ID and gate there.
+- **D01, D02, and D03 execution evidence:** [Phase 03 Fixes Report](PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md#v003-bd-d03-historical-checkpoint-index-2026-10-18) and [Phase 03 ticket register](PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md).
+- **Phase 02 historical status and M21/F02 evidence:** [Phase 02 README](PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md) and [Phase 02 report](PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md). The 20 Cline checkpoint objects remain not found in the documented search sources; the Operator-accepted administrative limited-unavailability disposition does not claim recovery or global irrecoverability.
+- **Current Phase 03 route:** [Phase 03 fixes README](PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md#current-phase-03-checkpoint-navigation-2026-10-18), which points to the active register, permanent reports, and accepted closeout evidence.
+
+**Verification and acceptance distinction:** The D01 execution record documents a Codex qualified no-change finding and Operator acceptance. The D03 ticket states D01 independent verification and D02 independent PASS are already recorded; however, the checked Phase 03 report/register instead state that the separate D01 verifier record was absent and D02 was awaiting independent review. D03 does not invent either verifier result: GOVERNANCE-01 and V003-STATUS-01 remain active pending the missing evidence and their applicable acceptance gates. V003-STATUS-02 remains active pending D03 independent verification and Operator acceptance.
+
+**Project-level status:** V003 remains QUALIFIED CLOSED BY OPERATOR DIRECTION, with unresolved items and technical qualifications carried in the Unresolved Register. This is not blanket technical/runtime certification. The frozen Specification and Origin Conversation remain unchanged by D01-D03.
 
 ## V003-P01 Scope
 
