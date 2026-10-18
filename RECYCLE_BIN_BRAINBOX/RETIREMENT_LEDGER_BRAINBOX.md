@@ -94,3 +94,25 @@ Local `main` was fast-forwarded to the merge commit and matched `origin/main` wi
 ### Supplemental GitHub main policy check - 2026-10-16
 
 The GitHub branch metadata endpoint reports `main` as `protected: false`, with `protection.enabled: false` and required-status-check enforcement `off` (empty contexts/checks). The repository rulesets endpoint is empty. This supplements the earlier unavailable dedicated protection endpoint and records the later branch metadata result. No additional source retirement is authorized by this note.
+
+## RET-2026-10-16-LEGACY-AUTHORITY - supplemental contamination inventory - 2026-10-18
+
+**Relationship to Ticket 02:** This dated supplement preserves the historical three-file observation above. The original Ticket 02 text and its three-file scope remain unchanged. The manifest's original contamination_provenance.affected_archived_paths list also remains unchanged; a separate supplemental_discoveries entry preserves the later five-file inventory.
+
+**Later finding:** Review of commit 2291f0ec3e676d242610d709fbd4d0c4b03a92ce and its parent adf0ddf51c16c5775cf7c6310bcc11dbcef290f0 found the same two marker families in five then-current source files. The parent contains no matching lines in those five original paths. The additional files omitted from the original three-file record are the archived ChatGPT FUNC record and FUNC workflow record. This proves marker-text presence in the recorded commit objects; it does not prove the named actions occurred or identify an actor or cause.
+
+**Recomputed worktree/archive integrity on 2026-10-18:** core.autocrlf=true. The baseline Git blob was read from each original source path at Ticket 02 baseline 506ad69e705ea0964eebd62ea96f559633df8331 and compared byte-for-byte with the current archive Git blob at 9e7f632e768f109eb8526a4099cb7343bd1a2f1b. All five blob IDs and blob bytes match. Current worktree hashes and EOL counts follow:
+
+| Current archived path | Current raw bytes; SHA-256 | Ticket 02 raw bytes; SHA-256 | CRLF; lines | Baseline/current Git blob | Raw comparison |
+|---|---|---|---:|---|---|
+| RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md | 10455; 63878fd12c3237f5f67d4a6d05de7b58bfd5e5222c6a7e6b9eaa8227424dd766 | 10455; 63878fd12c3237f5f67d4a6d05de7b58bfd5e5222c6a7e6b9eaa8227424dd766 | 206; 207 | 072645b4486645cbb153fb0fb5d8ae7d705c4abf (10249 bytes; archive blob identical) | MATCH |
+| RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md | 3360; 9ad2d4f5f6873321e91f94e84071b2d2ebd87497f729ee304017be4c8c63384b | 3360; 9ad2d4f5f6873321e91f94e84071b2d2ebd87497f729ee304017be4c8c63384b | 78; 79 | e382886fdbaab695d3109115128324b9be99d24d (3282 bytes; archive blob identical) | MATCH |
+| RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md | 4972; 6cd454a665f571cb9a7b7b2c31cc255daf2a07f7ffb1be1beefe90b30952d347 | 4972; 6cd454a665f571cb9a7b7b2c31cc255daf2a07f7ffb1be1beefe90b30952d347 | 105; 106 | d496245c56e6bd8b8e766bbc7de406c3f1471dbc (4867 bytes; archive blob identical) | MATCH |
+| RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/CHATGPT_FUNC_BRAINBOX.md | 19160; 8d3493babc52044209283f7589922a29daa24179c6e68f713b25952150bd5cde | 18960; b51ec60e262cd96618074dbd86f893a02c35143cc0fea9e385c85235eaabd0d0 | 200; 201 | cd3a9db62d101309e090029b53b91da7c201711b (18960 bytes; archive blob identical) | DIFFERS; LF-normalized SHA matches Ticket 02 |
+| RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md | 12086; 050ecab6849f3a264130593e3be9af64eae31c4009bea5af4714cd15e6a6e046 | 11857; 7a73a3b43226ddd5eb9c6119274b95f2bd623d5fdb30a30573d65447ae5602bd | 229; 230 | 7a6e609161c22903f8ba66f10fa626eb2b3c4dab (11857 bytes; archive blob identical) | DIFFERS; LF-normalized SHA matches Ticket 02 |
+
+The two raw-worktree differences are CHATGPT_FUNC_BRAINBOX.md (200 CRLF sequences; LF-normalized size 18,960 bytes and SHA-256 equals its Ticket 02 recorded raw SHA-256) and FUNC_WORKFLOW_BRAINBOX.md (229 CRLF sequences; LF-normalized size 11,857 bytes and SHA-256 equals its Ticket 02 recorded raw SHA-256). Neither file contains a bare LF or bare CR. The other three current raw worktree hashes and sizes match their Ticket 02 manifest values. The original source blobs and current archive blobs match for all five. The archive sources were not edited.
+
+Current archived marker line references remain: DOB lines 4, 6, 8, 203, 205, 207; AI_MUST lines 4, 79; FQ lines 4, 6, 104, 106; ChatGPT FUNC lines 1, 201; FUNC workflow lines 1, 3, 228, 230. Actor and cause remain unknown. See the dated [Phase 03 implementation report](../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md) for the complete per-file hash table and bounded review results.
+
+**Disposition:** Inventory correction only. No archived source content, original removal authorization, or Ticket 02 checkpoint was changed.

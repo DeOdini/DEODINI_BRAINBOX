@@ -1344,3 +1344,57 @@ The D04 post-merge report is on v003/batch-d-final-closeout-report, created from
 ## Operator Batch D issue-removal instruction - 2026-10-18
 
 Operator: NOW YOU ARE TO DELETE THE PRECISE RESOLVED CASES FROM THE UNRESOLVED FILE IN DEODINI BRAINBOX. ChatGPT: Removed the remaining Batch D GOVERNANCE-01 and V003-STATUS-01 active rows following STATUS-02 removal; preserved five E/F entries and documented the unresolved independent-verifier provenance qualification. No Git publication performed.
+
+## V003-BE-E01 — Operator and Codex assessment exchange — 2026-10-18
+
+**Operator submission:** Attached ticket `V003-BE-E01 — GOVERNANCE-03 DOCUMENTATION INTEGRITY SAFEGUARDS`, at `C:\Users\USER\.codex\attachments\23f97c9e-fe43-4556-ba89-d51918ca05e7\Pasted text.txt` (SHA-256 `13E2978C7D0BECC32D8A1A8581CFEC8AC614B242ABA075E6EF372E853E0A9E13`). The attachment remains the complete controlling ticket text; the separate Operator message below authorized only assessment.
+
+**Codex commentary (verbatim):** “E01 assessment is authorized. I’ll verify the clean Batch E baseline and five active issues, review the current Governance safeguards and the cited historical evidence, then record the assessment in the Phase 03 records. I will not activate draft policy or stage, commit, push, or merge these assessment records.”
+
+**Operator authorization (verbatim):** “Authorize E01 assessment”
+
+**Codex commentary (verbatim):** “The preflight is clean: local `main` and `origin/main` both point to `9e7f632e`, and the worktree and diff checks are clean. The Governance files and Phase 03 records are present. I’m opening the ticket-specific local branch, then I’ll inspect the current safeguards and the recorded forensic evidence.”
+
+**Codex commentary (verbatim):** “The current Governance already covers important pieces: preserve historical wording and provenance, distinguish evidence from claims, verify before closure, and keep historical references from becoming current authority. The assessment is now checking whether those controls specifically address instruction-bearing content and tool-generated contamination, and what the prior forensic record actually establishes.”
+
+**Codex commentary (verbatim):** “The historical record has a specific discrepancy: the retirement manifest lists three affected files, but the preserved Git history and current archive show the same tool-output markers in five. The two additional files are the archived ChatGPT capability report and FUNC workflow; I’m checking their source-to-archive hashes and the exact authority wording before I record this assessment.”
+
+**Codex commentary (verbatim):** “The evidence confirms five affected legacy files at the 2026-09-23 commit, not just the three named in the retirement manifest. All five are now archived; the two omitted files have line-ending-only working-copy differences while their Git blobs still match the recorded baseline. I’m documenting the mismatch and the partial safeguards in the three Phase 03 records, without changing the protected archive, Governance policy, or Unresolved Register.”
+
+**Codex assessment summary:** The earliest available marker-bearing commit is `2291f0ec3e676d242610d709fbd4d0c4b03a92ce`; its parent `adf0ddf51c16c5775cf7c6310bcc11dbcef290f0` has no matching marker lines. Five then-current legacy files were affected and later archived. The existing permanent forensic record lists only three. The active guardrail prompt prohibits executing instructions embedded in quoted/attached source material; canonical Governance provides related provenance, preservation, authority, and verification controls but does not explicitly define a tool-output trust class. A narrow Governance clarification is recommended for separate authorization; no policy text or source was edited.
+
+**Boundary:** The E01 assessment records are local and uncommitted on `v003/be-e01-governance-03-integrity-safeguards`. No staging, commit, push, PR, merge, Unresolved Register edit, or E01 closure is claimed. Independent ChatGPT verification and Operator disposition remain pending.
+
+## V003-BE-E01-F01 - Operator authorization and Codex execution record - 2026-10-18
+
+**Operator message context:** The Operator supplied the attachment V003-BE-E01-F01 - GOVERNANCE-03 Documentation Integrity Correction (SHA-256 recorded in the Phase 03 report). The message said, “Pasted text contains the user's request.” and ended with “My request:” without additional free text.
+
+**Operator-provided ticket authorization (verbatim):** “OPERATOR AUTHORIZATION: V003-BE-E01-F01 scoped corrections and local validation are approved. All publication and final closure gates remain separate.”
+
+**Codex (verbatim, preflight statement):** “The attachment is marked ‘OPERATOR AUTHORIZED — IMPLEMENTATION APPROVED’ and expressly limits this ticket to scoped edits and local validation; it forbids commit, push, PR, and merge. Since your message’s request field is blank, I’m treating the supplied ticket as the authorization for that limited work only. I’ll verify its preflight against the live repo before editing.”
+
+**Codex execution result:** Implemented only the two authorized Governance additions, a dated supplemental five-file forensic record in the Retirement Ledger and manifest, and the three Phase 03 records. Preserved the earlier three assessment edits and Ticket 02 observation, all five archived sources, frozen authorities, and the Unresolved Register. Local integrity, JSON, link, bounded scan, and Git whitespace checks are recorded in the linked Phase 03 report. No staging, commit, push, PR, merge, branch change, or E02/E03 work occurred. Independent ChatGPT verification and Operator acceptance remain pending; GOVERNANCE-03 remains open.
+
+## V003-BE-E04 - Operator authorization, report-only clarification, and Codex findings - 2026-10-18
+
+**Operator message context:** The Operator supplied V003-BE-E04 as the attachment C:\Users\USER\.codex\attachments\f2b501f6-e288-4a16-901a-26510fd9f9fa\Pasted text.txt (SHA-256 458494F20A858A8337557D96D9AD0CC7FF1C2622937F8E2458E5B943942720FF). The request text accompanying it was "I APPROVE".
+
+**Codex commentary (verbatim):** "I’ll read E04 first and apply your approval only to the work that ticket explicitly authorizes. Then I’ll verify its preflight and dependencies before making any scoped changes."
+
+**Codex commentary (verbatim):** "I’ll append the approved E04 record to the three Phase 03 files only. I’ll preserve the existing E01 entries, record the missing independent-pass evidence as a blocker, and leave all Git publication steps untouched."
+
+**Codex clarification request (verbatim):** "E04 report recording: May I append the findings to the Phase 03 report, conversation, and ticket register? These three files are part of the existing seven-file E01 worktree. E04 §5 says to prepare report content without modifying that worktree unless separately authorized. This append would not stage, commit, or push."
+
+**Operator reply (verbatim):** "Authorize report-only append"
+
+**Codex commentary (verbatim):** "The E01 report contains an explicit “independent verification pending” gate, so the claimed prior E01 pass is not supported by the current record. I also found the FootHive Sandbox and Production README paths differ from the candidate paths I initially checked; I’m resolving their actual locations before recording the source map."
+
+**Codex commentary (verbatim):** "The actual FootHive paths are the DEVOPS `POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX` and `POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX` locations. E02 also found those domain READMEs already document some detailed routing, so the E03 proposal will centralize a concise index in Governance and link to those local authorities rather than duplicate their content."
+
+**Codex findings:** The live Phase 03 E01-F01 report says independent ChatGPT verification is pending and GOVERNANCE-03 remains open. The seven-file E01 worktree is still local and unstaged on v003/be-e01-governance-03-integrity-safeguards at 9e7f632e768f109eb8526a4099cb7343bd1a2f1b; local main and origin/main point to the same commit. E02's source map identifies FUNC, DEVOPS Sandbox/Production, Skills, Portfolio, FootHive, Milestones, and archive/version-history authorities with ticket-scoped update destinations. The actual FootHive Sandbox and Production paths were checked from the repository and are recorded in the report. E03 is a bounded proposal only.
+
+**Codex disposition:** Appended E04 findings to the Phase 03 report, conversation, and ticket register only, under the Operator's report-only authorization. No source, Governance, archive, or frozen-authority file was changed by this append. No stage, commit, push, PR, merge, or branch switch occurred. E01 independent verification, E02 independent verification, E03 implementation authorization, and Batch E closure remain open.
+
+### 2026-10-18   Operator acceptance and Batch E execution directive
+
+ChatGPT's earlier independent E01-F01 QUALIFIED PASS and E02 discovery QUALIFIED PASS were accepted by the Operator, who directed execution of the E01 verification reconciliation and Git publication via PR and the scoped E03 ownership matrix implementation. E03 publication and final Batch E closure remain gated by subsequent independent verification and acceptance.
