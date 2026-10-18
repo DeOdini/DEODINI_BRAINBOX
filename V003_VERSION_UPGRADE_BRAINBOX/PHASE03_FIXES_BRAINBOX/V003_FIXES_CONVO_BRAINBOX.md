@@ -1915,3 +1915,923 @@ PR #82 was verified merged with the five authorized paths and the accepted quali
 
 **Codex:** PR #83 is open at https://github.com/DeOdini/DEODINI_BRAINBOX/pull/83. Its exact four-file scope passed review; GitHub reports it mergeable with no statuses or check runs. I am recording the PR assignment before the authorized merge and will verify the resulting main state afterward.
 **Codex post-merge report:** PR #83 merged at 2026-10-18 14:46:34 UTC, merge SHA eb34e47265509ded8d752508f3d373e92242b1ce. GitHub confirms its four-file scope and merged state. Local main was fast-forwarded to the same SHA; the active issue index is now README-03 and GOVERNANCE-04 only. README-01 remains preserved as a closed permanent issue. Four existing stashes and both F01 branches were retained. F02 and F03 were not implemented.
+## V003-BF-F02 — Operator attachment and Codex execution — 2026-10-18
+
+### Operator message (as received)
+
+# Files pasted by the user:
+
+## "# V003-BF-F02 — ROOT TREE AND CANONICAL CHILD-PATH RECONCILIATION **PROJECT:** …": C:\Users\USER\.codex/attachments/f899695b-617e-44e9-90e0-2d7af11a9e9e/Pasted text.txt
+
+Pasted text contains the user's request.
+
+## My request:
+
+### Attached ticket text
+
+The following ticket body preserves the attachment wording, punctuation, and order. Nine Markdown hard-break markers that used trailing spaces are represented with end-of-line backslashes so the repository diff passes whitespace validation. The raw attachment remains unchanged at the cited path.
+# V003-BF-F02 — ROOT TREE AND CANONICAL CHILD-PATH RECONCILIATION
+
+**PROJECT:** DEODINI_BRAINBOX\
+**PROGRAM:** V003 VERSION UPGRADE BRAINBOX\
+**PHASE:** PHASE 03 — FIXES\
+**BATCH:** F — FINAL ROOT NAVIGATION AND VALIDATION\
+**TICKET ID:** V003-BF-F02\
+**SOURCE ISSUE:** README-03\
+**EXECUTOR:** CODEX\
+**INDEPENDENT VERIFIER:** CHATGPT\
+**ACCEPTANCE AUTHORITY:** OPERATOR\
+**STATUS:** ISSUED — PREFLIGHT AND SCOPED IMPLEMENTATION; PUBLICATION GATED
+
+## 1. Objective
+
+Reconcile the repository's canonical root navigation tree, child-folder references, and current population/status descriptions so they accurately distinguish:
+
+- Approved V003 target architecture.
+- Physically present files and directories.
+- Implemented and populated destinations.
+- Approved planned-but-absent destinations.
+- Retired or historically retained sources.
+- Open issues and previously accepted closures.
+
+The root README must remain the sole complete-tree navigation authority. Local child READMEs remain the authoritative detailed entrypoints for their individual domains, subject to Governance and the frozen V003 architecture.
+
+Do not redesign the architecture or invent missing destinations.
+
+## 2. Prerequisite Gate
+
+Before implementation, confirm:
+
+1. F01's implementation PR #82 is merged.
+2. F01 closeout PR #83 is merged.
+3. F01 final verification PR #84 is merged.
+4. GitHub `main`, local `main`, and `origin/main` agree.
+5. The working tree is clean or any existing changes are separately inventoried and protected.
+6. README-01 is absent from active issue intake but retains permanent closure evidence.
+7. README-03 and GOVERNANCE-04 remain active.
+8. All previous F01 qualifications remain preserved.
+
+Previously confirmed `main` checkpoint:
+
+`cbee5c9101662441a49818e4315766e0a585bc94`
+
+Verify current reality rather than assuming that SHA remains the tip.
+
+If these prerequisites fail, perform read-only preflight and report the blocker. Do not make F02 edits.
+
+## 3. Authorized Implementation Scope
+
+### A. Root README tree reconciliation
+
+**Primary file:** `README_BRAINBOX.md`
+
+Inspect the complete root target tree and its current physical-tree/status descriptions.
+
+For every relevant entry, verify:
+
+- Correct parent-child placement.
+- Exact source and destination names.
+- Presence or absence on disk.
+- Whether files and directories are tracked.
+- Whether the destination is populated, empty, planned, retained, or retired.
+- Whether the associated canonical child README exists.
+- Whether links point to the correct current V003 location.
+- Whether a displayed historical source is clearly labeled as historical rather than current authority.
+
+Correct verified inconsistencies only.
+
+The frozen Specification is the approved architecture reference, not a file to be rewritten.
+
+### B. Resolve stale §§8–18 status statements
+
+Previous F01 preflight identified outdated descriptions in `README_BRAINBOX.md`, including approximately:
+
+- Line 75 — AI_BRAINBOX tree population annotation.
+- Line 489 — root tree/status annotation.
+- Line 498 — Unresolved Register tree entry.
+- Line 505 — Phase 03 population/status summary.
+
+Line numbers are navigation hints, not authoritative edit locations.
+
+These statements describe the former Specification §§8–18 case as still pending, although the accepted Register states that case is closed and a new categorized corrective backlog remains.
+
+Update the language to accurately distinguish the closed historical case from currently active README-03 and GOVERNANCE-04 findings.
+
+Do not silently claim that all planned V003 destinations are populated.
+
+### C. Canonical child-route reconciliation
+
+Cross-check root pointers against current child README destinations in these top-level areas:
+
+1. `AI_BRAINBOX/`
+2. `GOVERNANCE_BRAINBOX/`
+3. `PORTFOLIO_BRAINBOX/`
+4. `MILESTONES_BRAINBOX/`
+5. `VERSION_HISTORY_BRAINBOX/`
+6. `V003_VERSION_UPGRADE_BRAINBOX/`
+7. Any other direct child listed in the actual root tree.
+
+Preserve distinct ownership of FUNC, Skills, DEVOPS Sandbox, DEVOPS Production, FootHive's separate source/status domains, Milestones and archives.
+
+Use the accepted Batch E Governance reference-ownership matrix to identify the correct source for reading and the correct destination for updates.
+
+Do not copy authoritative content into the root README merely to make the tree appear complete.
+
+### D. Planned, absent and retired-state controls
+
+Specifically verify:
+
+- Planned Sandbox outcome directories remain labeled planned when not physically present.
+- Planned Router/Agentic Milestone destinations are not represented as implemented.
+- Historical DOB, AI_MUST and other retired legacy materials are not presented as current operational authority.
+- FootHive Sandbox, Production and Portfolio records are not conflated.
+- No current V003 path is replaced by an obsolete V002 source.
+- Qualification and provenance labels remain accurate.
+
+Where the present state is uncertain, record the uncertainty rather than inventing completion.
+
+### E. Root-tree authority preservation
+
+Maintain the approved authority hierarchy:
+
+1. Operator decisions and applicable Governance rules.
+2. Frozen V003 Specification for approved target architecture.
+3. Origin Conversation for historical decision provenance.
+4. Current canonical child READMEs for domain navigation.
+5. Phase 02 and Phase 03 records for migration, execution, evidence and closure history.
+6. Unresolved Register for open corrective issues.
+
+Do not give retired records new authority or create competing complete-tree declarations in child folders.
+
+## 4. Required Evidence
+
+Build a concise reconciliation inventory including:
+
+| Evidence field | Requirement |
+|---|---|
+| Root entry | Exact current root README entry |
+| Expected path | Path established by architecture or accepted migration records |
+| Physical state | Present, absent, empty or populated |
+| Tracked state | Git-tracked or untracked |
+| Declared status | Status currently displayed in root navigation |
+| Observed status | Evidence-supported current status |
+| Canonical owner | Authoritative README or relevant Governance record |
+| Disposition | KEEP, CORRECT, QUALIFY or ESCALATE |
+| Evidence | File path, line reference or Git result |
+
+Report all confirmed discrepancies, including any that require separate Operator decisions.
+
+Avoid rewriting accurate entries for cosmetic uniformity.
+
+## 5. Validation Requirements
+
+Codex must independently run and record:
+
+1. Root README relative-link and fragment checks.
+2. Canonical child README destination checks.
+3. Root tree versus physical-path reconciliation.
+4. Root tree versus approved architecture comparison.
+5. Planned/absent and retired-source status checks.
+6. Governance ownership-reference consistency checks.
+7. `git diff --check`.
+8. `git diff --cached --check`.
+9. Exact changed-file and untracked-file inventory.
+
+Separate verified file-target existence from confirmed rendered GitHub heading-anchor resolution.
+
+If tooling cannot perform a specific check, report that limitation explicitly rather than declaring full coverage.
+
+## 6. Editing Boundaries
+
+**Authorized implementation:**
+
+- Targeted, evidence-backed corrections to `README_BRAINBOX.md`.
+- Necessary README-03 status/checkpoint updates to the Unresolved Register, without premature issue removal.
+- Append-only implementation evidence in the three permanent Phase 03 reporting records.
+
+**Not authorized:**
+
+- Editing frozen V003 Specification or Origin Conversation.
+- Altering historical archive bodies.
+- Reorganizing folder structures.
+- Creating or deleting planned destinations.
+- Changing Governance policy.
+- Editing child READMEs merely to satisfy a root mismatch.
+- Changing other active issue statuses without evidence.
+- Implementing GOVERNANCE-04 structural-enforcement tooling.
+- Closing README-03 before verification, acceptance and publication.
+
+If a discrepancy requires another file or architecture decision, raise a bounded flag and continue only with independent, nondependent corrections.
+
+## 7. Permanent Reporting
+
+Record this ticket and its execution in:
+
+**Report**
+
+`V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md`
+
+**Conversation**
+
+`V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_CONVO_BRAINBOX.md`
+
+**Ticket Register**
+
+`V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md`
+
+Record:
+
+- Preflight and starting Git state.
+- Baseline authority references.
+- Inventory and reconciliation results.
+- Exact modified paths.
+- Validation coverage and outcomes.
+- Resolved and unresolved flags.
+- Whether any broader architecture decision is needed.
+- Implementation completion status.
+- Independent verification pending status.
+
+Preserve historical entries. Do not present Codex's own implementation checks as ChatGPT independent verification.
+
+## 8. Git Lifecycle
+
+F02 implementation authorization does not automatically include Git publication.
+
+Until separately authorized:
+
+- Do not stage.
+- Do not commit.
+- Do not push.
+- Do not open a PR.
+- Do not merge.
+- Do not force-push.
+- Do not delete branches.
+
+Preserve existing stashes and previously published branches.
+
+After implementation, submit the complete change inventory and evidence to ChatGPT for independent verification.
+
+## 9. Independent Verification and Acceptance
+
+ChatGPT will independently examine:
+
+- Correctness of changed root-tree entries.
+- Current versus approved architectural status.
+- Preservation of planned and retired states.
+- Canonical child-route accuracy.
+- Link and Git validation.
+- Authorized file scope.
+- Consistency of permanent reporting.
+
+Possible results:
+
+- PASS.
+- QUALIFIED PASS.
+- FAIL / BLOCKED.
+
+Operator acceptance remains distinct from ChatGPT verification.
+
+No automatic acceptance or Git publication is implied by Codex completion.
+
+## 10. Completion Criteria
+
+F02 implementation is ready for independent review when:
+
+1. Every in-scope root-tree and status discrepancy has a documented disposition.
+2. All authorized corrections are applied.
+3. Root navigation is internally consistent.
+4. Physical, planned and retired states are accurately distinguished.
+5. Canonical child routes resolve or carry explicitly documented limitations.
+6. The original frozen architecture and historical records remain intact.
+7. Required validation is complete or transparently qualified.
+8. The three Phase 03 records contain the implementation report.
+9. README-03 remains active pending acceptance and publication.
+10. F03 remains unimplemented.
+
+## 11. Mandatory Codex Handoff
+
+Return:
+
+1. F01 prerequisite confirmation.
+2. Starting branch and Git SHA.
+3. Root-tree reconciliation inventory.
+4. Exact discrepancies corrected.
+5. Any unresolved dependencies or Operator decisions.
+6. Complete changed-file list.
+7. Link/path/fragment results.
+8. Git whitespace and scope checks.
+9. Permanent report and conversation locations.
+10. Final working-tree state.
+11. Clear request for ChatGPT independent F02 verification.
+
+**FINAL INSTRUCTION:** Execute V003-BF-F02 strictly within the authorized scope. Preserve the approved architecture, accepted historical decisions and all publication gates. Do not advance to F03 without its own authorization.
+### Codex progress messages (verbatim)
+
+**Codex:** I’ll read the supplied F02 ticket and check its authorization gates and current repository state before making any changes.
+
+**Codex:** The ticket authorizes F02 preflight and scoped implementation, but explicitly withholds staging, commit, push, PR, and merge. I’ve read the full ticket; I’m checking its prerequisite gates against the current repository and GitHub state now.
+
+**Codex:** Preflight passes: PRs #82–#84 are merged, local main, origin/main, and GitHub main all match cbee5c9…, the worktree is clean, and README-03 plus GOVERNANCE-04 remain active. The accepted F01 qualification is preserved. I’m moving onto a dedicated F02 branch; per the ticket, I will keep all Git publication steps out of scope.
+
+**Codex:** The full-tree check found more than the stale status labels: the root target tree omits 22 tracked current README files. The missing paths span P12 navigation records and the later approved per-agent EXE registry. I’m checking the recorded authority for each group so I can add only established paths and flag anything whose ownership is unclear.
+
+**Codex:** The tree-edit script hit a path-map check before writing anything, so the repository files are still unchanged. I’m correcting that script and will verify the generated tree against the original before saving it.
+
+**Codex:** The root tree now contains every tracked current README route under the active V003 domains, all 339 frozen-tree paths after the approved POC path mapping, and the separately approved EXE extension. The two Sandbox outcome directories remain absent and are now explicitly marked planned. I’m recording the exact evidence and remaining verification boundary in the Phase 03 records.
+
+### Codex execution handoff
+
+Local implementation and the ticket-specific report are complete. The current branch is ready for independent ChatGPT verification. No Git publication action was performed. The final handoff is the assistant response accompanying this conversation record.
+### Codex final handoff to Operator — 2026-10-18
+
+F01 prerequisites were confirmed: PRs #82–#84 are merged and main references matched at cbee5c9101662441a49818e4315766e0a585bc94 before implementation. F02 ran on v003/bf-f02-root-tree-canonical-child-path-reconciliation. The root target tree now has 395 nodes, including all 339 frozen §8 paths after approved POC mappings; 22 previously omitted current README routes and eight approved additive agent-specific EXE directories are represented. The two absent Sandbox outcome directories are explicitly marked planned. Root README local targets checked 70/70 with zero missing. The accepted F01 rendered-anchor qualification remains stated; no fresh GitHub-rendered-anchor retrieval was performed here.
+
+The active README-03 status and checkpoint were updated in the Unresolved Register. README-03 remains active pending independent ChatGPT verification and Operator acceptance. GOVERNANCE-04 remains active. F03 was not started. The exact five-file inventory is in the dated F02 report addendum.
+
+Final Git state: branch v003/bf-f02-root-tree-canonical-child-path-reconciliation at cbee5c9101662441a49818e4315766e0a585bc94; no upstream; five modified authorized files, zero staged, zero untracked. git diff --check and git diff --cached --check exited 0. Git emitted LF-to-CRLF conversion warnings for the three Phase 03 reporting records. The frozen Specification and Origin Conversation hashes still match preflight; four pre-existing stashes remain intact. No stage, commit, push, PR, or merge occurred.
+
+This is Codex implementation evidence only. F02 is submitted for independent ChatGPT verification; no ChatGPT PASS or Operator acceptance is claimed.
+
+# Files pasted by the user:
+
+## "Below is a comprehensive corrective verification ticket for Codex. It specifica…": `C:\Users\USER\.codex/attachments/198f34bf-cd34-4714-bae6-ae5246e85693/Pasted text.txt`
+
+Pasted text contains the user's request.
+
+## My request:
+### Codex commentary (verbatim)
+
+**Codex:** I’m continuing the authorized read-only F02 verification: I’ll reproduce the tree counts and path/status matrix from the current README, frozen Specification, migration ledger, and filesystem, then append evidence only to the three Phase 03 records. I will not publish or alter the root README.
+
+**Codex:** The first independent parse reproduces the core counts: the frozen Specification has 339 entries; the current root README tree has 395; all 339 frozen entries map into the current tree with no path gaps; and the filesystem has 393 of the 395 paths, with the two planned Sandbox outcome directories absent. The current README tree differs from its committed baseline by 30 entries, so I’m separating the 22 legacy README routes from the eight additive agent EXE routes rather than treating all 30 as README omissions.
+
+**Codex:** The current GitHub main still matches local main and the F02 starting commit. The root tree parser reproduces 395 unique entries, and the count difference is exactly the two planned-but-absent directories; I’m checking the full path, mapping, and physical-state sets now. The original preliminary scan’s script was not retained, so I’ll record that historical limit plainly rather than claim its method has been reproduced.
+
+**Codex:** The audit checks passed, but Windows rejected the oversized inline command before it ran, so no report files changed. I’m switching to the ticket-authorized temporary verification script, will remove it after execution, and will confirm the final worktree still contains only the five pre-existing F02 paths.
+
+### Exact supplied V003-BF-F02-V01 attachment body begins below
+
+Below is a comprehensive corrective verification ticket for Codex. It specifically addresses the outstanding F02 tree-count discrepancy, the 339 frozen Specification paths, the 22 README routes, the eight additive EXE routes, and the physical-path reconciliation.
+
+This is an evidence and verification ticket—not authorization to change the architecture, publish Git changes, or close README-03.
+
+# V003-BF-F02-V01 — INDEPENDENT VERIFICATION EVIDENCE RECONCILIATION
+
+**PROJECT:** DEODINI_BRAINBOX\
+**PROGRAM:** V003 VERSION UPGRADE BRAINBOX\
+**PHASE:** PHASE 03 — FIXES\
+**BATCH:** F — FINAL ROOT NAVIGATION AND VALIDATION\
+**PARENT TICKET:** V003-BF-F02\
+**SOURCE ISSUE:** README-03\
+**TICKET:** V003-BF-F02-V01\
+**EXECUTOR:** CODEX\
+**INDEPENDENT VERIFIER:** CHATGPT\
+**ACCEPTANCE AUTHORITY:** OPERATOR\
+**STATUS:** VERIFICATION EVIDENCE REQUESTED — F02 QUALIFIED PASS UNDER RECONCILIATION
+
+---
+
+## 1. BACKGROUND AND VERIFICATION FINDINGS
+
+Codex reported successful implementation of V003-BF-F02, including:
+
+- 395 root target-tree entries.
+- 339/339 frozen Specification §8 paths represented after approved POC mappings.
+- 22 previously omitted canonical README routes added.
+- Eight approved additive agent-specific EXE directories added.
+- Two physically absent Sandbox outcome directories correctly labeled `[ABSENT · PLANNED]`.
+- 70/70 root README local link targets existing.
+- Frozen Specification and Origin Conversation SHA-256 hashes unchanged.
+- Exactly five authorized files modified.
+- Four pre-existing Git stashes preserved.
+- No Git staging, commit, push, pull request or merge.
+
+ChatGPT independently inspected the implementation and issued a **QUALIFIED PASS**, confirming the principal scope, status and integrity checks.
+
+However, two central numerical assertions remain insufficiently independently reconciled:
+
+**F02-V01-01 — Root-tree entry-count discrepancy**
+
+Codex reports 395 entries, while ChatGPT's preliminary branch-marker scan counted 393.
+
+**F02-V01-02 — Frozen Specification path-coverage evidence**
+
+Codex reports 339/339 frozen §8 paths represented after approved POC mappings, but ChatGPT has not independently reproduced the full path-to-path comparison.
+
+Additional supporting evidence is required for the 22 README additions, eight EXE routes, 70 link targets, and physical-path states.
+
+The purpose of this ticket is to produce reproducible evidence that resolves these outstanding verification questions.
+
+## 2. EXECUTION AUTHORITY AND RESTRICTIONS
+
+This ticket authorizes:
+
+1. Read-only analysis of the current F02 implementation.
+2. Independent recounting and comparison of the relevant tree inventories.
+3. Generation of temporary verification scripts or outputs outside tracked repository files.
+4. Examination of frozen Specification paths and approved mapping records.
+5. Reproduction of physical-path, Git-tracked-path and relative-link checks.
+6. Append-only reporting of verified evidence in the three established Phase 03 records, without altering earlier reports.
+
+This ticket does **not** authorize:
+
+- Modifying `README_BRAINBOX.md` to force a count to match.
+- Altering the frozen Specification or Origin Conversation.
+- Adding, deleting, renaming or moving directories.
+- Editing child READMEs or Governance policies.
+- Creating unsupported POC mappings.
+- Adding unapproved EXE routes.
+- Changing active issue IDs or closing README-03.
+- Stage, commit, push, PR creation or merge.
+- Starting F03.
+- Reclassifying a QUALIFIED PASS as an unconditional PASS without independent confirmation.
+
+If the investigation reveals a genuine implementation defect, document the precise defect and propose a correction. Do not silently fix it under this verification ticket.
+
+## 3. MANDATORY PREFLIGHT
+
+Before the investigation, record:
+
+- Current branch.
+- Full HEAD SHA.
+- Current local and remote `main` references.
+- Git working-tree status.
+- Modified and staged paths.
+- Untracked file inventory.
+- Existing Git stashes.
+- Baseline hashes of protected documents.
+- Whether the five F02 files remain the only modified paths.
+
+Expected starting branch:
+
+`v003/bf-f02-root-tree-canonical-child-path-reconciliation`
+
+Previously observed HEAD:
+
+`cbee5c9101662441a49818e4315766e0a585bc94`
+
+If the repository has materially changed since ChatGPT's F02 review, identify and report the changes before comparing evidence.
+
+Do not discard, reset, stash, overwrite or incorporate unrelated modifications.
+
+---
+
+# PART A — RECONCILE THE 395 VERSUS 393 ROOT-TREE COUNT
+
+## 4. ESTABLISH EXACT COUNTING DEFINITIONS
+
+Provide a precise, reproducible definition of what Codex counted as a root target-tree entry.
+
+Answer every question:
+
+1. Does the reported 395 include the `DEODINI_BRAINBOX/` root line?
+2. Are the opening and closing Markdown code fences excluded?
+3. Are blank lines excluded?
+4. Are directory entries counted individually?
+5. Are file entries counted individually?
+6. Are `[ABSENT · PLANNED]` directories counted?
+7. Are untracked but physical directories counted?
+8. Are empty Git-tracked directories represented through `.gitkeep` or another tracked path?
+9. Are supplementary V003 support paths included?
+10. Are duplicate logical paths counted once or more than once?
+11. Are lines that contain only formatting or annotations excluded?
+12. Is the target tree being counted separately from the physical-tree block and other README trees?
+
+Specify exact beginning and ending markers used to extract the target-tree block.
+
+## 5. INDEPENDENTLY REPRODUCE BOTH COUNTS
+
+Produce at least three independent counting outputs:
+
+**Method A — Codex's original counting method**
+
+Run the original logic used to obtain 395 and provide its exact command or script.
+
+**Method B — Branch-marker counting method**
+
+Count lines beginning with the recognized tree-entry syntax, such as `├──` and `└──`, allowing for indentation and `│` prefixes.
+
+Provide the resulting count.
+
+**Method C — Parsed logical-path inventory**
+
+Parse each entry into a canonical relative repository path, preserving parent-child depth.
+
+Report:
+
+- Number of parsed file entries.
+- Number of parsed directory entries.
+- Total parsed paths.
+- Unique paths.
+- Duplicate paths, if any.
+- Number of physically present paths.
+- Number of absent paths.
+- Number of deliberately planned-absent paths.
+
+These methods must identify the same underlying tree block.
+
+If they disagree, explain the precise cause.
+
+## 6. RESOLVE THE TWO-ENTRY DIFFERENCE
+
+Determine conclusively why Codex reported 395 while the preliminary ChatGPT marker count found 393.
+
+Possible explanations must be tested, not assumed.
+
+For example, determine whether the difference involves the root heading, nonstandard entry formatting, a counting convention or actual missing tree entries.
+
+Provide an explicit reconciliation:
+
+| Count component                       | Number       | Evidence                |
+| ------------------------------------- | ------------ | ----------------------- |
+| Parsed directory entries              | Exact count  | Reproducible extraction |
+| Parsed file entries                   | Exact count  | Reproducible extraction |
+| Other included entries, if applicable | Exact count  | Explicit definition     |
+| Total logical tree entries            | Exact count  | Sum                     |
+| Alternative marker count              | Exact count  | Independent command     |
+| Difference                            | Exact number | Named cause             |
+
+**Acceptance criterion:** The 395-versus-393 difference must be explained exactly. An unexplained discrepancy is not a PASS.
+
+---
+
+# PART B — VERIFY ALL 339 FROZEN SPECIFICATION PATHS
+
+## 7. EXTRACT FROZEN SPECIFICATION §8
+
+Extract the complete architectural tree from:
+
+`V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`
+
+Use the actual §8 tree boundaries.
+
+Do not rely solely on a previously generated summary or manually typed list.
+
+For every entry, preserve:
+
+- Exact original path.
+- Original parent directory.
+- Entry type.
+- Specification line number.
+- Original spelling and capitalization.
+- Original filename extension, where applicable.
+
+Report the raw number of extracted paths, unique paths and duplicates.
+
+Identify whether the root heading is included in the 339 count.
+
+If the source itself does not reproduce 339 under a consistent definition, flag the discrepancy rather than adjusting the result.
+
+## 8. APPLY ONLY APPROVED POC PATH MAPPINGS
+
+Compare frozen architectural paths against current V003 paths.
+
+Use only mappings supported by explicit Operator decisions and accepted migration records.
+
+For each changed path provide:
+
+| Original frozen path | Approved mapped path | Approval evidence         | Result                     |
+| -------------------- | -------------------- | ------------------------- | -------------------------- |
+| Exact §8 path        | Exact current path   | Decision/report/reference | MATCH / MISSING / DISPUTED |
+
+Do not infer approvals merely because the current directory exists.
+
+Distinguish an approved rename or relocation from an unapproved replacement.
+
+The frozen Specification must remain unchanged.
+
+## 9. PRODUCE A 339-ROW COVERAGE MATRIX
+
+Generate one evidence row per frozen path.
+
+Required fields:
+
+1. Sequential source number.
+2. Original Specification path.
+3. Specification line number.
+4. Entry type.
+5. Approved effective V003 path.
+6. Whether an approved mapping was applied.
+7. Exact mapping authority, where relevant.
+8. Whether the effective path appears in the root README tree.
+9. Whether the path physically exists.
+10. Whether Git tracks the path or relevant contained files.
+11. Root README line number.
+12. Physical-status classification.
+13. PASS / QUALIFIED / MISSING / CONFLICT disposition.
+
+Produce these summary totals:
+
+- Total frozen Specification paths.
+- Unique frozen Specification paths.
+- Mapped paths.
+- Unmapped paths.
+- Paths represented in root README.
+- Paths absent from root README.
+- Physically present paths.
+- Physically absent paths.
+- Approved planned-absent paths.
+- Unsupported or conflicting mappings.
+
+**Acceptance criterion:** Every claimed member of the 339-path inventory must have a traceable matching root entry or an explicitly documented exception.
+
+---
+
+# PART C — VERIFY THE ADDITIVE PATHS
+
+## 10. TWENTY-TWO PREVIOUSLY OMITTED README ROUTES
+
+Provide the full list of all 22 README paths claimed to have been added.
+
+For each path identify:
+
+- Full repository-relative path.
+- Parent directory.
+- Whether it was absent from the previous root tree.
+- Whether it exists physically.
+- Whether it is Git-tracked.
+- Whether it appears in the current root tree.
+- Exact line number in the updated root README.
+- Associated domain or authoritative owner.
+- Source evidence supporting its inclusion.
+
+Separate the 22 README route additions from any other README entries added alongside the eight EXE routes.
+
+Do not double-count the same file in multiple categories.
+
+**Acceptance criterion:** Exactly 22 distinct qualifying paths, each demonstrably absent from the previous root-tree representation and present in the new one.
+
+## 11. EIGHT ADDITIVE AGENT-SPECIFIC EXE ROUTES
+
+Independently list all eight additive EXE directories, expected to cover the agent-specific extensions named in the implementation.
+
+For each provide:
+
+- Directory name.
+- Full canonical repository path.
+- Corresponding README path, if any.
+- Physical and Git-tracked status.
+- Root-tree line number.
+- Accepted Operator authorization.
+- Migration Map or Phase 02 evidence.
+- Whether the path is an additive extension rather than a frozen §8 requirement.
+
+**Important:** Eight EXE directories and their corresponding README files are separate inventory items.
+
+Do not combine both into an eight-entry total unless a counting convention explicitly groups them.
+
+Confirm that their addition does not silently amend the frozen Specification.
+
+## 12. ACCOUNT FOR ALL ROOT ENTRIES BEYOND THE FROZEN SPECIFICATION
+
+Codex's report describes 56 supplementary entries comprising:
+
+- 46 current README routes.
+- Eight approved additive EXE directories.
+- Two Skills documents.
+
+Independently reproduce these figures.
+
+Provide an explicit set difference between the effective frozen path set and the parsed root-tree path set.
+
+Explain any overlap with the 22 newly added READMEs.
+
+Do not assume:
+
+`339 + 56 = 395`
+
+is proof of coverage by itself.
+
+Demonstrate that the sets are correctly classified, disjoint where claimed, and do not conceal missing frozen paths or duplicates.
+
+---
+
+# PART D — PHYSICAL PATH AND STATUS RECONCILIATION
+
+## 13. VERIFY ALL DECLARED PRESENT PATHS
+
+For every parsed root-tree entry:
+
+1. Resolve the physical location from the repository root.
+2. Determine whether it exists.
+3. Determine whether it is a file or directory.
+4. Determine whether it is populated or empty, where relevant.
+5. Determine its Git-tracked status.
+6. Compare the observed state against its root-tree annotation.
+7. Record every mismatch.
+
+Provide exact totals and a reproducible command or script.
+
+Do not describe a directory as Git-tracked merely because its directory path exists; Git tracks files, not empty directories.
+
+## 14. VERIFY THE TWO PLANNED-ABSENT SANDBOX PATHS
+
+Explicitly check:
+
+`AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/PASSED_SANDBOX_BRAINBOX/`
+
+`AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FAILED_SANDBOX_BRAINBOX/`
+
+For each confirm:
+
+- Present in the approved architecture.
+- Present in the root-tree representation.
+- Labeled `[ABSENT · PLANNED]`.
+- Physically absent.
+- Not silently implemented.
+- Not replaced by an unrelated similarly named directory.
+
+Confirm whether any other tree entries are missing physically.
+
+The absence of exactly two paths is an evidence claim requiring a complete path-inventory comparison, not only a search for `[ABSENT · PLANNED]` labels.
+
+---
+
+# PART E — LINK VALIDATION
+
+## 15. REPRODUCE THE 70-LINK RESULT
+
+Rerun the root README local-link scan.
+
+Provide:
+
+- Full link extraction methodology.
+- Total Markdown links found.
+- Relative links included in validation.
+- External links excluded.
+- Same-document fragments handled separately.
+- Target files present.
+- Target files absent.
+- Fragment-bearing links.
+- Confirmed valid fragments.
+- Unverified or unsupported fragments.
+
+Identify the exact line number and destination for each broken or uncertain reference.
+
+Do not equate a file existing with an anchor resolving.
+
+The previously accepted F01 GitHub-rendered-anchor qualification must remain preserved unless new independent evidence resolves it.
+
+---
+
+# PART F — INTEGRITY, SCOPE AND RECORD PROVENANCE
+
+## 16. REVERIFY THE FIVE-FILE SCOPE
+
+Compare the current working tree against the starting commit.
+
+Confirm that modifications are confined to:
+
+1. `README_BRAINBOX.md`
+2. `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md`
+3. `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md`
+4. `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_CONVO_BRAINBOX.md`
+5. `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md`
+
+Recalculate the SHA-256 hashes of the frozen Specification and Origin Conversation, and confirm they match the implementation baselines.
+
+Verify the four stashes remain intact.
+
+Check the transcript's claimed nine converted Markdown hard-break markers, including whether their wording and line order are preserved. If a byte-level historical comparison cannot be performed, state that limitation.
+
+Run both Git whitespace checks and record exit codes.
+
+Retain all informational line-ending warnings in the evidence record.
+
+## 17. PERMANENT REPORTING
+
+After read-only reconciliation is complete, append the results to the established Phase 03 records:
+
+- `V003_FIXES_REPORT_BRAINBOX.md`
+- `V003_FIXES_CONVO_BRAINBOX.md`
+- `V003_PHASE03_FIXES_TICKETS_BRAINBOX.md`
+
+Clearly label the entry:
+
+**V003-BF-F02-V01 — Counting and Architectural Coverage Evidence Reconciliation**
+
+Record:
+
+- Starting Git baseline.
+- Exact counting methods and results.
+- Explanation of the 395/393 discrepancy.
+- Frozen Specification coverage totals.
+- Approved mapping inventory.
+- All missing/conflicting paths.
+- Supplemental README/EXE/Skills classifications.
+- Physical-path validation.
+- Link validation.
+- Integrity and whitespace results.
+- Unresolved limitations.
+- Recommendation for renewed ChatGPT independent verification.
+
+These are Codex-generated verification results, not a replacement for ChatGPT's independent verdict.
+
+The append-only reporting exception must not be used to modify implementation files or close README-03.
+
+---
+
+# 18. MANDATORY HANDOFF FORMAT
+
+Return the following in order:
+
+**A. Executive finding**
+
+State whether the F02 implementation is internally consistent, qualified or defective.
+
+**B. Root-tree count reconciliation**
+
+Provide all counting definitions and independently reproduced totals, explicitly resolving 395 versus 393.
+
+**C. Frozen Specification coverage**
+
+Provide 339-row comparison evidence and exact missing, mapped and supplemental counts.
+
+**D. Additive-path evidence**
+
+Provide the 22 README paths, eight EXE routes, 46 supplementary README routes and two Skills documents with traceable classifications.
+
+**E. Physical-state evidence**
+
+Provide the complete existing/absent inventory and explain the two planned Sandbox exceptions.
+
+**F. Link results**
+
+Provide reproducible 70-link validation and fragment limitations.
+
+**G. Integrity results**
+
+Provide hashes, five-file scope, stash status and whitespace findings.
+
+**H. Permanent records**
+
+Provide exact record locations and newly appended section headings.
+
+**I. Outstanding discrepancies**
+
+For every unresolved issue state whether it blocks F02 acceptance, is an accepted qualification, or requires a separate Operator decision.
+
+**J. Git state**
+
+Confirm no staging, commit, push, PR or merge was performed.
+
+---
+
+# 19. PASS / FAIL CRITERIA
+
+**PASS candidate** only if:
+
+- The root-tree count is precisely reconciled.
+- All 339 frozen architectural paths are accounted for using approved mappings.
+- The 22 README additions are individually substantiated.
+- The eight EXE additions have authority evidence.
+- The 56 supplementary entries are classified without unexplained overlap.
+- Physical-path exceptions are explicitly reconciled.
+- Link coverage is reproducible.
+- Protected file hashes and authorized scope remain intact.
+- All results are properly recorded.
+
+**QUALIFIED candidate** if the implementation remains supportable but bounded external or historical evidence cannot be independently reproduced.
+
+**FAIL / BLOCKED** if a frozen path is missing without approved disposition, a path mapping lacks required authority, a root-tree path points to an unapproved destination, or a material counting discrepancy remains unexplained.
+
+Codex must not self-issue ChatGPT's final verdict.
+
+## 20. FINAL EXECUTION DIRECTIVE
+
+Perform the full evidence reconciliation without altering the approved F02 implementation.
+
+**Do not adjust the tree to make the reported numbers match. Establish the correct numbers from the actual source paths and disclose all exceptions.**
+
+Once the results have been recorded, stop and submit them to ChatGPT for independent verification.
+
+**F02 remains under QUALIFIED PASS pending reconciliation and Operator acceptance. README-03 remains active. No Git publication, F03 implementation or Batch F closure is authorized by this ticket.**
+
+This gives Codex a clear requirement to prove each numerical assertion from source paths, rather than merely repeat previously reported totals.
+
+The most important deliverable is the path-by-path reconciliation matrix: it should make it possible to determine independently whether the root README faithfully represents the frozen architecture plus its approved additions, and whether the 395/393 difference is merely a counting convention or an actual defect.
+
+### Exact supplied V003-BF-F02-V01 attachment body ends
+
+### Codex execution handoff - 2026-10-18
+
+Codex completed the authorized source-backed reconciliation and appended the full 339-row coverage matrix, 46-route README matrix, eight additive EXE directory matrix, two Skills-document matrix, and counting/physical/link/integrity evidence to the Phase 03 report. The count is 395 logical entries = 393 physically present + 2 planned absences. The historical preliminary 393 marker-scan code is not preserved and remains a qualification. Codex does not issue ChatGPT PASS. README-03 remains active; F03 has not started. No Git publication occurred. The A-J handoff is in the assistant response accompanying this conversation record.
+
+
+
+
+### Codex commentary (verbatim)
+
+**Codex:** My readback caught a serialization defect in the generated report: the evidence rows were present, but the table helper emitted literal “\n” text, so the matrices did not render as tables. I’m correcting this by appending a clearly labeled, properly formatted matrix supplement to the Phase 03 report and pointing the ticket register to it; I’ll preserve the earlier record unchanged to honor the append-only boundary.
+
+### Codex execution update - 2026-10-18
+
+The table supplement reformats the previously source-derived row values into Markdown tables and confirms the expected row totals: 16 mappings, 339 frozen paths, 46 supplementary README routes, 8 EXE directories, and 2 Skills documents. It preserves the earlier report entry and protected sources.
+
+### Codex commentary (verbatim)
+
+**Codex:** The matrices now validate as real Markdown tables with the expected row counts. I also found a duplicated heading marker in the supplement title; the tables themselves are intact. I’ll leave both earlier append-only entries untouched and add a clean final index/validation note that points to the corrected matrices and records the final checks.
+
+### Codex final execution update - 2026-10-18
+
+The final readback confirmed the readable path matrices, exact attachment-byte inclusion, five-path working-tree scope, unchanged protected source hashes, and both whitespace-check results. The report preserves the historical 393-count qualification. Codex is submitting the qualified evidence for independent ChatGPT verification; no Git publication or issue closure was performed.

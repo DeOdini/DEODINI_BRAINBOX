@@ -35,7 +35,8 @@ For each future resolved item: independently verify the closure condition, appen
 ### README_BRAINBOX.md — root and navigation [CRITICAL]
 
 
-- **01. README-03 [HIGH]** - Path: root README and direct-child navigation. **Risk:** root full tree can become inconsistent with verified descendant paths/authorities. **Correction to ticket:** refresh current root pointers only after subordinate branches are independently verified. DEVOPS-01's reviewed documentation-routing portion is closed with Operator-accepted qualifications (2026-10-17). GOVERNANCE-02 ownership mapping was published in E03 PR #79 and is no longer an active dependency; FUNC-01 is resolved by Corrective Ticket 02. **Gate:** link/path and status truth, no contradictory root-local trees. **State:** BLOCKED ON REMAINING NAMED SUBFOLDER ROUTING.
+- **01. README-03 [HIGH]** - Path: root README and direct-child navigation. **Risk:** root full tree can become inconsistent with verified descendant paths/authorities. **Correction to ticket:** refresh current root pointers only after subordinate branches are independently verified. DEVOPS-01's reviewed documentation-routing portion is closed with Operator-accepted qualifications (2026-10-17). GOVERNANCE-02 ownership mapping was published in E03 PR #79 and is no longer an active dependency; FUNC-01 is resolved by Corrective Ticket 02. **Gate:** link/path and status truth, no contradictory root-local trees. **State:** IN PROGRESS — F02 scoped local root-tree/navigation implementation complete; independent ChatGPT verification and Operator acceptance pending; Git publication remains separately gated.
+  **2026-10-18 F02 checkpoint:** The previous named-subfolder-routing block is being addressed by this scoped root-tree and canonical-child-path reconciliation. README-03 remains active until independent verification, Operator acceptance, and separately authorized publication.
 
 ### GOVERNANCE_BRAINBOX/ [CRITICAL]
 
