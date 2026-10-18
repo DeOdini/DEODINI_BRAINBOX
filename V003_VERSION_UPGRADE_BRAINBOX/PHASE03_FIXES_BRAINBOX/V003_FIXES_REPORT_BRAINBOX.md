@@ -3225,3 +3225,103 @@ The E05 active-register reconciliation was published in PR #80 and merged at `e7
 At the post-merge synchronization checkpoint, local `main`, `origin/main`, and GitHub `main` matched at `e70acf7d1924876e5c138a21c7944f5f558fe547`; the local worktree was clean before this final reporting branch. PRs #79 and #80 were mergeable before merge; the GitHub connector reported no pending or failing status checks for their commits. `git diff --check` passed for both E03 and the E05 register/report change.
 
 **Next batch:** Batch F is the next active corrective batch. F01 readiness preflight is dependency-ready and authorized for read-only inspection. F01 README implementation remains subject to the ticket's separate implementation gate; no root README edit was performed under E05.
+
+## V003-BF-F01 - readiness preflight - 2026-10-18
+
+**Status:** READINESS PREFLIGHT COMPLETE; README IMPLEMENTATION NOT STARTED; DIRECT REGISTER GATE REQUIRES RECONCILIATION.
+
+**Operator instruction (verbatim):** "CHATGPT AS VERIFIED AND I HAVE VERIFIED, DO PROCEED". This was treated as confirmation of the E05 verification/acceptance basis and authorization to proceed with F01's expressly authorized readiness preflight. The supplied F01 ticket labels implementation separately gated; this statement was not treated as separate implementation or Git-publication authority.
+
+### Batch E dependency and publication checks
+
+Repository: `DeOdini/DEODINI_BRAINBOX`; GitHub default branch: `main`.
+
+The GitHub connector independently confirmed:
+
+- PR #78 (E01 / GOVERNANCE-03) is merged at `c51a5d1d25c8c04a555ec1b8ab8ec0a3c4417b4d`.
+- E02 source mapping is recorded as an independently verified QUALIFIED PASS accepted by the Operator, with its bounded limitations retained.
+- PR #79 (E03 / GOVERNANCE-02) is merged at `75f7ed6e0943f1bd70c59a4e6b410288963dabc7`. Its review provenance remains accurately qualified in repository records as Operator attestation; no unprovided independent-review details were reconstructed.
+- PR #80 (active-register reconciliation) is merged at `e70acf7d1924876e5c138a21c7944f5f558fe547`.
+- PR #81 (E05 post-merge verification) is merged at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`.
+
+A GitHub commit search returned `dd53a58c4c2c7b64e7fa012615b9e928569cf507` as the latest commit on the default branch. Local `main`, `origin/main`, the F01 branch base, and HEAD all resolve to that SHA. The root README Git blob is `89a9162a6ef6efdb77790e557c0c32cf46987ada`, matching the GitHub file result. The local worktree was clean before this reporting append. Direct `git ls-remote origin refs/heads/main` could not connect to github.com in this environment; GitHub API/connector reads supplied the live remote verification instead.
+
+**Batch E dependency: PASS.** E01-E03 and E05 publication/closeout checkpoints are merged and reachable on main. Batch F readiness preflight may proceed.
+
+### Root README and authority review
+
+The root README remains the complete-tree authority. Its current Governance, frozen Specification, Origin Conversation, Phase support, and retired-source routes were reviewed against the accepted E03 read/update ownership matrix. The Governance README route resolves; retired DOB/AI_MUST/FUNC authorities are presented as historical Recycle Bin sources, not current operating instructions. No frozen authority or subordinate README was edited.
+
+The local Markdown scan checked 42 relative links in `README_BRAINBOX.md`: 42 targets exist; 0 missing file targets; 1 fragment was flagged.
+
+1. **F01-ROOT-01 - stale Unresolved Register description:** `README_BRAINBOX.md:14` describes the Register as covering "remaining §§8-18 follow-up". The current Unresolved Register says the former Specification §§8-18 classification/navigation case is closed and that the present intake is a new categorized corrective backlog. Proposed minimal wording: describe the Register as holding "active corrective findings and qualified follow-ups." No text was changed.
+2. **F01-ROOT-02 - stale Migration Map fragment:** `README_BRAINBOX.md:759` links to `MIGRATION_MAP_V003_BRAINBOX.md#52-batch-d-git-closure`. The target file exists. GitHub's current source heading is `## 52. Batch D Cross-Check and Git Closure — V003-M15–M18 — 2026-10-09`. The existing fragment does not describe that heading; a candidate generated fragment is `#52-batch-d-cross-check-and-git-closure-v003-m15m18-2026-10-09`. The rendered GitHub heading anchor was not independently fetched in this environment, so verify the exact anchor during any authorized edit. No link was changed.
+
+### Findings routed to later scope or ticket clarification
+
+3. **F02-ROOT-01 - obsolete §8-18 status annotations:** Root tree/support text at lines 75, 489, 498, and 505 still labels current follow-up as the former §§8-18 case. Those lines belong to root tree/population-state reconciliation; preserve them for F02 unless an approved F01 scope explicitly takes them.
+4. **F01-GATE-01 - active register contradiction:** `V003_UNRESOLVED_BRAINBOX.md:37` still lists GOVERNANCE-01 as a remaining README-01 dependency and says README-01 is "BLOCKED ON REMAINING NAMED SUBFOLDER ROUTING." Elsewhere in that same current Register, GOVERNANCE-01 is retired from active intake, and the Register lists only README-01, README-03, and GOVERNANCE-04 as active. The F01 preflight cannot silently clear the explicit README-01 block or amend the Register. This must be reconciled before treating F01 implementation readiness as unambiguous.
+
+### Recommendation and Git boundary
+
+Recommend F01 implementation only after the Operator resolves F01-GATE-01 (or authorizes a narrowly scoped correction to the README-01 Register dependency/state). The eventual root-only F01 candidate scope is the stale Register description at line 14 and the Migration Map fragment at line 759, subject to rendered-anchor validation. The four root tree/status annotations are recorded for F02. No complete-tree or population-state correction was made.
+
+No README, Unresolved Register, Governance, or frozen V003 authority file was modified. This append updates only the three Phase 03 reporting records. No staging, commit, push, PR, merge, branch switch, source move, or deletion was performed. F01 implementation and Git publication remain pending their separate gates.
+
+**Validation after report append:** pending immediate readback and `git diff --check`.
+**Post-append validation - 2026-10-18:** Readback confirmed the preflight entry. `git diff --check` and `git diff --cached --check` completed without whitespace errors. The working diff contains exactly the three established Phase 03 reporting files, with 74 insertions and no deletions; nothing is staged or untracked. The root README, Unresolved Register, and frozen Specification are unchanged. Git printed only the configured LF-to-CRLF informational notices for the three reporting files.
+**Validation accounting correction - 2026-10-18:** The preceding 74-addition count described the first readback, before validation notes were appended. The subsequent validation checkpoint measured 77 additions and 0 deletions across the same three reporting files. The earlier "pending immediate readback" line records that intermediate point and is superseded by the PASS above.
+
+## V003-BF-F01 - README-01 scoped implementation - 2026-10-18
+
+**Status:** IMPLEMENTATION COMPLETE WITHIN AUTHORIZED SCOPE; SUBMITTED FOR CHATGPT INDEPENDENT VERIFICATION; FINAL OPERATOR ACCEPTANCE PENDING.
+
+The Operator authorized two targeted `README_BRAINBOX.md` corrections and correction of the stale README-01 dependency/status in the Unresolved Register. F01 remains an active issue until independent verification and Operator acceptance; this implementation does not close README-01, implement F02/F03, or authorize Git publication.
+
+### Implemented corrections
+
+1. `README_BRAINBOX.md:14`: changed the Unresolved Register description from "remaining §§8–18 follow-up" to "active corrective findings and qualified follow-ups," matching the Register's current intake scope while preserving the former case's closed status.
+2. `README_BRAINBOX.md:759`: replaced the stale Migration Map fragment `#52-batch-d-git-closure` with `#52-batch-d-cross-check-and-git-closure--v003-m15m18--2026-10-09`. The public GitHub rendered heading's permalink href was observed as exactly that fragment for `## 52. Batch D Cross-Check and Git Closure — V003-M15–M18 — 2026-10-09`. GitHub's current `main` source for the heading returned blob `d77567c399d5f5f2dc907eebdced1d9ccc6e7039`, matching local `git hash-object` for the Migration Map.
+3. `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md` README-01 row: removed the stale GOVERNANCE-01 active dependency because that permanent issue was retired from active intake by Operator disposition; retained the historical FUNC-01/FUNC-02 resolution and DEVOPS-01 qualification. Replaced the obsolete blocked-status text with `AWAITING INDEPENDENT VERIFICATION AND OPERATOR ACCEPTANCE`, explicitly retaining README-01 as active and stating that README-03/F02 follow-up is not closed.
+
+### Validation and boundaries
+
+- Root README local Markdown scan: 42 relative links; 0 broken local targets. Unresolved Register scan: 4 relative links; 0 broken local targets.
+- The changed Migration Map fragment was compared to the permalink href in GitHub's rendered heading and matched exactly. The current GitHub main Migration Map blob matches the local file blob.
+- `git diff --check` and `git diff --cached --check` passed without whitespace errors. Git emitted only configured LF-to-CRLF informational notices for the Phase 03 records.
+- Change scope is exactly the root README, Unresolved Register, and the Phase 03 report, conversation, and ticket register. The frozen Specification and Origin Conversation are unchanged. The four root tree/status annotations reserved for F02 (lines 75, 489, 498, and 505 at the preflight checkpoint) were not edited.
+- GitHub API, local `main`, `origin/main`, and the F01 branch base were verified at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. No files are staged; no commit, push, PR, merge, branch switch, move, or deletion was performed.
+
+**Next gate:** Submit this implementation for independent ChatGPT verification. Preserve README-01 as open until that review and explicit Operator acceptance are complete.
+
+## V003-BF-F01-P01 - Operator acceptance and publication authorization - 2026-10-18
+
+**Independent review accepted:** The Operator accepts ChatGPT's F01 **QUALIFIED PASS**. The qualification remains explicit: ChatGPT's review did not independently retrieve the rendered GitHub HTML anchor; its review found the fragment consistent with the heading and expected anchor construction. Codex separately inspected the rendered GitHub permalink and found it matched the fragment used in the README. The independent-review qualification is not converted to an unconditional PASS.
+
+**Operator decision (from the supplied P01 ticket):** “ChatGPT's V003-BF-F01 independent QUALIFIED PASS is ACCEPTED.”
+
+**Accepted scope:** The reviewed implementation covers the root README description and Migration Map anchor, the README-01 active-register dependency/status correction, local link/path checks, whitespace checks, and the five-file scope. The accepted files are:
+1. `README_BRAINBOX.md`
+2. `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md`
+3. `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md`
+4. `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_CONVO_BRAINBOX.md`
+5. `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md`
+
+This F01 implementation acceptance and P01 publication authorization do not close README-01. README-01 remains active pending its applicable integration, post-merge verification, closure reporting, and acceptance gates.
+
+**Git authorization:** The Operator authorizes staging and committing only the five paths above and pushing the commit to `v003/bf-f01-root-navigation-preflight`. No PR, merge, direct main push, force-push, branch deletion, F02/F03 implementation, or Batch F closure is authorized.
+
+**Pre-publication state:** GitHub `main`, local `main`, `origin/main`, and the F01 branch base were verified at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. No files were staged at this checkpoint. Commit and push are not yet performed.
+## V003-BF-F01-P01 - publication verification - 2026-10-18
+
+**Implementation commit:** `5b5eae00ea16812aa06d88c8b335abc3fbce36be` — `V003-BF-F01: publish accepted root navigation corrections`.
+
+**Push result:** `git push -u origin v003/bf-f01-root-navigation-preflight` succeeded. Git reported creation of the remote branch and configured the local upstream. The GitHub branches API then independently returned remote branch `v003/bf-f01-root-navigation-preflight` at `5b5eae00ea16812aa06d88c8b335abc3fbce36be`, matching the local implementation commit. At the initial post-push check, that commit was the remote branch tip.
+
+**Published scope:** The commit changes exactly the five paths authorized by P01: `README_BRAINBOX.md`, `V003_UNRESOLVED_BRAINBOX.md`, and the Phase 03 report, conversation, and ticket register. The implementation commit reports 5 files changed, 182 insertions, and 3 deletions. No other path was staged or committed.
+
+**Verification:** The staged-diff check passed; the final link scan found 42 root README relative file links and 4 Unresolved Register relative file links, with 0 missing targets. The Unresolved Register retains README-01, README-03, and GOVERNANCE-04 as its three active IDs. README-01 remains open; the accepted qualified F01 result is not final README-01 closure.
+
+**Repository state at initial publication verification:** Local branch and `origin/v003/bf-f01-root-navigation-preflight` matched at the implementation commit. Local `main`, `origin/main`, and GitHub `main` remained at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. The worktree was clean immediately after the implementation push, before this report-only closeout append. No PR was created and no merge, direct main push, force-push, deletion, F02/F03 implementation, or Batch F closure occurred.
+
+**Publication closeout record:** This dated report-only checkpoint is being committed and pushed to the same authorized F01 branch. It records the verified implementation publication above; it does not change README-01's open status or the authorized publication boundary.
