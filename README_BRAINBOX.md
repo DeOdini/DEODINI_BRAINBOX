@@ -533,7 +533,7 @@ V003_VERSION_UPGRADE_BRAINBOX/
 - **Historical decision evidence:** `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`.
 - **Phase 01:** closed/frozen; the archive records its execution and verification.
 - **Phase 02:** closed migration archive; the report, conversation, and ticket records preserve execution and Git-closure evidence.
-- **Phase 03:** The Operator-accepted qualified V003 closeout remains a historical checkpoint; the former §§8–18 case is closed. The active Unresolved Register contains README-03 and GOVERNANCE-04. README-03 is being reconciled under V003-BF-F02 and remains active pending independent verification, Operator acceptance, and separately authorized publication.
+- **Phase 03:** The Operator-accepted qualified V003 closeout remains a historical checkpoint; the former §§8–18 case is closed. The active Unresolved Register contains README-03 and GOVERNANCE-04. V003-BF-F02 implementation was published in PR #85 (merge `259bada3851cdbe46e74341124b9afc378aa1cbc`); README-03 remains active pending independent verification and Operator acceptance.
 - Phase 02 and Phase 03 are process/evidence containers, not target-domain knowledge. Ticket presence does not make a path populated.
 
 ## Current Version History layout
@@ -553,7 +553,7 @@ VERSION_HISTORY_BRAINBOX/
     └── TREE_SNAPSHOT_V003_BRAINBOX.md [present; M21 physical snapshot retained; qualified closure accepted without recovery of 20 Cline objects]
 ```
 
-The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The M21 V003 physical-tree snapshot is present. Phase 03 Batch E V003-F02/M21 qualified closure was accepted by the Operator; the 20 Cline objects were not recovered. The separate Phase 03 Batch F V003-BF-F02 root reconciliation is active and awaits independent verification, Operator acceptance, and separately authorized publication. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
+The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The M21 V003 physical-tree snapshot is present. Phase 03 Batch E V003-F02/M21 qualified closure was accepted by the Operator; the 20 Cline objects were not recovered. The separate Phase 03 Batch F V003-BF-F02 root reconciliation was published in PR #85 (merge `259bada3851cdbe46e74341124b9afc378aa1cbc`) and remains active pending independent verification and Operator acceptance. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
 
 ## Navigation index
 
