@@ -71,7 +71,7 @@ GOVERNANCE-02 is supported by the eight-domain canonical read/update ownership m
 
 **Acceptance basis:** ChatGPT issued an independent QUALIFIED PASS for F01, and the Operator accepted that result. The qualification remains: ChatGPT did not independently retrieve the rendered GitHub HTML anchor; Codex separately confirmed that the rendered permalink matched the README fragment.
 
-**Implementation publication:** F01-P01 commit 5b5eae00ea16812aa06d88c8b335abc3fbce36be was included in PR #82, merged to main at 32d26acea969d5074502fd8ad7e4edd0f599aeda. PR #82 contained the five authorized files only. A separate narrow closeout PR carries this active-register removal and its Phase 03 evidence; its publication details are appended in the Phase 03 closeout update.
+**Implementation publication:** F01-P01 commit 5b5eae00ea16812aa06d88c8b335abc3fbce36be was included in PR #82, merged to main at 32d26acea969d5074502fd8ad7e4edd0f599aeda. PR #82 contained the five authorized files only. The active-register removal and Phase 03 evidence are carried in PR #83, https://github.com/DeOdini/DEODINI_BRAINBOX/pull/83, from v003/bf-f01-readme01-closeout. The PR was created with the exact four authorized files and passed its scope and mergeability review; final merge evidence is recorded in the Phase 03 closeout report.
 
 **Post-merge state:** The root canonical-source description is accurate for the active register. The Batch D Migration Map file exists, and its Section 52 heading matches the fragment previously verified against GitHub rendering. No F02 tree/status corrections were made.
 
