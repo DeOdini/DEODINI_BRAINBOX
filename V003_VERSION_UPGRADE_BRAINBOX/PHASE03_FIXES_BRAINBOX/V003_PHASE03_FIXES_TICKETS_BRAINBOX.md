@@ -853,3 +853,23 @@ Implementation commit `d8159e0e0ef35cc598838d8626d79497d1bea19d` (`V003: align D
 - **Protected authorities:** Specification and Origin Conversation working-tree hashes match their HEAD blobs (31a83b2d32d46331af703aafbe097a320c10b996 and 07ab10a2c40404baefdd2291c9dcd22875bd6c8f).
 - **Historical and issue boundaries:** earlier D01-D03 records remain intact; the Unresolved Register was not changed and no issue was closed.
 - **Current gate:** commit, push, PR inspection, conditional merge, report-only post-merge publication, and separate ChatGPT closeout verification remain pending.
+
+## V003-BD-D04 - post-merge closeout checkpoint - 2026-10-18
+
+- **PR #75:** merged into main; URL https://github.com/DeOdini/DEODINI_BRAINBOX/pull/75.
+- **Merge SHA:** 860dd1ae5707f62a12023f36c697cbbd9b1e0b12.
+- **Commits:** D03 implementation 9d3962dfa6a49f845ae9ba9d4ab049511182c841; D03 publication checkpoint 18293df397ae187175bd009bf74f55982f3ec557; D04 acceptance/pre-merge report 521bf62f73c74ab1a882e11f843bcf4e676e720f.
+- **Scope:** PR contains seven approved unique paths; D04 itself changed the five approved reporting/status paths. No frozen authority or unrelated file changed. The Batch D topic branch is retained.
+- **Post-merge verification:** All three Batch D commits are ancestors of main. Local main and origin/main match at 860dd1ae5707f62a12023f36c697cbbd9b1e0b12 after fast-forward-only pull; working tree clean. Four stashes and unrelated branches remain untouched.
+- **Markdown and whitespace:** Post-merge scan of the five D04 paths found 49 local relative destinations and 0 missing file destinations. Heading fragments were not fully revalidated. Git whitespace check passed.
+- **Active issue boundary:** All eight Unresolved Register IDs remain. No issue was closed or removed.
+- **D04-F01:** V003_UNRESOLVED_BRAINBOX.md line 35 still says V003-STATUS-02 awaits D03 independent verification and Operator acceptance, although D04 records those gates as satisfied. No edit was made because D04 did not authorize changing/removing this row. Operator disposition is needed.
+- **Formal Batch D closure:** Git integration and post-merge report publication are complete. Separate independent ChatGPT closeout verification remains pending; D04-F01 also awaits Operator disposition. Batch D is not labeled closed by this execution record.
+
+### D04-E report-only validation - 2026-10-18
+
+- **Branch:** v003/batch-d-final-closeout-report, based on main 860dd1ae5707f62a12023f36c697cbbd9b1e0b12.
+- **Changed paths:** three authorized Phase 03 reporting records only; no Unresolved Register edit.
+- **Link scan:** nine local relative destinations, zero missing paths; heading fragments not fully checked.
+- **Whitespace:** git diff --check passed.
+- **Next:** commit/push, open and inspect report-only PR, merge if its verified gates pass.
