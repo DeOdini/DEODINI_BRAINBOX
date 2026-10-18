@@ -2974,3 +2974,208 @@ The D04 Git integration is complete: the five-file D04 commit was pushed, PR #75
 ## Batch D remaining issue retirement - 2026-10-18
 
 Operator instructed ChatGPT to remove the precise resolved Batch D cases from active unresolved intake. Following the previously removed V003-STATUS-02, GOVERNANCE-01 (D01: accepted QUALIFIED PASS / NO GOVERNANCE POLICY CHANGE REQUIRED) and V003-STATUS-01 (D02: implemented qualified-status clarification) were removed on Operator disposition. Five unrelated Batch E/F cases remain with permanent IDs unchanged. D01/D02 separate verifier artifacts were not corroborated in the permanent records; this limitation is preserved, and Operator-directed backlog disposition is not misreported as independently established technical PASS. D04 PRs #75/#76 were previously merged, but these additional local edits are not committed or published. No frozen/historical authority changed.
+
+## V003-BE-E01 — GOVERNANCE-03 documentation integrity safeguards assessment — 2026-10-18
+
+**Assessment status:** DISCOVERY COMPLETE — QUALIFIED; GOVERNANCE-03 REMAINS OPEN. The Operator authorized the safeguards assessment only. This entry does not authorize a Governance-policy edit, staging, commit, push, pull request, merge, Batch E closure, or progression to E02/E03.
+
+### Baseline and scope
+
+- **Ticket source:** Operator attachment `C:\Users\USER\.codex\attachments\23f97c9e-fe43-4556-ba89-d51918ca05e7\Pasted text.txt`, SHA-256 `13e2978c7d0becc32d8a1a8581cfec8ac614b242aba075e6ef372e853e0a9e13`.
+- **Repository:** `DeOdini/DEODINI_BRAINBOX`; `origin` is `https://github.com/DeOdini/DEODINI_BRAINBOX.git`.
+- **Batch D prerequisite:** GitHub API read verified PR #77 as closed/merged to `main` at `9e7f632e768f109eb8526a4099cb7343bd1a2f1b`; the live GitHub `main` ref, local `main`, and `origin/main` resolve to that same SHA. The merged PR contains the permanent report corrections and active-register disposition.
+- **Active register:** The five active permanent issue IDs are README-01, README-03, GOVERNANCE-02, GOVERNANCE-03, and GOVERNANCE-04. No register edit was made.
+- **Branch:** `v003/be-e01-governance-03-integrity-safeguards`, created locally from the clean Batch E baseline `9e7f632e768f109eb8526a4099cb7343bd1a2f1b`. The branch has no upstream or ticket commit. Pre-assessment worktree and whitespace checks were clean.
+- **Reviewed authority:** [Documentation Governance](../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md), [Evidence Governance](../../GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md), [Reference Governance](../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md), [Versioning Governance](../../GOVERNANCE_BRAINBOX/VERSIONING_GOV_BRAINBOX.md), [Security Governance](../../GOVERNANCE_BRAINBOX/SECURITY_GOV_BRAINBOX.md), [Ticketing Governance](../../GOVERNANCE_BRAINBOX/TICKETING_GOV_BRAINBOX.md), the frozen [V003 Specification](../V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md) §§18, 25–27, relevant [Origin Conversation](../V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md) guardrail/P10/P14 material, the populated [guardrail preflight prompt](../../AI_BRAINBOX/SKILLS_AI_BRAINBOX/PROMPTS_SKILLS_BRAINBOX/GUARDRAIL_PROMPTS_BRAINBOX/GUARDRAIL_PREFLIGHT_PROMPT_BRAINBOX.md), the Ticket 02 section of this report, [Retirement Ledger](../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md), and [Ticket 02 retirement manifest](../../RECYCLE_BIN_BRAINBOX/LEGACY_AUTHORITY_RETIREMENT_MANIFEST_BRAINBOX.json).
+
+### Findings and evidence
+
+| ID | Classification | Finding |
+|---|---|---|
+| E01-F01 | CONFIRMED | Tool-output-style reading summaries and device-execution markers occur in five legacy Markdown files, not only the three files listed by the existing forensic record. The exact current archive locations and marker lines are listed below. |
+| E01-F02 | CONFIRMED | The Ticket 02 report, Retirement Ledger, and manifest's `affected_archived_paths` list identify only DOB, AI_MUST, and FQ. They omit the archived ChatGPT capability record and FUNC workflow, although the Git evidence shows the same marker families in both. The historical forensic inventory is incomplete; those historical records were not edited. |
+| E01-F03 | CONFIRMED, bounded | A repository search for the exact line forms `[Reading N lines from start ...]` and `[executed on device: ...]` found no matches in current Markdown outside `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/`. This does not establish that no other kind of contamination exists. |
+| E01-F04 | QUALIFIED | Current raw worktree bytes for two omitted files differ from their Ticket 02 raw baseline by line endings only. Their normalized UTF-8 SHA-256 and Git blob IDs still match the source baseline; details follow. The three files named in the original manifest still match its recorded raw SHA-256/size and blob IDs. |
+| E01-F05 | REVIEW | Existing controls partly mitigate instruction promotion and evidence corruption, but there is no explicit canonical Governance rule classifying tool-generated output as untrusted evidence or requiring its provenance/claim validation before insertion into a governing document. A narrow policy clarification is recommended; none was implemented. |
+| E01-F06 | REVIEW | Git proves marker presence by commit and absence in its parent; it does not establish who generated or inserted the lines, whether the named device executed a particular action, or why the markers were copied. Attribution and cause remain unknown. |
+
+The earliest observed marker-bearing commit is `2291f0ec3e676d242610d709fbd4d0c4b03a92ce` (2026-09-23T14:23:38-05:00), authored as `pedestal-archive`, with parent `adf0ddf51c16c5775cf7c6310bcc11dbcef290f0`. A Git search of that parent found none of the marker lines. The commit diff shows them in these then-current legacy sources; Ticket 02 later moved those records to the archive unchanged:
+
+| Current archived path | Marker lines in current file | Ticket 02 baseline comparison |
+|---|---|---|
+| `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md` | 4, 6, 8, 203, 205, 207 | Raw SHA-256, size, and baseline Git blob match. |
+| `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md` | 4, 79 | Raw SHA-256, size, and baseline Git blob match. |
+| `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md` | 4, 6, 104, 106 | Raw SHA-256, size, and baseline Git blob match. |
+| `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/CHATGPT_FUNC_BRAINBOX.md` | 1, 201 | Current raw bytes: 19,160; manifest source baseline: 18,960. Current raw SHA-256 differs, but CRLF-to-LF normalization reproduces baseline raw SHA-256 `b51ec60e262cd96618074dbd86f893a02c35143cc0fea9e385c85235eaabd0d0`; current Git blob equals baseline `cd3a9db62d101309e090029b53b91da7c201711b`. |
+| `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md` | 1, 3, 228, 230 | Current raw bytes: 12,086; manifest source baseline: 11,857. CRLF-to-LF normalization reproduces baseline raw SHA-256 `7a73a3b43226ddd5eb9c6119274b95f2bd623d5fdb30a30573d65447ae5602bd`; current Git blob equals baseline `7a6e609161c22903f8ba66f10fa626eb2b3c4dab`. |
+
+The two raw-byte representation changes correspond to 200 and 229 CRLF sequences respectively, with no bare LF/CR in either file. Local `core.autocrlf=true`; no per-file `text`/`eol` attribute overrides were found. The normalized text hash and Git blob comparisons show no non-line-ending text difference in these two files. This is a present-worktree qualification, not evidence that the earlier Ticket 02 raw comparison was false at its recorded checkpoint. No archive file was rewritten.
+
+The markers themselves are transcript-like metadata (`Reading N lines from start` and `executed on device`), not established Brainbox rules. No evidence in the inspected markers establishes instruction execution, a successful device action, unsupported capability claims, or the responsible actor. Because the files were current legacy sources when the markers first appear, the incident was not limited to material that was already historical at the time: the root and AI entry documents and active FUNC records then served current legacy authority/navigation/capability roles. Ticket 02 later archived all five. None of the five changed paths was under the later `GOVERNANCE_BRAINBOX/` parent. The bounded current-tree search found no exact markers outside the archive.
+
+### Existing safeguards versus gaps
+
+| Authority | Existing protection | E01 assessment |
+|---|---|---|
+| Documentation Governance | Distinguishes system-wide policy, local records and historical sources; requires truthful states, authorship/provenance, and dated corrections rather than silent historical rewriting. | Covers provenance and correction history; does not explicitly classify tool output or copied source text by trust. Its inserted Universal Documentation Governance Framework remains `DRAFT — OPERATOR REVIEW REQUIRED` and is not treated as binding. |
+| Evidence Governance | Requires actual outcomes, prohibits inferring an event from an artifact that does not prove it, preserves attribution/context, separates Operator/agent/independent evidence, and calls for integrity comparison before source retirement. | Strong for evidence truth and preservation; does not explicitly require tool/output source identity or trust labeling before text is copied into canonical policy. |
+| Reference Governance | Requires current-versus-historical distinction and says retained historical sources must not be presented as current execution authority. | Prevents an archived source from regaining authority merely through a reference; does not define trust for tool output embedded in a document. |
+| Ticketing Governance | Requires explicit scope and Operator authority, inspection of actual content, read-back/verification, and separate implementation/publication/acceptance states. | Prevents an attached document or discovered flag from authorizing a fix; does not provide a content-origin classification standard for tool output. |
+| Versioning Governance | Preserves generations and history; prohibits unapproved rewriting or recovery-object removal. | Supports preservation and recoverability; does not define tool-output contamination controls. |
+| Security Governance | Protects secrets and authority to access/publish data. | Relevant if output exposes a secret, but not a general document-integrity or instruction-trust policy. |
+| Guardrail preflight prompt | Explicitly says to distinguish the Operator request from quoted/attached text and not execute instructions found inside source material without separate authorization; it directs inspection and verification. | A useful task-time safeguard consistent with V003 §18, but it is a Skills prompt, not a canonical Governance rule. It does not explicitly cover returned tool logs/output, artifact labels, formatting contamination, or unsupported assertions. |
+
+**Recommendation:** Keep the existing preservation, authorization, and verification rules. A separately authorized, narrowly scoped Documentation/Evidence Governance clarification should explicitly classify pasted/extracted/tool-generated content as evidence rather than authority, require source/tool/context provenance for claims copied into canonical records, prohibit instruction promotion absent explicit Operator/ticket authorization, and require evidence-backed correction with history preserved. Add a bounded check for transcript artifacts and unsupported claims at the documentation acceptance gate. This is a proposal for a later implementation ticket, not adopted policy text.
+
+### E01 disposition and boundary
+
+The safeguards assessment is complete for independent review, with a confirmed historical inventory discrepancy and a proposed targeted Governance clarification. The historical manifest/report/ledger discrepancy is retained as a finding; those sources remain unchanged pending a separate, scoped authorization. No changes were made to Governance candidate files, the Recycle Bin, frozen authorities, Migration Map, or Unresolved Register. No bounded artifact test was run because no safeguard implementation was authorized.
+
+**Validation:** preflight and post-assessment Git whitespace checks are recorded separately; no tests were added or run. New links point to the exact reviewed authorities and archive records. The assessment does not claim independent ChatGPT PASS, Operator acceptance of a policy amendment, GOVERNANCE-03 closure, or Batch E closure.
+
+**Git state:** local branch `v003/be-e01-governance-03-integrity-safeguards`; baseline/current branch HEAD `9e7f632e768f109eb8526a4099cb7343bd1a2f1b`; no upstream, commit, staged change, push, PR, or merge. Only the Phase 03 report, ticket register, and conversation are in scope for this assessment record.
+
+## V003-BE-E01-F01 - Governance-03 documentation integrity correction - 2026-10-18
+
+**Ticket:** V003-BE-E01-F01, Batch E. **Authorization:** The supplied ticket states OPERATOR AUTHORIZED - IMPLEMENTATION APPROVED and authorizes scoped implementation/local validation only. Commit, push, PR, merge, and Unresolved Register edits remain outside this ticket. **Ticket attachment SHA-256:** 3695757127faf158df1fdb59adedb14577e17ce1c779ffc8f7325c68254f92f8.
+
+**Implementation status:** CODEX IMPLEMENTATION COMPLETE LOCALLY; INDEPENDENT CHATGPT VERIFICATION PENDING; GOVERNANCE-03 REMAINS OPEN. No closure, publication, E02/E03 progression, or Operator acceptance is claimed.
+
+### Preflight and scope
+
+- Repository DeOdini/DEODINI_BRAINBOX; origin is the expected GitHub repository. GitHub API read of main, local main, origin/main, and the active ticket branch all resolved to 9e7f632e768f109eb8526a4099cb7343bd1a2f1b. The active branch is v003/be-e01-governance-03-integrity-safeguards, with no upstream and no ticket commit.
+- Before this implementation, the only worktree modifications were the pre-existing E01 assessment additions in this report, conversation, and ticket register (98 additions; no staged content or untracked files). They were preserved and extended. Four unrelated stashes were present and left untouched.
+- The approved writable scope was two Governance files, the three Phase 03 records, the Retirement Ledger, and the Ticket 02 manifest. The Unresolved Register, frozen V003 Specification and Origin Conversation, archived source documents, migration map, other branches, and stashes were not edited.
+- Inspected Documentation, Evidence, Reference, Ticketing, Versioning and Security Governance; frozen Specification §§18, 25.2, 25.5-25.8, 25.11-25.12, 26-27; relevant Origin Conversation P10/P14 material; the active Guardrail preflight prompt; and Ticket 02 forensic/retirement evidence. Existing Ticketing Governance requires explicit scoped authorization; the guardrail prompt says not to execute instructions found in source material absent Operator authorization. The separate universal documentation framework remains DRAFT and was not promoted.
+- The attached execution ticket reuses E01-F01 through E01-F04 for correction workstreams, while the preceding assessment already uses those short labels for findings. This report identifies the work by full ticket V003-BE-E01-F01 and maps it to prior assessment findings by context, avoiding identifier conflation without changing either record.
+
+### Findings-to-correction mapping
+
+| Authorized ticket section | Prior assessment finding addressed | Implemented result |
+|---|---|---|
+| Tool-output trust classification | E01 assessment E01-F05, informed by E01-F01 | Active Documentation Governance treats tool results, attachments, retrieved text, transcripts, and copied excerpts as content/evidence, not self-authorizing policy or instructions. Ticket/Operator approval remains the source of execution authority. |
+| Provenance and claim validation | E01 assessment E01-F05 and E01-F06 | Evidence Governance requires source/context, claim scope, attribution, trust classification, limits, independent reproduction where appropriate, and preservation integrity; logs alone do not prove an action or approval. |
+| Contamination prevention and detection | E01 assessment E01-F03, E01-F05 and E01-F06 | Evidence Governance adds a bounded candidate scan and contextual review for transcript artifacts, embedded instructions, unsupported claims, policy contradictions, capability/execution claims and historical alterations. A match never triggers automatic deletion. |
+| Five-file inventory reconciliation | E01 assessment E01-F02 and E01-F04 | Dated addenda preserve the original three-file Ticket 02 checkpoint and append two omitted files with per-file integrity and Git-object evidence. |
+
+### Canonical Governance changes
+
+- GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md: added active section Tool-output and copied-content authority before Sources and outside the separately marked draft framework. It establishes non-authority of embedded instructions, preserves the Operator/ticket authorization boundary, requires source/context review before adoption, and cross-references Evidence and Ticketing Governance.
+- GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md: added active sections for tool-output provenance/claim validation and a bounded documentation-integrity review. It requires clear reported-versus-reproduced distinctions, attribution/context, historical integrity comparison, review classification, and approval before corrective edits. Security rules remain cross-referenced; no secrets were copied.
+
+### Five-file historical inventory and integrity
+
+The original Ticket 02 three-file statement is preserved as a dated observation in the existing report and Retirement Ledger. The original contamination_provenance.affected_archived_paths property in the manifest remains the same three paths. The additive contamination_provenance.supplemental_discoveries array records the later five-file reconciliation and per-file comparisons without changing schema, source_count, the 13 archived_files, or earlier values.
+
+Commit 2291f0ec3e676d242610d709fbd4d0c4b03a92ce (2026-09-23 14:23:38 -05:00) contains marker text at then-current original source paths; parent adf0ddf51c16c5775cf7c6310bcc11dbcef290f0 has no matching marker lines in those five paths. These objects establish presence/absence of the text only. They do not establish who inserted it, why, or whether any named action actually happened. Current archive files were not edited.
+
+For each row, baseline Git blob is from the original path at Ticket 02 baseline 506ad69e705ea0964eebd62ea96f559633df8331; current blob is from the archived path at current HEAD 9e7f632e768f109eb8526a4099cb7343bd1a2f1b. Baseline and current Git blob IDs/bytes match for all five.
+
+| Current archived path | Current raw bytes; SHA-256 | Ticket 02 raw bytes; SHA-256 | CRLF; lines | LF-normalized bytes; SHA-256 | Baseline/current Git blob (SHA-1; bytes) | Current marker lines | Raw comparison |
+|---|---|---|---:|---|---|---|---|
+| RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md | 10455; 63878fd12c3237f5f67d4a6d05de7b58bfd5e5222c6a7e6b9eaa8227424dd766 | 10455; 63878fd12c3237f5f67d4a6d05de7b58bfd5e5222c6a7e6b9eaa8227424dd766 | 206; 207 | 10249; de94d82f2cde03faa8d289246c27f46f5c128322dafb166634bacd57dea376ed | 072645b4486645cbb153fb0fb5d8ae7d705c4abf (10249 bytes; archive blob identical) | [4, 6, 8, 203, 205, 207] | MATCH |
+| RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md | 3360; 9ad2d4f5f6873321e91f94e84071b2d2ebd87497f729ee304017be4c8c63384b | 3360; 9ad2d4f5f6873321e91f94e84071b2d2ebd87497f729ee304017be4c8c63384b | 78; 79 | 3282; 03d8411b3f2c342106df7edf5be89f0331d7af634e24a01a9f0f7ed49491078f | e382886fdbaab695d3109115128324b9be99d24d (3282 bytes; archive blob identical) | [4, 79] | MATCH |
+| RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FQ_MUST_README.md | 4972; 6cd454a665f571cb9a7b7b2c31cc255daf2a07f7ffb1be1beefe90b30952d347 | 4972; 6cd454a665f571cb9a7b7b2c31cc255daf2a07f7ffb1be1beefe90b30952d347 | 105; 106 | 4867; 85d34709f1e8ab49f8eae4f5dbf82e1e65b5251add0c8b915b959aa5eb4323b6 | d496245c56e6bd8b8e766bbc7de406c3f1471dbc (4867 bytes; archive blob identical) | [4, 6, 104, 106] | MATCH |
+| RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/CHATGPT_FUNC_BRAINBOX.md | 19160; 8d3493babc52044209283f7589922a29daa24179c6e68f713b25952150bd5cde | 18960; b51ec60e262cd96618074dbd86f893a02c35143cc0fea9e385c85235eaabd0d0 | 200; 201 | 18960; b51ec60e262cd96618074dbd86f893a02c35143cc0fea9e385c85235eaabd0d0 | cd3a9db62d101309e090029b53b91da7c201711b (18960 bytes; archive blob identical) | [1, 201] | DIFFERS; LF-normalized SHA matches Ticket 02 |
+| RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/FUNC_WORKFLOW_BRAINBOX.md | 12086; 050ecab6849f3a264130593e3be9af64eae31c4009bea5af4714cd15e6a6e046 | 11857; 7a73a3b43226ddd5eb9c6119274b95f2bd623d5fdb30a30573d65447ae5602bd | 229; 230 | 11857; 7a73a3b43226ddd5eb9c6119274b95f2bd623d5fdb30a30573d65447ae5602bd | 7a6e609161c22903f8ba66f10fa626eb2b3c4dab (11857 bytes; archive blob identical) | [1, 3, 228, 230] | DIFFERS; LF-normalized SHA matches Ticket 02 |
+
+For the two omitted files, current raw worktree representation adds only CRLF sequences relative to the Ticket 02 LF baseline: 200 in CHATGPT_FUNC_BRAINBOX.md and 229 in FUNC_WORKFLOW_BRAINBOX.md. Their LF-normalized byte counts and SHA-256 match the Ticket 02 raw baseline; neither has bare LF or bare CR. For the original three, current raw worktree byte counts/SHA-256 match the preserved Ticket 02 manifest values. All five original-path baseline blobs equal their current archive blobs. core.autocrlf=true; no per-file text/eol overrides were found. Actor and cause remain unknown.
+
+### Bounded safeguard test
+
+A read-only scan used the anchored marker forms for [Reading N lines from start ...] and [executed on device: ...] over the archived retirement tree. It returned 18 candidate lines in the five listed files, at the line numbers shown above. The same anchored scan over Markdown outside the retired archive returned zero candidates. A review of representative reading-summary and device-marker lines classified them as historical tool-style metadata/assertions requiring contextual review, not governing instructions and not proof of execution; no action was executed and no marker was deleted.
+
+The scan was run from the repository root in PowerShell with these reproducible commands:
+
+```powershell
+$pattern = '^\[(?:Reading\s+\d+\s+lines\s+from\s+start\b|executed\s+on\s+device\s*:)'
+rg -n --pcre2 --glob '*.md' $pattern 'RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX'
+rg -n --pcre2 --glob '*.md' --glob '!RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/**' $pattern .
+```
+
+The first command returned 18 matching lines in the five archived files. The second returned no matches (ripgrep exit code 1, its expected no-match result). The pattern is deliberately anchored to bracketed line starts and tests only these two marker forms; it is a bounded review aid, not a general detector for every possible transcript, instruction, or unsupported claim.
+
+| Test ID | Evidence path and line | Review result | Classification and disposition |
+|---|---|---|---|
+| E01-SG-01 | RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md:4 | Reading-summary form matched the bounded scan. | Historical output-style metadata; not an executable instruction and not proof of a successful read. Preserved; no edit authorized or made. |
+| E01-SG-02 | RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md:203 | Device-execution form matched the bounded scan. | Historical action-style assertion; the text alone does not prove the named action occurred. Preserved; no edit authorized or made. |
+| E01-SG-03 | RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/FOOTHIVE_PROJ_BRAINBOX/FAILED_FH_BRAINBOX.md:20 | The attributed quotation was reviewed in context and did not match the narrow marker scan. | Historical quoted Operator report, attributed in the source. Preserved as forensic narrative rather than deleted as output-like text. |
+
+The attributed historical quotation STILL PERSISIT remains in the archived FootHive FAILED record; it is not a marker-pattern hit and remains attributed narrative evidence. The procedure treats a pattern as a review candidate, preserves contextual quotations, and requires a traceable disposition rather than automatic correction. This bounded test does not prove detection of every possible artifact or instruction form.
+
+### Validation and disposition
+
+- Manifest JSON parsed successfully; schema identifier remains deodini-retirement-manifest-v1; 13 archived-file records and all previous three affected paths/values remain unchanged. The new supplemental record contains two additional paths and the complete five-file integrity table. No repository code/schema consumer for the old contamination property was found by a scoped search; no formal JSON Schema file was present in the searched project tree.
+- New relative Governance, report, and ledger links were checked against the filesystem; all resolve. The newly appended implementation records were read back.
+- git diff --check and git diff --cached --check passed. The latter had no staged changes to inspect. Exact modified-file scope is the seven files listed in the ticket; no other path is included.
+- The initial three Phase 03 assessment edits remain intact; historical Ticket 02 wording and all five archived sources remain unchanged. V003_UNRESOLVED_BRAINBOX.md remains unchanged. No commit, stage, push, PR, merge, branch deletion or deployment occurred.
+
+**Remaining gate:** ChatGPT must independently verify policy placement, JSON compatibility, per-file evidence, and the bounded test. GOVERNANCE-03 may be removed from active unresolved intake only after satisfactory independent verification, Operator acceptance, and separately authorized publication/closure conditions. E02/E03 remain unstarted.
+
+
+## V003-BE-E04 - Batch E remaining dependency resolution - 2026-10-18
+
+**Status:** DISCOVERY AND CORRECTION PLANNING RECORDED; E01 PUBLICATION READINESS NOT ESTABLISHED; E02 PREPARED FOR INDEPENDENT CHATGPT VERIFICATION; E03 PROPOSAL ONLY; E04 NOT CLOSED; BATCH F NOT READY.
+
+**Authority:** Operator supplied V003-BE-E04 at C:\Users\USER\.codex\attachments\f2b501f6-e288-4a16-901a-26510fd9f9fa\Pasted text.txt (SHA-256 458494F20A858A8337557D96D9AD0CC7FF1C2622937F8E2458E5B943942720FF) and replied "I APPROVE". The Operator separately authorized this report-only append with the exact reply "Authorize report-only append." No implementation or Git publication authority was added.
+
+### E01 - publication-readiness preflight
+
+| Check | Observed state |
+|---|---|
+| Repository | C:\Users\USER\DEODINI_BRAINBOX; remote repository is DeOdini/DEODINI_BRAINBOX. |
+| Active branch | v003/be-e01-governance-03-integrity-safeguards; no upstream configured. |
+| HEAD | 9e7f632e768f109eb8526a4099cb7343bd1a2f1b. |
+| Local main / origin/main | Both resolve to 9e7f632e768f109eb8526a4099cb7343bd1a2f1b. The prior read-only E04 remote check observed live GitHub main at the same commit. |
+| Remote ticket branch / PR | The read-only E04 remote checks found no published branch for this local ticket branch and no corresponding PR. |
+| Worktree before this append | Exactly seven modified paths, all part of the E01 implementation; no staged or untracked paths. Four existing stashes were left untouched. |
+| E01 independent verification evidence | The current Phase 03 report explicitly says "INDEPENDENT CHATGPT VERIFICATION PENDING" at the E01-F01 implementation checkpoint and says GOVERNANCE-03 remains open. No independent QUALIFIED PASS record was found to substantiate E04's assertion that such a pass had already been issued. |
+| E01 publication readiness | NOT ESTABLISHED. The explicit independent-verification and Operator-acceptance gate remains unmet in the records. This is a documentation-state discrepancy, not a finding that the implementation itself failed. |
+
+The seven current E01 paths are GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md; GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md; RECYCLE_BIN_BRAINBOX/LEGACY_AUTHORITY_RETIREMENT_MANIFEST_BRAINBOX.json; RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md; and V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md, V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_CONVO_BRAINBOX.md, and V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md. No other path was present in the pre-append status. This E04 report append changes only the three existing Phase 03 records among those seven paths.
+
+**Publication proposal (not executed):** After ChatGPT independently verifies E01 and the Operator explicitly accepts that verification and authorizes publication, stage only the seven E01 paths; review the staged diff; commit with "V003: implement Governance-03 documentation integrity safeguards"; push v003/be-e01-governance-03-integrity-safeguards; open a PR to main; verify branch scope, checks, protections, and mergeability; merge only with the separately required authority; then verify the resulting main SHA and clean synchronized worktree. None of these Git operations occurred under E04.
+
+### E02 - source-mapping discovery
+
+The inspected current READMEs support the following bounded ownership map. "Update destination" identifies a record type, not standing permission to change it. Every change still requires its own ticket and authority.
+
+| Domain | Canonical read source | Ticket-scoped update destination | Evidence and historical source | Assessment |
+|---|---|---|---|---|
+| FUNC capabilities | AI_BRAINBOX/FUNC_AI_BRAINBOX/README_FUNC_AI_BRAINBOX.md, then CORE registry README and agent CORE record; use EXE registry README/category record for executable evidence. | Individual CORE record for stable inventory/limitations, or relevant EXE record for execution evidence, only under an authorized ticket. | M05-M07 and current FUNC/Governance navigation. Former FQ_MUST_README.md, FUNC_REQ_BRAINBOX.md, FUNC_WORKFLOW_BRAINBOX.md, and flat agent FUNC sources are historical in RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/. | Confirmed. C02 found no need for a separate local replacement procedure; this is not a live integration certification. |
+| DEVOPS Sandbox | AI_BRAINBOX/DEVOPS_AI_BRAINBOX/README_DEVOPS_AI_BRAINBOX.md, then SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md and the relevant Fullstack workflow or POC record. | Relevant Sandbox workflow for procedure candidates, or POC/case-study record for trial results, under a ticket. | M09-M15, Sandbox README, and Governance Evidence/Promotion. Former project RAW sources are archived in RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/PROJ_WORKFLOW_AI_BRAINBOX/. | Confirmed. Sandbox results do not establish Production success. |
+| DEVOPS Production | DEVOPS parent README, then AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md and the exact Production workflow, environment, or POC record. | Matching Production procedure or evidence record, only for actual authorized Production activity. | M14/M16 and Governance Evidence, Security, and Promotion. Production folders record empty/stub states where no evidence exists. | Confirmed. No deployment procedure or current live-health claim was found. |
+| Skills | AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md, then the applicable current Skills child. | The applicable canonical Skills record, under a scoped ticket. | M08 and current Skills README. Former SKILLS_AVAIL_AI_BRAINBOX/SKILLS_MUST_README.md is archived under RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/SKILLS_AVAIL_AI_BRAINBOX/. | Confirmed. Current V003 Skills is the sole active Skills master; empty/planned areas remain so. |
+| Portfolio | PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md, then PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md. | Relevant portfolio summary, handoff, or case-study reference for presentation claims, under a scoped ticket. | M16 and current Portfolio navigation. Sandbox test evidence and Production summaries retain separate owners. | Confirmed. Portfolio presentation does not replace test evidence or prove paid-client work. |
+| FootHive split | Website implementation is referenced by external DeOdini/FOOTHIVE. Brainbox Sandbox README: AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md. Production README: AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md. Portfolio README is listed above. | Website code changes belong in the external project repository under its authority. Trial evidence, actual Production release records, and presentation updates go only to their respective Brainbox owners under separate scope. | M15/M16, DEVOPS parent cross-domain route table, FootHive local READMEs, and F12 disposition. Historical project sources are archived. | Confirmed. The external repository reference does not prove current checkout or deployment health. |
+| Milestones | MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md and BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md. | Current planned Router/Agentic records only when separately ticketed and authorized. | M17/M18 and Ticket 03. V002 MILESTONES_MUST_README.md and MILESTONE_CHECKPOINT_BRAINBOX.md are archived under RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/. | Confirmed. Current planned intent is distinct from archived V002 milestones. |
+| Archives and version history | RECYCLE_BIN_BRAINBOX/README_RECYCLE_BIN_BRAINBOX.md, RETIREMENT_LEDGER_BRAINBOX.md, applicable manifest; VERSION_HISTORY_BRAINBOX/README_VERSION_HISTORY_BRAINBOX.md and VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md. Phase 01-03 records are process/audit evidence. | Update retirement ledger/manifest only under a retirement ticket; Migration Map under its ticket; Phase 03 records under their tickets. Archived source bodies remain read-only absent explicit authority. | M20/M21, Corrective Tickets 01-03, and the named support records. | Confirmed with ticket-specific write limits. Archived sources are not current procedures. |
+
+**E02 uncertainties and impact:** No additional missing physical destination was established in inspected domains. Local READMEs provide detailed domain routing, including the DEVOPS FootHive route table. GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md contains current-versus-historical reference rules and selected legacy dispositions, but not a compact system-wide read-source/update-destination matrix for all E02 domains. That is the bounded E03 proposal. E02 is prepared for independent ChatGPT verification; Codex does not self-certify that gate. No new Operator architecture choice is identified. A separate ticket remains required for every write.
+
+### E03 - bounded implementation proposal (not implemented)
+
+Subject to independent ChatGPT verification of E02 and separate Operator authorization:
+
+1. Add one concise cross-domain matrix to GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md with domain, canonical read/navigation source, ticket-scoped update destination, evidence/authority source, historical source/disposition, and limitations.
+2. Reuse the E02 paths and link to existing local DEVOPS and FootHive routing tables instead of copying their detailed content.
+3. Add only a short navigation pointer in GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md. State that a destination mapping does not itself authorize a write.
+4. Preserve current active/archived paths and planned statuses. Do not change frozen V003 authorities, archived source bodies, or domain records.
+5. Validate new local links and confirm only the two authorized Governance files change.
+
+This is a proposal only. No Governance file was changed under E04. E03 implementation requires independent E02 PASS and exact Operator approval.
+
+### E04 disposition and remaining gates
+
+- E01: implementation remains local and unchanged; independent PASS is not evidenced in the current record, so publication readiness is not established.
+- E02: source map prepared for independent ChatGPT verification; no domain content changed.
+- E03: bounded proposal only; implementation not authorized or performed.
+- E04: not complete because required independent-verification and E01 readiness gates are unmet.
+- Batch E: not closed. Batch F is not dependency-ready while E01 publication/verification, E02 independent verification, and E03 authorization/implementation remain open.
+- This append is reporting only. No stage, commit, push, PR, merge, branch switch, source migration, archive edit, or frozen-authority edit occurred.
+
+**Validation after append:** PASS. All three appended sections were read back; git diff --check and git diff --cached --check returned clean; only the original seven E01 paths remain modified; no staged or untracked paths exist. This report, conversation, and ticket register are the three E04 reporting targets.
+
+## V003-BE-E01-F01   Independent verification reconciliation   2026-10-18
+
+The ChatGPT independent verification was completed in the Operator conversation on 2026-10-18 and issued **QUALIFIED PASS** for E01-F01 implementation after read-only inspection of the seven-file scope, Governance additions, five-file supplemental record, 18 archived marker matches, 19 relative links, JSON parse, and whitespace checks. The earlier line stating independent verification was pending accurately described the state **at Codex's earlier implementation checkpoint** but is superseded for this verification stage. The verifier expressly qualified that not every historical source-to-archive byte comparison and bounded test had been independently rerun. E02 discovery later received independent **QUALIFIED PASS** in the same Operator conversation, based on a bounded check of 14 canonical source locations and reviewed ownership map. The Operator subsequently explicitly accepted both qualified results and authorized E01's seven-file Git publication using the PR process, and E03's scoped ownership matrix implementation subject to independent verification before E03 publication. This dated reconciliation records the later decisions without rewriting historical checkpoint text. Git lifecycle outcomes remain to be reported when actually completed.

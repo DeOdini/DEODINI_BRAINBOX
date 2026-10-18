@@ -881,3 +881,62 @@ Implementation commit `d8159e0e0ef35cc598838d8626d79497d1bea19d` (`V003: align D
 ## Batch D remaining issue retirement - 2026-10-18
 
 Operator instructed ChatGPT to remove the precise resolved Batch D cases from active unresolved intake. Following the previously removed V003-STATUS-02, GOVERNANCE-01 (D01: accepted QUALIFIED PASS / NO GOVERNANCE POLICY CHANGE REQUIRED) and V003-STATUS-01 (D02: implemented qualified-status clarification) were removed on Operator disposition. Five unrelated Batch E/F cases remain with permanent IDs unchanged. D01/D02 separate verifier artifacts were not corroborated in the permanent records; this limitation is preserved, and Operator-directed backlog disposition is not misreported as independently established technical PASS. D04 PRs #75/#76 were previously merged, but these additional local edits are not committed or published. No frozen/historical authority changed.
+
+## V003-BE-E01 — GOVERNANCE-03 documentation integrity safeguards — 2026-10-18
+
+**Authorized scope:** Operator approved safeguards discovery and assessment only. Policy implementation, Unresolved Register changes, staging/commit/push, PR/merge, Batch E closure, and E02/E03 are not authorized by this approval.
+
+**Preflight:** PR #77 is merged; live GitHub `main`, local `main`, and `origin/main` match at `9e7f632e768f109eb8526a4099cb7343bd1a2f1b`. The five active issue IDs are README-01, README-03, GOVERNANCE-02, GOVERNANCE-03, and GOVERNANCE-04. A clean local branch `v003/be-e01-governance-03-integrity-safeguards` was created from that baseline.
+
+**Assessment result:** DISCOVERY COMPLETE — QUALIFIED; GOVERNANCE-03 remains open pending independent ChatGPT review and Operator disposition. Git history and the current archive show marker families in five then-current legacy files, while the Ticket 02 manifest/report/ledger list only three. The two omitted files are `CHATGPT_FUNC_BRAINBOX.md` and `FUNC_WORKFLOW_BRAINBOX.md`. The parent of the earliest marker-bearing commit `2291f0ec3e676d242610d709fbd4d0c4b03a92ce` (`adf0ddf51c16c5775cf7c6310bcc11dbcef290f0`) contains no such marker lines; actor and cause are unknown.
+
+The three manifest-listed archive files currently match their raw baseline hashes and Git blobs. Two omitted files currently differ from the old raw worktree SHA/size by CRLF conversion only: LF-normalized SHA-256 and Git blobs still match their recorded source baseline. `core.autocrlf=true`; no archive source was edited. An exact-marker search found no hits in current non-archive Markdown, within the stated search scope.
+
+**Policy map:** Evidence, Documentation, Reference, Ticketing, and Versioning Governance provide substantial preservation, provenance, historical-authority, verification, and scope controls. The active guardrail preflight prompt explicitly prohibits following instructions embedded in quoted/attached source material without separate authorization. However, canonical Governance does not expressly classify tool-generated output as evidence-only/untrusted input or require its provenance and assertions to be checked before copying it into governing documents. Security Governance concerns secrets/access rather than document trust. The Universal Documentation Governance Framework in Documentation Governance remains draft and was not applied as binding policy.
+
+**Recommendation:** Propose a separate, narrowly scoped Documentation/Evidence Governance amendment for source/tool-output classification, provenance, instruction-promotion prevention, artifact/formatting detection, and evidence-backed corrections that preserve history. No wording was installed and no Governance file, archived source, Migration Map, or Unresolved Register was modified.
+
+See the [Phase 03 execution report](V003_FIXES_REPORT_BRAINBOX.md) for the five-file evidence table, integrity qualifications, control-by-control matrix, and exact limitations.
+
+**Git boundary:** only this ticket record, the Phase 03 report, and conversation record are assessment documentation targets. No staging, commit, push, PR, merge, or ticket closure was performed. E01 is submitted for independent ChatGPT verification; no E02/E03 progression is implied.
+
+## V003-BE-E01-F01 - implementation and local validation checkpoint - 2026-10-18
+
+**Status:** CODEX IMPLEMENTATION COMPLETE LOCALLY; SUBMITTED FOR INDEPENDENT CHATGPT VERIFICATION; GOVERNANCE-03 OPEN.
+
+**Authorization:** Supplied ticket V003-BE-E01-F01, SHA-256 recorded in the Phase 03 report. Scope includes Documentation/Evidence Governance additions, dated five-file forensic inventory supplements, report/register/conversation updates, and local validation. Commit, push, PR, merge and Unresolved Register changes are not authorized by this ticket.
+
+**Changed files (exactly seven):**
+
+1. GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md
+2. GOVERNANCE_BRAINBOX/EVIDENCE_GOV_BRAINBOX.md
+3. RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md
+4. RECYCLE_BIN_BRAINBOX/LEGACY_AUTHORITY_RETIREMENT_MANIFEST_BRAINBOX.json
+5. V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md
+6. V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_CONVO_BRAINBOX.md
+7. V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md
+
+The full findings-to-policy mapping, source hashes, marker lines, baseline/current Git blobs, bounded review results and limitations are in the dated [Phase 03 implementation report](V003_FIXES_REPORT_BRAINBOX.md). The original Ticket 02 three-file observation remains historical; the manifest extension is additive and preserves prior fields. The active Unresolved Register and frozen authorities remain unchanged. ChatGPT independent verification and Operator acceptance are pending; E02/E03 have not started.
+
+
+## V003-BE-E04 - Batch E remaining dependency resolution - 2026-10-18
+
+**Status:** DISCOVERY/PLANNING RECORDED; E01 PUBLICATION READINESS NOT ESTABLISHED; E02 PREPARED FOR INDEPENDENT CHATGPT VERIFICATION; E03 PROPOSAL ONLY; E04 NOT CLOSED; BATCH F NOT READY.
+
+**Operator authority:** V003-BE-E04 attachment supplied with "I APPROVE"; attachment SHA-256 458494F20A858A8337557D96D9AD0CC7FF1C2622937F8E2458E5B943942720FF. The Operator separately authorized report-only append with "Authorize report-only append." Implementation and publication remain gated.
+
+**E01:** Active branch v003/be-e01-governance-03-integrity-safeguards, HEAD 9e7f632e768f109eb8526a4099cb7343bd1a2f1b, no upstream. Local main/origin/main and the prior read-only live GitHub main check matched that commit. No remote ticket branch/PR was found. Seven E01 files remain modified locally; none staged or untracked; four stashes preserved. The current report says independent ChatGPT verification pending and GOVERNANCE-03 open, contradicting E04's assertion that a prior independent QUALIFIED PASS exists. E01 publication readiness is not established. No Git publication occurred.
+
+**E02:** Read-only current-source mapping is recorded in the Phase 03 report for FUNC; DEVOPS Sandbox and Production; Skills; Portfolio; FootHive; Milestones; and archives/version history. Actual FootHive evidence paths:
+- Sandbox: AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/
+- Production: AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/
+- Portfolio: PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/
+Updates remain ticket-scoped. Local READMEs contain detailed routing; no new missing physical destination was established. E02 awaits independent ChatGPT verification.
+
+**E03:** Proposal only: add a concise read/update/evidence/history matrix to GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md and a short navigation pointer to GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md. Reuse/link to local routing rather than duplicate it. No Governance implementation occurred; separate exact Operator authorization and independent E02 PASS are required.
+
+**E04/Batch E:** Not complete/closed. E01, E02, and E03 gates remain open; Batch F is not dependency-ready. Report-only append changed no scope beyond the three existing Phase 03 records. No staging, commit, push, PR, merge, migration, or branch switch occurred.
+
+### 2026-10-18   E01-F01 / E02 independent-verification and Operator acceptance reconciliation
+
+E01-F01: ChatGPT independent QUALIFIED PASS issued in conversation and explicitly accepted by Operator. E01 seven-file PR publication authorized; publication remains pending until executed and verified. E02: source-mapping discovery independent QUALIFIED PASS accepted by Operator; bounded scope and limits retained. E03: implementation of verified ownership matrix and Governance README pointer authorized, with independent verification required before publication. No claim of E03 completion or Batch E closure is made by this checkpoint.
