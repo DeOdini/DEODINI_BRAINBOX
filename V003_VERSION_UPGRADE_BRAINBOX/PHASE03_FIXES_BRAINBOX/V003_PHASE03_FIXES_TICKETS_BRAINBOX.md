@@ -1052,3 +1052,56 @@ PR #83 opened at https://github.com/DeOdini/DEODINI_BRAINBOX/pull/83 from v003/b
 ### V003-BF-F01-P02 final post-merge result — 2026-10-18
 
 PR #83 is merged at eb34e47265509ded8d752508f3d373e92242b1ce. GitHub main, local main, origin/main, and HEAD were synchronized at that SHA by fetch and fast-forward-only pull. The merged PR contains exactly the four authorized closeout files. GitHub readback confirms README-01 is absent from active intake and remains in the dated closure history; README-03 and GOVERNANCE-04 remain active. Relative-target checks remain 42/42 for the root README and 4/4 for the Unresolved Register, with no missing paths. Four pre-existing stashes and both F01 branches remain intact. F01-P02 is complete for README-01; F02/F03 were not performed.
+## V003-BF-F02 — scoped implementation record — 2026-10-18
+
+**Branch/base:** v003/bf-f02-root-tree-canonical-child-path-reconciliation at starting commit cbee5c9101662441a49818e4315766e0a585bc94; local branch has no upstream.
+**Preflight:** PRs #82–#84 merged; local main, origin/main, and GitHub main matched; worktree initially clean; README-01 closed; README-03/GOVERNANCE-04 active; four stashes preserved.
+**Implementation:** Root target tree reconciled from 365 to 395 entries, adding 22 existing tracked README routes and eight Operator-approved additive agent EXE directory routes; root status/navigation corrected; absent Sandbox outcome paths marked [ABSENT · PLANNED]; README-03 remains active and its status/checkpoint was updated. Frozen Specification and Origin Conversation were not edited.
+**Validation:** 339/339 frozen §8 paths represented after accepted POC mappings; 78/78 active tracked README routes represented; 70 root relative targets checked, zero missing; two absent target directories are explicitly planned; protected-file baseline hashes unchanged. One Migration Map fragment relies on prior F01 permalink evidence; fresh rendered-anchor retrieval was not performed.
+**Publication:** No stage, commit, push, PR, or merge. Submitted for independent ChatGPT verification; Operator acceptance pending. F03 not started.
+### Exact changed-file inventory — V003-BF-F02 — 2026-10-18
+
+1. README_BRAINBOX.md
+2. V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md
+3. V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md
+4. V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_CONVO_BRAINBOX.md
+5. V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md
+
+The exact 22 README routes are enumerated in the dated F02 report inventory addendum. No additional path was staged or published.
+### Final handoff and line-ending note — 2026-10-18
+
+Final scope is exactly five modified files, zero staged, zero untracked. Both git diff --check and git diff --cached --check exited 0. Git reports LF-to-CRLF conversion warnings for the Phase 03 report, conversation, and ticket register. No commit, push, PR, or merge was performed.
+
+## V003-BF-F02-V01 - Counting and Architectural Coverage Evidence Reconciliation - 2026-10-18
+
+**Status:** Codex read-only analysis and append-only reporting complete. Codex candidate QUALIFIED; ChatGPT independent verification pending; Operator acceptance pending.
+
+Source: C:\Users\USER\.codex\attachments\198f34bf-cd34-4714-bae6-ae5246e85693\Pasted text.txt; 539 lines, 20,611 bytes, SHA-256 e1d9f15bed61e5d6f6c1e1cb916109692b917a2c38ecd27b0706aee3773228b9. Complete ticket body is appended verbatim to the Phase 03 conversation.
+
+Root: 395 unique logical entries in README lines 45-439; 312 ├── and 83 └──; 273 directories and 122 files. The preliminary 393 equals 393 physical present entries (271 dirs, 122 files); the remaining two are explicitly [ABSENT · PLANNED] PASSED and FAILED Sandbox directories. Current marker/path/type counts are all 395. Original preliminary marker code is unavailable, so historic attribution remains qualified.
+
+Frozen section 8: 339 unique paths (265 dirs, 74 files); 16 approved mappings (11 Sandbox, 4 Production, 1 Portfolio); 323 identity. All 339 appear with matching type in current root tree; 337 physically present and two planned absent; unsupported mappings, duplicates, missing root entries, and type mismatches: zero.
+
+Supplement: 56 entries partition into 46 README routes, 8 additive agent EXE dirs, and 2 Skills documents. The 22 new README routes are included within 46. Root-tree baseline 365; current additions 30 (22 READMEs, 8 dirs), removals 0. All 78 active tracked README routes match.
+
+Physical/link: 395 total; 393 present and tracked; 2 planned absent; 0 empty present dirs or annotation mismatches. Links 70 local, 70 present, 0 broken; one fragment at README line 805, target heading Migration Map line 2198. No new rendered-anchor verification; F01 qualification retained.
+
+Integrity/Git: protected hashes match baseline; nine F02 hardbreaks convert to backslashes and all 295 transformed lines match the prior conversation copy exactly. Branch v003/bf-f02-root-tree-canonical-child-path-reconciliation; HEAD/main/origin/main/GitHub main cbee5c9101662441a49818e4315766e0a585bc94; no upstream. Five pre-existing modified files remain, 0 staged/untracked; four stashes retained. No stage/commit/push/PR/merge.
+
+Disposition: no implementation path defect found; QUALIFIED candidate because original preliminary 393 marker method is unreproducible. README-03 remains active pending ChatGPT verification and Operator acceptance. F03 not started.
+
+Full path evidence is in V003_FIXES_REPORT_BRAINBOX.md; exact user attachment and Codex commentary are in V003_FIXES_CONVO_BRAINBOX.md.
+
+
+## V003-BF-F02-V01 - Properly Formatted Path Matrices - 2026-10-18
+
+The preceding F02 report entry contains table rows separated by literal backslash-n text. It remains unchanged as historical reporting. The appended section “## V003-BF-F02-V01 - Properly Formatted Path Matrices - 2026-10-18” reformats the source-derived rows into readable Markdown tables, with row totals rechecked.
+
+Corrected readable matrices: 16 approved mapping rows; 339 frozen Specification path rows; 46 supplementary README routes; 8 additive agent EXE directories; 2 Skills documents. The 22 new README routes are included within the 46. No implementation or protected source was changed, and no Git publication occurred.
+
+
+## V003-BF-F02-V01 - Final Readback and Validation - 2026-10-18
+
+Final readback: the appended readable matrix tables contain 16 mapping rows, 339 frozen-path rows, 46 supplementary README routes, 8 agent EXE directories, and 2 Skills documents. The 22 newly represented README routes are included in the 46. The report's matrix supplement heading line has a duplicated marker in its visible title; its tables and content are valid, and the final report entry provides the navigation and qualification.
+
+`git diff --check` and `git diff --cached --check` both returned exit code 0. Informational LF-to-CRLF warnings were emitted for the three Phase 03 Markdown records. Five pre-existing modified paths remain unstaged; untracked paths: 0. No commit, push, PR, merge, or closure was performed. Status remains Codex QUALIFIED candidate pending independent ChatGPT verification and Operator acceptance.

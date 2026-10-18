@@ -72,7 +72,7 @@ DEODINI_BRAINBOX/
 ├── MILESTONES_BRAINBOX/ [PRESENT · POPULATED; Router/Agentic capability PLANNED]
 │   ├── README_MILESTONES_BRAINBOX.md
 │   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
-├── AI_BRAINBOX/ [PRESENT · POPULATED — M05-M20 migration reconciled; M21/F02 Operator-qualified closed; §§8–18 follow-up remains]
+├── AI_BRAINBOX/ [PRESENT · POPULATED — V003 migration records reconciled; former §§8–18 case closed; README-03 and GOVERNANCE-04 remain active]
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
 │   │   ├── README_FUNC_AI_BRAINBOX.md
@@ -86,13 +86,34 @@ DEODINI_BRAINBOX/
 │   │   │   ├── DEEPSEEK_CORE_FUNC_BRAINBOX.md
 │   │   │   ├── GROK_CORE_FUNC_BRAINBOX.md
 │   │   │   └── QWEN_CORE_FUNC_BRAINBOX.md
-│   │   └── AI_AGENTS_EXE_FUNC_BRAINBOX/
+│   │   └── AI_AGENTS_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED — M06 categories plus Operator-approved additive agent-specific routes; see migration-map addendum]
 │   │       ├── README_AI_AGENTS_EXE_FUNC_BRAINBOX.md
 │   │       ├── RESEARCH_EXE_FUNC_BRAINBOX/
+│   │       │   └── README_RESEARCH_EXE_FUNC_BRAINBOX.md
 │   │       ├── BROWSER_EXE_FUNC_BRAINBOX/
+│   │       │   └── README_BROWSER_EXE_FUNC_BRAINBOX.md
 │   │       ├── FILE_EXE_FUNC_BRAINBOX/
+│   │       │   └── README_FILE_EXE_FUNC_BRAINBOX.md
 │   │       ├── CODE_EXE_FUNC_BRAINBOX/
-│   │       └── MEDIA_EXE_FUNC_BRAINBOX/
+│   │       │   └── README_CODE_EXE_FUNC_BRAINBOX.md
+│   │       ├── MEDIA_EXE_FUNC_BRAINBOX/
+│   │       │   └── README_MEDIA_EXE_FUNC_BRAINBOX.md
+│   │       ├── CHATGPT_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED — Operator-approved additive EXE route]
+│   │       │   └── README_CHATGPT_EXE_FUNC_BRAINBOX.md
+│   │       ├── CLAUDE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED — Operator-approved additive EXE route]
+│   │       │   └── README_CLAUDE_EXE_FUNC_BRAINBOX.md
+│   │       ├── CLINE_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED — Operator-approved additive EXE route]
+│   │       │   └── README_CLINE_EXE_FUNC_BRAINBOX.md
+│   │       ├── CODEX_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED — Operator-approved additive EXE route]
+│   │       │   └── README_CODEX_EXE_FUNC_BRAINBOX.md
+│   │       ├── COPILOT_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED — Operator-approved additive EXE route]
+│   │       │   └── README_COPILOT_EXE_FUNC_BRAINBOX.md
+│   │       ├── DEEPSEEK_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED — Operator-approved additive EXE route]
+│   │       │   └── README_DEEPSEEK_EXE_FUNC_BRAINBOX.md
+│   │       ├── GROK_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED — Operator-approved additive EXE route]
+│   │       │   └── README_GROK_EXE_FUNC_BRAINBOX.md
+│   │       └── QWEN_EXE_FUNC_BRAINBOX/ [PRESENT · POPULATED — Operator-approved additive EXE route]
+│   │           └── README_QWEN_EXE_FUNC_BRAINBOX.md
 │   ├── DEVOPS_AI_BRAINBOX/
 │   │   ├── README_DEVOPS_AI_BRAINBOX.md
 │   │   ├── SANDBOX_DEVOPS_BRAINBOX/
@@ -100,6 +121,7 @@ DEODINI_BRAINBOX/
 │   │   │   ├── FULLSTACK_SANDBOX_BRAINBOX/
 │   │   │   │   ├── README_FULLSTACK_SANDBOX_BRAINBOX.md
 │   │   │   │   ├── WORKFLOWS_FULLSTACK_BRAINBOX/
+│   │   │   │   │   └── README_WORKFLOWS_FULLSTACK_BRAINBOX.md
 │   │   │   │   ├── ARCHITECTURE_FULLSTACK_BRAINBOX/
 │   │   │   │   │   ├── STATIC_SITE_ARCH_BRAINBOX/
 │   │   │   │   │   ├── SPA_ARCH_BRAINBOX/
@@ -112,7 +134,8 @@ DEODINI_BRAINBOX/
 │   │   │   │   │   ├── SERVERLESS_ARCH_BRAINBOX/
 │   │   │   │   │   ├── EVENT_DRIVEN_ARCH_BRAINBOX/
 │   │   │   │   │   ├── API_FIRST_ARCH_BRAINBOX/
-│   │   │   │   │   └── ARCH_DECISIONS_BRAINBOX/
+│   │   │   │   │   ├── ARCH_DECISIONS_BRAINBOX/
+│   │   │   │   │   └── README_ARCHITECTURE_FULLSTACK_BRAINBOX.md
 │   │   │   │   ├── ORCHESTRATION_FULLSTACK_BRAINBOX/
 │   │   │   │   │   ├── FRONTEND_BACKEND_ORCH_BRAINBOX/
 │   │   │   │   │   ├── API_ORCH_BRAINBOX/
@@ -123,10 +146,12 @@ DEODINI_BRAINBOX/
 │   │   │   │   │   ├── TEST_ORCH_BRAINBOX/
 │   │   │   │   │   ├── RELEASE_ORCH_BRAINBOX/
 │   │   │   │   │   ├── AI_AGENT_ORCH_BRAINBOX/
-│   │   │   │   │   └── SERVICE_COORDINATION_ORCH_BRAINBOX/
+│   │   │   │   │   ├── SERVICE_COORDINATION_ORCH_BRAINBOX/
+│   │   │   │   │   └── README_ORCHESTRATION_FULLSTACK_BRAINBOX.md
 │   │   │   │   ├── FRONTEND_SANDBOX_BRAINBOX/
 │   │   │   │   │   ├── README_FRONTEND_SANDBOX_BRAINBOX.md
 │   │   │   │   │   ├── WORKFLOWS_FRONTEND_BRAINBOX/
+│   │   │   │   │   │   └── README_WORKFLOWS_FRONTEND_BRAINBOX.md
 │   │   │   │   │   ├── UI_UX_DESIGN_FRONTEND_BRAINBOX/
 │   │   │   │   │   │   ├── DESIGN_SYSTEMS_BRAINBOX/
 │   │   │   │   │   │   ├── DESIGN_FOUNDATIONS_BRAINBOX/
@@ -151,13 +176,15 @@ DEODINI_BRAINBOX/
 │   │   │   │   │   │   │   ├── CHART_DESIGN_BRAINBOX/
 │   │   │   │   │   │   │   ├── KPI_DESIGN_BRAINBOX/
 │   │   │   │   │   │   │   └── REPORTING_INTERFACE_DESIGN_BRAINBOX/
-│   │   │   │   │   │   └── VISUAL_REFERENCES_BRAINBOX/
+│   │   │   │   │   │   ├── VISUAL_REFERENCES_BRAINBOX/
+│   │   │   │   │   │   └── README_UI_UX_DESIGN_FRONTEND_BRAINBOX.md
 │   │   │   │   │   ├── CODE_PATTERNS_FRONTEND_BRAINBOX/
 │   │   │   │   │   │   ├── HTML_CODE_PATTERNS_BRAINBOX/
 │   │   │   │   │   │   ├── CSS_CODE_PATTERNS_BRAINBOX/
 │   │   │   │   │   │   ├── JAVASCRIPT_CODE_PATTERNS_BRAINBOX/
 │   │   │   │   │   │   ├── TYPESCRIPT_CODE_PATTERNS_BRAINBOX/
-│   │   │   │   │   │   └── REACT_CODE_PATTERNS_BRAINBOX/
+│   │   │   │   │   │   ├── REACT_CODE_PATTERNS_BRAINBOX/
+│   │   │   │   │   │   └── README_CODE_PATTERNS_FRONTEND_BRAINBOX.md
 │   │   │   │   │   ├── COMPONENTS_FRONTEND_BRAINBOX/
 │   │   │   │   │   ├── TESTING_FRONTEND_BRAINBOX/
 │   │   │   │   │   └── REFERENCES_FRONTEND_BRAINBOX/
@@ -185,18 +212,21 @@ DEODINI_BRAINBOX/
 │   │   │   │       │   └── API_CODE_PATTERNS_BRAINBOX/
 │   │   │   │       └── TESTING_BACKEND_BRAINBOX/
 │   │   │   ├── POC_SANDBOX_BRAINBOX/ [PRESENT · POPULATED]
-│   │   │   │   └── FOOTHIVE_POC_BRAINBOX/ [PRESENT · POPULATED]
-│   │   │   │       ├── README_FH_WORKFLOW_TRIAL_BRAINBOX.md
-│   │   │   │       ├── BUILD_REPORT_FH_BRAINBOX.md
-│   │   │   │       ├── PASSED_FH_BRAINBOX.md
-│   │   │   │       ├── FAILED_FH_BRAINBOX.md
-│   │   │   │       ├── CONVO_FH_BRAINBOX.md
-│   │   │   │       ├── OPERATOR_ADDENDUM_FH_BRAINBOX.md
-│   │   │   │       ├── AUDITS_FH_BRAINBOX/
-│   │   │   │       ├── EVIDENCE_FH_BRAINBOX/
-│   │   │   │       └── RETROSPECTIVE_FH_BRAINBOX.md
-│   │   │   ├── PASSED_SANDBOX_BRAINBOX/
-│   │   │   └── FAILED_SANDBOX_BRAINBOX/
+│   │   │   │   ├── FOOTHIVE_POC_BRAINBOX/ [PRESENT · POPULATED]
+│   │   │   │   │   ├── README_FH_WORKFLOW_TRIAL_BRAINBOX.md
+│   │   │   │   │   ├── BUILD_REPORT_FH_BRAINBOX.md
+│   │   │   │   │   ├── PASSED_FH_BRAINBOX.md
+│   │   │   │   │   ├── FAILED_FH_BRAINBOX.md
+│   │   │   │   │   ├── CONVO_FH_BRAINBOX.md
+│   │   │   │   │   ├── OPERATOR_ADDENDUM_FH_BRAINBOX.md
+│   │   │   │   │   ├── AUDITS_FH_BRAINBOX/
+│   │   │   │   │   │   └── README_AUDITS_FH_BRAINBOX.md
+│   │   │   │   │   ├── EVIDENCE_FH_BRAINBOX/
+│   │   │   │   │   │   └── README_EVIDENCE_FH_BRAINBOX.md
+│   │   │   │   │   └── RETROSPECTIVE_FH_BRAINBOX.md
+│   │   │   │   └── README_POC_SANDBOX_BRAINBOX.md
+│   │   │   ├── PASSED_SANDBOX_BRAINBOX/ [ABSENT · PLANNED]
+│   │   │   └── FAILED_SANDBOX_BRAINBOX/ [ABSENT · PLANNED]
 │   │   └── PROD_DEVOPS_BRAINBOX/
 │   │       ├── README_PROD_DEVOPS_BRAINBOX.md
 │   │       ├── FULLSTACK_PROD_BRAINBOX/
@@ -423,7 +453,7 @@ DEODINI_BRAINBOX/
 
 ## Current local root tree
 
-Current physical root layout — reconciled 2026-10-16. Historical/support records are identified separately from the frozen V003 target tree.
+Current physical root layout — reconciled 2026-10-18. Historical/support records are identified separately from the frozen V003 target tree.
 
 ```text
 DEODINI_BRAINBOX/
@@ -440,6 +470,7 @@ DEODINI_BRAINBOX/
 │   ├── TICKETING_GOV_BRAINBOX.md
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── AI_BRAINBOX/ [PRESENT · POPULATED; current V003 branches; retired legacy Skills record is archived]
+│   └── README_AI_BRAINBOX.md [canonical local AI navigation; complete target subtree is above]
 ├── MILESTONES_BRAINBOX/ [PRESENT · POPULATED; current V003 planned-intent records only]
 │   ├── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md [V003 capability PLANNED]
 │   └── README_MILESTONES_BRAINBOX.md
@@ -486,7 +517,7 @@ V003_VERSION_UPGRADE_BRAINBOX/
 │   ├── V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md
 │   ├── V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md
 │   └── V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md
-├── PHASE03_FIXES_BRAINBOX/ [PRESENT · POPULATED; qualified closeout and active §8–18 follow-up]
+├── PHASE03_FIXES_BRAINBOX/ [PRESENT · POPULATED; prior qualified V003 closeout; README-03/GOVERNANCE-04 follow-ups active]
 │   ├── README_PHASE03_FIXES_BRAINBOX.md
 │   ├── F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv
 │   ├── F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv
@@ -495,14 +526,14 @@ V003_VERSION_UPGRADE_BRAINBOX/
 │   ├── V003_FIXES_REPORT_BRAINBOX.md
 │   ├── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md
 │   └── V003_POC_NAMING_SCOPED_DIFF_BRAINBOX.diff
-└── V003_UNRESOLVED_BRAINBOX.md [ACTIVE — Specification §§8–18 follow-up]
+└── V003_UNRESOLVED_BRAINBOX.md [ACTIVE — README-03/GOVERNANCE-04 follow-ups; former §§8–18 case closed]
 ```
 
 - **Canonical target:** `V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`.
 - **Historical decision evidence:** `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`.
 - **Phase 01:** closed/frozen; the archive records its execution and verification.
 - **Phase 02:** closed migration archive; the report, conversation, and ticket records preserve execution and Git-closure evidence.
-- **Phase 03:** V003 qualified closure is Operator-accepted; the active Unresolved Register contains the remaining §§8–18 planned/empty/reserved-state follow-up.
+- **Phase 03:** The Operator-accepted qualified V003 closeout remains a historical checkpoint; the former §§8–18 case is closed. The active Unresolved Register contains README-03 and GOVERNANCE-04. README-03 is being reconciled under V003-BF-F02 and remains active pending independent verification, Operator acceptance, and separately authorized publication.
 - Phase 02 and Phase 03 are process/evidence containers, not target-domain knowledge. Ticket presence does not make a path populated.
 
 ## Current Version History layout
@@ -522,31 +553,46 @@ VERSION_HISTORY_BRAINBOX/
     └── TREE_SNAPSHOT_V003_BRAINBOX.md [present; M21 physical snapshot retained; qualified closure accepted without recovery of 20 Cline objects]
 ```
 
-The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The M21 V003 physical-tree snapshot is present. F02/M21 qualified closure was accepted by the Operator; the 20 Cline objects were not recovered. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
+The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The M21 V003 physical-tree snapshot is present. Phase 03 Batch E V003-F02/M21 qualified closure was accepted by the Operator; the 20 Cline objects were not recovered. The separate Phase 03 Batch F V003-BF-F02 root reconciliation is active and awaits independent verification, Operator acceptance, and separately authorized publication. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
 
 ## Navigation index
 
+Use these current child READMEs for domain navigation. The authoritative target tree above remains the complete-tree source; each child README owns its detailed local route. Historical archives are labeled as such.
+
 | Start here | Purpose |
 |---|---|
-| `GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md` | Canonical system-wide Governance rules and source/navigation index. |
-| [Archived DOB_MUST_README.md — RETIRED / HISTORICAL / NOT CURRENT OPERATING AUTHORITY](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md) | Historical root reading-order and Governance source. Current system-wide rules are in Governance. |
-| `AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md` | M08 Skills taxonomy, population states, and canonical reference navigation. |
-| [Archived AI_MUST_README.md — RETIRED / HISTORICAL / NOT CURRENT OPERATING AUTHORITY](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md) | Historical AI-subsystem navigation/source. Current AI navigation is in AI_BRAINBOX/README_AI_BRAINBOX.md. |
-| `V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md` | V003 authority-container overview. |
-| `V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md` | Approved target architecture and migration constraints. |
-| `V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md` | Historical decisions and ambiguity context. |
-| `V003_VERSION_UPGRADE_BRAINBOX/PHASE01_POLISH_BRAINBOX/README_PHASE01_POLISH_BRAINBOX.md` | Closed Phase 01 audit/archive navigation. |
-| `V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md` | Closed Phase 02 migration process/archive and ticket navigation. |
-| `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md` | Qualified Phase 03 closeout evidence and active follow-up navigation. |
-| `VERSION_HISTORY_BRAINBOX/README_VERSION_HISTORY_BRAINBOX.md` | Version History domain navigation, authority boundaries, and current population state. |
-| `VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/TREE_SNAPSHOT_V001_BRAINBOX.md` | Git-backed V001 tracked-path snapshot. |
-| `VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md` | Git-backed V002 tracked-path snapshot. |
-| `VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md` | Living source-backed migration ledger; updated by each authorized migration ticket. |
-| `MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md` | Current V003 milestone navigation; historical V002 records are separately archived. |
-| `MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md` | Planned future Router/Agentic capabilities and infrastructure intent; not implementation authorization. |
-| [Archived V002 MILESTONES_MUST_README.md — RETIRED / HISTORICAL](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONES_MUST_README.md) | Preserved historical V002 milestone navigation; not current authority. |
-| [Archived V002 MILESTONE_CHECKPOINT_BRAINBOX.md — RETIRED / HISTORICAL](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md) | Preserved historical V002 checkpoint; not current milestone authority. |
-
+| [Governance README](GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md) | Canonical system-wide rules and reference ownership. |
+| [AI README](AI_BRAINBOX/README_AI_BRAINBOX.md) | Current AI domain index for FUNC, DEVOPS, and Skills. |
+| [FUNC README](AI_BRAINBOX/FUNC_AI_BRAINBOX/README_FUNC_AI_BRAINBOX.md) | Canonical CORE and EXE capability navigation and evidence boundaries. |
+| [Skills README](AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md) | Current Skills taxonomy and canonical knowledge routes. |
+| [DEVOPS README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/README_DEVOPS_AI_BRAINBOX.md) | DEVOPS Sandbox and Production authority index. |
+| [Sandbox DEVOPS README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md) | Sandbox workflow and trial navigation; Sandbox evidence does not imply Production outcomes. |
+| [Fullstack Sandbox README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/README_FULLSTACK_SANDBOX_BRAINBOX.md) | Fullstack workflows, application architecture, and orchestration routes. |
+| [Sandbox case-study README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/README_POC_SANDBOX_BRAINBOX.md) | Case-study index for Sandbox trials. |
+| [FootHive Sandbox trial README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) | Canonical FootHive workflow-trial records and evidence. |
+| [Production DEVOPS README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md) | Production operations and environment navigation. |
+| [Production case-study README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/README_POC_BRAINBOX.md) | Production case-study index. |
+| [FootHive Production summary README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) | Production summary and lessons; refers to canonical Sandbox evidence. |
+| [Portfolio README](PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md) | Portfolio summary, handoff, and case-study reference navigation. |
+| [FootHive Portfolio README](PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md) | FootHive presentation and handoff records; not the canonical test evidence. |
+| [Milestones README](MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md) | Current V003 milestone navigation; Router/Agentic capability remains planned. |
+| [Router/Agentic milestone](MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md) | Planned future intent, not implemented infrastructure or execution authorization. |
+| [Version History README](VERSION_HISTORY_BRAINBOX/README_VERSION_HISTORY_BRAINBOX.md) | Historical tree snapshots, retrospectives, and version-history navigation. |
+| [V001 tree snapshot](VERSION_HISTORY_BRAINBOX/V001_BRAINBOX/TREE_SNAPSHOT_V001_BRAINBOX.md) | Git-backed V001 tracked-path snapshot. |
+| [V002 tree snapshot](VERSION_HISTORY_BRAINBOX/V002_DEODINI_BRAINBOX/TREE_SNAPSHOT_V002_BRAINBOX.md) | Git-backed V002 tracked-path snapshot. |
+| [V003 authority-container README](V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md) | V003 authority and separate process-support archives. |
+| [Frozen V003 Specification](V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md) | Approved architecture and migration constraints. |
+| [V003 Origin Conversation](V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md) | Historical decision and ambiguity evidence. |
+| [Phase 01 archive README](V003_VERSION_UPGRADE_BRAINBOX/PHASE01_POLISH_BRAINBOX/README_PHASE01_POLISH_BRAINBOX.md) | Closed Phase 01 audit/history support. |
+| [Phase 02 migration README](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md) | Closed Phase 02 process archive and migration evidence. |
+| [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) | Prior qualified V003 closeout and active README-03/GOVERNANCE-04 follow-up navigation. |
+| [Active Unresolved Register](V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md) | Current corrective findings; README-03 is being reconciled under V003-BF-F02. |
+| [Migration Map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) | Living source-backed migration ledger and recorded dispositions. |
+| [Recycle Bin README](RECYCLE_BIN_BRAINBOX/README_RECYCLE_BIN_BRAINBOX.md) | Operator-approved additive historical-retirement archive; outside the frozen V003 target tree. |
+| [Archived DOB_MUST_README.md — RETIRED / HISTORICAL / NOT CURRENT OPERATING AUTHORITY](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md) | Preserved historical root reading-order and Governance source. |
+| [Archived AI_MUST_README.md — RETIRED / HISTORICAL / NOT CURRENT OPERATING AUTHORITY](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/AI_MUST_README.md) | Preserved historical AI navigation/source; current AI navigation is under AI_BRAINBOX. |
+| [Archived V002 MILESTONES_MUST_README.md — RETIRED / HISTORICAL](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONES_MUST_README.md) | Preserved V002 milestone navigation; not current authority. |
+| [Archived V002 MILESTONE_CHECKPOINT_BRAINBOX.md — RETIRED / HISTORICAL](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/MILESTONES_BRAINBOX/MILESTONE_CHECKPOINT_BRAINBOX.md) | Preserved V002 checkpoint; not current milestone authority. |
 ## M02 source-to-target responsibility — historical checkpoint
 
 The table records M02-era source relationships, not current source locations. The empty root BRAINBOX directory was present then; it is absent from the current checkout and is omitted from the physical-tree snapshot above.
@@ -596,7 +642,7 @@ The active `MILESTONES_BRAINBOX/` contains only `README_MILESTONES_BRAINBOX.md` 
 - [V003 authority-container README](V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md) — local V003 container map.
 - [Phase 01 archive README](V003_VERSION_UPGRADE_BRAINBOX/PHASE01_POLISH_BRAINBOX/README_PHASE01_POLISH_BRAINBOX.md) — closed audit/history support.
 - [Phase 02 migration README](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md) — closed process archive and migration evidence.
-- [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — qualified closure and active follow-up navigation.
+- [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — prior qualified V003 closeout and active README-03/GOVERNANCE-04 follow-up navigation.
 - [Phase 02 ticket set](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md) — individually scoped, authorized migration work.
 - [Migration map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — current-state inventory, integrity baseline, and living dispositions.
 - [DOB_MUST_README.md — RETIRED / HISTORICAL / NOT CURRENT OPERATING AUTHORITY](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md) — its system-wide policies have been mapped to Governance; the preserved body remains historical evidence.
