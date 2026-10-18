@@ -1712,3 +1712,11 @@ I recorded these findings in the Phase 03 report, conversation, and ticket regis
 **Accepted qualification:** The Operator accepts the independent review as QUALIFIED PASS with the stated limitation that ChatGPT did not independently retrieve the rendered GitHub HTML anchor. Codex's earlier rendered-page inspection found the anchor matching the README fragment. This qualification remains visible and is not rewritten as an unconditional independent PASS.
 
 **Codex checkpoint:** The repository preflight confirms the authorized branch `v003/bf-f01-root-navigation-preflight`, baseline `dd53a58c4c2c7b64e7fa012615b9e928569cf507`, and exactly the five authorized modified paths. No files were staged; the publication commit and push have not yet occurred. Four existing stashes were observed and left untouched. README-01 remains active; this authorization permits push only, not PR creation or merge.
+
+## 2026-10-18 - V003-BF-F01-P01 publication result
+
+**Codex (publication report):** Commit `5b5eae00ea16812aa06d88c8b335abc3fbce36be` (`V003-BF-F01: publish accepted root navigation corrections`) was pushed successfully with `git push -u origin v003/bf-f01-root-navigation-preflight`. Git created the remote branch and configured its upstream. The GitHub branches API confirmed the remote branch SHA equals the commit SHA.
+
+The implementation commit contains exactly the five P01-authorized files. Final file-link validation found 42 root README links and 4 Unresolved Register links, with no missing file targets. Staged whitespace validation passed. README-01 remains active, while README-03 and GOVERNANCE-04 remain active; no issue was closed by this publication.
+
+At the initial push verification, local and remote F01 branch tips both equaled `5b5eae00ea16812aa06d88c8b335abc3fbce36be`. Local `main`, `origin/main`, and GitHub `main` remained at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. The initial post-push worktree was clean. No PR or merge was performed. This report-only closeout is being published separately to the same F01 branch under the P01 reporting instruction.

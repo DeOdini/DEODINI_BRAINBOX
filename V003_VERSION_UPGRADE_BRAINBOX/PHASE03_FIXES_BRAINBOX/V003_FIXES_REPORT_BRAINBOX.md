@@ -3312,3 +3312,16 @@ This F01 implementation acceptance and P01 publication authorization do not clos
 **Git authorization:** The Operator authorizes staging and committing only the five paths above and pushing the commit to `v003/bf-f01-root-navigation-preflight`. No PR, merge, direct main push, force-push, branch deletion, F02/F03 implementation, or Batch F closure is authorized.
 
 **Pre-publication state:** GitHub `main`, local `main`, `origin/main`, and the F01 branch base were verified at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. No files were staged at this checkpoint. Commit and push are not yet performed.
+## V003-BF-F01-P01 - publication verification - 2026-10-18
+
+**Implementation commit:** `5b5eae00ea16812aa06d88c8b335abc3fbce36be` — `V003-BF-F01: publish accepted root navigation corrections`.
+
+**Push result:** `git push -u origin v003/bf-f01-root-navigation-preflight` succeeded. Git reported creation of the remote branch and configured the local upstream. The GitHub branches API then independently returned remote branch `v003/bf-f01-root-navigation-preflight` at `5b5eae00ea16812aa06d88c8b335abc3fbce36be`, matching the local implementation commit. At the initial post-push check, that commit was the remote branch tip.
+
+**Published scope:** The commit changes exactly the five paths authorized by P01: `README_BRAINBOX.md`, `V003_UNRESOLVED_BRAINBOX.md`, and the Phase 03 report, conversation, and ticket register. The implementation commit reports 5 files changed, 182 insertions, and 3 deletions. No other path was staged or committed.
+
+**Verification:** The staged-diff check passed; the final link scan found 42 root README relative file links and 4 Unresolved Register relative file links, with 0 missing targets. The Unresolved Register retains README-01, README-03, and GOVERNANCE-04 as its three active IDs. README-01 remains open; the accepted qualified F01 result is not final README-01 closure.
+
+**Repository state at initial publication verification:** Local branch and `origin/v003/bf-f01-root-navigation-preflight` matched at the implementation commit. Local `main`, `origin/main`, and GitHub `main` remained at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. The worktree was clean immediately after the implementation push, before this report-only closeout append. No PR was created and no merge, direct main push, force-push, deletion, F02/F03 implementation, or Batch F closure occurred.
+
+**Publication closeout record:** This dated report-only checkpoint is being committed and pushed to the same authorized F01 branch. It records the verified implementation publication above; it does not change README-01's open status or the authorized publication boundary.

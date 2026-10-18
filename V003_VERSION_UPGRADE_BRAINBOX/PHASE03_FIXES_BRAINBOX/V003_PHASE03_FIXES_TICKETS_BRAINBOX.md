@@ -1021,3 +1021,13 @@ The Operator stated verbatim, "CHATGPT AS VERIFIED AND I HAVE VERIFIED, DO PROCE
 **Acceptance boundary:** F01 implementation acceptance is distinct from final README-01 closure. README-01 remains active. This ticket authorizes no PR, merge, direct main push, force-push, branch deletion, F02/F03 implementation, or Batch F closure.
 
 **Pre-publication check:** GitHub main, local main, origin/main, and the F01 branch base match at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. The five authorized paths are modified and unstaged; no unrelated or untracked files were found. Existing stashes remain untouched. Commit and push are pending.
+
+## V003-BF-F01-P01 - publication outcome - 2026-10-18
+
+**Implementation commit:** `5b5eae00ea16812aa06d88c8b335abc3fbce36be`, message `V003-BF-F01: publish accepted root navigation corrections`.
+
+**Push:** PASS. The dedicated branch `v003/bf-f01-root-navigation-preflight` was created on origin and its GitHub-reported head matched the implementation commit. Local tracking is configured. Published scope is exactly the five authorized F01 paths.
+
+**Final checks:** 42 root README and 4 Unresolved Register relative file links; 0 missing targets. Staged whitespace check passed. README-01 remains active after the accepted QUALIFIED PASS; the register retains README-01, README-03, and GOVERNANCE-04. Local/origin/GitHub `main` remained at `dd53a58c4c2c7b64e7fa012615b9e928569cf507` at verification. No PR/merge, direct main push, or other prohibited action occurred.
+
+**Reporting boundary:** The verified implementation publication is recorded above. A report-only closeout commit is being pushed to the same dedicated branch in accordance with P01's permanent-reporting requirement. No new implementation files are included.
