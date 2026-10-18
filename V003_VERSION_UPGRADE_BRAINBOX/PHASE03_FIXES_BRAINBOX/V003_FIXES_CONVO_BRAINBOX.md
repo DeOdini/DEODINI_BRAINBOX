@@ -1334,3 +1334,13 @@ Git integration and the report-only post-merge publication are complete. The fin
 ### Codex report-only branch validation - 2026-10-18
 
 The D04 post-merge report is on v003/batch-d-final-closeout-report, created from synchronized main at 860dd1ae5707f62a12023f36c697cbbd9b1e0b12. Only the Phase 03 Fixes Report, Conversation, and Ticket Register are changed. A scoped path scan found nine local destinations and zero missing paths; git diff --check passed. The Unresolved Register remains unchanged.
+
+## Operator and ChatGPT exchange — D04-F01 disposition — 2026-10-18
+
+**Operator (verbatim):** “THIS TASK IS FOR YOU, YOU ARE TO DELETE THE RESOLVED CASE FROM THE UNRESOLVED, RECORD YOUR REPORT ACCORDNINGLY.”
+
+**ChatGPT:** Applied the Operator's direction to retire resolved V003-STATUS-02 from the active register, retain seven independent unresolved permanent IDs, and append its verification/disposition to the Phase 03 report and ticket register. D01/D02 provenance caveats and separate STATUS-01/GOVERNANCE-01 gates remain intact. Local documentation updated; no Git publication authority was inferred.
+
+## Operator Batch D issue-removal instruction - 2026-10-18
+
+Operator: NOW YOU ARE TO DELETE THE PRECISE RESOLVED CASES FROM THE UNRESOLVED FILE IN DEODINI BRAINBOX. ChatGPT: Removed the remaining Batch D GOVERNANCE-01 and V003-STATUS-01 active rows following STATUS-02 removal; preserved five E/F entries and documented the unresolved independent-verifier provenance qualification. No Git publication performed.
