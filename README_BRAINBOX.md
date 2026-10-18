@@ -11,7 +11,7 @@
 **AUTHORITATIVE TREE:** The complete V003 target tree in this file is the canonical root navigation tree. It follows frozen Specification §8, with the Operator-approved POC naming adjustment recorded in Phase 03; the frozen Specification retains its historical CASE_STUDIES names.
 **LOCAL TREE:** The current physical repository layout and the separate V003 support/archive overlay are listed below.
 **RELATED DOMAINS:** Governance, Version History, Milestones, AI, Portfolio, and V003 authority/support.
-**CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; Phase 02 and Phase 03 reports for migration/closure evidence; Unresolved Register for remaining §§8–18 follow-up.
+**CANONICAL SOURCES:** Governance for current system-wide rules; frozen V003 Specification for approved architecture; V003 Origin Conversation for historical decisions; Phase 02 and Phase 03 reports for migration/closure evidence; Unresolved Register for active corrective findings and qualified follow-ups.
 **REFERENCES:** See the navigation index below.
 **POPULATION STATE:** The target tree is the complete approved architectural map. Inline states and the population table report the current partial, planned, and retained-source states.
 **VERIFIER:** Codex — repository-wide pre-publication reconciliation (2026-10-15); prior independent ChatGPT verification and Operator-qualified closure are recorded in the Phase 02/03 reports. The 20 Cline checkpoint objects remain unrecovered; their investigation was administratively closed by the Operator without claiming technical recovery.
@@ -756,7 +756,7 @@ At the M18 verification checkpoint, its two approved Router/Agentic milestone do
 
 ## Current Phase 02 status — Batch D closed — 2026-10-09
 
-V003-M15–M18 are cross-checked, pushed, and merged to `main`. The merge order and commits, branch heads, file/folder inventory, integrity checks, link/whitespace checks, and deferred flags are recorded in the [Batch D report](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md), [Batch D conversation](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md), and [Migration Map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md#52-batch-d-git-closure).
+V003-M15–M18 are cross-checked, pushed, and merged to `main`. The merge order and commits, branch heads, file/folder inventory, integrity checks, link/whitespace checks, and deferred flags are recorded in the [Batch D report](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md), [Batch D conversation](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md), and [Migration Map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md#52-batch-d-cross-check-and-git-closure--v003-m15m18--2026-10-09).
 
 The FootHive Sandbox case study has 50 files; its 45-row copy manifest passes all recorded source/destination size and SHA-256 checks. Production has two records and the FootHive Portfolio has four. The legacy MILESTONES files remain unchanged; the separate Router/Agentic folder contains only two [PLANNED] records.
 

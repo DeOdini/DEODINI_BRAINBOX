@@ -978,3 +978,46 @@ The Operator stated verbatim, "CHATGPT AS VERIFIED AND I HAVE VERIFIED, DO PROCE
 - E05 register reconciliation: PR #80 merged at `e70acf7d1924876e5c138a21c7944f5f558fe547`. Active register now contains only README-01, README-03, and GOVERNANCE-04; resolved GOVERNANCE-02/03 evidence remains permanent.
 - Post-merge state: GitHub main, local main, and origin/main matched at `e70acf7d1924876e5c138a21c7944f5f558fe547`; local worktree was clean before the final report branch.
 - **Batch E: CLOSED. Batch F: next active.** F01's read-only readiness preflight is authorized/dependency-ready; F01 implementation remains separately gated and was not started here.
+
+## V003-BF-F01 - readiness preflight - 2026-10-18
+
+**Status:** PREFLIGHT COMPLETE; IMPLEMENTATION NOT STARTED; F01-GATE-01 REQUIRES OPERATOR DISPOSITION.
+
+**Authorization basis:** Supplied F01 ticket authorizes the Batch E dependency/readiness preflight. The Operator stated verbatim, "CHATGPT AS VERIFIED AND I HAVE VERIFIED, DO PROCEED". This was applied to E05 review/acceptance and the F01 preflight; it was not interpreted as bypassing the ticket's separate F01 implementation and Git-publication gates.
+
+**Dependency check:** PASS. GitHub confirmed PRs #78 (merge `c51a5d1d25c8c04a555ec1b8ab8ec0a3c4417b4d`), #79 (merge `75f7ed6e0943f1bd70c59a4e6b410288963dabc7`), #80 (merge `e70acf7d1924876e5c138a21c7944f5f558fe547`), and #81 (merge `dd53a58c4c2c7b64e7fa012615b9e928569cf507`) as merged. E02 remains the recorded independently verified QUALIFIED PASS with its limitations. Latest GitHub main, local main, origin/main, and HEAD match at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. The direct `git ls-remote` check was network-blocked; the live GitHub connector supplied the remote confirmation.
+
+**F01 findings:** (1) `README_BRAINBOX.md:14` describes the current Unresolved Register as remaining §§8-18 follow-up, but that former case is closed. (2) `README_BRAINBOX.md:759` contains a Migration Map section fragment that does not match the target heading. A local scan found 42 relative links, zero missing targets and one flagged fragment. The actual rendered GitHub fragment must be verified before editing.
+
+**F02 carry-forward:** Root tree/status annotations at README lines 75, 489, 498 and 505 still label current issues as the former §§8-18 case; defer these to F02 tree/status reconciliation.
+
+**Direct gate:** The current Unresolved Register's README-01 row still names GOVERNANCE-01 as a remaining dependency and says it is blocked on remaining named subfolder routing. The same Register retires GOVERNANCE-01 from active intake and does not enumerate remaining routes. F01 does not authorize silently changing this active Register state. Operator disposition is required before F01 implementation readiness can be treated as clear.
+
+**Git/status boundary:** Reporting-only local append to the Phase 03 report, conversation and ticket register. Root README, Unresolved Register, Governance, and frozen authorities unchanged. No stage, commit, push, PR, merge, source move, or deletion. The local F01 branch was clean before the three reporting records were appended; report validation follows readback and whitespace check.
+**Post-append validation:** PASS. Readback confirmed the entry; `git diff --check` and `git diff --cached --check` returned without whitespace errors. Exactly the report, conversation, and ticket register are modified; no staged or untracked files. Root README, Unresolved Register, and frozen Specification remain unchanged. Only informational LF-to-CRLF notices were emitted.
+
+## V003-BF-F01 - implementation checkpoint - 2026-10-18
+
+**Status:** IMPLEMENTED WITHIN OPERATOR-AUTHORIZED SCOPE; AWAITING CHATGPT INDEPENDENT VERIFICATION AND OPERATOR FINAL ACCEPTANCE. README-01 remains active.
+
+**Authorization:** Operator approved the two targeted root README corrections and stale README-01 dependency/status correction in the Unresolved Register, with implementation evidence in the Phase 03 report, conversation, and ticket register. Git staging, commit, push, PR, and merge remain separate gates. F02 and F03 are not authorized by this approval.
+
+**Files changed:** `README_BRAINBOX.md`; `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md`; this ticket register; `V003_FIXES_REPORT_BRAINBOX.md`; `V003_FIXES_CONVO_BRAINBOX.md`.
+
+**F01 implementation:** The root canonical-sources line now identifies the Register as holding active corrective findings and qualified follow-ups. The Batch D Migration Map link now uses `#52-batch-d-cross-check-and-git-closure--v003-m15m18--2026-10-09`, which matches the permalink href from GitHub's rendered heading and the current main source heading. The README-01 row no longer lists retired GOVERNANCE-01 as an active dependency and now awaits independent verification and Operator acceptance; README-01 is not closed. The four F02 root tree/status annotations were not changed.
+
+**Validation:** Root README: 42 relative links, 0 broken local targets. Unresolved Register: 4 relative links, 0 broken local targets. Corrected GitHub anchor matches the rendered permalink. `git diff --check` and `git diff --cached --check` passed without whitespace errors. Frozen Specification and Origin Conversation are unchanged. The diff is limited to the five files listed above; no unrelated file or historical evidence was changed. Git emitted informational LF-to-CRLF notices for Phase 03 record files.
+
+**Git state:** Branch `v003/bf-f01-root-navigation-preflight`, based on `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. No files staged; no commit, push, PR, or merge performed.
+
+**Next gate:** Independent ChatGPT verification, then Operator acceptance. Do not begin F02/F03 and do not publish without separate Git authorization.
+
+## V003-BF-F01-P01 - Operator acceptance and publication gate - 2026-10-18
+
+**ChatGPT independent result:** QUALIFIED PASS, accepted by the Operator. The qualification is retained: the rendered GitHub HTML anchor was not independently retrieved during ChatGPT's review, although Codex separately observed that rendered permalink and confirmed it matched the README fragment.
+
+**Operator disposition:** Accepts the qualified independent result and authorizes staging, committing, and pushing exactly these five F01 files to `v003/bf-f01-root-navigation-preflight`: root README, Unresolved Register, Phase 03 report, Phase 03 conversation, and Phase 03 ticket register.
+
+**Acceptance boundary:** F01 implementation acceptance is distinct from final README-01 closure. README-01 remains active. This ticket authorizes no PR, merge, direct main push, force-push, branch deletion, F02/F03 implementation, or Batch F closure.
+
+**Pre-publication check:** GitHub main, local main, origin/main, and the F01 branch base match at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. The five authorized paths are modified and unstaged; no unrelated or untracked files were found. Existing stashes remain untouched. Commit and push are pending.
