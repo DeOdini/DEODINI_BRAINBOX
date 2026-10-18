@@ -61,6 +61,8 @@ The current physical tree is documented in the canonical two-descendant-level lo
 | `TICKETING_GOV_BRAINBOX.md` | Scope, authorization, flags, dependencies, verification, and ticket closure |
 | `PROMOTION_GOV_BRAINBOX.md` | Evidence-based Sandbox-to-Production and portfolio promotion |
 
+For verified cross-domain read sources and ticket-scoped update destinations, see the [Reference Governance ownership matrix](REFERENCE_GOV_BRAINBOX.md). This pointer grants no permission to write; applicable ticket authorization remains mandatory.
+
 ## Sources and provenance
 
 - [Frozen V003 Specification](../V003_VERSION_UPGRADE_BRAINBOX/V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md) — approved architecture and governance rules.

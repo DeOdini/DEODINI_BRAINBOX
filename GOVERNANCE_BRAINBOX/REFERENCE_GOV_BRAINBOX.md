@@ -11,6 +11,23 @@
 3. A root or local README may state its own purpose and navigation. Shared rules belong to Governance and should be referenced.
 4. Keep architecture authority, historical decision evidence, and migration-process records distinct: the frozen Specification defines the V003 target; the Origin Conversation preserves decision history; Phase 02 records current migration execution.
 
+## Cross-domain read and ticket-scoped update ownership — 2026-10-18
+
+The E02 discovery established these canonical navigation routes and possible update destinations. **A mapping is not permission to write.** Every change still requires an approved ticket and applicable verification. Local READMEs own detailed internal navigation.
+
+| Domain | Canonical read source | Ticket-scoped update destination | Evidence and limits |
+|---|---|---|---|
+| FUNC | [FUNC README](../AI_BRAINBOX/FUNC_AI_BRAINBOX/README_FUNC_AI_BRAINBOX.md), then its CORE/EXE registries | Appropriate CORE capability record or EXE execution-evidence record | M05–M07; former FUNC/FQ sources are archived, not current instructions |
+| DEVOPS Sandbox | [DEVOPS README](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/README_DEVOPS_AI_BRAINBOX.md) and [Sandbox README](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/README_SANDBOX_DEVOPS_BRAINBOX.md) | Authorized Sandbox workflow or POC/trial record | M09–M15; trial success does not imply Production success |
+| DEVOPS Production | DEVOPS README and [Production README](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md) | Actual Production procedure, environment or evidence record | M14/M16; stubs do not demonstrate deployments |
+| Skills | [Skills README](../AI_BRAINBOX/SKILLS_AI_BRAINBOX/README_SKILLS_AI_BRAINBOX.md) and relevant child | Relevant current Skills record | M08; legacy Skills master retired; planned areas stay planned |
+| Portfolio | [Portfolio README](../PORTFOLIO_BRAINBOX/README_PORTFOLIO_BRAINBOX.md), then [FootHive Portfolio README](../PORTFOLIO_BRAINBOX/FOOTHIVE_PORTFOLIO_BRAINBOX/README_FOOTHIVE_PORTFOLIO_BRAINBOX.md) where applicable | Portfolio summary, handoff or presentation record | M16; presentation does not replace original test evidence |
+| FootHive split | External `DeOdini/FOOTHIVE` website implementation; [Sandbox trial](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md); [Production summary](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md); Portfolio above | Code in external repo under its own authority; trial, Production and portfolio evidence in their separate Brainbox domains | M15/M16, DEVOPS routing; reference to external repo does not prove checkout or service health |
+| Milestones | [Milestones README](../MILESTONES_BRAINBOX/README_MILESTONES_BRAINBOX.md) and [Router/Agentic milestone](../MILESTONES_BRAINBOX/BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md) | Current planned Router/Agentic records only, under an approved ticket; preserve [PLANNED] status unless separately authorized | M17/M18; V002 milestones archived |
+| Archives and version history | [Recycle Bin README](../RECYCLE_BIN_BRAINBOX/README_RECYCLE_BIN_BRAINBOX.md), [retirement ledger](../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md), [Version History README](../VERSION_HISTORY_BRAINBOX/README_VERSION_HISTORY_BRAINBOX.md), [V003 Migration Map](../VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md), and the [Phase 01](../V003_VERSION_UPGRADE_BRAINBOX/PHASE01_POLISH_BRAINBOX/README_PHASE01_POLISH_BRAINBOX.md), [Phase 02](../V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md), and [Phase 03](../V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) support READMEs | Retirement ledger/manifest, Migration Map or Phase records only under respective approved tickets | M20/M21; archived bodies remain historical/read-only; Phase records are audit/process support, not domain authority |
+
+This table is a bounded ownership directory, not a live-capability certification. Cross-domain references do not transfer ownership. Resolve ambiguous destinations by inspecting their local sources and escalating under [Ticketing Governance](TICKETING_GOV_BRAINBOX.md).
+
 ## Reference quality
 
 - Use the exact current repository path and a relative link from the referencing file where practical.
