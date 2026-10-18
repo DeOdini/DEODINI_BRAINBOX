@@ -1720,3 +1720,197 @@ I recorded these findings in the Phase 03 report, conversation, and ticket regis
 The implementation commit contains exactly the five P01-authorized files. Final file-link validation found 42 root README links and 4 Unresolved Register links, with no missing file targets. Staged whitespace validation passed. README-01 remains active, while README-03 and GOVERNANCE-04 remain active; no issue was closed by this publication.
 
 At the initial push verification, local and remote F01 branch tips both equaled `5b5eae00ea16812aa06d88c8b335abc3fbce36be`. Local `main`, `origin/main`, and GitHub `main` remained at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. The initial post-push worktree was clean. No PR or merge was performed. This report-only closeout is being published separately to the same F01 branch under the P01 reporting instruction.
+
+## 2026-10-18 — V003-BF-F01-P02 Operator ticket (supplied attachment text; trailing hard-break spaces normalized, wording preserved)
+# V003-BF-F01-P02 — F01 PR MERGE AND FORMAL CLOSURE
+
+**PROJECT:** DEODINI_BRAINBOX
+**UPGRADE:** V003 VERSION UPGRADE BRAINBOX
+**PHASE:** 03 — FIXES
+**BATCH:** F — FINAL ROOT NAVIGATION AND VALIDATION
+**TICKET:** V003-BF-F01-P02
+**PARENT:** V003-BF-F01
+**ISSUE:** README-01
+**EXECUTOR:** CODEX
+**INDEPENDENT VERIFIER:** CHATGPT
+**OPERATOR:** DEODINI
+**STATUS:** ISSUED — CONDITIONAL INTEGRATION AND CLOSEOUT AUTHORIZATION
+
+## 1. Objective
+
+Integrate the independently verified and Operator-accepted F01 corrections into GitHub `main`, verify the resulting repository state, and formally close README-01.
+
+This ticket does not authorize F02 or F03 implementation.
+
+## 2. Mandatory Preflight
+
+Before any publication activity, Codex must independently confirm:
+
+1. V003-BF-F01-P01 completed successfully.
+2. The five accepted F01 files were committed and pushed.
+3. The dedicated branch exists on GitHub:
+   `v003/bf-f01-root-navigation-preflight`
+4. The remote branch HEAD matches the local publication commit.
+5. The branch contains exactly the previously authorized changes.
+6. ChatGPT's F01 QUALIFIED PASS and Operator acceptance are preserved in the permanent reports.
+7. The accepted Migration Map anchor qualification remains recorded.
+8. The current GitHub `main` baseline and branch relationship are verified.
+9. No unrelated modifications, conflicting commits or blocking checks have appeared.
+
+The previously verified F01 baseline was:
+
+`dd53a58c4c2c7b64e7fa012615b9e928569cf507`
+
+Do not assume this remains the current `main` HEAD.
+
+**STOP CONDITION:** If F01-P01 is incomplete or the pushed changes differ materially from the accepted implementation, stop integration and report the discrepancy.
+
+## 3. Authorized Integration Scope
+
+The PR must contain only:
+
+1. `README_BRAINBOX.md`
+2. `V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md`
+3. `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_REPORT_BRAINBOX.md`
+4. `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_FIXES_CONVO_BRAINBOX.md`
+5. `V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/V003_PHASE03_FIXES_TICKETS_BRAINBOX.md`
+
+Preserve the two root README corrections and the accepted README-01 dependency reconciliation.
+
+Do not include F02 tree/status corrections or unrelated edits.
+
+## 4. PR Creation and Review
+
+After successful preflight:
+
+1. Create a pull request from the dedicated F01 branch into `main`.
+2. Record the PR number and URL.
+3. Independently compare the PR changed-file list against the five-file authorized scope.
+4. Confirm the PR's expected head SHA.
+5. Confirm that required GitHub checks pass.
+6. Review mergeability and any branch-protection requirements.
+7. Confirm that the PR introduces no unintended changes.
+8. Preserve all documented verification qualifications.
+
+If GitHub reports conflicts, failing checks or unexpected changes, stop and report them.
+
+## 5. Merge Authorization
+
+Upon satisfactory PR review and required checks, Codex is authorized to merge the verified F01 PR into `main`.
+
+After merging:
+
+- Record the exact merge commit SHA.
+- Verify that GitHub reports the PR as merged.
+- Verify the relevant changes exist on `main`.
+- Confirm the merged content matches the accepted F01 correction.
+- Confirm protected historical and architectural sources remain unchanged.
+- Synchronize local `main` with `origin/main` without losing unrelated work.
+- Retain existing branches and stashes.
+
+Do not force-push, rewrite history or delete branches.
+
+## 6. README-01 Closure
+
+Following successful integration and post-merge verification:
+
+1. Confirm the root README's current Unresolved Register description is accurate.
+2. Confirm the Batch D Migration Map link resolves to the intended section.
+3. Confirm root authority and entry navigation remain correct.
+4. Verify README-01's previously blocking dependencies are resolved.
+5. Record ChatGPT's accepted QUALIFIED PASS, including its retained qualification.
+6. Record GitHub PR and merge evidence.
+7. Remove only README-01 from the active Unresolved Register.
+8. Preserve its permanent issue ID and historical reporting evidence.
+
+README-03 and GOVERNANCE-04 must remain active.
+
+Do not declare F01 closed before all applicable checks and publication evidence are complete.
+
+## 7. Permanent Reporting
+
+Append dated records to:
+
+- `V003_FIXES_REPORT_BRAINBOX.md`
+- `V003_FIXES_CONVO_BRAINBOX.md`
+- `V003_PHASE03_FIXES_TICKETS_BRAINBOX.md`
+
+Record:
+
+- F01-P01 publication evidence.
+- PR creation and reviewed changed-file scope.
+- Merge commit.
+- Post-merge verification.
+- README-01 closure evidence.
+- Remaining Batch F issues.
+- Exact Git state.
+- Any accepted qualifications.
+
+Do not rewrite earlier reports.
+
+## 8. Closure Publication
+
+Because the initial F01 PR must retain the accepted five-file scope, any subsequent README-01 removal and final closeout records should be published in a separate, narrowly scoped documentation PR.
+
+Codex is authorized to prepare, commit, push and submit that closeout PR after the original implementation merge has been verified.
+
+The closeout PR may contain only:
+
+- The active Unresolved Register correction.
+- The three established Phase 03 reporting records.
+
+Verify that the closeout PR contains no unrelated changes before merging.
+
+The final closeout PR merge is authorized only when its documented post-merge evidence and scope satisfy this ticket's conditions.
+
+## 9. Batch F Continuation
+
+After F01 closure has been independently established, Codex must report readiness for:
+
+**V003-BF-F02 — README-03 Root Tree and Canonical Child-Path Reconciliation**
+
+F02's work includes correcting outdated root tree/status annotations, reconciling planned and physical paths, and verifying canonical child navigation.
+
+No F02 implementation is authorized by this F01-P02 ticket.
+
+## 10. Mandatory Codex Handoff
+
+Return:
+
+1. F01-P01 commit SHA.
+2. F01 implementation PR number and URL.
+3. Implementation merge commit SHA.
+4. Post-merge verification results.
+5. README-01 closure evidence.
+6. Closeout PR number and URL, if completed.
+7. Final closeout merge SHA, if completed.
+8. Current local and GitHub `main` state.
+9. Final active Unresolved Register entries.
+10. Remaining qualifications or blockers.
+11. F02 readiness recommendation.
+
+## 11. Final Conditions
+
+This ticket is complete when:
+
+- The accepted F01 implementation is merged.
+- Required post-merge verification passes.
+- README-01 is removed from active intake.
+- The closeout records are published and verified.
+- README-03 and GOVERNANCE-04 remain active.
+- All Git and reporting evidence is recorded accurately.
+
+**OPERATOR AUTHORIZATION:** This ticket authorizes the controlled F01 PR integration and closeout sequence, subject to the above verification gates.
+
+**BATCH F STATUS:** Remains OPEN. F02 and F03 are not completed or automatically authorized.
+### Codex progress updates
+
+**Codex:** PR #82 matches the authorized five-file scope and GitHub reports it mergeable. I’m checking the remaining status gates, then I’ll merge it and prepare the separate README-01 closure PR required by the ticket.
+
+**Codex:** PR #82 is merged at 32d26acea969d5074502fd8ad7e4edd0f599aeda. The branch had no required status checks configured, no check runs, no rulesets, and main was unprotected; the merge used the expected unchanged head SHA. I’m verifying the published contents and syncing local main by fast-forward only.
+
+### Codex execution record
+
+PR #82 was verified merged with the five authorized paths and the accepted qualification retained. GitHub main and local main are at 32d26acea969d5074502fd8ad7e4edd0f599aeda after fast-forward-only synchronization. The active README-01 entry has been removed in the closeout change while its permanent issue ID and history are preserved. README-03 and GOVERNANCE-04 remain active. F02 and F03 were not implemented. The closeout branch is prepared for the separate narrowly scoped publication PR; final PR metadata will be appended after creation.
+
+**Codex:** PR #83 is open at https://github.com/DeOdini/DEODINI_BRAINBOX/pull/83. Its exact four-file scope passed review; GitHub reports it mergeable with no statuses or check runs. I am recording the PR assignment before the authorized merge and will verify the resulting main state afterward.

@@ -3325,3 +3325,27 @@ This F01 implementation acceptance and P01 publication authorization do not clos
 **Repository state at initial publication verification:** Local branch and `origin/v003/bf-f01-root-navigation-preflight` matched at the implementation commit. Local `main`, `origin/main`, and GitHub `main` remained at `dd53a58c4c2c7b64e7fa012615b9e928569cf507`. The worktree was clean immediately after the implementation push, before this report-only closeout append. No PR was created and no merge, direct main push, force-push, deletion, F02/F03 implementation, or Batch F closure occurred.
 
 **Publication closeout record:** This dated report-only checkpoint is being committed and pushed to the same authorized F01 branch. It records the verified implementation publication above; it does not change README-01's open status or the authorized publication boundary.
+
+## V003-BF-F01-P02 — F01 integration and README-01 closure — 2026-10-18
+
+**Status:** F01 implementation PR #82 merged; post-merge checks passed; README-01 is removed from active intake by the separate closeout-register change. This closure does not close README-03, GOVERNANCE-04, Batch F, or V003 as a whole.
+
+**P01 implementation and accepted result:** Branch v003/bf-f01-root-navigation-preflight was published at head 5428ab14d5dc119b1dc503b02a93a91f26ce602d. The implementation commit was 5b5eae00ea16812aa06d88c8b335abc3fbce36be. The previously recorded ChatGPT independent result was QUALIFIED PASS and the Operator accepted it. The qualification is retained: ChatGPT did not independently retrieve the rendered GitHub HTML anchor; Codex separately confirmed the rendered permalink matched the README fragment.
+
+**Implementation PR:** PR #82, https://github.com/DeOdini/DEODINI_BRAINBOX/pull/82, targeted main from base dd53a58c4c2c7b64e7fa012615b9e928569cf507 with expected head 5428ab14d5dc119b1dc503b02a93a91f26ce602d. GitHub reported the PR mergeable, not draft, with exactly five authorized paths: README_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md; and the three Phase 03 report, conversation, and ticket-register files. The expected head did not move.
+
+**Checks and repository gates:** The commit had no combined statuses and no check runs. The repository rulesets endpoint returned an empty list; the main branch endpoint reported protected=false and required status checks disabled with no contexts. The direct branch-protection endpoint returned 403 to the connected GitHub integration, so no additional protection details are claimed. No failing or pending check was reported.
+
+**Merge:** PR #82 was merged on 2026-10-18. GitHub reports merged=true and main at merge commit 32d26acea969d5074502fd8ad7e4edd0f599aeda. The merge has the expected base dd53a58c4c2c7b64e7fa012615b9e928569cf507 and F01 head 5428ab14d5dc119b1dc503b02a93a91f26ce602d as its parents.
+
+**Post-merge verification:** The GitHub main branch and local main both resolve to 32d26acea969d5074502fd8ad7e4edd0f599aeda after fetch and fast-forward-only pull. GitHub raw reads confirmed the root canonical-source line describes the Unresolved Register as the active corrective register and qualified follow-ups. The Batch D Migration Map target exists; its Section 52 heading is “Batch D Cross-Check and Git Closure — V003-M15–M18 — 2026-10-09,” matching the fragment already verified against GitHub rendering. The merged diff contains exactly the five authorized files; frozen V003 Specification and Origin Conversation are absent from the diff. The merged PR retained the accepted qualification and did not include F02/F03 implementation.
+
+**README-01 closure:** After successful integration and these checks, the active README-01 row was removed from the Unresolved Register. The permanent ID and historical rationale are retained in its dated closure record and in the Phase 03 report/ticket history. The active index now contains 01 README-03 and 02 GOVERNANCE-04. The README-03 and GOVERNANCE-04 entries remain active and otherwise unchanged. The closeout register/report/conversation/ticket changes are being submitted through the separately authorized narrow closeout PR; its assigned PR number and final publication details will be recorded in a subsequent dated update.
+
+**Local preservation:** Local main was fast-forwarded only. The four pre-existing stashes were observed and left untouched. The original implementation branch and its remote branch were retained. No force-push, history rewrite, unrelated source change, F02/F03 implementation, or branch deletion occurred.
+
+**F02 readiness:** F01 is ready for final closeout verification. The next ticket may begin with F02's own preflight and authorization conditions; this report does not authorize F02 implementation.
+
+### V003-BF-F01-P02 closeout PR submission checkpoint — 2026-10-18
+
+PR #83 (https://github.com/DeOdini/DEODINI_BRAINBOX/pull/83) was opened from v003/bf-f01-readme01-closeout to main. Its initial submitted head was 4c6d1854a063972d1885ca9616f8e888051234d3; the base was 32d26acea969d5074502fd8ad7e4edd0f599aeda. The reviewed changed-file list was exactly the authorized four paths: the Unresolved Register and the Phase 03 report, conversation, and ticket register. GitHub reported mergeable=true, not draft, with no combined statuses or check runs. The closeout PR is authorized to merge after these scope and post-merge conditions pass. A later dated record will capture the final PR merge SHA and post-merge state.

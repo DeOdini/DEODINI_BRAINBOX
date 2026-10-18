@@ -1031,3 +1031,21 @@ The Operator stated verbatim, "CHATGPT AS VERIFIED AND I HAVE VERIFIED, DO PROCE
 **Final checks:** 42 root README and 4 Unresolved Register relative file links; 0 missing targets. Staged whitespace check passed. README-01 remains active after the accepted QUALIFIED PASS; the register retains README-01, README-03, and GOVERNANCE-04. Local/origin/GitHub `main` remained at `dd53a58c4c2c7b64e7fa012615b9e928569cf507` at verification. No PR/merge, direct main push, or other prohibited action occurred.
 
 **Reporting boundary:** The verified implementation publication is recorded above. A report-only closeout commit is being pushed to the same dedicated branch in accordance with P01's permanent-reporting requirement. No new implementation files are included.
+
+## V003-BF-F01-P02 — F01 PR merge and formal closure — 2026-10-18
+
+**Implementation publication:** F01-P01 commit 5b5eae00ea16812aa06d88c8b335abc3fbce36be was pushed on v003/bf-f01-root-navigation-preflight. PR #82 was opened from that branch to main with the five authorized files only. The reviewed PR head was 5428ab14d5dc119b1dc503b02a93a91f26ce602d; base was dd53a58c4c2c7b64e7fa012615b9e928569cf507. GitHub reported the PR mergeable, and its expected head remained unchanged.
+
+**Check results:** No combined statuses or check runs were present; repository rulesets were empty and the main branch endpoint reported protection disabled with required checks disabled. The integration could not read the dedicated protection endpoint (403), so no additional branch-protection claims are made.
+
+**Merge and verification:** PR #82 merged at 32d26acea969d5074502fd8ad7e4edd0f599aeda. GitHub reports the PR merged and main at that SHA. The merge has the expected base and F01 head as parents. GitHub raw reads confirmed the active-register description and the Section 52 Migration Map target. Local main was fetched and fast-forwarded to the same SHA; the worktree was clean before the closeout branch was created.
+
+**README-01:** CLOSED for the accepted F01 scope after integration and post-merge checks. Its active row was removed; the permanent README-01 ID and historical basis are retained in a dated Unresolved Register closure record and in the Phase 03 evidence. The independent ChatGPT result remains QUALIFIED PASS as accepted by the Operator; the rendered-anchor limitation is preserved. The separate closeout PR contains only the Unresolved Register and the established Phase 03 report, conversation, and ticket register. PR #83 (https://github.com/DeOdini/DEODINI_BRAINBOX/pull/83) was opened from v003/bf-f01-readme01-closeout to main with exactly the four authorized files. GitHub reported the PR mergeable and no statuses or check runs. Its final merge SHA and post-merge evidence are recorded in the dated closeout result.
+
+**Remaining active intake:** README-03 and GOVERNANCE-04, displayed as 01 and 02. No F02/F03 implementation occurred. F02 is eligible only for its own preflight and authorization gates.
+
+**Local Git preservation:** Four existing stashes were preserved. The implementation branch is retained. No force-push, history rewrite, or branch deletion occurred.
+
+### V003-BF-F01-P02 closeout PR checkpoint — 2026-10-18
+
+PR #83 opened at https://github.com/DeOdini/DEODINI_BRAINBOX/pull/83 from v003/bf-f01-readme01-closeout to main. Initial head: 4c6d1854a063972d1885ca9616f8e888051234d3. Base: 32d26acea969d5074502fd8ad7e4edd0f599aeda. The reviewed scope is exactly the four P02-authorized files. GitHub reported mergeable=true, not draft, with no combined statuses or check runs. Final merge and post-merge verification are to be recorded after completion.
