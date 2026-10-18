@@ -1143,3 +1143,14 @@ Operator separately authorized staging, commit, push, and merge. Exactly the fiv
 - **Push verification:** `origin/v003/bf-f03-governance-04-validator` resolves to the same commit. `origin/main` remains `f6809cd9c060b288581ff56425b41c4f1d533e82`.
 - **Git state:** The implementation commit is published on its dedicated branch. No PR was opened and no merge occurred. The branch remains separate from `main` under the ticket's publication boundary.
 - **Acceptance:** The Operator accepted the independent QUALIFIED PASS, with the 12 pre-existing Sandbox README findings left unchanged. F03 execution and scoped publication are complete; no broader V003 or Batch F closure is implied.
+
+### V003-BF-F03-C01 — approved Sandbox path correction — 2026-10-18
+
+- **Before:** `APPROVED_ABSENT` incorrectly listed both `FAILED_SANDBOX_BRAINBOX` and `PASSED_SANDBOX_BRAINBOX` beneath `SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/`.
+- **After:** Both approved absent paths are direct children of `SANDBOX_DEVOPS_BRAINBOX/`. The corresponding Sandbox-level tests pass; a regression test rejects their POC-nested placement.
+- **Physical-state check:** Both Sandbox-level directories and both POC-nested candidate directories are absent. No directory was created.
+- **Tests:** Complete Python suite: 13 passed, exit 0.
+- **Full repository:** 82 READMEs, 81 local trees, 1,049 entries, 867 Markdown targets; zero findings, exit 0 (`PASS (qualified)`).
+- **Governance README:** 1 README/tree, 12 entries, 20 Markdown targets; zero findings, exit 0 (`PASS (qualified)`).
+- **Whitespace/scope:** `git diff --check` exit 0. Only two Python files and the three authorized Phase 03 records changed; no Sandbox README or root README changed.
+- **Git:** Staging, commit, push, and remote SHA confirmation pending. PR and merge are not authorized.

@@ -2873,3 +2873,11 @@ No Sandbox README was modified. F03 is resubmitted for fresh independent ChatGPT
 **Codex:** The acceptance is recorded. I will stage, commit, and push only the seven reviewed F03 paths on `v003/bf-f03-governance-04-validator`. PR creation and merge remain separate and unauthorized. The commit and remote branch-tip verification will be recorded after publication.
 
 **Codex — publication result:** Commit `0216809431c38e7b6736bf94d5dd232220e6ec29` (`V003-BF-F03: add Governance tree and status validator`) was pushed. `git ls-remote` confirms `origin/v003/bf-f03-governance-04-validator` at that SHA; `origin/main` remains at `f6809cd9c060b288581ff56425b41c4f1d533e82`. No PR or merge was created. F03's scoped publication is complete; the 12 qualified Sandbox findings remain untouched, and this does not close Batch F or V003.
+
+## V003-BF-F03-C01 corrective execution — 2026-10-18
+
+**De O'Dini — Operator:** Authorized V003-BF-F03-C01 to correct only the two Sandbox approved-absence entries, update regression tests, run the complete Python suite and repository/Governance validators, append findings to the Phase 03 report/conversation/ticket register, and stage/commit/push the five authorized files on the existing F03 branch. PR creation and merge are prohibited by this ticket.
+
+**Codex:** Confirmed the actual approved absence locations are direct children of `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/`. The previous list incorrectly included `POC_SANDBOX_BRAINBOX/`. I updated the tests first; the two regression tests failed against the old list for the expected reason. The validator configuration was then corrected. Tests now accept the Sandbox-level paths and reject the POC-nested paths.
+
+**Codex — verification:** The complete Python suite reports 13 passed, exit 0. The full repository validator reports 82 READMEs, 81 local tree blocks, 1,049 entries, 867 Markdown links and zero findings, exit 0 (`PASS (qualified)`). Governance README-only validation reports 1 README/tree, 12 entries, 20 links and zero findings, exit 0. `git diff --check` passes. All four physical candidate directories remain absent. No Sandbox README, root README, frozen authority, or unrelated file changed. Git publication remains pending; no PR or merge was created.

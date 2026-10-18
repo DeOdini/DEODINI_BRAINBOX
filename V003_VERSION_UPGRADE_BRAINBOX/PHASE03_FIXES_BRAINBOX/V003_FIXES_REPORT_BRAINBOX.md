@@ -4169,3 +4169,27 @@ Publication state at this checkpoint: seven authorized paths identified and unst
 The seven reviewed F03 paths were staged and committed on `v003/bf-f03-governance-04-validator` as `0216809431c38e7b6736bf94d5dd232220e6ec29` with message `V003-BF-F03: add Governance tree and status validator`. Push completed successfully. A read-only `git ls-remote` check confirmed the remote F03 branch resolves to the same full SHA; remote `main` remains at `f6809cd9c060b288581ff56425b41c4f1d533e82`.
 
 The Operator accepted the independent QUALIFIED PASS, including its qualification that 12 pre-existing Sandbox README hierarchy/approved-absence findings remain unchanged. The implementation is published on its ticket branch. No PR was opened and no merge into `main` occurred. F03's scoped execution/publication is complete; this is not Batch F or V003 closure.
+
+## V003-BF-F03-C01 — approved Sandbox path correction — 2026-10-18
+
+**Finding confirmed:** The two `APPROVED_ABSENT` entries in `GOVERNANCE_BRAINBOX/validate_tree_status.py` incorrectly placed the planned `FAILED_SANDBOX_BRAINBOX` and `PASSED_SANDBOX_BRAINBOX` paths under `POC_SANDBOX_BRAINBOX/`. The approved absent locations are direct children of `SANDBOX_DEVOPS_BRAINBOX/`.
+
+**Before:**
+
+```text
+AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FAILED_SANDBOX_BRAINBOX
+AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/PASSED_SANDBOX_BRAINBOX
+```
+
+**After:**
+
+```text
+AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FAILED_SANDBOX_BRAINBOX
+AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/PASSED_SANDBOX_BRAINBOX
+```
+
+The corrected execution confirms the prior 12 findings were caused by the incorrect validator exception paths: the full-repository run now returns zero findings. Both the Sandbox-level and POC-nested directories remain physically absent; no directory was created and no Sandbox README was edited. Tests accept the approved Sandbox-level absences and reject the incorrect POC-nested paths.
+
+**Verification:** `python -B GOVERNANCE_BRAINBOX/test_validate_tree_status.py` — 13 tests passed, exit 0. Full validator — 82 active READMEs, 81 local tree blocks, 1,049 entries, 867 Markdown targets, zero findings, exit 0 (`PASS (qualified)`). Governance README-only validator — 1 README/tree, 12 entries, 20 links, exit 0 (`PASS (qualified)`). `git diff --check` — exit 0. Windows emitted informational LF-to-CRLF warnings for the two Python files during Git inspection.
+
+**Changed scope:** exactly two Python files and these three Phase 03 records: validator, tests, this report, Phase 03 conversation, and ticket register. Root README, all Sandbox READMEs, frozen Specification/Origin Conversation, and other sources remain unchanged. Git staging/commit/push and remote verification are pending under C01; no PR or merge is authorized.

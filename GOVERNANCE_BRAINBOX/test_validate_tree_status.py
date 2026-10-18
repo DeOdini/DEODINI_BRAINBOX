@@ -11,7 +11,7 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).parent))
 
-from validate_tree_status import STATUS_TOKENS, validate_repository  # noqa: E402
+from validate_tree_status import APPROVED_ABSENT, STATUS_TOKENS, validate_repository  # noqa: E402
 
 
 class TreeStatusValidatorTests(unittest.TestCase):
@@ -168,31 +168,61 @@ class TreeStatusValidatorTests(unittest.TestCase):
         self.assertTrue(any("not in the approved absent-path list" in error for error in result.errors))
 
     def test_approved_absence_is_matched_from_repository_root(self) -> None:
-        nested_parent = (
+        sandbox = (
+            self.root
+            / "AI_BRAINBOX"
+            / "DEVOPS_AI_BRAINBOX"
+            / "SANDBOX_DEVOPS_BRAINBOX"
+        )
+        sandbox.mkdir(parents=True)
+        (sandbox / "POC_SANDBOX_BRAINBOX").mkdir()
+        readme = sandbox / "README_SANDBOX_DEVOPS_BRAINBOX.md"
+        readme.write_text(
+            "## Canonical local tree\n"
+            "```text\n"
+            "SANDBOX_DEVOPS_BRAINBOX/ [PRESENT]\n"
+            "\u251c\u2500\u2500 FAILED_SANDBOX_BRAINBOX/ [ABSENT \u00b7 PLANNED]\n"
+            "\u251c\u2500\u2500 PASSED_SANDBOX_BRAINBOX/ [ABSENT \u00b7 PLANNED]\n"
+            "\u251c\u2500\u2500 POC_SANDBOX_BRAINBOX/ [PRESENT]\n"
+            "\u2514\u2500\u2500 README_SANDBOX_DEVOPS_BRAINBOX.md [PRESENT]\n"
+            "```\n",
+            encoding="utf-8",
+        )
+        expected = {
+            "AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FAILED_SANDBOX_BRAINBOX",
+            "AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/PASSED_SANDBOX_BRAINBOX",
+        }
+        self.assertTrue(expected.issubset(APPROVED_ABSENT))
+        result = validate_repository(self.root, readmes=[readme])
+        self.assertEqual(result.errors, [])
+
+    def test_rejects_poc_nested_approved_absence_paths(self) -> None:
+        poc = (
             self.root
             / "AI_BRAINBOX"
             / "DEVOPS_AI_BRAINBOX"
             / "SANDBOX_DEVOPS_BRAINBOX"
             / "POC_SANDBOX_BRAINBOX"
         )
-        nested_parent.mkdir(parents=True)
-        readme = nested_parent / "README_POC_SANDBOX.md"
+        poc.mkdir(parents=True)
+        readme = poc / "README_POC_SANDBOX_BRAINBOX.md"
         readme.write_text(
             "## Canonical local tree\n"
             "```text\n"
-            "POC_SANDBOX_BRAINBOX/ [PRESENT · POPULATED]\n"
-            "├── FAILED_SANDBOX_BRAINBOX/ [ABSENT · PLANNED]\n"
-            "├── PASSED_SANDBOX_BRAINBOX/ [ABSENT · PLANNED]\n"
-            "└── README_POC_SANDBOX.md [PRESENT]\n"
+            "POC_SANDBOX_BRAINBOX/ [PRESENT]\n"
+            "\u251c\u2500\u2500 FAILED_SANDBOX_BRAINBOX/ [ABSENT \u00b7 PLANNED]\n"
+            "\u251c\u2500\u2500 PASSED_SANDBOX_BRAINBOX/ [ABSENT \u00b7 PLANNED]\n"
+            "\u2514\u2500\u2500 README_POC_SANDBOX_BRAINBOX.md [PRESENT]\n"
             "```\n",
             encoding="utf-8",
         )
-        approved = {
+        incorrect = {
             "AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FAILED_SANDBOX_BRAINBOX",
             "AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/PASSED_SANDBOX_BRAINBOX",
         }
-        result = validate_repository(self.root, readmes=[readme], approved_absent=approved)
-        self.assertEqual(result.errors, [])
+        self.assertTrue(incorrect.isdisjoint(APPROVED_ABSENT))
+        result = validate_repository(self.root, readmes=[readme])
+        self.assertTrue(any("not in the approved absent-path list" in error for error in result.errors))
 
     def test_rejects_broken_url_decoded_markdown_target(self) -> None:
         self.write_readme(link="missing%20file.md")
