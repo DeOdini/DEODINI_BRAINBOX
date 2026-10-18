@@ -1136,3 +1136,10 @@ Operator separately authorized staging, commit, push, and merge. Exactly the fiv
 - **Operator acceptance (verbatim):** “Accept and publish F03”. This accepts the qualified result with the documented Sandbox findings left unchanged.
 - **Git authority:** Stage, commit, and push only the seven F03 implementation/reporting paths on `v003/bf-f03-governance-04-validator`. PR creation and merge remain unauthorized by this acceptance.
 - **State at authorization:** Seven paths identified; none staged. Commit/push and remote verification to be recorded after execution.
+
+### V003-BF-F03 publication closeout — 2026-10-18
+
+- **Implementation commit:** `0216809431c38e7b6736bf94d5dd232220e6ec29` (`V003-BF-F03: add Governance tree and status validator`). Exactly the seven reviewed F03 paths were committed.
+- **Push verification:** `origin/v003/bf-f03-governance-04-validator` resolves to the same commit. `origin/main` remains `f6809cd9c060b288581ff56425b41c4f1d533e82`.
+- **Git state:** The implementation commit is published on its dedicated branch. No PR was opened and no merge occurred. The branch remains separate from `main` under the ticket's publication boundary.
+- **Acceptance:** The Operator accepted the independent QUALIFIED PASS, with the 12 pre-existing Sandbox README findings left unchanged. F03 execution and scoped publication are complete; no broader V003 or Batch F closure is implied.

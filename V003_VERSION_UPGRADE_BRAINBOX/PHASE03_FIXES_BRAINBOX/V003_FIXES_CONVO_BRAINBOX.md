@@ -2871,3 +2871,5 @@ No Sandbox README was modified. F03 is resubmitted for fresh independent ChatGPT
 **De O'Dini — Operator (verbatim):** “Accept and publish F03”.
 
 **Codex:** The acceptance is recorded. I will stage, commit, and push only the seven reviewed F03 paths on `v003/bf-f03-governance-04-validator`. PR creation and merge remain separate and unauthorized. The commit and remote branch-tip verification will be recorded after publication.
+
+**Codex — publication result:** Commit `0216809431c38e7b6736bf94d5dd232220e6ec29` (`V003-BF-F03: add Governance tree and status validator`) was pushed. `git ls-remote` confirms `origin/v003/bf-f03-governance-04-validator` at that SHA; `origin/main` remains at `f6809cd9c060b288581ff56425b41c4f1d533e82`. No PR or merge was created. F03's scoped publication is complete; the 12 qualified Sandbox findings remain untouched, and this does not close Batch F or V003.
