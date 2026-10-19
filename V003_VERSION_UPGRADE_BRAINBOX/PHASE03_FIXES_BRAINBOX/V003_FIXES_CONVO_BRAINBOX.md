@@ -2844,6 +2844,74 @@ The final readback confirmed the readable path matrices, exact attachment-byte i
 **Codex:** I inventoried the branches and working tree. The prior ticket branches were already merged; the only pending changes were the five-file V003-BF-F02 change set. I staged and committed those files on `v003/bf-f02-root-tree-canonical-child-path-reconciliation`, pushed commit `d543e57d08586b49d1befaf2ac89edee3916b916`, opened PR #85, and merged it into `main` at `259bada3851cdbe46e74341124b9afc378aa1cbc`. I fast-forwarded local `main` to the same SHA and verified a clean worktree and no unmerged local/remote branch tips. F02 remains open pending independent ChatGPT verification and Operator acceptance; this Git integration is not ticket acceptance.
 
 
+
+
+## V003-BF-F03 ? Governance-04 validator execution ? 2026-10-18
+
+**Operator ? attached ticket:** `V003-BF-COMBINED-01 ? Batch F three-ticket execution and Git publication`; authorization is sequential F01, F02, F03 execution and scoped Git publication, with PR/merge kept separate.
+
+**Operator ? F02 README status scope:** ?Authorize status-only correction (Recommended)?.
+
+**Codex:** F01 was verified complete from PRs #82?#84. F02 cleanup was published on `v003/bf-f02-register-cleanup`: implementation commit `f8f64d53f8359caf4460248a6aeb480d80f56436`, report commit `980ff22de9dec1d2d2e298cce0c667c72a7af189`; the branch tip was verified against GitHub. No PR/merge was opened. F02 is closed within its accepted qualified scope; the cleanup is not yet on `main`.
+
+**Codex ? F03:** Created `v003/bf-f03-governance-04-validator` from `main` at `f6809cd9c060b288581ff56425b41c4f1d533e82`. The validator and 11 fixture tests are implemented locally. The fixture suite passes. The repository run reports 12 pre-existing Sandbox local-tree placement/omission findings and no broken or out-of-repository Markdown targets among 867 checked links. The ticket prohibits automatic README repair; no affected Sandbox README was changed. F03 remains pending independent ChatGPT verification; no F03 staging, commit, push, PR, merge, or closure was performed.
+
+## Codex follow-up — F03 independent-review correction — 2026-10-18
+
+The initial independent ChatGPT review returned **FAIL pending a validator correction**: an unknown status tag such as `[PRESNET]` was silently accepted, and the Ticket Register reported 10 tests while the actual first suite run had 11.
+
+Codex changed the validator to reject unknown uppercase status-shaped tags and added one controlled test method with two subcases covering `[PRESNET]` and `[PRESENT · POPULATD]`. Current fixture result: **12 tests passed**. The full repository scan remains at 12 previously documented Sandbox hierarchy findings across 82 READMEs / 81 local trees / 1,049 entries; 867 local Markdown targets have no broken or escaping links. Governance README-only check passes (20 links), and whitespace checks pass. The Ticket Register now records both the initial 11-test result and the corrected 12-test result.
+
+No Sandbox README was modified. F03 is resubmitted for fresh independent ChatGPT review. No F03 Git staging, commit, push, PR, merge, or closure has occurred.
+
+## Operator acceptance and publication authorization — F03 — 2026-10-18
+
+**Codex:** The fresh independent review returned QUALIFIED PASS. The only qualification is the 12 documented pre-existing Sandbox README hierarchy/approved-absence findings, which remain unchanged. The ticket requires Operator acceptance before publishing a qualified result. Do you accept this result? If accepted, only the seven F03 paths will be staged, committed, and pushed; no PR or merge will be created.
+
+**De O'Dini — Operator (verbatim):** “Accept and publish F03”.
+
+**Codex:** The acceptance is recorded. I will stage, commit, and push only the seven reviewed F03 paths on `v003/bf-f03-governance-04-validator`. PR creation and merge remain separate and unauthorized. The commit and remote branch-tip verification will be recorded after publication.
+
+**Codex — publication result:** Commit `0216809431c38e7b6736bf94d5dd232220e6ec29` (`V003-BF-F03: add Governance tree and status validator`) was pushed. `git ls-remote` confirms `origin/v003/bf-f03-governance-04-validator` at that SHA; `origin/main` remains at `f6809cd9c060b288581ff56425b41c4f1d533e82`. No PR or merge was created. F03's scoped publication is complete; the 12 qualified Sandbox findings remain untouched, and this does not close Batch F or V003.
+
+## V003-BF-F03-C01 corrective execution — 2026-10-18
+
+**De O'Dini — Operator:** Authorized V003-BF-F03-C01 to correct only the two Sandbox approved-absence entries, update regression tests, run the complete Python suite and repository/Governance validators, append findings to the Phase 03 report/conversation/ticket register, and stage/commit/push the five authorized files on the existing F03 branch. PR creation and merge are prohibited by this ticket.
+
+**Codex:** Confirmed the actual approved absence locations are direct children of `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/`. The previous list incorrectly included `POC_SANDBOX_BRAINBOX/`. I updated the tests first; the two regression tests failed against the old list for the expected reason. The validator configuration was then corrected. Tests now accept the Sandbox-level paths and reject the POC-nested paths.
+
+**Codex — verification:** The complete Python suite reports 13 passed, exit 0. The full repository validator reports 82 READMEs, 81 local tree blocks, 1,049 entries, 867 Markdown links and zero findings, exit 0 (`PASS (qualified)`). Governance README-only validation reports 1 README/tree, 12 entries, 20 links and zero findings, exit 0. `git diff --check` passes. All four physical candidate directories remain absent. No Sandbox README, root README, frozen authority, or unrelated file changed. Git publication remains pending; no PR or merge was created.
+
+**Codex — C01 Git verification:** Commit `317e5ab8598b6d34aad7ab1f0c636c05ec6703d8` with the required message was pushed to `v003/bf-f03-governance-04-validator`. `git ls-remote` confirms that exact remote branch SHA. `origin/main` remains at `f6809cd9c060b288581ff56425b41c4f1d533e82`; no PR or merge occurred. The working tree was clean after the implementation commit. A report-only commit is being used to preserve this publication verification in the same Phase 03 records.
+
+
+## V003-BF-F03-C01 — Operator-directed active-register cleanup (2026-10-18)
+
+Following fresh ChatGPT independent PASS (qualified) of the corrected validator (13/13 tests, 82 READMEs, 81 local trees, 1,049 entries, 867 links, zero findings), Operator directed the resolved finding to be removed from active Unresolved intake. GOVERNANCE-04 and the previously accepted README-03 are both now excluded from the active index; permanent issue IDs and historical verification/publication evidence remain. F03 implementation and correction are pushed to `v003/bf-f03-governance-04-validator` (latest `4d642ff91060ec37820a0bb9e87902ccd366752c` before this cleanup). Semantic status claims remain qualified. This register cleanup is local, unstaged, and not represented as Git-published or merged.
+
+
+## V003 Unresolved Register full active-intake clearing — 2026-10-19
+
+Operator instructed deletion of all resolved listings from the Unresolved Register after the prior independent F03-C01 PASS (qualified) and removal of GOVERNANCE-04/README-03 from active intake. The register was simplified to an empty active corrective issue index (0 CRITICAL, 0 HIGH, 0 MEDIUM, 0 LOW), retaining links to permanent evidence and rules for future intake. Prior register text is recoverable in Git history; original findings, bounded acceptances, qualifications, and publication facts remain in permanent Phase 03 records. This local documentation cleanup does not merge the F03 branch or assert overall V003 closeout.
+
+## V003-BF-FINAL-PUBLISH-01 - Operator/Codex publication closeout - 2026-10-19
+
+**De O'Dini - Operator:** Authorized publication of the F03 validator implementation, F03-C01 correction, and final active Unresolved Register cleanup. The authorization required a scoped review, standard PR to main, merge only if verification and merge gates passed, preservation of the F03 branch and stashes, and a separate post-merge report.
+
+**Codex:** Rechecked DeOdini/DEODINI_BRAINBOX, the expected F03 branch and C01 commit, and the four-file cleanup worktree. The active Unresolved Register showed 0 active findings. The 13-test suite, full validator, Governance README-only validator, and whitespace checks passed. A fresh independent C01 review returned QUALIFIED PASS. The four-file cleanup was staged alone and committed as 1eb243fa5883e3404df3ecefa27f0c228dea6ebd with the authorized message, then pushed to v003/bf-f03-governance-04-validator.
+
+**Codex - pull request:** Opened PR #87 against main. The PR contained eight in-scope files, had the expected head SHA, was mergeable, and had no reported commit status checks or requested reviews. The standard merge operation succeeded at 2026-10-19T07:17:40Z, producing merge commit 484631ddb5d4048ef83cda4372352873faa17f6a.
+
+**Codex - post-merge verification:** GitHub reports PR #87 merged. The main-branch Unresolved Register was fetched and read back with 0 active findings. Local main was fast-forwarded from its ancestor and matches origin/main at the merge SHA. The worktree was clean; four pre-existing stashes and the F03 branch were retained. The qualification remains: automated tree/status validation does not certify semantics, current authorization, or evidence freshness. This publication closes only the scoped F03/C01 and register-cleanup work; it is not a Batch F or overall V003 closure declaration.
+
+## Operator-declared Phase 03 MVP lifecycle closure — 2026-10-19
+
+The Operator accepts the V003 Specification MVP scope and expressly declares Phase 03 **CLOSED for MVP scope** and the V003 upgrade lifecycle closed. This lifecycle decision preserves every bounded historical PASS, qualification and publication fact without upgrading their evidential status. Do not migrate, rename, delete or move the existing Phase 03 folder. Subsequent changes are recorded separately under root-level POST_V003_MODIFICATIONS_BRAINBOX. Under explicit Operator instruction, root README and project tree remain unchanged during the new folder's creation. This local addendum is not a Git publication or independent retroactive verification.
+
+## F02 branch history integrated — 2026-10-19
+
+The following checkpoint was originally recorded on 2026-10-18. It is preserved as historical evidence; the later 2026-10-19 closure and zero-active issue state remain current.
+
 ## V003-BF-F02/F03 — Operator-directed unresolved-register cleanup — 2026-10-18
 
 The Operator directed removal of resolved findings from the active register. F02 root-tree reconciliation had received ChatGPT independent QUALIFIED PASS, count reconciliation (395 logical entries; 393 present; two planned absent), and publication through PR #85 at merge `259bada3851cdbe46e74341124b9afc378aa1cbc`. README-03 was therefore removed from active intake as an Operator-directed disposition, not a retroactive unconditional verifier PASS. Prior evidence limitations remain preserved.
