@@ -1179,3 +1179,7 @@ Operator instructed deletion of all resolved listings from the Unresolved Regist
 - **Independent review:** C01 QUALIFIED PASS; semantic content, authorization freshness, and evidence freshness remain outside automated validation.
 - **Post-merge:** GitHub main contains the merged change and the active Unresolved Register reports 0 findings. Local main equals origin/main at the merge SHA; worktree clean. Four stashes and the F03 branch were retained.
 - **Disposition:** Scoped publication is integrated. Do not interpret this ticket result as Batch F or overall V003 closure.
+
+## Operator-declared Phase 03 MVP lifecycle closure — 2026-10-19
+
+The Operator accepts the V003 Specification MVP scope and expressly declares Phase 03 **CLOSED for MVP scope** and the V003 upgrade lifecycle closed. This lifecycle decision preserves every bounded historical PASS, qualification and publication fact without upgrading their evidential status. Do not migrate, rename, delete or move the existing Phase 03 folder. Subsequent changes are recorded separately under root-level POST_V003_MODIFICATIONS_BRAINBOX. Under explicit Operator instruction, root README and project tree remain unchanged during the new folder's creation. This local addendum is not a Git publication or independent retroactive verification.

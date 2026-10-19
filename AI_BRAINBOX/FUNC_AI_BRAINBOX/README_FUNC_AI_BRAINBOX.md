@@ -60,6 +60,13 @@ The current physical structure is shown in the canonical two-descendant-level lo
 - Procedures, routing, and operating sequences belong to the appropriate workflow or DEVOPS domain.
 - The legacy FQ, FUNC_REQ, and FUNC_WORKFLOW sources are now archived as historical references. No replacement for their local procedures is inferred; current system-wide rules remain in Governance and the current agent registries remain under CORE/EXE.
 
+## CORE and EXE navigation — 2026-10-19
+
+- **CORE** owns each named agent's capability inventory and observed integration-state record. Start at the [CORE registry README](AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md) and follow the agent-specific record.
+- **Agent EXE** owns operation-level execution records for the named agent that performed or attempted the operation. The [EXE parent README](AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md) routes to those records.
+- **Functional EXE** owns category-level cross-agent indexes that point to the relevant agent operation records; it is an index, not a second detailed execution record.
+
+These navigation roles do not establish current connectivity, successful execution, or authorization. The exact evidence and limits remain in the cited CORE, agent EXE, and original evidence records.
 ## Ticket 02 current source disposition — 2026-10-16
 
 The active FUNC directory has exactly three immediate children: AI_AGENTS_CORE_FUNC_BRAINBOX/, AI_AGENTS_EXE_FUNC_BRAINBOX/, and this README. The eight agent source reports and three ancillary FUNC records were moved byte-for-byte to RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/FUNC_AI_BRAINBOX/. The root DOB and AI entry files are archived beside them. See the [Ticket 02 integrity manifest](../../RECYCLE_BIN_BRAINBOX/LEGACY_AUTHORITY_RETIREMENT_MANIFEST_BRAINBOX.json) and [retirement ledger](../../RECYCLE_BIN_BRAINBOX/RETIREMENT_LEDGER_BRAINBOX.md).
