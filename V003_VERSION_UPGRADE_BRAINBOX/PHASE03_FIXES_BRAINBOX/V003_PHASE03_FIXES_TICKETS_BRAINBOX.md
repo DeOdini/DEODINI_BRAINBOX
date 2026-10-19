@@ -1168,3 +1168,14 @@ Following fresh ChatGPT independent PASS (qualified) of the corrected validator 
 ## V003 Unresolved Register full active-intake clearing — 2026-10-19
 
 Operator instructed deletion of all resolved listings from the Unresolved Register after the prior independent F03-C01 PASS (qualified) and removal of GOVERNANCE-04/README-03 from active intake. The register was simplified to an empty active corrective issue index (0 CRITICAL, 0 HIGH, 0 MEDIUM, 0 LOW), retaining links to permanent evidence and rules for future intake. Prior register text is recoverable in Git history; original findings, bounded acceptances, qualifications, and publication facts remain in permanent Phase 03 records. This local documentation cleanup does not merge the F03 branch or assert overall V003 closeout.
+
+## V003-BF-FINAL-PUBLISH-01 - Scoped publication and merge result - 2026-10-19
+
+- **Scope:** F03 validator implementation, F03-C01 approved-absence correction, and four-file active Unresolved Register cleanup; no overall V003 closure.
+- **Cleanup commit:** 1eb243fa5883e3404df3ecefa27f0c228dea6ebd, V003-BF: clear resolved findings from Unresolved Register; pushed to v003/bf-f03-governance-04-validator.
+- **PR:** #87, base main, head v003/bf-f03-governance-04-validator; 8 changed files; merged at 2026-10-19T07:17:40Z.
+- **Merge SHA:** 484631ddb5d4048ef83cda4372352873faa17f6a.
+- **Checks:** 13 Python tests passed; full validator 82 READMEs / 81 local trees / 1,049 entries / 867 targets / 0 findings; Governance README-only validation 1 tree / 12 entries / 20 targets / 0 findings; Git whitespace checks passed. GitHub reported no commit status checks.
+- **Independent review:** C01 QUALIFIED PASS; semantic content, authorization freshness, and evidence freshness remain outside automated validation.
+- **Post-merge:** GitHub main contains the merged change and the active Unresolved Register reports 0 findings. Local main equals origin/main at the merge SHA; worktree clean. Four stashes and the F03 branch were retained.
+- **Disposition:** Scoped publication is integrated. Do not interpret this ticket result as Batch F or overall V003 closure.

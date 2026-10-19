@@ -2893,3 +2893,13 @@ Following fresh ChatGPT independent PASS (qualified) of the corrected validator 
 ## V003 Unresolved Register full active-intake clearing — 2026-10-19
 
 Operator instructed deletion of all resolved listings from the Unresolved Register after the prior independent F03-C01 PASS (qualified) and removal of GOVERNANCE-04/README-03 from active intake. The register was simplified to an empty active corrective issue index (0 CRITICAL, 0 HIGH, 0 MEDIUM, 0 LOW), retaining links to permanent evidence and rules for future intake. Prior register text is recoverable in Git history; original findings, bounded acceptances, qualifications, and publication facts remain in permanent Phase 03 records. This local documentation cleanup does not merge the F03 branch or assert overall V003 closeout.
+
+## V003-BF-FINAL-PUBLISH-01 - Operator/Codex publication closeout - 2026-10-19
+
+**De O'Dini - Operator:** Authorized publication of the F03 validator implementation, F03-C01 correction, and final active Unresolved Register cleanup. The authorization required a scoped review, standard PR to main, merge only if verification and merge gates passed, preservation of the F03 branch and stashes, and a separate post-merge report.
+
+**Codex:** Rechecked DeOdini/DEODINI_BRAINBOX, the expected F03 branch and C01 commit, and the four-file cleanup worktree. The active Unresolved Register showed 0 active findings. The 13-test suite, full validator, Governance README-only validator, and whitespace checks passed. A fresh independent C01 review returned QUALIFIED PASS. The four-file cleanup was staged alone and committed as 1eb243fa5883e3404df3ecefa27f0c228dea6ebd with the authorized message, then pushed to v003/bf-f03-governance-04-validator.
+
+**Codex - pull request:** Opened PR #87 against main. The PR contained eight in-scope files, had the expected head SHA, was mergeable, and had no reported commit status checks or requested reviews. The standard merge operation succeeded at 2026-10-19T07:17:40Z, producing merge commit 484631ddb5d4048ef83cda4372352873faa17f6a.
+
+**Codex - post-merge verification:** GitHub reports PR #87 merged. The main-branch Unresolved Register was fetched and read back with 0 active findings. Local main was fast-forwarded from its ancestor and matches origin/main at the merge SHA. The worktree was clean; four pre-existing stashes and the F03 branch were retained. The qualification remains: automated tree/status validation does not certify semantics, current authorization, or evidence freshness. This publication closes only the scoped F03/C01 and register-cleanup work; it is not a Batch F or overall V003 closure declaration.
