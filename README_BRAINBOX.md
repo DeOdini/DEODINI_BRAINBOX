@@ -7,7 +7,7 @@
 **CURRENT DOMAIN:** Complete Brainbox target tree, population state, and root-level navigation
 **PURPOSE:** Expose the entire approved Brainbox architecture and identify which target branches are populated, planned, or still represented by legacy source material.
 **MENTAL MODEL:** This root README answers where each domain belongs and where to navigate. Each governed child README explains its own purpose and local tree. The root tree and child mental models work together.
-**GOVERNED BY:** De O'Dini — Operator; Governance for current system-wide rules; the frozen V003 Specification for target architecture; the Origin Conversation for historical decisions; Phase 02 as a closed migration-process archive; and Phase 03 for active unresolved follow-up navigation.
+**GOVERNED BY:** De O'Dini — Operator; Governance for current system-wide rules; the frozen V003 Specification for target architecture; the Origin Conversation for historical decisions; Phase 02 as a closed migration-process archive; and Phase 03 records for historical closure and future follow-up navigation.
 **AUTHORITATIVE TREE:** The complete V003 target tree in this file is the canonical root navigation tree. It follows frozen Specification §8, with the Operator-approved POC naming adjustment recorded in Phase 03; the frozen Specification retains its historical CASE_STUDIES names.
 **LOCAL TREE:** The current physical repository layout and the separate V003 support/archive overlay are listed below.
 **RELATED DOMAINS:** Governance, Version History, Milestones, AI, Portfolio, and V003 authority/support.
@@ -72,7 +72,7 @@ DEODINI_BRAINBOX/
 ├── MILESTONES_BRAINBOX/ [PRESENT · POPULATED; Router/Agentic capability PLANNED]
 │   ├── README_MILESTONES_BRAINBOX.md
 │   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
-├── AI_BRAINBOX/ [PRESENT · POPULATED — V003 migration records reconciled; former §§8–18 case closed; GOVERNANCE-04 remains active]
+├── AI_BRAINBOX/ [PRESENT · POPULATED — V003 migration records reconciled; former §§8–18 case closed; zero active unresolved findings as of 2026-10-19]
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
 │   │   ├── README_FUNC_AI_BRAINBOX.md
@@ -517,7 +517,7 @@ V003_VERSION_UPGRADE_BRAINBOX/
 │   ├── V003_MIGRATION_CONVO_VERSION_UPGRADE_BRAINBOX.md
 │   ├── V003_MIGRATION_REPORT_VERSION_UPGRADE_BRAINBOX.md
 │   └── V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md
-├── PHASE03_FIXES_BRAINBOX/ [PRESENT · POPULATED; prior qualified V003 closeout; GOVERNANCE-04 follow-up active]
+├── PHASE03_FIXES_BRAINBOX/ [PRESENT · POPULATED; prior qualified V003 closeout; zero active unresolved findings as of 2026-10-19]
 │   ├── README_PHASE03_FIXES_BRAINBOX.md
 │   ├── F06_M20_SOURCE_REFERENCE_AUDIT_PHASE03_FIXES_BRAINBOX.csv
 │   ├── F09_FUNC_CORE_EXE_TRACEABILITY_PHASE03_FIXES_BRAINBOX.csv
@@ -526,14 +526,14 @@ V003_VERSION_UPGRADE_BRAINBOX/
 │   ├── V003_FIXES_REPORT_BRAINBOX.md
 │   ├── V003_PHASE03_FIXES_TICKETS_BRAINBOX.md
 │   └── V003_POC_NAMING_SCOPED_DIFF_BRAINBOX.diff
-└── V003_UNRESOLVED_BRAINBOX.md [ACTIVE — GOVERNANCE-04 follow-up; former §§8–18 case closed]
+└── V003_UNRESOLVED_BRAINBOX.md [PRESENT — zero active findings as of 2026-10-19; historical records remain in Phase 03]
 ```
 
 - **Canonical target:** `V003_SPECIFICATION_VERSION_UPGRADE_BRAINBOX.md`.
 - **Historical decision evidence:** `V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md`.
 - **Phase 01:** closed/frozen; the archive records its execution and verification.
 - **Phase 02:** closed migration archive; the report, conversation, and ticket records preserve execution and Git-closure evidence.
-- **Phase 03:** The Operator-accepted qualified V003 closeout remains a historical checkpoint; the former §§8–18 case is closed. The F02 cleanup branch removes README-03 from the active register under the Operator's 2026-10-18 direction; GOVERNANCE-04 remains active. F02's accepted structural reconciliation is closed within its qualified scope after PR #85 and this cleanup-branch publication; the cleanup is not on `main` until separately authorized merge. It does not certify automatic enforcement or remove historical verification limitations.
+- **Phase 03:** The Operator accepted the V003 MVP and Phase 03 lifecycle closure on 2026-10-19. The V003 Unresolved Register was cleared to zero active findings by the published Batch F closeout; historical ticket findings, limitations and verification qualifications remain in the permanent Phase 03 records. The earlier README-03/GOVERNANCE-04 checkpoint is preserved as dated history. Later modifications are routed through the standalone Post-V003 workspace.
 - Phase 02 and Phase 03 are process/evidence containers, not target-domain knowledge. Ticket presence does not make a path populated.
 
 ## Current Version History layout
@@ -553,7 +553,7 @@ VERSION_HISTORY_BRAINBOX/
     └── TREE_SNAPSHOT_V003_BRAINBOX.md [present; M21 physical snapshot retained; qualified closure accepted without recovery of 20 Cline objects]
 ```
 
-The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The M21 V003 physical-tree snapshot is present. Phase 03 Batch E V003-F02/M21 qualified closure was accepted by the Operator; the 20 Cline objects were not recovered. Phase 03 Batch F F02 root reconciliation was published in PR #85 (merge `259bada3851cdbe46e74341124b9afc378aa1cbc`) and its accepted structural scope is closed with the qualification recorded in the Phase 03 report. README-03's removal from active intake is on the F02 cleanup branch pending separately authorized merge. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
+The V001/V002 snapshots record evidence-selected Git tree cut points, not formal release tags. Their retrospectives distinguish verified technical history from the missing conceptual rationale; no rationale was invented. The M21 V003 physical-tree snapshot is present. Phase 03 Batch E V003-F02/M21 qualified closure was accepted by the Operator; the 20 Cline objects were not recovered. Phase 03 Batch F F02 root reconciliation was published in PR #85 (merge `259bada3851cdbe46e74341124b9afc378aa1cbc`) and its accepted structural scope is closed with the qualification recorded in the Phase 03 report. F02's 2026-10-18 active-register cleanup is retained in Phase 03 history; the active register was cleared to zero findings on 2026-10-19. The nested V003 child remains a child of `VERSION_HISTORY_BRAINBOX/`; GitHub's compact-folder display does not change that path.
 
 ## Navigation index
 
@@ -585,8 +585,8 @@ Use these current child READMEs for domain navigation. The authoritative target 
 | [V003 Origin Conversation](V003_VERSION_UPGRADE_BRAINBOX/V003_CONVO_ORIGIN_VERSION_UPGRADE_BRAINBOX.md) | Historical decision and ambiguity evidence. |
 | [Phase 01 archive README](V003_VERSION_UPGRADE_BRAINBOX/PHASE01_POLISH_BRAINBOX/README_PHASE01_POLISH_BRAINBOX.md) | Closed Phase 01 audit/history support. |
 | [Phase 02 migration README](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md) | Closed Phase 02 process archive and migration evidence. |
-| [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) | Prior qualified V003 closeout and active GOVERNANCE-04 follow-up navigation. |
-| [Active Unresolved Register](V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md) | The F02 cleanup branch removes the resolved README-03 intake row; GOVERNANCE-04 remains active. |
+| [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) | Prior qualified V003 closeout; historical follow-up findings and closure evidence are preserved. |
+| [Active Unresolved Register](V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md) | The current V003 issue index is clear with zero active findings as of 2026-10-19; historical evidence remains in Phase 03 records. |
 | [Migration Map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) | Living source-backed migration ledger and recorded dispositions. |
 | [Recycle Bin README](RECYCLE_BIN_BRAINBOX/README_RECYCLE_BIN_BRAINBOX.md) | Operator-approved additive historical-retirement archive; outside the frozen V003 target tree. |
 | [Archived DOB_MUST_README.md — RETIRED / HISTORICAL / NOT CURRENT OPERATING AUTHORITY](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md) | Preserved historical root reading-order and Governance source. |
@@ -642,7 +642,7 @@ The active `MILESTONES_BRAINBOX/` contains only `README_MILESTONES_BRAINBOX.md` 
 - [V003 authority-container README](V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md) — local V003 container map.
 - [Phase 01 archive README](V003_VERSION_UPGRADE_BRAINBOX/PHASE01_POLISH_BRAINBOX/README_PHASE01_POLISH_BRAINBOX.md) — closed audit/history support.
 - [Phase 02 migration README](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md) — closed process archive and migration evidence.
-- [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — prior qualified V003 closeout and active GOVERNANCE-04 follow-up navigation.
+- [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — prior qualified V003 closeout; historical follow-up findings and closure evidence are preserved.
 - [Phase 02 ticket set](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md) — individually scoped, authorized migration work.
 - [Migration map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — current-state inventory, integrity baseline, and living dispositions.
 - [DOB_MUST_README.md — RETIRED / HISTORICAL / NOT CURRENT OPERATING AUTHORITY](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md) — its system-wide policies have been mapped to Governance; the preserved body remains historical evidence.
