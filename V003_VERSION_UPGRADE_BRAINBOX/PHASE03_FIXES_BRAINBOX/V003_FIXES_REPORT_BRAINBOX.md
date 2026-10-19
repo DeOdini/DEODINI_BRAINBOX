@@ -4197,3 +4197,13 @@ The corrected execution confirms the prior 12 findings were caused by the incorr
 ### V003-BF-F03-C01 Git publication verification — 2026-10-18
 
 The five authorized C01 files were staged and committed with the required message as `317e5ab8598b6d34aad7ab1f0c636c05ec6703d8` (`V003-BF-F03-C01: correct Sandbox approved-absence paths`). The push to `v003/bf-f03-governance-04-validator` completed. `git ls-remote` independently returned the same SHA for the remote branch; `origin/main` remains `f6809cd9c060b288581ff56425b41c4f1d533e82`. The worktree was clean after that implementation commit. No PR or merge occurred. This publication checkpoint is followed by a report-only closeout commit to preserve the remote verification record.
+
+
+## V003-BF-F03-C01 — Operator-directed active-register cleanup (2026-10-18)
+
+Following fresh ChatGPT independent PASS (qualified) of the corrected validator (13/13 tests, 82 READMEs, 81 local trees, 1,049 entries, 867 links, zero findings), Operator directed the resolved finding to be removed from active Unresolved intake. GOVERNANCE-04 and the previously accepted README-03 are both now excluded from the active index; permanent issue IDs and historical verification/publication evidence remain. F03 implementation and correction are pushed to `v003/bf-f03-governance-04-validator` (latest `4d642ff91060ec37820a0bb9e87902ccd366752c` before this cleanup). Semantic status claims remain qualified. This register cleanup is local, unstaged, and not represented as Git-published or merged.
+
+
+## V003 Unresolved Register full active-intake clearing — 2026-10-19
+
+Operator instructed deletion of all resolved listings from the Unresolved Register after the prior independent F03-C01 PASS (qualified) and removal of GOVERNANCE-04/README-03 from active intake. The register was simplified to an empty active corrective issue index (0 CRITICAL, 0 HIGH, 0 MEDIUM, 0 LOW), retaining links to permanent evidence and rules for future intake. Prior register text is recoverable in Git history; original findings, bounded acceptances, qualifications, and publication facts remain in permanent Phase 03 records. This local documentation cleanup does not merge the F03 branch or assert overall V003 closeout.

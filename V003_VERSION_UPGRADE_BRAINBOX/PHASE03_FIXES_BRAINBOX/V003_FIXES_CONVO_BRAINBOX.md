@@ -2883,3 +2883,13 @@ No Sandbox README was modified. F03 is resubmitted for fresh independent ChatGPT
 **Codex — verification:** The complete Python suite reports 13 passed, exit 0. The full repository validator reports 82 READMEs, 81 local tree blocks, 1,049 entries, 867 Markdown links and zero findings, exit 0 (`PASS (qualified)`). Governance README-only validation reports 1 README/tree, 12 entries, 20 links and zero findings, exit 0. `git diff --check` passes. All four physical candidate directories remain absent. No Sandbox README, root README, frozen authority, or unrelated file changed. Git publication remains pending; no PR or merge was created.
 
 **Codex — C01 Git verification:** Commit `317e5ab8598b6d34aad7ab1f0c636c05ec6703d8` with the required message was pushed to `v003/bf-f03-governance-04-validator`. `git ls-remote` confirms that exact remote branch SHA. `origin/main` remains at `f6809cd9c060b288581ff56425b41c4f1d533e82`; no PR or merge occurred. The working tree was clean after the implementation commit. A report-only commit is being used to preserve this publication verification in the same Phase 03 records.
+
+
+## V003-BF-F03-C01 — Operator-directed active-register cleanup (2026-10-18)
+
+Following fresh ChatGPT independent PASS (qualified) of the corrected validator (13/13 tests, 82 READMEs, 81 local trees, 1,049 entries, 867 links, zero findings), Operator directed the resolved finding to be removed from active Unresolved intake. GOVERNANCE-04 and the previously accepted README-03 are both now excluded from the active index; permanent issue IDs and historical verification/publication evidence remain. F03 implementation and correction are pushed to `v003/bf-f03-governance-04-validator` (latest `4d642ff91060ec37820a0bb9e87902ccd366752c` before this cleanup). Semantic status claims remain qualified. This register cleanup is local, unstaged, and not represented as Git-published or merged.
+
+
+## V003 Unresolved Register full active-intake clearing — 2026-10-19
+
+Operator instructed deletion of all resolved listings from the Unresolved Register after the prior independent F03-C01 PASS (qualified) and removal of GOVERNANCE-04/README-03 from active intake. The register was simplified to an empty active corrective issue index (0 CRITICAL, 0 HIGH, 0 MEDIUM, 0 LOW), retaining links to permanent evidence and rules for future intake. Prior register text is recoverable in Git history; original findings, bounded acceptances, qualifications, and publication facts remain in permanent Phase 03 records. This local documentation cleanup does not merge the F03 branch or assert overall V003 closeout.
