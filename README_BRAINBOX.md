@@ -77,7 +77,7 @@ DEODINI_BRAINBOX/
 ├── MILESTONES_BRAINBOX/ [PRESENT · POPULATED; Router/Agentic capability PLANNED]
 │   ├── README_MILESTONES_BRAINBOX.md
 │   └── BRAINBOX_ROUTER_AGENTIC_MILESTONE_BRAINBOX.md
-├── AI_BRAINBOX/ [PRESENT · POPULATED — V003 migration records reconciled; former §§8–18 case closed; README-03 and GOVERNANCE-04 remain active]
+├── AI_BRAINBOX/ [PRESENT · POPULATED — V003 migration records reconciled; former §§8–18 case closed; zero active unresolved corrective findings as of 2026-10-19]
 │   ├── README_AI_BRAINBOX.md
 │   ├── FUNC_AI_BRAINBOX/
 │   │   ├── README_FUNC_AI_BRAINBOX.md
@@ -656,7 +656,7 @@ The active `MILESTONES_BRAINBOX/` contains only `README_MILESTONES_BRAINBOX.md` 
 - [V003 authority-container README](V003_VERSION_UPGRADE_BRAINBOX/README_V003_VERSION_UPGRADE_BRAINBOX.md) — local V003 container map.
 - [Phase 01 archive README](V003_VERSION_UPGRADE_BRAINBOX/PHASE01_POLISH_BRAINBOX/README_PHASE01_POLISH_BRAINBOX.md) — closed audit/history support.
 - [Phase 02 migration README](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md) — closed process archive and migration evidence.
-- [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — prior qualified V003 closeout and active README-03/GOVERNANCE-04 follow-up navigation.
+- [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) — closed V003 MVP and historical README-03/GOVERNANCE-04 disposition and verification evidence; no active corrective findings as of 2026-10-19.
 - [Phase 02 ticket set](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/V003_PHASE02_MIGRATION_TICKETS_BRAINBOX.md) — individually scoped, authorized migration work.
 - [Migration map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) — current-state inventory, integrity baseline, and living dispositions.
 - [DOB_MUST_README.md — RETIRED / HISTORICAL / NOT CURRENT OPERATING AUTHORITY](RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/DOB_MUST_README.md) — its system-wide policies have been mapped to Governance; the preserved body remains historical evidence.

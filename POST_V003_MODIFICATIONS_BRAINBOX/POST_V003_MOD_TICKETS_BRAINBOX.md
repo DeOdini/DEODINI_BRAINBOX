@@ -51,3 +51,36 @@
 - Remote verification: GitHub commit lookup matched the full SHA and commit message; branch comparison against `main` reports 1 commit ahead, 0 behind, and the exact 12 authorized files. Local `HEAD` equals upstream at the same SHA; worktree clean.
 - Validation: 13/13 Governance tests passed; full repository validator exited 0 with qualified PASS and zero findings (83 README files, 82 local tree blocks, 1,053 tree entries, 923 Markdown targets); staged whitespace check passed.
 - No PR or merge was created. The branch remains available for independent review.
+
+
+## POST-V003-MOD-004 — F02 Historical Branch Reconciliation and PR #90 Disposition
+
+**Date:** 2026-10-19
+
+**Status:** EXECUTED LOCALLY — OUTCOME B; PR #90 remains open and unmerged.
+
+**Operator authorization:** Approved execution ticket supplied by the Operator.
+
+**Reporting branch:** post-v003/mod-004-f02-reconciliation, based on fetched origin/main at 2ce8c1771c560465c84f3a54cdc44803794744f7.
+
+**Source branch:** v003/bf-f02-register-cleanup at c8005beb18a2632868954cba2bcbe87196a167e1.
+**PR:** https://github.com/DeOdini/DEODINI_BRAINBOX/pull/90
+
+**Preflight:** Repository identity confirmed as DeOdini/DEODINI_BRAINBOX. GitHub main is 2ce8c1771c560465c84f3a54cdc44803794744f7; the F02 branch tip is c8005beb18a2632868954cba2bcbe87196a167e1. GitHub compare reports 9 commits ahead and 11 behind, with merge base f6809cd9c060b288581ff56425b41c4f1d533e82. PR #90 is open, unmerged, mergeable=false, mergeable_state=dirty. Current local branch is the dedicated MOD-004 reporting branch, clean before this record; four existing stashes were preserved. An ordinary fetch first failed to open .git/FETCH_HEAD for permission reasons. A safe explicit fetch then succeeded; no lock files were present and the existing FETCH_HEAD owner was the current Windows user.
+
+**File reconciliation:** The exact five changed paths and their dispositions are recorded in the MOD-004 report. The active Unresolved Register is byte-identical at the GitHub blob level on main and F02, with status CLEAR and active issue count 0. The F02 root README contains two current-status/navigation corrections that are absent from main. The three Phase 03 records contain a dated F02 history addendum not present in main; their prior F02 evidence is retained in the main record bodies, and the new addendum remains available on the retained F02 branch.
+
+**Blocking finding:** Main README_BRAINBOX.md still labels README-03 and GOVERNANCE-04 as active in its AI tree and Phase 03 navigation, despite the current zero-active Unresolved Register and the later 2026-10-19 closure statement. The F02 branch corrects those two lines, but the correction has not reached main. GitHub also reports the PR dirty after both sides changed all five paths from the merge base; the API did not identify exact conflict hunks. Outcome A is therefore not established.
+
+**Disposition:** OUTCOME B — unique current-status correction missing from main. Preserve the source branch and its history. Leave PR #90 open and unmerged; do not post a close comment, force a merge, rewrite history, or delete the branch. Prepare a separate scoped correction proposal for the root README and reconcile the status wording before reconsidering PR disposition. Do not copy historical addenda into unrelated records without a separately scoped decision.
+
+**Publication:** Local reporting only. No files were staged or committed; no push, PR creation, PR closure, merge, or source-branch deletion was performed. Under the ticket’s Outcome B boundary, publication and PR disposition remain pending a resolved correction path.
+
+**Verification:** GitHub readback confirmed the current main and source branch refs, PR state, five-file inventory, blob identities, zero-active register, and the seven required Governance blobs. Each Governance blob exactly matches the local file read from the fetched main baseline. The full Governance validator returned PASS (qualified): 83 READMEs, 82 local trees, 1,053 entries, and 923 Markdown targets. The modified records contain 2 local Markdown links, with 0 broken. git diff --check passed with no whitespace errors; Git emitted only its LF-to-CRLF working-copy warnings. The authorized local diff is append-only: 3 reporting files, 145 additions, 0 deletions.
+
+**Next gate:** Resolve the README discrepancy through a separately authorized, conflict-safe correction; then refresh main and PR state and rerun MOD-004’s five-file reconciliation. Until then, PR #90 remains open and no F02 integration or closure is claimed.
+
+
+### MOD-004 corrective continuation — 2026-10-19
+
+**Authorization:** Operator approved correction after independent Outcome B verification. **Scope:** Two current-state root README statements only, plus append-only MOD-004 evidence records. **No-change:** Historical Phase 03 evidence, Unresolved Register, F02 branch and PR #90. **Publication:** Local change; separate Git stage/commit/push/merge authority not exercised. **Verification:** Recheck root-tree link integrity, Governance validator and Git whitespace; report pending F02 historical-addendum disposition.
