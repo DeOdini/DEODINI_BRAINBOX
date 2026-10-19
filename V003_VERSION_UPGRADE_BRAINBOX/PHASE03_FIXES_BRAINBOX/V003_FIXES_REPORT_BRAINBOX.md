@@ -4207,3 +4207,13 @@ Following fresh ChatGPT independent PASS (qualified) of the corrected validator 
 ## V003 Unresolved Register full active-intake clearing — 2026-10-19
 
 Operator instructed deletion of all resolved listings from the Unresolved Register after the prior independent F03-C01 PASS (qualified) and removal of GOVERNANCE-04/README-03 from active intake. The register was simplified to an empty active corrective issue index (0 CRITICAL, 0 HIGH, 0 MEDIUM, 0 LOW), retaining links to permanent evidence and rules for future intake. Prior register text is recoverable in Git history; original findings, bounded acceptances, qualifications, and publication facts remain in permanent Phase 03 records. This local documentation cleanup does not merge the F03 branch or assert overall V003 closeout.
+
+## V003-BF-FINAL-PUBLISH-01 - Post-merge publication record - 2026-10-19
+
+**Pull request:** [#87 - V003 Batch F: Governance Validator, C01 Correction and Unresolved Register Clearance](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/87). **State:** MERGED to main at 2026-10-19T07:17:40Z. **Merge commit:** 484631ddb5d4048ef83cda4372352873faa17f6a. **Head commit:** 1eb243fa5883e3404df3ecefa27f0c228dea6ebd on retained branch v003/bf-f03-governance-04-validator.
+
+**Merged file scope (8):** GOVERNANCE_BRAINBOX/README_GOV_BRAINBOX.md; GOVERNANCE_BRAINBOX/test_validate_tree_status.py; GOVERNANCE_BRAINBOX/validate_tree_status.py; README_BRAINBOX.md; V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md; and the Phase 03 conversation, report, and ticket register. The frozen V003 Specification and Origin Conversation, Sandbox README bodies, and unrelated files were not changed.
+
+**Verification:** 13/13 Python tests passed. The full validator reported 82 READMEs, 81 local tree blocks, 1,049 displayed entries, 867 Markdown targets, and zero findings. Governance README-only validation reported 1 tree, 12 entries, 20 targets, and zero findings. Staged, commit, and post-merge whitespace checks passed. GitHub reported no commit status checks. Independent verification of C01 was QUALIFIED PASS; automated checks do not establish semantic content quality, authorization freshness, or evidence freshness. The merged Unresolved Register was fetched from GitHub main and reports 0 active findings.
+
+**Synchronization:** After fetching, local main was verified as an ancestor of origin/main and fast-forwarded to the merge commit. Local main and origin/main both resolved to 484631ddb5d4048ef83cda4372352873faa17f6a; the worktree was clean. Four existing stashes were preserved. The F03 branch remains on GitHub. This records the scoped F03/C01 publication only and does not declare Batch F or overall V003 closed.
