@@ -56,6 +56,9 @@ DEODINI_BRAINBOX/
 │   ├── EVIDENCE_GOV_BRAINBOX.md
 │   ├── SECURITY_GOV_BRAINBOX.md
 │   ├── TICKETING_GOV_BRAINBOX.md
+│   ├── test_validate_tree_status.py
+│   ├── TREE_AND_STATUS_GOV_BRAINBOX.md
+│   ├── validate_tree_status.py
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── VERSION_HISTORY_BRAINBOX/ [PRESENT · POPULATED — see population table for evidence limits]
 │   ├── README_VERSION_HISTORY_BRAINBOX.md
@@ -468,6 +471,9 @@ DEODINI_BRAINBOX/
 │   ├── EVIDENCE_GOV_BRAINBOX.md
 │   ├── SECURITY_GOV_BRAINBOX.md
 │   ├── TICKETING_GOV_BRAINBOX.md
+│   ├── test_validate_tree_status.py
+│   ├── TREE_AND_STATUS_GOV_BRAINBOX.md
+│   ├── validate_tree_status.py
 │   └── PROMOTION_GOV_BRAINBOX.md
 ├── AI_BRAINBOX/ [PRESENT · POPULATED; current V003 branches; retired legacy Skills record is archived]
 │   └── README_AI_BRAINBOX.md [canonical local AI navigation; complete target subtree is above]
