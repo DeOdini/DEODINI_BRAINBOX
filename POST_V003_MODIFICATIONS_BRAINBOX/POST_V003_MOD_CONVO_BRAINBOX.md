@@ -29,3 +29,8 @@ Following POST-V003-MOD-001 EXE README consolidation, Operator instructed ChatGP
 
 
 **Codex implementation and local verification result — 2026-10-19:** The root physical tree and navigation now include the standalone post-V003 folder, without adding it to the frozen V003 architecture. The V003 and FUNC parent routes were reconciled. The Phase 03 README required no change because it already states qualified closure and dates its checkpoint. Governance tests passed 13/13; the full validator reported 83 READMEs, 82 local trees, 1,053 entries, 923 Markdown targets and zero findings; physical tree comparisons matched; git diff --check passed. Exact file scope and qualifications are in the accompanying report. Branch publication remains pending; no PR or merge is authorized.
+
+
+### Codex - POST-V003-MOD-003 publication result - 2026-10-19
+
+The Operator-authorized implementation was committed on `post-v003/mod-001-003-navigation-sync` as `f0a6127012e8ae5a1d455c93c4a0b4724a55d237` and pushed to the matching GitHub branch. GitHub commit readback and branch comparison confirmed the commit; the branch is one commit ahead of `main`, and its 12-file inventory matches the authorized staged set. Local `HEAD` and upstream match and the worktree is clean. The Governance tests passed 13/13 and the full validator returned qualified PASS with zero findings. No PR was opened and no merge was performed.
