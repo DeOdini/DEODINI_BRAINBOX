@@ -9,6 +9,7 @@
 
 ```text
 POST_V003_MODIFICATIONS_BRAINBOX/ [PRESENT · POPULATED]
+├── POST_V003_DEEP_RESEARCH_BRAINBOX.md [PRESENT]
 ├── POST_V003_MOD_CONVO_BRAINBOX.md [PRESENT]
 ├── POST_V003_MOD_REPORT_BRAINBOX.md [PRESENT]
 ├── POST_V003_MOD_TICKETS_BRAINBOX.md [PRESENT]
@@ -16,6 +17,8 @@ POST_V003_MODIFICATIONS_BRAINBOX/ [PRESENT · POPULATED]
 ```
 
 ## Records
+
+[Deep Research assessment](POST_V003_DEEP_RESEARCH_BRAINBOX.md) — 14-category post-V003 research scope and the complete appended assessment; findings have not been independently certified, and recommendations are not adopted policy.
 
 [Operator decisions](POST_V003_MOD_CONVO_BRAINBOX.md) — explicit post-closure declarations, approvals and conversation outcomes.
 
@@ -32,4 +35,8 @@ POST_V003_MODIFICATIONS_BRAINBOX/ [PRESENT · POPULATED]
 
 The closed V003 upgrade and Phase 03 folders remain in place without migration. This standalone repository-root folder is listed in the current root physical tree and navigation, but remains outside the frozen V003 target tree. The 2026-10-19 MOD-003 instruction superseded the earlier temporary root-navigation omission. The Phase 03 records remain closure and historical evidence; post-V003 modifications are tracked here.
 
-**LAST VERIFIED:** 2026-10-19 — MOD-003 local tree, Governance references, root navigation and scoped validation recorded in the [MOD-003 report](POST_V003_MOD_REPORT_BRAINBOX.md#post-v003-mod-003--root-tree-and-parent-readme-navigation-synchronization--2026-10-19).
+**LAST VERIFIED (MOD-003 historical checkpoint):** 2026-10-19 — MOD-003 local tree, Governance references, root navigation and scoped validation recorded in the [MOD-003 report](POST_V003_MOD_REPORT_BRAINBOX.md#post-v003-mod-003--root-tree-and-parent-readme-navigation-synchronization--2026-10-19).
+
+**LOCAL IMPLEMENTATION CHECKPOINT:** 2026-10-20 — Codex updated and read back this local tree/navigation against the observed children and checked the new relative link. This records the local implementation at that time.
+
+**PUBLICATION VERIFICATION:** 2026-10-21 — The Deep Research assessment was published through PR #92, merged into GitHub `main` at `6668c0d85055d98a7752fe6db7f83ab1c9868656`; the published file blob matched the publication branch blob. Citation and Governance verification remain pending.
