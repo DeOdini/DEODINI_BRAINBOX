@@ -91,6 +91,32 @@ For verified cross-domain read sources and ticket-scoped update destinations, se
 
 ## Local read-only validation
 
+The Governance directory contains two complementary Python utilities:
+
+**`validate_tree_status.py` — Read-only structural validator**
+
+This program inspects active Brainbox README documentation and compares supported local-tree, structural-status, and local Markdown-link claims against the accessible repository filesystem.
+
+Its checks include:
+
+- Presence and completeness of each non-root README's canonical two-descendant-level local tree.
+- Listed paths against actual files and directories.
+- Missing, unexpected, or duplicate local-tree entries.
+- Unsupported structural/status labels.
+- Approved absent/planned Sandbox path exceptions.
+- Structural checks for `PRESENT`, `POPULATED`, `STUB`, and `EMPTY`, subject to the limitations below.
+- Existence of local Markdown link destinations and whether their paths escape the repository root.
+
+The root `README_BRAINBOX.md` receives local-link checking, but its complete full-depth tree is not validated with the non-root two-level tree parser.
+
+**`test_validate_tree_status.py` — Validator behavior tests**
+
+This program uses Python's `unittest` framework and controlled temporary repository fixtures to test the validator's behavior.
+
+Its tests include valid tree acceptance, incorrect status labels, omitted paths, excessive tree depth, unauthorized absent paths, broken links, repository-escaping links, and structural status mismatches. The test suite evaluates the implemented validator behavior; passing tests do not establish that every Governance rule has been implemented as an automated check.
+
+### Execution commands
+
 Run from the repository root:
 
 ```powershell
@@ -98,6 +124,22 @@ python GOVERNANCE_BRAINBOX/validate_tree_status.py
 python -B GOVERNANCE_BRAINBOX/test_validate_tree_status.py
 ```
 
-The validator inventories active `README*.md` files, checks each non-root canonical local tree against its direct children and grandchildren, enforces the two-descendant limit, validates the two approved absent Sandbox paths, checks structural status claims that can be compared with the filesystem, and resolves relative Markdown destinations after URL decoding. It does not modify files. `README_BRAINBOX.md` is checked for local links; its full-depth authority tree is not parsed as a two-level local tree. Semantic judgments such as whether content is truly substantive or an authorization is current remain qualified for human review. The current baseline reports existing Sandbox tree placement/omission findings; the validator does not repair them.
+These commands perform validation or execute controlled tests. They are not intended to modify canonical repository documentation. The validator reports findings; it does not repair repository files.
 
-Source: [read-only validator](validate_tree_status.py); [controlled fixture tests](test_validate_tree_status.py).
+### Current validation boundaries
+
+1. **Markdown heading anchors:** The validator checks whether a local Markdown target file exists but does not currently verify that a fragment such as `#specific-heading` resolves to a heading in that file.
+2. **Complete root-tree accuracy:** The validator does not currently independently compare every entry in the full-depth root README tree with the physical repository.
+3. **Status semantics:** Structural checks are limited: `PRESENT` checks that a path exists; `EMPTY` requires a zero-byte file; `POPULATED` checks for a directory and a non-zero-byte file somewhere below it; and `STUB` checks directory existence only. The validator does not decide whether content is genuinely substantive. Recognizing labels such as `VERIFIED`, `ACTIVE`, or `PLANNED` does not prove their evidence, authorization, or lifecycle meaning is justified or current.
+4. **Operational capabilities:** Structural validation does not establish that an AI agent, tool, connector, workflow, or deployment is currently functional.
+5. **Git enforcement:** Running either Python file manually does not automatically block staging, commits, pushes, pull requests, or merges. Automatic enforcement would require a separately approved and configured integration such as a Git hook or CI workflow.
+6. **Validation scope:** A validator PASS means only that the checks currently implemented by that program passed for the inspected files and environment. It is not a blanket Governance-compliance certification.
+
+### Ownership and change control
+
+The two Python files implement and test specific mechanical checks. They do not create or replace Governance policy. The authoritative rules remain in the applicable Governance documents. Any future expansion of validator functionality, test coverage, or automated Git enforcement requires separately authorized implementation work.
+
+**Source files:**
+
+- [Read-only structural validator](validate_tree_status.py)
+- [Validator test suite](test_validate_tree_status.py)
