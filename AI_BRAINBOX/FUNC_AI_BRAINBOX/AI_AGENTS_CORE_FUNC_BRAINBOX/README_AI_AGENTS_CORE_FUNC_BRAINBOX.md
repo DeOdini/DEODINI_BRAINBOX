@@ -7,7 +7,7 @@
 **GOVERNED BY:** Current Documentation, Naming, Reference, Evidence, Ticketing, Tree/Status, Security, Versioning and Promotion Governance; frozen V003 Specification §9; M05/M06 historical decisions.
 **CANONICAL SOURCES:** Each agent's current CORE record for its source-attributed capability inventory; primary source reports for underlying historical claims; V003 Specification §9 for the approved DeepSeek/Qwen role baseline; agent EXE for operation-specific execution records.
 **STATUS:** [ACTIVE — POST-V003 GOVERNANCE-ALIGNED CORE ROUTING]
-**LAST VERIFIED:** 2026-10-19 — documented structure and links reviewed; no general live-agent/tool capability retest performed.
+**LAST VERIFIED:** 2026-10-22 — capability-refresh instructions, local links and structure reviewed; no live agent/tool capability was retested.
 **APPLIES TO:** ChatGPT, Claude, Cline, Codex, Copilot, DeepSeek, Grok and Qwen.
 **AUTHORIZATION BOUNDARY:** This README does not grant tool access, live testing, credential use, modification, external action or Git publication authority.
 
@@ -116,6 +116,64 @@ The established questionnaire is retained as the local scope of each agent's cap
 
 Do not disclose credentials or make external test changes merely to answer a questionnaire. An unknown item may remain unknown until a separately authorized and evidenced assessment.
 
+### Capability refresh assessment and identifier reconciliation
+
+This dated session procedure supplements C01–C10; it does not replace their questions, change the existing CORE state dimensions, or authorize a live test or canonical registration. Apply it when an authorized capability assessment is actually in scope. Record the agent, model when known, session/runtime, date, environment, account or resource scope, permission boundary, exact capability/operation assessed, evidence source and verifier status. Redact secrets and avoid unsupported freshness claims.
+
+#### Session refresh sequence
+
+1. Identify the authorized task and exact runtime/session being assessed.
+2. Read the agent's complete current CORE record, relevant agent-owned EXE records, and the original evidence they cite.
+3. Reconcile each observation by provider/tool identity, function, scope and evidence—not by display name, row position or numeric suffix alone. Compare it with existing CORE IDs, EXE operation IDs, historical evidence and any provisional proposals.
+4. Assess EXPOSED, CONNECTED, AUTHENTICATED, EXECUTABLE, AUTHORIZED, LIMITATIONS, CANONICAL EXE REFERENCES and LAST VERIFIED independently. State which facts were observed now and which were carried forward.
+5. Apply one dated refresh label from the table below to the assessment, with its evidence and scope. The label is an additional assessment layer; it does not replace CORE fields or EXE operation states.
+6. Preserve prior entries and results. A later failure or lack of access does not erase an earlier success. Do not silently change history or claim a capability was retested when it was not.
+7. Treat an unmatched observation as a proposal only. Verify that it is not already represented and that its identity is not ambiguous; do not assign or publish a canonical CORE ID under this procedure. Registration requires its own authorization.
+8. If an operation was actually executed within separately authorized scope, link its evidence to the agent-owned EXE operation and applicable functional index. A CORE assessment alone never establishes EXE `VERIFIED EXECUTED`.
+
+#### Dated refresh labels
+
+| Label | Use only when | Does not establish |
+|---|---|---|
+| `LIVE VERIFIED` | A successful check of the exact stated capability in the identified current runtime is supported by evidence. Name whether it is agent self-observed, independently reproduced, or independently accepted; these are distinct review states. | EXE `VERIFIED EXECUTED`, broader capability, other environments, standing authorization, or independent acceptance unless separately evidenced. |
+| `CARRIED FORWARD — NOT RETESTED` | An existing record is retained, but that capability was not retested in this session. | Current connectivity, authentication, executable access, or freshness. |
+| `CURRENTLY UNAVAILABLE — CONFIRMED` | A sufficiently evidenced, specific check supports unavailability for the stated operation, runtime and scope. Record the observed boundary and source. | Universal or permanent unavailability outside that scope. |
+| `RETEST REQUIRED` | Evidence is stale, ambiguous, contradictory, incomplete, or otherwise inadequate for the intended current claim. | A positive or negative current result. |
+| `NEWLY DISCOVERED` | A capability was directly observed but has not yet been reconciled with or admitted to the canonical inventory. | Connection, authentication, execution, authorization, uniqueness, or canonical registration. |
+
+#### Keep availability findings distinct
+
+| Finding | Meaning and evidence boundary |
+|---|---|
+| **Unexposed** | The capability/interface was not visible in the inspected runtime or inventory. This is an observation about that surface, not proof that a provider service does not exist. |
+| **Untested** | No scoped attempt was made. Keep the result unknown or `CARRIED FORWARD — NOT RETESTED`; do not infer success or failure. |
+| **Disconnected** | An interface or connection is identified, but the observed session did not establish a connection. State the precise runtime and evidence; one failed connection alone does not prove confirmed unavailability. |
+| **Failed** | A scoped attempt occurred and returned an error or unsuccessful result. Preserve the error/evidence and distinguish operation failure from service retirement or general unavailability. |
+| **Currently unavailable — confirmed** | Use only when specific evidence supports that scoped conclusion, such as an authoritative status for the exact service/scope or a sufficiently diagnostic authorized check. State the evidence and limits. |
+| **Retired** | Use when an authoritative source establishes that the service/capability was discontinued. Preserve the historical record and retirement source; do not present retirement as a current-session test. |
+
+An absent catalog entry is not by itself proof of unavailability. Insufficient permissions do not prove that a service is unavailable. A failed operation may warrant `RETEST REQUIRED` unless the evidence supports the narrower confirmed-unavailability finding. Do not call a service retired without authoritative discontinuation evidence.
+
+#### Identifier reconciliation example: provisional ChatGPT proposals
+
+The archived October 20 and October 22 assessments contain provisional ChatGPT numbering proposals that assign different functions to the same ordinal IDs. For example, the October 20 proposal associates `CORE-CHATGPT-001` with text generation/documentation, `002` with RDC file inspection and `003` with GitHub repository inspection; the October 22 proposal associates `001` with GitHub discovery, `002` with remote-device discovery and `003` with remote-directory enumeration. These are documented here as a collision example, not as canonical records. See the [archived post-V003 conversation](../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_CONVO_BRAINBOX.md).
+
+Resolve such a conflict by comparing the capability definition, evidence, source and scope against the live CORE/EXE records. Preserve both proposals as historical evidence, identify duplicates or distinct capabilities, and report unresolved identity conflicts. Do not select a proposal by date or number alone, and do not assign canonical ChatGPT IDs under this questionnaire change.
+
+#### Worked outcomes
+
+1. **Existing capability retested successfully:** An authorized agent repeats the same scoped repository-discovery function already present in its CORE record. Record the dated `LIVE VERIFIED` observation and evidence; if an operation ran, link its distinct EXE evidence. The CORE label alone does not set EXE to `VERIFIED EXECUTED`.
+2. **Historical connector not retested:** An email connector appears in a cited older record but is not tested now. Retain the historical item as `CARRIED FORWARD — NOT RETESTED`; do not claim current connectivity.
+3. **Connection attempt fails:** Record the runtime, attempted scope, exact result and evidence; preserve any earlier success. Use `RETEST REQUIRED` unless the evidence specifically supports `CURRENTLY UNAVAILABLE — CONFIRMED` for that scope.
+4. **New interface appears:** Record the directly observed interface as `NEWLY DISCOVERED`, compare it against existing IDs and evidence, and keep connection/authentication/execution/authorization states separate. Do not register it or assign an ID without the required separate authorization.
+5. **Operation is repeated:** Preserve the earlier EXE evidence and record the later attempt separately under the existing EXE record conventions, with its own date, runtime, target, outcome and evidence. Do not overwrite or renumber the earlier event.
+
+#### Vocabulary and historical wording
+
+The words `ACTIVE`, `VALID` and `CANCELED` are not adopted as refresh labels here. `ACTIVE` can be confused with a record's lifecycle, `VALID` does not identify the capability, scope or observation date, and `CANCELED` describes a stopped process rather than a capability state. Existing Governance lifecycle terms and EXE operation states retain their separate meanings; do not reuse them as a refresh assessment. Use the precise dated labels above while preserving any source's original wording as historical text. This document does not claim that the proposed labels originated in V002.
+
+These instructions do not require every capability to be tested in each session, create new permissions, change the DRAFT status of the Universal Documentation Governance Framework, or authorize new folders, CORE registrations, connector testing or publication.
+
 ## 6. CORE-to-EXE mapping and historical M05/M06 boundary
 
 The M05 CORE and M06 CORE↔EXE reconciliation were independently recorded **PASS** in the 2026-10-09 Batch B closeout. That historical acceptance remains intact and is **not** a declaration of all-current runtime capability.
@@ -195,6 +253,10 @@ The [FUNC parent](../README_FUNC_AI_BRAINBOX.md) provides wider domain navigatio
 **Correction:** One current Governance-aligned CORE README now explains the ownership boundaries, eight-step agent sequence, independent item states, C01–C10, historic M05/M06 mapping, evidence/authorization limits, precise agent navigation and canonical references. The old presentation remains in Git history; the eight agent CORE records remain unchanged.
 
 **Detailed modification record:** [POST-V003-MOD-002 report](../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md#post-v003-mod-002--core-readme-navigation-and-capability-inventory-clarification).
+
+## Modification summary — POST-V003-FUNC-CAPREFRESH-001 (2026-10-22)
+
+Added a dated capability-refresh assessment layer after the unchanged C01–C10 questionnaire. It defines evidence-scoped labels, availability distinctions, identifier reconciliation, provisional ChatGPT ID-conflict handling, five worked outcomes and the boundary between CORE assessment and EXE execution evidence. No agent capability was tested or registered, and no existing historical record was rewritten.
 
 ---
 

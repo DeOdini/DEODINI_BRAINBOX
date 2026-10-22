@@ -8,7 +8,7 @@
 **CANONICAL SOURCE:** Agent EXE for agent-specific operation records; original authorized evidence locations for primary artifacts; frozen V003 Specification §9 and M06 for historical admission decisions.
 **REFERENCED BY:** FUNC parent README, agent CORE records, agent EXE READMEs and functional EXE category READMEs.
 **STATUS:** [ACTIVE — OPERATOR-APPROVED POST-V003 EXE ROUTING]
-**LAST VERIFIED:** 2026-10-19 — documentation integration reviewed; historical execution not re-tested.
+**LAST VERIFIED:** 2026-10-22 — refresh instructions, local links and structure reviewed; no live agent/tool operation was retested.
 **APPLIES TO:** AI agents and authorized reviewers navigating, inspecting, recording or maintaining EXE operation information.
 **SOURCE TYPE:** Local EXE navigation, operation-record ownership and functional-indexing guidance.
 **AUTHORIZATION BOUNDARY:** This README does not independently authorize tool execution, repository modification, folder creation, external actions or Git publication.
@@ -275,6 +275,18 @@ Identify the functional category or categories that index the operation.
 Link to the relevant category index, using actual verified repository paths.
 
 If no existing category adequately represents an evidenced operation, report the gap and propose a scoped addition under Section 8.
+
+### Capability refresh and repeated-attempt relationship
+
+The dated CORE refresh layer supplements the agent's existing C01–C10 inventory; it does not replace E01–E06 or this document's operation-state vocabulary. A CORE `LIVE VERIFIED` assessment records a successful scoped capability check. It does not itself establish that an operation meets EXE `VERIFIED EXECUTED`; operation evidence, verification and authorization remain governed here.
+
+When the same logical operation is attempted again, preserve every earlier operation record and evidence. Make each new attempt distinguishable using the existing agent operation-record conventions and its actual date, runtime/environment, target and scope, outcome, evidence and verifier status. Keep stable, noncolliding operation identifiers. Where the operation corresponds to an existing CORE item, keep that CORE item reference and the agent-owned EXE reference consistent using the current record conventions; do not duplicate operation details. A later failure or scoped unavailability is a separate event and does not invalidate an earlier success.
+
+Do not invent an attempt-ID format or overwrite an existing identifier to make repeated activity fit. If current records do not provide a clear, noncolliding way to represent a separate attempt and its relationship to the earlier event, stop and report the gap for scoped authorization. Functional indexes should link to the agent-owned operation records and must not duplicate their detailed evidence.
+
+**Hypothetical example:** An agent's earlier browser operation has evidence of success. A later authorized attempt in another session fails. Retain the original successful record and evidence; record the later attempt separately under an existing noncolliding convention, with its actual error and scope. The later failure does not change the earlier outcome. Do not create either record from this example alone.
+
+For the corresponding dated CORE assessment and its status boundaries, see [CORE capability refresh assessment and identifier reconciliation](../AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md#capability-refresh-assessment-and-identifier-reconciliation).
 
 ### Operation-record completeness
 
@@ -644,6 +656,10 @@ These references identify the current governing sources. They do not transfer th
 **Resolution:** One consolidated Governance-aligned procedure now explains CORE, agent EXE, function EXE, E01–E06, historical M06 qualifications, evidence ownership and Operator-gated changes. Previous presentation is preserved in Git history.
 
 **Full modification report:** [POST-V003-MOD-001 report](../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md#post-v003-mod-001--exe-readme-routing-and-functional-index-clarification).
+
+## Modification summary — POST-V003-FUNC-CAPREFRESH-001 (2026-10-22)
+
+Clarified how CORE refresh assessments relate to the unchanged E01–E06 operation procedure, how repeat attempts retain separate dated evidence under existing stable identifiers, and when an unclear identifier convention must be reported instead of invented. No live operation was retested and no operation record or functional index was changed.
 
 ---
 
