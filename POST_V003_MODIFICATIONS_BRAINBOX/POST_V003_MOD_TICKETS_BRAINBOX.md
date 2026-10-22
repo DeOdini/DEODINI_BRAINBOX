@@ -84,3 +84,28 @@
 ### MOD-004 corrective continuation — 2026-10-19
 
 **Authorization:** Operator approved correction after independent Outcome B verification. **Scope:** Two current-state root README statements only, plus append-only MOD-004 evidence records. **No-change:** Historical Phase 03 evidence, Unresolved Register, F02 branch and PR #90. **Publication:** Local change; separate Git stage/commit/push/merge authority not exercised. **Verification:** Recheck root-tree link integrity, Governance validator and Git whitespace; report pending F02 historical-addendum disposition.
+
+## POST-V003-CAPREFRESH-PUBLISH-001 — GitHub publication closeout
+
+**Date:** 2026-10-22
+**Status:** CLOSED — OPERATOR ACCEPTED
+**Related ticket:** POST-V003-CAPREFRESH-CLOSEOUT-001
+**Repository:** DeOdini/DEODINI_BRAINBOX
+**Published branch:** `main`
+**Accepted commit:** `c14ab9fdac984c049eb51f072f3bc947ede21159`
+**Parent:** `5b57ec3277e5f42da0557228975c7bdef12afaaf`
+
+**Authorized commit scope:** Exactly these four files:
+
+- `POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_CONVO_BRAINBOX.md`
+- `POST_V003_MODIFICATIONS_BRAINBOX/README_POST_V003_MOD_BRAINBOX.md`
+- `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md`
+- `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md`
+
+**Publication and validation evidence:** The ticket-authorized ordinary non-force push completed. A post-push remote query confirmed GitHub `main` at the accepted commit; local `main` matched `origin/main`, and the worktree was clean. The three specified working-file SHA-256 values matched the ticket. The Post-V003 local tree listed `POST_V003_DEEP_RESEARCH_BRAINBOX.md [PRESENT]`. The Governance tree/status validator returned PASS (qualified), with 83 READMEs, 82 local tree blocks, 1,054 entries, 925 Markdown targets, and zero findings. Scoped whitespace validation for the three README files passed.
+
+**Preserved qualification:** The conversation transcript matched its committed Git blob after CRLF-to-LF normalization. Its committed diff contains six lines with trailing whitespace and one new blank line at EOF. The Operator accepted these findings as source-preservation qualifications; the transcript and accepted commit were not rewritten.
+
+**Operator acceptance:** On 2026-10-22, the Operator accepted the implementation, local commit, publication, and independent ChatGPT verification and directed that this ticket be marked CLOSED — OPERATOR ACCEPTED. The acceptance record is preserved in the existing conversation and report.
+
+**Boundary and next workstream:** No further repository edits, staging, commit, push, PR, or merge were authorized/performed by the acceptance recording. Priority 3 — Live AI Agent CORE/EXE Population is the next workstream. Actual capability registration remains separate and requires its own evidence and approval.

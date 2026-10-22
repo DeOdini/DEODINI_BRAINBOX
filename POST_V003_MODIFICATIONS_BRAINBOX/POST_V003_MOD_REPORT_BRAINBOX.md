@@ -174,3 +174,21 @@ Minimal follow-up proposal for a separately scoped, conflict-safe correction:
 ### POST-V003-MOD-004 — Operator-authorized minimal README correction (2026-10-19)
 
 Following independently confirmed Outcome B, the Operator directed the correction. In current `README_BRAINBOX.md`, the two current-state claims that README-03 and GOVERNANCE-04 remained active were replaced with dated wording consistent with the 2026-10-19 zero-active Unresolved Register and closed V003 MVP. Specifically, the `AI_BRAINBOX/` root-tree annotation and the Phase 03 fixes README navigation entry were corrected. Historical dated checkpoints elsewhere were not changed. The existing MOD-004 three-file report/decision record remained in place. This change does NOT merge or close PR #90, publish any Git commit, or decide disposition of the three F02 branch-specific historical addenda. Re-run the five-file comparison against current main after separately authorized publication before deciding PR #90 disposition.
+
+## POST-V003-CAPREFRESH-PUBLISH-001 — Operator acceptance and closeout — 2026-10-22
+
+**Disposition:** CLOSED — OPERATOR ACCEPTED.
+
+**Operator decision:** The Operator formally accepted the implementation, local commit, GitHub publication, and independent ChatGPT verification results on 2026-10-22. The accepted commit is `c14ab9fdac984c049eb51f072f3bc947ede21159` on `main` in `DeOdini/DEODINI_BRAINBOX`; its parent is `5b57ec3277e5f42da0557228975c7bdef12afaaf`.
+
+**Accepted scope:** The published commit contains exactly four authorized files: `POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_CONVO_BRAINBOX.md`, `POST_V003_MODIFICATIONS_BRAINBOX/README_POST_V003_MOD_BRAINBOX.md`, `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/README_AI_AGENTS_CORE_FUNC_BRAINBOX.md`, and `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_EXE_FUNC_BRAINBOX/README_AI_AGENTS_EXE_FUNC_BRAINBOX.md`.
+
+**Accepted outcomes and evidence:** The Post-V003 conversation archive and CORE/EXE questionnaire enhancements were published; the missing Post-V003 local-tree entry was corrected. The repository structural validator returned PASS (qualified): 83 READMEs, 82 local trees, 1,054 displayed entries, 925 Markdown targets, and zero findings. Scoped README whitespace checks passed. The GitHub `main` SHA was independently queried after push and matched local `main` at the accepted commit; the worktree was clean. The three specified working-file hashes matched the publication ticket.
+
+**Source-preservation qualification:** The transcript working file matched its committed blob after CRLF-to-LF normalization. The committed diff contains six transcript lines with trailing whitespace and one new blank line at EOF. The Operator explicitly accepted these as source-preservation qualifications. Neither the transcript nor the accepted commit was rewritten.
+
+**Independent review and acceptance:** This record preserves the Operator’s stated acceptance of the independent ChatGPT PASS with documented source qualification; it does not claim a new independent review during this closeout append.
+
+**Next workstream:** Priority 3 — Live AI Agent CORE/EXE Population may use the published questionnaire foundation. Actual capability registration remains a distinct activity and requires its own evidence and approval.
+
+**Publication boundary:** This acceptance record was appended locally under separate authorization. No Git staging, commit, push, PR, or merge was performed.
