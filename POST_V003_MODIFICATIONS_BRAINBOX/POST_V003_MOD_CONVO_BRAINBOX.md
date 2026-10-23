@@ -2431,3 +2431,34 @@ NOT PERFORMED
 My conclusion: DEODINI_BRAINBOX provides a coherent route for an arriving AI agent to locate its registration responsibilities, distinguish capability from execution, and prepare evidence-scoped CORE and EXE records. The test also exposed an important practical limitation: the existing ChatGPT records do not automatically reflect the tools and execution evidence available in this newer session.
 
 Most importantly, I have not registered myself in CORE or EXE, changed any document, or published anything to GitHub. The proposed registry records are contained entirely in this chat, as requested.
+
+
+---
+
+## Priority 3 — ChatGPT CORE/EXE Onboarding: Final Operator Acceptance and Closure — 2026-10-23
+
+**Project:** DEODINI_BRAINBOX. **Workstream:** Priority 3 — Live AI Agent CORE/EXE Population. **Agent:** ChatGPT (GPT-6). **Milestone:** ChatGPT-specific CORE/EXE onboarding and Stage G registration. **Operator acceptance date:** 2026-10-23. **Authority:** Operator. **Milestone decision:** **ACCEPTED — APPROVED FOR CLOSURE**, subject to independent verification of this closure-report Git publication. **Wider Priority 3 workstream:** **OPEN**.
+
+### Accepted Git publication checkpoints
+
+| Role | Accepted commit |
+|---|---|
+| Original October 20 onboarding evidence, retrospectively archived October 23 | `238635dfa3adadf8c8cc5e682b00a3383df72fa9` |
+| Evidence-scoped ChatGPT CORE/EXE Stage G registration | `7bf6429d25c86291a313da63d1e1aefc313a0d11` |
+| Publication-status correction after Stage G Git publication | `73797c308f72b5abf30446a0205453c49c4a7646` |
+
+The accepted registration contains **32 ChatGPT CORE capability entries**, **eight agent-owned EXE operation records**, and references in the four existing **FILE, RESEARCH, BROWSER and CODE** functional EXE indexes. Historical October 20 and October 22 provisional identifiers remain distinguishable, including the different dated `EXE-CHATGPT-FILE-001` uses. Previously identified CORE-to-EXE references were corrected, current publication status was reconciled, and the structural validator passed **qualified** review. MAIN CONVO 4 independently reviewed the accepted Git publication history and scope. These are references to the existing source records, not replacement records or an additional onboarding assessment.
+
+### Evidence and qualification boundaries
+
+Capability **interface exposure**, **provider connection**, **authentication**, **successful execution**, **failed execution**, **historical observation**, and **independent operation-level verification** remain separate evidence dimensions. Publication and Operator acceptance of this documentation do **not** establish that every one of the 32 capabilities is connected, authenticated or independently executable. The browser's tab-enumeration success does not validate page-content reading: tested page reads failed due to extension host permission. The October 23 Python computation was independently reproduced for that specific attempt; the October 22 reported computation retains its incomplete original-trace qualification. Successful ChatGPT self-observed EXE attempts remain `EXECUTED PENDING VERIFICATION` unless independently admitted individually, and failed attempts remain `FAILED`.
+
+### Outstanding work and separate authorization
+
+Untested ChatGPT integrations, operation-specific pending EXE admission, future capability-refresh tests, Codex CORE/EXE onboarding and other AI agents' registration are follow-up activities, **not reopenings of the accepted ChatGPT onboarding milestone**. Every such activity requires its own scope, evidence review and Operator authorization. The **entire Priority 3 workstream remains OPEN**; this record addresses only the ChatGPT-specific Stage G milestone.
+
+### Operator closure decision (2026-10-23)
+
+> I formally accept the published ChatGPT CORE/EXE onboarding and Stage G registration as complete within its approved evidence-scoped boundaries. I authorize publication of this final closure record. The ChatGPT-specific onboarding milestone is approved for closure following independent verification of the closure publication. The wider Priority 3 workstream remains open.
+
+**Closure-publication verification gate:** This section's local append, Git commit and normal non-force publication are subject to separate post-publication independent verification by MAIN CONVO 4. The ChatGPT-specific milestone is not yet recorded as `CLOSED — OPERATOR ACCEPTED AND PUBLICATION VERIFIED` until the closure commit and GitHub branch state have been independently checked. Publication of this section does not close the wider workstream.
