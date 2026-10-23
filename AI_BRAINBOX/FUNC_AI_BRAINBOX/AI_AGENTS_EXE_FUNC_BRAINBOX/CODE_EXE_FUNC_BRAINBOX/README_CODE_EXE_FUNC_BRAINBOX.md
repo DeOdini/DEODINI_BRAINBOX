@@ -43,3 +43,14 @@ Evidence supports this scoped frontend change only. It does not establish backen
 
 CATEGORY IS AN INDEX ONLY, not evidence or a questionnaire.
 [Codex EXE-CODEX-CODE-001](../CODEX_EXE_FUNC_BRAINBOX/README_CODEX_EXE_FUNC_BRAINBOX.md#exe-codex-code-001): historical M06 execution, currently unverified.
+
+
+## Priority 3 — ChatGPT dated operation references (2026-10-23, Stage G local)
+
+These are cross-agent *index references*, not new agent-owned records. Operation-specific E01–E06 evidence and verification limitations remain in [ChatGPT agent EXE](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md). Stage F qualified assessment does not automatically admit a successful operation as independently VERIFIED EXECUTED.
+
+| Agent | Agent-owned operation | Actual function | Evidence date | State / qualification |
+|---|---|---|---|---|
+| ChatGPT | [EXE-CHATGPT-CODE-001](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md#exe-chatgpt-code-001--isolated-python-computation) | Isolated Python computation | 2026-10-23 | Oct 23 calculation independently reproduced; EXE admission pending; Oct 22 trace incomplete |
+
+**Boundary:** October 23 calculation independently reproduced in Stage F; October 22 different hash attempt evidence incomplete; record pending admission.

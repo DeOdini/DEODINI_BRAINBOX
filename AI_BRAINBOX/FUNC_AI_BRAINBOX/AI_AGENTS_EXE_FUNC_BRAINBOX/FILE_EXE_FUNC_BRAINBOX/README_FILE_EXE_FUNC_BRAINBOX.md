@@ -43,3 +43,17 @@ Access is limited by the current filesystem permissions and authorized workspace
 
 CATEGORY IS AN INDEX ONLY, not evidence or a questionnaire.
 [Codex EXE-CODEX-FILE-001](../CODEX_EXE_FUNC_BRAINBOX/README_CODEX_EXE_FUNC_BRAINBOX.md#exe-codex-file-001): historical M06 execution, currently unverified.
+
+
+## Priority 3 — ChatGPT dated operation references (2026-10-23, Stage G local)
+
+These are cross-agent *index references*, not new agent-owned records. Operation-specific E01–E06 evidence and verification limitations remain in [ChatGPT agent EXE](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md). Stage F qualified assessment does not automatically admit a successful operation as independently VERIFIED EXECUTED.
+
+| Agent | Agent-owned operation | Actual function | Evidence date | State / qualification |
+|---|---|---|---|---|
+| ChatGPT | [EXE-CHATGPT-FILE-001](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md#exe-chatgpt-file-001--repository-onboarding-and-document-reading) | Onboarding and Markdown reads | 2026-10-20 / 2026-10-22 | EXECUTED PENDING VERIFICATION (Oct 20 historical onboarding; Oct 22 file-reading attempts) |
+| ChatGPT | [EXE-CHATGPT-FILE-002](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md#exe-chatgpt-file-002--remote-directory-enumeration) | Directory enumeration | 2026-10-22 | EXECUTED PENDING VERIFICATION (Oct 22) |
+| ChatGPT | [EXE-CHATGPT-FILE-003](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md#exe-chatgpt-file-003--rdc-device-discovery) | Device discovery | 2026-10-22 / 2026-10-23 | EXECUTED PENDING VERIFICATION (Oct 22/23) |
+| ChatGPT | [EXE-CHATGPT-FILE-004](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md#exe-chatgpt-file-004--read-only-local-git-repository-inspection) | Read-only Git inspection | 2026-10-23 | EXECUTED PENDING VERIFICATION (Oct 23) |
+
+**Boundary:** Scoped successful ChatGPT tool responses; EXE verification pending. Device discovery is a supporting FILE/resource-index operation only.

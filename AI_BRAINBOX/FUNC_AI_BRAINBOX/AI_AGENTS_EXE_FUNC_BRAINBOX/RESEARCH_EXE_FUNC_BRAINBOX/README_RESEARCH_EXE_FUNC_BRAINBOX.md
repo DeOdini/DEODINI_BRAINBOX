@@ -44,3 +44,14 @@ Evidence supports read-only research of public sources. Check source date and pr
 
 CATEGORY IS AN INDEX ONLY, not evidence or a questionnaire.
 [Codex EXE-CODEX-RESEARCH-001](../CODEX_EXE_FUNC_BRAINBOX/README_CODEX_EXE_FUNC_BRAINBOX.md#exe-codex-research-001): historical M06 execution, currently unverified.
+
+
+## Priority 3 — ChatGPT dated operation references (2026-10-23, Stage G local)
+
+These are cross-agent *index references*, not new agent-owned records. Operation-specific E01–E06 evidence and verification limitations remain in [ChatGPT agent EXE](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md). Stage F qualified assessment does not automatically admit a successful operation as independently VERIFIED EXECUTED.
+
+| Agent | Agent-owned operation | Actual function | Evidence date | State / qualification |
+|---|---|---|---|---|
+| ChatGPT | [EXE-CHATGPT-RESEARCH-001](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md#exe-chatgpt-research-001--github-repositorysource-inspection-workflow) | GitHub source/repository/branch/commit/PR metadata reads | 2026-10-22 / 2026-10-23 | EXECUTED PENDING VERIFICATION (Oct 22/23) |
+
+**Boundary:** Distinct API suboperations preserved; no GitHub writes or general research-web certification.

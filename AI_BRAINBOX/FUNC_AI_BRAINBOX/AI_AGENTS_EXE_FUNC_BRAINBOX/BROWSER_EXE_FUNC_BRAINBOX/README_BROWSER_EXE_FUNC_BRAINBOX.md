@@ -44,3 +44,15 @@ Evidence is limited to the local FootHive preview and recorded viewports/interac
 
 CATEGORY IS AN INDEX ONLY, not evidence or a questionnaire.
 [Codex EXE-CODEX-BROWSER-001](../CODEX_EXE_FUNC_BRAINBOX/README_CODEX_EXE_FUNC_BRAINBOX.md#exe-codex-browser-001): historical M06 execution, currently unverified.
+
+
+## Priority 3 — ChatGPT dated operation references (2026-10-23, Stage G local)
+
+These are cross-agent *index references*, not new agent-owned records. Operation-specific E01–E06 evidence and verification limitations remain in [ChatGPT agent EXE](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md). Stage F qualified assessment does not automatically admit a successful operation as independently VERIFIED EXECUTED.
+
+| Agent | Agent-owned operation | Actual function | Evidence date | State / qualification |
+|---|---|---|---|---|
+| ChatGPT | [EXE-CHATGPT-BROWSER-001](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md#exe-chatgpt-browser-001--browser-tab-enumeration) | Browser tab enumeration | 2026-10-22 / 2026-10-23 | EXECUTED PENDING VERIFICATION (Oct 22/23) |
+| ChatGPT | [EXE-CHATGPT-BROWSER-002](../CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md#exe-chatgpt-browser-002--browser-page-content-reading-attempts) | Browser page-content read attempts | 2026-10-23 | FAILED (Oct 23 host-permission rejection) |
+
+**Boundary:** BROWSER-001 pending independent operation admission; BROWSER-002 FAILED with extension manifest host-permission error.
