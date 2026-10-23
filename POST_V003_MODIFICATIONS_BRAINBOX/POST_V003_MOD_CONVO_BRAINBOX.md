@@ -2100,3 +2100,334 @@ Actual capability registration remains a separate activity requiring its own evi
 ## CODEX — Acceptance recording — 2026-10-22
 
 The Operator acceptance above was received and recorded in the existing post-V003 conversation, ticket register, and modification report. The accepted publication commit and its verification qualifications remain unchanged. No staging, commit, push, PR, or merge was performed as part of this acceptance recording.
+
+
+---
+
+## CHATGPT — RECOVERED HISTORICAL ONBOARDING REPORT — 2026-10-20
+
+**Original assessment date:** October 20, 2026 (unchanged).
+**Archival entry date:** October 23, 2026 (retrospective recording; not an October 20 repository edit).
+**Source:** Operator-supplied original chat-only report, `DEODINI_BRAINBOX — AI Agent Onboarding and Registration Test`.
+**Original attachment SHA-256 (19,334 bytes, CRLF):** `9eb32de11072adbb2a7e1d3e4368e8e7abea41a1076e42c45420ff3198f80504`.
+**Evidence status:** Historical ChatGPT self-report; 17 CORE candidates and one EXE candidate are PROVISIONAL, not independently certified canonical registrations.
+**Archival fidelity:** Original report content below is retained; platform text transfer may represent source CRLF as LF. Compare line-ending-normalized content when verifying against source bytes.
+**Authority boundary:** This appendix is historical evidence only. It does not authorize or perform current ChatGPT CORE/EXE registration.
+
+### Original October 20 report — historical source text
+
+# DEODINI_BRAINBOX — AI Agent Onboarding and Registration Test
+
+&#x20;READ-ONLY REGISTRATION SIMULATION
+
+Agent: ChatGPT (GPT-6) Date: October 20, 2026 Task: Follow the Brainbox reading route, inspect the existing ChatGPT CORE and EXE records, and prepare proposed registration details in this conversation only.
+
+I accessed the DEODINI_BRAINBOX files through the connected Remote Desktop Commander, following the repository's active navigation and Governance instructions.
+
+Important: I am treating this as a fresh ChatGPT registration assessment, not automatically accepting the older ChatGPT capability report as proof of today's capabilities.
+
+## 1. Mandatory reading path followed
+
+1. Repository root — `README_BRAINBOX.md`
+
+   Established the full project tree, current authority hierarchy, and navigation into AI and Governance.
+2. Governance — `README_GOV_BRAINBOX.md` and applicable Governance documents
+
+   Inspected Documentation, Reference, Naming, Evidence, Ticketing, Tree/Status, Security, Versioning, and Promotion responsibilities. Confirmed that the proposed Universal Documentation Governance Framework remains a draft rather than active authority.
+3. Frozen V003 Specification
+
+   Inspected the architecture, authority and lifecycle boundaries. Historical architecture and approvals must not be confused with present runtime permission.
+4. AI domain — `README_AI_BRAINBOX.md`
+
+   Confirmed that FUNC, DEVOPS and Skills have distinct responsibilities.
+5. FUNC — `README_FUNC_AI_BRAINBOX.md`
+
+   Confirmed the separation of CORE capabilities, agent-owned EXE operation records and functional EXE indexes.
+6. CORE — `README_AI_AGENTS_CORE_FUNC_BRAINBOX.md`
+
+   Inspected the eight-step onboarding procedure, independent status dimensions, and C01–C10 questionnaire.
+7. ChatGPT CORE — `CHATGPT_CORE_FUNC_BRAINBOX.md`
+
+   Inspected the existing historical ChatGPT capability record, provenance and limitations.
+8. EXE — `README_AI_AGENTS_EXE_FUNC_BRAINBOX.md`
+
+   Inspected its mandatory eight-step procedure, E01–E06 operation-record contract and operation-state classifications.
+9. ChatGPT EXE and functional indexes
+
+   Inspected the existing ChatGPT EXE README and FILE, RESEARCH and CODE functional indexes to establish ownership and historical evidence boundaries.
+
+The essential rule I derived from this path is:
+
+CORE records what I can demonstrably access. Agent EXE records what I actually attempted or executed. Functional EXE provides references to those exact operations.
+
+The old ChatGPT CORE record, last checked against source evidence on October 8, explicitly states that live ChatGPT capabilities remained unverified at that time. This test can supply newer, bounded observations without rewriting that history.
+
+## 2. Proposed ChatGPT CORE registration
+
+The following is my proposed registration text, formatted for review against the repository's C01–C10 contract. It has not been written to Brainbox.
+
+# CHATGPT CORE — PROPOSED REGISTRATION
+
+**REGISTRATION STATE:** PROPOSED — CHAT-ONLY TEST\
+**AGENT:** ChatGPT\
+**MODEL:** GPT-6\
+**OBSERVATION DATE:** 2026-10-20\
+**RUNTIME:** Current ChatGPT conversation with exposed native tools and connected application interfaces\
+**REPOSITORY:** DEODINI_BRAINBOX\
+**OPERATOR AUTHORIZATION:** Read-only onboarding test and chat-only registration preparation\
+**INDEPENDENT VERIFICATION:** Pending for newly proposed registry entries\
+**EXISTING CANONICAL RECORD:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_CORE_FUNC_BRAINBOX/CHATGPT_CORE_FUNC_BRAINBOX.md`
+
+## C01 — Identity and source
+
+This registration describes ChatGPT's currently exposed interfaces and the particular operations observed during this conversation.
+
+Source classes:
+
+- Current tool availability: Direct session observation.
+- Repository architecture: Current files read from the connected repository.
+- Historical capabilities: Existing dated ChatGPT CORE and archived FUNC sources.
+- Execution results: Actual tool responses during this onboarding test.
+- Unverified integrations: Exposed interfaces not independently exercised.
+
+This registration does not certify other ChatGPT sessions, models, accounts or environments.
+
+## C02 — Available tool and capability inventory
+
+| CORE item        | Capability or interface                                                                       | Current evidence                                                                  |
+| ---------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| CORE-CHATGPT-001 | Native text generation, interpretation, analysis and documentation                            | Available and used in this conversation                                           |
+| CORE-CHATGPT-002 | Remote Desktop Commander — remote file inspection                                             | Exposed; successfully read repository files                                       |
+| CORE-CHATGPT-003 | GitHub connector — repository, commit and pull-request inspection                             | Exposed; successfully used in the preceding publication verification              |
+| CORE-CHATGPT-004 | Native web information retrieval                                                              | Exposed; not exercised in this onboarding test                                    |
+| CORE-CHATGPT-005 | Local Python/container execution and artifact tooling                                         | Exposed; not exercised in this onboarding test                                    |
+| CORE-CHATGPT-006 | Gmail and Microsoft Outlook Email                                                             | Connector interfaces exposed; current authenticated account scope not retested    |
+| CORE-CHATGPT-007 | Google Calendar and Outlook Calendar                                                          | Connector interfaces exposed; current account scope not retested                  |
+| CORE-CHATGPT-008 | Google Drive, Docs, Sheets and Slides                                                         | Connector interfaces exposed; not exercised here                                  |
+| CORE-CHATGPT-009 | Figma design integration                                                                      | Connector interface exposed; not exercised here                                   |
+| CORE-CHATGPT-010 | Supabase, Render, Stripe, Replit and Base44                                                   | Connector interfaces exposed; individual connections and permissions not retested |
+| CORE-CHATGPT-011 | Brevo and Resend                                                                              | Connector interfaces exposed; send permissions and connections not retested       |
+| CORE-CHATGPT-012 | Activepieces automation integration                                                           | Connector interface exposed; no workflow executed                                 |
+| CORE-CHATGPT-013 | Native scheduled automations                                                                  | Interface exposed; no automation created in this test                             |
+| CORE-CHATGPT-014 | Browser integration                                                                           | Interface exposed; no connected browser navigation executed here                  |
+| CORE-CHATGPT-015 | Image-generation and editing interface                                                        | Exposed; not exercised here                                                       |
+| CORE-CHATGPT-016 | Document, PDF, spreadsheet and presentation generation facilities                             | Available as tool-supported workflows; not tested in this onboarding              |
+| CORE-CHATGPT-017 | Additional interfaces, including Firecrawl, Upwork, plugin management and development tooling | Exposed by the current runtime; detailed operational state not assessed           |
+
+These are inventory groups, not exhaustive individual connector-operation records. Any canonical registration of every individual connector would require a separately itemized inventory of its own advertised functions and current access state.
+
+## C03 — State of each item
+
+The following distinctions apply:
+
+- **EXPOSED:** YES for the interfaces listed above in this session.
+- **CONNECTED:** YES for Remote Desktop Commander on the repository read path; YES for the previously exercised GitHub read operations. UNKNOWN / NOT VERIFIED for the other individual connections in this test.
+- **AUTHENTICATED:** The connected desktop and GitHub interfaces permitted the observed reads. Exact account identity, authorization scope and credential state were not independently inspected. Other services remain UNKNOWN / NOT VERIFIED.
+- **EXECUTABLE:** YES for the exact repository reads demonstrated. Other advertised actions remain NOT TESTED within this test.
+- **AUTHORIZED:** YES for the Operator-requested read-only inspection and chat-only draft. NO standing authorization for repository edits, email sending, Git publication, deployments or other external mutations.
+- **LAST OBSERVED:** 2026-10-20 for the present inspection.
+
+## C04 — Skill dependencies
+
+Exposed tool workflows include specialized instructions for repository integrations, document creation, spreadsheets, PDFs, presentations, Figma and Supabase.
+
+A skill's presence means instructions are available; it does not establish that every associated external service is connected, authenticated or executable.
+
+Relevant current dependencies include remote file access, repository navigation, authenticated GitHub connection where needed, current Governance, and task-specific Operator authorization.
+
+## C05 — Device and resource boundaries
+
+The current test successfully accessed the authorized remote Windows device identified as `DESKTOP-DHRIH27` and its DEODINI_BRAINBOX repository through Remote Desktop Commander.
+
+The record supports file reads in the accessed workspace only. It does not establish access to every drive, remote machine, hidden credential, or protected resource.
+
+No filesystem modification was necessary or authorized.
+
+## C06 — Communications
+
+Gmail, Outlook Email, Google Calendar and Outlook Calendar interfaces are exposed in the current environment.
+
+This onboarding did not test inbox access, message creation, message delivery, calendar writes, or current account authentication.
+
+Sending messages and creating calendar events require specific authorization.
+
+## C07 — Automation
+
+Available interfaces include native scheduled automations and Activepieces workflow integration.
+
+No automation was configured, created or executed during this test. Continuous autonomous execution, arbitrary polling frequencies, workflow permissions and external triggers remain unverified for the proposed registry.
+
+## C08 — Professional functions
+
+**Documented potential:** Research, analysis, documentation, software development assistance, testing, design integration, data processing, media generation and DevOps support.
+
+**Currently evidenced:** Repository documentation inspection, structured evidence review, navigation following, and chat-only registration preparation.
+
+No general production-deployment, software-testing, database-modification or operational mastery claim is established by this exercise.
+
+## C09 — Potential integrations
+
+Possible future investigations include:
+
+- Connecting CORE inventory checks to a governed capability-status workflow.
+- Linking specific EXE operations to automatically validated evidence references.
+- Using authorized GitHub checks to verify repository publication.
+- Creating governed notifications for ticket handoffs.
+- Adding agent and functional index link validation.
+
+All are proposals, not established capabilities or approved implementation decisions.
+
+## C10 — Itemized status and references
+
+The CORE item IDs above are **provisional identifiers**, not registered canonical IDs.
+
+For each item, a permanent entry would additionally require:
+
+- Exact tool/service/provider identification.
+- Individual observed capabilities and limitations.
+- Exposed, connected and authenticated states.
+- Exact operation-level execution evidence, if any.
+- Task-specific authorization.
+- Original evidence references.
+- Observation date and verifier.
+- Canonical ChatGPT EXE operation reference where registered.
+
+Existing historical ChatGPT CORE statements must be preserved rather than replaced wholesale by these session-specific observations.
+
+**CORE REGISTRATION RESULT:** PROPOSED — PARTIALLY EVIDENCED.\
+**REPOSITORY WRITE:** NONE.\
+**GIT PUBLICATION:** NONE.\
+**OPERATOR ACCEPTANCE:** NOT CLAIMED.
+
+## 3. Proposed ChatGPT EXE registration
+
+For this test, the meaningful execution is reading the repository and navigating its Governance and registry documents. It is not a test of my ability to write or publish those documents.
+
+# CHATGPT EXE — PROPOSED OPERATION RECORD
+
+**RECORD STATE:** CHAT-ONLY PROPOSAL\
+**PROPOSED ID:** EXE-CHATGPT-FILE-001\
+**AGENT:** ChatGPT (GPT-6)\
+**DATE:** 2026-10-20\
+**OPERATION STATE:** EXECUTED PENDING VERIFICATION\
+**PRIMARY FUNCTIONAL CATEGORY:** FILE EXE\
+**SECONDARY FUNCTIONAL CATEGORY:** RESEARCH EXE, for repository-source inspection and synthesis\
+**CANONICAL AGENT DESTINATION:** `AI_BRAINBOX/FUNC_AI_BRAINBOX/AI_AGENTS_EXE_FUNC_BRAINBOX/CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md`
+
+## E01 — Identity and capability reference
+
+**Agent:** ChatGPT\
+**Runtime:** Current ChatGPT conversation\
+**Relevant proposed CORE items:** CORE-CHATGPT-001, CORE-CHATGPT-002\
+**Tool:** Remote Desktop Commander connected file-reading interface\
+**Scope:** Read-only DEODINI_BRAINBOX onboarding and registration simulation.
+
+## E02 — Exact operation
+
+Read and assess the mandatory repository navigation, current Governance and ChatGPT's CORE/EXE record requirements, then produce proposed registration entries in the chat without modifying the repository.
+
+## E03 — Execution and evidence
+
+**Actions performed:**
+
+1. Inspected the root README and its authority/navigation declarations.
+2. Followed the AI → FUNC → CORE and EXE document routes.
+3. Inspected the existing ChatGPT CORE and ChatGPT EXE records.
+4. Read the CORE C01–C10 questionnaire and EXE E01–E06 contract.
+5. Inspected relevant functional EXE indexes.
+6. Read applicable Governance sections.
+7. Prepared the proposed records in this conversation.
+
+**Observed result:** File contents were returned by the connected desktop interface. The proposed registration is presented in chat.
+
+**Expected result:** Complete, honest, evidence-scoped onboarding registration without repository writes.
+
+**Outcome:** Read-only inspection performed; comprehensive registration verification remains pending.
+
+**Primary evidence:** Tool responses and this conversation's operation history.
+
+**Independent verifier:** Not yet assigned for a formal post-registration review.
+
+## E04 — Authentication and authorization
+
+The remote file interface returned the requested repository documents.
+
+The precise remote credential mechanism and identity scope were not inspected.
+
+The Operator authorized this specific read-only simulation and requested that registry information be pasted into the current conversation.
+
+**Write authorization:** None.\
+**Git authorization:** None.
+
+## E05 — Reliability and freshness
+
+This operation is dated 2026-10-20.
+
+Successful file reads in this session do not establish permanent availability of Remote Desktop Commander or all its operations.
+
+No formal repeated reliability benchmark was conducted.
+
+## E06 — Functional category references
+
+**Agent-owned operation destination:**
+
+`CHATGPT_EXE_FUNC_BRAINBOX/README_CHATGPT_EXE_FUNC_BRAINBOX.md`
+
+**Proposed primary functional index:**
+
+`FILE_EXE_FUNC_BRAINBOX/README_FILE_EXE_FUNC_BRAINBOX.md`
+
+**Proposed secondary functional index:**
+
+`RESEARCH_EXE_FUNC_BRAINBOX/README_RESEARCH_EXE_FUNC_BRAINBOX.md`
+
+These references are proposed and have not been inserted.
+
+**EXE REGISTRATION RESULT:** EXECUTED PENDING VERIFICATION.\
+**CURRENT CANONICAL REGISTRATION:** NOT CREATED.\
+**REPOSITORY WRITE:** NONE.\
+**GIT PUBLICATION:** NONE.
+
+## 4. Findings revealed by the onboarding test
+
+The test identified several matters worth reporting separately from the registration.
+
+| Finding                                                 | Classification | Explanation                                                                                                                                     |
+| ------------------------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| ChatGPT CORE is historically dated                      | CONFIRMED      | It says current runtime access was not verified as of its October 8 evidence checkpoint. This new test provides narrower, more recent evidence. |
+| ChatGPT EXE questionnaire link is stale                 | CONFIRMED      | It points to `#v003-exe-questionnaire--2026-10-15`, while the EXE parent now uses the Section 4 operation-record heading.                       |
+| No currently registered ChatGPT operation for this test | CONFIRMED      | The ChatGPT EXE README remains a short pending-questionnaire record.                                                                            |
+| Connector inventory needs item-level validation         | VERIFY         | Availability in the current interface does not establish connection, authentication or individual operational success.                          |
+| Live capability evidence is runtime-specific            | CONFIRMED      | The current session's results must not be generalized to other agents or future sessions.                                                       |
+
+These findings do not justify editing any files under the present authorization.
+
+## 5. Overall test assessment
+
+Navigation and understanding
+
+PASS
+
+CORE questionnaire preparation
+
+PASS — PROPOSED
+
+EXE operation preparation
+
+PASS — PROPOSED
+
+Complete item-level capability verification
+
+PARTIAL
+
+Canonical registration
+
+NOT PERFORMED
+
+Git publication
+
+NOT PERFORMED
+
+My conclusion: DEODINI_BRAINBOX provides a coherent route for an arriving AI agent to locate its registration responsibilities, distinguish capability from execution, and prepare evidence-scoped CORE and EXE records. The test also exposed an important practical limitation: the existing ChatGPT records do not automatically reflect the tools and execution evidence available in this newer session.
+
+Most importantly, I have not registered myself in CORE or EXE, changed any document, or published anything to GitHub. The proposed registry records are contained entirely in this chat, as requested.
