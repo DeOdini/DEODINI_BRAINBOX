@@ -192,3 +192,75 @@ Following independently confirmed Outcome B, the Operator directed the correctio
 **Next workstream:** Priority 3 — Live AI Agent CORE/EXE Population may use the published questionnaire foundation. Actual capability registration remains a distinct activity and requires its own evidence and approval.
 
 **Publication boundary:** This acceptance record was appended locally under separate authorization. No Git staging, commit, push, PR, or merge was performed.
+
+## POST-V003-MC4-FOOTHIVE-V02-ARCHIVE-001 - MAIN CONVO 4 retrospective report - 2026-10-24
+
+**Record type:** Retrospective report based on the Operator-supplied MAIN CONVO 4 transcript.
+**Transcript:** [POST_V003_MOD_CONVO_BRAINBOX.md](POST_V003_MOD_CONVO_BRAINBOX.md), MAIN CONVO 4 - FootHive V02 Strategy archive.
+**Evidence boundary:** This report summarizes claims, assessments, recommendations, and Operator decisions in the supplied historical transcript. This archival task did not re-inspect the FootHive repository, browser, Netlify, design images, or external deployment. Reported historical evidence is not represented as a new verification.
+
+### A. FootHive V01 baseline
+
+The transcript's attributed Priority 1 and MAIN CONVO 4 reviews describe FootHive V01 as an existing non-commercial footwear showcase and identify 43bbbea8325e3ec062baef7fd1724b5ea78bc6d0 as the reviewed source revision. MAIN CONVO 4 reports that local and GitHub V01 source matched and that the working tree was clean at the time of that review. These are historical review findings, not current repository checks performed for this archive.
+
+The transcript describes a seven-product collection: three Boots, two Classic Shoes, and two Runners; it states that the redesign should retain the existing product identity and content. It identifies Pinterest destinations, Google Forms notification signup, GA4, the brand story, privacy and shipping information as existing integrations or content to preserve. The initial V02 scope excludes real checkout, customer accounts, and a production commerce backend.
+
+The review records two mobile usability findings: Pinterest navigation wrapping at a reported 320px viewport and section headings partly obscured by the sticky header. MAIN CONVO 4 says it corroborated the CSS causes (compact navigation gaps and a fixed 7rem scroll offset) but did not independently reproduce the report's exact browser measurements. Accessibility is treated as a cross-feature requirement for future design and testing; the transcript does not establish a WCAG, screen-reader, or comprehensive accessibility certification. The two generated design concepts are explicitly illustrative mockups, not functioning components.
+
+The transcript reports Netlify deployment 6ac11b045b191500082be79c as ready in production on October 3, 2026, associated with V01 revision 43bbbea8325e3ec062baef7fd1724b5ea78bc6d0. MAIN CONVO 4 classifies that as a Codex-supported exact match and says it did not independently reproduce the Netlify API result. The review also preserves a historical Playwright authorization-violation qualification. None of these claims was re-tested by this documentation task.
+
+### B. UI/UX redesign origin
+
+The supplied conversation traces the redesign to the separate "Figma UI Observation Access" discussion, beginning with an inquiry about Figma access. The associated design-development report describes direct Figma access/tool limitations, inspection of the existing FootHive site and source, and research across Figma, Pinterest, Dribbble, Behance, and footwear references. Creatix was selected as Design Reference 01 from a Pinterest link and an Operator-supplied image.
+
+The report describes two FootHive-specific illustrative concepts: a dark black/charcoal design with neon-green accents and an original-brand light design using orange, white, and warm-neutral surfaces. The concepts adapt the reference's visual language to FootHive rather than reproducing its agency content. This task archives the transcript only; it does not archive or verify the referenced design images.
+
+### C. Operator-selected product direction
+
+The Operator's stated direction is a premium, non-commercial FootHive V02 footwear showcase with a substantial UI/UX redesign and product-discovery improvements. The recorded choices are to preserve V01 first and provide public V01/V02 access after V02 exists; use one shared layout/component system with both the original-brand light/orange theme and the dark/neon-green theme; and provide a simple circular, single-tap light/dark control.
+
+The Operator also calls for precise ticketing split between shared design features and section-specific layouts (for example, shared buttons versus the header or hero). Existing approved integrations and product content are to be preserved. The initial milestone is not a retail-commerce build. Approval of this product direction is distinct from approval to edit code, create deployments, or publish Git changes.
+
+### D. V01 and V02 version strategy
+
+The conversation converges on one GitHub repository, DeOdini/FOOTHIVE, with two local working directories and separately managed V01/V02 development. The preferred isolation method is a Git worktree. The Operator first agrees to preserve V01 and build V02 separately, then later specifies the preferred references as V01 branch v01/preserved, V01 tag foothive-v01, and V02 branch v02/development. main is to represent the latest approved production version: it continues serving V01 during V02 development, then may become V02 only after approval and release. V01 remains represented by its preservation branch/tag and a separately verified public archive.
+
+The source initially contains the spelling FFOOTHIVE_V02; the Operator later corrects the intended local directory to C:\Users\USER\FOOTHIVE_V02. The conversation recommends separate V01 and V02 Netlify sites for preservation, preview, and eventual public access. Example archive/preview URLs are explicitly unreserved proposals.
+
+The preservation model has three levels: V01 source, deployment, and evidence. V02 is to be staged and accepted before production promotion; V01's public availability must be verified before the production site changes. Branch/tag creation, worktree creation, Netlify configuration, deployment, and Git publication are all described as future ticketed actions, not actions completed or authorized by this archive.
+
+### E. Documentation and responsibility structure
+
+The Operator retains final authority, approves design decisions, authorizes execution, accepts results, and controls release. ChatGPT Priority 1 translates approved visual concepts into detailed specifications, dependencies, tickets, and Codex instructions. Codex executes authorized tickets, implements, tests, and produces technical evidence. ChatGPT MAIN CONVO 4 independently assesses plans, execution evidence, Governance compliance, and milestone readiness.
+
+The conversation distinguishes program-level MAIN CONVO 4 decisions and reports in the POST-V003 records from FootHive workflow-trial evidence, future V02-specific technical records, Production evidence, and Portfolio presentation. Priority 1 detailed planning and Codex execution records require V02-specific destinations to be approved; this review did not establish such destinations, and this ticket creates none. It cautions against treating Iteration 01 trial records as V02 development records or claiming production/portfolio outcomes before those events occur. The current ticket archives only MAIN CONVO 4's supplied transcript and retrospective report.
+
+### F. Proposed eight-stage sequence
+
+The transcript's proposed sequence is:
+
+1. **Preserve V01:** identify and protect the source baseline, stable deployment, and archive evidence before development isolation.
+2. **Specify V02:** translate both concepts into a shared design blueprint and section contracts.
+3. **Build the foundation:** implement shared tokens, components, layout shell, and required structure.
+4. **Implement themes:** deliver and verify both themes and the circular one-tap switch.
+5. **Implement sections and features:** build the detailed header, hero, collection, story, form, footer, and discovery batches; perform section-level testing as work proceeds.
+6. **Integrate and test:** verify responsive behavior, accessibility, regressions, performance, and visual fidelity across sections.
+7. **Preview and release:** stage V02 separately and evaluate release and rollback readiness under an explicit release decision.
+8. **Provide public version access:** preserve V01 publicly, promote accepted V02, and add portfolio comparison links after approval.
+
+This is a planning sequence, not an executable authorization. The transcript says the first future execution ticket should address V01 preservation and V02 isolation, not begin UI redesign implementation.
+
+### Archive disposition and limitations
+
+The Operator-approved strategic direction and later refinement are recorded as they appear in the transcript, including earlier recommendations that were subsequently refined. Current FootHive, GitHub, Netlify, accessibility, image, and deployment states have not been independently refreshed here. No FootHive source, branch, tag, deployment, or configuration was changed as part of this archive.
+
+### POST-V003-MC4-FOOTHIVE-V02-ARCHIVE-001 - Local implementation verification - 2026-10-24
+
+- Source-to-archive extraction matched the supplied attachment byte-for-byte: 92,374 of 92,374 bytes; both SHA-256 values are 81a95296cce529b6c963227ff94dc52d8713c3aeba5c99e6635b437f50394fe1.
+- The terminal empty speaker labels and 11 trailing blank lines remain inside the verbatim source. The incomplete-tail note is outside the source boundary; no dialogue was added.
+- Scoped Markdown scan found five external links in the transcript and one repository-relative link in this report; the local link resolves. No broken relative links were found. External destinations were not fetched or verified.
+- The read-only Governance structural validator exited 0 with PASS (qualified): 83 READMEs, 82 local tree blocks, 1,055 displayed entries, and 947 local Markdown targets. The validator notes that it does not parse the root README's full-depth tree as a two-level local tree; semantic status/content checks remain human review.
+- Scoped git diff --check reported 10 trailing-whitespace lines, all inside the supplied transcript at source lines 518, 520, 522, 639, 826, 827, 1435, 1436, 1908, and 2152. These spaces are present in the source attachment and were preserved. The three metadata/report/ticket wrappers have no trailing-whitespace findings. Git also warned that LF in the mixed-line-ending conversation working copy will be replaced by CRLF on a later Git write; no line-ending normalization was applied.
+- The Git index remains empty. No staging, commit, push, pull request, merge, deployment, FootHive source change, branch, or tag operation was performed.
+- The three authorized documents are modified locally. The four previously excluded worktree items remain outside this ticket's diff and were not touched.
+- Independent review and Operator final acceptance remain pending.
