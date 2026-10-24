@@ -1,6 +1,6 @@
 # RECYCLE_BIN_BRAINBOX
 
-**State:** [PRESENT · POPULATED] — governed archive containing 104 retired source files: Ticket 01's 88-file project-workflow deposit, Ticket 02's 13-file authority/FUNC deposit, and Ticket 03's three Skills/Milestones records. Ticket 02 and Ticket 03 source bodies are preserved byte-for-byte.
+**State:** [PRESENT · POPULATED] — governed archive containing 104 retired source files: Ticket 01's 88-file project-workflow deposit, Ticket 02's 13-file authority/FUNC deposit, and Ticket 03's three Skills/Milestones records; plus one generated Playwright snapshot retired on 2026-10-23. Ticket 02 and Ticket 03 source bodies are preserved byte-for-byte.
 
 **Authority:** Operator decision of 2026-10-14 authorizes this additive post-specification repository-root governance folder. The original frozen V003 Specification §8 and Origin Conversation remain unchanged; this supplemental root branch does not retroactively rewrite the frozen V003 target tree.
 
@@ -16,6 +16,7 @@ RECYCLE_BIN_BRAINBOX/ [PRESENT · POPULATED]
 ├── README_RECYCLE_BIN_BRAINBOX.md [PRESENT]
 ├── RETIREMENT_LEDGER_BRAINBOX.md [PRESENT]
 └── RETIRED_ITEMS_BRAINBOX/ [PRESENT · POPULATED]
+    ├── .playwright-mcp/ [retired Stage B tool output; see retirement ledger]
     ├── AI_MUST_README.md [retired historical source]
     ├── DOB_MUST_README.md [retired historical source]
     ├── FUNC_AI_BRAINBOX/ [11 retired files; see Ticket 02 manifest]
@@ -26,6 +27,8 @@ RECYCLE_BIN_BRAINBOX/ [PRESENT · POPULATED]
 ```
 
 ## Archive navigation
+
+- [Retired Playwright snapshot folder](RETIRED_ITEMS_BRAINBOX/.playwright-mcp/) — unauthorized Stage B generated output, retired on 2026-10-23. The separate October 23 Operator instruction has not been located; the Operator's 2026-10-24 directive accepts the retirement and authorizes publication. Not canonical application evidence.
 
 - [RETIREMENT_LEDGER_BRAINBOX.md](RETIREMENT_LEDGER_BRAINBOX.md) — retirement decision, cleanup exception, and recovery ledger.
 - [PROJ_WORKFLOW_RETIREMENT_MANIFEST_BRAINBOX.json](PROJ_WORKFLOW_RETIREMENT_MANIFEST_BRAINBOX.json) — 88 archived project-workflow files.

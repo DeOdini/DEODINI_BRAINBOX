@@ -501,6 +501,8 @@ DEODINI_BRAINBOX/
 │   ├── README_RECYCLE_BIN_BRAINBOX.md
 │   ├── RETIREMENT_LEDGER_BRAINBOX.md
 │   └── RETIRED_ITEMS_BRAINBOX/
+│       ├── .playwright-mcp/ [retired Stage B tool output; 2026-10-23]
+│       │   └── page-2026-10-22T19-08-58-731Z.yml [preserved generated snapshot]
 │       ├── AI_MUST_README.md [retired historical source]
 │       ├── DOB_MUST_README.md [retired historical source]
 │       ├── FUNC_AI_BRAINBOX/ [11 retired files; see Ticket 02 manifest]

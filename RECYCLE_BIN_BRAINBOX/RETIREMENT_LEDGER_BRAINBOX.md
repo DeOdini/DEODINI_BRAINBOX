@@ -1,10 +1,22 @@
 # RETIREMENT_LEDGER_BRAINBOX
 
-**State:** [PRESENT · POPULATED] — three authorized archive records: RET-2026-10-15-PROJ-WORKFLOW, RET-2026-10-16-LEGACY-AUTHORITY, and RET-2026-10-16-SKILLS-MILESTONES.
+**State:** [PRESENT · POPULATED] — four authorized archive records: RET-2026-10-15-PROJ-WORKFLOW, RET-2026-10-16-LEGACY-AUTHORITY, RET-2026-10-16-SKILLS-MILESTONES, and RET-2026-10-23-PLAYWRIGHT-MCP.
 
 Each later entry must record retirement ID, item type, original repository-relative path, purpose, reason, Operator approval/ticket, pre-operation SHA-256 and Git blob/commit where applicable, file manifest for directories, archive path, canonical/reference replacement, affected links, verification, recovery procedure, date, and publication references. Distinguish PROPOSED, AUTHORIZED, ARCHIVED, BLOCKED, and RESTORED.
 
 Do not treat this ledger as standing authorization to retire protected or retained source files. Historical M20 empty-file retirements are documented in the V003 Migration Map, not retrospectively moved here.
+
+## RET-2026-10-23-PLAYWRIGHT-MCP — ARCHIVED
+
+- **Operator acceptance/publication authority:** The Operator's 2026-10-24 directive accepts the prior retirement and authorizes publication. The separate October 23 instruction has not been located; this retrospective record does not claim it was independently recovered. Codex's earlier execution remains historical; Git publication had not yet been authorized or performed at that time.
+- **Item and original path:** Tool-generated directory `.playwright-mcp/` at the repository root, containing exactly one untracked accessibility snapshot. It was automatically created by Playwright navigation during ticket P01-FH-V02-STAGE-B-001 on 2026-10-22, contrary to that ticket's read-only boundary (AUTH-01).
+- **Reason and classification:** Remove accidental tool output from the active root while preserving its original bytes and provenance. RETIRED TOOL OUTPUT; not current operating authority, approved canonical evidence, or a change to the Stage B compliance finding.
+- **Manifest:** `page-2026-10-22T19-08-58-731Z.yml`; 10,868 bytes; pre-move and post-move SHA-256 `0bf5c93a90bc50246193a1a55f350d855c3f423c953149b57835eb9aa06b4401`. Untracked source; no source Git blob or commit exists.
+- **Archive:** `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/.playwright-mcp/page-2026-10-22T19-08-58-731Z.yml`. Technical folder and snapshot filenames preserved unchanged.
+- **Verification:** Resolved source and destination were checked within the workspace; neither source folder nor archive parent was a reparse point. Exactly one ordinary source file was found; no destination collision existed. Native PowerShell Move-Item moved the folder. Source path is absent; archived size and SHA-256 match the recorded source.
+- **Reference audit:** Repository text search found no references to the exact snapshot filename before retirement. Stage B's chat report retains the original path as historical provenance. Root and Recycle Bin navigation now identify the archive; no canonical application source was replaced.
+- **Recovery:** Only under a new Operator instruction, verify the archived SHA-256 and move the directory back to the original root path after confirming that path is absent. Do not overwrite a newly created tool-output folder.
+- **Scope:** Preserved the pre-existing modification to `POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_CONVO_BRAINBOX.md`. No application source, branch, ref, staging area, deployment, or prior archived source body changed.
 
 
 ## RET-2026-10-15-PROJ-WORKFLOW — PARTIAL DIRECTORY CLEANUP BLOCK
