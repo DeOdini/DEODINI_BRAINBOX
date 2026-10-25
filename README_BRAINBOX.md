@@ -458,7 +458,7 @@ DEODINI_BRAINBOX/
 
 ## Current local root tree
 
-Current physical root layout — reconciled 2026-10-19. Historical/support records are identified separately from the frozen V003 target tree.
+Current physical root layout — reconciled 2026-10-19; the approved RECT-04 post-V003 V02 POC extension is recorded below on 2026-10-25. Historical/support records are identified separately from the frozen V003 target tree.
 
 ```text
 DEODINI_BRAINBOX/
@@ -493,6 +493,7 @@ DEODINI_BRAINBOX/
 │   ├── POST_V003_MOD_CONVO_BRAINBOX.md [PRESENT]
 │   ├── POST_V003_MOD_REPORT_BRAINBOX.md [PRESENT]
 │   ├── POST_V003_MOD_TICKETS_BRAINBOX.md [PRESENT]
+│   ├── POST_V003_DEEP_RESEARCH_BRAINBOX.md [PRESENT]
 │   └── README_POST_V003_MOD_BRAINBOX.md [PRESENT]
 ├── RECYCLE_BIN_BRAINBOX/ [PRESENT · POPULATED; Operator-approved archive]
 │   ├── LEGACY_AUTHORITY_RETIREMENT_MANIFEST_BRAINBOX.json [Ticket 02; 13 files]
@@ -514,6 +515,26 @@ DEODINI_BRAINBOX/
 └── VERSION_HISTORY_BRAINBOX/ [PRESENT · POPULATED — historical record set is intentionally incomplete; see population table]
 ```
 
+### Approved post-V003 FootHive V02 POC extension
+
+The frozen V003 target tree above remains unchanged. This separately authorized post-V003 project-documentation structure is physically present under RECT-04 through RECT-06. Its project README, conversation record, PRD draft, design specification, ticket register, initial project report, bounded retrospective, and design-reference intake manifest are present. The three original image binaries were not locally accessible during intake. No V02 application, feature, test, release, or deployment is claimed.
+
+~~~~text
+AI_BRAINBOX/
+└── DEVOPS_AI_BRAINBOX/
+    └── SANDBOX_DEVOPS_BRAINBOX/
+        └── POC_SANDBOX_BRAINBOX/
+            └── FOOTHIVE_V02_POC_BRAINBOX/ [PRESENT · POPULATED - project documentation only; application not implemented]
+                ├── ASSETS_FH_V02_BRAINBOX/ [PRESENT · POPULATED — manifest only; image binaries unavailable]
+                │   └── README_ASSETS_FH_V02_BRAINBOX.md [PRESENT]
+                ├── CONVO_FH_V02_POC_BRAINBOX.md [PRESENT]
+                ├── DESIGN_SPEC_FH_V02_POC_BRAINBOX.md [PRESENT] - technical detail remains draft
+                ├── PRD_FH_V02_POC_BRAINBOX.md [PRESENT] - draft; final acceptance pending
+                ├── README_FH_V02_POC_BRAINBOX.md [PRESENT]
+                ├── REPORT_FH_V02_POC_BRAINBOX.md [PRESENT] - initial report
+                ├── RETROSPECTIVE_FH_V02_POC_BRAINBOX.md [PRESENT] - source-qualified
+                └── TICKETS_FH_V02_POC_BRAINBOX.md [PRESENT] - planning only
+~~~~
 ## V003 authority and support overlay
 
 The approved operational target tree lists the three direct V003 authority files. The current repository also preserves the following process and audit records inside the same container. These support records are not additional operational architecture branches and do not replace the Specification or Origin Conversation.
@@ -585,6 +606,7 @@ Use these current child READMEs for domain navigation. The authoritative target 
 | [Fullstack Sandbox README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FULLSTACK_SANDBOX_BRAINBOX/README_FULLSTACK_SANDBOX_BRAINBOX.md) | Fullstack workflows, application architecture, and orchestration routes. |
 | [Sandbox case-study README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/README_POC_SANDBOX_BRAINBOX.md) | Case-study index for Sandbox trials. |
 | [FootHive Sandbox trial README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) | Canonical FootHive workflow-trial records and evidence. |
+| [FootHive V02 POC README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/README_FH_V02_POC_BRAINBOX.md) | V02 project-documentation index; no application outcome is implied. |
 | [Production DEVOPS README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/README_PROD_DEVOPS_BRAINBOX.md) | Production operations and environment navigation. |
 | [Production case-study README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/README_POC_BRAINBOX.md) | Production case-study index. |
 | [FootHive Production summary README](AI_BRAINBOX/DEVOPS_AI_BRAINBOX/PROD_DEVOPS_BRAINBOX/POC_PROD_BRAINBOX/FOOTHIVE_PROD_SUMMARY_BRAINBOX/README_FOOTHIVE_PROD_SUMMARY_BRAINBOX.md) | Production summary and lessons; refers to canonical Sandbox evidence. |
@@ -602,6 +624,7 @@ Use these current child READMEs for domain navigation. The authoritative target 
 | [Phase 02 migration README](V003_VERSION_UPGRADE_BRAINBOX/PHASE02_MIGRATION_BRAINBOX/README_PHASE02_MIGRATION_BRAINBOX.md) | Closed Phase 02 process archive and migration evidence. |
 | [Phase 03 fixes README](V003_VERSION_UPGRADE_BRAINBOX/PHASE03_FIXES_BRAINBOX/README_PHASE03_FIXES_BRAINBOX.md) | Closed V003 MVP evidence, ticket history and accepted qualifications. |
 | [Post-V003 modifications README](POST_V003_MODIFICATIONS_BRAINBOX/README_POST_V003_MOD_BRAINBOX.md) | Standalone post-closure modification tickets, decisions, reports and verification. |
+| [Post-V003 Deep Research assessment](POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_DEEP_RESEARCH_BRAINBOX.md) | Brainbox-scoped research record; ownership and verification status are described in the POST-V003 README. |
 | [V003 Unresolved Register](V003_VERSION_UPGRADE_BRAINBOX/V003_UNRESOLVED_BRAINBOX.md) | Current V003 issue index; clear with zero active findings as of 2026-10-19. Historical evidence remains in Phase 03 records. |
 | [Migration Map](VERSION_HISTORY_BRAINBOX/V003_EXTENDED_DEODINI_BRAINBOX/MIGRATION_MAP_V003_BRAINBOX.md) | Living source-backed migration ledger and recorded dispositions. |
 | [Recycle Bin README](RECYCLE_BIN_BRAINBOX/README_RECYCLE_BIN_BRAINBOX.md) | Operator-approved additive historical-retirement archive; outside the frozen V003 target tree. |
