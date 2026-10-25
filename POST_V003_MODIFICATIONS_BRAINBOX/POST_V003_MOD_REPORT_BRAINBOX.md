@@ -264,3 +264,93 @@ The Operator-approved strategic direction and later refinement are recorded as t
 - The Git index remains empty. No staging, commit, push, pull request, merge, deployment, FootHive source change, branch, or tag operation was performed.
 - The three authorized documents are modified locally. The four previously excluded worktree items remain outside this ticket's diff and were not touched.
 - Independent review and Operator final acceptance remain pending.
+
+
+## MAIN CONVO 4 — Archival, Git reconciliation, and Playwright retirement: independent closeout and Operator acceptance — 2026-10-24
+
+**Record type:** Retrospective closeout addendum by ChatGPT MAIN CONVO 4, recording independently verified findings and the Operator's subsequent acceptance. This addendum supplements, rather than rewrites, earlier entries that correctly described acceptance as pending at the time.
+
+### Sequence leading to closeout
+
+1. **Verbatim conversation archival.** The Operator supplied the MAIN CONVO 4 FootHive V02 planning transcript and approved the existing POST-V003 CONVO, REPORT, and TICKETS destinations for a bounded documentation ticket, `POST-V003-MC4-FOOTHIVE-V02-ARCHIVE-001`. Codex appended the transcript and supporting retrospective/ticket records. MAIN CONVO 4 independently compared the archived source with the attachment: the exact 92,374-byte transcript occurs once and retains SHA-256 `81a95296cce529b6c963227ff94dc52d8713c3aeba5c99e6635b437f50394fe1`, including the original terminal empty labels, blank lines, and source whitespace.
+2. **Publication blocker and corrective method.** Ordinary staging under system `core.autocrlf=true` converted the source transcript's CRLF line endings to LF. Codex stopped without committing. A controlled investigation found that a simple file-level `-text` approach would change historical stored line endings; the Operator instead approved Method B, constructing a Git conversation blob from the unchanged historical committed prefix plus the authorized append. Commit `0b20b7e8fa1f7baad43298a479743e70b61a3fcf` published exactly the three POST-V003 documentation files (2,480 additions, zero deletions). The committed CONVO blob was `e6ed9a560eeda4a88d039a7e9932623ec1fea637`, 227,868 bytes, SHA-256 `50d96f353023a2d352047f4a2b8b4de5219b3e3fd0f35217854871f063c42678`, retaining the original transcript byte-for-byte.
+3. **Duplicate and local status reconciliation.** MAIN CONVO 4 independently checked that the full supplied transcript appears only once in both local and published CONVO; earlier related discussion is not a second full transcript. The local `Modified` status was traced to line-ending representation, not unpublished conversation text. Under a separate Operator directive, Codex reconciled the local working file to the committed Git blob and applied a local-only `.git/info/attributes` rule for that path. Independent readback confirmed local CONVO bytes equal the published blob and the worktree/index are clean. This checkout-specific rule does not automatically propagate to future clones.
+4. **Playwright retirement and separate publication.** A Stage B Playwright-generated snapshot had been retired into `RECYCLE_BIN_BRAINBOX/RETIRED_ITEMS_BRAINBOX/.playwright-mcp/`; the three related navigation/ledger files and one snapshot initially remained unpublished. Codex's audit reported that the October 23 move instruction was not separately located in accessible evidence; that limitation remains recorded. The Operator explicitly accepted retirement and authorized a four-file publication. Commit `6952ed2ce714b146d16a3cb641264d8f3adba30d`, parent `0b20b7e8fa1f7baad43298a479743e70b61a3fcf`, published the root README, Recycle Bin README, retirement ledger, and `page-2026-10-22T19-08-58-731Z.yml` (234 additions, two deletions). The snapshot is 10,868 bytes with SHA-256 `0bf5c93a90bc50246193a1a55f350d855c3f423c953149b57835eb9aa06b4401`; the original repository-root `.playwright-mcp` folder is absent. Retirement does not retroactively cure the recorded Stage B authorization violation.
+5. **Independent post-publication verification.** MAIN CONVO 4 checked local HEAD, origin/main, and the live remote main reference at `6952ed2ce714b146d16a3cb641264d8f3adba30d`; verified the commit's exact four-file scope, local snapshot-to-commit byte equality, exact archived transcript preservation, a clean real Git index, and a clean working tree. The pre-reconciliation CONVO recovery copy remained outside the repository with 229,970 bytes and SHA-256 `f3e5e0e9ce1284d634f63c12f9d6a7c54885f05c06fb25ae6c1dd6dc2126a957`. Broader Governance-validator counts and the bounded credential scan were Codex-reported rather than independently rerun in this final verification.
+
+### Final Operator decision and boundaries
+
+The Operator replied **"ACCEPTED"** to MAIN CONVO 4's independent final closeout verification on 2026-10-24. Accordingly, the MAIN CONVO 4 archival publication, local Git reconciliation, and Playwright retirement publication are **CLOSED — OPERATOR ACCEPTED AND INDEPENDENTLY VERIFIED**, within the qualifications above. The final verified GitHub `main` commit for this closeout is `6952ed2ce714b146d16a3cb641264d8f3adba30d`.
+
+**Remaining boundaries:** The external temporary recovery copy remains retained pending any separately authorized disposal; the local Git attributes rule is not a cross-clone archival policy. Historical Stage B noncompliance and the missing independent October 23 instruction source remain recorded. This closeout does **not** authorize FootHive V01/V02 branch or worktree creation, application edits, Netlify deployment, or a new Git publication. The next FootHive milestone is V01 preservation and V02 workspace preparation under its own reviewed and authorized ticket.
+
+
+## POST-V003-RECT-07 — Historical ownership reconciliation report — 2026-10-25
+
+**Record type:** Append-only reconciliation report for the Operator-authorized POST-V003 ownership-rectification batch.
+**Authority:** Operator-accepted RECT-02 ownership manifest and the RECT-07 Operator directive.
+**Pre-append integrity:** The complete existing REPORT, including its protected prior closeout and historical report sections, had SHA-256 `5743fac9928bccbed2fc74ea1ff1035a6b78eb12ad1fffc452775808eac8cbcd` and 43,538 bytes. RECT-07 preserves those bytes as an unchanged prefix; the post-append whole-file hash is reported in the Codex execution handoff.
+
+### Ownership correction
+
+The historical MAIN CONVO 4 archive was recorded in POST-V003 as part of a Brainbox documentation task. The later accepted RECT-02 manifest distinguishes that archival responsibility from ownership of ongoing FootHive V02 project material. POST-V003 remains the canonical Brainbox modification-history area; project-specific V02 planning and future development records belong under the approved [FootHive V02 project domain](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/README_FH_V02_POC_BRAINBOX.md). This is a routing clarification, not a move, rewrite, or replacement of the published historical transcript.
+
+### Canonical project records
+
+The V02 domain now contains its project [README](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/README_FH_V02_POC_BRAINBOX.md), [conversation](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/CONVO_FH_V02_POC_BRAINBOX.md), [historical retrospective](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/RETROSPECTIVE_FH_V02_POC_BRAINBOX.md), [PRD](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/PRD_FH_V02_POC_BRAINBOX.md), [design specification](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/DESIGN_SPEC_FH_V02_POC_BRAINBOX.md), [ticket register](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/TICKETS_FH_V02_POC_BRAINBOX.md), [project report](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/REPORT_FH_V02_POC_BRAINBOX.md), and [design-reference intake manifest](../AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md). The records have separate roles and link to canonical sources rather than maintaining competing copies.
+
+### Historical provenance and accepted status
+
+The V02 retrospective is explicitly bounded to the POST-V003 report section “POST-V003-MC4-FOOTHIVE-V02-ARCHIVE-001 - MAIN CONVO 4 retrospective report - 2026-10-24”: lines 196–255, raw-byte interval `[27398, 36312)` (end exclusive), 8,914 bytes. Its source report baseline SHA-256 is `5743fac9928bccbed2fc74ea1ff1035a6b78eb12ad1fffc452775808eac8cbcd`. It summarizes historical statements and does not replace the source report or constitute a current FootHive audit.
+
+The Operator's current RECT-07 directive records these prior batch dispositions: RECT-01 independently verified; RECT-02 Operator accepted; RECT-03 and RECT-04 Operator accepted; RECT-05 QUALIFIED PASS — Operator accepted; and RECT-06 QUALIFIED PASS — Operator accepted after MAIN CONVO independent verification. These are dated rectification states, not proof of application functionality. The V02 ticket register's earlier RECT-06 “independent review pending” wording is retained as the contemporaneous implementation checkpoint; this later directive is recorded as the subsequent acceptance state, without rewriting that checkpoint.
+
+### Remaining source limitations
+
+The source material supports a bounded historical summary and the approved planning records, but two evidence gaps remain open: separate original PRD 0.1/0.2 draft files were not located in the verified repository/attachment evidence set, and the three original design-reference image binaries were not available as standalone files for file-level integrity or rights verification. DR-01/DR-02/DR-03 remain represented by the intake manifest; no binary, filename, hash, metadata, or usage permission is invented. The Operator-visible inline image references are not treated as proof that standalone source files are present in the repository.
+
+### Application and publication boundary
+
+RECT-01 through RECT-07 concern documentation ownership, source preservation, records, and navigation. RECT-07 makes no FootHive application code change and does not establish implementation, integration, testing, release, or deployment results. The PRD remains a refinement pending its stated acceptance gates; future application work requires its own authorized tickets. RECT-07 local changes are awaiting independent MAIN CONVO verification and Operator acceptance. No staging, commit, push, pull request, merge, or deployment is authorized or performed by this ticket.
+
+
+### RECT-07 local verification closeout — 2026-10-25
+
+**Codex result:** QUALIFIED PASS — local documentation implementation and checks complete; MAIN CONVO independent verification and Operator acceptance remain pending.
+
+**Exact RECT-07 writable files:** `POST_V003_MOD_CONVO_BRAINBOX.md`, `POST_V003_MOD_REPORT_BRAINBOX.md`, and `POST_V003_MOD_TICKETS_BRAINBOX.md` only. Their complete pre-RECT-07 byte sequences remain unchanged prefixes. Baseline sizes and SHA-256 values are recorded above; the final whole-file hashes are provided in the Codex handoff. No previously accepted V02 project record or unrelated worktree file was edited under RECT-07.
+
+**Historical transcript integrity:** The 92,374-byte body at POST-V003 CONVO byte interval `[135086, 227460)` retains SHA-256 `81a95296cce529b6c963227ff94dc52d8713c3aeba5c99e6635b437f50394fe1` and remains an exact byte sequence in the project-owned V02 conversation at byte offset 2,974.
+
+**References:** 25 new relative Markdown links checked across the three notices; 25 resolved and 0 broken.
+
+**Repository validation:** `python -B GOVERNANCE_BRAINBOX/validate_tree_status.py` exited 0 with `PASS (qualified)`: 85 README files, 84 local tree blocks, 1,075 displayed tree entries, and 988 Markdown targets checked. The validator explicitly does not parse the root README full-depth tree as a two-level local tree; this qualification remains.
+
+**Whitespace:** `git diff --check` exited 0. Git emitted only its working-copy warning that LF in the POST-V003 REPORT may become CRLF on a future Git touch; no whitespace error was reported.
+
+**Git boundary:** Branch `main`, HEAD `6952ed2ce714b146d16a3cb641264d8f3adba30d`; the index is empty. Existing RECT-03 through RECT-06 worktree modifications and the untracked V02 project-record directory remain present and untouched by RECT-07. No stage, commit, push, PR, merge, or deployment was performed.
+
+### PUB-REM-01 execution report - 2026-10-25
+
+**Codex result:** PASS for the authorized local append-only reconciliation; independent MAIN CONVO verification remains pending.
+**Authority:** Operator directive dated 2026-10-25; attachment SHA-256 42c91405ce71f275011fb8b2590ff7b0b78bf600b8d6a58f24b275d9961ce2b4.
+**Scope:** The eight files listed below were the authorized candidate allowlist and all eight required a dated current-status addendum. Their pre-edit bytes remain exact prefixes.
+
+| Pre-edit file | Bytes | Pre-edit SHA-256 |
+|---|---:|---|
+| POST_V003_MODIFICATIONS_BRAINBOX/README_POST_V003_MOD_BRAINBOX.md | 9,082 | d7f1e6ec1bbb6a3024e77c67c1a62e2137a692f2fd8624927ac853ec0348e6ae |
+| POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_CONVO_BRAINBOX.md | 231,724 | a413f911316835a78dd863f5c90706f1af35eb24b09a86cccfa7dc8d50f54a84 |
+| POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md | 50,723 | 5afc29eaaf5bbc0938023aa66266d1d891d37848cd9f6e0ffd68603cdea8e3d4 |
+| POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_TICKETS_BRAINBOX.md | 24,968 | fe4fa63ab12190a755fcb14399e03e64a71fcc968d77012a6cb0a77b597eaf60 |
+| AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/README_FH_V02_POC_BRAINBOX.md | 9,472 | b43a76c5db8fb2999c12a82d73f220bea9e928547173dd8bb3ed12d0d7f71ae7 |
+| AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/REPORT_FH_V02_POC_BRAINBOX.md | 8,180 | 81bef8fcae83cd08244c438a1bea715e8130f227ff1d20af0b256b69c0077cec |
+| AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/RETROSPECTIVE_FH_V02_POC_BRAINBOX.md | 6,698 | 626dc8f319c3ec738c90af9bb6d8c61dba641547af0dfc3ae81ef14d6f977ed8 |
+| AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/TICKETS_FH_V02_POC_BRAINBOX.md | 6,422 | a56631c5ba2f696ff9f352fbd25023a7517fa6f2490eee4449213ac498595c0b |
+
+**Acceptance-status reconciliation:** RECT-01 was independently verified and Operator accepted; RECT-02 was QUALIFIED PASS and Operator accepted; RECT-03 and RECT-04 were independently verified PASS and Operator accepted; RECT-05 was QUALIFIED PASS and Operator accepted; RECT-06, RECT-07, and RECT-08 were independently verified QUALIFIED PASS and Operator accepted. RECT-05 retains the unavailable standalone image binaries qualification. RECT-06 retains unavailable PRD 0.1/0.2 sources and the unaccepted PRD 0.3 draft. RECT-07 is documentation-only. RECT-08 is read-only verification and does not confer publication readiness.
+
+**Historical preservation:** Existing pending-review statements and the POST-V003 historical transcript were not rewritten. The earlier ticket-register note that RECT-08 was not yet authorized records its earlier state; a subsequent Operator-authorized directive permitted read-only RECT-08 verification, later accepted as QUALIFIED PASS. The 92,374-byte transcript remains read-only in its project-owned conversation; its recorded SHA-256 is 81a95296cce529b6c963227ff94dc52d8713c3aeba5c99e6635b437f50394fe1. No source was reconstructed, normalized, or copied.
+
+**Remaining publication findings:** PUB-REM-02 transcript byte-preservation, PUB-REM-03 mixed-scope publication, and PUB-REM-04 active V02 routing remain open and unauthorized. This report does not claim the final PRD is accepted, the source image binaries or earlier PRD drafts were recovered, or FootHive V02 was implemented, tested, released, or deployed.
+
+**Git boundary:** Local documentation changes only. No file was staged; no commit, push, branch, pull request, merge, or deployment occurred. The original worktree contents outside the eight-file allowlist were left untouched.
