@@ -160,3 +160,12 @@ This dated status supersedes only earlier current-status statements in this READ
 This status does not grant final PRD acceptance or authorize FootHive V02 application implementation, testing, release, or deployment. The publication manifest created by PUB-PRE-01 is a planning record and is not Git publication authorization.
 
 **Navigation follow-up:** The new manifest is not included in the existing POST-V003 local-tree block. A separately authorized local-tree/navigation correction is required before the manifest can be represented as a fully reconciled published child.
+
+## Current published-branch and manifest routing clarification - 2026-10-25
+
+This current-state clarification supersedes only the outdated navigation and publication-status guidance above; the preceding dated statements remain preserved as historical checkpoints.
+
+- The publication manifest `POST_V003_PUBLICATION_MANIFEST_BRAINBOX.md` is physically present and is included in this README's local tree and Record responsibilities navigation following accepted PUB-PRE-02. The earlier statement that it was absent is no longer current.
+- PUB-PRE-01 was accepted as QUALIFIED PASS and PUB-PRE-02 was accepted as PASS by the Operator.
+- PUB-GIT-01 published the 17-path documentation candidate to GitHub branch `post-v003/pub-rectification-publication-20261025` at commit `c4fb69016473850459dbe660fcc4d80c9a6c53ff`. MAIN CONVO independently confirmed publication as QUALIFIED PASS; formal PUB-GIT-01 Operator acceptance has not been separately recorded.
+- GitHub `main` remains at `6952ed2ce714b146d16a3cb641264d8f3adba30d`. PR preparation and review are authorized, but merging to `main` and deployment require a distinct final Operator approval.
