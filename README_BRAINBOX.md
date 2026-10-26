@@ -462,6 +462,7 @@ Current physical root layout — reconciled 2026-10-19; the approved RECT-04 pos
 
 ```text
 DEODINI_BRAINBOX/
+├── .gitattributes [PRESENT]
 ├── .gitignore [repository-wide local environment-file exclusions — M14]
 ├── README_BRAINBOX.md [ACTIVE — created in M02]
 ├── GOVERNANCE_BRAINBOX/ [POPULATED — M03]
