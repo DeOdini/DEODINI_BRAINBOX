@@ -365,3 +365,151 @@ RECT-01 through RECT-07 concern documentation ownership, source preservation, re
 **Evidence boundary:** Priority 1 reports two independent local V01/V02 clones at `43bbbea8325e3ec062baef7fd1724b5ea78bc6d0`, both on `main`; remote-reference and deployment state require formal Codex evidence and independent verification. Codex's A01 execution report was outstanding at review time. The already verified local reference-image intake remains distinct from production licensing and application implementation.
 
 **Next action:** Deliver `P01-V02-A01` to Codex for read-only preflight and separately review source-preservation and V02 isolation before authorizing Git changes. Priority 1 can refine design contracts concurrently. **No coding, Git publication, Netlify changes or deployment authorized by this report.**
+
+## POST-V003 Phase 3C — publication and local-main reconciliation — 2026-10-27 CDT
+
+**Authority and boundary:** The Operator's Phase 3C directive is dated 2026-10-28 (UTC). This execution entry is dated 2026-10-27 in the repository machine's America/Chicago time zone. Local reporting and validation were authorized. Git staging, commit, push, further PR work, remote mutation, and historical branch cleanup were not authorized and were not performed.
+
+**Earlier phases:** Phase 1 preflight/disposition and Phase 1.5 correction/independent-review records remain in the existing Phase 03/POST-V003 history; they were not rewritten or re-audited here. Phase 2 publication used branch `post-v003/foothive-v02-documentation-publication-20261027` at `0aceac29817932b9727d90fa9fa8c1c58f65c9c4`. Phase 3 created and reviewed PR [#96](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/96). Phase 3B merged it. Fresh read-only GitHub reads confirmed PR #96 closed/merged, the publication branch still at `0aceac29817932b9727d90fa9fa8c1c58f65c9c4`, and GitHub `main` at merge commit `725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674`. The merge commit's parents are old main `6ee816059390d596c4203840cec542259e5bd348` and publication commit `0aceac29817932b9727d90fa9fa8c1c58f65c9c4`.
+
+**Phase 3C baseline:** The original local repository is `DEODINI_BRAINBOX repository root`, on local `main` at `6ee816059390d596c4203840cec542259e5bd348`; its local `origin/main` tracking ref remained at that same SHA because no fetch/ref update was performed. The Git index had no staged changes. Before this report append, status was seven modified tracked Markdown files, three untracked PNGs, and untracked `.playwright-mcp/`. A fresh GitHub API read confirmed remote main at the accepted merge SHA above. Local and remote main therefore did not match.
+
+**Preservation snapshot:** Before document comparison, the seven original modified Markdown files were copied byte-for-byte to `DEODINI_PHASE3C_PRESERVATION_20261027_b8018591baa54884a27c7c421b7e04a2`. `PRESERVATION_MANIFEST.json` SHA-256: `6032F0B5EB8E7CDFB0401FF9F6BC6EC9E21772B280D546645D0D75E4C15251A2`. `COMPARISON_MANIFEST.json` SHA-256: `6F212F533515A4E1B306719B2961CBD8A440F0B3F61793C9E4A6216602F9345F`. Before this append, all seven live file sizes and SHA-256 values matched the preservation manifest and their snapshot copies. The snapshot and comparison artifacts remain outside the repository; they were not published.
+
+| Working document (pre-append snapshot) | Bytes / SHA-256 | Published blob (0aceac2; same blob in merge) | Pre-append comparison to published |
+|---|---|---|---|
+| `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md` | 5,716 / `F27631345F7B09AFD4C736EC835C435640D13D7591BBEA95503FA0E8B3034AF3` | `697e00bc3e7e0479d9f5a72b42527448a86b1509` | `CONFLICTING OR UNCERTAIN`; content diff artifact `01.diff` (12 additions, 13 deletions in comparison manifest) |
+| `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/README_FH_V02_POC_BRAINBOX.md` | 10,698 / `42442D4BD01D69168BCDAFC07B09F36F8676714F143058020E82EDAE6EBD7BF2` | `77b09a98c01e3aab5e71ecdc5c5527da203dc9ab` | `CONFLICTING OR UNCERTAIN`; `02.diff` (9 additions, 6 deletions) |
+| `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/REPORT_FH_V02_POC_BRAINBOX.md` | 59,539 / `EA4D17173327D6DA6E7EFE99028C5379C3B204ECBC4A1786C31B3B48B732D0D8` | `5e8309467632c7e1178637f4266242f40414e652` | `CONFLICTING OR UNCERTAIN`; `03.diff` (0 additions, 15 deletions) |
+| `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/TICKETS_FH_V02_POC_BRAINBOX.md` | 28,628 / `4DAB3293D71ACC114CE39D35EE00E07125AE9657CCF97C27436E6FCE877D2F09` | `ca8ec06f85f0a51de963256bef3802f6c5775d8c` | `CONFLICTING OR UNCERTAIN`; `04.diff` (0 additions, 20 deletions) |
+| `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/README_POC_SANDBOX_BRAINBOX.md` | 7,102 / `545AF3CEDB6AE5449D684DF26F9622DD952A9D92D0D9D3AA9DBC51E7790746BF` | `d083a8caf67e5313f2a713452163f4592bdc11dc` | `CONFLICTING OR UNCERTAIN`; `05.diff` (4 additions, 4 deletions) |
+| `POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md` | 56,267 / `E369EE4E8C5A5A14CD243FF7A15F4322820A80A78720262852FAA3EDF28CB0EB` | `c35b5ba8446087055e98a5ba65a1a057e9230e79` | `MATCHES PUBLISHED CONTENT` after LF normalization; no substantive pre-append diff. This authorized Phase 3C append is now local-only. |
+| `README_BRAINBOX.md` | 81,398 / `FB14B8B7BF55F22DFFAF08F72E99210FF09F6AF5497080C3F4A0F504C8FEBB50` | `c92ba944125a44ad3d94f07adb5a3f7969e06308` | `CONFLICTING OR UNCERTAIN`; `07.diff` (5 additions, 2 deletions) |
+
+The six differing working copies do not byte-match or LF-normalized-match the published blobs. Their exact diff files and hashes are retained in `published-vs-working-diffs/` and indexed in the comparison manifest. Because the differences are substantive and have no separately reviewed content disposition, the required stop gate applied: local `main` was not synchronized. No `fetch`, checkout, pull, reset, stash, ref update, or overwrite was performed. The six files remain preserved in the original worktree and snapshot.
+
+**Untracked artifact preservation:** The three local design-reference PNGs remain untracked and unchanged. Their recorded `(bytes; SHA-256)` values are: `CREATIX FOOTHIVE PROPOSED DESIGN.png` (1,082,316; `5F668180A36EECFE38CD05DD9DE8BE567F632DBB6D51AF24E2DDF19988A31DD0`), `FootHive Dark Neon Footwear Showcase.png` (2,004,170; `0E2C0CF1A2F0B39269B2AFA0FA728C5491CCABB3E33E04E03358DB1DC5224D83`), and `FootHive Everyday Footwear Showcase.png` (1,987,304; `0FAE876983E0581BB66BF92793FBEE4EFB6D991402B660FF23E9A9CA50B6BB89`). `.playwright-mcp/` contained seven inventoried files; per-file sizes and hashes are in the preservation manifest. Neither these assets nor that directory was changed or removed.
+
+**Reports and navigation:** This primary report and the existing FootHive V02 REPORT and TICKETS records received append-only Phase 3C status entries. Existing root navigation already points to the primary Post-V003 report and FootHive project reports; the FootHive project README links its REPORT and TICKETS records. No root README or navigation edit was needed.
+
+**Other remote state:** PR #90 remains open and unmerged on `v003/bf-f02-register-cleanup` (head `c8005beb18a2632868954cba2bcbe87196a167e1` at last read). The historical branch `post-v003/deep-research-navigation-20261021` remains at `6102e8a1b7a8fbc1c1e9165045f3e44a8021f396`. No historical branch was deleted or renamed; cleanup remains separately gated.
+
+**Phase 3C result:** `PHASE 3C PARTIAL — PRESERVED WITH OUTSTANDING CHANGES`. GitHub publication/merge is verified. Local `main` synchronization is intentionally not performed because six tracked working copies have substantive, unresolved differences against the merged content. The original local `main` HEAD and local `origin/main` tracking ref remain at `6ee816059390d596c4203840cec542259e5bd348`; live GitHub `main` is `725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674`. A source-content disposition is required before attempting synchronization. No staging, commit, push, additional PR, merge, branch cleanup, or deployment occurred. Independent ChatGPT review and final Operator acceptance remain pending.
+
+### Phase 3C validation readback — 2026-10-27 CDT
+
+- `python -B GOVERNANCE_BRAINBOX/validate_tree_status.py`: exit 0; `PASS (qualified)`. It inspected 85 README files, 84 canonical local tree blocks, 1,082 displayed tree entries, and 1,001 local Markdown targets. The validator's stated semantic limits remain: POPULATED substance, STUB completeness, current authorization, evidence quality and freshness still require human review.
+- `git diff --check`: exit 0; no whitespace-error findings. Git emitted LF-to-CRLF conversion warnings for the appended FootHive REPORT and TICKETS files; their source files already contained mixed line endings, and the appended bytes followed each file's existing final LF. No normalization was run.
+- Direct navigation readback: the root README already links to the Post-V003 report and FootHive V02 records; the FootHive project README links its REPORT and TICKETS files. The new report links to the primary report resolved locally, and the PR #96 link is present. No navigation file was changed.
+- Preservation recheck: the seven pre-append document copies remain in the external snapshot; no PNG or `.playwright-mcp/` path was intentionally changed. The Git index remained without staged paths; no commit, push, branch update, or remote write was performed.
+
+These checks do not remove the six-file content-disposition gate and do not establish local-main synchronization. Independent ChatGPT verification and Operator acceptance of Phase 3C remain pending.
+
+
+## POST-V003 Phase 3C-S — Controlled Local Main Synchronization — 2026-10-28 CDT
+
+**Codex execution result:** PASS for the authorized local synchronization and report restoration. Independent ChatGPT verification and final Operator acceptance remain pending.
+
+**Accepted disposition:** The Operator accepted the Phase 3C-R disposition that the seven published GitHub document versions are authoritative. Earlier working-copy differences were preserved as historical evidence and were not reapplied.
+
+**Preflight and remote identity:** The repository was DEODINI_BRAINBOX repository root on main at 6ee816059390d596c4203840cec542259e5bd348, with local origin/main at the same SHA. Live GitHub main was 725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674. PR #96 was closed/merged at that SHA; its publication branch remained at 0aceac29817932b9727d90fa9fa8c1c58f65c9c4. The merge commit tree is ac110f990a2f68e4968d99b02eb3899bc13a7ddf, with parents 6ee816059390d596c4203840cec542259e5bd348 and 0aceac29817932b9727d90fa9fa8c1c58f65c9c4.
+
+**Preservation:** The original Phase 3C snapshot was left unchanged; its preservation and comparison manifests still match their recorded SHA-256 identities. A second snapshot outside all repository worktrees is at DEODINI_PHASE3C_SYNC_20261028_725e8a6e59f3c9cd. Its manifest SHA-256 is 68AA6E736565A9F5011D628CB74FB61846085FD31142056F5BA74B4F5E683E60. All 17 source files (seven modified Markdown documents, three untracked PNGs and seven Playwright capture files) passed source-to-snapshot byte verification. The three historical Phase 3C tails were separately saved and verified: 9,085 bytes / F66E009559C4887157515EF246DDE2484893AD20FED27B6EC9A17AC92ABE764B; 1,133 bytes / 6DB3BB0711FBF56E6763F4EAE088D84909F68A059309796CA52AA27A5FAE5F19; and 1,312 bytes / A8A2A3BBD99CB8ED6DC01A0E36D6B65547D332C03E90038F6CCCA653A415DA74.
+
+**Synchronization:** The command git fetch --no-tags origin main updated only the intended origin/main tracking reference to 725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674. The seven approved tracked paths were restored individually to the pre-sync HEAD; the three PNGs and seven Playwright files were retained. The command git merge --ff-only origin/main fast-forwarded local main to 725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674 without creating a commit. Local main, local origin/main and the live GitHub main readback now match. The publication commit remains an ancestor of main, and the published seven-file tree is present.
+
+**Historical report tails:** After confirming each published file matched its HEAD blob and each exact tail was absent, the three preserved tails were appended byte-for-byte to the published report files. The published prefixes were verified unchanged; each tail hash and length passed and each tail occurs once. The local files after tail restoration were 65,352 bytes (Post-V003 report), 63,186 bytes (FootHive V02 report) and 31,920 bytes (FootHive V02 ticket register).
+
+**Unpublished items and remaining local state:** The three FootHive design PNGs and seven .playwright-mcp files remain local and untracked, with their hashes preserved in the second snapshot. Exactly the three reporting files listed above are tracked modifications after this Phase 3C-S report append; the ten image/browser files remain untracked. Five registered worktrees remain present. No file was staged or committed; no push, PR, remote merge, deployment, branch deletion or branch cleanup occurred. The local tree is intentionally not clean.
+
+**PR #90 readback:** The current GitHub API read reports PR #90 open and non-mergeable (dirty), with head branch v003/bf-f02-register-cleanup at c8005beb18a2632868954cba2bcbe87196a167e1. This differs from the head identity recorded in earlier Phase 3C-R notes. No PR #90 or branch action was taken; the discrepancy is carried forward for independent review.
+
+**Execution notes:** An unprivileged exact-path git restore attempt failed because Windows denied creation of .git/index.lock; inspection confirmed no lock and no state change, and the same seven-path restore then succeeded through the authorized elevated command. Two PowerShell snapshot-preparation attempts stopped on script errors after partial copies (invalid path-regex escaping and a tail-path/formatting mistake); the partial files were read back, verified, completed without overwriting, and the final manifest confirms 17/17 files and 3/3 tails. Two read-only helper attempts also required correction for Windows PowerShell/.NET compatibility; they made no writes. The original snapshot and repository sources remained intact throughout.
+
+**Next gate:** Submit this local evidence for independent ChatGPT verification. Operator acceptance remains pending. Keep the three reporting changes local and unstaged until a separate publication instruction.
+
+### POST-V003 Phase 3C-S — Validator Follow-up — 2026-10-28 CDT
+
+**Validation disposition:** Local main synchronization and report-tail restoration remain complete, but the full-repository structural validator is **FAIL (qualified)** after rerun against the synchronized tree. This records the current result and does not change the earlier Phase 3C validator result.
+
+- python -B GOVERNANCE_BRAINBOX/validate_tree_status.py exited 1. It inspected 85 README files, 84 local tree blocks, 1,076 displayed entries, and 1,001 local Markdown targets. It reported six findings: each of the three preserved, untracked V02 design PNGs is absent from the canonical local-tree block in both README_ASSETS_FH_V02_BRAINBOX.md and README_FH_V02_POC_BRAINBOX.md.
+- The six findings concern these files: CREATIX FOOTHIVE PROPOSED DESIGN.png, FootHive Dark Neon Footwear Showcase.png, and FootHive Everyday Footwear Showcase.png. The three PNGs and both READMEs were left unchanged; no tree correction was authorized by Phase 3C-S.
+- No broken-target finding was emitted by the validator. The V02 report's new relative link to POST_V003_MOD_REPORT_BRAINBOX.md was separately resolved and the target exists.
+- The seven published document Git-blob checks passed, including byte-identical published prefixes for the three restored report tails. git diff --check exited 0 with only the previously noted LF-to-CRLF warnings for the V02 report and ticket register.
+- Final acceptance remains subject to independent verification and Operator acceptance. The six validator findings remain unresolved pending a separate authorized disposition.
+
+**Publication boundary:** This addendum is local-only. No files were staged or committed; no push, PR, merge, deployment, or remote change occurred.
+
+### POST-V003 Phase 3D — README validation repair — 2026-10-28 CDT
+**Execution status:** PASS for the authorized local README repair. Independent ChatGPT verification and final Operator acceptance remain pending.
+
+**Accepted baseline:** Phase 3C-S was accepted for progression. Local main, local origin/main, and live GitHub main were verified at 725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674. The Phase 3C and Phase 3C-S history, report tails, and preservation snapshots remain intact.
+
+**Correction scope:** The six validator findings came from three physically present design-reference PNGs omitted from the local tree blocks in the FootHive V02 assets README and project README. Both local trees now list all three files as [PRESENT]. The entries separately state that the PNGs are untracked, local-only, excluded from GitHub, and not approved for production use. The asset README also clarifies that GitHub's published tree contains the inventory README only. No PNG, validator, or historical record was changed.
+
+**Validation:** The full Governance validator exited 0 with PASS (qualified), zero findings: 85 README files, 84 local-tree blocks, 1,082 displayed entries, and 1,001 Markdown targets checked. The validator's semantic limits remain unchanged. The V02 report and ticket register have five checked Post-V003 report links in total, all resolving. Phase 3D headings occur once in each of the three reports; earlier Phase 3C-S entries remain present.
+
+Snapshot verification passed 44/44 checks, including both unchanged snapshot manifests, saved document and comparison artifacts, 17 Phase 3C-S snapshot files, three historical tails, three PNG hashes, and seven Playwright artifact hashes. The PNG binaries and browser artifacts were not changed.
+
+git diff --check exited 0 with only LF-to-CRLF warnings for the three report files. Local main, origin/main, and live GitHub main remain at 725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674. The index is empty.
+
+**Publication review condition:** The pre-existing Phase 3C-S report additions contain machine-specific checkout and temporary-snapshot path strings. They were retained as historical execution evidence under the Phase 3D preservation requirement. The scoped credential-pattern scan found no credential matches. These path disclosures require independent review before any public publication; no historical report entry was rewritten.
+
+**Publication candidate (exact five tracked paths):**
+- AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md
+- AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/README_FH_V02_POC_BRAINBOX.md
+- AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/REPORT_FH_V02_POC_BRAINBOX.md
+- AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/TICKETS_FH_V02_POC_BRAINBOX.md
+- POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md
+
+The three PNG binaries and seven .playwright-mcp artifacts remain untracked and excluded. A future publication branch may be based on synchronized main; no branch was created. Historical branch cleanup, including PR #90, remains pending and was not attempted.
+
+**Git boundary:** All five-document changes remain local and unstaged. No commit, push, PR, merge, deployment, or branch cleanup occurred. Phase 3D is submitted for independent ChatGPT verification; Operator acceptance remains pending.
+
+### POST-V003 Phase 3D - tracked-only compatibility reassessment - 2026-10-28 CDT
+
+**Authority and chronology:** This addendum records the additional clean-checkout compatibility gate in the Operator's Phase 3D directive. The earlier Phase 3D local-validator PASS remains a valid result for the original local checkout; it is not a portable-validation result. Earlier Phase 3C-S and Phase 3D entries remain unchanged.
+
+**Tracked-only candidate check:** An isolated copy was assembled from the 542 paths returned by git ls-files, using the current working contents of tracked files and omitting untracked paths. This simulates the proposed tracked candidate without altering the repository index or references. The three PNGs and .playwright-mcp artifacts were absent from that copy.
+
+**Results:** The original local checkout validator returned exit 0, PASS (qualified), with 85 READMEs, 84 local-tree blocks, 1,082 entries and 1,001 Markdown targets. The tracked-only candidate copy returned exit 1, FAIL, with the same inventory counts and 18 findings. The 18 findings concern six tree entries (three PNGs in each of two README trees); each entry triggers three physical-tree diagnostics because its PRESENT path is missing and it is not part of the tracked copy's actual child inventory. The 1,001 Markdown targets were checked; no broken Markdown-target finding was reported. The original local validator and this tracked-only copy therefore disagree only on the six local-only image entries.
+
+**Compatibility finding:** The current README trees accurately represent the original local filesystem and explicitly identify the PNGs as untracked, local-only design references. Keeping those entries causes the tracked-only candidate check to fail. Removing them would make the local tree omit physically present files, which was the cause of the six pre-correction local findings. The current validator compares one canonical local tree against the physical filesystem and does not model local-only overlays separately. README wording alone cannot make this same physical-tree check pass in both environments while the PNGs remain untracked.
+
+**Recommended documentation-only disposition:** Preserve the current explicit local-only and publication-status wording; report the local PASS and tracked-only FAIL separately; do not claim portable validation or publication readiness. Resolving the validator conflict requires a separate Operator decision, such as authorized validator support for a tracked/local overlay or a separate asset-publication decision after rights review. No such change is made here.
+
+**Preservation:** The Phase 3C snapshots and manifests remain intact. The recheck passed 44/44 checks, including snapshot payloads, saved historical tails, current PNGs and seven Playwright artifacts. PNG SHA-256 values remain 5F668180A36EECFE38CD05DD9DE8BE567F632DBB6D51AF24E2DDF19988A31DD0, 0E2C0CF1A2F0B39269B2AFA0FA728C5491CCABB3E33E04E03358DB1DC5224D83, and 0FAE876983E0581BB66BF92793FBEE4EFB6D991402B660FF23E9A9CA50B6BB89. The PNGs and browser artifacts were not modified.
+
+**Git boundary and disposition:** Local main, origin/main and live GitHub main remain at 725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674; the index remains empty. No stage, commit, push, PR, merge, deployment or branch cleanup occurred. **Phase 3D: BLOCKED - VALIDATION OR PRESERVATION CONFLICT.** Independent ChatGPT review and Operator acceptance remain pending.
+
+### POST-V003 Phase 3D-G — local-only asset governance reconciliation — 2026-10-28
+
+**Authority and disposition:** This append-only entry records the Operator-authorized Phase 3D-G repair. It preserves the earlier Phase 3D local PASS and tracked-only BLOCKED findings as historically accurate checkpoints; it does not rewrite them.
+
+**Cause:** The prior validator treated every `[PRESENT]` path as a required physical path and compared canonical tree children to the checkout's physical children. The original checkout contained the three PNGs, so it passed. A tracked-only candidate omitted the intentionally unpublished PNGs and produced 18 findings for their six entries across two README trees (three physical-tree diagnostics per absent entry). The discrepancy arose because local-only assets were represented as canonical repository-tree entries.
+
+**Convention adopted:** The two canonical trees now describe repository-controlled content. The Assets README separately inventories exactly DR-01 through DR-03 as `LOCAL_ONLY; EXCLUDED_FROM_GIT; PRODUCTION_UNAPPROVED`, with exact filenames, byte sizes, SHA-256 values, and rights/use qualifications. The files may be absent from clean checkouts. If present locally, size and SHA-256 are verified; when `.git` metadata is available, index exclusion is checked. The exception is limited to these three exact records and filenames; it does not exempt PNG extensions, other files, or ordinary required paths. Physical integrity, Git publication, rights, and production approval remain separate claims.
+
+**Implementation:** The Assets README moved the three records outside its canonical tree and into a separate inventory with explicit local/publication/production state and rights qualifications. The FootHive V02 project tree now lists only its repository-controlled Assets README at that depth and refers to the child inventory. Tree/Status Governance documents the narrow exception. The validator enforces the exact inventory and continues checking other tree completeness and Markdown targets. Eleven focused regression cases were added, bringing the Governance validator suite to 24 tests.
+
+**Validation:** `python -B -m unittest discover -s GOVERNANCE_BRAINBOX -p 'test_validate_tree_status.py' -v` exited 0: 24/24 passed. On the original checkout, `python -B GOVERNANCE_BRAINBOX/validate_tree_status.py` exited 0 with PASS (qualified), zero findings, 85 READMEs, 84 canonical trees, 1,076 tree entries, 1,001 local Markdown targets, three local-only records, and all three files present and hash-checked. An isolated tracked-only candidate based on `git archive HEAD` plus the eight modified tracked files omitted the three PNGs, `.playwright-mcp/`, and `.git`; the same validator exited 0 with PASS (qualified), zero findings, and the same README/tree/link counts, three declared records, and zero local PNGs present. Because the candidate has no `.git` metadata, only the original checkout can establish Git-index exclusion. The source validator's full run checks all Markdown targets; the changed README trees and all repository links were included.
+
+**Preservation:** The pre-edit preservation audit passed 51/51 checks. Before the append, all eight exact pre-edit file copies in `DEODINI_PHASE3D_G_PRE_EDIT_f0xw2ntx/PRE_EDIT_MANIFEST.json` were reverified against their recorded sizes and hashes. The three PNG hashes remain `5F668180A36EECFE38CD05DD9DE8BE567F632DBB6D51AF24E2DDF19988A31DD0`, `0E2C0CF1A2F0B39269B2AFA0FA728C5491CCABB3E33E04E03358DB1DC5224D83`, and `0FAE876983E0581BB66BF92793FBEE4EFB6D991402B660FF23E9A9CA50B6BB89`. The seven Playwright artifacts remain unchanged and are checked against the Phase 3C-S preservation manifest. Historical snapshots, manifests, Phase 3C tails, and earlier Phase 3D chronology were not rewritten.
+
+**Publication candidate — exact eight tracked paths:**
+- `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md`
+- `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/README_FH_V02_POC_BRAINBOX.md`
+- `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/REPORT_FH_V02_POC_BRAINBOX.md`
+- `AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/FOOTHIVE_V02_POC_BRAINBOX/TICKETS_FH_V02_POC_BRAINBOX.md`
+- `GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md`
+- `GOVERNANCE_BRAINBOX/test_validate_tree_status.py`
+- `GOVERNANCE_BRAINBOX/validate_tree_status.py`
+- `POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md`
+
+**Git and acceptance boundary:** Local `main`, local `origin/main`, and live GitHub `main` remain at `725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674`. The Git index is empty. The three PNGs and seven `.playwright-mcp/` artifacts remain local and untracked. Five worktrees remain registered. PR #90 remains open and unmerged, with its existing branch unchanged. No stage, commit, push, PR, merge, deployment, branch cleanup, or source-image operation occurred. `git diff --check` and `git diff --cached --check` pass; Git may emit line-ending warnings for historical report files, whose bytes were preserved before append.
+
+**Limitations and classification:** This establishes portable structural validation under the documented exact-file exception, not image redistribution rights, production suitability, or application implementation. The tracked-only candidate has no Git metadata and cannot independently check its index. **PHASE 3D-G PASS WITH CONDITIONS** — technical gates pass; independent ChatGPT verification and Operator acceptance remain pending.
+
+### Phase 3D-G — final post-append preservation recheck — 2026-10-28
+
+A final preservation recheck passed 57/57 comparisons after the authorized report append: 3 preserved-manifest identities, 7 original snapshot documents, 6 saved comparison diffs, 17 Phase 3C-S snapshot payloads, 10 current PNG and Playwright source files against their recorded hashes, 3 historical append-tail snapshots, 8 pre-edit backup payloads, and 3 exact report-prefix checks. No saved snapshot or source asset mismatch was found. This integrity result does not establish image rights or production approval.

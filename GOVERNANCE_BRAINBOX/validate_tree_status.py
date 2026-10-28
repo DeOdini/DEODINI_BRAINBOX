@@ -11,7 +11,9 @@ semantically justified; those claims remain qualified for human review.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import re
+import subprocess
 import sys
 from collections import Counter
 from dataclasses import dataclass, field
@@ -38,6 +40,47 @@ APPROVED_ABSENT = {
     "AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/FAILED_SANDBOX_BRAINBOX",
     "AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/PASSED_SANDBOX_BRAINBOX",
 }
+
+# One narrowly approved local-only supplementary inventory. Its files are
+# documented outside canonical trees, are optional in clean checkouts, and are
+# validated by exact name, byte size, and SHA-256 when present. Adding entries
+# requires an approved Governance change; this is not an extension-wide ignore.
+LOCAL_ONLY_ASSET_README = Path(
+    "AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/"
+    "FOOTHIVE_V02_POC_BRAINBOX/ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md"
+)
+LOCAL_ONLY_ASSET_PROJECT_README = Path(
+    "AI_BRAINBOX/DEVOPS_AI_BRAINBOX/SANDBOX_DEVOPS_BRAINBOX/POC_SANDBOX_BRAINBOX/"
+    "FOOTHIVE_V02_POC_BRAINBOX/README_FH_V02_POC_BRAINBOX.md"
+)
+LOCAL_ONLY_ASSET_DIRECTORY = LOCAL_ONLY_ASSET_README.parent
+LOCAL_ONLY_ASSET_DECLARATIONS = {
+    "DR-01": {
+        "file": "CREATIX FOOTHIVE PROPOSED DESIGN.png",
+        "bytes": 1082316,
+        "sha256": "5f668180a36eecfe38cd05dd9de8be567f632dbb6d51af24e2ddf19988a31dd0",
+    },
+    "DR-02": {
+        "file": "FootHive Dark Neon Footwear Showcase.png",
+        "bytes": 2004170,
+        "sha256": "0e2c0cf1a2f0b39269b2afa0fa728c5491ccabb3e33e04e03358db1dc5224d83",
+    },
+    "DR-03": {
+        "file": "FootHive Everyday Footwear Showcase.png",
+        "bytes": 1987304,
+        "sha256": "0fae876983e0581bb66bf92793fbee4efb6d991402b660ff23e9a9ca50b6bb89",
+    },
+}
+LOCAL_ONLY_ASSET_STATE = "LOCAL_ONLY; EXCLUDED_FROM_GIT; PRODUCTION_UNAPPROVED"
+LOCAL_ONLY_ASSET_TABLE_HEADER = [
+    "ID",
+    "Operator label",
+    "Intended reference role",
+    "Source provenance and local filename",
+    "Format / size / SHA-256",
+    "Local / publication / production state",
+    "Rights / use qualification",
+]
 
 FENCE_RE = re.compile(r"^\s*(`{3,}|~{3,})")
 TREE_ENTRY_RE = re.compile(
@@ -69,6 +112,8 @@ class ValidationResult:
     tree_blocks: int = 0
     tree_entries: int = 0
     links_checked: int = 0
+    local_only_assets_declared: int = 0
+    local_only_assets_present: int = 0
     status_counts: Counter[str] = field(default_factory=Counter)
 
 
@@ -294,9 +339,190 @@ def _check_statuses(
         result.errors.append(f"{readme}:{line}: STUB status is only valid for a directory: {path}")
 
 
-def _expected_children(root: Path, parent: Path, approved_absent: set[str]) -> set[str]:
+def _markdown_table_cells(line: str) -> list[str] | None:
+    stripped = line.strip()
+    if not stripped.startswith("|") or not stripped.endswith("|"):
+        return None
+    return [cell.strip() for cell in stripped[1:-1].split("|")]
+
+
+def _git_tracks_path(root: Path, relative_path: str) -> bool | None:
+    """Return Git index membership when Git metadata is available."""
+    if not (root / ".git").exists():
+        return None
+    try:
+        completed = subprocess.run(
+            ["git", "-C", str(root), "ls-files", "--error-unmatch", "--", relative_path],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+    except OSError:
+        return None
+    if completed.returncode == 0:
+        return True
+    if completed.returncode == 1:
+        return False
+    return None
+
+
+def _local_only_asset_inventory(
+    root: Path,
+    result: ValidationResult,
+) -> set[str]:
+    """Read the one approved V02 inventory; never exempt arbitrary paths."""
+    readme = root / LOCAL_ONLY_ASSET_README
+    if not readme.is_file():
+        result.errors.append(
+            f"{LOCAL_ONLY_ASSET_README.as_posix()}: required local-only asset inventory README is missing"
+        )
+        return set()
+    try:
+        lines = readme.read_text(encoding="utf-8").splitlines()
+    except (OSError, UnicodeError) as exc:
+        result.errors.append(f"{LOCAL_ONLY_ASSET_README.as_posix()}: cannot read local-only inventory: {exc}")
+        return set()
+
+    heading = "## Current reference inventory"
+    heading_indexes = [index for index, line in enumerate(lines) if line.strip() == heading]
+    if len(heading_indexes) != 1:
+        result.errors.append(
+            f"{LOCAL_ONLY_ASSET_README.as_posix()}: expected exactly one {heading!r} section"
+        )
+        return set()
+    start = heading_indexes[0] + 1
+    while start < len(lines) and not lines[start].strip():
+        start += 1
+    header = _markdown_table_cells(lines[start]) if start < len(lines) else None
+    if header != LOCAL_ONLY_ASSET_TABLE_HEADER:
+        result.errors.append(
+            f"{LOCAL_ONLY_ASSET_README.as_posix()}:{start + 1}: malformed local-only inventory table header"
+        )
+        return set()
+    separator = _markdown_table_cells(lines[start + 1]) if start + 1 < len(lines) else None
+    if separator is None or len(separator) != len(LOCAL_ONLY_ASSET_TABLE_HEADER) or not all(
+        re.fullmatch(r":?-{3,}:?", cell) for cell in separator
+    ):
+        result.errors.append(
+            f"{LOCAL_ONLY_ASSET_README.as_posix()}:{start + 2}: malformed local-only inventory table separator"
+        )
+        return set()
+
+    rows: list[tuple[int, list[str]]] = []
+    for index in range(start + 2, len(lines)):
+        cells = _markdown_table_cells(lines[index])
+        if cells is None:
+            break
+        rows.append((index + 1, cells))
+
+    valid_names: set[str] = set()
+    seen_ids: set[str] = set()
+    for line, cells in rows:
+        if len(cells) != len(LOCAL_ONLY_ASSET_TABLE_HEADER):
+            result.errors.append(
+                f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: local-only inventory row has {len(cells)} columns; "
+                f"expected {len(LOCAL_ONLY_ASSET_TABLE_HEADER)}"
+            )
+            continue
+        record_id = cells[0].strip("`")
+        if record_id not in LOCAL_ONLY_ASSET_DECLARATIONS:
+            result.errors.append(
+                f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: unapproved local-only asset ID {record_id!r}"
+            )
+            continue
+        if record_id in seen_ids:
+            result.errors.append(f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: duplicate local-only asset ID {record_id}")
+            continue
+        seen_ids.add(record_id)
+        expected = LOCAL_ONLY_ASSET_DECLARATIONS[record_id]
+        filename = expected["file"]
+        if f"local filename {filename}" not in cells[3]:
+            result.errors.append(
+                f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: {record_id} does not name its approved exact file {filename!r}"
+            )
+            continue
+        size_hash = re.fullmatch(r"PNG\s*/\s*([0-9,]+) bytes\s*/\s*`([0-9a-fA-F]{64})`", cells[4])
+        if not size_hash:
+            result.errors.append(
+                f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: malformed format/size/SHA-256 declaration for {filename!r}"
+            )
+            continue
+        declared_bytes = int(size_hash.group(1).replace(",", ""))
+        declared_sha256 = size_hash.group(2).lower()
+        if declared_bytes != expected["bytes"] or declared_sha256 != expected["sha256"]:
+            result.errors.append(
+                f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: size or SHA-256 does not match the approved declaration for {filename!r}"
+            )
+            continue
+        if cells[5] != LOCAL_ONLY_ASSET_STATE:
+            result.errors.append(
+                f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: invalid local-only state for {filename!r}; "
+                f"expected {LOCAL_ONLY_ASSET_STATE!r}"
+            )
+            continue
+        if not cells[6].strip():
+            result.errors.append(
+                f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: rights/use qualification is required for {filename!r}"
+            )
+            continue
+
+        asset_path = root / LOCAL_ONLY_ASSET_DIRECTORY / filename
+        if asset_path.exists():
+            if not asset_path.is_file():
+                result.errors.append(
+                    f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: declared local-only asset is not a regular file: {asset_path}"
+                )
+                continue
+            try:
+                data = asset_path.read_bytes()
+            except OSError as exc:
+                result.errors.append(
+                    f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: cannot read declared local-only asset {asset_path}: {exc}"
+                )
+                continue
+            actual_sha256 = hashlib.sha256(data).hexdigest()
+            if len(data) != expected["bytes"] or actual_sha256 != expected["sha256"]:
+                result.errors.append(
+                    f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: local-only asset integrity mismatch for {filename!r}"
+                )
+                continue
+            result.local_only_assets_present += 1
+
+        git_relative = f"{LOCAL_ONLY_ASSET_DIRECTORY.as_posix()}/{filename}"
+        tracked = _git_tracks_path(root, git_relative)
+        if tracked is True:
+            result.errors.append(
+                f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: local-only asset is present in the Git index: {git_relative}"
+            )
+            continue
+        if (root / ".git").exists() and tracked is None:
+            result.errors.append(
+                f"{LOCAL_ONLY_ASSET_README.as_posix()}:{line}: could not verify Git index exclusion for {git_relative}"
+            )
+            continue
+        valid_names.add(filename)
+
+    expected_ids = set(LOCAL_ONLY_ASSET_DECLARATIONS)
+    if seen_ids != expected_ids:
+        missing = sorted(expected_ids - seen_ids)
+        if missing:
+            result.errors.append(
+                f"{LOCAL_ONLY_ASSET_README.as_posix()}: local-only inventory is missing required IDs: {', '.join(missing)}"
+            )
+    result.local_only_assets_declared += len(valid_names)
+    return valid_names
+
+
+def _expected_children(
+    root: Path,
+    parent: Path,
+    approved_absent: set[str],
+    local_only_asset_names: set[str] | None = None,
+) -> set[str]:
     parent_rel = _repo_path(root, parent)
     expected = {child.name for child in parent.iterdir()}
+    if parent_rel == LOCAL_ONLY_ASSET_DIRECTORY.as_posix():
+        expected.difference_update(local_only_asset_names or set())
     for absent in approved_absent:
         absent_path = Path(absent)
         if absent_path.parent.as_posix() == parent_rel:
@@ -309,6 +535,7 @@ def _validate_tree(
     readme: Path,
     text: str,
     approved_absent: set[str],
+    local_only_asset_names: set[str],
     result: ValidationResult,
 ) -> None:
     root_label, entries, root_line = _parse_local_tree(root, readme, text, approved_absent, result)
@@ -335,12 +562,14 @@ def _validate_tree(
 
     expected_paths: set[str] = set()
     base_rel = _repo_path(root, parent)
-    for child_name in _expected_children(root, parent, approved_absent):
+    for child_name in _expected_children(root, parent, approved_absent, local_only_asset_names):
         child_rel = f"{base_rel}/{child_name}"
         expected_paths.add(child_rel)
         child_path = parent / child_name
         if child_path.is_dir():
-            for grandchild_name in _expected_children(root, child_path, approved_absent):
+            for grandchild_name in _expected_children(
+                root, child_path, approved_absent, local_only_asset_names
+            ):
                 expected_paths.add(f"{child_rel}/{grandchild_name}")
 
     for missing in sorted(expected_paths - actual_paths):
@@ -420,6 +649,14 @@ def validate_repository(
     result = ValidationResult()
     result.inventory = [_repo_path(root, path) for path in readmes]
 
+    local_only_asset_names: set[str] = set()
+    local_only_context_exists = (
+        (root / LOCAL_ONLY_ASSET_PROJECT_README).exists()
+        or (root / LOCAL_ONLY_ASSET_DIRECTORY).exists()
+    )
+    if local_only_context_exists:
+        local_only_asset_names = _local_only_asset_inventory(root, result)
+
     for absent in sorted(approved_absent):
         if (root / absent).exists():
             result.errors.append(f"approved absent path is now present; review its stale exception: {absent}")
@@ -434,13 +671,15 @@ def validate_repository(
         if readme.resolve() == (root / "README_BRAINBOX.md").resolve():
             continue
         result.tree_blocks += 1
-        _validate_tree(root, readme, text, approved_absent, result)
+        _validate_tree(root, readme, text, approved_absent, local_only_asset_names, result)
 
     result.qualifications.extend(
         [
             "POPULATED is mechanically checked only for a directory and a non-zero-byte file somewhere below it; non-placeholder substance remains a human judgment.",
             "STUB is checked for directory existence only; recursively proving that all content is structural is not automated.",
             "ACTIVE, PLANNED, RETIRED, VERIFIED, and UNVERIFIED tokens are recognized and counted where present; current authorization, intent, evidence quality, and freshness remain human-review claims.",
+            "The one FootHive V02 local-only inventory is limited to three exact approved PNG records. A clean checkout may omit them; when .git exists the validator checks index exclusion, and when files are present it checks byte size and SHA-256. This exception does not exempt other files or folders.",
+            "A tracked-only candidate without .git metadata can validate the exact inventory and clean-checkout behavior, but cannot independently inspect Git index membership; the source checkout check supplies that evidence.",
         ]
     )
     return result
@@ -454,6 +693,8 @@ def render_report(root: Path, result: ValidationResult) -> str:
         f"Canonical local tree blocks checked: {result.tree_blocks}",
         f"Displayed tree entries checked: {result.tree_entries}",
         f"Local Markdown targets checked: {result.links_checked}",
+        f"Local-only asset records checked: {result.local_only_assets_declared}",
+        f"Local-only assets physically present and hash-checked: {result.local_only_assets_present}",
         "Supported status vocabulary: " + ", ".join(sorted(STATUS_TOKENS)),
         "Status labels counted in local trees: "
         + ", ".join(f"{name}={result.status_counts[name]}" for name in sorted(STATUS_TOKENS)),

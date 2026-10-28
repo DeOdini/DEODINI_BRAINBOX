@@ -455,3 +455,31 @@ Output: Switched to a new branch 'v02/development'
 **Public path disclosure:** Earlier absolute local checkout paths are retained as contemporaneous audit evidence, not as public navigation targets. The scoped credential-pattern scan found no matches; this is not a general secret scan. This addendum adds no Downloads absolute path, and the separate asset manifest omits it for public-disclosure minimization.
 
 **Boundary:** Checkpoint C is recorded as independently verified PASS, with separate Operator acceptance still unestablished. No FootHive source, V02 repository, GitHub reference, Netlify setting, or deployment was modified by this Brainbox documentation reconciliation. No staging, commit, push, PR, merge, or branch cleanup occurred.
+
+### POST-V003 Phase 3C ? Brainbox publication and local reconciliation ? 2026-10-27 CDT
+
+The Operator-accepted Brainbox publication PR #96 is closed/merged. GitHub `main` is at merge commit `725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674`; the publication branch remains at `0aceac29817932b9727d90fa9fa8c1c58f65c9c4`. This publication contains FootHive V02 documentation and reference metadata, not the three PNG binaries or application code.
+
+The original local Brainbox `main` checkout has not been synchronized: six pre-existing modified documentation files have substantive unresolved differences from the merged publication. Their original bytes are preserved in the Phase 3C snapshot outside the repository. The three approved PNG references remain local-only and untracked, and `.playwright-mcp/` remains preserved. No FootHive application code, release, or deployment was changed under Phase 3C. See the canonical [POST-V003 reconciliation report](../../../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md) for the seven-file comparison, snapshot hashes, exact remote state, and remaining disposition gate.
+
+
+## POST-V003 Phase 3C-S — Brainbox Local Main Synchronization — 2026-10-28 CDT
+
+Brainbox local main is fast-forwarded to the approved GitHub main commit 725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674. The three Phase 3C reporting tails were restored byte-for-byte after verifying the published prefixes; details and hashes are recorded in the [Post-V003 synchronization report](../../../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md).
+
+The three FootHive V02 design-reference PNGs and seven local Playwright captures remain untracked and unpublished. No FootHive application source, deployment or production setting changed. The report append is local-only and awaits independent ChatGPT verification and Operator acceptance.
+
+### POST-V003 Phase 3D — Local reference tree validation — 2026-10-28 CDT
+The FootHive V02 assets and project README local trees now list the three physically present design-reference PNGs. They remain untracked, local-only, excluded from GitHub publication, and not approved for production use. The full repository validator now returns PASS (qualified) with zero findings. See the canonical [Post-V003 report](../../../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md) for the complete execution evidence and publication boundary. Independent review and Operator acceptance remain pending; no Git publication occurred.
+
+### Phase 3D tracked-only compatibility follow-up - 2026-10-28 CDT
+
+The full validator passes in the original local checkout but fails with 18 physical-tree findings in an isolated copy of the tracked candidate, where the three local-only PNGs are absent. The prior result is local-only; portable validation and publication compatibility remain blocked. The PNGs and validator were unchanged. See the canonical Post-V003 report at ../../../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md for the method, findings and disposition. Independent review and Operator acceptance remain pending.
+
+### Phase 3D-G — Local-only design-reference portability — 2026-10-28
+
+The Operator-authorized portability correction separates repository-controlled tree content from the three local-only DR-01 through DR-03 PNG references. The Assets README inventories the exact records, hashes, local-only/excluded-from-Git/production-unapproved state, and rights qualifications outside the canonical tree. The V02 project tree links to that inventory. No image binary or application source changed.
+
+The Governance validator now allows only these exact inventoried files to be absent from a clean checkout; if present, it checks size and SHA-256 and, with Git metadata, verifies index exclusion. Other required files and unexplained physical children remain subject to the normal checks. Focused suite: 24/24 passed, exit 0. Full local validator: PASS (qualified), zero findings; 85 READMEs, 84 trees, 1,076 entries, 1,001 Markdown targets, and 3/3 local-only PNGs present and hash-checked. A tracked-only candidate without the PNGs, `.playwright-mcp/`, or `.git` also returned PASS (qualified), zero findings, with matching README/tree/link counts and zero local-only files present.
+
+The three image hashes and seven Playwright artifact hashes remain as recorded in the Phase 3C-S preservation manifest; the pre-edit audit passed 51/51 checks. No staging, commit, push, PR, merge, deployment, or asset modification occurred. Image rights and production use remain unverified. Independent ChatGPT review and Operator acceptance are pending. See the canonical Post-V003 report for the eight-path publication candidate, detailed preservation evidence, and Git status.

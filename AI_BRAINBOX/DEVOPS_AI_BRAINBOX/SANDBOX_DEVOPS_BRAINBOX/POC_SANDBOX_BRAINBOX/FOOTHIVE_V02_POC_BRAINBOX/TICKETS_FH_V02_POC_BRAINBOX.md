@@ -255,3 +255,43 @@ This reconciliation supersedes only the earlier unresolved authorization classif
 **Public path disclosure:** Earlier absolute checkout paths are retained only as contemporaneous audit evidence, not as navigation targets. The scoped credential-pattern scan found no matches; this is not a general secret scan. Newly authored asset provenance omits the absolute Downloads path.
 
 **Publication boundary:** This is an append-only Brainbox status record. The separate FootHive V02 repository and HANDOFF.md were not modified. No Git stage, commit, push, PR, merge, branch cleanup, or deployment was performed.
+
+## POST-V003 Phase 3C ? publication/reconciliation status reference ? 2026-10-27 CDT
+
+**Record type:** Cross-project publication status; this is not a FootHive V02 application ticket or implementation authorization.
+
+**Verified publication:** Brainbox PR #96 merged to GitHub `main` at `725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674`; its publication branch remains at `0aceac29817932b9727d90fa9fa8c1c58f65c9c4`. The merge publishes documentation and the design-reference inventory; it excludes the three PNG binaries and does not establish V02 application implementation, testing, release, or deployment.
+
+**Local reconciliation:** Local Brainbox `main` synchronization remains pending a separate disposition for six pre-existing tracked files that differ substantively from the merged publication. The seven-file byte snapshot and comparison evidence are retained outside the Git worktree as described in the [POST-V003 report](../../../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md). The local PNGs and `.playwright-mcp/` artifacts remain preserved.
+
+**Git boundary:** This record is an authorized local append only. No stage, commit, push, additional PR, merge, branch cleanup, or deployment was performed. Independent ChatGPT review and Operator acceptance of Phase 3C remain pending.
+
+
+## POST-V003 Phase 3C-S — Local Brainbox Synchronization Checkpoint — 2026-10-28 CDT
+
+**Execution status:** PASS — local Brainbox main fast-forwarded to GitHub main commit 725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674.
+
+**Historical records:** The exact Phase 3C tails were restored to the FootHive V02 report and this ticket register after the published file prefixes were verified. Tail sizes and SHA-256 values are recorded in the Post-V003 synchronization report.
+
+**Preserved local assets:** Three design-reference PNGs and seven Playwright captures remain untracked and unpublished. This checkpoint does not authorize FootHive V02 application work or deployment.
+
+**Git boundary:** No staging, commit, push, PR or remote merge occurred under this checkpoint. Independent ChatGPT verification and Operator acceptance are pending.
+
+### POST-V003 Phase 3D — README validation repair checkpoint — 2026-10-28 CDT
+The two authorized README local-tree corrections now enumerate all three local PNG references as physically present while marking them untracked and excluded from public GitHub content. Full validator result: PASS (qualified), zero findings. The images remain outside Git tracking and are not approved production assets. Phase 3D changes await independent verification; staging, commit, push, PR, and merge were not performed. See the canonical [Post-V003 report](../../../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md) for the detailed record.
+
+### Phase 3D tracked-only compatibility follow-up - 2026-10-28 CDT
+
+**Status:** Local README correction completed; tracked-only compatibility gate blocked. The original local validator passes, while an isolated tracked-candidate copy returns 18 physical-tree findings for the six local-only PNG entries in the two READMEs. No validator, PNG, staging or publication change was made. See the canonical Post-V003 report at ../../../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_REPORT_BRAINBOX.md. Independent review and Operator acceptance remain pending.
+
+### Phase 3D-G — Local-only asset governance portability — 2026-10-28
+
+**Authority:** Operator-authorized correction following the Phase 3D tracked-only validation BLOCKED finding.
+
+**Disposition:** Canonical README trees describe repository-controlled children. The three exact design references DR-01, DR-02, and DR-03 are inventoried separately as local-only, excluded from Git, and not approved for production use. The validator accepts their absence in a clean checkout, verifies their size/hash when present, and checks Git-index exclusion when `.git` exists. The exception does not extend to arbitrary PNGs, untracked files, or missing required repository content.
+
+**Files changed:** Assets README; FootHive V02 project README; FootHive V02 report; FootHive V02 ticket register; `GOVERNANCE_BRAINBOX/TREE_AND_STATUS_GOV_BRAINBOX.md`; Governance validator; validator tests; Post-V003 report. Exact paths are listed in the canonical Post-V003 execution report.
+
+**Verification:** Governance unit suite 24/24 passed. Original checkout validator PASS (qualified), zero findings; 85 READMEs, 84 trees, 1,076 entries, 1,001 Markdown targets, and 3/3 PNGs present/hash-checked. Tracked-only candidate validator PASS (qualified), zero findings with identical README/tree/link counts and 0/3 local PNGs. Pre-edit preservation audit 51/51 passed; image and Playwright hashes remain unchanged. `git diff --check` and cached whitespace check passed; index remains empty.
+
+**Status:** Implementation and validation complete locally; independent ChatGPT verification and Operator acceptance pending. No staging, commit, push, PR, merge, deployment, branch changes, or image modification occurred. Production authorization and image rights are not established.
