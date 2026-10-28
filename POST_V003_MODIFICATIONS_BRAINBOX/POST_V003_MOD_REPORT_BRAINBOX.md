@@ -513,3 +513,114 @@ The three PNG binaries and seven .playwright-mcp artifacts remain untracked and 
 ### Phase 3D-G — final post-append preservation recheck — 2026-10-28
 
 A final preservation recheck passed 57/57 comparisons after the authorized report append: 3 preserved-manifest identities, 7 original snapshot documents, 6 saved comparison diffs, 17 Phase 3C-S snapshot payloads, 10 current PNG and Playwright source files against their recorded hashes, 3 historical append-tail snapshots, 8 pre-edit backup payloads, and 3 exact report-prefix checks. No saved snapshot or source asset mismatch was found. This integrity result does not establish image rights or production approval.
+
+### DEODINI BRAINBOX Phase 3I — repository and local-artifact synchronization closeout — 2026-10-28
+
+**Purpose and result:** This entry records the Phase 3I reconciliation of the DEODINI_BRAINBOX checkout, GitHub main, and local-only historical/design artifacts. It supplements the dated Phase 3C–3G evidence below; it does not rewrite prior checkpoints, snapshots, or acceptance history. The recorded execution result is **PHASE 3I PASS — FULL GIT AND PHYSICAL CHECKOUT PARITY ACHIEVED**. Independent ChatGPT verification and Operator acceptance remain pending.
+
+#### Baseline and scope
+
+At preflight, local main, local origin/main, and live GitHub main all resolved to e70282c8394e0d8e0991feddba9ca41afb4a8093. The live value was read from GitHub, not inferred from a local tracking ref. The checkout contained 542 tracked files, no staged or modified tracked files, and ten untracked root-level artifacts: three FootHive V02 design-reference PNGs and seven Playwright capture files. Six worktrees were registered. PR #97 was already merged at the baseline commit; PR #90 remained open and non-mergeable, with head c8005beb... and its observed metadata unchanged. No branch, worktree, pull request, or remote reference was rewritten or removed.
+
+Phase 3I treated the PNGs as design references whose redistribution rights had not been established, and the Playwright captures as local diagnostic artifacts. Operator approval of the visual direction was not treated as proof of image ownership, license, or permission to publish. The captures were screened before archiving; the bounded scan found no credential assignments, bearer/JWT values, email addresses, phone-like values, local/private URLs, or cookie/session indicators. This regex scan is limited evidence, not an exhaustive security certification.
+
+#### Verified local custody archive
+
+After verifying the archive destination was outside the repository and operating-system temporary directories, the ten untracked artifacts were copied to the local user Documents archive at Documents/DEODINI_PRIVATE_ARCHIVE/PHASE3I_20261028. The custody manifest records source-relative and archive-relative paths, byte lengths, SHA-256 values, and source/destination equality. Its SHA-256 is 509633eda85540a3742c62c0dea63bae801d8df98786842b1f3ddb927ca36b42. All ten archived payloads matched their pre-transfer sizes and hashes; all ten were rechecked after removal from the checkout.
+
+| Archived artifact | Bytes | SHA-256 |
+|---|---:|---|
+| images/CREATIX FOOTHIVE PROPOSED DESIGN.png | 1,082,316 | 5f668180a36eecfe38cd05dd9de8be567f632dbb6d51af24e2ddf19988a31dd0 |
+| images/FootHive Dark Neon Footwear Showcase.png | 2,004,170 | 0e2c0cf1a2f0b39269b2afa0fa728c5491ccabb3e33e04e03358db1dc5224d83 |
+| images/FootHive Everyday Footwear Showcase.png | 1,987,304 | 0fae876983e0581bb66bf92793fbee4efb6d991402b660ff23e9a9ca50b6bb89 |
+| playwright/console-2026-10-27T09-14-58-810Z.log | 518 | 828e63632b6e34522789d4877d882518eaaafa925f3d45b40c64fab1308c0dc6 |
+| playwright/console-2026-10-27T09-15-11-396Z.log | 1,132 | 8a3f85b34b5270a299d40cbfce1dd3555a0d1cbd6d210735e9b813d1cbee25f9 |
+| playwright/console-2026-10-27T10-51-59-286Z.log | 955 | df044b7d1271519e67e2f9a198629e00d1f7f9cf3cc9437af0cd3b828bd3fb7e |
+| playwright/page-2026-10-27T09-15-05-986Z.yml | 10,726 | f30a8ee1292cea93cdaf72b472e881f52fac9d8d6e60338a02ef0968fbd267ce |
+| playwright/page-2026-10-27T09-15-13-666Z.yml | 11,034 | 295b2ec8228745910462a57ef9a4f1dbf2d7b938dceba835693cc6684c8843f0 |
+| playwright/page-2026-10-27T09-36-41-203Z.yml | 2,233 | 659b7be378299695f7fc4e7d50e306c77a1e90def438687e053c42f88ff52cbd |
+| playwright/page-2026-10-27T10-52-15-163Z.yml | 2,465 | 4ba0ef8393770350ef8e824ac2067e002dbd58f52fe60b41f25712a3ec855a7c |
+
+The archive contains these ten payloads plus CUSTODY_MANIFEST.json. The manifest records the local ACL owner and allow-listed principals; it grants no broad Everyone, BUILTIN Users, or Authenticated Users access. Only the C: drive was available, so a second independent-media copy could not be made. The archive is a verified local custody copy, not an off-device or disaster-recovery backup. PNG rights remain unverified and production use remains unapproved; no image was published.
+
+#### Transfer, preservation, and checkout reconciliation
+
+Only after the archive payloads and manifest were verified were the three PNGs and seven .playwright-mcp capture files removed from the working checkout. The FootHive V02 Assets directory retains its tracked README; .playwright-mcp is absent from the checkout. The separately preserved historical Recycle Bin Playwright item was not changed. No frozen V003 authority, application source, historical snapshot, unrelated branch, registered worktree, Netlify setting, or PR #90 content was modified.
+
+The earlier preservation material was checked against its recorded evidence without rewriting it: Phase 3C preservation/comparison records and seven document payloads passed; the Phase 3C-S manifest (68aa6e736565a9f5011d628cb74fb61846085fd31142056f5ba74b4f5e683e60) passed for 17 snapshot payloads and three historical tails (20/20); the Phase 3D-G pre-edit manifest (3438716d6ec0790c3f908ef513697354ce9987b2fd5c614d44b7424d34694029) passed for 8/8 payloads; and the Phase 3G preservation manifest (a4d9d9df0ae523108d0b5cf7ebbc80a475a41c98a610fd35f2a0f0217d15f738) passed for 8/8 payloads. These checks confirm the named preserved records and do not imply that local-only artifacts were published.
+
+#### Validation and final Git state
+
+- python -B GOVERNANCE_BRAINBOX/validate_tree_status.py — exit 0; PASS (qualified), zero findings, 85 READMEs, 84 local-tree blocks, 1,076 entries, 1,001 Markdown targets, three declared local-only assets, and all three assets absent from the checkout as permitted.
+- python -B GOVERNANCE_BRAINBOX/test_validate_tree_status.py — exit 0; 24/24 tests passed.
+- git diff --check and git diff --cached --check — exit 0.
+- Post-transfer readback — 10/10 archived payloads matched the manifest; local-only asset inventory and checkout state matched the approved exception.
+- Final local main, local origin/main, and live GitHub main — all e70282c8394e0d8e0991feddba9ca41afb4a8093; ahead/behind 0/0.
+- Final checkout — 542 tracked files; zero modified, staged, untracked, or ignored files; status and ignored-file porcelain empty; six registered worktrees retained.
+- PR #97 remains merged; PR #90 remains open and unchanged.
+
+#### Publication boundary and remaining qualifications
+
+The tracked repository was already synchronized with GitHub before Phase 3I. Because the authorized cleanup concerned only verified local-only files and no tracked implementation change was required, Phase 3I created no commit and performed no push, PR, merge, deployment, branch cleanup, or report-only commit. Consequently the local custody archive is not present on GitHub; GitHub main retains its verified baseline. This records tracked Git synchronization and local checkout cleanup, not byte-for-byte identity between every private local-storage location and GitHub.
+
+The technical checks establish repository structure, test results, tracked Git parity, and custody integrity for the listed artifacts. They do not establish image rights, production suitability, an independent backup, or final acceptance. **Phase 3I remains subject to independent ChatGPT verification and Operator acceptance.**
+---
+
+## POST-V003 — DEODINI BRAINBOX Synchronization Programme: Consolidated Closeout — 2026-10-28
+
+**Status:** Phases 3C through 3I completed; Phase 3I independently verified by ChatGPT and accepted for closeout in the conversation. **This entry is an append-only retrospective added after the Phase 3I parity checkpoint.** Until this new report append is separately published and local `main` is resynchronized, the earlier zero-diff checkpoint describes the verified *pre-append* repository state, not the immediate working-copy state.
+
+### Objective and scope
+
+The Operator required the primary `DEODINI_BRAINBOX` checkout in local VS Code and GitHub `main` to share the same commit and tracked contents before resuming FootHive V02 work, without destroying unpublished work, historical branches, worktrees, or locally held design and browser artifacts. The programme distinguished **Git history equality**, **clean tracked worktree**, and **physical checkout parity**. Those are separate tests: identical Git SHAs do not by themselves account for untracked local files.
+
+### Chronological execution and decision record
+
+| Checkpoint | Result and key evidence |
+|---|---|
+| Initial audit / Phase 1–1.5 | Inventoried historical branches/worktrees, dirty documentation, three untracked FootHive PNGs and seven browser captures; prepared bounded publication changes without overwriting original local evidence. |
+| Phase 2–3B | Seven approved documentation files published; PR #96 merged by standard merge commit `725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674`, replacing prior `main` baseline `6ee816059390d596c4203840cec542259e5bd348`. |
+| Phase 3C / 3C-R | Declined an unsafe local reconciliation when historical local report content differed from published documents; classified authoritative published content versus evidence requiring preservation. |
+| Phase 3C-S | Preserved seven documents, three PNGs, seven Playwright artifacts and historical append tails; synchronized local `main` to `725e8a6` without discarding the reporting history. The governance validator then exposed six local-tree findings for three local-only PNGs duplicated in two canonical README trees. |
+| Phase 3D / 3D-G | Reproduced the local-versus-tracked-only validation conflict; amended the two canonical README trees and introduced an exact, narrow local-only inventory exception for DR-01–DR-03. Local and tracked-only candidates passed; 24 focused governance tests passed. The images were **not** published or production-approved. |
+| Phase 3D-P / 3D-P-R | Publication-readiness checks found machine-specific paths and punctuation artifacts in the Post-V003 report; corrected those references while preserving historical meaning, snapshot identities and hashes. The accepted candidate comprised eight files. |
+| Phase 3E | Published exactly eight approved documentation/governance files on `post-v003/phase3e-governance-publication-20261028`, commit `94db2dad82c42c4beb5b8355c94596824875696d` (parent `725e8a6`); 655 additions and 11 deletions. |
+| Phase 3F | PR #97 opened with exactly one commit and eight files; GitHub reported mergeable. No GitHub status checks or PR workflow runs were returned, so local validation was reported separately from CI. |
+| Phase 3G | PR #97 merged by standard merge commit `e70282c8394e0d8e0991feddba9ca41afb4a8093` (parents `725e8a6`, `94db2da`). The original local `main` was safely advanced to that commit after an eight-file preservation checkpoint and Git-clean blob equivalence verification; no tracked edits remained. |
+| Phase 3H | Accounted for 542 tracked files, three untracked PNG references and seven untracked Playwright captures. Confirmed that missing image redistribution/production rights did not prevent Git synchronization, and browser captures were not runtime or test dependencies. |
+| Phase 3I | Archived all ten untracked artifacts outside the repository, verified their sizes and SHA-256 values before and after source removal, and left the primary checkout with zero modified, staged, untracked and ignored files. No extra Git commit or PR was needed for the local-only cleanup. |
+
+### Published commit ancestry and review links
+
+- PR #96 publication merge: `725e8a6e59f3c9cdbda3763ed3cb06fa91bc6674`.
+- Eight-file publication commit: `94db2dad82c42c4beb5b8355c94596824875696d`.
+- PR #97 standard merge into `main`: `e70282c8394e0d8e0991feddba9ca41afb4a8093`.
+- Review references: [PR #96](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/96), [PR #97](https://github.com/DeOdini/DEODINI_BRAINBOX/pull/97).
+- PR #90 remained open and outside this workstream. Historical branches and the six registered worktrees were preserved; branch cleanup, application development and deployment were not part of this synchronization closeout.
+
+### Verified pre-append final baseline
+
+| Verification dimension | Result immediately after Phase 3I |
+|---|---|
+| GitHub `main` / local `main` / local `origin/main` | Same SHA: `e70282c8394e0d8e0991feddba9ca41afb4a8093`; ahead/behind 0/0 |
+| Primary repository tracked files | 542; no modified or staged files |
+| Untracked / ignored files in primary checkout | 0 / 0 |
+| Governance validator | PASS (qualified), zero findings; 85 READMEs, 84 canonical trees, 1,076 tree entries, 1,001 Markdown targets |
+| Regression tests | 24/24 PASS |
+| Local-only image inventory | Three DR-01–DR-03 records retained; PNG binaries absent locally and not on GitHub, as permitted |
+| Original ten untracked artifacts | 3 PNGs + 7 browser captures preserved in the private archive; 10/10 archived payload sizes and SHA-256 hashes independently rechecked |
+| Registered worktrees | Six retained; historical refs not cleaned up |
+
+### Custody, integrity, and publication boundaries
+
+The private archive is identified by `DEODINI_PRIVATE_ARCHIVE/PHASE3I_20261028` under the local user's Documents area, **outside the canonical repository**. Its `CUSTODY_MANIFEST.json` SHA-256 is `509633eda85540a3742c62c0dea63bae801d8df98786842b1f3ddb927ca36b42`. The manifest describes the three PNG and seven Playwright payloads with relative locations, sizes, hashes, and custody status. The archive was independently inspected and all ten payloads independently hash-verified after Phase 3I. This is a same-volume local archive, **not** an independent off-device disaster-recovery copy.
+
+The three image references were retained for private design discussion only. DR-01 includes external Creatix branding; DR-02 and DR-03 are FootHive visual concepts. **Ownership, public redistribution rights, and production-use permission remain unestablished.** Neither those PNG binaries nor the generated browser captures were included in PR #97 or GitHub `main`. Historical Phase 3C–3G snapshots, file-hash evidence and report tails were retained. A prior Phase 3C-S manifest-hash discrepancy was identified as a transcription issue; checked on-disk snapshot payloads matched their manifests.
+
+### Closure determination and future change control
+
+**Phase 3I outcome: PASS — FULL GIT AND PRIMARY PHYSICAL CHECKOUT PARITY ACHIEVED (at commit `e70282c`, before this addendum).** Independent ChatGPT checks confirmed clean Git status, the 542 tracked files, 24 passing tests, governance PASS, and the ten archived file hashes. The Operator's synchronization prerequisite for resuming bounded FootHive V02 technical development was therefore met.
+
+Remaining items are separate future decisions, not evidence of a failed synchronization: (1) create a second independent/off-device copy of the private archive; (2) obtain image rights before public redistribution or production use; (3) evaluate PR #90 and historical branches/worktrees under distinct approvals; and (4) authorize any FootHive V02 implementation or deployment on its own merits.
+
+**Post-append publication note:** This retrospective is a new tracked Markdown change, deliberately kept separate from the verified Phase 3I baseline. It must be reviewed, committed and published through the approved Git workflow, then the primary checkout resynchronized and revalidated, before claiming that *the newly appended report itself* is on GitHub with zero working-tree differences.
