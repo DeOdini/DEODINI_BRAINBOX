@@ -519,7 +519,7 @@ DEODINI_BRAINBOX/
 
 ### Approved post-V003 FootHive V02 POC extension
 
-The frozen V003 target tree above remains unchanged. This separately authorized post-V003 project-documentation structure is physically present under RECT-04 through RECT-06. Its project README, conversation record, PRD draft, design specification, ticket register, initial project report, bounded retrospective, and design-reference intake manifest are present. The three original image binaries were not locally accessible during intake. No V02 application, feature, test, release, or deployment is claimed.
+The frozen V003 target tree above remains unchanged. This separately authorized post-V003 project-documentation structure is physically present under RECT-04 through RECT-06. Its project README, conversation record, PRD draft, design specification, ticket register, initial project report, bounded retrospective, and design-reference inventory are present. The three Operator-approved Creatix, dark-theme, and light-theme PNG references were verified locally; their filenames, byte sizes, and SHA-256 values are recorded in the ASSETS manifest. The PNG binaries remain untracked in the original local main worktree and are excluded from this publication candidate; the public tree contains the manifest only. Public redistribution rights and production use are not verified. No V02 application, feature, test, release, or deployment is claimed.
 
 ~~~~text
 AI_BRAINBOX/
@@ -527,7 +527,7 @@ AI_BRAINBOX/
     └── SANDBOX_DEVOPS_BRAINBOX/
         └── POC_SANDBOX_BRAINBOX/
             └── FOOTHIVE_V02_POC_BRAINBOX/ [PRESENT · POPULATED - project documentation only; application not implemented]
-                ├── ASSETS_FH_V02_BRAINBOX/ [PRESENT · POPULATED — manifest only; image binaries unavailable]
+                ├── ASSETS_FH_V02_BRAINBOX/ [PRESENT · POPULATED] - published inventory only; PNG references are local-only and excluded from this publication candidate
                 │   └── README_ASSETS_FH_V02_BRAINBOX.md [PRESENT]
                 ├── CONVO_FH_V02_POC_BRAINBOX.md [PRESENT]
                 ├── DESIGN_SPEC_FH_V02_POC_BRAINBOX.md [PRESENT] - technical detail remains draft
