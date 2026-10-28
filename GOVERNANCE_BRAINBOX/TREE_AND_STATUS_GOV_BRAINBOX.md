@@ -34,3 +34,9 @@ Never use `[VERIFIED]` as a substitute for `[PRESENT]` or `[POPULATED]`. Describ
 - After changes: validate all shown physical paths, local-tree depth, completeness of both descendant levels, relative policy links, and Git diff integrity.
 - Do not alter source evidence, invent content, promote RAW to PROVEN, or rewrite the frozen V003 specification. Historical references are not automatically live navigation.
 - Scope changes require Operator approval and ticket/report provenance. Root tree remains the whole-project navigation authority.
+
+## Operator-approved local-only supplementary assets ? 2026-10-28
+
+This narrow exception applies only to the three FootHive V02 design-reference PNGs recorded as DR-01 through DR-03 in `ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md`. Their canonical tree entries are omitted; the exact filenames, local-only/publication/production states, byte sizes, and SHA-256 values are recorded in that README's current reference inventory. They may be absent from a clean checkout. When present locally, the Governance validator checks their size and hash, and when Git metadata is available it confirms that they are not in the Git index.
+
+The exception does not change the default two-level physical-child completeness rule for other paths. It does not ignore PNG extensions, arbitrary untracked files, or missing repository-controlled files. Any additional local-only asset requires its own approved disposition and a corresponding narrowly scoped validator/Governance change. Git publication status, physical presence, integrity, and production authorization remain separate classifications.

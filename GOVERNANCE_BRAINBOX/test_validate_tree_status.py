@@ -3,14 +3,19 @@
 from __future__ import annotations
 
 import sys
+import hashlib
+import json
 import subprocess
+import shutil
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).parent))
 
+import validate_tree_status as validator  # noqa: E402
 from validate_tree_status import APPROVED_ABSENT, STATUS_TOKENS, validate_repository  # noqa: E402
 
 
@@ -262,6 +267,178 @@ class TreeStatusValidatorTests(unittest.TestCase):
         self.assertEqual(completed.returncode, 1)
         self.assertIn("omitted.md", completed.stdout)
         self.assertIn("README_GOV_BRAINBOX.md:4: expected path missing from local tree", completed.stdout)
+
+
+class LocalOnlyAssetInventoryTests(unittest.TestCase):
+    """The V02 exception is exact-listed, optional in clean checkouts, and hash-checked locally."""
+
+    def setUp(self) -> None:
+        self.temp = tempfile.TemporaryDirectory()
+        self.root = Path(self.temp.name) / "repo"
+        self.root.mkdir()
+        self.project_dir = self.root / validator.LOCAL_ONLY_ASSET_PROJECT_README.parent
+        self.assets_dir = self.root / validator.LOCAL_ONLY_ASSET_DIRECTORY
+        self.assets_dir.mkdir(parents=True)
+        self.project_readme = self.root / validator.LOCAL_ONLY_ASSET_PROJECT_README
+        self.assets_readme = self.root / validator.LOCAL_ONLY_ASSET_README
+
+        self.payloads = {}
+        self.declarations = {}
+        for index, (record_id, approved) in enumerate(validator.LOCAL_ONLY_ASSET_DECLARATIONS.items(), 1):
+            payload = f"fixture-local-asset-{index}\n".encode("utf-8")
+            self.payloads[approved["file"]] = payload
+            self.declarations[record_id] = {
+                "file": approved["file"],
+                "bytes": len(payload),
+                "sha256": hashlib.sha256(payload).hexdigest(),
+            }
+        self.declaration_patch = patch.object(
+            validator, "LOCAL_ONLY_ASSET_DECLARATIONS", self.declarations
+        )
+        self.declaration_patch.start()
+        self.addCleanup(self.declaration_patch.stop)
+        self.write_readmes()
+
+    def tearDown(self) -> None:
+        self.temp.cleanup()
+
+    def write_readmes(self) -> None:
+        header = "| " + " | ".join(validator.LOCAL_ONLY_ASSET_TABLE_HEADER) + " |\n"
+        separator = "|---|---|---|---|---|---|---|\n"
+        rows = []
+        for record_id, record in self.declarations.items():
+            rows.append(
+                "| `{}` | Fixture {} | Design reference | Operator-provided fixture; local filename {} (source path omitted) | "
+                "PNG / {:,} bytes / `{}` | {} | Fixture rights and production use are not approved |\n".format(
+                    record_id,
+                    record_id,
+                    record["file"],
+                    record["bytes"],
+                    record["sha256"],
+                    validator.LOCAL_ONLY_ASSET_STATE,
+                )
+            )
+        asset_text = (
+            "# Asset fixture\n\n"
+            "## Canonical local tree\n\n"
+            "```text\n"
+            "ASSETS_FH_V02_BRAINBOX/ [PRESENT · POPULATED]\n"
+            "└── README_ASSETS_FH_V02_BRAINBOX.md [PRESENT]\n"
+            "```\n\n"
+            "## Current reference inventory\n\n"
+            + header
+            + separator
+            + "".join(rows)
+        )
+        self.assets_readme.write_text(asset_text, encoding="utf-8")
+        project_text = (
+            "# Project fixture\n\n"
+            "## Canonical local tree\n\n"
+            "```text\n"
+            "FOOTHIVE_V02_POC_BRAINBOX/ [PRESENT · POPULATED]\n"
+            "├── ASSETS_FH_V02_BRAINBOX/ [PRESENT · POPULATED]\n"
+            "│   └── README_ASSETS_FH_V02_BRAINBOX.md [PRESENT]\n"
+            "└── README_FH_V02_POC_BRAINBOX.md [PRESENT]\n"
+            "```\n\n"
+            "See [asset inventory](ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md).\n"
+        )
+        self.project_readme.write_text(project_text, encoding="utf-8")
+
+    def write_assets(self, names: set[str] | None = None) -> None:
+        for filename in names if names is not None else set(self.payloads):
+            (self.assets_dir / filename).write_bytes(self.payloads[filename])
+
+    def run_validation(self):
+        return validate_repository(self.root, readmes=[self.assets_readme, self.project_readme])
+
+    def test_tracked_only_checkout_accepts_absent_local_only_assets(self) -> None:
+        result = self.run_validation()
+        self.assertEqual(result.errors, [])
+        self.assertEqual(result.local_only_assets_declared, 3)
+        self.assertEqual(result.local_only_assets_present, 0)
+        self.assertEqual(result.links_checked, 1)
+
+    def test_original_checkout_accepts_all_present_assets_with_matching_hashes(self) -> None:
+        self.write_assets()
+        result = self.run_validation()
+        self.assertEqual(result.errors, [])
+        self.assertEqual(result.local_only_assets_declared, 3)
+        self.assertEqual(result.local_only_assets_present, 3)
+
+    def test_present_local_only_asset_with_wrong_bytes_fails_integrity_check(self) -> None:
+        filename = next(iter(self.payloads))
+        (self.assets_dir / filename).write_bytes(b"different bytes\n")
+        result = self.run_validation()
+        self.assertTrue(any("local-only asset integrity mismatch" in error for error in result.errors), result.errors)
+
+    def test_one_declared_local_only_asset_may_be_absent(self) -> None:
+        self.write_assets(set(self.payloads) - {next(iter(self.payloads))})
+        result = self.run_validation()
+        self.assertEqual(result.errors, [])
+        self.assertEqual(result.local_only_assets_present, 2)
+
+    def test_missing_required_project_readme_still_fails(self) -> None:
+        self.project_readme.unlink()
+        result = validate_repository(self.root, readmes=[self.project_readme, self.assets_readme])
+        self.assertTrue(any("cannot read UTF-8 Markdown" in error for error in result.errors), result.errors)
+
+    def test_undeclared_extra_asset_remains_a_tree_completeness_finding(self) -> None:
+        self.write_assets()
+        (self.assets_dir / "unexpected.bin").write_bytes(b"unlisted")
+        result = self.run_validation()
+        self.assertTrue(
+            any("expected path missing from local tree" in error and "unexpected.bin" in error for error in result.errors),
+            result.errors,
+        )
+
+    def test_invalid_local_only_state_vocabulary_is_rejected(self) -> None:
+        text = self.assets_readme.read_text(encoding="utf-8")
+        text = text.replace(
+            validator.LOCAL_ONLY_ASSET_STATE,
+            "LOCAL_ONLY; EXCLUDED_FROM_GIT; PRODUCTION_APPROVED",
+            1,
+        )
+        self.assets_readme.write_text(text, encoding="utf-8")
+        result = self.run_validation()
+        self.assertTrue(any("invalid local-only state" in error for error in result.errors), result.errors)
+
+    def test_malformed_size_hash_declaration_is_rejected(self) -> None:
+        text = self.assets_readme.read_text(encoding="utf-8")
+        text = text.replace("PNG / ", "image / ", 1)
+        self.assets_readme.write_text(text, encoding="utf-8")
+        result = self.run_validation()
+        self.assertTrue(any("malformed format/size/SHA-256" in error for error in result.errors), result.errors)
+
+    def test_unapproved_missing_path_cannot_be_declared_local_only(self) -> None:
+        text = self.assets_readme.read_text(encoding="utf-8")
+        record = next(iter(self.declarations.values()))
+        text = text.replace(record["file"], "UNRELATED_MISSING.png", 1)
+        self.assets_readme.write_text(text, encoding="utf-8")
+        result = self.run_validation()
+        self.assertTrue(any("does not name its approved exact file" in error for error in result.errors), result.errors)
+
+    def test_missing_ordinary_present_path_is_not_exempted(self) -> None:
+        text = self.project_readme.read_text(encoding="utf-8")
+        text = text.replace(
+            "└── README_FH_V02_POC_BRAINBOX.md [PRESENT]",
+            "├── README_FH_V02_POC_BRAINBOX.md [PRESENT]\n└── MISSING_ORDINARY.md [PRESENT]",
+        )
+        self.project_readme.write_text(text, encoding="utf-8")
+        result = self.run_validation()
+        self.assertTrue(any("PRESENT status points to missing path" in error and "MISSING_ORDINARY.md" in error for error in result.errors), result.errors)
+
+    @unittest.skipUnless(shutil.which("git"), "Git CLI unavailable")
+    def test_local_only_asset_must_not_be_in_git_index(self) -> None:
+        self.write_assets()
+        filename = next(iter(self.payloads))
+        subprocess.run(["git", "init", "--quiet", str(self.root)], check=True)
+        relative = (validator.LOCAL_ONLY_ASSET_DIRECTORY / filename).as_posix()
+        subprocess.run(
+            ["git", "-c", "core.autocrlf=false", "-C", str(self.root), "add", "--", relative],
+            check=True,
+        )
+        result = self.run_validation()
+        self.assertTrue(any("local-only asset is present in the Git index" in error for error in result.errors), result.errors)
 
 
 if __name__ == "__main__":

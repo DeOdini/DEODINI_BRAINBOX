@@ -18,7 +18,7 @@
 
 ~~~~text
 FOOTHIVE_V02_POC_BRAINBOX/ [PRESENT · POPULATED - project documentation only; application not implemented]
-├── ASSETS_FH_V02_BRAINBOX/ [PRESENT · POPULATED] - inventory README only in this publication candidate; PNG binaries are local-only and excluded
+├── ASSETS_FH_V02_BRAINBOX/ [PRESENT · POPULATED] - its README records the exact local-only references separately from the canonical tree
 │   └── README_ASSETS_FH_V02_BRAINBOX.md [PRESENT]
 ├── CONVO_FH_V02_POC_BRAINBOX.md [PRESENT]
 ├── DESIGN_SPEC_FH_V02_POC_BRAINBOX.md [PRESENT] - approved direction; technical detail remains draft
