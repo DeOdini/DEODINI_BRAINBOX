@@ -7,8 +7,8 @@
 **GOVERNED BY:** Active Naming, Documentation, Reference, Tree/Status, Evidence, Ticketing, Versioning, Security and Promotion Governance. The separately marked Universal Documentation Governance Framework remains DRAFT.
 **CANONICAL SOURCE:** Operator-approved RECT-04, RECT-05, and RECT-06; frozen V003 tree and M15 distinctions remain historical/canonical where applicable.
 **REFERENCES:** Root README, Sandbox POC parent README, the separate FootHive workflow-trial README, POST-V003 README and applicable Governance links below.
-**POPULATION STATE:** [PRESENT · POPULATED] This directory contains the README, byte-preserved conversation, PRD draft, design-direction record, project ticket register, initial project report, bounded retrospective, and design-reference manifest. Original image binaries remain unavailable. No V02 application, feature, test, release, or deployment is claimed.
-**LAST VERIFIED:** 2026-10-25 - Codex completed RECT-06 source, navigation, link, and repository-validator checks; independent verification pending.
+**POPULATION STATE:** [PRESENT · POPULATED] This directory contains its project documentation and the published design-reference inventory. The three verified PNG files remain local-only and are excluded from this publication candidate. No V02 application, feature, test, release, or deployment is claimed.
+**LAST VERIFIED:** 2026-10-27 - Codex reconciled publication trees and A03 status records; independent review pending.
 **VERIFIER:** Codex — structural and documentation checks only; no application behavior was tested.
 **APPLIES TO:** FootHive V02 project documentation under Sandbox POC.
 **ENTRY NAVIGATION:** Start here for V02 ownership, status and future document routes.
@@ -18,7 +18,7 @@
 
 ~~~~text
 FOOTHIVE_V02_POC_BRAINBOX/ [PRESENT · POPULATED - project documentation only; application not implemented]
-├── ASSETS_FH_V02_BRAINBOX/ [PRESENT · POPULATED — manifest only; image binaries unavailable]
+├── ASSETS_FH_V02_BRAINBOX/ [PRESENT · POPULATED] - inventory README only in this publication candidate; PNG binaries are local-only and excluded
 │   └── README_ASSETS_FH_V02_BRAINBOX.md [PRESENT]
 ├── CONVO_FH_V02_POC_BRAINBOX.md [PRESENT]
 ├── DESIGN_SPEC_FH_V02_POC_BRAINBOX.md [PRESENT] - approved direction; technical detail remains draft
@@ -50,13 +50,13 @@ The existing [FootHive workflow-trial record](../FOOTHIVE_POC_BRAINBOX/README_FH
 | [Project conversation](CONVO_FH_V02_POC_BRAINBOX.md) | Historical source archive and future V02 discussion/decision chronology | [PRESENT; source transcript preserved exactly once] |
 | [PRD](PRD_FH_V02_POC_BRAINBOX.md) | Product scope, requirements, approvals, and open decisions | [PRESENT; PRD 0.3 refinement in progress; final acceptance pending] |
 | [Design specification](DESIGN_SPEC_FH_V02_POC_BRAINBOX.md) | Approved visual direction separated from technical proposals | [PRESENT; technical specification incomplete] |
-| [Design references](ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md) | Reference identity, source availability, and provenance | [PRESENT; manifest only; original binaries unavailable] |
+| [Design references](ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md) | Reference identity, source availability, and provenance | [PRESENT; manifest and hashes recorded; PNG binaries excluded from public publication] |
 | [Project tickets](TICKETS_FH_V02_POC_BRAINBOX.md) | Future project planning and historical ID traceability | [PRESENT; no application ticket authorized] |
 | [Project report](REPORT_FH_V02_POC_BRAINBOX.md) | Planning chronology, evidence status, and unresolved dependencies | [PRESENT; independent review pending] |
 | [Retrospective](RETROSPECTIVE_FH_V02_POC_BRAINBOX.md) | Bounded source-backed historical context | [PRESENT; source-qualified] |
 | Evidence directory | Evidence for a defined future V02 activity | [PLANNED; no directory or file created] |
 
-The Operator supplied three inline visual references: Creatix Inspiration, FootHive Dark, and FootHive Light. The [design-reference intake manifest](ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md) records them as DR-01, DR-02, and DR-03. Their original binaries remain unavailable, so filenames, formats, sizes, hashes, embedded metadata, and usage permission are unknown. No image binaries were copied; the ASSETS directory contains the manifest only. No EVIDENCE directory or application assets are claimed.
+The Operator-approved visual references are Creatix Inspiration, FootHive Dark, and FootHive Light. Their source PNGs were verified byte-for-byte in the original local Brainbox worktree, but are excluded from this publication candidate. The [design-reference assets folder](ASSETS_FH_V02_BRAINBOX/) and [intake manifest](ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md) remain in the public tree; the manifest records filenames, sizes, and hashes as DR-01 through DR-03 while omitting the absolute Downloads path. The PNGs remain design references, not implemented themes or production assets. No EVIDENCE directory or V02 application implementation is claimed.
 
 The RECT-06 ticket references PRD 0.1 and 0.2 drafts, but the separate source drafts were unavailable during this documentation execution. Their contents were not reconstructed. See the [project report](REPORT_FH_V02_POC_BRAINBOX.md).
 
@@ -68,7 +68,7 @@ The RECT-06 ticket references PRD 0.1 and 0.2 drafts, but the separate source dr
 - [V02 ticket register](TICKETS_FH_V02_POC_BRAINBOX.md) preserves proposed IDs and future ticket gates.
 - [V02 project report](REPORT_FH_V02_POC_BRAINBOX.md) records chronology and evidence limits.
 - [V02 retrospective](RETROSPECTIVE_FH_V02_POC_BRAINBOX.md) summarizes bounded historical source material.
-- [V02 design-reference intake manifest](ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md) records source identity and availability limits.
+- [V02 design-reference intake manifest](ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md) records source identity, integrity, and reference-only use boundaries.
 - [POC Sandbox parent](../README_POC_SANDBOX_BRAINBOX.md) owns navigation across the existing trial and this V02 documentation index.
 - [FootHive Iteration 01 workflow-trial record](../FOOTHIVE_POC_BRAINBOX/README_FH_WORKFLOW_TRIAL_BRAINBOX.md) remains separate historical evidence.
 - [Sandbox DEVOPS README](../../README_SANDBOX_DEVOPS_BRAINBOX.md) provides the Sandbox workflow and governance route.
@@ -87,4 +87,4 @@ The RECT-06 ticket references PRD 0.1 and 0.2 drafts, but the separate source dr
 
 The earlier verification and project-report status lines above record the RECT-06 implementation checkpoint, when independent review was pending. RECT-06 subsequently received independent MAIN CONVO QUALIFIED PASS and Operator acceptance. This accepted only the bounded documentation work.
 
-The PRD remains a draft pending its separate final acceptance. The referenced PRD 0.1/0.2 source drafts were not recovered, and the three standalone design-reference image binaries remain unavailable. No FootHive V02 application implementation, application testing, release, deployment, or live integration verification is claimed. The [Phase 03 ticket register](../../../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_TICKETS_BRAINBOX.md) records the governing documentation-rectification disposition.
+The PRD remains a draft pending its separate final acceptance. The referenced PRD 0.1/0.2 source drafts were not recovered. The approved reference PNGs were received into the original local ASSETS directory on 2026-10-26; they are excluded from this publication candidate and do not change the separate application implementation, testing, release, deployment, or live-integration status. The [Phase 03 ticket register](../../../../../POST_V003_MODIFICATIONS_BRAINBOX/POST_V003_MOD_TICKETS_BRAINBOX.md) records the governing documentation-rectification disposition.
