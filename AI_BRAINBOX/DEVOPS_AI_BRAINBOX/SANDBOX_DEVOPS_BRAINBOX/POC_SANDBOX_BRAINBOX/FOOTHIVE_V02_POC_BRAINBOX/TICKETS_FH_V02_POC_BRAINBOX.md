@@ -295,3 +295,65 @@ The two authorized README local-tree corrections now enumerate all three local P
 **Verification:** Governance unit suite 24/24 passed. Original checkout validator PASS (qualified), zero findings; 85 READMEs, 84 trees, 1,076 entries, 1,001 Markdown targets, and 3/3 PNGs present/hash-checked. Tracked-only candidate validator PASS (qualified), zero findings with identical README/tree/link counts and 0/3 local PNGs. Pre-edit preservation audit 51/51 passed; image and Playwright hashes remain unchanged. `git diff --check` and cached whitespace check passed; index remains empty.
 
 **Status:** Implementation and validation complete locally; independent ChatGPT verification and Operator acceptance pending. No staging, commit, push, PR, merge, deployment, branch changes, or image modification occurred. Production authorization and image rights are not established.
+
+## P01-V02-FOUND-01 — Operator-approved DS-01 semantic color foundations — 2026-10-28
+
+**OPERATOR APPROVAL — EXECUTION AUTHORIZED:** Following Priority 1's DS-01 color proposal and full P01-V02-FOUND-01 implementation contract, the Operator replied **“I APPROVE.”** Priority 1 explicitly acknowledged that approval as authorization to implement the narrow one-file ticket. This status is a later checkpoint and does not rewrite earlier historical proposals. **Current state:** APPROVED FOR CODEX EXECUTION; NOT REPORTED EXECUTED; independent verification and Operator implementation acceptance pending.
+
+**Repository:** `C:\Users\USER\FOOTHIVE_V02` (`DeOdini/FOOTHIVE`). **Branch:** `v02/development`. **Only writable application file:** `css/styles.css`. **Source preflight:** exact expected starting commit `43bbbea8325e3ec062baef7fd1724b5ea78bc6d0`; upstream `origin/v02/development`; preserve existing modified `HANDOFF.md`, whose recorded SHA-256 is `33b3ea156667eb4b3823452ff3a08e132ab3867199d75b61cedbe880f7f94c0e`. Reconfirm before work and stop on unexpected changes.
+
+**Accepted DS-01 values and selector contract:**
+
+| Semantic token | Light | Dark |
+|---|---|---|
+| `--color-bg` | `#F8F7F4` | `#0A0D0A` |
+| `--color-surface` | `#FFFFFF` | `#181C18` |
+| `--color-text` | `#111411` | `#F6F8F3` |
+| `--color-text-muted` | `#5B615B` | `#B9C5B7` |
+| `--color-accent` | `#BD4A19` | `#A8F449` |
+| `--color-on-accent` | `#FFFFFF` | `#0A0D0A` |
+
+Use `:root, :root[data-theme="light"]` for the light tokens and `:root[data-theme="dark"]` for the dark override. Additional inverted/background/border/focus tokens may be introduced **only as needed within this one-file color-role mapping**; do not infer approval for font/layout/redesign work or untested color substitutions. The accepted proposal has no JavaScript theme switch, persistence, default-preference or animation implementation. Root/default without an explicit attribute remains light for this token-only ticket.
+
+**Required work:** Inspect all current CSS color roles and their contextual use (especially inverted footer, hero buttons, headings, form, dialogs, links, hover and focus); add the accepted semantic tokens and dark overrides; carefully map applicable existing declarations to semantic roles; preserve structures, spacing, typography, responsive breakpoints, reduced-motion and all current interaction behavior. Do not globally replace `--color-ink` or `--color-surface` without role-specific inspection.
+
+**Acceptance/validation:** At least 4.5:1 normal-text contrast, 3:1 large-text contrast, and 3:1 for applicable non-text controls/focus indicators across the actual component/surface pairs. Confirm current functionality and structural/layout stability. Exact allowed-file diff, `git diff --check`, contrast calculations and authorized visual/browser checks at 320, 390, 768 and 1440px with outbound analytics/submission requests blocked. If browser tools would create artifacts or require unapproved setup, STOP and report limitation instead of writing outside scope. Show before/after evidence and recheck HANDOFF SHA-256.
+
+**Explicit exclusions:** Do not change `index.html`, either JavaScript file, assets, `HANDOFF.md`, any Brainbox file, or Git metadata; do not add UI controls, theme switching, new products, gallery, integrations or tracking; do not install dependencies, stage, commit, push, merge, change Netlify or deploy. Preserve protected V01 references and production `main`.
+
+**STOP on:** unresolved color-role/contrast conflict, need for unauthorized file changes, unexpected worktree/ref state, accidental network operation, inability to preserve the HANDOFF hash or any missing required approval. **Handoff:** Codex returns chat evidence and stops; Priority 1 independently verifies; Operator accepts or rejects the implementation. Git publication and deployment need separate approval.
+
+
+## DS-01-AMD-01 - P01-V02-FOUND-01 execution release - 2026-10-28
+
+**Authority:** Operator-approved DS-01 Amendment 01; PRE-REC-01 PASS WITH CONDITIONS accepted; corrected handoff expressly released for Stage A registration and Stage B local implementation. Historical entries remain preserved. This amendment supersedes the earlier conflicting --color-* palette and component-mapping contract for this ticket.
+
+**Approved semantic colors:**
+
+| Token | Light | Dark |
+|---|---|---|
+| --fh-surface-page | #FAF8F4 | #111311 |
+| --fh-surface-card | #FFFFFF | #1C201B |
+| --fh-text-primary | #1A1A1A | #F4F3EE |
+| --fh-text-secondary | #625C56 | #B9BEB4 |
+| --fh-accent | #B3470F | #B6F53C |
+| --fh-on-accent | #FFFFFF | #111311 |
+| --fh-border-control | #80766C | #7C8774 |
+| --fh-focus-ring | #B3470F | #B6F53C |
+
+**Selectors and scope:** :root, :root[data-theme="light"] defines the fallback/light set; :root[data-theme="dark"] defines dark overrides. Definitions only: add exactly these eight namespaced properties per selector block near existing root variables in C:\Users\USER\FOOTHIVE_V02\css\styles.css. Preserve all legacy variables and declarations. No var(--fh-...) component migration, rendered-appearance change, HTML theme attribute, switch, persistence, system-preference behavior, typography, spacing or layout changes. Component migration and theme behavior are deferred. The fallback is not an eventual product-default decision.
+
+**Acceptance:** Exact token/selector comparison; no pre-existing namespaced collisions or duplicates; original stylesheet recoverable byte-for-byte by removing only the inserted blocks; CSS-only application diff; git diff --check; approved contrast matrix recalculated (normal text >=4.5:1, large text >=3:1, applicable non-text controls/focus >=3:1); no browser-conformance claim from token arithmetic. Browser testing is optional here and may not make external analytics/form requests or uncontrolled artifacts.
+
+**Preservation/preconditions:** Brainbox main at 3d4ffc60f1470672e8f1b85e7d966e07898be8c8; V02 v02/development and upstream at 43bbbea8325e3ec062baef7fd1724b5ea78bc6d0, source tree da62a65e683c24a39deb373c9e1c85ee32ecc896. Preserve current bytes of all three canonical documentation files and stylesheet in verified, non-overwriting private snapshots before editing. Maintain source/destination sizes, SHA-256 and timestamp in a custody manifest. Preserve HANDOFF.md at accepted current SHA-256 8b3a3bc5803152a08567c48f947e82b1bf89f917445b0bb6418fd734b69f4b9c and verify its existing private copy. Older SHA-256 33b3ea156667eb4b3823452ff3a08e132ab3867199d75b61cedbe880f7f94c0e is historical provenance; byte-for-byte continuity to that older checkpoint is not established.
+
+**Ordered gates:** Complete Stage A and run python -B GOVERNANCE_BRAINBOX/validate_tree_status.py plus python -B -m unittest GOVERNANCE_BRAINBOX/test_validate_tree_status.py. Require qualified PASS/zero findings and 24 passing tests. Renew V02 preflight before Stage B. Verify snapshot integrity, HANDOFF hash, index/worktree scope and unchanged original V01 references afterward.
+
+**Exclusions and STOP:** No other application files, private references, integration, Netlify, deployment, Git refs/configuration, staging, commits, pushes, PRs, merges, resets or publication. Stop without automatic remediation for mismatched branches/SHAs/upstream/hash, missing preservation copy, unexpected changed/staged/untracked files, token collision, material registration conflict, failed required validation or required out-of-scope changes.
+
+**State at registration:** LOCAL EXECUTION AUTHORIZED; application implementation pending actual Codex execution evidence. Git publication NOT AUTHORIZED. Codex technical report -> Priority 1 ChatGPT independent verification -> Operator final implementation acceptance. This entry records execution release, not completion or independent acceptance.
+
+
+## P01-V02-FOUND-01 / DS-01-AMD-01 - Codex execution report - 2026-10-28
+
+**State:** IMPLEMENTED LOCALLY - CODEX TECHNICAL PASS; independent Priority 1 ChatGPT verification and Operator final acceptance PENDING. Stage A registered the amendment in the three authorized records; qualified Governance PASS, zero findings and 24/24 focused tests. Stage B added only the approved 16 definitions in two selector blocks (23 CSS lines); exact values, legacy bytes, snapshot integrity, contrast, unchanged HANDOFF hash and bounded working-tree scope verified. No staging, commit, push or deployment. Git publication NOT AUTHORIZED. Full execution evidence, custody path, hashes, ratios and limitations are in the companion REPORT_FH_V02_POC_BRAINBOX.md dated execution-report entry. No competing ticket created and earlier chronology preserved.

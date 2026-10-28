@@ -483,3 +483,134 @@ The Operator-authorized portability correction separates repository-controlled t
 The Governance validator now allows only these exact inventoried files to be absent from a clean checkout; if present, it checks size and SHA-256 and, with Git metadata, verifies index exclusion. Other required files and unexplained physical children remain subject to the normal checks. Focused suite: 24/24 passed, exit 0. Full local validator: PASS (qualified), zero findings; 85 READMEs, 84 trees, 1,076 entries, 1,001 Markdown targets, and 3/3 local-only PNGs present and hash-checked. A tracked-only candidate without the PNGs, `.playwright-mcp/`, or `.git` also returned PASS (qualified), zero findings, with matching README/tree/link counts and zero local-only files present.
 
 The three image hashes and seven Playwright artifact hashes remain as recorded in the Phase 3C-S preservation manifest; the pre-edit audit passed 51/51 checks. No staging, commit, push, PR, merge, deployment, or asset modification occurred. Image rights and production use remain unverified. Independent ChatGPT review and Operator acceptance are pending. See the canonical Post-V003 report for the eight-path publication candidate, detailed preservation evidence, and Git status.
+
+## DS-01 / P01-V02-FOUND-01 — Operator execution approval recorded — 2026-10-28
+
+**Decision evidence:** In the Priority 1 conversation, the Operator responded **“I APPROVE”** immediately after receiving the proposed DS-01 semantic color palette, selector convention, contrast standards, and a bounded one-file P01-V02-FOUND-01 Codex execution contract. Priority 1 acknowledged approval as **implementation authorization**, not publication or deployment authorization.
+
+**Disposition:** DS-01 proposed token set/selector and WCAG contrast contract OPERATOR ACCEPTED for first implementation; `P01-V02-FOUND-01` **AUTHORIZED FOR CODEX EXECUTION — NOT YET EXECUTED**. Canonical full handoff, exact light/dark values, one-file allowlist, tests and stop conditions are recorded in [TICKETS_FH_V02_POC_BRAINBOX.md](TICKETS_FH_V02_POC_BRAINBOX.md), in the dated `P01-V02-FOUND-01` entry.
+
+**Scope:** `C:\Users\USER\FOOTHIVE_V02\css\styles.css` on `v02/development` only. Preserve the pre-existing modified `HANDOFF.md` byte-for-byte. No changes to HTML, JS, images, Brainbox implementation records, Git refs, Netlify or deployment. No staging, committing or pushing. Theme-switch control and theme persistence are future tickets. Codex must independently recheck baseline, working state and permissions and STOP for any unexpected or out-of-scope work.
+
+**Governance:** This report and ticket append are documentation-only actions requested explicitly by the Operator. Codex evidence → independent ChatGPT verification → Operator implementation acceptance remain mandatory. The root Brainbox repository has no approved publication under this step; these entries remain local until separately published through Governance.
+
+
+## DS-01 semantic color foundations - Codex proposal report recorded - 2026-10-28
+
+**Record authority:** Operator request in this Codex conversation: RECORD YOUR REPORT ACCORDINGLY. This append records the preceding Codex decision package; it is not an implementation report or publication authorization.
+
+**Reconciliation:** The supplied independent assessment accepted RESUME-01 with qualifications and established readiness for DS-01 finalization. Netlify is a separate deployment dependency, not a blocker for token-only CSS work. DR-01 through DR-03 are accessible private references and need not be copied into the application. Their production use and redistribution rights remain unverified.
+
+**Approval chronology:** At issuance, the Codex package below was PROPOSED and awaited design-contract approval and separate execution authorization. The Brainbox report now separately records a later Priority 1 Operator execution approval for P01-V02-FOUND-01, with its full contract in the ticket register. Preserve that approval as a distinct authority; this historical proposal does not revoke it, replace its exact contract, or claim that implementation has occurred. This recording request itself performs documentation only.
+
+### Proposed semantic color table
+
+Values are deliberate design proposals informed by the inspected concepts and existing CSS, not sampled image measurements or previously approved values at the time of the proposal.
+
+| Token | Light | Dark |
+|---|---|---|
+| --fh-surface-page | #FAF8F4 | #111311 |
+| --fh-surface-card | #FFFFFF | #1C201B |
+| --fh-text-primary | #1A1A1A | #F4F3EE |
+| --fh-text-secondary | #625C56 | #B9BEB4 |
+| --fh-accent | #B3470F | #B6F53C |
+| --fh-on-accent | #FFFFFF | #111311 |
+| --fh-border-control | #80766C | #7C8774 |
+| --fh-focus-ring | #B3470F | #B6F53C |
+
+### Calculated contrast evidence
+
+Read-only Python calculations used sRGB linearization and relative luminance; no rendered conformance is claimed.
+
+| Pair | Light ratio | Dark ratio |
+|---|---|---|
+| Primary text / page | 16.41:1 | 16.80:1 |
+| Secondary text / card | 6.59:1 | 8.72:1 |
+| Button text / accent | 5.49:1 | 14.32:1 |
+| Control border / light page or dark card | 4.19:1 | 4.38:1 |
+
+Existing #D2691E against white measures 3.63:1; existing #8A8A8A against white measures 3.45:1. Those pairs do not meet a 4.5:1 normal-text target. Proposed acceptance: normal text at least 4.5:1; large text at least 3:1; required control boundaries and focus indicators at least 3:1 against adjacent backgrounds. Preserve visible focus geometry and avoid color-only state communication. Reference: https://www.w3.org/TR/WCAG22/ . Token-pair calculations alone do not establish rendered accessibility conformance.
+
+### Selector and first-ticket proposal
+
+Use :root and :root[data-theme="light"] for fallback/light token definitions and :root[data-theme="dark"] for dark definitions. The fallback does not decide the eventual application default, system-preference behavior, persistence, transitions, or switch implementation.
+
+Candidate P01-V02-FOUND-01 objective: introduce approved namespaced semantic color definitions only in C:\Users\USER\FOOTHIVE_V02\css\styles.css. Preserve existing variables and component declarations; migrate components through later approved tickets to avoid accidental inversion of footer, story, buttons and product badges.
+
+Prerequisites: accept exact token values, selector convention, contrast targets and definitions-only scope. Exclude HTML, JavaScript, images, typography, spacing, layout, component migration, theme controls, integrations, HANDOFF.md, Brainbox records, Git operations and deployment from the proposed implementation contract. The later accepted ticket remains authoritative for actual execution scope.
+
+Validation proposal: git diff --check; diff restricted to accepted custom-property definitions and explanatory comments; reproducible contrast matrix; unchanged rendering/interactions; preservation of pre-existing documentation bytes; no unrelated file changes. Any browser verification requires separately authorized tooling with external requests blocked. Evidence: exact CSS diff, contrast results, unchanged-file checks, Codex report and independent ChatGPT verification.
+
+Rollback consideration: under separately authorized corrective scope, remove only introduced token blocks; never reset the checkout or discard existing documentation. STOP for unapproved values, unexpected changes, token-name collisions, required component edits, or failed validation.
+
+**Remaining work:** Catalog, gallery behavior, section contracts and deployment readiness remain dependencies of their own later tickets, not of this definitions-only proposal. This record performs no CSS implementation, staging, commit, push, service configuration or deployment. The documentation append intentionally changes the two development records and supersedes any earlier no-change hash only for the separately authorized reporting step.
+
+**Record locations:** C:\Users\USER\FOOTHIVE_V02\HANDOFF.md and C:\Users\USER\DEODINI_BRAINBOX\AI_BRAINBOX\DEVOPS_AI_BRAINBOX\SANDBOX_DEVOPS_BRAINBOX\POC_SANDBOX_BRAINBOX\FOOTHIVE_V02_POC_BRAINBOX\REPORT_FH_V02_POC_BRAINBOX.md.
+
+
+## DS-01-AMD-01 - P01-V02-FOUND-01 execution release - 2026-10-28
+
+**Authority:** Operator-approved DS-01 Amendment 01; PRE-REC-01 PASS WITH CONDITIONS accepted; corrected handoff expressly released for Stage A registration and Stage B local implementation. Historical entries remain preserved. This amendment supersedes the earlier conflicting --color-* palette and component-mapping contract for this ticket.
+
+**Approved semantic colors:**
+
+| Token | Light | Dark |
+|---|---|---|
+| --fh-surface-page | #FAF8F4 | #111311 |
+| --fh-surface-card | #FFFFFF | #1C201B |
+| --fh-text-primary | #1A1A1A | #F4F3EE |
+| --fh-text-secondary | #625C56 | #B9BEB4 |
+| --fh-accent | #B3470F | #B6F53C |
+| --fh-on-accent | #FFFFFF | #111311 |
+| --fh-border-control | #80766C | #7C8774 |
+| --fh-focus-ring | #B3470F | #B6F53C |
+
+**Selectors and scope:** :root, :root[data-theme="light"] defines the fallback/light set; :root[data-theme="dark"] defines dark overrides. Definitions only: add exactly these eight namespaced properties per selector block near existing root variables in C:\Users\USER\FOOTHIVE_V02\css\styles.css. Preserve all legacy variables and declarations. No var(--fh-...) component migration, rendered-appearance change, HTML theme attribute, switch, persistence, system-preference behavior, typography, spacing or layout changes. Component migration and theme behavior are deferred. The fallback is not an eventual product-default decision.
+
+**Acceptance:** Exact token/selector comparison; no pre-existing namespaced collisions or duplicates; original stylesheet recoverable byte-for-byte by removing only the inserted blocks; CSS-only application diff; git diff --check; approved contrast matrix recalculated (normal text >=4.5:1, large text >=3:1, applicable non-text controls/focus >=3:1); no browser-conformance claim from token arithmetic. Browser testing is optional here and may not make external analytics/form requests or uncontrolled artifacts.
+
+**Preservation/preconditions:** Brainbox main at 3d4ffc60f1470672e8f1b85e7d966e07898be8c8; V02 v02/development and upstream at 43bbbea8325e3ec062baef7fd1724b5ea78bc6d0, source tree da62a65e683c24a39deb373c9e1c85ee32ecc896. Preserve current bytes of all three canonical documentation files and stylesheet in verified, non-overwriting private snapshots before editing. Maintain source/destination sizes, SHA-256 and timestamp in a custody manifest. Preserve HANDOFF.md at accepted current SHA-256 8b3a3bc5803152a08567c48f947e82b1bf89f917445b0bb6418fd734b69f4b9c and verify its existing private copy. Older SHA-256 33b3ea156667eb4b3823452ff3a08e132ab3867199d75b61cedbe880f7f94c0e is historical provenance; byte-for-byte continuity to that older checkpoint is not established.
+
+**Ordered gates:** Complete Stage A and run python -B GOVERNANCE_BRAINBOX/validate_tree_status.py plus python -B -m unittest GOVERNANCE_BRAINBOX/test_validate_tree_status.py. Require qualified PASS/zero findings and 24 passing tests. Renew V02 preflight before Stage B. Verify snapshot integrity, HANDOFF hash, index/worktree scope and unchanged original V01 references afterward.
+
+**Exclusions and STOP:** No other application files, private references, integration, Netlify, deployment, Git refs/configuration, staging, commits, pushes, PRs, merges, resets or publication. Stop without automatic remediation for mismatched branches/SHAs/upstream/hash, missing preservation copy, unexpected changed/staged/untracked files, token collision, material registration conflict, failed required validation or required out-of-scope changes.
+
+**State at registration:** LOCAL EXECUTION AUTHORIZED; application implementation pending actual Codex execution evidence. Git publication NOT AUTHORIZED. Codex technical report -> Priority 1 ChatGPT independent verification -> Operator final implementation acceptance. This entry records execution release, not completion or independent acceptance.
+
+
+## P01-V02-FOUND-01 / DS-01-AMD-01 - Codex execution report - 2026-10-28
+
+**Classification:** P01-V02-FOUND-01 PASS - IMPLEMENTED LOCALLY; INDEPENDENT REVIEW PENDING. This is Codex technical evidence, not independent ChatGPT verification or final Operator acceptance. Operator follow-up RECORD YOUR REPORT ACCORDINGLY authorizes this append and the companion ticket status only. Git publication remains NOT AUTHORIZED.
+
+**Preflight:** Brainbox main at 3d4ffc60f1470672e8f1b85e7d966e07898be8c8 with only the expected pre-existing project report and ticket modifications. V02 v02/development HEAD/upstream at 43bbbea8325e3ec062baef7fd1724b5ea78bc6d0; accepted tree da62a65e683c24a39deb373c9e1c85ee32ecc896; only HANDOFF.md modified. No pre-existing --fh-* definitions. Current HANDOFF and existing private copy both matched accepted SHA-256 8b3a3bc5803152a08567c48f947e82b1bf89f917445b0bb6418fd734b69f4b9c. No proven byte continuity to historical hash 33b3ea156667eb4b3823452ff3a08e132ab3867199d75b61cedbe880f7f94c0e is claimed.
+
+**Preservation:** Non-overwriting snapshots and CUSTODY_MANIFEST.json created under C:\Users\USER\Documents\DEODINI_PRIVATE_ARCHIVE\P01_V02_FOUND_01_DS01_AMD01_20261028_23485bd7. The manifest records sources, destinations, sizes, UTC timestamp and SHA-256 equality. All four snapshots were reverified after implementation:
+- DESIGN_SPEC_FH_V02_POC_BRAINBOX.md: ff7971a1c609df08e0c13dca8c84fbb39df361189bd8fce6f4a3da2f69dcdcee.
+- TICKETS_FH_V02_POC_BRAINBOX.md: 88058768e92ce5dfeb783b2f1d0dd0eab4a668ee095399bcdbeb24c1c31ef973.
+- REPORT_FH_V02_POC_BRAINBOX.md: a7cd6aa40223053a29bbcd3aa71d03de3b0bb14778f232f3fcbbd95ca8e7d0b0.
+- Original styles.css: c5266cc45d1ce8c7597d3ba7f0a3a9f4a0cebfc1c1cff7b07cfe47db679a690f.
+
+**Stage A:** Appended the dated DS-01-AMD-01 execution-release amendment to exactly DESIGN_SPEC, TICKETS and REPORT in this canonical directory. Registered the exact approved token palette/selectors, definitions-only scope, supersession of prior conflicting palette/component mapping, preservation requirements, validations, exclusions and review gates. Earlier file bytes were preserved as exact prefixes. Stage A used a command-specific reviewed escalation for the authorized out-of-workspace documentation and archive writes, without a reusable approval rule.
+
+**Stage A validation:** python -B GOVERNANCE_BRAINBOX/validate_tree_status.py: exit 0, PASS (qualified), zero findings; 85 READMEs, 84 canonical trees, 1,076 displayed entries and 1,001 Markdown targets. Local-only inventory: three records, zero PNGs physically in the checkout, consistent with private archival disposition. python -B -m unittest GOVERNANCE_BRAINBOX/test_validate_tree_status.py: exit 0, 24/24 tests passed. Renewed V02 preflight passed before Stage B.
+
+**Stage B:** Exactly 23 added stylesheet lines: the directive's Light fallback block (:root, :root[data-theme="light"]) and Dark override block (:root[data-theme="dark"]), with the eight approved --fh-* names/values in each. No comments or component migrations added. Exact matrix comparison passed for all 16 definitions; duplicate/collision check passed; no var(--fh-...) usages added. Removing only the inserted bytes reproduced the preserved stylesheet byte-for-byte, establishing unchanged legacy declarations. Final stylesheet SHA-256: 2877b51bf295566b22edca0b9831ad6ab201b12a9489eda4c8c32baa7b06467a.
+
+**Recalculated contrast:** sRGB relative-luminance calculations, not rendered conformance:
+| Pair | Light | Dark |
+|---|---|---|
+| Primary text/page | 16.41:1 | 16.80:1 |
+| Secondary text/card | 6.59:1 | 8.72:1 |
+| On-accent/accent | 5.49:1 | 14.32:1 |
+| Accent/page | 5.18:1 | 14.32:1 |
+| Control border/card | 4.44:1 | 4.38:1 |
+| Focus/page | 5.18:1 | 14.32:1 |
+| Focus/card | 5.49:1 | 12.67:1 |
+
+All evaluated text pairs met 4.5:1 and applicable border/focus pairs met 3:1. Approved colors were not altered. Browser verification was omitted as permitted for definitions-only work; no rendered accessibility, screenshot equivalence or browser conformance certification is claimed.
+
+**Final scope checks:** Both repository git diff --check commands passed. V02 changed files: pre-existing HANDOFF.md plus authorized css/styles.css. Brainbox changed files: the three authorized canonical documentation files only. No staged or unexpected untracked files. Original V01 checkout clean on main; local main, v01/preserved and foothive-v01 all remained at accepted baseline. HANDOFF.md and its PRE-REC private copy remained at accepted current hash.
+
+**Exclusions observed:** No HTML, JavaScript, product images, branding, legacy component declarations, typography, spacing, layout, forms, Pinterest, GA4, dependencies or build configuration changed. No stage, commit, push, PR, merge, reset, branch operation, remote protection/configuration change, Netlify operation or deployment. No additional implementation authorized by this report.
+
+**Completion gate:** Technical execution stopped. Priority 1 ChatGPT independent verification and final Operator implementation acceptance remain pending. No unresolved technical failure was found in the bounded checks. Publication requires separate authorization. HANDOFF.md remains untouched by this reporting step.

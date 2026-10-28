@@ -83,3 +83,33 @@ The ASSETS directory presently contains the reference intake manifest only. No i
 - [Reference intake manifest](ASSETS_FH_V02_BRAINBOX/README_ASSETS_FH_V02_BRAINBOX.md)
 - [Documentation Governance](../../../../../GOVERNANCE_BRAINBOX/DOCUMENTATION_GOV_BRAINBOX.md)
 - [Reference Governance](../../../../../GOVERNANCE_BRAINBOX/REFERENCE_GOV_BRAINBOX.md)
+
+
+## DS-01-AMD-01 - P01-V02-FOUND-01 execution release - 2026-10-28
+
+**Authority:** Operator-approved DS-01 Amendment 01; PRE-REC-01 PASS WITH CONDITIONS accepted; corrected handoff expressly released for Stage A registration and Stage B local implementation. Historical entries remain preserved. This amendment supersedes the earlier conflicting --color-* palette and component-mapping contract for this ticket.
+
+**Approved semantic colors:**
+
+| Token | Light | Dark |
+|---|---|---|
+| --fh-surface-page | #FAF8F4 | #111311 |
+| --fh-surface-card | #FFFFFF | #1C201B |
+| --fh-text-primary | #1A1A1A | #F4F3EE |
+| --fh-text-secondary | #625C56 | #B9BEB4 |
+| --fh-accent | #B3470F | #B6F53C |
+| --fh-on-accent | #FFFFFF | #111311 |
+| --fh-border-control | #80766C | #7C8774 |
+| --fh-focus-ring | #B3470F | #B6F53C |
+
+**Selectors and scope:** :root, :root[data-theme="light"] defines the fallback/light set; :root[data-theme="dark"] defines dark overrides. Definitions only: add exactly these eight namespaced properties per selector block near existing root variables in C:\Users\USER\FOOTHIVE_V02\css\styles.css. Preserve all legacy variables and declarations. No var(--fh-...) component migration, rendered-appearance change, HTML theme attribute, switch, persistence, system-preference behavior, typography, spacing or layout changes. Component migration and theme behavior are deferred. The fallback is not an eventual product-default decision.
+
+**Acceptance:** Exact token/selector comparison; no pre-existing namespaced collisions or duplicates; original stylesheet recoverable byte-for-byte by removing only the inserted blocks; CSS-only application diff; git diff --check; approved contrast matrix recalculated (normal text >=4.5:1, large text >=3:1, applicable non-text controls/focus >=3:1); no browser-conformance claim from token arithmetic. Browser testing is optional here and may not make external analytics/form requests or uncontrolled artifacts.
+
+**Preservation/preconditions:** Brainbox main at 3d4ffc60f1470672e8f1b85e7d966e07898be8c8; V02 v02/development and upstream at 43bbbea8325e3ec062baef7fd1724b5ea78bc6d0, source tree da62a65e683c24a39deb373c9e1c85ee32ecc896. Preserve current bytes of all three canonical documentation files and stylesheet in verified, non-overwriting private snapshots before editing. Maintain source/destination sizes, SHA-256 and timestamp in a custody manifest. Preserve HANDOFF.md at accepted current SHA-256 8b3a3bc5803152a08567c48f947e82b1bf89f917445b0bb6418fd734b69f4b9c and verify its existing private copy. Older SHA-256 33b3ea156667eb4b3823452ff3a08e132ab3867199d75b61cedbe880f7f94c0e is historical provenance; byte-for-byte continuity to that older checkpoint is not established.
+
+**Ordered gates:** Complete Stage A and run python -B GOVERNANCE_BRAINBOX/validate_tree_status.py plus python -B -m unittest GOVERNANCE_BRAINBOX/test_validate_tree_status.py. Require qualified PASS/zero findings and 24 passing tests. Renew V02 preflight before Stage B. Verify snapshot integrity, HANDOFF hash, index/worktree scope and unchanged original V01 references afterward.
+
+**Exclusions and STOP:** No other application files, private references, integration, Netlify, deployment, Git refs/configuration, staging, commits, pushes, PRs, merges, resets or publication. Stop without automatic remediation for mismatched branches/SHAs/upstream/hash, missing preservation copy, unexpected changed/staged/untracked files, token collision, material registration conflict, failed required validation or required out-of-scope changes.
+
+**State at registration:** LOCAL EXECUTION AUTHORIZED; application implementation pending actual Codex execution evidence. Git publication NOT AUTHORIZED. Codex technical report -> Priority 1 ChatGPT independent verification -> Operator final implementation acceptance. This entry records execution release, not completion or independent acceptance.
